@@ -1,0 +1,15 @@
+﻿
+Ren'Py 6.13.8.1675 lint report, generated at: Thu Mar  8 13:40:07 2012
+
+
+Statistics:
+
+The game contains 28 screens of dialogue.
+These screens contain a total of 250 words,
+for an average of 8.9 words per screen.
+The game contains 0 menus.
+
+Remember to set config.developer to False before releasing.
+
+Lint is not a substitute for thorough testing. Remember to update Ren'Py
+before releasing. New releases fix bugs and improve compatibility.
