@@ -3,19 +3,19 @@
 init:
     image white = "#ffffff"
     image yukibackground = "#ccccff"
-
-init python:
-    kyon = Character("Kyon", kind=nvl, color="#777755")
-    sister = Character("Nonoko", kind=nvl, color="#999977")
-    yuki = Character("Nagato Yuki", kind=nvl, color="#aaaaff")
-    narrator = Character(None, kind=nvl)
-    menu = nvl_menu
-    style.nvl_window.background = "nvl_window.png"
-    style.nvl_window.xpadding = 55
-    style.nvl_window.ypadding = 55
-    config.empty_window = nvl_show_core
-    config.window_hide_transition = dissolve
-    config.window_show_transition = dissolve
+    python: # TODO: figure out a way to quickly switch on/off the window show/hide statements below.
+        basechar = Character(None, kind=nvl)
+        kyon = Character("Kyon", kind=basechar, color="#777755")
+        sister = Character("Nonoko", kind=basechar, color="#999977")
+        yuki = Character("Nagato Yuki", kind=basechar, color="#aaaaff")
+        narrator = Character(None, kind=basechar)
+        menu = nvl_menu
+        style.nvl_window.background = "nvl_window.png"
+        style.nvl_window.xpadding = 55
+        style.nvl_window.ypadding = 55
+        config.empty_window = nvl_show_core
+        config.window_hide_transition = dissolve
+        config.window_show_transition = dissolve
 
 label start:
     scene white with fade
