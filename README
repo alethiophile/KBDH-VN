@@ -1,0 +1,18 @@
+How to use the code:
+
+For starters, you need Ren'Py, the visual novel engine that's used. That's an
+easy download and install; put it wherever. On your first run of Ren'Py, or
+thereafter through the Options screen, it asks you to select a project
+directory. Pick an empty directory somewhere, then put the directory containing
+this file—probably 'KBDH-VN'—into that empty directory. After that, you should
+be able to click 'Select Project' from the Ren'Py main menu and select
+'KBDH-VN'.
+
+After selecting the project, you can launch it or edit it from the Ren'Py
+menu. I personally use a separate editor, but Ren'Py comes with jEdit, which is
+serviceable. The specifics of the Ren'Py language are available on their web
+site. Regarding music and images...that's not my department. :P They'll fit in
+the repository fine, but editing them is something that the people doing it will
+know better than me.
+
+Good luck, all.
