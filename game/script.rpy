@@ -3,18 +3,19 @@
 init:
     image white = "#ffffff"
     image yukibackground = "#ccccff"
-    python:
-        kyon = Character("Kyon", kind=nvl, color="#777755")
-        sister = Character("Nonoko", kind=nvl, color="#999977")
-        yuki = Character("Nagato Yuki", kind=nvl, color="#aaaaff")
-        narrator = Character(None, kind=nvl)
-        menu = nvl_menu
-        style.nvl_window_background = "nvl_window.png"
-        style.nvl_window_xpadding = 55
-        style.nvl_window_ypadding = 55
-        config.empty_window = nvl_show_core
-        config.window_hide_transition = dissolve
-        config.window_show_transition = dissolve
+
+init python:
+    kyon = Character("Kyon", kind=nvl, color="#777755")
+    sister = Character("Nonoko", kind=nvl, color="#999977")
+    yuki = Character("Nagato Yuki", kind=nvl, color="#aaaaff")
+    narrator = Character(None, kind=nvl)
+    menu = nvl_menu
+    style.nvl_window.background = "nvl_window.png"
+    style.nvl_window.xpadding = 55
+    style.nvl_window.ypadding = 55
+    config.empty_window = nvl_show_core
+    config.window_hide_transition = dissolve
+    config.window_show_transition = dissolve
 
 label start:
     scene white with fade
