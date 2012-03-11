@@ -33,6 +33,11 @@ label start:
     "He was absolutely certain that if his sense of anxiety weren't imagined, she was the one behind it -- one way or another. When the fifth period bell rang, he was prepared."    
     "In a way, he'd always wanted to do this; extract that one tiny bit of revenge upon her for all the times she'd done it to him. So when she rose, turned in one smooth motion, and made to bolt out of the room--"
     
+    scene bg hallway with fade
+    "--he was there first, seizing the decorative ties of her sailor uniform's neckerchief and making for the door at top speed. \"Bwa!\" she protested, arms waving frantically as she dashed to keep up, or risk the knot being pulled out. \"What the hell do you think you're doing!?\""
+    nvl clear
+    scene bg stairwell with fade
+    "Naturally, he said nothing to her during the entire mad dash to the remote stairwell where she had first hauled him by his own tie, so long ago. He released her at the top of the steps after looking around to ensure that no one else was nearby. Her momentum carried her forward, resulting in him pressing one hand flat against her chest, just below her neck. Her eyes quickly sharpened, her features fixed into a scowl. \"What the hell, Kyon!?\""
     
     scene white with fade
 
