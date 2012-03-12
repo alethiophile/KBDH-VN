@@ -23,13 +23,12 @@ init:
         config.window_show_transition = dissolve
 
 label start:
-    scene title 
-    with Dissolve(5.0)
-    
-    pause 5
+    scene title with fade
     
     window show
-    
+    "\"Chapter Two: Don't Just SAY You Have a Bad Feeling, DO Something About It!\""
+    "\"...but I digress. When you get that feeling, you know the one, in the back of your head? The one that makes you think something is off about the situation? It may be right. Granted, you may also be tumbling headlong into a fit of paranoia that will end terribly for you and everyone you love. But what if you're NOT? Remember, if you're aware of things, you know most people think you're crazy anyway. Is it going to hurt that much more to overreact rather than just label something a false alarm?\""
+    "\"Practical Heroism and You: Awareness\" -- Tadamichi Kyousuke"
     nvl clear
     scene bg classroom with fade
     "Class had started innocently enough that day, but he'd long ago given up on expecting that to mean anything."
