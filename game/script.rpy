@@ -33,7 +33,7 @@ label start:
     nvl clear
     scene bg classroom with fade
     "Class had started innocently enough that day, but he'd long ago given up on expecting that to mean anything."
-    "With each passing moment after lunch, he grew more and more anxious, stealing glances behind him to make certain that she was still there—still safe."
+    "With each passing moment after lunch, he grew more and more anxious, stealing glances behind him to make certain that she was still there—{w=.4}still safe."
     "And every time their eyes met, she smirked knowingly and quickly looked outside, trying to pretend eye contact was never made."
     "He was absolutely certain that if his sense of anxiety weren't imagined, she was the one behind it — one way or another." 
     "When the fifth period bell rang, he was prepared."    
@@ -55,43 +55,43 @@ label start:
     "Her eyes quickly sharpened, her features fixed into a scowl."
     "\"What the hell, Kyon!?\""
     
-    scene white with fade
+    # scene white with fade
 
-    window show
-    "The day started normally enough, but that was true of most days."
-    "Put a phone ringing sound effect here."
-    sister "Kyon-kun, phone!"
-    kyon "Answer it for me. I'm busy."
-    sister "Okaaay..."
-    sister "Kyon-kun's phone! He's too lazy to answer!"
-    $ renpy.pause(0.5)
-    sister "Oh? Okay! I'll tell him. Feel better!"
-    sister "Kyon-kun! Yuki-nee-san says she's sick and really wants you to visit her!"
-    nvl clear
-    window hide
-    scene yukibackground with dissolve
-    window show
-    "At one point I calculated that the ride to Nagato's apartment was twenty minutes."
-    "I'm not sure whether or not I beat my best time."
-    kyon "Nagato! It's me!"
-    "Some sort of sound effect or scene change or something."
-    nvl clear
-    kyon "Nagato. What's wrong?"
-    yuki "The Integrated Data Sentience Entity has determined that I have become a liability."
-    kyon "What...do you mean?"
-    yuki "Factors within my makeup have become too unpredictable. It has been calculated that I will commit another error."
-    yuki "To prevent this, deletion has been scheduled in three hours, twenty one minutes, fifteen seconds; I will be replaced with an interface more suited to defending against possible Sky Canopy Domain interference."
-    nvl clear
-    kyon "...There isn't enough milk in the world."
-    kyon "How set is this?"
-    yuki "It is absolute."
-    kyon "Okay. I'll just..."
-    nvl clear
-    kyon "Can I use your phone, Nagato? I need to call Haruhi and the others."
-    yuki "It is not necessary."
-    kyon "What do you mean?"
-    yuki "I requested your presence for...personal reasons. It was not a request for help."
-    kyon "I don't care! I've always relied on you—now that you need help, I am {i}not{/i} going to just stand by and watch you get taken away from—from us!"
-    yuki "...I see."
-    kyon "So, I need to make some phone calls."
-    yuki "Understood."
+    # window show
+    # "The day started normally enough, but that was true of most days."
+    # "Put a phone ringing sound effect here."
+    # sister "Kyon-kun, phone!"
+    # kyon "Answer it for me. I'm busy."
+    # sister "Okaaay..."
+    # sister "Kyon-kun's phone! He's too lazy to answer!"
+    # $ renpy.pause(0.5)
+    # sister "Oh? Okay! I'll tell him. Feel better!"
+    # sister "Kyon-kun! Yuki-nee-san says she's sick and really wants you to visit her!"
+    # nvl clear
+    # window hide
+    # scene yukibackground with dissolve
+    # window show
+    # "At one point I calculated that the ride to Nagato's apartment was twenty minutes."
+    # "I'm not sure whether or not I beat my best time."
+    # kyon "Nagato! It's me!"
+    # "Some sort of sound effect or scene change or something."
+    # nvl clear
+    # kyon "Nagato. What's wrong?"
+    # yuki "The Integrated Data Sentience Entity has determined that I have become a liability."
+    # kyon "What...do you mean?"
+    # yuki "Factors within my makeup have become too unpredictable. It has been calculated that I will commit another error."
+    # yuki "To prevent this, deletion has been scheduled in three hours, twenty one minutes, fifteen seconds; I will be replaced with an interface more suited to defending against possible Sky Canopy Domain interference."
+    # nvl clear
+    # kyon "...There isn't enough milk in the world."
+    # kyon "How set is this?"
+    # yuki "It is absolute."
+    # kyon "Okay. I'll just..."
+    # nvl clear
+    # kyon "Can I use your phone, Nagato? I need to call Haruhi and the others."
+    # yuki "It is not necessary."
+    # kyon "What do you mean?"
+    # yuki "I requested your presence for...personal reasons. It was not a request for help."
+    # kyon "I don't care! I've always relied on you—now that you need help, I am {i}not{/i} going to just stand by and watch you get taken away from—from us!"
+    # yuki "...I see."
+    # kyon "So, I need to make some phone calls."
+    # yuki "Understood."
