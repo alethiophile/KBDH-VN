@@ -1,7 +1,7 @@
 ﻿# This is a proof-of-concept K:BDH VN.
 
 init:
-    image bg classroom = "classroom.png"
+    image bg classroom = "classroom.jpg"
     image bg hallway = "hallway.png"
     image bg stairwell = "stairwell.jpg"
     image white = "#ffffff"
