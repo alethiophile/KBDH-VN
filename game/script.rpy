@@ -48,7 +48,7 @@ label start:
 #    scene black with fade
     scene title with fade
     
-    pause 5
+    pause
     
 #    window show
     
