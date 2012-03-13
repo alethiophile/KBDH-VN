@@ -84,23 +84,22 @@ label start:
     show Kyon Ser1 at right
     "He held up one hand and said, \"Something's up.\""
     show Haruhi Hap3 at left
-    "Her irritation vanished instantly, replaced with wide-eyed excitement."
-    "She clapped her hands together and hopped from foot to foot."
+    "Her irritation vanished instantly, replaced with wide-eyed excitement. She clapped her hands together and hopped from foot to foot."
     show Haruhi Hap4 at left
     "\"Yes!\" she cheered. \"It's been so boring lately!\""
     nvl clear
     "\"This better not be your fault!\""
     show Kyon Sigh1 at right
-    "He shook his head in irritation, then patted his left coat pocket."
-    "Then right, then both pants pockets, then the back of each hand."
+    "He shook his head in irritation, then patted his left coat pocket. Then right, then both pants pockets, then the back of each hand."
     "After that, he traced the fingertips of his right hand above his ear, eyes distant, and pulled his cell phone from one pocket."
     nvl clear
     show Haruhi Ang1 at left
     "\"What is it?\" she asked, when he spent a long minute studying the screen."
     show Kyon Neutral1 at right
-    "\"Maybe a false alarm,\" he admitted, shifting his shoulders."
+    "\"Maybe a false alarm,\" he admitted, shifting his shoulders.{nw}"
+    $ nvl_erase()
     show Kyon Ang1 at right
-    "\"Are you messing with me?\""
+    "\"Maybe a false alarm,\" he admitted, shifting his shoulders. {fast}\"Are you messing with me?\""
     show Haruhi Ang2 at left
     "\"I should be asking you that! But whatever! You hauled me all the way out here—by my shirt, I might add!—so tongues are going to wag! If you're going to do this, then you know what I want!\""
     show Haruhi Hap1 at left
@@ -108,7 +107,7 @@ label start:
     show Kyon Sigh2 at right
     "\"Haruhi....\""
     show Haruhi Hap2 at left
-    "\"Do it!\"she said, bouncing on the balls of her feet in excitement. \"I want to see it!\""
+    "\"Do it!\" she said, bouncing on the balls of her feet in excitement. \"I want to see it!\""
     show Kyon Neutral2 at right
     "\"Is now really the time? Break's going to be over soon—\""
     show Haruhi Hap3 at left
@@ -117,16 +116,17 @@ label start:
     show Haruhi Hap4 at left
     "\"Do that voice, too! You know the one? Like from a movie voice-over guy? I love that! Do it! Come on!\""
     show Kyon Ser1 at right
-    "\"Fine,\" he grumbled."
+    "\"Fine,\" he grumbled.{nw}"
+    $ nvl_erase()
     show Kyon Sigh2 at right
-    "\"But you come up with the excuse for class.\""
+    "\"Fine,\" he grumbled. {fast}\"But you come up with the excuse for class.\""
     show Haruhi Hap4 at left
-    "\"Student council president,\"she said without hesitation." 
-    "\"Blame him.\""
+    "\"Student council president,\" she said without hesitation. \"Blame him.\""
     show Kyon Sigh2 at right
-    "\"Ahem,\" he coughed, shooting her a dark look."
+    "\"Ahem,\" he coughed, shooting her a dark look.{nw}"
+    $ nvl_erase()
     show Kyon Ser1 at right
-    "\"Take a step back, I don't want to catch you in the interdiction field again.\""
+    "\"Ahem,\" he coughed, shooting her a dark look. {fast}\"Take a step back, I don't want to catch you in the interdiction field again.\""
     show Haruhi Hap4 at left
     "She nodded and stepped backwards, against the wall."
     nvl clear 
@@ -136,10 +136,10 @@ label start:
     "Standing perfectly straight, hands at his sides, he closed his eyes, and began speaking in his best faux movie announcer voice-over."
     "\"Skinsuit active,\" as something that looked like nothing so much as black paint suddenly engulfed his entire body beneath his uniform."
     nvl clear
-    "\"Gravimetric stabilizers and secondary gyrometrics online,\"as ridged metal studs appeared on the back of each knuckle, and beneath his uniform pants, metallic vertical rails were described in the skinsuit."
+    "\"Gravimetric stabilizers and secondary gyrometrics online,\" as ridged metal studs appeared on the back of each knuckle, and beneath his uniform pants, metallic vertical rails were described in the skinsuit."
     nvl clear
     #WTB Custom Greatcoat sprite. =D
-    "\"Greatcoat thermoptic and tactile stealth disengaged\"as a knee-length tan greatcoat coalesced, covering his shoulders with a thick mantle."
+    "\"Greatcoat thermoptic and tactile stealth disengaged,\" as a knee-length tan greatcoat coalesced, covering his shoulders with a thick mantle."
     show Haruhi Hap3 at left
     "\"Doesn't that get hot?\" Her smile had only grown, her eyes shining with anticipation."
     show Kyon Neutral2 at right
@@ -153,28 +153,25 @@ label start:
     "Another cylinder, wider but shorter than the last was released to float next to the first."
     "\"Mid- and short-range crowd-control weaponry is at ... ninety seven percent capacity and charging,\" he continued, squinting at the featureless gunmetal tube."
     nvl clear
-    "Pulling a well-crafted sword hilt with no cross-guard or blade from one pocket, he released it horizontally, and it hung before him between the other weapons. "
-    "\"Beam saber is at full capacity.\""
+    "Pulling a well-crafted sword hilt with no cross-guard or blade from one pocket, he released it horizontally, and it hung before him between the other weapons. \"Beam saber is at full capacity.\""
     show Kyon Ser1 at right
     "After pulling his cell phone from one pocket, he brushed his fingertips over his ear, revealing three dull metal studs in the skinsuit."
-    "\"All systems nominal; no proximity alarms--\""
+    "\"All systems nominal; no proximity alarms—\""
     nvl clear
     show Kyon Ang1 at right
-    "He broke off suddenly, scowling."
-    "\"Okay,\" he said in his normal voice." 
-    "\"My mistake. We've got incoming.\""
+    "He broke off suddenly, scowling. \"Okay,\" he said in his normal voice. \"My mistake. We've got incoming.\""
     show Haruhi Hap4 at left
-    "\"God damn it Kyon, you're so cool when you do this,\" Haruhi gushed, clapping her hands together."
+    "\"God damn it Kyon, you're so cool when you do this,\" Haruhi gushed, clapping her hands together.{nw}"
+    $ nvl_erase()
     show Haruhi Ang1 at left
-    "\"What is it?\""
+    "\"God damn it Kyon, you're so cool when you do this,\" Haruhi gushed, clapping her hands together. {fast}\"What is it?\""
     nvl clear
     show Kyon Neutral1 at right
-    "\"I'm not sure,\"he said, as a cold, familiar chuckle echoed."
+    "\"I'm not sure,\" he said, as a cold, familiar chuckle echoed."
     show Kyon Ser1 at right
     "One eyebrow twitched and he stowed his weapons, banishing the ring of light and flinging his phone at Haruhi."
     show Kyon Ser2 at right
-    "\"Speed dial two,\" he snapped."
-    "\"Stay in the circle.\""
+    "\"Speed dial two,\" he snapped. \"Stay in the circle.\""
     show Haruhi Pout1 at left
     "She pouted, but did as she was told, the ring of light reappearing on the floor around her this time."
     nvl clear
@@ -186,7 +183,7 @@ label start:
     play sound "SE/saberon.wav"
     "The school bell chimed just as she rounded the landing, and he activated the beam saber. The blade made a crackling, whirring buzz and shed a soft, pale blue light."
     show Asakura Frown1 at center
-    "\"Y...you....\"she began, before she frowned, blinking, staring at the energy weapon."
+    "\"Y...you....\" she began, before she frowned, blinking, staring at the energy weapon."
     nvl clear
     show Kyon Ang1 at right
     "\"Long time no see,\" he said, switching stance to the long-sword style, Ni-Ten Ichi Ryu."
