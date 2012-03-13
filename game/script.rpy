@@ -48,9 +48,9 @@ label start:
 #    scene black with fade
     scene title with fade
     
-#    pause 5
+    pause 5
     
-    window show
+#    window show
     
     nvl clear
     scene bg classroom with fade:
