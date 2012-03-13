@@ -61,7 +61,7 @@ label start:
     "He was absolutely certain that if his sense of anxiety weren't imagined, she was the one behind it — one way or another." 
     "When the fifth period bell rang, he was prepared."    
     nvl clear
-    "In a way, he'd always wanted to do this; extract that one tiny bit of revenge upon her for all the times she'd done it to him."
+    "In a way, he'd always wanted to do this; exact that one tiny bit of revenge upon her for all the times she'd done it to him."
     "So when she rose, turned in one smooth motion, and made to bolt out of the room—"
     
     scene bg hallway with fade:
@@ -165,7 +165,7 @@ label start:
     show Haruhi Hap4 at left
     "\"God damn it Kyon, you're so cool when you do this,\" Haruhi gushed, clapping her hands together.{nw}"
     $ nvl_erase()
-    show Haruhi Ang1 at left
+    show Haruhi Hap4 at left
     "\"God damn it Kyon, you're so cool when you do this,\" Haruhi gushed, clapping her hands together. {fast}\"What is it?\""
     nvl clear
     show Kyon Neutral1 at right
