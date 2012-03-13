@@ -9,8 +9,8 @@ init:
     image yukibackground = "#ccccff"
     image title = "Backgrounds/titlecard1.jpg"
     image Haruhi Sup1 = "Sprites/Haruhi/HaruhiSideSurprised1.png"
-    image Haruhi Ang1 ="Sprites/Haruhi/HaruhiSideAngry1.png"
-    image Haruhi Ang2 ="Sprites/Haruhi/HaruhiSideAngry2.png"
+    image Haruhi Ang1 = "Sprites/Haruhi/HaruhiSideAngry1.png"
+    image Haruhi Ang2 = "Sprites/Haruhi/HaruhiSideAngry2.png"
     image Haruhi Ang3 = "Sprites/Haruhi/HaruhiSideAngry3.png"
     image Haruhi Hap1 = "Sprites/Haruhi/HaruhiSideHappy1.png"
     image Haruhi Hap2 = "Sprites/Haruhi/HaruhiSideHappy2.png"
@@ -24,7 +24,7 @@ init:
     image Kyon Neutral1 = "Sprites/Kyon/KyonNeutral1.png"
     image Kyon Neutral2 = "Sprites/Kyon/KyonNeutral2.png"
     image Kyon Ang1 = "Sprites/Kyon/KyonAngry1.png"
-    image Asakura Smile1 ="Sprites/Asakura/AsakuraSmile1.png"
+    image Asakura Smile1 = "Sprites/Asakura/AsakuraSmile1.png"
     image Asakura Smile2 = "Sprites/Asakura/AsakuraSmile2.png"
     image Asakura Sup1 = "Sprites/Asakura/AsakuraSurprise1.png"
     image Asakura Frown1 = "Sprites/Asakura/AsakuraFrown1.png"
@@ -45,16 +45,16 @@ init:
         config.window_show_transition = dissolve
 
 label start:
-    scene black with fade
-    scene title 
-    with Dissolve(5.0)
+#    scene black with fade
+    scene title with fade
     
-    pause 5
+#    pause 5
     
     window show
     
     nvl clear
-    scene bg classroom with fade
+    scene bg classroom with fade:
+        size (800,600)
     "Class had started innocently enough that day, but he'd long ago given up on expecting that to mean anything."
     "With each passing moment after lunch, he grew more and more anxious, stealing glances behind him to make certain that she was still there—{w=.4}still safe."
     "And every time their eyes met, she smirked knowingly and quickly looked outside, trying to pretend eye contact was never made."
@@ -64,16 +64,18 @@ label start:
     "In a way, he'd always wanted to do this; extract that one tiny bit of revenge upon her for all the times she'd done it to him."
     "So when she rose, turned in one smooth motion, and made to bolt out of the room—"
     
-    scene bg hallway with fade
+    scene bg hallway with fade:
+        size (800,600)
 #    play sound "dashwacky.wav"
     "—he was there first, seizing the decorative ties of her sailor uniform's neckerchief and making for the door at top speed." 
     nvl clear
-    show HaruhiSup1 at left
+    show Haruhi Sup1 at left
     "\"Bwa!\" she protested, arms waving frantically as she dashed to keep up, or risk the knot being pulled out." 
-    show HaruhiAng2 at left
+    show Haruhi Ang2 at left
     "\"What the hell do you think you're doing!?\""
     nvl clear
-    scene bg stairwell with fade
+    scene bg stairwell with fade:
+        size (800,600)
     "Naturally, he said nothing to her during the entire mad dash to the remote stairwell where she had first hauled him by his own tie, so long ago."
     "He released her at the top of the steps after looking around to ensure that no one else was nearby."
     "Her momentum carried her forward, resulting in him pressing one hand flat against her chest, just below her neck."
