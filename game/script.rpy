@@ -49,8 +49,7 @@ label start:
     "—he was there first, seizing the decorative ties of her sailor uniform's neckerchief and making for the door at top speed." 
     nvl clear
     show HaruhiSup1 at left
-    "\"Bwa!\""
-    "she protested, arms waving frantically as she dashed to keep up, or risk the knot being pulled out." 
+    "\"Bwa!\" she protested, arms waving frantically as she dashed to keep up, or risk the knot being pulled out." 
     show HaruhiAng2 at left
     "\"What the hell do you think you're doing!?\""
     nvl clear
@@ -64,34 +63,27 @@ label start:
     "He held up one hand and said, \"Something's up.\""
     "Her irritation vanished instantly, replaced with wide-eyed excitement."
     "She clapped her hands together and hopped from foot to foot."
-    "\"Yes!\" she cheered"
-    "\"It's been so boring lately!\""
+    "\"Yes!\" she cheered. \"It's been so boring lately!\""
     nvl clear
     "\"This better not be your fault!\""
     "He shook his head in irritation, then patted his left coat pocket."
     "Then right, then both pants pockets, then the back of each hand."
     "After that, he traced the fingertips of his right hand above his ear, eyes distant, and pulled his cell phone from one pocket."
     nvl clear
-    "\"What is it?\ she asked, when he spent a long minute studying the screen."
+    "\"What is it?\" she asked, when he spent a long minute studying the screen."
     "\"Maybe a false alarm,\" he admitted, shifting his shoulders."
     "\"Are you messing with me?\""
-    "\"I should be asking you that! But whatever! You hauled me all the way out here-\""
-    "\" -by my shirt, I might add! -- so tongues are going to wag!\""
-    "\" If you're going to do this, then you know what I want!\""
+    "\"I should be asking you that! But whatever! You hauled me all the way out here—by my shirt, I might add!—so tongues are going to wag! If you're going to do this, then you know what I want!\""
     nvl clear
     "\"Haruhi....\""
-    "\"Do it!\"she said, bouncing on the balls of her feet in excitement."
-    "\"I want to see it!\""
-    "\"Is now really the time? Break's going to be over soon--\""
+    "\"Do it!\"she said, bouncing on the balls of her feet in excitement. \"I want to see it!\""
+    "\"Is now really the time? Break's going to be over soon—\""
     "\"Get it out now! I want to see!\""
     nvl clear
     "\"Do that voice, too! You know the one? Like from a movie voice-over guy? I love that! Do it! Come on!\""
-    "\"Fine,\" he grumbled."
-    "\"But you come up with the excuse for class.\""
-    "\"Student council president,\"she said without hesitation." 
-    "\"Blame him.\""
-    "\"Ahem,\" he coughed, shooting her a dark look."
-    "\"Take a step back, I don't want to catch you in the interdiction field again.\""
+    "\"Fine,\" he grumbled. \"But you come up with the excuse for class.\""
+    "\"Student council president,\"she said without hesitation. \"Blame him.\""
+    "\"Ahem,\" he coughed, shooting her a dark look. \"Take a step back, I don't want to catch you in the interdiction field again.\""
     "She nodded and stepped backwards, against the wall."
     nvl clear
     #This is where all the sound and special effects go!
