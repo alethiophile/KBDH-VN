@@ -1,15 +1,15 @@
 ﻿# This is a proof-of-concept K:BDH VN.
 
 init:
-    image bg classroom = "classroom.jpg"
-    image bg hallway = "hallway.png"
-    image bg stairwell = "stairwell.jpg"
+    image bg classroom = "Backgrounds/classroom.jpg"
+    image bg hallway = "Backgrounds/hallway.png"
+    image bg stairwell = "Backgrounds/stairwell.jpg"
     image white = "#ffffff"
     image black = "#000000"
     image yukibackground = "#ccccff"
-    image title = "titlecard1.jpg"
-    image HaruhiSup1 = "HaruhiSideSurprised1.png"
-    image HaruhiAng2 ="HaruhiSideAngry2.png"
+    image title = "Backgrounds/titlecard1.jpg"
+    image HaruhiSup1 = "Sprites/Haruhi/HaruhiSideSurprised1.png"
+    image HaruhiAng2 ="Sprites/Haruhi/HaruhiSideAngry2.png"
     python: # TODO: figure out a way to quickly switch on/off the window show/hide statements below.
         basechar = Character(None, kind=nvl)
         kyon = Character("Kyon", kind=basechar, color="#777755")
