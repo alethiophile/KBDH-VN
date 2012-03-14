@@ -9,7 +9,7 @@ init:
     image yukibackground = "#ccccff"
     image title = "Backgrounds/title1.png"
     image Barrier = "Backgrounds/barrier2.jpg"
-    image Bluesword = "Backgrounds/bluesword.jpg"
+    image Bluesword = "Backgrounds/bluesword.png"
     image field = "Sprites/InterdictionField.png"
     image Haruhi Sup1 = "Sprites/Haruhi/HaruhiSideSurprised1.png"
     image Haruhi Ang1 = "Sprites/Haruhi/HaruhiSideAngry1.png"
