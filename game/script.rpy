@@ -9,6 +9,7 @@ init:
     image yukibackground = "#ccccff"
     image title = "Backgrounds/title1.png"
     image Barrier = "Backgrounds/barrier2.jpg"
+    image Bluesword = "Backgrounds/bluesword.jpg"
     image Haruhi Sup1 = "Sprites/Haruhi/HaruhiSideSurprised1.png"
     image Haruhi Ang1 = "Sprites/Haruhi/HaruhiSideAngry1.png"
     image Haruhi Ang2 = "Sprites/Haruhi/HaruhiSideAngry2.png"
@@ -41,6 +42,7 @@ init:
         narrator = Character(None, kind=basechar)
         irisoutfast = CropMove(0.2, "irisout")
         slowfadein = Fade(0.5, 0.5, 5)
+        wipeleftfast = CropMove(0.3, "wipeleft")
         menu = nvl_menu
         style.nvl_window.background = "nvl_window.png"
         style.nvl_window.xpadding = 55
@@ -232,6 +234,9 @@ label start:
     "\"It's been a while, hasn't it?\""
     show Asakura Sup1 at center
     play sound "SE/saberon.wav"
+    show Bluesword with wipeleftfast
+    pause (1)
+    hide Bluesword with dissolve
     "The school bell chimed just as she rounded the landing, and he activated the beam saber. The blade made a crackling, whirring buzz and shed a soft, pale blue light."
     show Asakura Frown1 at center
     "\"Y...you....\" she began, before she frowned, blinking, staring at the energy weapon."
