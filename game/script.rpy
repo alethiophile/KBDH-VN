@@ -58,8 +58,6 @@ label start:
 #    window show
     
     nvl clear
-    play music "Music/Gouin.mp3" fadein 1
-    $ renpy.music.set_volume(0.2, .5, channel="music")
     scene bg classroom with fade:
         size (800,600)
     "Class had started innocently enough that day, but he'd long ago given up on expecting that to mean anything."
@@ -68,24 +66,32 @@ label start:
     "He was absolutely certain that if his sense of anxiety weren't imagined, she was the one behind it — one way or another." 
     "When the fifth period bell rang, he was prepared."    
     nvl clear
+    play music "Music/Gouin.mp3" fadein 1
+    $ renpy.music.set_volume(0.2, .5, channel="music")
     "In a way, he'd always wanted to do this; exact that one tiny bit of revenge upon her for all the times she'd done it to him."
     "So when she rose, turned in one smooth motion, and made to bolt out of the room—"
-    
-    scene bg hallway with fade:
-        size (800,600)
-#    play sound "dashwacky.wav"
+    nvl clear
     "—he was there first, seizing the decorative ties of her sailor uniform's neckerchief and making for the door at top speed." 
     nvl clear
+   
+    scene bg hallway with fade:
+        size (800,600)
+    #play sound "dashwacky.wav"
     show Haruhi Sup1 at left
+    show Kyon Ser1 at center
     "\"Bwa!\" she protested, arms waving frantically as she dashed to keep up, or risk the knot being pulled out." 
     show Haruhi Ang2 at left
     "\"What the hell do you think you're doing!?\""
     show Haruhi Sup1 at left
-#    hide Haruhi with moveoutright
-    scene bg hallway:
+    scene bg hallway with None:
         xanchor .5 yanchor .5
         xpos .5 ypos .5
         linear .3 rotate 360
+
+    hide Haruhi
+    hide Kyon 
+    with fade    
+    
     pause 1.0
     nvl clear
     scene bg stairwell with fade:
@@ -114,8 +120,8 @@ label start:
     show Kyon Neutral1 at right
     "\"Maybe a false alarm,\" he admitted, shifting his shoulders.{nw}"
     $ nvl_erase()
-    show Kyon Ang1 at right
     "\"Maybe a false alarm,\" he admitted, shifting his shoulders. {fast}\"Are you messing with me?\""
+    show Kyon Ang1 at right
     show Haruhi Ang2 at left
     "\"I should be asking you that! But whatever! You hauled me all the way out here—by my shirt, I might add!—so tongues are going to wag! If you're going to do this, then you know what I want!\""
     show Haruhi Hap1 at left
@@ -210,7 +216,7 @@ label start:
     play sound "SE/Barrier1.wav"
     show Haruhi Pout1 Bright at left
     pause .1
-    show Haruhi Pout1 at left
+    show Haruhi Pout1 at left with dissolve
     "She pouted, but did as she was told, the ring of light reappearing on the floor around her this time."
     nvl clear
     hide Kyon Ser2
@@ -240,7 +246,7 @@ label start:
     "\"That's funny, Asakura-san, because you haven't.\""
     
     
-    
+    scene black with fade
     
     
     
