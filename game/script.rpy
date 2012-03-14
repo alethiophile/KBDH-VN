@@ -10,6 +10,7 @@ init:
     image title = "Backgrounds/title1.png"
     image Barrier = "Backgrounds/barrier2.jpg"
     image Bluesword = "Backgrounds/bluesword.jpg"
+    image field = "Sprites/InterdictionField.png"
     image Haruhi Sup1 = "Sprites/Haruhi/HaruhiSideSurprised1.png"
     image Haruhi Ang1 = "Sprites/Haruhi/HaruhiSideAngry1.png"
     image Haruhi Ang2 = "Sprites/Haruhi/HaruhiSideAngry2.png"
@@ -23,6 +24,8 @@ init:
                                        im.matrix.brightness(.5))
     image Kyon Ser1 = "Sprites/Kyon/KyonSerious1.png"
     image Kyon Ser2 = "Sprites/Kyon/KyonSerious2.png"
+    image Kyon Ser2 Bright = im.MatrixColor("Sprites/Kyon/KyonSerious2.png",
+                                       im.matrix.brightness(.5))
     image Kyon Sigh1 = "Sprites/Kyon/KyonSigh1.png"
     image Kyon Sigh2 = "Sprites/Kyon/KyonSigh2.png"
     image Kyon Neutral1 = "Sprites/Kyon/KyonNeutral1.png"
@@ -187,8 +190,13 @@ label start:
     play sound "SE/lowswoosh.wav"
     "He pulled a fifty centimeter long glittering metal cylinder from within the greatcoat, releasing it to spin on its axis in midair to one side, announcing, \"Long range precision and high yield weaponry is at full charge.\""
     play sound "SE/Barrier2.wav"
-    show Barrier with irisoutfast
-    hide Barrier with dissolve    
+    show Kyon Ser2 Bright at right
+    show field at right with dissolve
+    pause .1
+    hide field at right with dissolve
+    show Kyon Ser2 at right with dissolve
+   # show Barrier with irisoutfast
+   # hide Barrier with dissolve    
     "A circle of light appeared on the floor around him, a simple white ring with glittering sparks chasing around in either direction, sending brilliant flashes to streak upwards."
     nvl clear
     "Another cylinder, wider but shorter than the last was released to float next to the first."
@@ -217,7 +225,9 @@ label start:
     show Haruhi Pout1 at left
     play sound "SE/Barrier1.wav"
     show Haruhi Pout1 Bright at left
+    show field at left with dissolve
     pause .1
+    hide field at left with dissolve
     show Haruhi Pout1 at left with dissolve
     "She pouted, but did as she was told, the ring of light reappearing on the floor around her this time."
     nvl clear
