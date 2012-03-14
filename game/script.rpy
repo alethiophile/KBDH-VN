@@ -8,6 +8,7 @@ init:
     image black = "#000000"
     image yukibackground = "#ccccff"
     image title = "Backgrounds/titlecard1.jpg"
+    image Barrier = "Backgrounds/barrier2.jpg"
     image Haruhi Sup1 = "Sprites/Haruhi/HaruhiSideSurprised1.png"
     image Haruhi Ang1 = "Sprites/Haruhi/HaruhiSideAngry1.png"
     image Haruhi Ang2 = "Sprites/Haruhi/HaruhiSideAngry2.png"
@@ -29,7 +30,7 @@ init:
     image Asakura Sup1 = "Sprites/Asakura/AsakuraSurprise1.png"
     image Asakura Frown1 = "Sprites/Asakura/AsakuraFrown1.png"
     image Asakura Frown2 = "Sprites/Asakura/AsakuraFrown2.png"
-    
+    $ irisoutfast = CropMove(0.2, "irisout")
     python: # TODO: figure out a way to quickly switch on/off the window show/hide statements below.
         basechar = Character(None, kind=nvl)
         kyon = Character("Kyon", kind=basechar, color="#777755")
@@ -75,6 +76,8 @@ label start:
     "\"Bwa!\" she protested, arms waving frantically as she dashed to keep up, or risk the knot being pulled out." 
     show Haruhi Ang2 at left
     "\"What the hell do you think you're doing!?\""
+    show Haruhi Sup1 at left
+    hide Haruhi with moveoutright
     nvl clear
     scene bg stairwell with fade:
         size (800,600)
@@ -138,11 +141,13 @@ label start:
     #This is where all the sound and special effects go!
     play music "music/YukiAsakuraFight.mp3" fadein 1
     show Kyon Ser2 at right
-    "Standing perfectly straight, hands at his sides, he closed his eyes, and began speaking in his best faux movie announcer voice-over."
+    pause 1
     play sound "SE/DunDun.wav"
+    "Standing perfectly straight, hands at his sides, he closed his eyes, and began speaking in his best faux movie announcer voice-over."
+    play sound "SE/Sizzle2.wav"
     "\"Skinsuit active,\" as something that looked like nothing so much as black paint suddenly engulfed his entire body beneath his uniform."
     nvl clear
-    play sound "SE/Sizzle2.wav"
+    play sound "SE/NanoRepair.wav"
     "\"Gravimetric stabilizers and secondary gyrometrics online,\" as ridged metal studs appeared on the back of each knuckle, and beneath his uniform pants, metallic vertical rails were described in the skinsuit."
     nvl clear
     #WTB Custom Greatcoat sprite. =D
@@ -163,6 +168,8 @@ label start:
     play sound "SE/lowswoosh.wav"
     "He pulled a fifty centimeter long glittering metal cylinder from within the greatcoat, releasing it to spin on its axis in midair to one side, announcing, \"Long range precision and high yield weaponry is at full charge.\""
     play sound "SE/Barrier2.wav"
+    show Barrier with irisoutfast
+    hide Barrier with dissolve    
     "A circle of light appeared on the floor around him, a simple white ring with glittering sparks chasing around in either direction, sending brilliant flashes to streak upwards."
     nvl clear
     "Another cylinder, wider but shorter than the last was released to float next to the first."
