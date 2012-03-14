@@ -7,7 +7,7 @@ init:
     image white = "#ffffff"
     image black = "#000000"
     image yukibackground = "#ccccff"
-    image title = "Backgrounds/titlecard1.jpg"
+    image title = "Backgrounds/title1.png"
     image Barrier = "Backgrounds/barrier2.jpg"
     image Haruhi Sup1 = "Sprites/Haruhi/HaruhiSideSurprised1.png"
     image Haruhi Ang1 = "Sprites/Haruhi/HaruhiSideAngry1.png"
@@ -30,13 +30,13 @@ init:
     image Asakura Sup1 = "Sprites/Asakura/AsakuraSurprise1.png"
     image Asakura Frown1 = "Sprites/Asakura/AsakuraFrown1.png"
     image Asakura Frown2 = "Sprites/Asakura/AsakuraFrown2.png"
-    $ irisoutfast = CropMove(0.2, "irisout")
     python: # TODO: figure out a way to quickly switch on/off the window show/hide statements below.
         basechar = Character(None, kind=nvl)
         kyon = Character("Kyon", kind=basechar, color="#777755")
         sister = Character("Nonoko", kind=basechar, color="#999977")
         yuki = Character("Nagato Yuki", kind=basechar, color="#aaaaff")
         narrator = Character(None, kind=basechar)
+        irisoutfast = CropMove(0.2, "irisout")
         menu = nvl_menu
         style.nvl_window.background = "nvl_window.png"
         style.nvl_window.xpadding = 55
@@ -77,7 +77,12 @@ label start:
     show Haruhi Ang2 at left
     "\"What the hell do you think you're doing!?\""
     show Haruhi Sup1 at left
-    hide Haruhi with moveoutright
+#    hide Haruhi with moveoutright
+    scene bg hallway:
+        xanchor .5 yanchor .5
+        xpos .5 ypos .5
+        linear .3 rotate 360
+    pause 1.0
     nvl clear
     scene bg stairwell with fade:
         size (800,600)
