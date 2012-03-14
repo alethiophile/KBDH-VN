@@ -1,6 +1,6 @@
 ﻿# This is a proof-of-concept K:BDH VN.
 
-init:
+init:    
     image bg classroom = "Backgrounds/classroom.jpg"
     image bg hallway = "Backgrounds/hallway.png"
     image bg stairwell = "Backgrounds/stairwell.jpg"
@@ -18,6 +18,8 @@ init:
     image Haruhi Hap3 = "Sprites/Haruhi/HaruhiSideHappy3.png"
     image Haruhi Hap4 = "Sprites/Haruhi/HaruhiSideHappy4.png"
     image Haruhi Pout1 = "Sprites/Haruhi/HaruhiSidePout1.png"
+    image Haruhi Pout1 Bright = im.MatrixColor("Sprites/Haruhi/HaruhiSidePout1.png",
+                                       im.matrix.brightness(.5))
     image Kyon Ser1 = "Sprites/Kyon/KyonSerious1.png"
     image Kyon Ser2 = "Sprites/Kyon/KyonSerious2.png"
     image Kyon Sigh1 = "Sprites/Kyon/KyonSigh1.png"
@@ -30,7 +32,11 @@ init:
     image Asakura Sup1 = "Sprites/Asakura/AsakuraSurprise1.png"
     image Asakura Frown1 = "Sprites/Asakura/AsakuraFrown1.png"
     image Asakura Frown2 = "Sprites/Asakura/AsakuraFrown2.png"
+    
     $ irisoutfast = CropMove(0.2, "irisout")
+    $ slowfadein = Fade(0.5, 0.5, 5)
+
+
     python: # TODO: figure out a way to quickly switch on/off the window show/hide statements below.
         basechar = Character(None, kind=nvl)
         kyon = Character("Kyon", kind=basechar, color="#777755")
@@ -47,7 +53,7 @@ init:
 
 label start:
 #    scene black with fade
-    scene title with fade
+    scene title with slowfadein
     
     pause
     
@@ -55,7 +61,7 @@ label start:
     
     nvl clear
     play music "Music/Gouin.mp3" fadein 1
-    $ renpy.music.set_volume(0.1, .5, channel="music")
+    $ renpy.music.set_volume(0.2, .5, channel="music")
     scene bg classroom with fade:
         size (800,600)
     "Class had started innocently enough that day, but he'd long ago given up on expecting that to mean anything."
@@ -120,6 +126,8 @@ label start:
     show Haruhi Hap3 at left
     "\"Get it out now! I want to see!\""
     nvl clear
+    show Kyon Sigh1 at right
+    "Heaving the sigh of the eternally doomed, he put his phone away and muttered underneath his breath."
     show Haruhi Hap4 at left
     "\"Do that voice, too! You know the one? Like from a movie voice-over guy? I love that! Do it! Come on!\""
     show Kyon Ser1 at right
@@ -197,6 +205,9 @@ label start:
     "\"Speed dial two,\" he snapped. \"Stay in the circle.\""
     show Haruhi Pout1 at left
     play sound "SE/Barrier1.wav"
+    show Haruhi Pout1 Bright at left
+    pause .1
+    show Haruhi Pout1 at left
     "She pouted, but did as she was told, the ring of light reappearing on the floor around her this time."
     nvl clear
     hide Kyon Ser2
