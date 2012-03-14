@@ -53,6 +53,8 @@ label start:
 #    window show
     
     nvl clear
+    play music "Music/Gouin.mp3" fadein 1
+    $ renpy.music.set_volume(0.1, .5, channel="music")
     scene bg classroom with fade:
         size (800,600)
     "Class had started innocently enough that day, but he'd long ago given up on expecting that to mean anything."
@@ -128,33 +130,45 @@ label start:
     "\"Ahem,\" he coughed, shooting her a dark look.{nw}"
     $ nvl_erase()
     show Kyon Ser1 at right
+    stop music fadeout 1
     "\"Ahem,\" he coughed, shooting her a dark look. {fast}\"Take a step back, I don't want to catch you in the interdiction field again.\""
     show Haruhi Hap4 at left
     "She nodded and stepped backwards, against the wall."
     nvl clear 
     #This is where all the sound and special effects go!
-    
+    play music "music/YukiAsakuraFight.mp3" fadein 1
     show Kyon Ser2 at right
     "Standing perfectly straight, hands at his sides, he closed his eyes, and began speaking in his best faux movie announcer voice-over."
+    play sound "SE/DunDun.wav"
     "\"Skinsuit active,\" as something that looked like nothing so much as black paint suddenly engulfed his entire body beneath his uniform."
     nvl clear
+    play sound "SE/Sizzle2.wav"
     "\"Gravimetric stabilizers and secondary gyrometrics online,\" as ridged metal studs appeared on the back of each knuckle, and beneath his uniform pants, metallic vertical rails were described in the skinsuit."
     nvl clear
     #WTB Custom Greatcoat sprite. =D
+    play sound "SE/CloakOff.wav"
     "\"Greatcoat thermoptic and tactile stealth disengaged,\" as a knee-length tan greatcoat coalesced, covering his shoulders with a thick mantle."
     show Haruhi Hap3 at left
     "\"Doesn't that get hot?\" Her smile had only grown, her eyes shining with anticipation."
+    nvl clear
     show Kyon Neutral2 at right
     "\"We had environmental conditioning added last night, since the weather's heating up,\" he said in a normal voice."
     show Kyon Ser2 at right
     "Switching back, he said, \"Primary weapons check.\""     
     nvl clear
+    play sound "SE/lowswoosh.wav"
+    pause .02
+    play sound "SE/lowswoosh.wav"
+    pause .02
+    play sound "SE/lowswoosh.wav"
     "He pulled a fifty centimeter long glittering metal cylinder from within the greatcoat, releasing it to spin on its axis in midair to one side, announcing, \"Long range precision and high yield weaponry is at full charge.\""
+    play sound "SE/Barrier2.wav"
     "A circle of light appeared on the floor around him, a simple white ring with glittering sparks chasing around in either direction, sending brilliant flashes to streak upwards."
     nvl clear
     "Another cylinder, wider but shorter than the last was released to float next to the first."
     "\"Mid- and short-range crowd-control weaponry is at ... ninety seven percent capacity and charging,\" he continued, squinting at the featureless gunmetal tube."
     nvl clear
+    play sound "SE/clink.wav"
     "Pulling a well-crafted sword hilt with no cross-guard or blade from one pocket, he released it horizontally, and it hung before him between the other weapons. \"Beam saber is at full capacity.\""
     show Kyon Ser1 at right
     "After pulling his cell phone from one pocket, he brushed his fingertips over his ear, revealing three dull metal studs in the skinsuit."
@@ -175,8 +189,16 @@ label start:
     show Kyon Ser2 at right
     "\"Speed dial two,\" he snapped. \"Stay in the circle.\""
     show Haruhi Pout1 at left
+    play sound "SE/Barrier1.wav"
     "She pouted, but did as she was told, the ring of light reappearing on the floor around her this time."
     nvl clear
+    hide Kyon Ser2
+    hide Haruhi Pout1
+    play sound "SE/footsteps5.wav" 
+    pause 5
+    show Asakura Smile2 at center with wipeup
+    pause 1
+    play sound "SE/DunDun.wav"
     show Asakura Smile1 at center
     "\"Kyon-kun~!\" someone caroled up the stairwell, the echoing click of their shoes sounding as they climbed the stairs."
     show Asakura Smile2 at center
@@ -187,9 +209,10 @@ label start:
     show Asakura Frown1 at center
     "\"Y...you....\" she began, before she frowned, blinking, staring at the energy weapon."
     nvl clear
+    show Asakura Frown1 at left
     show Kyon Ang1 at right
     "\"Long time no see,\" he said, switching stance to the long-sword style, Ni-Ten Ichi Ryu."
-    show Asakura Frown2 at center
+    show Asakura Frown2 at left
     "\"Um.... Hm. This is different. You've certainly changed, Kyon-kun.\""
     nvl clear
     show Kyon Ser2 at right
