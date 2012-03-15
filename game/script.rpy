@@ -171,7 +171,7 @@ label start:
     play sound "SE/DunDun.wav"
     "Standing perfectly straight, hands at his sides, he closed his eyes, and began speaking in his best faux movie announcer voice-over."
     play sound "SE/Sizzle2.wav"
-    show Skinsuit at right with dissolve
+    show Skinsuit at right with wipeup
     "\"Skinsuit active,\" as something that looked like nothing so much as black paint suddenly engulfed his entire body beneath his uniform."
     nvl clear
     play sound "SE/NanoRepair.wav"
@@ -201,7 +201,7 @@ label start:
     pause .1
     hide field at right
     show Kyon Ser2 at right
-    show Skinsuit at right
+    show Skinsuit at right 
     with dissolve
    # show Barrier with irisoutfast
    # hide Barrier with dissolve    
