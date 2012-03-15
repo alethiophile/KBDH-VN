@@ -31,6 +31,9 @@ init:
     image Kyon Neutral1 = "Sprites/Kyon/KyonNeutral1.png"
     image Kyon Neutral2 = "Sprites/Kyon/KyonNeutral2.png"
     image Kyon Ang1 = "Sprites/Kyon/KyonAngry1.png"
+    image Skinsuit = "Sprites/Kyon/KyonSkinsuitTemplate.png"
+    image Skinsuit Bright = im.MatrixColor("Sprites/Kyon/KyonSkinsuitTemplate.png",
+                                       im.matrix.brightness(.5))
     image Asakura Smile1 = "Sprites/Asakura/AsakuraSmile1.png"
     image Asakura Smile2 = "Sprites/Asakura/AsakuraSmile2.png"
     image Asakura Sup1 = "Sprites/Asakura/AsakuraSurprise1.png"
@@ -168,6 +171,7 @@ label start:
     play sound "SE/DunDun.wav"
     "Standing perfectly straight, hands at his sides, he closed his eyes, and began speaking in his best faux movie announcer voice-over."
     play sound "SE/Sizzle2.wav"
+    show Skinsuit at right with dissolve
     "\"Skinsuit active,\" as something that looked like nothing so much as black paint suddenly engulfed his entire body beneath his uniform."
     nvl clear
     play sound "SE/NanoRepair.wav"
@@ -192,10 +196,13 @@ label start:
     "He pulled a fifty centimeter long glittering metal cylinder from within the greatcoat, releasing it to spin on its axis in midair to one side, announcing, \"Long range precision and high yield weaponry is at full charge.\""
     play sound "SE/Barrier2.wav"
     show Kyon Ser2 Bright at right
+    show Skinsuit Bright at right
     show field at right with dissolve
     pause .1
-    hide field at right with dissolve
-    show Kyon Ser2 at right with dissolve
+    hide field at right
+    show Kyon Ser2 at right
+    show Skinsuit at right
+    with dissolve
    # show Barrier with irisoutfast
    # hide Barrier with dissolve    
     "A circle of light appeared on the floor around him, a simple white ring with glittering sparks chasing around in either direction, sending brilliant flashes to streak upwards."
@@ -233,6 +240,7 @@ label start:
     "She pouted, but did as she was told, the ring of light reappearing on the floor around her this time."
     nvl clear
     hide Kyon Ser2
+    hide Skinsuit
     hide Haruhi Pout1
     play sound "SE/footsteps5.wav" 
     pause 5
@@ -254,6 +262,7 @@ label start:
     nvl clear
     show Asakura Frown1 at left
     show Kyon Ang1 at right
+    show Skinsuit at right
     "\"Long time no see,\" he said, switching stance to the long-sword style, Ni-Ten Ichi Ryu."
     show Asakura Frown2 at left
     "\"Um.... Hm. This is different. You've certainly changed, Kyon-kun.\""
