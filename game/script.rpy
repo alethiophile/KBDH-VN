@@ -34,6 +34,9 @@ init:
     image Skinsuit = "Sprites/Kyon/KyonSkinsuitTemplate.png"
     image Skinsuit Bright = im.MatrixColor("Sprites/Kyon/KyonSkinsuitTemplate.png",
                                        im.matrix.brightness(.5))
+    image Coat Bright = im.MatrixColor("Sprites/Kyon/KyonCoat.png",
+                                       im.matrix.brightness(.5))
+    image Coat = "Sprites/Kyon/KyonCoat.png"
     image Asakura Smile1 = "Sprites/Asakura/AsakuraSmile1.png"
     image Asakura Smile2 = "Sprites/Asakura/AsakuraSmile2.png"
     image Asakura Sup1 = "Sprites/Asakura/AsakuraSurprise1.png"
@@ -49,6 +52,8 @@ init:
         irisoutfast = CropMove(0.2, "irisout")
         slowfadein = Fade(0.5, 0.5, 5)
         wipeleftfast = CropMove(0.3, "wipeleft")
+        wipeupslow = CropMove(2, "wipeup")
+        teleport = ImageDissolve("id_teleport.png", 1.0, 0)
         menu = nvl_menu
         style.nvl_window.background = "nvl_window.png"
         style.nvl_window.xpadding = 55
@@ -171,7 +176,7 @@ label start:
     play sound "SE/DunDun.wav"
     "Standing perfectly straight, hands at his sides, he closed his eyes, and began speaking in his best faux movie announcer voice-over."
     play sound "SE/Sizzle2.wav"
-    show Skinsuit at right with wipeup
+    show Skinsuit at right with wipeupslow
     "\"Skinsuit active,\" as something that looked like nothing so much as black paint suddenly engulfed his entire body beneath his uniform."
     nvl clear
     play sound "SE/NanoRepair.wav"
@@ -179,6 +184,7 @@ label start:
     nvl clear
     #WTB Custom Greatcoat sprite. =D
     play sound "SE/CloakOff.wav"
+    show Coat at right with teleport
     "\"Greatcoat thermoptic and tactile stealth disengaged,\" as a knee-length tan greatcoat coalesced, covering his shoulders with a thick mantle."
     show Haruhi Hap3 at left
     "\"Doesn't that get hot?\" Her smile had only grown, her eyes shining with anticipation."
@@ -197,11 +203,13 @@ label start:
     play sound "SE/Barrier2.wav"
     show Kyon Ser2 Bright at right
     show Skinsuit Bright at right
+    show Coat Bright at right
     show field at right with dissolve
     pause .1
     hide field at right
     show Kyon Ser2 at right
     show Skinsuit at right 
+    show Coat at right
     with dissolve
    # show Barrier with irisoutfast
    # hide Barrier with dissolve    
@@ -241,6 +249,7 @@ label start:
     nvl clear
     hide Kyon Ser2
     hide Skinsuit
+    hide Coat
     hide Haruhi Pout1
     play sound "SE/footsteps5.wav" 
     pause 5
@@ -263,6 +272,7 @@ label start:
     show Asakura Frown1 at left
     show Kyon Ang1 at right
     show Skinsuit at right
+    show Coat at right
     "\"Long time no see,\" he said, switching stance to the long-sword style, Ni-Ten Ichi Ryu."
     show Asakura Frown2 at left
     "\"Um.... Hm. This is different. You've certainly changed, Kyon-kun.\""
