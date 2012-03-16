@@ -159,7 +159,7 @@ label start:
     #$ nvl_erase()
     show Kyon Sigh2 at right
    # nvl clear
-    extend "But you come up with the excuse for class.\""
+    extend "\"But you come up with the excuse for class.\""
     nvl clear
     show Haruhi Hap4 at left
     "\"Student council president,\" she said without hesitation. \"Blame him.\""
@@ -282,7 +282,7 @@ label start:
     nvl clear
     show Kyon Ser2 at right
     "\"That's funny, Asakura-san, because you haven't.\""
-    
+    stop music fadeout 1
     scene black with fade
     #nvl clear
     #"Haruhi bounced on her heels with a wide grin, holding Kyon's cell phone in both hands as she remained in the center of the glowing circle."
