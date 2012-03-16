@@ -2,3 +2,6 @@
 game/bytecode.rpyb
 game/*.rpyc
 *~
+
+/game/Sprites/Kyon/KyonSkinsuitTemplate.sai
+/game/Sprites/Kyon/KyonCostumeTemplate.sai
