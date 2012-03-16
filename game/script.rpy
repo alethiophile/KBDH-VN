@@ -107,7 +107,7 @@ label start:
     hide Haruhi
     hide Kyon 
     
-    #pause 1.0
+    pause .5
     nvl clear
     scene bg stairwell with fade:
         size (800,600)
@@ -133,10 +133,10 @@ label start:
     show Haruhi Ang1 at left
     "\"What is it?\" she asked, when he spent a long minute studying the screen."
     show Kyon Neutral1 at right
-    "\"Maybe a false alarm,\" he admitted, shifting his shoulders.{nw}"
+    "\"Maybe a false alarm,\" he admitted, shifting his shoulders.{nw} "
     #$ nvl_erase()
     show Kyon Ang1 at right
-    extend "\" Are you messing with me?\""   
+    extend "\"Are you messing with me?\""   
     show Haruhi Ang2 at left
     "\"I should be asking you that! But whatever! You hauled me all the way out here—by my shirt, I might add!—so tongues are going to wag! If you're going to do this, then you know what I want!\""
     show Haruhi Hap1 at left
@@ -159,20 +159,23 @@ label start:
     #$ nvl_erase()
     show Kyon Sigh2 at right
    # nvl clear
+<<<<<<< HEAD
     extend "\"But you come up with the excuse for class.\""
+=======
+    extend " \"But you come up with the excuse for class.\""
+>>>>>>> 7593e1a1e05e61a4d5274bb87ef00b6784960924
     nvl clear
     show Haruhi Hap4 at left
     "\"Student council president,\" she said without hesitation. \"Blame him.\""
     show Kyon Sigh2 at right
     "\"Ahem,\" he coughed, shooting her a dark look.{nw}"
-    $ nvl_erase()
+    #$ nvl_erase()
     show Kyon Ser1 at right
     stop music fadeout 1
-    "\"Ahem,\" he coughed, shooting her a dark look. {fast}\"Take a step back, I don't want to catch you in the interdiction field again.\""
+    extend " \"Take a step back, I don't want to catch you in the interdiction field again.\""
     show Haruhi Hap4 at left
     "She nodded and stepped backwards, against the wall."
-    nvl clear 
-    #This is where all the sound and special effects go!
+    nvl clear
     play music "music/YukiAsakuraFight.mp3" fadein 1
     show Kyon Ser2 at right
     pause 1
