@@ -134,9 +134,9 @@ label start:
     "\"What is it?\" she asked, when he spent a long minute studying the screen."
     show Kyon Neutral1 at right
     "\"Maybe a false alarm,\" he admitted, shifting his shoulders.{nw}"
-    $ nvl_erase()
-    "\"Maybe a false alarm,\" he admitted, shifting his shoulders. {fast}\"Are you messing with me?\""
+    #$ nvl_erase()
     show Kyon Ang1 at right
+    extend "\" Are you messing with me?\""   
     show Haruhi Ang2 at left
     "\"I should be asking you that! But whatever! You hauled me all the way out here—by my shirt, I might add!—so tongues are going to wag! If you're going to do this, then you know what I want!\""
     show Haruhi Hap1 at left
@@ -156,10 +156,11 @@ label start:
     "\"Do that voice, too! You know the one? Like from a movie voice-over guy? I love that! Do it! Come on!\""
     show Kyon Ser1 at right
     "\"Fine,\" he grumbled.{nw}"
-    $ nvl_erase()
+    #$ nvl_erase()
     show Kyon Sigh2 at right
+   # nvl clear
+    extend "But you come up with the excuse for class.\""
     nvl clear
-    "\"Fine,\" he grumbled. {fast}\"But you come up with the excuse for class.\""
     show Haruhi Hap4 at left
     "\"Student council president,\" she said without hesitation. \"Blame him.\""
     show Kyon Sigh2 at right
