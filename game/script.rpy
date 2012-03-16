@@ -55,8 +55,8 @@ init:
         wipeleftfast = CropMove(0.3, "wipeleft")
         wipeupslow = CropMove(2, "wipeup")
         teleport = ImageDissolve("id_teleport.png", 1.0, 0)
-        coatin = ImageDissolve("clouds.png", 1.0, 0)
-        coatout = ImageDissolve("clouds.png", 1.0, 0, reverse=True)
+        coatin = ImageDissolve("id_clouds.png", 1.0, 0)
+        coatout = ImageDissolve("id_clouds.png", 1.0, 0, reverse=True)
         menu = nvl_menu
         style.nvl_window.background = "nvl_window.png"
         style.nvl_window.xpadding = 55
@@ -106,7 +106,6 @@ label start:
 
     hide Haruhi
     hide Kyon 
-    with fade    
     
     #pause 1.0
     nvl clear
@@ -187,7 +186,7 @@ label start:
     nvl clear
     #WTB Custom Greatcoat sprite. =D
     play sound "SE/CloakOff.wav"
-    show Coat at right with teleport
+    show Coat at right with coatin
     "\"Greatcoat thermoptic and tactile stealth disengaged,\" as a knee-length tan greatcoat coalesced, covering his shoulders with a thick mantle."
     show Haruhi Hap3 at left
     "\"Doesn't that get hot?\" Her smile had only grown, her eyes shining with anticipation."
