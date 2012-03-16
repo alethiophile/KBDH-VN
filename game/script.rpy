@@ -159,11 +159,7 @@ label start:
     #$ nvl_erase()
     show Kyon Sigh2 at right
    # nvl clear
-<<<<<<< HEAD
-    extend "\"But you come up with the excuse for class.\""
-=======
     extend " \"But you come up with the excuse for class.\""
->>>>>>> 7593e1a1e05e61a4d5274bb87ef00b6784960924
     nvl clear
     show Haruhi Hap4 at left
     "\"Student council president,\" she said without hesitation. \"Blame him.\""
