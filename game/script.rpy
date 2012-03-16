@@ -1,6 +1,7 @@
 ﻿# This is a proof-of-concept K:BDH VN.
 
 init:    
+
     image bg classroom = "Backgrounds/classroom.jpg"
     image bg hallway = "Backgrounds/hallway.png"
     image bg stairwell = "Backgrounds/stairwell.jpg"
@@ -54,6 +55,8 @@ init:
         wipeleftfast = CropMove(0.3, "wipeleft")
         wipeupslow = CropMove(2, "wipeup")
         teleport = ImageDissolve("id_teleport.png", 1.0, 0)
+        coatin = ImageDissolve("clouds.png", 1.0, 0)
+        coatout = ImageDissolve("clouds.png", 1.0, 0, reverse=True)
         menu = nvl_menu
         style.nvl_window.background = "nvl_window.png"
         style.nvl_window.xpadding = 55
@@ -105,7 +108,7 @@ label start:
     hide Kyon 
     with fade    
     
-    pause 1.0
+    #pause 1.0
     nvl clear
     scene bg stairwell with fade:
         size (800,600)
