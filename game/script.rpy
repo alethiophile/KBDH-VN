@@ -68,7 +68,7 @@ init:
 
 label start:
     scene title with slowfadein
-    
+    play sound "SE/Pageflip3.wav" 
     pause
     
 
