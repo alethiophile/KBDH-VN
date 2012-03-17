@@ -168,15 +168,15 @@ label start:
     pause 1
     play sound "SE/DunDun.wav"
     "Standing perfectly straight, hands at his sides, he closed his eyes, and began speaking in his best faux movie announcer voice-over."
-    "\"Skinsuit active,{nw}\""
+    "\"Skinsuit active,{nw}\" "
     play sound "SE/Sizzle2.wav"
     show Skinsuit at right with wipeupslow
-    extend"as something that looked like nothing so much as black paint suddenly engulfed his entire body beneath his uniform."
+    extend "as something that looked like nothing so much as black paint suddenly engulfed his entire body beneath his uniform."
     nvl clear
     play sound "SE/NanoRepair.wav"
     "\"Gravimetric stabilizers and secondary gyrometrics online,\" as ridged metal studs appeared on the back of each knuckle, and beneath his uniform pants, metallic vertical rails were described in the skinsuit."
     nvl clear
-    "\"Greatcoat thermoptic stealth disengaged,{nw}\""
+    "\"Greatcoat thermoptic stealth disengaged,{nw}\" "
     play sound "SE/CloakOff.wav"
     show Coat at right with coatin
     extend "as a knee-length tan greatcoat coalesced, covering his shoulders with a thick mantle."
@@ -219,8 +219,7 @@ label start:
     show Kyon Ang1 at right
     "He broke off suddenly, scowling. \"Okay,\" he said in his normal voice. \"My mistake. We've got incoming.\""
     show Haruhi Hap4 at left
-    "\"God damn it Kyon, you're so cool when you do this,\" Haruhi gushed, clapping her hands together.{nw}"
-    extend "\"What is it?\""
+    "\"God damn it Kyon, you're so cool when you do this,\" Haruhi gushed, clapping her hands together. \"What is it?\""
     nvl clear
     show Kyon Neutral1 at right
     "\"I'm not sure,\" he said, as a cold, familiar chuckle echoed."
@@ -237,10 +236,10 @@ label start:
     show Haruhi Pout1 at left with dissolve
     "She pouted, but did as she was told, the ring of light reappearing on the floor around her this time."
     nvl clear
-    hide Kyon Ser2
+    hide Kyon 
     hide Skinsuit
     hide Coat
-    hide Haruhi Pout1
+    hide Haruhi
     play sound "SE/footsteps5.wav" 
     #$ renpy.pause(5, hard=True)
     pause 5
@@ -254,7 +253,7 @@ label start:
     show Asakura Sup1 at center
     play sound "SE/saberon.wav"
     show Bluesword with wipeupfast
-    pause (1)
+    pause 1
     hide Bluesword with dissolve
     "The school bell chimed just as she rounded the landing, and he activated the beam saber. The blade made a crackling, whirring buzz and shed a soft, pale blue light."
     show Asakura Frown1 at center

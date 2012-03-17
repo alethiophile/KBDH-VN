@@ -200,7 +200,7 @@ init -1 python hide:
     ## - A file name relative to the base directory, which is opened in a
     ##   web browser.
     ## - None, to disable help.   
-    config.help = "README.html"
+    config.help = "playing.html"
 
 
     #########################################
