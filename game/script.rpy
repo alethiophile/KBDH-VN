@@ -68,9 +68,9 @@ init:
 
 label start:
     scene title with slowfadein
-    play sound "SE/Pageflip3.wav" 
-    pause
     
+    pause
+    play sound "SE/Pageflip3.wav" 
 
     nvl clear
     scene bg classroom with fade:
