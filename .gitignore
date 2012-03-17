@@ -2,6 +2,7 @@
 game/bytecode.rpyb
 game/*.rpyc
 *~
+/launcherinfo.py
 
 /game/Sprites/Kyon/KyonSkinsuitTemplate.sai
 /game/Sprites/Kyon/KyonCostumeTemplate.sai
