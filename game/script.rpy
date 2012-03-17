@@ -187,7 +187,7 @@ label start:
     #WTB Custom Greatcoat sprite. =D
     play sound "SE/CloakOff.wav"
     show Coat at right with coatin
-    "\"Greatcoat thermoptic and tactile stealth disengaged,\" as a knee-length tan greatcoat coalesced, covering his shoulders with a thick mantle."
+    "\"Greatcoat thermoptic stealth disengaged,\" as a knee-length tan greatcoat coalesced, covering his shoulders with a thick mantle."
     show Haruhi Hap3 at left
     "\"Doesn't that get hot?\" Her smile had only grown, her eyes shining with anticipation."
     nvl clear
