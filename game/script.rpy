@@ -8,7 +8,7 @@ init:
     image white = "#ffffff"
     image black = "#000000"
     image yukibackground = "#ccccff"
-    image title = "Backgrounds/title1.png"
+    image title0 = "Backgrounds/title0.png"
     image Barrier = "Backgrounds/barrier2.jpg"
     image Bluesword = "Backgrounds/bluesword1.png"
     image field = "Sprites/InterdictionField.png"
@@ -67,7 +67,7 @@ init:
         config.window_show_transition = dissolve
 
 label start:
-    scene title with slowfadein
+    scene title0 with slowfadein
     
     pause
     play sound "SE/Pageflip3.wav" 
@@ -168,16 +168,18 @@ label start:
     pause 1
     play sound "SE/DunDun.wav"
     "Standing perfectly straight, hands at his sides, he closed his eyes, and began speaking in his best faux movie announcer voice-over."
+    "\"Skinsuit active,{nw}\""
     play sound "SE/Sizzle2.wav"
     show Skinsuit at right with wipeupslow
-    "\"Skinsuit active,\" as something that looked like nothing so much as black paint suddenly engulfed his entire body beneath his uniform."
+    extend"as something that looked like nothing so much as black paint suddenly engulfed his entire body beneath his uniform."
     nvl clear
     play sound "SE/NanoRepair.wav"
     "\"Gravimetric stabilizers and secondary gyrometrics online,\" as ridged metal studs appeared on the back of each knuckle, and beneath his uniform pants, metallic vertical rails were described in the skinsuit."
     nvl clear
+    "\"Greatcoat thermoptic stealth disengaged,{nw}\""
     play sound "SE/CloakOff.wav"
     show Coat at right with coatin
-    "\"Greatcoat thermoptic stealth disengaged,\" as a knee-length tan greatcoat coalesced, covering his shoulders with a thick mantle."
+    extend "as a knee-length tan greatcoat coalesced, covering his shoulders with a thick mantle."
     show Haruhi Hap3 at left
     "\"Doesn't that get hot?\" Her smile had only grown, her eyes shining with anticipation."
     nvl clear
@@ -218,9 +220,7 @@ label start:
     "He broke off suddenly, scowling. \"Okay,\" he said in his normal voice. \"My mistake. We've got incoming.\""
     show Haruhi Hap4 at left
     "\"God damn it Kyon, you're so cool when you do this,\" Haruhi gushed, clapping her hands together.{nw}"
-    $ nvl_erase()
-    show Haruhi Hap4 at left
-    "\"God damn it Kyon, you're so cool when you do this,\" Haruhi gushed, clapping her hands together. {fast}\"What is it?\""
+    extend "\"What is it?\""
     nvl clear
     show Kyon Neutral1 at right
     "\"I'm not sure,\" he said, as a cold, familiar chuckle echoed."
