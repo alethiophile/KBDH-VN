@@ -242,7 +242,7 @@ init -1 python hide:
     ## stored. (It needs to be set early, before any other init code
     ## is run, so the persisten information can be found by the init code.)
 python early:
-    config.save_directory = "K:BDH-1331158241"
+    config.save_directory = "KBDH"
 
 init -1 python hide:
     #########################################
