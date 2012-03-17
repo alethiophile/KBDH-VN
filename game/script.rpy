@@ -10,7 +10,7 @@ init:
     image yukibackground = "#ccccff"
     image title = "Backgrounds/title1.png"
     image Barrier = "Backgrounds/barrier2.jpg"
-    image Bluesword = "Backgrounds/bluesword0.jpg"
+    image Bluesword = "Backgrounds/bluesword1.png"
     image field = "Sprites/InterdictionField.png"
     image Haruhi Sup1 = "Sprites/Haruhi/HaruhiSideSurprised1.png"
     image Haruhi Ang1 = "Sprites/Haruhi/HaruhiSideAngry1.png"
@@ -54,6 +54,7 @@ init:
         slowfadein = Fade(0.5, 0.5, 5)
         wipeleftfast = CropMove(0.3, "wipeleft")
         wipeupslow = CropMove(2, "wipeup")
+        wipeupfast = CropMove(0.3, "wipeup")
         teleport = ImageDissolve("id_teleport.png", 1.0, 0)
         coatin = ImageDissolve("id_clouds.png", 1.0, 0)
         coatout = ImageDissolve("id_clouds.png", 1.0, 0, reverse=True)
@@ -102,7 +103,7 @@ label start:
     scene bg hallway with None:
         xanchor .5 yanchor .5
         xpos .5 ypos .5
-        linear .3 rotate 360
+        linear .5 rotate 360
 
     hide Haruhi
     hide Kyon 
@@ -264,7 +265,7 @@ label start:
     "\"It's been a while, hasn't it?\""
     show Asakura Sup1 at center
     play sound "SE/saberon.wav"
-    show Bluesword with wipeleftfast
+    show Bluesword with wipeupfast
     pause (1)
     hide Bluesword with dissolve
     "The school bell chimed just as she rounded the landing, and he activated the beam saber. The blade made a crackling, whirring buzz and shed a soft, pale blue light."
