@@ -8,7 +8,7 @@ init:
     image white = "#ffffff"
     image black = "#000000"
     image yukibackground = "#ccccff"
-    image title = "Backgrounds/title1.png"
+    image title = "Backgrounds/title0.png"
     image Barrier = "Backgrounds/barrier2.jpg"
     image Bluesword = "Backgrounds/bluesword1.png"
     image field = "Sprites/InterdictionField.png"
