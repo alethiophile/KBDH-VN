@@ -181,7 +181,7 @@ screen main_menu:
     window:
         style "mm_root"
 
-    # The main menu buttons.
+    # The main menu buttons."
     frame:
         style_group "mm"
         xalign .98

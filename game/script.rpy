@@ -65,8 +65,10 @@ init:
         config.empty_window = nvl_show_core
         config.window_hide_transition = dissolve
         config.window_show_transition = dissolve
+        renpy.music.set_volume(0.2, .5, channel="music")
 
 label start:
+    stop music fadeout 1
     scene title0 with slowfadein
     
     pause
