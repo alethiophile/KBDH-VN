@@ -7,6 +7,8 @@ init:
     image bg stairwell = "Backgrounds/stairwell.jpg"
     image bg stairwellbarrier = "Backgrounds/stairwellbarrier.jpg"
     image bg roof = "Backgrounds/roof.jpg"
+    image bg roofclose = "Backgrounds/roofclose.jpg"
+    image bg roofsky = "Backgrounds/roofsky.jpg"
     image white = "#ffffff"
     image black = "#000000"
     image yukibackground = "#ccccff"
@@ -351,10 +353,10 @@ label start:
     "\"Er,\" Asakura said, crossing her arms beneath her chest."
     show Asakura Frown2 at center
     "\"Evidently my information requires an update. I was sent to dispatch Kyon-kun, because he's become an undesirable element for my superiors.\""
-    show Asakura Sup1 at left
+    show Asakura Sup1 at center
     nvl clear
     "\"Really, I'd hoped to see a new state, maybe even provoke it with his death.\""
-    show Asakura Smile2 at left
+    show Asakura Smile2 at center
     "\"But, those toys seem to say that's already happened! So disappointing ... I suppose if I'd been more patient, I could see it anyway?\""
     show Kyon Sigh1 at right
     show Skinsuit at right
@@ -379,6 +381,8 @@ label start:
     "\"Skip the speeches -- if I don't know the complete back story, it's all meaningless to me. I think it's about time we get down to business, right?\""
     nvl clear
     hide Haruhi
+    stop music
+    play music "Music/AsakuraTheme.mp3" fadein 1
     scene bg stairwellbarrier with teleport:
         size (800,600)
     show Asakura Smile2 at center
@@ -431,6 +435,7 @@ label start:
     hide Haruhi
     hide Skinsuit
     hide Coat
+    scene bg roofclose
     show Asakura Sigh1 at center with wipeup
     "Asakura gave a pained sigh as she stepped through the jagged distortion between her controlled dataspace and the rooftop. "
     show Asakura Frown2 at center
@@ -441,6 +446,7 @@ label start:
     show Asakura Smile3 at center
     "She clapped her hands together before her and drew them apart, flinging a fan of dozens of identical knives outward."
     hide Asakura
+    scene bg roof with wiperight
     show Kyon Ang1 at right
     show Skinsuit at right
     show Coat at right
@@ -475,6 +481,7 @@ label start:
     nvl clear
     hide Haruhi
     hide Asakura
+    scene bg roofsky with fade
     play music "SE/lowwind.wav" 
     "The sensation of being hit with a force that would crush a mid-sized car into a work of modern art was not entirely new, but was without a doubt extremely unpleasant."
     "His skinsuit did what it could to distribute the kinetic force evenly across his body, so the crushing pain was at least perfectly uniform in infliction."
