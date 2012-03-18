@@ -294,16 +294,16 @@ label start:
     scene black with fade
     # The hardpause calls are necessary because otherwise Ren'py wants to skip over all the pause statements on a single press of the key.
     show Credits0 with dissolve
-    pause 5
+    pause
     $ renpy.pause(.1, hard=True)
     show Credits1 with dissolve
-    pause 5
+    pause
     $ renpy.pause(.1, hard=True)
     show Credits2 with dissolve
-    pause 5
+    pause
     $ renpy.pause(.1, hard=True)
     show Credits3 with dissolve
-    pause 5
+    pause
     
     # nvl clear
     # "Haruhi bounced on her heels with a wide grin, holding Kyon's cell phone in both hands as she remained in the center of the glowing circle."
