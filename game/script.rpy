@@ -5,6 +5,7 @@ init:
     image bg classroom = "Backgrounds/classroom.jpg"
     image bg hallway = "Backgrounds/hallway.png"
     image bg stairwell = "Backgrounds/stairwell.jpg"
+    image bg roof = "Backgrounds/roof.jpg"
     image white = "#ffffff"
     image black = "#000000"
     image yukibackground = "#ccccff"
@@ -397,7 +398,7 @@ label start:
     hide Coat
     with moveoutleft
     "Sparing no more time, he swept Haruhi up in one arm and dashed through the opening."
-    scene black with wiperight
+    scene bg roof with wiperight
     nvl clear
     "\"Waaah!\" she protested.{fast}\"Why are you running away!?\""
     show Haruhi Sup1 at left
@@ -408,6 +409,12 @@ label start:
     "\"Confined spaces,\"he answered, sliding to a halt in the middle of the roof and setting her down.{fast}\"Speed dial two again.\""
     nvl clear
     show Haruhi Pout1 at left
+    pause .4
+    show Haruhi Pout1 Bright at left
+    show field at left with dissolve
+    pause .1
+    hide field at left with dissolve
+    show Haruhi Pout1 at left with dissolve
     "\"Right, right,\" she mumbled, reactivating the circle of light."
     show Haruhi Quest1 at left
     "\"So, what's so great about this if she can just turn it off, anyway?\""
