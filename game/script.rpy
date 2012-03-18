@@ -354,7 +354,7 @@ label start:
     show Kyon Sigh2 at right
     show Skinsuit at right
     show Coat at right
-    "\"She's alien,\" Kyon volunteered.{nw}"
+    "\"She's alien,\" Kyon volunteered.{nw} "
     show Kyon Neutral2 at right
     extend "\"From the same place as Yuki-chan and Kimidori, but she tried to kill me once.\""
     show Haruhi Sup1 at left
@@ -376,10 +376,10 @@ label start:
     show Kyon Sigh1 at right
     show Skinsuit at right
     show Coat at right
-    "\"I personally like to see it as a lesson on the effects of randomly stabbing people,\" Kyon muttered."
+    "\"I personally like to see it as a lesson on the effects of {i}randomly stabbing people,{/i}\" Kyon muttered."
     nvl clear
     show Asakura Smile1 at center
-    "\"Oh, it wasn't random,\" she countered.{nw}"
+    "\"Oh, it wasn't random,\" she countered.{nw} "
     show Asakura Smile2 at center
     extend "\"It was highly specific! I put a whole two hours of thought into it, you know. For us, that's quite a while!\""
     show Kyon Ser2 at right
@@ -393,7 +393,7 @@ label start:
     show Haruhi Eyeroll1 at left
     "\"Blah blah blah,\" Haruhi muttered, crossing her arms over her chest and rolling her eyes."
     show Haruhi Ang1 at left
-    "\"Skip the speeches -- if I don't know the complete back story, it's all meaningless to me. I think it's about time we get down to business, right?\""
+    "\"Skip the speeches — if I don't know the complete back story, it's all meaningless to me. I think it's about time we get down to business, right?\""
     nvl clear
     hide Haruhi
     stop music
@@ -432,13 +432,13 @@ label start:
     "Sparing no more time, he swept Haruhi up in one arm and dashed through the opening."
     scene bg roof with wiperight
     nvl clear
-    "\"Waaah!\" she protested.{fast}\"Why are you running away!?\""
+    "\"Waaah!\" she protested.{fast} \"Why are you running away!?\""
     show Haruhi Sup1 at left
     show Kyon Ser1 at right
     show Skinsuit at right
     show Coat at right
     with moveinleft
-    "\"Confined spaces,\"he answered, sliding to a halt in the middle of the roof and setting her down.{fast}\"Speed dial two again.\""
+    "\"Confined spaces,\" he answered, sliding to a halt in the middle of the roof and setting her down.{fast} \"Speed dial two again.\""
     nvl clear
     show Haruhi Pout1 at left
     pause .4
@@ -453,9 +453,9 @@ label start:
     "\"So, what's so great about this if she can just turn it off, anyway?\""
     nvl clear
     show Kyon Ser1 at right
-    "\"It's a barrier and emergency help function,\"he answered, reactivating the beam saber and reassuming a defensive stance."
+    "\"It's a barrier and emergency help function,\" he answered, reactivating the beam saber and reassuming a defensive stance."
     show Kyon Ser2 at right
-    "\"Unless she seals this space off --{w=0.5} again -- {w=0.5}she can't disable it.\""
+    "\"Unless she seals this space off —{w=0.5} again — {w=0.5}she can't disable it.\""
     nvl clear
     hide Kyon 
     hide Haruhi
@@ -465,7 +465,7 @@ label start:
     show Asakura Sigh1 at center with wipeup
     "Asakura gave a pained sigh as she stepped through the jagged distortion between her controlled dataspace and the rooftop. "
     show Asakura Frown2 at center
-    "\"You shouldn't be able to manipulate data like that,\"she said reprovingly."
+    "\"You shouldn't be able to manipulate data like that,\" she said reprovingly."
     show Asakura Smile2 at center
     "\"I suppose that means it's time to stop holding back.\""
     nvl clear
