@@ -17,6 +17,9 @@ init:
     image Bluesword = "Backgrounds/bluesword1.png"
     image field = "Sprites/Effects/InterdictionField.png"
     image BarrierSmall = "Sprites/Effects/BarrierSmall.png"
+    image Knife1 = "Sprites/Effects/Knife1.png"
+    image Knife2 = "Sprites/Effects/Knife2.png"
+    image Knife3 = "Sprites/Effects/Knife3.png"
     image Haruhi Sup1 = "Sprites/Haruhi/HaruhiSideSurprised1.png"
     image Haruhi Ang1 = "Sprites/Haruhi/HaruhiSideAngry1.png"
     image Haruhi Ang2 = "Sprites/Haruhi/HaruhiSideAngry2.png"
@@ -71,6 +74,7 @@ init:
         irisoutfast = CropMove(0.2, "irisout")
         slowfadein = Fade(0.5, 0.5, 5)
         wipeleftfast = CropMove(0.3, "wipeleft")
+        wiperightfast = CropMove(0.3, "wiperight")
         wipeupslow = CropMove(2, "wipeup")
         wipeupfast = CropMove(0.3, "wipeup")
         teleport = ImageDissolve("id_teleport.png", 1.0, 0)
@@ -426,6 +430,7 @@ label start:
     "\"Right, right,\" she mumbled, reactivating the circle of light."
     show Haruhi Quest1 at left
     "\"So, what's so great about this if she can just turn it off, anyway?\""
+    nvl clear
     show Kyon Ser1 at right
     "\"It's a barrier and emergency help function,\"he answered, reactivating the beam saber and reassuming a defensive stance."
     show Kyon Ser2 at right
@@ -443,10 +448,24 @@ label start:
     show Asakura Smile2 at center
     "\"I suppose that means it's time to stop holding back.\""
     nvl clear
+    show Knife1 at center
+    play sound "SE/clink.wav"
+    play sound "SE/clink.wav"
+    pause (0.3)
+    show Knife2 at center
+    play sound "SE/clink.wav"
+    play sound "SE/clink.wav"
+    pause (0.3)
+    show Knife3 at center
+    play sound "SE/clink.wav"
+    play sound "SE/clink.wav"
+    pause (0.8)
+    play sound "SE/DunDun.wav"
     show Asakura Smile3 at center
     "She clapped her hands together before her and drew them apart, flinging a fan of dozens of identical knives outward."
     hide Asakura
-    scene bg roof with wiperight
+    play sound "SE/lowswoosh.wav"
+    scene bg roof with wiperightfast
     show Kyon Ang1 at right
     show Skinsuit at right
     show Coat at right
