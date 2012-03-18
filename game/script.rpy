@@ -44,6 +44,11 @@ init:
     image Asakura Frown1 = "Sprites/Asakura/AsakuraFrown1.png"
     image Asakura Frown2 = "Sprites/Asakura/AsakuraFrown2.png"
 
+    image Credits0 = "Backgrounds/credits0.png"
+    image Credits1 = "Backgrounds/credits1.png"
+    image Credits2 = "Backgrounds/credits2.png"
+    image Credits3 = "Backgrounds/credits3.png"
+
     python: # TODO: figure out a way to quickly switch on/off the window show/hide statements below.
         basechar = Character(None, kind=nvl)
         kyon = Character("Kyon", kind=basechar, color="#777755")
@@ -287,6 +292,18 @@ label start:
     "\"That's funny, Asakura-san, because you haven't.\""
     stop music fadeout 1
     scene black with fade
+    # The hardpause calls are necessary because otherwise Ren'py wants to skip over all the pause statements on a single press of the key.
+    show Credits0 with dissolve
+    pause 5
+    $ renpy.pause(.1, hard=True)
+    show Credits1 with dissolve
+    pause 5
+    $ renpy.pause(.1, hard=True)
+    show Credits2 with dissolve
+    pause 5
+    $ renpy.pause(.1, hard=True)
+    show Credits3 with dissolve
+    pause 5
     
     # nvl clear
     # "Haruhi bounced on her heels with a wide grin, holding Kyon's cell phone in both hands as she remained in the center of the glowing circle."
