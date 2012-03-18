@@ -354,7 +354,7 @@ label start:
     show Asakura Sup1 at center
     nvl clear
     "\"Really, I'd hoped to see a new state, maybe even provoke it with his death.\""
-    show Asakura Smile2 at center
+    show Asakura Smile2 at left
     "\"But, those toys seem to say that's already happened! So disappointing ... I suppose if I'd been more patient, I could see it anyway?\""
     show Kyon Sigh1 at right
     show Skinsuit at right
@@ -413,6 +413,7 @@ label start:
     nvl clear
     show Haruhi Pout1 at left
     pause .4
+    play sound "SE/Barrier1.wav"
     show Haruhi Pout1 Bright at left
     show field at left with dissolve
     pause .1
