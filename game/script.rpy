@@ -67,28 +67,22 @@ init:
         config.window_show_transition = dissolve
         renpy.music.set_volume(0.2, .5, channel="music")
 
-#begin slide_far_left
-transform slide_far_left:
-    xalign 0.0 yalign 1.0
-    linear 0.4 xalign -0.05
-#end slide_far_eft
-
-#far_left
-transform far_left:
-    xalign -0.05 yalign 1.0
-#end far_left
-
-#begin slide_right
-transform slide_right:
-    xalign -0.05 yalign 1.0
-    linear 0.2 xalign 0.1
-#end slide_right
-
 #begin slide_left
 transform slide_left:
     xalign 0.1 yalign 1.0
     linear 0.4 xalign 0.0
 #end slide_left
+
+#begin slide_right
+transform slide_right:
+    xalign 0.0 yalign 1.0
+    linear 0.1 xalign 0.1
+#end slide_right
+
+#begin center_left
+transform center_left:
+    xalign 0.1 yalign 1.0
+#end center_left
 
 label start:
     stop music fadeout 1
@@ -136,13 +130,13 @@ label start:
     "Her momentum carried her forward, resulting in him pressing one hand flat against her chest, just below her neck."
     "Her eyes quickly sharpened, her features fixed into a scowl."
     nvl clear
-    show Haruhi Ang3 at left
+    show Haruhi Ang3 at center_left
     "\"What the hell, Kyon!?\""
     show Kyon Ser1 at right
     "He held up one hand and said, \"Something's up.\""
-    show Haruhi Hap3 at left
+    show Haruhi Hap3 at center_left
     "Her irritation vanished instantly, replaced with wide-eyed excitement. She clapped her hands together and hopped from foot to foot."
-    show Haruhi Hap4 at left
+    show Haruhi Hap4 at center_left
     "\"Yes!\" she cheered. \"It's been so boring lately!\""
     nvl clear
     "\"This better not be your fault!\""
@@ -150,44 +144,45 @@ label start:
     "He shook his head in irritation, then patted his left coat pocket. Then right, then both pants pockets, then the back of each hand."
     "After that, he traced the fingertips of his right hand above his ear, eyes distant, and pulled his cell phone from one pocket."
     nvl clear
-    show Haruhi Ang1 at left
+    show Haruhi Ang1 at center_left
     "\"What is it?\" she asked, when he spent a long minute studying the screen."
     show Kyon Neutral1 at right
     "\"Maybe a false alarm,\" he admitted, shifting his shoulders.{nw} "
     show Kyon Ang1 at right
     extend "\"Are you messing with me?\""   
-    show Haruhi Ang2 at left
+    show Haruhi Ang2 at center_left
     "\"I should be asking you that! But whatever! You hauled me all the way out here—by my shirt, I might add!—so tongues are going to wag! If you're going to do this, then you know what I want!\""
-    show Haruhi Hap1 at left
+    show Haruhi Hap1 at center_left
     nvl clear
     show Kyon Sigh2 at right
     "\"Haruhi....\""
-    show Haruhi Hap2 at left
+    show Haruhi Hap2 at center_left
     "\"Do it!\" she said, bouncing on the balls of her feet in excitement. \"I want to see it!\""
     show Kyon Neutral2 at right
     "\"Is now really the time? Break's going to be over soon—\""
-    show Haruhi Hap3 at left
+    show Haruhi Hap3 at center_left
     "\"Get it out now! I want to see!\""
     nvl clear
     show Kyon Sigh1 at right
     "Heaving the sigh of the eternally doomed, he put his phone away and muttered underneath his breath."
-    show Haruhi Hap4 at left
+    show Haruhi Hap4 at center_left
     "\"Do that voice, too! You know the one? Like from a movie voice-over guy? I love that! Do it! Come on!\""
     show Kyon Ser1 at right
     "\"Fine,\" he grumbled.{nw}"
     show Kyon Sigh2 at right
     extend " \"But you come up with the excuse for class.\""
     nvl clear
-    show Haruhi Hap4 at left
+    show Haruhi Hap4 at center_left
     "\"Student council president,\" she said without hesitation. \"Blame him.\""
     show Kyon Sigh2 at right
     "\"Ahem,\" he coughed, shooting her a dark look.{nw}"
     show Kyon Ser1 at right
     stop music fadeout 1
     extend " \"Take a step back, I don't want to catch you in the interdiction field again.\""
-    show Haruhi Hap4 at left
+    show Haruhi Hap4 at center_left
     "She nodded and stepped backwards, against the wall."
-    show Haruhi Hap4 at slide_far_left
+    show Haruhi Hap4 at slide_left
+    pause 0.4
     nvl clear
     play music "music/YukiAsakuraFight.mp3" fadein 1
     show Kyon Ser2 at right
@@ -206,7 +201,7 @@ label start:
     play sound "SE/CloakOff.wav"
     show Coat at right with coatin
     extend "as a knee-length tan greatcoat coalesced, covering his shoulders with a thick mantle."
-    show Haruhi Hap3 at far_left
+    show Haruhi Hap3 at left
     "\"Doesn't that get hot?\" Her smile had only grown, her eyes shining with anticipation."
     nvl clear
     show Kyon Neutral2 at right
