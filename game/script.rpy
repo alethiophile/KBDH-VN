@@ -188,7 +188,7 @@ label start:
     pause 1
     play sound "SE/DunDun.wav"
     "Standing perfectly straight, hands at his sides, he closed his eyes, and began speaking in his best faux movie announcer voice-over."
-    "\"Skinsuit active,{nw}\" "
+    "\"Skinsuit active,\" "
     play sound "SE/Sizzle2.wav"
     show Skinsuit at right with wipeupslow
     extend "as something that looked like nothing so much as black paint suddenly engulfed his entire body beneath his uniform."
@@ -196,7 +196,7 @@ label start:
     play sound "SE/NanoRepair.wav"
     "\"Gravimetric stabilizers and secondary gyrometrics online,\" as ridged metal studs appeared on the back of each knuckle, and beneath his uniform pants, metallic vertical rails were described in the skinsuit."
     nvl clear
-    "\"Greatcoat thermoptic stealth disengaged,{nw}\" "
+    "\"Greatcoat thermoptic stealth disengaged,\" "
     play sound "SE/CloakOff.wav"
     show Coat at right with coatin
     extend "as a knee-length tan greatcoat coalesced, covering his shoulders with a thick mantle."
