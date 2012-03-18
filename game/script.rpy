@@ -11,7 +11,8 @@ init:
     image title0 = "Backgrounds/title0.png"
     image Barrier = "Backgrounds/barrier2.jpg"
     image Bluesword = "Backgrounds/bluesword1.png"
-    image field = "Sprites/InterdictionField.png"
+    image field = "Sprites/Effects/InterdictionField.png"
+    image BarrierSmall = "Sprites/Effects/BarrierSmall.png"
     image Haruhi Sup1 = "Sprites/Haruhi/HaruhiSideSurprised1.png"
     image Haruhi Ang1 = "Sprites/Haruhi/HaruhiSideAngry1.png"
     image Haruhi Ang2 = "Sprites/Haruhi/HaruhiSideAngry2.png"
@@ -23,6 +24,9 @@ init:
     image Haruhi Pout1 = "Sprites/Haruhi/HaruhiSidePout1.png"
     image Haruhi Pout1 Bright = im.MatrixColor("Sprites/Haruhi/HaruhiSidePout1.png",
                                        im.matrix.brightness(.5))
+    image Haruhi Eyeroll1 = "Sprites/Haruhi/HaruhiSideEyeroll1.png"
+    image Haruhi Quest1 = "Sprites/Haruhi/HaruhiSideQuestion1.png"
+    image Haruhi Grin1 = "Sprites/Haruhi/HaruhiSideGrin1.png"
     image Kyon Ser1 = "Sprites/Kyon/KyonSerious1.png"
     image Kyon Ser2 = "Sprites/Kyon/KyonSerious2.png"
     image Kyon Ser2 Bright = im.MatrixColor("Sprites/Kyon/KyonSerious2.png",
@@ -32,6 +36,7 @@ init:
     image Kyon Neutral1 = "Sprites/Kyon/KyonNeutral1.png"
     image Kyon Neutral2 = "Sprites/Kyon/KyonNeutral2.png"
     image Kyon Ang1 = "Sprites/Kyon/KyonAngry1.png"
+    image Kyon Pain1 = "Sprites/Kyon/KyonPained1.png"
     image Skinsuit = "Sprites/Kyon/KyonSkinsuitTemplate.png"
     image Skinsuit Bright = im.MatrixColor("Sprites/Kyon/KyonSkinsuitTemplate.png",
                                        im.matrix.brightness(.5))
@@ -40,9 +45,13 @@ init:
     image Coat = "Sprites/Kyon/KyonCoat.png"
     image Asakura Smile1 = "Sprites/Asakura/AsakuraSmile1.png"
     image Asakura Smile2 = "Sprites/Asakura/AsakuraSmile2.png"
+    image Asakura Smile3 = "Sprites/Asakura/AsakuraSmile3.png"
     image Asakura Sup1 = "Sprites/Asakura/AsakuraSurprise1.png"
     image Asakura Frown1 = "Sprites/Asakura/AsakuraFrown1.png"
     image Asakura Frown2 = "Sprites/Asakura/AsakuraFrown2.png"
+    image Asakura Frown3 = "Sprites/Asakura/AsakuraFrown3.png"
+    image Asakura Unhap1 = "Sprites/Asakura/AsakuraUnhappy1.png"
+    image Asakura Sigh1 = "Sprites/Asakura/AsakuraSigh1.png"
 
     image Credits0 = "Backgrounds/credits0.png"
     image Credits1 = "Backgrounds/credits1.png"
@@ -262,7 +271,6 @@ label start:
     hide Coat
     hide Haruhi
     play sound "SE/footsteps5.wav" 
-    #$ renpy.pause(5, hard=True)
     pause 5
     show Asakura Smile2 at center with wipeup
     pause 1
@@ -290,87 +298,182 @@ label start:
     nvl clear
     show Kyon Ser2 at right
     "\"That's funny, Asakura-san, because you haven't.\""
-    stop music fadeout 1
-    scene black with fade
-    # The hardpause calls are necessary because otherwise Ren'py wants to skip over all the pause statements on a single press of the key.
-    show Credits0 with dissolve
-    pause
-    $ renpy.pause(.1, hard=True)
-    show Credits1 with dissolve
-    pause
-    $ renpy.pause(.1, hard=True)
-    show Credits2 with dissolve
-    pause
-    $ renpy.pause(.1, hard=True)
-    show Credits3 with dissolve
-    pause
-    
-    # nvl clear
-    # "Haruhi bounced on her heels with a wide grin, holding Kyon's cell phone in both hands as she remained in the center of the glowing circle."
-    # "\"I knew it!\" she cheered.{fast}\"There was something off about Asakura! What is it?\""
-    # "\"Um...\" the onetime class representative said, frowning."
-    # "\"She's alien,\" Kyon volunteered.{fast}\"From the same place as Yuki-chan and Kimidori, but she tried to kill me once.\""
-    # "\"Whaaaat? What did you do to make her mad?\" Haruhi asked, looking at him in bemusement."
-    # nvl clear
-    # "\"Er,\" Asakura said, crossing her arms beneath her chest."
-    # "\"Evidently my information requires an update. I was sent to dispatch Kyon-kun, because he's become an undesirable element for my superiors.\""
-    # "\"Really, I'd hoped to see a new state, maybe even provoke it with his death.\""
-    # "\"But, those toys seem to say that's already happened! So disappointing ... I suppose if I'd been more patient, I could see it anyway?\""
-    # "\"I personally like to see it as a lesson on the effects of randomly stabbing people,\" Kyon muttered."
-    # nvl clear
-    # "\"Oh, it wasn't random,\" she countered.{fast}\"It was highly specific! I put a whole two hours of thought into it, you know. For us, that's quite a while!\""
-    # "\"I'm touched,\" he said dryly."
-    # nvl clear
-    # "\"Blah blah blah,\" Haruhi muttered, crossing her arms over her chest and rolling her eyes."
-    # "\"Skip the speeches -- if I don't know the complete back story, it's all meaningless to me. I think it's about time we get down to business, right?\""
-    # nvl clear
-    # "\"Happy to oblige!\" Asakura said brightly, as their surroundings pulsed, the window turning into a gunmetal gray steel barrier, strange patterns coalescing across the walls."
-    # "The circle on the floor around Haruhi abruptly winked out."
-    # nvl clear
-    # "\"Now, I've converted the entire space of this stairwell into-\""
-    # "Kyon spun on one foot, crying out with a great, \"Ki-yah!\" and kicking the door halfway across the roof."
-    # "Sparing no more time, he swept Haruhi up in one arm and dashed through the opening."
-    # nvl clear
-    # "\"Waaah!\" she protested.{fast}\"Why are you running away!?\""
-    # "\"Confined spaces,\"he answered, sliding to a halt in the middle of the roof and setting her down.{fast}\"Speed dial two again.\""
-    # nvl clear
-    # "\"Right, right,\" he mumbled, reactivating the circle of light."
-    # "\"So, what's so great about this if she can just turn it off, anyway?\""
-    # "\"It's a barrier and emergency help function,\"he answered, reactivating the beam saber and reassuming a defensive stance."
-    # "\"Unless she seals this space off --{w=0.5} again -- {w=0.5}she can't disable it.\""
-    # nvl clear
-    # "Asakura gave a pained sigh as she stepped through the jagged distortion between her controlled dataspace and the rooftop. "
-    # "\"You shouldn't be able to manipulate data like that,\"she said reprovingly."
-    # "\"I suppose that means it's time to stop holding back.\""
-    # nvl clear
-    # "She clapped her hands together before her and drew them apart, flinging a fan of dozens of identical knives outward."
-    # "Kyon maintained his guard position, his free hand already clenched into a fist, the metal ridges of his skinsuit facing outward."
-    # nvl clear
-    # "The knives adjusted their course, most homing in on him to suddenly be halted by a semi-circular barrier of glowing blue force before shattering into nothingness, but a handful stopping suddenly in the space over the circle around Haruhi."
-    # nvl clear
-    # "He opened his mouth to retort, but Asakura was already within his guard, driving yet another blade into his stomach."
-    # "The inner carbon-nano-weave of the greatcoat and the force field of the skinsuit beneath it converted the stabbing force into a distributed shock wave, so instead of being pierced, Kyon was merely hit with the force of a speeding minivan, flying clear across the roof with a choked grunt."
-    # nvl clear
-    # "\"In the end,\" Asakura remarked, watching his form tumble off the edge of the school building,{fast}\"all those toys are pretty silly if you don't actually know how to use them.\""
-    # "\"You have to give him credit, though,\" Haruhi said, peering very closely at the knives frozen over her barrier, not even glancing back to where Kyon had vanished."
-    # "\"He comes up with one hell of a distraction ploy, doesn't he?\""
-    # nvl clear
-    # "The blue-haired interface cocked her head to one side, blinking."
     # stop music fadeout 1
-    # "\"What?\""
-    # nvl clear
-    # play music "SE/lowwind.wav" 
-    # "The sensation of being hit with a force that would crush a mid-sized car into a work of modern art was not entirely new, but was without a doubt extremely unpleasant."
-    # "His skinsuit did what it could to distribute the kinetic force evenly across his body, so the crushing pain was at least perfectly uniform in infliction."
-    # "The balancing gizmos gave up the ghost on keeping him upright, and struggled to guarantee he wouldn't land wherever he flew head-first."
-    # "His gravity manipulation defenses all strained to bleed the inertia of his impact off without even more pain, but the end result was that he didn't slow appreciably until after he passed the edge of the five story rooftop."
-    # nvl clear
-    # "Not what he'd hoped for by a long shot."
-    # "All of the \"toys\" would keep him mobile, even if he was afraid he'd need to be poured out of the skinsuit when it was over."
-    # "He'd have to beg Nagato or Haruhi to help him out and repair things later, but there was just too damn much to keep track of with all the attack vectors, defensive capabilities...."
-    # nvl clear
-    # "\"It started off such a nice day, too,\" he mumbled, as his forward momentum was arrested and he began the downward plummet in earnest."
-    # "How had it come to this, anyway...?"
+    # scene black with fade
+    # # The hardpause calls are necessary because otherwise Ren'py wants to skip over all the pause statements on a single press of the key.
+    # show Credits0 with dissolve
+    # pause
+    # $ renpy.pause(.1, hard=True)
+    # show Credits1 with dissolve
+    # pause
+    # $ renpy.pause(.1, hard=True)
+    # show Credits2 with dissolve
+    # pause
+    # $ renpy.pause(.1, hard=True)
+    # show Credits3 with dissolve
+    # pause
+#     
+    nvl clear
+    hide Asakura
+    show Kyon Ser2 at right
+    show Skinsuit at right
+    show Coat at right
+    show Haruhi Hap3 at left
+    "Haruhi bounced on her heels with a wide grin, holding Kyon's cell phone in both hands as she remained in the center of the glowing circle."
+    show Haruhi Hap4 at left
+    "\"I knew it!\" she cheered.{nw}"
+    show Haruhi Hap1 at left
+    extend "\"There was something off about Asakura! What is it?\""
+    nvl clear
+    hide Kyon
+    hide Coat
+    hide Skinsuit
+    hide Haruhi
+    show Asakura Unhap1 at center
+    "\"Um...\" the onetime class representative said, frowning."
+    hide Asakura
+    show Kyon Sigh2 at right
+    show Skinsuit at right
+    show Coat at right
+    "\"She's alien,\" Kyon volunteered.{nw}"
+    show Kyon Neutral2 at right
+    extend "\"From the same place as Yuki-chan and Kimidori, but she tried to kill me once.\""
+    show Haruhi Sup1 at left
+    "\"Whaaaat? What did you do to make her mad?\" Haruhi asked, looking at him in bemusement."
+    nvl clear
+    hide Kyon
+    hide Coat
+    hide Skinsuit
+    hide Haruhi
+    show Asakura Frown3 at center
+    "\"Er,\" Asakura said, crossing her arms beneath her chest."
+    show Asakura Frown2 at center
+    "\"Evidently my information requires an update. I was sent to dispatch Kyon-kun, because he's become an undesirable element for my superiors.\""
+    show Asakura Sup1 at center
+    nvl clear
+    "\"Really, I'd hoped to see a new state, maybe even provoke it with his death.\""
+    show Asakura Smile2 at center
+    "\"But, those toys seem to say that's already happened! So disappointing ... I suppose if I'd been more patient, I could see it anyway?\""
+    show Kyon Sigh1 at right
+    show Skinsuit at right
+    show Coat at right
+    "\"I personally like to see it as a lesson on the effects of randomly stabbing people,\" Kyon muttered."
+    nvl clear
+    show Asakura Smile1 at center
+    "\"Oh, it wasn't random,\" she countered.{nw}"
+    show Asakura Smile2 at center
+    extend "\"It was highly specific! I put a whole two hours of thought into it, you know. For us, that's quite a while!\""
+    show Kyon Ser2 at right
+    "\"I'm touched,\" he said dryly."
+    nvl clear
+    show Asakura Smile1 at center
+    hide Kyon
+    hide Coat
+    hide Skinsuit
+    hide Asakura
+    show Haruhi Eyeroll1 at left
+    "\"Blah blah blah,\" Haruhi muttered, crossing her arms over her chest and rolling her eyes."
+    show Haruhi Ang1 at left
+    "\"Skip the speeches -- if I don't know the complete back story, it's all meaningless to me. I think it's about time we get down to business, right?\""
+    nvl clear
+    scene Barrier with irisout
+    show Asakura Smile2 at center
+    "\"Happy to oblige!\" Asakura said brightly, as their surroundings pulsed, the window turning into a gunmetal gray steel barrier, strange patterns coalescing across the walls."
+    "The circle on the floor around Haruhi abruptly winked out."
+    nvl clear
+    "\"Now, I've converted the entire space of this stairwell into-\""
+    "Kyon spun on one foot, crying out with a great, \"Ki-yah!\" and kicking the door halfway across the roof."
+    hide Asakura
+    show Haruhi Sup1 at left
+    pause (.01)
+    show Kyon Ser1 at left
+    show Skinsuit at left
+    show Coat at left
+    with moveinright
+    pause (0.5)
+    hide Kyon
+    hide Haruhi
+    hide Skinsuit
+    hide Coat
+    with moveoutleft
+    "Sparing no more time, he swept Haruhi up in one arm and dashed through the opening."
+    scene black with wiperight
+    nvl clear
+    "\"Waaah!\" she protested.{fast}\"Why are you running away!?\""
+    show Haruhi Sup1 at left
+    show Kyon Ser1 at right
+    show Skinsuit at right
+    show Coat at right
+    with moveinleft
+    "\"Confined spaces,\"he answered, sliding to a halt in the middle of the roof and setting her down.{fast}\"Speed dial two again.\""
+    nvl clear
+    show Haruhi Pout1 at left
+    "\"Right, right,\" she mumbled, reactivating the circle of light."
+    show Haruhi Quest1 at left
+    "\"So, what's so great about this if she can just turn it off, anyway?\""
+    show Kyon Ser1 at right
+    "\"It's a barrier and emergency help function,\"he answered, reactivating the beam saber and reassuming a defensive stance."
+    show Kyon Ser2 at right
+    "\"Unless she seals this space off --{w=0.5} again -- {w=0.5}she can't disable it.\""
+    nvl clear
+    hide Kyon 
+    hide Haruhi
+    hide Skinsuit
+    hide Coat
+    show Asakura Sigh1 at center with wipeup
+    "Asakura gave a pained sigh as she stepped through the jagged distortion between her controlled dataspace and the rooftop. "
+    show Asakura Frown2 at center
+    "\"You shouldn't be able to manipulate data like that,\"she said reprovingly."
+    show Asakura Smile2 at center
+    "\"I suppose that means it's time to stop holding back.\""
+    nvl clear
+    show Asakura Smile3 at center
+    "She clapped her hands together before her and drew them apart, flinging a fan of dozens of identical knives outward."
+    hide Asakura
+    show Kyon Ang1 at right
+    show Skinsuit at right
+    show Coat at right
+    show BarrierSmall at right
+    "Kyon maintained his guard position, his free hand already clenched into a fist, the metal ridges of his skinsuit facing outward."
+    nvl clear
+    "The knives adjusted their course, most homing in on him to suddenly be halted by a semi-circular barrier of glowing blue force before shattering into nothingness, but a handful stopping suddenly in the space over the circle around Haruhi."
+    nvl clear
+    hide BarrierSmall
+    show Asakura Smile3 at right with moveinleft
+    show Kyon Pain1 at right
+    "He opened his mouth to retort, but Asakura was already within his guard, driving yet another blade into his stomach."
+    hide Kyon
+    hide Coat
+    hide Skinsuit
+    with moveoutright
+    "The inner carbon-nano-weave of the greatcoat and the force field of the skinsuit beneath it converted the stabbing force into a distributed shock wave, so instead of being pierced, Kyon was merely hit with the force of a speeding minivan, flying clear across the roof with a choked grunt."
+    nvl clear
+    show Asakura Smile1 at right
+    "\"In the end,\" Asakura remarked, watching his form tumble off the edge of the school building,{fast}\"all those toys are pretty silly if you don't actually know how to use them.\""
+    show Haruhi Hap1 at left
+    "\"You have to give him credit, though,\" Haruhi said, peering very closely at the knives frozen over her barrier, not even glancing back to where Kyon had vanished."
+    show Haruhi Grin1 at left
+    "\"He comes up with one hell of a distraction ploy, doesn't he?\""
+    nvl clear
+    show Asakura Sup1 at right
+    "The blue-haired interface cocked her head to one side, blinking."
+    stop music fadeout 1
+    "\"What?\""
+    nvl clear
+    hide Haruhi
+    hide Asakura
+    play music "SE/lowwind.wav" 
+    "The sensation of being hit with a force that would crush a mid-sized car into a work of modern art was not entirely new, but was without a doubt extremely unpleasant."
+    "His skinsuit did what it could to distribute the kinetic force evenly across his body, so the crushing pain was at least perfectly uniform in infliction."
+    "The balancing gizmos gave up the ghost on keeping him upright, and struggled to guarantee he wouldn't land wherever he flew head-first."
+    "His gravity manipulation defenses all strained to bleed the inertia of his impact off without even more pain, but the end result was that he didn't slow appreciably until after he passed the edge of the five story rooftop."
+    nvl clear
+    "Not what he'd hoped for by a long shot."
+    "All of the \"toys\" would keep him mobile, even if he was afraid he'd need to be poured out of the skinsuit when it was over."
+    "He'd have to beg Nagato or Haruhi to help him out and repair things later, but there was just too damn much to keep track of with all the attack vectors, defensive capabilities...."
+    nvl clear
+    "\"It started off such a nice day, too,\" he mumbled, as his forward momentum was arrested and he began the downward plummet in earnest."
+    "How had it come to this, anyway...?"
 #   
 #  
 #     
