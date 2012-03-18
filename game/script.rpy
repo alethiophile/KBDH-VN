@@ -67,6 +67,29 @@ init:
         config.window_show_transition = dissolve
         renpy.music.set_volume(0.2, .5, channel="music")
 
+#begin slide_far_left
+transform slide_far_left:
+    xalign 0.0 yalign 1.0
+    linear 0.4 xalign -0.05
+#end slide_far_eft
+
+#far_left
+transform far_left:
+    xalign -0.05 yalign 1.0
+#end far_left
+
+#begin slide_right
+transform slide_right:
+    xalign -0.05 yalign 1.0
+    linear 0.2 xalign 0.1
+#end slide_right
+
+#begin slide_left
+transform slide_left:
+    xalign 0.1 yalign 1.0
+    linear 0.4 xalign 0.0
+#end slide_left
+
 label start:
     stop music fadeout 1
     scene title0 with slowfadein
@@ -164,6 +187,7 @@ label start:
     extend " \"Take a step back, I don't want to catch you in the interdiction field again.\""
     show Haruhi Hap4 at left
     "She nodded and stepped backwards, against the wall."
+    show Haruhi Hap4 at slide_far_left
     nvl clear
     play music "music/YukiAsakuraFight.mp3" fadein 1
     show Kyon Ser2 at right
@@ -182,7 +206,7 @@ label start:
     play sound "SE/CloakOff.wav"
     show Coat at right with coatin
     extend "as a knee-length tan greatcoat coalesced, covering his shoulders with a thick mantle."
-    show Haruhi Hap3 at left
+    show Haruhi Hap3 at far_left
     "\"Doesn't that get hot?\" Her smile had only grown, her eyes shining with anticipation."
     nvl clear
     show Kyon Neutral2 at right
@@ -220,7 +244,7 @@ label start:
     nvl clear
     show Kyon Ang1 at right
     "He broke off suddenly, scowling. \"Okay,\" he said in his normal voice. \"My mistake. We've got incoming.\""
-    show Haruhi Hap4 at left
+    show Haruhi Hap4 at slide_right
     "\"God damn it Kyon, you're so cool when you do this,\" Haruhi gushed, clapping her hands together. \"What is it?\""
     nvl clear
     show Kyon Neutral1 at right
@@ -229,7 +253,8 @@ label start:
     "One eyebrow twitched and he stowed his weapons, banishing the ring of light and flinging his phone at Haruhi."
     show Kyon Ser2 at right
     "\"Speed dial two,\" he snapped. \"Stay in the circle.\""
-    show Haruhi Pout1 at left
+    show Haruhi Pout1 at slide_left
+    pause 0.4
     play sound "SE/Barrier1.wav"
     show Haruhi Pout1 Bright at left
     show field at left with dissolve
