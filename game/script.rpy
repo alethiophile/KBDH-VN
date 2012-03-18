@@ -398,15 +398,25 @@ label start:
     hide Haruhi
     stop music
     play music "Music/AsakuraTheme.mp3" fadein 1
+    play sound "SE/horror.wav"
     scene bg stairwellbarrier with teleport:
         size (800,600)
     show Asakura Smile2 at center
     "\"Happy to oblige!\" Asakura said brightly, as their surroundings pulsed, the window turning into a gunmetal gray steel barrier, strange patterns coalescing across the walls."
+    play sound "SE/powerdown.wav"
     "The circle on the floor around Haruhi abruptly winked out."
     nvl clear
     "\"Now, I've converted the entire space of this stairwell into-\""
-    "Kyon spun on one foot, crying out with a great, \"Ki-yah!\" and kicking the door halfway across the roof."
     hide Asakura
+    "Kyon spun on one foot, crying out with a great, \"Ki-yah!\""
+    play sound "SE/lowswoosh.wav"
+    pause (0.2)
+    play sound "SE/impact.wav"
+    with vpunch
+    pause (0.2)
+    play sound "SE/glassbreak1.wav"
+    with hpunch
+    extend "and kicking the door halfway across the roof."
     show Haruhi Sup1 at left
     pause (.01)
     show Kyon Ser1 at left
