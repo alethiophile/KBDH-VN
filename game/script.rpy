@@ -351,7 +351,7 @@ label start:
     "\"Er,\" Asakura said, crossing her arms beneath her chest."
     show Asakura Frown2 at center
     "\"Evidently my information requires an update. I was sent to dispatch Kyon-kun, because he's become an undesirable element for my superiors.\""
-    show Asakura Sup1 at center
+    show Asakura Sup1 at left
     nvl clear
     "\"Really, I'd hoped to see a new state, maybe even provoke it with his death.\""
     show Asakura Smile2 at left
