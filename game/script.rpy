@@ -17,6 +17,11 @@ init:
     image Bluesword = "Backgrounds/bluesword1.png"
     image field = "Sprites/Effects/InterdictionField.png"
     image BarrierSmall = "Sprites/Effects/BarrierSmall.png"
+    image BarrierSmall Bright = im.MatrixColor("Sprites/Effects/BarrierSmall.png",
+                                       im.matrix.brightness(.5))
+    image Knife1 = "Sprites/Effects/Knife1.png"
+    image Knife2 = "Sprites/Effects/Knife2.png"
+    image Knife3 = "Sprites/Effects/Knife3.png"
     image Haruhi Sup1 = "Sprites/Haruhi/HaruhiSideSurprised1.png"
     image Haruhi Ang1 = "Sprites/Haruhi/HaruhiSideAngry1.png"
     image Haruhi Ang2 = "Sprites/Haruhi/HaruhiSideAngry2.png"
@@ -71,6 +76,7 @@ init:
         irisoutfast = CropMove(0.2, "irisout")
         slowfadein = Fade(0.5, 0.5, 5)
         wipeleftfast = CropMove(0.3, "wipeleft")
+        wiperightfast = CropMove(0.3, "wiperight")
         wipeupslow = CropMove(2, "wipeup")
         wipeupfast = CropMove(0.3, "wipeup")
         teleport = ImageDissolve("id_teleport.png", 1.0, 0)
@@ -84,6 +90,7 @@ init:
         config.window_hide_transition = dissolve
         config.window_show_transition = dissolve
         renpy.music.set_volume(0.2, .5, channel="music")
+        flashbulb = Fade(0.2, 0.0, 0.8, color='#fff')
 
 transform slide_left:
     xalign 0.1 yalign 1.0
@@ -95,6 +102,14 @@ transform slide_right:
 
 transform center_left:
     xalign 0.1 yalign 1.0
+    
+transform HalfRight:
+    xalign 0.75 yalign 1.0
+    
+transform StabKyonFast:
+    xalign 0.0 yalign 1.0
+    linear 0.1 xalign 0.6
+    
 
 label start:
     stop music fadeout 1
@@ -426,6 +441,7 @@ label start:
     "\"Right, right,\" she mumbled, reactivating the circle of light."
     show Haruhi Quest1 at left
     "\"So, what's so great about this if she can just turn it off, anyway?\""
+    nvl clear
     show Kyon Ser1 at right
     "\"It's a barrier and emergency help function,\"he answered, reactivating the beam saber and reassuming a defensive stance."
     show Kyon Ser2 at right
@@ -443,23 +459,77 @@ label start:
     show Asakura Smile2 at center
     "\"I suppose that means it's time to stop holding back.\""
     nvl clear
+    show Knife1 at center
+    play sound "SE/clink.wav"
+    play sound "SE/clink.wav"
+    pause (0.3)
+    show Knife2 at center
+    play sound "SE/clink.wav"
+    play sound "SE/clink.wav"
+    pause (0.3)
+    show Knife3 at center
+    play sound "SE/clink.wav"
+    play sound "SE/clink.wav"
+    pause (0.8)
+    play sound "SE/DunDun.wav"
     show Asakura Smile3 at center
     "She clapped her hands together before her and drew them apart, flinging a fan of dozens of identical knives outward."
     hide Asakura
-    scene bg roof with wiperight
+    play sound "SE/lowswoosh.wav"
+    scene bg roof with wiperightfast
     show Kyon Ang1 at right
     show Skinsuit at right
     show Coat at right
     
     "Kyon maintained his guard position, his free hand already clenched into a fist, the metal ridges of his skinsuit facing outward."
     nvl clear
-    show BarrierSmall at right with dissolve
-    pause 0.1
+    play sound "Se/Barrier1.wav"
+    show BarrierSmall at HalfRight with dissolve
+    pause 0.5
+    show BarrierSmall Bright at HalfRight
+    play sound "SE/block.wav"
+    pause (0.1)
+    show BarrierSmall at HalfRight
+    pause (0.1)
+    show BarrierSmall Bright at HalfRight
+    play sound "SE/block.wav"
+    pause (0.1)
+    show BarrierSmall at HalfRight
+    pause (0.1)
+    show BarrierSmall Bright at HalfRight
+    play sound "SE/block.wav"
+    pause (0.1)
+    show BarrierSmall at HalfRight
+    pause (0.1)
+    show BarrierSmall Bright at HalfRight
+    play sound "SE/block.wav"
+    pause (0.1)
+    show BarrierSmall at HalfRight
+    pause (0.1)
+    show BarrierSmall at HalfRight
+    pause (0.1)
+    show BarrierSmall Bright at HalfRight
+    play sound "SE/block.wav"
+    pause (0.1)
+    show BarrierSmall at HalfRight
+    pause (0.1)
+    show BarrierSmall at HalfRight
+    pause (0.1)
+    show BarrierSmall Bright at HalfRight
+    play sound "SE/block.wav"
+    pause (0.1)
+    show BarrierSmall at HalfRight
+    pause (0.1)
+    play sound "SE/GlassBreak3.wav"
+    hide BarrierSmall with dissolve
     "The knives adjusted their course, most homing in on him to suddenly be halted by a semi-circular barrier of glowing blue force before shattering into nothingness, but a handful stopping suddenly in the space over the circle around Haruhi."
     nvl clear
-    hide BarrierSmall with dissolve
-    show Asakura Smile3 at right with moveinleft
+    play sound "SE/lowswoosh.wav"
+    show Asakura Smile3 at left
+    show Asakura Smile3 at StabKyonFast
     show Kyon Pain1 at right
+    pause (0.1)
+    play sound "SE/slash2.wav"
     "He opened his mouth to retort, but Asakura was already within his guard, driving yet another blade into his stomach."
     hide Kyon
     hide Coat
@@ -467,7 +537,7 @@ label start:
     with moveoutright
     "The inner carbon-nano-weave of the greatcoat and the force field of the skinsuit beneath it converted the stabbing force into a distributed shock wave, so instead of being pierced, Kyon was merely hit with the force of a speeding minivan, flying clear across the roof with a choked grunt."
     nvl clear
-    show Asakura Smile1 at right
+    show Asakura Smile1 at right with move
     "\"In the end,\" Asakura remarked, watching his form tumble off the edge of the school building,{fast}\"all those toys are pretty silly if you don't actually know how to use them.\""
     show Haruhi Hap1 at left
     "\"You have to give him credit, though,\" Haruhi said, peering very closely at the knives frozen over her barrier, not even glancing back to where Kyon had vanished."
@@ -491,8 +561,8 @@ label start:
     "Not what he'd hoped for by a long shot."
     "All of the \"toys\" would keep him mobile, even if he was afraid he'd need to be poured out of the skinsuit when it was over."
     "He'd have to beg Nagato or Haruhi to help him out and repair things later, but there was just too damn much to keep track of with all the attack vectors, defensive capabilities...."
-    nvl clear
     "\"It started off such a nice day, too,\" he mumbled, as his forward momentum was arrested and he began the downward plummet in earnest."
+    nvl clear
     "How had it come to this, anyway...?"
 #   
 #  
