@@ -67,22 +67,16 @@ init:
         config.window_show_transition = dissolve
         renpy.music.set_volume(0.2, .5, channel="music")
 
-#begin slide_left
 transform slide_left:
     xalign 0.1 yalign 1.0
     linear 0.4 xalign 0.0
-#end slide_left
 
-#begin slide_right
 transform slide_right:
     xalign 0.0 yalign 1.0
     linear 0.1 xalign 0.1
-#end slide_right
 
-#begin center_left
 transform center_left:
     xalign 0.1 yalign 1.0
-#end center_left
 
 label start:
     stop music fadeout 1
