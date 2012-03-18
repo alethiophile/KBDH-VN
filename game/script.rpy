@@ -5,6 +5,7 @@ init:
     image bg classroom = "Backgrounds/classroom.jpg"
     image bg hallway = "Backgrounds/hallway.png"
     image bg stairwell = "Backgrounds/stairwell.jpg"
+    image bg stairwellbarrier = "Backgrounds/stairwellbarrier.jpg"
     image bg roof = "Backgrounds/roof.jpg"
     image white = "#ffffff"
     image black = "#000000"
@@ -377,7 +378,9 @@ label start:
     show Haruhi Ang1 at left
     "\"Skip the speeches -- if I don't know the complete back story, it's all meaningless to me. I think it's about time we get down to business, right?\""
     nvl clear
-    scene Barrier with irisout
+    hide Haruhi
+    scene bg stairwellbarrier with teleport:
+        size (800,600)
     show Asakura Smile2 at center
     "\"Happy to oblige!\" Asakura said brightly, as their surroundings pulsed, the window turning into a gunmetal gray steel barrier, strange patterns coalescing across the walls."
     "The circle on the floor around Haruhi abruptly winked out."
@@ -440,12 +443,14 @@ label start:
     show Kyon Ang1 at right
     show Skinsuit at right
     show Coat at right
-    show BarrierSmall at right
+    
     "Kyon maintained his guard position, his free hand already clenched into a fist, the metal ridges of his skinsuit facing outward."
     nvl clear
+    show BarrierSmall at right with dissolve
+    pause 0.1
     "The knives adjusted their course, most homing in on him to suddenly be halted by a semi-circular barrier of glowing blue force before shattering into nothingness, but a handful stopping suddenly in the space over the circle around Haruhi."
     nvl clear
-    hide BarrierSmall
+    hide BarrierSmall with dissolve
     show Asakura Smile3 at right with moveinleft
     show Kyon Pain1 at right
     "He opened his mouth to retort, but Asakura was already within his guard, driving yet another blade into his stomach."
