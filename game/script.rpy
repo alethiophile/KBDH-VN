@@ -132,7 +132,7 @@ label start:
     scene title0 with slowfadein
     
     pause
-    play sound "SE/Pageflip3.wav" 
+    play sound "SE/Pageflip3.mp3" 
 
     nvl clear
     scene bg classroom with fade:
@@ -230,18 +230,18 @@ label start:
     play music "music/YukiAsakuraFight.mp3" fadein 1
     show Kyon Ser2 at right
     pause 1
-    play sound "SE/DunDun.wav"
+    play sound "SE/DunDun.mp3"
     "Standing perfectly straight, hands at his sides, he closed his eyes, and began speaking in his best faux movie announcer voice-over."
     "\"Skinsuit active,\" "
-    play sound "SE/Sizzle2.wav"
+    play sound "SE/Sizzle2.mp3"
     show Skinsuit at right with wipeupslow
     extend "as something that looked like nothing so much as black paint suddenly engulfed his entire body beneath his uniform."
     nvl clear
-    play sound "SE/NanoRepair.wav"
+    play sound "SE/NanoRepair.mp3"
     "\"Gravimetric stabilizers and secondary gyrometrics online,\" as ridged metal studs appeared on the back of each knuckle, and beneath his uniform pants, metallic vertical rails were described in the skinsuit."
     nvl clear
     "\"Greatcoat thermoptic stealth disengaged,\" "
-    play sound "SE/CloakOff.wav"
+    play sound "SE/CloakOff.mp3"
     show Coat at right with coatin
     extend "as a knee-length tan greatcoat coalesced, covering his shoulders with a thick mantle."
     show Haruhi Hap3 at left
@@ -252,13 +252,13 @@ label start:
     show Kyon Ser2 at right
     "Switching back, he said, \"Primary weapons check.\""     
     nvl clear
-    play sound "SE/lowswoosh.wav"
+    play sound "SE/lowswoosh.mp3"
     pause .02
-    play sound "SE/lowswoosh.wav"
+    play sound "SE/lowswoosh.mp3"
     pause .02
-    play sound "SE/lowswoosh.wav"
+    play sound "SE/lowswoosh.mp3"
     "He pulled a fifty centimeter long glittering metal cylinder from within the greatcoat, releasing it to spin on its axis in midair to one side, announcing, \"Long range precision and high yield weaponry is at full charge.\""
-    play sound "SE/Barrier2.wav"
+    play sound "SE/Barrier2.mp3"
     show Kyon Ser2 Bright at right
     show Skinsuit Bright at right
     show Coat Bright at right
@@ -274,7 +274,7 @@ label start:
     "Another cylinder, wider but shorter than the last was released to float next to the first."
     "\"Mid- and short-range crowd-control weaponry is at ... ninety seven percent capacity and charging,\" he continued, squinting at the featureless gunmetal tube."
     nvl clear
-    play sound "SE/clink.wav"
+    play sound "SE/clink.mp3"
     "Pulling a well-crafted sword hilt with no cross-guard or blade from one pocket, he released it horizontally, and it hung before him between the other weapons. \"Beam saber is at full capacity.\""
     show Kyon Ser1 at right
     "After pulling his cell phone from one pocket, he brushed his fingertips over his ear, revealing three dull metal studs in the skinsuit."
@@ -293,7 +293,7 @@ label start:
     "\"Speed dial two,\" he snapped. \"Stay in the circle.\""
     show Haruhi Pout1 at slide_left
     pause 0.4
-    play sound "SE/Barrier1.wav"
+    play sound "SE/Barrier1.mp3"
     show Haruhi Pout1 Bright at left
     show field at left with dissolve
     pause .1
@@ -305,17 +305,17 @@ label start:
     hide Skinsuit
     hide Coat
     hide Haruhi
-    play sound "SE/footsteps5.wav" 
+    play sound "SE/footsteps5.mp3" 
     pause 5
     show Asakura Smile2 at center with wipeup
     pause 1
-    play sound "SE/DunDun.wav"
+    play sound "SE/DunDun.mp3"
     show Asakura Smile1 at center
     "\"Kyon-kun~!\" someone caroled up the stairwell, the echoing click of their shoes sounding as they climbed the stairs."
     show Asakura Smile2 at center
     "\"It's been a while, hasn't it?\""
     show Asakura Sup1 at center
-    play sound "SE/saberon.wav"
+    play sound "SE/saberon.mp3"
     show Bluesword with wipeupfast
     pause 1
     hide Bluesword with dissolve
@@ -414,23 +414,23 @@ label start:
     hide Haruhi
     stop music
     play music "Music/AsakuraTheme.mp3" fadein 1
-    play sound "SE/horror.wav"
+    play sound "SE/horror.mp3"
     scene bg stairwellbarrier with teleport:
         size (800,600)
     show Asakura Smile2 at center
     "\"Happy to oblige!\" Asakura said brightly, as their surroundings pulsed, the window turning into a gunmetal gray steel barrier, strange patterns coalescing across the walls."
-    play sound "SE/powerdown.wav"
+    play sound "SE/powerdown.mp3"
     "The circle on the floor around Haruhi abruptly winked out."
     nvl clear
     "\"Now, I've converted the entire space of this stairwell into-\""
     hide Asakura
     "Kyon spun on one foot, crying out with a great, \"Ki-yah!\""
-    play sound "SE/lowswoosh.wav"
+    play sound "SE/lowswoosh.mp3"
     pause (0.2)
-    play sound "SE/impact.wav"
+    play sound "SE/impact.mp3"
     with vpunch
     pause (0.2)
-    play sound "SE/glassbreak1.wav"
+    play sound "SE/glassbreak1.mp3"
     with hpunch
     extend "and kicking the door halfway across the roof."
     show Haruhi Sup1 at left
@@ -458,7 +458,7 @@ label start:
     nvl clear
     show Haruhi Pout1 at left
     pause .4
-    play sound "SE/Barrier1.wav"
+    play sound "SE/Barrier1.mp3"
     show Haruhi Pout1 Bright at left
     show field at left with dissolve
     pause .1
@@ -469,7 +469,7 @@ label start:
     "\"So, what's so great about this if she can just turn it off, anyway?\""
     nvl clear
     show Kyon Ser1 at right
-    play sound "SE/SaberOn.wav"
+    play sound "SE/SaberOn.mp3"
     "\"It's a barrier and emergency help function,\" he answered, reactivating the beam saber and reassuming a defensive stance."
     show Kyon Ser2 at right
     "\"Unless she seals this space off —{w=0.5} again — {w=0.5}she can't disable it.\""
@@ -487,22 +487,22 @@ label start:
     "\"I suppose that means it's time to stop holding back.\""
     nvl clear
     show Knife1 at center
-    play sound "SE/clink.wav"
-    play sound "SE/clink.wav"
+    play sound "SE/clink.mp3"
+    play sound "SE/clink.mp3"
     pause (0.3)
     show Knife2 at center
-    play sound "SE/clink.wav"
-    play sound "SE/clink.wav"
+    play sound "SE/clink.mp3"
+    play sound "SE/clink.mp3"
     pause (0.3)
     show Knife3 at center
-    play sound "SE/clink.wav"
-    play sound "SE/clink.wav"
+    play sound "SE/clink.mp3"
+    play sound "SE/clink.mp3"
     pause (0.8)
-    play sound "SE/DunDun.wav"
+    play sound "SE/DunDun.mp3"
     show Asakura Smile3 at center
     "She clapped her hands together before her and drew them apart, flinging a fan of dozens of identical knives outward."
     hide Asakura
-    play sound "SE/lowswoosh.wav"
+    play sound "SE/lowswoosh.mp3"
     scene bg roof with wiperightfast
     show Kyon Ang1 at right
     show Skinsuit at right
@@ -514,49 +514,49 @@ label start:
     show BarrierSmall at HalfRight with dissolve
     pause 0.5
     show BarrierSmall Bright at HalfRight
-    play sound "SE/block.wav"
+    play sound "SE/block.mp3"
     pause (0.1)
     show BarrierSmall at HalfRight
     pause (0.1)
     show BarrierSmall Bright at HalfRight
-    play sound "SE/block.wav"
+    play sound "SE/block.mp3"
     pause (0.1)
     show BarrierSmall at HalfRight
     pause (0.1)
     show BarrierSmall Bright at HalfRight
-    play sound "SE/block.wav"
+    play sound "SE/block.mp3"
     pause (0.1)
     show BarrierSmall at HalfRight
     pause (0.1)
     show BarrierSmall Bright at HalfRight
-    play sound "SE/block.wav"
-    pause (0.1)
-    show BarrierSmall at HalfRight
-    pause (0.1)
-    show BarrierSmall at HalfRight
-    pause (0.1)
-    show BarrierSmall Bright at HalfRight
-    play sound "SE/block.wav"
+    play sound "SE/block.mp3"
     pause (0.1)
     show BarrierSmall at HalfRight
     pause (0.1)
     show BarrierSmall at HalfRight
     pause (0.1)
     show BarrierSmall Bright at HalfRight
-    play sound "SE/block.wav"
+    play sound "SE/block.mp3"
     pause (0.1)
     show BarrierSmall at HalfRight
     pause (0.1)
-    play sound "SE/GlassBreak3.wav"
+    show BarrierSmall at HalfRight
+    pause (0.1)
+    show BarrierSmall Bright at HalfRight
+    play sound "SE/block.mp3"
+    pause (0.1)
+    show BarrierSmall at HalfRight
+    pause (0.1)
+    play sound "SE/GlassBreak3.mp3"
     hide BarrierSmall with dissolve
     "The knives adjusted their course, most homing in on him to suddenly be halted by a semi-circular barrier of glowing blue force before shattering into nothingness, but a handful stopping suddenly in the space over the circle around Haruhi."
     nvl clear
-    play sound "SE/lowswoosh.wav"
+    play sound "SE/lowswoosh.mp3"
     show Asakura Smile3 at left
     show Asakura Smile3 at StabKyonFast
     show Kyon Pain1 at right
     pause (0.1)
-    play sound "SE/slash2.wav"
+    play sound "SE/slash2.mp3"
     "He opened his mouth to retort, but Asakura was already within his guard, driving yet another blade into his stomach."
     hide Kyon
     hide Coat
@@ -579,7 +579,7 @@ label start:
     hide Haruhi
     hide Asakura
     scene bg roofsky with fade
-    play music "SE/lowwind.wav" 
+    play music "SE/lowwind.mp3" 
     "The sensation of being hit with a force that would crush a mid-sized car into a work of modern art was not entirely new, but was without a doubt extremely unpleasant."
     "His skinsuit did what it could to distribute the kinetic force evenly across his body, so the crushing pain was at least perfectly uniform in infliction."
     "The balancing gizmos gave up the ghost on keeping him upright, and struggled to guarantee he wouldn't land wherever he flew head-first."
@@ -603,21 +603,21 @@ label start:
     "\"It was broken from the outside, somehow? I wonder--\""
     nvl clear
     play music "Music/Justice.ogg"
-    play sound "SE/Barrier2.wav"
-    play sound2 "SE/Laser1.wav"
+    play sound "SE/Barrier2.mp3"
+    play sound2 "SE/Laser1.mp3"
     scene bg BeamOrange1 with flashbulb
     "The shrill buzz of a brilliant energy beam licked out from the roof of the tiny structure that housed the stairwell."
     show Asakura Pain1 at center
     "Ryouko was struck in the chest dead-center of mass, her entire body glowing white for a second before she staggered--"
-    play sound "SE/Laser1.wav"
-    play sound2 "SE/Barrier1.wav"
+    play sound "SE/Laser1.mp3"
+    play sound2 "SE/Barrier1.mp3"
     scene bg BeamOrange2
     show Asakura Pain2 Bright at center
     with flashbulb
     "Instantly another beam shot out from the same location, lighting slightly to one side, near the girl's left shoulder."
     nvl clear
-    play sound "SE/Laser1.wav"
-    play sound2 "SE/Slash3.wav"
+    play sound "SE/Laser1.mp3"
+    play sound2 "SE/Slash3.mp3"
     scene bg BeamOrange4
     show Asakura Pain2 Bright at center
     with flashbulb
@@ -628,7 +628,7 @@ label start:
     "\"High yield neutron flare?\" she asked. \"Quantum entanglement to disrupt my connection....\""
     scene bg roof
     pause (0.01)
-    play sound "SE/CloakOff.wav"
+    play sound "SE/CloakOff.mp3"
     show Kyon Ser1 at right
     show Skinsuit at right
     show Coat at right
@@ -637,25 +637,25 @@ label start:
     nvl clear
     "The end of his weapon was glowing orange with discharge, the shape changed from a simple cylinder to a much thinner meter-long construction of sturdy rails and curving hand guards."
     "He slung it over his shoulder and ignored it, pulling the second cylinder from his coat and leaping the twenty meter distance between himself and Ryouko."
-    play sound "SE/lowswoosh.wav"
+    play sound "SE/lowswoosh.mp3"
     scene bg roofclose with wiperightfast
     nvl clear
     show Asakura Unhap1 at center
     pause (0.3)
-    play sound "SE/guncock.wav"
+    play sound "SE/guncock.mp3"
     "Beneath him, a widening circle of dust marked where he leapt from, and while in midair he flipped over, a sequence of touch-points converting the unadorned cylinder into a stocky, blunt, two-handed gun."
-    play sound "SE/netlaunch.wav"
+    play sound "SE/netlaunch.mp3"
     pause (1)
-    play sound "SE/stake1.wav"
+    play sound "SE/stake1.mp3"
     show Spike1 at center
     pause (0.05)
-    play sound "SE/stake2.wav"
+    play sound "SE/stake2.mp3"
     show Spike2 at center
     pause (0.05)
-    play sound "SE/stake3.wav"
+    play sound "SE/stake3.mp3"
     show Spike3 at center
     pause (0.05)
-    play sound "SE/stake1.wav"
+    play sound "SE/stake1.mp3"
     show Spike4 at center
     pause (0.5)
     hide Spike1
@@ -663,7 +663,7 @@ label start:
     hide Spike3
     hide Spike4
     show Spike5 at center
-    play sound "SE/elec1.wav"
+    play sound "SE/elec1.mp3"
     "It fired with a rasping cough, launching a ring of metallic spikes to burrow into the rooftop around Ryouko, and then a grid of crackling brissant energy raked between each of the spikes, snaring the girl in a glowing, shuddering net."
     "\"Ah,\" she said, her voice disappointed as Kyon's repulsor and gravimetric systems flared his momentum and spread it evenly across the entire rooftop, landing him near Haruhi, at Ryouko's side.{w}\"I failed again.\""
     nvl clear
