@@ -370,7 +370,7 @@ label start:
     show Haruhi Hap3 at left
     "Haruhi bounced on her heels with a wide grin, holding Kyon's cell phone in both hands as she remained in the center of the glowing circle."
     show Haruhi Hap4 at left
-    "\"I knew it!\" she cheered.{nw}"
+    "\"I knew it!\" she cheered.{nw} "
     show Haruhi Hap1 at left
     extend "\"There was something off about Asakura! What is it?\""
     nvl clear
@@ -400,7 +400,7 @@ label start:
     "\"Evidently my information requires an update. I was sent to dispatch Kyon-kun, because he's become an undesirable element for my superiors.\""
     show Asakura Sup1 at center
     nvl clear
-    "\"Really, I'd hoped to see a new state, maybe even provoke it with his death.\""
+    "\"Really, I'd hoped to see a new state, maybe even provoke it with his death."
     show Asakura Smile2 at center
     "\"But, those toys seem to say that's already happened! So disappointing ... I suppose if I'd been more patient, I could see it anyway?\""
     show Kyon Sigh1 at right
@@ -438,7 +438,7 @@ label start:
     nvl clear
     "\"Now, I've converted the entire space of this stairwell into-\""
     hide Asakura
-    "Kyon spun on one foot, crying out with a great, \"Ki-yah!\""
+    "Kyon spun on one foot, crying out with a great, \"Ki-yah!\" "
     play sound "SE/lowswoosh.mp3"
     pause (0.2)
     play sound "SE/impact.mp3"
@@ -589,7 +589,7 @@ label start:
     nvl clear
     scene bg roof
     show Asakura Smile1 at right
-    "\"In the end,\" Asakura remarked, watching his form tumble off the edge of the school building,{fast}\"all those toys are pretty silly if you don't actually know how to use them.\""
+    "\"In the end,\" Asakura remarked, watching his form tumble off the edge of the school building,{fast} \"all those toys are pretty silly if you don't actually know how to use them.\""
     show Haruhi Hap1 at left
     "\"You have to give him credit, though,\" Haruhi said, peering very closely at the knives frozen over her barrier, not even glancing back to where Kyon had vanished."
     show Haruhi Grin1 at left
@@ -607,10 +607,10 @@ label start:
     "The sensation of being hit with a force that would crush a mid-sized car into a work of modern art was not entirely new, but was without a doubt extremely unpleasant."
     "His skinsuit did what it could to distribute the kinetic force evenly across his body, so the crushing pain was at least perfectly uniform in infliction."
     "The balancing gizmos gave up the ghost on keeping him upright, and struggled to guarantee he wouldn't land wherever he flew head-first."
-    "His gravity manipulation defenses all strained to bleed the inertia of his impact off without even more pain, but the end result was that he didn't slow appreciably until after he passed the edge of the five story rooftop."
+    "His gravity manipulation defenses all strained to bleed the inertia of his impact off without even {i}more{/i} pain, but the end result was that he didn't slow appreciably until after he passed the edge of the five story rooftop."
     nvl clear
     "Not what he'd hoped for by a long shot."
-    "All of the \"toys\" would keep him mobile, even if he was afraid he'd need to be poured out of the skinsuit when it was over."
+    "All of the \"toys\" would keep him mobile, even if he was afraid he'd need to be {i}poured{/i} out of the skinsuit when it was over."
     "He'd have to beg Nagato or Haruhi to help him out and repair things later, but there was just too damn much to keep track of with all the attack vectors, defensive capabilities...."
     "\"It started off such a nice day, too,\" he mumbled, as his forward momentum was arrested and he began the downward plummet in earnest."
     nvl clear
@@ -721,21 +721,21 @@ label start:
     nvl clear
     "\"This is all up to you. I already know you'll take care of things just fine.\""
     show Haruhi Hap4 at left
-    "\"Yes!\" she said, pumping one fist in the air. \"I get to do something! \""
+    "\"Yes!\" she said, pumping one fist in the air. \"I get to do something! "
     show Haruhi Hap1 at left
-    extend"\"Hey, how's the future?\""
+    extend "Hey, how's the future?\""
     nvl clear
     show Kyon Sigh1 at right
-    "\"It's awesome,\" he said, annoyed."
+    "\"It's awesome,\" he said, annoyed. "
     show Kyon Ser2 at right
     extend "\"Try and have some pity for the me that nearly got murdered off a building, huh?"
     show Kyon Neutral1 at right
-    "\"Anyway, just so you know, she's programmed to try and kill me; she won't do anything to you."
+    "\"Anyway, just so you know, she's programmed to try and kill me; she won't do anything to you.\""
     nvl clear
     show Kyon Neutral2 at right
     "\"And you won't see me tomorrow at school, because I'm going to be ... well. You'll find out.\""
     show Haruhi Pout1 at left
-    "\"Okay,\" she agreed, frowning."
+    "\"Okay,\" she agreed, frowning. "
     show Haruhi Quest1 at left
     extend "\"But, hey, why aren't you going to be around?\""
     nvl clear
