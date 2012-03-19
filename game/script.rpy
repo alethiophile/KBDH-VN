@@ -703,6 +703,194 @@ label start:
     # "\"So, I need to make some phone calls.\""
     # "\'Understood.\""
     # stop music fadeout 1 
+    # nvl clear
+    # play music "Music/Kankyou.mp3"
+    # "She couldn't imagine what had possessed Kyon to call her, ranting like a lunatic about Yuki being sick. "
+    # "But he'd done it from her phone, which meant for whatever reason that he and Yuki were alone together. "
+    # "She wasn't certain why that bothered her, but it did -- so when he demanded her presence, instead of telling him what he could do for trying to order the Brigade leader around, she swore that she'd be there."
+    # nvl clear
+    # "After trekking all the way there, much to her annoyance, she found that she was the last to arrive."
+    # "Mikuru sat at one side of the table, opposite Yuki."
+    # "Koizumi sat between them, his eternal smile faded to half its normal strength."
+    # "Kyon himself stood next to her -- he was the one who had answered the intercom and let her in."
+    # nvl clear
+    # "She narrowed her eyes at him and kicked her shoes off, storming into the room to Yuki's side and immediately pressing one palm onto the smaller girl's forehead."
+    # "\"You don't feel feverish,\" she finally commented."
+    # "\"But if you're sick, you shouldn't be up and about anyway.\""
+    # nvl clear
+    # "\"Not sick,\" Yuki answered."
+    # "When Haruhi turned to Kyon and scowled at him, she corrected, \"Dying.\""
+    # nvl clear
+    # "Her irritation at Kyon's practical joke momentarily blew away, like settled dust being disturbed."
+    # "\"Dying!?\" she yelped, turning to stare at the smaller girl."
+    # "\"What of? How?\""
+    # "Yuki blinked twice, then answered, \"I am not able to say.\""
+    # nvl clear
+    # "\"Mikuru?\""
+    # "\"Um ... classified.\""
+    # nvl clear
+    # "She scowled at Koizumi, daring him to be a defiant annoyance, too."
+    # "\"I don't know,\" he said, looking embarrassed and flustered."
+    # nvl clear
+    # "Turning around, she glared at Kyon, letting her irritation return and focus on him full-force."
+    # "\"I am not in the mood for pranks!\" she snapped."
+    # "\"This better not be a joke!\""
+    # nvl clear
+    # "\"I wish it was,\" he said back crossly, and she found herself taken aback at the force in his tone."
+    # "She had a mental catalogue of Kyon-like behaviors, and this fell firmly into the category of the seldom-seen but always feared angry Kyon."
+    # "Dour, upset, irked, sarcastic, caustic ... sure. But angry?"
+    # nvl clear
+    # "Hell, she'd once smashed his head into her desk -- entirely on accident -- and he was only annoyed."
+    # "And it wasn't for hitting his head, it was for disrupting a class!"
+    # "Nevermind that he had been dozing off before that."
+    # nvl clear
+    # "She'd seen him genuinely angry two times."
+    # "Only once had it been at her."
+    # "She hated that memory more than anything else she knew about him, but couldn't dare to forget it."
+    # "Once it had been at -- of all things -- his unfinished homework over summer break, though that was the lesser of the two displays; also the first."
+    # "She didn't understand it, but she knew whatever it was, she wanted to be on his side against it."
+    # nvl clear
+    # "Even then, some small part of her really didn't like the way that when he chose to, he simply seized command of her precious hand-crafted Brigade and, no matter how cute it was--"
+    # "She firmly suplexed that thought into oblivion."
+    # nvl clear
+    # stop music fadeout 1
+    # "\"Alright,\" she said evenly. \"Tell me what's going on.\""
+    # play music "Music/Gyumnopedies.mp3"
+    # "Kyon ran his hands through his hair and began pacing, not looking at her."
+    # "Good; she wasn't the one who had made him mad."
+    # nvl clear
+    # "\"Have a seat,\" he said."
+    # "\"This may take a bit, and I need a promise from you before we start.\""
+    # "\"I'm not making a blind promise,\" she retorted, though she did take the seat opposite Koizumi, between Mikuru and Yuki."
+    # nvl clear
+    # "Yuki wordlessly poured her a cup of tea, which she threw back in a single gulp."
+    # "\"I need you to promise to listen to everything we have to say before leaving,\" he answered."
+    # "\"That's stupid,\" she grumbled."
+    # nvl clear
+    # "\"If Yuki's in danger, what kind of person do you take me for?\""
+    # "She wasn't that bad about ignoring the needs of her brigade members."
+    # "\"Even so.\""
+    # "\"Fine,\" she sighed. \"I promise. Now can you get on with it?\""
+    # nvl clear
+    # "\"Okay,\" he said, pacing around to the window."
+    # "\"Almost a year ago -- last May -- we ended up going on a city search where no one but you and I showed up.\""
+    # "\"I remember,\" she said, annoyed."
+    # "A stupid practical joke on his part ... though, it had given her the idea for the movie."
+    # nvl clear
+    # "\"I told you that aliens, espers, and time travelers really existed, right?\""
+    # "\"We're going back to that?\" she asked, raising an eyebrow.\"Really?\""
+    # "\"Yeah, okay, you remember it, so I don't need to say it again,\" he said with a shrug."
+    # nvl clear
+    # "\"Koizumi, you promised that if it had to happen, you'd stand next to me when Yuki needed our help. Remember?\""
+    # "\"Yes,\" the smiling boy said, though his smile had completely vanished. "
+    # "\"As much as it scares me.... Suzumiya-san, Kyon-kun is speaking the truth.\""
+    # "\"You're an esper?\" she asked him doubtfully."
+    # nvl clear
+    # "He gave a solemn nod, and she internalized a sigh."
+    # "What, was Kyon just acting?"
+    # "Was this is unsubtle way of saying he wanted to be a star in the next movie, not just a camera man?"
+    # "She had to admit, his emotion seemed genuine, but why couldn't he just have asked her? "
+    # "There was an awful lot he could have just asked for, and never bothered to!"
+    # "That thought was drop-kicked to fly off next to the last banished thought."
+    # nvl clear
+    # "\"And, Mikuru, you're a time traveler?\" she asked, idly spinning her teacup on the table before her."
+    # "\"Um ... that is ... I can't....\""
+    # "\"Asahina-san,\" Kyon broke in suddenly, \"please ask your supervisor to declassify this for me.\""
+    # nvl clear
+    # "Mikuru stared at Kyon, her eyes large and confused."
+    # "\"Y...yes,\" she agreed, her glance flickering nervously to Haruhi before she pressed a hand against the side of her face, and her eyes became unfocused."
+    # "They abruptly snapped back into focus, though her expression had become comically bewildered"
+    # nvl clear
+    # "\"I ... they said yes!? I don't understand! Kyon-kun, how-\""
+    # "\"That's ... classified,\" he answered, looking away."
+    # "\"Anyway, go ahead and explain it to Haruhi.\""
+    # nvl clear
+    # "\'Oh! Um, Suzumiya-san ... what he says is true! I am a time traveler, though, it's more accurate to say that I'm a visitor from the future who is projected into the past, almost like a two-dimensional image projected into--\""
+    # "\"Right, right,\" Haruhi cut her off. \"You're a time traveler. Understood.\""
+    # nvl clear
+    # "Though, Mikuru's acting skills had picked up quite a bit, too...."
+    # "This better not be a ploy to make Kyon the male lead opposite Mikuru in the next movie!"
+    # "Saving that thought for later, she turned her gaze to Yuki."
+    # nvl clear
+    # "\"And you're an alien?\""
+    # "\"The function allowing me to confirm or deny that data has been denied at this juncture in time,\" she answered."
+    # "\"Turning to Kyon, she added, \"One hour and twenty minutes remain.\""
+    # nvl clear
+    # "He bit off a curse, running his hands through his hair."
+    # "Haruhi was taken aback again ... he obviously didn't like getting bad grades or doing poorly on exams, but he almost never got this stressed about things. "
+    # "This was starting to become unnerving."
+    # nvl clear
+    # "\"Okay,\" she said, before he could speak."
+    # "\"Look, this has gone far enough. I get it, alright? Your practical joke ... okay. Fine.\""
+    # "\"What are you really after? Producer? Co-director? You want to help write the script for the next movie?\""
+    # "\'Let's just cut to the chase -- this isn't really fun, especially since it's at my expense!\""
+    # nvl clear
+    # stop music fadeout 1
+    # "\"At your expense--\""
+    # "That had done it, she realized, flinching back."
+    # "Now some of his anger was directed at her, though he quickly controlled it, smacking one palm against his face."
+    # play music "Music/Ready.mp3"
+    # "\"Last May,\"he said, \"you came to class with your hair in a ponytail.\""
+    # nvl clear
+    # "She suddenly couldn't meet his eyes, and a previously suplexed thought began to climb back into her awareness."
+    # nvl clear
+    # "\"It was hot!\" she said defensively.\"What of it?\""
+    # "\"You had a dream -- a nightmare -- that night,\" he added."
+    # "\"So?\""
+    # nvl clear
+    # "She forced her heartbeat to still. "
+    # "She'd told him that much, why wouldn't he remember?"
+    # "She did, after all, even now."
+    # nvl clear
+    # "\"So, in your dream, you watched giant blue creatures smash apart the school, and you were very excited about abandoning the Brigade -- your friends -- and leading an exciting new life in whatever world was to come.\""
+    # "Koizumi looked uncomfortable. Mikuru's face turned red, and she began studying the bottom of her teacup intently."
+    # "Yuki merely stared at her, unblinking."
+    # nvl clear
+    # "\"I never told anyone that,\" she mumbled."
+    # "\"In the end, I told you that I wanted to come back to this world,\" Kyon said."
+    # "\"That it was more interesting than you realized. \""
+    # "\"Do I have to say what I did to wake you up?\""
+    # nvl clear
+    # "She felt her face color."
+    # "\"N...no,\" she managed.\"Who-- No, what are you?\""
+    # "\'I am a normal person,\" he told her, shrugging."
+    # nvl clear
+    # "\"I happen to have traveled to parallel worlds. I have traveled through time. I've seen some amazing things ... but through it all, I always come back here to be with my friends.\""
+    # nvl clear
+    # "It was getting very strange, and she didn't know why, but the conversation was starting to make her uncomfortable."
+    # "Maybe the knowledge of her dream was just an expert analysis based on her personality? The refusal to mention the kiss specifically was because they didn't know?"
+    # "But she wasn't certain she wanted to hear him say it was a kiss, here, right now...."
+    # "And she'd promised she would listen."
+    # nvl clear
+    # "\"You're claiming that you're a slider?\" she asked, blinking, buying herself some time to think."
+    # "He was momentarily startled by the question, then exchanged a glance with Koizumi, who shrugged. "
+    # "\"Actually, Kyon-kun, you may be,\" the supposed esper said, smiling."
+    # "\"That would explain why one never seemed to appear; it was you!\""
+    # nvl clear
+    # "\"Nevermind that!\" he said quickly, shaking his head."
+    # "\"Haruhi, there's something I have to tell you, something I think will make you believe me.\""
+    # "\"What's that?\" She couldn't think of anything else to say or ask."
+    # nvl clear
+    # "\"Tanabata last year was the first time I traveled back in time,\" he began, his expression solemn."
+    # "\"I went to a night three years earlier.\""
+    # "\"That would be Tanabata four years ago.\""
+    # "\"While I was there, I was sent to East Middle school, carrying Asahina-san on my back.\""
+    # nvl clear
+    # "\"Y...you're...\" she gasped, her eyes widening as the world around her spun, the amazing, simultaneously horrifying and delightful realization that he was speaking the truth was making her dizzy."
+    # nvl clear
+    # "\"And I met a younger version of yourself, and wrote the message, 'I am here' on the school grounds, following your instructions. You asked who I was, and I told you that I went by ... John Smith.\""
+    # nvl clear
+    # "\"You're John Smith!\""
+    # "She wasn't aware of getting up from the table, uncertain if she had moved around or just jumped over it -- she just knew that she had flung herself at him, tackling him to the floor and grabbing on tightly."
+    # "\"I knew it!\" she yelled."
+    # nvl clear
+    # "\"I knew I'd find you again!\""
+#     
+    
+    
+   
+    
+    
 #     
 #     
     
