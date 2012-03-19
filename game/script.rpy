@@ -337,11 +337,11 @@ label start:
     show Asakura Smile2 at center
     "\"It's been a while, hasn't it?\""
     show Asakura Sup1 at center
+    "The school bell chimed just as she rounded the landing, and he activated the beam saber. The blade made a crackling, whirring buzz and shed a soft, pale blue light."
     play sound "SE/saberon.mp3"
     show Bluesword with wipeupfast
     pause 1
     hide Bluesword with dissolve
-    "The school bell chimed just as she rounded the landing, and he activated the beam saber. The blade made a crackling, whirring buzz and shed a soft, pale blue light."
     show Asakura Frown1 at center
     "\"Y...you....\" she began, before she frowned, blinking, staring at the energy weapon."
     nvl clear
