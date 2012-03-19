@@ -47,6 +47,9 @@ init:
     image Haruhi Quest1 = "Sprites/Haruhi/HaruhiSideQuestion1.png"
     image Haruhi Grin1 = "Sprites/Haruhi/HaruhiSideGrin1.png"
     image Haruhi Worry1 = "Sprites/Haruhi/HaruhiSideWorry1.png"
+    image Haruhi Smile1 = "Sprites/Haruhi/HaruhiSideSmile1.png"
+    image Haruhi Smile2 = "Sprites/Haruhi/HaruhiSideSmile2.png"
+    image Haruhi Smile3 = "Sprites/Haruhi/HaruhiSideSmile3.png"
     image Kyon Ser1 = "Sprites/Kyon/KyonSerious1.png"
     image Kyon Ser2 = "Sprites/Kyon/KyonSerious2.png"
     image Kyon Ser2 Bright = im.MatrixColor("Sprites/Kyon/KyonSerious2.png",
@@ -756,7 +759,7 @@ label start:
     scene bg roofclose
     show Asakura Sup1 at center
     show Spike5 at center
-    "\"What?\"Ryouko asked, still trapped in the containment field."
+    "\"What?\"Ryouko asked, still trapped in the containment field. "
     show Asakura Smile3 at center
     extend "\"He just abandoned me here with you?\""
     play music "Music/NagatoTheme.mp3"
@@ -767,7 +770,7 @@ label start:
     show Skinsuit at right
     show Coat at right
     with wipeup
-    "\"Damn it,\" Kyon groaned, from where he was just climbing over the edge of the building, breathing hard."
+    "\"Damn it,\" Kyon groaned, from where he was just climbing over the edge of the building, breathing hard. "
     show Kyon Sigh1 at right
     extend "\"I hate when I have to rely on time-travel to take care of things.\""
     nvl clear
@@ -821,14 +824,41 @@ label start:
     "\"Medical program loaded,\"Nagato added helpfully from where she was studying the other interface. "
     show Yuki Talk2 at HalfLeft
     extend "\"Permission to proceed?\""
-    "\"Granted.\" Kyon said, straightening up as a sparkle of green and white lights suffused up from the rooftop beneath him, flowing through his body and undoing the damage."
+    scene bg roofright
+    show Kyon Pain1 at right
+    show Skinsuit at right
+    show Coat at right
+    show Haruhi Worry1 at center
+    "\"Granted.\" Kyon said, {nw}"
+    play sound "SE/heal1.wav"
+    show field at right
+    show Kyon Ser2 Bright at right
+    show Skinsuit Bright at right
+    show Coat Bright at right
+    with dissolve
+    pause .1
+    hide field at right
+    show Kyon Sigh2 at right
+    show Skinsuit at right
+    show Coat at right
+    with dissolve
+    extend "straightening up as a sparkle of green and white lights suffused up from the rooftop beneath him, flowing through his body and undoing the damage."
     nvl clear
+    show Kyon Smile1 at right
     "\"Oh, that feels so much better! Thank you; that probably saved my life.\""
+    show Kyon Neutral2 at right
     "\"And for future reference, you can probably assume that I'm okay with that one being used.\""
     "\"Acknowledged,\" Nagato agreed."
     nvl clear
+    show Haruhi Smile2 at left with move
     "\"Hmm, hey, Kyon, you know, you're going to have to really step up your game,\" Haruhi said suddenly, tossing his cell phone back to him."
+    show Kyon Ser1 at right
+    play sound "SE/woosh.mp3"
+    hide Skinsuit with wipedown
+    play sound "SE/CloakOn.mp3"
+    hide Coat with coatout
     "He scowled, pocketed it, and then banished all of his equipment, the greatcoat taking the longest to phase out of view."
+    show Kyon Ser2 at right
     "\"What's that supposed to mean?\" he asked in irritation."
     nvl clear
     # "\"Well, this is fun and all, but you can hardly expect me to take your lectures on using power responsibly seriously when you're always relying on your future self to save you,\"she warned, raising one finger and waggling it at him."
