@@ -913,7 +913,7 @@ label start:
     show Kyon Ser1 at right
     "\"I don't really want Asakura to die either. But if her body were destroyed, she'd just go back to the place she came from.\""
     show Kyon Worry1 at right
-    "\"At least, as I understand it.\" He shot a questioning glance towards Nagato"
+    "\"At least, as I understand it.\" He shot a questioning glance towards Nagato."
     nvl clear
     "She didn't meet his eyes."
     nvl clear
