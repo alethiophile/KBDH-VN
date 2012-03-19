@@ -843,7 +843,7 @@ label start:
     scene bg roofclose
     show Asakura Sup1 at center
     show Spike5 at center
-    "\"What?\"Ryouko asked, still trapped in the containment field. "
+    "\"What?\" Ryouko asked, still trapped in the containment field. "
     show Asakura Smile3 at center
     extend "\"He just abandoned me here with you?\""
     play music "Music/NagatoTheme.mp3"
@@ -905,7 +905,7 @@ label start:
     show Asakura Sigh1 at center
     show Spike5 at center
     show Yuki Talk1 at HalfLeft
-    "\"Medical program loaded,\"Nagato added helpfully from where she was studying the other interface. "
+    "\"Medical program loaded,\" Nagato added helpfully from where she was studying the other interface. "
     show Yuki Talk2 at HalfLeft
     extend "\"Permission to proceed?\""
     scene bg roofright
@@ -929,7 +929,7 @@ label start:
     extend "straightening up as a sparkle of green and white lights suffused up from the rooftop beneath him, flowing through his body and undoing the damage."
     nvl clear
     show Kyon Smile1 at right
-    "\"Oh, that feels so much better! Thank you; that probably saved my life.\""
+    "\"Oh, that feels so much better! Thank you; that probably saved my life."
     show Kyon Neutral2 at right
     "\"And for future reference, you can probably assume that I'm okay with that one being used.\""
     "\"Acknowledged,\" Nagato agreed."
@@ -946,9 +946,9 @@ label start:
     "\"What's that supposed to mean?\" he asked in irritation."
     nvl clear
     show Haruhi Sigh1 at left
-    "\"Well, this is fun and all, but you can hardly expect me to take your lectures on using power responsibly seriously when you're always relying on your future self to save you,\"she warned, raising one finger and waggling it at him."
+    "\"Well, this is fun and all, but you can hardly expect me to take your lectures on using power responsibly seriously when you're always relying on your future self to save you,\" she warned, raising one finger and waggling it at him."
     show Kyon Sigh2 at right
-    "\'He sighed and hung his head. \"You know, I really am trying my hardest,\""
+    "He sighed and hung his head. \"You know, I really am trying my hardest,\""
     show Kyon Worry1 at right
     show Haruhi Worry1 at left
     extend " he muttered, crossing his arms over his chest and looking away towards the sea."
@@ -966,7 +966,7 @@ label start:
     show Yuki Talk1 at HalfLeft
     "\"It's fine,\" Nagato said tonelessly."
     show Yuki Talk2 at HalfLeft
-    "\"Asakura Ryouko is isolated and confined; she is limited to her organic functions at this moment.\""
+    "\"Asakura Ryouko is isolated and confined; she is limited to her organic functions at this moment."
     show Yuki Talk1 at HalfLeft
     "\"After she is dispatched, I will retrieve defenses to protect against further interference.\""
     nvl clear
@@ -975,30 +975,30 @@ label start:
     show Kyon Ser1 at right
     "\"Waaaait!\" Haruhi yelled, stomping one foot and spinning to face Yuki."
     show Haruhi Ang2 at left
-    "\"Dispatched'? I don't think so! If you need something from her, there's got to be a way to do it without killing her!\""
+    "\"'Dispatched'? I don't think so! If you need something from her, there's got to be a way to do it without killing her!"
     show Haruhi Ang1 at left
-    "\'What's the point of running into another alien, just to kill them?\""
+    "\"What's the point of running into another alien, just to kill them?\""
     nvl clear
     show Kyon Sigh1 at right
     "\"But the fighting is fine,\" Kyon observed, stretching his arms above his head, then swiveling his hips and stretching his spine out."
     show Kyon Ang1 at right
     "\"After all, no one of any importance was smashed off a building.\""
     show Haruhi Eyeroll1 at left
-    "\'Kyon!\""
+    "\"Kyon!\""
     show Kyon Sigh2 at right
-    "\'Alright,\" he said, shaking his head."
+    "\"Alright,\" he said, shaking his head."
     nvl clear
     show Kyon Ser1 at right
-    "\"I don't really want Asakura to die either. But if her body were destroyed, she'd just go back to the place she came from.\""
+    "\"I don't really want Asakura to die either. But if her body were destroyed, she'd just go back to the place she came from."
     show Kyon Worry1 at right
-    "\"At least, as I understand it.\" He shot a questioning glance towards Nagato"
+    "\"At least, as I understand it.\" He shot a questioning glance towards Nagato."
     nvl clear
     "She didn't meet his eyes."
     nvl clear
     show Haruhi Hap1 at left
     "\"Good!\" Haruhi nodded decisively, grinning again."
     show Haruhi Smile3 at left
-    "\'Yuki, let's come up with a backup plan. Something that will let you get your power-up and let us reform Ryouko. Can we do that?\""
+    "\"Yuki, let's come up with a backup plan. Something that will let you get your power-up and let us reform Ryouko. Can we do that?\""
     scene bg roofclose
     show Asakura Frown1  at center
     show Spike5 at center
@@ -1015,7 +1015,7 @@ label start:
     "\"Um ... some kind of second chance ... a chance to start over, prove herself, and ... let's see, realize she doesn't want to kill Kyon at all.\""
     nvl clear
     show Haruhi Smile2 at left
-    "\"And she gets to give Yuki what she needs to make her equal to the next interface that comes along.... But no brainwashing, that's not cool.\""
+    "\"And she gets to give Yuki what she needs to make her equal to the next interface that comes along.... But no brainwashing, that's not cool."
     show Haruhi Smile3 at left
     "\"So, maybe an 'evil' module or something like that, which Yuki can purify and use for good, letting Ryouko learn how to become a nicer person?\""
     nvl clear
@@ -1032,12 +1032,12 @@ label start:
     "\"It's entirely possible that this new knowledge could change their perceptions; there's no reason to be hasty!\""
     nvl clear
     show Yuki Talk1 at HalfLeft
-    "\'Program loaded,\" Nagato replied."
+    "\"Program loaded,\" Nagato replied."
     show Yuki Talk2 at HalfLeft
-    "\'Permission to proceed?\""
+    "\"Permission to proceed?\""
     nvl clear
     show Asakura Pain1 at center
-    "\'We can be reasonable!\ Ryouko protested."
+    "\"We can be reasonable!\" Ryouko protested."
     show Kyon Sigh1 at right
     "\"You're probably the most reasonable person I've ever had try to kill me,\" Kyon agreed."
     show Kyon Ang1 at right
