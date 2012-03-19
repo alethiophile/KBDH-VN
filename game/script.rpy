@@ -26,6 +26,11 @@ init:
     image Knife1 = "Sprites/Effects/Knife1.png"
     image Knife2 = "Sprites/Effects/Knife2.png"
     image Knife3 = "Sprites/Effects/Knife3.png"
+    image Spike1 = "Sprites/Effects/NetSpike1.png"
+    image Spike2 = "Sprites/Effects/NetSpike2.png"
+    image Spike3 = "Sprites/Effects/NetSpike3.png"
+    image Spike4 = "Sprites/Effects/NetSpike4.png"
+    image Spike5 = "Sprites/Effects/NetSpike5.png"
     image Haruhi Sup1 = "Sprites/Haruhi/HaruhiSideSurprised1.png"
     image Haruhi Ang1 = "Sprites/Haruhi/HaruhiSideAngry1.png"
     image Haruhi Ang2 = "Sprites/Haruhi/HaruhiSideAngry2.png"
@@ -594,7 +599,8 @@ label start:
     show Asakura Sup1 at center
     "\"Hmm,\"Ryouko mused, turning slowly around, to where her sealed space in the stairway had been breached."
     show Asakura Frown1 at center
-    extend "\"It was broken from the outside, somehow? I wonder--\""
+    "\"It was broken from the outside, somehow? I wonder--\""
+    nvl clear
     play music "Music/Justice.ogg"
     play sound "SE/Barrier2.wav"
     play sound2 "SE/Laser1.wav"
@@ -607,7 +613,7 @@ label start:
     scene bg BeamOrange2
     show Asakura Pain2 Bright at center
     with flashbulb
-    extend "Instantly another beam shot out from the same location, lighting slightly to one side, near the girl's left shoulder."
+    "Instantly another beam shot out from the same location, lighting slightly to one side, near the girl's left shoulder."
     nvl clear
     play sound "SE/Laser1.wav"
     play sound2 "SE/Slash3.wav"
@@ -619,35 +625,67 @@ label start:
     show Asakura Unhap1
     with dissolve
     "\"High yield neutron flare?\" she asked. \"Quantum entanglement to disrupt my connection....\""
-    # "De-stealthing, Kyon stood from his hiding place atop the stairwell housing, his greatcoat billowing behind him."
-    # nvl clear
-    # "The end of his weapon was glowing orange with discharge, the shape changed from a simple cylinder to a much thinner meter-long construction of sturdy rails and curving hand guards."
-    # "He slung it over his shoulder and ignored it, pulling the second cylinder from his coat and leaping the twenty meter distance between himself and Ryouko."
-    # nvl clear
-    # "Beneath him, a widening circle of dust marked where he leapt from, and while in midair he flipped over, a sequence of touch-points converting the unadorned cylinder into a stocky, blunt, two-handed gun."
-    # "It fired with a rasping cough, launching a ring of metallic spikes to burrow into the rooftop around Ryouko, and then a grid of crackling brissant energy raked between each of the spikes, snaring the girl in a glowing, shuddering net."
-    # "\"Ah,\" she said, her voice disappointed as Kyon's repulsor and gravimetric systems flared his momentum and spread it evenly across the entire rooftop, landing him near Haruhi, at Ryouko's side.{w}\"I failed again.\""
-    # nvl clear
-    # "\"Is that going to hurt her?\" Haruhi asked, crossing her arms over her chest and raising an eyebrow at Kyon in concern."
-    # "\"Hurt her?\" he asked, somewhat indignantly."
-    # "\"Haruhi, she's tried to kill me. Three times, now, and you just saw one of them! Your primary concern is that I not hurt her?\""
-    # "He muttered to himself beneath his breath, folding away his firearm into storage."
-    # nvl clear
-    # "Haruhi tapped a toe impatiently, still staring at him."
-    # "\"Pulling a phone identical to the one Haruhi was holding from one pocket, he punched a key.\"Nagato should be here shortly,\" he added, shaking his head."
-    # "\"This is all up to you. I already know you'll take care of things just fine.\""
-    # "\"Yes!\" she said, pumping one fist in the air. \"I get to do something! Hey, how's the future?\""
-    # nvl clear
-    # "\"It's awesome,\" he said, annoyed.\"Try and have some pity for the me that nearly got murdered off a building, huh?\""
-    # "\"Anyway, just so you know, she's programmed to try and kill me; she won't do anything to you.\""
-    # "\"And you won't see me tomorrow at school, because I'm going to be ... well. You'll find out.\""
-    # "\"Okay,\"she agreed, frowning.\"But, hey, why aren't you going to be around?\""
-    # nvl clear
-    # "\"Further information is not available here,\" he warned, shaking his head."
-    # "\"Now, when you see that other me, tell him I said 'hi', like I always do.\""
-    # "He paused before glancing at his phone again with a grimace."
-    # "\"My time's up,\" he announced, re-engaging his stealth field and vanishing from sight."
-    # nvl clear
+    scene bg roof
+    pause (0.01)
+    play sound "SE/CloakOff.wav"
+    show Kyon Ser1 at right
+    show Skinsuit at right
+    show Coat at right
+    with coatin
+    "De-stealthing, Kyon stood from his hiding place atop the stairwell housing, his greatcoat billowing behind him."
+    nvl clear
+    "The end of his weapon was glowing orange with discharge, the shape changed from a simple cylinder to a much thinner meter-long construction of sturdy rails and curving hand guards."
+    "He slung it over his shoulder and ignored it, pulling the second cylinder from his coat and leaping the twenty meter distance between himself and Ryouko."
+    play sound "SE/lowswoosh.wav"
+    scene bg roofclose with wiperightfast
+    nvl clear
+    show Asakura Unhap1 at center
+    pause (0.3)
+    play sound "SE/guncock.wav"
+    "Beneath him, a widening circle of dust marked where he leapt from, and while in midair he flipped over, a sequence of touch-points converting the unadorned cylinder into a stocky, blunt, two-handed gun."
+    play sound "SE/netlaunch.wav"
+    pause (1)
+    play sound "SE/stake1.wav"
+    show Spike1 at center
+    pause (0.05)
+    play sound "SE/stake2.wav"
+    show Spike2 at center
+    pause (0.05)
+    play sound "SE/stake3.wav"
+    show Spike3 at center
+    pause (0.05)
+    play sound "SE/stake1.wav"
+    show Spike4 at center
+    pause (0.5)
+    hide Spike1
+    hide Spike2
+    hide Spike3
+    hide Spike4
+    show Spike5 at center
+    play sound "SE/elec1.wav"
+    "It fired with a rasping cough, launching a ring of metallic spikes to burrow into the rooftop around Ryouko, and then a grid of crackling brissant energy raked between each of the spikes, snaring the girl in a glowing, shuddering net."
+    "\"Ah,\" she said, her voice disappointed as Kyon's repulsor and gravimetric systems flared his momentum and spread it evenly across the entire rooftop, landing him near Haruhi, at Ryouko's side.{w}\"I failed again.\""
+    nvl clear
+    "\"Is that going to hurt her?\" Haruhi asked, crossing her arms over her chest and raising an eyebrow at Kyon in concern."
+    "\"Hurt her?\" he asked, somewhat indignantly."
+    "\"Haruhi, she's tried to kill me. Three times, now, and you just saw one of them! Your primary concern is that I not hurt her?\""
+    "He muttered to himself beneath his breath, folding away his firearm into storage."
+    nvl clear
+    "Haruhi tapped a toe impatiently, still staring at him."
+    "\"Pulling a phone identical to the one Haruhi was holding from one pocket, he punched a key.\"Nagato should be here shortly,\" he added, shaking his head."
+    "\"This is all up to you. I already know you'll take care of things just fine.\""
+    "\"Yes!\" she said, pumping one fist in the air. \"I get to do something! Hey, how's the future?\""
+    nvl clear
+    "\"It's awesome,\" he said, annoyed.\"Try and have some pity for the me that nearly got murdered off a building, huh?\""
+    "\"Anyway, just so you know, she's programmed to try and kill me; she won't do anything to you.\""
+    "\"And you won't see me tomorrow at school, because I'm going to be ... well. You'll find out.\""
+    "\"Okay,\"she agreed, frowning.\"But, hey, why aren't you going to be around?\""
+    nvl clear
+    "\"Further information is not available here,\" he warned, shaking his head."
+    "\"Now, when you see that other me, tell him I said 'hi', like I always do.\""
+    "He paused before glancing at his phone again with a grimace."
+    "\"My time's up,\" he announced, re-engaging his stealth field and vanishing from sight."
+    nvl clear
     # "\"What?\"Ryouko asked, still trapped in the containment field.\"He just abandoned me here with you?\""
     # "\"Damn it,\" Kyon groaned, from where he was just climbing over the edge of the building, breathing hard.{w} \"I hate when I have to rely on time-travel to take care of things.\""
     # "\"Oh!\" Haruhi said cheerfully. \"Future-you says 'hi', like always!\""
