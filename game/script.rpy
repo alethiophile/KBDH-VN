@@ -605,9 +605,9 @@ label start:
     nvl clear
     scene bg roofclose with fade
     show Asakura Sup1 at center
-    "\"Hmm,\"Ryouko mused, turning slowly around, to where her sealed space in the stairway had been breached."
+    "\"Hmm,\" Ryouko mused, turning slowly around, to where her sealed space in the stairway had been breached."
     show Asakura Frown1 at center
-    "\"It was broken from the outside, somehow? I wonder--\""
+    "\"It was broken from the outside, somehow? I wonder—\""
     nvl clear
     play music "Music/Justice.ogg"
     play sound "SE/Barrier2.mp3"
@@ -615,7 +615,7 @@ label start:
     scene bg BeamOrange1 with flashbulb
     "The shrill buzz of a brilliant energy beam licked out from the roof of the tiny structure that housed the stairwell."
     show Asakura Pain1 at center
-    "Ryouko was struck in the chest dead-center of mass, her entire body glowing white for a second before she staggered--"
+    "Ryouko was struck in the chest dead-center of mass, her entire body glowing white for a second before she staggered—"
     play sound "SE/Laser1.mp3"
     play sound2 "SE/Barrier1.mp3"
     scene bg BeamOrange2
@@ -676,7 +676,6 @@ label start:
     "\"Ah,\" she said, her voice disappointed as Kyon's repulsor and gravimetric systems flared his momentum and spread it evenly across the entire rooftop, landing him near Haruhi, at Ryouko's side."
     show Asakura Sigh1 at center
     "\"I failed again.\""
-    "\"Ah,\" she said, her voice disappointed as Kyon's repulsor and gravimetric systems flared his momentum and spread it evenly across the entire rooftop, landing him near Haruhi, at Ryouko's side.{w} \"I failed again.\""
     nvl clear
     hide Asakura
     show Haruhi Eyeroll1 at left   
@@ -686,12 +685,12 @@ label start:
     "He muttered to himself beneath his breath, folding away his firearm into storage."
     nvl clear
     "Haruhi tapped a toe impatiently, still staring at him."
-    "\"Pulling a phone identical to the one Haruhi was holding from one pocket, he punched a key. \"Nagato should be here shortly,\" he added, shaking his head."
+    "Pulling a phone identical to the one Haruhi was holding from one pocket, he punched a key. \"Nagato should be here shortly,\" he added, shaking his head."
     "\"This is all up to you. I already know you'll take care of things just fine.\""
     "\"Yes!\" she said, pumping one fist in the air. \"I get to do something! Hey, how's the future?\""
     nvl clear
-    "\"It's awesome,\" he said, annoyed. \"Try and have some pity for the me that nearly got murdered off a building, huh?\""
-    "\"Anyway, just so you know, she's programmed to try and kill me; she won't do anything to you.\""
+    "\"It's awesome,\" he said, annoyed. \"Try and have some pity for the me that nearly got murdered off a building, huh?"
+    "\"Anyway, just so you know, she's programmed to try and kill me; she won't do anything to you."
     "\"And you won't see me tomorrow at school, because I'm going to be ... well. You'll find out.\""
     "\"Okay,\" she agreed, frowning. \"But, hey, why aren't you going to be around?\""
     nvl clear
