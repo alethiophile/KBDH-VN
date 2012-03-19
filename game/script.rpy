@@ -628,7 +628,84 @@ label start:
     nvl clear
     scene black with dissolve
     "Dev note: In the story this switches to the past, with Kyon going to meet Yuki. In the interest of asset re-use though, I'm focusing on finishing the fight scene. - Oroboro"
-    nvl clear
+    
+    # play music "Music/Nichijou.mp3"
+    # nvl clear
+    # "That day had started normally enough, but then, in his experience, that was true of nearly all days." 
+    # "This had caused him to become naturally suspicious of every day, to the point where he was starting to suspect a slow but sure slide into absolute paranoia."
+    # "Haruhi was taking her toll on him ... even if she was calming down, her behavior after that horrific (in retrospect) run-in with Sasaki was doing absolutely nothing to soothe him."
+    # nvl clear
+    # "His preferred refuge from total madness was quite simple: Drink some milk."
+    # "He didn't know why it had such a calming, reassuring effect on him, but it did."
+    # "So he poured himself a large glass in the kitchen, one ear perking up and catching the sounds of his sister playing a video game in the living room."
+    # nvl clear
+    # "Damn it, he thought. He'd even left his cell in the other room specifically to lay a claim on the system!"
+    # "Seriously, he thought darkly, taking a large swallow of his milk, the system was a Playstation Two -- about ten years out of date now, and he had to haul it all the way upstairs if he wanted to play games in his room. "
+    # "He probably shouldn't even bother getting worked up about such an antiquated gaming system."
+    # "Even if it was the only gaming system in the house."
+    # "His phone rang and he sighed, rolling his eyes but staying in the kitchen."
+    # nvl clear
+    # "\"Kyon-kun,\" his sister called, pausing the game with a loud chirp, \"phone!\""
+    # "He lowered his glass, already able to anticipate Haruhi demanding his participation in something."
+    # "\"Answer it for me,\" he called back between gulps.\"I'm busy.\""
+    # nvl clear
+    # "\"Okaaaaaay,\" she said, before he heard her say,\"Kyon-kun's phone! He's too lazy to answer!\""
+    # "\'Thanks,\" he muttered under his breath."
+    # "\"Oh? Okay! I'll tell him. Feel better!\" Then her voice rose from conversational, to an unnecessary bellow, \"Kyon-kun! Yuki-nee-san says she's sick and really wants you to visit her!\""
+    # nvl clear
+    # "He didn't even bother to grab the phone on the way out."
+    # "\"Can I come with...\"{nw}"
+    # play sound "SE/doorclose.mp3"
+    # "she began, before the door slammed shut. Shrugging, she turned back to the game after flipping Kyon's phone closed."
+    # nvl clear
+    # stop music fadeout 1
+    # play music "Music/Nagato2.mp3"
+    # "He calculated the ride to Nagato's place as a twenty minute trip, at one point."
+    # "When he reached the lobby, barely pausing long enough to lock up his bike, he wondered if he'd beaten his best time, but didn't feel the need to check."
+    # "Instead, he dashed to the console, still gasping for breath, and fumbled, mis-dialing her room number and needing to hammer the 'cancel' button to dial again."
+    # "\"Nagato!\" he called, the second she picked up.\"It's me!\""
+    # nvl clear
+    # "The door opened."
+    # "After taking the elevator to her floor, he slowed his mad pace, seeing her standing outside the doorway to her apartment, waiting for him."
+    # "He tried to imagine that he saw some relief around her eyes when he reached her side, but wasn't confident enough to be certain that was the case."
+    # "\"Nagato,\" he said, nodding.\"What's wrong?\""
+    # nvl clear
+    # "She gestured him inside, leading him to the table."
+    # "He kicked off his shoes and went to the kotatsu, watching her warily."
+    # "After pouring a cup of tea for each of them in silence, she finally spoke."
+    # nvl clear
+    # "\"The Integrated Data Sentience Entity has determined that I have become a liability, \" she said in a soft monotone, nearly devoid of inflection."
+    # "He stared at her for a long minute, blinking. \"What ... do you mean?\""
+    # "\"Factors within my makeup have become too unpredictable. It has been calculated that I will commit another error.\""
+    # "\"To prevent this, deletion has been scheduled in three hours, twenty one minutes, fifteen seconds; I will be replaced with an interface more suited to defending against possible Sky Canopy Domain interference.\""
+    # nvl clear
+    # "After taking a deep breath, he growled, \"There isn't enough milk in the world.\""
+    # "She blinked several times in response."
+    # "\"How set is this?\" he asked, his hands shaking too much to hold the teacup properly."
+    # "\"It is absolute."
+    # nvl clear
+    # "He took another deep breath, then jumped to his feet, nearly upsetting the table, and began pacing back and forth in her living room."
+    # "She watched him silently."
+    # nvl clear
+    # "\"Okay,\" he said, after a moment of thought.\"I'll just--\""
+    # "He broke off, fumbling at his pocket when he realized his phone was still at home."
+    # "Biting off a curse, he asked, \"Can I use your phone, Nagato? I need to call Haruhi and the others.\""
+    # nvl clear
+    # "For a moment, mild disappointment flickered around her eyes. \"It is not necessary.\""
+    # "He stared at her, then shook his head. \"What do you mean?\""
+    # "\"I requested your presence for ... personal reasons,\" she said. \"It was not a request for help.\""
+    # nvl clear
+    # "\"I don't care!\" he shouted."
+    # "\"'ve always relied on you -- now that you need help, I am not going to just stand by and watch you get taken away from-- From us!\""
+    # "She blinked, considering, then lowered her head slightly in her infinitesimal nod."
+    # nvl clear
+    # "\"I see,\" she said quietly"
+    # "\"So, I need to make some phone calls.\""
+    # "\'Understood.\""
+    # stop music fadeout 1 
+#     
+#     
+    
     scene bg roofclose with fade
     show Asakura Sup1 at center
     "\"Hmm,\" Ryouko mused, turning slowly around, to where her sealed space in the stairway had been breached."
@@ -754,12 +831,13 @@ label start:
     "\"Now, when you see that other me, tell him I said 'hi', like I always do.\""
     show Kyon Ser1 at right
     "He paused before glancing at his phone again with a grimace."
+    "\"My time's up,\"{nw}"
     play sound "SE/CloakOn.mp3"
     hide Kyon
     hide Skinsuit
     hide Coat
     with coatout
-    "\"My time's up,\" he announced, re-engaging his stealth field and vanishing from sight."
+    extend " he announced, re-engaging his stealth field and vanishing from sight."
     stop music fadeout 1
     nvl clear
     scene bg roofclose
@@ -778,7 +856,7 @@ label start:
     with wipeup
     "\"Damn it,\" Kyon groaned, from where he was just climbing over the edge of the building, breathing hard. "
     show Kyon Sigh1 at right
-    extend "\"I hate when I have to rely on time-travel to take care of things.\""
+    "\"I hate when I have to rely on time-travel to take care of things.\""
     nvl clear
     scene bg roof
     show Haruhi Hap1 at left
