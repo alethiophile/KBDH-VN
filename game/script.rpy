@@ -56,6 +56,7 @@ init:
     image Kyon Neutral2 = "Sprites/Kyon/KyonNeutral2.png"
     image Kyon Ang1 = "Sprites/Kyon/KyonAngry1.png"
     image Kyon Pain1 = "Sprites/Kyon/KyonPained1.png"
+    image Kyon Pain2 = "Sprites/Kyon/KyonPained2.png"
     image Kyon Smile1 ="Sprites/Kyon/KyonSmile1.png"
     image Skinsuit = "Sprites/Kyon/KyonSkinsuitTemplate.png"
     image Skinsuit Bright = im.MatrixColor("Sprites/Kyon/KyonSkinsuitTemplate.png",
@@ -566,6 +567,7 @@ label start:
     show Skinsuit at KyonRightFast
     show Coat at KyonRightFast
     pause (0.1)
+    play sound "SE/touhoudead.wav"
     hide Kyon
     hide Skinsuit
     hide Coat
@@ -681,6 +683,7 @@ label start:
     nvl clear
     hide Asakura
     hide Spike5
+    scene bg roof
     show Haruhi Ang1 at left   
     "\"Is that going to hurt her?\" Haruhi asked, crossing her arms over her chest and raising an eyebrow at Kyon in concern."
     show Kyon Ser2 at right
@@ -700,6 +703,7 @@ label start:
     show Kyon Neutral1 at right
     "Pulling a phone identical to the one Haruhi was holding from one pocket, he punched a key. \"Nagato should be here shortly,\" he added, shaking his head."
     show Kyon Ser1 at right
+    nvl clear
     "\"This is all up to you. I already know you'll take care of things just fine.\""
     show Haruhi Hap4 at left
     "\"Yes!\" she said, pumping one fist in the air. \"I get to do something! \""
@@ -733,30 +737,51 @@ label start:
     with coatout
     "\"My time's up,\" he announced, re-engaging his stealth field and vanishing from sight."
     nvl clear
-    # "\"What?\"Ryouko asked, still trapped in the containment field.\"He just abandoned me here with you?\""
-    # "\"Damn it,\" Kyon groaned, from where he was just climbing over the edge of the building, breathing hard.{w} \"I hate when I have to rely on time-travel to take care of things.\""
-    # "\"Oh!\" Haruhi said cheerfully. \"Future-you says 'hi', like always!\""
-    # "\"Yeah? That guy always annoys me. Probably almost as much as I'm annoyed by having to save past-me.\""
-    # nvl clear
-    # "There was a flash of light and a warping of space, and then Nagato appeared at Haruhi's side."
-    # "The circle of illumination around Haruhi's feet had vanished."
-    # "While Nagato knelt to examine Ryouko, Haruhi dashed to Kyon's side and helped him stand."
-    # nvl clear
-    # "\"How bad was it, anyway? Future-you seemed to think you weren't very tough, and that you were hurt pretty badly.\""
-    # "\"think I've got some internal bleeding,\" he said, wincing, one hand pressed to his abdomen. {w} \"And some of my gear is messed up from the impact and overload. While this is fun for you, I wouldn't mind some medical assistance.\""
-    # nvl clear
-    # "\"Sure!\" she said cheerfully, clapping one hand on his shoulder.\"Happy, healing, all-better thoughts!\""
-    # "\"Medical program loaded,\"Nagato added helpfully from where she was studying the other interface. {w} \"Permission to proceed?\""
-    # "\"Granted.\" Kyon said, straightening up as a sparkle of green and white lights suffused up from the rooftop beneath him, flowing through his body and undoing the damage."
-    # nvl clear
-    # "\"Oh, that feels so much better! Thank you; that probably saved my life.\""
-    # "\"And for future reference, you can probably assume that I'm okay with that one being used.\""
-    # "\"Acknowledged,\" Nagato agreed."
-    # nvl clear
-    # "\"Hmm, hey, Kyon, you know, you're going to have to really step up your game,\" Haruhi said suddenly, tossing his cell phone back to him."
-    # "He scowled, pocketed it, and then banished all of his equipment, the greatcoat taking the longest to phase out of view."
-    # "\"What's that supposed to mean?\" he asked in irritation."
-    # nvl clear
+    scene bg roofclose
+    show Asakura Sup1 at center
+    show Spike5 at center
+    "\"What?\"Ryouko asked, still trapped in the containment field."
+    show Asakura Smile3 at center
+    extend "\"He just abandoned me here with you?\""
+    scene bg roofright
+    pause (0.5)
+    show Kyon Pain1 at right
+    show Skinsuit at right
+    show Coat at right
+    with wipeup
+    "\"Damn it,\" Kyon groaned, from where he was just climbing over the edge of the building, breathing hard."
+    show Kyon Sigh1 at right
+    extend "\"I hate when I have to rely on time-travel to take care of things.\""
+    nvl clear
+    scene bg roof
+    show Haruhi Hap1 at left
+    "\"Oh!\" Haruhi said cheerfully. \"Future-you says 'hi', like always!\""
+    scene bg roofright
+    show Kyon Sigh2 at right
+    show Skinsuit at right
+    show Coat at right
+    "\"Yeah? That guy always annoys me. Probably almost as much as I'm annoyed by having to save past-me.\""
+    nvl clear
+    scene bg roof
+    "There was a flash of light and a warping of space, and then Nagato appeared at Haruhi's side."
+    "The circle of illumination around Haruhi's feet had vanished."
+    "While Nagato knelt to examine Ryouko, Haruhi dashed to Kyon's side and helped him stand."
+    nvl clear
+    "\"How bad was it, anyway? Future-you seemed to think you weren't very tough, and that you were hurt pretty badly.\""
+    "\"think I've got some internal bleeding,\" he said, wincing, one hand pressed to his abdomen. {w} \"And some of my gear is messed up from the impact and overload. While this is fun for you, I wouldn't mind some medical assistance.\""
+    nvl clear
+    "\"Sure!\" she said cheerfully, clapping one hand on his shoulder.\"Happy, healing, all-better thoughts!\""
+    "\"Medical program loaded,\"Nagato added helpfully from where she was studying the other interface. {w} \"Permission to proceed?\""
+    "\"Granted.\" Kyon said, straightening up as a sparkle of green and white lights suffused up from the rooftop beneath him, flowing through his body and undoing the damage."
+    nvl clear
+    "\"Oh, that feels so much better! Thank you; that probably saved my life.\""
+    "\"And for future reference, you can probably assume that I'm okay with that one being used.\""
+    "\"Acknowledged,\" Nagato agreed."
+    nvl clear
+    "\"Hmm, hey, Kyon, you know, you're going to have to really step up your game,\" Haruhi said suddenly, tossing his cell phone back to him."
+    "He scowled, pocketed it, and then banished all of his equipment, the greatcoat taking the longest to phase out of view."
+    "\"What's that supposed to mean?\" he asked in irritation."
+    nvl clear
     # "\"Well, this is fun and all, but you can hardly expect me to take your lectures on using power responsibly seriously when you're always relying on your future self to save you,\"she warned, raising one finger and waggling it at him."
     # "\'He sighed and hung his head. \"You know, I really am trying my hardest,\" he muttered, crossing his arms over his chest and looking away towards the sea."
     # nvl clear
