@@ -110,6 +110,11 @@ init:
         renpy.music.register_channel("sound2", "sfx", 0)
         _preferences.set_volume("sfx", 0.5)
 
+        config.keymap['skip'].remove('K_LCTRL')
+        config.keymap['skip'].remove('K_RCTRL')
+        config.keymap['skip'].append('K_LALT')
+        config.keymap['skip'].append('K_RALT')
+
 transform center_left:
     xalign 0.1 yalign 1.0
     
