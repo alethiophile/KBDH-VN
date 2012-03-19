@@ -46,6 +46,7 @@ init:
     image Haruhi Eyeroll1 = "Sprites/Haruhi/HaruhiSideEyeroll1.png"
     image Haruhi Quest1 = "Sprites/Haruhi/HaruhiSideQuestion1.png"
     image Haruhi Grin1 = "Sprites/Haruhi/HaruhiSideGrin1.png"
+    image Haruhi Worry1 = "Sprites/Haruhi/HaruhiSideWorry1.png"
     image Kyon Ser1 = "Sprites/Kyon/KyonSerious1.png"
     image Kyon Ser2 = "Sprites/Kyon/KyonSerious2.png"
     image Kyon Ser2 Bright = im.MatrixColor("Sprites/Kyon/KyonSerious2.png",
@@ -77,7 +78,13 @@ init:
     image Asakura Pain2 = "Sprites/Asakura/AsakuraPain2.png"
     image Asakura Pain2 Bright = im.MatrixColor("Sprites/Asakura/AsakuraPain2.png",
                                        im.matrix.brightness(.5))
-
+    image Yuki EyesClosed = "Sprites/Yuki/YukiSideEyesClosed1.png"
+    image Yuki EyesClosed Bright = im.MatrixColor("Sprites/Yuki/YukiSideEyesClosed1.png",
+                                       im.matrix.brightness(.5))
+    image Yuki Side1 = "Sprites/Yuki/YukiSide1.png"
+    image Yuki Side2 = "Sprites/Yuki/YukiSide2.png"
+    image Yuki Talk1 = "Sprites/Yuki/YukiSideTalk1.png"
+    image Yuki Talk2 = "Sprites/Yuki/YukiSideTalk2.png"
 
     image Credits0 = "Backgrounds/credits0.png"
     image Credits1 = "Backgrounds/credits1.png"
@@ -121,10 +128,12 @@ transform center_left:
     
 transform HalfRight:
     xalign 0.75 yalign 1.0
+transform HalfLeft:
+    xalign 0.25 yalign 1.0
     
 transform KyonRightFast:
     xalign 0.0 yalign 1.0
-    linear 0.1 xalign 1.0   
+    linear 0.15 xalign 1.0   
 
 label start:
     stop music fadeout 1
@@ -639,6 +648,7 @@ label start:
     "A third, though not as brightly glowing shot was somewhat lower, near her stomach, {nw}"
     scene bg roofclose
     show Asakura Unhap1
+    play sound "SE/impact.mp3"
     with dissolve
     extend "and Ryouko dropped to her knees, eyes widened."
     "\"High yield neutron flare?\" she asked. \"Quantum entanglement to disrupt my connection....\""
@@ -741,6 +751,7 @@ label start:
     hide Coat
     with coatout
     "\"My time's up,\" he announced, re-engaging his stealth field and vanishing from sight."
+    stop music fadeout 1
     nvl clear
     scene bg roofclose
     show Asakura Sup1 at center
@@ -748,8 +759,10 @@ label start:
     "\"What?\"Ryouko asked, still trapped in the containment field."
     show Asakura Smile3 at center
     extend "\"He just abandoned me here with you?\""
+    play music "Music/NagatoTheme.mp3"
     scene bg roofright
     pause (0.5)
+    play sound "SE/impact.mp3"
     show Kyon Pain1 at right
     show Skinsuit at right
     show Coat at right
@@ -768,15 +781,46 @@ label start:
     "\"Yeah? That guy always annoys me. Probably almost as much as I'm annoyed by having to save past-me.\""
     nvl clear
     scene bg roof
+    show Haruhi Hap1 at left
+    pause (0.5)
+    play sound "SE/Barrier1.mp3"
+    show Yuki EyesClosed Bright  at center
+    show field at center
+    with flashbulb
+    show Yuki EyesClosed at center
+    hide field with dissolve
     "There was a flash of light and a warping of space, and then Nagato appeared at Haruhi's side."
+    show Yuki Side1 at center
     "The circle of illumination around Haruhi's feet had vanished."
+    scene bg roofclose with wipeup
+    show Asakura Sigh1 at center
+    show Spike5 at center
+    show Yuki Side1 at HalfLeft with moveinleft
     "While Nagato knelt to examine Ryouko, Haruhi dashed to Kyon's side and helped him stand."
     nvl clear
+    scene bg roofright
+    show Kyon Pain2 at right
+    show Skinsuit at right
+    show Coat at right
+    show Haruhi Worry1 at center with moveinleft
     "\"How bad was it, anyway? Future-you seemed to think you weren't very tough, and that you were hurt pretty badly.\""
-    "\"think I've got some internal bleeding,\" he said, wincing, one hand pressed to his abdomen. {w} \"And some of my gear is messed up from the impact and overload. While this is fun for you, I wouldn't mind some medical assistance.\""
+    show Kyon Pain1 at right
+    "\"I think I've got some internal bleeding,\" he said, wincing, one hand pressed to his abdomen. "
+    show Kyon Pain2 at right
+    extend "\"And some of my gear is messed up from the impact and overload. While this is fun for you, I wouldn't mind some medical assistance.\""
     nvl clear
-    "\"Sure!\" she said cheerfully, clapping one hand on his shoulder.\"Happy, healing, all-better thoughts!\""
-    "\"Medical program loaded,\"Nagato added helpfully from where she was studying the other interface. {w} \"Permission to proceed?\""
+    show Haruhi Hap3 at center
+    "\"Sure!\" she said cheerfully, clapping one hand on his shoulder. "
+    play sound "SE/impact.mp3"
+    show Kyon Pain1 at right
+    extend "\"Happy, healing, all-better thoughts!\""
+    scene bg roofclose
+    show Asakura Sigh1 at center
+    show Spike5 at center
+    show Yuki Talk1 at HalfLeft
+    "\"Medical program loaded,\"Nagato added helpfully from where she was studying the other interface. "
+    show Yuki Talk2 at HalfLeft
+    extend "\"Permission to proceed?\""
     "\"Granted.\" Kyon said, straightening up as a sparkle of green and white lights suffused up from the rooftop beneath him, flowing through his body and undoing the damage."
     nvl clear
     "\"Oh, that feels so much better! Thank you; that probably saved my life.\""
