@@ -665,7 +665,7 @@ label start:
     show Spike5 at center
     play sound "SE/elec1.mp3"
     "It fired with a rasping cough, launching a ring of metallic spikes to burrow into the rooftop around Ryouko, and then a grid of crackling brissant energy raked between each of the spikes, snaring the girl in a glowing, shuddering net."
-    "\"Ah,\" she said, her voice disappointed as Kyon's repulsor and gravimetric systems flared his momentum and spread it evenly across the entire rooftop, landing him near Haruhi, at Ryouko's side.{w}\"I failed again.\""
+    "\"Ah,\" she said, her voice disappointed as Kyon's repulsor and gravimetric systems flared his momentum and spread it evenly across the entire rooftop, landing him near Haruhi, at Ryouko's side.{w} \"I failed again.\""
     nvl clear
     "\"Is that going to hurt her?\" Haruhi asked, crossing her arms over her chest and raising an eyebrow at Kyon in concern."
     "\"Hurt her?\" he asked, somewhat indignantly."
@@ -673,14 +673,14 @@ label start:
     "He muttered to himself beneath his breath, folding away his firearm into storage."
     nvl clear
     "Haruhi tapped a toe impatiently, still staring at him."
-    "\"Pulling a phone identical to the one Haruhi was holding from one pocket, he punched a key.\"Nagato should be here shortly,\" he added, shaking his head."
+    "\"Pulling a phone identical to the one Haruhi was holding from one pocket, he punched a key. \"Nagato should be here shortly,\" he added, shaking his head."
     "\"This is all up to you. I already know you'll take care of things just fine.\""
     "\"Yes!\" she said, pumping one fist in the air. \"I get to do something! Hey, how's the future?\""
     nvl clear
-    "\"It's awesome,\" he said, annoyed.\"Try and have some pity for the me that nearly got murdered off a building, huh?\""
+    "\"It's awesome,\" he said, annoyed. \"Try and have some pity for the me that nearly got murdered off a building, huh?\""
     "\"Anyway, just so you know, she's programmed to try and kill me; she won't do anything to you.\""
     "\"And you won't see me tomorrow at school, because I'm going to be ... well. You'll find out.\""
-    "\"Okay,\"she agreed, frowning.\"But, hey, why aren't you going to be around?\""
+    "\"Okay,\" she agreed, frowning. \"But, hey, why aren't you going to be around?\""
     nvl clear
     "\"Further information is not available here,\" he warned, shaking his head."
     "\"Now, when you see that other me, tell him I said 'hi', like I always do.\""
