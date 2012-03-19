@@ -508,7 +508,7 @@ label start:
     
     "Kyon maintained his guard position, his free hand already clenched into a fist, the metal ridges of his skinsuit facing outward."
     nvl clear
-    play sound "Se/Barrier1.m3"
+    play sound "SE/Barrier1.mp3"
     show BarrierSmall at HalfRight with dissolve
     pause 0.5
     show BarrierSmall Bright at HalfRight
