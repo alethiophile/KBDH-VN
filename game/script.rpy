@@ -9,6 +9,7 @@ init:
     image bg roof = "Backgrounds/roof.jpg"
     image bg roofclose = "Backgrounds/roofclose.jpg"
     image bg roofsky = "Backgrounds/roofsky.jpg"
+    image bg roofright = "Backgrounds/roofright.jpg"
     image bg BeamOrange1 = "Backgrounds/BeamOrange1.jpg"
     image bg BeamOrange2 = "Backgrounds/BeamOrange2.jpg"
     image bg BeamOrange3 = "Backgrounds/BeamOrange3.jpg"
@@ -114,6 +115,10 @@ transform center_left:
 transform HalfRight:
     xalign 0.75 yalign 1.0
     
+transform KyonRightFast:
+    xalign 0.0 yalign 1.0
+    linear 0.1 xalign 1.0   
+
 label start:
     stop music fadeout 1
     scene title0 with slowfadein
@@ -553,13 +558,20 @@ label start:
     pause (0.1)
     play sound "SE/slash2.mp3"
     "He opened his mouth to retort, but Asakura was already within his guard, driving yet another blade into his stomach."
+    scene bg roofright
+    play sound "SE/lowswoosh.wav"
+    pause (0.1)
+    show Kyon Pain1 at KyonRightFast
+    show Skinsuit at KyonRightFast
+    show Coat at KyonRightFast
+    pause (0.1)
     hide Kyon
-    hide Coat
     hide Skinsuit
-    with moveoutright
+    hide Coat
     "The inner carbon-nano-weave of the greatcoat and the force field of the skinsuit beneath it converted the stabbing force into a distributed shock wave, so instead of being pierced, Kyon was merely hit with the force of a speeding minivan, flying clear across the roof with a choked grunt."
     nvl clear
-    show Asakura Smile1 at right with move
+    scene bg roof
+    show Asakura Smile1 at right
     "\"In the end,\" Asakura remarked, watching his form tumble off the edge of the school building,{fast}\"all those toys are pretty silly if you don't actually know how to use them.\""
     show Haruhi Hap1 at left
     "\"You have to give him credit, though,\" Haruhi said, peering very closely at the knives frozen over her barrier, not even glancing back to where Kyon had vanished."
@@ -616,12 +628,13 @@ label start:
     scene bg BeamOrange4
     show Asakura Pain2 Bright at center
     with flashbulb
-    "A third, though not as brightly glowing shot was somewhat lower, near her stomach, and Ryouko dropped to her knees, eyes widened."
+    "A third, though not as brightly glowing shot was somewhat lower, near her stomach, {nw}"
     scene bg roofclose
     show Asakura Unhap1
     with dissolve
+    extend "and Ryouko dropped to her knees, eyes widened."
     "\"High yield neutron flare?\" she asked. \"Quantum entanglement to disrupt my connection....\""
-    scene bg roof
+    scene bg roofright
     pause (0.01)
     play sound "SE/CloakOff.mp3"
     show Kyon Ser1 at right
@@ -660,8 +673,13 @@ label start:
     show Spike5 at center
     play sound "SE/elec1.mp3"
     "It fired with a rasping cough, launching a ring of metallic spikes to burrow into the rooftop around Ryouko, and then a grid of crackling brissant energy raked between each of the spikes, snaring the girl in a glowing, shuddering net."
+    "\"Ah,\" she said, her voice disappointed as Kyon's repulsor and gravimetric systems flared his momentum and spread it evenly across the entire rooftop, landing him near Haruhi, at Ryouko's side."
+    show Asakura Sigh1 at center
+    "\"I failed again.\""
     "\"Ah,\" she said, her voice disappointed as Kyon's repulsor and gravimetric systems flared his momentum and spread it evenly across the entire rooftop, landing him near Haruhi, at Ryouko's side.{w} \"I failed again.\""
     nvl clear
+    hide Asakura
+    show Haruhi Eyeroll1 at left   
     "\"Is that going to hurt her?\" Haruhi asked, crossing her arms over her chest and raising an eyebrow at Kyon in concern."
     "\"Hurt her?\" he asked, somewhat indignantly."
     "\"Haruhi, she's tried to kill me. Three times, now, and you just saw one of them! Your primary concern is that I not hurt her?\""
