@@ -106,6 +106,7 @@ init:
         renpy.music.set_volume(0.2, .5, channel="music")
         flashbulb = Fade(0.2, 0.0, 0.8, color='#fff')
         renpy.music.register_channel("sound2", "sfx", 0)
+        _preferences.set_volume("sfx", 0.5)
 
 transform slide_left:
     xalign 0.1 yalign 1.0
