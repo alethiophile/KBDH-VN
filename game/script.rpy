@@ -50,6 +50,7 @@ init:
     image Haruhi Smile1 = "Sprites/Haruhi/HaruhiSideSmile1.png"
     image Haruhi Smile2 = "Sprites/Haruhi/HaruhiSideSmile2.png"
     image Haruhi Smile3 = "Sprites/Haruhi/HaruhiSideSmile3.png"
+    image Haruhi Sigh1 = "Sprites/Haruhi/HaruhiSideSigh1.png"
     image Kyon Ser1 = "Sprites/Kyon/KyonSerious1.png"
     image Kyon Ser2 = "Sprites/Kyon/KyonSerious2.png"
     image Kyon Ser2 Bright = im.MatrixColor("Sprites/Kyon/KyonSerious2.png",
@@ -864,34 +865,38 @@ label start:
     show Kyon Ser2 at right
     "\"What's that supposed to mean?\" he asked in irritation."
     nvl clear
-    # "\"Well, this is fun and all, but you can hardly expect me to take your lectures on using power responsibly seriously when you're always relying on your future self to save you,\"she warned, raising one finger and waggling it at him."
-    # "\'He sighed and hung his head. \"You know, I really am trying my hardest,\" he muttered, crossing his arms over his chest and looking away towards the sea."
-    # nvl clear
-    # "\"But I can't just leave you alone, and Nagato can't handle another interface right now.\""
-    # "\"And you did such a great job!\" Ryouko encouraged from beneath her energy net."
-    # "\"Time travel, is it? Now that's one tool you seem to know how to use well.\""
-    # nvl clear
-    # "\"It's fine,\" Nagato said tonelessly."
-    # "\"Asakura Ryouko is isolated and confined; she is limited to her organic functions at this moment.\""
-    # "\"After she is dispatched, I will retrieve defenses to protect against further interference.\""
-    # nvl clear
-    # "\"Waaaait!\" Haruhi yelled, stomping one foot and spinning to face Yuki."
-    # "\"Dispatched'? I don't think so! If you need something from her, there's got to be a way to do it without killing her!\""
-    # "\'What's the point of running into another alien, just to kill them?\""
-    # nvl clear
-    # "\"But the fighting is fine,\" Kyon observed, stretching his arms above his head, then swiveling his hips and stretching his spine out."
-    # "\"After all, no one of any importance was smashed off a building.\""
-    # "\'Kyon!\""
-    # "\'Alright,\" he said, shaking his head."
-    # nvl clear
-    # "\"I don't really want Asakura to die either. But if her body were destroyed, she'd just go back to the place she came from.\""
-    # "\"At least, as I understand it.\" He shot a questioning glance towards Nagato"
-    # nvl clear
-    # "She didn't meet his eyes."
-    # "\"Good!\" Haruhi nodded decisively, grinning again."
-    # "\'Yuki, let's come up with a backup plan. Something that will let you get your power-up and let us reform Ryouko. Can we do that?\""
-    # "Nagato stared intently at Ryouko, then gave a decisive nod. \"Awaiting program,\" she announced."
-    # nvl clear
+    show Haruhi Sigh1 at left
+    "\"Well, this is fun and all, but you can hardly expect me to take your lectures on using power responsibly seriously when you're always relying on your future self to save you,\"she warned, raising one finger and waggling it at him."
+    show Kyon Sigh2 at right
+    "\'He sighed and hung his head. \"You know, I really am trying my hardest,\""
+    
+    extend " he muttered, crossing his arms over his chest and looking away towards the sea."
+    nvl clear
+    "\"But I can't just leave you alone, and Nagato can't handle another interface right now.\""
+    "\"And you did such a great job!\" Ryouko encouraged from beneath her energy net."
+    "\"Time travel, is it? Now that's one tool you seem to know how to use well.\""
+    nvl clear
+    "\"It's fine,\" Nagato said tonelessly."
+    "\"Asakura Ryouko is isolated and confined; she is limited to her organic functions at this moment.\""
+    "\"After she is dispatched, I will retrieve defenses to protect against further interference.\""
+    nvl clear
+    "\"Waaaait!\" Haruhi yelled, stomping one foot and spinning to face Yuki."
+    "\"Dispatched'? I don't think so! If you need something from her, there's got to be a way to do it without killing her!\""
+    "\'What's the point of running into another alien, just to kill them?\""
+    nvl clear
+    "\"But the fighting is fine,\" Kyon observed, stretching his arms above his head, then swiveling his hips and stretching his spine out."
+    "\"After all, no one of any importance was smashed off a building.\""
+    "\'Kyon!\""
+    "\'Alright,\" he said, shaking his head."
+    nvl clear
+    "\"I don't really want Asakura to die either. But if her body were destroyed, she'd just go back to the place she came from.\""
+    "\"At least, as I understand it.\" He shot a questioning glance towards Nagato"
+    nvl clear
+    "She didn't meet his eyes."
+    "\"Good!\" Haruhi nodded decisively, grinning again."
+    "\'Yuki, let's come up with a backup plan. Something that will let you get your power-up and let us reform Ryouko. Can we do that?\""
+    "Nagato stared intently at Ryouko, then gave a decisive nod. \"Awaiting program,\" she announced."
+    nvl clear
     # "\"Hmm,\" Haruhi mused, narrowing her eyes and peering intently at Ryouko, who merely watched back curiously."
     # "\"m ... some kind of second chance ... a chance to start over, prove herself, and ... let's see, realize she doesn't want to kill Kyon at all.\""
     # "\"And she gets to give Yuki what she needs to make her equal to the next interface that comes along.... But no brainwashing, that's not cool.\""
