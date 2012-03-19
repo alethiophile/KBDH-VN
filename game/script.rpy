@@ -108,25 +108,12 @@ init:
         renpy.music.register_channel("sound2", "sfx", 0)
         _preferences.set_volume("sfx", 0.5)
 
-transform slide_left:
-    xalign 0.1 yalign 1.0
-    linear 0.4 xalign 0.0
-
-transform slide_right:
-    xalign 0.0 yalign 1.0
-    linear 0.1 xalign 0.1
-
 transform center_left:
     xalign 0.1 yalign 1.0
     
 transform HalfRight:
     xalign 0.75 yalign 1.0
     
-transform StabKyonFast:
-    xalign 0.0 yalign 1.0
-    linear 0.1 xalign 0.6
-    
-
 label start:
     stop music fadeout 1
     scene title0 with slowfadein
@@ -224,7 +211,9 @@ label start:
     extend " \"Take a step back, I don't want to catch you in the interdiction field again.\""
     show Haruhi Hap4 at center_left
     "She nodded and stepped backwards, against the wall."
-    show Haruhi Hap4 at slide_left
+    show Haruhi Hap4:
+        xalign 0.1 yalign 1.0
+        linear 0.4 xalign 0.0
     pause 0.4
     nvl clear
     play music "music/YukiAsakuraFight.mp3" fadein 1
@@ -282,7 +271,9 @@ label start:
     nvl clear
     show Kyon Ang1 at right
     "He broke off suddenly, scowling. \"Okay,\" he said in his normal voice. \"My mistake. We've got incoming.\""
-    show Haruhi Hap4 at slide_right
+    show Haruhi Hap4:
+        xalign 0.0 yalign 1.0
+        linear 0.1 xalign 0.1
     "\"God damn it Kyon, you're so cool when you do this,\" Haruhi gushed, clapping her hands together. \"What is it?\""
     nvl clear
     show Kyon Neutral1 at right
@@ -291,7 +282,9 @@ label start:
     "One eyebrow twitched and he stowed his weapons, banishing the ring of light and flinging his phone at Haruhi."
     show Kyon Ser2 at right
     "\"Speed dial two,\" he snapped. \"Stay in the circle.\""
-    show Haruhi Pout1 at slide_left
+    show Haruhi Pout1:
+        xalign 0.1 yalign 1.0
+        linear 0.4 xalign 0.0
     pause 0.4
     play sound "SE/Barrier1.mp3"
     show Haruhi Pout1 Bright at left
@@ -553,7 +546,9 @@ label start:
     nvl clear
     play sound "SE/lowswoosh.mp3"
     show Asakura Smile3 at left
-    show Asakura Smile3 at StabKyonFast
+    show Asakura Smile3:
+        xalign 0.0 yalign 1.0
+        linear 0.1 xalign 0.6
     show Kyon Pain1 at right
     pause (0.1)
     play sound "SE/slash2.mp3"
