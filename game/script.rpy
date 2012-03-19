@@ -62,7 +62,9 @@ init:
     image Kyon Ang1 = "Sprites/Kyon/KyonAngry1.png"
     image Kyon Pain1 = "Sprites/Kyon/KyonPained1.png"
     image Kyon Pain2 = "Sprites/Kyon/KyonPained2.png"
-    image Kyon Smile1 ="Sprites/Kyon/KyonSmile1.png"
+    image Kyon Smile1 = "Sprites/Kyon/KyonSmile1.png"
+    image Kyon Worry1 = "Sprites/Kyon/KyonWorry1.png"
+    image Kyon Puzzle1 = "Sprites/Kyon/KyonPuzzled1.png"
     image Skinsuit = "Sprites/Kyon/KyonSkinsuitTemplate.png"
     image Skinsuit Bright = im.MatrixColor("Sprites/Kyon/KyonSkinsuitTemplate.png",
                                        im.matrix.brightness(.5))
@@ -869,64 +871,126 @@ label start:
     "\"Well, this is fun and all, but you can hardly expect me to take your lectures on using power responsibly seriously when you're always relying on your future self to save you,\"she warned, raising one finger and waggling it at him."
     show Kyon Sigh2 at right
     "\'He sighed and hung his head. \"You know, I really am trying my hardest,\""
-    
+    show Kyon Worry1 at right
+    show Haruhi Worry1 at left
     extend " he muttered, crossing his arms over his chest and looking away towards the sea."
     nvl clear
+    show Kyon Ser1 at right
     "\"But I can't just leave you alone, and Nagato can't handle another interface right now.\""
+    scene bg roofclose
+    show Asakura Smile2  at center
+    show Spike5 at center
+    show Yuki Side1 at HalfLeft
     "\"And you did such a great job!\" Ryouko encouraged from beneath her energy net."
+    show Asakura Smile1 at center
     "\"Time travel, is it? Now that's one tool you seem to know how to use well.\""
     nvl clear
+    show Yuki Talk1 at HalfLeft
     "\"It's fine,\" Nagato said tonelessly."
+    show Yuki Talk2 at HalfLeft
     "\"Asakura Ryouko is isolated and confined; she is limited to her organic functions at this moment.\""
+    show Yuki Talk1 at HalfLeft
     "\"After she is dispatched, I will retrieve defenses to protect against further interference.\""
     nvl clear
+    scene bg roofright
+    show Haruhi Sup1 at left
+    show Kyon Ser1 at right
     "\"Waaaait!\" Haruhi yelled, stomping one foot and spinning to face Yuki."
+    show Haruhi Ang2 at left
     "\"Dispatched'? I don't think so! If you need something from her, there's got to be a way to do it without killing her!\""
+    show Haruhi Ang1 at left
     "\'What's the point of running into another alien, just to kill them?\""
     nvl clear
+    show Kyon Sigh1 at right
     "\"But the fighting is fine,\" Kyon observed, stretching his arms above his head, then swiveling his hips and stretching his spine out."
+    show Kyon Ang1 at right
     "\"After all, no one of any importance was smashed off a building.\""
+    show Haruhi Eyeroll1 at left
     "\'Kyon!\""
+    show Kyon Sigh2 at right
     "\'Alright,\" he said, shaking his head."
     nvl clear
+    show Kyon Ser1 at right
     "\"I don't really want Asakura to die either. But if her body were destroyed, she'd just go back to the place she came from.\""
+    show Kyon Worry1 at right
     "\"At least, as I understand it.\" He shot a questioning glance towards Nagato"
     nvl clear
     "She didn't meet his eyes."
-    "\"Good!\" Haruhi nodded decisively, grinning again."
-    "\'Yuki, let's come up with a backup plan. Something that will let you get your power-up and let us reform Ryouko. Can we do that?\""
-    "Nagato stared intently at Ryouko, then gave a decisive nod. \"Awaiting program,\" she announced."
     nvl clear
-    # "\"Hmm,\" Haruhi mused, narrowing her eyes and peering intently at Ryouko, who merely watched back curiously."
-    # "\"m ... some kind of second chance ... a chance to start over, prove herself, and ... let's see, realize she doesn't want to kill Kyon at all.\""
-    # "\"And she gets to give Yuki what she needs to make her equal to the next interface that comes along.... But no brainwashing, that's not cool.\""
-    # "\"So, maybe an 'evil' module or something like that, which Yuki can purify and use for good, letting Ryouko learn how to become a nicer person?\""
-    # "\"Yeah! That sounds very good! Let's do that.\""
-    # nvl clear
-    # "The pinned interface blinked several times, then turned her eyes to Kyon from beneath the glowing energy net."
-    # "\"None of this has been reported to my superiors,\" she commented."
-    # "\"It's entirely possible that this new knowledge could change their perceptions; there's no reason to be hasty!\""
-    # nvl clear
-    # "\'Program loaded,\" Nagato replied."
-    # "\'Permission to proceed?\""
-    # nvl clear
-    # "\'We can be reasonable!\ Ryouko protested."
-    # "\"You're probably the most reasonable person I've ever had try to kill me,\" Kyon agreed."
-    # "\"But I remember that time you did stab me all too well.\""
-    # "\"No stabbing!\" Haruhi said in a chastising tone."
-    # "\"Bad Ryouko! No class rep votes for you!\""
-    # nvl clear
-    # "\"...you don't really think that's her prime concern, do you? Aside from which, did you even vote last time?\""
-    # "\"It isn't,\" Ryouko agreed. {w} \"And no, she didn't. But, about being reasonable...\""
-    # "\"Anything that I should know about this program, Nagato?\" Kyon asked, quirking one eyebrow higher."
-    # nvl clear
-    # "\"It will be beneficial to all involved,\" Nagato assured him, while Haruhi nodded knowingly."
-    # "\"Okay,\" he sighed, shaking his head."
-    # "\"Granted.\""
-    # nvl clear
-    # "The smaller girl turned her gaze back to Ryouko's bound form, the faintest hint of a smile coming to her lips."
-    # nvl clear
-    # "\"I will not let you harm him again.\""
+    show Haruhi Hap1 at left
+    "\"Good!\" Haruhi nodded decisively, grinning again."
+    show Haruhi Smile3 at left
+    "\'Yuki, let's come up with a backup plan. Something that will let you get your power-up and let us reform Ryouko. Can we do that?\""
+    scene bg roofclose
+    show Asakura Frown1  at center
+    show Spike5 at center
+    show Yuki Side1 at HalfLeft
+    "Nagato stared intently at Ryouko, then gave a decisive nod. "
+    show Yuki Talk1 at HalfLeft
+    extend "\"Awaiting program,\" she announced."
+    nvl clear
+    show Haruhi Ang3 at left with moveinleft
+    show Kyon Ser1 at right with moveinright
+    show Yuki Side1
+    "\"Hmm,\" Haruhi mused, narrowing her eyes and peering intently at Ryouko, who merely watched back curiously."
+    show Haruhi Ang2 at left
+    "\"Um ... some kind of second chance ... a chance to start over, prove herself, and ... let's see, realize she doesn't want to kill Kyon at all.\""
+    nvl clear
+    show Haruhi Smile2 at left
+    "\"And she gets to give Yuki what she needs to make her equal to the next interface that comes along.... But no brainwashing, that's not cool.\""
+    show Haruhi Smile3 at left
+    "\"So, maybe an 'evil' module or something like that, which Yuki can purify and use for good, letting Ryouko learn how to become a nicer person?\""
+    nvl clear
+    show Haruhi Hap3 at left
+    "\"Yeah! That sounds very good! Let's do that.\""
+    nvl clear
+    show Asakura Frown3 at center
+    pause (0.4)
+    show Asakura Frown1 at center
+    "The pinned interface blinked several times, then turned her eyes to Kyon from beneath the glowing energy net."
+    show Asakura Frown2 at center
+    "\"None of this has been reported to my superiors,\" she commented."
+    show Asakura Smile2 at center
+    "\"It's entirely possible that this new knowledge could change their perceptions; there's no reason to be hasty!\""
+    nvl clear
+    show Yuki Talk1 at HalfLeft
+    "\'Program loaded,\" Nagato replied."
+    show Yuki Talk2 at HalfLeft
+    "\'Permission to proceed?\""
+    nvl clear
+    show Asakura Pain1 at center
+    "\'We can be reasonable!\ Ryouko protested."
+    show Kyon Sigh1 at right
+    "\"You're probably the most reasonable person I've ever had try to kill me,\" Kyon agreed."
+    show Kyon Ang1 at right
+    "\"But I remember that time you did stab me all too well.\""
+    show Haruhi Ang1 at left
+    "\"No stabbing!\" Haruhi said in a chastising tone. "
+    show Haruhi Ang2 at left
+    extend "\"Bad Ryouko! No class rep votes for you!\""
+    nvl clear
+    show Kyon Neutral1 at right
+    "\"...you don't really think that's her prime concern, do you? Aside from which, did you even vote last time?\""
+    show Asakura Frown1 at center
+    "\"It isn't,\" Ryouko agreed. \"And no, she didn't. "
+    show Asakura Smile2 at center
+    extend "But, about being reasonable...\""
+    show Kyon Puzzle1 at right
+    "\"Anything that I should know about this program, Nagato?\" Kyon asked, quirking one eyebrow higher."
+    nvl clear
+    show Yuki Talk1 at HalfLeft
+    "\"It will be beneficial to all involved,\" Nagato assured him, while Haruhi nodded knowingly."
+    show Kyon Sigh2 at right
+    "\"Okay,\" he sighed, shaking his head."
+    show Kyon Ser1 at right
+    "\"Granted.\""
+    nvl clear
+    show Yuki Side2 at HalfLeft
+    "The smaller girl turned her gaze back to Ryouko's bound form, the faintest hint of a smile coming to her lips."
+    nvl clear
+    scene black
+    stop music
+    "\"I will not let you harm him again.\""
     
     
     
