@@ -89,6 +89,8 @@ init:
     image Yuki Talk1 = "Sprites/Yuki/YukiSideTalk1.png"
     image Yuki Talk2 = "Sprites/Yuki/YukiSideTalk2.png"
 
+    image knifethrow = "Sprites/Effects/knifethrowlong.png"
+
     image Credits0 = "Backgrounds/credits0.png"
     image Credits1 = "Backgrounds/credits1.png"
     image Credits2 = "Backgrounds/credits2.png"
@@ -520,11 +522,12 @@ label start:
     "She clapped her hands together before her and drew them apart, flinging a fan of dozens of identical knives outward."
     hide Asakura
     play sound "SE/lowswoosh.mp3"
-    scene bg roof with wiperightfast
+    scene black with fade
+    show knifethrow with moveinleft
+    scene bg roof with fade
     show Kyon Ang1 at right
     show Skinsuit at right
-    show Coat at right
-    
+    show Coat at right    
     "Kyon maintained his guard position, his free hand already clenched into a fist, the metal ridges of his skinsuit facing outward."
     nvl clear
     play sound "SE/Barrier1.mp3"
