@@ -56,6 +56,7 @@ init:
     image Kyon Neutral2 = "Sprites/Kyon/KyonNeutral2.png"
     image Kyon Ang1 = "Sprites/Kyon/KyonAngry1.png"
     image Kyon Pain1 = "Sprites/Kyon/KyonPained1.png"
+    image Kyon Smile1 ="Sprites/Kyon/KyonSmile1.png"
     image Skinsuit = "Sprites/Kyon/KyonSkinsuitTemplate.png"
     image Skinsuit Bright = im.MatrixColor("Sprites/Kyon/KyonSkinsuitTemplate.png",
                                        im.matrix.brightness(.5))
@@ -656,13 +657,13 @@ label start:
     pause (1)
     play sound "SE/stake1.mp3"
     show Spike1 at center
-    pause (0.05)
+    pause (0.1)
     play sound "SE/stake2.mp3"
     show Spike2 at center
-    pause (0.05)
+    pause (0.1)
     play sound "SE/stake3.mp3"
     show Spike3 at center
-    pause (0.05)
+    pause (0.1)
     play sound "SE/stake1.mp3"
     show Spike4 at center
     pause (0.5)
@@ -673,31 +674,63 @@ label start:
     show Spike5 at center
     play sound "SE/elec1.mp3"
     "It fired with a rasping cough, launching a ring of metallic spikes to burrow into the rooftop around Ryouko, and then a grid of crackling brissant energy raked between each of the spikes, snaring the girl in a glowing, shuddering net."
+    nvl clear
     "\"Ah,\" she said, her voice disappointed as Kyon's repulsor and gravimetric systems flared his momentum and spread it evenly across the entire rooftop, landing him near Haruhi, at Ryouko's side."
     show Asakura Sigh1 at center
     "\"I failed again.\""
-    "\"Ah,\" she said, her voice disappointed as Kyon's repulsor and gravimetric systems flared his momentum and spread it evenly across the entire rooftop, landing him near Haruhi, at Ryouko's side.{w} \"I failed again.\""
     nvl clear
     hide Asakura
-    show Haruhi Eyeroll1 at left   
+    hide Spike5
+    show Haruhi Ang1 at left   
     "\"Is that going to hurt her?\" Haruhi asked, crossing her arms over her chest and raising an eyebrow at Kyon in concern."
+    show Kyon Ser2 at right
+    show Skinsuit at right
+    show Coat at right
+    nvl clear
     "\"Hurt her?\" he asked, somewhat indignantly."
+    show Kyon Ang1 at right
     "\"Haruhi, she's tried to kill me. Three times, now, and you just saw one of them! Your primary concern is that I not hurt her?\""
+    show Kyon Sigh1 at right
+    play sound "Guncock.mp3"
     "He muttered to himself beneath his breath, folding away his firearm into storage."
     nvl clear
+    show Haruhi Ang3 at left
+    nvl clear
     "Haruhi tapped a toe impatiently, still staring at him."
+    show Kyon Neutral1 at right
     "\"Pulling a phone identical to the one Haruhi was holding from one pocket, he punched a key. \"Nagato should be here shortly,\" he added, shaking his head."
+    show Kyon Ser1 at right
     "\"This is all up to you. I already know you'll take care of things just fine.\""
-    "\"Yes!\" she said, pumping one fist in the air. \"I get to do something! Hey, how's the future?\""
+    show Haruhi Hap4 at left
+    "\"Yes!\" she said, pumping one fist in the air. \"I get to do something! \""
+    show Haruhi Hap1 at left
+    extend"\"Hey, how's the future?\""
     nvl clear
-    "\"It's awesome,\" he said, annoyed. \"Try and have some pity for the me that nearly got murdered off a building, huh?\""
+    show Kyon Sigh1 at right
+    "\"It's awesome,\" he said, annoyed."
+    show Kyon Ser2 at right
+    extend "\"Try and have some pity for the me that nearly got murdered off a building, huh?\""
+    show Kyon Neutral1 at right
     "\"Anyway, just so you know, she's programmed to try and kill me; she won't do anything to you.\""
-    "\"And you won't see me tomorrow at school, because I'm going to be ... well. You'll find out.\""
-    "\"Okay,\" she agreed, frowning. \"But, hey, why aren't you going to be around?\""
     nvl clear
+    show Kyon Neutral2 at right
+    "\"And you won't see me tomorrow at school, because I'm going to be ... well. You'll find out.\""
+    show Haruhi Pout1 at left
+    "\"Okay,\" she agreed, frowning."
+    show Haruhi Quest1 at left
+    extend "\"But, hey, why aren't you going to be around?\""
+    nvl clear
+    show Kyon Ser1 at right
     "\"Further information is not available here,\" he warned, shaking his head."
+    show Kyon Smile1 at right
     "\"Now, when you see that other me, tell him I said 'hi', like I always do.\""
+    show Kyon Ser1 at right
     "He paused before glancing at his phone again with a grimace."
+    play sound "SE/CloakOn.mp3"
+    hide Kyon
+    hide Skinsuit
+    hide Coat
+    with coatout
     "\"My time's up,\" he announced, re-engaging his stealth field and vanishing from sight."
     nvl clear
     # "\"What?\"Ryouko asked, still trapped in the containment field.\"He just abandoned me here with you?\""
