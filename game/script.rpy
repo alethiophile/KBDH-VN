@@ -9,6 +9,10 @@ init:
     image bg roof = "Backgrounds/roof.jpg"
     image bg roofclose = "Backgrounds/roofclose.jpg"
     image bg roofsky = "Backgrounds/roofsky.jpg"
+    image bg BeamOrange1 = "Backgrounds/BeamOrange1.jpg"
+    image bg BeamOrange2 = "Backgrounds/BeamOrange2.jpg"
+    image bg BeamOrange3 = "Backgrounds/BeamOrange3.jpg"
+    image bg BeamOrange4 = "Backgrounds/BeamOrange4.jpg"
     image white = "#ffffff"
     image black = "#000000"
     image yukibackground = "#ccccff"
@@ -61,6 +65,11 @@ init:
     image Asakura Frown3 = "Sprites/Asakura/AsakuraFrown3.png"
     image Asakura Unhap1 = "Sprites/Asakura/AsakuraUnhappy1.png"
     image Asakura Sigh1 = "Sprites/Asakura/AsakuraSigh1.png"
+    image Asakura Pain1 = "Sprites/Asakura/AsakuraPain1.png"
+    image Asakura Pain2 = "Sprites/Asakura/AsakuraPain2.png"
+    image Asakura Pain2 Bright = im.MatrixColor("Sprites/Asakura/AsakuraPain2.png",
+                                       im.matrix.brightness(.5))
+
 
     image Credits0 = "Backgrounds/credits0.png"
     image Credits1 = "Backgrounds/credits1.png"
@@ -91,6 +100,7 @@ init:
         config.window_show_transition = dissolve
         renpy.music.set_volume(0.2, .5, channel="music")
         flashbulb = Fade(0.2, 0.0, 0.8, color='#fff')
+        renpy.music.register_channel("sound2", "sfx", 0)
 
 transform slide_left:
     xalign 0.1 yalign 1.0
@@ -354,7 +364,7 @@ label start:
     show Kyon Sigh2 at right
     show Skinsuit at right
     show Coat at right
-    "\"She's alien,\" Kyon volunteered.{nw}"
+    "\"She's alien,\" Kyon volunteered.{nw} "
     show Kyon Neutral2 at right
     extend "\"From the same place as Yuki-chan and Kimidori, but she tried to kill me once.\""
     show Haruhi Sup1 at left
@@ -376,10 +386,10 @@ label start:
     show Kyon Sigh1 at right
     show Skinsuit at right
     show Coat at right
-    "\"I personally like to see it as a lesson on the effects of randomly stabbing people,\" Kyon muttered."
+    "\"I personally like to see it as a lesson on the effects of {i}randomly stabbing people,{/i}\" Kyon muttered."
     nvl clear
     show Asakura Smile1 at center
-    "\"Oh, it wasn't random,\" she countered.{nw}"
+    "\"Oh, it wasn't random,\" she countered.{nw} "
     show Asakura Smile2 at center
     extend "\"It was highly specific! I put a whole two hours of thought into it, you know. For us, that's quite a while!\""
     show Kyon Ser2 at right
@@ -393,25 +403,35 @@ label start:
     show Haruhi Eyeroll1 at left
     "\"Blah blah blah,\" Haruhi muttered, crossing her arms over her chest and rolling her eyes."
     show Haruhi Ang1 at left
-    "\"Skip the speeches -- if I don't know the complete back story, it's all meaningless to me. I think it's about time we get down to business, right?\""
+    "\"Skip the speeches — if I don't know the complete back story, it's all meaningless to me. I think it's about time we get down to business, right?\""
     nvl clear
     hide Haruhi
     stop music
     play music "Music/AsakuraTheme.mp3" fadein 1
+    play sound "SE/horror.wav"
     scene bg stairwellbarrier with teleport:
         size (800,600)
     show Asakura Smile2 at center
     "\"Happy to oblige!\" Asakura said brightly, as their surroundings pulsed, the window turning into a gunmetal gray steel barrier, strange patterns coalescing across the walls."
+    play sound "SE/powerdown.wav"
     "The circle on the floor around Haruhi abruptly winked out."
     nvl clear
     "\"Now, I've converted the entire space of this stairwell into-\""
-    "Kyon spun on one foot, crying out with a great, \"Ki-yah!\" and kicking the door halfway across the roof."
     hide Asakura
+    "Kyon spun on one foot, crying out with a great, \"Ki-yah!\""
+    play sound "SE/lowswoosh.wav"
+    pause (0.2)
+    play sound "SE/impact.wav"
+    with vpunch
+    pause (0.2)
+    play sound "SE/glassbreak1.wav"
+    with hpunch
+    extend "and kicking the door halfway across the roof."
     show Haruhi Sup1 at left
     pause (.01)
-    show Kyon Ser1 at left
-    show Skinsuit at left
-    show Coat at left
+    show Kyon Ser1 at left behind Haruhi
+    show Skinsuit at left behind Haruhi
+    show Coat at left behind Haruhi
     with moveinright
     pause (0.5)
     hide Kyon
@@ -422,13 +442,13 @@ label start:
     "Sparing no more time, he swept Haruhi up in one arm and dashed through the opening."
     scene bg roof with wiperight
     nvl clear
-    "\"Waaah!\" she protested.{fast}\"Why are you running away!?\""
+    "\"Waaah!\" she protested.{fast} \"Why are you running away!?\""
     show Haruhi Sup1 at left
     show Kyon Ser1 at right
     show Skinsuit at right
     show Coat at right
     with moveinleft
-    "\"Confined spaces,\"he answered, sliding to a halt in the middle of the roof and setting her down.{fast}\"Speed dial two again.\""
+    "\"Confined spaces,\" he answered, sliding to a halt in the middle of the roof and setting her down.{fast} \"Speed dial two again.\""
     nvl clear
     show Haruhi Pout1 at left
     pause .4
@@ -443,9 +463,10 @@ label start:
     "\"So, what's so great about this if she can just turn it off, anyway?\""
     nvl clear
     show Kyon Ser1 at right
-    "\"It's a barrier and emergency help function,\"he answered, reactivating the beam saber and reassuming a defensive stance."
+    play sound "SE/SaberOn.wav"
+    "\"It's a barrier and emergency help function,\" he answered, reactivating the beam saber and reassuming a defensive stance."
     show Kyon Ser2 at right
-    "\"Unless she seals this space off --{w=0.5} again -- {w=0.5}she can't disable it.\""
+    "\"Unless she seals this space off —{w=0.5} again — {w=0.5}she can't disable it.\""
     nvl clear
     hide Kyon 
     hide Haruhi
@@ -455,7 +476,7 @@ label start:
     show Asakura Sigh1 at center with wipeup
     "Asakura gave a pained sigh as she stepped through the jagged distortion between her controlled dataspace and the rooftop. "
     show Asakura Frown2 at center
-    "\"You shouldn't be able to manipulate data like that,\"she said reprovingly."
+    "\"You shouldn't be able to manipulate data like that,\" she said reprovingly."
     show Asakura Smile2 at center
     "\"I suppose that means it's time to stop holding back.\""
     nvl clear
@@ -564,15 +585,40 @@ label start:
     "\"It started off such a nice day, too,\" he mumbled, as his forward momentum was arrested and he began the downward plummet in earnest."
     nvl clear
     "How had it come to this, anyway...?"
-#   
-#  
-#     
-    # "\"Hmm,\"Ryouko mused, turning slowly around, to where her sealed space in the stairway had been breached.{w} \"It was broken from the outside, somehow? I wonder--\""
-    # "The shrill buzz of a brilliant energy beam licked out from the roof of the tiny structure that housed the stairwell."
-    # "Ryouko was struck in the chest dead-center of mass, her entire body glowing white for a second before she staggered-- {w}Instantly another beam shot out from the same location, lighting slightly to one side, near the girl's left shoulder."
-    # nvl clear
-    # "A third, though not as brightly glowing shot was somewhat lower, near her stomach, and Ryouko dropped to her knees, eyes widened."
-    # "\"High yield neutron flare?\" she asked. \"Quantum entanglement to disrupt my connection....\""
+    stop music fadeout 1
+    nvl clear
+    scene black with dissolve
+    "Dev note: In the story this switches to the past, with Kyon going to meet Yuki. In the interest of asset re-use though, I'm focusing on finishing the fight scene. - Oroboro"
+    nvl clear
+    scene bg roofclose with fade
+    show Asakura Sup1 at center
+    "\"Hmm,\"Ryouko mused, turning slowly around, to where her sealed space in the stairway had been breached."
+    show Asakura Frown1 at center
+    extend "\"It was broken from the outside, somehow? I wonder--\""
+    play music "Music/Justice.ogg"
+    play sound "SE/Barrier2.wav"
+    play sound2 "SE/Laser1.wav"
+    scene bg BeamOrange1 with flashbulb
+    "The shrill buzz of a brilliant energy beam licked out from the roof of the tiny structure that housed the stairwell."
+    show Asakura Pain1 at center
+    "Ryouko was struck in the chest dead-center of mass, her entire body glowing white for a second before she staggered--"
+    play sound "SE/Laser1.wav"
+    play sound2 "SE/Barrier1.wav"
+    scene bg BeamOrange2
+    show Asakura Pain2 Bright at center
+    with flashbulb
+    extend "Instantly another beam shot out from the same location, lighting slightly to one side, near the girl's left shoulder."
+    nvl clear
+    play sound "SE/Laser1.wav"
+    play sound2 "SE/Slash3.wav"
+    scene bg BeamOrange4
+    show Asakura Pain2 Bright at center
+    with flashbulb
+    "A third, though not as brightly glowing shot was somewhat lower, near her stomach, and Ryouko dropped to her knees, eyes widened."
+    scene bg roofclose
+    show Asakura Unhap1
+    with dissolve
+    "\"High yield neutron flare?\" she asked. \"Quantum entanglement to disrupt my connection....\""
     # "De-stealthing, Kyon stood from his hiding place atop the stairwell housing, his greatcoat billowing behind him."
     # nvl clear
     # "The end of his weapon was glowing orange with discharge, the shape changed from a simple cylinder to a much thinner meter-long construction of sturdy rails and curving hand guards."
