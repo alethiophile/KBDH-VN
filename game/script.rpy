@@ -9,6 +9,7 @@ init:
     image bg roof = "Backgrounds/roof.jpg"
     image bg roofclose = "Backgrounds/roofclose.jpg"
     image bg roofsky = "Backgrounds/roofsky.jpg"
+    image bg roofright = "Backgrounds/roofright.jpg"
     image bg BeamOrange1 = "Backgrounds/BeamOrange1.jpg"
     image bg BeamOrange2 = "Backgrounds/BeamOrange2.jpg"
     image bg BeamOrange3 = "Backgrounds/BeamOrange3.jpg"
@@ -26,6 +27,11 @@ init:
     image Knife1 = "Sprites/Effects/Knife1.png"
     image Knife2 = "Sprites/Effects/Knife2.png"
     image Knife3 = "Sprites/Effects/Knife3.png"
+    image Spike1 = "Sprites/Effects/NetSpike1.png"
+    image Spike2 = "Sprites/Effects/NetSpike2.png"
+    image Spike3 = "Sprites/Effects/NetSpike3.png"
+    image Spike4 = "Sprites/Effects/NetSpike4.png"
+    image Spike5 = "Sprites/Effects/NetSpike5.png"
     image Haruhi Sup1 = "Sprites/Haruhi/HaruhiSideSurprised1.png"
     image Haruhi Ang1 = "Sprites/Haruhi/HaruhiSideAngry1.png"
     image Haruhi Ang2 = "Sprites/Haruhi/HaruhiSideAngry2.png"
@@ -40,6 +46,11 @@ init:
     image Haruhi Eyeroll1 = "Sprites/Haruhi/HaruhiSideEyeroll1.png"
     image Haruhi Quest1 = "Sprites/Haruhi/HaruhiSideQuestion1.png"
     image Haruhi Grin1 = "Sprites/Haruhi/HaruhiSideGrin1.png"
+    image Haruhi Worry1 = "Sprites/Haruhi/HaruhiSideWorry1.png"
+    image Haruhi Smile1 = "Sprites/Haruhi/HaruhiSideSmile1.png"
+    image Haruhi Smile2 = "Sprites/Haruhi/HaruhiSideSmile2.png"
+    image Haruhi Smile3 = "Sprites/Haruhi/HaruhiSideSmile3.png"
+    image Haruhi Sigh1 = "Sprites/Haruhi/HaruhiSideSigh1.png"
     image Kyon Ser1 = "Sprites/Kyon/KyonSerious1.png"
     image Kyon Ser2 = "Sprites/Kyon/KyonSerious2.png"
     image Kyon Ser2 Bright = im.MatrixColor("Sprites/Kyon/KyonSerious2.png",
@@ -50,6 +61,10 @@ init:
     image Kyon Neutral2 = "Sprites/Kyon/KyonNeutral2.png"
     image Kyon Ang1 = "Sprites/Kyon/KyonAngry1.png"
     image Kyon Pain1 = "Sprites/Kyon/KyonPained1.png"
+    image Kyon Pain2 = "Sprites/Kyon/KyonPained2.png"
+    image Kyon Smile1 = "Sprites/Kyon/KyonSmile1.png"
+    image Kyon Worry1 = "Sprites/Kyon/KyonWorry1.png"
+    image Kyon Puzzle1 = "Sprites/Kyon/KyonPuzzled1.png"
     image Skinsuit = "Sprites/Kyon/KyonSkinsuitTemplate.png"
     image Skinsuit Bright = im.MatrixColor("Sprites/Kyon/KyonSkinsuitTemplate.png",
                                        im.matrix.brightness(.5))
@@ -69,7 +84,15 @@ init:
     image Asakura Pain2 = "Sprites/Asakura/AsakuraPain2.png"
     image Asakura Pain2 Bright = im.MatrixColor("Sprites/Asakura/AsakuraPain2.png",
                                        im.matrix.brightness(.5))
+    image Yuki EyesClosed = "Sprites/Yuki/YukiSideEyesClosed1.png"
+    image Yuki EyesClosed Bright = im.MatrixColor("Sprites/Yuki/YukiSideEyesClosed1.png",
+                                       im.matrix.brightness(.5))
+    image Yuki Side1 = "Sprites/Yuki/YukiSide1.png"
+    image Yuki Side2 = "Sprites/Yuki/YukiSide2.png"
+    image Yuki Talk1 = "Sprites/Yuki/YukiSideTalk1.png"
+    image Yuki Talk2 = "Sprites/Yuki/YukiSideTalk2.png"
 
+    image knifethrow = "Sprites/Effects/knifethrowlong.png"
 
     image Credits0 = "Backgrounds/credits0.png"
     image Credits1 = "Backgrounds/credits1.png"
@@ -101,32 +124,31 @@ init:
         renpy.music.set_volume(0.2, .5, channel="music")
         flashbulb = Fade(0.2, 0.0, 0.8, color='#fff')
         renpy.music.register_channel("sound2", "sfx", 0)
+        _preferences.set_volume("sfx", 0.5)
 
-transform slide_left:
-    xalign 0.1 yalign 1.0
-    linear 0.4 xalign 0.0
-
-transform slide_right:
-    xalign 0.0 yalign 1.0
-    linear 0.1 xalign 0.1
+        config.keymap['skip'].remove('K_LCTRL')
+        config.keymap['skip'].remove('K_RCTRL')
+        config.keymap['skip'].append('K_LALT')
+        config.keymap['skip'].append('K_RALT')
 
 transform center_left:
     xalign 0.1 yalign 1.0
     
 transform HalfRight:
     xalign 0.75 yalign 1.0
+transform HalfLeft:
+    xalign 0.25 yalign 1.0
     
-transform StabKyonFast:
+transform KyonRightFast:
     xalign 0.0 yalign 1.0
-    linear 0.1 xalign 0.6
-    
+    linear 0.15 xalign 1.0   
 
 label start:
     stop music fadeout 1
     scene title0 with slowfadein
     
     pause
-    play sound "SE/Pageflip3.wav" 
+    play sound "SE/Pageflip3.mp3" 
 
     nvl clear
     scene bg classroom with fade:
@@ -218,24 +240,26 @@ label start:
     extend " \"Take a step back, I don't want to catch you in the interdiction field again.\""
     show Haruhi Hap4 at center_left
     "She nodded and stepped backwards, against the wall."
-    show Haruhi Hap4 at slide_left
+    show Haruhi Hap4:
+        xalign 0.1 yalign 1.0
+        linear 0.4 xalign 0.0
     pause 0.4
     nvl clear
     play music "music/YukiAsakuraFight.mp3" fadein 1
     show Kyon Ser2 at right
     pause 1
-    play sound "SE/DunDun.wav"
+    play sound "SE/DunDun.mp3"
     "Standing perfectly straight, hands at his sides, he closed his eyes, and began speaking in his best faux movie announcer voice-over."
     "\"Skinsuit active,\" "
-    play sound "SE/Sizzle2.wav"
+    play sound "SE/Sizzle2.mp3"
     show Skinsuit at right with wipeupslow
     extend "as something that looked like nothing so much as black paint suddenly engulfed his entire body beneath his uniform."
     nvl clear
-    play sound "SE/NanoRepair.wav"
+    play sound "SE/NanoRepair.mp3"
     "\"Gravimetric stabilizers and secondary gyrometrics online,\" as ridged metal studs appeared on the back of each knuckle, and beneath his uniform pants, metallic vertical rails were described in the skinsuit."
     nvl clear
     "\"Greatcoat thermoptic stealth disengaged,\" "
-    play sound "SE/CloakOff.wav"
+    play sound "SE/CloakOff.mp3"
     show Coat at right with coatin
     extend "as a knee-length tan greatcoat coalesced, covering his shoulders with a thick mantle."
     show Haruhi Hap3 at left
@@ -246,13 +270,13 @@ label start:
     show Kyon Ser2 at right
     "Switching back, he said, \"Primary weapons check.\""     
     nvl clear
-    play sound "SE/lowswoosh.wav"
+    play sound "SE/lowswoosh.mp3"
     pause .02
-    play sound "SE/lowswoosh.wav"
+    play sound "SE/lowswoosh.mp3"
     pause .02
-    play sound "SE/lowswoosh.wav"
+    play sound "SE/lowswoosh.mp3"
     "He pulled a fifty centimeter long glittering metal cylinder from within the greatcoat, releasing it to spin on its axis in midair to one side, announcing, \"Long range precision and high yield weaponry is at full charge.\""
-    play sound "SE/Barrier2.wav"
+    play sound "SE/Barrier2.mp3"
     show Kyon Ser2 Bright at right
     show Skinsuit Bright at right
     show Coat Bright at right
@@ -268,7 +292,7 @@ label start:
     "Another cylinder, wider but shorter than the last was released to float next to the first."
     "\"Mid- and short-range crowd-control weaponry is at ... ninety seven percent capacity and charging,\" he continued, squinting at the featureless gunmetal tube."
     nvl clear
-    play sound "SE/clink.wav"
+    play sound "SE/clink.mp3"
     "Pulling a well-crafted sword hilt with no cross-guard or blade from one pocket, he released it horizontally, and it hung before him between the other weapons. \"Beam saber is at full capacity.\""
     show Kyon Ser1 at right
     "After pulling his cell phone from one pocket, he brushed his fingertips over his ear, revealing three dull metal studs in the skinsuit."
@@ -276,7 +300,9 @@ label start:
     nvl clear
     show Kyon Ang1 at right
     "He broke off suddenly, scowling. \"Okay,\" he said in his normal voice. \"My mistake. We've got incoming.\""
-    show Haruhi Hap4 at slide_right
+    show Haruhi Hap4:
+        xalign 0.0 yalign 1.0
+        linear 0.1 xalign 0.1
     "\"God damn it Kyon, you're so cool when you do this,\" Haruhi gushed, clapping her hands together. \"What is it?\""
     nvl clear
     show Kyon Neutral1 at right
@@ -285,9 +311,11 @@ label start:
     "One eyebrow twitched and he stowed his weapons, banishing the ring of light and flinging his phone at Haruhi."
     show Kyon Ser2 at right
     "\"Speed dial two,\" he snapped. \"Stay in the circle.\""
-    show Haruhi Pout1 at slide_left
+    show Haruhi Pout1:
+        xalign 0.1 yalign 1.0
+        linear 0.4 xalign 0.0
     pause 0.4
-    play sound "SE/Barrier1.wav"
+    play sound "SE/Barrier1.mp3"
     show Haruhi Pout1 Bright at left
     show field at left with dissolve
     pause .1
@@ -299,17 +327,17 @@ label start:
     hide Skinsuit
     hide Coat
     hide Haruhi
-    play sound "SE/footsteps5.wav" 
+    play sound "SE/footsteps5.mp3" 
     pause 5
     show Asakura Smile2 at center with wipeup
     pause 1
-    play sound "SE/DunDun.wav"
+    play sound "SE/DunDun.mp3"
     show Asakura Smile1 at center
     "\"Kyon-kun~!\" someone caroled up the stairwell, the echoing click of their shoes sounding as they climbed the stairs."
     show Asakura Smile2 at center
     "\"It's been a while, hasn't it?\""
     show Asakura Sup1 at center
-    play sound "SE/saberon.wav"
+    play sound "SE/saberon.mp3"
     show Bluesword with wipeupfast
     pause 1
     hide Bluesword with dissolve
@@ -350,7 +378,7 @@ label start:
     show Haruhi Hap3 at left
     "Haruhi bounced on her heels with a wide grin, holding Kyon's cell phone in both hands as she remained in the center of the glowing circle."
     show Haruhi Hap4 at left
-    "\"I knew it!\" she cheered.{nw}"
+    "\"I knew it!\" she cheered.{nw} "
     show Haruhi Hap1 at left
     extend "\"There was something off about Asakura! What is it?\""
     nvl clear
@@ -380,7 +408,7 @@ label start:
     "\"Evidently my information requires an update. I was sent to dispatch Kyon-kun, because he's become an undesirable element for my superiors.\""
     show Asakura Sup1 at center
     nvl clear
-    "\"Really, I'd hoped to see a new state, maybe even provoke it with his death.\""
+    "\"Really, I'd hoped to see a new state, maybe even provoke it with his death."
     show Asakura Smile2 at center
     "\"But, those toys seem to say that's already happened! So disappointing ... I suppose if I'd been more patient, I could see it anyway?\""
     show Kyon Sigh1 at right
@@ -408,23 +436,23 @@ label start:
     hide Haruhi
     stop music
     play music "Music/AsakuraTheme.mp3" fadein 1
-    play sound "SE/horror.wav"
+    play sound "SE/horror.mp3"
     scene bg stairwellbarrier with teleport:
         size (800,600)
     show Asakura Smile2 at center
     "\"Happy to oblige!\" Asakura said brightly, as their surroundings pulsed, the window turning into a gunmetal gray steel barrier, strange patterns coalescing across the walls."
-    play sound "SE/powerdown.wav"
+    play sound "SE/powerdown.mp3"
     "The circle on the floor around Haruhi abruptly winked out."
     nvl clear
     "\"Now, I've converted the entire space of this stairwell into-\""
     hide Asakura
-    "Kyon spun on one foot, crying out with a great, \"Ki-yah!\""
-    play sound "SE/lowswoosh.wav"
+    "Kyon spun on one foot, crying out with a great, \"Ki-yah!\" "
+    play sound "SE/lowswoosh.mp3"
     pause (0.2)
-    play sound "SE/impact.wav"
+    play sound "SE/impact.mp3"
     with vpunch
     pause (0.2)
-    play sound "SE/glassbreak1.wav"
+    play sound "SE/glassbreak1.mp3"
     with hpunch
     extend "and kicking the door halfway across the roof."
     show Haruhi Sup1 at left
@@ -452,7 +480,7 @@ label start:
     nvl clear
     show Haruhi Pout1 at left
     pause .4
-    play sound "SE/Barrier1.wav"
+    play sound "SE/Barrier1.mp3"
     show Haruhi Pout1 Bright at left
     show field at left with dissolve
     pause .1
@@ -463,7 +491,7 @@ label start:
     "\"So, what's so great about this if she can just turn it off, anyway?\""
     nvl clear
     show Kyon Ser1 at right
-    play sound "SE/SaberOn.wav"
+    play sound "SE/SaberOn.mp3"
     "\"It's a barrier and emergency help function,\" he answered, reactivating the beam saber and reassuming a defensive stance."
     show Kyon Ser2 at right
     "\"Unless she seals this space off —{w=0.5} again — {w=0.5}she can't disable it.\""
@@ -481,85 +509,96 @@ label start:
     "\"I suppose that means it's time to stop holding back.\""
     nvl clear
     show Knife1 at center
-    play sound "SE/clink.wav"
-    play sound "SE/clink.wav"
+    play sound "SE/clink.mp3"
+    play sound "SE/clink.mp3"
     pause (0.3)
     show Knife2 at center
-    play sound "SE/clink.wav"
-    play sound "SE/clink.wav"
+    play sound "SE/clink.mp3"
+    play sound "SE/clink.mp3"
     pause (0.3)
     show Knife3 at center
-    play sound "SE/clink.wav"
-    play sound "SE/clink.wav"
+    play sound "SE/clink.mp3"
+    play sound "SE/clink.mp3"
     pause (0.8)
-    play sound "SE/DunDun.wav"
+    play sound "SE/DunDun.mp3"
     show Asakura Smile3 at center
     "She clapped her hands together before her and drew them apart, flinging a fan of dozens of identical knives outward."
     hide Asakura
-    play sound "SE/lowswoosh.wav"
-    scene bg roof with wiperightfast
+    play sound "SE/lowswoosh.mp3"
+    scene black with fade
+    show knifethrow with moveinleft
+    scene bg roof with fade
     show Kyon Ang1 at right
     show Skinsuit at right
-    show Coat at right
-    
+    show Coat at right    
     "Kyon maintained his guard position, his free hand already clenched into a fist, the metal ridges of his skinsuit facing outward."
     nvl clear
-    play sound "Se/Barrier1.wav"
+    play sound "SE/Barrier1.mp3"
     show BarrierSmall at HalfRight with dissolve
     pause 0.5
     show BarrierSmall Bright at HalfRight
-    play sound "SE/block.wav"
+    play sound "SE/block.mp3"
     pause (0.1)
     show BarrierSmall at HalfRight
     pause (0.1)
     show BarrierSmall Bright at HalfRight
-    play sound "SE/block.wav"
+    play sound "SE/block.mp3"
     pause (0.1)
     show BarrierSmall at HalfRight
     pause (0.1)
     show BarrierSmall Bright at HalfRight
-    play sound "SE/block.wav"
+    play sound "SE/block.mp3"
     pause (0.1)
     show BarrierSmall at HalfRight
     pause (0.1)
     show BarrierSmall Bright at HalfRight
-    play sound "SE/block.wav"
-    pause (0.1)
-    show BarrierSmall at HalfRight
-    pause (0.1)
-    show BarrierSmall at HalfRight
-    pause (0.1)
-    show BarrierSmall Bright at HalfRight
-    play sound "SE/block.wav"
+    play sound "SE/block.mp3"
     pause (0.1)
     show BarrierSmall at HalfRight
     pause (0.1)
     show BarrierSmall at HalfRight
     pause (0.1)
     show BarrierSmall Bright at HalfRight
-    play sound "SE/block.wav"
+    play sound "SE/block.mp3"
     pause (0.1)
     show BarrierSmall at HalfRight
     pause (0.1)
-    play sound "SE/GlassBreak3.wav"
+    show BarrierSmall at HalfRight
+    pause (0.1)
+    show BarrierSmall Bright at HalfRight
+    play sound "SE/block.mp3"
+    pause (0.1)
+    show BarrierSmall at HalfRight
+    pause (0.1)
+    play sound "SE/GlassBreak3.mp3"
     hide BarrierSmall with dissolve
     "The knives adjusted their course, most homing in on him to suddenly be halted by a semi-circular barrier of glowing blue force before shattering into nothingness, but a handful stopping suddenly in the space over the circle around Haruhi."
     nvl clear
-    play sound "SE/lowswoosh.wav"
+    play sound "SE/lowswoosh.mp3"
     show Asakura Smile3 at left
-    show Asakura Smile3 at StabKyonFast
+    show Asakura Smile3:
+        xalign 0.0 yalign 1.0
+        linear 0.1 xalign 0.6
     show Kyon Pain1 at right
     pause (0.1)
-    play sound "SE/slash2.wav"
+    play sound "SE/slash2.mp3"
     "He opened his mouth to retort, but Asakura was already within his guard, driving yet another blade into his stomach."
+    scene bg roofright
+    play sound "SE/lowswoosh.mp3"
+    pause (0.1)
+    show Kyon Pain1 at KyonRightFast
+    show Skinsuit at KyonRightFast
+    show Coat at KyonRightFast
+    pause (0.1)
+    play sound "SE/touhoudead.wav"
     hide Kyon
-    hide Coat
     hide Skinsuit
-    with moveoutright
+    hide Coat
     "The inner carbon-nano-weave of the greatcoat and the force field of the skinsuit beneath it converted the stabbing force into a distributed shock wave, so instead of being pierced, Kyon was merely hit with the force of a speeding minivan, flying clear across the roof with a choked grunt."
     nvl clear
-    show Asakura Smile1 at right with move
-    "\"In the end,\" Asakura remarked, watching his form tumble off the edge of the school building,{fast}\"all those toys are pretty silly if you don't actually know how to use them.\""
+    scene bg roof
+    show Asakura Smile1 at right
+    "\"In the end,\" Asakura remarked, watching his form tumble off the edge of the school building,{fast} \"all those toys are pretty silly if you don't actually know how to use them.\""
     show Haruhi Hap1 at left
     "\"You have to give him credit, though,\" Haruhi said, peering very closely at the knives frozen over her barrier, not even glancing back to where Kyon had vanished."
     show Haruhi Grin1 at left
@@ -573,14 +612,14 @@ label start:
     hide Haruhi
     hide Asakura
     scene bg roofsky with fade
-    play music "SE/lowwind.wav" 
+    play music "SE/lowwind.mp3" 
     "The sensation of being hit with a force that would crush a mid-sized car into a work of modern art was not entirely new, but was without a doubt extremely unpleasant."
     "His skinsuit did what it could to distribute the kinetic force evenly across his body, so the crushing pain was at least perfectly uniform in infliction."
     "The balancing gizmos gave up the ghost on keeping him upright, and struggled to guarantee he wouldn't land wherever he flew head-first."
-    "His gravity manipulation defenses all strained to bleed the inertia of his impact off without even more pain, but the end result was that he didn't slow appreciably until after he passed the edge of the five story rooftop."
+    "His gravity manipulation defenses all strained to bleed the inertia of his impact off without even {i}more{/i} pain, but the end result was that he didn't slow appreciably until after he passed the edge of the five story rooftop."
     nvl clear
     "Not what he'd hoped for by a long shot."
-    "All of the \"toys\" would keep him mobile, even if he was afraid he'd need to be poured out of the skinsuit when it was over."
+    "All of the \"toys\" would keep him mobile, even if he was afraid he'd need to be {i}poured{/i} out of the skinsuit when it was over."
     "He'd have to beg Nagato or Haruhi to help him out and repair things later, but there was just too damn much to keep track of with all the attack vectors, defensive capabilities...."
     "\"It started off such a nice day, too,\" he mumbled, as his forward momentum was arrested and he began the downward plummet in earnest."
     nvl clear
@@ -592,144 +631,366 @@ label start:
     nvl clear
     scene bg roofclose with fade
     show Asakura Sup1 at center
-    "\"Hmm,\"Ryouko mused, turning slowly around, to where her sealed space in the stairway had been breached."
+    "\"Hmm,\" Ryouko mused, turning slowly around, to where her sealed space in the stairway had been breached."
     show Asakura Frown1 at center
-    extend "\"It was broken from the outside, somehow? I wonder--\""
+    "\"It was broken from the outside, somehow? I wonder—\""
+    nvl clear
     play music "Music/Justice.ogg"
-    play sound "SE/Barrier2.wav"
-    play sound2 "SE/Laser1.wav"
+    play sound "SE/Barrier2.mp3"
+    play sound2 "SE/Laser1.mp3"
     scene bg BeamOrange1 with flashbulb
     "The shrill buzz of a brilliant energy beam licked out from the roof of the tiny structure that housed the stairwell."
     show Asakura Pain1 at center
-    "Ryouko was struck in the chest dead-center of mass, her entire body glowing white for a second before she staggered--"
-    play sound "SE/Laser1.wav"
-    play sound2 "SE/Barrier1.wav"
+    "Ryouko was struck in the chest dead-center of mass, her entire body glowing white for a second before she staggered—"
+    play sound "SE/Laser1.mp3"
+    play sound2 "SE/Barrier1.mp3"
     scene bg BeamOrange2
     show Asakura Pain2 Bright at center
     with flashbulb
-    extend "Instantly another beam shot out from the same location, lighting slightly to one side, near the girl's left shoulder."
+    "Instantly another beam shot out from the same location, lighting slightly to one side, near the girl's left shoulder."
     nvl clear
-    play sound "SE/Laser1.wav"
-    play sound2 "SE/Slash3.wav"
+    play sound "SE/Laser1.mp3"
+    play sound2 "SE/Slash3.mp3"
     scene bg BeamOrange4
     show Asakura Pain2 Bright at center
     with flashbulb
-    "A third, though not as brightly glowing shot was somewhat lower, near her stomach, and Ryouko dropped to her knees, eyes widened."
+    "A third, though not as brightly glowing shot was somewhat lower, near her stomach, {nw}"
     scene bg roofclose
     show Asakura Unhap1
+    play sound "SE/impact.mp3"
     with dissolve
+    extend "and Ryouko dropped to her knees, eyes widened."
     "\"High yield neutron flare?\" she asked. \"Quantum entanglement to disrupt my connection....\""
-    # "De-stealthing, Kyon stood from his hiding place atop the stairwell housing, his greatcoat billowing behind him."
-    # nvl clear
-    # "The end of his weapon was glowing orange with discharge, the shape changed from a simple cylinder to a much thinner meter-long construction of sturdy rails and curving hand guards."
-    # "He slung it over his shoulder and ignored it, pulling the second cylinder from his coat and leaping the twenty meter distance between himself and Ryouko."
-    # nvl clear
-    # "Beneath him, a widening circle of dust marked where he leapt from, and while in midair he flipped over, a sequence of touch-points converting the unadorned cylinder into a stocky, blunt, two-handed gun."
-    # "It fired with a rasping cough, launching a ring of metallic spikes to burrow into the rooftop around Ryouko, and then a grid of crackling brissant energy raked between each of the spikes, snaring the girl in a glowing, shuddering net."
-    # "\"Ah,\" she said, her voice disappointed as Kyon's repulsor and gravimetric systems flared his momentum and spread it evenly across the entire rooftop, landing him near Haruhi, at Ryouko's side.{w}\"I failed again.\""
-    # nvl clear
-    # "\"Is that going to hurt her?\" Haruhi asked, crossing her arms over her chest and raising an eyebrow at Kyon in concern."
-    # "\"Hurt her?\" he asked, somewhat indignantly."
-    # "\"Haruhi, she's tried to kill me. Three times, now, and you just saw one of them! Your primary concern is that I not hurt her?\""
-    # "He muttered to himself beneath his breath, folding away his firearm into storage."
-    # nvl clear
-    # "Haruhi tapped a toe impatiently, still staring at him."
-    # "\"Pulling a phone identical to the one Haruhi was holding from one pocket, he punched a key.\"Nagato should be here shortly,\" he added, shaking his head."
-    # "\"This is all up to you. I already know you'll take care of things just fine.\""
-    # "\"Yes!\" she said, pumping one fist in the air. \"I get to do something! Hey, how's the future?\""
-    # nvl clear
-    # "\"It's awesome,\" he said, annoyed.\"Try and have some pity for the me that nearly got murdered off a building, huh?\""
-    # "\"Anyway, just so you know, she's programmed to try and kill me; she won't do anything to you.\""
-    # "\"And you won't see me tomorrow at school, because I'm going to be ... well. You'll find out.\""
-    # "\"Okay,\"she agreed, frowning.\"But, hey, why aren't you going to be around?\""
-    # nvl clear
-    # "\"Further information is not available here,\" he warned, shaking his head."
-    # "\"Now, when you see that other me, tell him I said 'hi', like I always do.\""
-    # "He paused before glancing at his phone again with a grimace."
-    # "\"My time's up,\" he announced, re-engaging his stealth field and vanishing from sight."
-    # nvl clear
-    # "\"What?\"Ryouko asked, still trapped in the containment field.\"He just abandoned me here with you?\""
-    # "\"Damn it,\" Kyon groaned, from where he was just climbing over the edge of the building, breathing hard.{w} \"I hate when I have to rely on time-travel to take care of things.\""
-    # "\"Oh!\" Haruhi said cheerfully. \"Future-you says 'hi', like always!\""
-    # "\"Yeah? That guy always annoys me. Probably almost as much as I'm annoyed by having to save past-me.\""
-    # nvl clear
-    # "There was a flash of light and a warping of space, and then Nagato appeared at Haruhi's side."
-    # "The circle of illumination around Haruhi's feet had vanished."
-    # "While Nagato knelt to examine Ryouko, Haruhi dashed to Kyon's side and helped him stand."
-    # nvl clear
-    # "\"How bad was it, anyway? Future-you seemed to think you weren't very tough, and that you were hurt pretty badly.\""
-    # "\"think I've got some internal bleeding,\" he said, wincing, one hand pressed to his abdomen. {w} \"And some of my gear is messed up from the impact and overload. While this is fun for you, I wouldn't mind some medical assistance.\""
-    # nvl clear
-    # "\"Sure!\" she said cheerfully, clapping one hand on his shoulder.\"Happy, healing, all-better thoughts!\""
-    # "\"Medical program loaded,\"Nagato added helpfully from where she was studying the other interface. {w} \"Permission to proceed?\""
-    # "\"Granted.\" Kyon said, straightening up as a sparkle of green and white lights suffused up from the rooftop beneath him, flowing through his body and undoing the damage."
-    # nvl clear
-    # "\"Oh, that feels so much better! Thank you; that probably saved my life.\""
-    # "\"And for future reference, you can probably assume that I'm okay with that one being used.\""
-    # "\"Acknowledged,\" Nagato agreed."
-    # nvl clear
-    # "\"Hmm, hey, Kyon, you know, you're going to have to really step up your game,\" Haruhi said suddenly, tossing his cell phone back to him."
-    # "He scowled, pocketed it, and then banished all of his equipment, the greatcoat taking the longest to phase out of view."
-    # "\"What's that supposed to mean?\" he asked in irritation."
-    # nvl clear
-    # "\"Well, this is fun and all, but you can hardly expect me to take your lectures on using power responsibly seriously when you're always relying on your future self to save you,\"she warned, raising one finger and waggling it at him."
-    # "\'He sighed and hung his head. \"You know, I really am trying my hardest,\" he muttered, crossing his arms over his chest and looking away towards the sea."
-    # nvl clear
-    # "\"But I can't just leave you alone, and Nagato can't handle another interface right now.\""
-    # "\"And you did such a great job!\" Ryouko encouraged from beneath her energy net."
-    # "\"Time travel, is it? Now that's one tool you seem to know how to use well.\""
-    # nvl clear
-    # "\"It's fine,\" Nagato said tonelessly."
-    # "\"Asakura Ryouko is isolated and confined; she is limited to her organic functions at this moment.\""
-    # "\"After she is dispatched, I will retrieve defenses to protect against further interference.\""
-    # nvl clear
-    # "\"Waaaait!\" Haruhi yelled, stomping one foot and spinning to face Yuki."
-    # "\"Dispatched'? I don't think so! If you need something from her, there's got to be a way to do it without killing her!\""
-    # "\'What's the point of running into another alien, just to kill them?\""
-    # nvl clear
-    # "\"But the fighting is fine,\" Kyon observed, stretching his arms above his head, then swiveling his hips and stretching his spine out."
-    # "\"After all, no one of any importance was smashed off a building.\""
-    # "\'Kyon!\""
-    # "\'Alright,\" he said, shaking his head."
-    # nvl clear
-    # "\"I don't really want Asakura to die either. But if her body were destroyed, she'd just go back to the place she came from.\""
-    # "\"At least, as I understand it.\" He shot a questioning glance towards Nagato"
-    # nvl clear
-    # "She didn't meet his eyes."
-    # "\"Good!\" Haruhi nodded decisively, grinning again."
-    # "\'Yuki, let's come up with a backup plan. Something that will let you get your power-up and let us reform Ryouko. Can we do that?\""
-    # "Nagato stared intently at Ryouko, then gave a decisive nod. \"Awaiting program,\" she announced."
-    # nvl clear
-    # "\"Hmm,\" Haruhi mused, narrowing her eyes and peering intently at Ryouko, who merely watched back curiously."
-    # "\"m ... some kind of second chance ... a chance to start over, prove herself, and ... let's see, realize she doesn't want to kill Kyon at all.\""
-    # "\"And she gets to give Yuki what she needs to make her equal to the next interface that comes along.... But no brainwashing, that's not cool.\""
-    # "\"So, maybe an 'evil' module or something like that, which Yuki can purify and use for good, letting Ryouko learn how to become a nicer person?\""
-    # "\"Yeah! That sounds very good! Let's do that.\""
-    # nvl clear
-    # "The pinned interface blinked several times, then turned her eyes to Kyon from beneath the glowing energy net."
-    # "\"None of this has been reported to my superiors,\" she commented."
-    # "\"It's entirely possible that this new knowledge could change their perceptions; there's no reason to be hasty!\""
-    # nvl clear
-    # "\'Program loaded,\" Nagato replied."
-    # "\'Permission to proceed?\""
-    # nvl clear
-    # "\'We can be reasonable!\ Ryouko protested."
-    # "\"You're probably the most reasonable person I've ever had try to kill me,\" Kyon agreed."
-    # "\"But I remember that time you did stab me all too well.\""
-    # "\"No stabbing!\" Haruhi said in a chastising tone."
-    # "\"Bad Ryouko! No class rep votes for you!\""
-    # nvl clear
-    # "\"...you don't really think that's her prime concern, do you? Aside from which, did you even vote last time?\""
-    # "\"It isn't,\" Ryouko agreed. {w} \"And no, she didn't. But, about being reasonable...\""
-    # "\"Anything that I should know about this program, Nagato?\" Kyon asked, quirking one eyebrow higher."
-    # nvl clear
-    # "\"It will be beneficial to all involved,\" Nagato assured him, while Haruhi nodded knowingly."
-    # "\"Okay,\" he sighed, shaking his head."
-    # "\"Granted.\""
-    # nvl clear
-    # "The smaller girl turned her gaze back to Ryouko's bound form, the faintest hint of a smile coming to her lips."
-    # nvl clear
-    # "\"I will not let you harm him again.\""
+    scene bg roofright
+    pause (0.01)
+    play sound "SE/CloakOff.mp3"
+    show Kyon Ser1 at right
+    show Skinsuit at right
+    show Coat at right
+    with coatin
+    "De-stealthing, Kyon stood from his hiding place atop the stairwell housing, his greatcoat billowing behind him."
+    nvl clear
+    "The end of his weapon was glowing orange with discharge, the shape changed from a simple cylinder to a much thinner meter-long construction of sturdy rails and curving hand guards."
+    "He slung it over his shoulder and ignored it, pulling the second cylinder from his coat and leaping the twenty meter distance between himself and Ryouko."
+    play sound "SE/lowswoosh.mp3"
+    scene bg roofclose with wiperightfast
+    nvl clear
+    show Asakura Unhap1 at center
+    pause (0.3)
+    play sound "SE/guncock.mp3"
+    "Beneath him, a widening circle of dust marked where he leapt from, and while in midair he flipped over, a sequence of touch-points converting the unadorned cylinder into a stocky, blunt, two-handed gun."
+    play sound "SE/netlaunch.mp3"
+    pause (1)
+    play sound "SE/stake1.mp3"
+    show Spike1 at center
+    pause (0.1)
+    play sound "SE/stake2.mp3"
+    show Spike2 at center
+    pause (0.1)
+    play sound "SE/stake3.mp3"
+    show Spike3 at center
+    pause (0.1)
+    play sound "SE/stake1.mp3"
+    show Spike4 at center
+    pause (0.5)
+    hide Spike1
+    hide Spike2
+    hide Spike3
+    hide Spike4
+    show Spike5 at center
+    play sound "SE/elec1.mp3"
+    "It fired with a rasping cough, launching a ring of metallic spikes to burrow into the rooftop around Ryouko, and then a grid of crackling brissant energy raked between each of the spikes, snaring the girl in a glowing, shuddering net."
+    nvl clear
+    "\"Ah,\" she said, her voice disappointed as Kyon's repulsor and gravimetric systems flared his momentum and spread it evenly across the entire rooftop, landing him near Haruhi, at Ryouko's side."
+    show Asakura Sigh1 at center
+    "\"I failed again.\""
+    nvl clear
+    hide Asakura
+    hide Spike5
+    scene bg roof
+    show Haruhi Ang1 at left   
+    "\"Is that going to hurt her?\" Haruhi asked, crossing her arms over her chest and raising an eyebrow at Kyon in concern."
+    show Kyon Ser2 at right
+    show Skinsuit at right
+    show Coat at right
+    nvl clear
+    "\"Hurt her?\" he asked, somewhat indignantly."
+    show Kyon Ang1 at right
+    "\"Haruhi, she's tried to kill me. Three times, now, and you just saw one of them! Your primary concern is that I not hurt her?\""
+    show Kyon Sigh1 at right
+    play sound "Guncock.mp3"
+    "He muttered to himself beneath his breath, folding away his firearm into storage."
+    nvl clear
+    show Haruhi Ang3 at left
+    nvl clear
+    "Haruhi tapped a toe impatiently, still staring at him."
+    show Kyon Neutral1 at right
+    "Pulling a phone identical to the one Haruhi was holding from one pocket, he punched a key. \"Nagato should be here shortly,\" he added, shaking his head."
+    show Kyon Ser1 at right
+    nvl clear
+    "\"This is all up to you. I already know you'll take care of things just fine.\""
+    show Haruhi Hap4 at left
+    "\"Yes!\" she said, pumping one fist in the air. \"I get to do something! "
+    show Haruhi Hap1 at left
+    extend "Hey, how's the future?\""
+    nvl clear
+    show Kyon Sigh1 at right
+    "\"It's awesome,\" he said, annoyed. "
+    show Kyon Ser2 at right
+    extend "\"Try and have some pity for the me that nearly got murdered off a building, huh?"
+    show Kyon Neutral1 at right
+    "\"Anyway, just so you know, she's programmed to try and kill me; she won't do anything to you.\""
+    nvl clear
+    show Kyon Neutral2 at right
+    "\"And you won't see me tomorrow at school, because I'm going to be ... well. You'll find out.\""
+    show Haruhi Pout1 at left
+    "\"Okay,\" she agreed, frowning. "
+    show Haruhi Quest1 at left
+    extend "\"But, hey, why aren't you going to be around?\""
+    nvl clear
+    show Kyon Ser1 at right
+    "\"Further information is not available here,\" he warned, shaking his head."
+    show Kyon Smile1 at right
+    "\"Now, when you see that other me, tell him I said 'hi', like I always do.\""
+    show Kyon Ser1 at right
+    "He paused before glancing at his phone again with a grimace."
+    play sound "SE/CloakOn.mp3"
+    hide Kyon
+    hide Skinsuit
+    hide Coat
+    with coatout
+    "\"My time's up,\" he announced, re-engaging his stealth field and vanishing from sight."
+    stop music fadeout 1
+    nvl clear
+    scene bg roofclose
+    show Asakura Sup1 at center
+    show Spike5 at center
+    "\"What?\"Ryouko asked, still trapped in the containment field. "
+    show Asakura Smile3 at center
+    extend "\"He just abandoned me here with you?\""
+    play music "Music/NagatoTheme.mp3"
+    scene bg roofright
+    pause (0.5)
+    play sound "SE/impact.mp3"
+    show Kyon Pain1 at right
+    show Skinsuit at right
+    show Coat at right
+    with wipeup
+    "\"Damn it,\" Kyon groaned, from where he was just climbing over the edge of the building, breathing hard. "
+    show Kyon Sigh1 at right
+    extend "\"I hate when I have to rely on time-travel to take care of things.\""
+    nvl clear
+    scene bg roof
+    show Haruhi Hap1 at left
+    "\"Oh!\" Haruhi said cheerfully. \"Future-you says 'hi', like always!\""
+    scene bg roofright
+    show Kyon Sigh2 at right
+    show Skinsuit at right
+    show Coat at right
+    "\"Yeah? That guy always annoys me. Probably almost as much as I'm annoyed by having to save past-me.\""
+    nvl clear
+    scene bg roof
+    show Haruhi Hap1 at left
+    pause (0.5)
+    play sound "SE/Barrier1.mp3"
+    show Yuki EyesClosed Bright  at center
+    show field at center
+    with flashbulb
+    show Yuki EyesClosed at center
+    hide field with dissolve
+    "There was a flash of light and a warping of space, and then Nagato appeared at Haruhi's side."
+    show Yuki Side1 at center
+    "The circle of illumination around Haruhi's feet had vanished."
+    scene bg roofclose with wipeup
+    show Asakura Sigh1 at center
+    show Spike5 at center
+    show Yuki Side1 at HalfLeft with moveinleft
+    "While Nagato knelt to examine Ryouko, Haruhi dashed to Kyon's side and helped him stand."
+    nvl clear
+    scene bg roofright
+    show Kyon Pain2 at right
+    show Skinsuit at right
+    show Coat at right
+    show Haruhi Worry1 at center with moveinleft
+    "\"How bad was it, anyway? Future-you seemed to think you weren't very tough, and that you were hurt pretty badly.\""
+    show Kyon Pain1 at right
+    "\"I think I've got some internal bleeding,\" he said, wincing, one hand pressed to his abdomen. "
+    show Kyon Pain2 at right
+    extend "\"And some of my gear is messed up from the impact and overload. While this is fun for you, I wouldn't mind some medical assistance.\""
+    nvl clear
+    show Haruhi Hap3 at center
+    "\"Sure!\" she said cheerfully, clapping one hand on his shoulder. "
+    play sound "SE/impact.mp3"
+    show Kyon Pain1 at right
+    extend "\"Happy, healing, all-better thoughts!\""
+    scene bg roofclose
+    show Asakura Sigh1 at center
+    show Spike5 at center
+    show Yuki Talk1 at HalfLeft
+    "\"Medical program loaded,\"Nagato added helpfully from where she was studying the other interface. "
+    show Yuki Talk2 at HalfLeft
+    extend "\"Permission to proceed?\""
+    scene bg roofright
+    show Kyon Pain1 at right
+    show Skinsuit at right
+    show Coat at right
+    show Haruhi Worry1 at center
+    "\"Granted.\" Kyon said, {nw}"
+    play sound "SE/heal1.wav"
+    show field at right
+    show Kyon Ser2 Bright at right
+    show Skinsuit Bright at right
+    show Coat Bright at right
+    with dissolve
+    pause .1
+    hide field at right
+    show Kyon Sigh2 at right
+    show Skinsuit at right
+    show Coat at right
+    with dissolve
+    extend "straightening up as a sparkle of green and white lights suffused up from the rooftop beneath him, flowing through his body and undoing the damage."
+    nvl clear
+    show Kyon Smile1 at right
+    "\"Oh, that feels so much better! Thank you; that probably saved my life.\""
+    show Kyon Neutral2 at right
+    "\"And for future reference, you can probably assume that I'm okay with that one being used.\""
+    "\"Acknowledged,\" Nagato agreed."
+    nvl clear
+    show Haruhi Smile2 at left with move
+    "\"Hmm, hey, Kyon, you know, you're going to have to really step up your game,\" Haruhi said suddenly, tossing his cell phone back to him."
+    show Kyon Ser1 at right
+    play sound "SE/woosh.mp3"
+    hide Skinsuit with wipedown
+    play sound "SE/CloakOn.mp3"
+    hide Coat with coatout
+    "He scowled, pocketed it, and then banished all of his equipment, the greatcoat taking the longest to phase out of view."
+    show Kyon Ser2 at right
+    "\"What's that supposed to mean?\" he asked in irritation."
+    nvl clear
+    show Haruhi Sigh1 at left
+    "\"Well, this is fun and all, but you can hardly expect me to take your lectures on using power responsibly seriously when you're always relying on your future self to save you,\"she warned, raising one finger and waggling it at him."
+    show Kyon Sigh2 at right
+    "\'He sighed and hung his head. \"You know, I really am trying my hardest,\""
+    show Kyon Worry1 at right
+    show Haruhi Worry1 at left
+    extend " he muttered, crossing his arms over his chest and looking away towards the sea."
+    nvl clear
+    show Kyon Ser1 at right
+    "\"But I can't just leave you alone, and Nagato can't handle another interface right now.\""
+    scene bg roofclose
+    show Asakura Smile2  at center
+    show Spike5 at center
+    show Yuki Side1 at HalfLeft
+    "\"And you did such a great job!\" Ryouko encouraged from beneath her energy net."
+    show Asakura Smile1 at center
+    "\"Time travel, is it? Now that's one tool you seem to know how to use well.\""
+    nvl clear
+    show Yuki Talk1 at HalfLeft
+    "\"It's fine,\" Nagato said tonelessly."
+    show Yuki Talk2 at HalfLeft
+    "\"Asakura Ryouko is isolated and confined; she is limited to her organic functions at this moment.\""
+    show Yuki Talk1 at HalfLeft
+    "\"After she is dispatched, I will retrieve defenses to protect against further interference.\""
+    nvl clear
+    scene bg roofright
+    show Haruhi Sup1 at left
+    show Kyon Ser1 at right
+    "\"Waaaait!\" Haruhi yelled, stomping one foot and spinning to face Yuki."
+    show Haruhi Ang2 at left
+    "\"Dispatched'? I don't think so! If you need something from her, there's got to be a way to do it without killing her!\""
+    show Haruhi Ang1 at left
+    "\'What's the point of running into another alien, just to kill them?\""
+    nvl clear
+    show Kyon Sigh1 at right
+    "\"But the fighting is fine,\" Kyon observed, stretching his arms above his head, then swiveling his hips and stretching his spine out."
+    show Kyon Ang1 at right
+    "\"After all, no one of any importance was smashed off a building.\""
+    show Haruhi Eyeroll1 at left
+    "\'Kyon!\""
+    show Kyon Sigh2 at right
+    "\'Alright,\" he said, shaking his head."
+    nvl clear
+    show Kyon Ser1 at right
+    "\"I don't really want Asakura to die either. But if her body were destroyed, she'd just go back to the place she came from.\""
+    show Kyon Worry1 at right
+    "\"At least, as I understand it.\" He shot a questioning glance towards Nagato."
+    nvl clear
+    "She didn't meet his eyes."
+    nvl clear
+    show Haruhi Hap1 at left
+    "\"Good!\" Haruhi nodded decisively, grinning again."
+    show Haruhi Smile3 at left
+    "\'Yuki, let's come up with a backup plan. Something that will let you get your power-up and let us reform Ryouko. Can we do that?\""
+    scene bg roofclose
+    show Asakura Frown1  at center
+    show Spike5 at center
+    show Yuki Side1 at HalfLeft
+    "Nagato stared intently at Ryouko, then gave a decisive nod. "
+    show Yuki Talk1 at HalfLeft
+    extend "\"Awaiting program,\" she announced."
+    nvl clear
+    show Haruhi Ang3 at left with moveinleft
+    show Kyon Ser1 at right with moveinright
+    show Yuki Side1
+    "\"Hmm,\" Haruhi mused, narrowing her eyes and peering intently at Ryouko, who merely watched back curiously."
+    show Haruhi Ang2 at left
+    "\"Um ... some kind of second chance ... a chance to start over, prove herself, and ... let's see, realize she doesn't want to kill Kyon at all.\""
+    nvl clear
+    show Haruhi Smile2 at left
+    "\"And she gets to give Yuki what she needs to make her equal to the next interface that comes along.... But no brainwashing, that's not cool.\""
+    show Haruhi Smile3 at left
+    "\"So, maybe an 'evil' module or something like that, which Yuki can purify and use for good, letting Ryouko learn how to become a nicer person?\""
+    nvl clear
+    show Haruhi Hap3 at left
+    "\"Yeah! That sounds very good! Let's do that.\""
+    nvl clear
+    show Asakura Frown3 at center
+    pause (0.4)
+    show Asakura Frown1 at center
+    "The pinned interface blinked several times, then turned her eyes to Kyon from beneath the glowing energy net."
+    show Asakura Frown2 at center
+    "\"None of this has been reported to my superiors,\" she commented."
+    show Asakura Smile2 at center
+    "\"It's entirely possible that this new knowledge could change their perceptions; there's no reason to be hasty!\""
+    nvl clear
+    show Yuki Talk1 at HalfLeft
+    "\'Program loaded,\" Nagato replied."
+    show Yuki Talk2 at HalfLeft
+    "\'Permission to proceed?\""
+    nvl clear
+    show Asakura Pain1 at center
+    "\'We can be reasonable!\ Ryouko protested."
+    show Kyon Sigh1 at right
+    "\"You're probably the most reasonable person I've ever had try to kill me,\" Kyon agreed."
+    show Kyon Ang1 at right
+    "\"But I remember that time you did stab me all too well.\""
+    show Haruhi Ang1 at left
+    "\"No stabbing!\" Haruhi said in a chastising tone. "
+    show Haruhi Ang2 at left
+    extend "\"Bad Ryouko! No class rep votes for you!\""
+    nvl clear
+    show Kyon Neutral1 at right
+    "\"...you don't really think that's her prime concern, do you? Aside from which, did you even vote last time?\""
+    show Asakura Frown1 at center
+    "\"It isn't,\" Ryouko agreed. \"And no, she didn't. "
+    show Asakura Smile2 at center
+    extend "But, about being reasonable...\""
+    show Kyon Puzzle1 at right
+    "\"Anything that I should know about this program, Nagato?\" Kyon asked, quirking one eyebrow higher."
+    nvl clear
+    show Yuki Talk1 at HalfLeft
+    "\"It will be beneficial to all involved,\" Nagato assured him, while Haruhi nodded knowingly."
+    show Kyon Sigh2 at right
+    "\"Okay,\" he sighed, shaking his head."
+    show Kyon Ser1 at right
+    "\"Granted.\""
+    nvl clear
+    show Yuki Side2 at HalfLeft
+    "The smaller girl turned her gaze back to Ryouko's bound form, the faintest hint of a smile coming to her lips."
+    nvl clear
+    scene black
+    stop music
+    "\"I will not let you harm him again.\""
     
     
     
