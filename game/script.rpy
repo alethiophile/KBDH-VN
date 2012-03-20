@@ -144,6 +144,9 @@ transform KyonRightFast:
     linear 0.15 xalign 1.0   
 
 label start:
+    jump prologue
+
+label prologue:
     stop music fadeout 1
     scene title0 with slowfadein
     
@@ -402,28 +405,28 @@ label start:
     hide Coat
     hide Skinsuit
     hide Haruhi
-    show Asakura Frown3 at center
+    show Asakura Frown3 at left
     "\"Er,\" Asakura said, crossing her arms beneath her chest."
-    show Asakura Frown2 at center
+    show Asakura Frown2 at left
     "\"Evidently my information requires an update. I was sent to dispatch Kyon-kun, because he's become an undesirable element for my superiors.\""
-    show Asakura Sup1 at center
+    show Asakura Sup1 at left
     nvl clear
     "\"Really, I'd hoped to see a new state, maybe even provoke it with his death."
-    show Asakura Smile2 at center
+    show Asakura Smile2 at left
     "\"But, those toys seem to say that's already happened! So disappointing ... I suppose if I'd been more patient, I could see it anyway?\""
     show Kyon Sigh1 at right
     show Skinsuit at right
     show Coat at right
     "\"I personally like to see it as a lesson on the effects of {i}randomly stabbing people,{/i}\" Kyon muttered."
     nvl clear
-    show Asakura Smile1 at center
+    show Asakura Smile1 at left
     "\"Oh, it wasn't random,\" she countered.{nw} "
-    show Asakura Smile2 at center
+    show Asakura Smile2 at left
     extend "\"It was highly specific! I put a whole two hours of thought into it, you know. For us, that's quite a while!\""
     show Kyon Ser2 at right
     "\"I'm touched,\" he said dryly."
     nvl clear
-    show Asakura Smile1 at center
+    #show Asakura Smile1 at center
     hide Kyon
     hide Coat
     hide Skinsuit
@@ -628,7 +631,8 @@ label start:
     nvl clear
     scene black with dissolve
     "Dev note: In the story this switches to the past, with Kyon going to meet Yuki. In the interest of asset re-use though, I'm focusing on finishing the fight scene. - Oroboro"
-    
+    nvl clear
+    jump prologue2
     # play music "Music/Nichijou.mp3"
     # nvl clear
     # "That day had started normally enough, but then, in his experience, that was true of nearly all days." 
@@ -893,7 +897,8 @@ label start:
     
 #     
 #     
-    
+
+label prologue2:    
     scene bg roofclose with fade
     show Asakura Sup1 at center
     "\"Hmm,\" Ryouko mused, turning slowly around, to where her sealed space in the stairway had been breached."
