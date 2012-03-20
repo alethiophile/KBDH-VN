@@ -14,6 +14,12 @@ init:
     image bg BeamOrange2 = "Backgrounds/BeamOrange2.jpg"
     image bg BeamOrange3 = "Backgrounds/BeamOrange3.jpg"
     image bg BeamOrange4 = "Backgrounds/BeamOrange4.jpg"
+    image bg KyonRoomLeftClosed = "Backgrounds/KyonRoomLeftClosed.png"
+    image bg KyonHouseNight = "Backgrounds/KyonHouseNight.png"
+    image bg TownStreetNight1 = "Backgrounds/TownStreetNight1.png"
+    image bg TownStreetNight2 = "Backgrounds/TownStreetNight2.png"
+    image bg YukiRoomLeft = "Backgrounds/YukiRoomLeft.png"
+    image bg YukiRoomRight = "Backgrounds/YukiRoomLeft.png"
     image white = "#ffffff"
     image black = "#000000"
     image yukibackground = "#ccccff"
@@ -32,6 +38,8 @@ init:
     image Spike3 = "Sprites/Effects/NetSpike3.png"
     image Spike4 = "Sprites/Effects/NetSpike4.png"
     image Spike5 = "Sprites/Effects/NetSpike5.png"
+    image knifethrow = "Sprites/Effects/knifethrowlong.png"
+    #Haruhi Sprites
     image Haruhi Sup1 = "Sprites/Haruhi/HaruhiSideSurprised1.png"
     image Haruhi Ang1 = "Sprites/Haruhi/HaruhiSideAngry1.png"
     image Haruhi Ang2 = "Sprites/Haruhi/HaruhiSideAngry2.png"
@@ -51,6 +59,7 @@ init:
     image Haruhi Smile2 = "Sprites/Haruhi/HaruhiSideSmile2.png"
     image Haruhi Smile3 = "Sprites/Haruhi/HaruhiSideSmile3.png"
     image Haruhi Sigh1 = "Sprites/Haruhi/HaruhiSideSigh1.png"
+    #Kyon Sprites
     image Kyon Ser1 = "Sprites/Kyon/KyonSerious1.png"
     image Kyon Ser2 = "Sprites/Kyon/KyonSerious2.png"
     image Kyon Ser2 Bright = im.MatrixColor("Sprites/Kyon/KyonSerious2.png",
@@ -64,13 +73,39 @@ init:
     image Kyon Pain2 = "Sprites/Kyon/KyonPained2.png"
     image Kyon Smile1 = "Sprites/Kyon/KyonSmile1.png"
     image Kyon Worry1 = "Sprites/Kyon/KyonWorry1.png"
+    image Kyon Worry2 = "Sprites/Kyon/KyonWorry1.png"
     image Kyon Puzzle1 = "Sprites/Kyon/KyonPuzzled1.png"
+    image Kyon Sup1 = "Sprites/Kyon/KyonSurprised1.png"
+    image Kyon Sup2 = "Sprites/Kyon/KyonSurprised2.png"
+    
+    
+    image Kyon Casual Ser1 = "Sprites/Kyon/KyonCasualSerious1.png"
+    image Kyon Casual Ser2 = "Sprites/Kyon/KyonCasualSerious2.png"
+    image Kyon Casual Ser2 Bright = im.MatrixColor("Sprites/Kyon/KyonCasualSerious2.png",
+                                       im.matrix.brightness(.5))
+    image Kyon Casual Sigh1 = "Sprites/Kyon/KyonCasualSigh1.png"
+    image Kyon Casual Sigh2 = "Sprites/Kyon/KyonCasualSigh2.png"
+    image Kyon Casual Neutral1 = "Sprites/Kyon/KyonCasualNeutral1.png"
+    image Kyon Casual Neutral2 = "Sprites/Kyon/KyonCasualNeutral2.png"
+    image Kyon Casual Ang1 = "Sprites/Kyon/KyonCasualAngry1.png"
+    image Kyon Casual Pain1 = "Sprites/Kyon/KyonCasualPained1.png"
+    image Kyon Casual Pain2 = "Sprites/Kyon/KyonCasualPained2.png"
+    image Kyon Casual Smile1 = "Sprites/Kyon/KyonCasualSmile1.png"
+    image Kyon Casual Worry1 = "Sprites/Kyon/KyonCasualWorry1.png"
+    image Kyon Casual Worry2 = "Sprites/Kyon/KyonCasualWorry2.png"
+    image Kyon Casual Puzzle1 = "Sprites/Kyon/KyonCasualPuzzled1.png"
+    image Kyon Casual Sup1 = "Sprites/Kyon/KyonCasualSurprised1.png"
+    image Kyon Casual Sup2 = "Sprites/Kyon/KyonCasualSurprised2.png"
+    
+    image Ksweat = "Sprites/Kyon/KyonSweat1.png"
     image Skinsuit = "Sprites/Kyon/KyonSkinsuitTemplate.png"
     image Skinsuit Bright = im.MatrixColor("Sprites/Kyon/KyonSkinsuitTemplate.png",
                                        im.matrix.brightness(.5))
     image Coat Bright = im.MatrixColor("Sprites/Kyon/KyonCoat.png",
                                        im.matrix.brightness(.5))
     image Coat = "Sprites/Kyon/KyonCoat.png"
+    
+    #Asakura Sprites
     image Asakura Smile1 = "Sprites/Asakura/AsakuraSmile1.png"
     image Asakura Smile2 = "Sprites/Asakura/AsakuraSmile2.png"
     image Asakura Smile3 = "Sprites/Asakura/AsakuraSmile3.png"
@@ -84,15 +119,36 @@ init:
     image Asakura Pain2 = "Sprites/Asakura/AsakuraPain2.png"
     image Asakura Pain2 Bright = im.MatrixColor("Sprites/Asakura/AsakuraPain2.png",
                                        im.matrix.brightness(.5))
-    image Yuki EyesClosed = "Sprites/Yuki/YukiSideEyesClosed1.png"
-    image Yuki EyesClosed Bright = im.MatrixColor("Sprites/Yuki/YukiSideEyesClosed1.png",
+    #Yuki Sprites
+    image Yuki EyesClosed1 = "Sprites/Yuki/YukiSideEyesClosed1.png"
+    image Yuki EyesClosed1 Bright = im.MatrixColor("Sprites/Yuki/YukiSideEyesClosed1.png",
                                        im.matrix.brightness(.5))
     image Yuki Side1 = "Sprites/Yuki/YukiSide1.png"
     image Yuki Side2 = "Sprites/Yuki/YukiSide2.png"
     image Yuki Talk1 = "Sprites/Yuki/YukiSideTalk1.png"
     image Yuki Talk2 = "Sprites/Yuki/YukiSideTalk2.png"
+    image Yuki Sad1 = "Sprites/Yuki/YukiSideSad1.png"
+    image Yuki Sad2 = "Sprites/Yuki/YukiSideSad2.png"
+    image Yuki Sad3 = "Sprites/Yuki/YukiSideSad3.png"
+    image Yuki SadTalk1 = "Sprites/Yuki/YukiSideSadTalk1.png"
+    image Yuki SadTalk2 = "Sprites/Yuki/YukiSideSadTalk2.png"
+    image Yuki SadTalk3 = "Sprites/Yuki/YukiSideSadTalk3.png"
+   
+    image Yuki Casual EyesClosed1 = "Sprites/Yuki/YukiSideCasualEyesClosed1.png"
+    image Yuki Casual EyesClosed1 Bright = im.MatrixColor("Sprites/Yuki/YukiSideCasualEyesClosed1.png",
+                                       im.matrix.brightness(.5))
+    image Yuki Casual Side1 = "Sprites/Yuki/YukiSideCasual1.png"
+    image Yuki Casual Side2 = "Sprites/Yuki/YukiSideCasual2.png"
+    image Yuki Casual Talk1 = "Sprites/Yuki/YukiSideTalkCasual1.png"
+    image Yuki Casual Talk2 = "Sprites/Yuki/YukiSideTalkCasual2.png"
+    image Yuki Casual Sad1 = "Sprites/Yuki/YukiSideCasualSad1.png"
+    image Yuki Casual Sad2 = "Sprites/Yuki/YukiSideCasualSad2.png"
+    image Yuki Casual Sad3 = "Sprites/Yuki/YukiSideCasualSad3.png"
+    image Yuki Casual SadTalk1 = "Sprites/Yuki/YukiSideCasualSadTalk1.png"
+    image Yuki Casual SadTalk2 = "Sprites/Yuki/YukiSideCasualSadTalk2.png"
+    image Yuki Casual SadTalk3 = "Sprites/Yuki/YukiSideCasualSadTalk3.png"
 
-    image knifethrow = "Sprites/Effects/knifethrowlong.png"
+    
 
     image Credits0 = "Backgrounds/credits0.png"
     image Credits1 = "Backgrounds/credits1.png"
@@ -630,84 +686,123 @@ label prologue:
     stop music fadeout 1
     nvl clear
     scene black with dissolve
-    "Dev note: In the story this switches to the past, with Kyon going to meet Yuki. In the interest of asset re-use though, I'm focusing on finishing the fight scene. - Oroboro"
     nvl clear
-    jump prologue2
-    # play music "Music/Nichijou.mp3"
-    # nvl clear
-    # "That day had started normally enough, but then, in his experience, that was true of nearly all days." 
-    # "This had caused him to become naturally suspicious of every day, to the point where he was starting to suspect a slow but sure slide into absolute paranoia."
-    # "Haruhi was taking her toll on him ... even if she was calming down, her behavior after that horrific (in retrospect) run-in with Sasaki was doing absolutely nothing to soothe him."
-    # nvl clear
-    # "His preferred refuge from total madness was quite simple: Drink some milk."
-    # "He didn't know why it had such a calming, reassuring effect on him, but it did."
-    # "So he poured himself a large glass in the kitchen, one ear perking up and catching the sounds of his sister playing a video game in the living room."
-    # nvl clear
-    # "Damn it, he thought. He'd even left his cell in the other room specifically to lay a claim on the system!"
-    # "Seriously, he thought darkly, taking a large swallow of his milk, the system was a Playstation Two -- about ten years out of date now, and he had to haul it all the way upstairs if he wanted to play games in his room. "
-    # "He probably shouldn't even bother getting worked up about such an antiquated gaming system."
-    # "Even if it was the only gaming system in the house."
-    # "His phone rang and he sighed, rolling his eyes but staying in the kitchen."
-    # nvl clear
-    # "\"Kyon-kun,\" his sister called, pausing the game with a loud chirp, \"phone!\""
-    # "He lowered his glass, already able to anticipate Haruhi demanding his participation in something."
-    # "\"Answer it for me,\" he called back between gulps.\"I'm busy.\""
-    # nvl clear
-    # "\"Okaaaaaay,\" she said, before he heard her say,\"Kyon-kun's phone! He's too lazy to answer!\""
-    # "\'Thanks,\" he muttered under his breath."
-    # "\"Oh? Okay! I'll tell him. Feel better!\" Then her voice rose from conversational, to an unnecessary bellow, \"Kyon-kun! Yuki-nee-san says she's sick and really wants you to visit her!\""
-    # nvl clear
-    # "He didn't even bother to grab the phone on the way out."
-    # "\"Can I come with...\"{nw}"
-    # play sound "SE/doorclose.mp3"
-    # "she began, before the door slammed shut. Shrugging, she turned back to the game after flipping Kyon's phone closed."
-    # nvl clear
-    # stop music fadeout 1
-    # play music "Music/Nagato2.mp3"
-    # "He calculated the ride to Nagato's place as a twenty minute trip, at one point."
-    # "When he reached the lobby, barely pausing long enough to lock up his bike, he wondered if he'd beaten his best time, but didn't feel the need to check."
-    # "Instead, he dashed to the console, still gasping for breath, and fumbled, mis-dialing her room number and needing to hammer the 'cancel' button to dial again."
-    # "\"Nagato!\" he called, the second she picked up.\"It's me!\""
-    # nvl clear
-    # "The door opened."
-    # "After taking the elevator to her floor, he slowed his mad pace, seeing her standing outside the doorway to her apartment, waiting for him."
-    # "He tried to imagine that he saw some relief around her eyes when he reached her side, but wasn't confident enough to be certain that was the case."
-    # "\"Nagato,\" he said, nodding.\"What's wrong?\""
-    # nvl clear
-    # "She gestured him inside, leading him to the table."
-    # "He kicked off his shoes and went to the kotatsu, watching her warily."
-    # "After pouring a cup of tea for each of them in silence, she finally spoke."
-    # nvl clear
-    # "\"The Integrated Data Sentience Entity has determined that I have become a liability, \" she said in a soft monotone, nearly devoid of inflection."
-    # "He stared at her for a long minute, blinking. \"What ... do you mean?\""
-    # "\"Factors within my makeup have become too unpredictable. It has been calculated that I will commit another error.\""
-    # "\"To prevent this, deletion has been scheduled in three hours, twenty one minutes, fifteen seconds; I will be replaced with an interface more suited to defending against possible Sky Canopy Domain interference.\""
-    # nvl clear
-    # "After taking a deep breath, he growled, \"There isn't enough milk in the world.\""
-    # "She blinked several times in response."
-    # "\"How set is this?\" he asked, his hands shaking too much to hold the teacup properly."
-    # "\"It is absolute."
-    # nvl clear
-    # "He took another deep breath, then jumped to his feet, nearly upsetting the table, and began pacing back and forth in her living room."
-    # "She watched him silently."
-    # nvl clear
-    # "\"Okay,\" he said, after a moment of thought.\"I'll just--\""
-    # "He broke off, fumbling at his pocket when he realized his phone was still at home."
-    # "Biting off a curse, he asked, \"Can I use your phone, Nagato? I need to call Haruhi and the others.\""
-    # nvl clear
-    # "For a moment, mild disappointment flickered around her eyes. \"It is not necessary.\""
-    # "He stared at her, then shook his head. \"What do you mean?\""
-    # "\"I requested your presence for ... personal reasons,\" she said. \"It was not a request for help.\""
-    # nvl clear
-    # "\"I don't care!\" he shouted."
-    # "\"'ve always relied on you -- now that you need help, I am not going to just stand by and watch you get taken away from-- From us!\""
-    # "She blinked, considering, then lowered her head slightly in her infinitesimal nod."
-    # nvl clear
-    # "\"I see,\" she said quietly"
-    # "\"So, I need to make some phone calls.\""
-    # "\'Understood.\""
-    # stop music fadeout 1 
-    # nvl clear
+    play music "Music/Nichijou.mp3"
+    scene bg KyonRoomLeftClosed with fade
+    nvl clear
+    "That day had started normally enough, but then, in his experience, that was true of nearly all days." 
+    "This had caused him to become naturally suspicious of every day, to the point where he was starting to suspect a slow but sure slide into absolute paranoia."
+    "Haruhi was taking her toll on him ... even if she was calming down, her behavior after that horrific (in retrospect) run-in with Sasaki was doing absolutely nothing to soothe him."
+    nvl clear
+    "His preferred refuge from total madness was quite simple: Drink some milk."
+    "He didn't know why it had such a calming, reassuring effect on him, but it did."
+    "So he poured himself a large glass in the kitchen, one ear perking up and catching the sounds of his sister playing a video game in the living room."
+    nvl clear
+    "Damn it, he thought. He'd even left his cell in the other room specifically to lay a claim on the system!"
+    "Seriously, he thought darkly, taking a large swallow of his milk, the system was a Playstation Two -- about ten years out of date now, and he had to haul it all the way upstairs if he wanted to play games in his room. "
+    "He probably shouldn't even bother getting worked up about such an antiquated gaming system."
+    "Even if it was the only gaming system in the house."
+    "His phone rang and he sighed, rolling his eyes but staying in the kitchen."
+    nvl clear
+    "\"Kyon-kun,\" his sister called, pausing the game with a loud chirp, \"phone!\""
+    "He lowered his glass, already able to anticipate Haruhi demanding his participation in something."
+    "\"Answer it for me,\" he called back between gulps.\"I'm busy.\""
+    nvl clear
+    "\"Okaaaaaay,\" she said, before he heard her say,\"Kyon-kun's phone! He's too lazy to answer!\""
+    "\'Thanks,\" he muttered under his breath."
+    "\"Oh? Okay! I'll tell him. Feel better!\" Then her voice rose from conversational, to an unnecessary bellow, \"Kyon-kun! Yuki-nee-san says she's sick and really wants you to visit her!\""
+    nvl clear
+    "He didn't even bother to grab the phone on the way out."
+    "\"Can I come with...\"{nw}"
+    play sound "SE/doorclose.mp3"
+    scene bg KyonHouseNight
+    "she began, before the door slammed shut. Shrugging, she turned back to the game after flipping Kyon's phone closed."
+    nvl clear
+    stop music fadeout 1
+    play music "Music/Nagato2.mp3"
+    "He calculated the ride to Nagato's place as a twenty minute trip, at one point."
+    scene bg TownStreetNight1 with wiperight
+    pause 1
+    scene bg TownStreetNight2 with wiperight
+    pause 1
+    scene black with wiperight
+    "When he reached the lobby, barely pausing long enough to lock up his bike, he wondered if he'd beaten his best time, but didn't feel the need to check."
+    "Instead, he dashed to the console, still gasping for breath, and fumbled, mis-dialing her room number and needing to hammer the 'cancel' button to dial again."
+    "\"Nagato!\" he called, the second she picked up.\"It's me!\""
+    nvl clear
+    "The door opened."
+    scene bg YukiRoomLeft with wipeup
+    "After taking the elevator to her floor, he slowed his mad pace, seeing her standing outside the doorway to her apartment, waiting for him."
+    nvl clear
+    show Yuki Casual Sad1 at left
+    "He tried to imagine that he saw some relief around her eyes when he reached her side, but wasn't confident enough to be certain that was the case."
+    show Kyon Casual Ser1 at right
+    "\"Nagato,\" he said, nodding.\"What's wrong?\""
+    nvl clear
+    show Yuki Casual Sad2 at left
+    "She gestured him inside, leading him to the table."
+    "He kicked off his shoes and went to the kotatsu, watching her warily."
+    "After pouring a cup of tea for each of them in silence, she finally spoke."
+    nvl clear
+    show Yuki Casual SadTalk1 at left
+    "\"The Integrated Data Sentience Entity has determined that I have become a liability, \" she said in a soft monotone, nearly devoid of inflection."
+    show Kyon Casual Sup1 at right
+    nvl clear
+    "He stared at her for a long minute, blinking. \"What ... do you mean?\""
+    show Kyon Casual Sup2 at right
+    show Yuki Casual SadTalk2 at left
+    "\"Factors within my makeup have become too unpredictable. It has been calculated that I will commit another error.\""
+    nvl clear
+    show Yuki Casual SadTalk1 at left
+    "\"To prevent this, deletion has been scheduled in three hours, twenty one minutes, fifteen seconds; I will be replaced with an interface more suited to defending against possible Sky Canopy Domain interference.\""
+    nvl clear
+    show Kyon Casual Sigh1 at right
+    "After taking a deep breath, he growled, \"There isn't enough milk in the world.\""
+    show Yuki Casual EyesClosed1 at left
+    pause (0.2)
+    show Yuki Casual Sad1 at left
+    "She blinked several times in response."
+    show Kyon Casual Worry2 at right
+    "\"How set is this?\" he asked, his hands shaking too much to hold the teacup properly."
+    show Yuki Casual SadTalk2 at left
+    "\"It is absolute."
+    nvl clear
+    show Kyon Casual Sigh1 at right
+    show Ksweat at right
+    "He took another deep breath, then jumped to his feet, nearly upsetting the table, and began pacing back and forth in her living room."
+    show Yuki Casual Sad2 at left
+    "She watched him silently."
+    nvl clear
+    show Kyon Casual Ser2 at right
+    "\"Okay,\" he said, after a moment of thought.\"I'll just--\""
+    show Kyon Casual Ser1 at right
+    "He broke off, fumbling at his pocket when he realized his phone was still at home."
+    show Kyon Casual Worry2 at right
+    "Biting off a curse, he asked, \"Can I use your phone, Nagato? I need to call Haruhi and the others.\""
+    nvl clear
+    show Yuki Casual Sad3 at left
+    "For a moment, mild disappointment flickered around her eyes. \"It is not necessary.\""
+    show Kyon Casual Ser1 at right
+    "He stared at her, then shook his head. \"What do you mean?\""
+    show Yuki Casual SadTalk3 at left
+    "\"I requested your presence for ... personal reasons,\" she said. \"It was not a request for help.\""
+    nvl clear
+    show Kyon Casual Ang1 at right
+    "\"I don't care!\" he shouted."
+    "\"I've always relied on you -- now that you need help, I am not going to just stand by and watch you get taken away from-- From us!\""
+    show Yuki Casual EyesClosed1 at left
+    pause (0.2)
+    show Yuki Casual Sad1 at left
+    "She blinked, considering, then lowered her head slightly in her infinitesimal nod."
+    nvl clear
+    show Yuki Casual SadTalk1 at left
+    "\"I see,\" she said quietly."
+    show Kyon Casual Sigh1 at right
+    "\"So, I need to make some phone calls.\""
+    show Yuki Casual SadTalk2 at left
+    "\'Understood.\""
+    stop music fadeout 1 
+    nvl clear
     # play music "Music/Kankyou.mp3"
     # "She couldn't imagine what had possessed Kyon to call her, ranting like a lunatic about Yuki being sick. "
     # "But he'd done it from her phone, which meant for whatever reason that he and Yuki were alone together. "
@@ -1064,10 +1159,10 @@ label prologue2:
     show Haruhi Hap1 at left
     pause (0.5)
     play sound "SE/Barrier1.mp3"
-    show Yuki EyesClosed Bright  at center
+    show Yuki EyesClosed1 Bright  at center
     show field at center
     with flashbulb
-    show Yuki EyesClosed at center
+    show Yuki EyesClosed1 at center
     hide field with dissolve
     "There was a flash of light and a warping of space, and then Nagato appeared at Haruhi's side."
     show Yuki Side1 at center
