@@ -196,8 +196,9 @@ transform HalfLeft:
     xalign 0.25 yalign 1.0
     
 transform KyonRightFast:
-    xalign 0.0 yalign 1.0
-    linear 0.15 xalign 1.0   
+    xalign -0.5 yalign 1.0
+    linear 0.15 xalign 1.5   
+#    linear 0.15 xalign 1.0   
 
 label start:
     jump prologue
@@ -648,7 +649,7 @@ label prologue:
     show Kyon Pain1 at KyonRightFast
     show Skinsuit at KyonRightFast
     show Coat at KyonRightFast
-    pause (0.1)
+    pause (0.2)
     play sound "SE/touhoudead.wav"
     hide Kyon
     hide Skinsuit
@@ -656,14 +657,18 @@ label prologue:
     "The inner carbon-nano-weave of the greatcoat and the force field of the skinsuit beneath it converted the stabbing force into a distributed shock wave, so instead of being pierced, Kyon was merely hit with the force of a speeding minivan, flying clear across the roof with a choked grunt."
     nvl clear
     scene bg roof
-    show Asakura Smile1 at right
+    show Asakura Smile1:
+        xalign 0.6 yalign 1.0
+        #xalign 0.0 yalign 1.0
+        #linear 0.1 xalign 0.6 # at right
+    show Asakura Smile1 at HalfRight
     "\"In the end,\" Asakura remarked, watching his form tumble off the edge of the school building,{fast} \"all those toys are pretty silly if you don't actually know how to use them.\""
     show Haruhi Hap1 at left
     "\"You have to give him credit, though,\" Haruhi said, peering very closely at the knives frozen over her barrier, not even glancing back to where Kyon had vanished."
     show Haruhi Grin1 at left
     "\"He comes up with one hell of a distraction ploy, doesn't he?\""
     nvl clear
-    show Asakura Sup1 at right
+    show Asakura Sup1 at HalfRight
     "The blue-haired interface cocked her head to one side, blinking."
     stop music fadeout 1
     "\"What?\""
@@ -699,7 +704,7 @@ label prologue:
     "So he poured himself a large glass in the kitchen, one ear perking up and catching the sounds of his sister playing a video game in the living room."
     nvl clear
     "Damn it, he thought. He'd even left his cell in the other room specifically to lay a claim on the system!"
-    "Seriously, he thought darkly, taking a large swallow of his milk, the system was a Playstation Two -- about ten years out of date now, and he had to haul it all the way upstairs if he wanted to play games in his room. "
+    "Seriously, he thought darkly, taking a large swallow of his milk, the system was a Playstation Two — about ten years out of date now, and he had to haul it all the way upstairs if he wanted to play games in his room. "
     "He probably shouldn't even bother getting worked up about such an antiquated gaming system."
     "Even if it was the only gaming system in the house."
     "His phone rang and he sighed, rolling his eyes but staying in the kitchen."
@@ -774,7 +779,7 @@ label prologue:
     "She watched him silently."
     nvl clear
     show Kyon Casual Ser2 at right
-    "\"Okay,\" he said, after a moment of thought.\"I'll just--\""
+    "\"Okay,\" he said, after a moment of thought.\"I'll just—\""
     show Kyon Casual Ser1 at right
     "He broke off, fumbling at his pocket when he realized his phone was still at home."
     show Kyon Casual Worry2 at right
@@ -789,7 +794,7 @@ label prologue:
     nvl clear
     show Kyon Casual Ang1 at right
     "\"I don't care!\" he shouted."
-    "\"I've always relied on you -- now that you need help, I am not going to just stand by and watch you get taken away from-- From us!\""
+    "\"I've always relied on you — now that you need help, I am not going to just stand by and watch you get taken away from— from us!\""
     show Yuki Casual EyesClosed1 at left
     pause (0.2)
     show Yuki Casual Sad1 at left
@@ -806,12 +811,12 @@ label prologue:
     # play music "Music/Kankyou.mp3"
     # "She couldn't imagine what had possessed Kyon to call her, ranting like a lunatic about Yuki being sick. "
     # "But he'd done it from her phone, which meant for whatever reason that he and Yuki were alone together. "
-    # "She wasn't certain why that bothered her, but it did -- so when he demanded her presence, instead of telling him what he could do for trying to order the Brigade leader around, she swore that she'd be there."
+    # "She wasn't certain why that bothered her, but it did — so when he demanded her presence, instead of telling him what he could do for trying to order the Brigade leader around, she swore that she'd be there."
     # nvl clear
     # "After trekking all the way there, much to her annoyance, she found that she was the last to arrive."
     # "Mikuru sat at one side of the table, opposite Yuki."
     # "Koizumi sat between them, his eternal smile faded to half its normal strength."
-    # "Kyon himself stood next to her -- he was the one who had answered the intercom and let her in."
+    # "Kyon himself stood next to her — he was the one who had answered the intercom and let her in."
     # nvl clear
     # "She narrowed her eyes at him and kicked her shoes off, storming into the room to Yuki's side and immediately pressing one palm onto the smaller girl's forehead."
     # "\"You don't feel feverish,\" she finally commented."
@@ -839,17 +844,17 @@ label prologue:
     # "She had a mental catalogue of Kyon-like behaviors, and this fell firmly into the category of the seldom-seen but always feared angry Kyon."
     # "Dour, upset, irked, sarcastic, caustic ... sure. But angry?"
     # nvl clear
-    # "Hell, she'd once smashed his head into her desk -- entirely on accident -- and he was only annoyed."
+    # "Hell, she'd once smashed his head into her desk — entirely on accident — and he was only annoyed."
     # "And it wasn't for hitting his head, it was for disrupting a class!"
     # "Nevermind that he had been dozing off before that."
     # nvl clear
     # "She'd seen him genuinely angry two times."
     # "Only once had it been at her."
     # "She hated that memory more than anything else she knew about him, but couldn't dare to forget it."
-    # "Once it had been at -- of all things -- his unfinished homework over summer break, though that was the lesser of the two displays; also the first."
+    # "Once it had been at — of all things — his unfinished homework over summer break, though that was the lesser of the two displays; also the first."
     # "She didn't understand it, but she knew whatever it was, she wanted to be on his side against it."
     # nvl clear
-    # "Even then, some small part of her really didn't like the way that when he chose to, he simply seized command of her precious hand-crafted Brigade and, no matter how cute it was--"
+    # "Even then, some small part of her really didn't like the way that when he chose to, he simply seized command of her precious hand-crafted Brigade and, no matter how cute it was—"
     # "She firmly suplexed that thought into oblivion."
     # nvl clear
     # stop music fadeout 1
@@ -872,7 +877,7 @@ label prologue:
     # "\"Fine,\" she sighed. \"I promise. Now can you get on with it?\""
     # nvl clear
     # "\"Okay,\" he said, pacing around to the window."
-    # "\"Almost a year ago -- last May -- we ended up going on a city search where no one but you and I showed up.\""
+    # "\"Almost a year ago — last May — we ended up going on a city search where no one but you and I showed up.\""
     # "\"I remember,\" she said, annoyed."
     # "A stupid practical joke on his part ... though, it had given her the idea for the movie."
     # nvl clear
@@ -904,7 +909,7 @@ label prologue:
     # "\"That's ... classified,\" he answered, looking away."
     # "\"Anyway, go ahead and explain it to Haruhi.\""
     # nvl clear
-    # "\'Oh! Um, Suzumiya-san ... what he says is true! I am a time traveler, though, it's more accurate to say that I'm a visitor from the future who is projected into the past, almost like a two-dimensional image projected into--\""
+    # "\'Oh! Um, Suzumiya-san ... what he says is true! I am a time traveler, though, it's more accurate to say that I'm a visitor from the future who is projected into the past, almost like a two-dimensional image projected into—\""
     # "\"Right, right,\" Haruhi cut her off. \"You're a time traveler. Understood.\""
     # nvl clear
     # "Though, Mikuru's acting skills had picked up quite a bit, too...."
@@ -922,10 +927,10 @@ label prologue:
     # "\"Okay,\" she said, before he could speak."
     # "\"Look, this has gone far enough. I get it, alright? Your practical joke ... okay. Fine.\""
     # "\"What are you really after? Producer? Co-director? You want to help write the script for the next movie?\""
-    # "\'Let's just cut to the chase -- this isn't really fun, especially since it's at my expense!\""
+    # "\'Let's just cut to the chase — this isn't really fun, especially since it's at my expense!\""
     # nvl clear
     # stop music fadeout 1
-    # "\"At your expense--\""
+    # "\"At your expense—\""
     # "That had done it, she realized, flinching back."
     # "Now some of his anger was directed at her, though he quickly controlled it, smacking one palm against his face."
     # play music "Music/Ready.mp3"
@@ -934,14 +939,14 @@ label prologue:
     # "She suddenly couldn't meet his eyes, and a previously suplexed thought began to climb back into her awareness."
     # nvl clear
     # "\"It was hot!\" she said defensively.\"What of it?\""
-    # "\"You had a dream -- a nightmare -- that night,\" he added."
+    # "\"You had a dream — a nightmare — that night,\" he added."
     # "\"So?\""
     # nvl clear
     # "She forced her heartbeat to still. "
     # "She'd told him that much, why wouldn't he remember?"
     # "She did, after all, even now."
     # nvl clear
-    # "\"So, in your dream, you watched giant blue creatures smash apart the school, and you were very excited about abandoning the Brigade -- your friends -- and leading an exciting new life in whatever world was to come.\""
+    # "\"So, in your dream, you watched giant blue creatures smash apart the school, and you were very excited about abandoning the Brigade — your friends — and leading an exciting new life in whatever world was to come.\""
     # "Koizumi looked uncomfortable. Mikuru's face turned red, and she began studying the bottom of her teacup intently."
     # "Yuki merely stared at her, unblinking."
     # nvl clear
@@ -951,7 +956,7 @@ label prologue:
     # "\"Do I have to say what I did to wake you up?\""
     # nvl clear
     # "She felt her face color."
-    # "\"N...no,\" she managed.\"Who-- No, what are you?\""
+    # "\"N...no,\" she managed.\"Who— No, what are you?\""
     # "\'I am a normal person,\" he told her, shrugging."
     # nvl clear
     # "\"I happen to have traveled to parallel worlds. I have traveled through time. I've seen some amazing things ... but through it all, I always come back here to be with my friends.\""
@@ -980,7 +985,7 @@ label prologue:
     # "\"And I met a younger version of yourself, and wrote the message, 'I am here' on the school grounds, following your instructions. You asked who I was, and I told you that I went by ... John Smith.\""
     # nvl clear
     # "\"You're John Smith!\""
-    # "She wasn't aware of getting up from the table, uncertain if she had moved around or just jumped over it -- she just knew that she had flung herself at him, tackling him to the floor and grabbing on tightly."
+    # "She wasn't aware of getting up from the table, uncertain if she had moved around or just jumped over it — she just knew that she had flung herself at him, tackling him to the floor and grabbing on tightly."
     # "\"I knew it!\" she yelled."
     # nvl clear
     # "\"I knew I'd find you again!\""
