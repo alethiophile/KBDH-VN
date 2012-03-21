@@ -62,6 +62,67 @@ init:
     image Haruhi Smile2 = "Sprites/Haruhi/HaruhiSideSmile2.png"
     image Haruhi Smile3 = "Sprites/Haruhi/HaruhiSideSmile3.png"
     image Haruhi Sigh1 = "Sprites/Haruhi/HaruhiSideSigh1.png"
+    
+    image Haruhi Casual Sup1 = "Sprites/Haruhi/HaruhiSideCasualSurprised1.png"
+    image Haruhi Casual Ang1 = "Sprites/Haruhi/HaruhiSideCasualAngry1.png"
+    image Haruhi Casual Ang2 = "Sprites/Haruhi/HaruhiSideCasualAngry2.png"
+    image Haruhi Casual Ang3 = "Sprites/Haruhi/HaruhiSideCasualAngry3.png"
+    image Haruhi Casual Hap1 = "Sprites/Haruhi/HaruhiSideCasualHappy1.png"
+    image Haruhi Casual Hap2 = "Sprites/Haruhi/HaruhiSideCasualHappy2.png"
+    image Haruhi Casual Hap3 = "Sprites/Haruhi/HaruhiSideCasualHappy3.png"
+    image Haruhi Casual Hap4 = "Sprites/Haruhi/HaruhiSideCasualHappy4.png"
+    image Haruhi Casual Pout1 = "Sprites/Haruhi/HaruhiSideCasualPout1.png"
+    image Haruhi Casual Pout1 Bright = im.MatrixColor("Sprites/Haruhi/HaruhiSideCasualPout1.png",
+                                       im.matrix.brightness(.5))
+    image Haruhi Casual Eyeroll1 = "Sprites/Haruhi/HaruhiSideCasualEyeroll1.png"
+    image Haruhi Casual Quest1 = "Sprites/Haruhi/HaruhiSideCasualQuestion1.png"
+    image Haruhi Casual Grin1 = "Sprites/Haruhi/HaruhiSideCasualGrin1.png"
+    image Haruhi Casual Worry1 = "Sprites/Haruhi/HaruhiSideCasualWorry1.png"
+    image Haruhi Casual Smile1 = "Sprites/Haruhi/HaruhiSideCasualSmile1.png"
+    image Haruhi Casual Smile2 = "Sprites/Haruhi/HaruhiSideCasualSmile2.png"
+    image Haruhi Casual Smile3 = "Sprites/Haruhi/HaruhiSideCasualSmile3.png"
+    image Haruhi Casual Sigh1 = "Sprites/Haruhi/HaruhiSideCasualSigh1.png"
+    
+    image Haruhi Crossed Sup1 = "Sprites/Haruhi/HaruhiCrossedSurprised1.png"
+    image Haruhi Crossed Ang1 = "Sprites/Haruhi/HaruhiCrossedAngry1.png"
+    image Haruhi Crossed Ang2 = "Sprites/Haruhi/HaruhiCrossedAngry2.png"
+    image Haruhi Crossed Ang3 = "Sprites/Haruhi/HaruhiCrossedAngry3.png"
+    image Haruhi Crossed Hap1 = "Sprites/Haruhi/HaruhiCrossedHappy1.png"
+    image Haruhi Crossed Hap2 = "Sprites/Haruhi/HaruhiCrossedHappy2.png"
+    image Haruhi Crossed Hap3 = "Sprites/Haruhi/HaruhiCrossedHappy3.png"
+    image Haruhi Crossed Hap4 = "Sprites/Haruhi/HaruhiCrossedHappy4.png"
+    image Haruhi Crossed Pout1 = "Sprites/Haruhi/HaruhiCrossedPout1.png"
+    image Haruhi Crossed Pout1 Bright = im.MatrixColor("Sprites/Haruhi/HaruhiCrossedPout1.png",
+                                       im.matrix.brightness(.5))
+    image Haruhi Crossed Eyeroll1 = "Sprites/Haruhi/HaruhiCrossedEyeroll1.png"
+    image Haruhi Crossed Quest1 = "Sprites/Haruhi/HaruhiCrossedQuestion1.png"
+    image Haruhi Crossed Grin1 = "Sprites/Haruhi/HaruhiCrossedGrin1.png"
+    image Haruhi Crossed Worry1 = "Sprites/Haruhi/HaruhiCrossedWorry1.png"
+    image Haruhi Crossed Smile1 = "Sprites/Haruhi/HaruhiCrossedSmile1.png"
+    image Haruhi Crossed Smile2 = "Sprites/Haruhi/HaruhiCrossedSmile2.png"
+    image Haruhi Crossed Smile3 = "Sprites/Haruhi/HaruhiCrossedSmile3.png"
+    image Haruhi Crossed Sigh1 = "Sprites/Haruhi/HaruhiCrossedSigh1.png"
+    
+    image Haruhi Crossed Casual Sup1 = "Sprites/Haruhi/HaruhiCrossedCasualSurprised1.png"
+    image Haruhi Crossed Casual Ang1 = "Sprites/Haruhi/HaruhiCrossedCasualAngry1.png"
+    image Haruhi Crossed Casual Ang2 = "Sprites/Haruhi/HaruhiCrossedCasualAngry2.png"
+    image Haruhi Crossed Casual Ang3 = "Sprites/Haruhi/HaruhiCrossedCasualAngry3.png"
+    image Haruhi Crossed Casual Hap1 = "Sprites/Haruhi/HaruhiCrossedCasualHappy1.png"
+    image Haruhi Crossed Casual Hap2 = "Sprites/Haruhi/HaruhiCrossedCasualHappy2.png"
+    image Haruhi Crossed Casual Hap3 = "Sprites/Haruhi/HaruhiCrossedCasualHappy3.png"
+    image Haruhi Crossed Casual Hap4 = "Sprites/Haruhi/HaruhiCrossedCasualHappy4.png"
+    image Haruhi Crossed Casual Pout1 = "Sprites/Haruhi/HaruhiCrossedCasualPout1.png"
+    image Haruhi Crossed Casual Pout1 Bright = im.MatrixColor("Sprites/Haruhi/HaruhiCrossedCasualPout1.png",
+                                       im.matrix.brightness(.5))
+    image Haruhi Crossed Casual Eyeroll1 = "Sprites/Haruhi/HaruhiCrossedCasualEyeroll1.png"
+    image Haruhi Crossed Casual Quest1 = "Sprites/Haruhi/HaruhiCrossedCasualQuestion1.png"
+    image Haruhi Crossed Casual Grin1 = "Sprites/Haruhi/HaruhiCrossedCasualGrin1.png"
+    image Haruhi Crossed Casual Worry1 = "Sprites/Haruhi/HaruhiCrossedCasualWorry1.png"
+    image Haruhi Crossed Casual Smile1 = "Sprites/Haruhi/HaruhiCrossedCasualSmile1.png"
+    image Haruhi Crossed Casual Smile2 = "Sprites/Haruhi/HaruhiCrossedCasualSmile2.png"
+    image Haruhi Crossed Casual Smile3 = "Sprites/Haruhi/HaruhiCrossedCasualSmile3.png"
+    image Haruhi Crossed Casual Sigh1 = "Sprites/Haruhi/HaruhiCrossedCasualSigh1.png"
+    
     #Kyon Sprites
     image Kyon Ser1 = "Sprites/Kyon/KyonSerious1.png"
     image Kyon Ser2 = "Sprites/Kyon/KyonSerious2.png"
@@ -151,6 +212,34 @@ init:
     image Yuki Casual SadTalk2 = "Sprites/Yuki/YukiSideCasualSadTalk2.png"
     image Yuki Casual SadTalk3 = "Sprites/Yuki/YukiSideCasualSadTalk3.png"
 
+    # Mikuru Sprites
+    image Mikuru Cower Nervous1 = "Sprites/Mikuru/MikuruCowerNervous1.png"
+    image Mikuru Cower Nervous2 = "Sprites/Mikuru/MikuruCowerNervous2.png"
+    image Mikuru Cower Neutral1 = "Sprites/Mikuru/MikuruCowerNeutral1.png"
+    image Mikuru Cower Sup1 = "Sprites/Mikuru/MikuruCowerSurprised1.png"
+    image MBlush = "Sprites/Mikuru/MikuruCowerBlush.png"
+    
+    image Mikuru Cower Casual Nervous1 = "Sprites/Mikuru/MikuruCowerCasualNervous1.png"
+    image Mikuru Cower Casual Nervous2 = "Sprites/Mikuru/MikuruCowerCasualNervous2.png"
+    image Mikuru Cower Casual Neutral1 = "Sprites/Mikuru/MikuruCowerCasualNeutral1.png"
+    image Mikuru Cower Casual Sup1 = "Sprites/Mikuru/MikuruCowerCasualSurprised1.png"
+    image MBlush = "Sprites/Mikuru/MikuruCowerBlush.png"
+    
+    #Koizumi Sprites
+    image Koizumi Crossed Ser1 = "Sprites/Koizumi/KoizmuiCrossedSerious1.png"
+    image Koizumi Crossed Ser2 = "Sprites/Koizumi/KoizmuiCrossedSerious2.png"
+    image Koizumi Crossed Smile1 = "Sprites/Koizumi/KoizmuiCrossedSmile1.png"
+    image Koizumi Crossed Smile2 = "Sprites/Koizumi/KoizmuiCrossedSmile2.png"
+    image Koizumi Crossed Uneasy1 = "Sprites/Koizumi/KoizmuiCrossedUneasy1.png"
+    image Koizumi Crossed Uneasy2 = "Sprites/Koizumi/KoizmuiCrossedUneasy2.png"
+    
+    image Koizumi Crossed Casual Ser1 = "Sprites/Koizumi/KoizmuiCrossedCasualSerious1.png"
+    image Koizumi Crossed Casual Ser2 = "Sprites/Koizumi/KoizmuiCrossedCasualSerious2.png"
+    image Koizumi Crossed Casual Smile1 = "Sprites/Koizumi/KoizmuiCrossedCasualSmile1.png"
+    image Koizumi Crossed Casual Smile2 = "Sprites/Koizumi/KoizmuiCrossedCasualSmile2.png"
+    image Koizumi Crossed Casual Uneasy1 = "Sprites/Koizumi/KoizmuiCrossedCasualUneasy1.png"
+    image Koizumi Crossed Casual Uneasy2 = "Sprites/Koizumi/KoizmuiCrossedCasualUneasy2.png"
+    
     
 
     image Credits0 = "Backgrounds/credits0.png"
@@ -811,6 +900,8 @@ label prologue:
     "\'Understood.\""
     stop music fadeout 1 
     nvl clear
+    
+    # scene bg YukiApartment with fade
     # play music "Music/Kankyou.mp3"
     # "She couldn't imagine what had possessed Kyon to call her, ranting like a lunatic about Yuki being sick. "
     # "But he'd done it from her phone, which meant for whatever reason that he and Yuki were alone together. "
