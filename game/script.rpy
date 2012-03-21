@@ -18,8 +18,11 @@ init:
     image bg KyonHouseNight = "Backgrounds/KyonHouseNight.png"
     image bg TownStreetNight1 = "Backgrounds/TownStreetNight1.png"
     image bg TownStreetNight2 = "Backgrounds/TownStreetNight2.png"
+    image bg YukiApartment = "Backgrounds/YukiApartment.jpg"
     image bg YukiRoomLeft = "Backgrounds/YukiRoomLeft.png"
     image bg YukiRoomRight = "Backgrounds/YukiRoomLeft.png"
+    image bg YukiRoomCenter = "Backgrounds/YukiRoomCenter.jpg"
+    
     image white = "#ffffff"
     image black = "#000000"
     image yukibackground = "#ccccff"
@@ -730,13 +733,13 @@ label prologue:
     pause 1
     scene bg TownStreetNight2 with wiperight
     pause 1
-    scene black with wiperight
+    scene bg YukiApartment with wiperight
     "When he reached the lobby, barely pausing long enough to lock up his bike, he wondered if he'd beaten his best time, but didn't feel the need to check."
     "Instead, he dashed to the console, still gasping for breath, and fumbled, mis-dialing her room number and needing to hammer the 'cancel' button to dial again."
     "\"Nagato!\" he called, the second she picked up.\"It's me!\""
     nvl clear
     "The door opened."
-    scene bg YukiRoomLeft with wipeup
+    scene bg YukiRoomCenter with wipeup
     "After taking the elevator to her floor, he slowed his mad pace, seeing her standing outside the doorway to her apartment, waiting for him."
     nvl clear
     show Yuki Casual Sad1 at left
@@ -1314,6 +1317,7 @@ label prologue2:
     nvl clear
     show Haruhi Hap3 at left
     "\"Yeah! That sounds very good! Let's do that.\""
+    show Haruhi Smile2 at left
     nvl clear
     show Asakura Frown3 at center
     pause (0.4)
@@ -1329,6 +1333,7 @@ label prologue2:
     show Yuki Talk2 at HalfLeft
     "\"Permission to proceed?\""
     nvl clear
+    show Yuki Side1 at HalfLeft
     show Asakura Pain1 at center
     "\"We can be reasonable!\" Ryouko protested."
     show Kyon Sigh1 at right
@@ -1340,6 +1345,7 @@ label prologue2:
     show Haruhi Ang2 at left
     extend "\"Bad Ryouko! No class rep votes for you!\""
     nvl clear
+    show Haruhi Smile1 at left
     show Kyon Neutral1 at right
     "\"...you don't really think that's her prime concern, do you? Aside from which, did you even vote last time?\""
     show Asakura Frown1 at center
@@ -1352,6 +1358,7 @@ label prologue2:
     show Yuki Talk1 at HalfLeft
     "\"It will be beneficial to all involved,\" Nagato assured him, while Haruhi nodded knowingly."
     show Kyon Sigh2 at right
+    show Asakura Unhap1 at center
     "\"Okay,\" he sighed, shaking his head."
     show Kyon Ser1 at right
     "\"Granted.\""
