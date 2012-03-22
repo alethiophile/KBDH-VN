@@ -1234,6 +1234,7 @@ label prologue:
     scene black
     stop music fadeout 5
     "\"I knew I'd find you again!\""
+    nvl clear
 #   
     
     
@@ -1320,12 +1321,14 @@ label prologue2:
     "\"Ah,\" she said, her voice disappointed as Kyon's repulsor and gravimetric systems flared his momentum and spread it evenly across the entire rooftop, landing him near Haruhi, at Ryouko's side."
     show Asakura Sigh1 at center
     "\"I failed again.\""
+    stop music fadeout 3
     nvl clear
     hide Asakura
     hide Spike5
     scene bg roof
     show Haruhi Ang1 at left   
     "\"Is that going to hurt her?\" Haruhi asked, crossing her arms over her chest and raising an eyebrow at Kyon in concern."
+    play music "Music/circulation.ogg"
     show Kyon Ser2 at right
     show Skinsuit at right
     show Coat at right
@@ -1377,7 +1380,7 @@ label prologue2:
     hide Coat
     with coatout
     extend " he announced, re-engaging his stealth field and vanishing from sight."
-    stop music fadeout 1
+    #stop music fadeout 1
     nvl clear
     scene bg roofclose
     show Asakura Sup1 at center
@@ -1385,7 +1388,7 @@ label prologue2:
     "\"What?\" Ryouko asked, still trapped in the containment field. "
     show Asakura Smile3 at center
     extend "\"He just abandoned me here with you?\""
-    play music "Music/NagatoTheme.mp3"
+    #play music "Music/NagatoTheme.mp3"
     scene bg roofright
     pause (0.5)
     play sound "SE/impact.mp3"
@@ -1549,9 +1552,11 @@ label prologue2:
     show Haruhi Ang3 at left with moveinleft
     show Kyon Ser1 at right with moveinright
     show Yuki Side1
+    stop music fadeout 3
     "\"Hmm,\" Haruhi mused, narrowing her eyes and peering intently at Ryouko, who merely watched back curiously."
     show Haruhi Ang2 at left
     "\"Um ... some kind of second chance ... a chance to start over, prove herself, and ... let's see, realize she doesn't want to kill Kyon at all.\""
+    play music "Music/Oi.mp3"
     nvl clear
     show Haruhi Smile2 at left
     "\"And she gets to give Yuki what she needs to make her equal to the next interface that comes along.... But no brainwashing, that's not cool."
