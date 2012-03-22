@@ -871,7 +871,7 @@ label prologue:
     show Kyon Casual Worry2 at right
     "\"How set is this?\" he asked, his hands shaking too much to hold the teacup properly."
     show Yuki Casual SadTalk2 at left
-   "\"It is absolute.\""
+    "\"It is absolute.\""
     nvl clear
     show Kyon Casual Sigh1 at right
     show Ksweat at right
@@ -906,8 +906,8 @@ label prologue:
     show Kyon Casual Sigh1 at right
     "\"So, I need to make some phone calls.\""
     show Yuki Casual SadTalk2 at left
-     "\"Understood.\""
-    stop music fadeout 1 
+    "\"Understood.\""
+    stop music fadeout 3
     nvl clear
     
     scene bg YukiApartment with fade
@@ -987,7 +987,7 @@ label prologue:
     "Even then, some small part of her really didn't like the way that when he chose to, he simply seized command of her precious hand-crafted Brigade and, no matter how cute it was—"
     "She firmly suplexed that thought into oblivion."
     nvl clear
-    stop music fadeout 1
+    stop music fadeout 3
     scene bg YukiRoomRight with dissolve
     show Kyon Casual Ser1 at right
     show Haruhi Casual Quest1 at HalfLeft
@@ -1112,7 +1112,7 @@ label prologue:
     show Haruhi Casual Ang2 at left
     "\'Let's just cut to the chase — this isn't really fun, especially since it's at my expense!\""
     nvl clear
-    stop music fadeout 1
+    stop music fadeout 3
     show Kyon Casual Sup1 at right
     "\"At your expense—\""
     show Haruhi Casual Sup1 at left
