@@ -20,7 +20,7 @@ init:
     image bg TownStreetNight2 = "Backgrounds/TownStreetNight2.png"
     image bg YukiApartment = "Backgrounds/YukiApartment.jpg"
     image bg YukiRoomLeft = "Backgrounds/YukiRoomLeft.png"
-    image bg YukiRoomRight = "Backgrounds/YukiRoomLeft.png"
+    image bg YukiRoomRight = "Backgrounds/YukiRoomRight.png"
     image bg YukiRoomCenter = "Backgrounds/YukiRoomCenter.jpg"
     
     image white = "#ffffff"
@@ -84,6 +84,7 @@ init:
     image Haruhi Casual Sigh1 = "Sprites/Haruhi/HaruhiSideCasualSigh1.png"
     
     image Haruhi Crossed Sup1 = "Sprites/Haruhi/HaruhiCrossedSurprised1.png"
+    image Haruhi Crossed Sup2 = "Sprites/Haruhi/HaruhiCrossedSurprised2.png"
     image Haruhi Crossed Ang1 = "Sprites/Haruhi/HaruhiCrossedAngry1.png"
     image Haruhi Crossed Ang2 = "Sprites/Haruhi/HaruhiCrossedAngry2.png"
     image Haruhi Crossed Ang3 = "Sprites/Haruhi/HaruhiCrossedAngry3.png"
@@ -104,6 +105,7 @@ init:
     image Haruhi Crossed Sigh1 = "Sprites/Haruhi/HaruhiCrossedSigh1.png"
     
     image Haruhi Crossed Casual Sup1 = "Sprites/Haruhi/HaruhiCrossedCasualSurprised1.png"
+    image Haruhi Crossed Casual Sup2 = "Sprites/Haruhi/HaruhiCrossedCasualSurprised2.png"
     image Haruhi Crossed Casual Ang1 = "Sprites/Haruhi/HaruhiCrossedCasualAngry1.png"
     image Haruhi Crossed Casual Ang2 = "Sprites/Haruhi/HaruhiCrossedCasualAngry2.png"
     image Haruhi Crossed Casual Ang3 = "Sprites/Haruhi/HaruhiCrossedCasualAngry3.png"
@@ -123,11 +125,15 @@ init:
     image Haruhi Crossed Casual Smile3 = "Sprites/Haruhi/HaruhiCrossedCasualSmile3.png"
     image Haruhi Crossed Casual Sigh1 = "Sprites/Haruhi/HaruhiCrossedCasualSigh1.png"
     
+    image Hblush = "Sprites/Haruhi/HaruhiSideBlush1.png"
+    image Hblush Casual = "Sprites/Haruhi/HaruhiSideCasualBlush1.png"
+    
     #Kyon Sprites
     image Kyon Ser1 = "Sprites/Kyon/KyonSerious1.png"
     image Kyon Ser2 = "Sprites/Kyon/KyonSerious2.png"
     image Kyon Ser2 Bright = im.MatrixColor("Sprites/Kyon/KyonSerious2.png",
                                        im.matrix.brightness(.5))
+    image Kyon Ser3 = "Sprites/Kyon/KyonSerious3.png"
     image Kyon Sigh1 = "Sprites/Kyon/KyonSigh1.png"
     image Kyon Sigh2 = "Sprites/Kyon/KyonSigh2.png"
     image Kyon Neutral1 = "Sprites/Kyon/KyonNeutral1.png"
@@ -147,6 +153,7 @@ init:
     image Kyon Casual Ser2 = "Sprites/Kyon/KyonCasualSerious2.png"
     image Kyon Casual Ser2 Bright = im.MatrixColor("Sprites/Kyon/KyonCasualSerious2.png",
                                        im.matrix.brightness(.5))
+    image Kyon Casual Ser3 = "Sprites/Kyon/KyonCasualSerious3.png"
     image Kyon Casual Sigh1 = "Sprites/Kyon/KyonCasualSigh1.png"
     image Kyon Casual Sigh2 = "Sprites/Kyon/KyonCasualSigh2.png"
     image Kyon Casual Neutral1 = "Sprites/Kyon/KyonCasualNeutral1.png"
@@ -183,6 +190,8 @@ init:
     image Asakura Pain2 = "Sprites/Asakura/AsakuraPain2.png"
     image Asakura Pain2 Bright = im.MatrixColor("Sprites/Asakura/AsakuraPain2.png",
                                        im.matrix.brightness(.5))
+    
+    
     #Yuki Sprites
     image Yuki EyesClosed1 = "Sprites/Yuki/YukiSideEyesClosed1.png"
     image Yuki EyesClosed1 Bright = im.MatrixColor("Sprites/Yuki/YukiSideEyesClosed1.png",
@@ -226,19 +235,19 @@ init:
     image MBlush = "Sprites/Mikuru/MikuruCowerBlush.png"
     
     #Koizumi Sprites
-    image Koizumi Crossed Ser1 = "Sprites/Koizumi/KoizmuiCrossedSerious1.png"
-    image Koizumi Crossed Ser2 = "Sprites/Koizumi/KoizmuiCrossedSerious2.png"
-    image Koizumi Crossed Smile1 = "Sprites/Koizumi/KoizmuiCrossedSmile1.png"
-    image Koizumi Crossed Smile2 = "Sprites/Koizumi/KoizmuiCrossedSmile2.png"
-    image Koizumi Crossed Uneasy1 = "Sprites/Koizumi/KoizmuiCrossedUneasy1.png"
-    image Koizumi Crossed Uneasy2 = "Sprites/Koizumi/KoizmuiCrossedUneasy2.png"
+    image Koizumi Crossed Ser1 = "Sprites/Koizumi/KoizumiCrossedSerious1.png"
+    image Koizumi Crossed Ser2 = "Sprites/Koizumi/KoizumiCrossedSerious2.png"
+    image Koizumi Crossed Smile1 = "Sprites/Koizumi/KoizumiCrossedSmile1.png"
+    image Koizumi Crossed Smile2 = "Sprites/Koizumi/KoizumiCrossedSmile2.png"
+    image Koizumi Crossed Uneasy1 = "Sprites/Koizumi/KoizumiCrossedUneasy1.png"
+    image Koizumi Crossed Uneasy2 = "Sprites/Koizumi/KoizumiCrossedUneasy2.png"
     
-    image Koizumi Crossed Casual Ser1 = "Sprites/Koizumi/KoizmuiCrossedCasualSerious1.png"
-    image Koizumi Crossed Casual Ser2 = "Sprites/Koizumi/KoizmuiCrossedCasualSerious2.png"
-    image Koizumi Crossed Casual Smile1 = "Sprites/Koizumi/KoizmuiCrossedCasualSmile1.png"
-    image Koizumi Crossed Casual Smile2 = "Sprites/Koizumi/KoizmuiCrossedCasualSmile2.png"
-    image Koizumi Crossed Casual Uneasy1 = "Sprites/Koizumi/KoizmuiCrossedCasualUneasy1.png"
-    image Koizumi Crossed Casual Uneasy2 = "Sprites/Koizumi/KoizmuiCrossedCasualUneasy2.png"
+    image Koizumi Crossed Casual Ser1 = "Sprites/Koizumi/KoizumiCrossedCasualSerious1.png"
+    image Koizumi Crossed Casual Ser2 = "Sprites/Koizumi/KoizumiCrossedCasualSerious2.png"
+    image Koizumi Crossed Casual Smile1 = "Sprites/Koizumi/KoizumiCrossedCasualSmile1.png"
+    image Koizumi Crossed Casual Smile2 = "Sprites/Koizumi/KoizumiCrossedCasualSmile2.png"
+    image Koizumi Crossed Casual Uneasy1 = "Sprites/Koizumi/KoizumiCrossedCasualUneasy1.png"
+    image Koizumi Crossed Casual Uneasy2 = "Sprites/Koizumi/KoizumiCrossedCasualUneasy2.png"
     
     
 
@@ -785,6 +794,7 @@ label prologue:
     scene black with dissolve
     nvl clear
     play music "Music/Nichijou.mp3"
+    $ renpy.music.set_volume(0.5, .5, channel="music")
     scene bg KyonRoomLeftClosed with fade
     nvl clear
     "That day had started normally enough, but then, in his experience, that was true of nearly all days." 
@@ -901,189 +911,331 @@ label prologue:
     stop music fadeout 1 
     nvl clear
     
-    # scene bg YukiApartment with fade
-    # play music "Music/Kankyou.mp3"
-    # "She couldn't imagine what had possessed Kyon to call her, ranting like a lunatic about Yuki being sick. "
-    # "But he'd done it from her phone, which meant for whatever reason that he and Yuki were alone together. "
-    # "She wasn't certain why that bothered her, but it did — so when he demanded her presence, instead of telling him what he could do for trying to order the Brigade leader around, she swore that she'd be there."
-    # nvl clear
-    # "After trekking all the way there, much to her annoyance, she found that she was the last to arrive."
-    # "Mikuru sat at one side of the table, opposite Yuki."
-    # "Koizumi sat between them, his eternal smile faded to half its normal strength."
-    # "Kyon himself stood next to her — he was the one who had answered the intercom and let her in."
-    # nvl clear
-    # "She narrowed her eyes at him and kicked her shoes off, storming into the room to Yuki's side and immediately pressing one palm onto the smaller girl's forehead."
-    # "\"You don't feel feverish,\" she finally commented."
-    # "\"But if you're sick, you shouldn't be up and about anyway.\""
-    # nvl clear
-    # "\"Not sick,\" Yuki answered."
-    # "When Haruhi turned to Kyon and scowled at him, she corrected, \"Dying.\""
-    # nvl clear
-    # "Her irritation at Kyon's practical joke momentarily blew away, like settled dust being disturbed."
-    # "\"Dying!?\" she yelped, turning to stare at the smaller girl."
-    # "\"What of? How?\""
-    # "Yuki blinked twice, then answered, \"I am not able to say.\""
-    # nvl clear
-    # "\"Mikuru?\""
-    # "\"Um ... classified.\""
-    # nvl clear
-    # "She scowled at Koizumi, daring him to be a defiant annoyance, too."
-    # "\"I don't know,\" he said, looking embarrassed and flustered."
-    # nvl clear
-    # "Turning around, she glared at Kyon, letting her irritation return and focus on him full-force."
-    # "\"I am not in the mood for pranks!\" she snapped."
-    # "\"This better not be a joke!\""
-    # nvl clear
-    # "\"I wish it was,\" he said back crossly, and she found herself taken aback at the force in his tone."
-    # "She had a mental catalogue of Kyon-like behaviors, and this fell firmly into the category of the seldom-seen but always feared angry Kyon."
-    # "Dour, upset, irked, sarcastic, caustic ... sure. But angry?"
-    # nvl clear
-    # "Hell, she'd once smashed his head into her desk — entirely on accident — and he was only annoyed."
-    # "And it wasn't for hitting his head, it was for disrupting a class!"
-    # "Nevermind that he had been dozing off before that."
-    # nvl clear
-    # "She'd seen him genuinely angry two times."
-    # "Only once had it been at her."
-    # "She hated that memory more than anything else she knew about him, but couldn't dare to forget it."
-    # "Once it had been at — of all things — his unfinished homework over summer break, though that was the lesser of the two displays; also the first."
-    # "She didn't understand it, but she knew whatever it was, she wanted to be on his side against it."
-    # nvl clear
-    # "Even then, some small part of her really didn't like the way that when he chose to, he simply seized command of her precious hand-crafted Brigade and, no matter how cute it was—"
-    # "She firmly suplexed that thought into oblivion."
-    # nvl clear
-    # stop music fadeout 1
-    # "\"Alright,\" she said evenly. \"Tell me what's going on.\""
-    # play music "Music/Gyumnopedies.mp3"
-    # "Kyon ran his hands through his hair and began pacing, not looking at her."
-    # "Good; she wasn't the one who had made him mad."
-    # nvl clear
-    # "\"Have a seat,\" he said."
-    # "\"This may take a bit, and I need a promise from you before we start.\""
-    # "\"I'm not making a blind promise,\" she retorted, though she did take the seat opposite Koizumi, between Mikuru and Yuki."
-    # nvl clear
-    # "Yuki wordlessly poured her a cup of tea, which she threw back in a single gulp."
-    # "\"I need you to promise to listen to everything we have to say before leaving,\" he answered."
-    # "\"That's stupid,\" she grumbled."
-    # nvl clear
-    # "\"If Yuki's in danger, what kind of person do you take me for?\""
-    # "She wasn't that bad about ignoring the needs of her brigade members."
-    # "\"Even so.\""
-    # "\"Fine,\" she sighed. \"I promise. Now can you get on with it?\""
-    # nvl clear
-    # "\"Okay,\" he said, pacing around to the window."
-    # "\"Almost a year ago — last May — we ended up going on a city search where no one but you and I showed up.\""
-    # "\"I remember,\" she said, annoyed."
-    # "A stupid practical joke on his part ... though, it had given her the idea for the movie."
-    # nvl clear
-    # "\"I told you that aliens, espers, and time travelers really existed, right?\""
-    # "\"We're going back to that?\" she asked, raising an eyebrow.\"Really?\""
-    # "\"Yeah, okay, you remember it, so I don't need to say it again,\" he said with a shrug."
-    # nvl clear
-    # "\"Koizumi, you promised that if it had to happen, you'd stand next to me when Yuki needed our help. Remember?\""
-    # "\"Yes,\" the smiling boy said, though his smile had completely vanished. "
-    # "\"As much as it scares me.... Suzumiya-san, Kyon-kun is speaking the truth.\""
-    # "\"You're an esper?\" she asked him doubtfully."
-    # nvl clear
-    # "He gave a solemn nod, and she internalized a sigh."
-    # "What, was Kyon just acting?"
-    # "Was this is unsubtle way of saying he wanted to be a star in the next movie, not just a camera man?"
-    # "She had to admit, his emotion seemed genuine, but why couldn't he just have asked her? "
-    # "There was an awful lot he could have just asked for, and never bothered to!"
-    # "That thought was drop-kicked to fly off next to the last banished thought."
-    # nvl clear
-    # "\"And, Mikuru, you're a time traveler?\" she asked, idly spinning her teacup on the table before her."
-    # "\"Um ... that is ... I can't....\""
-    # "\"Asahina-san,\" Kyon broke in suddenly, \"please ask your supervisor to declassify this for me.\""
-    # nvl clear
-    # "Mikuru stared at Kyon, her eyes large and confused."
-    # "\"Y...yes,\" she agreed, her glance flickering nervously to Haruhi before she pressed a hand against the side of her face, and her eyes became unfocused."
-    # "They abruptly snapped back into focus, though her expression had become comically bewildered"
-    # nvl clear
-    # "\"I ... they said yes!? I don't understand! Kyon-kun, how-\""
-    # "\"That's ... classified,\" he answered, looking away."
-    # "\"Anyway, go ahead and explain it to Haruhi.\""
-    # nvl clear
-    # "\'Oh! Um, Suzumiya-san ... what he says is true! I am a time traveler, though, it's more accurate to say that I'm a visitor from the future who is projected into the past, almost like a two-dimensional image projected into—\""
-    # "\"Right, right,\" Haruhi cut her off. \"You're a time traveler. Understood.\""
-    # nvl clear
-    # "Though, Mikuru's acting skills had picked up quite a bit, too...."
-    # "This better not be a ploy to make Kyon the male lead opposite Mikuru in the next movie!"
-    # "Saving that thought for later, she turned her gaze to Yuki."
-    # nvl clear
-    # "\"And you're an alien?\""
-    # "\"The function allowing me to confirm or deny that data has been denied at this juncture in time,\" she answered."
-    # "\"Turning to Kyon, she added, \"One hour and twenty minutes remain.\""
-    # nvl clear
-    # "He bit off a curse, running his hands through his hair."
-    # "Haruhi was taken aback again ... he obviously didn't like getting bad grades or doing poorly on exams, but he almost never got this stressed about things. "
-    # "This was starting to become unnerving."
-    # nvl clear
-    # "\"Okay,\" she said, before he could speak."
-    # "\"Look, this has gone far enough. I get it, alright? Your practical joke ... okay. Fine.\""
-    # "\"What are you really after? Producer? Co-director? You want to help write the script for the next movie?\""
-    # "\'Let's just cut to the chase — this isn't really fun, especially since it's at my expense!\""
-    # nvl clear
-    # stop music fadeout 1
-    # "\"At your expense—\""
-    # "That had done it, she realized, flinching back."
-    # "Now some of his anger was directed at her, though he quickly controlled it, smacking one palm against his face."
-    # play music "Music/Ready.mp3"
-    # "\"Last May,\"he said, \"you came to class with your hair in a ponytail.\""
-    # nvl clear
-    # "She suddenly couldn't meet his eyes, and a previously suplexed thought began to climb back into her awareness."
-    # nvl clear
-    # "\"It was hot!\" she said defensively.\"What of it?\""
-    # "\"You had a dream — a nightmare — that night,\" he added."
-    # "\"So?\""
-    # nvl clear
-    # "She forced her heartbeat to still. "
-    # "She'd told him that much, why wouldn't he remember?"
-    # "She did, after all, even now."
-    # nvl clear
-    # "\"So, in your dream, you watched giant blue creatures smash apart the school, and you were very excited about abandoning the Brigade — your friends — and leading an exciting new life in whatever world was to come.\""
-    # "Koizumi looked uncomfortable. Mikuru's face turned red, and she began studying the bottom of her teacup intently."
-    # "Yuki merely stared at her, unblinking."
-    # nvl clear
-    # "\"I never told anyone that,\" she mumbled."
-    # "\"In the end, I told you that I wanted to come back to this world,\" Kyon said."
-    # "\"That it was more interesting than you realized. \""
-    # "\"Do I have to say what I did to wake you up?\""
-    # nvl clear
-    # "She felt her face color."
-    # "\"N...no,\" she managed.\"Who— No, what are you?\""
-    # "\'I am a normal person,\" he told her, shrugging."
-    # nvl clear
-    # "\"I happen to have traveled to parallel worlds. I have traveled through time. I've seen some amazing things ... but through it all, I always come back here to be with my friends.\""
-    # nvl clear
-    # "It was getting very strange, and she didn't know why, but the conversation was starting to make her uncomfortable."
-    # "Maybe the knowledge of her dream was just an expert analysis based on her personality? The refusal to mention the kiss specifically was because they didn't know?"
-    # "But she wasn't certain she wanted to hear him say it was a kiss, here, right now...."
-    # "And she'd promised she would listen."
-    # nvl clear
-    # "\"You're claiming that you're a slider?\" she asked, blinking, buying herself some time to think."
-    # "He was momentarily startled by the question, then exchanged a glance with Koizumi, who shrugged. "
-    # "\"Actually, Kyon-kun, you may be,\" the supposed esper said, smiling."
-    # "\"That would explain why one never seemed to appear; it was you!\""
-    # nvl clear
-    # "\"Nevermind that!\" he said quickly, shaking his head."
-    # "\"Haruhi, there's something I have to tell you, something I think will make you believe me.\""
-    # "\"What's that?\" She couldn't think of anything else to say or ask."
-    # nvl clear
-    # "\"Tanabata last year was the first time I traveled back in time,\" he began, his expression solemn."
-    # "\"I went to a night three years earlier.\""
-    # "\"That would be Tanabata four years ago.\""
-    # "\"While I was there, I was sent to East Middle school, carrying Asahina-san on my back.\""
-    # nvl clear
-    # "\"Y...you're...\" she gasped, her eyes widening as the world around her spun, the amazing, simultaneously horrifying and delightful realization that he was speaking the truth was making her dizzy."
-    # nvl clear
-    # "\"And I met a younger version of yourself, and wrote the message, 'I am here' on the school grounds, following your instructions. You asked who I was, and I told you that I went by ... John Smith.\""
-    # nvl clear
-    # "\"You're John Smith!\""
-    # "She wasn't aware of getting up from the table, uncertain if she had moved around or just jumped over it — she just knew that she had flung herself at him, tackling him to the floor and grabbing on tightly."
-    # "\"I knew it!\" she yelled."
-    # nvl clear
-    # "\"I knew I'd find you again!\""
-#     
+    scene bg YukiApartment with fade
+    play music "Music/Kankyou.mp3"
+    "She couldn't imagine what had possessed Kyon to call her, ranting like a lunatic about Yuki being sick. "
+    "But he'd done it from her phone, which meant for whatever reason that he and Yuki were alone together. "
+    "She wasn't certain why that bothered her, but it did — so when he demanded her presence, instead of telling him what he could do for trying to order the Brigade leader around, she swore that she'd be there."
+    nvl clear
+    scene bg YukiRoomCenter with wipeup
+    "After trekking all the way there, much to her annoyance, she found that she was the last to arrive."
+    show Mikuru Cower Casual Nervous1 at right
+    show Koizumi Crossed Casual Uneasy1 at center
+    show Yuki Casual Sad1 at left
+    "Mikuru sat at one side of the table, opposite Yuki."
+    "Koizumi sat between them, his eternal smile faded to half its normal strength."
+    scene bg YukiRoomRight
+    show Kyon Casual Ser1 at right
+    "Kyon himself stood next to her — he was the one who had answered the intercom and let her in."
+    nvl clear
+    show Yuki Casual Sad2 at left
+    show Haruhi Crossed Casual Eyeroll1 at HalfLeft with moveinright
+    "She narrowed her eyes at him and kicked her shoes off, storming into the room to Yuki's side and immediately pressing one palm onto the smaller girl's forehead."
+    show Haruhi Crossed Casual Sigh1 at HalfLeft
+    "\"You don't feel feverish,\" she finally commented."
+    show Haruhi Crossed Casual Worry1 at HalfLeft
+    "\"But if you're sick, you shouldn't be up and about anyway.\""
+    nvl clear
+    show Yuki Casual SadTalk1 at left
+    "\"Not sick,\" Yuki answered."
+    show Haruhi Casual Ang3 at HalfLeft
+    "When Haruhi turned to Kyon and scowled at him, she corrected, {nw}"
+    show Yuki Casual SadTalk2 at left
+    "\"Dying.\""
+    nvl clear
+    show Yuki Casual Sad1 at left
+    show Haruhi Casual Sup1 at HalfLeft
+    "Her irritation at Kyon's practical joke momentarily blew away, like settled dust being disturbed."
+    show Haruhi Crossed Casual Sup2 at HalfLeft
+    "\"Dying!?\" she yelped, turning to stare at the smaller girl."
+    "\"What of? How?\""
+    show Yuki Casual SadTalk1 at left
+    "Yuki blinked twice, then answered, \"I am not able to say.\""
+    nvl clear
+    scene bg YukiRoomCenter
+    show Mikuru Cower Casual Nervous1 at left 
+    show Koizumi Crossed Casual Uneasy1 at center
+    show Haruhi Crossed Casual Quest1 at right
+    "\"Mikuru?\""
+    show Mikuru Cower Casual Nervous2 at left 
+    "\"Um ... classified.\""
+    nvl clear
+    show Haruhi Crossed Casual Ang3 at right
+    "She scowled at Koizumi, daring him to be a defiant annoyance, too."
+    show Koizumi Crossed Casual Uneasy2 at center
+    "\"I don't know,\" he said, looking embarrassed and flustered."
+    nvl clear
+    scene bg YukiRoomRight
+    show Haruhi Casual Ang3 at center
+    show Kyon Casual Ser1 at right
+    "Turning around, she glared at Kyon, letting her irritation return and focus on him full-force."
+    show Haruhi Casual Ang2 at center
+    "\"I am not in the mood for pranks!\" she snapped."
+    "\"This better not be a joke!\""
+    nvl clear
+    show Kyon Casual Ang1 at right
+    "\"I wish it was,\" he said back crossly, and she found herself taken aback at the force in his tone."
+    scene black with dissolve
+    "She had a mental catalogue of Kyon-like behaviors, and this fell firmly into the category of the seldom-seen but always feared angry Kyon."
+    "Dour, upset, irked, sarcastic, caustic ... sure. But angry?"
+    nvl clear
+    "Hell, she'd once smashed his head into her desk — entirely on accident — and he was only annoyed."
+    "And it wasn't for hitting his head, it was for disrupting a class!"
+    "Nevermind that he had been dozing off before that."
+    nvl clear
+    "She'd seen him genuinely angry two times."
+    "Only once had it been at her."
+    "She hated that memory more than anything else she knew about him, but couldn't dare to forget it."
+    "Once it had been at — of all things — his unfinished homework over summer break, though that was the lesser of the two displays; also the first."
+    "She didn't understand it, but she knew whatever it was, she wanted to be on his side against it."
+    nvl clear
+    "Even then, some small part of her really didn't like the way that when he chose to, he simply seized command of her precious hand-crafted Brigade and, no matter how cute it was—"
+    "She firmly suplexed that thought into oblivion."
+    nvl clear
+    stop music fadeout 1
+    scene bg YukiRoomRight with dissolve
+    show Kyon Casual Ser1 at right
+    show Haruhi Casual Quest1 at center
+    "\"Alright,\" she said evenly. \"Tell me what's going on.\""
+    play music "Music/Gyumnopedies.mp3"
+    show Kyon Casual Worry1 at right
+    "Kyon ran his hands through his hair and began pacing, not looking at her."
+    show Haruhi Casual Sigh1 at center
+    "Good; she wasn't the one who had made him mad."
+    nvl clear
+    show Kyon Casual Sigh1 at right
+    "\"Have a seat,\" he said."
+    "\"This may take a bit, and I need a promise from you before we start.\""
+    show Haruhi Casual Ang1 at left with move
+    "\"I'm not making a blind promise,\" she retorted, though she did take the seat opposite Koizumi, between Mikuru and Yuki."
+    nvl clear
+    "Yuki wordlessly poured her a cup of tea, which she threw back in a single gulp."
+    show Kyon Casual Ser1 at right
+    "\"I need you to promise to listen to everything we have to say before leaving,\" he answered."
+    nvl clear
+    show Haruhi Casual Pout1 at left
+    "\"That's stupid,\" she grumbled."
+    show Haruhi Casual Ang2 at left
+    "\"If Yuki's in danger, what kind of person do you take me for?\""
+    nvl clear
+    "She wasn't that bad about ignoring the needs of her brigade members."
+    nvl clear
+    show Kyon Casual Ser2 at right
+    "\"Even so.\""
+    show Haruhi Casual Sigh1 at left
+    "\"Fine,\" she sighed. \"I promise. Now can you get on with it?\""
+    nvl clear
+    show Kyon Casual Ser1 at right
+    "\"Okay,\" he said, pacing around to the window."
+    show Kyon Casual Ser3 at right
+    "\"Almost a year ago — last May — we ended up going on a city search where no one but you and I showed up.\""
+    show Haruhi Casual Eyeroll1 at left
+    "\"I remember,\" she said, annoyed."
+    nvl clear
+    "A stupid practical joke on his part ... though, it had given her the idea for the movie."
+    nvl clear
+    show Kyon Casual Ser2 at right
+    "\"I told you that aliens, espers, and time travelers really existed, right?\""
+    show Haruhi Casual Ang3 at left
+    "\"We're going back to that?\" she asked, raising an eyebrow.\"Really?\""
+    show Kyon Casual Sigh2 at right
+    "\"Yeah, okay, you remember it, so I don't need to say it again,\" he said with a shrug."
+    nvl clear
+    show Kyon Casual Ser3 at right
+    "\"Koizumi, you promised that if it had to happen, you'd stand next to me when Yuki needed our help. Remember?\""
+    scene bg YukiRoomCenter
+    show Koizumi Crossed Casual Ser1 at center
+    show Haruhi Crossed Casual Ang3 at right
+    "\"Yes,\" the smiling boy said, though his smile had completely vanished. "
+    show Koizumi Crossed Casual Ser2 at center
+    "\"As much as it scares me.... Suzumiya-san, Kyon-kun is speaking the truth.\""
+    show Haruhi Crossed Casual Ang2 at right
+    "\"You're an esper?\" she asked him doubtfully."
+    nvl clear
+    scene black with dissolve
+    "He gave a solemn nod, and she internalized a sigh."
+    "What, was Kyon just acting?"
+    "Was this is unsubtle way of saying he wanted to be a star in the next movie, not just a camera man?"
+    "She had to admit, his emotion seemed genuine, but why couldn't he just have asked her? "
+    "There was an awful lot he could have just asked for, and never bothered to!"
+    "That thought was drop-kicked to fly off next to the last banished thought."
+    scene bg YukiRoomCenter with dissolve
+    nvl clear
+    show Haruhi Crossed Casual Grin1 at center
+    show Mikuru Cower Casual Nervous1 at left
+    "\"And, Mikuru, you're a time traveler?\" she asked, idly spinning her teacup on the table before her."
+    show Mikuru Cower Casual Nervous2 at left
+    "\"Um ... that is ... I can't....\""
+    show Kyon Casual Ser3 at right 
+    "\"Asahina-san,\" Kyon broke in suddenly, \"please ask your supervisor to declassify this for me.\""
+    nvl clear
+    
+    "Mikuru stared at Kyon, her eyes large and confused."
+    show Mikuru Cower Casual Nervous1 at left
+    "\"Y...yes,\" she agreed, her glance flickering nervously to Haruhi before she pressed a hand against the side of her face, and her eyes became unfocused."
+    show Mikuru Cower Casual Sup1 at left
+    "They abruptly snapped back into focus, though her expression had become comically bewildered"
+    nvl clear
+    "\"I ... they said yes!? I don't understand! Kyon-kun, how-\""
+    show Kyon Casual Worry1 at right
+    "\"That's ... classified,\" he answered, looking away."
+    show Kyon Casual Ser1 at right
+    "\"Anyway, go ahead and explain it to Haruhi.\""
+    nvl clear
+    show Mikuru Cower Casual Neutral1 at left
+    "\'Oh! Um, Suzumiya-san ... what he says is true! I am a time traveler, though, it's more accurate to say that I'm a visitor from the future who is projected into the past, almost like a two-dimensional image projected into—\""
+    show Haruhi Crossed Casual Eyeroll1 at center
+    "\"Right, right,\" Haruhi cut her off. \"You're a time traveler. Understood.\""
+    nvl clear
+    scene black with dissolve
+    "Though, Mikuru's acting skills had picked up quite a bit, too...."
+    "This better not be a ploy to make Kyon the male lead opposite Mikuru in the next movie!"
+    "Saving that thought for later, she turned her gaze to Yuki."
+    nvl clear
+    scene bg YukiRoomLeft with dissolve
+    show Yuki Casual Sad1 at left
+    show Haruhi Crossed Casual Quest1 at center
+    show Kyon Casual Ser1 at right
+    "\"And you're an alien?\""
+    show Yuki Casual SadTalk1 at left
+    "\"The function allowing me to confirm or deny that data has been denied at this juncture in time,\" she answered."
+    show Yuki Casual SadTalk2 at left
+    "\"Turning to Kyon, she added, \"One hour and twenty minutes remain.\""
+    nvl clear
+    show Kyon Casual Worry2 at right
+    "He bit off a curse, running his hands through his hair."
+    scene bg YukiRoomCenter with fade
+    hide Yuki 
+    show Kyon Casual Ser1 at right
+    show Haruhi Casual Worry1 at left
+    "Haruhi was taken aback again ... he obviously didn't like getting bad grades or doing poorly on exams, but he almost never got this stressed about things. "
+    "This was starting to become unnerving."
+    nvl clear
+    show Haruhi Casual Sigh1 at left
+    "\"Okay,\" she said, before he could speak."
+    show Haruhi Casual Eyeroll1 at left
+    "\"Look, this has gone far enough. I get it, alright? Your practical joke ... okay. Fine.\""
+    nvl clear
+    show Haruhi Casual Ang3 at left
+    "\"What are you really after? Producer? Co-director? You want to help write the script for the next movie?\""
+    show Haruhi Casual Ang2 at left
+    "\'Let's just cut to the chase — this isn't really fun, especially since it's at my expense!\""
+    nvl clear
+    stop music fadeout 1
+    show Kyon Casual Sup1 at right
+    "\"At your expense—\""
+    show Haruhi Casual Sup1 at left
+    "That had done it, she realized, flinching back."
+    show Kyon Casual Sigh1 at right
+    show Haruhi Casual Worry1 at left
+    "Now some of his anger was directed at her, though he quickly controlled it, smacking one palm against his face."
+    play music "Music/Ready.mp3"
+    show Kyon Casual Ser1 at right
+    "\"Last May,\"he said, \"you came to class with your hair in a ponytail.\""
+    nvl clear
+    show Haruhi Casual Pout1 at left
+    show Hblush Casual at left
+    "She suddenly couldn't meet his eyes, and a previously suplexed thought began to climb back into her awareness."
+    nvl clear
+    show Haruhi Casual Ang2 at left
+    "\"It was hot!\" she said defensively. \"What of it?\""
+    show Kyon Casual Ser3 at right
+    "\"You had a dream — a nightmare — that night,\" he added."
+    show Haruhi Casual Ang1 at left
+    "\"So?\""
+    nvl clear
+    show Haruhi Casual Sigh1 at left
+    "She forced her heartbeat to still. "
+    "She'd told him that much, why wouldn't he remember?"
+    "She did, after all, even now."
+    nvl clear
+    show Kyon Casual Ser2 at right
+    "\"So, in your dream, you watched giant blue creatures smash apart the school, and you were very excited about abandoning the Brigade — your friends — and leading an exciting new life in whatever world was to come.\""
+    nvl clear
+    scene bg YukiRoomCenter with fade
+    show Koizumi Crossed Casual Uneasy1 at center
+    show Mikuru Cower Casual Nervous1 at right
+    show Yuki Casual Sad1 at left
+    "Koizumi looked uncomfortable. Mikuru's face turned red, and she began studying the bottom of her teacup intently."
+    "Yuki merely stared at her, unblinking."
+    scene bg YukiRoomCenter with fade
+    nvl clear
+    show Haruhi Casual Pout1 at left
+    show Kyon Casual Ser1 at right
+    "\"I never told anyone that,\" she mumbled."
+    show Kyon Casual Ser2 at right
+    "\"In the end, I told you that I wanted to come back to this world,\" Kyon said."
+    show Kyon Casual Ser3 at right
+    "\"That it was more interesting than you realized. \""
+    show Kyon Casual Ser2 at right
+    "\"Do I have to say what I did to wake you up?\""
+    nvl clear
+    show Hblush Casual at left with dissolve
+    "She felt her face color."
+    show Haruhi Casual Quest1 at left
+    "\"N...no,\" she managed.\"Who— No, what are you?\""
+    show Kyon Casual Sigh2 at right
+    "\'I am a normal person,\" he told her, shrugging."
+    nvl clear
+    show Kyon Casual Ser2 at right
+    "\"I happen to have traveled to parallel worlds. I have traveled through time. I've seen some amazing things ... but through it all, I always come back here to be with my friends.\""
+    nvl clear
+    scene black with dissolve
+    "It was getting very strange, and she didn't know why, but the conversation was starting to make her uncomfortable."
+    "Maybe the knowledge of her dream was just an expert analysis based on her personality? The refusal to mention the kiss specifically was because they didn't know?"
+    "But she wasn't certain she wanted to hear him say it was a kiss, here, right now...."
+    "And she'd promised she would listen."
+    scene bg YukiRoomCenter with dissolve
+    
+    nvl clear
+    show Haruhi Casual Quest1 at left
+    show Kyon Casual Ser1 at right
+    "\"You're claiming that you're a slider?\" she asked, blinking, buying herself some time to think."
+    show Kyon Casual Sup2 at right
+    "He was momentarily startled by the question, then exchanged a glance with Koizumi, who shrugged. "
+    hide Haruhi
+    hide Kyon
+    show Koizumi Crossed Casual Smile1 at center
+    nvl clear
+    "\"Actually, Kyon-kun, you may be,\" the supposed esper said, smiling."
+    show Koizumi Crossed Casual Smile2 at center
+    "\"That would explain why one never seemed to appear; it was you!\""
+    nvl clear
+    hide Koizumi
+    show Kyon Casual Sigh1 at right
+    show Haruhi Casual Worry1 at left
+    "\"Nevermind that!\" he said quickly, shaking his head."
+    show Kyon Casual Ser3 at right
+    "\"Haruhi, there's something I have to tell you, something I think will make you believe me.\""
+    show Haruhi Casual Quest1 at left
+    "\"What's that?\" She couldn't think of anything else to say or ask."
+    nvl clear
+    show Kyon Casual Ser3 at right
+    "\"Tanabata last year was the first time I traveled back in time,\" he began, his expression solemn."
+    show Kyon Casual Ser2 at right
+    "\"I went to a night three years earlier.\""
+    show Kyon Casual Ser3 at right
+    "\"That would be Tanabata four years ago.\""
+    show Kyon Casual Ser2 at right
+    "\"While I was there, I was sent to East Middle school, carrying Asahina-san on my back.\""
+    nvl clear
+    show Haruhi Casual Sup1 at left
+    "\"Y...you're...\" she gasped, her eyes widening as the world around her spun, the amazing, simultaneously horrifying and delightful realization that he was speaking the truth was making her dizzy."
+    nvl clear
+    show Kyon Casual Sigh1 at right
+    "\"And I met a younger version of yourself, and wrote the message, 'I am here' on the school grounds, following your instructions. You asked who I was, and I told you that I went by ... John Smith.\""
+    nvl clear
+    show Haruhi Casual Hap2 at left
+    "\"You're John Smith!\""
+    play sound "SE/impact.mp3"
+    show Haruhi Casual Hap3 at HalfRight with move
+    "She wasn't aware of getting up from the table, uncertain if she had moved around or just jumped over it — she just knew that she had flung herself at him, tackling him to the floor and grabbing on tightly."
+    "\"I knew it!\" she yelled."
+    nvl clear
+    scene black
+    stop music fadeout 5
+    "\"I knew I'd find you again!\""
+#   
     
     
    
@@ -1093,6 +1245,7 @@ label prologue:
 #     
 
 label prologue2:    
+    $ renpy.music.set_volume(0.2, .5, channel="music")
     scene bg roofclose with fade
     show Asakura Sup1 at center
     "\"Hmm,\" Ryouko mused, turning slowly around, to where her sealed space in the stairway had been breached."
