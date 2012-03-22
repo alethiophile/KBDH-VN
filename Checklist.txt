@@ -4,7 +4,7 @@ This is a checklist of things that need to be done. Feel free to add or remove t
 
 Draw Kanae Sprite
 Create non-shitty energy net effect.
-Create better healing effect. (Needs green sparklies)
-Transcribe and direct the rest of chapter 1.
+Direct the last three scenes of Chapter 1
 Need a few more sound effects during the first part of the AO prologue fight.
 Kyon talking to Yuki and the "I am John Smith" scenes could probably use some general polish.
+Chapter title cards and date cards for scene switches.
