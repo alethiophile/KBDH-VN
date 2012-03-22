@@ -328,13 +328,26 @@ label prologue:
     nvl clear
     scene bg hallway with fade:
         size (800,600)
+    # Added the "pulling" of Hauhi
+    show Haruhi Sup1 at Position(xanchor=0.5, yalign=1.0, xpos=-0.5)
+    show Kyon Ser1 at Position(xanchor=0.5, yalign=1.0, xpos=-0.25)
+    with None
     show Haruhi Sup1 at left
     show Kyon Ser1 at center
+    with MoveTransition(0.2)
     "\"Bwa!\" she protested, arms waving frantically as she dashed to keep up, or risk the knot being pulled out." 
-    show Haruhi Ang2 at left
+    show Haruhi Ang2 at center
+    show Kyon Ser1 at right
+    with MoveTransition(0.2)
     "\"What the hell do you think you're doing!?\""
-    show Haruhi Sup1 at left
-    scene bg hallway with None:
+    show Haruhi Sup1 at center with None
+    show Haruhi Sup1 at Position(xanchor=0.5, yalign=1.0, xpos=1.25)
+    show Kyon Ser1 at Position(xanchor=0.5, yalign=1.0, xpos=1.5)
+    with MoveTransition(0.2)
+    # end of "pulling"
+    scene bg stairwell with None: # with fade:
+        size (800,600)
+    show bg hallway with None:
         xanchor .5 yanchor .5
         xpos .5 ypos .5
         linear .5 rotate 360
@@ -342,16 +355,25 @@ label prologue:
     hide Kyon  
     pause .5
     nvl clear
-    scene bg stairwell with fade:
+    scene bg stairwell: # with fade:
         size (800,600)
     "Naturally, he said nothing to her during the entire mad dash to the remote stairwell where she had first hauled him by his own tie, so long ago."
     "He released her at the top of the steps after looking around to ensure that no one else was nearby."
     "Her momentum carried her forward, resulting in him pressing one hand flat against her chest, just below her neck."
+    # Added the "stopping after the dash"
+    show Kyon Ser1 at Position(xanchor=0.5, yalign=1.0, xpos=-0.25)
+    show Haruhi Ang3 at Position(xanchor=0.5, yalign=1.0, xpos=-0.5)
+    with None
+    show Kyon Ser1 at center
+    show Haruhi Ang3 at center_left
+    with MoveTransition(0.2)
+    # End of  "stopping"
     "Her eyes quickly sharpened, her features fixed into a scowl."
     nvl clear
     show Haruhi Ang3 at center_left
     "\"What the hell, Kyon!?\""
-    show Kyon Ser1 at right
+    # TODO: figure out what to do to reduce the "jumping out" effect?
+    show Kyon Ser1 at right with move
     "He held up one hand and said, \"Something's up.\""
     show Haruhi Hap3 at center_left
     "Her irritation vanished instantly, replaced with wide-eyed excitement. She clapped her hands together and hopped from foot to foot."
@@ -410,15 +432,16 @@ label prologue:
     pause 1
     play sound "SE/DunDun.mp3"
     "Standing perfectly straight, hands at his sides, he closed his eyes, and began speaking in his best faux movie announcer voice-over."
-    "\"Skinsuit active,\" "
+    # Emulating a "movie-narration. Could be {font=fancyfont.ttf}stuffs{/font} rather than bold, but that would require said fancyfont...
+    "\"{b}Skinsuit active,{/b}\" "
     play sound "SE/Sizzle2.mp3"
     show Skinsuit at right with wipeupslow
     extend "as something that looked like nothing so much as black paint suddenly engulfed his entire body beneath his uniform."
     nvl clear
     play sound "SE/NanoRepair.mp3"
-    "\"Gravimetric stabilizers and secondary gyrometrics online,\" as ridged metal studs appeared on the back of each knuckle, and beneath his uniform pants, metallic vertical rails were described in the skinsuit."
+    "\"{b}Gravimetric stabilizers and secondary gyrometrics online,{/b}\" as ridged metal studs appeared on the back of each knuckle, and beneath his uniform pants, metallic vertical rails were described in the skinsuit."
     nvl clear
-    "\"Greatcoat thermoptic stealth disengaged,\" "
+    "\"{b}Greatcoat thermoptic stealth disengaged,{/b}\" "
     play sound "SE/CloakOff.mp3"
     show Coat at right with coatin
     extend "as a knee-length tan greatcoat coalesced, covering his shoulders with a thick mantle."
@@ -428,14 +451,15 @@ label prologue:
     show Kyon Neutral2 at right
     "\"We had environmental conditioning added last night, since the weather's heating up,\" he said in a normal voice."
     show Kyon Ser2 at right
-    "Switching back, he said, \"Primary weapons check.\""     
+    "Switching back, he said, \"{b}Primary weapons check.{/b}\""     
     nvl clear
     play sound "SE/lowswoosh.mp3"
     pause .02
     play sound "SE/lowswoosh.mp3"
     pause .02
     play sound "SE/lowswoosh.mp3"
-    "He pulled a fifty centimeter long glittering metal cylinder from within the greatcoat, releasing it to spin on its axis in midair to one side, announcing, \"Long range precision and high yield weaponry is at full charge.\""
+    # Needs to show a weapon here. Simple metallic cylinder with shine overlay getting thinner and wider from time to time (or just spinning?)
+    "He pulled a fifty centimeter long glittering metal cylinder from within the greatcoat, releasing it to spin on its axis in midair to one side, announcing, \"{b}Long range precision and high yield weaponry is at full charge.{/b}\""
     play sound "SE/Barrier2.mp3"
     show Kyon Ser2 Bright at right
     show Skinsuit Bright at right
@@ -449,14 +473,16 @@ label prologue:
     with dissolve
     "A circle of light appeared on the floor around him, a simple white ring with glittering sparks chasing around in either direction, sending brilliant flashes to streak upwards."
     nvl clear
+    # Needs to add a weapon here. Simple gunmetal cylinder with shine overlay getting thinner and wider from time to time (or just spinning?)
     "Another cylinder, wider but shorter than the last was released to float next to the first."
-    "\"Mid- and short-range crowd-control weaponry is at ... ninety seven percent capacity and charging,\" he continued, squinting at the featureless gunmetal tube."
+    "\"{b}Mid- and short-range crowd-control weaponry is at ... ninety seven percent capacity and charging,{/b}\" he continued, squinting at the featureless gunmetal tube."
     nvl clear
     play sound "SE/clink.mp3"
-    "Pulling a well-crafted sword hilt with no cross-guard or blade from one pocket, he released it horizontally, and it hung before him between the other weapons. \"Beam saber is at full capacity.\""
+    # Needs to add a sword here. Pull a sword hilt from later chapters, bopping up and down from time to time (or just spinning?)
+    "Pulling a well-crafted sword hilt with no cross-guard or blade from one pocket, he released it horizontally, and it hung before him between the other weapons. \"{b}Beam saber is at full capacity.{/b}\""
     show Kyon Ser1 at right
     "After pulling his cell phone from one pocket, he brushed his fingertips over his ear, revealing three dull metal studs in the skinsuit."
-    "\"All systems nominal; no proximity alarms—\""
+    "\"{b}All systems nominal; no proximity alarms—{/b}\""
     nvl clear
     show Kyon Ang1 at right
     "He broke off suddenly, scowling. \"Okay,\" he said in his normal voice. \"My mistake. We've got incoming.\""
@@ -546,9 +572,10 @@ label prologue:
     hide Coat
     hide Skinsuit
     hide Haruhi
-    show Asakura Unhap1 at center
+    show Asakura Unhap1 at left
     "\"Um...\" the onetime class representative said, frowning."
     hide Asakura
+    show Haruhi Hap1 at left # to keep scene consistent
     show Kyon Sigh2 at right
     show Skinsuit at right
     show Coat at right
@@ -1251,6 +1278,8 @@ label prologue2:
     play sound "SE/Barrier2.mp3"
     play sound2 "SE/Laser1.mp3"
     scene bg BeamOrange1 with flashbulb
+    # NEEDS a CG of Asakura being hit with beam(s). Current beams do not follow the text.
+    # Better yet, "sprite" of a beam. Then show scene black, Asakura in pain (zoomed in some?) at the center and the show beams hitting her at center and slightly lower
     "The shrill buzz of a brilliant energy beam licked out from the roof of the tiny structure that housed the stairwell."
     show Asakura Pain1 at center
     "Ryouko was struck in the chest dead-center of mass, her entire body glowing white for a second before she staggered—"
@@ -1282,8 +1311,10 @@ label prologue2:
     with coatin
     "De-stealthing, Kyon stood from his hiding place atop the stairwell housing, his greatcoat billowing behind him."
     nvl clear
+    # make a weapon sprite and show in here, then rotate it behind Kyon's back
     "The end of his weapon was glowing orange with discharge, the shape changed from a simple cylinder to a much thinner meter-long construction of sturdy rails and curving hand guards."
     "He slung it over his shoulder and ignored it, pulling the second cylinder from his coat and leaping the twenty meter distance between himself and Ryouko."
+    # Show CG of Kyon leaping in the sky. What, people can dream.
     play sound "SE/lowswoosh.mp3"
     scene bg roofclose with wiperightfast
     nvl clear
@@ -1291,25 +1322,27 @@ label prologue2:
     pause (0.3)
     play sound "SE/guncock.mp3"
     "Beneath him, a widening circle of dust marked where he leapt from, and while in midair he flipped over, a sequence of touch-points converting the unadorned cylinder into a stocky, blunt, two-handed gun."
+    # Adjust spikes and field to be lower, covering Asakura's sprite, not the (empty) center of te screen.
+    # Maybe replace circles with vertically descending rain of spikes and make net as a cocoon around Ryoko?
     play sound "SE/netlaunch.mp3"
     pause (1)
     play sound "SE/stake1.mp3"
-    show Spike1 at center
+    show Spike1 at Position(xalign=0.5, yanchor=0.5, ypos=0.65) #center
     pause (0.1)
     play sound "SE/stake2.mp3"
-    show Spike2 at center
+    show Spike2 at Position(xalign=0.5, yanchor=0.5, ypos=0.65) #center
     pause (0.1)
     play sound "SE/stake3.mp3"
-    show Spike3 at center
+    show Spike3 at Position(xalign=0.5, yanchor=0.5, ypos=0.65) #center
     pause (0.1)
     play sound "SE/stake1.mp3"
-    show Spike4 at center
+    show Spike4 at Position(xalign=0.5, yanchor=0.5, ypos=0.65) #center
     pause (0.5)
     hide Spike1
     hide Spike2
     hide Spike3
     hide Spike4
-    show Spike5 at center
+    show Spike5 at Position(xalign=0.5, yanchor=0.5, ypos=0.65) #center
     play sound "SE/elec1.mp3"
     "It fired with a rasping cough, launching a ring of metallic spikes to burrow into the rooftop around Ryouko, and then a grid of crackling brissant energy raked between each of the spikes, snaring the girl in a glowing, shuddering net."
     nvl clear
@@ -1379,7 +1412,7 @@ label prologue2:
     nvl clear
     scene bg roofclose
     show Asakura Sup1 at center
-    show Spike5 at center
+    show Spike5 at Position(xalign=0.5, yanchor=0.5, ypos=0.65) #center
     "\"What?\" Ryouko asked, still trapped in the containment field. "
     show Asakura Smile3 at center
     extend "\"He just abandoned me here with you?\""
@@ -1390,7 +1423,7 @@ label prologue2:
     show Kyon Pain1 at right
     show Skinsuit at right
     show Coat at right
-    with wipeup
+    with moveinbottom
     "\"Damn it,\" Kyon groaned, from where he was just climbing over the edge of the building, breathing hard. "
     show Kyon Sigh1 at right
     "\"I hate when I have to rely on time-travel to take care of things.\""
@@ -1418,7 +1451,7 @@ label prologue2:
     "The circle of illumination around Haruhi's feet had vanished."
     scene bg roofclose with wipeup
     show Asakura Sigh1 at center
-    show Spike5 at center
+    show Spike5 at Position(xalign=0.5, yanchor=0.5, ypos=0.65) #center
     show Yuki Side1 at HalfLeft with moveinleft
     "While Nagato knelt to examine Ryouko, Haruhi dashed to Kyon's side and helped him stand."
     nvl clear
@@ -1440,7 +1473,7 @@ label prologue2:
     extend "\"Happy, healing, all-better thoughts!\""
     scene bg roofclose
     show Asakura Sigh1 at center
-    show Spike5 at center
+    show Spike5 at Position(xalign=0.5, yanchor=0.5, ypos=0.65) #center
     show Yuki Talk1 at HalfLeft
     "\"Medical program loaded,\" Nagato added helpfully from where she was studying the other interface. "
     show Yuki Talk2 at HalfLeft
@@ -1495,7 +1528,7 @@ label prologue2:
     "\"But I can't just leave you alone, and Nagato can't handle another interface right now.\""
     scene bg roofclose
     show Asakura Smile2  at center
-    show Spike5 at center
+    show Spike5 at Position(xalign=0.5, yanchor=0.5, ypos=0.65) #center
     show Yuki Side1 at HalfLeft
     "\"And you did such a great job!\" Ryouko encouraged from beneath her energy net."
     show Asakura Smile1 at center
@@ -1540,7 +1573,7 @@ label prologue2:
     "\"Yuki, let's come up with a backup plan. Something that will let you get your power-up and let us reform Ryouko. Can we do that?\""
     scene bg roofclose
     show Asakura Frown1  at center
-    show Spike5 at center
+    show Spike5 at Position(xalign=0.5, yanchor=0.5, ypos=0.65) #center
     show Yuki Side1 at HalfLeft
     "Nagato stared intently at Ryouko, then gave a decisive nod. "
     show Yuki Talk1 at HalfLeft
@@ -1616,5 +1649,24 @@ label prologue2:
     "\"I will not let you harm him again.\""
     
     # Approx. 21 minutes of reading at this point.
+    # return
+    jump credits
     
-    
+label credits:
+    # Thise entire things could be done with text() displayable...
+    stop music fadeout 1
+    scene black with fade
+    # The hardpause calls are necessary because otherwise Ren'py wants to skip over all the pause statements on a single press of the key.
+    show Credits0 with dissolve
+    pause
+    $ renpy.pause(.1, hard=True)
+    show Credits1 with dissolve
+    pause
+    $ renpy.pause(.1, hard=True)
+    show Credits2 with dissolve
+    pause
+    $ renpy.pause(.1, hard=True)
+    show Credits3 with dissolve
+    # NEEDS better logo.
+    pause
+    return
