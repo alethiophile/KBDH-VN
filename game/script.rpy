@@ -64,6 +64,8 @@ init:
     image Haruhi Sigh1 = "Sprites/Haruhi/HaruhiSideSigh1.png"
     
     image Haruhi Casual Sup1 = "Sprites/Haruhi/HaruhiSideCasualSurprised1.png"
+    image Haruhi Casual Sup2 = "Sprites/Haruhi/HaruhiSideCasualSurprised2.png"
+    image Haruhi Casual Sup3 = "Sprites/Haruhi/HaruhiSideCasualSurprised3.png"
     image Haruhi Casual Ang1 = "Sprites/Haruhi/HaruhiSideCasualAngry1.png"
     image Haruhi Casual Ang2 = "Sprites/Haruhi/HaruhiSideCasualAngry2.png"
     image Haruhi Casual Ang3 = "Sprites/Haruhi/HaruhiSideCasualAngry3.png"
@@ -1210,7 +1212,7 @@ label prologue:
     show Kyon Casual Ser1 at right
     "\"While I was there, I was sent to East Middle school, carrying Asahina-san on my back.\""
     nvl clear
-    show Haruhi Casual Sup1 at left
+    show Haruhi Casual Sup2 at left
     "\"Y...you're...\" she gasped, her eyes widening as the world around her spun, the amazing, simultaneously horrifying and delightful realization that he was speaking the truth was making her dizzy."
     nvl clear
     show Kyon Casual Sigh1 at right
@@ -1219,7 +1221,7 @@ label prologue:
     show Kyon Casual Ser1 at right
     "\"John Smith.\""
     nvl clear
-    show Haruhi Casual Hap2 at left
+    show Haruhi Casual Sup3 at left
     "\"You're John Smith!\""
     play sound "SE/impact.mp3"
     show Haruhi Casual Hap3 at HalfRight with move
