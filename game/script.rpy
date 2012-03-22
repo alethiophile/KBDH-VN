@@ -824,7 +824,7 @@ label prologue:
     scene bg KyonHouseNight
     "she began, before the door slammed shut. Shrugging, she turned back to the game after flipping Kyon's phone closed."
     nvl clear
-    stop music fadeout 1
+    stop music fadeout 3
     play music "Music/Nagato2.mp3"
     "He calculated the ride to Nagato's place as a twenty minute trip, at one point."
     scene bg TownStreetNight1 with wiperight
@@ -907,7 +907,7 @@ label prologue:
     "\"So, I need to make some phone calls.\""
     show Yuki Casual SadTalk2 at left
     "\'Understood.\""
-    stop music fadeout 1 
+    stop music fadeout 3
     nvl clear
     
     scene bg YukiApartment with fade
@@ -1120,7 +1120,7 @@ label prologue:
     show Haruhi Casual Ang2 at left
     "\'Let's just cut to the chase — this isn't really fun, especially since it's at my expense!\""
     nvl clear
-    stop music fadeout 1
+    stop music fadeout 3
     show Kyon Casual Sup1 at right
     "\"At your expense—\""
     show Haruhi Casual Sup1 at left
