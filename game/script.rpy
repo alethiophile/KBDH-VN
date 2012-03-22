@@ -212,8 +212,8 @@ init:
                                        im.matrix.brightness(.5))
     image Yuki Casual Side1 = "Sprites/Yuki/YukiSideCasual1.png"
     image Yuki Casual Side2 = "Sprites/Yuki/YukiSideCasual2.png"
-    image Yuki Casual Talk1 = "Sprites/Yuki/YukiSideTalkCasual1.png"
-    image Yuki Casual Talk2 = "Sprites/Yuki/YukiSideTalkCasual2.png"
+    image Yuki Casual Talk1 = "Sprites/Yuki/YukiSideCasualTalk1.png"
+    image Yuki Casual Talk2 = "Sprites/Yuki/YukiSideCasualTalk2.png"
     image Yuki Casual Sad1 = "Sprites/Yuki/YukiSideCasualSad1.png"
     image Yuki Casual Sad2 = "Sprites/Yuki/YukiSideCasualSad2.png"
     image Yuki Casual Sad3 = "Sprites/Yuki/YukiSideCasualSad3.png"
@@ -226,13 +226,12 @@ init:
     image Mikuru Cower Nervous2 = "Sprites/Mikuru/MikuruCowerNervous2.png"
     image Mikuru Cower Neutral1 = "Sprites/Mikuru/MikuruCowerNeutral1.png"
     image Mikuru Cower Sup1 = "Sprites/Mikuru/MikuruCowerSurprised1.png"
-    image MBlush = "Sprites/Mikuru/MikuruCowerBlush.png"
+    image MBlush = "Sprites/Mikuru/MikuruCowerBlush1.png"
     
     image Mikuru Cower Casual Nervous1 = "Sprites/Mikuru/MikuruCowerCasualNervous1.png"
     image Mikuru Cower Casual Nervous2 = "Sprites/Mikuru/MikuruCowerCasualNervous2.png"
     image Mikuru Cower Casual Neutral1 = "Sprites/Mikuru/MikuruCowerCasualNeutral1.png"
     image Mikuru Cower Casual Sup1 = "Sprites/Mikuru/MikuruCowerCasualSurprised1.png"
-    image MBlush = "Sprites/Mikuru/MikuruCowerBlush.png"
     
     #Koizumi Sprites
     image Koizumi Crossed Ser1 = "Sprites/Koizumi/KoizumiCrossedSerious1.png"
@@ -1335,7 +1334,7 @@ label prologue2:
     show Kyon Ang1 at right
     "\"Haruhi, she's tried to kill me. Three times, now, and you just saw one of them! Your primary concern is that I not hurt her?\""
     show Kyon Sigh1 at right
-    play sound "Guncock.mp3"
+    play sound "SE/Guncock.mp3"
     "He muttered to himself beneath his breath, folding away his firearm into storage."
     nvl clear
     show Haruhi Ang3 at left
@@ -1614,5 +1613,6 @@ label prologue2:
     stop music
     "\"I will not let you harm him again.\""
     
+    # Approx. 21 minutes of reading at this point.
     
     
