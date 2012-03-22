@@ -815,7 +815,7 @@ label prologue:
     "\"Answer it for me,\" he called back between gulps.\"I'm busy.\""
     nvl clear
     "\"Okaaaaaay,\" she said, before he heard her say,\"Kyon-kun's phone! He's too lazy to answer!\""
-    "\'Thanks,\" he muttered under his breath."
+    "\"Thanks,\" he muttered under his breath."
     "\"Oh? Okay! I'll tell him. Feel better!\" Then her voice rose from conversational, to an unnecessary bellow, \"Kyon-kun! Yuki-nee-san says she's sick and really wants you to visit her!\""
     nvl clear
     "He didn't even bother to grab the phone on the way out."
@@ -871,7 +871,7 @@ label prologue:
     show Kyon Casual Worry2 at right
     "\"How set is this?\" he asked, his hands shaking too much to hold the teacup properly."
     show Yuki Casual SadTalk2 at left
-    "\"It is absolute."
+    "\"It is absolute.\""
     nvl clear
     show Kyon Casual Sigh1 at right
     show Ksweat at right
@@ -906,7 +906,7 @@ label prologue:
     show Kyon Casual Sigh1 at right
     "\"So, I need to make some phone calls.\""
     show Yuki Casual SadTalk2 at left
-    "\'Understood.\""
+    "\"Understood.\""
     stop music fadeout 1 
     nvl clear
     
@@ -938,9 +938,7 @@ label prologue:
     show Yuki Casual SadTalk1 at left
     "\"Not sick,\" Yuki answered."
     show Haruhi Casual Ang3 at HalfLeft
-    "When Haruhi turned to Kyon and scowled at him, she corrected, {nw}"
-    show Yuki Casual SadTalk2 at left
-    "\"Dying.\""
+    "When Haruhi turned to Kyon and scowled at him, she corrected, \"Dying.\""
     nvl clear
     show Yuki Casual Sad1 at left
     show Haruhi Casual Sup1 at HalfLeft
@@ -965,21 +963,20 @@ label prologue:
     "\"I don't know,\" he said, looking embarrassed and flustered."
     nvl clear
     scene bg YukiRoomRight
-    show Haruhi Casual Ang3 at center
+    show Haruhi Casual Ang3 at HalfLeft
     show Kyon Casual Ser1 at right
     "Turning around, she glared at Kyon, letting her irritation return and focus on him full-force."
-    show Haruhi Casual Ang2 at center
+    show Haruhi Casual Ang2 at HalfLeft
     "\"I am not in the mood for pranks!\" she snapped."
     "\"This better not be a joke!\""
     nvl clear
     show Kyon Casual Ang1 at right
     "\"I wish it was,\" he said back crossly, and she found herself taken aback at the force in his tone."
     scene black with dissolve
+    nvl clear
     "She had a mental catalogue of Kyon-like behaviors, and this fell firmly into the category of the seldom-seen but always feared angry Kyon."
     "Dour, upset, irked, sarcastic, caustic ... sure. But angry?"
-    nvl clear
-    "Hell, she'd once smashed his head into her desk — entirely on accident — and he was only annoyed."
-    "And it wasn't for hitting his head, it was for disrupting a class!"
+    "Hell, she'd once smashed his head into her desk — entirely on accident — and he was only annoyed.23x And it wasn't for hitting his head, it was for disrupting a class!"
     "Nevermind that he had been dozing off before that."
     nvl clear
     "She'd seen him genuinely angry two times."
@@ -987,19 +984,18 @@ label prologue:
     "She hated that memory more than anything else she knew about him, but couldn't dare to forget it."
     "Once it had been at — of all things — his unfinished homework over summer break, though that was the lesser of the two displays; also the first."
     "She didn't understand it, but she knew whatever it was, she wanted to be on his side against it."
-    nvl clear
     "Even then, some small part of her really didn't like the way that when he chose to, he simply seized command of her precious hand-crafted Brigade and, no matter how cute it was—"
     "She firmly suplexed that thought into oblivion."
     nvl clear
     stop music fadeout 1
     scene bg YukiRoomRight with dissolve
     show Kyon Casual Ser1 at right
-    show Haruhi Casual Quest1 at center
+    show Haruhi Casual Quest1 at HalfLeft
     "\"Alright,\" she said evenly. \"Tell me what's going on.\""
     play music "Music/Gyumnopedies.mp3"
     show Kyon Casual Worry1 at right
     "Kyon ran his hands through his hair and began pacing, not looking at her."
-    show Haruhi Casual Sigh1 at center
+    show Haruhi Casual Sigh1 at HalfLeft
     "Good; she wasn't the one who had made him mad."
     nvl clear
     show Kyon Casual Sigh1 at right
@@ -1015,9 +1011,7 @@ label prologue:
     show Haruhi Casual Pout1 at left
     "\"That's stupid,\" she grumbled."
     show Haruhi Casual Ang2 at left
-    "\"If Yuki's in danger, what kind of person do you take me for?\""
-    nvl clear
-    "She wasn't that bad about ignoring the needs of her brigade members."
+    "\"If Yuki's in danger, what kind of person do you take me for?\" She wasn't that bad about ignoring the needs of her brigade members."
     nvl clear
     show Kyon Casual Ser2 at right
     "\"Even so.\""
@@ -1036,7 +1030,7 @@ label prologue:
     show Kyon Casual Ser2 at right
     "\"I told you that aliens, espers, and time travelers really existed, right?\""
     show Haruhi Casual Ang3 at left
-    "\"We're going back to that?\" she asked, raising an eyebrow.\"Really?\""
+    "\"We're going back to that?\" she asked, raising an eyebrow. \"Really?\""
     show Kyon Casual Sigh2 at right
     "\"Yeah, okay, you remember it, so I don't need to say it again,\" he said with a shrug."
     nvl clear
@@ -1068,14 +1062,12 @@ label prologue:
     show Kyon Casual Ser3 at right 
     "\"Asahina-san,\" Kyon broke in suddenly, \"please ask your supervisor to declassify this for me.\""
     nvl clear
-    
     "Mikuru stared at Kyon, her eyes large and confused."
     show Mikuru Cower Casual Nervous1 at left
     "\"Y...yes,\" she agreed, her glance flickering nervously to Haruhi before she pressed a hand against the side of her face, and her eyes became unfocused."
     show Mikuru Cower Casual Sup1 at left
-    "They abruptly snapped back into focus, though her expression had become comically bewildered"
     nvl clear
-    "\"I ... they said yes!? I don't understand! Kyon-kun, how-\""
+    "They abruptly snapped back into focus, though her expression had become comically bewildered \"I ... they said yes!? I don't understand! Kyon-kun, how—\""
     show Kyon Casual Worry1 at right
     "\"That's ... classified,\" he answered, looking away."
     show Kyon Casual Ser1 at right
@@ -1130,8 +1122,8 @@ label prologue:
     "Now some of his anger was directed at her, though he quickly controlled it, smacking one palm against his face."
     play music "Music/Ready.mp3"
     show Kyon Casual Ser1 at right
-    "\"Last May,\"he said, \"you came to class with your hair in a ponytail.\""
     nvl clear
+    "\"Last May,\" he said, \"you came to class with your hair in a ponytail.\""
     show Haruhi Casual Pout1 at left
     show Hblush Casual at left
     "She suddenly couldn't meet his eyes, and a previously suplexed thought began to climb back into her awareness."
@@ -1165,7 +1157,7 @@ label prologue:
     show Kyon Casual Ser2 at right
     "\"In the end, I told you that I wanted to come back to this world,\" Kyon said."
     show Kyon Casual Ser3 at right
-    "\"That it was more interesting than you realized. \""
+    "\"That it was more interesting than you realized.\""
     show Kyon Casual Ser2 at right
     "\"Do I have to say what I did to wake you up?\""
     nvl clear
@@ -1209,20 +1201,21 @@ label prologue:
     show Haruhi Casual Quest1 at left
     "\"What's that?\" She couldn't think of anything else to say or ask."
     nvl clear
-    show Kyon Casual Ser3 at right
+    show Kyon Casual Ser1 at right
     "\"Tanabata last year was the first time I traveled back in time,\" he began, his expression solemn."
-    show Kyon Casual Ser2 at right
-    "\"I went to a night three years earlier.\""
     show Kyon Casual Ser3 at right
-    "\"That would be Tanabata four years ago.\""
-    show Kyon Casual Ser2 at right
+    "\"I went to a night three years earlier. That would be Tanabata four years ago.\""
+    show Kyon Casual Ser1 at right
     "\"While I was there, I was sent to East Middle school, carrying Asahina-san on my back.\""
     nvl clear
     show Haruhi Casual Sup1 at left
     "\"Y...you're...\" she gasped, her eyes widening as the world around her spun, the amazing, simultaneously horrifying and delightful realization that he was speaking the truth was making her dizzy."
     nvl clear
     show Kyon Casual Sigh1 at right
-    "\"And I met a younger version of yourself, and wrote the message, 'I am here' on the school grounds, following your instructions. You asked who I was, and I told you that I went by ... John Smith.\""
+    "\"And I met a younger version of yourself, and wrote the message, 'I am here' on the school grounds, following your instructions. You asked who I was, and I told you that I went by ... \""
+    nvl clear
+    show Kyon Casual Ser1 at right
+    "\"John Smith.\""
     nvl clear
     show Haruhi Casual Hap2 at left
     "\"You're John Smith!\""
@@ -1450,6 +1443,7 @@ label prologue2:
     "\"Medical program loaded,\" Nagato added helpfully from where she was studying the other interface. "
     show Yuki Talk2 at HalfLeft
     extend "\"Permission to proceed?\""
+    nvl clear
     scene bg roofright
     show Kyon Pain1 at right
     show Skinsuit at right
@@ -1526,6 +1520,7 @@ label prologue2:
     show Kyon Ang1 at right
     "\"After all, no one of any importance was smashed off a building.\""
     show Haruhi Eyeroll1 at left
+    nvl clear
     "\"Kyon!\""
     show Kyon Sigh2 at right
     "\"Alright,\" he said, shaking his head."
