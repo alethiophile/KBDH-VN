@@ -816,9 +816,9 @@ label prologue:
     nvl clear
     "\"Kyon-kun,\" his sister called, pausing the game with a loud chirp, \"phone!\""
     "He lowered his glass, already able to anticipate Haruhi demanding his participation in something."
-    "\"Answer it for me,\" he called back between gulps.\"I'm busy.\""
+    "\"Answer it for me,\" he called back between gulps. \"I'm busy.\""
     nvl clear
-    "\"Okaaaaaay,\" she said, before he heard her say,\"Kyon-kun's phone! He's too lazy to answer!\""
+    "\"Okaaaaaay,\" she said, before he heard her say, \"Kyon-kun's phone! He's too lazy to answer!\""
     "\"Thanks,\" he muttered under his breath."
     "\"Oh? Okay! I'll tell him. Feel better!\" Then her voice rose from conversational, to an unnecessary bellow, \"Kyon-kun! Yuki-nee-san says she's sick and really wants you to visit her!\""
     nvl clear
@@ -835,7 +835,8 @@ label prologue:
     pause 1
     scene bg TownStreetNight2 with wiperight
     pause 1
-    scene bg YukiApartment with wiperight
+    scene bg YukiApartment with wiperight:
+        size (600, 800)
     "When he reached the lobby, barely pausing long enough to lock up his bike, he wondered if he'd beaten his best time, but didn't feel the need to check."
     "Instead, he dashed to the console, still gasping for breath, and fumbled, mis-dialing her room number and needing to hammer the 'cancel' button to dial again."
     "\"Nagato!\" he called, the second she picked up.\"It's me!\""
@@ -847,7 +848,7 @@ label prologue:
     show Yuki Casual Sad1 at left
     "He tried to imagine that he saw some relief around her eyes when he reached her side, but wasn't confident enough to be certain that was the case."
     show Kyon Casual Ser1 at right
-    "\"Nagato,\" he said, nodding.\"What's wrong?\""
+    "\"Nagato,\" he said, nodding. \"What's wrong?\""
     nvl clear
     show Yuki Casual Sad2 at left
     "She gestured him inside, leading him to the table."
@@ -855,14 +856,13 @@ label prologue:
     "After pouring a cup of tea for each of them in silence, she finally spoke."
     nvl clear
     show Yuki Casual SadTalk1 at left
-    "\"The Integrated Data Sentience Entity has determined that I have become a liability, \" she said in a soft monotone, nearly devoid of inflection."
+    "\"The Integrated Data Sentience Entity has determined that I have become a liability,\" she said in a soft monotone, nearly devoid of inflection."
     show Kyon Casual Sup1 at right
     nvl clear
     "He stared at her for a long minute, blinking. \"What ... do you mean?\""
     show Kyon Casual Sup2 at right
     show Yuki Casual SadTalk2 at left
-    "\"Factors within my makeup have become too unpredictable. It has been calculated that I will commit another error.\""
-    nvl clear
+    "\"Factors within my makeup have become too unpredictable. It has been calculated that I will commit another error."
     show Yuki Casual SadTalk1 at left
     "\"To prevent this, deletion has been scheduled in three hours, twenty one minutes, fifteen seconds; I will be replaced with an interface more suited to defending against possible Sky Canopy Domain interference.\""
     nvl clear
@@ -884,7 +884,7 @@ label prologue:
     "She watched him silently."
     nvl clear
     show Kyon Casual Ser2 at right
-    "\"Okay,\" he said, after a moment of thought.\"I'll just—\""
+    "\"Okay,\" he said, after a moment of thought. \"I'll just—\""
     show Kyon Casual Ser1 at right
     "He broke off, fumbling at his pocket when he realized his phone was still at home."
     show Kyon Casual Worry2 at right
@@ -899,7 +899,7 @@ label prologue:
     nvl clear
     show Kyon Casual Ang1 at right
     "\"I don't care!\" he shouted."
-    "\"I've always relied on you — now that you need help, I am not going to just stand by and watch you get taken away from— from us!\""
+    "\"I've always relied on you — now that you need help, I am {i}not{/i} going to just stand by and watch you get taken away from— from us!\""
     show Yuki Casual EyesClosed1 at left
     pause (0.2)
     show Yuki Casual Sad1 at left
@@ -980,7 +980,7 @@ label prologue:
     nvl clear
     "She had a mental catalogue of Kyon-like behaviors, and this fell firmly into the category of the seldom-seen but always feared angry Kyon."
     "Dour, upset, irked, sarcastic, caustic ... sure. But angry?"
-    "Hell, she'd once smashed his head into her desk — entirely on accident — and he was only annoyed. And it wasn't for hitting his head, it was for disrupting a class!"
+    "Hell, she'd once smashed his head into her desk — entirely on accident — and he was only {i}annoyed{/i}. And it wasn't for hitting his head, it was for disrupting a class!"
     "Nevermind that he had been dozing off before that."
     nvl clear
     "She'd seen him genuinely angry two times."
@@ -1016,7 +1016,7 @@ label prologue:
     show Haruhi Casual Ang2 at left
     "\"If Yuki's in danger, what kind of person do you take me for?\""
     nvl clear
-    "She wasn't that bad about ignoring the needs of her brigade members."
+    "She wasn't {i}that{/i} bad about ignoring the needs of her brigade members."
     nvl clear
     show Kyon Casual Ser2 at right
     "\"Even so.\""
@@ -1098,7 +1098,7 @@ label prologue:
     show Yuki Casual SadTalk1 at left
     "\"The function allowing me to confirm or deny that data has been denied at this juncture in time,\" she answered."
     show Yuki Casual SadTalk2 at left
-    "\"Turning to Kyon, she added, \"One hour and twenty minutes remain.\""
+    "Turning to Kyon, she added, \"One hour and twenty minutes remain.\""
     nvl clear
     show Kyon Casual Worry2 at right
     "He bit off a curse, running his hands through his hair."
@@ -1107,7 +1107,7 @@ label prologue:
     show Kyon Casual Ser1 at right
     show Haruhi Casual Worry1 at left
     with dissolve
-    "Haruhi was taken aback again ... he obviously didn't like getting bad grades or doing poorly on exams, but he almost never got this stressed about things. "
+    "Haruhi was taken aback again ... he obviously didn't like getting bad grades or doing poorly on exams, but he almost never got {i}this{/i} stressed about things. "
     "This was starting to become unnerving."
     nvl clear
     show Haruhi Casual Sigh1 at left
@@ -1116,13 +1116,13 @@ label prologue:
     "\"Look, this has gone far enough. I get it, alright? Your practical joke ... okay. Fine.\""
     nvl clear
     show Haruhi Casual Ang3 at left
-    "\"What are you really after? Producer? Co-director? You want to help write the script for the next movie?\""
+    "\"What are you really after? Producer? Co-director? You want to help write the script for the next movie?"
     show Haruhi Casual Ang2 at left
-    "\'Let's just cut to the chase — this isn't really fun, especially since it's at my expense!\""
+    "\"Let's just cut to the chase — this isn't really fun, especially since it's at my expense!\""
     nvl clear
     stop music fadeout 3
     show Kyon Casual Sup1 at right
-    "\"At your expense—\""
+    "\"At {i}your{/i} expense—\""
     show Haruhi Casual Sup1 at left
     "That had done it, she realized, flinching back."
     show Kyon Casual Sigh1 at right
@@ -1145,7 +1145,7 @@ label prologue:
     nvl clear
     show Haruhi Casual Sigh1 at left
     "She forced her heartbeat to still. "
-    "She'd told him that much, why wouldn't he remember?"
+    "She'd {i}told{/i} him that much, why wouldn't he remember?"
     "She did, after all, even now."
     nvl clear
     show Kyon Casual Ser2 at right
@@ -1166,26 +1166,26 @@ label prologue:
     with fade
     "\"I never told anyone that,\" she mumbled."
     show Kyon Casual Ser2 at right
-    "\"In the end, I told you that I wanted to come back to this world,\" Kyon said."
+    "\"In the end, I told you that I wanted to come back to {i}this{/i} world,\" Kyon said."
     show Kyon Casual Ser3 at right
-    "\"That it was more interesting than you realized.\""
+    "\"That it was more interesting than you realized. {nw}"
     show Kyon Casual Ser2 at right
-    "\"Do I have to say what I did to wake you up?\""
+    extend "Do I have to say what I did to wake you up?\""
     nvl clear
     show Hblush Casual at left with dissolve
     "She felt her face color."
     show Haruhi Casual Quest1 at left
-    "\"N...no,\" she managed.\"Who— No, what are you?\""
+    "\"N...no,\" she managed.\"Who— No, {i}what{/i} are you?\""
     show Kyon Casual Sigh2 at right
     "\'I am a normal person,\" he told her, shrugging."
     nvl clear
     show Kyon Casual Ser2 at right
-    "\"I happen to have traveled to parallel worlds. I have traveled through time. I've seen some amazing things ... but through it all, I always come back here to be with my friends.\""
+    "\"I happen to have traveled to parallel worlds. I have traveled through time. I've seen some amazing things ... but through it all, I always come back {i}here{/i} to be with my friends.\""
     nvl clear
     scene black with dissolve
     "It was getting very strange, and she didn't know why, but the conversation was starting to make her uncomfortable."
-    "Maybe the knowledge of her dream was just an expert analysis based on her personality? The refusal to mention the kiss specifically was because they didn't know?"
-    "But she wasn't certain she wanted to hear him say it was a kiss, here, right now...."
+    "Maybe the knowledge of her dream was just an expert analysis based on her personality? The refusal to mention the kiss specifically was because they didn't {i}know{/i}?"
+    "But she wasn't certain she wanted to hear him say it {i}was{/i} a kiss, here, right now...."
     "And she'd promised she would listen."
     nvl clear
     scene bg YukiRoomCenter
@@ -1215,7 +1215,7 @@ label prologue:
     show Kyon Casual Ser1 at right
     "\"Tanabata last year was the first time I traveled back in time,\" he began, his expression solemn."
     show Kyon Casual Ser3 at right
-    "\"I went to a night three years earlier. That would be Tanabata four years ago.\""
+    "\"I went to a night three years earlier. That would be Tanabata four years ago."
     show Kyon Casual Ser1 at right
     "\"While I was there, I was sent to East Middle school, carrying Asahina-san on my back.\""
     nvl clear
@@ -1229,15 +1229,15 @@ label prologue:
     "\"John Smith.\""
     nvl clear
     show Haruhi Casual Sup3 at left
-    "\"You're John Smith!\""
+    "\"{i}You're{/i} John Smith!\""
     play sound "SE/impact.mp3"
-    show Haruhi Casual Hap3 at HalfRight with move
+    show Haruhi Casual Hap3 at HalfRight with MoveTransition(.2)
     "She wasn't aware of getting up from the table, uncertain if she had moved around or just jumped over it — she just knew that she had flung herself at him, tackling him to the floor and grabbing on tightly."
-    "\"I knew it!\" she yelled."
+    "\"I {i}knew{/i} it!\" she yelled."
     nvl clear
     scene black
     stop music fadeout 5
-    "\"I knew I'd find you again!\""
+    "\"I {i}knew{/i} I'd find you again!\""
     nvl clear
 #   
     
