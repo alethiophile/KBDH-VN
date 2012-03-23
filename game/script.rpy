@@ -30,6 +30,7 @@ init:
     image Barrier = "Backgrounds/barrier2.jpg"
     image Bluesword = "Backgrounds/bluesword1.png"
     image field = "Sprites/Effects/InterdictionField.png"
+    image healfield = "Sprites/Effects/HealingField.png"
     image BarrierSmall = "Sprites/Effects/BarrierSmall.png"
     image BarrierSmall Bright = im.MatrixColor("Sprites/Effects/BarrierSmall.png",
                                        im.matrix.brightness(.5))
@@ -42,6 +43,7 @@ init:
     image Spike4 = "Sprites/Effects/NetSpike4.png"
     image Spike5 = "Sprites/Effects/NetSpike5.png"
     image knifethrow = "Sprites/Effects/knifethrowlong.png"
+    
     #Haruhi Sprites
     image Haruhi Sup1 = "Sprites/Haruhi/HaruhiSideSurprised1.png"
     image Haruhi Ang1 = "Sprites/Haruhi/HaruhiSideAngry1.png"
@@ -989,12 +991,11 @@ label prologue:
     "Even then, some small part of her really didn't like the way that when he chose to, he simply seized command of her precious hand-crafted Brigade and, no matter how cute it was—"
     "She firmly suplexed that thought into oblivion."
     nvl clear
-    stop music fadeout 3
-    scene bg YukiRoomRight with dissolve
+    scene bg YukiRoomRight
     show Kyon Casual Ser1 at right
     show Haruhi Casual Quest1 at HalfLeft
+    with dissolve
     "\"Alright,\" she said evenly. \"Tell me what's going on.\""
-    play music "Music/Gyumnopedies.mp3"
     show Kyon Casual Worry1 at right
     "Kyon ran his hands through his hair and began pacing, not looking at her."
     show Haruhi Casual Sigh1 at HalfLeft
@@ -1056,10 +1057,11 @@ label prologue:
     "She had to admit, his emotion seemed genuine, but why couldn't he just have asked her? "
     "There was an awful lot he could have just asked for, and never bothered to!"
     "That thought was drop-kicked to fly off next to the last banished thought."
-    scene bg YukiRoomCenter with dissolve
     nvl clear
+    scene bg YukiRoomCenter 
     show Haruhi Crossed Casual Grin1 at center
     show Mikuru Cower Casual Nervous1 at left
+    with dissolve
     "\"And, Mikuru, you're a time traveler?\" she asked, idly spinning her teacup on the table before her."
     show Mikuru Cower Casual Nervous2 at left
     "\"Um ... that is ... I can't....\""
@@ -1087,10 +1089,11 @@ label prologue:
     "This better not be a ploy to make Kyon the male lead opposite Mikuru in the next movie!"
     "Saving that thought for later, she turned her gaze to Yuki."
     nvl clear
-    scene bg YukiRoomLeft with dissolve
+    scene bg YukiRoomLeft
     show Yuki Casual Sad1 at left
     show Haruhi Crossed Casual Quest1 at center
     show Kyon Casual Ser1 at right
+    with dissolve
     "\"And you're an alien?\""
     show Yuki Casual SadTalk1 at left
     "\"The function allowing me to confirm or deny that data has been denied at this juncture in time,\" she answered."
@@ -1099,10 +1102,11 @@ label prologue:
     nvl clear
     show Kyon Casual Worry2 at right
     "He bit off a curse, running his hands through his hair."
-    scene bg YukiRoomCenter with fade
+    scene bg YukiRoomCenter 
     hide Yuki 
     show Kyon Casual Ser1 at right
     show Haruhi Casual Worry1 at left
+    with dissolve
     "Haruhi was taken aback again ... he obviously didn't like getting bad grades or doing poorly on exams, but he almost never got this stressed about things. "
     "This was starting to become unnerving."
     nvl clear
@@ -1147,16 +1151,19 @@ label prologue:
     show Kyon Casual Ser2 at right
     "\"So, in your dream, you watched giant blue creatures smash apart the school, and you were very excited about abandoning the Brigade — your friends — and leading an exciting new life in whatever world was to come.\""
     nvl clear
-    scene bg YukiRoomCenter with fade
+    scene bg YukiRoomCenter
     show Koizumi Crossed Casual Uneasy1 at center
     show Mikuru Cower Casual Nervous1 at right
+    show MBlush at right
     show Yuki Casual Sad1 at left
+    with fade
     "Koizumi looked uncomfortable. Mikuru's face turned red, and she began studying the bottom of her teacup intently."
     "Yuki merely stared at her, unblinking."
-    scene bg YukiRoomCenter with fade
     nvl clear
+    scene bg YukiRoomCenter
     show Haruhi Casual Pout1 at left
     show Kyon Casual Ser1 at right
+    with fade
     "\"I never told anyone that,\" she mumbled."
     show Kyon Casual Ser2 at right
     "\"In the end, I told you that I wanted to come back to this world,\" Kyon said."
@@ -1180,11 +1187,11 @@ label prologue:
     "Maybe the knowledge of her dream was just an expert analysis based on her personality? The refusal to mention the kiss specifically was because they didn't know?"
     "But she wasn't certain she wanted to hear him say it was a kiss, here, right now...."
     "And she'd promised she would listen."
-    scene bg YukiRoomCenter with dissolve
-    
     nvl clear
+    scene bg YukiRoomCenter
     show Haruhi Casual Quest1 at left
     show Kyon Casual Ser1 at right
+    with dissolve
     "\"You're claiming that you're a slider?\" she asked, blinking, buying herself some time to think."
     show Kyon Casual Sup2 at right
     "He was momentarily startled by the question, then exchanged a glance with Koizumi, who shrugged. "
@@ -1455,13 +1462,13 @@ label prologue2:
     show Haruhi Worry1 at center
     "\"Granted.\" Kyon said, {nw}"
     play sound "SE/heal1.wav"
-    show field at right
+    show healfield at right
     show Kyon Ser2 Bright at right
     show Skinsuit Bright at right
     show Coat Bright at right
     with dissolve
-    pause .1
-    hide field at right
+    pause .1    
+    hide healfield at right
     show Kyon Sigh2 at right
     show Skinsuit at right
     show Coat at right
@@ -1620,7 +1627,7 @@ label prologue2:
     
     
     
-    
+    nvl clear
     "Kyon hadn't had time to think about things before." 
     "Part of that was from a certainty that if he had let himself think about things, it could easily become too late to do anything."
     "Part of it was his desire to make sure he could find his way back to his own world."
