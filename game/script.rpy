@@ -608,7 +608,6 @@ label ch001__AO_1:
     scene bg TownStreetNight2 with wiperight
     pause 1
     scene bg YukiApartment with wiperight:
-        size (600, 800)
     "When he reached the lobby, barely pausing long enough to lock up his bike, he wondered if he'd beaten his best time, but didn't feel the need to check."
     "Instead, he dashed to the console, still gasping for breath, and fumbled, mis-dialing her room number and needing to hammer the 'cancel' button to dial again."
     "\"Nagato!\" he called, the second she picked up.\"It's me!\""
@@ -1040,7 +1039,7 @@ label prologue2:
     "Ryouko was struck in the chest dead-center of mass, her entire body glowing white for a second before she staggered—"
     play sound "SE/Laser1.mp3"
     play sound2 "SE/Barrier1.mp3"
-    scene bg BeamOrange2
+    scene bg BeamOrange5
     show Asakura Pain2 Bright at center
     with flashbulb
     "Instantly another beam shot out from the same location, lighting slightly to one side, near the girl's left shoulder."

@@ -13,6 +13,7 @@ init:
     image bg BeamOrange2 = "Backgrounds/BeamOrange2.jpg"
     image bg BeamOrange3 = "Backgrounds/BeamOrange3.jpg"
     image bg BeamOrange4 = "Backgrounds/BeamOrange4.jpg"
+    image bg BeamOrange5 = "Backgrounds/BeamOrange5.jpg"
     image bg KyonRoomLeftClosed = "Backgrounds/KyonRoomLeftClosed.png"
     image bg KyonHouseNight = "Backgrounds/KyonHouseNight.png"
     image bg TownStreetNight1 = "Backgrounds/TownStreetNight1.png"
