@@ -664,9 +664,7 @@ label ch001__AO_1:
     nvl clear
     show Kyon Casual Sigh1 at right
     "After taking a deep breath, he growled, \"There isn't enough milk in the world.\""
-    show Yuki Casual EyesClosed1 at left
-    pause (0.2)
-    show Yuki Casual Sad1 at left
+    show Yuki Casual Side SmallBlink at left
     "She blinked several times in response."
     show Kyon Casual Worry2 at right
     "\"How set is this?\" he asked, his hands shaking too much to hold the teacup properly."
@@ -1367,8 +1365,8 @@ label prologue2:
     stop music fadeout 3
     "\"Hmm,\" Haruhi mused, narrowing her eyes and peering intently at Ryouko, who merely watched back curiously."
     show Haruhi Ang2 at left
-    "\"Um ... some kind of second chance ... a chance to start over, prove herself, and ... let's see, realize she doesn't want to kill Kyon at all.\""
     play music "Music/Oi.mp3"
+    "\"Um ... some kind of second chance ... a chance to start over, prove herself, and ... let's see, realize she doesn't want to kill Kyon at all.\""
     nvl clear
     show Haruhi Smile2 at left
     "\"And she gets to give Yuki what she needs to make her equal to the next interface that comes along.... But no brainwashing, that's not cool."
@@ -1379,9 +1377,10 @@ label prologue2:
     "\"Yeah! That sounds very good! Let's do that.\""
     show Haruhi Smile2 at left
     nvl clear
-    show Asakura Frown3 at center
-    pause (0.4)
-    show Asakura Frown1 at center
+    #show Asakura Frown3 at center
+    #pause (0.4)
+    #show Asakura Frown1 at center
+    show Asakura Blink1 at center
     "The pinned interface blinked several times, then turned her eyes to Kyon from beneath the glowing energy net."
     show Asakura Frown2 at center
     "\"None of this has been reported to my superiors,\" she commented."
@@ -1749,3 +1748,4 @@ label credits:
     # Maybe a graphic logo here?
     pause
     return
+    
