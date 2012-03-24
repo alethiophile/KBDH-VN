@@ -215,7 +215,15 @@ init:
     image Asakura Pain2 = "Sprites/Asakura/AsakuraPain2.png"
     image Asakura Pain2 Bright = im.MatrixColor("Sprites/Asakura/AsakuraPain2.png",
                                        im.matrix.brightness(.5))
-    
+    image Asakura Blink1:
+        "Sprites/Asakura/AsakuraFrown1.png"
+        0.1
+        "Sprites/Asakura/AsakuraFrown3.png"
+        0.2
+        "Sprites/Asakura/AsakuraFrown1.png"
+        3
+        repeat
+        
     
     #Yuki Sprites
     image Yuki EyesClosed1 = "Sprites/Yuki/YukiSideEyesClosed1.png"
@@ -231,7 +239,7 @@ init:
     image Yuki SadTalk1 = "Sprites/Yuki/YukiSideSadTalk1.png"
     image Yuki SadTalk2 = "Sprites/Yuki/YukiSideSadTalk2.png"
     image Yuki SadTalk3 = "Sprites/Yuki/YukiSideSadTalk3.png"
-   
+    
     image Yuki Casual EyesClosed1 = "Sprites/Yuki/YukiSideCasualEyesClosed1.png"
     image Yuki Casual EyesClosed1 Bright = im.MatrixColor("Sprites/Yuki/YukiSideCasualEyesClosed1.png",
                                        im.matrix.brightness(.5))
@@ -245,7 +253,26 @@ init:
     image Yuki Casual SadTalk1 = "Sprites/Yuki/YukiSideCasualSadTalk1.png"
     image Yuki Casual SadTalk2 = "Sprites/Yuki/YukiSideCasualSadTalk2.png"
     image Yuki Casual SadTalk3 = "Sprites/Yuki/YukiSideCasualSadTalk3.png"
-
+    
+    image Yuki Casual Side Blink:
+        "Sprites/Yuki/YukiSideCasual1.png"
+        0.1
+        "Sprites/Yuki/YukiSideCasualSad1.png"
+        0.1
+        "Sprites/Yuki/YukiSideCasualEyesClosed1.png"
+        0.1
+        "Sprites/Yuki/YukiSideCasualSad1.png"
+        0.1
+        "Sprites/Yuki/YukiSideCasual1.png"
+    image Yuki Casual Side SmallBlink:
+        "Sprites/Yuki/YukiSideCasualSad1.png"
+        0.1
+        "Sprites/Yuki/YukiSideCasualEyesClosed1.png"
+        0.15
+        "Sprites/Yuki/YukiSideCasualSad1.png"
+        3
+        repeat
+    
     # Mikuru Sprites
     image Mikuru Cower Nervous1 = "Sprites/Mikuru/MikuruCowerNervous1.png"
     image Mikuru Cower Nervous2 = "Sprites/Mikuru/MikuruCowerNervous2.png"
