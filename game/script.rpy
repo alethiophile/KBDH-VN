@@ -112,9 +112,17 @@ label prologue:
     show Kyon Ser1 at center
     with fast_move
     "\"Bwa!\" she protested, arms waving frantically as she dashed to keep up, or risk the knot being pulled out."
-    show Haruhi Ang2 at center
-    show Kyon Ser1 at right
-    with fast_move
+    #show Haruhi Ang2 at center
+    #show Kyon Ser1 at right
+    #with fast_move
+    #show Haruhi Ang2 at left
+    #show Kyon Ser1 at center
+    show Haruhi Ang2: 
+        left
+        linear 0.5 center
+    show Kyon Ser1: 
+        center
+        linear 0.5 right
     "\"What the hell do you think you're doing!?\""
     show Haruhi Sup1 at center with None
     show Haruhi Sup1 at osr_left
