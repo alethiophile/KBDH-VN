@@ -263,7 +263,7 @@ label prologue:
     show Haruhi Hap4:
         xalign 0.0 yalign 1.0
         linear 0.1 xalign 0.1
-    "\"God damn it Kyon, you're so cool when you do this,\" Haruhi gushed, clapping her hands together. \"What is it?\""
+    "\"God damn it, Kyon, you're so cool when you do this,\" Haruhi gushed, clapping her hands together. \"What is it?\""
     nvl clear
     show Kyon Neutral1 at right
     "\"I'm not sure,\" he said, as a cold, familiar chuckle echoed."
@@ -620,10 +620,10 @@ label ch001__AO_1:
     "\"Oh? Okay! I'll tell him. Feel better!\" Then her voice rose from conversational, to an unnecessary bellow, \"Kyon-kun! Yuki-nee-san says she's sick and really wants you to visit her!\""
     nvl clear
     "He didn't even bother to grab the phone on the way out."
-    "\"Can I come with...\"{nw}"
+    "\"Can I come with...\" {nw}"
     play sound "SE/doorclose.mp3"
     scene bg KyonHouseNight
-    "she began, before the door slammed shut. Shrugging, she turned back to the game after flipping Kyon's phone closed."
+    extend "she began, before the door slammed shut. Shrugging, she turned back to the game after flipping Kyon's phone closed."
     nvl clear
     stop music fadeout 1
     play music "Music/Nagato2.mp3"
@@ -635,7 +635,7 @@ label ch001__AO_1:
     scene bg YukiApartment with wiperight:
     "When he reached the lobby, barely pausing long enough to lock up his bike, he wondered if he'd beaten his best time, but didn't feel the need to check."
     "Instead, he dashed to the console, still gasping for breath, and fumbled, mis-dialing her room number and needing to hammer the 'cancel' button to dial again."
-    "\"Nagato!\" he called, the second she picked up.\"It's me!\""
+    "\"Nagato!\" he called, the second she picked up. \"It's me!\""
     nvl clear
     "The door opened."
     scene bg YukiRoomCenter with wipeup
@@ -773,7 +773,7 @@ label ch001__AO_1:
     "\"I wish it was,\" he said back crossly, and she found herself taken aback at the force in his tone."
     scene black with dissolve
     nvl clear
-    "She had a mental catalogue of Kyon-like behaviors, and this fell firmly into the category of the seldom-seen but always feared angry Kyon."
+    "She had a mental catalogue of Kyon-like behaviors, and this fell firmly into the category of the seldom-seen, but always feared angry Kyon."
     "Dour, upset, irked, sarcastic, caustic ... sure. But angry?"
     "Hell, she'd once smashed his head into her desk — entirely on accident — and he was only {i}annoyed{/i}. And it wasn't for hitting his head, it was for disrupting a class!"
     "Nevermind that he had been dozing off before that."
@@ -783,7 +783,7 @@ label ch001__AO_1:
     "She hated that memory more than anything else she knew about him, but couldn't dare to forget it."
     "Once it had been at — of all things — his unfinished homework over summer break, though that was the lesser of the two displays; also the first."
     "She didn't understand it, but she knew whatever it was, she wanted to be on his side against it."
-    "Even then, some small part of her really didn't like the way that when he chose to, he simply seized command of her precious hand-crafted Brigade and, no matter how cute it was—"
+    "Even then, some small part of her really didn't like the way that when he chose to, he simply seized command of her precious hand-crafted Brigade and, no matter how cute it\nwas—"
     "She firmly suplexed that thought into oblivion."
     nvl clear
     scene bg YukiRoomRight
@@ -875,7 +875,7 @@ label ch001__AO_1:
     "\"Anyway, go ahead and explain it to Haruhi.\""
     nvl clear
     show Mikuru Cower Casual Neutral1 at left
-    "\'Oh! Um, Suzumiya-san ... what he says is true! I am a time traveler, though, it's more accurate to say that I'm a visitor from the future who is projected into the past, almost like a two-dimensional image projected into—\""
+    "\"Oh! Um, Suzumiya-san ... what he says is true! I am a time traveler, though, it's more accurate to say that I'm a visitor from the future who is projected into the past, almost like a two-dimensional image projected into—\""
     show Haruhi Crossed Casual Eyeroll1 at center
     "\"Right, right,\" Haruhi cut her off. \"You're a time traveler. Understood.\""
     nvl clear
@@ -970,9 +970,9 @@ label ch001__AO_1:
     show Hblush Casual at left with dissolve
     "She felt her face color."
     show Haruhi Casual Quest1 at left
-    "\"N...no,\" she managed.\"Who— No, {i}what{/i} are you?\""
+    "\"N...no,\" she managed. \"Who— No, {i}what{/i} are you?\""
     show Kyon Casual Sigh2 at right
-    "\'I am a normal person,\" he told her, shrugging."
+    "\"I am a normal person,\" he told her, shrugging."
     nvl clear
     show Kyon Casual Ser2 at right
     "\"I happen to have traveled to parallel worlds. I have traveled through time. I've seen some amazing things ... but through it all, I always come back {i}here{/i} to be with my friends.\""
@@ -1060,13 +1060,13 @@ label prologue2:
     # Better yet, "sprite" of a beam. Then show scene black, Asakura in pain (zoomed in some?) at the center and the show beams hitting her at center and slightly lower
     "The shrill buzz of a brilliant energy beam licked out from the roof of the tiny structure that housed the stairwell."
     show Asakura Pain1 at center
-    "Ryouko was struck in the chest dead-center of mass, her entire body glowing white for a second before she staggered—"
+    "Ryouko was struck in the chest dead-center of mass, her entire body glowing white for a second before she\nstaggered—"
     play sound "SE/Laser1.mp3"
     play sound2 "SE/Barrier1.mp3"
     scene bg BeamOrange5
     show Asakura Pain2 Bright at center
     with flashbulb
-    "Instantly another beam shot out from the same location, lighting slightly to one side, near the girl's left shoulder."
+    "Instantly, another beam shot out from the same location, lighting slightly to one side, near the girl's left shoulder."
     nvl clear
     play sound "SE/Laser1.mp3"
     play sound2 "SE/Slash3.mp3"
@@ -1244,12 +1244,12 @@ label prologue2:
     show Haruhi Worry1 at center with moveinleft
     "\"How bad was it, anyway? Future-you seemed to think you weren't very tough, and that you were hurt pretty badly.\""
     show Kyon Pain1 at right
-    "\"I think I've got some internal bleeding,\" he said, wincing, one hand pressed to his abdomen. "
+    "\"I think I've got some internal bleeding,\" he said, wincing,\none hand pressed to his abdomen. "
     show Kyon Pain2 at right
     extend "\"And some of my gear is messed up from the impact and overload. While this is fun for you, I wouldn't mind some medical assistance.\""
     nvl clear
     show Haruhi Hap3 at center
-    "\"Sure!\" she said cheerfully, clapping one hand on his shoulder. "
+    "\"Sure!\" she said cheerfully, clapping one hand on his\nshoulder. "
     play sound "SE/impact.mp3"
     show Kyon Pain1 at right
     extend "\"Happy, healing, all-better thoughts!\""
@@ -1257,7 +1257,7 @@ label prologue2:
     show Asakura Sigh1 at center
     show Spike5 at spike_net_pos #center
     show Yuki Talk1 at HalfLeft
-    "\"Medical program loaded,\" Nagato added helpfully from where she was studying the other interface. "
+    "\"Medical program loaded,\" Nagato added helpfully from\nwhere she was studying the other interface. "
     show Yuki Talk2 at HalfLeft
     extend "\"Permission to proceed?\""
     nvl clear
@@ -1535,10 +1535,10 @@ label prologue2:
     "\"I don't know if we can believe everything, but I know that Nagato is a humanoid interface.\"" 
     nvl clear
     scene bg MemoryMikuru with dissolve
-    "\"I've traveled through time with Asahina-san. \""
+    "\"I've traveled through time with Asahina-san.\""
     nvl clear
     scene bg MemoryKoizumi with dissolve
-    "\"Koizumi's shown me the places where he and the other espers of his kind fight.... \""
+    "\"Koizumi's shown me the places where he and the other espers of his kind fight....\""
     scene bg YukiRoomCenter
     show Kyon Casual Ser2 at right
     show Haruhi Casual Unhap2 at left
@@ -1590,7 +1590,8 @@ label prologue2:
     "But he must be ... it made sense that John Smith was Kyon if he was a normal person who called in favors from others."
     nvl clear
     show Haruhi Casual Worry1
-    "But still.... \"Okay. Things are going to change, right now. Kyon, you want me to save Yuki, right?\""
+    "But still...."
+    "\"Okay. Things are going to change, right now. Kyon, you want me to save Yuki, right?\""
     show Kyon Casual Sup2
     "\"You mean, you don't?\" he asked, aghast."
     show Haruhi Casual Pout1 at left
@@ -1643,6 +1644,7 @@ label prologue2:
     show Haruhi Casual Worry1 at left
     show Yuki Casual Sad1 at center
     "\"So ... how do we do this?\" Haruhi asked, biting her lip. \"How do I use my power?\""
+    nvl clear
     show Kyon Casual Ser3 at right
     "\"Your power is very dangerous,\" Kyon warned her. \"If it's used incorrectly, you might accidentally destroy the universe. But Nagato can use that power safely. {w}So, my idea is that you can become her boss and replace the Integrated Data Sentience Entity for her, and hopefully we won't have to destroy them. {w}If we have to, then they have to go ... that's all there is to it. But if we can avoid that ... well. Nagato, can you do what I'm thinking of?\""
     nvl clear
