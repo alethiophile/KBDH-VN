@@ -1442,7 +1442,7 @@ label prologue2:
 
     nvl clear
     play music "Music/Morning.ogg"
-    scene bg KyonRoomLeftMorning:
+    scene bg KyonRoomLeftClosed:
         size (800,600)
     with fade   
     "Kyon hadn't had time to think about things before." 
@@ -1450,6 +1450,7 @@ label prologue2:
     "Part of it was his desire to make sure he could find his way back to his own world."
     "But most of it was the fact that he could deal with the world going away, as long as he could keep the Brigade intact, regardless of his position in it."
     nvl clear
+    scene bg KyonRoomLeftMorning with dissolve
     "Though, that thought in mind, when he awoke, he stared out the window after rising before his younger sister yet again."
     "This habit was probably going to wear him out, he thought."
     "Still, by the time he had finished washing up, just in time to watch her prance out of her room, he couldn't help but smile. "
@@ -1538,7 +1539,7 @@ label prologue2:
     with dissolve
     "\"Because I do,\" Kyon said, breaking the uncomfortable silence."
     nvl clear
-    scene bg MemoryYuki with dissolve
+    scene bg MemoryYuki with fade
     "\"I don't know if we can believe everything, but I know that Nagato is a humanoid interface.\"" 
     nvl clear
     scene bg MemoryMikuru with dissolve
@@ -1549,7 +1550,7 @@ label prologue2:
     scene bg YukiRoomCenter
     show Kyon Casual Ser2 at right
     show Haruhi Casual Unhap2 at left
-    with dissolve
+    with fade
     nvl clear
     "\"And in every case, all three of them couldn't tell you because their bosses told them not to.\""
     nvl clear
