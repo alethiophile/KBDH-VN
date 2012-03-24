@@ -649,7 +649,6 @@ label ch001__AO_1:
     "\"It is absolute.\""
     nvl clear
     show Kyon Casual Sigh1 at right
-    show Ksweat at right
     "He took another deep breath, then jumped to his feet, nearly upsetting the table, and began pacing back and forth in her living room."
     show Yuki Casual Sad2 at left
     "She watched him silently."
