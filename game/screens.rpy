@@ -165,7 +165,59 @@ screen nvl:
     add SideImage() xalign 0.0 yalign 1.0
     
     use quick_menu
-        
+
+##############################################################################
+# Chapters screen 
+#
+# Screen that's used to display the list of chapters
+
+screen Chapters:
+    # This ensures that any other menu screen is replaced.
+    tag menu
+
+    use main_menu
+
+    frame:
+        style_group "chm"
+        xanchor 0.0
+        yanchor 0.0
+        xpos 0.1
+        ypos 0.1
+        #background None
+
+        has vbox
+        frame:
+            side "l c":
+                area (0.0, 0.0, 450, 0.6)
+                
+                viewport:
+                    yadjustment adj
+                    mousewheel True
+                    
+                    vbox:
+                        for name, label in chapters:
+                            button:
+                                action Start(label)
+                                #left_padding 20
+                                xfill True
+                                size_group "chb"
+                                
+                                hbox:
+                                    xalign 0.5
+                                    text name style "button_text" text_align 0.5 #min_width 420
+
+                bar adjustment adj style "vscrollbar" 
+                
+        null height 5
+
+        textbutton "Dismiss.":
+            #size_group "chb"
+            xmargin 9
+            xminimum 465
+            action ShowMenu("main_menu")
+
+
+       
 ##############################################################################
 # Main Menu 
 #
@@ -189,6 +241,7 @@ screen main_menu:
 
         has vbox
 
+        textbutton _("Chapters") action ShowMenu("Chapters")
         textbutton _("Start Game") action Start()
         textbutton _("Load Game") action ShowMenu("load")
         textbutton _("Preferences") action ShowMenu("preferences")

@@ -42,6 +42,10 @@ init python:
     # Screen shake effect.
     sshake = Shake((0, 0, 0, 0), 1.0, dist=30)
     
+    adj = ui.adjustment()
+    music_need = True
+
+    
     config.keymap['skip'].remove('K_LCTRL')
     config.keymap['skip'].remove('K_RCTRL')
     config.keymap['skip'].append('K_LALT')
@@ -59,6 +63,16 @@ transform KyonRightFast:
     xalign -0.5 yalign 1.0
     linear 0.15 xalign 1.5   
 #    linear 0.15 xalign 1.0   
+
+
+init -1 python:
+    chapters = [
+        ("In Media Res Prologue\nExactly What it Says on the Tin", "prologue"),
+        ("Obligatory Anachronic Order \nExplanation Arc chapter one\n\"Scene Twelve, the Ninth Big Fight\"", "ch001__AO_1"),
+    ]
+
+
+
 
 label start:
     # Z0 : TODO: intro. 
@@ -187,6 +201,8 @@ label prologue:
     pause 0.4
     nvl clear
     play music "music/YukiAsakuraFight.mp3" fadein 1
+    # Set this up EVERY time last 'play music' in chapter is started
+    $ music_need = False
     show Kyon Ser2 at right
     pause 1
     play sound "SE/DunDun.mp3"
@@ -305,6 +321,14 @@ label prologue:
 #     
 label ch001__AO_1:
     # Obligatory Anachronic Order Explanation Arc chapter 1 - "Scene Twelve, the Ninth Big Fight"
+    
+    # Preparations for Chapter: Replicate the last scene from previous chapter (if it is continued), or show a chapter quote card
+    scene bg stairwell with None:
+        size (800,600)
+    if music_need:
+        # copy last 'play music' from the previous chapter (if scene is continued) or start apropriate chapter music
+        play music "music/YukiAsakuraFight.mp3" fadein 1
+    #Preparation for Chapter end
     nvl clear
     hide Asakura
     show Kyon Ser2 at right
