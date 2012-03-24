@@ -15,6 +15,7 @@ init:
     image bg BeamOrange4 = "Backgrounds/BeamOrange4.jpg"
     image bg BeamOrange5 = "Backgrounds/BeamOrange5.jpg"
     image bg KyonRoomLeftClosed = "Backgrounds/KyonRoomLeftClosed.png"
+    image bg KyonRoomLeftMorning = "Backgrounds/KyonRoomLeftMorning.png"
     image bg KyonHouseNight = "Backgrounds/KyonHouseNight.png"
     image bg TownStreetNight1 = "Backgrounds/TownStreetNight1.png"
     image bg TownStreetNight2 = "Backgrounds/TownStreetNight2.png"
@@ -22,6 +23,9 @@ init:
     image bg YukiRoomLeft = "Backgrounds/YukiRoomLeft.png"
     image bg YukiRoomRight = "Backgrounds/YukiRoomRight.png"
     image bg YukiRoomCenter = "Backgrounds/YukiRoomCenter.jpg"
+    image bg MemoryYuki = "Backgrounds/MemoryYuki.jpg"
+    image bg MemoryMikuru = "Backgrounds/MemoryMikuru.jpg"
+    image bg MemoryKoizumi = "Backgrounds/MemoryKoizumi.jpg"
     
     image white = "#ffffff"
     image black = "#000000"
@@ -49,6 +53,7 @@ init:
     image Haruhi Ang1 = "Sprites/Haruhi/HaruhiSideAngry1.png"
     image Haruhi Ang2 = "Sprites/Haruhi/HaruhiSideAngry2.png"
     image Haruhi Ang3 = "Sprites/Haruhi/HaruhiSideAngry3.png"
+    image Haruhi Ang4 = "Sprites/Haruhi/HaruhiSideAngry4.png"
     image Haruhi Hap1 = "Sprites/Haruhi/HaruhiSideHappy1.png"
     image Haruhi Hap2 = "Sprites/Haruhi/HaruhiSideHappy2.png"
     image Haruhi Hap3 = "Sprites/Haruhi/HaruhiSideHappy3.png"
@@ -64,6 +69,9 @@ init:
     image Haruhi Smile2 = "Sprites/Haruhi/HaruhiSideSmile2.png"
     image Haruhi Smile3 = "Sprites/Haruhi/HaruhiSideSmile3.png"
     image Haruhi Sigh1 = "Sprites/Haruhi/HaruhiSideSigh1.png"
+    image Haruhi Unhap1 = "Sprites/HaruhiSideUnhappy1.png"
+    image Haruhi Unhap2 = "Sprites/HaruhiSideUnhappy2.png"
+    image Haruhi Focus1 = "Sprites/Haruhi/HaruhiSideFocus1.png"
     
     image Haruhi Casual Sup1 = "Sprites/Haruhi/HaruhiSideCasualSurprised1.png"
     image Haruhi Casual Sup2 = "Sprites/Haruhi/HaruhiSideCasualSurprised2.png"
@@ -71,6 +79,7 @@ init:
     image Haruhi Casual Ang1 = "Sprites/Haruhi/HaruhiSideCasualAngry1.png"
     image Haruhi Casual Ang2 = "Sprites/Haruhi/HaruhiSideCasualAngry2.png"
     image Haruhi Casual Ang3 = "Sprites/Haruhi/HaruhiSideCasualAngry3.png"
+    image Haruhi Casual Ang4 = "Sprites/Haruhi/HaruhiSideCasualAngry4.png"
     image Haruhi Casual Hap1 = "Sprites/Haruhi/HaruhiSideCasualHappy1.png"
     image Haruhi Casual Hap2 = "Sprites/Haruhi/HaruhiSideCasualHappy2.png"
     image Haruhi Casual Hap3 = "Sprites/Haruhi/HaruhiSideCasualHappy3.png"
@@ -86,6 +95,9 @@ init:
     image Haruhi Casual Smile2 = "Sprites/Haruhi/HaruhiSideCasualSmile2.png"
     image Haruhi Casual Smile3 = "Sprites/Haruhi/HaruhiSideCasualSmile3.png"
     image Haruhi Casual Sigh1 = "Sprites/Haruhi/HaruhiSideCasualSigh1.png"
+    image Haruhi Casual Unhap1 = "Sprites/Haruhi/HaruhiSideCasualUnhappy1.png"
+    image Haruhi Casual Unhap2 = "Sprites/Haruhi/HaruhiSideCasualUnhappy2.png"
+    image Haruhi Casual Focus1 = "Sprites/Haruhi/HaruhiSideCasualFocus1.png"
     
     image Haruhi Crossed Sup1 = "Sprites/Haruhi/HaruhiCrossedSurprised1.png"
     image Haruhi Crossed Sup2 = "Sprites/Haruhi/HaruhiCrossedSurprised2.png"
@@ -129,8 +141,17 @@ init:
     image Haruhi Crossed Casual Smile3 = "Sprites/Haruhi/HaruhiCrossedCasualSmile3.png"
     image Haruhi Crossed Casual Sigh1 = "Sprites/Haruhi/HaruhiCrossedCasualSigh1.png"
     
+    image Haruhi Point Ang1 = "Sprites/Haruhi/HaruhiPointAngry1.png"
+    image Haruhi Point Scold1 = "Sprites/Haruhi/HaruhiPointScold1.png"
+    
+    image Haruhi Point Casual Ang1 = "Sprites/Haruhi/HaruhiPointCasualAngry1.png"
+    image Haruhi Point Casual Scold1 = "Sprites/Haruhi/HaruhiPointCasualScold1.png"
+    
     image Hblush = "Sprites/Haruhi/HaruhiSideBlush1.png"
     image Hblush Casual = "Sprites/Haruhi/HaruhiSideCasualBlush1.png"
+    image Htears ="Sprites/Haruhi/HTearsSide1.png"
+    image Htears Casual = "Sprites/Haruhi/HTearsSideCasual1.png"
+    
     
     #Kyon Sprites
     image Kyon Ser1 = "Sprites/Kyon/KyonSerious1.png"
@@ -228,14 +249,24 @@ init:
     # Mikuru Sprites
     image Mikuru Cower Nervous1 = "Sprites/Mikuru/MikuruCowerNervous1.png"
     image Mikuru Cower Nervous2 = "Sprites/Mikuru/MikuruCowerNervous2.png"
+    image Mikuru Cower Nervous3 = "Sprites/Mikuru/MikuruCowerNervous3.png"
     image Mikuru Cower Neutral1 = "Sprites/Mikuru/MikuruCowerNeutral1.png"
     image Mikuru Cower Sup1 = "Sprites/Mikuru/MikuruCowerSurprised1.png"
+    image Mikuru Cower Sigh1 = "Sprites/Mikuru/MikuruCowerSigh1.png"
+    image Mikuru Cower Wince1 = "Sprites/Mikuru/MikuruCowerWince1.png"
+    image Mikuru Cower Smile1 ="Sprites/Mikuru/MikuruCowerSmile1.png"
     image MBlush = "Sprites/Mikuru/MikuruCowerBlush1.png"
+    image MTears = "Sprites/Mikuru/MTearsCower1.png"
     
     image Mikuru Cower Casual Nervous1 = "Sprites/Mikuru/MikuruCowerCasualNervous1.png"
     image Mikuru Cower Casual Nervous2 = "Sprites/Mikuru/MikuruCowerCasualNervous2.png"
+    image Mikuru Cower Casual Nervous3 = "Sprites/Mikuru/MikuruCowerCasualNervous3.png"
     image Mikuru Cower Casual Neutral1 = "Sprites/Mikuru/MikuruCowerCasualNeutral1.png"
     image Mikuru Cower Casual Sup1 = "Sprites/Mikuru/MikuruCowerCasualSurprised1.png"
+    image Mikuru Cower Casual Sigh1 = "Sprites/Mikuru/MikuruCowerCasualSigh1.png"
+    image Mikuru Cower Casual Wince1 = "Sprites/Mikuru/MikuruCowerCasualWince1.png"
+    image Mikuru Cower Casual Smile1 ="Sprites/Mikuru/MikuruCowerCasualSmile1.png"
+    image MTears Casual = "Sprites/Mikuru/MTearsCowerCasual1.png"
     
     #Koizumi Sprites
     image Koizumi Crossed Ser1 = "Sprites/Koizumi/KoizumiCrossedSerious1.png"
@@ -244,6 +275,7 @@ init:
     image Koizumi Crossed Smile2 = "Sprites/Koizumi/KoizumiCrossedSmile2.png"
     image Koizumi Crossed Uneasy1 = "Sprites/Koizumi/KoizumiCrossedUneasy1.png"
     image Koizumi Crossed Uneasy2 = "Sprites/Koizumi/KoizumiCrossedUneasy2.png"
+    image Koizumi Crossed Uneasy3 = "Sprites/Koizumi/KoizumiCrossedUneasy3.png"
     
     image Koizumi Crossed Casual Ser1 = "Sprites/Koizumi/KoizumiCrossedCasualSerious1.png"
     image Koizumi Crossed Casual Ser2 = "Sprites/Koizumi/KoizumiCrossedCasualSerious2.png"
@@ -251,7 +283,7 @@ init:
     image Koizumi Crossed Casual Smile2 = "Sprites/Koizumi/KoizumiCrossedCasualSmile2.png"
     image Koizumi Crossed Casual Uneasy1 = "Sprites/Koizumi/KoizumiCrossedCasualUneasy1.png"
     image Koizumi Crossed Casual Uneasy2 = "Sprites/Koizumi/KoizumiCrossedCasualUneasy2.png"
-    
+    image Koizumi Crossed Casual Uneasy3 = "Sprites/Koizumi/KoizumiCrossedCasualUneasy3.png"
     
 
     image Credits0 = "Backgrounds/credits0.png"

@@ -64,6 +64,7 @@ label start:
     # Z0 : TODO: intro. 
     jump prologue
 
+
 label prologue:
     stop music fadeout 1
     scene title0 with slowfadein
@@ -1407,121 +1408,265 @@ label prologue2:
     nvl clear
     # Approx. 21 minutes of reading at this point.
     
+
+    nvl clear
+    play music "Music/Morning.ogg"
+    scene bg KyonRoomLeftMorning:
+        size (800,600)
+    with fade   
+    "Kyon hadn't had time to think about things before." 
+    "Part of that was from a certainty that if he had let himself think about things, it could easily become too late to do anything."
+    "Part of it was his desire to make sure he could find his way back to his own world."
+    "But most of it was the fact that he could deal with the world going away, as long as he could keep the Brigade intact, regardless of his position in it."
+    nvl clear
+    "Though, that thought in mind, when he awoke, he stared out the window after rising before his younger sister yet again."
+    "This habit was probably going to wear him out, he thought."
+    "Still, by the time he had finished washing up, just in time to watch her prance out of her room, he couldn't help but smile. "
+    "Her face fell when she realized that the era of deadly wake-up elbow-slams was probably at an end."
+    "He busied himself making breakfast while mulling over the likely consequences of his impulsive decision." 
+    "And there would be consequences, he had no doubts of that at all."
+    nvl clear
+    "Serving his curious sister a piece of toast with a fried egg on it, he set about preparing one for himself." 
+    stop music fadeout 2
+    scene black with fade
+    "Now Haruhi, as she understood it, believed that she could change reality...."
+    nvl clear
     
+    "Dev note: Trying out some new transitions here. Namely, using dissolve for cuts between people speaking, instead of straight jump cuts or fade, like in the John Smith scene.. Lemme know what you think works better. - Oroboro"
     
-    # nvl clear
-    # "Kyon hadn't had time to think about things before." 
-    # "Part of that was from a certainty that if he had let himself think about things, it could easily become too late to do anything."
-    # "Part of it was his desire to make sure he could find his way back to his own world."
-    # "But most of it was the fact that he could deal with the world going away, as long as he could keep the Brigade intact, regardless of his position in it."
-    # nvl clear
-    # "Though, that thought in mind, when he awoke, he stared out the window after rising before his younger sister yet again."
-    # "This habit was probably going to wear him out, he thought."
-    # "Still, by the time he had finished washing up, just in time to watch her prance out of her room, he couldn't help but smile. "
-    # "Her face fell when she realized that the era of deadly wake-up elbow-slams was probably at an end."
-    # "He busied himself making breakfast while mulling over the likely consequences of his impulsive decision." 
-    # "And there would be consequences, he had no doubts of that at all."
-    # nvl clear
-    # "Serving his curious sister a piece of toast with a fried egg on it, he set about preparing one for himself." 
-    # "Now Haruhi, as she understood it, believed that she could change reality...."
-    # nvl clear
+    nvl clear
+    play music "Music/GnossiennesDai3.mp3"
+    scene bg YukiRoomCenter
+    show Haruhi Casual Unhap1 at left
+    show Htears Casual at left
+    with dissolve
+    "\"But you're saying, I have a power I don't even know about?\" Haruhi asked, now pacing anxiously back and forth."
+    show Haruhi Casual Unhap2 at left
+    "\"Why would you have kept this a secret from me?! Even more than the fact that you're the people I've been looking for, the fact that I can do things!\""
+    show Haruhi Casual Unhap1 at left
+    "She looked on the verge of tears and laughter at the same time."
+    nvl clear
+    hide Haruhi
+    hide Htears
+    show Koizumi Crossed Casual Ser1 at center
+    with dissolve
+    "\"That was the decision of my superiors,\" Koizumi offered, frowning."
+    show Koizumi Crossed Casual Ser2 at center
+    "\"It was believed that ... there could be unfortunate consequences.\""
+    nvl clear
+    hide Koizumi
+    show Mikuru Cower Casual Nervous1 at center
+    with dissolve
+    "\"And you,\" she continued, peering at Mikuru, \"also followed your instructions?\""
+    show Mikuru Cower Casual Nervous2 at center
+    "\"U...um,\" Mikuru said, shrinking into herself slightly."
+    show Mikuru Cower Casual Nervous3 at center
+    "\"I...it's not a matter of choice for me ... literally, I can't talk about classified information when it's classified. If I try to, then classified info...\""
+    show Mikuru Cower Casual Sigh1 at center
+    "She hung her head with a weary sigh. \"Sorry.\""
+    nvl clear
+    hide Mikuru 
+    show Yuki Casual Sad1
+    with dissolve
+    "\"And you?\" she pressed, turning her gaze to Yuki, who sat at the table, staring at the teacups."
+    show Yuki Casual SadTalk1
+    "\"Focus is on preventing my imminent deletion,\" the interface finally answered. \"Limited resources.\""
+    nvl clear
+    hide Yuki
+    show Haruhi Casual Unhap2 at left
+    show Kyon Casual Ser1 at right
+    show Htears Casual at left
+    with dissolve
+    "\"So, all along, the lowliest ranking member of the SOS Brigade is the only one who ever actually tried to tell me the truth,\" Haruhi grumbled."
+    show Kyon Casual Sigh1 at right
+    "\"That aside,\" Kyon said, shifting his shoulders, \"we can talk about this later. I'm sorry, but I'm really worried about Nagato. Since you believe us, or at least, I think you do...\""
+    nvl clear
+    show Haruhi Casual Unhap1 at left
+    "\"I don't,\" she countered. \"I believe you. Because you tried. But....\" She trailed off and shrugged, gesturing to the other three."
+    show Haruhi Casual Ang4 at left
+    "\"The people who wormed their way into my good graces were working against me! How can I trust them?\""
+    hide Haruhi
+    hide Kyon
+    hide Htears
+    nvl clear
+    show Mikuru Cower Casual Wince1 at right
+    show MTears Casual at right
+    show Koizumi Crossed Casual Uneasy3 at center
+    show Yuki Casual Sad1 at left
+    with dissolve
+    "Mikuru said nothing, just sniffling as tears trickled down her cheeks."
+    "Koizumi's eternal smile had withered to a pained shadow of its normal impenetrability." 
+    "Yuki continued staring at her."
+    nvl clear
+    hide Mikuru
+    hide MTears
+    hide Koizumi
+    hide Yuki
+    show Kyon Casual Ser3 at right
+    show Haruhi Casual Unhap2 at left
+    with dissolve
+    "\"Because I do,\" Kyon said, breaking the uncomfortable silence."
+    nvl clear
+    scene bg MemoryYuki with dissolve
+    "\"I don't know if we can believe everything, but I know that Nagato is a humanoid interface.\"" 
+    nvl clear
+    scene bg MemoryMikuru with dissolve
+    "\"I've traveled through time with Asahina-san. \""
+    nvl clear
+    scene bg MemoryKoizumi with dissolve
+    "\"Koizumi's shown me the places where he and the other espers of his kind fight.... \""
+    scene bg YukiRoomCenter
+    show Kyon Casual Ser2 at right
+    show Haruhi Casual Unhap2 at left
+    with dissolve
+    nvl clear
+    "\"And in every case, all three of them couldn't tell you because their bosses told them not to.\""
+    nvl clear
+    show Haruhi Casual Ang4 at left
+    "\"What about your boss,\" she snapped, turning to eye Kyon with suspicion. \"What does that person say?\""
+    show Kyon Casual Sigh1 at right
+    "\"Right now she's asking me if she has any reason to trust her closest friends,\" he answered."
+    show Kyon Casual Worry1 at right
+    "\"And I'm begging her to, because that may be the only way to save Nagato's life.\""
+    nvl clear
+    show Haruhi Casual Eyeroll1 at left
+    "\"I.... I'm your boss?\" she asked, narrowing her eyes in suspicion. \"You don't work for anyone else?\""
+    show Kyon Casual Ser1 at right
+    "\"Thankfully,\" he agreed, nodding. "
+    nvl clear
+    show Kyon Casual Sigh2 at right
+    "\"I suppose I have done things for Asahina-san and her superiors.\""
+    show Kyon Casual Sigh1 at right
+    "\"I know my actions have benefited Koizumi's Organization.\""
+    show Kyon Casual Ser3 at right
+    "\"But I've only ever done things because I felt it was important for you, or for the sake of the entire world.\""
+    nvl clear
+    show Haruhi Casual Worry1 at left
+    "\"The entire world?\" she pressed, struggling to contain all the new information. \"You've saved the world?\""
+    show Kyon Casual Sigh1 at right
+    "\"Technically, you did,\" he said, shaking his head. \"I just convinced you to do it ... but we already went over that.\""
+    nvl clear
+    show Haruhi Casual Quest1 at left
+    "\"So you're some kind of undercover hero without any of his own special abilities that fights to take care of me, and to save the world?\" she asked."
+    hide Haruhi
+    hide Kyon
+    show Yuki Casual Sad1 at left
+    show Mikuru Cower Casual Smile1 at right
+    with dissolve
+    "\"Yes,\" Mikuru said quickly, nodding. \"He absolutely does! I don't know if you'll believe me, but it's the truth!\""
+    show Yuki Casual SadTalk1 at left
+    "\"When this reality was overwritten with a reality where you had no powers, and none of our factions existed,\" Yuki contributed suddenly, \"he found a way to restore this reality once more, actually creating a parallel universe.\""
+    nvl clear
+    hide Mikuru
+    hide Yuki 
+    show Haruhi Casual Sigh1 at left
+    show Kyon Casual Ser1 at right
+    with dissolve
+    "\"Then I'll believe that,\" she allowed, as strange as it seemed."
+    "But he must be ... it made sense that John Smith was Kyon if he was a normal person who called in favors from others."
+    nvl clear
+    show Haruhi Casual Worry1
+    "But still.... \"Okay. Things are going to change, right now. Kyon, you want me to save Yuki, right?\""
+    show Kyon Casual Sup2
+    "\"You mean, you don't?\" he asked, aghast."
+    show Haruhi Casual Pout1 at left
+    "She winced. \"Of course I do! But I want your opinion!\""
+    show Kyon Casual Ang1 at right
+    "\"Absolutely! Haven't I been clear enough!?\""
+    nvl clear
+    show Haruhi Casual Ang3 at left
+    "\"Okay, then,\" Haruhi decided. \"But no more running around behind my back! Anyone who can't do this is out of the Brigade.\""
+    hide Haruhi
+    hide Kyon
+    show Haruhi Point Casual Ang1 at center
+    with dissolve
+    "\"Everyone who really wants to help me out, and stay in the Brigade ...{w=0.8} everyone who wants to prove to me that this is true and earn my forgiveness for the whole stupid masquerade ...{w=0.8} has to accept me as a boss, just like Kyon!\""
+    nvl clear
+    show Haruhi Point Casual Scold1 at center
+    "She nodded decisively, then her eyes widened slightly in realization. \"Oh, and Koizumi? You're demoted. Kyon's obviously more trustworthy as a vice commander, since you already report to him anyway. Everyone got it? We're the bosses ... not your 'Organizations' or 'Thought Entities' or mysterious future 'superiors' who somehow control your minds!\""
+    nvl clear
+    hide Haruhi
+    show Yuki Casual SadTalk1 at left
+    show Koizumi Crossed Casual Ser1 at center
+    show Mikuru Cower Casual Nervous3 at right
+    show MTears Casual at right
+    with dissolve
+    "\"Understood,\" Yuki replied quietly. \"Permissions change indexed. Awaiting transfer.\""
+    show Yuki Casual Sad1 at left
+    show Koizumi Casual Ser2 at center
+    "\"I promised this already,\" Koizumi agreed shakily. \"Very well.\""
+    show Koizumi Casual Ser1 at center
+    show Mikuru Casual Wince1 at right
+    "\"I.... I can't,\" Mikuru whimpered. \"I'm not even allowed to try! Oh, Suzumiya-san, I would, but I can't...\" Mikuru's eyes widened as she looked up, blinking away her tears."
+    nvl clear
+    hide MTears
+    show Mikuru Casual Sup1 at right
+    "\"I ... I'm getting a message?\" she asked. {w}\"I ... I am allowed to do whatever Kyon-kun asks? B...but not you? I don't understand! I'm sorry, those are just my instructions!\""
+    nvl clear
+    hide Mikuru
+    hide Koizumi
+    show Haruhi Casual Eyeroll1 at left
+    show Kyon Casual Ser1 at right
+    show Yuki Casual Sad2 at center
+    with dissolve
+    "\"Well, fine,\" Haruhi grumbled, narrowing her eyes. \"I can trust him.\""
+    show Kyon Casual Ser2 at right
+    "\"Right,\" Kyon said, looking at the interface at the table. \"Nagato, how much time is left?\""
+    show Yuki Casual SadTalk2 at center
+    show Kyon Casual Ser1 at right
+    "\"Thirty two minutes, fifteen seconds,\" she said."
+    nvl clear
+    show Haruhi Casual Worry1 at left
+    show Yuki Casual Sad1 at center
+    "\"So ... how do we do this?\" Haruhi asked, biting her lip. \"How do I use my power?\""
+    show Kyon Casual Ser3 at right
+    "\"Your power is very dangerous,\" Kyon warned her. \"If it's used incorrectly, you might accidentally destroy the universe. But Nagato can use that power safely. {w}So, my idea is that you can become her boss and replace the Integrated Data Sentience Entity for her, and hopefully we won't have to destroy them. {w}If we have to, then they have to go ... that's all there is to it. But if we can avoid that ... well. Nagato, can you do what I'm thinking of?\""
+    nvl clear
+    show Kyon Casual Ser1 at right
+    show Yuki Casual SadTalk1 at center
+    "Yuki blinked several times, then said, \"A memetic link can be formed between myself and Suzumiya Haruhi, such that all created data is cached within an internal buffer for analysis to await approval or disapproval. This will require the permissions of Suzumiya Haruhi, and an additional password carrier.\" Her eyes fixed on Kyon. \"That carrier shall be you. Is this acceptable?\""
+    nvl clear
+    show Haruhi Casual Sigh1 at left
+    "\"If that's how it has to be done,\" Haruhi agreed with a shrug. \"I don't want you to die, Yuki.... Kyon?\""
+    show Kyon Casual Ser2 at right
+    "\"Yeah,\" he said, nodding quickly. \"Let's do it.\""
+    nvl clear
+    show Yuki Casual Sad1 at HalfLeft with move
+    show Haruhi Casual Worry1 at left
+    "Rising from her seat, the smaller girl reached both hands out and placed her fingertips across the sides of Haruhi's head. "
+    show Yuki Casual SadTalk1 at HalfLeft
+    "\"Link established,\" she declared after a minute of silent staring into the taller girl's eyes."
+    show Yuki Casual SadTalk2 at HalfLeft
+    "\"Awaiting data creation.\""
+    nvl clear
+    show Haruhi Casual Quest1 at left
+    "\"Data creation?\" Haruhi asked, frowning. \"What does that mean exactly?\""
+    scene bg YukiRoomCenter
+    show Koizumi Crossed Casual Smile1 at center
+    with dissolve
+    "\"It has to do with how ... what she is views our world,\" Koizumi supplied helpfully. \"From our point of view, think of it as the ability to create new aspects of reality. I believe she is prepared for you to try and use your powers.\""
+    nvl clear
+    scene bg YukiRoomCenter
+    show Haruhi Casual Ang1 at left
+    show Kyon Casual Ser1 at right
+    show Yuki Casual Sad1 at center
+    with dissolve
+    "\"Yeah, but ... how do I do that?\""
+    show Kyon Casual Ser2 at right
+    "\"Try and believe something,\" Kyon suggested. \"Believe that Yuki is going to be fine, and will report to you from now on.\""
+    nvl clear
+    show Haruhi Casual Focus1 at left
+    "Haruhi shifted her gaze to the smaller girl before her, then took a deep breath and closed her eyes, concentrating."
+    show Haruhi Casual Sigh1 at left
+    "\"Yuki works for me,\" she muttered. \"She's a real alien ... but she's going to break away from her bosses and work for me....\""
+    nvl clear
+    show Yuki Casual SadTalk2 at center
+    "\"Program loaded,\" Yuki said. Turning her eyes to Kyon, she asked, \"Permission to proceed?\""
+    show Kyon Casual Ser3 at right
+    "\"Granted,\" he said without hesitation."
+    nvl clear
     
-    
-    # "\"But you're saying, I have a power I don't even know about?\" Haruhi asked, now pacing anxiously back and forth."
-    # "\"Why would you have kept this a secret from me?! Even more than the fact that you're the people I've been looking for, the fact that I can do things!\""
-    # "She looked on the verge of tears and laughter at the same time."
-    # nvl clear
-    # "\"That was the decision of my superiors,\" Koizumi offered, frowning."
-    # "\"It was believed that ... there could be unfortunate consequences.\""
-    # nvl clear
-    # "\"And you,\" she continued, peering at Mikuru, \"also followed your instructions?\""
-    # "\"U...um,\" Mikuru said, shrinking into herself slightly."
-    # "\"I...it's not a matter of choice for me ... literally, I can't talk about classified information when it's classified. If I try to, then classified info...\""
-    # "She hung her head with a weary sigh. \"Sorry.\""
-    # nvl clear
-    # "\"And you?\" she pressed, turning her gaze to Yuki, who sat at the table, staring at the teacups."
-    # "\"Focus is on preventing my imminent deletion,\" the interface finally answered. \"Limited resources.\""
-    # nvl clear
-    # "\"So, all along, the lowliest ranking member of the SOS Brigade is the only one who ever actually tried to tell me the truth,\" Haruhi grumbled."
-    # "\"That aside,\" Kyon said, shifting his shoulders, \"we can talk about this later. I'm sorry, but I'm really worried about Nagato. Since you believe us, or at least, I think you do...\""
-    # "\"I don't,\" she countered. \"I believe you. Because you tried. But....\" She trailed off and shrugged, gesturing to the other three."
-    # "\"The people who wormed their way into my good graces were working against me! How can I trust them?\""
-    # nvl clear
-    # "Mikuru said nothing, just sniffling as tears trickled down her cheeks."
-    # "Koizumi's eternal smile had withered to a pained shadow of its normal impenetrability." 
-    # "Yuki continued staring at her."
-    # nvl clear
-    # "\"Because I do,\" Kyon said, breaking the uncomfortable silence."
-    # "\"I don't know if we can believe everything, but I know that Nagato is a humanoid interface.\"" 
-    # "\"I've traveled through time with Asahina-san. \""
-    # "\"Koizumi's shown me the places where he and the other espers of his kind fight.... \""
-    # "\"And in every case, all three of them couldn't tell you because their bosses told them not to.\""
-    # nvl clear
-    # "\"What about your boss,\" she snapped, turning to eye Kyon with suspicion. \"What does that person say?\""
-    # "\"Right now she's asking me if she has any reason to trust her closest friends,\" he answered. \"And I'm begging her to, because that may be the only way to save Nagato's life.\""
-    # nvl clear
-    # "\"I.... I'm your boss?\" she asked, narrowing her eyes in suspicion. \"You don't work for anyone else?\""
-    # "\"Thankfully,\" he agreed, nodding. "
-    # nvl clear
-    # "\"I suppose I have done things for Asahina-san and her superiors.\""
-    # "\"I know my actions have benefited Koizumi's Organization.\""
-    # "\"But I've only ever done things because I felt it was important for you, or for the sake of the entire world.\""
-    # nvl clear
-    # "\"The entire world?\" she pressed, struggling to contain all the new information. \"You've saved the world?\""
-    # "\"Technically, you did,\" he said, shaking his head. \"I just convinced you to do it ... but we already went over that.\""
-    # nvl clear
-    # "\"So you're some kind of undercover hero without any of his own special abilities that fights to take care of me, and to save the world?\" she asked."
-    # "\"Yes,\" Mikuru said quickly, nodding. \"He absolutely does! I don't know if you'll believe me, but it's the truth!\""
-    # nvl clear
-    # "\"When this reality was overwritten with a reality where you had no powers, and none of our factions existed,\" Yuki contributed suddenly, \"he found a way to restore this reality once more, actually creating a parallel universe.\""
-    # "\"Then I'll believe that,\" she allowed, as strange as it seemed."
-    # "But he must be ... it made sense that John Smith was Kyon if he was a normal person who called in favors from others."
-    # nvl clear
-    # "But still.... \"Okay. Things are going to change, right now. Kyon, you want me to save Yuki, right?\""
-    # "\"You mean, you don't?\" he asked, aghast."
-    # "She winced. \"Of course I do! But I want your opinion!\""
-    # "\"Absolutely! Haven't I been clear enough!?\""
-    # nvl clear
-    # "\"Okay, then,\" Haruhi decided. \"But no more running around behind my back! Anyone who can't do this is out of the Brigade.{w=0.8} Everyone who really wants to help me out, and stay in the Brigade ...{w=0.8} everyone who wants to prove to me that this is true and earn my forgiveness for the whole stupid masquerade ...{w=0.8} has to accept me as a boss, just like Kyon!\""
-    # nvl clear
-    # "She nodded decisively, then her eyes widened slightly in realization. \"Oh, and Koizumi? You're demoted. Kyon's obviously more trustworthy as a vice commander, since you already report to him anyway. Everyone got it? We're the bosses ... not your 'Organizations' or 'Thought Entities' or mysterious future 'superiors' who somehow control your minds!\""
-    # nvl clear
-    # "\"Understood,\" Yuki replied quietly. \"Permissions change indexed. Awaiting transfer.\""
-    # "\"I promised this already,\" Koizumi agreed shakily. \"Very well.\""
-    # "\"I.... I can't,\" Mikuru whimpered. \"I'm not even allowed to try! Oh, Suzumiya-san, I would, but I can't...\" Mikuru's eyes widened as she looked up, blinking away her tears."
-    # nvl clear
-    # "\"I ... I'm getting a message?\" she asked. {w}\"I ... I am allowed to do whatever Kyon-kun asks? B...but not you? I don't understand! I'm sorry, those are just my instructions!\""
-    # nvl clear
-    # "\"Well, fine,\" Haruhi grumbled, narrowing her eyes. \"I can trust him.\""
-    # "\"Right,\" Kyon said, looking at the interface at the table. \"Nagato, how much time is left?\""
-    # "\"Thirty two minutes, fifteen seconds,\" she said."
-    # nvl clear
-    # "\"So ... how do we do this?\" Haruhi asked, biting her lip. \"How do I use my power?\""
-    # "\"Your power is very dangerous,\" Kyon warned her. \"If it's used incorrectly, you might accidentally destroy the universe. But Nagato can use that power safely. {w}So, my idea is that you can become her boss and replace the Integrated Data Sentience Entity for her, and hopefully we won't have to destroy them. {w}If we have to, then they have to go ... that's all there is to it. But if we can avoid that ... well. Nagato, can you do what I'm thinking of?\""
-    # nvl clear
-    # "Yuki blinked several times, then said, \"A memetic link can be formed between myself and Suzumiya Haruhi, such that all created data is cached within an internal buffer for analysis to await approval or disapproval. This will require the permissions of Suzumiya Haruhi, and an additional password carrier.\" Her eyes fixed on Kyon. \"That carrier shall be you. Is this acceptable?\""
-    # nvl clear
-    # "\"If that's how it has to be done,\" Haruhi agreed with a shrug. \"I don't want you to die, Yuki.... Kyon?\""
-    # "\"Yeah,\" he said, nodding quickly. \"Let's do it.\""
-    # nvl clear
-    # "Rising from her seat, the smaller girl reached both hands out and placed her fingertips across the sides of Haruhi's head. "
-    # "\"Link established,\" she declared after a minute of silent staring into the taller girl's eyes."
-    # "\"Awaiting data creation.\""
-    # nvl clear
-    # "\"Data creation?\" Haruhi asked, frowning. \"What does that mean exactly?\""
-    # "\"It has to do with how ... what she is views our world,\" Koizumi supplied helpfully. \"From our point of view, think of it as the ability to create new aspects of reality. I believe she is prepared for you to try and use your powers.\""
-    # nvl clear
-    # "\"Yeah, but ... how do I do that?\""
-    # "\"Try and believe something,\" Kyon suggested. \"Believe that Yuki is going to be fine, and will report to you from now on.\""
-    # nvl clear
-    # "Haruhi shifted her gaze to the smaller girl before her, then took a deep breath and closed her eyes, concentrating."
-    # "\"Yuki works for me,\" she muttered. \"She's a real alien ... but she's going to break away from her bosses and work for me....\""
-    # nvl clear
-    # "\"Program loaded,\" Yuki said. Turning her eyes to Kyon, she asked, \"Permission to proceed?\""
-    # "\"Granted,\" he said without hesitation."
-    # nvl clear
-    
-    
+#     
     # "After finishing his breakfast and heading to school, he was startled to run into Haruhi at the train station at the bottom of the hill ... literally."
     # "The girl shot out from behind one of the pillars supporting the heavy structure keeping rainwater off the train platform, nearly plowing him over as she launched herself, arms wrapping around him as she swung around with her momentum, crying out, \"YES!\""
     # "Struggling and only barely managing to keep his balance, he eyed all of the other Kitago students around them, watching with raised eyebrows and open smirks."
