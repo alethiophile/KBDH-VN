@@ -7,6 +7,7 @@ label AO1_1:
     scene bg stairwell with None:
         size (800,600)
     if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
         # copy last 'play music' from the previous chapter (if scene is continued) or start apropriate chapter music
         play music "music/YukiAsakuraFight.mp3" fadein 1
     #Preparation for Chapter end
