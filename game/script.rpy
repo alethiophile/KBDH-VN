@@ -265,7 +265,6 @@ init:
     image Yuki Casual Sad1 = "Sprites/Yuki/YukiSideCasualSad1.png"
     image Yuki Casual Sad2 = "Sprites/Yuki/YukiSideCasualSad2.png"
     image Yuki Casual Sad3 = "Sprites/Yuki/YukiSideCasualSad3.png"
-    image Yuki Talk1 = "Sprites/Yuki/YukiSideCasualSadTalk1.png"
     image Yuki Casual SadTalk2 = "Sprites/Yuki/YukiSideCasualSadTalk2.png"
     image Yuki Casual SadTalk3 = "Sprites/Yuki/YukiSideCasualSadTalk3.png"
     
