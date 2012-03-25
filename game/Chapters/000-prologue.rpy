@@ -33,19 +33,13 @@ label prologue:
     show Haruhi Sup1 at left
     show Kyon Ser1 at center
     with fast_move
+    $ _window = True
     "\"Bwa!\" she protested, arms waving frantically as she dashed to keep up, or risk the knot being pulled out."
-    #show Haruhi Ang2 at center
-    #show Kyon Ser1 at right
-    #with fast_move
-    #show Haruhi Ang2 at left
-    #show Kyon Ser1 at center
-    show Haruhi Ang2: 
-        left
-        linear 0.5 center
-    show Kyon Ser1: 
-        center
-        linear 0.5 right
+    show Haruhi Ang2 at center
+    show Kyon Ser1 at right
+    with fast_move
     "\"What the hell do you think you're doing!?\""
+    $ _window = False
     show Haruhi Sup1 at center with None
     show Haruhi Sup1 at osr_left
     show Kyon Ser1 at osr_center
@@ -65,17 +59,25 @@ label prologue:
     "He released her at the top of the steps after looking around to ensure that no one else was nearby."
     "Her momentum carried her forward, resulting in him pressing one hand flat against her chest, just below her neck."
     # Z0: Added the "stopping after the dash"
+    
     show Kyon Ser1 at osl_right
     show Haruhi Ang3 at osl_center
     with None
     show Kyon Ser1 at center
     show Haruhi Ang3 at center_left
     with fast_move
+    #show Kyon Ser1: 
+    #    xalign -0.25 yalign 1.0
+    #    linear 0.25 center
+    #show Haruhi Ang3: 
+    #    xalign -0.50 yalign 1.0
+    #    linear 0.25 center_left
     # Z0: End of "stopping"
     "Her eyes quickly sharpened, her features fixed into a scowl."
     nvl clear
     show Haruhi Ang3 at center_left
     "\"What the hell, Kyon!?\""
+    $ _window = True
     show Kyon Ser1 at right with move
     "He held up one hand and said, \"Something's up.\""
     show Haruhi Hap3 at center_left
@@ -134,11 +136,13 @@ label prologue:
     play music "music/YukiAsakuraFight.mp3" fadein 1
     # Set this up EVERY time last 'play music' in chapter is started
     $ music_need = False
-    show Kyon Ser2 at right
-    pause 1
+    # show Kyon Ser2 at right
+    # pause 1
     play sound "SE/DunDun.mp3"
-    "Standing perfectly straight, hands at his sides, he closed his eyes, and began speaking in his best faux movie announcer voice-over."
+    show Kyon Sigh3 at right
+    "{w=1.0}Standing perfectly straight, hands at his sides, he closed his eyes, and began speaking in his best faux movie announcer voice-over."
     # Z0: Emulating a "movie-narration. Could be {font=fancyfont.ttf}stuffs{/font} rather than bold, but that would require said fancyfont...
+    show Kyon Ser2 at right
     "\"Skinsuit active,\" "
     play sound "SE/Sizzle2.mp3"
     show Skinsuit at right with wipeupslow
@@ -159,10 +163,6 @@ label prologue:
     show Kyon Ser2 at right
     "Switching back, he said, \"Primary weapons check.\""     
     nvl clear
-    play sound "SE/lowswoosh.mp3"
-    pause .02
-    play sound "SE/lowswoosh.mp3"
-    pause .02
     play sound "SE/lowswoosh.mp3"
     "He pulled a fifty centimeter long glittering metal cylinder from within the greatcoat, releasing it to spin on its axis in midair to one side, announcing, \"Long range precision and high yield weaponry is at full charge.\""
     play sound "SE/Barrier2.mp3"
