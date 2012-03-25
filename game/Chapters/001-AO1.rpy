@@ -34,7 +34,7 @@ label AO1_1:
     show Kyon Sigh2 at right
     show Skinsuit at right
     show Coat at right
-    "\"She's alien,\" Kyon volunteered.{nw} "
+    "\"She's an alien,\" Kyon volunteered.{nw} "
     show Kyon Neutral2 at right
     extend "\"From the same place as Yuki-chan and Kimidori, but she tried to kill me once.\""
     show Haruhi Sup1 at left
@@ -166,7 +166,6 @@ label AO1_1:
     play sound "SE/DunDun.mp3"
     show Asakura Smile3 at center
     "She clapped her hands together before her and drew them apart, flinging a fan of dozens of identical knives outward."
-    hide Asakura
     play sound "SE/lowswoosh.mp3"
     scene black with fade
     show knifethrow with moveinleft
@@ -304,10 +303,11 @@ label AO1_1:
     "He didn't even bother to grab the phone on the way out."
     "\"Can I come with...\" {nw}"
     play sound "SE/doorclose.mp3"
+    stop music
     scene bg KyonHouseNight
     extend "she began, before the door slammed shut. Shrugging, she turned back to the game after flipping Kyon's phone closed."
     nvl clear
-    stop music fadeout 1
+    # stop music fadeout 1
     play music "Music/Nagato2.mp3"
     "He calculated the ride to Nagato's place as a twenty minute trip, at one point."
     scene bg TownStreetNight1 with wiperight
@@ -345,8 +345,9 @@ label AO1_1:
     "\"To prevent this, deletion has been scheduled in three hours, twenty one minutes, fifteen seconds; I will be replaced with an interface more suited to defending against possible Sky Canopy Domain interference.\""
     nvl clear
     show Kyon Casual Sigh1 at right
+    show Yuki Side1 at left
     "After taking a deep breath, he growled, \"There isn't enough milk in the world.\""
-    show Yuki Side SmallBlink at left
+    show Yuki Side Blink at left
     "She blinked several times in response."
     show Kyon Casual Worry2 at right
     "\"How set is this?\" he asked, his hands shaking too much to hold the teacup properly."
@@ -377,9 +378,10 @@ label AO1_1:
     show Yuki Side1 at left
     "\"I don't care!\" he shouted."
     "\"I've always relied on you — now that you need help, I am {i}not{/i} going to just stand by and watch you get taken away from— from us!\""
-    show Yuki SideEyesClosed1 at left
-    pause (0.2)
-    show Yuki Side1 at left
+    # show Yuki SideEyesClosed1 at left
+    # pause (0.2)
+    # show Yuki Side1 at left
+    show Yuki Side Blink at left
     "She blinked, considering, then lowered her head slightly in her infinitesimal nod."
     nvl clear
     show Yuki Talk1 at left
@@ -455,7 +457,7 @@ label AO1_1:
     "\"I wish it was,\" he said back crossly, and she found herself taken aback at the force in his tone."
     scene black with dissolve
     nvl clear
-    "She had a mental catalogue of Kyon-like behaviors, and this fell firmly into the category of the seldom-seen, but always feared angry Kyon."
+    "She had a mental catalogue of Kyon-like behaviors, and this fell firmly into the category of the seldom-seen, but always feared {i}angry{/i} Kyon."
     "Dour, upset, irked, sarcastic, caustic ... sure. But angry?"
     "Hell, she'd once smashed his head into her desk — entirely on accident — and he was only {i}annoyed{/i}. And it wasn't for hitting his head, it was for disrupting a class!"
     "Nevermind that he had been dozing off before that."
@@ -705,14 +707,24 @@ label AO1_1:
     nvl clear
     show Haruhi Casual Sup3 at left
     "\"{i}You're{/i} John Smith!\""
-    play sound "SE/impact.mp3"
-    show Haruhi Casual Hap3 at HalfRight with MoveTransition(.2)
+    $ _window = True
+    # show Haruhi Casual Hap3 at HalfRight with MoveTransition(.2) 
+    show Haruhi Casual Hap3 at left
+    show Haruhi Casual Hap3 at HalfRight with fast_move
+    pause(0.0)
+    show Kyon Casual Ser1 at osr_center
+    show Haruhi Casual Hap3 at osr_center 
+    with fast_move 
+    play sound "SE/impact.mp3" 
+    show Haruhi Casual Hap3 at osr_center with sshake
     "She wasn't aware of getting up from the table, uncertain if she had moved around or just jumped over it — she just knew that she had flung herself at him, tackling him to the floor and grabbing on tightly."
     "\"I {i}knew{/i} it!\" she yelled."
-    nvl clear
-    scene black
+    # nvl clear
+    # scene black
     stop music fadeout 5
     "\"I {i}knew{/i} I'd find you again!\""
+    $ _window = False
+    scene black with dissolve
     nvl clear
     jump prologue2
 

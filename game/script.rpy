@@ -271,13 +271,15 @@ init:
     image Yuki Side Blink:
         "Sprites/Yuki/YukiSide1.png"
         0.1
-        "Sprites/Yuki/YukiSide1.png"
+        "Sprites/Yuki/YukiSideSad1.png"
         0.1
         "Sprites/Yuki/YukiSideEyesClosed1.png"
         0.1
-        "Sprites/Yuki/YukiSide1.png"
+        "Sprites/Yuki/YukiSideSad1.png"
         0.1
         "Sprites/Yuki/YukiSide1.png"
+        4.0
+        repeat
     image Yuki Side SmallBlink:
         "Sprites/Yuki/YukiSide1.png"
         0.1
