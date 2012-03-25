@@ -272,7 +272,10 @@ label AO1_1:
     "How had it come to this, anyway...?"
     stop music fadeout 1
     nvl clear
-    scene black with dissolve
+    scene title1 with slowfadein
+    
+    pause
+    play sound "SE/Pageflip3.mp3"
     nvl clear
     play music "Music/Nichijou.mp3"
     $ renpy.music.set_volume(0.5, .5, channel="music")
@@ -401,16 +404,18 @@ label AO1_1:
     nvl clear
     scene bg YukiRoomCenter with wipeup
     "After trekking all the way there, much to her annoyance, she found that she was the last to arrive."
-    show Mikuru Cower Casual Nervous1 at right
+    show Mikuru Cower Casual Nervous1 at left
     show Koizumi Crossed Casual Uneasy1 at center
-    show Yuki Side1 at left
+    show Yuki Side1 at right
+    with dissolve
     "Mikuru sat at one side of the table, opposite Yuki."
     "Koizumi sat between them, his eternal smile faded to half its normal strength."
     scene bg YukiRoomRight
     show Kyon Casual Ser1 at right
+    show Yuki Side2 at left
+    with dissolve
     "Kyon himself stood next to her — he was the one who had answered the intercom and let her in."
     nvl clear
-    show Yuki Side2 at left
     show Haruhi Crossed Casual Eyeroll1 at HalfLeft with moveinright
     "She narrowed her eyes at him and kicked her shoes off, storming into the room to Yuki's side and immediately pressing one palm onto the smaller girl's forehead."
     show Haruhi Crossed Casual Sigh1 at HalfLeft
@@ -436,6 +441,7 @@ label AO1_1:
     show Mikuru Cower Casual Nervous1 at left 
     show Koizumi Crossed Casual Uneasy1 at center
     show Haruhi Crossed Casual Quest1 at right
+    with dissolve
     "\"Mikuru?\""
     show Mikuru Cower Casual Nervous2 at left 
     "\"Um ... classified.\""
@@ -448,6 +454,7 @@ label AO1_1:
     scene bg YukiRoomRight
     show Haruhi Casual Ang3 at HalfLeft
     show Kyon Casual Ser1 at right
+    with dissolve
     "Turning around, she glared at Kyon, letting her irritation return and focus on him full-force."
     show Haruhi Casual Ang2 at HalfLeft
     "\"I am not in the mood for pranks!\" she snapped."
@@ -521,6 +528,7 @@ label AO1_1:
     scene bg YukiRoomCenter
     show Koizumi Crossed Casual Ser1 at center
     show Haruhi Crossed Casual Ang3 at right
+    with dissolve
     "\"Yes,\" the smiling boy said, though his smile had completely vanished. "
     show Koizumi Crossed Casual Ser2 at center
     "\"As much as it scares me.... Suzumiya-san, Kyon-kun is speaking the truth.\""
@@ -633,14 +641,14 @@ label AO1_1:
     show Mikuru Cower Casual Nervous1 at right
     show MBlush at right
     show Yuki Side1 at left
-    with fade
+    with dissolve
     "Koizumi looked uncomfortable. Mikuru's face turned red, and she began studying the bottom of her teacup intently."
     "Yuki merely stared at her, unblinking."
     nvl clear
     scene bg YukiRoomCenter
     show Haruhi Casual Pout1 at left
     show Kyon Casual Ser1 at right
-    with fade
+    with dissolve
     "\"I never told anyone that,\" she mumbled."
     show Kyon Casual Ser2 at right
     "\"In the end, I told you that I wanted to come back to {i}this{/i} world,\" Kyon said."
@@ -675,6 +683,7 @@ label AO1_1:
     hide Haruhi
     hide Kyon
     show Koizumi Crossed Casual Smile1 at center
+    with dissolve
     nvl clear
     "\"Actually, Kyon-kun, you may be,\" the supposed esper said, smiling."
     show Koizumi Crossed Casual Smile2 at center
@@ -683,6 +692,7 @@ label AO1_1:
     hide Koizumi
     show Kyon Casual Sigh1 at right
     show Haruhi Casual Worry1 at left
+    with dissolve
     "\"Nevermind that!\" he said quickly, shaking his head."
     show Kyon Casual Ser3 at right
     "\"Haruhi, there's something I have to tell you, something I think will make you believe me.\""
