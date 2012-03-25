@@ -27,7 +27,7 @@ init python:
     renpy.music.register_channel("sound2", "sfx", 0)
     _preferences.set_volume("sfx", 0.5)
     
-    # positions on the (imaginary) screen situatet directly left of one shown.
+    # positions on the (imaginary) screen situated directly left of one shown.
     osl_center = Position(xanchor=0.5, yalign=1.0, xpos=-0.5)
     osl_right = Position(xanchor=0.5, yalign=1.0, xpos=-0.25)
     # positions on the (imaginary) screen situatet directly right of one shown.
@@ -649,39 +649,39 @@ label ch001__AO_1:
     scene bg YukiRoomCenter with wipeup
     "After taking the elevator to her floor, he slowed his mad pace, seeing her standing outside the doorway to her apartment, waiting for him."
     nvl clear
-    show Yuki Casual Sad1 at left
+    show Yuki Side1 at left
     "He tried to imagine that he saw some relief around her eyes when he reached her side, but wasn't confident enough to be certain that was the case."
     show Kyon Casual Ser1 at right
     "\"Nagato,\" he said, nodding. \"What's wrong?\""
     nvl clear
-    show Yuki Casual Sad2 at left
+    show Yuki Side2 at left
     "She gestured him inside, leading him to the table."
     "He kicked off his shoes and went to the kotatsu, watching her warily."
     "After pouring a cup of tea for each of them in silence, she finally spoke."
     nvl clear
-    show Yuki Casual SadTalk1 at left
+    show Yuki Talk1 at left
     "\"The Integrated Data Sentience Entity has determined that I have become a liability,\" she said in a soft monotone, nearly devoid of inflection."
     show Kyon Casual Sup1 at right
     nvl clear
     "He stared at her for a long minute, blinking. \"What ... do you mean?\""
     show Kyon Casual Sup2 at right
-    show Yuki Casual SadTalk2 at left
+    show Yuki Talk2 at left
     "\"Factors within my makeup have become too unpredictable. It has been calculated that I will commit another error."
-    show Yuki Casual SadTalk1 at left
+    show Yuki Talk1 at left
     "\"To prevent this, deletion has been scheduled in three hours, twenty one minutes, fifteen seconds; I will be replaced with an interface more suited to defending against possible Sky Canopy Domain interference.\""
     nvl clear
     show Kyon Casual Sigh1 at right
     "After taking a deep breath, he growled, \"There isn't enough milk in the world.\""
-    show Yuki Casual Side SmallBlink at left
+    show Yuki Side SmallBlink at left
     "She blinked several times in response."
     show Kyon Casual Worry2 at right
     "\"How set is this?\" he asked, his hands shaking too much to hold the teacup properly."
-    show Yuki Casual SadTalk2 at left
+    show Yuki Talk2 at left
     "\"It is absolute.\""
     nvl clear
     show Kyon Casual Sigh1 at right
     "He took another deep breath, then jumped to his feet, nearly upsetting the table, and began pacing back and forth in her living room."
-    show Yuki Casual Sad2 at left
+    show Yuki Side2 at left
     "She watched him silently."
     nvl clear
     show Kyon Casual Ser2 at right
@@ -691,26 +691,28 @@ label ch001__AO_1:
     show Kyon Casual Worry2 at right
     "Biting off a curse, he asked, \"Can I use your phone, Nagato? I need to call Haruhi and the others.\""
     nvl clear
-    show Yuki Casual Sad3 at left
+    show Yuki SideDisappointedTalk1 at left
     "For a moment, mild disappointment flickered around her eyes. \"It is not necessary.\""
+    show Yuki Side1 at left
     show Kyon Casual Ser1 at right
     "He stared at her, then shook his head. \"What do you mean?\""
-    show Yuki Casual SadTalk3 at left
+    show Yuki Talk1 at left
     "\"I requested your presence for ... personal reasons,\" she said. \"It was not a request for help.\""
     nvl clear
     show Kyon Casual Ang1 at right
+    show Yuki Side1 at left
     "\"I don't care!\" he shouted."
     "\"I've always relied on you — now that you need help, I am {i}not{/i} going to just stand by and watch you get taken away from— from us!\""
-    show Yuki Casual EyesClosed1 at left
+    show Yuki SideEyesClosed1 at left
     pause (0.2)
-    show Yuki Casual Sad1 at left
+    show Yuki Side1 at left
     "She blinked, considering, then lowered her head slightly in her infinitesimal nod."
     nvl clear
-    show Yuki Casual SadTalk1 at left
+    show Yuki Talk1 at left
     "\"I see,\" she said quietly."
     show Kyon Casual Sigh1 at right
     "\"So, I need to make some phone calls.\""
-    show Yuki Casual SadTalk2 at left
+    show Yuki Talk2 at left
     "\"Understood.\""
     stop music fadeout 3
     nvl clear
@@ -725,14 +727,14 @@ label ch001__AO_1:
     "After trekking all the way there, much to her annoyance, she found that she was the last to arrive."
     show Mikuru Cower Casual Nervous1 at right
     show Koizumi Crossed Casual Uneasy1 at center
-    show Yuki Casual Sad1 at left
+    show Yuki Side1 at left
     "Mikuru sat at one side of the table, opposite Yuki."
     "Koizumi sat between them, his eternal smile faded to half its normal strength."
     scene bg YukiRoomRight
     show Kyon Casual Ser1 at right
     "Kyon himself stood next to her — he was the one who had answered the intercom and let her in."
     nvl clear
-    show Yuki Casual Sad2 at left
+    show Yuki Side2 at left
     show Haruhi Crossed Casual Eyeroll1 at HalfLeft with moveinright
     "She narrowed her eyes at him and kicked her shoes off, storming into the room to Yuki's side and immediately pressing one palm onto the smaller girl's forehead."
     show Haruhi Crossed Casual Sigh1 at HalfLeft
@@ -740,18 +742,18 @@ label ch001__AO_1:
     show Haruhi Crossed Casual Worry1 at HalfLeft
     "\"But if you're sick, you shouldn't be up and about anyway.\""
     nvl clear
-    show Yuki Casual SadTalk1 at left
+    show Yuki Talk1 at left
     "\"Not sick,\" Yuki answered."
     show Haruhi Casual Ang3 at HalfLeft
     "When Haruhi turned to Kyon and scowled at him, she corrected, \"Dying.\""
     nvl clear
-    show Yuki Casual Sad1 at left
+    show Yuki Side1 at left
     show Haruhi Casual Sup1 at HalfLeft
     "Her irritation at Kyon's practical joke momentarily blew away, like settled dust being disturbed."
     show Haruhi Crossed Casual Sup2 at HalfLeft
     "\"Dying!?\" she yelped, turning to stare at the smaller girl."
     "\"What of? How?\""
-    show Yuki Casual SadTalk1 at left
+    show Yuki Talk1 at left
     "Yuki blinked twice, then answered, \"I am not able to say.\""
     nvl clear
     scene bg YukiRoomCenter
@@ -889,14 +891,14 @@ label ch001__AO_1:
     "Saving that thought for later, she turned her gaze to Yuki."
     nvl clear
     scene bg YukiRoomLeft
-    show Yuki Casual Sad1 at left
+    show Yuki Side1 at left
     show Haruhi Crossed Casual Quest1 at center
     show Kyon Casual Ser1 at right
     with dissolve
     "\"And you're an alien?\""
-    show Yuki Casual SadTalk1 at left
+    show Yuki Talk1 at left
     "\"The function allowing me to confirm or deny that data has been denied at this juncture in time,\" she answered."
-    show Yuki Casual SadTalk2 at left
+    show Yuki Talk2 at left
     "Turning to Kyon, she added, \"One hour and twenty minutes remain.\""
     nvl clear
     show Kyon Casual Worry2 at right
@@ -954,7 +956,7 @@ label ch001__AO_1:
     show Koizumi Crossed Casual Uneasy1 at center
     show Mikuru Cower Casual Nervous1 at right
     show MBlush at right
-    show Yuki Casual Sad1 at left
+    show Yuki Side1 at left
     with fade
     "Koizumi looked uncomfortable. Mikuru's face turned red, and she began studying the bottom of her teacup intently."
     "Yuki merely stared at her, unblinking."
@@ -1496,10 +1498,10 @@ label prologue2:
     "She hung her head with a weary sigh. \"Sorry.\""
     nvl clear
     hide Mikuru 
-    show Yuki Casual Sad1
+    show Yuki Side1
     with dissolve
     "\"And you?\" she pressed, turning her gaze to Yuki, who sat at the table, staring at the teacups."
-    show Yuki Casual SadTalk1
+    show Yuki Talk1
     "\"Focus is on preventing my imminent deletion,\" the interface finally answered. \"Limited resources.\""
     nvl clear
     hide Yuki
@@ -1522,7 +1524,7 @@ label prologue2:
     show Mikuru Cower Casual Wince1 at right
     show MTears Casual at right
     show Koizumi Crossed Casual Uneasy3 at center
-    show Yuki Casual Sad1 at left
+    show Yuki Side1 at left
     with dissolve
     "Mikuru said nothing, just sniffling as tears trickled down her cheeks."
     "Koizumi's eternal smile had withered to a pained shadow of its normal impenetrability." 
@@ -1580,11 +1582,11 @@ label prologue2:
     "\"So you're some kind of undercover hero without any of his own special abilities that fights to take care of me, and to save the world?\" she asked."
     hide Haruhi
     hide Kyon
-    show Yuki Casual Sad1 at left
+    show Yuki Side1 at left
     show Mikuru Cower Casual Smile1 at right
     with dissolve
     "\"Yes,\" Mikuru said quickly, nodding. \"He absolutely does! I don't know if you'll believe me, but it's the truth!\""
-    show Yuki Casual SadTalk1 at left
+    show Yuki Talk1 at left
     "\"When this reality was overwritten with a reality where you had no powers, and none of our factions existed,\" Yuki contributed suddenly, \"he found a way to restore this reality once more, actually creating a parallel universe.\""
     nvl clear
     hide Mikuru
@@ -1617,13 +1619,13 @@ label prologue2:
     "She nodded decisively, then her eyes widened slightly in realization. \"Oh, and Koizumi? You're demoted. Kyon's obviously more trustworthy as a vice commander, since you already report to him anyway. Everyone got it? We're the bosses ... not your 'Organizations' or 'Thought Entities' or mysterious future 'superiors' who somehow control your minds!\""
     nvl clear
     hide Haruhi
-    show Yuki Casual SadTalk1 at left
+    show Yuki Talk1 at left
     show Koizumi Crossed Casual Ser1 at center
     show Mikuru Cower Casual Nervous3 at right
     show MTears Casual at right
     with dissolve
     "\"Understood,\" Yuki replied quietly. \"Permissions change indexed. Awaiting transfer.\""
-    show Yuki Casual Sad1 at left
+    show Yuki Side1 at left
     show Koizumi Casual Ser2 at center
     "\"I promised this already,\" Koizumi agreed shakily. \"Very well.\""
     show Koizumi Casual Ser1 at center
@@ -1638,24 +1640,24 @@ label prologue2:
     hide Koizumi
     show Haruhi Casual Eyeroll1 at left
     show Kyon Casual Ser1 at right
-    show Yuki Casual Sad2 at center
+    show Yuki Side2 at center
     with dissolve
     "\"Well, fine,\" Haruhi grumbled, narrowing her eyes. \"I can trust him.\""
     show Kyon Casual Ser2 at right
     "\"Right,\" Kyon said, looking at the interface at the table. \"Nagato, how much time is left?\""
-    show Yuki Casual SadTalk2 at center
+    show Yuki Talk2 at center
     show Kyon Casual Ser1 at right
     "\"Thirty two minutes, fifteen seconds,\" she said."
     nvl clear
     show Haruhi Casual Worry1 at left
-    show Yuki Casual Sad1 at center
+    show Yuki Side1 at center
     "\"So ... how do we do this?\" Haruhi asked, biting her lip. \"How do I use my power?\""
     nvl clear
     show Kyon Casual Ser3 at right
     "\"Your power is very dangerous,\" Kyon warned her. \"If it's used incorrectly, you might accidentally destroy the universe. But Nagato can use that power safely. {w}So, my idea is that you can become her boss and replace the Integrated Data Sentience Entity for her, and hopefully we won't have to destroy them. {w}If we have to, then they have to go ... that's all there is to it. But if we can avoid that ... well. Nagato, can you do what I'm thinking of?\""
     nvl clear
     show Kyon Casual Ser1 at right
-    show Yuki Casual SadTalk1 at center
+    show Yuki Talk1 at center
     "Yuki blinked several times, then said, \"A memetic link can be formed between myself and Suzumiya Haruhi, such that all created data is cached within an internal buffer for analysis to await approval or disapproval. This will require the permissions of Suzumiya Haruhi, and an additional password carrier.\" Her eyes fixed on Kyon. \"That carrier shall be you. Is this acceptable?\""
     nvl clear
     show Haruhi Casual Sigh1 at left
@@ -1663,12 +1665,12 @@ label prologue2:
     show Kyon Casual Ser2 at right
     "\"Yeah,\" he said, nodding quickly. \"Let's do it.\""
     nvl clear
-    show Yuki Casual Sad1 at HalfLeft with move
+    show Yuki Side1 at HalfLeft with move
     show Haruhi Casual Worry1 at left
     "Rising from her seat, the smaller girl reached both hands out and placed her fingertips across the sides of Haruhi's head. "
-    show Yuki Casual SadTalk1 at HalfLeft
+    show Yuki Talk1 at HalfLeft
     "\"Link established,\" she declared after a minute of silent staring into the taller girl's eyes."
-    show Yuki Casual SadTalk2 at HalfLeft
+    show Yuki Talk2 at HalfLeft
     "\"Awaiting data creation.\""
     nvl clear
     show Haruhi Casual Quest1 at left
@@ -1681,7 +1683,7 @@ label prologue2:
     scene bg YukiRoomCenter
     show Haruhi Casual Ang1 at left
     show Kyon Casual Ser1 at right
-    show Yuki Casual Sad1 at center
+    show Yuki Side1 at center
     with dissolve
     "\"Yeah, but ... how do I do that?\""
     show Kyon Casual Ser2 at right
@@ -1692,7 +1694,7 @@ label prologue2:
     show Haruhi Casual Sigh1 at left
     "\"Yuki works for me,\" she muttered. \"She's a real alien ... but she's going to break away from her bosses and work for me....\""
     nvl clear
-    show Yuki Casual SadTalk2 at center
+    show Yuki Talk2 at center
     "\"Program loaded,\" Yuki said. Turning her eyes to Kyon, she asked, \"Permission to proceed?\""
     show Kyon Casual Ser3 at right
     stop music fadeout 3

@@ -243,6 +243,9 @@ init:
                                        im.matrix.brightness(.5))
     image Yuki Side1 = "Sprites/Yuki/YukiSide1.png"
     image Yuki Side2 = "Sprites/Yuki/YukiSide2.png"
+    image Yuki SideDisappointed1 = "Sprites/Yuki/YukiSideDisappointed1.png"
+    image Yuki SideDisappointedTalk1 = "Sprites/Yuki/YukiSideDisappointedTalk1.png"
+    image Yuki SideEyesClosed1 = "Sprites/Yuki/YukiSideEyesClosed1.png"
     image Yuki Talk1 = "Sprites/Yuki/YukiSideTalk1.png"
     image Yuki Talk2 = "Sprites/Yuki/YukiSideTalk2.png"
     image Yuki Sad1 = "Sprites/Yuki/YukiSideSad1.png"
@@ -262,26 +265,26 @@ init:
     image Yuki Casual Sad1 = "Sprites/Yuki/YukiSideCasualSad1.png"
     image Yuki Casual Sad2 = "Sprites/Yuki/YukiSideCasualSad2.png"
     image Yuki Casual Sad3 = "Sprites/Yuki/YukiSideCasualSad3.png"
-    image Yuki Casual SadTalk1 = "Sprites/Yuki/YukiSideCasualSadTalk1.png"
+    image Yuki Talk1 = "Sprites/Yuki/YukiSideCasualSadTalk1.png"
     image Yuki Casual SadTalk2 = "Sprites/Yuki/YukiSideCasualSadTalk2.png"
     image Yuki Casual SadTalk3 = "Sprites/Yuki/YukiSideCasualSadTalk3.png"
     
-    image Yuki Casual Side Blink:
-        "Sprites/Yuki/YukiSideCasual1.png"
+    image Yuki Side Blink:
+        "Sprites/Yuki/YukiSide1.png"
         0.1
-        "Sprites/Yuki/YukiSideCasualSad1.png"
+        "Sprites/Yuki/YukiSide1.png"
         0.1
-        "Sprites/Yuki/YukiSideCasualEyesClosed1.png"
+        "Sprites/Yuki/YukiSideEyesClosed1.png"
         0.1
-        "Sprites/Yuki/YukiSideCasualSad1.png"
+        "Sprites/Yuki/YukiSide1.png"
         0.1
-        "Sprites/Yuki/YukiSideCasual1.png"
-    image Yuki Casual Side SmallBlink:
-        "Sprites/Yuki/YukiSideCasualSad1.png"
+        "Sprites/Yuki/YukiSide1.png"
+    image Yuki Side SmallBlink:
+        "Sprites/Yuki/YukiSide1.png"
         0.1
-        "Sprites/Yuki/YukiSideCasualEyesClosed1.png"
+        "Sprites/Yuki/YukiSideEyesClosed1.png"
         0.15
-        "Sprites/Yuki/YukiSideCasualSad1.png"
+        "Sprites/Yuki/YukiSide1.png"
         3
         repeat
     
