@@ -273,7 +273,10 @@ label AO1_1:
     "How had it come to this, anyway...?"
     stop music fadeout 1
     nvl clear
-    scene black with dissolve
+    scene title1 with slowfadein
+    
+    pause
+    play sound "SE/Pageflip3.mp3"
     nvl clear
     play music "Music/Nichijou.mp3"
     $ renpy.music.set_volume(0.5, .5, channel="music")

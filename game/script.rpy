@@ -33,6 +33,7 @@ init:
     image black = "#000000"
     image yukibackground = "#ccccff"
     image title0 = "Backgrounds/title0.png"
+    image title1 = "Backgrounds/title1.png"
     image Barrier = "Backgrounds/barrier2.jpg"
     image Bluesword = "Backgrounds/bluesword1.png"
     image field = "Sprites/Effects/InterdictionField.png"
