@@ -65,27 +65,18 @@ label prologue:
     "He released her at the top of the steps after looking around to ensure that no one else was nearby."
     "Her momentum carried her forward, resulting in him pressing one hand flat against her chest, just below her neck."
     # Z0: Added the "stopping after the dash"
-    
-    # show Kyon Ser1 at osl_right
-    # show Haruhi Ang3 at osl_center
-    # with None
-    # show Kyon Ser1 at center
-    # show Haruhi Ang3 at center_left
-    # with fast_move
-    show Kyon Ser1: 
-        xalign -0.25 yalign 1.0
-        linear 0.25 center
-    show Haruhi Ang3: 
-        xalign -0.50 yalign 1.0
-        linear 0.25 center_left
+    show Kyon Ser1 at osl_right
+    show Haruhi Ang3 at osl_center
+    with None
+    show Kyon Ser1 at center
+    show Haruhi Ang3 at center_left
+    with fast_move
     # Z0: End of "stopping"
     "Her eyes quickly sharpened, her features fixed into a scowl."
     nvl clear
     show Haruhi Ang3 at center_left
     "\"What the hell, Kyon!?\""
-    show Kyon Ser1: 
-        center
-        linear 0.5 right
+    show Kyon Ser1 at right with move
     "He held up one hand and said, \"Something's up.\""
     show Haruhi Hap3 at center_left
     "Her irritation vanished instantly, replaced with wide-eyed excitement. She clapped her hands together and hopped from foot to foot."
@@ -137,22 +128,19 @@ label prologue:
     show Haruhi Hap4:
         xalign 0.1 yalign 1.0
         linear 0.4 xalign 0.0
+    pause 0.4
     nvl clear
     play music "music/YukiAsakuraFight.mp3" fadein 1
     # Set this up EVERY time last 'play music' in chapter is started
     $ music_need = False
-    play sound "SE/DunDun.mp3"
-    show Kyon Sigh3 at right
-    "{w=1.0}Standing perfectly straight, hands at his sides, he closed his eyes, and began speaking in his best faux movie announcer voice-over."
-    # Z0: Emulating a "movie-narration. Could be {font=fancyfont.ttf}stuffs{/font} rather than bold, but that would require said fancyfont...
     show Kyon Ser2 at right
+    pause 1
+    play sound "SE/DunDun.mp3"
+    "Standing perfectly straight, hands at his sides, he closed his eyes, and began speaking in his best faux movie announcer voice-over."
+    # Z0: Emulating a "movie-narration. Could be {font=fancyfont.ttf}stuffs{/font} rather than bold, but that would require said fancyfont...
     "\"Skinsuit active,\" "
     play sound "SE/Sizzle2.mp3"
-    # show Skinsuit at right with wipeupslow
-    show Skinsuit: 
-        alpha 0.0
-        right
-        linear 0.4 alpha 1.0
+    show Skinsuit at right with wipeupslow
     extend "as something that looked like nothing so much as black paint suddenly engulfed his entire body beneath his uniform."
     nvl clear
     play sound "SE/NanoRepair.mp3"
@@ -160,11 +148,7 @@ label prologue:
     nvl clear
     "\"Greatcoat thermoptic stealth disengaged,\" "
     play sound "SE/CloakOff.mp3"
-    #show Coat at right with coatin
-    show Coat:
-        alpha 0.0
-        right
-        linear 0.4 alpha 1.0
+    show Coat at right with coatin
     extend "as a knee-length tan greatcoat coalesced, covering his shoulders with a thick mantle."
     show Haruhi Hap3 at left
     "\"Doesn't that get hot?\" Her smile had only grown, her eyes shining with anticipation."
