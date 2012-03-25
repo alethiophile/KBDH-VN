@@ -904,14 +904,14 @@ label AO1_2:
     with dissolve
     "\"Understood,\" Yuki replied quietly. \"Permissions change indexed. Awaiting transfer.\""
     show Yuki Side1 at left
-    show Koizumi Casual Ser2 at center
+    show Koizumi Crossed Casual Ser2 at center
     "\"I promised this already,\" Koizumi agreed shakily. \"Very well.\""
-    show Koizumi Casual Ser1 at center
-    show Mikuru Casual Wince1 at right
+    show Koizumi Crossed Casual Ser1 at center
+    show Mikuru Cower Casual Wince1 at right
     "\"I.... I can't,\" Mikuru whimpered. \"I'm not even allowed to try! Oh, Suzumiya-san, I would, but I can't...\" Mikuru's eyes widened as she looked up, blinking away her tears."
     nvl clear
     hide MTears
-    show Mikuru Casual Sup1 at right
+    show Mikuru Cower Casual Sup1 at right
     "\"I ... I'm getting a message?\" she asked. {w}\"I ... I am allowed to do whatever Kyon-kun asks? B...but not you? I don't understand! I'm sorry, those are just my instructions!\""
     nvl clear
     hide Mikuru
