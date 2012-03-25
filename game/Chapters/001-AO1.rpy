@@ -729,11 +729,11 @@ label AO1_1:
     show Haruhi Casual Hap3 at osr_center with sshake
     "She wasn't aware of getting up from the table, uncertain if she had moved around or just jumped over it — she just knew that she had flung herself at him, tackling him to the floor and grabbing on tightly."
     "\"I {i}knew{/i} it!\" she yelled."
-    # nvl clear
-    # scene black
+    nvl clear
+    $ _window = False
+    scene black with dissolve
     stop music fadeout 5
     "\"I {i}knew{/i} I'd find you again!\""
-    $ _window = False
     scene black with dissolve
     nvl clear
     jump prologue2
@@ -965,7 +965,9 @@ label AO1_2:
     show Kyon Casual Ser2 at right
     "\"Yeah,\" he said, nodding quickly. \"Let's do it.\""
     nvl clear
+    $ _window = True
     show Yuki Side1 at HalfLeft with move
+    $ _window = False
     show Haruhi Casual Worry1 at left
     "Rising from her seat, the smaller girl reached both hands out and placed her fingertips across the sides of Haruhi's head. "
     show Yuki Talk1 at HalfLeft
@@ -1004,7 +1006,8 @@ label AO1_2:
     pause
 #   
 
-    play music "Music/ItsumoReprise.mp3"
+    # play music "Music/ItsumoReprise.mp3"
+    play music "Music/ItsumoNoFuukei.mp3"
     scene bg MorningSky
     show TownHillLeftMorning
     show Kyon Neutral3 at right
@@ -1024,7 +1027,9 @@ label AO1_2:
     show Kyon Smile1 at right
     "\"What's going on?\""
     nvl clear
+    $ _window = True
     show Haruhi Hap3 at left with move
+    $ _window = False
     "She released him with a huge grin."
     show Haruhi Hap4 at left
     "\"Yesterday, after I went home, was so cool!\" she squealed."
