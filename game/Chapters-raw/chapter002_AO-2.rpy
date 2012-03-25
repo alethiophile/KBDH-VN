@@ -198,7 +198,7 @@ label AO_2:
     "\"Yeah, yeah,\" Haruhi mumbled. \"I didn't {i}mean{/i} half of those things; they were just idle thoughts. I didn't know it was so sensitive.\""
     nvl clear
     "\"I'm sure. But again, my point stands. Try not to give Nagato so much trouble by coming up with a hundred new things you didn't seriously think about before we actually have our club meeting, okay?\"" 
-    "Disgruntled, and realizing he would have no actual meal, he wrapped his bento back up and turned to look at Yuki. 
+    "Disgruntled, and realizing he would have no actual meal, he wrapped his bento back up and turned to look at Yuki."
     "\"In the meantime, Nagato ... you can safely disregard things that you know are a bad idea. Don't let Haruhi bother you too much; I trust your judgment.\""
     nvl clear
     "Yuki looked up from her book and regarded Kyon levelly. \"Thank you,\" she said softly."
@@ -207,7 +207,7 @@ label AO_2:
     "\"I'll go with you,\" Kyon decided before Haruhi could storm out, stowing his bento in the clubroom's refrigerator. If he wanted to eat anything, he would have to buy it."
     "Haruhi shifted her shoulders, allowing a small bit of tension to fade. \"Um, thanks,\" she mumbled. \"I'll let you buy me a sanshoku bread.\""
     "He nodded, deciding that silence would be the best course of action for the moment."
-    nvl cear
+    nvl clear
     "* * *"
     "After settling into a corner of a relatively new cafe, at least, one Kyon didn't recognize immediately, they sat in silence until their drinks were served."
     "When his latte arrived, Koizumi began, saying, \"It is possible that Nagato-san may curtail the creation of closed space, but my suspicion is that the opposite is more likely to be true.\"" 
@@ -221,7 +221,7 @@ label AO_2:
     "\"Don't get me wrong ... I don't believe that Haruhi's a terrible person by any stretch, but she's rather careless much of the time. If she has to have power, I think it's best she learn to use it responsibly.\"" 
     "\"Or perhaps not at all.\""
     nvl clear
-    "\"I think you're completely discounting the frustration she's going to feel when it becomes more apparent that she is now limited by yourself and Nagato- san,\" Koizumi countered, rubbing his chin".
+    "\"I think you're completely discounting the frustration she's going to feel when it becomes more apparent that she is now limited by yourself and Nagato- san,\" Koizumi countered, rubbing his chin."
     "\"I must ask you to take this as seriously as you wish for Suzumiya-san to. That seems only fair.\""
     "Mikuru nodded weakly, looking away."
     nvl clear
@@ -287,7 +287,7 @@ label AO_2:
     "\"Even if,\" she hesitated, forcing the words out, as uncomfortable and frustrating as it was, \"it means borrowing Kyon a little bit.\""
     nvl clear
     "* * *"
-    "\"It is related to what Fearless Leader is trying to avoid admitting to himself,\" Koizumi said, glancing at Mikuru over his drink. 
+    "\"It is related to what Fearless Leader is trying to avoid admitting to himself,\" Koizumi said, glancing at Mikuru over his drink. "
     "\"And perhaps, Suzumiya-san as well. On that count I'm somewhat less certain.\""
     "\"Avoid admitting?\" she asked, bewildered, looking between the two. \"What is it?\""
     nvl clear
@@ -360,7 +360,7 @@ label AO_2:
     "\"Um.... I guess, all things considered, I want to say thanks for always sticking with me, even when I caused trouble. I just wish you had told me about it beforehand! I mean, if you had—\""
     nvl clear
     "She cut off as they reached the stairwell, a smaller first-year student wailing an apology before her compact form slammed into Kyon, nearly throwing him down the stairs." 
-    "He spun and lunged, managing to save his balance just barely, hanging onto the semi-collapsed form of the other student.
+    "He spun and lunged, managing to save his balance just barely, hanging onto the semi-collapsed form of the other student."
     "\"Eeep!\" the girl managed, held upright for the moment by his grip. \"S...sorry, I— Oh! Sempai!\""
     nvl clear
     "\"A friend of yours?\" Haruhi asked dourly, leaning close to peer into Kyon's face. \"You sure seem close!\""
@@ -439,7 +439,7 @@ label AO_2:
     nvl clear
     "\"I have to act within the guidelines exemplified by IATT bulletin 1147 concerning similarly important persons of significance,\" she answered, frowning. \"And respectfully, Kyon-kun, if my younger self didn't experience what she did, she could not have grown into me.\""
     "He jolted suddenly, looking at her sidelong and allowing a sad smile to come to his face. \"I never thought about that,\" he admitted."
-    \"I suppose it's all predetermined events to you, then. And if no one else can....\" He sighed, shaking his head. \"Sorry. This probably has nothing to do with why you decided to speak to me.\""
+    "\"I suppose it's all predetermined events to you, then. And if no one else can....\" He sighed, shaking his head. \"Sorry. This probably has nothing to do with why you decided to speak to me.\""
     nvl clear
     "\"It's part of why I'm here,\" she countered. \"And no, our discussion here isn't predetermined.\""
     "\"What does it mean to be predetermined, then?\" he asked, rubbing his chin. \"I'm guessing it's just if it's been recorded? As in, if there's no record, then the 'unknown' automatically becomes undetermined?\""
