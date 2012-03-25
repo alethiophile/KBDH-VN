@@ -1003,7 +1003,7 @@ label AO1_2:
     "\"Granted,\" he said without hesitation."
     nvl clear
     scene black with dissolve
-    pause
+#    pause
 #   
 
     # play music "Music/ItsumoReprise.mp3"
@@ -1071,7 +1071,7 @@ label AO1_2:
     "He eyed her, then shook his head. He'd brought this upon himself."
     "Maybe, with luck, Nagato could act as a controlling agent and keep Haruhi in line. "
     "Maybe, he told himself. "
-    nvl clear
+    # nvl clear
     "If this was what it took to save Nagato...."  
     nvl clear
     
