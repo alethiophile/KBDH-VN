@@ -1067,9 +1067,9 @@ label AO1_2:
     "Maybe, with luck, Nagato could act as a controlling agent and keep Haruhi in line. "
     "Maybe, he told himself. "
     nvl clear
-    scene black with dissolve
     "If this was what it took to save Nagato...."  
+    nvl clear
     
     # Always place "jump credits" at the (current) end. Credits ARE important! ^___^
-    # jump ch002__AO_2
-    jump credits
+    jump AO_2
+    #jump credits

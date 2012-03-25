@@ -25,6 +25,7 @@ init:
     image bg YukiRoomLeft = "Backgrounds/YukiRoomLeft.png"
     image bg YukiRoomRight = "Backgrounds/YukiRoomRight.png"
     image bg YukiRoomCenter = "Backgrounds/YukiRoomCenter.jpg"
+    image bg SchoolEntranceLeft = "Backgrounds/SchoolEntranceLeft.png"
     image bg MemoryYuki = "Backgrounds/MemoryYuki.jpg"
     image bg MemoryMikuru = "Backgrounds/MemoryMikuru.jpg"
     image bg MemoryKoizumi = "Backgrounds/MemoryKoizumi.jpg"
@@ -291,6 +292,28 @@ init:
         repeat
     
     # Mikuru Sprites
+    
+    image Mikuru Neutral1 = "Sprites/Mikuru/MikuruNeutral1.png"
+    image Mikuru Sad1 = "Sprites/Mikuru/MikuruSad1.png"
+    image Mikuru Sad2 = "Sprites/Mikuru/MikuruSad2.png"
+    image Mikuru Sigh1 = "Sprites/Mikuru/MikuruSigh1.png"
+    image Mikuru Ser1 = "Sprites/Mikuru/MikuruSerious1.png"
+    image Mikuru Smile1 = "Sprites/Mikuru/MikuruSmile1.png"
+    
+    image Mikuru Casual Neutral1 = "Sprites/Mikuru/MikuruCasualNeutral1.png"
+    image Mikuru Casual Sad1 = "Sprites/Mikuru/MikuruCasualSad1.png"
+    image Mikuru Casual Sad2 = "Sprites/Mikuru/MikuruCasualSad2.png"
+    image Mikuru Casual Sigh1 = "Sprites/Mikuru/MikuruCasualSigh1.png"
+    image Mikuru Casual Ser1 = "Sprites/Mikuru/MikuruCasualSerious1.png"
+    image Mikuru Casual Smile1 = "Sprites/Mikuru/MikuruCasualSmile1.png"
+    
+    image Mikuru Maid Neutral1 = "Sprites/Mikuru/MikuruMaidNeutral1.png"
+    image Mikuru Maid Sad1 = "Sprites/Mikuru/MikuruMaidSad1.png"
+    image Mikuru Maid Sad2 = "Sprites/Mikuru/MikuruMaidSad2.png"
+    image Mikuru Maid Sigh1 = "Sprites/Mikuru/MikuruMaidSigh1.png"
+    image Mikuru Maid Ser1 = "Sprites/Mikuru/MikuruMaidSerious1.png"
+    image Mikuru Maid Smile1 = "Sprites/Mikuru/MikuruMaidSmile1.png"
+    
     image Mikuru Cower Nervous1 = "Sprites/Mikuru/MikuruCowerNervous1.png"
     image Mikuru Cower Nervous2 = "Sprites/Mikuru/MikuruCowerNervous2.png"
     image Mikuru Cower Nervous3 = "Sprites/Mikuru/MikuruCowerNervous3.png"
@@ -410,6 +433,7 @@ init -1 python:
 label start:
     # Z0 : TODO: intro. 
     jump prologue
+
     
     
 label credits:
