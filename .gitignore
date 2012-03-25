@@ -1,6 +1,6 @@
 # We really don't need the binary files Ren'py makes, and they're annoying.
 game/bytecode.rpyb
-game/*.rpyc
+*.rpyc
 *~
 /launcherinfo.py
 
