@@ -125,10 +125,11 @@ label prologue:
     extend " \"Take a step back, I don't want to catch you in the interdiction field again.\""
     show Haruhi Hap4 at center_left
     "She nodded and stepped backwards, against the wall."
+    $ _window = True
     show Haruhi Hap4:
         xalign 0.1 yalign 1.0
         linear 0.4 xalign 0.0
-    pause 0.4
+    $ renpy.pause(0.4, hard=True)
     nvl clear
     play music "music/YukiAsakuraFight.mp3" fadein 1
     # Set this up EVERY time last 'play music' in chapter is started
@@ -217,6 +218,7 @@ label prologue:
     hide Skinsuit
     hide Coat
     hide Haruhi
+    window hide
     play sound "SE/footsteps5.mp3" 
     pause 5
     show Asakura Smile2 at center with wipeup
@@ -230,7 +232,7 @@ label prologue:
     "The school bell chimed just as she rounded the landing, and he activated the beam saber. The blade made a crackling, whirring buzz and shed a soft, pale blue light."
     play sound "SE/saberon.mp3"
     show Bluesword with wipeupfast
-    pause 1
+    $ renpy.pause(1, hard=True)
     hide Bluesword with dissolve
     show Asakura Frown1 at center
     "\"Y...you....\" she began, before she frowned, blinking, staring at the energy weapon."
