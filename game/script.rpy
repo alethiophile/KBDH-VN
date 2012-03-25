@@ -584,7 +584,7 @@ label ch001__AO_1:
     nvl clear
     hide Haruhi
     hide Asakura
-    scene bg roofsky with fade
+    scene bg daysky with fade
     play music "SE/lowwind.mp3" 
     "The sensation of being hit with a force that would crush a mid-sized car into a work of modern art was not entirely new, but was without a doubt extremely unpleasant."
     "His skinsuit did what it could to distribute the kinetic force evenly across his body, so the crushing pain was at least perfectly uniform in infliction."
@@ -640,7 +640,7 @@ label ch001__AO_1:
     pause 1
     scene bg TownStreetNight2 with wiperight
     pause 1
-    scene bg YukiApartment with wiperight:
+    scene bg YukiApartmentNight with wiperight:
     "When he reached the lobby, barely pausing long enough to lock up his bike, he wondered if he'd beaten his best time, but didn't feel the need to check."
     "Instead, he dashed to the console, still gasping for breath, and fumbled, mis-dialing her room number and needing to hammer the 'cancel' button to dial again."
     "\"Nagato!\" he called, the second she picked up. \"It's me!\""
@@ -715,7 +715,7 @@ label ch001__AO_1:
     stop music fadeout 3
     nvl clear
     
-    scene bg YukiApartment with fade
+    scene bg YukiApartmentNight with fade
     play music "Music/Kankyou.mp3"
     "She couldn't imagine what had possessed Kyon to call her, ranting like a lunatic about Yuki being sick. "
     "But he'd done it from her phone, which meant for whatever reason that he and Yuki were alone together. "
@@ -1697,47 +1697,82 @@ label prologue2:
     show Yuki Casual SadTalk2 at center
     "\"Program loaded,\" Yuki said. Turning her eyes to Kyon, she asked, \"Permission to proceed?\""
     show Kyon Casual Ser3 at right
+    stop music fadeout 3
     "\"Granted,\" he said without hesitation."
     nvl clear
-    
-#     
-    # "After finishing his breakfast and heading to school, he was startled to run into Haruhi at the train station at the bottom of the hill ... literally."
-    # "The girl shot out from behind one of the pillars supporting the heavy structure keeping rainwater off the train platform, nearly plowing him over as she launched herself, arms wrapping around him as she swung around with her momentum, crying out, \"YES!\""
-    # "Struggling and only barely managing to keep his balance, he eyed all of the other Kitago students around them, watching with raised eyebrows and open smirks."
-    # nvl clear
-    # "\"Hey,\" he managed, remembering his new role as the vice commander, and everything they had discussed the previous night."
-    # "\"What's going on?\""
-    # nvl clear
-    # "She released him with a huge grin."
-    # "\"Yesterday, after I went home, was so cool!\" she squealed."
-    # "\"I never knew you could do all those things! I mean, I suspected, since you were the best member of the Brigade next to myself and everything, but that was amazing!\""
-    # nvl clear
-    # "Her smile not fading in the slightest, she handed him an envelope, the seal already broken."
-    # "\"You said I should give this to you,\" she added. "
-    # "\"You said to put it in your shoe locker, but why wait? What's so great about messages in shoe lockers?\""
-    # nvl clear
-    # "\"They pretty much never go well for me,\" he sighed, taking the envelope and eyeing the broken seal. "
-    # "It was just a sticker, something that looked like it might have been stolen from one of his sister's collections. "
-    # "\"You opened it already, I see.\""
-    # nvl clear
-    # "\"Well, of course! Doesn't make any sense to me, though. I probably wouldn't have opened it if you hadn't told me it wouldn't make any sense to me."
-    # "\"Why did you want me to give you a letter from yourself, though?\""
-    # "The skies were clear of rain, if gray, so he sighed and pulled the letter out of the envelope while proceeding up the hill."
-    # nvl clear
-    # "\"I'm guessing,\" he said mildly, \"that since I just went home last night, I'm going to be time traveling back to yesterday relatively soon.\""
-    # "\"Hmm...\" she mused, considering. \"Can I go with you?\""
-    # nvl clear
-    # "\"'No she can't',\" he quoted the first line of the note, scrawled hastily in his own handwriting. \"Well, seems that future me is a bit of a smart-ass.\""
-    # "\"Humph! I could have told you that.\""
-    # nvl clear
-    # "He eyed her, then shook his head. He'd brought this upon himself."
-    # "Maybe, with luck, Nagato could act as a controlling agent and keep Haruhi in line. "
-    # "Maybe, he told himself. "
-    # "If this was what it took to save Nagato...."  
+    scene black with dissolve
+    pause
+#   
+
+    play music "Music/ItsumoReprise.mp3"
+    scene bg MorningSky
+    show TownHillLeftMorning
+    show Kyon Neutral3 at right
+    with dissolve
+    "After finishing his breakfast and heading to school, he was startled to run into Haruhi at the train station at the bottom of the hill ... literally."
+    show Haruhi Hap4:
+        xalign 0.0 yalign 1.0
+        linear 0.1 xalign 0.6
+     
+     
+    play sound "SE/impact.mp3 "
+    "The girl shot out from behind one of the pillars supporting the heavy structure keeping rainwater off the train platform, nearly plowing him over as she launched herself, arms wrapping around him as she swung around with her momentum, crying out, \"YES!\""
+    nvl clear
+    "Struggling and only barely managing to keep his balance, he eyed all of the other Kitago students around them, watching with raised eyebrows and open smirks."
+    show Kyon Sigh3 at right
+    "\"Hey,\" he managed, remembering his new role as the vice commander, and everything they had discussed the previous night."     
+    show Kyon Smile1 at right
+    "\"What's going on?\""
+    nvl clear
+    show Haruhi Hap3 at left with move
+    "She released him with a huge grin."
+    show Haruhi Hap4 at left
+    "\"Yesterday, after I went home, was so cool!\" she squealed."
+    show Haruhi Hap2 at left
+    "\"I never knew you could do all those things! I mean, I suspected, since you were the best member of the Brigade next to myself and everything, but that was amazing!\""
+    nvl clear
+    show Haruhi Smile3 at left
+    play sound "Pageflip3.mp3"
+    "Her smile not fading in the slightest, she handed him an envelope, the seal already broken."
+    show Haruhi Hap2 at left
+    "\"You said I should give this to you,\" she added. "
+    show Haruhi Hap4 at left
+    "\"You said to put it in your shoe locker, but why wait? What's so great about messages in shoe lockers?\""
+    nvl clear
+    show Kyon Sigh2 at right
+    "\"They pretty much never go well for me,\" he sighed, taking the envelope and eyeing the broken seal. "
+    "It was just a sticker, something that looked like it might have been stolen from one of his sister's collections. "
+    show Kyon Sigh1 at right
+    "\"You opened it already, I see.\""
+    nvl clear
+    show Haruhi Smile3 at left
+    "\"Well, of course! Doesn't make any sense to me, though. I probably wouldn't have opened it if you hadn't told me it wouldn't make any sense to me."
+    show Haruhi Quest1 at left
+    "\"Why did you want me to give you a letter from yourself, though?\""
+    show Kyon Sigh2 at right
+    "The skies were clear of rain, if gray, so he sighed and pulled the letter out of the envelope while proceeding up the hill."
+    nvl clear
+    show Kyon Neutral3 at right
+    "\"I'm guessing,\" he said mildly, \"that since I just went home last night, I'm going to be time traveling back to yesterday relatively soon.\""
+    show Haruhi Smile3 at left
+    "\"Hmm...\" she mused, considering. \"Can I go with you?\""
+    nvl clear
+    show Kyon Smile2 at right
+    "\"'No she can't',\" he quoted the first line of the note, scrawled hastily in his own handwriting. \"Well, seems that future me is a bit of a smart-ass.\""
+    show Haruhi Crossed Tsun1 at left
+    "\"Humph! I could have told you that.\""
+    nvl clear
+    show Kyon Sigh2 at right
+    "He eyed her, then shook his head. He'd brought this upon himself."
+    "Maybe, with luck, Nagato could act as a controlling agent and keep Haruhi in line. "
+    "Maybe, he told himself. "
+    nvl clear
+    scene black with dissolve
+    "If this was what it took to save Nagato...."  
     
     # Always place "jump credits" at the (current) end. Credits ARE important! ^___^
     # jump ch002__AO_2
-    jump credits
+    #jump credits
     
 label credits:
     # Thise entire things could be done with text() displayable...
