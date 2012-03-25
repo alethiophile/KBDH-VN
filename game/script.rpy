@@ -235,7 +235,7 @@ init:
         "Sprites/Asakura/AsakuraFrown3.png"
         0.2
         "Sprites/Asakura/AsakuraFrown1.png"
-        3
+        5.0
         repeat
         
     
@@ -440,6 +440,7 @@ label credits:
     # Thise entire things could be done with text() displayable...
     # Duly noted. I'll look into that next time there aren't fifteen other things to do.
     stop music fadeout 1
+    play music "Music/ItsumoReprise.mp3"
     scene black with fade
     # The hardpause calls are necessary because otherwise Ren'py wants to skip over all the pause statements on a single press of the key.
     show Credits0 with dissolve
@@ -454,4 +455,5 @@ label credits:
     show Credits3 with dissolve
     # Maybe a graphic logo here?
     pause
+    stop music fadeout 1
     return

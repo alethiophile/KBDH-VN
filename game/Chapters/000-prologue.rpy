@@ -282,11 +282,13 @@ label prologue2:
     show Asakura Pain2 Bright at center
     with flashbulb
     "A third, though not as brightly glowing shot was somewhat lower, near her stomach, {nw}"
+    $ _window = True
     scene bg roofclose
-    show Asakura Unhap1
+    show Asakura Pain1
     play sound "SE/impact.mp3"
     with dissolve
     extend "and Ryouko dropped to her knees, eyes widened."
+    $ _window = False
     "\"High yield neutron flare?\" she asked. \"Quantum entanglement to disrupt my connection....\""
     scene bg roofright
     pause (0.01)
@@ -445,12 +447,14 @@ label prologue2:
     show Yuki Side1 at HalfLeft with moveinleft
     "While Nagato knelt to examine Ryouko, Haruhi dashed to Kyon's side and helped him stand."
     nvl clear
+    $ _window = True
     scene bg roofright
     show Kyon Pain2 at right
     show Skinsuit at right
     show Coat at right
     show Haruhi Worry1 at center with moveinleft
     "\"How bad was it, anyway? Future-you seemed to think you weren't very tough, and that you were hurt pretty badly.\""
+    $ _window = False
     show Kyon Pain1 at right
     "\"I think I've got some internal bleeding,\" he said, wincing,\none hand pressed to his abdomen. "
     show Kyon Pain2 at right
@@ -475,6 +479,7 @@ label prologue2:
     show Coat at right
     show Haruhi Worry1 at center
     "\"Granted.\" Kyon said, {nw}"
+    # $ _window = True
     play sound "SE/heal1.wav"
     show healfield at right
     show Kyon Ser2 Bright at right
@@ -487,6 +492,7 @@ label prologue2:
     show Skinsuit at right
     show Coat at right
     with dissolve
+    # $ _window = False
     extend "straightening up as a sparkle of green and white lights suffused up from the rooftop beneath him, flowing through his body and undoing the damage."
     nvl clear
     show Kyon Smile1 at right
@@ -495,6 +501,7 @@ label prologue2:
     "\"And for future reference, you can probably assume that I'm okay with that one being used.\""
     "\"Acknowledged,\" Nagato agreed."
     nvl clear
+    $ _window = True
     show Haruhi Smile2 at left with move
     "\"Hmm, hey, Kyon, you know, you're going to have to really step up your game,\" Haruhi said suddenly, tossing his cell phone back to him."
     show Kyon Ser1 at right
@@ -502,6 +509,7 @@ label prologue2:
     hide Skinsuit with wipedown
     play sound "SE/CloakOn.mp3"
     hide Coat with coatout
+    $ _window = False
     "He scowled, pocketed it, and then banished all of his equipment, the greatcoat taking the longest to phase out of view."
     show Kyon Ser2 at right
     "\"What's that supposed to mean?\" he asked in irritation."
@@ -569,10 +577,12 @@ label prologue2:
     show Yuki Talk1 at HalfLeft
     extend "\"Awaiting program,\" she announced."
     nvl clear
+    stop music fadeout 3
+    $ _window = True
     show Haruhi Ang3 at left with moveinleft
     show Kyon Ser1 at right with moveinright
     show Yuki Side1
-    stop music fadeout 3
+    $ _window = False
     "\"Hmm,\" Haruhi mused, narrowing her eyes and peering intently at Ryouko, who merely watched back curiously."
     show Haruhi Ang2 at left
     play music "Music/Oi.mp3"
