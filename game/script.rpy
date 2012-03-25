@@ -216,15 +216,15 @@ label prologue:
     play sound "SE/DunDun.mp3"
     "Standing perfectly straight, hands at his sides, he closed his eyes, and began speaking in his best faux movie announcer voice-over."
     # Z0: Emulating a "movie-narration. Could be {font=fancyfont.ttf}stuffs{/font} rather than bold, but that would require said fancyfont...
-    "\"{b}Skinsuit active,{/b}\" "
+    "\"Skinsuit active,\" "
     play sound "SE/Sizzle2.mp3"
     show Skinsuit at right with wipeupslow
     extend "as something that looked like nothing so much as black paint suddenly engulfed his entire body beneath his uniform."
     nvl clear
     play sound "SE/NanoRepair.mp3"
-    "\"{b}Gravimetric stabilizers and secondary gyrometrics online,{/b}\" as ridged metal studs appeared on the back of each knuckle, and beneath his uniform pants, metallic vertical rails were described in the skinsuit."
+    "\"Gravimetric stabilizers and secondary gyrometrics online,\" as ridged metal studs appeared on the back of each knuckle, and beneath his uniform pants, metallic vertical rails were described in the skinsuit."
     nvl clear
-    "\"{b}Greatcoat thermoptic stealth disengaged,{/b}\" "
+    "\"Greatcoat thermoptic stealth disengaged,\" "
     play sound "SE/CloakOff.mp3"
     show Coat at right with coatin
     extend "as a knee-length tan greatcoat coalesced, covering his shoulders with a thick mantle."
@@ -234,14 +234,14 @@ label prologue:
     show Kyon Neutral2 at right
     "\"We had environmental conditioning added last night, since the weather's heating up,\" he said in a normal voice."
     show Kyon Ser2 at right
-    "Switching back, he said, \"{b}Primary weapons check.{/b}\""     
+    "Switching back, he said, \"Primary weapons check.\""     
     nvl clear
     play sound "SE/lowswoosh.mp3"
     pause .02
     play sound "SE/lowswoosh.mp3"
     pause .02
     play sound "SE/lowswoosh.mp3"
-    "He pulled a fifty centimeter long glittering metal cylinder from within the greatcoat, releasing it to spin on its axis in midair to one side, announcing, \"{b}Long range precision and high yield weaponry is at full charge.{/b}\""
+    "He pulled a fifty centimeter long glittering metal cylinder from within the greatcoat, releasing it to spin on its axis in midair to one side, announcing, \"Long range precision and high yield weaponry is at full charge.\""
     play sound "SE/Barrier2.mp3"
     show Kyon Ser2 Bright at right
     show Skinsuit Bright at right
@@ -257,14 +257,14 @@ label prologue:
     nvl clear
     # Z0: Needs to add a weapon here. Simple gunmetal cylinder with shine overlay getting thinner and wider from time to time (or just spinning?)
     "Another cylinder, wider but shorter than the last was released to float next to the first."
-    "\"{b}Mid- and short-range crowd-control weaponry is at ... ninety seven percent capacity and charging,{/b}\" he continued, squinting at the featureless gunmetal tube."
+    "\"Mid- and short-range crowd-control weaponry is at ... ninety seven percent capacity and charging,\" he continued, squinting at the featureless gunmetal tube."
     nvl clear
     play sound "SE/clink.mp3"
     # Z0: Needs to add a sword here. Pull a sword hilt from later chapters, bopping up and down from time to time (or just spinning?)
-    "Pulling a well-crafted sword hilt with no cross-guard or blade from one pocket, he released it horizontally, and it hung before him between the other weapons. \"{b}Beam saber is at full capacity.{/b}\""
+    "Pulling a well-crafted sword hilt with no cross-guard or blade from one pocket, he released it horizontally, and it hung before him between the other weapons. \"Beam saber is at full capacity.\""
     show Kyon Ser1 at right
     "After pulling his cell phone from one pocket, he brushed his fingertips over his ear, revealing three dull metal studs in the skinsuit."
-    "\"{b}All systems nominal; no proximity alarms—{/b}\""
+    "\"All systems nominal; no proximity alarms—\""
     nvl clear
     show Kyon Ang1 at right
     "He broke off suddenly, scowling. \"Okay,\" he said in his normal voice. \"My mistake. We've got incoming.\""
@@ -297,7 +297,7 @@ label prologue:
     hide Haruhi
     play sound "SE/footsteps5.mp3" 
     pause 5
-    show Asakura Smile2 at center with moveinbottom #wipeup
+    show Asakura Smile2 at center with wipeup
     pause 1
     play sound "SE/DunDun.mp3"
     show Asakura Smile1 at center
