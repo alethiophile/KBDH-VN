@@ -816,7 +816,6 @@ label ch001__AO_1:
     "\"That's stupid,\" she grumbled."
     show Haruhi Casual Ang2 at left
     "\"If Yuki's in danger, what kind of person do you take me for?\""
-    nvl clear
     "She wasn't {i}that{/i} bad about ignoring the needs of her brigade members."
     nvl clear
     show Kyon Casual Ser2 at right
@@ -830,7 +829,6 @@ label ch001__AO_1:
     "\"Almost a year ago — last May — we ended up going on a city search where no one but you and I showed up.\""
     show Haruhi Casual Eyeroll1 at left
     "\"I remember,\" she said, annoyed."
-    nvl clear
     "A stupid practical joke on his part ... though, it had given her the idea for the movie."
     nvl clear
     show Kyon Casual Ser2 at right
@@ -1567,9 +1565,9 @@ label prologue2:
     "\"Thankfully,\" he agreed, nodding. "
     nvl clear
     show Kyon Casual Sigh2 at right
-    "\"I suppose I have done things for Asahina-san and her superiors.\""
+    "\"I suppose I have done things for Asahina-san and her superiors."
     show Kyon Casual Sigh1 at right
-    "\"I know my actions have benefited Koizumi's Organization.\""
+    "\"I know my actions have benefited Koizumi's Organization."
     show Kyon Casual Ser3 at right
     "\"But I've only ever done things because I felt it was important for you, or for the sake of the entire world.\""
     nvl clear
@@ -1792,4 +1790,3 @@ label credits:
     # Maybe a graphic logo here?
     pause
     return
-    
