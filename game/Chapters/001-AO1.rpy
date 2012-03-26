@@ -120,6 +120,7 @@ label AO1_1:
     show Coat at right
     with moveinleft
     "\"Confined spaces,\" he answered, sliding to a halt in the middle of the roof and setting her down.{fast} \"Speed dial two again.\""
+    $ _window = True
     nvl clear
     show Haruhi Pout1 at left
     pause .4
@@ -129,6 +130,7 @@ label AO1_1:
     pause .1
     hide field at left with dissolve
     show Haruhi Pout1 at left with dissolve
+    $ _window = False
     "\"Right, right,\" she mumbled, reactivating the circle of light."
     show Haruhi Quest1 at left
     "\"So, what's so great about this if she can just turn it off, anyway?\""
@@ -217,6 +219,7 @@ label AO1_1:
     "The knives adjusted their course, most homing in on him to suddenly be halted by a semi-circular barrier of glowing blue force before shattering into nothingness, but a handful stopping suddenly in the space over the circle around Haruhi."
     nvl clear
     play sound "SE/lowswoosh.mp3"
+    $ _window = True
     show Asakura Smile3 at left
     show Asakura Smile3:
         xalign 0.0 yalign 1.0
@@ -257,6 +260,7 @@ label AO1_1:
     nvl clear
     hide Haruhi
     hide Asakura
+    $ _window = False
     scene bg daysky with fade
     play music "SE/lowwind.mp3" 
     "The sensation of being hit with a force that would crush a mid-sized car into a work of modern art was not entirely new, but was without a doubt extremely unpleasant."

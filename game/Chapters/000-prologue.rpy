@@ -59,7 +59,8 @@ label prologue:
     "He released her at the top of the steps after looking around to ensure that no one else was nearby."
     "Her momentum carried her forward, resulting in him pressing one hand flat against her chest, just below her neck."
     # Z0: Added the "stopping after the dash"
-    
+
+    $ _window = True
     show Kyon Ser1 at osl_right
     show Haruhi Ang3 at osl_center
     with None
