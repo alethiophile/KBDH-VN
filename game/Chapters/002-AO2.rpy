@@ -1,3 +1,4 @@
+# Chapter AO2, 2 overall.
 
 label AO2:
     # Also doing double duty to check if we need to set the background.
