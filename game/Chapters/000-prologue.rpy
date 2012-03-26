@@ -650,5 +650,7 @@ label prologue2:
     stop music
     "\"I will not let you harm him again.\""
     nvl clear
+    scene Credits3 with slowfadein
+    pause
     # Approx. 21 minutes of reading at this point.
     jump AO1_2

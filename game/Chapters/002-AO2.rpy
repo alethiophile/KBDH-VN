@@ -80,9 +80,8 @@ label AO2:
     "He sighed, nodding. \"Let's talk about that later,\" he suggested, taking his seat."
     nvl clear
     
-    
-    scene black with dissolve
     play sound "SE/WestminsterChime.mp3"
+    scene Credits3 with slowfadein
     pause
     stop sound fadeout 3
     play music "Music/Nanika.mp3"
@@ -94,7 +93,7 @@ label AO2:
     show Taniguchi Grin1 at HalfRight
     show Kyon Neutral3 at right
     show Haruhi Ang3 at left
-    with dissolve
+    with fade
     "\"So,\" Taniguchi said with a huge grin, approaching Kyon's desk during the first break. \"I hear that things between you and Suzumiya are getting ... closer?\""
     show Kyon Sigh1 at right
     "Kunikida and Kyon exchanged a look, then turned to the other boy. \"Why don't you ask her?\" Kyon asked, jerking a thumb over his shoulder to point to the girl in question."
@@ -173,7 +172,7 @@ label AO2:
     "Sighing, he lowered his head to the desk again."
     nvl clear
     
-    scene black with dissolve
+    scene Credits3 with slowfadein
     pause
     play music "Music/Kokuhaku.mp3"
     
@@ -181,7 +180,7 @@ label AO2:
     show Haruhi Casual Worry1 at left
     show Yuki Side1 at HalfLeft
     show Kyon Casual Ser1 at right
-    with dissolve
+    with fade
     "\"So,\" Haruhi asked, her back to the large window of Yuki's living room, \"did it work?\""
     show Yuki Talk1 at center with move
     "Yuki removed her fingertips from Haruhi's head and said, \"Yes.\""
