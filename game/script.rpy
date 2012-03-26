@@ -75,6 +75,7 @@ init:
     image Haruhi Smile2 = "Sprites/Haruhi/HaruhiSideSmile2.png"
     image Haruhi Smile3 = "Sprites/Haruhi/HaruhiSideSmile3.png"
     image Haruhi Sigh1 = "Sprites/Haruhi/HaruhiSideSigh1.png"
+    image Haruhi Sigh2 = "Sprites/Haruhi/HaruhiSideSigh2.png"
     image Haruhi Unhap1 = "Sprites/HaruhiSideUnhappy1.png"
     image Haruhi Unhap2 = "Sprites/HaruhiSideUnhappy2.png"
     image Haruhi Focus1 = "Sprites/Haruhi/HaruhiSideFocus1.png"
@@ -101,6 +102,7 @@ init:
     image Haruhi Casual Smile2 = "Sprites/Haruhi/HaruhiSideCasualSmile2.png"
     image Haruhi Casual Smile3 = "Sprites/Haruhi/HaruhiSideCasualSmile3.png"
     image Haruhi Casual Sigh1 = "Sprites/Haruhi/HaruhiSideCasualSigh1.png"
+    image Haruhi Casual Sigh2 = "Sprites/Haruhi/HaruhiSideCasualSigh2.png"
     image Haruhi Casual Unhap1 = "Sprites/Haruhi/HaruhiSideCasualUnhappy1.png"
     image Haruhi Casual Unhap2 = "Sprites/Haruhi/HaruhiSideCasualUnhappy2.png"
     image Haruhi Casual Focus1 = "Sprites/Haruhi/HaruhiSideCasualFocus1.png"
@@ -183,6 +185,7 @@ init:
     image Kyon Puzzle1 = "Sprites/Kyon/KyonPuzzled1.png"
     image Kyon Sup1 = "Sprites/Kyon/KyonSurprised1.png"
     image Kyon Sup2 = "Sprites/Kyon/KyonSurprised2.png"
+    image Kyon Unhap1 ="Sprites/Kyon/KyonUnhappy1.png"
     
     
     image Kyon Casual Ser1 = "Sprites/Kyon/KyonCasualSerious1.png"
@@ -206,6 +209,7 @@ init:
     image Kyon Casual Puzzle1 = "Sprites/Kyon/KyonCasualPuzzled1.png"
     image Kyon Casual Sup1 = "Sprites/Kyon/KyonCasualSurprised1.png"
     image Kyon Casual Sup2 = "Sprites/Kyon/KyonCasualSurprised2.png"
+    image Kyon Casual Unhap1 ="Sprites/Kyon/KyonCasualUnhappy1.png"
     
     image Ksweat = "Sprites/Kyon/KyonSweat1.png"
     image Skinsuit = "Sprites/Kyon/KyonSkinsuitTemplate.png"
@@ -352,6 +356,19 @@ init:
     image Koizumi Crossed Casual Uneasy2 = "Sprites/Koizumi/KoizumiCrossedCasualUneasy2.png"
     image Koizumi Crossed Casual Uneasy3 = "Sprites/Koizumi/KoizumiCrossedCasualUneasy3.png"
     
+    
+    #Taniguchi Sprites
+    image Taniguchi Grin1 = "Sprites/Taniguchi/TaniguchiGrin1.png"
+    image Taniguchi Sup1 = "Sprites/Taniguchi/TaniguchiSurprised1.png"
+    image Taniguchi Sup2 = "Sprites/Taniguchi/TaniguchiSurprised2.png"
+    
+    #Kunikida Sprites
+    
+    image Kunikida Neutral1 = "Sprites/Kunikida/KunikidaNeutral1.png"
+    image Kunikida Neutral2 = "Sprites/Kunikida/KunikidaNeutral2.png"
+    image Kunikida Neutral3 = "Sprites/Kunikida/KunikidaNeutral3.png"
+    image Kunikida Smile1 ="Sprites/Kunikida/KunikidaSmile1.png"
+    image Kunikida Smile2 ="Sprites/Kunikida/KunikidaSmile2.png"
 
     image Credits0 = "Backgrounds/credits0.png"
     image Credits1 = "Backgrounds/credits1.png"

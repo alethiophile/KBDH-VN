@@ -1011,7 +1011,7 @@ label AO1_2:
 #   
 
     # play music "Music/ItsumoReprise.mp3"
-    play music "Music/ItsumoNoFuukei.mp3"
+    play music "Music/Itsumo(Movie).mp3"
     scene bg MorningSky
     show TownHillLeftMorning
     $ music_need = False

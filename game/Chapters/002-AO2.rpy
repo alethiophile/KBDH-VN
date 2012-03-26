@@ -73,50 +73,99 @@ label AO2:
     show Haruhi Pout1 at left
     "\"Well,\" she mumbled, \"you didn't tell me you were John Smith. If you {i}had{/i}....\""
     show Kyon Sigh2 at right
+    stop music fadeout 3
     "He sighed, nodding. \"Let's talk about that later,\" he suggested, taking his seat."
     nvl clear
-    # "* * *"
-    # "\"So,\" Taniguchi said with a huge grin, approaching Kyon's desk during the first break. \"I hear that things between you and Suzumiya are getting ... closer?\""
-    # "Kunikida and Kyon exchanged a look, then turned to the other boy. \"Why don't you ask her?\" Kyon asked, jerking a thumb over his shoulder to point to the girl in question."
-    # nvl clear
-    # "\"Eh!? Suzumiya?\" Taniguchi asked, stunned. \"But, it's break! Why are you still in the classroom?\""
-    # "\"Why is that any of your business?\" she asked him coolly, her eyes narrowing into sharp lines."
-    # "\"I just remembered somewhere else I had to be,\" he blurted out, charging out of the classroom."
-    # nvl clear
-    # "Kyon sighed, shaking his head."
-    # "\"Well,\" Kunikida said, shrugging and offering a placating smile. \"It's none of my business either. But I thought I'd pass on that pretty much the entire school has caught on by now ... I wouldn't be terribly surprised if a teacher were to ask you about it, either.\""
-    # nvl clear
-    # "\"Ask us about what?\" Haruhi asked, her voice falsely innocent. \"We're just ordinary high school students!\""
-    # "\"Er ... that is....\" Kunikida bowed his head slightly and shifted his gaze to stare out the window. \"Your ... 'display' at the train station.\""
-    # nvl clear
-    # "Kyon groaned and lowered his head to his desk."
-    # "\"Well, the answer is still going to be that it's none of their business! Absolutely none!\""
-    # "\"Aha ... well ... I'll leave the two of you to yourselves, then,\" Kunikida said, bowing slightly as he drew away."
-    # nvl clear
-    # "Straightening up once his friend had gone, Kyon turned in his chair to face Haruhi. \"Do you understand the need to be somewhat subtle with all these things?\" he asked."
-    # "\"You told me yesterday,\" she said in annoyance."
-    # "He blinked, then pulled the letter he had written himself from the future from his pocket and scribbled a note on it."
-    # nvl clear
-    # "\"I'll be careful ... even if it is {i}boring{/i}. But it's not like it's {i}that{/i} outlandish for a girl to be close to a guy. At our age, it's practically expected.\""
-    # "\"Isn't that what Greaseball McGee over there,\" she said, nodding at Taniguchi as he slunk back into the classroom, \"is all about? \""
-    # "\"Aside from which, people are stupid and think that 'something' is going on between us anyway. \""
-    # "\"If anyone asks, I'm tutoring you because your grades suck so bad. If they draw other conclusions on their own, they're obviously idiots and we shouldn't care.\""
-    # nvl clear
-    # "He flinched back from her gaze as her eyes lit up with intensity, adding, \"So, unless you've got some other girlfriend I should {i}know{/i} about, maybe Miyochiki—\""
-    # "\"Miyokichi,\" he corrected her flatly. \"And it's a real compliment to me that you seriously consider an eleven year old girl to be my only valid romantic prospect.\""
-    # "\"Whatever!\" she snapped, her face darkening. \"If not her, maybe that ... that Sasaki—\""
-    # nvl clear
-    # "\"Ugh,\" he interjected again, this time with a small shudder. \"She's a friend, but I really can't stand who she chooses to associate with these days.\""
-    # "For some reason, Haruhi calmed substantially at that. \"Anyway,\" she said more smoothly, \"if you're not actually dating anyone, then you have no actual girlfriend to get jealous of our studying together.\"" 
-    # "\"And since you're some kind of action hero looking out for me, you can just consider it to be your cover.\""
-    # nvl clear
-    # "\"So, you're okay with the entire school thinking that we're dating?\" he asked, unconvinced."
-    # "\"Well,\" she said quickly, looking away out the window again. \"No, I mean, we're obviously not. But hey, if they jump to that conclusion, what do we care? We can set anyone who asks straight.\""
-    # nvl clear
-    # "He allowed his lips to quirk very slightly into a smile."
-    # "\"Plus,\" she added, still staring out the window, \"you've got to give authorization for all of my powers, so there's no way in hell I'm letting you further out of reach than I have to.\""
-    # "Sighing, he lowered his head to the desk again."
-    # nvl clear
+    
+    
+    scene black with dissolve
+    play sound "SE/ClockChime.wav"
+    pause
+    stop sound fadeout 3
+    
+    
+    scene bg classroom: 
+        size (800,600)
+    show Kunikida Neutral1 at HalfLeft
+    show Taniguchi Grin1 at HalfRight
+    show Kyon Neutral3 at right
+    show Haruhi Ang3 at left
+    with dissolve
+    "\"So,\" Taniguchi said with a huge grin, approaching Kyon's desk during the first break. \"I hear that things between you and Suzumiya are getting ... closer?\""
+    show Kyon Sigh1 at right
+    "Kunikida and Kyon exchanged a look, then turned to the other boy. \"Why don't you ask her?\" Kyon asked, jerking a thumb over his shoulder to point to the girl in question."
+    nvl clear
+    show Taniguchi Sup1 at HalfRight
+    "\"Eh!? Suzumiya?\" Taniguchi asked, stunned. \"But, it's break! Why are you still in the classroom?\""
+    show Haruhi Ang4 at left
+    "\"Why is that any of your business?\" she asked him coolly, her eyes narrowing into sharp lines."
+    show Taniguchi Sup2 at HalfRight
+    "\"I just remembered somewhere else I had to be,\" {nw}"
+    hide Taniguchi Sup2 with moveoutright
+    extend "he blurted out, charging out of the classroom."
+    nvl clear
+    show Kyon Sigh2 at right
+    "Kyon sighed, shaking his head."
+    show Kunikida Smile1 at center with move
+    "\"Well,\" Kunikida said, shrugging and offering a placating smile. \"It's none of my business either. But I thought I'd pass on that pretty much the entire school has caught on by now ... I wouldn't be terribly surprised if a teacher were to ask you about it, either.\""
+    nvl clear
+    show Haruhi Ang1 at left
+    "\"Ask us about what?\" Haruhi asked, her voice falsely innocent. \"We're just ordinary high school students!\""
+    show Kunikida Neutral3 at center
+    "\"Er ... that is....\" Kunikida bowed his head slightly and shifted his gaze to stare out the window. \"Your ... 'display' at the train station.\""
+    nvl clear
+    show Kyon Unhap1 at right
+    "Kyon groaned and lowered his head to his desk."
+    show Haruhi Ang2 at left
+    "\"Well, the answer is still going to be that it's none of their business! Absolutely none!\""
+    show Kunikida Neutral2 at center
+    "\"Aha ... well ... I'll leave the two of you to yourselves, then,\" {nw}"
+    hide Kunikida with moveoutright
+    extend "Kunikida said, bowing slightly as he drew away."
+    nvl clear
+    show Kyon Ser1 at right
+    "Straightening up once his friend had gone, Kyon turned in his chair to face Haruhi. \"Do you understand the need to be somewhat subtle with all these things?\" he asked."
+    show Haruhi Ang1 at left
+    "\"You told me yesterday,\" she said in annoyance."
+    show Kyon Sigh2 at right
+    "He blinked, then pulled the letter he had written himself from the future from his pocket and scribbled a note on it."
+    nvl clear
+    show Haruhi Eyeroll1 at left
+    "\"I'll be careful ... even if it is {i}boring{/i}. But it's not like it's {i}that{/i} outlandish for a girl to be close to a guy. At our age, it's practically expected.\""
+    show Haruhi Ang3 at left
+    "\"Isn't that what Greaseball McGee over there,\" she said, nodding at Taniguchi as he slunk back into the classroom, \"is all about? \""
+    show Haruhi Ang4 at left
+    "\"Aside from which, people are stupid and think that 'something' is going on between us anyway. \""
+    show Haruhi Sigh2 at left
+    "\"If anyone asks, I'm tutoring you because your grades suck so bad. If they draw other conclusions on their own, they're obviously idiots and we shouldn't care.\""
+    nvl clear
+    show Haruhi Eyeroll1 at left
+    show Kyon Worry1 at right
+    "He flinched back from her gaze as her eyes lit up with intensity, adding, \"So, unless you've got some other girlfriend I should {i}know{/i} about, maybe Miyochiki—\""
+    show Kyon Ser2 at right
+    "\"Miyokichi,\" he corrected her flatly. \"And it's a real compliment to me that you seriously consider an eleven year old girl to be my only valid romantic prospect.\""
+    show Haruhi Ang4 at left
+    "\"Whatever!\" she snapped, her face darkening. \"If not her, maybe that ... that Sasaki—\""
+    nvl clear
+    show Kyon Sigh1 at right
+    "\"Ugh,\" he interjected again, this time with a small shudder. \"She's a friend, but I really can't stand who she chooses to associate with these days.\""
+    show Haruhi Sigh1 at left
+    "For some reason, Haruhi calmed substantially at that. \"Anyway,\" she said more smoothly, \"if you're not actually dating anyone, then you have no actual girlfriend to get jealous of our studying together.\""
+    show Haruhi Smile2 at left
+    "\"And since you're some kind of action hero looking out for me, you can just consider it to be your cover.\""
+    nvl clear
+    show Kyon Puzzle1 at right
+    "\"So, you're okay with the entire school thinking that we're dating?\" he asked, unconvinced."
+    show Haruhi Sigh1 at left
+    "\"Well,\" she said quickly, looking away out the window again. \"No, I mean, we're obviously not. But hey, if they jump to that conclusion, what do we care? We can set anyone who asks straight.\""
+    nvl clear
+    show Kyon Smile1 at right
+    "He allowed his lips to quirk very slightly into a smile."
+    show Haruhi Smile2 at left
+    "\"Plus,\" she added, still staring out the window, \"you've got to give authorization for all of my powers, so there's no way in hell I'm letting you further out of reach than I have to.\""
+    show Kyon Unhap1 at right
+    "Sighing, he lowered his head to the desk again."
+    nvl clear
     # "* * *"
     # "\"So,\" Haruhi asked, her back to the large window of Yuki's living room, \"did it work?\""
     # "Yuki removed her fingertips from Haruhi's head and said, \"Yes.\""
