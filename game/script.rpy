@@ -303,6 +303,9 @@ init:
     image Mikuru Sigh1 = "Sprites/Mikuru/MikuruSigh1.png"
     image Mikuru Ser1 = "Sprites/Mikuru/MikuruSerious1.png"
     image Mikuru Smile1 = "Sprites/Mikuru/MikuruSmile1.png"
+    image Mikuru Quest1 = "Sprites/Mikuru/MikuruQuestion1.png"
+    image Mikuru Unhap1 = "Sprites/Mikuru/MikuruUnhappy1.png"
+    image MBlush1 = "Sprites/Mikuru/MBlush1.png"
     
     image Mikuru Casual Neutral1 = "Sprites/Mikuru/MikuruCasualNeutral1.png"
     image Mikuru Casual Sad1 = "Sprites/Mikuru/MikuruCasualSad1.png"
@@ -310,6 +313,9 @@ init:
     image Mikuru Casual Sigh1 = "Sprites/Mikuru/MikuruCasualSigh1.png"
     image Mikuru Casual Ser1 = "Sprites/Mikuru/MikuruCasualSerious1.png"
     image Mikuru Casual Smile1 = "Sprites/Mikuru/MikuruCasualSmile1.png"
+    image Mikuru Casual Quest1 = "Sprites/Mikuru/MikuruCasualQuestion1.png"
+    image Mikuru Casual Unhap1 = "Sprites/Mikuru/MikuruCasualUnhappy1.png"
+    image MBlush1 Casual = "Sprites/Mikuru/MBlushCasual1.png"
     
     image Mikuru Maid Neutral1 = "Sprites/Mikuru/MikuruMaidNeutral1.png"
     image Mikuru Maid Sad1 = "Sprites/Mikuru/MikuruMaidSad1.png"
@@ -317,6 +323,9 @@ init:
     image Mikuru Maid Sigh1 = "Sprites/Mikuru/MikuruMaidSigh1.png"
     image Mikuru Maid Ser1 = "Sprites/Mikuru/MikuruMaidSerious1.png"
     image Mikuru Maid Smile1 = "Sprites/Mikuru/MikuruMaidSmile1.png"
+    image Mikuru Maid Quest1 = "Sprites/Mikuru/MikuruMaidQuestion1.png"
+    image Mikuru Maid Unhap1 = "Sprites/Mikuru/MikuruMaidUnhappy1.png"
+    image MBlush1 Maid = "Sprites/Mikuru/MBlushMaid1.png"
     
     image Mikuru Cower Nervous1 = "Sprites/Mikuru/MikuruCowerNervous1.png"
     image Mikuru Cower Nervous2 = "Sprites/Mikuru/MikuruCowerNervous2.png"
@@ -326,7 +335,7 @@ init:
     image Mikuru Cower Sigh1 = "Sprites/Mikuru/MikuruCowerSigh1.png"
     image Mikuru Cower Wince1 = "Sprites/Mikuru/MikuruCowerWince1.png"
     image Mikuru Cower Smile1 ="Sprites/Mikuru/MikuruCowerSmile1.png"
-    image MBlush = "Sprites/Mikuru/MikuruCowerBlush1.png"
+    image MBlush Cower = "Sprites/Mikuru/MikuruCowerBlush1.png"
     image MTears = "Sprites/Mikuru/MTearsCower1.png"
     
     image Mikuru Cower Casual Nervous1 = "Sprites/Mikuru/MikuruCowerCasualNervous1.png"
@@ -347,6 +356,9 @@ init:
     image Koizumi Crossed Uneasy1 = "Sprites/Koizumi/KoizumiCrossedUneasy1.png"
     image Koizumi Crossed Uneasy2 = "Sprites/Koizumi/KoizumiCrossedUneasy2.png"
     image Koizumi Crossed Uneasy3 = "Sprites/Koizumi/KoizumiCrossedUneasy3.png"
+    image Koizumi Crossed Sigh1 = "Sprites/Koizumi/KoizumiCrossedSigh1.png"
+    image Koizumi Crossed Sigh2 = "Sprites/Koizumi/KoizumiCrossedSigh2.png"
+    image Koizumi Crossed Neutral1 = "Sprites/Koizumi/KoizumiCrossedNeutral1.png"
     
     image Koizumi Crossed Casual Ser1 = "Sprites/Koizumi/KoizumiCrossedCasualSerious1.png"
     image Koizumi Crossed Casual Ser2 = "Sprites/Koizumi/KoizumiCrossedCasualSerious2.png"
@@ -355,6 +367,9 @@ init:
     image Koizumi Crossed Casual Uneasy1 = "Sprites/Koizumi/KoizumiCrossedCasualUneasy1.png"
     image Koizumi Crossed Casual Uneasy2 = "Sprites/Koizumi/KoizumiCrossedCasualUneasy2.png"
     image Koizumi Crossed Casual Uneasy3 = "Sprites/Koizumi/KoizumiCrossedCasualUneasy3.png"
+    image Koizumi Crossed Casual Sigh1 = "Sprites/Koizumi/KoizumiCrossedCasualSigh1.png"
+    image Koizumi Crossed Casual Sigh2 = "Sprites/Koizumi/KoizumiCrossedCasualSigh2.png"
+    image Koizumi Crossed Casual Neutral1 = "Sprites/Koizumi/KoizumiCrossedCasualNeutral1.png"
     
     
     #Taniguchi Sprites
