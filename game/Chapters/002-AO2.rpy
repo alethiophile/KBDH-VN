@@ -1,9 +1,10 @@
+# Chapter AO2, 2 overall.
 
 label AO2:
     # Also doing double duty to check if we need to set the background.
     if music_need:
         $ renpy.music.set_volume(0.2, .5, channel="music")
-        play music "Music/ItsumoNoFuukei.mp3" fadeout 1.0
+        play music "Music/ItsumoNoFuukei.mp3"
         scene bg MorningSky
         show TownHillLeftMorning
     show Haruhi Quest1 at left    
