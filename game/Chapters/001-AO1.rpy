@@ -1014,6 +1014,7 @@ label AO1_2:
     play music "Music/ItsumoNoFuukei.mp3"
     scene bg MorningSky
     show TownHillLeftMorning
+    $ music_need = False
     show Kyon Neutral3 at right
     with dissolve
     "After finishing his breakfast and heading to school, he was startled to run into Haruhi at the train station at the bottom of the hill ... literally."
@@ -1080,5 +1081,5 @@ label AO1_2:
     nvl clear
     
     # Always place "jump credits" at the (current) end. Credits ARE important! ^___^
-    jump AO_2
+    jump AO2
     #jump credits

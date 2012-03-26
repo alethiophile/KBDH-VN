@@ -480,20 +480,20 @@ label prologue2:
     show Coat at right
     show Haruhi Worry1 at center
     "\"Granted.\" Kyon said, {nw}"
-    # $ _window = True
+    $ _window = True
     play sound "SE/heal1.wav"
     show healfield at right
     show Kyon Ser2 Bright at right
     show Skinsuit Bright at right
     show Coat Bright at right
     with dissolve
-    pause .1    
+    pause .1
     hide healfield at right
     show Kyon Sigh2 at right
     show Skinsuit at right
     show Coat at right
     with dissolve
-    # $ _window = False
+    $ _window = False
     extend "straightening up as a sparkle of green and white lights suffused up from the rooftop beneath him, flowing through his body and undoing the damage."
     nvl clear
     show Kyon Smile1 at right
