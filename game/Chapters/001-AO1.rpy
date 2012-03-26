@@ -255,7 +255,7 @@ label AO1_1:
     nvl clear
     show Asakura Sup1 at HalfRight
     "The blue-haired interface cocked her head to one side, blinking."
-    stop music fadeout 1
+    stop music
     "\"What?\""
     nvl clear
     hide Haruhi
@@ -274,7 +274,7 @@ label AO1_1:
     "\"It started off such a nice day, too,\" he mumbled, as his forward momentum was arrested and he began the downward plummet in earnest."
     nvl clear
     "How had it come to this, anyway...?"
-    stop music fadeout 1
+    stop music
     nvl clear
     scene title1 with slowfadein
     

@@ -2,7 +2,7 @@
 # Contains some pieces that are technically part of AO-1, but they're semantically right next to the prologue, so...
 
 label prologue:
-    stop music fadeout 1
+    stop music
     scene title0 with slowfadein
     
     pause
@@ -124,7 +124,7 @@ label prologue:
     show Kyon Sigh2 at right
     "\"Ahem,\" he coughed, shooting her a dark look.{nw}"
     show Kyon Ser1 at right
-    stop music fadeout 1
+    stop music
     extend " \"Take a step back, I don't want to catch you in the interdiction field again.\""
     show Haruhi Hap4 at center_left
     "She nodded and stepped backwards, against the wall."

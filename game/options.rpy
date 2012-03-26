@@ -189,6 +189,10 @@ init -1 python hide:
 
     config.main_menu_music = "Music/BoukenInst2.ogg"
 
+    ## This tells the music to fade out on transitioning back to the main menu.
+
+    config.fade_music = 1.0
+
     #########################################
     ## Help.
 
