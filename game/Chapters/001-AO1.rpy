@@ -399,6 +399,8 @@ label AO1_1:
     "\"Understood.\""
     stop music fadeout 3
     nvl clear
+    scene Credits3 with slowfadein
+    pause
     
     scene bg YukiApartmentNight with fade
     play music "Music/Kankyou.mp3"
@@ -643,7 +645,7 @@ label AO1_1:
     scene bg YukiRoomCenter
     show Koizumi Crossed Casual Uneasy1 at center
     show Mikuru Cower Casual Nervous1 at right
-    show MBlush at right
+    show MBlush Cower at right
     show Yuki Side1 at left
     with dissolve
     "Koizumi looked uncomfortable. Mikuru's face turned red, and she began studying the bottom of her teacup intently."
@@ -738,8 +740,9 @@ label AO1_1:
     scene black with dissolve
     stop music fadeout 5
     "\"I {i}knew{/i} I'd find you again!\""
-    scene black with dissolve
+    scene Credits3 with slowfadein
     nvl clear
+    pause
     jump prologue2
 
 
@@ -764,18 +767,17 @@ label AO1_2:
     nvl clear
     "Serving his curious sister a piece of toast with a fried egg on it, he set about preparing one for himself." 
     stop music fadeout 2
-    scene black with fade
+    scene black  with dissolve
     "Now Haruhi, as she understood it, believed that she could change reality...."
     nvl clear
-    
-    "Dev note: Trying out some new transitions here. Namely, using dissolve for cuts between people speaking, instead of straight jump cuts or fade, like in the John Smith scene.. Lemme know what you think works better. - Oroboro"
-    
-    nvl clear
+    scene Credits3 with slowfadein
+    pause
+
     play music "Music/GnossiennesDai3.mp3"
     scene bg YukiRoomCenter
     show Haruhi Casual Unhap1 at left
     show Htears Casual at left
-    with dissolve
+    with fade
     "\"But you're saying, I have a power I don't even know about?\" Haruhi asked, now pacing anxiously back and forth."
     show Haruhi Casual Unhap2 at left
     "\"Why would you have kept this a secret from me?! Even more than the fact that you're the people I've been looking for, the fact that I can do things!\""
@@ -1006,17 +1008,15 @@ label AO1_2:
     stop music fadeout 3
     "\"Granted,\" he said without hesitation."
     nvl clear
-    scene black with dissolve
-#    pause
-#   
+    scene Credits3 with slowfadein
+    pause
 
-    # play music "Music/ItsumoReprise.mp3"
     play music "Music/Itsumo(Movie).mp3"
     scene bg MorningSky
     show TownHillLeftMorning
     $ music_need = False
     show Kyon Neutral3 at right
-    with dissolve
+    with fade
     "After finishing his breakfast and heading to school, he was startled to run into Haruhi at the train station at the bottom of the hill ... literally."
     show Haruhi Hap4:
         xalign 0.0 yalign 1.0

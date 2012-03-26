@@ -16,6 +16,7 @@ label AO2:
     show Haruhi Smile2 at left
     show Mikuru Neutral1 at center
     show Kyon Neutral3 at right
+    with dissolve
     "\"So, you're good at time travel?\" she asked, nodding as Mikuru drew in range."
     show Mikuru Cower Nervous2 at center
     "\"Ah!\" the upperclassman yelped, wincing. \"S...Suzumiya-san, you can't talk about it so carelessly! People might overhear!\""
@@ -47,6 +48,7 @@ label AO2:
     scene bg hallway with wipeup
     show Kyon Neutral3 at right
     show Haruhi Smile1 at left
+    with dissolve
     "As she had expected, Kyon only shrugged at that. Mikuru broke away after they entered the school's front hall, moving to the third year students' shoe lockers." 
     "She and Kyon changed their shoes, then she sidled up to him on the walk to class." 
     show Haruhi Quest1 at left
@@ -69,7 +71,7 @@ label AO2:
         size (800,600)
     show Kyon Ang1 at right
     show Haruhi Smile1 at left
-    with wiperight
+    with dissolve
     "She watched the way his eyes tracked to Taniguchi, the other boy smirking widely. Kyon almost immediately adopted a scowl."
     show Haruhi Pout1 at left
     "\"Well,\" she mumbled, \"you didn't tell me you were John Smith. If you {i}had{/i}....\""
@@ -78,11 +80,11 @@ label AO2:
     "He sighed, nodding. \"Let's talk about that later,\" he suggested, taking his seat."
     nvl clear
     
-    
-    scene black with dissolve
-    play sound "SE/ClockChime.wav"
+    play sound "SE/WestminsterChime.mp3"
+    scene Credits3 with slowfadein
     pause
     stop sound fadeout 3
+    play music "Music/Nanika.mp3"
     
     
     scene bg classroom: 
@@ -91,7 +93,7 @@ label AO2:
     show Taniguchi Grin1 at HalfRight
     show Kyon Neutral3 at right
     show Haruhi Ang3 at left
-    with dissolve
+    with fade
     "\"So,\" Taniguchi said with a huge grin, approaching Kyon's desk during the first break. \"I hear that things between you and Suzumiya are getting ... closer?\""
     show Kyon Sigh1 at right
     "Kunikida and Kyon exchanged a look, then turned to the other boy. \"Why don't you ask her?\" Kyon asked, jerking a thumb over his shoulder to point to the girl in question."
@@ -121,6 +123,7 @@ label AO2:
     "\"Well, the answer is still going to be that it's none of their business! Absolutely none!\""
     show Kunikida Neutral2 at center
     "\"Aha ... well ... I'll leave the two of you to yourselves, then,\" {nw}"
+    show Kunikida at right with move
     hide Kunikida with moveoutright
     extend "Kunikida said, bowing slightly as he drew away."
     nvl clear
@@ -165,60 +168,124 @@ label AO2:
     show Haruhi Smile2 at left
     "\"Plus,\" she added, still staring out the window, \"you've got to give authorization for all of my powers, so there's no way in hell I'm letting you further out of reach than I have to.\""
     show Kyon Unhap1 at right
+    stop music fadeout 3
     "Sighing, he lowered his head to the desk again."
     nvl clear
-    # "* * *"
-    # "\"So,\" Haruhi asked, her back to the large window of Yuki's living room, \"did it work?\""
-    # "Yuki removed her fingertips from Haruhi's head and said, \"Yes.\""
-    # "\"You're not going to die?\" Kyon asked quickly."
-    # nvl clear
-    # "Turning to face him, Yuki gave a small nod. \"I am no longer connected or accessible to the Integrated Data Sentience Entity,\" she said. \"They will not be able to delete me remotely.\""
-    # "\"Good,\" he sighed, relaxing. \"Thank you, Haruhi.\""
-    # nvl clear
-    # "\"I already told you,\" she grumbled, \"I'm not about to let a brigade member get into trouble. And hurting Yuki because.... Hey, actually, come to think of it, what was their reason?\""
-    # "\"To prevent me from committing errors,\" Yuki answered. \"My makeup had been determined to destabilize, and I was scheduled for deletion prior to this error occurring.\""
-    # nvl clear
-    # "\"What's this error, then?\""
-    # "\"Unknown.\""
-    # "\"Is it going to happen?\""
-    # "\"Unknown.\""
-    # nvl clear
-    # "\"Hmm.... Hey, Kyon, you've always known Yuki best.\" Haruhi turned to look at him sternly. \"What's it all mean?\""
-    # "He frowned thoughtfully, his attention already focused on the smaller girl. \"Is this something on the scale of the incident from December?\" he asked."
-    # "The pale-haired girl blinked. \"Possibly.\""
-    # nvl clear
-    # "\"Is there any way we can try and prevent that from happening?\" he asked, shifting his shoulders."
-    # "\"I don't like being left in the dark,\" Haruhi said crossly. \"So, what's this 'incident' about?\""
-    # "Yuki blinked, then passed her eyes over everyone in the room in turn, lingering on Kyon and Haruhi before saying, \"I would like to speak of this privately.\""
-    # nvl clear
-    # "\"Alright,\" Kyon agreed, shrugging his shoulders. \"I already remember, so I can respect that. Ah ... I know that this is a lot to take in, Haruhi, so is it okay if we talk about it later? Maybe at the brigade meeting tomorrow?\""
-    # "She hesitated a moment, then nodded. \"I suppose that you want me to stay here?\" she asked Yuki."
-    # nvl clear
-    # "The quiet girl offered a nod of her own in return."
-    # "\"Well, alright then.\" In a warning tone, Haruhi added, \"The rest of you aren't off the hook yet, you know!\""
-    # nvl clear
-    # "\"Of course,\" Koizumi said, nodding. \"I understand. In that case, Nagato-san, Suzumiya-san ... we shall take our leave?\""
-    # "\"Y...yes,\" Mikuru agreed, nodding as well. \"See you tomorrow.\""
-    # nvl clear
-    # "Kyon waved wordlessly, stepping through the door to the hall outside of Yuki's apartment last."    
-    # "Once the three of them were in the elevator, heading down, Kyon said, \"I'm going to guess that you've got a small encyclopedia worth of questions for me, Koizumi.\""
-    # "\"My greatest question,\" the esper replied without hesitation, \"is if this was all necessary.\""
-    # nvl clear
-    # "\"It was,\" Mikuru mumbled, her head bowed as the elevator stopped and the door opened. \"This was a predetermined event.\""
-    # "\"Is that so?\" Shaking his head, Koizumi added, \"I rushed over and missed lunch. I suspect you must have, as well. I think we have a lot to discuss ... so why don't we go to our usual cafe? My treat.\""
-    # nvl clear
-    # "\"That sounds fine by me,\" Kyon said with a shrug. The group stepped out of the elevator, only Kyon glancing at the snoozing supervisor in the lobby office. \"Asahina-san?\""
-    # "\"Um. Yes, okay,\" the time traveler agreed. \"But ... maybe we could go somewhere closer? Suzumiya-san might call and want to speak with us after ... um.\""
-    # nvl clear
-    # "\"Fine,\" Koizumi agreed, gesturing to the building entrance and leading the way."
-    # "Once they stepped out of the tall apartment building, Kyon asked, \"Is closed space still a concern?\""
-    # "\"Right now, Suzumiya-san is more bewildered than anything else,\" the esper said, shaking his head. \"But even though I requested this discussion, I still need a few minutes to order my thoughts.\""
-    # nvl clear
-    # "\"Okay. Asahina-san, I know I requested your superiors back me up on explaining who you are to Haruhi, but I'm still not clear on why they suddenly decided that it was okay for you to do ... whatever I said,\" Kyon said, shifting his shoulders." 
-    # "\"Was there anything else in that message?\""
-    # "\"Um, no,\" she answered, her face turning pink, her eyes looking away."
-    # nvl clear
-    # "Both boys exchanged a glance, then shrugged."
+    
+    scene Credits3 with slowfadein
+    pause
+    play music "Music/Kokuhaku.mp3"
+    
+    scene bg YukiRoomCenter
+    show Haruhi Casual Worry1 at left
+    show Yuki Side1 at HalfLeft
+    show Kyon Casual Ser1 at right
+    with fade
+    "\"So,\" Haruhi asked, her back to the large window of Yuki's living room, \"did it work?\""
+    show Yuki Talk1 at center with move
+    "Yuki removed her fingertips from Haruhi's head and said, \"Yes.\""
+    show Kyon Casual Worry1 at right
+    "\"You're not going to die?\" Kyon asked quickly."
+    nvl clear
+    show Yuki Talk2 at center
+    "Turning to face him, Yuki gave a small nod. \"I am no longer connected or accessible to the Integrated Data Sentience Entity,\" she said. \"They will not be able to delete me remotely.\""
+    show Kyon Casual Sigh1 at right
+    "\"Good,\" he sighed, relaxing.{nw}"
+    show Kyon Casual Smile1 at right
+    extend "\"Thank you, Haruhi.\""
+    nvl clear
+    show Haruhi Casual Pout1 at left
+    "\"I already told you,\" she grumbled, \"I'm not about to let a brigade member get into trouble. And hurting Yuki because.... {nw}"
+    show Haruhi Casual Quest1 at left
+    extend "Hey, actually, come to think of it, what was their reason?\""
+    show Yuki Talk1 at center
+    "\"To prevent me from committing errors,\" Yuki answered. \"My makeup had been determined to destabilize, and I was scheduled for deletion prior to this error occurring.\""
+    nvl clear
+    show Haruhi Casual Worry1 at left
+    "\"What's this error, then?\""
+    show Yuki Talk2 at center
+    "\"Unknown.\""
+    show Haruhi Casual Quest1 at left
+    "\"Is it going to happen?\""
+    show Yuki Talk1 at center
+    "\"Unknown.\""
+    nvl clear
+    show Haruhi Casual Unhap2 at left
+    "\"Hmm.... Hey, Kyon, you've always known Yuki best.\" Haruhi turned to look at him sternly. \"What's it all mean?\""
+    show Kyon Casual Ser1 at right
+    "He frowned thoughtfully, his attention already focused on the smaller girl. \"Is this something on the scale of the incident from December?\" he asked."
+    show Yuki Side Blink at center
+    "The pale-haired girl blinked. \"Possibly.\""
+    nvl clear
+    show Yuki Side1 at center
+    show Kyon Casual Worry1 at right
+    "\"Is there any way we can try and prevent that from happening?\" he asked, shifting his shoulders."
+    show Haruhi Casual Ang3 at left
+    "\"I don't like being left in the dark,\" Haruhi said crossly. \"So, what's this 'incident' about?\""
+    show Yuki Side Blink at center
+    "Yuki blinked, then passed her eyes over everyone in the room in turn, lingering on Kyon and Haruhi before saying, \"I would like to speak of this privately.\""
+    nvl clear
+    show Yuki Side2 at center
+    show Kyon Casual Sigh2 at right
+    "\"Alright,\" Kyon agreed, shrugging his shoulders. \"I already remember, so I can respect that. Ah ... I know that this is a lot to take in, Haruhi, so is it okay if we talk about it later? Maybe at the brigade meeting tomorrow?\""
+    show Haruhi Casual Quest1 at left
+    "She hesitated a moment, then nodded. \"I suppose that you want me to stay here?\" she asked Yuki."
+    nvl clear
+    show Yuki Side2 at center
+    "The quiet girl offered a nod of her own in return."
+    show Haruhi Casual Unhap2 at left
+    "\"Well, alright then.\" In a warning tone, Haruhi added, \"The rest of you aren't off the hook yet, you know!\""
+    nvl clear
+    scene bg YukiRoomCenter
+    show Koizumi Crossed Casual Ser1 at left
+    show Mikuru Casual Neutral1 at right
+    with dissolve
+    "\"Of course,\" Koizumi said, nodding. \"I understand. In that case, Nagato-san, Suzumiya-san ... we shall take our leave?\""
+    "\"Y...yes,\" Mikuru agreed, nodding as well. \"See you tomorrow.\""
+    nvl clear
+    scene black with wiperight
+    show Kyon Casual Ser1 at right
+    show Koizumi Crossed Casual Ser1 at left
+    show Mikuru Casual Neutral1 at center
+    with dissolve
+    "Kyon waved wordlessly, stepping through the door to the hall outside of Yuki's apartment last."    
+    show Kyon Casual Sigh1 at right
+    "Once the three of them were in the elevator, heading down, Kyon said, \"I'm going to guess that you've got a small encyclopedia worth of questions for me, Koizumi.\""
+    show Koizumi Crossed Casual Ser2 at left
+    "\"My greatest question,\" the esper replied without hesitation, \"is if this was all necessary.\""
+    nvl clear
+    show Mikuru Casual Sad2 at center
+    "\"It was,\" Mikuru mumbled, her head bowed as the elevator stopped and the door opened. \"This was a predetermined event.\""
+    show Koizumi Crossed Casual Sigh2 at left
+    "\"Is that so?\" Shaking his head, Koizumi added, \"I rushed over and missed lunch. I suspect you must have, as well. I think we have a lot to discuss ... so why don't we go to our usual cafe? My treat.\""
+    nvl clear
+    show Kyon Casual Sigh2 at right
+    "\"That sounds fine by me,\" Kyon said with a shrug. The group stepped out of the elevator, only Kyon glancing at the snoozing supervisor in the lobby office. \"Asahina-san?\""
+    show Mikuru Casual Quest1 at center
+    "\"Um. Yes, okay,\" the time traveler agreed. \"But ... maybe we could go somewhere closer? Suzumiya-san might call and want to speak with us after ... um.\""
+    nvl clear
+    show Koizumi Crossed Casual Neutral1 at left
+    "\"Fine,\" Koizumi agreed, gesturing to the building entrance and leading the way."
+    scene bg YukiApartmentNight with wipeleft
+    show Kyon Casual Neutral3 at right
+    show Koizumi Crossed Casual Ser1 at left
+    show Mikuru Casual Neutral1 at center
+    with dissolve
+    "Once they stepped out of the tall apartment building, Kyon asked, \"Is closed space still a concern?\""
+    show Koizumi Crossed Casual Sigh1 at left
+    "\"Right now, Suzumiya-san is more bewildered than anything else,\" the esper said, shaking his head. \"But even though I requested this discussion, I still need a few minutes to order my thoughts.\""
+    nvl clear
+    show Kyon Casual Ser2 at right
+    "\"Okay. Asahina-san, I know I requested your superiors back me up on explaining who you are to Haruhi, but I'm still not clear on why they suddenly decided that it was okay for you to do ... whatever I said,\" Kyon said, shifting his shoulders."
+    show Kyon Casual Worry1 at right
+    "\"Was there anything else in that message?\""
+    show Mikuru Casual Unhap1 at center
+    show MBlush1 Casual at center
+    "\"Um, no,\" she answered, her face turning pink, her eyes looking away."
+    nvl clear
+    show Kyon Casual Sigh2 at right
+    show Koizumi Crossed Casual Sigh2 at left
+    "Both boys exchanged a glance, then shrugged."
     # "* * *"
     # "\"Let's have lunch in the clubroom,\" Haruhi decided, the second the chime rang."
     # "Kyon blinked at her, then shrugged. \"Why not?\" he asked, shaking his head."

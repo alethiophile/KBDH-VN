@@ -1,3 +1,0 @@
-Agasa here! Sorry to be a party pooper, but the Kanae template is completely useless as it stands, especially since i accidentally damaged her right (for us) eye. You can see it clearly if you look at the eyebrow and at the antialiasing. Her Surprised!eyebrows need to be fixed too. Apologies. I'd be very happy if you didn't touch the spriteset until i fix everything and instead just left me a list of combinations to do in a similar text file as this, pointing to the mikurufaces! Again, apologies!
-
-/me bows apologetically, leaves you a plate of cookies.
