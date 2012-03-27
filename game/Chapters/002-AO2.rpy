@@ -8,6 +8,7 @@ label AO2:
         scene bg MorningSky
         show TownHillLeftMorning
     show Haruhi Quest1 at left    
+    play sfxloop "SE/footstepsloop.mp3"
     "\"Anyway,\" Haruhi said, glancing at Kyon again as they topped the hill, \"what's it all mean?\""
     show Kyon Ser1 at right
     "\"I'm not entirely sure,\" he admitted, scanning his eyes across the other two lines before folding the letter back up and stuffing it into a pocket. \"I'm guessing it'll make sense when it happens.\""
@@ -39,6 +40,7 @@ label AO2:
     nvl clear
     show Haruhi Hap4 at left
     "\"Hah! Okay, I'll admit, I had my doubts before. Mikuru the time traveler? Silly. Mikuru the cute and hilariously inept time traveler, relying on Kyon for support? Entirely plausible!\""
+    nvl clear
     show Kyon Ser2 at right
     "\"Be nice,\" Kyon said, shooting Haruhi a mild scowl. \"If it weren't for Asahina-san and her bosses helping us out ... things might be a lot worse right now.\""
     show Haruhi Sigh1 at left
@@ -51,6 +53,7 @@ label AO2:
     with dissolve
     "As she had expected, Kyon only shrugged at that. Mikuru broke away after they entered the school's front hall, moving to the third year students' shoe lockers." 
     "She and Kyon changed their shoes, then she sidled up to him on the walk to class." 
+    nvl clear
     show Haruhi Quest1 at left
     "\"But, seriously, is that why you're always seeming so tired and lazy, and your grades tend to suck?\" she asked in a soft tone."
     nvl clear
@@ -77,6 +80,7 @@ label AO2:
     "\"Well,\" she mumbled, \"you didn't tell me you were John Smith. If you {i}had{/i}....\""
     show Kyon Sigh2 at right
     stop music fadeout 3
+    stop sfxloop fadeout 3
     "He sighed, nodding. \"Let's talk about that later,\" he suggested, taking his seat."
     nvl clear
     
@@ -141,6 +145,7 @@ label AO2:
     "\"I'll be careful ... even if it is {i}boring{/i}. But it's not like it's {i}that{/i} outlandish for a girl to be close to a guy. At our age, it's practically expected."
     show Haruhi Ang3 at left
     "\"Isn't that what Greaseball McGee over there,\" she said, nodding at Taniguchi as he slunk back into the classroom, \"is all about?"
+    nvl clear
     show Haruhi Ang4 at left
     "\"Aside from which, people are stupid and think that 'something' is going on between us anyway. "
     show Haruhi Sigh2 at left
@@ -151,11 +156,12 @@ label AO2:
     "He flinched back from her gaze as her eyes lit up with intensity, adding, \"So, unless you've got some other girlfriend I should {i}know{/i} about, maybe Miyochiki—\""
     show Kyon Ser2 at right
     "\"Miyokichi,\" he corrected her flatly. \"And it's a real compliment to me that you seriously consider an eleven year old girl to be my only valid romantic prospect.\""
+    nvl clear
     show Haruhi Ang4 at left
     "\"Whatever!\" she snapped, her face darkening. \"If not her, maybe that ... that Sasaki—\""
-    nvl clear
     show Kyon Sigh1 at right
     "\"Ugh,\" he interjected again, this time with a small shudder. \"She's a friend, but I really can't stand who she chooses to associate with these days.\""
+    nvl clear
     show Haruhi Sigh1 at left
     "For some reason, Haruhi calmed substantially at that. \"Anyway,\" she said more smoothly, \"if you're not actually dating anyone, then you have no actual girlfriend to get jealous of our studying together."
     show Haruhi Smile2 at left
@@ -198,7 +204,7 @@ label AO2:
     extend "\"Thank you, Haruhi.\""
     nvl clear
     show Haruhi Casual Pout1 at left
-    "\"I already told you,\" she grumbled, \"I'm not about to let a brigade member get into trouble. And hurting Yuki because.... {nw}"
+    "\"I already told you,\" she grumbled, \"I'm not about to let\na brigade member get into trouble. And hurting Yuki because.... {nw}"
     show Haruhi Casual Quest1 at left
     extend "Hey, actually, come to think of it, what was their reason?\""
     show Yuki Talk1 at center
@@ -246,7 +252,7 @@ label AO2:
     "\"Of course,\" Koizumi said, nodding. \"I understand. In that case, Nagato-san, Suzumiya-san ... we shall take our leave?\""
     "\"Y...yes,\" Mikuru agreed, nodding as well. \"See you tomorrow.\""
     nvl clear
-    scene black with wiperight
+    scene bg Elevator with wiperight
     show Kyon Casual Ser1 at right
     show Koizumi Crossed Casual Ser1 at left
     show Mikuru Casual Neutral1 at center
@@ -269,6 +275,7 @@ label AO2:
     nvl clear
     show Koizumi Crossed Casual Neutral1 at left
     "\"Fine,\" Koizumi agreed, gesturing to the building entrance and leading the way."
+    nvl clear
     scene bg YukiApartmentNight with wipeleft
     show Kyon Casual Neutral3 at right
     show Koizumi Crossed Casual Ser1 at left
@@ -289,31 +296,86 @@ label AO2:
     show Kyon Casual Sigh2 at right
     show Koizumi Crossed Casual Sigh2 at left
     "Both boys exchanged a glance, then shrugged."
-    # "* * *"
+    nvl clear
+    
+    
+    #Note: A pause without a time statement lasts until the reader clicks again, which is how long I feel the transitions between scenes should last. 
+    #The reader can pause and collect their thoughts for a few seconds if they want to, or just keep clicking and plowing through the scene. That's how I feel it should be, anyway. - Oroboro
+    
+    # play sound "SE/WestminsterChimeShort.mp3"
+    # scene Credits3 with fastfadein 
+    # pause
+    # stop sound fadeout 3
+#     
+# label Test:    
+    # stop music
+    # scene bg classroom with fade: 
+        # size (800,600)
+    # show Kyon Neutral3 at right
+    # show Haruhi Smile1 at left
     # "\"Let's have lunch in the clubroom,\" Haruhi decided, the second the chime rang."
+    # show Kyon Sigh2 at right
     # "Kyon blinked at her, then shrugged. \"Why not?\" he asked, shaking his head."
     # nvl clear
+    # scene bg hallway with wiperight
+    # show Haruhi Quest1 at left
+    # show Kyon Neutral3 at right
+    # with dissolve
     # "Once they reached the hallway, Haruhi looked around to ensure no other students were nearby, and asked, \"So, how long am I going to have put up with you and Yuki being in charge of me using my powers?\""
+    # show Kyon Smile3
     # "\"I was thinking forever,\" he said with a slight smile."
     # nvl clear
+    # show Haruhi Ang3 at left
     # "She shot him a glower. \"Stop joking,\" she snapped. \"Seriously! If it's for Yuki's safety, then that's how it has to be — like I said yesterday.\"" 
+    # show Haruhi Pout1 at left
     # "\"But it can't be {i}permanent{/i}, can it? I mean, can't I just fix it so that Yuki doesn't need to rely on me?\""
     # nvl clear
+    # show Kyon Sigh2 at right
     # "\"Then once you can be responsible with your power,\" he said, shrugging. \"It's not like I've asked Asahina-san to let me go back and give myself notes on tests I did poorly on.\""
+    # show Kyon Neutral2 at right
     # "\"Or I've come back from the future to warn myself about upcoming pop quizzes. Really, while it's useful to have access to that kind of power, well.... With great power comes—\""
     # nvl clear
+    # show Haruhi Ang4 at left
     # "\"Don't even try and quote that movie at me,\" she warned him."
+    # show Kyon Puzzle1 at right
     # "\"Er ... where it's from doesn't make it any less true,\" he countered."
     # nvl clear
+    # show Haruhi Crossed Ang1 at left
     # "\"Bah! I never wanted that! Espers with the duty to save the world, aliens with important research missions, time travelers who are only here to work — the goal was to have {i}fun{/i}.\""
+    # scene bg stairwell with wipeup:
+         # size (800,600)
+    # show Kyon Ser1 at right
+    # show Haruhi Unhap2 at left
+    # with dissolve
     # "They reached the stairs to the old club building, and he said, \"So, speaking of movies.... Now, I don't blame you for this personally, but using your power responsibly? Do you remember the movie we made? Your 'Mikuru beam'?\""
-    # "\"Like I'd forget! What about it?\" She paused at the top of the stairs, not far from the clubroom door, musing. \"Does she really have one?\""
+    # scene bg ClubHallLeft with wiperight
+    # show Haruhi Eyeroll1 at left
+    # show Kyon Ser1 at right
+    # with dissolve
+    # "\"Like I'd forget! What about it?\" She paused at the top of the stairs, not far from the clubroom door, musing. {nw}"
+    # show Haruhi Quest1 at left
+    # extend "\"Does she really have one?\""
     # nvl clear
+    # show Kyon Sigh2 at right
     # "\"Throughout the movie, she had several,\" he said, shrugging. \"The very first one would have killed me if Nagato hadn't saved my life.\""
+    # show Haruhi Sup1 at left
     # "She blanched at that. \"B...but....\""
-    # "\"And you didn't even {i}know{/i},\" he added, shaking his head. \"So, yeah. Once you can be responsible with your power, we can worry about that.\""
+    # show Kyon Sigh1 at right
+    # "\"And you didn't even {i}know{/i},\" he added, shaking his head.{nw}"
+    # show Kyon Ser2 at right
+    # extend "\"So, yeah. Once you can be responsible with your power, we can worry about that.\""
     # nvl clear
+    # show Haruhi Pout1 at left
     # "\"I can be plenty responsible,\" she grumbled, following him as he opened the clubroom door."
+    # play sound "SE/dooropenslow.wav"
+#     
+    # scene bg ClubroomLeftDay with slowflashbulb
+    # scene bg ClubroomFullDay:
+        # xpos 0 ypos 0
+        # linear 8.0 xpos -800 ypos 0
+#     
+   # # scene bg ClubroomCenterDay with slowflashbulb
+    # #show Yuki Chair1 at center
     # "Sitting oddly stiffly in her usual seat, Yuki stared forward, turning her face towards the pair as they entered."
     # nvl clear
     # "\"Oh!\" Haruhi said brightly. \"Perfect! I was hoping you'd be here so we could talk about things!\""

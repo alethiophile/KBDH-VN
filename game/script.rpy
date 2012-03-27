@@ -20,6 +20,11 @@ init:
     image bg KyonHouseNight = "Backgrounds/KyonHouseNight.png"
     image bg TownStreetNight1 = "Backgrounds/TownStreetNight1.png"
     image bg TownStreetNight2 = "Backgrounds/TownStreetNight2.png"
+    image bg Elevator = "Backgrounds/ElevatorInterior.png"
+    image bg ClubHallLeft = "Backgrounds/ClubHallLeft.png"
+    image bg ClubroomCenterDay = "Backgrounds/ClubroomCenterDay.png"
+    image bg ClubroomLeftDay = "Backgrounds/ClubroomLeftDay.png"
+    image bg ClubroomFullDay ="Backgrounds/ClubroomFullDay.png"
     
     image bg YukiApartmentNight = "Backgrounds/YukiApartmentNight.png"
     image bg YukiRoomLeft = "Backgrounds/YukiRoomLeft.png"
@@ -76,8 +81,8 @@ init:
     image Haruhi Smile3 = "Sprites/Haruhi/HaruhiSideSmile3.png"
     image Haruhi Sigh1 = "Sprites/Haruhi/HaruhiSideSigh1.png"
     image Haruhi Sigh2 = "Sprites/Haruhi/HaruhiSideSigh2.png"
-    image Haruhi Unhap1 = "Sprites/HaruhiSideUnhappy1.png"
-    image Haruhi Unhap2 = "Sprites/HaruhiSideUnhappy2.png"
+    image Haruhi Unhap1 = "Sprites/Haruhi/HaruhiSideUnhappy1.png"
+    image Haruhi Unhap2 = "Sprites/Haruhi/HaruhiSideUnhappy2.png"
     image Haruhi Focus1 = "Sprites/Haruhi/HaruhiSideFocus1.png"
     
     image Haruhi Casual Sup1 = "Sprites/Haruhi/HaruhiSideCasualSurprised1.png"
@@ -180,6 +185,8 @@ init:
     image Kyon Pain2 = "Sprites/Kyon/KyonPained2.png"
     image Kyon Smile1 = "Sprites/Kyon/KyonSmile1.png"
     image Kyon Smile2 = "Sprites/Kyon/KyonSmile2.png"
+    image Kyon Smile3 = "Sprites/Kyon/KyonSmile3.png"
+    image Kyon Smile4 = "Sprites/Kyon/KyonSmile4.png"
     image Kyon Worry1 = "Sprites/Kyon/KyonWorry1.png"
     image Kyon Worry2 = "Sprites/Kyon/KyonWorry1.png"
     image Kyon Puzzle1 = "Sprites/Kyon/KyonPuzzled1.png"
@@ -204,6 +211,8 @@ init:
     image Kyon Casual Pain2 = "Sprites/Kyon/KyonCasualPained2.png"
     image Kyon Casual Smile1 = "Sprites/Kyon/KyonCasualSmile1.png"
     image Kyon Casual Smile2 = "Sprites/Kyon/KyonCasualSmile2.png"
+    image Kyon Casual Smile3 = "Sprites/Kyon/KyonCasualSmile3.png"
+    image Kyon Casual Smile4 = "Sprites/Kyon/KyonCasualSmile4.png"
     image Kyon Casual Worry1 = "Sprites/Kyon/KyonCasualWorry1.png"
     image Kyon Casual Worry2 = "Sprites/Kyon/KyonCasualWorry2.png"
     image Kyon Casual Puzzle1 = "Sprites/Kyon/KyonCasualPuzzled1.png"
@@ -273,6 +282,11 @@ init:
     image Yuki Casual Sad3 = "Sprites/Yuki/YukiSideCasualSad3.png"
     image Yuki Casual SadTalk2 = "Sprites/Yuki/YukiSideCasualSadTalk2.png"
     image Yuki Casual SadTalk3 = "Sprites/Yuki/YukiSideCasualSadTalk3.png"
+    
+    image Yuki Chair1 = "Sprites/Yuki/YukiChair1.png"
+    image Yuki Chair2 = "Sprites/Yuki/YukiChair2.png"
+    image Yuki Chair3 = "Sprites/Yuki/YukiChair3.png"
+    image Yuki Chair4 = "Sprites/Yuki/YukiChair4.png"
     
     image Yuki Side Blink:
         "Sprites/Yuki/YukiSide1.png"
@@ -415,7 +429,12 @@ init python:
     config.window_show_transition = dissolve
     renpy.music.set_volume(0.2, .5, channel="music")
     flashbulb = Fade(0.2, 0.0, 0.8, color='#fff')
+    slowflashbulb = Fade(1.0, 0.5, 2.0, color='#fff')
+   
     renpy.music.register_channel("sound2", "sfx", 0)
+    _preferences.set_volume("sfx", 0.5)
+    
+    renpy.music.register_channel("sfxloop", "sfx", 1)
     _preferences.set_volume("sfx", 0.5)
     
     # positions on the (imaginary) screen situated directly left of one shown.
@@ -461,7 +480,7 @@ init -1 python:
         ("In Media Res Prologue\nExactly What it Says on the Tin", "prologue"),
         ("Obligatory Anachronic Order \nExplanation Arc chapter one\n\"Scene Twelve, the Ninth Big Fight\"", "AO1_1"),
         ("Obligatory Anachronic Order \nExplanation Arc chapter two\n\"Clear as Mud\"", "AO2"),
-    ]
+         ("Label a scene you're working on test and use this", "Test")]
 
 
 label start:
