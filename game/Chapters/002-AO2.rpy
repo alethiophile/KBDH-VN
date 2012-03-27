@@ -80,10 +80,13 @@ label AO2:
     "He sighed, nodding. \"Let's talk about that later,\" he suggested, taking his seat."
     nvl clear
     
-    play sound "SE/WestminsterChime.mp3"
-    scene Credits3 with slowfadein
-    pause
-    stop sound fadeout 3
+    play sound "SE/WestminsterChimeShort.mp3"
+    scene Credits3 with fastfadein # slowfadein
+    pause 10.0
+    # play sound "SE/WestminsterChime.mp3"
+    # scene Credits3 with fastfadein # slowfadein
+    # pause 18.0
+    stop sound fadeout 2
     play music "Music/Nanika.mp3"
     
     
@@ -172,8 +175,8 @@ label AO2:
     "Sighing, he lowered his head to the desk again."
     nvl clear
     
-    scene Credits3 with slowfadein
-    pause
+    scene Credits3 with fastfadein # slowfadein
+    pause 2.0
     play music "Music/Kokuhaku.mp3"
     
     scene bg YukiRoomCenter

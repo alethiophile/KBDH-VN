@@ -398,6 +398,7 @@ init python:
     narrator = Character(None, kind=basechar)
     irisoutfast = CropMove(0.2, "irisout")
     slowfadein = Fade(0.5, 0.5, 5)
+    fastfadein = Fade(0.5, 0.5, 0.5)
     wipeleftfast = CropMove(0.3, "wipeleft")
     wiperightfast = CropMove(0.3, "wiperight")
     wipeupslow = CropMove(2, "wipeup")
