@@ -39,6 +39,7 @@ label AO2:
     nvl clear
     show Haruhi Hap4 at left
     "\"Hah! Okay, I'll admit, I had my doubts before. Mikuru the time traveler? Silly. Mikuru the cute and hilariously inept time traveler, relying on Kyon for support? Entirely plausible!\""
+    nvl clear
     show Kyon Ser2 at right
     "\"Be nice,\" Kyon said, shooting Haruhi a mild scowl. \"If it weren't for Asahina-san and her bosses helping us out ... things might be a lot worse right now.\""
     show Haruhi Sigh1 at left
@@ -51,6 +52,7 @@ label AO2:
     with dissolve
     "As she had expected, Kyon only shrugged at that. Mikuru broke away after they entered the school's front hall, moving to the third year students' shoe lockers." 
     "She and Kyon changed their shoes, then she sidled up to him on the walk to class." 
+    nvl clear
     show Haruhi Quest1 at left
     "\"But, seriously, is that why you're always seeming so tired and lazy, and your grades tend to suck?\" she asked in a soft tone."
     nvl clear
@@ -140,7 +142,8 @@ label AO2:
     show Haruhi Eyeroll1 at left
     "\"I'll be careful ... even if it is {i}boring{/i}. But it's not like it's {i}that{/i} outlandish for a girl to be close to a guy. At our age, it's practically expected.\""
     show Haruhi Ang3 at left
-    "\"Isn't that what Greaseball McGee over there,\" she said, nodding at Taniguchi as he slunk back into the classroom, \"is all about? \""
+    "\"Isn't that what Greaseball McGee over there,\" she said, nodding at Taniguchi as he slunk back into the classroom, \"is all about?\""
+    nvl clear
     show Haruhi Ang4 at left
     "\"Aside from which, people are stupid and think that 'something' is going on between us anyway. \""
     show Haruhi Sigh2 at left
@@ -151,11 +154,12 @@ label AO2:
     "He flinched back from her gaze as her eyes lit up with intensity, adding, \"So, unless you've got some other girlfriend I should {i}know{/i} about, maybe Miyochiki—\""
     show Kyon Ser2 at right
     "\"Miyokichi,\" he corrected her flatly. \"And it's a real compliment to me that you seriously consider an eleven year old girl to be my only valid romantic prospect.\""
+    nvl clear
     show Haruhi Ang4 at left
     "\"Whatever!\" she snapped, her face darkening. \"If not her, maybe that ... that Sasaki—\""
-    nvl clear
     show Kyon Sigh1 at right
     "\"Ugh,\" he interjected again, this time with a small shudder. \"She's a friend, but I really can't stand who she chooses to associate with these days.\""
+    nvl clear
     show Haruhi Sigh1 at left
     "For some reason, Haruhi calmed substantially at that. \"Anyway,\" she said more smoothly, \"if you're not actually dating anyone, then you have no actual girlfriend to get jealous of our studying together.\""
     show Haruhi Smile2 at left
@@ -198,7 +202,7 @@ label AO2:
     extend "\"Thank you, Haruhi.\""
     nvl clear
     show Haruhi Casual Pout1 at left
-    "\"I already told you,\" she grumbled, \"I'm not about to let a brigade member get into trouble. And hurting Yuki because.... {nw}"
+    "\"I already told you,\" she grumbled, \"I'm not about to let\na brigade member get into trouble. And hurting Yuki because.... {nw}"
     show Haruhi Casual Quest1 at left
     extend "Hey, actually, come to think of it, what was their reason?\""
     show Yuki Talk1 at center
@@ -269,6 +273,7 @@ label AO2:
     nvl clear
     show Koizumi Crossed Casual Neutral1 at left
     "\"Fine,\" Koizumi agreed, gesturing to the building entrance and leading the way."
+    nvl clear
     scene bg YukiApartmentNight with wipeleft
     show Kyon Casual Neutral3 at right
     show Koizumi Crossed Casual Ser1 at left
