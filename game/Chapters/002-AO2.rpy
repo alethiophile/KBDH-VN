@@ -83,7 +83,9 @@ label AO2:
     nvl clear
     
     play sound "SE/WestminsterChimeShort.mp3"
-    scene Credits3 with fastfadein # slowfadein
+    scene black with dissolve
+    $ renpy.pause(.2, hard=True)
+    show BDVNlogo at truecenter with Dissolve(2.0)
     pause 10.0
     # play sound "SE/WestminsterChime.mp3"
     # scene Credits3 with fastfadein # slowfadein
@@ -142,7 +144,7 @@ label AO2:
     show Haruhi Eyeroll1 at left
     "\"I'll be careful ... even if it is {i}boring{/i}. But it's not like it's {i}that{/i} outlandish for a girl to be close to a guy. At our age, it's practically expected."
     show Haruhi Ang3 at left
-    "\"Isn't that what Greaseball McGee over there,\" she said, nodding at Taniguchi as he slunk back into the classroom, \"is all about?"
+    "\"Isn't that what Greaseball McGee over there,\" she said, nodding at Taniguchi as he slunk back into the classroom, \"is all about?\""
     nvl clear
     show Haruhi Ang4 at left
     "\"Aside from which, people are stupid and think that 'something' is going on between us anyway. "
@@ -179,7 +181,9 @@ label AO2:
     "Sighing, he lowered his head to the desk again."
     nvl clear
     
-    scene Credits3 with fastfadein # slowfadein
+    scene black with dissolve
+    $ renpy.pause(.2, hard=True)
+    show BDVNlogo at truecenter with Dissolve(2.0)
     pause 2.0
     play music "Music/Kokuhaku.mp3"
     
@@ -197,7 +201,7 @@ label AO2:
     show Yuki Talk2 at center
     "Turning to face him, Yuki gave a small nod. \"I am no longer connected or accessible to the Integrated Data Sentience Entity,\" she said. \"They will not be able to delete me remotely.\""
     show Kyon Casual Sigh1 at right
-    "\"Good,\" he sighed, relaxing.{nw}"
+    "\"Good,\" he sighed, relaxing.{nw} "
     show Kyon Casual Smile1 at right
     extend "\"Thank you, Haruhi.\""
     nvl clear
@@ -300,7 +304,9 @@ label AO2:
    
     
     play sound "SE/WestminsterChimeShort.mp3"
-    scene Credits3 with fastfadein 
+    scene black with dissolve
+    $ renpy.pause(.2, hard=True)
+    show BDVNlogo at truecenter with Dissolve(2.0)
     pause 10
     stop sound fadeout 3
 #     
@@ -325,12 +331,12 @@ label Test:
     "\"I was thinking forever,\" he said with a slight smile."
     nvl clear
     show Haruhi Ang3 at left
-    "She shot him a glower. \"Stop joking,\" she snapped. \"Seriously! If it's for Yuki's safety, then that's how it has to be — like I said yesterday.\"" 
+    "She shot him a glower. \"Stop joking,\" she snapped. \"Seriously! If it's for Yuki's safety, then that's how it has to be — like I said yesterday." 
     show Haruhi Pout1 at left
     "\"But it can't be {i}permanent{/i}, can it? I mean, can't I just fix it so that Yuki doesn't need to rely on me?\""
     nvl clear
     show Kyon Sigh2 at right
-    "\"Then once you can be responsible with your power,\" he said, shrugging. \"It's not like I've asked Asahina-san to let me go back and give myself notes on tests I did poorly on.\""
+    "\"Then once you can be responsible with your power,\" he said, shrugging. \"It's not like I've asked Asahina-san to let me go back and give myself notes on tests I did poorly on."
     show Kyon Neutral2 at right
     "\"Or I've come back from the future to warn myself about upcoming pop quizzes. Really, while it's useful to have access to that kind of power, well.... With great power comes—\""
     nvl clear
@@ -360,7 +366,7 @@ label Test:
     show Haruhi Sup1 at left
     "She blanched at that. \"B...but....\""
     show Kyon Sigh1 at right
-    "\"And you didn't even {i}know{/i},\" he added, shaking his head.{nw}"
+    "\"And you didn't even {i}know{/i},\" he added, shaking his head.{nw} "
     show Kyon Ser2 at right
     extend "\"So, yeah. Once you can be responsible with your power, we can worry about that.\""
     nvl clear

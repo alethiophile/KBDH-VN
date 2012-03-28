@@ -399,8 +399,10 @@ label AO1_1:
     "\"Understood.\""
     stop music fadeout 3
     nvl clear
-    scene Credits3 with slowfadein
-    pause
+    scene black with dissolve
+    $ renpy.pause(.2, hard=True)
+    show BDVNlogo at truecenter with Dissolve(2.0)
+    pause 5
     
     scene bg YukiApartmentNight with fade
     play music "Music/Kankyou.mp3"
@@ -532,13 +534,13 @@ label AO1_1:
     show Kyon Casual Ser3 at right
     "\"Koizumi, you promised that if it had to happen, you'd stand next to me when Yuki needed our help. Remember?\""
     scene bg YukiRoomCenter
-    show Koizumi Crossed Casual Ser1 at center
+    show Koizumi Crossed Casual Ser1 at left
     show Haruhi Crossed Casual Ang3 at right
     with dissolve
     "\"Yes,\" the smiling boy said, though his smile had completely vanished. "
-    show Koizumi Crossed Casual Ser2 at center
+    show Koizumi Crossed Casual Ser2
     "\"As much as it scares me.... Suzumiya-san, Kyon-kun is speaking the truth.\""
-    show Haruhi Crossed Casual Ang2 at right
+    show Haruhi Crossed Casual Ang2
     "\"You're an esper?\" she asked him doubtfully."
     nvl clear
     scene black with dissolve
@@ -554,7 +556,7 @@ label AO1_1:
     show Mikuru Cower Casual Nervous1 at left
     with dissolve
     "\"And, Mikuru, you're a time traveler?\" she asked, idly spinning her teacup on the table before her."
-    show Mikuru Cower Casual Nervous2 at left
+    show Mikuru Cower Casual Nervous2
     "\"Um ... that is ... I can't....\""
     show Kyon Casual Ser3 at right 
     "\"Asahina-san,\" Kyon broke in suddenly, \"please ask your supervisor to declassify this for me.\""
@@ -740,9 +742,11 @@ label AO1_1:
     scene black with dissolve
     stop music fadeout 5
     "\"I {i}knew{/i} I'd find you again!\""
-    scene Credits3 with slowfadein
+    scene black with dissolve
+    $ renpy.pause(.2, hard=True)
+    show BDVNlogo at truecenter with Dissolve(2.0)
     nvl clear
-    pause
+    pause 5
     jump prologue2
 
 
@@ -770,8 +774,10 @@ label AO1_2:
     scene black  with dissolve
     "Now Haruhi, as she understood it, believed that she could change reality...."
     nvl clear
-    scene Credits3 with slowfadein
-    pause
+    scene black with dissolve
+    $ renpy.pause(.2, hard=True)
+    show BDVNlogo at truecenter with Dissolve(2.0)
+    pause 5
 
     play music "Music/GnossiennesDai3.mp3"
     scene bg YukiRoomCenter
@@ -948,7 +954,7 @@ label AO1_2:
     show Kyon Casual Ser1 at right
     show Yuki Side2 at center
     with dissolve
-    "\"Well, fine,\" Haruhi grumbled, narrowing her eyes. \"I can trust him.\""
+    "\"Well, fine,\" Haruhi grumbled, narrowing her eyes. \"I can trust {i}him{/i}.\""
     show Kyon Casual Ser2 at right
     "\"Right,\" Kyon said, looking at the interface at the table. \"Nagato, how much time is left?\""
     show Yuki Talk2 at center
@@ -982,7 +988,7 @@ label AO1_2:
     "\"Awaiting data creation.\""
     nvl clear
     show Haruhi Casual Quest1 at left
-    "\"Data creation?\" Haruhi asked, frowning. \"What does that mean exactly?\""
+    "\"Data creation?\" Haruhi asked, frowning. \"What does that {i}mean{/i} exactly?\""
     scene bg YukiRoomCenter
     show Koizumi Crossed Casual Smile1 at center
     with dissolve
@@ -1000,7 +1006,7 @@ label AO1_2:
     show Haruhi Casual Focus1 at left
     "Haruhi shifted her gaze to the smaller girl before her, then took a deep breath and closed her eyes, concentrating."
     show Haruhi Casual Sigh1 at left
-    "\"Yuki works for me,\" she muttered. \"She's a real alien ... but she's going to break away from her bosses and work for me....\""
+    "\"Yuki works for me,\" she muttered. \"She's a real alien ... but she's going to break away from her bosses and work for {i}me{/i}....\""
     nvl clear
     show Yuki Talk2 at center
     "\"Program loaded,\" Yuki said. Turning her eyes to Kyon, she asked, \"Permission to proceed?\""
@@ -1008,8 +1014,10 @@ label AO1_2:
     stop music fadeout 3
     "\"Granted,\" he said without hesitation."
     nvl clear
-    scene Credits3 with slowfadein
-    pause
+    scene black with dissolve
+    $ renpy.pause(.2, hard=True)
+    show BDVNlogo at truecenter with Dissolve(2.0)
+    pause 5
 
     play music "Music/Itsumo(Movie).mp3"
     scene bg MorningSky
@@ -1023,7 +1031,7 @@ label AO1_2:
         linear 0.1 xalign 0.6
      
      
-    play sound "SE/impact.mp3 "
+    play sound "SE/impact.mp3"
     "The girl shot out from behind one of the pillars supporting the heavy structure keeping rainwater off the train platform, nearly plowing him over as she launched herself, arms wrapping around him as she swung around with her momentum, crying out, \"YES!\""
     nvl clear
     "Struggling and only barely managing to keep his balance, he eyed all of the other Kitago students around them, watching with raised eyebrows and open smirks."
