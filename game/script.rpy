@@ -24,7 +24,7 @@ init:
     image bg ClubHallLeft = "Backgrounds/ClubHallLeft.png"
     image bg ClubroomCenterDay = "Backgrounds/ClubroomCenterDay.png"
     image bg ClubroomLeftDay = "Backgrounds/ClubroomLeftDay.png"
-    image bg ClubroomFullDay ="Backgrounds/ClubroomFullDay.png"
+    image bg ClubroomFullDay ="Backgrounds/ClubroomFullDay.jpg"
     
     image bg YukiApartmentNight = "Backgrounds/YukiApartmentNight.png"
     image bg YukiRoomLeft = "Backgrounds/YukiRoomLeft.png"
@@ -72,6 +72,7 @@ init:
     image Haruhi Pout1 = "Sprites/Haruhi/HaruhiSidePout1.png"
     image Haruhi Pout1 Bright = im.MatrixColor("Sprites/Haruhi/HaruhiSidePout1.png",
                                        im.matrix.brightness(.5))
+    image Haruhi Pout2 = "Sprites/Haruhi/HaruhiSidePout2.png"
     image Haruhi Eyeroll1 = "Sprites/Haruhi/HaruhiSideEyeroll1.png"
     image Haruhi Quest1 = "Sprites/Haruhi/HaruhiSideQuestion1.png"
     image Haruhi Grin1 = "Sprites/Haruhi/HaruhiSideGrin1.png"
@@ -99,6 +100,7 @@ init:
     image Haruhi Casual Pout1 = "Sprites/Haruhi/HaruhiSideCasualPout1.png"
     image Haruhi Casual Pout1 Bright = im.MatrixColor("Sprites/Haruhi/HaruhiSideCasualPout1.png",
                                        im.matrix.brightness(.5))
+    image Haruhi Casual Pout2 = "Sprites/Haruhi/HaruhiSideCasualPout2.png"
     image Haruhi Casual Eyeroll1 = "Sprites/Haruhi/HaruhiSideCasualEyeroll1.png"
     image Haruhi Casual Quest1 = "Sprites/Haruhi/HaruhiSideCasualQuestion1.png"
     image Haruhi Casual Grin1 = "Sprites/Haruhi/HaruhiSideCasualGrin1.png"
@@ -166,7 +168,7 @@ init:
     image Hblush Casual = "Sprites/Haruhi/HaruhiSideCasualBlush1.png"
     image Htears ="Sprites/Haruhi/HTearsSide1.png"
     image Htears Casual = "Sprites/Haruhi/HTearsSideCasual1.png"
-    
+    image Hblush Crossed = "Sprites/Haruhi/HBlushCrossed.png"
     
     #Kyon Sprites
     image Kyon Ser1 = "Sprites/Kyon/KyonSerious1.png"
