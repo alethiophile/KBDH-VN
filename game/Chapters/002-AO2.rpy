@@ -8,7 +8,6 @@ label AO2:
         scene bg MorningSky
         show TownHillLeftMorning
     show Haruhi Quest1 at left    
-    play sfxloop "SE/footstepsloop.mp3"
     "\"Anyway,\" Haruhi said, glancing at Kyon again as they topped the hill, \"what's it all mean?\""
     show Kyon Ser1 at right
     "\"I'm not entirely sure,\" he admitted, scanning his eyes across the other two lines before folding the letter back up and stuffing it into a pocket. \"I'm guessing it'll make sense when it happens.\""
@@ -80,7 +79,6 @@ label AO2:
     "\"Well,\" she mumbled, \"you didn't tell me you were John Smith. If you {i}had{/i}....\""
     show Kyon Sigh2 at right
     stop music fadeout 3
-    stop sfxloop fadeout 3
     "He sighed, nodding. \"Let's talk about that later,\" he suggested, taking his seat."
     nvl clear
     
@@ -299,141 +297,204 @@ label AO2:
     nvl clear
     
     
-    #Note: A pause without a time statement lasts until the reader clicks again, which is how long I feel the transitions between scenes should last. 
-    #The reader can pause and collect their thoughts for a few seconds if they want to, or just keep clicking and plowing through the scene. That's how I feel it should be, anyway. - Oroboro
+   
     
-    # play sound "SE/WestminsterChimeShort.mp3"
-    # scene Credits3 with fastfadein 
-    # pause
-    # stop sound fadeout 3
+    play sound "SE/WestminsterChimeShort.mp3"
+    scene Credits3 with fastfadein 
+    pause 10
+    stop sound fadeout 3
 #     
-# label Test:    
-    # stop music
-    # scene bg classroom with fade: 
-        # size (800,600)
-    # show Kyon Neutral3 at right
-    # show Haruhi Smile1 at left
-    # "\"Let's have lunch in the clubroom,\" Haruhi decided, the second the chime rang."
-    # show Kyon Sigh2 at right
-    # "Kyon blinked at her, then shrugged. \"Why not?\" he asked, shaking his head."
-    # nvl clear
-    # scene bg hallway with wiperight
-    # show Haruhi Quest1 at left
-    # show Kyon Neutral3 at right
-    # with dissolve
-    # "Once they reached the hallway, Haruhi looked around to ensure no other students were nearby, and asked, \"So, how long am I going to have put up with you and Yuki being in charge of me using my powers?\""
-    # show Kyon Smile3
-    # "\"I was thinking forever,\" he said with a slight smile."
-    # nvl clear
-    # show Haruhi Ang3 at left
-    # "She shot him a glower. \"Stop joking,\" she snapped. \"Seriously! If it's for Yuki's safety, then that's how it has to be — like I said yesterday.\"" 
-    # show Haruhi Pout1 at left
-    # "\"But it can't be {i}permanent{/i}, can it? I mean, can't I just fix it so that Yuki doesn't need to rely on me?\""
-    # nvl clear
-    # show Kyon Sigh2 at right
-    # "\"Then once you can be responsible with your power,\" he said, shrugging. \"It's not like I've asked Asahina-san to let me go back and give myself notes on tests I did poorly on.\""
-    # show Kyon Neutral2 at right
-    # "\"Or I've come back from the future to warn myself about upcoming pop quizzes. Really, while it's useful to have access to that kind of power, well.... With great power comes—\""
-    # nvl clear
-    # show Haruhi Ang4 at left
-    # "\"Don't even try and quote that movie at me,\" she warned him."
-    # show Kyon Puzzle1 at right
-    # "\"Er ... where it's from doesn't make it any less true,\" he countered."
-    # nvl clear
-    # show Haruhi Crossed Ang1 at left
-    # "\"Bah! I never wanted that! Espers with the duty to save the world, aliens with important research missions, time travelers who are only here to work — the goal was to have {i}fun{/i}.\""
-    # scene bg stairwell with wipeup:
-         # size (800,600)
-    # show Kyon Ser1 at right
-    # show Haruhi Unhap2 at left
-    # with dissolve
-    # "They reached the stairs to the old club building, and he said, \"So, speaking of movies.... Now, I don't blame you for this personally, but using your power responsibly? Do you remember the movie we made? Your 'Mikuru beam'?\""
-    # scene bg ClubHallLeft with wiperight
-    # show Haruhi Eyeroll1 at left
-    # show Kyon Ser1 at right
-    # with dissolve
-    # "\"Like I'd forget! What about it?\" She paused at the top of the stairs, not far from the clubroom door, musing. {nw}"
-    # show Haruhi Quest1 at left
-    # extend "\"Does she really have one?\""
-    # nvl clear
-    # show Kyon Sigh2 at right
-    # "\"Throughout the movie, she had several,\" he said, shrugging. \"The very first one would have killed me if Nagato hadn't saved my life.\""
-    # show Haruhi Sup1 at left
-    # "She blanched at that. \"B...but....\""
-    # show Kyon Sigh1 at right
-    # "\"And you didn't even {i}know{/i},\" he added, shaking his head.{nw}"
-    # show Kyon Ser2 at right
-    # extend "\"So, yeah. Once you can be responsible with your power, we can worry about that.\""
-    # nvl clear
-    # show Haruhi Pout1 at left
-    # "\"I can be plenty responsible,\" she grumbled, following him as he opened the clubroom door."
-    # play sound "SE/dooropenslow.wav"
-#     
-    # scene bg ClubroomLeftDay with slowflashbulb
-    # scene bg ClubroomFullDay:
-        # xpos 0 ypos 0
-        # linear 8.0 xpos -800 ypos 0
-#     
-   # # scene bg ClubroomCenterDay with slowflashbulb
-    # #show Yuki Chair1 at center
-    # "Sitting oddly stiffly in her usual seat, Yuki stared forward, turning her face towards the pair as they entered."
-    # nvl clear
-    # "\"Oh!\" Haruhi said brightly. \"Perfect! I was hoping you'd be here so we could talk about things!\""
-    # "\"Hmm,\" Kyon mused, setting his lunch box down and frowning. After a moment of peering at Yuki intently, he asked, \"What's wrong, Nagato?\""
-    # nvl clear
-    # "\"Four hundred and seventy three requests in queue,\" she answered, blinking."
-    # "Haruhi choked on what she'd been eating and Kyon glanced at her, scowling when he realized she'd helped herself to his lunch. \"Really?\" he asked."
-    # nvl clear
-    # "\"Program one goal: Cause dinnerware to levitate.\""
-    # "\"Denied. Haruhi, I think this is a perfectly good example of what I was talking about.\""
-    # "\"That one was on purpose,\" Haruhi mumbled, shrugging her shoulders. \"I just wanted to see if I could use my power.\""
-    # nvl clear
-    # "\"Program two goal: Cause parents to increase allowance.\""
-    # "\"Denied. Your powers are a gift, but not a toy,\" he said sternly, shaking his head."
-    # nvl clear
-    # "\"Program three goal: Grant Suzumiya Haruhi the power to read minds.\""
-    # "\"Oh, gods, what a terrifying thought. Denied!\""
-    # nvl clear
-    # "\"Aw, come on!\" Haruhi protested. \"You're not going to let me have any fun, are you?\""
-    # "\"Program four goal: Replace actor in nighttime television drama with rabid wolverine.\""
-    # "\"Denied. What's fun for you isn't necessarily fun for other people! And it really seems that you have no concept of the fact that there are consequences for your actions.\""
-    # nvl clear
-    # "\"It's not like I couldn't just fix it! I'd have that ability, you know! Plus, that would only make the plot of Lost better.\""
-    # "\"Program five goal: Cause Nagato Yuki to stop relying on affection for you to prevent future errors.\""
-    # "\"Denied. Wait, what?\" Kyon turned to stare at Yuki, who had turned her gaze to Haruhi."
-    # nvl clear
-    # "In a very slightly more hurried tone, Yuki continued, \"Program six goal: Cause you to become more amicable to the suggestions of Suzumiya Haruhi.\""
-    # "\"Denied!\" He turned back to Haruhi and frowned sharply."
-    # "She looked away, staring out the window while picking at Kyon's bento, her cheeks a bright red."
-    # nvl clear
-    # "\"Program seven goal: Replace bathing area with larger facility.\""
-    # "\"Denied. And stop eating my lunch!\""
-    # "Haruhi choked again, her face darkening even further. \"That was when I went to take my bath,\" she mumbled."
-    # nvl clear
-    # "\"Program eight goal: Cause Asahina Mikuru to stop being loyal to you instead of Suzumiya Haruhi.\""
-    # "\"Denied. Why are you trying to change who people are, Haruhi?\""
-    # "\"It's not important,\" she muttered, turning her face away."
-    # nvl clear
-    # "\"Program nine goal: Enlarge Suzumiya Haruhi's—{nw}\""
-    # nvl clear
-    # "\"Yuki, that's enough! Just forget, um, all of them!\" Haruhi yelled, pushing the remnants of Kyon's lunch across the table."
-    # "\"And forget about that one especially! You can't say that kind of thing in front of Kyon!\""
-    # "\"Understood,\" Yuki replied. She looked thoughtful for a moment, then suddenly relaxed very slightly, turning her attention to her book."
-    # nvl clear
-    # "\"In the meantime,\" Kyon said, picking through what Haruhi had left him, \"I think my point stands for obvious reasons.\""
-    # "\"Yeah, yeah,\" Haruhi mumbled. \"I didn't {i}mean{/i} half of those things; they were just idle thoughts. I didn't know it was so sensitive.\""
-    # nvl clear
-    # "\"I'm sure. But again, my point stands. Try not to give Nagato so much trouble by coming up with a hundred new things you didn't seriously think about before we actually have our club meeting, okay?\"" 
-    # "Disgruntled, and realizing he would have no actual meal, he wrapped his bento back up and turned to look at Yuki."
-    # "\"In the meantime, Nagato ... you can safely disregard things that you know are a bad idea. Don't let Haruhi bother you too much; I trust your judgment.\""
-    # nvl clear
-    # "Yuki looked up from her book and regarded Kyon levelly. \"Thank you,\" she said softly."
-    # "Haruhi's expression shifted moodily before she suddenly stood up straight. \"I'm going to the cafeteria,\" she announced. \"So ... I didn't mean to cause trouble for you two!\""
-    # nvl clear
-    # "\"I'll go with you,\" Kyon decided before Haruhi could storm out, stowing his bento in the clubroom's refrigerator. If he wanted to eat anything, he would have to buy it."
-    # "Haruhi shifted her shoulders, allowing a small bit of tension to fade. \"Um, thanks,\" she mumbled. \"I'll let you buy me a sanshoku bread.\""
-    # "He nodded, deciding that silence would be the best course of action for the moment."
-    # nvl clear
+label Test:    
+    stop music
+    play music "Music/Yuuutsu.mp3"
+    scene bg classroom with fade: 
+        size (800,600)
+    show Kyon Neutral3 at right
+    show Haruhi Smile1 at left
+    with dissolve
+    "\"Let's have lunch in the clubroom,\" Haruhi decided, the second the chime rang."
+    show Kyon Sigh2 at right
+    "Kyon blinked at her, then shrugged. \"Why not?\" he asked, shaking his head."
+    nvl clear
+    scene bg hallway with wiperight
+    show Haruhi Quest1 at left
+    show Kyon Neutral3 at right
+    with dissolve
+    "Once they reached the hallway, Haruhi looked around to ensure no other students were nearby, and asked, \"So, how long am I going to have put up with you and Yuki being in charge of me using my powers?\""
+    show Kyon Smile3
+    "\"I was thinking forever,\" he said with a slight smile."
+    nvl clear
+    show Haruhi Ang3 at left
+    "She shot him a glower. \"Stop joking,\" she snapped. \"Seriously! If it's for Yuki's safety, then that's how it has to be — like I said yesterday.\"" 
+    show Haruhi Pout1 at left
+    "\"But it can't be {i}permanent{/i}, can it? I mean, can't I just fix it so that Yuki doesn't need to rely on me?\""
+    nvl clear
+    show Kyon Sigh2 at right
+    "\"Then once you can be responsible with your power,\" he said, shrugging. \"It's not like I've asked Asahina-san to let me go back and give myself notes on tests I did poorly on.\""
+    show Kyon Neutral2 at right
+    "\"Or I've come back from the future to warn myself about upcoming pop quizzes. Really, while it's useful to have access to that kind of power, well.... With great power comes—\""
+    nvl clear
+    show Haruhi Ang4 at left
+    "\"Don't even try and quote that movie at me,\" she warned him."
+    show Kyon Puzzle1 at right
+    "\"Er ... where it's from doesn't make it any less true,\" he countered."
+    nvl clear
+    show Haruhi Crossed Ang1 at left
+    "\"Bah! I never wanted that! Espers with the duty to save the world, aliens with important research missions, time travelers who are only here to work — the goal was to have {i}fun{/i}.\""
+    scene bg stairwell with wipeup:
+         size (800,600)
+    show Kyon Ser1 at right
+    show Haruhi Unhap2 at left
+    with dissolve
+    "They reached the stairs to the old club building, and he said, \"So, speaking of movies.... Now, I don't blame you for this personally, but using your power responsibly? Do you remember the movie we made? Your 'Mikuru beam'?\""
+    scene bg ClubHallLeft with wiperight
+    show Haruhi Eyeroll1 at left
+    show Kyon Ser1 at right
+    with dissolve
+    "\"Like I'd forget! What about it?\" She paused at the top of the stairs, not far from the clubroom door, musing. {nw}"
+    show Haruhi Quest1 at left
+    extend "\"Does she really have one?\""
+    nvl clear
+    show Kyon Sigh2 at right
+    "\"Throughout the movie, she had several,\" he said, shrugging. \"The very first one would have killed me if Nagato hadn't saved my life.\""
+    show Haruhi Sup1 at left
+    "She blanched at that. \"B...but....\""
+    show Kyon Sigh1 at right
+    "\"And you didn't even {i}know{/i},\" he added, shaking his head.{nw}"
+    show Kyon Ser2 at right
+    extend "\"So, yeah. Once you can be responsible with your power, we can worry about that.\""
+    nvl clear
+    show Haruhi Pout1 at left
+    "\"I can be plenty responsible,\" she grumbled, following him as he opened the clubroom door."
+    play sound "SE/dooropenslow.wav"
+    stop music fadeout 3
+
+    scene bg ClubroomLeftDay with slowflashbulb
+    play music "Music/Aruame.mp3"
+    scene bg ClubroomFullDay:
+        xpos 0 ypos 0
+        linear 8.0 xpos -800 ypos 0
+   
+    pause 8
+    show Yuki Side1 at center
+    show Kyon Neutral3 at right
+    show Haruhi Smile2 at left
+    with dissolve
+    "Sitting oddly stiffly in her usual seat, Yuki stared forward, turning her face towards the pair as they entered."
+    nvl clear
+    show Haruhi Hap4 at left
+    "\"Oh!\" Haruhi said brightly. \"Perfect! I was hoping you'd be here so we could talk about things!\""
+    show Kyon Ser1 at right
+    "\"Hmm,\" Kyon mused, setting his lunch box down and frowning. After a moment of peering at Yuki intently, he asked, \"What's wrong, Nagato?\""
+    nvl clear
+    show Yuki Side Blink at center
+    "\"Four hundred and seventy three requests in queue,\" she answered, blinking."
+    show Yuki Side1 at center
+    show Haruhi Sup1 at left
+    "Haruhi choked on what she'd been eating and Kyon glanced at her, scowling when he realized she'd helped herself to his lunch. \"Really?\" he asked."
+    nvl clear
+    show Yuki Talk1 at center
+    "\"Program one goal: Cause dinnerware to levitate.\""
+    show Yuki Side1 at center
+    show Kyon Ser2 at right
+    "\"Denied. Haruhi, I think this is a perfectly good example of what I was talking about.\""
+    show Haruhi Sigh1 at left
+    "\"That one was on purpose,\" Haruhi mumbled, shrugging her shoulders. \"I just wanted to see if I could use my power.\""
+    nvl clear
+    show Yuki Talk2 at center
+    "\"Program two goal: Cause parents to increase allowance.\""
+    show Kyon Sigh1 at right
+    show Yuki Side1 at center
+    "\"Denied. Your powers are a gift, but not a toy,\" he said sternly, shaking his head."
+    nvl clear
+    show Yuki Talk2 at center
+    "\"Program three goal: Grant Suzumiya Haruhi the power to read minds.\""
+    show Kyon Sup2 at right
+    show Yuki Side1 at center
+    "\"Oh, gods, what a terrifying thought. Denied!\""
+    show Haruhi Ang1 at left
+    "\"Aw, come on!\" Haruhi protested. \"You're not going to let me have any fun, are you?\""
+    nvl clear
+    show Yuki Talk1 at center
+    "\"Program four goal: Replace actor in nighttime television drama with rabid wolverine.\""
+    show Kyon Ang1 at right
+    show Yuki Side1 at center
+    "\"Denied. What's fun for you isn't necessarily fun for other people! And it really seems that you have no concept of the fact that there are consequences for your actions.\""
+    show Haruhi Ang4 at left
+    "\"It's not like I couldn't just fix it! I'd have that ability, you know! Plus, that would only make the plot of Lost better.\""
+    nvl clear
+    show Yuki Talk2 at center
+    "\"Program five goal: Cause Nagato Yuki to stop relying on affection for you to prevent future errors.\""
+    show Kyon Ser3 at right
+    "\"Denied.{nw}"
+    show Kyon Puzzle1 at right
+    extend " Wait, what?\" Kyon turned to stare at Yuki, who had turned her gaze to Haruhi."
+    nvl clear
+    show Yuki Talk1 at center
+    "{fast}In a very slightly more hurried tone, Yuki continued, \"Program six goal: Cause you to become more amicable to the suggestions of Suzumiya Haruhi.\""
+    show Kyon Ang1 at right
+    show Yuki Side1 at center
+    "\"Denied!\" He turned back to Haruhi and frowned sharply."
+    show Haruhi Pout1 at left
+    show Hblush at left with dissolve
+    "She looked away, staring out the window while picking at Kyon's bento, her cheeks a bright red."
+    nvl clear
+    show Yuki Talk2 at center
+    "\"Program seven goal: Replace bathing area with larger facility.\""
+    show Yuki Side1 at center
+    show Kyon Sigh1 at right
+    "\"Denied. And stop eating my lunch!\""
+    show Haruhi Sup1 at left
+    "Haruhi choked again, {nw}"
+    show Haruhi Pout2 at left
+    extend "her face darkening even further. \"That was when I went to take my bath,\" she mumbled."
+    nvl clear
+    show Yuki Talk1 at center
+    "\"Program eight goal: Cause Asahina Mikuru to stop being loyal to you instead of Suzumiya Haruhi.\""
+    show Yuki Side1 at center
+    show Kyon Ser3 at right
+    "\"Denied. Why are you trying to change who people are, Haruhi?\""
+    show Haruhi Crossed Pout1 at left
+    show Hblush Crossed at left
+    "\"It's not important,\" she muttered, turning her face away."
+    nvl clear
+    show Yuki Talk2 at center
+    "\"Program nine goal: Enlarge Suzumiya Haruhi's—{nw}\""
+    nvl clear
+    show Haruhi Sup1 at left
+    show Hblush at left
+    "\"Yuki, that's enough! Just forget, um, all of them!\" Haruhi yelled, pushing the remnants of Kyon's lunch across the table."
+    show Haruhi Ang1 at left
+    "\"And forget about that one especially! You can't say that kind of thing in front of Kyon!\""
+    show Yuki Side Blink at center
+    "\"Understood,\" Yuki replied. She looked thoughtful for a moment, then suddenly relaxed very slightly, turning her attention to her book."
+    nvl clear
+    show Yuki Side1 at center
+    show Kyon Sigh2 at right
+    "\"In the meantime,\" Kyon said, picking through what Haruhi had left him, \"I think my point stands for obvious reasons.\""
+    show Haruhi Pout1 at left
+    "\"Yeah, yeah,\" Haruhi mumbled. \"I didn't {i}mean{/i} half of those things; they were just idle thoughts. I didn't know it was so sensitive.\""
+    nvl clear
+    show Kyon Ser3 at right
+    "\"I'm sure. But again, my point stands. Try not to give Nagato so much trouble by coming up with a hundred new things you didn't seriously think about before we actually have our club meeting, okay?\"" 
+    show Kyon Sigh1 at right
+    hide Hblush
+    "Disgruntled, and realizing he would have no actual meal, he wrapped his bento back up and turned to look at Yuki."
+    show Kyon Neutral2 at right
+    "\"In the meantime, Nagato ... you can safely disregard things that you know are a bad idea. Don't let Haruhi bother you too much; I trust your judgment.\""
+    nvl clear
+    show Yuki Talk1 at center
+    "Yuki looked up from her book and regarded Kyon levelly. \"Thank you,\" she said softly."
+    show Haruhi Sigh1 at left
+    "Haruhi's expression shifted moodily before she suddenly stood up straight. \"I'm going to the cafeteria,\" she announced. \"So ... I didn't mean to cause trouble for you two!\""
+    nvl clear
+    show Kyon Smile1 at right
+    "\"I'll go with you,\" Kyon decided before Haruhi could storm out, stowing his bento in the clubroom's refrigerator. If he wanted to eat anything, he would have to buy it."
+    show Haruhi Smile1 at left
+    "Haruhi shifted her shoulders, allowing a small bit of tension to fade. \"Um, thanks,\" she mumbled. \"I'll let you buy me a sanshoku bread.\""
+    show Kyon Sigh2 at right
+    "He nodded, deciding that silence would be the best course of action for the moment."
+    nvl clear
     # "* * *"
     # "After settling into a corner of a relatively new cafe, at least, one Kyon didn't recognize immediately, they sat in silence until their drinks were served."
     # "When his latte arrived, Koizumi began, saying, \"It is possible that Nagato-san may curtail the creation of closed space, but my suspicion is that the opposite is more likely to be true.\"" 
