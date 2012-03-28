@@ -403,9 +403,13 @@ init:
     image Credits1 = "Backgrounds/credits1.png"
     image Credits2 = "Backgrounds/credits2.png"
     image Credits3 = "Backgrounds/credits3.png"
+    
+    # Most likely needs {font=fancyfont.ttf}magic{/font} to pull off properly...
+    image BDVNlogo = Text("{color=#3cf}{size=80}{b}{k=3}KYON:\n{/k}{/b}{/size}{size=40}{k=-1.0}Big Damn Hero{/k}{/size}{/color}")
 
 init python:
-    basechar = Character(None, kind=nvl)
+    #basechar = Character(None, kind=nvl)
+    basechar = Character(None, kind=nvl, what_outlines = [(1, "#000", 0, 0)])
     kyon = Character("Kyon", kind=basechar, color="#777755")
     sister = Character("Nonoko", kind=basechar, color="#999977")
     yuki = Character("Nagato Yuki", kind=basechar, color="#aaaaff")
@@ -454,12 +458,17 @@ init python:
     
     adj = ui.adjustment()
     music_need = True
-
     
-    config.keymap['skip'].remove('K_LCTRL')
-    config.keymap['skip'].remove('K_RCTRL')
-    config.keymap['skip'].append('K_LALT')
-    config.keymap['skip'].append('K_RALT')
+    centered = Character(None, what_slow_cps=0, what_size = 27, what_outlines = [(1, "#000", 0, 0)],
+                        what_layout="subtitle", what_xalign=0.5, what_text_align=0.5,
+                        window_background=None, window_yminimum=0, window_xfill=False, 
+                        window_xalign=0.5, window_yalign=0.5) 
+
+    if config.developer:
+        config.keymap['skip'].remove('K_LCTRL')
+        config.keymap['skip'].remove('K_RCTRL')
+        config.keymap['skip'].append('K_LALT')
+        config.keymap['skip'].append('K_RALT')
 
 transform center_left:
     xalign 0.1 yalign 1.0
@@ -480,33 +489,45 @@ init -1 python:
         ("In Media Res Prologue\nExactly What it Says on the Tin", "prologue"),
         ("Obligatory Anachronic Order \nExplanation Arc chapter one\n\"Scene Twelve, the Ninth Big Fight\"", "AO1_1"),
         ("Obligatory Anachronic Order \nExplanation Arc chapter two\n\"Clear as Mud\"", "AO2"),
-         ("Label a scene you're working on test and use this", "Test")]
+        ("Label a scene you're working on test and use this", "Test"),
+        ("Credits", "credits"),]
 
 
 label start:
-    # Z0 : TODO: intro. 
+    # Z0 : intro. 
+    scene black
+    centered "Big Damn VN Brigade presents:"
+    centered "based on the work by\nBrian Randall"
+    centered "in turn based on the\nSuzumiya Haruhi series by\nNagaru Tanigawa"
+    # show Text("{color=#00a}{size=60}KYON:{/size}\n{size=40}Big Damn Hero{/size}{/color}") at truecenter with dissolve
+    show BDVNlogo at truecenter with dissolve
+    pause
     jump prologue
 
     
     
 label credits:
-    # Thise entire things could be done with text() displayable...
-    # Duly noted. I'll look into that next time there aren't fifteen other things to do.
+    # Done with special character (and one Text() "image" to show both ways.)
+    # Text() way supports transitions (and positioning) easily, but *needs* pauses. Character way is straight-up.
     stop music
     # play music "Music/ItsumoReprise.mp3"
     scene black with fade
     # The hardpause calls are necessary because otherwise Ren'py wants to skip over all the pause statements on a single press of the key.
-    show Credits0 with dissolve
-    pause
-    $ renpy.pause(.1, hard=True)
-    show Credits1 with dissolve
-    pause
-    $ renpy.pause(.1, hard=True)
-    show Credits2 with dissolve
-    pause
-    $ renpy.pause(.1, hard=True)
-    show Credits3 with dissolve
-    # Maybe a graphic logo here?
+    # show Credits0 with dissolve
+    centered "Presented by:\n\nBig Damn VN Brigade\n\nAgasa\nalethiophile\nOroboro\nPax Empyrian\n\n\nMany thanks to:\n\nFilaren\nJason Ulloa\njonbob\nSpecular"
+    # pause
+    # $ renpy.pause(.1, hard=True)
+    # show Credits1 with dissolve
+    centered "Special thanks to:\n\nBrian Randall\nauthor of Kyon: Big Damn Hero\n\nand\n\nNagaru Tanigawa\nauthor of Suzumia Haruhi series"
+    # pause
+    # $ renpy.pause(.1, hard=True)
+    # show Credits2 with dissolve
+    centered "Disclaimer: This production makes use\nof the intellectual property belongin to\nBrian Randall, Nagaru Tanigawa \nand others. No disrespectis intended.\n\nNeither Kyon: Big Damn Hero \nnor Suzumia Haruhi and related \ncharacters are owned by anyone \nassociated with Big Damn VN"
+    # pause
+    # $ renpy.pause(.1, hard=True)
+    # show Credits3 with dissolve
+    # # Maybe a graphic logo here?
+    show BDVNlogo at truecenter with dissolve
     pause
     stop music
     return
