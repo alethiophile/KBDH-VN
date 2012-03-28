@@ -140,12 +140,12 @@ label AO2:
     "He blinked, then pulled the letter he had written himself from the future from his pocket and scribbled a note on it."
     nvl clear
     show Haruhi Eyeroll1 at left
-    "\"I'll be careful ... even if it is {i}boring{/i}. But it's not like it's {i}that{/i} outlandish for a girl to be close to a guy. At our age, it's practically expected.\""
+    "\"I'll be careful ... even if it is {i}boring{/i}. But it's not like it's {i}that{/i} outlandish for a girl to be close to a guy. At our age, it's practically expected."
     show Haruhi Ang3 at left
-    "\"Isn't that what Greaseball McGee over there,\" she said, nodding at Taniguchi as he slunk back into the classroom, \"is all about?\""
+    "\"Isn't that what Greaseball McGee over there,\" she said, nodding at Taniguchi as he slunk back into the classroom, \"is all about?"
     nvl clear
     show Haruhi Ang4 at left
-    "\"Aside from which, people are stupid and think that 'something' is going on between us anyway. \""
+    "\"Aside from which, people are stupid and think that 'something' is going on between us anyway. "
     show Haruhi Sigh2 at left
     "\"If anyone asks, I'm tutoring you because your grades suck so bad. If they draw other conclusions on their own, they're obviously idiots and we shouldn't care.\""
     nvl clear
@@ -161,7 +161,7 @@ label AO2:
     "\"Ugh,\" he interjected again, this time with a small shudder. \"She's a friend, but I really can't stand who she chooses to associate with these days.\""
     nvl clear
     show Haruhi Sigh1 at left
-    "For some reason, Haruhi calmed substantially at that. \"Anyway,\" she said more smoothly, \"if you're not actually dating anyone, then you have no actual girlfriend to get jealous of our studying together.\""
+    "For some reason, Haruhi calmed substantially at that. \"Anyway,\" she said more smoothly, \"if you're not actually dating anyone, then you have no actual girlfriend to get jealous of our studying together."
     show Haruhi Smile2 at left
     "\"And since you're some kind of action hero looking out for me, you can just consider it to be your cover.\""
     nvl clear
