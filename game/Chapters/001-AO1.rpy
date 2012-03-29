@@ -17,6 +17,7 @@ label AO1_1:
     show Skinsuit at right
     show Coat at right
     show Haruhi Hap3 at left
+    with dissolve
     "Haruhi bounced on her heels with a wide grin, holding Kyon's cell phone in both hands as she remained in the center of the glowing circle."
     show Haruhi Hap4 at left
     "\"I knew it!\" she cheered.{nw} "
@@ -28,12 +29,14 @@ label AO1_1:
     hide Skinsuit
     hide Haruhi
     show Asakura Unhap1 at center
+    with dissolve
     "\"Um...\" the onetime class representative said, frowning."
     hide Asakura
     show Haruhi Hap1 at left # Z0: to keep scene consistent
     show Kyon Sigh2 at right
     show Skinsuit at right
     show Coat at right
+    with dissolve
     "\"She's an alien,\" Kyon volunteered.{nw} "
     show Kyon Neutral2 at right
     extend "\"From the same place as Yuki-chan and Kimidori, but she tried to kill me once.\""
@@ -45,6 +48,7 @@ label AO1_1:
     hide Skinsuit
     hide Haruhi
     show Asakura Frown3 at left
+    with dissolve
     "\"Er,\" Asakura said, crossing her arms beneath her chest."
     show Asakura Frown2 at left
     "\"Evidently my information requires an update. I was sent to dispatch Kyon-kun, because he's become an undesirable element for my superiors.\""
@@ -71,6 +75,7 @@ label AO1_1:
     hide Skinsuit
     hide Asakura
     show Haruhi Eyeroll1 at left
+    with dissolve
     "\"Blah blah blah,\" Haruhi muttered, crossing her arms over her chest and rolling her eyes."
     show Haruhi Ang1 at left
     "\"Skip the speeches — if I don't know the complete back story, it's all meaningless to me. I think it's about time we get down to business, right?\""

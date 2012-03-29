@@ -25,6 +25,7 @@ init:
     image bg ClubroomCenterDay = "Backgrounds/ClubroomCenterDay.png"
     image bg ClubroomLeftDay = "Backgrounds/ClubroomLeftDay.png"
     image bg ClubroomFullDay ="Backgrounds/ClubroomFullDay.jpg"
+    image bg ClubroomRightDay = "Backgrounds/ClubroomRightDay.png"
     
     image bg YukiApartmentNight = "Backgrounds/YukiApartmentNight.png"
     image bg YukiRoomLeft = "Backgrounds/YukiRoomLeft.png"

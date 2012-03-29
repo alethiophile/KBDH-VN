@@ -242,6 +242,7 @@ label prologue:
     show Kyon Ang1 at right
     show Skinsuit at right
     show Coat at right
+    with dissolve
     "\"Long time no see,\" he said, switching stance to the long-sword style, Ni-Ten Ichi Ryu."
     show Asakura Frown2 at left
     "\"Um.... Hm. This is different. You've certainly changed, Kyon-kun.\""

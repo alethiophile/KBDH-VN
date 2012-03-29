@@ -384,6 +384,7 @@ label Test:
         linear 8.0 xpos -800 ypos 0
    
     pause 8
+    scene bg ClubroomRightDay with dissolve
     show Yuki Side1 at center
     show Kyon Neutral3 at right
     show Haruhi Smile2 at left
@@ -462,12 +463,14 @@ label Test:
     show Yuki Side1 at center
     show Kyon Ser3 at right
     "\"Denied. Why are you trying to change who people are, Haruhi?\""
+    hide Hblush
     show Haruhi Crossed Pout1 at left
     show Hblush Crossed at left
     "\"It's not important,\" she muttered, turning her face away."
     nvl clear
     show Yuki Talk2 at center
     "\"Program nine goal: Enlarge Suzumiya Haruhi's—{nw}\""
+    hide Hblush Crossed
     show Haruhi Sup1 at left
     show Hblush at left
     "\"Yuki, that's enough! Just forget, um, all of them!\" Haruhi yelled, pushing the remnants of Kyon's lunch across the table."
