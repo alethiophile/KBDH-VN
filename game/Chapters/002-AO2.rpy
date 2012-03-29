@@ -313,6 +313,7 @@ label AO2:
     nvl clear
 #     
 label Test:    
+    
     stop music
     play music "Music/Yuuutsu.mp3"
     scene bg classroom with fade: 

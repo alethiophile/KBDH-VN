@@ -1,6 +1,8 @@
 ﻿# This is a proof-of-concept K:BDH VN. Main script file; contains init code and code declarations.
 
 init:
+    image almostblack one = "#0008"
+    image almostblack two = "#000e"
     image bg classroom = "Backgrounds/classroom.jpg"
     image bg hallway = "Backgrounds/hallway.png"
     image bg stairwell = "Backgrounds/stairwell.jpg"
