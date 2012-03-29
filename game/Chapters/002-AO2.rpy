@@ -303,12 +303,14 @@ label AO2:
     
    
     
-    play sound "SE/WestminsterChimeShort.mp3"
+    # play sound "SE/WestminsterChimeShort.mp3"
+    stop music fadeout 3
     scene black with dissolve
     $ renpy.pause(.2, hard=True)
     show BDVNlogo at truecenter with Dissolve(2.0)
-    pause 10
-    stop sound fadeout 3
+    #pause 10
+    "{w=5.0}{nw}"
+    nvl clear
 #     
 label Test:    
     stop music
@@ -466,7 +468,6 @@ label Test:
     nvl clear
     show Yuki Talk2 at center
     "\"Program nine goal: Enlarge Suzumiya Haruhi's—{nw}\""
-    nvl clear
     show Haruhi Sup1 at left
     show Hblush at left
     "\"Yuki, that's enough! Just forget, um, all of them!\" Haruhi yelled, pushing the remnants of Kyon's lunch across the table."
