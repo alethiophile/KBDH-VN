@@ -447,11 +447,13 @@ init python:
     _preferences.set_volume("sfx", 0.5)
     
     # positions on the (imaginary) screen situated directly left of one shown.
+    osl_left = Position(xanchor=0.5, yalign=1.0, xpos=-0.75) 
     osl_center = Position(xanchor=0.5, yalign=1.0, xpos=-0.5)
     osl_right = Position(xanchor=0.5, yalign=1.0, xpos=-0.25)
     # positions on the (imaginary) screen situatet directly right of one shown.
     osr_center = Position(xanchor=0.5, yalign=1.0, xpos=1.5)
     osr_left = Position(xanchor=0.5, yalign=1.0, xpos=1.25)
+    osr_right = Position(xanchor=0.5, yalign=1.0, xpos=-1.75) 
     
     # position of the energy net, lower than truecenter, to cover the Ryoko better.
     spike_net_pos = Position(xalign=0.5, yanchor=0.5, ypos=0.65)
@@ -474,6 +476,12 @@ init python:
         config.keymap['skip'].remove('K_RCTRL')
         config.keymap['skip'].append('K_LALT')
         config.keymap['skip'].append('K_RALT')
+        config.keymap['hide_windows'].append('K_BACKSPACE')
+        config.keymap['reload_game'].append('r')
+        config.keymap['inspector'].append('i')
+        config.keymap['developer'].append('d')
+        config.keymap['toggle_music'].append('m')
+        config.keymap['toggle_music'].append('M')
 
 transform center_left:
     xalign 0.1 yalign 1.0
@@ -519,7 +527,7 @@ label credits:
     scene black with fade
     # The hardpause calls are necessary because otherwise Ren'py wants to skip over all the pause statements on a single press of the key.
     # show Credits0 with dissolve
-    centered "Presented by:\n\nBig Damn VN Brigade\n\nAgasa\nalethiophile\nOroboro\nPax Empyrian\n\n\nMany thanks to:\n\nFilaren\nJason Ulloa\njonbob\nSpecular"
+    centered "Presented by:\n\nBig Damn VN Brigade\n\nAgasa\nalethiophile\nFilaren\nOroboro\nPax Empyrian\n\n\nMany thanks to:\n\nJason Ulloa\njonbob\nSpecular"
     # pause
     # $ renpy.pause(.1, hard=True)
     # show Credits1 with dissolve
