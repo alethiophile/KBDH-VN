@@ -1085,7 +1085,7 @@ label AO1_2:
     "\"Hmm...\" she mused, considering. \"Can I go with you?\""
     nvl clear
     show Kyon Smile2 at right
-    "\"'No she can't',\" he quoted the first line of the note, scrawled hastily in his own handwriting. \"Well, seems that future me is a bit of a smart-ass.\""
+    "\"'No, she can't',\" he quoted the first line of the note, scrawled hastily in his own handwriting. \"Well, seems that future me is a bit of a smart-ass.\""
     show Haruhi Crossed Tsun1 at left
     "\"Humph! I could have told you that.\""
     nvl clear

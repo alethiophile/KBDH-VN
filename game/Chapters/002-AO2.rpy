@@ -350,6 +350,7 @@ label AO2:
     nvl clear
     show Haruhi Crossed Ang1 at left
     "\"Bah! I never wanted that! Espers with the duty to save the world, aliens with important research missions, time travelers who are only here to work — the goal was to have {i}fun{/i}.\""
+    nvl clear
     scene bg stairwell with wipeup:
          size (800,600)
     show Kyon Ser1 at right
@@ -357,6 +358,7 @@ label AO2:
     with dissolve
     "They reached the stairs to the old club building, and he said, \"So, speaking of movies.... Now, I don't blame you for this personally, but using your power responsibly? Do you remember the movie we made? Your 'Mikuru beam'?\""
     scene bg ClubHallLeft with wiperight
+    nvl clear
     show Haruhi Eyeroll1 at left
     show Kyon Ser1 at right
     with dissolve
@@ -375,6 +377,7 @@ label AO2:
     nvl clear
     show Haruhi Pout1 at left
     "\"I can be plenty responsible,\" she grumbled, following him as he opened the clubroom door."
+    nvl clear
     play sound "SE/dooropenslow.wav"
     stop music fadeout 3
 
@@ -477,6 +480,7 @@ label AO2:
     "\"Yuki, that's enough! Just forget, um, all of them!\" Haruhi yelled, pushing the remnants of Kyon's lunch across the table."
     show Haruhi Ang1 at left
     "\"And forget about that one especially! You can't say that kind of thing in front of Kyon!\""
+    nvl clear
     show Yuki Side Blink at center
     "\"Understood,\" Yuki replied. She looked thoughtful for a moment, then suddenly relaxed very slightly, turning her attention to her book."
     nvl clear
@@ -492,15 +496,16 @@ label AO2:
     hide Hblush
     "Disgruntled, and realizing he would have no actual meal, he wrapped his bento back up and turned to look at Yuki."
     show Kyon Neutral2 at right
-    "\"In the meantime, Nagato ... you can safely disregard things that you know are a bad idea. Don't let Haruhi bother you too much; I trust your judgment.\""
     nvl clear
+    "\"In the meantime, Nagato ... you can safely disregard things that you know are a bad idea. Don't let Haruhi bother you too much; I trust your judgment.\""
     show Yuki Talk1 at center
     "Yuki looked up from her book and regarded Kyon levelly. \"Thank you,\" she said softly."
+    nvl clear
     show Haruhi Sigh1 at left
     "Haruhi's expression shifted moodily before she suddenly stood up straight. \"I'm going to the cafeteria,\" she announced. \"So ... I didn't mean to cause trouble for you two!\""
-    nvl clear
     show Kyon Smile1 at right
     "\"I'll go with you,\" Kyon decided before Haruhi could storm out, stowing his bento in the clubroom's refrigerator. If he wanted to eat anything, he would have to buy it."
+    nvl clear
     show Haruhi Smile1 at left
     "Haruhi shifted her shoulders, allowing a small bit of tension to fade. \"Um, thanks,\" she mumbled. \"I'll let you buy me a sanshoku bread.\""
     show Kyon Sigh2 at right
@@ -516,7 +521,8 @@ label Test:
     show Koizumi Crossed Casual Ser1 at left
     "After settling into a corner of a relatively new cafe, at least, one Kyon didn't recognize immediately, they sat in silence until their drinks were served."
     show Koizumi Crossed Casual Ser2 at left
-    "When his latte arrived, Koizumi began, saying, \"It is possible that Nagato-san may curtail the creation of closed space, but my suspicion is that the opposite is more likely to be true.\"" 
+    "When his latte arrived, Koizumi began, saying, \"It is possible that Nagato-san may curtail the creation of closed space, but my suspicion is that the opposite is more likely to be true.\""
+    nvl clear
     "\"That is to say ... with her aware of her abilities, and Nagato-san and yourself being the key to releasing those effects she may desire, Suzumiya-san is likely to create even more closed spaces.\""
     nvl clear
     show Kyon Casual Ser3 at right
@@ -524,17 +530,18 @@ label Test:
     show Koizumi Crossed Casual Sigh1 at left
     "\"At the moment, no,\" Koizumi allowed. \"But we are entering, for all intents and purposes, uncharted territory. We don't know what might happen next, or if Suzumiya-san might even find a way to ... slip free from Nagato's control, as it were.\""
     show Mikuru Casual Unhap1 at center
-    "\"I don't like thinking of it like that,\" Mikuru mumbled into her glass. \"That sounds like putting a leash on Suzumiya-san.\""
     nvl clear
+    "\"I don't like thinking of it like that,\" Mikuru mumbled into her glass. \"That sounds like putting a leash on Suzumiya-san.\""
     show Kyon Casual Sigh1 at right
-    "\"Sometimes,\" Kyon said quietly, \"I feel that's what the world needs more than anything else.\"" 
+    "\"Sometimes,\" Kyon said quietly, \"I feel that's what the world needs more than anything else.\""
+    nvl clear
     show Kyon Casual Sigh2 at right
     "\"Don't get me wrong ... I don't believe that Haruhi's a terrible person by any stretch, but she's rather careless much of the time. If she has to have power, I think it's best she learn to use it responsibly.\"" 
     show Kyon Casual Worry1 at right
     "\"Or perhaps not at all.\""
     nvl clear
     show Koizumi Think Casual Ser3 at left
-    "\"I think you're completely discounting the frustration she's going to feel when it becomes more apparent that she is now limited by yourself and Nagato- san,\" Koizumi countered, rubbing his chin."
+    "\"I think you're completely discounting the frustration she's going to feel when it becomes more apparent that she is now limited by yourself and Nagato-san,\" Koizumi countered, rubbing his chin."
     show Koizumi Think Casual Ser4 at left
     "\"I must ask you to take this as seriously as you wish for Suzumiya-san to. That seems only fair.\""
     show Mikuru Casual Sad2 at center
@@ -550,6 +557,7 @@ label Test:
     show Kyon Casual Sigh2 at right
     "\"Also true.\" Kyon sipped his coffee thoughtfully. \"She'd take a cursed item if she was told it was cursed, and for just that reason.\""
     show Koizumi Crossed Casual Ser2 at left
+    nvl clear
     "\"Well, I shall monitor the closed space situation, and if it—{nw}\""
     show Koizumi Think Casual Ser1 at left
     extend " He broke off abruptly, frowning. \"There's one now.... I think I can guess what Nagato-san has just finished explaining to Suzumiya-san.\""
