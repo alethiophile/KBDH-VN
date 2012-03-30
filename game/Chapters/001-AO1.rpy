@@ -224,8 +224,12 @@ label AO1_1:
     "The knives adjusted their course, most homing in on him to suddenly be halted by a semi-circular barrier of glowing blue force before shattering into nothingness, but a handful stopping suddenly in the space over the circle around Haruhi."
     nvl clear
     play sound "SE/lowswoosh.mp3"
+    show Stabby with fastdissolve:
+        size (800, 600)
+    hide Stabby with fastdissolve    
+    
     $ _window = True
-    show Asakura Smile3 at left
+    show Asakura Smile3
     show Asakura Smile3:
         xalign 0.0 yalign 1.0
         linear 0.1 xalign 0.6

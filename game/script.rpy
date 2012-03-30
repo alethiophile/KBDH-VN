@@ -236,6 +236,8 @@ init:
     image Coat = "Sprites/Kyon/KyonCoat.png"
     
     #Asakura Sprites
+    image Stabby = "Sprites/Asakura/AsakuraStabTest.png"
+    
     image Asakura Smile1 = "Sprites/Asakura/AsakuraSmile1.png"
     image Asakura Smile2 = "Sprites/Asakura/AsakuraSmile2.png"
     image Asakura Smile3 = "Sprites/Asakura/AsakuraSmile3.png"
@@ -451,6 +453,7 @@ init python:
     renpy.music.set_volume(0.2, .5, channel="music")
     flashbulb = Fade(0.2, 0.0, 0.8, color='#fff')
     slowflashbulb = Fade(1.0, 0.5, 2.0, color='#fff')
+    fastdissolve = Dissolve(0.15)
    
     renpy.music.register_channel("sound2", "sfx", 0)
     _preferences.set_volume("sfx", 0.5)
