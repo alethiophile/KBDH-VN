@@ -512,6 +512,10 @@ label AO2:
     stop music fadeout 3
     "He nodded, deciding that silence would be the best course of action for the moment."
     nvl clear
+    scene black with dissolve
+    $ renpy.pause(.2, hard=True)
+    show BDVNlogo at truecenter with Dissolve(2.0)
+    pause 5
  
 label Test:
     play music "Music/suspicion.ogg"
