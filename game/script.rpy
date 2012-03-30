@@ -28,15 +28,17 @@ init:
     image bg ClubroomLeftDay = "Backgrounds/ClubroomLeftDay.png"
     image bg ClubroomFullDay ="Backgrounds/ClubroomFullDay.jpg"
     image bg ClubroomRightDay = "Backgrounds/ClubroomRightDay.png"
-    
     image bg YukiApartmentNight = "Backgrounds/YukiApartmentNight.png"
     image bg YukiRoomLeft = "Backgrounds/YukiRoomLeft.png"
     image bg YukiRoomRight = "Backgrounds/YukiRoomRight.png"
     image bg YukiRoomCenter = "Backgrounds/YukiRoomCenter.jpg"
     image bg SchoolEntranceLeft = "Backgrounds/SchoolEntranceLeft.png"
+    image bg Cafe = "Backgrounds/Cafe.jpg"
+    
     image bg MemoryYuki = "Backgrounds/MemoryYuki.jpg"
     image bg MemoryMikuru = "Backgrounds/MemoryMikuru.jpg"
     image bg MemoryKoizumi = "Backgrounds/MemoryKoizumi.jpg"
+ 
     
     image white = "#ffffff"
     image black = "#000000"
@@ -368,6 +370,16 @@ init:
     image MTears Casual = "Sprites/Mikuru/MTearsCowerCasual1.png"
     
     #Koizumi Sprites
+    image Koizumi Think Ser1 = "Sprites/Koizumi/KoizumiThinkSerious1.png"
+    image Koizumi Think Ser2 = "Sprites/Koizumi/KoizumiThinkSerious2.png"
+    image Koizumi Think Ser3 = "Sprites/Koizumi/KoizumiThinkSerious3.png"
+    image Koizumi Think Ser4 = "Sprites/Koizumi/KoizumiThinkSerious4.png"
+    
+    image Koizumi Think Casual Ser1 = "Sprites/Koizumi/KoizumiThinkCasualSerious1.png"
+    image Koizumi Think Casual Ser2 = "Sprites/Koizumi/KoizumiThinkCasualSerious2.png"
+    image Koizumi Think Casual Ser3 = "Sprites/Koizumi/KoizumiThinkCasualSerious3.png"
+    image Koizumi Think Casual Ser4 = "Sprites/Koizumi/KoizumiThinkCasualSerious4.png"
+    
     image Koizumi Crossed Ser1 = "Sprites/Koizumi/KoizumiCrossedSerious1.png"
     image Koizumi Crossed Ser2 = "Sprites/Koizumi/KoizumiCrossedSerious2.png"
     image Koizumi Crossed Smile1 = "Sprites/Koizumi/KoizumiCrossedSmile1.png"

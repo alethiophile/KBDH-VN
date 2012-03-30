@@ -312,7 +312,7 @@ label AO2:
     "{w=5.0}{nw}"
     nvl clear
 #     
-label Test:    
+
     
     stop music
     play music "Music/Yuuutsu.mp3"
@@ -504,33 +504,59 @@ label Test:
     show Haruhi Smile1 at left
     "Haruhi shifted her shoulders, allowing a small bit of tension to fade. \"Um, thanks,\" she mumbled. \"I'll let you buy me a sanshoku bread.\""
     show Kyon Sigh2 at right
+    stop music fadeout 3
     "He nodded, deciding that silence would be the best course of action for the moment."
     nvl clear
-    # "* * *"
-    # "After settling into a corner of a relatively new cafe, at least, one Kyon didn't recognize immediately, they sat in silence until their drinks were served."
-    # "When his latte arrived, Koizumi began, saying, \"It is possible that Nagato-san may curtail the creation of closed space, but my suspicion is that the opposite is more likely to be true.\"" 
-    # "\"That is to say ... with her aware of her abilities, and Nagato-san and yourself being the key to releasing those effects she may desire, Suzumiya-san is likely to create even more closed spaces.\""
-    # nvl clear
-    # "\"I think even Haruhi would be reasonable enough to try and stop that once she was aware of it,\" Kyon countered. \"Is there a problem right now?\""
-    # "\"At the moment, no,\" Koizumi allowed. \"But we are entering, for all intents and purposes, uncharted territory. We don't know what might happen next, or if Suzumiya-san might even find a way to ... slip free from Nagato's control, as it were.\""
-    # "\"I don't like thinking of it like that,\" Mikuru mumbled into her glass. \"That sounds like putting a leash on Suzumiya-san.\""
-    # nvl clear
-    # "\"Sometimes,\" Kyon said quietly, \"I feel that's what the world needs more than anything else.\"" 
-    # "\"Don't get me wrong ... I don't believe that Haruhi's a terrible person by any stretch, but she's rather careless much of the time. If she has to have power, I think it's best she learn to use it responsibly.\"" 
-    # "\"Or perhaps not at all.\""
-    # nvl clear
-    # "\"I think you're completely discounting the frustration she's going to feel when it becomes more apparent that she is now limited by yourself and Nagato- san,\" Koizumi countered, rubbing his chin."
-    # "\"I must ask you to take this as seriously as you wish for Suzumiya-san to. That seems only fair.\""
-    # "Mikuru nodded weakly, looking away."
-    # nvl clear
-    # "Scowling, Kyon conceded, \"Alright. That's true. So, you think we'll need to let her use her ability as she wishes, now?\""
-    # "\"That may be going a bit far,\" Koizumi said, shrugging. \"You are the voice of reason for her, so I am merely asking that you be reasonable as well.\"" 
-    # "\"Suzumiya-san doesn't seem the type to receive something at no cost and do away with it.\""
-    # nvl clear
-    # "\"Also true.\" Kyon sipped his coffee thoughtfully. \"She'd take a cursed item if she was told it was cursed, and for just that reason.\""
-    # "\"Well, I shall monitor the closed space situation, and if it—\" He broke off abruptly, frowning. \"There's one now.... I think I can guess what Nagato-san has just finished explaining to Suzumiya-san.\""
-    # "\"What's that?\" Mikuru asked, glancing at Koizumi sidelong."
-    # nvl clear
+ 
+label Test:
+    play music "Music/suspicion.ogg"
+    scene bg Cafe with fade
+    show Mikuru Casual Neutral1 at center
+    show Kyon Casual Ser1 at right  
+    show Koizumi Crossed Casual Ser1 at left
+    "After settling into a corner of a relatively new cafe, at least, one Kyon didn't recognize immediately, they sat in silence until their drinks were served."
+    show Koizumi Crossed Casual Ser2 at left
+    "When his latte arrived, Koizumi began, saying, \"It is possible that Nagato-san may curtail the creation of closed space, but my suspicion is that the opposite is more likely to be true.\"" 
+    "\"That is to say ... with her aware of her abilities, and Nagato-san and yourself being the key to releasing those effects she may desire, Suzumiya-san is likely to create even more closed spaces.\""
+    nvl clear
+    show Kyon Casual Ser3 at right
+    "\"I think even Haruhi would be reasonable enough to try and stop that once she was aware of it,\" Kyon countered. \"Is there a problem right now?\""
+    show Koizumi Crossed Casual Sigh1 at left
+    "\"At the moment, no,\" Koizumi allowed. \"But we are entering, for all intents and purposes, uncharted territory. We don't know what might happen next, or if Suzumiya-san might even find a way to ... slip free from Nagato's control, as it were.\""
+    show Mikuru Casual Unhap1 at center
+    "\"I don't like thinking of it like that,\" Mikuru mumbled into her glass. \"That sounds like putting a leash on Suzumiya-san.\""
+    nvl clear
+    show Kyon Casual Sigh1 at right
+    "\"Sometimes,\" Kyon said quietly, \"I feel that's what the world needs more than anything else.\"" 
+    show Kyon Casual Sigh2 at right
+    "\"Don't get me wrong ... I don't believe that Haruhi's a terrible person by any stretch, but she's rather careless much of the time. If she has to have power, I think it's best she learn to use it responsibly.\"" 
+    show Kyon Casual Worry1 at right
+    "\"Or perhaps not at all.\""
+    nvl clear
+    show Koizumi Think Casual Ser3 at left
+    "\"I think you're completely discounting the frustration she's going to feel when it becomes more apparent that she is now limited by yourself and Nagato- san,\" Koizumi countered, rubbing his chin."
+    show Koizumi Think Casual Ser4 at left
+    "\"I must ask you to take this as seriously as you wish for Suzumiya-san to. That seems only fair.\""
+    show Mikuru Casual Sad2 at center
+    "Mikuru nodded weakly, looking away."
+    nvl clear
+    show Kyon Casual Ser2 at right
+    "Scowling, Kyon conceded, \"Alright. That's true. So, you think we'll need to let her use her ability as she wishes, now?\""
+    show Koizumi Crossed Casual Sigh2 at left
+    "\"That may be going a bit far,\" Koizumi said, shrugging. \"You are the voice of reason for her, so I am merely asking that you be reasonable as well.\""
+    show Koizumi Crossed Casual Ser1 at left
+    "\"Suzumiya-san doesn't seem the type to receive something at no cost and do away with it.\""
+    nvl clear
+    show Kyon Casual Sigh2 at right
+    "\"Also true.\" Kyon sipped his coffee thoughtfully. \"She'd take a cursed item if she was told it was cursed, and for just that reason.\""
+    show Koizumi Crossed Casual Ser2 at left
+    "\"Well, I shall monitor the closed space situation, and if it—{nw}\""
+    show Koizumi Think Casual Ser1 at left
+    extend " He broke off abruptly, frowning. \"There's one now.... I think I can guess what Nagato-san has just finished explaining to Suzumiya-san.\""
+    show Mikuru Casual Quest1 at center
+    "\"What's that?\" Mikuru asked, glancing at Koizumi sidelong."
+    nvl clear
+    
     # "* * *"
     # "\"Okay,\" Haruhi said, eyeing Yuki across the table and trying to put everything together. \"So, you're telling me that you changed the entire world to fit your ideals?\""
     # "\"In part,\" the stoic girl answered. \"It was also because I believed it was his ideal as well.\""
