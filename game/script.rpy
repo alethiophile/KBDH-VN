@@ -518,7 +518,8 @@ init -1 python:
         ("Obligatory Anachronic Order \nExplanation Arc chapter one\n\"Scene Twelve, the Ninth Big Fight\"", "AO1_1"),
         ("Obligatory Anachronic Order \nExplanation Arc chapter two\n\"Clear as Mud\"", "AO2"),
         ("Label a scene you're working on test and use this", "Test"),
-        ("Credits", "credits"),]
+        ("Credits", "credits"),
+        ("Another testbed, Eyecatchies", "test_Z0"),]
 
 
 label start:
@@ -558,4 +559,111 @@ label credits:
     show BDVNlogo at truecenter with dissolve
     pause
     stop music
+    return
+    
+label eyecatch:
+    # Current version
+    scene black with Dissolve(1)
+    show BDVNlogo at truecenter with Dissolve(2.0)
+    pause 1
+    hide BDVNlogo with Dissolve(2.0)
+    return
+    
+label eyecatch_darken1:
+    # Darkening, for tension buildup (or so I was told), v1
+    show almostblack one at truecenter with dissolve
+    show almostblack two at truecenter
+    show BDVNlogo at truecenter
+    with Dissolve(2.0)
+    pause 2.0
+    scene black with Dissolve(1)
+    return
+    
+label eyecatch_darken2:
+    # Darkening, for tension buildup (or so I was told), v2
+    show almostblack two at truecenter with Dissolve(1)
+    show BDVNlogo at truecenter with Dissolve(2.0)
+    pause 2.0
+    scene black with Dissolve(1)
+    return
+    
+label eyecatch_random:
+    # randomly choses the way logo appears and disappears with every call
+    scene black with Dissolve(1)
+    $ pause_time = 2.0
+    $ r = renpy.random.randint(1, 5)
+    if r == 1:
+        show BDVNlogo at truecenter with moveinright
+        pause pause_time
+        hide BDVNlogo with moveoutleft
+    elif r == 2:
+        show BDVNlogo at truecenter with moveinleft
+        pause pause_time
+        hide BDVNlogo with moveoutright
+    elif r == 3:
+        show BDVNlogo at truecenter with moveintop
+        pause pause_time
+        hide BDVNlogo with moveoutbottom
+    elif r == 4:
+        show BDVNlogo at truecenter with moveinbottom
+        pause pause_time
+        hide BDVNlogo with moveouttop
+    else:
+        show BDVNlogo at truecenter with coatin
+        pause pause_time
+        hide BDVNlogo with coatout
+    return
+    
+label test_Z0:
+    scene bg MorningSky
+    show TownHillLeftMorning
+    show Kyon Sigh1 at right
+    "\"You opened it already, I see.\""
+    nvl clear
+    # call the eyecatch routine, specify the unique "from"
+    call eyecatch from test_Z0_p0001
+    # activate the next scene with dissolve (or whatever else).
+    scene bg MorningSky
+    show TownHillLeftMorning
+    show Haruhi Smile3 at left
+    with dissolve
+    "\"Well, of course! Doesn't make any sense to me, though. I probably wouldn't have opened it if you hadn't told me it wouldn't make any sense to me."
+    show Haruhi Quest1 at left
+    "\"Why did you want me to give you a letter from yourself, though?\""
+    show Kyon Sigh2 at right
+    "\n\n\n\n\\n\n\nThe skies were clear of rain, if gray, so he sighed and pulled the letter out of the envelope while proceeding up the hill."
+    # call the eyecatch routine, specify the unique "from"
+    call eyecatch_darken1 from test_Z0_p0002
+    # activate the next scene with dissolve (or whatever else).
+    scene bg MorningSky
+    show TownHillLeftMorning
+    show Haruhi Smile3 at left
+    with dissolve
+    nvl clear
+    "And now, eyecatch vDarken2!"
+    # call the eyecatch routine, specify the unique "from"
+    call eyecatch_darken2 from test_Z0_p0003
+    # activate the next scene with dissolve (or whatever else).
+    scene bg MorningSky
+    show TownHillLeftMorning
+    show Haruhi Smile3 at left
+    with dissolve
+    "And now, one random eyecatch!"
+    # call the eyecatch routine, specify the unique "from"
+    call eyecatch_random from test_Z0_p0004
+    # activate the next scene with dissolve (or whatever else).
+    scene bg MorningSky
+    show TownHillLeftMorning
+    show Kyon Sigh1 at right
+    with dissolve
+    "And another one. (but effect may be the same. Randomness, y'know)"
+    # call the eyecatch routine, specify the unique "from"
+    call eyecatch_random from test_Z0_p0005
+    # activate the next scene with dissolve (or whatever else).
+    scene bg MorningSky
+    show TownHillLeftMorning
+    show Haruhi Smile3 at left
+    with dissolve
+    "Thats all!"
+    call eyecatch_random from test_Z0_p0006
     return

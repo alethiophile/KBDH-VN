@@ -951,10 +951,11 @@ label AO1_2:
     "\"I promised this already,\" Koizumi agreed shakily. \"Very well.\""
     show Koizumi Crossed Casual Ser1 at center
     show Mikuru Cower Casual Wince1 at right
-    "\"I.... I can't,\" Mikuru whimpered. \"I'm not even allowed to try! Oh, Suzumiya-san, I would, but I can't...\" Mikuru's eyes widened as she looked up, blinking away her tears."
-    nvl clear
+    "\"I.... I can't,\" Mikuru whimpered. \"I'm not even allowed to try! Oh, Suzumiya-san, I would, but I can't...\" "
     hide MTears
     show Mikuru Cower Casual Sup1 at right
+    nvl clear
+    "Mikuru's eyes widened as she looked up, blinking away her tears."
     "\"I ... I'm getting a message?\" she asked. {w}\"I ... I am allowed to do whatever Kyon-kun asks? B...but not you? I don't understand! I'm sorry, those are just my instructions!\""
     nvl clear
     hide Mikuru
@@ -996,7 +997,8 @@ label AO1_2:
     show Yuki Talk2 at HalfLeft
     "\"Awaiting data creation.\""
     nvl clear
-    show Haruhi Casual Quest1 at left
+    # show Haruhi Casual Quest1 at left
+    show Haruhi Casual Ang1 at left
     "\"Data creation?\" Haruhi asked, frowning. \"What does that {i}mean{/i} exactly?\""
     scene bg YukiRoomCenter
     show Koizumi Crossed Casual Smile1 at center
@@ -1034,13 +1036,13 @@ label AO1_2:
     $ music_need = False
     show Kyon Neutral3 at right
     with fade
-    "After finishing his breakfast and heading to school, he was startled to run into Haruhi at the train station at the bottom of the hill ... literally."
+    "After finishing his breakfast and heading to school, he was startled to run into Haruhi at the train station at the bottom of the hill ... {nw}"
     show Haruhi Hap4:
         xalign 0.0 yalign 1.0
         linear 0.1 xalign 0.6
-     
-     
     play sound "SE/impact.mp3"
+    extend "literally." 
+    
     "The girl shot out from behind one of the pillars supporting the heavy structure keeping rainwater off the train platform, nearly plowing him over as she launched herself, arms wrapping around him as she swung around with her momentum, crying out, \"YES!\""
     nvl clear
     "Struggling and only barely managing to keep his balance, he eyed all of the other Kitago students around them, watching with raised eyebrows and open smirks."
