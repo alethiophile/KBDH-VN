@@ -343,6 +343,7 @@ label prologue2:
     "\"Ah,\" she said, her voice disappointed as Kyon's repulsor and gravimetric systems flared his momentum and spread it evenly across the entire rooftop, landing him near Haruhi, at Ryouko's side."
     show Asakura Sigh1 at center
     "\"I failed again.\""
+    $ renpy.music.set_volume(0.2, .5, channel="music")
     stop music fadeout 3
     nvl clear
     hide Asakura

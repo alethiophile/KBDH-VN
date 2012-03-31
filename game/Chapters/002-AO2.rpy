@@ -130,6 +130,7 @@ label AO2:
     "\"Well, the answer is still going to be that it's none of their business! Absolutely none!\""
     show Kunikida Neutral2 at center
     "\"Aha ... well ... I'll leave the two of you to yourselves, then,\" {nw}"
+    $ _window = True
     show Kunikida at right with move
     hide Kunikida with moveoutright
     extend "Kunikida said, bowing slightly as he drew away."
@@ -255,9 +256,9 @@ label AO2:
     "\"Y...yes,\" Mikuru agreed, nodding as well. \"See you tomorrow.\""
     nvl clear
     scene bg Elevator with wiperight
+    show Mikuru Casual Neutral1 at center
     show Kyon Casual Ser1 at right
     show Koizumi Crossed Casual Ser1 at left
-    show Mikuru Casual Neutral1 at center
     with dissolve
     "Kyon waved wordlessly, stepping through the door to the hall outside of Yuki's apartment last."    
     show Kyon Casual Sigh1 at right
@@ -279,9 +280,9 @@ label AO2:
     "\"Fine,\" Koizumi agreed, gesturing to the building entrance and leading the way."
     nvl clear
     scene bg YukiApartmentNight with wipeleft
+    show Mikuru Casual Neutral1 at center
     show Kyon Casual Neutral3 at right
     show Koizumi Crossed Casual Ser1 at left
-    show Mikuru Casual Neutral1 at center
     with dissolve
     "Once they stepped out of the tall apartment building, Kyon asked, \"Is closed space still a concern?\""
     show Koizumi Crossed Casual Sigh1 at left
@@ -299,7 +300,7 @@ label AO2:
     show Koizumi Crossed Casual Sigh2 at left
     "Both boys exchanged a glance, then shrugged."
     nvl clear
-    
+    $ _window = False
     
    
     
@@ -308,9 +309,7 @@ label AO2:
     scene black with dissolve
     $ renpy.pause(.2, hard=True)
     show BDVNlogo at truecenter with Dissolve(2.0)
-    #pause 10
-    "{w=5.0}{nw}"
-    nvl clear
+    pause 5
 #     
 
     
@@ -448,6 +447,7 @@ label AO2:
     show Kyon Ang1 at right
     show Yuki Side1 at center
     "\"Denied!\" He turned back to Haruhi and frowned sharply."
+    $ _window = True
     show Haruhi Pout1 at left
     show Hblush at left with dissolve
     "She looked away, staring out the window while picking at Kyon's bento, her cheeks a bright red."
@@ -512,6 +512,7 @@ label AO2:
     stop music fadeout 3
     "He nodded, deciding that silence would be the best course of action for the moment."
     nvl clear
+    $ _window = False
     scene black with dissolve
     $ renpy.pause(.2, hard=True)
     show BDVNlogo at truecenter with Dissolve(2.0)
@@ -540,7 +541,7 @@ label Test:
     "\"Sometimes,\" Kyon said quietly, \"I feel that's what the world needs more than anything else.\""
     nvl clear
     show Kyon Casual Sigh2 at right
-    "\"Don't get me wrong ... I don't believe that Haruhi's a terrible person by any stretch, but she's rather careless much of the time. If she has to have power, I think it's best she learn to use it responsibly.\"" 
+    "\"Don't get me wrong ... I don't believe that Haruhi's a terrible person by any stretch, but she's rather careless much of the time. If she has to have power, I think it's best she learn to use it responsibly." 
     show Kyon Casual Worry1 at right
     "\"Or perhaps not at all.\""
     nvl clear
@@ -554,7 +555,7 @@ label Test:
     show Kyon Casual Ser2 at right
     "Scowling, Kyon conceded, \"Alright. That's true. So, you think we'll need to let her use her ability as she wishes, now?\""
     show Koizumi Crossed Casual Sigh2 at left
-    "\"That may be going a bit far,\" Koizumi said, shrugging. \"You are the voice of reason for her, so I am merely asking that you be reasonable as well.\""
+    "\"That may be going a bit far,\" Koizumi said, shrugging. \"You are the voice of reason for her, so I am merely asking that you be reasonable as well."
     show Koizumi Crossed Casual Ser1 at left
     "\"Suzumiya-san doesn't seem the type to receive something at no cost and do away with it.\""
     nvl clear

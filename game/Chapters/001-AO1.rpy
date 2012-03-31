@@ -4,20 +4,21 @@ label AO1_1:
     # Obligatory Anachronic Order Explanation Arc chapter 1 - "Scene Twelve, the Ninth Big Fight"
     
     # Preparations for Chapter: Replicate the last scene from previous chapter (if it is continued), or show a chapter quote card
-    scene bg stairwell with None:
-        size (800,600)
+    $ _window = True
+    nvl clear
     if music_need:
+        scene bg stairwell with None:
+            size (800,600)
         $ renpy.music.set_volume(0.2, .5, channel="music")
         # copy last 'play music' from the previous chapter (if scene is continued) or start apropriate chapter music
         play music "music/YukiAsakuraFight.mp3" fadein 1
     #Preparation for Chapter end
-    nvl clear
+        show Kyon Ser2 at right
+        show Skinsuit at right
+        show Coat at right
+        with dissolve
     hide Asakura
-    show Kyon Ser2 at right
-    show Skinsuit at right
-    show Coat at right
     show Haruhi Hap3 at left
-    with dissolve
     "Haruhi bounced on her heels with a wide grin, holding Kyon's cell phone in both hands as she remained in the center of the glowing circle."
     show Haruhi Hap4 at left
     "\"I knew it!\" she cheered.{nw} "
@@ -604,8 +605,8 @@ label AO1_1:
     nvl clear
     show Kyon Casual Worry2 at right
     "He bit off a curse, running his hands through his hair."
-    scene bg YukiRoomCenter 
-    hide Yuki 
+    $ _window = True
+    scene bg YukiRoomCenter with dissolve
     show Kyon Casual Ser1 at right
     show Haruhi Casual Worry1 at left
     with dissolve
@@ -653,7 +654,7 @@ label AO1_1:
     show Kyon Casual Ser2 at right
     "\"So, in your dream, you watched giant blue creatures smash apart the school, and you were very excited about abandoning the Brigade — your friends — and leading an exciting new life in whatever world was to come.\""
     nvl clear
-    scene bg YukiRoomCenter
+    scene bg YukiRoomCenter with dissolve
     show Koizumi Crossed Casual Uneasy1 at center
     show Mikuru Cower Casual Nervous1 at right
     show MBlush Cower at right
@@ -780,10 +781,13 @@ label AO1_2:
     nvl clear
     "Serving his curious sister a piece of toast with a fried egg on it, he set about preparing one for himself." 
     stop music fadeout 2
+    $ _window = True
     scene black  with dissolve
-    "Now Haruhi, as she understood it, believed that she could change reality...."
     nvl clear
+    "Now Haruhi, as she understood it, believed that she could change reality...."
     scene black with dissolve
+    $ _window = False
+    nvl clear
     $ renpy.pause(.2, hard=True)
     show BDVNlogo at truecenter with Dissolve(2.0)
     pause 5
@@ -1000,6 +1004,7 @@ label AO1_2:
     # show Haruhi Casual Quest1 at left
     show Haruhi Casual Ang1 at left
     "\"Data creation?\" Haruhi asked, frowning. \"What does that {i}mean{/i} exactly?\""
+    $ _window = True
     scene bg YukiRoomCenter
     show Koizumi Crossed Casual Smile1 at center
     with dissolve
