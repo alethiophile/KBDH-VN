@@ -649,7 +649,7 @@ label prologue2:
     "The smaller girl turned her gaze back to Ryouko's bound form, the faintest hint of a smile coming to her lips."
     nvl clear
     scene black
-    stop music
+    stop music fadeout 0
     "\"I will not let you harm him again.\""
     nvl clear
     scene black with dissolve

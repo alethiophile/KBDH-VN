@@ -21,9 +21,9 @@ label AO1_1:
     show Haruhi Hap3 at left
     "Haruhi bounced on her heels with a wide grin, holding Kyon's cell phone in both hands as she remained in the center of the glowing circle."
     show Haruhi Hap4 at left
-    "\"I knew it!\" she cheered.{nw} "
+    "\"I {i}knew{/i} it!\" she cheered.{nw} "
     show Haruhi Hap1 at left
-    extend "\"There was something off about Asakura! What is it?\""
+    extend "\"There was {i}something{/i} off about Asakura! What is it?\""
     nvl clear
     hide Kyon
     hide Coat
@@ -38,7 +38,7 @@ label AO1_1:
     show Skinsuit at right
     show Coat at right
     with dissolve
-    "\"She's an alien,\" Kyon volunteered.{nw} "
+    "\"She's alien,\" Kyon volunteered.{nw} "
     show Kyon Neutral2 at right
     extend "\"From the same place as Yuki-chan and Kimidori, but she tried to kill me once.\""
     show Haruhi Sup1 at left
@@ -265,9 +265,9 @@ label AO1_1:
     nvl clear
     show Asakura Sup1 at HalfRight
     "The blue-haired interface cocked her head to one side, blinking."
-    stop music
     "\"What?\""
     nvl clear
+    stop music
     hide Haruhi
     hide Asakura
     $ _window = False
@@ -371,6 +371,7 @@ label AO1_1:
     show Yuki Talk2 at left
     "\"It is absolute.\""
     nvl clear
+    show Yuki Side1 at left
     show Kyon Casual Sigh1 at right
     "He took another deep breath, then jumped to his feet, nearly upsetting the table, and began pacing back and forth in her living room."
     show Yuki Side2 at left
@@ -395,15 +396,13 @@ label AO1_1:
     show Yuki Side1 at left
     "\"I don't care!\" he shouted."
     "\"I've always relied on you — now that you need help, I am {i}not{/i} going to just stand by and watch you get taken away from— from us!\""
-    # show Yuki SideEyesClosed1 at left
-    # pause (0.2)
-    # show Yuki Side1 at left
     show Yuki Side Blink at left
     "She blinked, considering, then lowered her head slightly in her infinitesimal nod."
     nvl clear
     show Yuki Talk1 at left
     "\"I see,\" she said quietly."
     show Kyon Casual Sigh1 at right
+    show Yuki Side1 at left
     "\"So, I need to make some phone calls.\""
     show Yuki Talk2 at left
     "\"Understood.\""
@@ -417,7 +416,7 @@ label AO1_1:
     scene bg YukiApartmentNight with fade
     play music "Music/Kankyou.mp3"
     "She couldn't imagine what had possessed Kyon to call her, ranting like a lunatic about Yuki being sick. "
-    "But he'd done it from her phone, which meant for whatever reason that he and Yuki were alone together. "
+    "But he'd done it from {i}her{/i} phone, which meant for whatever reason that he and Yuki were alone together. "
     "She wasn't certain why that bothered her, but it did — so when he demanded her presence, instead of telling him what he could do for trying to order the Brigade leader around, she swore that she'd be there."
     nvl clear
     scene bg YukiRoomCenter with wipeup
@@ -451,7 +450,7 @@ label AO1_1:
     "Her irritation at Kyon's practical joke momentarily blew away, like settled dust being disturbed."
     show Haruhi Crossed Casual Sup2 at HalfLeft
     "\"Dying!?\" she yelped, turning to stare at the smaller girl."
-    "\"What of? How?\""
+    "\"What of? {i}How?{/i}\""
     show Yuki Talk1 at left
     "Yuki blinked twice, then answered, \"I am not able to say.\""
     nvl clear
@@ -780,10 +779,10 @@ label AO1_2:
     "And there would be consequences, he had no doubts of that at all."
     nvl clear
     "Serving his curious sister a piece of toast with a fried egg on it, he set about preparing one for himself." 
+    nvl clear
     stop music fadeout 2
     $ _window = True
     scene black  with dissolve
-    nvl clear
     "Now Haruhi, as she understood it, believed that she could change reality...."
     scene black with dissolve
     $ _window = False
@@ -797,7 +796,7 @@ label AO1_2:
     show Haruhi Casual Unhap1 at left
     show Htears Casual at left
     with fade
-    "\"But you're saying, I have a power I don't even know about?\" Haruhi asked, now pacing anxiously back and forth."
+    "\"But you're saying, I have a {i}power{/i} I don't even know about?\" Haruhi asked, now pacing anxiously back and forth."
     show Haruhi Casual Unhap2 at left
     "\"Why would you have kept this a secret from me?! Even more than the fact that you're the people I've been looking for, the fact that I can do things!\""
     show Haruhi Casual Unhap1 at left
@@ -839,7 +838,7 @@ label AO1_2:
     "\"That aside,\" Kyon said, shifting his shoulders, \"we can talk about this later. I'm sorry, but I'm really worried about Nagato. Since you believe us, or at least, I think you do...\""
     nvl clear
     show Haruhi Casual Unhap1 at left
-    "\"I don't,\" she countered. \"I believe you. Because you tried. But....\" She trailed off and shrugged, gesturing to the other three."
+    "\"I don't,\" she countered. \"I believe {i}you{/i}. Because you {i}tried{/i}. But....\" She trailed off and shrugged, gesturing to the other three."
     show Haruhi Casual Ang4 at left
     "\"The people who wormed their way into my good graces were working against me! How can I trust them?\""
     hide Haruhi
@@ -877,10 +876,10 @@ label AO1_2:
     show Haruhi Casual Unhap2 at left
     with fade
     nvl clear
-    "\"And in every case, all three of them couldn't tell you because their bosses told them not to.\""
+    "\"And in every case, all three of them couldn't tell you because their bosses {i}told{/i} them not to.\""
     nvl clear
     show Haruhi Casual Ang4 at left
-    "\"What about your boss,\" she snapped, turning to eye Kyon with suspicion. \"What does that person say?\""
+    "\"What about {i}your{/i} boss,\" she snapped, turning to eye Kyon with suspicion. \"What does that person say?\""
     show Kyon Casual Sigh1 at right
     "\"Right now she's asking me if she has any reason to trust her closest friends,\" he answered."
     show Kyon Casual Worry1 at right
@@ -901,7 +900,7 @@ label AO1_2:
     show Haruhi Casual Worry1 at left
     "\"The entire world?\" she pressed, struggling to contain all the new information. \"You've saved the world?\""
     show Kyon Casual Sigh1 at right
-    "\"Technically, you did,\" he said, shaking his head. \"I just convinced you to do it ... but we already went over that.\""
+    "\"Technically, {i}you{/i} did,\" he said, shaking his head. \"I just convinced you to do it ... but we already went over that.\""
     nvl clear
     show Haruhi Casual Quest1 at left
     "\"So you're some kind of undercover hero without any of his own special abilities that fights to take care of me, and to save the world?\" she asked."
@@ -938,7 +937,7 @@ label AO1_2:
     hide Kyon
     show Haruhi Point Casual Ang1 at center
     with dissolve
-    "\"Everyone who really wants to help me out, and stay in the Brigade ...{w=0.8} everyone who wants to prove to me that this is true and earn my forgiveness for the whole stupid masquerade ...{w=0.8} has to accept me as a boss, just like Kyon!\""
+    "\"Everyone who really wants to help me out, and stay in the Brigade ...{w=0.8} everyone who wants to prove to me that this is true and earn my forgiveness for the whole stupid masquerade ...{w=0.8} has to accept {i}me{/i} as a boss, just like Kyon!\""
     nvl clear
     show Haruhi Point Casual Scold1 at center
     "She nodded decisively, then her eyes widened slightly in realization. \"Oh, and Koizumi? You're demoted. Kyon's obviously more trustworthy as a vice commander, since you already report to him anyway. Everyone got it? We're the bosses ... not your 'Organizations' or 'Thought Entities' or mysterious future 'superiors' who somehow control your minds!\""
@@ -1063,7 +1062,7 @@ label AO1_2:
     show Haruhi Hap4 at left
     "\"Yesterday, after I went home, was so cool!\" she squealed."
     show Haruhi Hap2 at left
-    "\"I never knew you could do all those things! I mean, I suspected, since you were the best member of the Brigade next to myself and everything, but that was amazing!\""
+    "\"I never knew you could do all those things! I mean, I suspected, since you were the best member of the Brigade next to myself and everything, but that was {i}amazing!{/i}\""
     nvl clear
     show Haruhi Smile3 at left
     play sound "Pageflip3.mp3"

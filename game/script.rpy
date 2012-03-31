@@ -524,6 +524,7 @@ init -1 python:
 
 label start:
     # Z0 : intro. 
+    stop music
     scene black
     centered "Big Damn VN Brigade presents:"
     centered "based on the work by\nBrian Randall"
@@ -547,11 +548,11 @@ label credits:
     # pause
     # $ renpy.pause(.1, hard=True)
     # show Credits1 with dissolve
-    centered "Special thanks to:\n\nBrian Randall\nauthor of Kyon: Big Damn Hero\n\nand\n\nNagaru Tanigawa\nauthor of Suzumia Haruhi series"
+    centered "Special thanks to:\n\nBrian Randall\nauthor of Kyon: Big Damn Hero\n\nand\n\nNagaru Tanigawa\nauthor of Suzumiya Haruhi series"
     # pause
     # $ renpy.pause(.1, hard=True)
     # show Credits2 with dissolve
-    centered "Disclaimer: This production makes use\nof the intellectual property belongin to\nBrian Randall, Nagaru Tanigawa \nand others. No disrespectis intended.\n\nNeither Kyon: Big Damn Hero \nnor Suzumia Haruhi and related \ncharacters are owned by anyone \nassociated with Big Damn VN"
+    centered "Disclaimer: This production makes use\nof the intellectual property belongin to\nBrian Randall, Nagaru Tanigawa \nand others. No disrespectis intended.\n\nNeither Kyon: Big Damn Hero \nnor Suzumiya Haruhi and related \ncharacters are owned by anyone \nassociated with Big Damn VN"
     # pause
     # $ renpy.pause(.1, hard=True)
     # show Credits3 with dissolve
