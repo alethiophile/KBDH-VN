@@ -543,7 +543,7 @@ label credits:
     scene black with fade
     # The hardpause calls are necessary because otherwise Ren'py wants to skip over all the pause statements on a single press of the key.
     # show Credits0 with dissolve
-    centered "Presented by:\n\nBig Damn VN Brigade\n\nAgasa\nalethiophile\nFilaren\nOroboro\nPax Empyrian\n\n\nMany thanks to:\n\nJason Ulloa\njonbob\nSpecular"
+    centered "Presented by:\n\nBig Damn VN Brigade\n\nAgasa\nalethiophile\nFilraen\nOroboro\nPax Empyrean\nJason Ulloa\nZer0Null\n\n\nMany thanks to:\n\njonbob\nSpecular"
     # pause
     # $ renpy.pause(.1, hard=True)
     # show Credits1 with dissolve
