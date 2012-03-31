@@ -43,8 +43,8 @@ init:
     image white = "#ffffff"
     image black = "#000000"
     image yukibackground = "#ccccff"
-    image title0 = "Backgrounds/title0.png"
-    image title1 = "Backgrounds/title1.png"
+    # image title0 = "Backgrounds/title0.png"
+    # image title1 = "Backgrounds/title1.png"
     image Barrier = "Backgrounds/barrier2.jpg"
     image Bluesword = "Backgrounds/bluesword1.png"
     image field = "Sprites/Effects/InterdictionField.png"
@@ -423,8 +423,17 @@ init:
     image Credits2 = "Backgrounds/credits2.png"
     image Credits3 = "Backgrounds/credits3.png"
     
+    # "Image" showing the date
+    image eyeDate = DynamicDisplayable(show_date)
+    
     # Most likely needs {font=fancyfont.ttf}magic{/font} to pull off properly...
-    image BDVNlogo = Text("{color=#3cf}{size=80}{b}{k=3}KYON:\n{/k}{/b}{/size}{size=40}{k=-1.0}Big Damn Hero{/k}{/size}{/color}")
+    image BDVNlogo = Text("{size=80}{b}{k=3}KYON:\n{/k}{/b}{/size}{size=40}{k=-1.0}Big Damn Hero{/k}{/size}", color="#3cf")
+    
+    # Title cards, i.e chapter-opening quotes
+    image title 000 = Text("{space=500}{b}{size=+1}Thursday, June 2, 2011{/size}{/b}\n\n\n\n\"Chapter Two: Don't Just SAY You Have a Bad Feeling, DO Something About It!\"\n\n\"...but I digress. When you get that feeling, you know the one, in the back of your head? The one that makes you think something is off about the situation? It may be right. Granted, you may also be tumbling headlong into a fit of paranoia that will end terribly for you and everyone you love. But what if you're NOT? Remember, if you're aware of things, you know most people think you're crazy anyway. Is it going to hurt that much more to overreact rather than just label something a false alarm?\"\n\n\"Practical Heroism and You: Awareness\" -- Tadamichi Kyousuke", font="DejaVuSerif-Italic.ttf", size=18, line_leading=3, justify=True, xmaximum=750)
+    image title 001 = Text("{space=500}{b}{size=+1}Sunday, April 17, 2011{/size}{/b}\n\n\n\n\"Chapter One: The Truth is the Greatest Weapon\"\n\n\"...of dozens of issues with maintaining a 'masquerade' scenario. Generally, unless it's absolutely required, it's a bad idea. There will be fallout. If it must be done, the truth is still going to be the ultimate weapon -- plan accordingly, and make sure it's a weapon that will serve you, and not any enemies. Barring that, make fast friends with someone who can BS better than you.\"\n\n\"Cover\" -- Author Unknown", font="DejaVuSerif-Italic.ttf", size=18, line_leading=3, justify=True, xmaximum=750)
+    image title 002 = Text("{space=500}{b}{size=+1}Sunday, April 18, 2011{/size}{/b}\n\n\n\n\"Chapter Ten: Time Travel\"\n\n\"This is the one you absolutely cannot afford to mess up. The most important thing is to pay attention, and not over think things. But mostly, it's about paying attention; the worst thing you can do is assume that just because time travel is involved, you cannot fail.\"\n\n\"Practical Heroism and You: Awareness\" -- Tadamichi Kyousuke", font="DejaVuSerif-Italic.ttf", size=18, line_leading=3, justify=True, xmaximum=750)
+
 
 init python:
     #basechar = Character(None, kind=nvl)
@@ -471,7 +480,13 @@ init python:
     osr_right = Position(xanchor=0.5, yalign=1.0, xpos=-1.75) 
     
     # position of the energy net, lower than truecenter, to cover the Ryoko better.
-    spike_net_pos = Position(xalign=0.5, yanchor=0.5, ypos=0.65)
+    spike_net_pos = Position(xalign=0.5, ycenter=0.65)
+    
+    # position of title cards, i.e chapter-opening quotes.
+    card_pos = Position(xalign=0.5, yanchor=0.0, ypos=10)
+    
+    # position for dates in eyecatches.
+    date_pos = Position(xanchor=1.0, yanchor=0.0, xpos=790, ypos=10)  
     
     fast_move = MoveTransition(0.2)
     
@@ -480,6 +495,7 @@ init python:
     
     adj = ui.adjustment()
     music_need = True
+    date = ""
     
     centered = Character(None, what_slow_cps=0, what_size = 27, what_outlines = [(1, "#000", 0, 0)],
                         what_layout="subtitle", what_xalign=0.5, what_text_align=0.5,
@@ -497,7 +513,8 @@ init python:
         config.keymap['developer'].append('d')
         config.keymap['toggle_music'].append('m')
         config.keymap['toggle_music'].append('M')
-
+    
+        
 transform center_left:
     xalign 0.1 yalign 1.0
     
@@ -513,13 +530,18 @@ transform KyonRightFast:
 
 
 init -1 python:
+    def show_date(st, at):
+        return Text("[date]", font="DejaVuSerif-Italic.ttf", size=25, color="#3cf"), None
+    
     chapters = [
         ("In Media Res Prologue\nExactly What it Says on the Tin", "prologue"),
         ("Obligatory Anachronic Order \nExplanation Arc chapter one\n\"Scene Twelve, the Ninth Big Fight\"", "AO1_1"),
         ("Obligatory Anachronic Order \nExplanation Arc chapter two\n\"Clear as Mud\"", "AO2"),
+        ("-----", "credits"),
         ("Label a scene you're working on test and use this", "Test"),
         ("Credits", "credits"),
-        ("Another testbed, Eyecatchies", "test_Z0"),]
+        ("Another testbed, Eyecatchies", "test_Z0_eye"),
+        ("Another testbed, Title cards", "test_Z0_titles"),]
 
 
 label start:
@@ -529,8 +551,9 @@ label start:
     centered "based on the work by\nBrian Randall"
     centered "in turn based on the\nSuzumiya Haruhi series by\nNagaru Tanigawa"
     # show Text("{color=#00a}{size=60}KYON:{/size}\n{size=40}Big Damn Hero{/size}{/color}") at truecenter with dissolve
-    show BDVNlogo at truecenter with dissolve
+    show BDVNlogo at truecenter with coatin
     pause
+    hide BDVNlogo with coatout
     jump prologue
 
     
@@ -561,67 +584,114 @@ label credits:
     stop music
     return
     
-label eyecatch:
-    # Current version
-    scene black with Dissolve(1)
-    show BDVNlogo at truecenter with Dissolve(2.0)
-    pause 1
-    hide BDVNlogo with Dissolve(2.0)
-    return
     
-label eyecatch_darken1:
+label eyecatch(date="", pause_time=4.0, r=0):
+    # call eyecatch_coatinout(pause_time) from eyecatch_generic
+    call eyecatch_random(date, pause_time, r) from eyecatch_generic
+    return
+
+    
+label eyecatch_simple(date="", pause_time=2.0):
+    # Simple version
+    scene black with Dissolve(1)
+    show BDVNlogo at truecenter
+    show eyeDate at date_pos 
+    with Dissolve(2.0)
+    pause pause_time
+    scene black with Dissolve(2.0)
+    return
+
+label eyecatch_coatinout(date="", pause_time=2.0):
+    # Uses kickass coati-coatout transition
+    scene black with Dissolve(1)
+    show BDVNlogo at truecenter
+    show eyeDate at date_pos 
+    with coatin
+    pause pause_time
+    hide BDVNlogo
+    hide eyeDate at date_pos 
+    with coatout
+    return
+        
+label eyecatch_darken1(date="", pause_time=2.0):
     # Darkening, for tension buildup (or so I was told), v1
     show almostblack one at truecenter with dissolve
     show almostblack two at truecenter
     show BDVNlogo at truecenter
+    show eyeDate at date_pos    
     with Dissolve(2.0)
-    pause 2.0
+    pause pause_time
     scene black with Dissolve(1)
     return
     
-label eyecatch_darken2:
+label eyecatch_darken2(date="", pause_time=2.0):
     # Darkening, for tension buildup (or so I was told), v2
     show almostblack two at truecenter with Dissolve(1)
-    show BDVNlogo at truecenter with Dissolve(2.0)
-    pause 2.0
+    show BDVNlogo at truecenter
+    show eyeDate at date_pos 
+    with Dissolve(2.0)
+    pause pause_time
     scene black with Dissolve(1)
     return
     
-label eyecatch_random:
+    
+label eyecatch_random(date="", pause_time=2.0, r=0):
     # randomly choses the way logo appears and disappears with every call
     scene black with Dissolve(1)
-    $ pause_time = 2.0
-    $ r = renpy.random.randint(1, 5)
+    if r == 0 or r > 5:
+        $ r = renpy.random.randint(1, 5)
+        
     if r == 1:
-        show BDVNlogo at truecenter with moveinright
+        show BDVNlogo at truecenter
+        show eyeDate at date_pos 
+        with moveinright
         pause pause_time
-        hide BDVNlogo with moveoutleft
+        hide BDVNlogo
+        hide eyeDate
+        with moveoutleft
     elif r == 2:
-        show BDVNlogo at truecenter with moveinleft
+        show BDVNlogo at truecenter
+        show eyeDate at date_pos 
+        with moveinleft
         pause pause_time
-        hide BDVNlogo with moveoutright
+        hide BDVNlogo
+        hide eyeDate
+        with moveoutright
     elif r == 3:
-        show BDVNlogo at truecenter with moveintop
+        show BDVNlogo at truecenter
+        show eyeDate at date_pos 
+        with moveintop
         pause pause_time
-        hide BDVNlogo with moveoutbottom
+        hide BDVNlogo
+        hide eyeDate
+        with moveoutbottom
     elif r == 4:
-        show BDVNlogo at truecenter with moveinbottom
+        show BDVNlogo at truecenter
+        show eyeDate at date_pos 
+        with moveinbottom
         pause pause_time
-        hide BDVNlogo with moveouttop
+        hide BDVNlogo
+        hide eyeDate
+        with moveouttop
     else:
-        show BDVNlogo at truecenter with coatin
+        show BDVNlogo at truecenter
+        show eyeDate at date_pos 
+        with coatin
         pause pause_time
-        hide BDVNlogo with coatout
+        hide BDVNlogo
+        hide eyeDate
+        with coatout
     return
     
-label test_Z0:
+    
+label test_Z0_eye:
     scene bg MorningSky
     show TownHillLeftMorning
     show Kyon Sigh1 at right
     "\"You opened it already, I see.\""
     nvl clear
-    # call the eyecatch routine, specify the unique "from"
-    call eyecatch from test_Z0_p0001
+    # call the eyecatch routine, supply the date (text) to show and pause time if needed, specify the unique "from"
+    call eyecatch("Sample date", 10.0) from test_Z0_p0001
     # activate the next scene with dissolve (or whatever else).
     scene bg MorningSky
     show TownHillLeftMorning
@@ -632,8 +702,8 @@ label test_Z0:
     "\"Why did you want me to give you a letter from yourself, though?\""
     show Kyon Sigh2 at right
     "\n\n\n\n\\n\n\nThe skies were clear of rain, if gray, so he sighed and pulled the letter out of the envelope while proceeding up the hill."
-    # call the eyecatch routine, specify the unique "from"
-    call eyecatch_darken1 from test_Z0_p0002
+    # call the eyecatch routine, supply the date (text) to show, specify the unique "from"
+    call eyecatch_darken1("December -1, 0000") from test_Z0_p0002
     # activate the next scene with dissolve (or whatever else).
     scene bg MorningSky
     show TownHillLeftMorning
@@ -641,23 +711,23 @@ label test_Z0:
     with dissolve
     nvl clear
     "And now, eyecatch vDarken2!"
-    # call the eyecatch routine, specify the unique "from"
-    call eyecatch_darken2 from test_Z0_p0003
+    # call the eyecatch routine, supply the date (text) to show, specify the unique "from"
+    call eyecatch_darken2("Marthober 32, 9999") from test_Z0_p0003
     # activate the next scene with dissolve (or whatever else).
     scene bg MorningSky
     show TownHillLeftMorning
     show Haruhi Smile3 at left
     with dissolve
     "And now, one random eyecatch!"
-    # call the eyecatch routine, specify the unique "from"
-    call eyecatch_random from test_Z0_p0004
+    # call the eyecatch routine, supply the date (text) to show, specify the unique "from"
+    call eyecatch_random("February 30, 1999") from test_Z0_p0004
     # activate the next scene with dissolve (or whatever else).
     scene bg MorningSky
     show TownHillLeftMorning
     show Kyon Sigh1 at right
     with dissolve
     "And another one. (but effect may be the same. Randomness, y'know)"
-    # call the eyecatch routine, specify the unique "from"
+    # call the eyecatch routine, can supply nothing if nothing needs to be changed, specify the unique "from"
     call eyecatch_random from test_Z0_p0005
     # activate the next scene with dissolve (or whatever else).
     scene bg MorningSky
@@ -665,5 +735,15 @@ label test_Z0:
     show Haruhi Smile3 at left
     with dissolve
     "Thats all!"
-    call eyecatch_random from test_Z0_p0006
+    call eyecatch("", 3.0, 5) from test_Z0_p0006
     return
+
+
+label test_Z0_titles:
+    scene black
+    show title 000 at card_pos with slowfadein
+    pause
+    show title 001 at card_pos with slowfadein
+    pause
+    show title 002 at card_pos with slowfadein
+    pause    

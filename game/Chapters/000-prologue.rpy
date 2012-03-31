@@ -3,7 +3,10 @@
 
 label prologue:
     stop music
-    scene title0 with slowfadein
+    # scene title0 with slowfadein
+    scene black
+    show title 000 at card_pos 
+    with slowfadein
     
     pause
     play sound "SE/Pageflip3.mp3" 
@@ -652,9 +655,13 @@ label prologue2:
     stop music
     "\"I will not let you harm him again.\""
     nvl clear
-    scene black with dissolve
-    $ renpy.pause(.2, hard=True)
-    show BDVNlogo at truecenter with Dissolve(2.0)
-    pause 5
+    # scene black with dissolve
+    # $ renpy.pause(.2, hard=True)
+    # show BDVNlogo at truecenter with Dissolve(2.0)
+    # pause 5
+    
+    # Calling a generic "eyecatch" routine
+    call eyecatch from prolog_p001
+    
     # Approx. 21 minutes of reading at this point.
     jump AO1_2

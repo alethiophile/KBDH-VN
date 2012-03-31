@@ -286,7 +286,10 @@ label AO1_1:
     "How had it come to this, anyway...?"
     stop music
     nvl clear
-    scene title1 with slowfadein
+    # scene title1 with slowfadein
+    scene black 
+    show title 001 at card_pos 
+    with slowfadein
     
     pause
     play sound "SE/Pageflip3.mp3"
@@ -409,10 +412,13 @@ label AO1_1:
     "\"Understood.\""
     stop music fadeout 3
     nvl clear
-    scene black with dissolve
-    $ renpy.pause(.2, hard=True)
-    show BDVNlogo at truecenter with Dissolve(2.0)
-    pause 5
+    # scene black with dissolve
+    # $ renpy.pause(.2, hard=True)
+    # show BDVNlogo at truecenter with Dissolve(2.0)
+    # pause 5
+    
+    # Calling a generic "eyecatch" routine, with unique "from"
+    call eyecatch from AO1_sc001
     
     scene bg YukiApartmentNight with fade
     play music "Music/Kankyou.mp3"
@@ -752,11 +758,15 @@ label AO1_1:
     scene black with dissolve
     stop music fadeout 5
     "\"I {i}knew{/i} I'd find you again!\""
-    scene black with dissolve
-    $ renpy.pause(.2, hard=True)
-    show BDVNlogo at truecenter with Dissolve(2.0)
     nvl clear
-    pause 5
+    # scene black with dissolve
+    # $ renpy.pause(.2, hard=True)
+    # show BDVNlogo at truecenter with Dissolve(2.0)
+    # pause 5
+    
+    # Calling a generic "eyecatch" routine
+    call eyecatch from AO1_sc002
+    
     jump prologue2
 
 
@@ -785,12 +795,15 @@ label AO1_2:
     scene black  with dissolve
     nvl clear
     "Now Haruhi, as she understood it, believed that she could change reality...."
-    scene black with dissolve
     $ _window = False
     nvl clear
-    $ renpy.pause(.2, hard=True)
-    show BDVNlogo at truecenter with Dissolve(2.0)
-    pause 5
+    # scene black with dissolve
+    # $ renpy.pause(.2, hard=True)
+    # show BDVNlogo at truecenter with Dissolve(2.0)
+    # pause 5
+    
+    # Calling a generic "eyecatch" routine, with unique "from"
+    call eyecatch from AO1_sc003
 
     play music "Music/GnossiennesDai3.mp3"
     scene bg YukiRoomCenter
@@ -1030,11 +1043,14 @@ label AO1_2:
     stop music fadeout 3
     "\"Granted,\" he said without hesitation."
     nvl clear
-    scene black with dissolve
-    $ renpy.pause(.2, hard=True)
-    show BDVNlogo at truecenter with Dissolve(2.0)
-    pause 5
+    # scene black with dissolve
+    # $ renpy.pause(.2, hard=True)
+    # show BDVNlogo at truecenter with Dissolve(2.0)
+    # pause 5
 
+    # Calling a generic "eyecatch" routine, with unique "from"
+    call eyecatch from AO1_sc004
+    
     play music "Music/Itsumo(Movie).mp3"
     scene bg MorningSky
     show TownHillLeftMorning
