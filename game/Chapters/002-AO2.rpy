@@ -12,7 +12,20 @@ label AO2:
     show Kyon Ser1 at right
     "\"I'm not entirely sure,\" he admitted, scanning his eyes across the other two lines before folding the letter back up and stuffing it into a pocket. \"I'm guessing it'll make sense when it happens.\""
     nvl clear
-    scene bg SchoolEntranceLeft with wiperight
+    
+    scene black 
+    show title 002 at card_pos 
+    with slowfadein
+    pause
+    
+    # scene bg MorningSky
+    # show TownHillLeftMorning
+    # show Haruhi Quest1 at left 
+    # show Kyon Ser1 at right
+    # with fade
+    
+    # scene bg SchoolEntranceLeft with wiperight
+    scene bg SchoolEntranceLeft with fade
     show Haruhi Smile2 at left
     show Mikuru Neutral1 at center
     show Kyon Neutral3 at right
@@ -83,10 +96,14 @@ label AO2:
     nvl clear
     
     play sound "SE/WestminsterChimeShort.mp3"
-    scene black with dissolve
-    $ renpy.pause(.2, hard=True)
-    show BDVNlogo at truecenter with Dissolve(2.0)
-    pause 10.0
+    # scene black with dissolve
+    # $ renpy.pause(.2, hard=True)
+    # show BDVNlogo at truecenter with Dissolve(2.0)
+    # pause 10.0
+    
+    # Calling a generic "eyecatch" routine with date (first argument in (), "" to nhow no date) and custom pause time (second argument in ()), with unique "from"
+    call eyecatch("", 10.0) from AO2_sc001
+    
     # play sound "SE/WestminsterChime.mp3"
     # scene Credits3 with fastfadein # slowfadein
     # pause 18.0
@@ -182,10 +199,14 @@ label AO2:
     "Sighing, he lowered his head to the desk again."
     nvl clear
     
-    scene black with dissolve
-    $ renpy.pause(.2, hard=True)
-    show BDVNlogo at truecenter with Dissolve(2.0)
-    pause 2.0
+    # scene black with dissolve
+    # $ renpy.pause(.2, hard=True)
+    # show BDVNlogo at truecenter with Dissolve(2.0)
+    # pause 2.0
+    
+    # Calling a generic "eyecatch" routine, with unique "from"
+    call eyecatch from AO2_sc002
+    
     play music "Music/Kokuhaku.mp3"
     
     scene bg YukiRoomCenter
@@ -306,10 +327,14 @@ label AO2:
     
     # play sound "SE/WestminsterChimeShort.mp3"
     stop music fadeout 3
-    scene black with dissolve
-    $ renpy.pause(.2, hard=True)
-    show BDVNlogo at truecenter with Dissolve(2.0)
-    pause 5
+    # scene black with dissolve
+    # $ renpy.pause(.2, hard=True)
+    # show BDVNlogo at truecenter with Dissolve(2.0)
+    # pause 5
+    
+    # Calling a generic "eyecatch" routine, with unique "from"
+    call eyecatch from AO2_sc003
+    
 #     
 
     
@@ -514,11 +539,14 @@ label AO2:
     "He nodded, deciding that silence would be the best course of action for the moment."
     nvl clear
     $ _window = False
-    scene black with dissolve
-    $ renpy.pause(.2, hard=True)
-    show BDVNlogo at truecenter with Dissolve(2.0)
-    pause 5
- 
+    # scene black with dissolve
+    # $ renpy.pause(.2, hard=True)
+    # show BDVNlogo at truecenter with Dissolve(2.0)
+    # pause 5
+    
+    # Calling a generic "eyecatch" routine, with unique "from"
+    call eyecatch from AO2_sc004
+    
 label Test:
     play music "Music/suspicion.ogg"
     scene bg Cafe with fade
