@@ -406,6 +406,7 @@ label AO2:
     "Haruhi choked on what she'd been eating and Kyon glanced at her, scowling when he realized she'd helped herself to his lunch. \"Really?\" he asked."
     nvl clear
     show Yuki Talk1 at center
+    play music "Music/KouchouKouchou.mp3"
     "\"Program one goal: Cause dinnerware to levitate.\""
     show Yuki Side1 at center
     show Kyon Ser2 at right
