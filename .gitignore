@@ -1,0 +1,14 @@
+# We really don't need the binary files Ren'py makes, and they're annoying.
+game/bytecode.rpyb
+*.rpyc
+*~
+/launcherinfo.py
+errors.txt
+traceback.txt
+
+/game/Sprites/Kyon/KyonSkinsuitTemplate.sai
+/game/Sprites/Kyon/KyonCostumeTemplate.sai
+/game/KBDH VN-prologue-all.zip
+/game/Backgrounds/stairwell.psd
+
+/game/Sprites/Kanae/Kanae.sai
