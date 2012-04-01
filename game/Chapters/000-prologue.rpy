@@ -339,7 +339,7 @@ label prologue2:
     hide Spike2
     hide Spike3
     hide Spike4
-    show Spike5 at spike_net_pos #center
+    show Spike5 at center
     play sound "SE/elec1.mp3"
     "It fired with a rasping cough, launching a ring of metallic spikes to burrow into the rooftop around Ryouko, and then a grid of crackling brissant energy raked between each of the spikes, snaring the girl in a glowing, shuddering net."
     nvl clear
@@ -410,7 +410,7 @@ label prologue2:
     nvl clear
     scene bg roofclose
     show Asakura Sup1 at center
-    show Spike5 at spike_net_pos #center
+    show Spike5 at center
     "\"What?\" Ryouko asked, still trapped in the containment field. "
     show Asakura Smile3 at center
     extend "\"He just abandoned me here with you?\""
@@ -449,7 +449,7 @@ label prologue2:
     "The circle of illumination around Haruhi's feet had vanished."
     scene bg roofclose with wipeup
     show Asakura Sigh1 at center
-    show Spike5 at spike_net_pos #center
+    show Spike5 at center
     show Yuki Side1 at HalfLeft with moveinleft
     "While Nagato knelt to examine Ryouko, Haruhi dashed to Kyon's side and helped him stand."
     nvl clear
@@ -473,7 +473,7 @@ label prologue2:
     extend "\"Happy, healing, all-better thoughts!\""
     scene bg roofclose
     show Asakura Sigh1 at center
-    show Spike5 at spike_net_pos #center
+    show Spike5 at center
     show Yuki Talk1 at HalfLeft
     "\"Medical program loaded,\" Nagato added helpfully from\nwhere she was studying the other interface. "
     show Yuki Talk2 at HalfLeft
@@ -532,7 +532,7 @@ label prologue2:
     "\"But I can't just leave you alone, and Nagato can't handle another interface right now.\""
     scene bg roofclose
     show Asakura Smile2  at center
-    show Spike5 at spike_net_pos #center
+    show Spike5 at center
     show Yuki Side1 at HalfLeft
     "\"And you did such a great job!\" Ryouko encouraged from beneath her energy net."
     show Asakura Smile1 at center
@@ -577,7 +577,7 @@ label prologue2:
     "\"Yuki, let's come up with a backup plan. Something that will let you get your power-up and let us reform Ryouko. Can we do that?\""
     scene bg roofclose
     show Asakura Frown1  at center
-    show Spike5 at spike_net_pos #center
+    show Spike5 at center
     show Yuki Side1 at HalfLeft
     "Nagato stared intently at Ryouko, then gave a decisive nod. "
     show Yuki Talk1 at HalfLeft
