@@ -339,7 +339,7 @@ label prologue2:
     hide Spike2
     hide Spike3
     hide Spike4
-    show Spike5 at spike_net_pos #center
+    show Spike5 at center
     play sound "SE/elec1.mp3"
     "It fired with a rasping cough, launching a ring of metallic spikes to burrow into the rooftop around Ryouko, and then a grid of crackling brissant energy raked between each of the spikes, snaring the girl in a glowing, shuddering net."
     nvl clear
