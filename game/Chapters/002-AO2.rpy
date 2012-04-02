@@ -635,7 +635,7 @@ label Test:
     "Lifting her teacup to her lips and drinking half of it, Haruhi mumbled, \"Nevermind. Back to the earlier question. Why did you do it all? What 'emotion' compelled you?\""
     nvl clear
     show Yuki Right Talk2 at right
-    "Yuki gave a tiny nod, explaining, \"During the summer vacation, you caused time to loop. The events from August 17th to August 31st repeated with some minor variations fifteen thousand four hundred ninety eight times. This caused me to become ... frustrated.\""
+    "Yuki gave a tiny nod, explaining, \"During the summer vacation, you caused time to loop. The events from August 17th to August 31st repeated with some minor variations fifteen thousand, four hundred, ninety eight times. This caused me to become ... frustrated.\""
     show Haruhi Casual Sup1 at left
     "\"Five hundred and ninety ... four years of summer vacation?\" Haruhi asked, taken aback. \"I don't remember that!\""
     nvl clear

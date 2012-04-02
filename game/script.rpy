@@ -718,7 +718,7 @@ label test_Z0_eye:
     show Haruhi Quest1 at left
     "\"Why did you want me to give you a letter from yourself, though?\""
     show Kyon Sigh2 at right
-    "\n\n\n\n\\n\n\nThe skies were clear of rain, if gray, so he sighed and pulled the letter out of the envelope while proceeding up the hill."
+    "\n\n\n\n\n\n\nThe skies were clear of rain, if gray, so he sighed and pulled the letter out of the envelope while proceeding up the hill."
     # call the eyecatch routine, supply the date (text) to show, specify the unique "from"
     call eyecatch_darken1("December -1, 0000") from test_Z0_p0002
     # activate the next scene with dissolve (or whatever else).
@@ -745,7 +745,7 @@ label test_Z0_eye:
     with dissolve
     "And another one. (but effect may be the same. Randomness, y'know)"
     # call the eyecatch routine, can supply nothing if nothing needs to be changed, specify the unique "from"
-    call eyecatch_random from test_Z0_p0005
+    call eyecatch_random("Febtober 3.14, 1592") from test_Z0_p0005
     # activate the next scene with dissolve (or whatever else).
     scene bg MorningSky
     show TownHillLeftMorning
