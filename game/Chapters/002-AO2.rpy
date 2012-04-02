@@ -547,7 +547,7 @@ label AO2:
     # Calling a generic "eyecatch" routine, with unique "from"
     call eyecatch from AO2_sc004
     
-label Test:
+
     play music "Music/suspicion.ogg"
     scene bg Cafe with fade
     show Mikuru Casual Neutral1 at center
@@ -598,60 +598,106 @@ label Test:
     show Mikuru Casual Quest1 at center
     "\"What's that?\" Mikuru asked, glancing at Koizumi sidelong."
     nvl clear
+    stop music fadeout 3
     
-    # "* * *"
-    # "\"Okay,\" Haruhi said, eyeing Yuki across the table and trying to put everything together. \"So, you're telling me that you changed the entire world to fit your ideals?\""
-    # "\"In part,\" the stoic girl answered. \"It was also because I believed it was his ideal as well.\""
-    # "\"You made a world where you were just a shy bookworm, and I went to a different school? But, why?\""
-    # nvl clear
-    # "\"It was an error. I was not to act on ... emotions.\" Yuki turned her eyes to the teapot and refilled Haruhi's cup."
-    # "\"Well, that gives me your cause,\" Haruhi said, frowning. \"But you don't even explain what emotions you had, or what your goals with your changes were.\""
-    # nvl clear
-    # "\"Sympathy.\""
-    # "\"I'd like a bit more than a one word answer!\""
-    # nvl clear
-    # "\"My situation was sympathetic to his.\""
-    # "\"'His'. You never call Kyon by his name ... why not?\""
-    # nvl clear
-    # "\"His name is not Kyon.\" Yuki blinked impassively, her face an unreadable mystery to Haruhi."
-    # "Lifting her teacup to her lips and drinking half of it, Haruhi mumbled, \"Nevermind. Back to the earlier question. Why did you do it all? What 'emotion' compelled you?\""
-    # nvl clear
-    # "Yuki gave a tiny nod, explaining, \"During the summer vacation, you caused time to loop. The events from August 17th to August 31st repeated with some minor variations fifteen thousand four hundred ninety eight times. This caused me to become ... frustrated.\""
-    # "\"Five hundred and ninety ... four years of summer vacation?\" Haruhi asked, taken aback. \"I don't remember that!\""
-    # nvl clear
-    # "\"No,\" Yuki agreed. \"Others near you began to experience resonant familiarity with cyclical events. It caused the others to experience some distress, despite your unawareness.\"" 
-    # "\"I retained perfect awareness because of memories transfered back to me by the Integrated Data Sentience Entity.\""
-    # "Haruhi mulled it over. \"So, that's how long you waited before breaking the loop?\""
-    # nvl clear
-    # "\"Negative. I was not authorized by the Integrated Data Sentience Entity to interfere, only observe.\""
-    # "That was an uncomfortable thought. \"And you remember it all?\""
-    # nvl clear
-    # "\"I remember it all.\""
-    # "\"Wow. If you didn't do it, how did we get out of being stuck?\""
-    # "\"He did it,\" she answered, blinking. \"On the last loop, he did something he had not yet tried in any other iteration.\""
-    # nvl clear
-    # "Realization dawned in Haruhi's eyes, and she winced. \"Seriously? His {i}homework{/i}? That's what did it?\""
-    # "\"It engaged your interest to the point where another loop did not occur,\" Yuki answered tonelessly."
-    # nvl clear
-    # "\"So,\" she mumbled. \"That's why he was so worked up about it? Well ... I didn't know. If you hadn't been— But I guess, you were only following orders.\""
-    # "\"Well, now I know why you were frustrated. Is that why you made it so you never met me?\""
-    # nvl clear
-    # "\"After this sequence, filming of the movie began. I observed that events here distressed him again.\""
-    # "\"Don't I know it!\" Haruhi snapped. \"That one ... I will never forget.\""
-    # nvl clear
-    # "\"In December, when he appeared to exhibit signs of further distress at the announcement of the SOS Brigade Christmas party, I determined the feeling to be mutual. Our situations had become sympathetic.\"" 
-    # "\"I incorrectly inferred that he and I shared insights and would both prefer a world where you would cause neither of us distress. Acting on my emotions in this manner was an error.\""
-    # nvl clear
-    # "\"So, you mean, that time he was in a coma, he was actually in another dimension?\""
-    # "After a heartbeat of hesitation, Yuki nodded."
-    # nvl clear
-    # "\"Okay ... I guess. That seems like going overboard, though. Changing the entire world, just because....\" She swallowed and looked away, staring out the window."
-    # "\"So, Kyon was really that upset with me?\""
-    # nvl clear
-    # "\"Possibly,\" Yuki said. \"I cannot guarantee my assessments are completely accurate. For example, acting on emotion and inferring his desires incorrectly.\""
-    # "\"Fine. In that case, it's now a priority. What can be done to make sure you won't commit another one of these 'errors'? Remember, I'm your boss now, so don't hold anything back!\"" 
-    # "\"Even if,\" she hesitated, forcing the words out, as uncomfortable and frustrating as it was, \"it means borrowing Kyon a little bit.\""
-    # nvl clear
+    
+    
+label Test:  
+    play music "Music/NagatoTheme.mp3"
+    scene bg YukiRoomCenter
+    show Haruhi Casual Unhap2 at left
+    show Yuki Right Neutral1 at right
+    with fade
+    "\"Okay,\" Haruhi said, eyeing Yuki across the table and trying to put everything together. \"So, you're telling me that you changed the entire world to fit your ideals?\""
+    show Yuki Right Talk1 at right
+    "\"In part,\" the stoic girl answered. \"It was also because I believed it was his ideal as well.\""
+    show Haruhi Casual Quest1 at left
+    "\"You made a world where you were just a shy bookworm, and I went to a different school? But, why?\""
+    nvl clear
+    show Yuki Right Talk2 at right
+    "\"It was an error. I was not to act on ... emotions.\" Yuki turned her eyes to the teapot and refilled Haruhi's cup."
+    show Haruhi Casual Sigh2 at left
+    "\"Well, that gives me your cause,\" Haruhi said, frowning. \"But you don't even explain what emotions you had, or what your goals with your changes were.\""
+    nvl clear
+    show Yuki Right Talk1 at right
+    "\"Sympathy.\""
+    show Haruhi Casual Ang4 at left
+    "\"I'd like a bit more than a one word answer!\""
+    nvl clear
+    show Yuki Right Talk2 at right
+    "\"My situation was sympathetic to his.\""
+    show Haruhi Casual Ang3 at left
+    "\"'His'. You never call Kyon by his name ... why not?\""
+    nvl clear
+    show Yuki Right Talk1 at right
+    "\"His name is not Kyon.\" Yuki blinked impassively, her face an unreadable mystery to Haruhi."
+    show Haruhi Casual Pout2 at left
+    "Lifting her teacup to her lips and drinking half of it, Haruhi mumbled, \"Nevermind. Back to the earlier question. Why did you do it all? What 'emotion' compelled you?\""
+    nvl clear
+    show Yuki Right Talk2 at right
+    "Yuki gave a tiny nod, explaining, \"During the summer vacation, you caused time to loop. The events from August 17th to August 31st repeated with some minor variations fifteen thousand four hundred ninety eight times. This caused me to become ... frustrated.\""
+    show Haruhi Casual Sup1 at left
+    "\"Five hundred and ninety ... four years of summer vacation?\" Haruhi asked, taken aback. \"I don't remember that!\""
+    nvl clear
+    show Yuki Right Talk1 at right
+    "\"No,\" Yuki agreed. \"Others near you began to experience resonant familiarity with cyclical events. It caused the others to experience some distress, despite your unawareness.\"" 
+    show Yuki Right Talk2 at right
+    "\"I retained perfect awareness because of memories transfered back to me by the Integrated Data Sentience Entity.\""
+    show Haruhi Casual Quest1 at left
+    "Haruhi mulled it over. \"So, that's how long you waited before breaking the loop?\""
+    nvl clear
+    show Yuki Right Talk1 at right
+    "\"Negative. I was not authorized by the Integrated Data Sentience Entity to interfere, only observe.\""
+    show Haruhi Casual Worry1 at left
+    "That was an uncomfortable thought. \"And you remember it all?\""
+    nvl clear
+    show Yuki Right Talk2 at right
+    "\"I remember it all.\""
+    show Haruhi Casual Quest1 at left
+    "\"Wow. If you didn't do it, how did we get out of being stuck?\""
+    show Yuki Right Talk1 at right
+    "\"He did it,\" she answered, blinking. \"On the last loop, he did something he had not yet tried in any other iteration.\""
+    nvl clear
+    show Haruhi Casual Pout2 at left
+    "Realization dawned in Haruhi's eyes, and she winced. \"Seriously? His {i}homework{/i}? That's what did it?\""
+    show Yuki Right Talk2 at right
+    "\"It engaged your interest to the point where another loop did not occur,\" Yuki answered tonelessly."
+    nvl clear
+    show Haruhi Casual Pout1 at left
+    "\"So,\" she mumbled. \"That's why he was so worked up about it? Well ... I didn't know. If you hadn't been— But I guess, you were only following orders.\""
+    show Haruhi Casual Unhap2 at left
+    "\"Well, now I know why you were frustrated. Is that why you made it so you never met me?\""
+    nvl clear
+    show Yuki Right Talk1 at right
+    "\"After this sequence, filming of the movie began. I observed that events here distressed him again.\""
+    show Haruhi Casual Sigh2 at left
+    "\"Don't I know it!\" Haruhi snapped. \"That one ... I will never forget.\""
+    nvl clear
+    show Yuki Right Talk2 at right
+    "\"In December, when he appeared to exhibit signs of further distress at the announcement of the SOS Brigade Christmas party, I determined the feeling to be mutual. Our situations had become sympathetic.\"" 
+    show Yuki Right Talk1 at right
+    "\"I incorrectly inferred that he and I shared insights and would both prefer a world where you would cause neither of us distress. Acting on my emotions in this manner was an error.\""
+    nvl clear
+    show Haruhi Casual Quest1 at left
+    "\"So, you mean, that time he was in a coma, he was actually in another dimension?\""
+    show Yuki Right Neutral2 at right
+    "After a heartbeat of hesitation, Yuki nodded."
+    nvl clear
+    show Haruhi Casual Pout2 at left
+    "\"Okay ... I guess. That seems like going overboard, though. Changing the entire world, just because....\" She swallowed and looked away, staring out the window."
+    show Haruhi Casual Worry1 at left
+    "\"So, Kyon was really that upset with me?\""
+    nvl clear
+    show Yuki Right Talk2 at right
+    "\"Possibly,\" Yuki said. \"I cannot guarantee my assessments are completely accurate. For example, acting on emotion and inferring his desires incorrectly.\""
+    show Haruhi Casual Sigh1 at left
+    "\"Fine. In that case, it's now a priority. What can be done to make sure you won't commit another one of these 'errors'? Remember, I'm your boss now, so don't hold anything back!\"" 
+    show Haruhi Casual Pout1 at left
+    "\"Even if,\" she hesitated, forcing the words out, as uncomfortable and frustrating as it was, \"it means borrowing Kyon a little bit.\""
+    nvl clear
+    
+    
+    
     # "* * *"
     # "\"It is related to what Fearless Leader is trying to avoid admitting to himself,\" Koizumi said, glancing at Mikuru over his drink. "
     # "\"And perhaps, Suzumiya-san as well. On that count I'm somewhat less certain.\""
@@ -720,6 +766,8 @@ label Test:
     # "Mikuru and Kyon nodded their thanks at the esper as he left, and finished their drinks in silence. \"Did you want to talk here, or elsewhere?\" he asked her after setting down his empty coffee cup."
     # "Smiling shyly, she suggested, \"Ah ... let's go for a walk.\""
     # nvl clear
+    
+    
     # "* * *"
     # "After class had finished, Haruhi restrained her pace to a sedate walk, keeping in step with Kyon. \"I should say one thing,\" she said quietly. \"I mean, honestly.\""
     # "\"Sure,\" he said, not even glancing towards her. \"What's that?\""

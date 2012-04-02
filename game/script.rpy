@@ -297,6 +297,17 @@ init:
     image Yuki Chair3 = "Sprites/Yuki/YukiChair3.png"
     image Yuki Chair4 = "Sprites/Yuki/YukiChair4.png"
     
+    
+    image Yuki Right Neutral1 = "Sprites/Yuki/YukiRightNeutral1.png"
+    image Yuki Right Neutral2 = "Sprites/Yuki/YukiRightNeutral2.png"
+    image Yuki Right Talk1 = "Sprites/Yuki/YukiRightTalk1.png"
+    image Yuki Right Talk2 = "Sprites/Yuki/YukiRightTalk2.png"
+    
+    image Yuki Right Casual Neutral1 = "Sprites/Yuki/YukiRightCasualNeutral1.png"
+    image Yuki Right Casual Neutral2 = "Sprites/Yuki/YukiRightCasualNeutral2.png"
+    image Yuki Right Casual Talk1 = "Sprites/Yuki/YukiRightCasualTalk1.png"
+    image Yuki Right Casual Talk2 = "Sprites/Yuki/YukiRightCasualTalk2.png"
+    
     image Yuki Side Blink:
         "Sprites/Yuki/YukiSide1.png"
         0.1
@@ -650,6 +661,7 @@ label eyecatch_random(date="", pause_time=2.0, r=0):
         hide BDVNlogo
         hide eyeDate
         with moveoutleft
+        $ renpy.pause(.01, hard=True)
     elif r == 2:
         show BDVNlogo at truecenter
         show eyeDate at date_pos 
@@ -658,6 +670,7 @@ label eyecatch_random(date="", pause_time=2.0, r=0):
         hide BDVNlogo
         hide eyeDate
         with moveoutright
+        $ renpy.pause(.01, hard=True)
     elif r == 3:
         show BDVNlogo at truecenter
         show eyeDate at date_pos 
@@ -666,6 +679,7 @@ label eyecatch_random(date="", pause_time=2.0, r=0):
         hide BDVNlogo
         hide eyeDate
         with moveoutbottom
+        $ renpy.pause(.01, hard=True)
     elif r == 4:
         show BDVNlogo at truecenter
         show eyeDate at date_pos 
@@ -674,6 +688,7 @@ label eyecatch_random(date="", pause_time=2.0, r=0):
         hide BDVNlogo
         hide eyeDate
         with moveouttop
+        $ renpy.pause(.01, hard=True)
     else:
         show BDVNlogo at truecenter
         show eyeDate at date_pos 
@@ -682,6 +697,7 @@ label eyecatch_random(date="", pause_time=2.0, r=0):
         hide BDVNlogo
         hide eyeDate
         with coatout
+        $ renpy.pause(.01, hard=True)
     return
     
     
