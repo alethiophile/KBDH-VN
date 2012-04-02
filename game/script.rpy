@@ -548,12 +548,14 @@ init -1 python:
         ("In Media Res Prologue\nExactly What it Says on the Tin", "prologue"),
         ("Obligatory Anachronic Order \nExplanation Arc chapter one\n\"Scene Twelve, the Ninth Big Fight\"", "AO1_1"),
         ("Obligatory Anachronic Order \nExplanation Arc chapter two\n\"Clear as Mud\"", "AO2"),
-        ("-----", "credits"),
+        ("-----", "backtomain"),
         ("Label a scene you're working on test and use this", "Test"),
         ("Credits", "credits"),
         ("Another testbed, Eyecatchies", "test_Z0_eye"),
         ("Another testbed, Title cards", "test_Z0_titles"),]
 
+label backtomain:
+    return
 
 label start:
     # Z0 : intro. 
