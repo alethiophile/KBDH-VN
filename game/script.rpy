@@ -586,7 +586,7 @@ label credits:
     # pause
     # $ renpy.pause(.1, hard=True)
     # show Credits2 with dissolve
-    centered "Disclaimer: This production makes use\nof the intellectual property belongin to\nBrian Randall, Nagaru Tanigawa \nand others. No disrespectis intended.\n\nNeither Kyon: Big Damn Hero \nnor Suzumiya Haruhi and related \ncharacters are owned by anyone \nassociated with Big Damn VN"
+    centered "Disclaimer: This production makes use\nof intellectual property belongin to\nBrian Randall, Nagaru Tanigawa \nand others. No disrespect is intended.\n\nNeither Kyon: Big Damn Hero \nnor Suzumiya Haruhi and related \ncharacters are owned by anyone \nassociated with Big Damn VN"
     # pause
     # $ renpy.pause(.1, hard=True)
     # show Credits3 with dissolve
