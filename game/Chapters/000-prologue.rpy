@@ -324,16 +324,16 @@ label prologue2:
     play sound "SE/netlaunch.mp3"
     pause (1)
     play sound "SE/stake1.mp3"
-    show Spike1 at spike_net_pos #center
+    show Spike1 at center #center
     pause (0.1)
     play sound "SE/stake2.mp3"
-    show Spike2 at spike_net_pos #center
+    show Spike2 at center #center
     pause (0.1)
     play sound "SE/stake3.mp3"
-    show Spike3 at spike_net_pos #center
+    show Spike3 at center #center
     pause (0.1)
     play sound "SE/stake1.mp3"
-    show Spike4 at spike_net_pos #center
+    show Spike4 at center #center
     pause (0.5)
     hide Spike1
     hide Spike2
