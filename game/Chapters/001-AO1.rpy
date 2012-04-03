@@ -257,7 +257,7 @@ label AO1_1:
         #xalign 0.0 yalign 1.0
         #linear 0.1 xalign 0.6 # at right
     show Asakura Smile1 at HalfRight
-    "\"In the end,\" Asakura remarked, watching his form tumble off the edge of the school building,{fast} \"all those toys are pretty silly if you don't actually know how to use them.\""
+    "\"In the end,\" Asakura remarked, watching his form tumble off the edge of the school building, \"all those toys are pretty silly if you don't actually know how to use them.\""
     show Haruhi Hap1 at left
     "\"You have to give him credit, though,\" Haruhi said, peering very closely at the knives frozen over her barrier, not even glancing back to where Kyon had vanished."
     show Haruhi Grin1 at left
