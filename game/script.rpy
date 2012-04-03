@@ -537,6 +537,12 @@ transform HalfRight:
 transform HalfLeft:
     xalign 0.25 yalign 1.0
     
+transform TenthRight:
+    xalign 0.90 yalign 1.0
+transform TenthLeft:
+    xalign 0.10 yalign 1.0
+
+    
 transform KyonRightFast:
     xalign -0.5 yalign 1.0
     linear 0.2 xalign 2.0   
