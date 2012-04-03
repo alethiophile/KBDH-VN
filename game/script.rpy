@@ -22,12 +22,15 @@ init:
     image bg KyonHouseNight = "Backgrounds/KyonHouseNight.png"
     image bg TownStreetNight1 = "Backgrounds/TownStreetNight1.png"
     image bg TownStreetNight2 = "Backgrounds/TownStreetNight2.png"
+    image bg TownStreetDay1 = "Backgrounds/TownStreetDay1.jpg"
+    image bg TownStreetDay2 = "Backgrounds/TownStreetDay2.jpg"
     image bg Elevator = "Backgrounds/ElevatorInterior.png"
     image bg ClubHallLeft = "Backgrounds/ClubHallLeft.png"
     image bg ClubroomCenterDay = "Backgrounds/ClubroomCenterDay.png"
     image bg ClubroomLeftDay = "Backgrounds/ClubroomLeftDay.png"
     image bg ClubroomFullDay ="Backgrounds/ClubroomFullDay.jpg"
     image bg ClubroomRightDay = "Backgrounds/ClubroomRightDay.png"
+    image bg YukiApartmentDay = "Backgrounds/YukiApartmentDay.png"
     image bg YukiApartmentNight = "Backgrounds/YukiApartmentNight.png"
     image bg YukiRoomLeft = "Backgrounds/YukiRoomLeft.png"
     image bg YukiRoomRight = "Backgrounds/YukiRoomRight.png"
@@ -336,16 +339,18 @@ init:
     image Mikuru Sad2 = "Sprites/Mikuru/MikuruSad2.png"
     image Mikuru Sigh1 = "Sprites/Mikuru/MikuruSigh1.png"
     image Mikuru Ser1 = "Sprites/Mikuru/MikuruSerious1.png"
+    image Mikuru Ser2 = "Sprites/Mikuru/MikuruSerious2.png"
     image Mikuru Smile1 = "Sprites/Mikuru/MikuruSmile1.png"
     image Mikuru Quest1 = "Sprites/Mikuru/MikuruQuestion1.png"
     image Mikuru Unhap1 = "Sprites/Mikuru/MikuruUnhappy1.png"
     image MBlush1 = "Sprites/Mikuru/MBlush1.png"
-    
+  
     image Mikuru Casual Neutral1 = "Sprites/Mikuru/MikuruCasualNeutral1.png"
     image Mikuru Casual Sad1 = "Sprites/Mikuru/MikuruCasualSad1.png"
     image Mikuru Casual Sad2 = "Sprites/Mikuru/MikuruCasualSad2.png"
     image Mikuru Casual Sigh1 = "Sprites/Mikuru/MikuruCasualSigh1.png"
     image Mikuru Casual Ser1 = "Sprites/Mikuru/MikuruCasualSerious1.png"
+    image Mikuru Casual Ser2 = "Sprites/Mikuru/MikuruCasualSerious2.png"
     image Mikuru Casual Smile1 = "Sprites/Mikuru/MikuruCasualSmile1.png"
     image Mikuru Casual Quest1 = "Sprites/Mikuru/MikuruCasualQuestion1.png"
     image Mikuru Casual Unhap1 = "Sprites/Mikuru/MikuruCasualUnhappy1.png"
@@ -356,10 +361,17 @@ init:
     image Mikuru Maid Sad2 = "Sprites/Mikuru/MikuruMaidSad2.png"
     image Mikuru Maid Sigh1 = "Sprites/Mikuru/MikuruMaidSigh1.png"
     image Mikuru Maid Ser1 = "Sprites/Mikuru/MikuruMaidSerious1.png"
+    image Mikuru Maid Ser2 = "Sprites/Mikuru/MikuruMaidSerious2.png"
     image Mikuru Maid Smile1 = "Sprites/Mikuru/MikuruMaidSmile1.png"
     image Mikuru Maid Quest1 = "Sprites/Mikuru/MikuruMaidQuestion1.png"
     image Mikuru Maid Unhap1 = "Sprites/Mikuru/MikuruMaidUnhappy1.png"
     image MBlush1 Maid = "Sprites/Mikuru/MBlushMaid1.png"
+    
+    image Mikuru Think Quest1 = "Sprites/Mikuru/MikuruThinkQuestion1.png"
+    
+    image Mikuru Think Casual Quest1 = "Sprites/Mikuru/MikuruThinkCasualQuestion1.png"
+    
+    image Mikuru Think Maid Quest1 = "Sprites/Mikuru/MikuruThinkMaidQuestion1.png"
     
     image Mikuru Cower Nervous1 = "Sprites/Mikuru/MikuruCowerNervous1.png"
     image Mikuru Cower Nervous2 = "Sprites/Mikuru/MikuruCowerNervous2.png"
@@ -383,15 +395,26 @@ init:
     image MTears Casual = "Sprites/Mikuru/MTearsCowerCasual1.png"
     
     #Koizumi Sprites
+    
+    image Koizumi Shrug Sigh1 = "Sprites/Koizumi/KoizumiShrugSigh1.png"
+    
+    image Koizumi Shrug Casual Sigh1 = "Sprites/Koizumi/KoizumiShrugCasualSigh1.png"
+    
     image Koizumi Think Ser1 = "Sprites/Koizumi/KoizumiThinkSerious1.png"
     image Koizumi Think Ser2 = "Sprites/Koizumi/KoizumiThinkSerious2.png"
     image Koizumi Think Ser3 = "Sprites/Koizumi/KoizumiThinkSerious3.png"
     image Koizumi Think Ser4 = "Sprites/Koizumi/KoizumiThinkSerious4.png"
+    image Koizumi Think Grin1 = "Sprites/Koizumi/KoizumiThinkGrin1.png"
+    image Koizumi Think Sup1 = "Sprites/Koizumi/KoizumiThinkSurprised1.png"
+    image Koizumi Think Smile1 = "Sprites/Koizumi/KoizumiThinkSmile1.png"
     
     image Koizumi Think Casual Ser1 = "Sprites/Koizumi/KoizumiThinkCasualSerious1.png"
     image Koizumi Think Casual Ser2 = "Sprites/Koizumi/KoizumiThinkCasualSerious2.png"
     image Koizumi Think Casual Ser3 = "Sprites/Koizumi/KoizumiThinkCasualSerious3.png"
     image Koizumi Think Casual Ser4 = "Sprites/Koizumi/KoizumiThinkCasualSerious4.png"
+    image Koizumi Think Casual Grin1 = "Sprites/Koizumi/KoizumiThinkCasualGrin1.png"
+    image Koizumi Think Casual Sup1 = "Sprites/Koizumi/KoizumiThinkCasualSurprised1.png"
+    image Koizumi Think Casual Smile1 = "Sprites/Koizumi/KoizumiThinkCasualSmile1.png"
     
     image Koizumi Crossed Ser1 = "Sprites/Koizumi/KoizumiCrossedSerious1.png"
     image Koizumi Crossed Ser2 = "Sprites/Koizumi/KoizumiCrossedSerious2.png"
@@ -534,6 +557,12 @@ transform HalfRight:
 transform HalfLeft:
     xalign 0.25 yalign 1.0
     
+transform TenthRight:
+    xalign 0.90 yalign 1.0
+transform TenthLeft:
+    xalign 0.10 yalign 1.0
+
+    
 transform KyonRightFast:
     xalign -0.5 yalign 1.0
     linear 0.2 xalign 2.0   
@@ -545,15 +574,17 @@ init -1 python:
         return Text("[date]", font="DejaVuSerif-Italic.ttf", size=25, color="#3cf"), None
     
     chapters = [
-        ("In Media Res Prologue\nExactly What it Says on the Tin", "prologue"),
-        ("Obligatory Anachronic Order \nExplanation Arc chapter one\n\"Scene Twelve, the Ninth Big Fight\"", "AO1_1"),
-        ("Obligatory Anachronic Order \nExplanation Arc chapter two\n\"Clear as Mud\"", "AO2"),
-        ("-----", "credits"),
+        ("In Media Res Prologue:\n\"Exactly What it Says on the Tin\"", "prologue"),
+        ("Obligatory Anachronic Order Explanation Arc - Chapter One:\n\"Scene Twelve, the Ninth Big Fight\"", "AO1_1"),
+        ("Obligatory Anachronic Order Explanation Arc - Chapter Two:\n\"Clear as Mud\"", "AO2"),
+        ("-----", "backtomain"),
         ("Label a scene you're working on test and use this", "Test"),
         ("Credits", "credits"),
         ("Another testbed, Eyecatchies", "test_Z0_eye"),
         ("Another testbed, Title cards", "test_Z0_titles"),]
 
+label backtomain:
+    return
 
 label start:
     # Z0 : intro. 
@@ -586,7 +617,7 @@ label credits:
     # pause
     # $ renpy.pause(.1, hard=True)
     # show Credits2 with dissolve
-    centered "Disclaimer: This production makes use\nof the intellectual property belongin to\nBrian Randall, Nagaru Tanigawa \nand others. No disrespectis intended.\n\nNeither Kyon: Big Damn Hero \nnor Suzumiya Haruhi and related \ncharacters are owned by anyone \nassociated with Big Damn VN"
+    centered "Disclaimer: This production makes use\nof intellectual property belongin to\nBrian Randall, Nagaru Tanigawa \nand others. No disrespect is intended.\n\nNeither Kyon: Big Damn Hero \nnor Suzumiya Haruhi and related \ncharacters are owned by anyone \nassociated with Big Damn VN"
     # pause
     # $ renpy.pause(.1, hard=True)
     # show Credits3 with dissolve

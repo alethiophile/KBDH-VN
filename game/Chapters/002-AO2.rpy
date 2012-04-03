@@ -96,17 +96,8 @@ label AO2:
     nvl clear
     
     play sound "SE/WestminsterChimeShort.mp3"
-    # scene black with dissolve
-    # $ renpy.pause(.2, hard=True)
-    # show BDVNlogo at truecenter with Dissolve(2.0)
-    # pause 10.0
-    
     # Calling a generic "eyecatch" routine with date (first argument in (), "" to nhow no date) and custom pause time (second argument in ()), with unique "from"
     call eyecatch("", 10.0) from AO2_sc001
-    
-    # play sound "SE/WestminsterChime.mp3"
-    # scene Credits3 with fastfadein # slowfadein
-    # pause 18.0
     stop sound fadeout 2
     play music "Music/Nanika.mp3"
     
@@ -128,12 +119,16 @@ label AO2:
     "\"Why is that any of your business?\" she asked him coolly, her eyes narrowing into sharp lines."
     show Taniguchi Sup2 at HalfRight
     "\"I just remembered somewhere else I had to be,\" {nw}"
+    $ _window = True
     hide Taniguchi Sup2 with moveoutright
+    $ _window = False
     extend "he blurted out, charging out of the classroom."
     nvl clear
     show Kyon Sigh2 at right
     "Kyon sighed, shaking his head."
+    $ _window = True
     show Kunikida Smile1 at center with move
+    $ _window = False
     "\"Well,\" Kunikida said, shrugging and offering a placating smile. \"It's none of my business either. But I thought I'd pass on that pretty much the entire school has caught on by now ... I wouldn't be terribly surprised if a teacher were to ask you about it, either.\""
     nvl clear
     show Haruhi Ang1 at left
@@ -300,7 +295,7 @@ label AO2:
     show Koizumi Crossed Casual Neutral1 at left
     "\"Fine,\" Koizumi agreed, gesturing to the building entrance and leading the way."
     nvl clear
-    scene bg YukiApartmentNight with wipeleft
+    scene bg YukiApartmentDay with wipeleft
     show Mikuru Casual Neutral1 at center
     show Kyon Casual Neutral3 at right
     show Koizumi Crossed Casual Ser1 at left
@@ -598,174 +593,264 @@ label AO2:
     show Mikuru Casual Quest1 at center
     "\"What's that?\" Mikuru asked, glancing at Koizumi sidelong."
     nvl clear
-    stop music fadeout 3
+    stop music fadeout 2
+    call eyecatch from AO2_sc005
     
     
-    
-label Test:  
+
     play music "Music/NagatoTheme.mp3"
     scene bg YukiRoomCenter
-    show Haruhi Casual Unhap2 at left
-    show Yuki Right Neutral1 at right
+    show Haruhi Casual Worry1 at TenthLeft
+    show Yuki Right Neutral1 at TenthRight
     with fade
     "\"Okay,\" Haruhi said, eyeing Yuki across the table and trying to put everything together. \"So, you're telling me that you changed the entire world to fit your ideals?\""
-    show Yuki Right Talk1 at right
+    show Yuki Right Talk1 at TenthRight
+    show Haruhi Casual Unhap2 at TenthLeft
     "\"In part,\" the stoic girl answered. \"It was also because I believed it was his ideal as well.\""
-    show Haruhi Casual Quest1 at left
+    show Yuki Right Neutral1 at TenthRight
+    show Haruhi Casual Quest1 at TenthLeft
     "\"You made a world where you were just a shy bookworm, and I went to a different school? But, why?\""
     nvl clear
-    show Yuki Right Talk2 at right
+    show Yuki Right Talk2 at TenthRight
     "\"It was an error. I was not to act on ... emotions.\" Yuki turned her eyes to the teapot and refilled Haruhi's cup."
-    show Haruhi Casual Sigh2 at left
+    show Yuki Right Neutral2 at TenthRight
+    show Haruhi Casual Sigh2 at TenthLeft
     "\"Well, that gives me your cause,\" Haruhi said, frowning. \"But you don't even explain what emotions you had, or what your goals with your changes were.\""
     nvl clear
-    show Yuki Right Talk1 at right
+    show Yuki Right Talk1 at TenthRight
     "\"Sympathy.\""
-    show Haruhi Casual Ang4 at left
+    show Yuki Right Neutral1 at TenthRight
+    show Haruhi Casual Ang4 at TenthLeft
     "\"I'd like a bit more than a one word answer!\""
     nvl clear
-    show Yuki Right Talk2 at right
+    show Yuki Right Talk2 at TenthRight
     "\"My situation was sympathetic to his.\""
-    show Haruhi Casual Ang3 at left
+    show Yuki Right Neutral2 at TenthRight
+    show Haruhi Casual Ang3 at TenthLeft
     "\"'His'. You never call Kyon by his name ... why not?\""
     nvl clear
-    show Yuki Right Talk1 at right
+    show Yuki Right Talk1 at TenthRight
     "\"His name is not Kyon.\" Yuki blinked impassively, her face an unreadable mystery to Haruhi."
-    show Haruhi Casual Pout2 at left
+    show Yuki Right Neutral1 at TenthRight
+    show Haruhi Casual Pout2 at TenthLeft
     "Lifting her teacup to her lips and drinking half of it, Haruhi mumbled, \"Nevermind. Back to the earlier question. Why did you do it all? What 'emotion' compelled you?\""
     nvl clear
-    show Yuki Right Talk2 at right
+    show Yuki Right Talk2 at TenthRight
+    show Haruhi Casual Pout1 at TenthLeft
     "Yuki gave a tiny nod, explaining, \"During the summer vacation, you caused time to loop. The events from August 17th to August 31st repeated with some minor variations fifteen thousand, four hundred, ninety eight times. This caused me to become ... frustrated.\""
-    show Haruhi Casual Sup1 at left
+    show Yuki Right Neutral2 at TenthRight
+    show Haruhi Casual Sup1 at TenthLeft
     "\"Five hundred and ninety ... four years of summer vacation?\" Haruhi asked, taken aback. \"I don't remember that!\""
     nvl clear
-    show Yuki Right Talk1 at right
+    show Yuki Right Talk2 at TenthRight
     "\"No,\" Yuki agreed. \"Others near you began to experience resonant familiarity with cyclical events. It caused the others to experience some distress, despite your unawareness.\"" 
-    show Yuki Right Talk2 at right
+    show Yuki Right Talk2 at TenthRight
     "\"I retained perfect awareness because of memories transfered back to me by the Integrated Data Sentience Entity.\""
-    show Haruhi Casual Quest1 at left
+    show Yuki Right Neutral2 at TenthRight
+    show Haruhi Casual Quest1 at TenthLeft
     "Haruhi mulled it over. \"So, that's how long you waited before breaking the loop?\""
     nvl clear
-    show Yuki Right Talk1 at right
+    show Yuki Right Talk1 at TenthRight
     "\"Negative. I was not authorized by the Integrated Data Sentience Entity to interfere, only observe.\""
-    show Haruhi Casual Worry1 at left
+    show Yuki Right Neutral1 at TenthRight
+    show Haruhi Casual Worry1 at TenthLeft
     "That was an uncomfortable thought. \"And you remember it all?\""
     nvl clear
-    show Yuki Right Talk2 at right
+    show Yuki Right Talk2 at TenthRight
     "\"I remember it all.\""
-    show Haruhi Casual Quest1 at left
+    show Yuki Right Neutral2 at TenthRight
+    show Haruhi Casual Quest1 at TenthLeft
     "\"Wow. If you didn't do it, how did we get out of being stuck?\""
-    show Yuki Right Talk1 at right
+    show Yuki Right Talk1 at TenthRight
     "\"He did it,\" she answered, blinking. \"On the last loop, he did something he had not yet tried in any other iteration.\""
     nvl clear
-    show Haruhi Casual Pout2 at left
+    show Yuki Right Neutral1 at TenthRight
+    show Haruhi Casual Pout2 at TenthLeft
     "Realization dawned in Haruhi's eyes, and she winced. \"Seriously? His {i}homework{/i}? That's what did it?\""
-    show Yuki Right Talk2 at right
+    show Yuki Right Talk2 at TenthRight
+    show Haruhi Casual Pout1 at TenthLeft
     "\"It engaged your interest to the point where another loop did not occur,\" Yuki answered tonelessly."
     nvl clear
-    show Haruhi Casual Pout1 at left
+    show Yuki Right Neutral2 at TenthRight
+    show Haruhi Casual Pout2 at TenthLeft
     "\"So,\" she mumbled. \"That's why he was so worked up about it? Well ... I didn't know. If you hadn't been— But I guess, you were only following orders.\""
-    show Haruhi Casual Unhap2 at left
+    show Haruhi Casual Unhap2 at TenthLeft
     "\"Well, now I know why you were frustrated. Is that why you made it so you never met me?\""
     nvl clear
-    show Yuki Right Talk1 at right
+    show Yuki Right Talk2 at TenthRight
     "\"After this sequence, filming of the movie began. I observed that events here distressed him again.\""
-    show Haruhi Casual Sigh2 at left
+    show Yuki Right Neutral2 at TenthRight
+    show Haruhi Casual Sigh2 at TenthLeft
     "\"Don't I know it!\" Haruhi snapped. \"That one ... I will never forget.\""
     nvl clear
-    show Yuki Right Talk2 at right
+    show Yuki Right Talk2 at TenthRight
+    show Haruhi Casual Focus1 at TenthLeft
     "\"In December, when he appeared to exhibit signs of further distress at the announcement of the SOS Brigade Christmas party, I determined the feeling to be mutual. Our situations had become sympathetic.\"" 
-    show Yuki Right Talk1 at right
+    show Yuki Right Talk1 at TenthRight
     "\"I incorrectly inferred that he and I shared insights and would both prefer a world where you would cause neither of us distress. Acting on my emotions in this manner was an error.\""
     nvl clear
-    show Haruhi Casual Quest1 at left
+    show Yuki Right Neutral1 at TenthRight
+    show Haruhi Casual Quest1 at TenthLeft
     "\"So, you mean, that time he was in a coma, he was actually in another dimension?\""
-    show Yuki Right Neutral2 at right
+    show Yuki Right Neutral2 at TenthRight
     "After a heartbeat of hesitation, Yuki nodded."
     nvl clear
-    show Haruhi Casual Pout2 at left
+    show Haruhi Casual Pout2 at TenthLeft
     "\"Okay ... I guess. That seems like going overboard, though. Changing the entire world, just because....\" She swallowed and looked away, staring out the window."
-    show Haruhi Casual Worry1 at left
+    show Haruhi Casual Worry1 at TenthLeft
     "\"So, Kyon was really that upset with me?\""
     nvl clear
-    show Yuki Right Talk2 at right
+    show Yuki Right Talk2 at TenthRight
     "\"Possibly,\" Yuki said. \"I cannot guarantee my assessments are completely accurate. For example, acting on emotion and inferring his desires incorrectly.\""
-    show Haruhi Casual Sigh1 at left
+    show Yuki Right Neutral1 at TenthRight
+    show Haruhi Casual Sigh1 at TenthLeft
     "\"Fine. In that case, it's now a priority. What can be done to make sure you won't commit another one of these 'errors'? Remember, I'm your boss now, so don't hold anything back!\"" 
-    show Haruhi Casual Pout1 at left
+    show Haruhi Casual Pout1 at TenthLeft
     "\"Even if,\" she hesitated, forcing the words out, as uncomfortable and frustrating as it was, \"it means borrowing Kyon a little bit.\""
     nvl clear
     
     
-    
-    # "* * *"
-    # "\"It is related to what Fearless Leader is trying to avoid admitting to himself,\" Koizumi said, glancing at Mikuru over his drink. "
-    # "\"And perhaps, Suzumiya-san as well. On that count I'm somewhat less certain.\""
-    # "\"Avoid admitting?\" she asked, bewildered, looking between the two. \"What is it?\""
-    # nvl clear
-    # "\"I have no idea what nonsense he's going to spout out right now,\" Kyon grumbled, lowering his face to rest on one hand."
-    # "\"Um ... what?\""
-    # "\"Well, as subordinates,\" Koizumi said suddenly, turning to Mikuru, \"we should work together, shouldn't we?\"" 
-    # "\"The problem is this; as far as I understand things, Suzumiya-san has a certain ... interest ... in Fearless Leader.\""
-    # nvl clear
-    # "\"Please,\" Kyon interjected, \"stick with the old nickname.\""
-    # "\"Of course.\""
-    # nvl clear
-    # "\"W...well, that's not too surprising,\" Mikuru said. She had trouble looking Kyon in the eyes and her face reddened, but she asked,"
-    # "\"But, Kyon-kun didn't notice when ... Suzumiya-san jumped on him in the clubroom?\""
-    # nvl clear
-    # "Koizumi blinked several times, then turned to stare at Kyon. \"Excuse me?\""
-    # "\"Not what you think it was,\" Kyon said in irritation."
-    # "\"She just wanted the last page of my story for the Literature Club anthology. I had hidden it because— You know, that's actually not important. Back to Haruhi?\""
-    # nvl clear
-    # "\"Well, at any rate,\" Koizumi said, relaxing into his usual facial expression, \"I hope you know what you're doing, and I'm putting my faith in you, so please handle things carefully.\""
-    # "Kyon bit back a retort, realizing that the esper was right." 
-    # "\"Staring into the mouth of the issue he'd been trying to defer, he asked, \"What do you think I should do, then? And please, say something more serious than the advice you gave me about last August.\""
-    # nvl clear
-    # "\"It's troubling,\" Koizumi acknowledged. \"For the time being, I can only ask you to be aware of it and hope that it can be dealt with reasonably.\"" 
-    # "\"Moving on slightly and changing the topic to equally pressing, but only partially related matters, how should I proceed with the Organization?\""
-    # nvl clear
-    # "Kyon tapped his fingertips on the table thoughtfully, falling silent while the waitress returned, setting down their orders and refreshing his coffee and Mikuru's tea."
-    # "After a bite of his club sandwich, once the waitress had moved on, he said, \"Alright. How much trouble could you really be in with them?\"" 
-    # "\"You haven't done anything wrong in their eyes; I would be the problem. As long as things are in control, wouldn't they be okay with it?\""
-    # nvl clear
-    # "\"Possibly,\" the other boy allowed, picking at his salad. \"I believe that I will have to write another letter of apology, at the very least. But even so, my 'trouble'....\"" 
-    # "He shrugged. \"Being a double-agent seems unwise.\""
-    # nvl clear
-    # "\"How about an official liaison?\" Kyon proposed. \"If events were beyond your control — you were outmaneuvered, effectively — wouldn't it be fine? And this gives your Organization direct access to the brigade.\""
-    # "\"Being a liaison might remove you from some circles in your Organization to protect various secrets or whatnot.\"" 
-    # "\"That means that Haruhi would be able to see it as you being a part of the brigade more than the Organization, which I think would probably satisfy her.\""
-    # nvl clear
-    # "Koizumi nodded thoughtfully. \"Hmm, she would be happy about having a connection to a shadowy organization, so that may be true enough.\"" 
-    # "\"Well, thank you, vice commander Kyon, I will continue to put my trust in you.\""
-    # nvl clear
-    # "Nodding, Kyon turned to Mikuru, who had finished half of her pasta and was just toying with the noodles, curling them into complex whorls on the plate."
-    # "\"Are you alright with this, Asahina-san? Aside from what Haruhi and your superiors say....\""
-    # nvl clear
-    # "\"Ah,\" she gasped, sitting up straight and looking between the two. \"Um, well ... my ... superiors and Koizumi-kun's agency don't always see eye-to-eye,\" she said, shifting her shoulders." 
-    # "\"But I don't mind working with him; Koizumi- kun is a nice person.\""
-    # nvl clear
-    # "Kyon blinked, turning a questioning glance at Koizumi, who chuckled slightly. \"Um, Asahina-san, I think you may have missed the question a bit,\" he said."
-    # "\"Um, no,\" she disagreed, shaking her head. \"I think this is nice. There's more trust between us then there was ... and that's very likable.\"" 
-    # "\"I feel bad that I can't say more myself because of — of things that are classified,\" she said, grimacing." 
-    # nvl clear
-    # "Shaking her head again, she gave Kyon an earnest look. \"Koizumi-kun wouldn't have been able to speak of things like this so openly in front of me if it weren't for the changes that are happening.\"" 
-    # "\"Even Nagato-san will be able to speak freely if she wants to. Suzumiya-san may be upset now, but I actually believe that once she has some time to come to grips with ... everything we have to show her and talk to her about, she'll forgive us and be quite satisfied!\""
-    # nvl clear
-    # "\"Forgive us,\" Koizumi said, his smile fading. \"I think Kyon's quite ahead in her regard by that measure now.\""
-    # "\"First of all, it's not a race,\" Kyon said, pushing his empty plate towards the center of the table."
-    # "\"Secondly, she gave you the option to stay in the brigade, so I don't think she actually holds anything {i}against{/i} you, no matter how upset she might be at the moment.\" He glanced to Koizumi, raising an eyebrow questioningly."
-    # nvl clear
-    # "\"No more instances of closed space have been created yet,\" the boy said, smiling. \"And to be honest, the severity of the last one doesn't feel too intense yet.\""
-    # "\"Right. So, finally, if the vice commander armband means so much to you, you can keep it and tell Haruhi you lost it. It'll save me the humiliation of having to pin that thing to my sleeve during club meetings.\""
-    # nvl clear
-    # "Koizumi chuckled again, bowing his head to Kyon. \"In that case,\" he said, \"thank you, and I will do as you suggest. Though I think we both know that won't do more than slow her down.\""
-    # "Kyon nodded his agreement. \"Unfortunately.\""
-    # nvl clear
-    # "\"Well, I should be going to meet with my colleagues, and then I imagine I will have a very ... eventful meeting with my superiors,\" Koizumi announced, rising to his feet. \"I'll leave you two to discuss things as you see fit; don't worry about the bill. I'll settle it on my way out.\""
-    # "Mikuru and Kyon nodded their thanks at the esper as he left, and finished their drinks in silence. \"Did you want to talk here, or elsewhere?\" he asked her after setting down his empty coffee cup."
-    # "Smiling shyly, she suggested, \"Ah ... let's go for a walk.\""
-    # nvl clear
+label Test:
+    call eyecatch from AO2_sc006
+
+    play music "Music/WitchInGoldCenba.ogg"
+    scene bg Cafe with fade
+    show Mikuru Casual Neutral1 at center
+    show Kyon Casual Ser1 at right  
+    show Koizumi Shrug Casual Sigh1:
+        xalign -1.0 yalign 1.0    
+    "\"It is related to what Fearless Leader is trying to avoid admitting to himself,\" Koizumi said, glancing at Mikuru over his drink. "
+    show Koizumi Think Casual Grin1 at left
+    "\"And perhaps, Suzumiya-san as well. On that count I'm somewhat less certain.\""
+    nvl clear
+    show Mikuru Think Casual Quest1 at center
+    "\"Avoid admitting?\" she asked, bewildered, looking between the two. \"What is it?\""
+    show Kyon Casual Unhap1 at right
+    "\"I have no idea what nonsense he's going to spout out right now,\" Kyon grumbled, lowering his face to rest on one hand."
+    show Mikuru Casual Unhap1 at center
+    "\"Um ... what?\""
+    nvl clear
+    show Koizumi Think Casual Ser3 at left
+    "\"Well, as subordinates,\" Koizumi said suddenly, turning to Mikuru, \"we should work together, shouldn't we?\"" 
+    show Koizumi Think Casual Ser4 at left
+    "\"The problem is this; as far as I understand things, Suzumiya-san has a certain ... interest ... in Fearless Leader.\""
+    nvl clear
+    show Kyon Casual Sigh1 at right
+    "\"Please,\" Kyon interjected, \"stick with the old nickname.\""
+    show Koizumi Think Casual Grin1 at left
+    "\"Of course.\""
+    nvl clear
+    show Mikuru Casual Sigh1 at center
+    show MBlush1 Casual at center
+    "\"W...well, that's not too surprising,\" Mikuru said. She had trouble looking Kyon in the eyes and her face reddened, but she asked,"
+    show Mikuru Casual Think Quest1 at center
+    hide MBlush1
+    "\"But, Kyon-kun didn't notice when ... Suzumiya-san jumped on him in the clubroom?\""
+    nvl clear
+    show Koizumi Think Casual Sup1 at left
+    "Koizumi blinked several times, then turned to stare at Kyon. \"Excuse me?\""
+    show Kyon Casual Unhap1 at right
+    "\"Not what you think it was,\" Kyon said in irritation."
+    show Kyon Casual Sigh1 at right
+    "\"She just wanted the last page of my story for the Literature Club anthology. I had hidden it because—{nw}"
+    show Kyon Casual Worry1 at right
+    extend " You know, that's actually not important. Back to Haruhi?\""
+    nvl clear
+    show Koizumi Crossed Casual Smile1 at left
+    show Mikuru Casual Neutral1 at center
+    "\"Well, at any rate,\" Koizumi said, relaxing into his usual facial expression, \"I hope you know what you're doing, and I'm putting my faith in you, so please handle things carefully.\""
+    nvl clear
+    show Kyon Casual Sigh3 at right
+    "Kyon bit back a retort, realizing that the esper was right." 
+    show Kyon Casual Ser3 at right
+    "\"Staring into the mouth of the issue he'd been trying to defer, he asked, \"What do you think I should do, then? And please, say something more serious than the advice you gave me about last August.\""
+    nvl clear
+    show Koizumi Crossed Casual Sigh2 at left
+    "\"It's troubling,\" Koizumi acknowledged. \"For the time being, I can only ask you to be aware of it and hope that it can be dealt with reasonably.\"" 
+    show Koizumi Crossed Casual Ser2 at left
+    "\"Moving on slightly and changing the topic to equally pressing, but only partially related matters, how should I proceed with the Organization?\""
+    nvl clear
+    show Kyon Casual Ser1 at right
+    "Kyon tapped his fingertips on the table thoughtfully, falling silent while the waitress returned, setting down their orders and refreshing his coffee and Mikuru's tea."
+    show Kyon Casual Ser2 at right
+    "After a bite of his club sandwich, once the waitress had moved on, he said, \"Alright. How much trouble could you really be in with them?\""
+    nvl clear
+    show Kyon Casual Ser3 at right
+    "\"You haven't done anything wrong in their eyes; I would be the problem. As long as things are in control, wouldn't they be okay with it?\""
+    show Koizumi Think Casual Ser2 at left
+    "\"Possibly,\" the other boy allowed, picking at his salad. \"I believe that I will have to write another letter of apology, at the very least. But even so, my 'trouble'....\""
+    nvl clear
+    show Koizumi Think Casual Ser4 at left
+    "He shrugged. \"Being a double-agent seems unwise.\""
+    show Kyon Casual Sigh2 at right
+    "\"How about an official liaison?\" Kyon proposed. \"If events were beyond your control — you were outmaneuvered, effectively — wouldn't it be fine? And this gives your Organization direct access to the brigade.\""
+    show Kyon Casual Ser2 at right
+    nvl clear
+    "\"Being a liaison might remove you from some circles in your Organization to protect various secrets or whatnot.\"" 
+    show Kyon Casual Ser3 at right
+    "\"That means that Haruhi would be able to see it as you being a part of the brigade more than the Organization, which I think would probably satisfy her.\""
+    nvl clear
+    show Koizumi Think Casual Ser1 at left
+    "Koizumi nodded thoughtfully. \"Hmm, she would be happy about having a connection to a shadowy organization, so that may be true enough.\"" 
+    show Koizumi Think Casual Smile1
+    "\"Well, thank you, vice commander Kyon, I will continue to put my trust in you.\""
+    nvl clear
+    show Kyon Casual Sigh2 at right
+    "Nodding, Kyon turned to Mikuru, who had finished half of her pasta and was just toying with the noodles, curling them into complex whorls on the plate."
+    show Kyon Casual Neutral2 at right
+    "\"Are you alright with this, Asahina-san? Aside from what Haruhi and your superiors say....\""
+    nvl clear 
+    show Mikuru Casual Quest1 at center
+    "\"Ah,\" she gasped, sitting up straight and looking between the two. \"Um, well ... my ... superiors and Koizumi-kun's agency don't always see eye-to-eye,\" she said, shifting her shoulders." 
+    show Mikuru Casual Smile1 at center
+    "\"But I don't mind working with him; Koizumi-kun is a nice person.\""
+    nvl clear
+    show Kyon Casual Puzzle1 at right
+    show Koizumi Think Casual Grin1 at left
+    "Kyon blinked, turning a questioning glance at Koizumi, who chuckled slightly. \"Um, Asahina-san, I think you may have missed the question a bit,\" he said."
+    show Mikuru Casual Ser1 at center
+    "\"Um, no,\" she disagreed, shaking her head. \"I think this is nice. There's more trust between us then there was ... and that's very likable.\""
+    nvl clear
+    show Mikuru Casual Unhap1 at center
+    "\"I feel bad that I can't say more myself because of — of things that are classified,\" she said, grimacing." 
+    show Mikuru Casual Ser1 at center
+    "Shaking her head again, she gave Kyon an earnest look. \"Koizumi-kun wouldn't have been able to speak of things like this so openly in front of me if it weren't for the changes that are happening.\""
+    nvl clear
+    show Mikuru Casual Ser2 at center
+    "\"Even Nagato-san will be able to speak freely if she wants to. Suzumiya-san may be upset now, but I actually believe that once she has some time to come to grips with ... everything we have to show her and talk to her about, she'll forgive us and be quite satisfied!\""
+    nvl clear
+    show Koizumi Crossed Casual Ser2 at left
+    "\"Forgive us,\" Koizumi said, his smile fading. \"I think Kyon's quite ahead in her regard by that measure now.\""
+    show Kyon Casual Sigh1 at right
+    "\"First of all, it's not a race,\" Kyon said, pushing his empty plate towards the center of the table."
+    nvl clear
+    show Kyon Casual Ser3 at right
+    "\"Secondly, she gave you the option to stay in the brigade, so I don't think she actually holds anything {i}against{/i} you, no matter how upset she might be at the moment.\" He glanced to Koizumi, raising an eyebrow questioningly."
+    nvl clear
+    show Mikuru Casual Neutral1 at center
+    show Koizumi Crossed Casual Smile2 at left
+    "\"No more instances of closed space have been created yet,\" the boy said, smiling. \"And to be honest, the severity of the last one doesn't feel too intense yet.\""
+    show Kyon Casual Sigh2 at right
+    "\"Right. So, finally, if the vice commander armband means so much to you, you can keep it and tell Haruhi you lost it. It'll save me the humiliation of having to pin that thing to my sleeve during club meetings.\""
+    nvl clear
+    show Koizumi Think Casual Smile1 at left
+    "Koizumi chuckled again, bowing his head to Kyon. \"In that case,\" he said, \"thank you, and I will do as you suggest. Though I think we both know that won't do more than slow her down.\""
+    show Kyon Casual Worry1 at right
+    "Kyon nodded his agreement. \"Unfortunately.\""
+    nvl clear
+    show Koizumi Crossed Casual Smile1 at left
+    "\"Well, I should be going to meet with my colleagues, and then I imagine I will have a very ... eventful meeting with my superiors,\" Koizumi announced, rising to his feet. \"I'll leave you two to discuss things as you see fit; don't worry about the bill. I'll settle it on my way out.\""
+    show Kyon Casual Neutral3 at right
+    show Mikuru Casual Neutral1 at center
+    hide Koizumi with moveoutleft
+    "Mikuru and Kyon nodded their thanks at the esper as he left, and finished their drinks in silence."
+    nvl clear
+    show Kyon Casual Neutral2 at right
+    "\"Did you want to talk here, or elsewhere?\" he asked her after setting down his empty coffee cup."
+    show Mikuru Casual Smile1 at center
+    show MBlush1 Casual at center
+    "Smiling shyly, she suggested, \"Ah ... let's go for a walk.\""
+    nvl clear                             
     
     
     # "* * *"

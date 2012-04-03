@@ -257,7 +257,7 @@ label AO1_1:
         #xalign 0.0 yalign 1.0
         #linear 0.1 xalign 0.6 # at right
     show Asakura Smile1 at HalfRight
-    "\"In the end,\" Asakura remarked, watching his form tumble off the edge of the school building,{fast} \"all those toys are pretty silly if you don't actually know how to use them.\""
+    "\"In the end,\" Asakura remarked, watching his form tumble off the edge of the school building, \"all those toys are pretty silly if you don't actually know how to use them.\""
     show Haruhi Hap1 at left
     "\"You have to give him credit, though,\" Haruhi said, peering very closely at the knives frozen over her barrier, not even glancing back to where Kyon had vanished."
     show Haruhi Grin1 at left
@@ -330,11 +330,11 @@ label AO1_1:
     # stop music fadeout 1
     play music "Music/Nagato2.mp3"
     "He calculated the ride to Nagato's place as a twenty minute trip, at one point."
-    scene bg TownStreetNight1 with wiperight
+    scene bg TownStreetDay1 with wiperight
     pause 1
-    scene bg TownStreetNight2 with wiperight
+    scene bg TownStreetDay2 with wiperight
     pause 1
-    scene bg YukiApartmentNight with wiperight:
+    scene bg YukiApartmentDay with wiperight:
     "When he reached the lobby, barely pausing long enough to lock up his bike, he wondered if he'd beaten his best time, but didn't feel the need to check."
     "Instead, he dashed to the console, still gasping for breath, and fumbled, mis-dialing her room number and needing to hammer the 'cancel' button to dial again."
     "\"Nagato!\" he called, the second she picked up. \"It's me!\""
@@ -419,7 +419,7 @@ label AO1_1:
     # Calling a generic "eyecatch" routine, with unique "from"
     call eyecatch from AO1_sc001
     
-    scene bg YukiApartmentNight with fade
+    scene bg YukiApartmentDay with fade
     play music "Music/Kankyou.mp3"
     "She couldn't imagine what had possessed Kyon to call her, ranting like a lunatic about Yuki being sick. "
     "But he'd done it from {i}her{/i} phone, which meant for whatever reason that he and Yuki were alone together. "
