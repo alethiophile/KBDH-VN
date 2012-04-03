@@ -710,15 +710,16 @@ label AO2:
     nvl clear
     
     
-label Test:
+
     call eyecatch from AO2_sc006
 
     play music "Music/WitchInGoldCenba.ogg"
-    scene bg Cafe with fade
+    scene bg Cafe
     show Mikuru Casual Neutral1 at center
     show Kyon Casual Ser1 at right  
     show Koizumi Shrug Casual Sigh1:
         xalign -1.0 yalign 1.0    
+    with fade    
     "\"It is related to what Fearless Leader is trying to avoid admitting to himself,\" Koizumi said, glancing at Mikuru over his drink. "
     show Koizumi Think Casual Grin1 at left
     "\"And perhaps, Suzumiya-san as well. On that count I'm somewhat less certain.\""
@@ -852,77 +853,199 @@ label Test:
     "Smiling shyly, she suggested, \"Ah ... let's go for a walk.\""
     nvl clear                             
     
+label Test:    
+    play music "Music/ItsumoNoFuukei.mp3"
+    scene bg hallway
+    show Kyon Neutral3:
+        xalign 0.9 yalign 1.0    
+    show Haruhi Pout1:
+        xalign 0.2 yalign 1.0    
+    show Hblush: 
+        xalign 0.2 yalign 1.0    
+    with fade    
+    "After class had finished, Haruhi restrained her pace to a sedate walk, keeping in step with Kyon. \"I should say one thing,\" she said quietly. \"I mean, honestly.\""
+    show Kyon Neutral2:
+        xalign 0.9 yalign 1.0    
+    "\"Sure,\" he said, not even glancing towards her. \"What's that?\""
+    show Haruhi Pout2:
+        xalign 0.2 yalign 1.0   
+    "\"Um.... I guess, all things considered, I want to say thanks for always sticking with me, even when I caused trouble. I just wish you had told me about it beforehand! I mean, if you had—\""
+    nvl clear
+    scene bg stairwell with wiperight
+    show Kyon Neutral3:
+        xalign 0.9 yalign 1.0   
+    show Haruhi Pout1:
+        xalign 0.4 yalign 1.0
+    play sound "SE/impact.mp3"        
+    show Kanae Wince1 at right with moveinright
+        
+    play music "Music/Gekiretsu.mp3"
+    show Haruhi Sup1:
+        xalign 0.6 yalign 1.0 
+    play sound2 "SE/dashwacky.mp3"    
+    show Kyon Unhap1 at left
+    show Kanae Sup1:
+        xalign 0.2 yalign 1.0 
+    with move    
+    "She cut off as they reached the stairwell, a smaller first-year student wailing an apology before her compact form slammed into Kyon, nearly throwing him down the stairs."
+    show Kyon Ser1 Flip:
+        xalign -0.2 yalign 1.0 
+    "He spun and lunged, managing to save his balance just barely, hanging onto the semi-collapsed form of the other student."
+    show Kanae Wince2:
+        xalign 0.2 yalign 1.0 
+    "\"Eeep!\" the girl managed, held upright for the moment by his grip. \"S...sorry, I— Oh! Sempai!\""
+    nvl clear
+    show Haruhi Ang3:
+        xalign 0.6 yalign 1.0 
+    "\"A friend of yours?\" Haruhi asked dourly, leaning close to peer into Kyon's face. \"You sure seem close!\""
+    show Kyon Ang1 Flip:
+         xalign -0.2 yalign 1.0 
+    "\"We've never met!\" he protested, looking away from the smaller girl's features. Something about her did seem eerily familiar. \"At least, not that I remember.\""
+    show Kanae Worry1:
+        xalign 0.2 yalign 1.0 
+    "\"Ah,\" the girl whimpered, eyes fixing on Haruhi. \"Y...you're here, too?\""
+    nvl clear
+    show Haruhi Crossed Eyeroll1:
+        xalign 0.6 yalign 1.0 
+    "\"Well, Kyon's memory may be bad,\" Haruhi decided, crossing her arms over her chest. \"But mine's not, and I absolutely don't remember meeting you before.\""
+    show Kanae Worry2:
+        xalign 0.2 yalign 1.0
+    "\"Er, I should go,\"{nw}"
+    scene bg hallway with wiperightfast
+    play sound "SE/lowswoosh.mp3"
+    extend"the girl managed, squirming in Kyon's grip, one foot accidentally tripping the boy from his precarious step, sending both hurtling down the stairs headfirst."
+    nvl clear
+    "Still hanging onto her shoulders, Kyon switched his stance as he fell, throwing himself down the stairs even faster, actually pushing off from the sides of the steps quickly enough to get his lower body underneath him before reaching the bottom."
+    play sound "SE/impact.mp3"
+    "Unable to stop his rush, he spun in place, clutching the girl to his chest and slamming his back into the wall of the stairwell, smacking his head and barely managing to maintain his grip." 
+    "He collapsed weakly into a sitting position, the first year girl sprawled across his lap."
+    nvl clear
+    show Kanae Sup1 at center with wipeup
+    "His wind knocked out, he was unable to keep her there for questioning as she squeaked out another, {nw}"
+    hide Kanae with moveoutleft
+    extend "\"Sorry, Sempai! I'll tell you later!\" before leaping to her feet and dashing away."
+    show Kyon Pain1 at right with wipeup
+    show Haruhi Worry1 at center with moveinleft
+    "\"Hey, you okay?\" Haruhi asked, waving a hand in front of his face as he resumed breathing with a choked gasp. \"Now, what was {i}that{/i} all about?\""
+    nvl clear
+    show Kyon Sigh1 at right
+    "\"Not sure,\" he wheezed. \"Maybe she's a slider and knows different versions of us from a parallel universe.\""
+    show Haruhi Hap3 at center
+    hide Haruhi with moveoutleft
+    "Haruhi's eyes lit up. \"I'll meet you in the clubroom,\" she declared, vanishing after the smaller girl."
+    nvl clear
+    stop music fadeout 3
+    show Kyon Sup2 at right
+    "\"I was ... kidding,\" {nw}"
+    show Kyon Sigh2 at right
+    extend "he groaned, rubbing the back of his head where it had hit the wall. There was no way he would catch up with her while recovering his breath." 
     
-    # "* * *"
-    # "After class had finished, Haruhi restrained her pace to a sedate walk, keeping in step with Kyon. \"I should say one thing,\" she said quietly. \"I mean, honestly.\""
-    # "\"Sure,\" he said, not even glancing towards her. \"What's that?\""
-    # "\"Um.... I guess, all things considered, I want to say thanks for always sticking with me, even when I caused trouble. I just wish you had told me about it beforehand! I mean, if you had—\""
-    # nvl clear
-    # "She cut off as they reached the stairwell, a smaller first-year student wailing an apology before her compact form slammed into Kyon, nearly throwing him down the stairs." 
-    # "He spun and lunged, managing to save his balance just barely, hanging onto the semi-collapsed form of the other student."
-    # "\"Eeep!\" the girl managed, held upright for the moment by his grip. \"S...sorry, I— Oh! Sempai!\""
-    # nvl clear
-    # "\"A friend of yours?\" Haruhi asked dourly, leaning close to peer into Kyon's face. \"You sure seem close!\""
-    # "\"We've never met!\" he protested, looking away from the smaller girl's features. Something about her did seem eerily familiar. \"At least, not that I remember.\""
-    # "\"Ah,\" the girl whimpered, eyes fixing on Haruhi. \"Y...you're here, too?\""
-    # nvl clear
-    # "\"Well, Kyon's memory may be bad,\" Haruhi decided, crossing her arms over her chest. \"But mine's not, and I absolutely don't remember meeting you before.\""
-    # "\"Er, I should go,\" the girl managed, squirming in Kyon's grip, one foot accidentally tripping the boy from his precarious step, sending both hurtling down the stairs headfirst."
-    # nvl clear
-    # "Still hanging onto her shoulders, Kyon switched his stance as he fell, throwing himself down the stairs even faster, actually pushing off from the sides of the steps quickly enough to get his lower body underneath him before reaching the bottom." 
-    # "Unable to stop his rush, he spun in place, clutching the girl to his chest and slamming his back into the wall of the stairwell, smacking his head and barely managing to maintain his grip." 
-    # "He collapsed weakly into a sitting position, the first year girl sprawled across his lap."
-    # nvl clear
-    # "His wind knocked out, he was unable to keep her there for questioning as she squeaked out another, \"Sorry, Sempai! I'll tell you later!\" before leaping to her feet and dashing away."
-    # "\"Hey, you okay?\" Haruhi asked, waving a hand in front of his face as he resumed breathing with a choked gasp. \"Now, what was {i}that{/i} all about?\""
-    # nvl clear
-    # "\"Not sure,\" he wheezed. \"Maybe she's a slider and knows different versions of us from a parallel universe.\""
-    # "Haruhi's eyes lit up. \"I'll meet you in the clubroom,\" she declared, vanishing after the smaller girl."
-    # nvl clear
-    # "\"I was ... kidding,\" he groaned, rubbing the back of his head where it had hit the wall. There was no way he would catch up with her while recovering his breath." 
-    # "Sighing, he trudged to the club room, knocking on the door before entering."
-    # nvl clear
-    # "Mikuru was already dressed in her maid outfit, and smiled at him as he entered. \"Hello, Kyon-kun!\" she chirped. \"Tea will be just a minute.\""
-    # "\"Ah, thanks, Asahina-san,\" he said, smiling and rubbing at the spot on the back of his head that had hit the wall." 
-    # "He glanced over, glad to see Yuki in her traditional chair, flipping through the pages of another book. He read the title, 'A Stranger in a Strange Land', then took his seat." 
-    # "Koizumi entered just as Mikuru finished brewing the tea."
-    # nvl clear
-    # "At a glance, he didn't seem more tired than usual of late, so Kyon hazarded, \"No new closed space so far today?\""
-    # "\"An incident occurred around the first break period of the day,\" Koizumi replied, shaking his head."
-    # "\"It was rather intense, and the Shinjin emerged rather quickly — but thankfully it was one of the indecisive ones, so we had a relatively easy time of it. I gather that Sasaki was brought up?\""
-    # nvl clear
-    # "\"Haruhi asked if I was dating her,\" Kyon answered, accepting a cup of tea from Mikuru with a quiet thanks. \"Is it that obvious that mention of Sasaki was involved?\""
-    # "\"No, just a likely explanation,\" the esper said, nodding thoughtfully. \"Shall we explain closed space to Suzumiya-san today, then?\" he asked as he turned to the game closet and pulled the go board and stones out."
-    # nvl clear
-    # "\"Yeah. Right now that's the most dangerous thing,\" Kyon agreed. \"I don't think even Haruhi would intentionally try and use that as leverage for us to remove her limitations, so we should bring that up soon.\""
-    # "\"Oh? Was removing her limitations discussed?\" Koizumi's eyebrows shot up questioningly."
-    # "\"That's right. It was at lunch time.\""
-    # nvl clear
-    # "\"Very curious. I would have expected her to be irritated ... but even though I was paying especially close attention to her mood, I didn't feel any negative emotions at that time.\""
-    # "Kyon gave the esper a six stone advantage and raised an eyebrow of his own. \"How does that work?\" he asked."
-    # "\"I know you mentioned you were aware of her emotional state at one point, but I never learned the specifics.\""
-    # nvl clear
-    # "\"Only particularly intense emotions are felt,\" he answered, staring at the board and placing his first stone thoughtfully. \"Even then, it's frequently vague ... it doesn't give me any clue as to where she is, for example, just whatever intense emotion is there.\"" 
-    # "\"Naturally, this was quite awkward when I first was granted my powers, but I can usually tell my feelings apart from hers, now.\""
-    # nvl clear
-    # "\"There, there,\" Mikuru said soothingly, patting Koizumi's shoulder consolingly as she set his teacup before him. \"I know how you must feel, Koizumi-kun.\""
-    # "Kyon held one hand out, palm facing towards the esper as though to deflect a beam attack. \"Koizumi, in retrospect my question was a mistake.\"" 
-    # "\"Please never clarify that last remark to me,\" he declared, dropping his hand to the board and absently placing a stone of his own."
-    # nvl clear
-    # "\"Haha, if that's your wish,\" Koizumi chuckled. \"Understood, vice commander. Before I forget, I would also like to thank you for your assistance last night, even with your remarkably ... dramatic entrance.\""
-    # "Without batting an eyelash, Kyon whisked the letter from his future self and a mechanical pencil from his bag on the table. \"What time did I arrive?\""
-    # nvl clear
-    # "\"Hmm? It would have been at seven forty, almost precisely,\" Koizumi answered. \"How is it that you don't— Ah, a future instance of yourself?\""
-    # "\"Seems I'll be pretty busy yesterday,\" he replied nodding."
-    # "\"We're going back to yesterday?\" Mikuru asked, blinking in surprise. \"But yesterday you told me you were getting tired of time travelling!\""
-    # nvl clear
-    # "\"Did I? Just after six o'clock, right?\""
-    # "\"Um, that's right. Er ... is it alright for me to tell you that?\""
-    # "He scribbled another note on the paper. \"I should be fine with this,\" he sighed, putting the note away. \"Now, Haruhi ran off in search of—\""
-    # nvl clear
-    # "The door slammed open with a booming crash. \"Caught her!\" Haruhi cheered, shoving the first year student into Mikuru, who dropped her empty tea tray and barely managed to keep herself and the smaller girl from falling over."
-    # "\"Eep,\" the first year girl squeaked, her face pressed into Mikuru's chest. \"Aaugh! I'm in trouble! Someone help me!\""
-    # nvl clear
+    
+    play sound "SE/doorknock.wav"
+    "Sighing, he trudged to the club room, knocking on the door before entering."
+    play sound "SE/dooropenslow.wav"
+    scene bg ClubroomRightDay with slowflashbulb
+    play music "Music/Aruame.mp3"
+    nvl clear
+    show Mikuru Maid Smile1 at center
+    show MTray Maid at center
+    show Kyon Neutral3 at right
+    with dissolve
+    "Mikuru was already dressed in her maid outfit, and smiled at him as he entered. \"Hello, Kyon-kun!\" she chirped. \"Tea will be just a minute.\""
+    show Kyon Smile1 at right
+    "\"Ah, thanks, Asahina-san,\" he said, smiling and rubbing at the spot on the back of his head that had hit the wall."
+    hide Mikuru
+    hide MTray
+    show YBook:
+        xalign 0.0 yalign 0.0    
+    with dissolve
+    "He glanced over, glad to see Yuki in her traditional chair, flipping through the pages of another book. He read the title, 'A Stranger in a Strange Land', then took his seat." 
+    hide YBook
+    show Koizumi Crossed Smile1 at left
+    with dissolve
+    "Koizumi entered just as Mikuru finished brewing the tea."
+    nvl clear
+    show Kyon Neutral2 at right
+    "At a glance, he didn't seem more tired than usual of late, so Kyon hazarded, \"No new closed space so far today?\""
+    show Koizumi Crossed Sigh2 at left
+    "\"An incident occurred around the first break period of the day,\" Koizumi replied, shaking his head."
+    show Koizumi Crossed Ser2 at left
+    "\"It was rather intense, and the Shinjin emerged rather quickly — but thankfully it was one of the indecisive ones, so we had a relatively easy time of it. I gather that Sasaki was brought up?\""
+    nvl clear
+    show Kyon Worry1 at right
+    "\"Haruhi asked if I was dating her,\" Kyon answered, accepting a cup of tea from Mikuru with a quiet thanks. \"Is it that obvious that mention of Sasaki was involved?\""
+    show Koizumi Think Ser1 at left
+    "\"No, just a likely explanation,\" the esper said, nodding thoughtfully. \"Shall we explain closed space to Suzumiya-san today, then?\" he asked as he turned to the game closet and pulled the go board and stones out."
+    nvl clear
+    show Kyon Ser3 at right
+    "\"Yeah. Right now that's the most dangerous thing,\" Kyon agreed. \"I don't think even Haruhi would intentionally try and use that as leverage for us to remove her limitations, so we should bring that up soon.\""
+    show Koizumi Think Sup1 at left
+    "\"Oh? Was removing her limitations discussed?\" Koizumi's eyebrows shot up questioningly."
+    show Kyon Neutral2 at right
+    "\"That's right. It was at lunch time.\""
+    nvl clear
+    show Koizumi Think Ser3 at left
+    "\"Very curious. I would have expected her to be irritated ... but even though I was paying especially close attention to her mood, I didn't feel any negative emotions at that time.\""
+    show Kyon Puzzle1 at right
+    "Kyon gave the esper a six stone advantage and raised an eyebrow of his own. \"How does that work?\" he asked."
+    show Kyon Neutral2 at right
+    "\"I know you mentioned you were aware of her emotional state at one point, but I never learned the specifics.\""
+    nvl clear
+    show Koizumi Smile1 at left
+    "\"Only particularly intense emotions are felt,\" he answered, staring at the board and placing his first stone thoughtfully. \"Even then, it's frequently vague ... it doesn't give me any clue as to where she is, for example, just whatever intense emotion is there.\""
+    show Koizumi Shrug Sigh1:
+        xalign -1.0 yalign 1.0    
+    "\"Naturally, this was quite awkward when I first was granted my powers, but I can usually tell my feelings apart from hers, now.\""
+    nvl clear
+    show Mikuru Maid Smile1 at center with dissolve
+    "\"There, there,\" Mikuru said soothingly, patting Koizumi's shoulder consolingly as she set his teacup before him. \"I know how you must feel, Koizumi-kun.\""
+    show Kyon Unhap1 at right
+    "Kyon held one hand out, palm facing towards the esper as though to deflect a beam attack. \"Koizumi, in retrospect my question was a mistake.\"" 
+    show Kyon Ang1 at right
+    "\"Please never clarify that last remark to me,\" he declared, dropping his hand to the board and absently placing a stone of his own."
+    nvl clear
+    show Koizumi Think Smile1 at left
+    "\"Haha, if that's your wish,\" Koizumi chuckled. \"Understood, vice commander. Before I forget, I would also like to thank you for your assistance last night, even with your remarkably ... dramatic entrance.\""
+    show Kyon Neutral3 at right
+    "Without batting an eyelash, Kyon whisked the letter from his future self and a mechanical pencil from his bag on the table. \"What time did I arrive?\""
+    nvl clear
+    show Koizumi Crossed Neutral1
+    with dissolve
+    "\"Hmm? It would have been at seven forty, almost precisely,\" Koizumi answered. \"How is it that you don't— Ah, a future instance of yourself?\""
+    show Kyon Sigh2 at right
+    "\"Seems I'll be pretty busy yesterday,\" he replied nodding."
+    show Mikuru Think Maid Quest1 at center
+    "\"We're going back to yesterday?\" Mikuru asked, blinking in surprise. \"But yesterday you told me you were getting tired of time travelling!\""
+    nvl clear
+    show Kyon Neutral2 at right
+    "\"Did I? Just after six o'clock, right?\""
+    show Mikuru Maid Neutral1 at center
+    "\"Um, that's right. Er ... is it alright for me to tell you that?\""
+    "He scribbled another note on the paper. \"I should be fine with this,\" he sighed, putting the note away. \"Now, Haruhi ran off in search of—\""
+    nvl clear
+    play sound "SE/doorclose.mp3"
+    play music "Music/YareYare.mp3"
+    hide Kyon
+    hide Koizumi
+    hide Mikuru
+    show Mikuru Maid Quest1 at right   
+    show Haruhi Hap4 at left
+    show Kanae Sup1:
+        xalign 0.2 yalign 1.0
+    with dissolve
+    "The door slammed open with a booming crash. \"Caught her!\" {nw}" 
+    play sound "SE/impact.mp3"
+    show Kanae Sup1:
+        xalign 0.8 yalign 1.0
+    with move   
+    extend "Haruhi cheered, shoving the first year student into Mikuru, who dropped her empty tea tray and barely managed to keep herself and the smaller girl from falling over."
+    show Mikuru Think Maid Quest1 at right
+    show Kanae Wince1:
+        xalign 0.8 yalign 1.0
+    "\"Eep,\" the first year girl squeaked, her face pressed into Mikuru's chest. \"Aaugh! I'm in trouble! Someone help me!\""
+    nvl clear
+    
+    
     # "* * *"
     # "Kyon looked at the slumbering form of Mikuru, leaning heavily against him on their usual park bench, not far from Yuki's apartment. \"Asahina-san?\" he called, not to the girl at his side."
     # "\"Hehe, am I too predictable?\" the older version of Mikuru asked from behind him."
