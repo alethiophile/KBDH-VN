@@ -300,7 +300,7 @@ label AO2:
     show Koizumi Crossed Casual Neutral1 at left
     "\"Fine,\" Koizumi agreed, gesturing to the building entrance and leading the way."
     nvl clear
-    scene bg YukiApartmentNight with wipeleft
+    scene bg YukiApartmentDay with wipeleft
     show Mikuru Casual Neutral1 at center
     show Kyon Casual Neutral3 at right
     show Koizumi Crossed Casual Ser1 at left
@@ -697,8 +697,7 @@ label Test:
     nvl clear
     
     
-    
-    # "* * *"
+#    
     # "\"It is related to what Fearless Leader is trying to avoid admitting to himself,\" Koizumi said, glancing at Mikuru over his drink. "
     # "\"And perhaps, Suzumiya-san as well. On that count I'm somewhat less certain.\""
     # "\"Avoid admitting?\" she asked, bewildered, looking between the two. \"What is it?\""
@@ -765,7 +764,7 @@ label Test:
     # "\"Well, I should be going to meet with my colleagues, and then I imagine I will have a very ... eventful meeting with my superiors,\" Koizumi announced, rising to his feet. \"I'll leave you two to discuss things as you see fit; don't worry about the bill. I'll settle it on my way out.\""
     # "Mikuru and Kyon nodded their thanks at the esper as he left, and finished their drinks in silence. \"Did you want to talk here, or elsewhere?\" he asked her after setting down his empty coffee cup."
     # "Smiling shyly, she suggested, \"Ah ... let's go for a walk.\""
-    # nvl clear
+    # nvl clear                             
     
     
     # "* * *"
