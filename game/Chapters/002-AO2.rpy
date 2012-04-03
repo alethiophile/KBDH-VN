@@ -96,17 +96,8 @@ label AO2:
     nvl clear
     
     play sound "SE/WestminsterChimeShort.mp3"
-    # scene black with dissolve
-    # $ renpy.pause(.2, hard=True)
-    # show BDVNlogo at truecenter with Dissolve(2.0)
-    # pause 10.0
-    
     # Calling a generic "eyecatch" routine with date (first argument in (), "" to nhow no date) and custom pause time (second argument in ()), with unique "from"
     call eyecatch("", 10.0) from AO2_sc001
-    
-    # play sound "SE/WestminsterChime.mp3"
-    # scene Credits3 with fastfadein # slowfadein
-    # pause 18.0
     stop sound fadeout 2
     play music "Music/Nanika.mp3"
     
@@ -128,12 +119,16 @@ label AO2:
     "\"Why is that any of your business?\" she asked him coolly, her eyes narrowing into sharp lines."
     show Taniguchi Sup2 at HalfRight
     "\"I just remembered somewhere else I had to be,\" {nw}"
+    $ _window = True
     hide Taniguchi Sup2 with moveoutright
+    $ _window = False
     extend "he blurted out, charging out of the classroom."
     nvl clear
     show Kyon Sigh2 at right
     "Kyon sighed, shaking his head."
+    $ _window = True
     show Kunikida Smile1 at center with move
+    $ _window = False
     "\"Well,\" Kunikida said, shrugging and offering a placating smile. \"It's none of my business either. But I thought I'd pass on that pretty much the entire school has caught on by now ... I wouldn't be terribly surprised if a teacher were to ask you about it, either.\""
     nvl clear
     show Haruhi Ang1 at left
