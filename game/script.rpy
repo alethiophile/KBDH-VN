@@ -30,7 +30,7 @@ init:
     image bg ClubroomLeftDay = "Backgrounds/ClubroomLeftDay.png"
     image bg ClubroomFullDay ="Backgrounds/ClubroomFullDay.jpg"
     image bg ClubroomRightDay = "Backgrounds/ClubroomRightDay.png"
-    image bg YukiApartmentDay = "Backgrounds/YukiApartmentDay.jpg"
+    image bg YukiApartmentDay = "Backgrounds/YukiApartmentDay.png"
     image bg YukiApartmentNight = "Backgrounds/YukiApartmentNight.png"
     image bg YukiRoomLeft = "Backgrounds/YukiRoomLeft.png"
     image bg YukiRoomRight = "Backgrounds/YukiRoomRight.png"
