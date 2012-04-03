@@ -722,13 +722,14 @@ label Test:
     "\"It is related to what Fearless Leader is trying to avoid admitting to himself,\" Koizumi said, glancing at Mikuru over his drink. "
     show Koizumi Think Casual Grin1 at left
     "\"And perhaps, Suzumiya-san as well. On that count I'm somewhat less certain.\""
+    nvl clear
     show Mikuru Think Casual Quest1 at center
     "\"Avoid admitting?\" she asked, bewildered, looking between the two. \"What is it?\""
-    nvl clear
     show Kyon Casual Unhap1 at right
     "\"I have no idea what nonsense he's going to spout out right now,\" Kyon grumbled, lowering his face to rest on one hand."
     show Mikuru Casual Unhap1 at center
     "\"Um ... what?\""
+    nvl clear
     show Koizumi Think Casual Ser3 at left
     "\"Well, as subordinates,\" Koizumi said suddenly, turning to Mikuru, \"we should work together, shouldn't we?\"" 
     show Koizumi Think Casual Ser4 at left
@@ -758,6 +759,7 @@ label Test:
     show Koizumi Crossed Casual Smile1 at left
     show Mikuru Casual Neutral1 at center
     "\"Well, at any rate,\" Koizumi said, relaxing into his usual facial expression, \"I hope you know what you're doing, and I'm putting my faith in you, so please handle things carefully.\""
+    nvl clear
     show Kyon Casual Sigh3 at right
     "Kyon bit back a retort, realizing that the esper was right." 
     show Kyon Casual Ser3 at right
@@ -771,18 +773,19 @@ label Test:
     show Kyon Casual Ser1 at right
     "Kyon tapped his fingertips on the table thoughtfully, falling silent while the waitress returned, setting down their orders and refreshing his coffee and Mikuru's tea."
     show Kyon Casual Ser2 at right
-    "After a bite of his club sandwich, once the waitress had moved on, he said, \"Alright. How much trouble could you really be in with them?\"" 
+    "After a bite of his club sandwich, once the waitress had moved on, he said, \"Alright. How much trouble could you really be in with them?\""
+    nvl clear
     show Kyon Casual Ser3 at right
     "\"You haven't done anything wrong in their eyes; I would be the problem. As long as things are in control, wouldn't they be okay with it?\""
-    nvl clear
     show Koizumi Think Casual Ser2 at left
-    "\"Possibly,\" the other boy allowed, picking at his salad. \"I believe that I will have to write another letter of apology, at the very least. But even so, my 'trouble'....\"" 
+    "\"Possibly,\" the other boy allowed, picking at his salad. \"I believe that I will have to write another letter of apology, at the very least. But even so, my 'trouble'....\""
+    nvl clear
     show Koizumi Think Casual Ser4 at left
     "He shrugged. \"Being a double-agent seems unwise.\""
-    nvl clear
     show Kyon Casual Sigh2 at right
     "\"How about an official liaison?\" Kyon proposed. \"If events were beyond your control — you were outmaneuvered, effectively — wouldn't it be fine? And this gives your Organization direct access to the brigade.\""
     show Kyon Casual Ser2 at right
+    nvl clear
     "\"Being a liaison might remove you from some circles in your Organization to protect various secrets or whatnot.\"" 
     show Kyon Casual Ser3 at right
     "\"That means that Haruhi would be able to see it as you being a part of the brigade more than the Organization, which I think would probably satisfy her.\""
@@ -800,18 +803,19 @@ label Test:
     show Mikuru Casual Quest1 at center
     "\"Ah,\" she gasped, sitting up straight and looking between the two. \"Um, well ... my ... superiors and Koizumi-kun's agency don't always see eye-to-eye,\" she said, shifting her shoulders." 
     show Mikuru Casual Smile1 at center
-    "\"But I don't mind working with him; Koizumi- kun is a nice person.\""
+    "\"But I don't mind working with him; Koizumi-kun is a nice person.\""
     nvl clear
     show Kyon Casual Puzzle1 at right
     show Koizumi Think Casual Grin1 at left
     "Kyon blinked, turning a questioning glance at Koizumi, who chuckled slightly. \"Um, Asahina-san, I think you may have missed the question a bit,\" he said."
     show Mikuru Casual Ser1 at center
-    "\"Um, no,\" she disagreed, shaking her head. \"I think this is nice. There's more trust between us then there was ... and that's very likable.\"" 
+    "\"Um, no,\" she disagreed, shaking her head. \"I think this is nice. There's more trust between us then there was ... and that's very likable.\""
+    nvl clear
     show Mikuru Casual Unhap1 at center
     "\"I feel bad that I can't say more myself because of — of things that are classified,\" she said, grimacing." 
-    nvl clear
     show Mikuru Casual Ser1 at center
-    "Shaking her head again, she gave Kyon an earnest look. \"Koizumi-kun wouldn't have been able to speak of things like this so openly in front of me if it weren't for the changes that are happening.\"" 
+    "Shaking her head again, she gave Kyon an earnest look. \"Koizumi-kun wouldn't have been able to speak of things like this so openly in front of me if it weren't for the changes that are happening.\""
+    nvl clear
     show Mikuru Casual Ser2 at center
     "\"Even Nagato-san will be able to speak freely if she wants to. Suzumiya-san may be upset now, but I actually believe that once she has some time to come to grips with ... everything we have to show her and talk to her about, she'll forgive us and be quite satisfied!\""
     nvl clear
@@ -819,6 +823,7 @@ label Test:
     "\"Forgive us,\" Koizumi said, his smile fading. \"I think Kyon's quite ahead in her regard by that measure now.\""
     show Kyon Casual Sigh1 at right
     "\"First of all, it's not a race,\" Kyon said, pushing his empty plate towards the center of the table."
+    nvl clear
     show Kyon Casual Ser3 at right
     "\"Secondly, she gave you the option to stay in the brigade, so I don't think she actually holds anything {i}against{/i} you, no matter how upset she might be at the moment.\" He glanced to Koizumi, raising an eyebrow questioningly."
     nvl clear
