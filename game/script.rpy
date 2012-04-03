@@ -551,12 +551,14 @@ init -1 python:
         ("In Media Res Prologue\nExactly What it Says on the Tin", "prologue"),
         ("Obligatory Anachronic Order \nExplanation Arc chapter one\n\"Scene Twelve, the Ninth Big Fight\"", "AO1_1"),
         ("Obligatory Anachronic Order \nExplanation Arc chapter two\n\"Clear as Mud\"", "AO2"),
-        ("-----", "credits"),
+        ("-----", "backtomain"),
         ("Label a scene you're working on test and use this", "Test"),
         ("Credits", "credits"),
         ("Another testbed, Eyecatchies", "test_Z0_eye"),
         ("Another testbed, Title cards", "test_Z0_titles"),]
 
+label backtomain:
+    return
 
 label start:
     # Z0 : intro. 
@@ -589,7 +591,7 @@ label credits:
     # pause
     # $ renpy.pause(.1, hard=True)
     # show Credits2 with dissolve
-    centered "Disclaimer: This production makes use\nof the intellectual property belongin to\nBrian Randall, Nagaru Tanigawa \nand others. No disrespectis intended.\n\nNeither Kyon: Big Damn Hero \nnor Suzumiya Haruhi and related \ncharacters are owned by anyone \nassociated with Big Damn VN"
+    centered "Disclaimer: This production makes use\nof intellectual property belongin to\nBrian Randall, Nagaru Tanigawa \nand others. No disrespect is intended.\n\nNeither Kyon: Big Damn Hero \nnor Suzumiya Haruhi and related \ncharacters are owned by anyone \nassociated with Big Damn VN"
     # pause
     # $ renpy.pause(.1, hard=True)
     # show Credits3 with dissolve
@@ -721,7 +723,7 @@ label test_Z0_eye:
     show Haruhi Quest1 at left
     "\"Why did you want me to give you a letter from yourself, though?\""
     show Kyon Sigh2 at right
-    "\n\n\n\n\\n\n\nThe skies were clear of rain, if gray, so he sighed and pulled the letter out of the envelope while proceeding up the hill."
+    "\n\n\n\n\n\n\nThe skies were clear of rain, if gray, so he sighed and pulled the letter out of the envelope while proceeding up the hill."
     # call the eyecatch routine, supply the date (text) to show, specify the unique "from"
     call eyecatch_darken1("December -1, 0000") from test_Z0_p0002
     # activate the next scene with dissolve (or whatever else).
@@ -748,7 +750,7 @@ label test_Z0_eye:
     with dissolve
     "And another one. (but effect may be the same. Randomness, y'know)"
     # call the eyecatch routine, can supply nothing if nothing needs to be changed, specify the unique "from"
-    call eyecatch_random from test_Z0_p0005
+    call eyecatch_random("Febtober 3.14, 1592") from test_Z0_p0005
     # activate the next scene with dissolve (or whatever else).
     scene bg MorningSky
     show TownHillLeftMorning
