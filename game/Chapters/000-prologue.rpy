@@ -325,20 +325,20 @@ label prologue2:
     pause (1)
     play sound "SE/stake1.mp3"
     show Spike1 at center #center
-    pause (0.1)
-    play sound "SE/stake2.mp3"
+    pause (0.05)
+    play sound2 "SE/stake2.mp3"
     show Spike2 at center #center
-    pause (0.1)
+    pause (0.05)
     play sound "SE/stake3.mp3"
     show Spike3 at center #center
-    pause (0.1)
+    pause (0.05)
     play sound "SE/stake1.mp3"
     show Spike4 at center #center
     pause (0.5)
-    hide Spike1
-    hide Spike2
-    hide Spike3
-    hide Spike4
+    # hide Spike1
+    # hide Spike2
+    # hide Spike3
+    # hide Spike4
     show Spike5 at center
     play sound "SE/elec1.mp3"
     "It fired with a rasping cough, launching a ring of metallic spikes to burrow into the rooftop around Ryouko, and then a grid of crackling brissant energy raked between each of the spikes, snaring the girl in a glowing, shuddering net."
