@@ -574,9 +574,9 @@ init -1 python:
         return Text("[date]", font="DejaVuSerif-Italic.ttf", size=25, color="#3cf"), None
     
     chapters = [
-        ("In Media Res Prologue\nExactly What it Says on the Tin", "prologue"),
-        ("Obligatory Anachronic Order \nExplanation Arc chapter one\n\"Scene Twelve, the Ninth Big Fight\"", "AO1_1"),
-        ("Obligatory Anachronic Order \nExplanation Arc chapter two\n\"Clear as Mud\"", "AO2"),
+        ("In Media Res Prologue:\n\"Exactly What it Says on the Tin\"", "prologue"),
+        ("Obligatory Anachronic Order Explanation Arc - Chapter One:\n\"Scene Twelve, the Ninth Big Fight\"", "AO1_1"),
+        ("Obligatory Anachronic Order Explanation Arc - Chapter Two:\n\"Clear as Mud\"", "AO2"),
         ("-----", "backtomain"),
         ("Label a scene you're working on test and use this", "Test"),
         ("Credits", "credits"),
