@@ -787,12 +787,12 @@ label AO2:
     "\"How about an official liaison?\" Kyon proposed. \"If events were beyond your control — you were outmaneuvered, effectively — wouldn't it be fine? And this gives your Organization direct access to the brigade.\""
     show Kyon Casual Ser2 at right
     nvl clear
-    "\"Being a liaison might remove you from some circles in your Organization to protect various secrets or whatnot.\"" 
+    "\"Being a liaison might remove you from some circles in your Organization to protect various secrets or whatnot." 
     show Kyon Casual Ser3 at right
     "\"That means that Haruhi would be able to see it as you being a part of the brigade more than the Organization, which I think would probably satisfy her.\""
     nvl clear
     show Koizumi Think Casual Ser1 at left
-    "Koizumi nodded thoughtfully. \"Hmm, she would be happy about having a connection to a shadowy organization, so that may be true enough.\"" 
+    "Koizumi nodded thoughtfully. \"Hmm, she would be happy about having a connection to a shadowy organization, so that may be true enough." 
     show Koizumi Think Casual Smile1
     "\"Well, thank you, vice commander Kyon, I will continue to put my trust in you.\""
     nvl clear
@@ -852,6 +852,8 @@ label AO2:
     show MBlush1 Casual at center
     "Smiling shyly, she suggested, \"Ah ... let's go for a walk.\""
     nvl clear                             
+
+    call eyecatch from AO2_sc007
     
 
     play music "Music/ItsumoNoFuukei.mp3"
@@ -872,7 +874,8 @@ label AO2:
         xalign 0.2 yalign 1.0   
     "\"Um.... I guess, all things considered, I want to say thanks for always sticking with me, even when I caused trouble. I just wish you had told me about it beforehand! I mean, if you\nhad—\""
     nvl clear
-    scene bg stairwell with wiperight
+    scene bg stairwell with wiperight:
+        size (800,600)
     show Kyon Neutral3:
         xalign 0.9 yalign 1.0   
     show Haruhi Pout1:
@@ -923,17 +926,21 @@ label AO2:
     "He collapsed weakly into a sitting position, the first year girl sprawled across his lap."
     nvl clear
     show Kanae Sup1 at center with wipeup
+    $ _window = True
     "His wind knocked out, he was unable to keep her there for questioning as she squeaked out another, {nw}"
     hide Kanae with moveoutleft
     extend "\"Sorry, Sempai! I'll tell you later!\" before leaping to her feet and dashing away."
+    $ _window = False
     show Kyon Pain1 at right with wipeup
     show Haruhi Worry1 at center with moveinleft
     "\"Hey, you okay?\" Haruhi asked, waving a hand in front of his face as he resumed breathing with a choked gasp. \"Now, what was {i}that{/i} all about?\""
     nvl clear
     show Kyon Sigh1 at right
     "\"Not sure,\" he wheezed. \"Maybe she's a slider and knows different versions of us from a parallel universe.\""
+    $ _window = True
     show Haruhi Hap3 at center
     hide Haruhi with moveoutleft
+    $ _window = False
     "Haruhi's eyes lit up. \"I'll meet you in the clubroom,\" she declared, vanishing after the smaller girl."
     nvl clear
     stop music fadeout 3
@@ -1003,7 +1010,7 @@ label AO2:
         xalign -1.0 yalign 1.0    
     "\"Naturally, this was quite awkward when I first was granted my powers, but I can usually tell my feelings apart from hers, now.\""
     nvl clear
-    show Mikuru Maid Smile1 at center with dissolve
+    show Mikuru Maid Smile1 at center behind Kyon, Koizumi with dissolve
     "\"There, there,\" Mikuru said soothingly, patting Koizumi's shoulder consolingly as she set his teacup before him. \"I know how you must feel, Koizumi-kun.\""
     nvl clear
     show Kyon Unhap1 at right
