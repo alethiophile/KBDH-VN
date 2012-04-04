@@ -237,6 +237,11 @@ init:
     image Coat Bright = im.MatrixColor("Sprites/Kyon/KyonCoat.png",
                                        im.matrix.brightness(.5))
     image Coat = "Sprites/Kyon/KyonCoat.png"
+
+    image Kyon Ser1 Flip = im.Flip("Sprites/Kyon/KyonSerious1.png", horizontal=True)
+    image Kyon Ang1 Flip = im.Flip("Sprites/Kyon/KyonAngry1.png", horizontal=True)
+    
+    image KPaper = "Sprites/Kyon/KyonPaper.png"
     
     #Asakura Sprites
     image Stabby = "Sprites/Asakura/AsakuraStabTest.png"
@@ -311,6 +316,8 @@ init:
     image Yuki Right Casual Talk1 = "Sprites/Yuki/YukiRightCasualTalk1.png"
     image Yuki Right Casual Talk2 = "Sprites/Yuki/YukiRightCasualTalk2.png"
     
+    image YBook = "Sprites/Yuki/YukiBook.png"
+    
     image Yuki Side Blink:
         "Sprites/Yuki/YukiSide1.png"
         0.1
@@ -366,6 +373,7 @@ init:
     image Mikuru Maid Quest1 = "Sprites/Mikuru/MikuruMaidQuestion1.png"
     image Mikuru Maid Unhap1 = "Sprites/Mikuru/MikuruMaidUnhappy1.png"
     image MBlush1 Maid = "Sprites/Mikuru/MBlushMaid1.png"
+    image MTray Maid ="Sprites/Mikuru/MTrayMaid.png"
     
     image Mikuru Think Quest1 = "Sprites/Mikuru/MikuruThinkQuestion1.png"
     
@@ -438,6 +446,14 @@ init:
     image Koizumi Crossed Casual Sigh2 = "Sprites/Koizumi/KoizumiCrossedCasualSigh2.png"
     image Koizumi Crossed Casual Neutral1 = "Sprites/Koizumi/KoizumiCrossedCasualNeutral1.png"
     
+    
+    #Kanae Sprites
+    
+    image Kanae Sup1 ="Sprites/Kanae/KanaeSurprised1.png"
+    image Kanae Wince1 = "Sprites/Kanae/KanaeWince1.png"
+    image Kanae Wince2 = "Sprites/Kanae/KanaeWince2.png"
+    image Kanae Worry1 = "Sprites/Kanae/KanaeWorry1.png"
+    image Kanae Worry2 = "Sprites/Kanae/KanaeWorry2.png"
     
     #Taniguchi Sprites
     image Taniguchi Grin1 = "Sprites/Taniguchi/TaniguchiGrin1.png"
