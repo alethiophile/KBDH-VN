@@ -764,7 +764,7 @@ label AO2:
     show Kyon Casual Sigh3 at right
     "Kyon bit back a retort, realizing that the esper was right." 
     show Kyon Casual Ser3 at right
-    "\"Staring into the mouth of the issue he'd been trying to defer, he asked, \"What do you think I should do, then? And please, say something more serious than the advice you gave me about last August.\""
+    "Staring into the mouth of the issue he'd been trying to defer, he asked, \"What do you think I should do, then? And please, say something more serious than the advice you gave me about last August.\""
     nvl clear
     show Koizumi Crossed Casual Sigh2 at left
     "\"It's troubling,\" Koizumi acknowledged. \"For the time being, I can only ask you to be aware of it and hope that it can be dealt with reasonably.\"" 
@@ -867,9 +867,10 @@ label Test:
     show Kyon Neutral2:
         xalign 0.9 yalign 1.0    
     "\"Sure,\" he said, not even glancing towards her. \"What's that?\""
+    nvl clear
     show Haruhi Pout2:
         xalign 0.2 yalign 1.0   
-    "\"Um.... I guess, all things considered, I want to say thanks for always sticking with me, even when I caused trouble. I just wish you had told me about it beforehand! I mean, if you had—\""
+    "\"Um.... I guess, all things considered, I want to say thanks for always sticking with me, even when I caused trouble. I just wish you had told me about it beforehand! I mean, if you\nhad—\""
     nvl clear
     scene bg stairwell with wiperight
     show Kyon Neutral3:
@@ -891,13 +892,14 @@ label Test:
     show Kyon Ser1 Flip:
         xalign -0.2 yalign 1.0 
     "He spun and lunged, managing to save his balance just barely, hanging onto the semi-collapsed form of the other student."
+    nvl clear
     show Kanae Wince2:
         xalign 0.2 yalign 1.0 
     "\"Eeep!\" the girl managed, held upright for the moment by his grip. \"S...sorry, I— Oh! Sempai!\""
-    nvl clear
     show Haruhi Ang3:
         xalign 0.6 yalign 1.0 
     "\"A friend of yours?\" Haruhi asked dourly, leaning close to peer into Kyon's face. \"You sure seem close!\""
+    nvl clear
     show Kyon Ang1 Flip:
          xalign -0.2 yalign 1.0 
     "\"We've never met!\" he protested, looking away from the smaller girl's features. Something about her did seem eerily familiar. \"At least, not that I remember.\""
@@ -910,7 +912,7 @@ label Test:
     "\"Well, Kyon's memory may be bad,\" Haruhi decided, crossing her arms over her chest. \"But mine's not, and I absolutely don't remember meeting you before.\""
     show Kanae Worry2:
         xalign 0.2 yalign 1.0
-    "\"Er, I should go,\"{nw}"
+    "\"Er, I should go,\" {nw}"
     scene bg hallway with wiperightfast
     play sound "SE/lowswoosh.mp3"
     extend"the girl managed, squirming in Kyon's grip, one foot accidentally tripping the boy from his precarious step, sending both hurtling down the stairs headfirst."
@@ -954,6 +956,7 @@ label Test:
     "Mikuru was already dressed in her maid outfit, and smiled at him as he entered. \"Hello, Kyon-kun!\" she chirped. \"Tea will be just a minute.\""
     show Kyon Smile1 at right
     "\"Ah, thanks, Asahina-san,\" he said, smiling and rubbing at the spot on the back of his head that had hit the wall."
+    nvl clear
     hide Mikuru
     hide MTray
     show YBook:
@@ -969,6 +972,7 @@ label Test:
     "At a glance, he didn't seem more tired than usual of late, so Kyon hazarded, \"No new closed space so far today?\""
     show Koizumi Crossed Sigh2 at left
     "\"An incident occurred around the first break period of the day,\" Koizumi replied, shaking his head."
+    nvl clear
     show Koizumi Crossed Ser2 at left
     "\"It was rather intense, and the Shinjin emerged rather quickly — but thankfully it was one of the indecisive ones, so we had a relatively easy time of it. I gather that Sasaki was brought up?\""
     nvl clear
@@ -979,6 +983,7 @@ label Test:
     nvl clear
     show Kyon Ser3 at right
     "\"Yeah. Right now that's the most dangerous thing,\" Kyon agreed. \"I don't think even Haruhi would intentionally try and use that as leverage for us to remove her limitations, so we should bring that up soon.\""
+    nvl clear
     show Koizumi Think Sup1 at left
     "\"Oh? Was removing her limitations discussed?\" Koizumi's eyebrows shot up questioningly."
     show Kyon Neutral2 at right
@@ -986,6 +991,7 @@ label Test:
     nvl clear
     show Koizumi Think Ser3 at left
     "\"Very curious. I would have expected her to be irritated ... but even though I was paying especially close attention to her mood, I didn't feel any negative emotions at that time.\""
+    nvl clear
     show Kyon Puzzle1 at right
     "Kyon gave the esper a six stone advantage and raised an eyebrow of his own. \"How does that work?\" he asked."
     show Kyon Neutral2 at right
@@ -999,6 +1005,7 @@ label Test:
     nvl clear
     show Mikuru Maid Smile1 at center with dissolve
     "\"There, there,\" Mikuru said soothingly, patting Koizumi's shoulder consolingly as she set his teacup before him. \"I know how you must feel, Koizumi-kun.\""
+    nvl clear
     show Kyon Unhap1 at right
     "Kyon held one hand out, palm facing towards the esper as though to deflect a beam attack. \"Koizumi, in retrospect my question was a mistake.\"" 
     show Kyon Ang1 at right
@@ -1014,13 +1021,14 @@ label Test:
     "\"Hmm? It would have been at seven forty, almost precisely,\" Koizumi answered. \"How is it that you don't— Ah, a future instance of yourself?\""
     show Kyon Sigh2 at right
     "\"Seems I'll be pretty busy yesterday,\" he replied nodding."
+    nvl clear
     show Mikuru Think Maid Quest1 at center
     "\"We're going back to yesterday?\" Mikuru asked, blinking in surprise. \"But yesterday you told me you were getting tired of time travelling!\""
-    nvl clear
     show Kyon Neutral2 at right
     "\"Did I? Just after six o'clock, right?\""
     show Mikuru Maid Neutral1 at center
     "\"Um, that's right. Er ... is it alright for me to tell you that?\""
+    nvl clear
     "He scribbled another note on the paper. \"I should be fine with this,\" he sighed, putting the note away. \"Now, Haruhi ran off in search of—\""
     nvl clear
     play sound "SE/doorclose.mp3"
