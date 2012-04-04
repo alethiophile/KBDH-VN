@@ -324,7 +324,7 @@ label AO1_1:
     "\"Can I come with...\" {nw}"
     play sound "SE/doorclose.mp3"
     stop music
-    scene bg KyonHouseNight
+    scene bg KyonHouseDay
     extend "she began, before the door slammed shut. Shrugging, she turned back to the game after flipping Kyon's phone closed."
     nvl clear
     # stop music fadeout 1

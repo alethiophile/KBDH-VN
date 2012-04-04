@@ -853,7 +853,7 @@ label AO2:
     "Smiling shyly, she suggested, \"Ah ... let's go for a walk.\""
     nvl clear                             
     
-label Test:    
+
     play music "Music/ItsumoNoFuukei.mp3"
     scene bg hallway
     show Kyon Neutral3:
@@ -1053,77 +1053,143 @@ label Test:
     "\"Eep,\" the first year girl squeaked, her face pressed into Mikuru's chest. \"Aaugh! I'm in trouble! Someone help me!\""
     nvl clear
     
-    
-    # "* * *"
-    # "Kyon looked at the slumbering form of Mikuru, leaning heavily against him on their usual park bench, not far from Yuki's apartment. \"Asahina-san?\" he called, not to the girl at his side."
-    # "\"Hehe, am I too predictable?\" the older version of Mikuru asked from behind him."
-    # "\"I suppose that may be the case,\" he agreed, shooting an annoyed glance over his shoulder. \"What do I need to do, then?\""
-    # nvl clear
-    # "\"Ah ... come on a walk with me,\" Mikuru said. \"A friend is waiting to take care of her as soon as we go.\""
-    # "\"Someone I trust?\" he asked."
-    # "\"I shouldn't say,\" she answered, smiling mischievously."
-    # nvl clear
-    # "\"Lovely,\" he sighed, climbing to his feet. \"Lead the way then, Asahina-san.\""
-    # "Her smile faded a bit, and she frowned worriedly. \"Is Kyon-kun angry with me?\" she asked, seemingly to herself as she walked down the street, back towards the cafe he had just recently vacated"
-    # "\"I just don't like how you treat your younger self,\" he muttered, falling into step beside Mikuru as they walked away."
-    # nvl clear
-    # "\"I have to act within the guidelines exemplified by IATT bulletin 1147 concerning similarly important persons of significance,\" she answered, frowning. \"And respectfully, Kyon-kun, if my younger self didn't experience what she did, she could not have grown into me.\""
-    # "He jolted suddenly, looking at her sidelong and allowing a sad smile to come to his face. \"I never thought about that,\" he admitted."
-    # "\"I suppose it's all predetermined events to you, then. And if no one else can....\" He sighed, shaking his head. \"Sorry. This probably has nothing to do with why you decided to speak to me.\""
-    # nvl clear
-    # "\"It's part of why I'm here,\" she countered. \"And no, our discussion here isn't predetermined.\""
-    # "\"What does it mean to be predetermined, then?\" he asked, rubbing his chin. \"I'm guessing it's just if it's been recorded? As in, if there's no record, then the 'unknown' automatically becomes undetermined?\""
-    # "\"That's absolutely the case! I'm impressed at how quickly you grasped that.\""
-    # nvl clear
-    # "\"I get bad grades,\" he said flatly. \"I'm not an idiot.\""
-    # "Mikuru stuck her tongue out and mimed a blow to her own head. \"I don't mean to say that Kyon-kun isn't smart,\" she said, giggling apologetically." 
-    # "\"I mean ... these are complex theories. Some can't even be expressed in words. But you understand the important and practical risks, even when you pretend you don't understand the foundations.\""
-    # nvl clear
-    # "\"Now you're flattering me,\" he retorted, unable to keep some color from rising to his cheeks at her comment anyway. \"But, thanks.\"" 
-    # "It surprised him that he could easily speak to the adult Mikuru when he stopped to think about it."
-    # "\"Anyway, I'm here to explain to you why you have authority over my younger self.\""
-    # nvl clear
-    # "\"So, it runs out,\" he surmised, smirking at her. \"Since you don't seem to be my subordinate.\""
-    # "\"You're {i}my{/i} subordinate,\" she said with a wide wink."
-    # "\"Am I?\" he asked, surprised. \"I thought we just happened to work together when it was required.\""
-    # nvl clear
-    # "\"Well ... I like to pretend,\" she said, sticking her tongue out again. \"Truthfully, despite what my younger self told you, our theory of projection back into time ran into an unexpected complication.\"" 
-    # "\"That is to say ... if you consider moments to be flat portraits, like frames of animation or film, and we make a projection onto a single frame, it's fleeting, effectively non- existent.\""
-    # "\"Now you've lost me,\" he mumbled."
-    # nvl clear
-    # "\"After enough time, even a projected image leaves a mark.\""
-    # "\"Like it's burnt into a projector screen?\""
-    # nvl clear
-    # "\"Aha! See? You understand! Even then, there could be other factors, such as Suzumiya-san herself ... but ultimately, even if it doesn't last forever my younger self makes more of an impression on the timeline than I realized at the time.\"" 
-    # "\"In fact, it is this act, following your instructions and drawing even further into the local time planes that allow us to develop more advanced theories and better understanding of time travel.\""
-    # "He nodded soberly. \"I'm not sure I understand that implicitly, but I believe I get the general idea,\" he allowed."
-    # nvl clear
-    # "\"And so, I know you're a trustworthy person, and I'd know that even if it weren't predetermined.\""
-    # "\"I see,\" he said, frowning. \"I seem to have signed myself up for a lot of responsibilities this time around. Okay, I understand that I help you out ... or I will, at least.\""
-    # "\"So maybe the 'why' is explained. I even know your motives ... but can you tell me anything about what will require whatever time travel is needed to demonstrate your theory?\""
-    # nvl clear
-    # "\"Well ... I can break all kinds of classifications, but I have to say I shouldn't mention anything too specific,\" she said. \"If you do something, and then I tell you what that thing is before you've done it ... that can stress time and damage causality.\"" 
-    # "\"But I can tell you a little, something that doesn't break any rules because you've probably considered it already.\""
-    # nvl clear
-    # "\"Other espers, that smirking bastard, and the Sky Canopy Domain?\" he asked."
-    # "\"And of course, Nagato's superiors,\" she added, biting her lower lip. \"There's a {i}very{/i} specific reason for us to disregard so many rules and give you carte blanche with time travel ... and it's not just because you can be trusted.\"" 
-    # "\"Without the ability to define an event as predetermined, our precious discovery may never have come about. Our expanded realization could be taken away from us, because they pursue their own goals."
-    # nvl clear
-    # "\"That being said, there's still the possibility of them changing our timeline and moving the future we live in into a parallel track ... something that may as well not even happen.\"" 
-    # "\"So, you're trusted with this power to preserve our hopes and dreams. I apologize for putting so much responsibility on your shoulders.\""
-    # nvl clear
-    # "\"It's only half the burden of dealing with Haruhi,\" he answered after a moment. \"But that does explain to me why it was even possible for us to defy them as much as we have. I didn't think they were as stupid as it seemed.\""
-    # "\"Ah, see? You understand perfectly,\" she said brightly."
-    # "\"Mmm. Is there anything you're allowed to tell me about the smirking bastard?\""
-    # nvl clear
-    # "\"Ah ... that person.... He is not likable. But I can't tell you much because I don't {i}know{/i} much. To us, he is a criminal, someone attempting to divert the timestream, much like Nagato's superiors at the moment.\"" 
-    # "\"It would be quite troublesome if they were to join forces, but ... I shouldn't speak further of that.\""
-    # "\"Well,\" he said, shrugging. \"Is there anything else I {i}should{/i} know?\""
-    # nvl clear
-    # "Down a distant street, he heard the squeal of tires on pavement, then a thunderous crash. He turned his head to look, but found his face being turned back by Mikuru's hand." 
-    # "\"Pay no mind,\" she said, somewhat sadly. \"I'll give you something nice to go home and forget about this for now. Get plenty of rest tonight, okay?\""
-    # nvl clear
-    # "Before he could answer, she drew closer to him and his sense was swept away with the sensation of her lips touching his." 
-    # "She released him with a giggle and pointed him down the road to his home, whispering, \"I've missed doing that with you, Kyon-kun.\""
-    # nvl clear
-    # "By the time his senses recovered enough to try and question her, she had been long gone."
+label Test:
+    play music "Music/MikurunoKokoro.mp3"
+    scene bg ParkBench
+    show Kyon Casual Worry1 at center
+    show Mikuru Casual Sigh1 at left
+    with fade
+    "Kyon looked at the slumbering form of Mikuru, leaning heavily against him on their usual park bench, not far from Yuki's apartment. \"Asahina-san?\" he called, not to the girl at his side."
+    show MikuruBig Smile1 at right with dissolve
+    "\"Hehe, am I too predictable?\" the older version of Mikuru asked from behind him."
+    show Kyon Casual Sigh1 at center
+    "\"I suppose that may be the case,\" he agreed, shooting an annoyed glance over his shoulder. \"What do I need to do, then?\""
+    nvl clear
+    show MikuruBig Hap3 at right
+    "\"Ah ... come on a walk with me,\" Mikuru said. \"A friend is waiting to take care of her as soon as we go.\""
+    show Kyon Casual Neutral2 at center
+    "\"Someone I trust?\" he asked."
+    show MikuruBig Grin2 at right
+    "\"I shouldn't say,\" she answered, smiling mischievously."
+    nvl clear
+    show Kyon Casual Sigh2 at center
+    "\"Lovely,\" he sighed, climbing to his feet. \"Lead the way then, Asahina-san.\""
+    scene bg ParkPath with wiperight
+    show Kyon Casual Neutral3 at right
+    show MikuruBig Sad1 at center
+    with dissolve
+    "Her smile faded a bit, and she frowned worriedly. \"Is Kyon-kun angry with me?\" she asked, seemingly to herself as she walked down the street, back towards the cafe he had just recently vacated"
+    show Kyon Casual Worry1 at right
+    "\"I just don't like how you treat your younger self,\" he muttered, falling into step beside Mikuru as they walked away."
+    nvl clear
+    show MikuruBig Ser2 at center
+    "\"I have to act within the guidelines exemplified by IATT bulletin 1147 concerning similarly important persons of significance,\" she answered, frowning. \"And respectfully, Kyon-kun, if my younger self didn't experience what she did, she could not have grown into me.\""
+    show Kyon Casual Smile5 at right
+    nvl clear
+    "He jolted suddenly, looking at her sidelong and allowing a sad smile to come to his face. \"I never thought about that,\" he admitted."
+    show Kyon Casual Sigh2 at right
+    "\"I suppose it's all predetermined events to you, then. And if no one else can....\" He sighed, shaking his head. \"Sorry. This probably has nothing to do with why you decided to speak to me.\""
+    nvl clear
+    show MikuruBig Grin1 at center
+    "\"It's part of why I'm here,\" she countered. \"And no, our discussion here isn't predetermined.\""
+    show Kyon Casual Puzzle1 at right
+    "\"What does it mean to be predetermined, then?\" he asked, rubbing his chin. \"I'm guessing it's just if it's been recorded? As in, if there's no record, then the 'unknown' automatically becomes undetermined?\""
+    show MikuruBig Smile1 at center
+    "\"That's absolutely the case! I'm impressed at how quickly you grasped that.\""
+    nvl clear
+    show Kyon Casual Ser3 at right
+    "\"I get bad grades,\" he said flatly. \"I'm not an idiot.\""
+    show MikuruBig Hap1 at center
+    "Mikuru stuck her tongue out and mimed a blow to her own head. \"I don't mean to say that Kyon-kun isn't smart,\" she said, giggling apologetically." 
+    show MikuruBig Hap4 at center
+    "\"I mean ... these are complex theories. Some can't even be expressed in words. But you understand the important and practical risks, even when you pretend you don't understand the foundations.\""
+    nvl clear
+    show Kyon Casual Worry1 at right
+    show KBlush Casual at right
+    "\"Now you're flattering me,\" he retorted, unable to keep some color from rising to his cheeks at her comment anyway. \"But, thanks.\"" 
+    "It surprised him that he could easily speak to the adult Mikuru when he stopped to think about it."
+    show MikuruBig Grin1 at center
+    "\"Anyway, I'm here to explain to you why you have authority over my younger self.\""
+    nvl clear
+    hide KBlush
+    show Kyon Casual Smile4 at right
+    "\"So, it runs out,\" he surmised, smirking at her. \"Since you don't seem to be my subordinate.\""
+    show MikuruBig Hap1 at center
+    "\"You're {i}my{/i} subordinate,\" she said with a wide wink."
+    show Kyon Casual Puzzle1 at right
+    "\"Am I?\" he asked, surprised. \"I thought we just happened to work together when it was required.\""
+    nvl clear
+    show MikuruBig Grin2 at center
+    "\"Well ... I like to pretend,\" she said, sticking her tongue out again. \"Truthfully, despite what my younger self told you, our theory of projection back into time ran into an unexpected complication.\"" 
+    show MikuruBig Neutral1 at center
+    "\"That is to say ... if you consider moments to be flat portraits, like frames of animation or film, and we make a projection onto a single frame, it's fleeting, effectively non- existent.\""
+    show Kyon Casual Sigh2 at right
+    "\"Now you've lost me,\" he mumbled."
+    nvl clear
+    show MikuruBig Neutral2 at center
+    "\"After enough time, even a projected image leaves a mark.\""
+    show Kyon Casual Neutral2 at right
+    "\"Like it's burnt into a projector screen?\""
+    nvl clear
+    show MikuruBig Smile2 at center
+    "\"Aha! See? You understand! Even then, there could be other factors, such as Suzumiya-san herself ... but ultimately, even if it doesn't last forever my younger self makes more of an impression on the timeline than I realized at the time.\""
+    show MikuruBig Grin1 at center
+    "\"In fact, it is this act, following your instructions and drawing even further into the local time planes that allow us to develop more advanced theories and better understanding of time travel.\""
+    show Kyon Casual Ser3 at right
+    "He nodded soberly. \"I'm not sure I understand that implicitly, but I believe I get the general idea,\" he allowed."
+    nvl clear
+    show MikuruBig Hap3 at center
+    "\"And so, I know you're a trustworthy person, and I'd know that even if it weren't predetermined.\""
+    show Kyon Casual Sigh1 at right
+    "\"I see,\" he said, frowning. \"I seem to have signed myself up for a lot of responsibilities this time around. Okay, I understand that I help you out ... or I will, at least.\""
+    show Kyon Casual Ser1 at right
+    "\"So maybe the 'why' is explained. I even know your motives ... but can you tell me anything about what will require whatever time travel is needed to demonstrate your theory?\""
+    nvl clear
+    show MikuruBig Ser2 at center
+    "\"Well ... I can break all kinds of classifications, but I have to say I shouldn't mention anything too specific,\" she said. \"If you do something, and then I tell you what that thing is before you've done it ... that can stress time and damage causality.\""
+    show MikuruBig Neutral1 at center
+    "\"But I can tell you a little, something that doesn't break any rules because you've probably considered it already.\""
+    nvl clear
+    show Kyon Casual Neutral2 at right
+    "\"Other espers, that smirking bastard, and the Sky Canopy Domain?\" he asked."
+    show MikuruBig Worry1 at center
+    "\"And of course, Nagato's superiors,\" she added, biting her lower lip. \"There's a {i}very{/i} specific reason for us to disregard so many rules and give you carte blanche with time travel ... and it's not just because you can be trusted.\"" 
+    show MikuruBig Worry2 at center
+    "\"Without the ability to define an event as predetermined, our precious discovery may never have come about. Our expanded realization could be taken away from us, because they pursue their own goals."
+    nvl clear
+    show MikuruBig Ser2 at center
+    "\"That being said, there's still the possibility of them changing our timeline and moving the future we live in into a parallel track ... something that may as well not even happen.\"" 
+    show MikuruBig Sigh1 at center
+    "\"So, you're trusted with this power to preserve our hopes and dreams. I apologize for putting so much responsibility on your shoulders.\""
+    nvl clear
+    show Kyon Casual Ser2 at right
+    "\"It's only half the burden of dealing with Haruhi,\" he answered after a moment. \"But that does explain to me why it was even possible for us to defy them as much as we have. I didn't think they were as stupid as it seemed.\""
+    show MikuruBig Smile1 at center
+    "\"Ah, see? You understand perfectly,\" she said brightly."
+    show Kyon Casual Worry1 at right
+    "\"Mmm. Is there anything you're allowed to tell me about the smirking bastard?\""
+    nvl clear
+    show MikuruBig Worry1 at center
+    "\"Ah ... that person.... He is not likable. But I can't tell you much because I don't {i}know{/i} much. To us, he is a criminal, someone attempting to divert the timestream, much like Nagato's superiors at the moment.\"" 
+    show MikuruBig Ser2 at center
+    "\"It would be quite troublesome if they were to join forces, but ... I shouldn't speak further of that.\""
+    show Kyon Casual Sigh2 at right
+    "\"Well,\" he said, shrugging. \"Is there anything else I {i}should{/i} know?\""
+    nvl clear
+    show Kyon Casual Sup2 
+    play sound "SE/tiresqueal.wav"
+    pause 1.5
+    play sound "SE/Crash3.wav"
+    "Down a distant street, he heard the squeal of tires on pavement, then a thunderous crash. He turned his head to look, but found his face being turned back by Mikuru's hand." 
+    show MikuruBig Sad1 at center
+    "\"Pay no mind,\" she said, somewhat sadly. \"I'll give you something nice to go home and forget about this for now. Get plenty of rest tonight, okay?\""
+    nvl clear
+    hide Kyon
+    hide MikuruBig
+    show MKiss at center
+    with dissolve
+    "Before he could answer, she drew closer to him and his sense was swept away with the sensation of her lips touching his." 
+    scene black with fade
+    "She released him with a giggle and pointed him down the road to his home, whispering, \"I've missed doing that with you, Kyon-kun.\""
+    nvl clear
+    "By the time his senses recovered enough to try and question her, she had been long gone."

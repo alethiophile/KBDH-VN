@@ -20,6 +20,7 @@ init:
     image bg KyonRoomLeftClosed = "Backgrounds/KyonRoomLeftClosed.png"
     image bg KyonRoomLeftMorning = "Backgrounds/KyonRoomLeftMorning.png"
     image bg KyonHouseNight = "Backgrounds/KyonHouseNight.png"
+    image bg KyonHouseDay = "Backgrounds/KyonHouseDay.png"
     image bg TownStreetNight1 = "Backgrounds/TownStreetNight1.png"
     image bg TownStreetNight2 = "Backgrounds/TownStreetNight2.png"
     image bg TownStreetDay1 = "Backgrounds/TownStreetDay1.jpg"
@@ -37,6 +38,8 @@ init:
     image bg YukiRoomCenter = "Backgrounds/YukiRoomCenter.jpg"
     image bg SchoolEntranceLeft = "Backgrounds/SchoolEntranceLeft.png"
     image bg Cafe = "Backgrounds/Cafe.jpg"
+    image bg ParkBench = "Backgrounds/ParkBench.png"
+    image bg ParkPath = "Backgrounds/ParkPath.png"
     
     image bg MemoryYuki = "Backgrounds/MemoryYuki.jpg"
     image bg MemoryMikuru = "Backgrounds/MemoryMikuru.jpg"
@@ -197,6 +200,7 @@ init:
     image Kyon Smile2 = "Sprites/Kyon/KyonSmile2.png"
     image Kyon Smile3 = "Sprites/Kyon/KyonSmile3.png"
     image Kyon Smile4 = "Sprites/Kyon/KyonSmile4.png"
+    image Kyon Smile5 = "Sprites/Kyon/KyonSmile5.png"
     image Kyon Worry1 = "Sprites/Kyon/KyonWorry1.png"
     image Kyon Worry2 = "Sprites/Kyon/KyonWorry1.png"
     image Kyon Puzzle1 = "Sprites/Kyon/KyonPuzzled1.png"
@@ -223,6 +227,7 @@ init:
     image Kyon Casual Smile2 = "Sprites/Kyon/KyonCasualSmile2.png"
     image Kyon Casual Smile3 = "Sprites/Kyon/KyonCasualSmile3.png"
     image Kyon Casual Smile4 = "Sprites/Kyon/KyonCasualSmile4.png"
+    image Kyon Casual Smile5 = "Sprites/Kyon/KyonCasualSmile5.png"
     image Kyon Casual Worry1 = "Sprites/Kyon/KyonCasualWorry1.png"
     image Kyon Casual Worry2 = "Sprites/Kyon/KyonCasualWorry2.png"
     image Kyon Casual Puzzle1 = "Sprites/Kyon/KyonCasualPuzzled1.png"
@@ -241,6 +246,8 @@ init:
     image Kyon Ser1 Flip = im.Flip("Sprites/Kyon/KyonSerious1.png", horizontal=True)
     image Kyon Ang1 Flip = im.Flip("Sprites/Kyon/KyonAngry1.png", horizontal=True)
     
+    image KBlush = "Sprites/Kyon/KBlush.png"
+    image KBlush Casual = "Sprites/Kyon/KBlushCasual.png"
     image KPaper = "Sprites/Kyon/KyonPaper.png"
     
     #Asakura Sprites
@@ -401,6 +408,29 @@ init:
     image Mikuru Cower Casual Wince1 = "Sprites/Mikuru/MikuruCowerCasualWince1.png"
     image Mikuru Cower Casual Smile1 ="Sprites/Mikuru/MikuruCowerCasualSmile1.png"
     image MTears Casual = "Sprites/Mikuru/MTearsCowerCasual1.png"
+    
+    image MikuruBig Grin1 = "Sprites/MikuruBig/MikuruBigGrin1.png"
+    image MikuruBig Grin2 = "Sprites/MikuruBig/MikuruBigGrin2.png"
+    image MikuruBig Hap1 = "Sprites/MikuruBig/MikuruBigHappy1.png"
+    image MikuruBig Hap2 = "Sprites/MikuruBig/MikuruBigHappy2.png"
+    image MikuruBig Hap3 = "Sprites/MikuruBig/MikuruBigHappy3.png"
+    image MikuruBig Hap4 = "Sprites/MikuruBig/MikuruBigHappy4.png"
+    image MikuruBig Laugh1 = "Sprites/MikuruBig/MikuruBigLaugh1.png"
+    image MikuruBig Neutral1 = "Sprites/MikuruBig/MikuruBigNeutral1.png"
+    image MikuruBig Neutral2 = "Sprites/MikuruBig/MikuruBigNeutral2.png"
+    image MikuruBig Quest1 = "Sprites/MikuruBig/MikuruBigQuestion1.png"
+    image MikuruBig Sad1 = "Sprites/MikuruBig/MikuruBigSad1.png"
+    image MikuruBig Ser1 = "Sprites/MikuruBig/MikuruBigSerious1.png"
+    image MikuruBig Ser2 = "Sprites/MikuruBig/MikuruBigSerious2.png"
+    image MikuruBig Sigh1 = "Sprites/MikuruBig/MikuruBigSigh1.png"
+    image MikuruBig Smile1 = "Sprites/MikuruBig/MikuruBigSmile1.png"
+    image MikuruBig Smile2 = "Sprites/MikuruBig/MikuruBigSmile2.png"
+    image MikuruBig Sup1 = "Sprites/MikuruBig/MikuruBigSurprised1.png"
+    image MikuruBig Worry1 = "Sprites/MikuruBig/MikuruBigWorry1.png"
+    image MikuruBig Worry2 = "Sprites/MikuruBig/MikuruBigWorry2.png"
+    
+    image MKiss = "Sprites/MikuruBig/MKiss.png"
+    
     
     #Koizumi Sprites
     
