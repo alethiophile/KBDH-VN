@@ -1067,6 +1067,7 @@ label Test:
     show Mikuru Casual Sigh1 at left
     with fade
     "Kyon looked at the slumbering form of Mikuru, leaning heavily against him on their usual park bench, not far from Yuki's apartment. \"Asahina-san?\" he called, not to the girl at his side."
+    nvl clear
     show MikuruBig Smile1 at right with dissolve
     "\"Hehe, am I too predictable?\" the older version of Mikuru asked from behind him."
     show Kyon Casual Sigh1 at center
@@ -1081,11 +1082,12 @@ label Test:
     nvl clear
     show Kyon Casual Sigh2 at center
     "\"Lovely,\" he sighed, climbing to his feet. \"Lead the way then, Asahina-san.\""
+    nvl clear
     scene bg ParkPath with wiperight
     show Kyon Casual Neutral3 at right
     show MikuruBig Sad1 at center
     with dissolve
-    "Her smile faded a bit, and she frowned worriedly. \"Is Kyon-kun angry with me?\" she asked, seemingly to herself as she walked down the street, back towards the cafe he had just recently vacated"
+    "Her smile faded a bit, and she frowned worriedly. \"Is Kyon-kun angry with me?\" she asked, seemingly to herself as she walked down the street, back towards the cafe he had just recently vacated."
     show Kyon Casual Worry1 at right
     "\"I just don't like how you treat your younger self,\" he muttered, falling into step beside Mikuru as they walked away."
     nvl clear
@@ -1101,11 +1103,12 @@ label Test:
     "\"It's part of why I'm here,\" she countered. \"And no, our discussion here isn't predetermined.\""
     show Kyon Casual Puzzle1 at right
     "\"What does it mean to be predetermined, then?\" he asked, rubbing his chin. \"I'm guessing it's just if it's been recorded? As in, if there's no record, then the 'unknown' automatically becomes undetermined?\""
+    nvl clear
     show MikuruBig Smile1 at center
     "\"That's absolutely the case! I'm impressed at how quickly you grasped that.\""
-    nvl clear
     show Kyon Casual Ser3 at right
     "\"I get bad grades,\" he said flatly. \"I'm not an idiot.\""
+    nvl clear
     show MikuruBig Hap1 at center
     "Mikuru stuck her tongue out and mimed a blow to her own head. \"I don't mean to say that Kyon-kun isn't smart,\" she said, giggling apologetically." 
     show MikuruBig Hap4 at center
@@ -1129,7 +1132,7 @@ label Test:
     show MikuruBig Grin2 at center
     "\"Well ... I like to pretend,\" she said, sticking her tongue out again. \"Truthfully, despite what my younger self told you, our theory of projection back into time ran into an unexpected complication.\"" 
     show MikuruBig Neutral1 at center
-    "\"That is to say ... if you consider moments to be flat portraits, like frames of animation or film, and we make a projection onto a single frame, it's fleeting, effectively non- existent.\""
+    "\"That is to say ... if you consider moments to be flat portraits, like frames of animation or film, and we make a projection onto a single frame, it's fleeting, effectively non-existent.\""
     show Kyon Casual Sigh2 at right
     "\"Now you've lost me,\" he mumbled."
     nvl clear
@@ -1139,7 +1142,8 @@ label Test:
     "\"Like it's burnt into a projector screen?\""
     nvl clear
     show MikuruBig Smile2 at center
-    "\"Aha! See? You understand! Even then, there could be other factors, such as Suzumiya-san herself ... but ultimately, even if it doesn't last forever my younger self makes more of an impression on the timeline than I realized at the time.\""
+    "\"Aha! See? You understand! Even then, there could be other factors, such as Suzumiya-san herself ... but ultimately, even if it doesn't last forever, my younger self makes more of an impression on the timeline than I realized at the time.\""
+    nvl clear
     show MikuruBig Grin1 at center
     "\"In fact, it is this act, following your instructions and drawing even further into the local time planes that allow us to develop more advanced theories and better understanding of time travel.\""
     show Kyon Casual Ser3 at right
@@ -1149,6 +1153,7 @@ label Test:
     "\"And so, I know you're a trustworthy person, and I'd know that even if it weren't predetermined.\""
     show Kyon Casual Sigh1 at right
     "\"I see,\" he said, frowning. \"I seem to have signed myself up for a lot of responsibilities this time around. Okay, I understand that I help you out ... or I will, at least.\""
+    nvl clear
     show Kyon Casual Ser1 at right
     "\"So maybe the 'why' is explained. I even know your motives ... but can you tell me anything about what will require whatever time travel is needed to demonstrate your theory?\""
     nvl clear
@@ -1160,7 +1165,8 @@ label Test:
     show Kyon Casual Neutral2 at right
     "\"Other espers, that smirking bastard, and the Sky Canopy Domain?\" he asked."
     show MikuruBig Worry1 at center
-    "\"And of course, Nagato's superiors,\" she added, biting her lower lip. \"There's a {i}very{/i} specific reason for us to disregard so many rules and give you carte blanche with time travel ... and it's not just because you can be trusted.\"" 
+    "\"And of course, Nagato's superiors,\" she added, biting her lower lip. \"There's a {i}very{/i} specific reason for us to disregard so many rules and give you carte blanche with time travel ... and it's not just because you can be trusted.\""
+    nvl clear
     show MikuruBig Worry2 at center
     "\"Without the ability to define an event as predetermined, our precious discovery may never have come about. Our expanded realization could be taken away from us, because they pursue their own goals."
     nvl clear
