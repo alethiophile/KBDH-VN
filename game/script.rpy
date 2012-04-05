@@ -468,11 +468,15 @@ init:
     image Kunikida Smile1 ="Sprites/Kunikida/KunikidaSmile1.png"
     image Kunikida Smile2 ="Sprites/Kunikida/KunikidaSmile2.png"
 
-    image Credits0 = "Backgrounds/credits0.png"
-    image Credits1 = "Backgrounds/credits1.png"
-    image Credits2 = "Backgrounds/credits2.png"
-    image Credits3 = "Backgrounds/credits3.png"
+    # image Credits0 = "Backgrounds/credits0.png"
+    # image Credits1 = "Backgrounds/credits1.png"
+    # image Credits2 = "Backgrounds/credits2.png"
+    # image Credits3 = "Backgrounds/credits3.png"
     
+    image creds 0 = Text("Presented by:\n\nBig Damn VN Brigade\n\nAgasa\nalethiophile\nFilraen\nOroboro\nPax Empyrean\nJason Ulloa\nZer0Null\n\n\nMany thanks to:\n\njonbob\nSpecular", text_align=0.5)
+    image creds 1 = Text("Special thanks to:\n\nBrian Randall\nauthor of Kyon: Big Damn Hero\n\nand\n\nNagaru Tanigawa\nauthor of Suzumiya Haruhi series", text_align=0.5)
+    image creds 2 = Text("Disclaimer: This production makes use\nof intellectual property belongin to\nBrian Randall, Nagaru Tanigawa \nand others. No disrespect is intended.\n\nNeither Kyon: Big Damn Hero \nnor Suzumiya Haruhi and related \ncharacters are owned by anyone \nassociated with Big Damn VN", text_align=0.5)
+
     # "Image" showing the date
     image eyeDate = DynamicDisplayable(show_date)
     
@@ -625,20 +629,21 @@ label credits:
     scene black with fade
     # The hardpause calls are necessary because otherwise Ren'py wants to skip over all the pause statements on a single press of the key.
     # show Credits0 with dissolve
-    centered "Presented by:\n\nBig Damn VN Brigade\n\nAgasa\nalethiophile\nFilraen\nOroboro\nPax Empyrean\nJason Ulloa\nZer0Null\n\n\nMany thanks to:\n\njonbob\nSpecular"
-    # pause
-    # $ renpy.pause(.1, hard=True)
+    show creds 0 at truecenter with Dissolve(1.0)
+    pause
+    $ renpy.pause(.1, hard=True)
     # show Credits1 with dissolve
-    centered "Special thanks to:\n\nBrian Randall\nauthor of Kyon: Big Damn Hero\n\nand\n\nNagaru Tanigawa\nauthor of Suzumiya Haruhi series"
-    # pause
-    # $ renpy.pause(.1, hard=True)
+    show creds 1 with Dissolve(1.0)
+    pause
+    $ renpy.pause(.1, hard=True)
     # show Credits2 with dissolve
-    centered "Disclaimer: This production makes use\nof intellectual property belongin to\nBrian Randall, Nagaru Tanigawa \nand others. No disrespect is intended.\n\nNeither Kyon: Big Damn Hero \nnor Suzumiya Haruhi and related \ncharacters are owned by anyone \nassociated with Big Damn VN"
-    # pause
-    # $ renpy.pause(.1, hard=True)
+    show creds 2 with Dissolve(1.0)
+    pause
+    $ renpy.pause(.1, hard=True)
     # show Credits3 with dissolve
     # # Maybe a graphic logo here?
-    show BDVNlogo at truecenter with dissolve
+    hide creds with Dissolve(1.0)
+    show BDVNlogo at truecenter with Dissolve(2.0)
     pause
     stop music
     return
