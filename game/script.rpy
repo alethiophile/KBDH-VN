@@ -477,6 +477,11 @@ init:
     image creds 1 = Text("Special thanks to:\n\nBrian Randall\nauthor of Kyon: Big Damn Hero\n\nand\n\nNagaru Tanigawa\nauthor of Suzumiya Haruhi series", text_align=0.5)
     image creds 2 = Text("Disclaimer: This production makes use\nof intellectual property belongin to\nBrian Randall, Nagaru Tanigawa \nand others. No disrespect is intended.\n\nNeither Kyon: Big Damn Hero \nnor Suzumiya Haruhi and related \ncharacters are owned by anyone \nassociated with Big Damn VN", text_align=0.5)
 
+    # have to have different image tags so can show them staggered
+    image screds0 = Text("Big Damn VN Brigade presents:", text_align=0.5, size=30)
+    image screds1 = Text("based on the work by\nBrian Randall", text_align=0.5, size=30)
+    image screds2 = Text("in turn based on the\nSuzumiya Haruhi series by\nNagaru Tanigawa", text_align=0.5, size=30)
+
     # "Image" showing the date
     image eyeDate = DynamicDisplayable(show_date)
     
@@ -610,10 +615,22 @@ label start:
     # Z0 : intro. 
     stop music
     scene black
-    centered "Big Damn VN Brigade presents:"
-    centered "based on the work by\nBrian Randall"
-    centered "in turn based on the\nSuzumiya Haruhi series by\nNagaru Tanigawa"
+    show screds0 with dissolve:
+        xalign 0.5
+        yalign 0.2
+    pause
+    $ renpy.pause(0.1, hard=True)
+    show screds1 with dissolve:
+        xalign 0.5
+        yalign 0.4
+    pause
+    $ renpy.pause(0.1, hard=True)
+    show screds2 with dissolve:
+        xalign 0.5
+        yalign 0.72
+    pause
     # show Text("{color=#00a}{size=60}KYON:{/size}\n{size=40}Big Damn Hero{/size}{/color}") at truecenter with dissolve
+    scene black
     show BDVNlogo at truecenter with coatin
     pause
     hide BDVNlogo with coatout
