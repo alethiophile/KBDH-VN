@@ -499,7 +499,7 @@ init python:
     wiperightfast = CropMove(0.3, "wiperight")
     wipeupslow = CropMove(2, "wipeup")
     wipeupfast = CropMove(0.3, "wipeup")
-    teleport = ImageDissolve("id_teleport.png", 1.0, 0)
+    teleport = ImageDissolve("id_teleport.png", 2.0, 0)
     coatin = ImageDissolve("id_clouds.png", 1.0, 0)
     coatout = ImageDissolve("id_clouds.png", 1.0, 0, reverse=True)
     menu = nvl_menu

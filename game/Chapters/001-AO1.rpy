@@ -82,6 +82,8 @@ label AO1_1:
     "\"Skip the speeches — if I don't know the complete back story, it's all meaningless to me. I think it's about time we get down to business, right?\""
     nvl clear
     hide Haruhi
+    window hide
+    with dissolve
     stop music
     play music "Music/AsakuraTheme.mp3" fadein 1
     play sound "SE/horror.mp3"
@@ -427,10 +429,12 @@ label AO1_1:
     nvl clear
     scene bg YukiRoomCenter with wipeup
     "After trekking all the way there, much to her annoyance, she found that she was the last to arrive."
+    $ _window = True
     show Mikuru Cower Casual Nervous1 at left
     show Koizumi Crossed Casual Uneasy1 at center
     show Yuki Side1 at right
     with dissolve
+    $ _window = False
     "Mikuru sat at one side of the table, opposite Yuki."
     "Koizumi sat between them, his eternal smile faded to half its normal strength."
     scene bg YukiRoomRight
