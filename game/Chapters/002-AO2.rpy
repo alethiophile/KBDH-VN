@@ -854,7 +854,6 @@ label AO2:
     nvl clear                             
 
     call eyecatch from AO2_sc007
-    
 
     play music "Music/ItsumoNoFuukei.mp3"
     scene bg hallway
@@ -948,7 +947,6 @@ label AO2:
     "\"I was ... kidding,\" {nw}"
     show Kyon Sigh2 at right
     extend "he groaned, rubbing the back of his head where it had hit the wall. There was no way he would catch up with her while recovering his breath." 
-    
     
     play sound "SE/doorknock.wav"
     "Sighing, he trudged to the club room, knocking on the door before entering."
@@ -1060,7 +1058,6 @@ label AO2:
     "\"Eep,\" the first year girl squeaked, her face pressed into Mikuru's chest. \"Aaugh! I'm in trouble! Someone help me!\""
     nvl clear
     
-label Test:
     play music "Music/MikurunoKokoro.mp3"
     scene bg ParkBench
     show Kyon Casual Worry1 at center
@@ -1206,3 +1203,6 @@ label Test:
     "She released him with a giggle and pointed him down the road to his home, whispering, \"I've missed doing that with you, Kyon-kun.\""
     nvl clear
     "By the time his senses recovered enough to try and question her, she had been long gone."
+    nvl clear
+    
+    jump SF1

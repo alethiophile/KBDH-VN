@@ -522,7 +522,7 @@ init:
     image title 000 = Text("{space=500}{b}{size=+1}Thursday, June 2, 2011{/size}{/b}\n\n\n\n\"Chapter Two: Don't Just SAY You Have a Bad Feeling, DO Something About It!\"\n\n\"...but I digress. When you get that feeling, you know the one, in the back of your head? The one that makes you think something is off about the situation? It may be right. Granted, you may also be tumbling headlong into a fit of paranoia that will end terribly for you and everyone you love. But what if you're NOT? Remember, if you're aware of things, you know most people think you're crazy anyway. Is it going to hurt that much more to overreact rather than just label something a false alarm?\"\n\n\"Practical Heroism and You: Awareness\" — Tadamichi Kyousuke", font="DejaVuSerif-Italic.ttf", size=18, line_leading=3, justify=True, xmaximum=750)
     image title 001 = Text("{space=500}{b}{size=+1}Sunday, April 17, 2011{/size}{/b}\n\n\n\n\"Chapter One: The Truth is the Greatest Weapon\"\n\n\"...of dozens of issues with maintaining a 'masquerade' scenario. Generally, unless it's absolutely required, it's a bad idea. There will be fallout. If it must be done, the truth is still going to be the ultimate weapon — plan accordingly, and make sure it's a weapon that will serve you, and not any enemies. Barring that, make fast friends with someone who can BS better than you.\"\n\n\"Cover\" — Author Unknown", font="DejaVuSerif-Italic.ttf", size=18, line_leading=3, justify=True, xmaximum=750)
     image title 002 = Text("{space=500}{b}{size=+1}Monday, April 18, 2011{/size}{/b}\n\n\n\n\"Chapter Ten: Time Travel\"\n\n\"This is the one you absolutely cannot afford to mess up. The most important thing is to pay attention, and not over think things. But mostly, it's about paying attention; the worst thing you can do is assume that just because time travel is involved, you cannot fail.\"\n\n\"Practical Heroism and You: Awareness\" — Tadamichi Kyousuke", font="DejaVuSerif-Italic.ttf", size=18, line_leading=3, justify=True, xmaximum=750)
-
+    image title 003 = Text("{space=500}{b}{size=+1}Monday, April 18, 2011{/size}{/b}\n\n\n\n\"Chapter One: Expect the Unexpected\"\n\n\"...aside from them, however, there aren't many who can genuinely expect all things and calculate accordingly. So in a practical situations what it really means is: don't be so expectant of something happening, that any other result is a surprise. That's probably the best you can do, anyway.\"\n\n\"Roll With the Punches\" — Tadamichi Kyousuke", font="DejaVuSerif-Italic.ttf", size=18, line_leading=3, justify=True, xmaximum=750)
 
 init python:
     #basechar = Character(None, kind=nvl)
@@ -632,6 +632,7 @@ init -1 python:
         ("In Media Res Prologue:\n\"Exactly What it Says on the Tin\"", "prologue"),
         ("Obligatory Anachronic Order Explanation Arc - Chapter One:\n\"Scene Twelve, the Ninth Big Fight\"", "AO1_1"),
         ("Obligatory Anachronic Order Explanation Arc - Chapter Two:\n\"Clear as Mud\"", "AO2"),
+        ("Straightforward Flashback and Exposition Arc - Chapter Three:\n\"It Goes To Eleven\"", "SF1"),
         ("-----", "backtomain"),
         ("Label a scene you're working on test and use this", "Test"),
         ("Credits", "credits"),
