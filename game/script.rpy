@@ -40,6 +40,7 @@ init:
     image bg Cafe = "Backgrounds/Cafe.jpg"
     image bg ParkBench = "Backgrounds/ParkBench.png"
     image bg ParkPath = "Backgrounds/ParkPath.png"
+    image bg SchoolTable = "Backgrounds/SchoolTable.jpg"
     
     image bg MemoryYuki = "Backgrounds/MemoryYuki.jpg"
     image bg MemoryMikuru = "Backgrounds/MemoryMikuru.jpg"
@@ -88,6 +89,7 @@ init:
     image Haruhi Quest1 = "Sprites/Haruhi/HaruhiSideQuestion1.png"
     image Haruhi Grin1 = "Sprites/Haruhi/HaruhiSideGrin1.png"
     image Haruhi Worry1 = "Sprites/Haruhi/HaruhiSideWorry1.png"
+    image Haruhi Worry2 = "Sprites/Haruhi/HaruhiSideWorry2.png"
     image Haruhi Smile1 = "Sprites/Haruhi/HaruhiSideSmile1.png"
     image Haruhi Smile2 = "Sprites/Haruhi/HaruhiSideSmile2.png"
     image Haruhi Smile3 = "Sprites/Haruhi/HaruhiSideSmile3.png"
@@ -116,6 +118,7 @@ init:
     image Haruhi Casual Quest1 = "Sprites/Haruhi/HaruhiSideCasualQuestion1.png"
     image Haruhi Casual Grin1 = "Sprites/Haruhi/HaruhiSideCasualGrin1.png"
     image Haruhi Casual Worry1 = "Sprites/Haruhi/HaruhiSideCasualWorry1.png"
+    image Haruhi Casual Worry2 = "Sprites/Haruhi/HaruhiSideCasualWorry2.png"
     image Haruhi Casual Smile1 = "Sprites/Haruhi/HaruhiSideCasualSmile1.png"
     image Haruhi Casual Smile2 = "Sprites/Haruhi/HaruhiSideCasualSmile2.png"
     image Haruhi Casual Smile3 = "Sprites/Haruhi/HaruhiSideCasualSmile3.png"
@@ -635,8 +638,9 @@ init -1 python:
         ("Obligatory Anachronic Order Explanation Arc - Chapter One:\n\"Scene Twelve, the Ninth Big Fight\"", "AO1_1"),
         ("Obligatory Anachronic Order Explanation Arc - Chapter Two:\n\"Clear as Mud\"", "AO2"),
         ("Straightforward Flashback and Exposition Arc - Chapter Three:\n\"It Goes To Eleven\"", "SF1"),
+         ("Label a scene you're working on test and use this", "Test"),
         ("-----", "backtomain"),
-        ("Label a scene you're working on test and use this", "Test"),
+       
         ("Credits", "credits"),
         ("Another testbed, Eyecatchies", "test_Z0_eye"),
         ("Another testbed, Title cards", "test_Z0_titles"),]

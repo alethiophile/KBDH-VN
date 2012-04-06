@@ -1,6 +1,6 @@
 # Chapter 3, Straightforward Flashback and Exposition Arc.
 
-label Test:
+
 label SF1:
     if music_need:
         $ renpy.music.set_volume(0.2, .5, channel="music")
@@ -19,6 +19,7 @@ label SF1:
     show MBlush1 Maid at right
     show Kanae Wince1:
         xalign 0.8 yalign 1.0
+    with fade    
     "\"P...please get your face out of my chest!\" Mikuru blurted out, her face coloring red."
     show Kanae Sup1
     "The first year student started, realizing where she was, then scurried beneath the table and clung to one of Kyon's legs. {nw}"
@@ -124,36 +125,109 @@ label SF1:
     # "\"Of course I am; what do you take me for?\" Haruhi groused. \"But I meant what I said, Kanae-chan! You're part of the brigade now, and that means it's not just Kyon, but all of us who will watch out for you! So come to this clubroom every day after class, or there will be a penalty!\""
     # "\"Thank you, Sempai! Thank you, Suzumiya-san!\" Kanae cheered. Haruhi's smile slipped a bit."
     
+label Test:
+    play music "Music/HaruhiNoOmoi.mp3"    
+    scene bg SchoolTable
+    show Kyon Ser1 at right
+    show Haruhi Pout1 at center
+    show Koizumi Crossed Ser1 at left
+    with fade
+    "After Koizumi had finished explaining his role as an esper, Haruhi nodded quietly, peering into the empty depths of her coffee cup. The three were seated at one of the outdoor tables near the cafeteria."
+    show Koizumi Crossed Sigh2 at left
+    "Kyon finished the last sip of his own beverage, and then Koizumi sighed, rising to his feet. \"I apologize if this is troubling for you,\" he said. \"But I'm afraid I must go attend the current closed spaces.\"" 
+    show Koizumi Think Ser4 at left
+    "\"Hopefully I will be more free tomorrow, and we can discuss what the Organization is and represents.\""
+    nvl clear
+    show Haruhi Worry1 at center
+    "\"Can we go with you and help?\" Haruhi asked. \"If I caused this, then-\""
+    show Koizumi Think Ser3 at left
+    "\"Right now, that may not be the best idea,\" Koizumi cautioned. \"I am in a small bit of trouble with the Organization, as they're switching me from a full member to a liaison for the SOS Brigade. Ah, I should be off, though; Kyon-kun can explain more to you.\""
+    nvl clear
+    show Kyon Neutral2 at right
+    "\"Good luck, Koizumi,\" Kyon said after a moment, nodding at the esper."
+    show Koizumi Think Grin1 at left
+    "Koizumi grinned back and bowed. \"You as well, vice commander.\""
+    nvl clear
+    hide Koizumi with moveoutleft
+    show Haruhi Sigh1 at center
+    "Haruhi heaved a sigh, watching him walk away. \"Kyon,\" she said, quietly, \"I'm trying not to be upset about this. Because that just makes more trouble.\"" 
+    show Haruhi Worry1 at center
+    "\"But more and more, this 'power' I've got really seems to suck! It's too dangerous to use, and just for having it, I endanger the world? \""
+    show Haruhi Pout1 at center
+    "\"Everything I looked for hid from me until you made them show themselves?\""
+    nvl clear
+    show Kyon Ser3 at right
+    "\"Don't get too down,\" he told her. \"Remember, closed spaces result from your frustration. All you need to do to make Koizumi's job easier is be happy. \""
+    show Kyon Sigh1 at right
+    "\"As long as you respect the boundaries of other people, I don't see why you can't be that. Especially since you now {i}know{/i} you've got a time traveler, an esper, and an alien in your club. Isn't that what you were looking for?\""
+    nvl clear
+    show Haruhi Worry2 at center
+    "\"And a slider,\" Haruhi added, struggling to force a smile."
+    show Haruhi Pout1 at center
+    "\"It's like my wishes were granted by a literal genie who was looking for the wording loophole to keep me in the dark ... I mean, honestly, I'm a bit jealous. It seems that you got to do all the fun things while I was unaware!\""
+    nvl clear
+    show Kyon Ser3 at right
+    "\"I've said it before, and I'll say it again,\" Kyon insisted. \"The most important thing to me about the brigade is the people in it. \""
+    show Kyon Sigh1 at right
+    "\"There's a lot I don't care about — if we're trying to keep closed space from forming, if we're just hanging out and playing games, if we're working on the anthology.... \""
+    nvl clear
+    show Kyon Ser1 at right
+    "\"What I {i}do{/i} care about is being there with the friends we've formed. Hey, Nagato explained what happened last December, right?\""
+    show Haruhi Unhap2 at center
+    "\"Yeah,\" Haruhi said quietly, frowning. \"I guess Yuki must have been {i}really{/i} mad about me.... She doesn't show much, you know? And of course, something else to be jealous of — she opens up to you, not me.\""
+    show Kyon Sigh2 at right
+    nvl clear
+    "\"That's not it,\" he countered, shaking his head. \"You probably see me as idle and ignorant, but I just try and pay close attention. I think I'd be a terrible person if I didn't pay attention to Nagato after she saved my life so many times.\"" 
+    show Kyon Neutral2 at right
+    "\"The only person I can never figure out reliably is you.\""
+    nvl clear
+    show Haruhi Smile1 at center
+    "She smirked at that. \"Good,\" she decided. \"If you can solve aliens, time travelers, and everything else, at least there's one mystery left for you to focus on, right?\""
+    show Kyon Worry1 at right
+    "He looked away at the sky. \"Anyway,\" he said after an extended moment of silence, \"I had to leave that world because the people who made the brigade were there, but the brigade itself wasn't.\""
+    show Haruhi Quest1 at center
+    "\"Yeah, Yuki mentioned that.... Hey, I want to know something about that world — Yuki set it up for you, you know. What was she like? More assertive? I have a hard time imagining her being pushy.\""
+    nvl clear
+    show Kyon Sigh2 at right
+    "\"Eh ... she was more like a regular girl,\" he said, shaking his head. \"She was quiet, just like now ... but more talkative than she usually is.\""
+    show Haruhi Unhap2 at center
+    "\"Was she cute?\" Haruhi pressed, studying the profile of his face as he stared away."
+    show Kyon Smile5 at right
+    "\"She looked exactly the same, just with her glasses on again,\" he answered with a shrug. \"Except ... well, she was more expressive. She had a very pretty smile; Nagato doesn't smile, really. That's one of the three main things that stick with me.\""
+    nvl clear
+    show Haruhi Pout2 at center
+    "\"Hmm,\" she mused, trying to banish the rising frustration she felt. Her own fault for asking these questions, she supposed. \"What are the others?\""
+    show Kyon Worry1 at right
+    show KBlush at right
+    "\"Er.... Well, your other self in that world went to Kouyouen and hadn't cut her hair, so when we sneaked into Kitago, I asked you— That is, I asked her to put her hair in a ponytail.\" She smirked, seeing the faint coloring of his cheeks."
+    show Haruhi Quest1 at center
+    "\"Oh?\" she asked. \"Hmm, what do you think about me making my longer hair again?\""
+    nvl clear
+    hide KBlush
+    show Kyon Ser3 at right
+    "He shook his head, looking at her carefully. \"It'd be a bit obvious,\" he warned her. Then he hesitated, considering, \"But I guess I can't just say 'no' to everything you want to do. Especially since that one sounds reasonable.\"" 
+    show Kyon Smile1 at right
+    "\"What about toning it down a bit and just making it grow faster? Probably no one will notice if it finishes by the end of, say, summer vacation.\""
+    show Haruhi Sigh1 at center
+    "She counted the weeks in her head. \"Almost a full term away, huh? Well, I'm holding you to that,\" she decided. Some custodian of her powers he was going to be, if she could play his biases."
+    nvl clear
+    show Kyon Neutral2 at right
+    "\"Why do you want your hair longer again, anyway?\""
+    show Haruhi Pout2 at center
+    show Hblush at center
+    "She coughed quietly, looking another direction. \"So, what was the other thing that stuck with you?\""
+    show Kyon Unhap1 at right
+    "He shivered, looking away himself. \"Being stabbed.\""
+    nvl clear
+    hide Hblush
+    show Haruhi Grin1 at center
+    "\"Wow, that's pretty short of an ideal world,\" Haruhi observed, trying not to snicker. \"You made it out alright, though, didn't you? Any scars?\""
+    show Kyon Sigh2 at right
+    "\"Of course not,\" he answered. \"My future self and a future Nagato had to go back and.... Well, things got a bit complicated. Anyway, Nagato healed the injury. But this was when I was supposed to be in a coma. A scar from a stab wound when I 'fell down the stairs' seems a bit odd, don't you think?\""
+    show Haruhi Quest1 at center
+    "\"True enough,\" she agreed. \"Anyway. I suppose we should investigate Kanae- chan's back story?\""
     
     
-    # "After Koizumi had finished explaining his role as an esper, Haruhi nodded quietly, peering into the empty depths of her coffee cup. The three were seated at one of the outdoor tables near the cafeteria. Kyon finished the last sip of his own beverage, and then Koizumi sighed, rising to his feet. \"I apologize if this is troubling for you,\" he said. \"But I'm afraid I must go attend the current closed spaces. Hopefully I will be more free tomorrow, and we can discuss what the Organization is and represents.\""
-    # "\"Can we go with you and help?\" Haruhi asked. \"If I caused this, then-\""
-    # "\"Right now, that may not be the best idea,\" Koizumi cautioned. \"I am in a small bit of trouble with the Organization, as they're switching me from a full member to a liaison for the SOS Brigade. Ah, I should be off, though; Kyon-kun can explain more to you.\""
-    # "\"Good luck, Koizumi,\" Kyon said after a moment, nodding at the esper."
-    # "Koizumi grinned back and bowed. \"You as well, vice commander.\""
-    # "Haruhi heaved a sigh, watching him walk away. \"Kyon,\" she said, quietly, \"I'm trying not to be upset about this. Because that just makes more trouble. But more and more, this 'power' I've got really seems to suck! It's too dangerous to use, and just for having it, I endanger the world? Everything I looked for hid from me until you made them show themselves?\""
-    # "\"Don't get too down,\" he told her. \"Remember, closed spaces result from your frustration. All you need to do to make Koizumi's job easier is be happy. As long as you respect the boundaries of other people, I don't see why you can't be that. Especially since you now {i}know{/i} you've got a time traveler, an esper, and an alien in your club. Isn't that what you were looking for?\""
-    # "\"And a slider,\" Haruhi added, struggling to force a smile. \"It's like my wishes were granted by a literal genie who was looking for the wording loophole to keep me in the dark ... I mean, honestly, I'm a bit jealous. It seems that you got to do all the fun things while I was unaware!\""
-    # "\"I've said it before, and I'll say it again,\" Kyon insisted. \"The most important thing to me about the brigade is the people in it. There's a lot I don't care about — if we're trying to keep closed space from forming, if we're just hanging out and playing games, if we're working on the anthology.... What I {i}do{/i} care about is being there with the friends we've formed. Hey, Nagato explained what happened last December, right?\""
-    # "\"Yeah,\" Haruhi said quietly, frowning. \"I guess Yuki must have been {i}really{/i} mad about me.... She doesn't show much, you know? And of course, something else to be jealous of — she opens up to you, not me.\""
-    # "\"That's not it,\" he countered, shaking his head. \"You probably see me as idle and ignorant, but I just try and pay close attention. I think I'd be a terrible person if I didn't pay attention to Nagato after she saved my life so many times. The only person I can never figure out reliably is you.\""
-    # "She smirked at that. \"Good,\" she decided. \"If you can solve aliens, time travelers, and everything else, at least there's one mystery left for you to focus on, right?\""
-    # "He looked away at the sky. \"Anyway,\" he said after an extended moment of silence, \"I had to leave that world because the people who made the brigade were there, but the brigade itself wasn't.\""
-    # "\"Yeah, Yuki mentioned that.... Hey, I want to know something about that world — Yuki set it up for you, you know. What was she like? More assertive? I have a hard time imagining her being pushy.\""
-    # "\"Eh ... she was more like a regular girl,\" he said, shaking his head. \"She was quiet, just like now ... but more talkative than she usually is.\""
-    # "\"Was she cute?\" Haruhi pressed, studying the profile of his face as he stared away."
-    # "\"She looked exactly the same, just with her glasses on again,\" he answered with a shrug. \"Except ... well, she was more expressive. She had a very pretty smile; Nagato doesn't smile, really. That's one of the three main things that stick with me.\""
-    # "\"Hmm,\" she mused, trying to banish the rising frustration she felt. Her own fault for asking these questions, she supposed. \"What are the others?\""
-    # "\"Er.... Well, your other self in that world went to Kouyouen and hadn't cut her hair, so when we sneaked into Kitago, I asked you— That is, I asked her to put her hair in a ponytail.\" She smirked, seeing the faint coloring of his cheeks."
-    # "\"Oh?\" she asked. \"Hmm, what do you think about me making my longer hair again?\""
-    # "He shook his head, looking at her carefully. \"It'd be a bit obvious,\" he warned her. Then he hesitated, considering, \"But I guess I can't just say 'no' to everything you want to do. Especially since that one sounds reasonable. What about toning it down a bit and just making it grow faster? Probably no one will notice if it finishes by the end of, say, summer vacation.\""
-    # "She counted the weeks in her head. \"Almost a full term away, huh? Well, I'm holding you to that,\" she decided. Some custodian of her powers he was going to be, if she could play his biases."
-    # "\"Why do you want your hair longer again, anyway?\""
-    # "She coughed quietly, looking another direction. \"So, what was the other thing that stuck with you?\""
-    # "He shivered, looking away himself. \"Being stabbed.\""
-    # "\"Wow, that's pretty short of an ideal world,\" Haruhi observed, trying not to snicker. \"You made it out alright, though, didn't you? Any scars?\""
-    # "\"Of course not,\" he answered. \"My future self and a future Nagato had to go back and.... Well, things got a bit complicated. Anyway, Nagato healed the injury. But this was when I was supposed to be in a coma. A scar from a stab wound when I 'fell down the stairs' seems a bit odd, don't you think?\""
-    # "\"True enough,\" she agreed. \"Anyway. I suppose we should investigate Kanae- chan's back story?\""
     # "* * *"
     # "On Michikyuu Kanae's home world, when she was ten years old, a cataclysm had torn a hole in the sky. Strange sleek metallic things had rained down upon the city in her hometown, hatching into gracefully curved reflective metal creatures, no two quite alike, but all very spindly. All very fast, and quite dangerous."
     # "Her friends had revealed to her then that she was a locus of power of some kind, and that she had to learn to use her gift and flee from the aliens. They had labored for months to keep her powers secret, even from herself, but with the invasion, there had been no choice. In desperation, not knowing if she could ever come back, she'd finally made the step — her first leap."
