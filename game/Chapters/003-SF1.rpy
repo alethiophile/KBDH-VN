@@ -13,23 +13,76 @@ label SF1:
     nvl clear
      
     scene bg ClubroomRightDay
-    play music "Music/YareYare.mp3"
-    show Haruhi Hap4 at left
-    show Mikuru Think Maid Quest1 at right
+    play music "Music/Oi.mp3"
+    show Kyon Neutral3 at left
+    show Mikuru Maid Unhap1 at right
+    show MBlush1 Maid at right
     show Kanae Wince1:
         xalign 0.8 yalign 1.0
     "\"P...please get your face out of my chest!\" Mikuru blurted out, her face coloring red."
-    # "The first year student started, realizing where she was, then scurried beneath the table and clung to one of Kyon's legs. \"Sempai!\" she whimpered. \"Save me!\""
-    # "Placing another stone at the board, Kyon remarked, \"I'm threatening your piece, Koizumi; atari.\" Bending to look at the shivering girl who had grabbed onto him, he added, \"I don't think we've been introduced properly yet.\""
-    # "He took a moment to study her features, while she shivered in fright, clinging to him. Her brown hair was shoulder-length, and very curly just at the tips — fairly distinctive, he thought. She was probably as tall as Yuki, but with an even slighter frame, not quite gangly, but not yet grown into her height. Her dark eyes stared up at him pleadingly."
-    # "\"That all but confirms it,\" Haruhi declared, clapping her hands together and standing guard at the locked door. \"Okay, initiate, state your name and let go of the vice commander, or I will issue a severe penalty!\""
-    # "\"I-I really shouldn't,\" the girl stuttered. \"Sempai! Why aren't you helping me?\""
-    # "\"Alright,\" Kyon relented. \"I'll help you out, but I need to know who you are, first.\""
-    # "\"Um! I'm Michikyuu Kanae,\" she said. \"What's going on here?\""
-    # "\"It's my fault,\" Kyon said, sighing. \"Haruhi asked me what was up with you, and I said you probably knew alternate universe versions of us from sliding through dimensions.\""
-    # "\"You already know!?\" the girl yelped, trying to jump away from Kyon, but only smacking her head and jolting the table, scattering all the pieces across the board."
-    # "\"Just as well,\" Koizumi said with a shrug. \"I don't think a six stone advantage was going to help me much.\""
-    # "\"Wait, you mean you're really a slider?\" Kyon asked, eyes widening in surprise. \"I was joking!\""
+    show Kanae Sup1
+    "The first year student started, realizing where she was, then scurried beneath the table and clung to one of Kyon's legs. {nw}"
+    show Kanae Wince2:
+        xalign 0.2 yalign 2.2
+    with move
+    extend "\"Sempai!\" she whimpered. \"Save me!\""
+    nvl clear
+    show Kyon Neutral2 at left
+    "Placing another stone at the board, Kyon remarked, \"I'm threatening your piece, Koizumi; atari.\" Bending to look at the shivering girl who had grabbed onto him, he added, \"I don't think we've been introduced properly yet.\""
+    show Kyon Neutral3 at left
+    nvl clear
+    "He took a moment to study her features, while she shivered in fright, clinging to him. Her brown hair was shoulder-length, and very curly just at the tips — fairly distinctive, he thought. She was probably as tall as Yuki, but with an even slighter frame, not quite gangly, but not yet grown into her height. Her dark eyes stared up at him pleadingly."
+    nvl clear
+    scene bg ClubroomFullDay:
+        xpos -800 ypos 0
+        linear 0.1 xpos 0 ypos 0
+    show Haruhi Crossed Hap2 at left
+    show Koizumi Think Ser3 at right
+    "\"That all but confirms it,\" Haruhi declared, clapping her hands together and standing guard at the locked door. \"Okay, initiate, state your name and let go of the vice commander, {nw}"
+    show Haruhi Crossed Hap4 at left
+    extend "or I will issue a severe penalty!\""
+    scene bg ClubroomFullDay:
+        xpos 0 ypos 0
+        linear 0.1 xpos -800 ypos 0
+    show Kyon Neutral3 at left
+    show Mikuru Maid Unhap1 at right
+    show MBlush1 Maid at right
+    show Kanae Wince1:
+        xalign 0.2 yalign 2.2
+    "\"I-I really shouldn't,\" the girl stuttered. \"Sempai! Why aren't you helping me?\""
+    nvl clear
+    show Kyon Neutral2 at left
+    "\"Alright,\" Kyon relented. \"I'll help you out, but I need to know who you are, first.\""
+    show Kyon Neutral3 at left
+    show Kanae Sad1:
+        xalign 0.2 yalign 2.2
+    "\"Um! I'm Michikyuu Kanae,\" she said. \"What's going on here?\""
+    show Kyon Sigh2 at left
+    "\"It's my fault,\" Kyon said, sighing. \"Haruhi asked me what was up with you, and I said you probably knew alternate universe versions of us from sliding through dimensions.\""
+    nvl clear
+    "\"You already know!?\" the girl yelped, trying to jump away from Kyon, {nw}"
+    show Kanae Wince1:
+        xalign 0.2 yalign 2.0
+        linear 0.4 yalign 2.2
+    play sound "SE/impact.mp3"
+    pause 0.8
+    extend "but only smacking her head and jolting the table, scattering all the pieces across the board."
+    nvl clear
+    scene bg ClubroomFullDay:
+        xpos -800 ypos 0
+        linear 0.1 xpos 0 ypos 0
+    show Haruhi Crossed Smile1 at left
+    show Koizumi Shrug Sigh1 at right
+    "\"Just as well,\" Koizumi said with a shrug. \"I don't think a six stone advantage was going to help me much.\""
+    scene bg ClubroomFullDay:
+        xpos 0 ypos 0
+        linear 0.1 xpos -800 ypos 0
+    show Kyon Sup1 at left
+    show Mikuru Maid Neutral2 at right
+    show Kanae Wince1:
+        xalign 0.2 yalign 2.2
+    "\"Wait, you mean you're really a slider?\" Kyon asked, eyes widening in surprise. \"I was joking!\""
+    nvl clear
     # "\"Kyon, Kyon, Kyon,\" Haruhi chastised him, her grin even wider as she shook her head. \"Shame on you! You really thought that kind of thing would be a throwaway comment?\""
     # "\"...ow,\" Kanae moaned. \"My head....\""
     # "\"Okay, this is very quickly getting out of hand,\" Kyon decided. \"Nagato?\""

@@ -371,6 +371,7 @@ init:
     image MBlush1 Casual = "Sprites/Mikuru/MBlushCasual1.png"
     
     image Mikuru Maid Neutral1 = "Sprites/Mikuru/MikuruMaidNeutral1.png"
+    image Mikuru Maid Neutral2 = "Sprites/Mikuru/MikuruMaidNeutral2.png"
     image Mikuru Maid Sad1 = "Sprites/Mikuru/MikuruMaidSad1.png"
     image Mikuru Maid Sad2 = "Sprites/Mikuru/MikuruMaidSad2.png"
     image Mikuru Maid Sigh1 = "Sprites/Mikuru/MikuruMaidSigh1.png"
@@ -479,6 +480,7 @@ init:
     
     #Kanae Sprites
     
+    image Kanae Sad1 ="Sprites/Kanae/KanaeSad1.png"
     image Kanae Sup1 ="Sprites/Kanae/KanaeSurprised1.png"
     image Kanae Wince1 = "Sprites/Kanae/KanaeWince1.png"
     image Kanae Wince2 = "Sprites/Kanae/KanaeWince2.png"
