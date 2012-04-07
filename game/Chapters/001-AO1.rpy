@@ -247,7 +247,7 @@ label AO1_1:
     show Skinsuit at KyonRightFast
     show Coat at KyonRightFast
     pause (0.2)
-    play sound "SE/touhoudead.wav"
+    play sound "SE/touhoudead.mp3"
     hide Kyon
     hide Skinsuit
     hide Coat

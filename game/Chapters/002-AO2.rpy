@@ -397,7 +397,7 @@ label AO2:
     show Haruhi Pout1 at left
     "\"I can be plenty responsible,\" she grumbled, following him as he opened the clubroom door."
     nvl clear
-    play sound "SE/dooropenslow.wav"
+    play sound "SE/dooropenslow.mp3"
     stop music fadeout 3
 
     scene bg ClubroomLeftDay with slowflashbulb
@@ -948,9 +948,9 @@ label AO2:
     show Kyon Sigh2 at right
     extend "he groaned, rubbing the back of his head where it had hit the wall. There was no way he would catch up with her while recovering his breath." 
     
-    play sound "SE/doorknock.wav"
+    play sound "SE/doorknock.mp3"
     "Sighing, he trudged to the club room, knocking on the door before entering."
-    play sound "SE/dooropenslow.wav"
+    play sound "SE/dooropenslow.mp3"
     scene bg ClubroomRightDay with slowflashbulb
     play music "Music/Aruame.mp3"
     nvl clear
@@ -1187,9 +1187,9 @@ label AO2:
     "\"Well,\" he said, shrugging. \"Is there anything else I {i}should{/i} know?\""
     nvl clear
     show Kyon Casual Sup2 
-    play sound "SE/tiresqueal.wav"
+    play sound "SE/tiresqueal.mp3"
     pause 1.5
-    play sound "SE/Crash3.wav"
+    play sound "SE/Crash3.mp3"
     "Down a distant street, he heard the squeal of tires on pavement, then a thunderous crash. He turned his head to look, but found his face being turned back by Mikuru's hand." 
     show MikuruBig Sad1 at center
     "\"Pay no mind,\" she said, somewhat sadly. \"I'll give you something nice to go home and forget about this for now. Get plenty of rest tonight, okay?\""

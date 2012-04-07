@@ -486,7 +486,7 @@ label prologue2:
     show Haruhi Worry1 at center
     "\"Granted.\" Kyon said, {nw}"
     $ _window = True
-    play sound "SE/heal1.wav"
+    play sound "SE/heal1.mp3"
     show healfield at right
     show Kyon Ser2 Bright at right
     show Skinsuit Bright at right
