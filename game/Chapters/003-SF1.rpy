@@ -67,6 +67,8 @@ label SF1:
         linear 0.4 yalign 2.2
     play sound "SE/impact.mp3"
     pause 0.8
+    hide MBlush1
+    show Mikuru Think Maid Sup1 at right
     extend "but only smacking her head and jolting the table, scattering all the pieces across the board."
     nvl clear
     scene bg ClubroomFullDay:
@@ -79,26 +81,111 @@ label SF1:
         xpos 0 ypos 0
         linear 0.1 xpos -800 ypos 0
     show Kyon Sup1 at left
-    show Mikuru Maid Neutral2 at right
+    show Mikuru Think Maid Sup1 at right
     show Kanae Wince1:
         xalign 0.2 yalign 2.2
     "\"Wait, you mean you're really a slider?\" Kyon asked, eyes widening in surprise. \"I was joking!\""
     nvl clear
-    # "\"Kyon, Kyon, Kyon,\" Haruhi chastised him, her grin even wider as she shook her head. \"Shame on you! You really thought that kind of thing would be a throwaway comment?\""
-    # "\"...ow,\" Kanae moaned. \"My head....\""
-    # "\"Okay, this is very quickly getting out of hand,\" Kyon decided. \"Nagato?\""
-    # "The quiet girl had watched everything without remark so far, so contributed, \"Quantum displacement agent. Through the accumulation of distortions through the fabric of space-time, she can create a ripple and then ride the wavefront of that ripple into alternate, similar realities.\""
-    # "\"So, that means slider?\""
-    # "\"Yes.\""
-    # "\"Okay. Michikyuu-san, come out from the table and take a seat. I'll try and keep Haruhi from molesting you. Since you're a slider, please allow me to introduce you to the SOS Brigade,\" he said, gesturing to the others. \"It seems Haruhi has already decided that you've joined the club. Obviously, you're in good company, with one possible exception.\""
-    # "\"But don't hold him being a normal person against him,\" Haruhi added quickly."
-    # "\"Yes. That was precisely the exception I was thinking,\" he deadpanned."
-    # "\"Mikuru-chan! Give our newest member a cup of tea and prepare the accords to record the addition of a slider to our ranks!\""
-    # "Gathering the loose stones from across the table, Koizumi remarked, \"Perhaps we shouldn't record more than her name and that she joined the brigade. We wouldn't want certain information to fall into the hands of others too easily.\""
-    # "Mikuru poured a cup of tea and set it at the table, while Kanae slid a chair next to Kyon and huddled in it, trying to hide behind him from Haruhi's line of sight. \"U...um....\" she whimpered. \"Y...you're not supposed to know who I am so easily! I only meant to tell Sempai.\""
-    # "\"Hmm. You must be very close with Kyon in your world,\" Haruhi remarked, eyes narrowing. Koizumi gave an uncomfortable twitch."
-    # "\"Eh? Yes! Of course! In every world I've been to, Sempai is always willing to help me when I'm in trouble, even if he doesn't believe my story! And he's always very polite, and so kind....\" She coughed, nervously picking up her tea and sipping at it. After a taste, she said, \"I'm, um, not usually so impolite. I'm just a bit on edge....\""
-    # "\"'Every world'?\" Haruhi echoed, her eyes suddenly turning sympathetic as she stepped away from the door and sat next to Koizumi, opposite the younger girl. \"Do you mean, you're lost, Kanae-chan?\""
+    scene bg ClubroomFullDay:
+        xpos -800 ypos 0
+        linear 0.1 xpos 0 ypos 0
+    show Haruhi Point Amuse1 at left
+    show Koizumi Crossed Neutral1 at right
+    "\"Kyon, Kyon, Kyon,\" Haruhi chastised him, her grin even wider as she shook her head. \"Shame on you! You really thought that kind of thing would be a throwaway comment?\""
+    scene bg ClubroomFullDay:
+        xpos 0 ypos 0
+        linear 0.1 xpos -800 ypos 0
+    show Kyon Sup1 at left
+    show Mikuru Maid Quest1 at right
+    show Kanae Wince1:
+        xalign 0.2 yalign 2.2
+    "\"...ow,\" Kanae moaned. \"My head....\"" 
+    show Kyon Sigh1 at left
+    "\"Okay, this is very quickly getting out of hand,\" Kyon decided. \"Nagato?\""
+    nvl clear
+    show Kyon Sigh3 at left
+    show YBook at TopRight behind Mikuru
+    with dissolve
+    "The quiet girl had watched everything without remark so far, so contributed, \"Quantum displacement agent. Through the accumulation of distortions through the fabric of space-time, she can create a ripple and then ride the wavefront of that ripple into alternate, similar realities.\""
+    show Kyon Ser3 at left
+    "\"So, that means slider?\""
+    show Kyon Ser1 at left
+    "\"Yes.\""
+    nvl clear
+    hide YBook
+    show Kyon Neutral2 at left
+    "\"Okay. Michikyuu-san, come out from the table and take a seat. I'll try and keep Haruhi from molesting you. Since you're a slider, please allow me to introduce you to the SOS Brigade,\" he said, gesturing to the others. \"It seems Haruhi has already decided that you've joined the club. Obviously, you're in good company, with one possible exception.\""
+    nvl clear
+    scene bg ClubroomFullDay:
+        xpos -800 ypos 0
+        linear 0.1 xpos 0 ypos 0
+    show Haruhi Crossed Hap2 at left
+    show Koizumi Crossed Smile1 at right
+    "\"But don't hold him being a normal person against him,\" Haruhi added quickly."
+    scene bg ClubroomFullDay:
+        xpos 0 ypos 0
+        linear 0.1 xpos -800 ypos 0
+    show Kyon Sigh2 at left
+    show Mikuru Maid Smile1 at right
+    show Kanae Wince1:
+        xalign 0.2 yalign 2.2
+    "\"Yes. That was precisely the exception I was thinking,\" he deadpanned."
+    nvl clear
+    scene bg ClubroomFullDay:
+        xpos -800 ypos 0
+        linear 0.1 xpos 0 ypos 0
+    show Haruhi Hap2 at left
+    show Koizumi Crossed Smile1 at right
+    "\"Mikuru-chan! Give our newest member a cup of tea and prepare the accords to record the addition of a slider to our ranks!\""
+    show Koizumi Think Sigh1 at right
+    "Gathering the loose stones from across the table, Koizumi remarked, \"Perhaps we shouldn't record more than her name and that she joined the brigade. We wouldn't want certain information to fall into the hands of others too easily.\""
+    nvl clear
+    scene bg ClubroomFullDay:
+        xpos 0 ypos 0
+        linear 0.1 xpos -800 ypos 0
+    show Kyon Neutral4 at left
+    show Kanae Wince1:
+        xalign 0.2 yalign 2.2
+    show Mikuru Maid Smile1 at right
+    hide Mikuru with moveoutright
+    show Mikuru Maid Smile1
+    show MTray Maid
+    with moveinright
+    "Mikuru poured a cup of tea and set it at the table, {nw}"
+    show Mikuru Maid Smile1 at right
+    show MTray Maid at right
+    show Kanae Worry1:
+        xalign 0.5 yalign 1.0
+    with move
+    extend "while Kanae slid a chair next to Kyon and huddled in it, trying to hide behind him from Haruhi's line of sight. \"U...um....\" she whimpered. \"Y...you're not supposed to know who I am so easily! I only meant to tell Sempai.\""
+    nvl clear
+    scene bg ClubroomFullDay:
+        xpos -800 ypos 0
+        linear 0.1 xpos 0 ypos 0
+    show Haruhi Eyeroll1 at left
+    show Koizumi Crossed Smile1 at right
+    "\"Hmm. You must be very close with Kyon in your world,\" Haruhi remarked, eyes narrowing. {nw}"
+    show Koizumi Crossed Uneasy1 at right
+    extend "Koizumi gave an uncomfortable twitch."
+    nvl clear
+    scene bg ClubroomFullDay:
+        xpos 0 ypos 0
+        linear 0.1 xpos -800 ypos 0
+    show Kyon Neutral4 at left
+    show Kanae Sup1:
+        xalign 0.5 yalign 1.0
+    show Mikuru Maid Smile1 at right
+    "\"Eh? Yes! Of course! In every world I've been to, Sempai is always willing to help me when I'm in trouble, even if he doesn't believe my story! And he's always very polite, and so kind....\" She coughed, nervously picking up her tea and sipping at it. {nw}"
+    show Kanae Worry2:
+        xalign 0.5 yalign 1.0
+    extend "After a taste, she said, \"I'm, um, not usually so impolite. I'm just a bit on edge....\""
+    nvl clear
+    scene bg ClubroomFullDay:
+        xpos -800 ypos 0
+        linear 0.1 xpos 0 ypos 0
+    show Haruhi Worry1 at left
+    show Koizumi Crossed Neutral1 at right
+    "\"'Every world'?\" Haruhi echoed, her eyes suddenly turning sympathetic as she stepped away from the door and sat next to Koizumi, opposite the younger girl. \"Do you mean, you're lost, Kanae-chan?\""
     # "Kanae nodded, frowning. \"That's right,\" she agreed. \"And I'm still trying to find my way home. I've been through over a hundred worlds by now, ever since before middle school! But Sempai almost always tells me that it's big trouble for you to know I'm a slider, even when he doesn't believe me.\" Turning to Kyon, she asked, \"Sempai, why is it okay for her to know this time?\""
     # "\"I told her yesterday,\" he said, considering. \"Michikyuu-san, are you telling me that in alternate realities, I went to middle school with Haruhi?\""
     # "\"Yes, sometimes,\" Kanae agreed, smiling. \"And sometimes junior high school as well. Mostly in those realities, I think it was because of a zoning change that had one or another of the schools you usually go to removed. Sorry, after so many worlds, I tend to pay more attention to where you are than why you're there. But please, call me Kanae-chan, Sempai.\""
