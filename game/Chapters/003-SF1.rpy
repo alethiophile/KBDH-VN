@@ -360,6 +360,7 @@ label Test:
     show Koizumi Crossed Ser1 at left
     with fade
     "After Koizumi had finished explaining his role as an esper, Haruhi nodded quietly, peering into the empty depths of her coffee cup. The three were seated at one of the outdoor tables near the cafeteria."
+    nvl clear
     show Koizumi Crossed Sigh2 at left
     "Kyon finished the last sip of his own beverage, and then Koizumi sighed, rising to his feet. \"I apologize if this is troubling for you,\" he said. \"But I'm afraid I must go attend the current closed spaces.\"" 
     show Koizumi Think Ser4 at left
@@ -380,6 +381,7 @@ label Test:
     "Haruhi heaved a sigh, watching him walk away. \"Kyon,\" she said, quietly, \"I'm trying not to be upset about this. Because that just makes more trouble.\"" 
     show Haruhi Worry1 at center
     "\"But more and more, this 'power' I've got really seems to suck! It's too dangerous to use, and just for having it, I endanger the world? \""
+    nvl clear
     show Haruhi Pout1 at center
     "\"Everything I looked for hid from me until you made them show themselves?\""
     nvl clear
@@ -412,6 +414,7 @@ label Test:
     "She smirked at that. \"Good,\" she decided. \"If you can solve aliens, time travelers, and everything else, at least there's one mystery left for you to focus on, right?\""
     show Kyon Worry1 at right
     "He looked away at the sky. \"Anyway,\" he said after an extended moment of silence, \"I had to leave that world because the people who made the brigade were there, but the brigade itself wasn't.\""
+    nvl clear
     show Haruhi Quest1 at center
     "\"Yeah, Yuki mentioned that.... Hey, I want to know something about that world — Yuki set it up for you, you know. What was she like? More assertive? I have a hard time imagining her being pushy.\""
     nvl clear
@@ -419,11 +422,12 @@ label Test:
     "\"Eh ... she was more like a regular girl,\" he said, shaking his head. \"She was quiet, just like now ... but more talkative than she usually is.\""
     show Haruhi Unhap2 at center
     "\"Was she cute?\" Haruhi pressed, studying the profile of his face as he stared away."
+    nvl clear
     show Kyon Smile5 at right
     "\"She looked exactly the same, just with her glasses on again,\" he answered with a shrug. \"Except ... well, she was more expressive. She had a very pretty smile; Nagato doesn't smile, really. That's one of the three main things that stick with me.\""
-    nvl clear
     show Haruhi Pout2 at center
     "\"Hmm,\" she mused, trying to banish the rising frustration she felt. Her own fault for asking these questions, she supposed. \"What are the others?\""
+    nvl clear
     show Kyon Worry1 at right
     show KBlush at right
     "\"Er.... Well, your other self in that world went to Kouyouen and hadn't cut her hair, so when we sneaked into Kitago, I asked you— That is, I asked her to put her hair in a ponytail.\" She smirked, seeing the faint coloring of his cheeks."
@@ -435,11 +439,12 @@ label Test:
     "He shook his head, looking at her carefully. \"It'd be a bit obvious,\" he warned her. Then he hesitated, considering, \"But I guess I can't just say 'no' to everything you want to do. Especially since that one sounds reasonable.\"" 
     show Kyon Smile1 at right
     "\"What about toning it down a bit and just making it grow faster? Probably no one will notice if it finishes by the end of, say, summer vacation.\""
+    nvl clear
     show Haruhi Sigh1 at center
     "She counted the weeks in her head. \"Almost a full term away, huh? Well, I'm holding you to that,\" she decided. Some custodian of her powers he was going to be, if she could play his biases."
-    nvl clear
     show Kyon Neutral2 at right
     "\"Why do you want your hair longer again, anyway?\""
+    nvl clear
     show Haruhi Pout2 at center
     show Hblush at center
     "She coughed quietly, looking another direction. \"So, what was the other thing that stuck with you?\""
@@ -449,11 +454,12 @@ label Test:
     hide Hblush
     show Haruhi Grin1 at center
     "\"Wow, that's pretty short of an ideal world,\" Haruhi observed, trying not to snicker. \"You made it out alright, though, didn't you? Any scars?\""
+    nvl clear
     show Kyon Sigh2 at right
     "\"Of course not,\" he answered. \"My future self and a future Nagato had to go back and.... Well, things got a bit complicated. Anyway, Nagato healed the injury. But this was when I was supposed to be in a coma. A scar from a stab wound when I 'fell down the stairs' seems a bit odd, don't you think?\""
     show Haruhi Quest1 at center
-    "\"True enough,\" she agreed. \"Anyway. I suppose we should investigate Kanae- chan's back story?\""
-    
+    "\"True enough,\" she agreed. \"Anyway. I suppose we should investigate Kanae-chan's back story?\""
+    nvl clear    
     
     # "* * *"
     # "On Michikyuu Kanae's home world, when she was ten years old, a cataclysm had torn a hole in the sky. Strange sleek metallic things had rained down upon the city in her hometown, hatching into gracefully curved reflective metal creatures, no two quite alike, but all very spindly. All very fast, and quite dangerous."
