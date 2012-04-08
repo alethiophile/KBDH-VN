@@ -18,12 +18,13 @@ label SF1:
     show Mikuru Maid Unhap1 at right
     show MBlush1 Maid at right
     show Kanae Wince1:
-        xalign 0.8 yalign 1.0
+        xalign 0.8 yalign 1.4
     with fade    
     "\"P...please get your face out of my chest!\" Mikuru blurted out, her face coloring red."
     show Kanae Sup1
     "The first year student started, realizing where she was, then scurried beneath the table and clung to one of Kyon's legs. {nw}"
-    show Kanae Wince2:
+    # show Kanae Wince2:
+    show Kanae Worry1:
         xalign 0.2 yalign 2.2
     with move
     extend "\"Sempai!\" she whimpered. \"Save me!\""
@@ -351,6 +352,8 @@ label SF1:
     show Mikuru Maid Smile1 at right
     "\"Thank you, Sempai! Thank you, Suzumiya-san!\" Kanae cheered. Haruhi's smile slipped a bit."
     nvl clear
+    
+    call eyecatch("Monday, April 18") from SF1_sc001
     
 label Test:
     play music "Music/HaruhiNoOmoi.mp3"    

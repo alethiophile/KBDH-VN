@@ -50,7 +50,9 @@ label AO1_1:
     hide Haruhi
     show Asakura Frown3 at left
     with dissolve
-    "\"Er,\" Asakura said, crossing her arms beneath her chest."
+    # No crossed-arm Asakura sprite = changing the text to not require that.
+    # "\"Er,\" Asakura said, crossing her arms beneath her chest."
+    "\"Er,\" Asakura said with a slight frown. "
     show Asakura Frown2 at left
     "\"Evidently my information requires an update. I was sent to dispatch Kyon-kun, because he's become an undesirable element for my superiors.\""
     show Asakura Sup1 at left
@@ -96,7 +98,7 @@ label AO1_1:
     nvl clear
     "\"Now, I've converted the entire space of this stairwell into-\""
     hide Asakura
-    "Kyon spun on one foot, crying out with a great, \"Ki-yah!\" "
+    "Kyon spun on one foot, crying out with a great, {=shout}\"Ki-yah!\"{/=shout} "
     play sound "SE/lowswoosh.mp3"
     pause (0.2)
     play sound "SE/impact.mp3"
@@ -105,7 +107,9 @@ label AO1_1:
     pause (0.2)
     play sound "SE/glassbreak1.mp3"
     #with hpunch
-    extend "and kicking the door halfway across the roof."
+    # extend and kicking the door halfway across the roof."
+    $ nvl_erase()
+    "Kyon spun on one foot, crying out with a great, \"Ki-yah!\"{fast} and kicking the door halfway across the roof."
     show Haruhi Sup1 at left
     pause (.01)
     show Kyon Ser1 at left behind Haruhi
@@ -320,7 +324,7 @@ label AO1_1:
     nvl clear
     "\"Okaaaaaay,\" she said, before he heard her say, \"Kyon-kun's phone! He's too lazy to answer!\""
     "\"Thanks,\" he muttered under his breath."
-    "\"Oh? Okay! I'll tell him. Feel better!\" Then her voice rose from conversational, to an unnecessary bellow, \"Kyon-kun! Yuki-nee-san says she's sick and really wants you to visit her!\""
+    "\"Oh? Okay! I'll tell him. Feel better!\" Then her voice rose from conversational, to an unnecessary bellow, {=loud}\"Kyon-kun! Yuki-nee-san says she's sick and really wants you to visit her!\"{/=loud}"
     nvl clear
     "He didn't even bother to grab the phone on the way out."
     "\"Can I come with...\" {nw}"
@@ -339,7 +343,7 @@ label AO1_1:
     scene bg YukiApartmentDay with wiperight:
     "When he reached the lobby, barely pausing long enough to lock up his bike, he wondered if he'd beaten his best time, but didn't feel the need to check."
     "Instead, he dashed to the console, still gasping for breath, and fumbled, mis-dialing her room number and needing to hammer the 'cancel' button to dial again."
-    "\"Nagato!\" he called, the second she picked up. \"It's me!\""
+    "{=loud}\"Nagato!\"{/=loud} he called, the second she picked up. {=loud}\"It's me!\"{/=loud}"
     nvl clear
     "The door opened."
     scene bg YukiRoomCenter with wipeup
@@ -399,7 +403,7 @@ label AO1_1:
     nvl clear
     show Kyon Casual Ang1 at right
     show Yuki Side1 at left
-    "\"I don't care!\" he shouted."
+    "{=shout}\"I don't care!\"{/=shout} he shouted."
     "\"I've always relied on you — now that you need help, I am {i}not{/i} going to just stand by and watch you get taken away from— from us!\""
     show Yuki Side Blink at left
     "She blinked, considering, then lowered her head slightly in her infinitesimal nod."
@@ -419,7 +423,7 @@ label AO1_1:
     # pause 5
     
     # Calling a generic "eyecatch" routine, with unique "from"
-    call eyecatch from AO1_sc001
+    call eyecatch("Sunday, April 17") from AO1_sc001
     
     scene bg YukiApartmentDay with fade
     play music "Music/Kankyou.mp3"
@@ -459,7 +463,7 @@ label AO1_1:
     show Haruhi Casual Sup1 at HalfLeft
     "Her irritation at Kyon's practical joke momentarily blew away, like settled dust being disturbed."
     show Haruhi Crossed Casual Sup2 at HalfLeft
-    "\"Dying!?\" she yelped, turning to stare at the smaller girl."
+    "{=loud}\"Dying!?\"{/=loud} she yelped, turning to stare at the smaller girl."
     "\"What of? {i}How?{/i}\""
     show Yuki Talk1 at left
     "Yuki blinked twice, then answered, \"I am not able to say.\""
@@ -484,7 +488,7 @@ label AO1_1:
     with dissolve
     "Turning around, she glared at Kyon, letting her irritation return and focus on him full-force."
     show Haruhi Casual Ang2 at HalfLeft
-    "\"I am not in the mood for pranks!\" she snapped."
+    "{=loud}\"I am not in the mood for pranks!\"{/=loud} she snapped."
     "\"This better not be a joke!\""
     nvl clear
     show Kyon Casual Ang1 at right
@@ -634,7 +638,7 @@ label AO1_1:
     nvl clear
     stop music fadeout 3
     show Kyon Casual Sup1 at right
-    "\"At {i}your{/i} expense—\""
+    "{=loud}\"At {i}your{/i} expense—\"{/=loud}"
     show Haruhi Casual Sup1 at left
     "That had done it, she realized, flinching back."
     show Kyon Casual Sigh1 at right
@@ -743,7 +747,7 @@ label AO1_1:
     "\"John Smith.\""
     nvl clear
     show Haruhi Casual Sup3 at left
-    "\"{i}You're{/i} John Smith!\""
+    "{=loud}\"{i}You're{/i} John Smith!\"{/=loud}"
     $ _window = True
     # show Haruhi Casual Hap3 at HalfRight with MoveTransition(.2) 
     show Haruhi Casual Hap3 at left
@@ -755,12 +759,12 @@ label AO1_1:
     play sound "SE/impact.mp3" 
     show Haruhi Casual Hap3 at osr_center with sshake
     "She wasn't aware of getting up from the table, uncertain if she had moved around or just jumped over it — she just knew that she had flung herself at him, tackling him to the floor and grabbing on tightly."
-    "\"I {i}knew{/i} it!\" she yelled."
+    "{=shout}\"I {i}knew{/i} it!\"{/=shout} she yelled."
     nvl clear
     $ _window = False
     scene black with dissolve
     stop music fadeout 5
-    "\"I {i}knew{/i} I'd find you again!\""
+    "{=loud}\"I {i}knew{/i} I'd find you again!\"{=loud}"
     nvl clear
     # scene black with dissolve
     # $ renpy.pause(.2, hard=True)
@@ -768,7 +772,7 @@ label AO1_1:
     # pause 5
     
     # Calling a generic "eyecatch" routine
-    call eyecatch from AO1_sc002
+    call eyecatch2("Sunday, April 17", "Thursday, June 2") from AO1_sc002
     
     jump prologue2
 
@@ -806,7 +810,7 @@ label AO1_2:
     # pause 5
     
     # Calling a generic "eyecatch" routine, with unique "from"
-    call eyecatch from AO1_sc003
+    call eyecatch2("Monday, April 18", "Sunday, April 17") from AO1_sc003
 
     play music "Music/GnossiennesDai3.mp3"
     scene bg YukiRoomCenter
@@ -956,8 +960,11 @@ label AO1_2:
     with dissolve
     "\"Everyone who really wants to help me out, and stay in the Brigade ...{w=0.8} everyone who wants to prove to me that this is true and earn my forgiveness for the whole stupid masquerade ...{w=0.8} has to accept {i}me{/i} as a boss, just like Kyon!\""
     nvl clear
+    "She nodded decisively, {nw}"
+    show Haruhi Point Casual Surpr1 at center
+    extend "then her eyes widened slightly in realization. {nw}"
     show Haruhi Point Casual Scold1 at center
-    "She nodded decisively, then her eyes widened slightly in realization. \"Oh, and Koizumi? You're demoted. Kyon's obviously more trustworthy as a vice commander, since you already report to him anyway. Everyone got it? We're the bosses ... not your 'Organizations' or 'Thought Entities' or mysterious future 'superiors' who somehow control your minds!\""
+    extend "\"Oh, and Koizumi? You're demoted. Kyon's obviously more trustworthy as a vice commander, since you already report to him anyway. Everyone got it? We're the bosses ... not your 'Organizations' or 'Thought Entities' or mysterious future 'superiors' who somehow control your minds!\""
     nvl clear
     hide Haruhi
     show Yuki Talk1 at left
@@ -1052,7 +1059,7 @@ label AO1_2:
     # pause 5
 
     # Calling a generic "eyecatch" routine, with unique "from"
-    call eyecatch from AO1_sc004
+    call eyecatch2("Sunday, April 17", "Monday, April 18") from AO1_sc004
     
     play music "Music/Itsumo(Movie).mp3"
     scene bg MorningSky
@@ -1103,13 +1110,13 @@ label AO1_2:
     show Haruhi Quest1 at left
     "\"Why did you want me to give you a letter from yourself, though?\""
     show Kyon Sigh2 at right
-    "The skies were clear of rain, if gray, so he sighed and pulled the letter out of the envelope while proceeding up the hill."
     nvl clear
+    "The skies were clear of rain, if gray, so he sighed and pulled the letter out of the envelope while proceeding up the hill."
     show Kyon Neutral3 at right
     "\"I'm guessing,\" he said mildly, \"that since I just went home last night, I'm going to be time traveling back to yesterday relatively soon.\""
     show Haruhi Smile3 at left
-    "\"Hmm...\" she mused, considering. \"Can I go with you?\""
     nvl clear
+    "\"Hmm...\" she mused, considering. \"Can I go with you?\""
     show Kyon Smile2 at right
     "\"'No, she can't',\" he quoted the first line of the note, scrawled hastily in his own handwriting. \"Well, seems that future me is a bit of a smart-ass.\""
     show Haruhi Crossed Tsun1 at left

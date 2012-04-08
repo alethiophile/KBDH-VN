@@ -54,9 +54,12 @@ label AO2:
     "\"Hah! Okay, I'll admit, I had my doubts before. Mikuru the time traveler? Silly. Mikuru the cute and hilariously inept time traveler, relying on Kyon for support? Entirely plausible!\""
     nvl clear
     show Kyon Ser2 at right
-    "\"Be nice,\" Kyon said, shooting Haruhi a mild scowl. \"If it weren't for Asahina-san and her bosses helping us out ... things might be a lot worse right now.\""
-    show Haruhi Sigh1 at left
+    $ _window = True
+    "\"Be nice,\" Kyon said, shooting Haruhi a mild scowl. \"If it weren't for Asahina-san and her bosses helping us out ... things might be a lot worse right now.\"{nw}"
     show Mikuru Smile1 at center
+    pause
+    show Haruhi Sigh1 at left
+    $ _window = False
     "\"Alright,\" Haruhi allowed, smothering the irritation that arose when Mikuru's face lit up at Kyon's comment. \"But this doesn't get you out of mascot duty!\""
     nvl clear
     scene bg hallway with wipeup
@@ -97,7 +100,7 @@ label AO2:
     
     play sound "SE/WestminsterChimeShort.mp3"
     # Calling a generic "eyecatch" routine with date (first argument in (), "" to nhow no date) and custom pause time (second argument in ()), with unique "from"
-    call eyecatch("", 10.0) from AO2_sc001
+    call eyecatch("Monday, April 18", 10.0) from AO2_sc001
     stop sound fadeout 2
     play music "Music/Nanika.mp3"
     
@@ -200,7 +203,7 @@ label AO2:
     # pause 2.0
     
     # Calling a generic "eyecatch" routine, with unique "from"
-    call eyecatch from AO2_sc002
+    call eyecatch2("Monday, April 18", "Sunday, April 17") from AO2_sc002
     
     play music "Music/Kokuhaku.mp3"
     
@@ -327,8 +330,8 @@ label AO2:
     # show BDVNlogo at truecenter with Dissolve(2.0)
     # pause 5
     
-    # Calling a generic "eyecatch" routine, with unique "from"
-    call eyecatch from AO2_sc003
+    # Calling a generic "eyecatch" routine, with dates and unique "from"
+    call eyecatch2("Sunday, April 17","Monday, April 18") from AO2_sc003
     
 #     
 
@@ -498,7 +501,7 @@ label AO2:
     hide Hblush Crossed
     show Haruhi Sup1 at left
     show Hblush at left
-    "\"Yuki, that's enough! Just forget, um, all of them!\" Haruhi yelled, pushing the remnants of Kyon's lunch across the table."
+    "{=shout}\"Yuki, that's enough!{/=shout} {=loud}Just forget, um, all of them!\"{/=loud} Haruhi yelled, pushing the remnants of Kyon's lunch across the table."
     show Haruhi Ang1 at left
     "\"And forget about that one especially! You can't say that kind of thing in front of Kyon!\""
     nvl clear
@@ -539,10 +542,9 @@ label AO2:
     # show BDVNlogo at truecenter with Dissolve(2.0)
     # pause 5
     
-    # Calling a generic "eyecatch" routine, with unique "from"
-    call eyecatch from AO2_sc004
+    # Calling a generic "eyecatch" routine, with dates unique "from"
+    call eyecatch2("Monday, April 18","Sunday, April 17") from AO2_sc004
     
-
     play music "Music/suspicion.ogg"
     scene bg Cafe with fade
     show Mikuru Casual Neutral1 at center
@@ -594,7 +596,7 @@ label AO2:
     "\"What's that?\" Mikuru asked, glancing at Koizumi sidelong."
     nvl clear
     stop music fadeout 2
-    call eyecatch from AO2_sc005
+    call eyecatch("Sunday, April 17") from AO2_sc005
     
     
 
@@ -711,7 +713,7 @@ label AO2:
     
     
 
-    call eyecatch from AO2_sc006
+    call eyecatch("Sunday, April 17") from AO2_sc006
 
     play music "Music/WitchInGoldCenba.ogg"
     scene bg Cafe
@@ -853,7 +855,7 @@ label AO2:
     "Smiling shyly, she suggested, \"Ah ... let's go for a walk.\""
     nvl clear                             
 
-    call eyecatch from AO2_sc007
+    call eyecatch2("Sunday, April 17","Monday, April 18") from AO2_sc007
 
     play music "Music/ItsumoNoFuukei.mp3"
     scene bg hallway
@@ -878,12 +880,13 @@ label AO2:
     show Kyon Neutral3:
         xalign 0.9 yalign 1.0   
     show Haruhi Pout1:
-        xalign 0.4 yalign 1.0
-    play sound "SE/impact.mp3"        
+        xalign 0.4 yalign 1.0       
     show Kanae Wince1 at right with moveinright
+    play sound "SE/impact.mp3"
+    pause(0.01)
         
     play music "Music/Gekiretsu.mp3"
-    show Haruhi Sup1:
+    show Haruhi Sup1 behind Kyon:
         xalign 0.6 yalign 1.0 
     play sound2 "SE/dashwacky.mp3"    
     show Kyon Unhap1 at left
@@ -914,14 +917,21 @@ label AO2:
     "\"Well, Kyon's memory may be bad,\" Haruhi decided, crossing her arms over her chest. \"But mine's not, and I absolutely don't remember meeting you before.\""
     show Kanae Worry2:
         xalign 0.2 yalign 1.0
-    "\"Er, I should go,\" {nw}"
-    scene bg hallway with wiperightfast
+    "\"Er, I should go,\" the girl managed, squirming in Kyon's grip, {nw}"
     play sound "SE/lowswoosh.mp3"
-    extend"the girl managed, squirming in Kyon's grip, one foot accidentally tripping the boy from his precarious step, sending both hurtling down the stairs headfirst."
+    show Kyon Ang1 Flip:
+        xanchor -0.2 xpos -0.7 yalign 1.0 
+    show Kanae Worry2:
+        xanchor 0.2 xpos -0.3 yalign 1.0
+    with move
+    show Haruhi Crossed Sup2:
+        xalign 0.6 yalign 1.0 
+    extend "one foot accidentally tripping the boy from his precarious step, sending both hurtling down the stairs headfirst."
     nvl clear
     "Still hanging onto her shoulders, Kyon switched his stance as he fell, throwing himself down the stairs even faster, actually pushing off from the sides of the steps quickly enough to get his lower body underneath him before reaching the bottom."
     play sound "SE/impact.mp3"
-    "Unable to stop his rush, he spun in place, clutching the girl to his chest and slamming his back into the wall of the stairwell, smacking his head and barely managing to maintain his grip." 
+    "Unable to stop his rush, he spun in place, clutching the girl to his chest and slamming his back into the wall of the stairwell, smacking his head and barely managing to maintain his grip."
+    scene bg hallway with wiperightfast 
     "He collapsed weakly into a sitting position, the first year girl sprawled across his lap."
     nvl clear
     show Kanae Sup1 at center with wipeup
@@ -1049,23 +1059,29 @@ label AO2:
     "The door slammed open with a booming crash. \"Caught her!\" {nw}" 
     play sound "SE/impact.mp3"
     show Kanae Sup1:
-        xalign 0.8 yalign 1.0
+        xalign 0.8 yalign 1.4
     with move   
     extend "Haruhi cheered, shoving the first year student into Mikuru, who dropped her empty tea tray and barely managed to keep herself and the smaller girl from falling over."
     show Mikuru Think Maid Quest1 at right
-    show Kanae Wince1:
-        xalign 0.8 yalign 1.0
+    show Kanae Wince1
+    # if sprite does not change its position, no need to repeat said position over and over
     "\"Eep,\" the first year girl squeaked, her face pressed into Mikuru's chest. \"Aaugh! I'm in trouble! Someone help me!\""
     nvl clear
     
+    call eyecatch2("Monday, April 18","Sunday, April 17") from AO2_sc008
+    
     play music "Music/MikurunoKokoro.mp3"
     scene bg ParkBench
+    # show Mikuru Casual Sigh1 at left
+    show Mikuru Casual Sigh1:
+        xanchor 0.5 yanchor 0.5 xpos 0.225 ypos 0.72
+        rotate_pad False
+        rotate 10
     show Kyon Casual Worry1 at center
-    show Mikuru Casual Sigh1 at left
     with fade
     "Kyon looked at the slumbering form of Mikuru, leaning heavily against him on their usual park bench, not far from Yuki's apartment. \"Asahina-san?\" he called, not to the girl at his side."
     nvl clear
-    show MikuruBig Smile1 at right with dissolve
+    show MikuruBig Smile1 behind Kyon at right with dissolve
     "\"Hehe, am I too predictable?\" the older version of Mikuru asked from behind him."
     show Kyon Casual Sigh1 at center
     "\"I suppose that may be the case,\" he agreed, shooting an annoyed glance over his shoulder. \"What do I need to do, then?\""
@@ -1121,12 +1137,14 @@ label AO2:
     hide KBlush
     show Kyon Casual Smile4 at right
     "\"So, it runs out,\" he surmised, smirking at her. \"Since you don't seem to be my subordinate.\""
-    show MikuruBig Hap1 at center
+    # show MikuruBig Hap1 at center
+    show MikuruBig Wink at center
     "\"You're {i}my{/i} subordinate,\" she said with a wide wink."
     show Kyon Casual Puzzle1 at right
     "\"Am I?\" he asked, surprised. \"I thought we just happened to work together when it was required.\""
     nvl clear
-    show MikuruBig Grin2 at center
+    # show MikuruBig Grin2 at center
+    show MikuruBig Grinwink at center
     "\"Well ... I like to pretend,\" she said, sticking her tongue out again. \"Truthfully, despite what my younger self told you, our theory of projection back into time ran into an unexpected complication.\"" 
     show MikuruBig Neutral1 at center
     "\"That is to say ... if you consider moments to be flat portraits, like frames of animation or film, and we make a projection onto a single frame, it's fleeting, effectively non-existent.\""

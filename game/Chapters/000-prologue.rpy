@@ -37,11 +37,11 @@ label prologue:
     show Kyon Ser1 at center
     with fast_move
     $ _window = True
-    "\"Bwa!\" she protested, arms waving frantically as she dashed to keep up, or risk the knot being pulled out."
+    "{=loud}\"Bwa!\"{/=loud} she protested, arms waving frantically as she dashed to keep up, or risk the knot being pulled out."
     show Haruhi Ang2 at center
     show Kyon Ser1 at right
     with fast_move
-    "\"What the hell do you think you're doing!?\""
+    "{=loud}\"What the hell do you think you're doing!?\"{/=loud}"
     $ _window = False
     show Haruhi Sup1 at center with None
     show Haruhi Sup1 at osr_left
@@ -60,9 +60,6 @@ label prologue:
         size (800,600)
     "Naturally, he said nothing to her during the entire mad dash to the remote stairwell where she had first hauled {i}him{/i} by his own tie, so long ago."
     "He released her at the top of the steps after looking around to ensure that no one else was nearby."
-    "Her momentum carried her forward, resulting in him pressing one hand flat against her chest, just below her neck."
-    # Z0: Added the "stopping after the dash"
-
     $ _window = True
     show Kyon Ser1 at osl_right
     show Haruhi Ang3 at osl_center
@@ -77,10 +74,11 @@ label prologue:
     #    xalign -0.50 yalign 1.0
     #    linear 0.25 center_left
     # Z0: End of "stopping"
+    "Her momentum carried her forward, resulting in him pressing one hand flat against her chest, just below her neck."
     "Her eyes quickly sharpened, her features fixed into a scowl."
     nvl clear
     show Haruhi Ang3 at center_left
-    "\"What the hell, Kyon!?\""
+    "{=loud}\"What the hell, Kyon!?\"{/=loud}"
     $ _window = True
     show Kyon Ser1 at right with move
     "He held up one hand and said, \"Something's up.\""
@@ -145,17 +143,17 @@ label prologue:
     play sound "SE/DunDun.mp3"
     show Kyon Sigh3 at right
     "{w=1.0}Standing perfectly straight, hands at his sides, he closed his eyes, and began speaking in his best faux movie announcer voice-over."
-    # Z0: Emulating a "movie-narration. Could be {font=fancyfont.ttf}stuffs{/font} rather than bold, but that would require said fancyfont...
+    # Z0: Emulating a "movie-narration. Styled to be of Serif font. To disable, just comment "style.movie.font = "DejaVuSerif.ttf"" line in script.rpy. 
     show Kyon Ser2 at right
-    "\"Skinsuit active,\" "
+    "\"{=movie}Skinsuit active,{/=movie}\" {nw}"
     play sound "SE/Sizzle2.mp3"
     show Skinsuit at right with wipeupslow
     extend "as something that looked like nothing so much as black paint suddenly engulfed his entire body beneath his uniform."
     nvl clear
     play sound "SE/NanoRepair.mp3"
-    "\"Gravimetric stabilizers and secondary gyrometrics online,\" as ridged metal studs appeared on the back of each knuckle, and beneath his uniform pants, metallic vertical rails were described in the skinsuit."
+    "\"{=movie}Gravimetric stabilizers and secondary gyrometrics online,{/=movie}\" as ridged metal studs appeared on the back of each knuckle, and beneath his uniform pants, metallic vertical rails were described in the skinsuit."
     nvl clear
-    "\"Greatcoat thermoptic stealth disengaged,\" "
+    "\"{=movie}Greatcoat thermoptic stealth disengaged,{/=movie}\"{nw} "
     play sound "SE/CloakOff.mp3"
     show Coat at right with coatin
     extend "as a knee-length tan greatcoat coalesced, covering his shoulders with a thick mantle."
@@ -165,10 +163,10 @@ label prologue:
     show Kyon Neutral2 at right
     "\"We had environmental conditioning added last night, since the weather's heating up,\" he said in a normal voice."
     show Kyon Ser2 at right
-    "Switching back, he said, \"Primary weapons check.\""     
+    "Switching back, he said, \"{=movie}Primary weapons check.{/=movie}\""     
     nvl clear
     play sound "SE/lowswoosh.mp3"
-    "He pulled a fifty centimeter long glittering metal cylinder from within the greatcoat, releasing it to spin on its axis in midair to one side, announcing, \"Long range precision and high yield weaponry is at full charge.\""
+    "He pulled a fifty centimeter long glittering metal cylinder from within the greatcoat, releasing it to spin on its axis in midair to one side, announcing, \"{=movie}Long range precision and high yield weaponry is at full charge.{/=movie}\""
     play sound "SE/Barrier2.mp3"
     show Kyon Ser2 Bright at right
     show Skinsuit Bright at right
@@ -184,21 +182,21 @@ label prologue:
     nvl clear
     # Z0: Needs to add a weapon here. Simple gunmetal cylinder with shine overlay getting thinner and wider from time to time (or just spinning?)
     "Another cylinder, wider but shorter than the last was released to float next to the first."
-    "\"Mid- and short-range crowd-control weaponry is at ... ninety seven percent capacity and charging,\" he continued, squinting at the featureless gunmetal tube."
+    "\"{=movie}Mid- and short-range crowd-control weaponry is at ... ninety seven percent capacity and charging,{/=movie}\" he continued, squinting at the featureless gunmetal tube."
     nvl clear
     play sound "SE/clink.mp3"
     # Z0: Needs to add a sword here. Pull a sword hilt from later chapters, bopping up and down from time to time (or just spinning?)
-    "Pulling a well-crafted sword hilt with no cross-guard or blade from one pocket, he released it horizontally, and it hung before him between the other weapons. \"Beam saber is at full capacity.\""
+    "Pulling a well-crafted sword hilt with no cross-guard or blade from one pocket, he released it horizontally, and it hung before him between the other weapons. \"{=movie}Beam saber is at full capacity.{/=movie}\""
     show Kyon Ser1 at right
     "After pulling his cell phone from one pocket, he brushed his fingertips over his ear, revealing three dull metal studs in the skinsuit."
-    "\"All systems nominal; no proximity alarms—\""
+    "\"{=movie}All systems nominal; no proximity alarms—{/=movie}\""
     nvl clear
     show Kyon Ang1 at right
     "He broke off suddenly, scowling. \"Okay,\" he said in his normal voice. \"My mistake. We've got incoming.\""
     show Haruhi Hap4:
         xalign 0.0 yalign 1.0
         linear 0.1 xalign 0.1
-    "\"God damn it, Kyon, you're so cool when you do this,\" Haruhi gushed, clapping her hands together. \"What is it?\""
+    "{=loud}\"God damn it, Kyon, you're so cool when you do this,\"{/=loud} Haruhi gushed, clapping her hands together. \"What is it?\""
     nvl clear
     show Kyon Neutral1 at right
     "\"I'm not sure,\" he said, as a cold, familiar chuckle echoed."
@@ -317,6 +315,12 @@ label prologue2:
     scene bg roofclose with wiperightfast
     nvl clear
     show Asakura Unhap1 at center
+    # Stakes, prepared to launch
+    show stake1 at Position(xanchor=0.5, yanchor=1.0, xpos=450, ypos=0)
+    show stake2 at Position(xanchor=0.5, yanchor=1.0, xpos=500, ypos=0)
+    show stake3 behind Asakura at Position(xanchor=0.5, yanchor=1.0, xpos=370, ypos=0)
+    show stake4 behind Asakura at Position(xanchor=0.5, yanchor=1.0, xpos=300, ypos=0)
+    with None
     pause (0.3)
     play sound "SE/guncock.mp3"
     "Beneath him, a widening circle of dust marked where he leapt from, and while in midair he flipped over, a sequence of touch-points converting the unadorned cylinder into a stocky, blunt, two-handed gun."
@@ -324,17 +328,31 @@ label prologue2:
     play sound "SE/netlaunch.mp3"
     pause (1)
     play sound "SE/stake1.mp3"
-    show Spike1 at center #center
-    pause (0.05)
+    # show Spike1 at center #center
+    # pause (0.05)
+    # play sound2 "SE/stake2.mp3"
+    # show Spike2 at center #center
+    # pause (0.05)
+    # play sound "SE/stake3.mp3"
+    # show Spike3 at center #center
+    # pause (0.05)
+    # play sound "SE/stake1.mp3"
+    # show Spike4 at center #center
+    # pause (0.5)
+    
+    show stake2 at Position(xanchor=0.5, yanchor=1.0, xpos=600, ypos=1.2)
+    with MoveTransition(0.08)
     play sound2 "SE/stake2.mp3"
-    show Spike2 at center #center
-    pause (0.05)
+    show stake1 at Position(xanchor=0.5, yanchor=1.0, xpos=500, ypos=1.2)
+    with MoveTransition(0.08)
     play sound "SE/stake3.mp3"
-    show Spike3 at center #center
-    pause (0.05)
+    show stake3 behind Asakura at Position(xanchor=0.5, yanchor=1.0, xpos=330, ypos=1.2)
+    with MoveTransition(0.08)
     play sound "SE/stake1.mp3"
-    show Spike4 at center #center
-    pause (0.5)
+    show stake4 behind Asakura at Position(xanchor=0.5, yanchor=1.0, xpos=190, ypos=1.2)
+    with MoveTransition(0.08)
+    pause(0.1)
+    
     # hide Spike1
     # hide Spike2
     # hide Spike3
@@ -548,10 +566,12 @@ label prologue2:
     scene bg roofright
     show Haruhi Sup1 at left
     show Kyon Ser1 at right
-    "\"Waaaait!\" Haruhi yelled, stomping one foot and spinning to face Yuki."
-    show Haruhi Ang2 at left
+    "{=shout}\"Waaaait!\"{/=shout} Haruhi yelled, stomping one foot and spinning to face Yuki."
+    # show Haruhi Ang2 at left
+    show Haruhi Crossed Ang2 at left
     "\"'Dispatched'? I don't think so! If you need something from her, there's got to be a way to do it without killing her!"
-    show Haruhi Ang1 at left
+    # show Haruhi Ang1 at left
+    show Haruhi Crossed Ang2 at left
     "\"What's the point of running into another alien, just to kill them?\""
     nvl clear
     show Kyon Sigh1 at right
@@ -573,7 +593,8 @@ label prologue2:
     nvl clear
     show Haruhi Hap1 at left
     "\"Good!\" Haruhi nodded decisively, grinning again."
-    show Haruhi Smile3 at left
+    # show Haruhi Smile3 at left
+    show Haruhi Crossed Smile1 at left
     "\"Yuki, let's come up with a backup plan. Something that will let you get your power-up and let us reform Ryouko. Can we do that?\""
     scene bg roofclose
     show Asakura Frown1  at center
@@ -661,7 +682,7 @@ label prologue2:
     # pause 5
     
     # Calling a generic "eyecatch" routine
-    call eyecatch from prolog_p001
+    call eyecatch2("Thursday, June 2", "Monday, April 18") from prolog_p001
     
     # Approx. 21 minutes of reading at this point.
     jump AO1_2
