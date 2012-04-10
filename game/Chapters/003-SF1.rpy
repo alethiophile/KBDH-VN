@@ -22,6 +22,7 @@ label SF1:
     with fade    
     "\"P...please get your face out of my chest!\" Mikuru blurted out, her face coloring red."
     show Kanae Sup1
+    $ _window = True;
     "The first year student started, realizing where she was, then scurried beneath the table and clung to one of Kyon's legs. {nw}"
     # show Kanae Wince2:
     show Kanae Worry1:
@@ -365,7 +366,7 @@ label Test:
     "After Koizumi had finished explaining his role as an esper, Haruhi nodded quietly, peering into the empty depths of her coffee cup. The three were seated at one of the outdoor tables near the cafeteria."
     nvl clear
     show Koizumi Crossed Sigh2 at left
-    "Kyon finished the last sip of his own beverage, and then Koizumi sighed, rising to his feet. \"I apologize if this is troubling for you,\" he said. \"But I'm afraid I must go attend the current closed spaces.\"" 
+    "Kyon finished the last sip of his own beverage, and then Koizumi sighed, rising to his feet. \"I apologize if this is troubling for you,\" he said. \"But I'm afraid I must go attend the current closed spaces." 
     show Koizumi Think Ser4 at left
     "\"Hopefully I will be more free tomorrow, and we can discuss what the Organization is and represents.\""
     nvl clear
@@ -381,15 +382,15 @@ label Test:
     nvl clear
     hide Koizumi with moveoutleft
     show Haruhi Sigh1 at center
-    "Haruhi heaved a sigh, watching him walk away. \"Kyon,\" she said, quietly, \"I'm trying not to be upset about this. Because that just makes more trouble.\"" 
+    "Haruhi heaved a sigh, watching him walk away. \"Kyon,\" she said, quietly, \"I'm trying not to be upset about this. Because that just makes more trouble." 
     show Haruhi Worry1 at center
-    "\"But more and more, this 'power' I've got really seems to suck! It's too dangerous to use, and just for having it, I endanger the world? \""
+    "\"But more and more, this 'power' I've got really seems to suck! It's too dangerous to use, and just for having it, I endanger the world?\""
     nvl clear
     show Haruhi Pout1 at center
     "\"Everything I looked for hid from me until you made them show themselves?\""
     nvl clear
     show Kyon Ser3 at right
-    "\"Don't get too down,\" he told her. \"Remember, closed spaces result from your frustration. All you need to do to make Koizumi's job easier is be happy. \""
+    "\"Don't get too down,\" he told her. \"Remember, closed spaces result from your frustration. All you need to do to make Koizumi's job easier is be happy. "
     show Kyon Sigh1 at right
     "\"As long as you respect the boundaries of other people, I don't see why you can't be that. Especially since you now {i}know{/i} you've got a time traveler, an esper, and an alien in your club. Isn't that what you were looking for?\""
     nvl clear
@@ -399,7 +400,7 @@ label Test:
     "\"It's like my wishes were granted by a literal genie who was looking for the wording loophole to keep me in the dark ... I mean, honestly, I'm a bit jealous. It seems that you got to do all the fun things while I was unaware!\""
     nvl clear
     show Kyon Ser3 at right
-    "\"I've said it before, and I'll say it again,\" Kyon insisted. \"The most important thing to me about the brigade is the people in it. \""
+    "\"I've said it before, and I'll say it again,\" Kyon insisted. \"The most important thing to me about the brigade is the people in it. "
     show Kyon Sigh1 at right
     "\"There's a lot I don't care about — if we're trying to keep closed space from forming, if we're just hanging out and playing games, if we're working on the anthology.... \""
     nvl clear
@@ -409,7 +410,7 @@ label Test:
     "\"Yeah,\" Haruhi said quietly, frowning. \"I guess Yuki must have been {i}really{/i} mad about me.... She doesn't show much, you know? And of course, something else to be jealous of — she opens up to you, not me.\""
     show Kyon Sigh2 at right
     nvl clear
-    "\"That's not it,\" he countered, shaking his head. \"You probably see me as idle and ignorant, but I just try and pay close attention. I think I'd be a terrible person if I didn't pay attention to Nagato after she saved my life so many times.\"" 
+    "\"That's not it,\" he countered, shaking his head. \"You probably see me as idle and ignorant, but I just try and pay close attention. I think I'd be a terrible person if I didn't pay attention to Nagato after she saved my life so many times." 
     show Kyon Neutral2 at right
     "\"The only person I can never figure out reliably is you.\""
     nvl clear
@@ -439,7 +440,7 @@ label Test:
     nvl clear
     hide KBlush
     show Kyon Ser3 at right
-    "He shook his head, looking at her carefully. \"It'd be a bit obvious,\" he warned her. Then he hesitated, considering, \"But I guess I can't just say 'no' to everything you want to do. Especially since that one sounds reasonable.\"" 
+    "He shook his head, looking at her carefully. \"It'd be a bit obvious,\" he warned her. Then he hesitated, considering, \"But I guess I can't just say 'no' to everything you want to do. Especially since that one sounds reasonable." 
     show Kyon Smile1 at right
     "\"What about toning it down a bit and just making it grow faster? Probably no one will notice if it finishes by the end of, say, summer vacation.\""
     nvl clear
