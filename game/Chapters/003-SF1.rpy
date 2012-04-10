@@ -187,8 +187,10 @@ label SF1:
         linear 0.1 xpos 0 ypos 0
     show Haruhi Worry1 at left
     show Koizumi Crossed Neutral1 at right
+    stop music fadeout 3
     "\"'Every world'?\" Haruhi echoed, her eyes suddenly turning sympathetic as she stepped away from the door and sat next to Koizumi, opposite the younger girl. \"Do you mean, you're lost, Kanae-chan?\""
     nvl clear
+    play music "Music/Fuyunoashioto.mp3"
     scene bg ClubroomFullDay:
         xpos 0 ypos 0
         linear 0.1 xpos -800 ypos 0
