@@ -22,6 +22,7 @@ label SF1:
     with fade    
     "\"P...please get your face out of my chest!\" Mikuru blurted out, her face coloring red."
     show Kanae Sup1
+    $ _window = True;
     "The first year student started, realizing where she was, then scurried beneath the table and clung to one of Kyon's legs. {nw}"
     # show Kanae Wince2:
     show Kanae Worry1:
@@ -186,8 +187,10 @@ label SF1:
         linear 0.1 xpos 0 ypos 0
     show Haruhi Worry1 at left
     show Koizumi Crossed Neutral1 at right
+    stop music fadeout 3
     "\"'Every world'?\" Haruhi echoed, her eyes suddenly turning sympathetic as she stepped away from the door and sat next to Koizumi, opposite the younger girl. \"Do you mean, you're lost, Kanae-chan?\""
     nvl clear
+    play music "Music/Fuyunoashioto.mp3"
     scene bg ClubroomFullDay:
         xpos 0 ypos 0
         linear 0.1 xpos -800 ypos 0
@@ -355,7 +358,6 @@ label SF1:
     
     call eyecatch("Monday, April 18") from SF1_sc001
     
-label Test:
     play music "Music/HaruhiNoOmoi.mp3"    
     scene bg SchoolTable
     show Kyon Ser1 at right
@@ -365,7 +367,7 @@ label Test:
     "After Koizumi had finished explaining his role as an esper, Haruhi nodded quietly, peering into the empty depths of her coffee cup. The three were seated at one of the outdoor tables near the cafeteria."
     nvl clear
     show Koizumi Crossed Sigh2 at left
-    "Kyon finished the last sip of his own beverage, and then Koizumi sighed, rising to his feet. \"I apologize if this is troubling for you,\" he said. \"But I'm afraid I must go attend the current closed spaces.\"" 
+    "Kyon finished the last sip of his own beverage, and then Koizumi sighed, rising to his feet. \"I apologize if this is troubling for you,\" he said. \"But I'm afraid I must go attend the current closed spaces." 
     show Koizumi Think Ser4 at left
     "\"Hopefully I will be more free tomorrow, and we can discuss what the Organization is and represents.\""
     nvl clear
@@ -381,15 +383,15 @@ label Test:
     nvl clear
     hide Koizumi with moveoutleft
     show Haruhi Sigh1 at center
-    "Haruhi heaved a sigh, watching him walk away. \"Kyon,\" she said, quietly, \"I'm trying not to be upset about this. Because that just makes more trouble.\"" 
+    "Haruhi heaved a sigh, watching him walk away. \"Kyon,\" she said, quietly, \"I'm trying not to be upset about this. Because that just makes more trouble." 
     show Haruhi Worry1 at center
-    "\"But more and more, this 'power' I've got really seems to suck! It's too dangerous to use, and just for having it, I endanger the world? \""
+    "\"But more and more, this 'power' I've got really seems to suck! It's too dangerous to use, and just for having it, I endanger the world?\""
     nvl clear
     show Haruhi Pout1 at center
     "\"Everything I looked for hid from me until you made them show themselves?\""
     nvl clear
     show Kyon Ser3 at right
-    "\"Don't get too down,\" he told her. \"Remember, closed spaces result from your frustration. All you need to do to make Koizumi's job easier is be happy. \""
+    "\"Don't get too down,\" he told her. \"Remember, closed spaces result from your frustration. All you need to do to make Koizumi's job easier is be happy. "
     show Kyon Sigh1 at right
     "\"As long as you respect the boundaries of other people, I don't see why you can't be that. Especially since you now {i}know{/i} you've got a time traveler, an esper, and an alien in your club. Isn't that what you were looking for?\""
     nvl clear
@@ -399,7 +401,7 @@ label Test:
     "\"It's like my wishes were granted by a literal genie who was looking for the wording loophole to keep me in the dark ... I mean, honestly, I'm a bit jealous. It seems that you got to do all the fun things while I was unaware!\""
     nvl clear
     show Kyon Ser3 at right
-    "\"I've said it before, and I'll say it again,\" Kyon insisted. \"The most important thing to me about the brigade is the people in it. \""
+    "\"I've said it before, and I'll say it again,\" Kyon insisted. \"The most important thing to me about the brigade is the people in it. "
     show Kyon Sigh1 at right
     "\"There's a lot I don't care about — if we're trying to keep closed space from forming, if we're just hanging out and playing games, if we're working on the anthology.... \""
     nvl clear
@@ -409,7 +411,7 @@ label Test:
     "\"Yeah,\" Haruhi said quietly, frowning. \"I guess Yuki must have been {i}really{/i} mad about me.... She doesn't show much, you know? And of course, something else to be jealous of — she opens up to you, not me.\""
     show Kyon Sigh2 at right
     nvl clear
-    "\"That's not it,\" he countered, shaking his head. \"You probably see me as idle and ignorant, but I just try and pay close attention. I think I'd be a terrible person if I didn't pay attention to Nagato after she saved my life so many times.\"" 
+    "\"That's not it,\" he countered, shaking his head. \"You probably see me as idle and ignorant, but I just try and pay close attention. I think I'd be a terrible person if I didn't pay attention to Nagato after she saved my life so many times." 
     show Kyon Neutral2 at right
     "\"The only person I can never figure out reliably is you.\""
     nvl clear
@@ -439,7 +441,7 @@ label Test:
     nvl clear
     hide KBlush
     show Kyon Ser3 at right
-    "He shook his head, looking at her carefully. \"It'd be a bit obvious,\" he warned her. Then he hesitated, considering, \"But I guess I can't just say 'no' to everything you want to do. Especially since that one sounds reasonable.\"" 
+    "He shook his head, looking at her carefully. \"It'd be a bit obvious,\" he warned her. Then he hesitated, considering, \"But I guess I can't just say 'no' to everything you want to do. Especially since that one sounds reasonable." 
     show Kyon Smile1 at right
     "\"What about toning it down a bit and just making it grow faster? Probably no one will notice if it finishes by the end of, say, summer vacation.\""
     nvl clear
@@ -462,25 +464,84 @@ label Test:
     "\"Of course not,\" he answered. \"My future self and a future Nagato had to go back and.... Well, things got a bit complicated. Anyway, Nagato healed the injury. But this was when I was supposed to be in a coma. A scar from a stab wound when I 'fell down the stairs' seems a bit odd, don't you think?\""
     show Haruhi Quest1 at center
     "\"True enough,\" she agreed. \"Anyway. I suppose we should investigate Kanae-chan's back story?\""
-    nvl clear    
+    nvl clear
     
-    # "* * *"
-    # "On Michikyuu Kanae's home world, when she was ten years old, a cataclysm had torn a hole in the sky. Strange sleek metallic things had rained down upon the city in her hometown, hatching into gracefully curved reflective metal creatures, no two quite alike, but all very spindly. All very fast, and quite dangerous."
-    # "Her friends had revealed to her then that she was a locus of power of some kind, and that she had to learn to use her gift and flee from the aliens. They had labored for months to keep her powers secret, even from herself, but with the invasion, there had been no choice. In desperation, not knowing if she could ever come back, she'd finally made the step — her first leap."
-    # "Landing awkwardly in an alley in an unfamiliar city, her clothes torn and face smudged, not knowing how far her pursuers were from her, she cried for help ... and was answered. A friendly boy claimed he had known her from their elementary school, even though she didn't recognize him. He cleaned her scrapes and cuts, then led her to an unfamiliar school, where teachers insisted they knew her, and then she waved farewell to that kind older boy and was reunited with the parents who she knew, even though her memories didn't match up with theirs."
-    # "Over the following weeks, she finally found out the boy's name, but by then, 'Sempai' had become ingrained in her way of thinking, and when everything else seemed strange, he at least listened. He smiled, sometimes he laughed and shook his head, and she doubted he believed ... but when no one else would, he {i}listened{/i}. So, afraid that those strange, sleek invaders from the sky would appear again, she decided to try and search for someone who could help her find what she needed to save her home, and maybe someone who could help her find her way there."
-    # "Sometimes her sempai believed her, and sometimes he didn't. A few times, he told her he was an esper, and they weren't so different. Sometimes, and those were the worst, he wasn't anywhere in the world she could find. A few times, he said he knew aliens, time travelers, and a smaller handful of times, demons and other, stranger things. As the weeks turned into months, and then the months turned into years, she watched as in world by world, his attention shifted to other things, and he warned her away from the strange girl that had appeared by him frequently. In those worlds, he almost always believed her, but said he was powerless to help."
-    # "She had long ago lost count of how many worlds she'd been in, how many history tests she'd failed for remembering things correctly ... but differently. That didn't matter to her, though; in the end, he {i}always{/i} listened, and because of that, across countless worlds, Sempai was Sempai."
-    # "* * *"
-    # "Mikuru sniffled, listening to the end of Kanae's story. \"That's so sad!\" she whimpered. \"Poor Kanae-chan!\""
-    # "\"It's not so bad!\" Kanae said brightly. \"Even though everything changes from world to world, I still have my family! Sometimes I even have friends! And most importantly, I almost always have Sempai.\""
-    # "\"Ouch,\" Haruhi said, taken aback. \"That doesn't sound like a fun power at all.\""
-    # "\"I can't let it get me down,\" the small girl declared confidently. \"I've never been to the same world twice, so with so many out there, I'm bound to find what I need, as long as I don't give up!\""
-    # "\"That's a good attitude! But you don't need to look any further; I'm absolutely sure we can find Kanae-chan's way home and deal with the alien invaders! It'll be easy, won't it? Yuki-chan, you know everything, so how do we help her find her way home to find out about these enemies?\""
-    # "\"Unknown,\" Yuki replied without hesitation. \"I am not capable of traversal to other realities; neither is the Integrated Data Sentience Entity. This ability, much like that of Suzumiya Haruhi, can be termed 'unique'. Until the arrival of Michikyuu Kanae, the theory of other realities could not actually be proved, only speculated.\""
-    # "\"Would that mean that they also don't know about Michikyuu-san, and they're still in the dark on this one?\" Kyon mused."
-    # "\"It's Kanae-chan, Sempai,\" the underclassman reminded him."
-    # "\"Possibly,\" Yuki allowed. \"Even though it is possible to discern Michikyuu Kanae's method of travel, I am unable to replicate or predict its function.\""
+    call eyecatch2("Monday, April 18","December 200X") from SF1_sc002
+    
+    scene black
+    play music "Music/Kankyou.mp3"
+    "On Michikyuu Kanae's home world, when she was ten years old, a cataclysm had torn a hole in the sky. Strange sleek metallic things had rained down upon the city in her hometown, hatching into gracefully curved reflective metal creatures, no two quite alike, but all very spindly. All very fast, and quite dangerous."
+    "Her friends had revealed to her then that she was a locus of power of some kind, and that she had to learn to use her gift and flee from the aliens. They had labored for months to keep her powers secret, even from herself, but with the invasion, there had been no choice. In desperation, not knowing if she could ever come back, she'd finally made the step — her first leap."
+    nvl clear
+    "Landing awkwardly in an alley in an unfamiliar city, her clothes torn and face smudged, not knowing how far her pursuers were from her, she cried for help ... and was answered. A friendly boy claimed he had known her from their elementary school, even though she didn't recognize him. He cleaned her scrapes and cuts, then led her to an unfamiliar school, where teachers insisted they knew her, and then she waved farewell to that kind older boy and was reunited with the parents who she knew, even though her memories didn't match up with theirs."
+    nvl clear
+    "Over the following weeks, she finally found out the boy's name, but by then, 'Sempai' had become ingrained in her way of thinking, and when everything else seemed strange, he at least listened. He smiled, sometimes he laughed and shook his head, and she doubted he believed ... but when no one else would, he {i}listened{/i}. So, afraid that those strange, sleek invaders from the sky would appear again, she decided to try and search for someone who could help her find what she needed to save her home, and maybe someone who could help her find her way there."
+    nvl clear
+    "Sometimes her sempai believed her, and sometimes he didn't. A few times, he told her he was an esper, and they weren't so different. Sometimes, and those were the worst, he wasn't anywhere in the world she could find. A few times, he said he knew aliens, time travelers, and a smaller handful of times, demons and other, stranger things. As the weeks turned into months, and then the months turned into years, she watched as in world by world, his attention shifted to other things, and he warned her away from the strange girl that had appeared by him frequently. In those worlds, he almost always believed her, but said he was powerless to help."
+    "She had long ago lost count of how many worlds she'd been in, how many history tests she'd failed for remembering things correctly ... but differently. That didn't matter to her, though; in the end, he {i}always{/i} listened, and because of that, across countless worlds, Sempai was Sempai."
+    nvl clear
+    
+    call eyecatch2("December 200X","Monday, April 18") from SF1_sc003
+    
+label Test:
+    scene bg ClubroomRightDay
+    play music "Music/Yuuutsu.mp3"
+    show Kyon Neutral3 at left
+    show Mikuru Think Maid Sad1 at right
+    show MTears Think at right
+    show Kanae Worry3:
+        xalign 0.5 yalign 1.0
+    with fade
+    "Mikuru sniffled, listening to the end of Kanae's story. \"That's so sad!\" she whimpered. \"Poor Kanae-chan!\""
+    show Mikuru Think Maid Sad2 at right
+    show Kanae Hap2:
+        xalign 0.5 yalign 1.0
+    "\"It's not so bad!\" Kanae said brightly. \"Even though everything changes from world to world, I still have my family! Sometimes I even have friends! And most importantly, I almost always have Sempai.\""
+    nvl clear
+    scene bg ClubroomFullDay:
+        xpos -800 ypos 0
+        linear 0.1 xpos 0 ypos 0
+    show Haruhi Worry1 at left
+    show Koizumi Think Ser3 at right
+    "\"Ouch,\" Haruhi said, taken aback. \"That doesn't sound like a fun power at all.\""
+    scene bg ClubroomFullDay:
+        xpos 0 ypos 0
+        linear 0.1 xpos -800 ypos 0
+    show Kyon Neutral3 at left
+    show Mikuru Think Maid Sad2 at right
+    show MTears Think at right
+    show Kanae Hap2:
+        xalign 0.5 yalign 1.0
+    "\"I can't let it get me down,\" the small girl declared confidently. \"I've never been to the same world twice, so with so many out there, I'm bound to find what I need, as long as I don't give up!\""
+    nvl clear
+    scene bg ClubroomFullDay:
+        xpos -800 ypos 0
+        linear 0.1 xpos 0 ypos 0
+    show Haruhi Hap4 at left
+    show Koizumi Think Grin1 at right
+    "\"That's a good attitude! But you don't need to look any further; I'm absolutely sure we can find Kanae-chan's way home and deal with the alien invaders! It'll be easy, won't it? {nw}"
+    show Haruhi Hap1 at left
+    extend "Yuki-chan, you know everything, so how do we help her find her way home to find out about these enemies?\""
+    nvl clear
+    scene bg ClubroomFullDay:
+        xpos 0 ypos 0
+        linear 0.1 xpos -800 ypos 0
+    show Kyon Neutral4 at left
+    show Mikuru Maid Sad1 at right
+    show Kanae Neutral1:
+        xalign 0.5 yalign 1.0
+    show YBook at TopRight behind Mikuru
+    "\"Unknown,\" Yuki replied without hesitation. \"I am not capable of traversal to other realities; neither is the Integrated Data Sentience Entity. This ability, much like that of Suzumiya Haruhi, can be termed 'unique'. Until the arrival of Michikyuu Kanae, the theory of other realities could not actually be proved, only speculated.\""
+    nvl clear
+    show Kyon Neutral1 at left
+    "\"Would that mean that they also don't know about Michikyuu-san, and they're still in the dark on this one?\" Kyon mused."
+    show Kyon Neutral4 at left
+    show Kanae Sad2:
+        xalign 0.5 yalign 1.0
+    "\"It's Kanae-chan, Sempai,\" the underclassman reminded him."
+    show Kanae Sad1:
+        xalign 0.5 yalign 1.0
+    "\"Possibly,\" Yuki allowed. \"Even though it is possible to discern Michikyuu Kanae's method of travel, I am unable to replicate or predict its function.\""
     # "\"Right,\" Haruhi decided, smacking one fist into her opposing palm. \"Then I just need to fix that, right?\""
     # "\"Let's not be too hasty,\" Kyon warned. \"Michikyuu-san, how does your ability work?\""
     # "\"It's Kanae-chan, Sempai,\" the girl replied. \"Um ... it's hard to explain, though. It feels like turning a little to one side and pushing against the world, but not quite like that ... until the barrier that keeps us from falling out of the world gives way and I tumble through. But I can't even find my way back; the surface of reality ripples like a drop of water, so it never feels quite the same.... I wish I knew better! But like Nagato-san says, I've never found another slider who wanted to help me out.\""
@@ -545,7 +606,9 @@ label Test:
     # "\"I beg your pardon?\" he asked, quirking one eyebrow higher. \"I don't have good excuses, I have {i}awesome{/i} excuses.\""
     # "Haruhi grinned very brightly, chuckling. \"That's true,\" she allowed. \"Okay, vice commander, since we're here, and it seems Yuki's going to need some time to figure out the dimensional anchor, let's make sure you at least finish your homework. I'm not about to let your awesome excuses make the brigade look worse with sucky grades.\""
     # "Some day, Kyon realized, he would need to learn to keep his mouth shut."
+    
     # "* * *"
+    
     # "\"I have determined the function of the anchor,\" Yuki announced, just as Kyon was finishing his last math questions beneath Haruhi's sharp gaze. Mikuru had briefly snuck away to the girl's bathroom to change back into her uniform, and Kanae was curled over the desk, sleeping soundly with her school bag as a pillow."
     # "\"Excellent!\" Haruhi cheered, jolting the first year girl awake."
     # "\"Nya....\" Kanae murmured, sitting up and rubbing her eyes."
@@ -570,7 +633,9 @@ label Test:
     # "\"And right on their heels, the alien invasion,\" he countered. \"Anyway, it's late; we should be getting out of the school.\""
     # "Haruhi nodded absently, shutting the computer down and gathering her book bag. \"In any case, that gives us a hard cap of around four or five weeks to get it sorted out.\""
     # "The other club members rose and gathered their things, Mikuru offering Kanae a hand when the younger girl wobbled tiredly on her feet. \"Understood,\" Yuki said softly. In the corridor, while Haruhi turned around and locked the club room door, the quiet girl slipped him a note. He pocketed it with a frown. Mikuru studiously pretended not to notice, while Kanae was looking the other way drowsily."
+
     # "* * *"
+    
     # "After parting with the others at the train station, Kyon wasn't entirely surprised to see a familiar black taxicab pull from a side-street, stopping nearby. Koizumi leaned over and opened the back door, so with no hesitation, Kyon climbed in next to him."
     # "\"How did it go?\" he asked, before the esper could volunteer anything."
     # "\"It was a bit rough,\" Koizumi replied, still smiling. \"It could have been much worse, though. As I have mentioned before, one of the most stressful parts about this is simply getting to where the closed space is in a timely manner. Quite fortunately, all the spaces were within the coast of Honshu, so there was no need to travel extremely far.\""
@@ -593,7 +658,9 @@ label Test:
     # "\"Is there anything else?\" Koizumi asked."
     # "Kyon shook his head, realizing they were only a few blocks from his house. \"Just that I'm sorry for the closed spaces so far. I'll do my best to keep Haruhi in good spirits.\""
     # "\"That is all we can ask for,\" Koizumi said, nodding. \"Thank you very much, vice commander.\""
+
     # "* * *"
+
     # "After enduring a haranguing lecture from his mother and missing dinner, Kyon went to his bedroom and checked the note Yuki had given him. It read simply, \"Call me.\""
     # "Shrugging, he picked up the phone and did as he was told, dialing her number from long memory. She answered instantly, her trademark quiet breathing the only response until he spoke. \"What's going on, Nagato?\" he asked."
     # "\"I am in need of assistance,\" she said quietly. \"I am requesting your aid immediately.\""
@@ -624,5 +691,3 @@ label Test:
     # "Mikuru winced. \"Really, some clothes would be just great,\" she mumbled."
     # "\"Initializing,\" Yuki replied."
     # "Then the world around Kyon exploded away again, for the second time in the last half hour."
-    # "* * *"
-    # "Author's notes: Kanae is based off the description of the girl from novel 9. We know now that K:BDH Kanae has ... pretty much nothing to do with the novels, so she's an OC-stand in replacing Yasumi. Apologies, novel 10/11 fans!"

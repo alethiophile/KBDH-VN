@@ -402,13 +402,20 @@ init:
     image MTray Maid ="Sprites/Mikuru/MTrayMaid.png"
     
     image Mikuru Think Quest1 = "Sprites/Mikuru/MikuruThinkQuestion1.png"
+    image Mikuru Think Sad1 = "Sprites/Mikuru/MikuruThinkSad1.png"
+    image Mikuru Think Sad2 = "Sprites/Mikuru/MikuruThinkSad2.png"
     image Mikuru Think Sup1 = "Sprites/Mikuru/MikuruThinkSurprised1.png"
     
     image Mikuru Think Casual Quest1 = "Sprites/Mikuru/MikuruThinkCasualQuestion1.png"
+    image Mikuru Think Casual Sad1 = "Sprites/Mikuru/MikuruThinkCasualSad1.png"
+    image Mikuru Think Casual Sad2 = "Sprites/Mikuru/MikuruThinkCasualSad2.png"
     image Mikuru Think Casual Sup1 = "Sprites/Mikuru/MikuruThinkCasualSurprised1.png"
     
     image Mikuru Think Maid Quest1 = "Sprites/Mikuru/MikuruThinkMaidQuestion1.png"
+    image Mikuru Think Maid Sad1 = "Sprites/Mikuru/MikuruThinkMaidSad1.png"
+    image Mikuru Think Maid Sad2 = "Sprites/Mikuru/MikuruThinkMaidSad2.png"
     image Mikuru Think Maid Sup1 = "Sprites/Mikuru/MikuruThinkMaidSurprised1.png"
+    image MTears Think = "Sprites/Mikuru/MTearsThink1.png"
     
     image Mikuru Cower Nervous1 = "Sprites/Mikuru/MikuruCowerNervous1.png"
     image Mikuru Cower Nervous2 = "Sprites/Mikuru/MikuruCowerNervous2.png"
