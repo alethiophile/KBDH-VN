@@ -514,11 +514,34 @@ label Test:
         xalign 0.5 yalign 1.0
     "\"I can't let it get me down,\" the small girl declared confidently. \"I've never been to the same world twice, so with so many out there, I'm bound to find what I need, as long as I don't give up!\""
     nvl clear
-    # "\"That's a good attitude! But you don't need to look any further; I'm absolutely sure we can find Kanae-chan's way home and deal with the alien invaders! It'll be easy, won't it? Yuki-chan, you know everything, so how do we help her find her way home to find out about these enemies?\""
-    # "\"Unknown,\" Yuki replied without hesitation. \"I am not capable of traversal to other realities; neither is the Integrated Data Sentience Entity. This ability, much like that of Suzumiya Haruhi, can be termed 'unique'. Until the arrival of Michikyuu Kanae, the theory of other realities could not actually be proved, only speculated.\""
-    # "\"Would that mean that they also don't know about Michikyuu-san, and they're still in the dark on this one?\" Kyon mused."
-    # "\"It's Kanae-chan, Sempai,\" the underclassman reminded him."
-    # "\"Possibly,\" Yuki allowed. \"Even though it is possible to discern Michikyuu Kanae's method of travel, I am unable to replicate or predict its function.\""
+    scene bg ClubroomFullDay:
+        xpos -800 ypos 0
+        linear 0.1 xpos 0 ypos 0
+    show Haruhi Hap4 at left
+    show Koizumi Think Grin1 at right
+    "\"That's a good attitude! But you don't need to look any further; I'm absolutely sure we can find Kanae-chan's way home and deal with the alien invaders! It'll be easy, won't it? {nw}"
+    show Haruhi Hap1 at left
+    extend "Yuki-chan, you know everything, so how do we help her find her way home to find out about these enemies?\""
+    nvl clear
+    scene bg ClubroomFullDay:
+        xpos 0 ypos 0
+        linear 0.1 xpos -800 ypos 0
+    show Kyon Neutral4 at left
+    show Mikuru Maid Sad1 at right
+    show Kanae Neutral1:
+        xalign 0.5 yalign 1.0
+    show YBook at TopRight behind Mikuru
+    "\"Unknown,\" Yuki replied without hesitation. \"I am not capable of traversal to other realities; neither is the Integrated Data Sentience Entity. This ability, much like that of Suzumiya Haruhi, can be termed 'unique'. Until the arrival of Michikyuu Kanae, the theory of other realities could not actually be proved, only speculated.\""
+    nvl clear
+    show Kyon Neutral1 at left
+    "\"Would that mean that they also don't know about Michikyuu-san, and they're still in the dark on this one?\" Kyon mused."
+    show Kyon Neutral4 at left
+    show Kanae Sad2:
+        xalign 0.5 yalign 1.0
+    "\"It's Kanae-chan, Sempai,\" the underclassman reminded him."
+    show Kanae Sad1:
+        xalign 0.5 yalign 1.0
+    "\"Possibly,\" Yuki allowed. \"Even though it is possible to discern Michikyuu Kanae's method of travel, I am unable to replicate or predict its function.\""
     # "\"Right,\" Haruhi decided, smacking one fist into her opposing palm. \"Then I just need to fix that, right?\""
     # "\"Let's not be too hasty,\" Kyon warned. \"Michikyuu-san, how does your ability work?\""
     # "\"It's Kanae-chan, Sempai,\" the girl replied. \"Um ... it's hard to explain, though. It feels like turning a little to one side and pushing against the world, but not quite like that ... until the barrier that keeps us from falling out of the world gives way and I tumble through. But I can't even find my way back; the surface of reality ripples like a drop of water, so it never feels quite the same.... I wish I knew better! But like Nagato-san says, I've never found another slider who wanted to help me out.\""
