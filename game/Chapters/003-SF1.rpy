@@ -527,7 +527,7 @@ label Test:
         xpos 0 ypos 0
         linear 0.1 xpos -800 ypos 0
     show Kyon Neutral4 at left
-    show Mikuru Maid Sad1 at right
+    show Mikuru Maid Unhap2 at right
     show Kanae Neutral1:
         xalign 0.5 yalign 1.0
     show YBook at TopRight behind Mikuru
@@ -539,21 +539,95 @@ label Test:
     show Kanae Sad2:
         xalign 0.5 yalign 1.0
     "\"It's Kanae-chan, Sempai,\" the underclassman reminded him."
-    show Kanae Sad1:
+    show Kanae Sad4:
         xalign 0.5 yalign 1.0
     "\"Possibly,\" Yuki allowed. \"Even though it is possible to discern Michikyuu Kanae's method of travel, I am unable to replicate or predict its function.\""
-    # "\"Right,\" Haruhi decided, smacking one fist into her opposing palm. \"Then I just need to fix that, right?\""
-    # "\"Let's not be too hasty,\" Kyon warned. \"Michikyuu-san, how does your ability work?\""
-    # "\"It's Kanae-chan, Sempai,\" the girl replied. \"Um ... it's hard to explain, though. It feels like turning a little to one side and pushing against the world, but not quite like that ... until the barrier that keeps us from falling out of the world gives way and I tumble through. But I can't even find my way back; the surface of reality ripples like a drop of water, so it never feels quite the same.... I wish I knew better! But like Nagato-san says, I've never found another slider who wanted to help me out.\""
-    # "\"You did mention others, though?\" Haruhi asked. \"So, what are these other sliders?\""
-    # "\"There's three of them, and they seem to travel together,\" the girl answered, frowning. \"I don't even really know their names, but I know they work with my enemies. One of them is a pretty girl with a completely white face and long, long black hair — like a ghost. Other people aside from her friends and myself don't seem to be able to see her, and she moves so fast....\" She shivered. \"She scares me the most. She's always the last one before the metal shapes come from the sky and I have to run again....\""
-    # "\"Suou Kuyou?\" Kyon asked, blinking in surprise, giving Yuki a questioning stare. Yuki said nothing, but to Kyon, her eyes looked troubled."
-    # "\"Um, another one is a boy about Sempai's age, but he has a very rude manner of speech and gray eyes. His hair is very long for a boy, and he always wears a blue uniform. He uses a very shiny gun of some sort. He hit me with it once before ... it doesn't kill people, I think, but it knocks them out.\""
-    # "\"I don't know who that guy is, but he already pisses me off!\" Haruhi announced, tapping one foot anxiously. \"If he shows his face around us, he's got a big surprise in store for him!\""
-    # "Kyon frowned. \"So, these other sliders are able to follow you, Michikyuu-san?\" he asked."
-    # "\"Ah ... well.... Yes, but I think it's because of the third one.\" Kanae's smile fell as she added, \"It's also why I like Sempai to call me Kanae-chan.\""
-    # "\"Hmm? It isn't another version of {i}me{/i}, is it?\" Kyon asked, his eyes darkening."
-    # "\"Haha, thankfully, no,\" Kanae said, shaking her head quickly. \"I don't know what I'd do if I couldn't rely on Sempai. The other slider ... is another {i}me{/i}.\""
+    nvl clear
+    scene bg ClubroomFullDay:
+        xpos -800 ypos 0
+        linear 0.1 xpos 0 ypos 0
+    show Haruhi Crossed Hap1 at left
+    show Koizumi Think Grin1 at right
+    "\"Right,\" Haruhi decided, smacking one fist into her opposing palm. \"Then I just need to fix that, right?\""
+    scene bg ClubroomFullDay:
+        xpos 0 ypos 0
+        linear 0.1 xpos -800 ypos 0
+    show Kyon Neutral2 at left
+    show Mikuru Maid Unhap2 at right
+    show Kanae Neutral1:
+        xalign 0.5 yalign 1.0
+    "\"Let's not be too hasty,\" Kyon warned. \"Michikyuu-san, how does your ability work?\""
+    nvl clear
+    show Kyon Neutral3 at left
+    show Kanae Unhap1:
+        xalign 0.5 yalign 1.0
+    "\"It's Kanae-chan, Sempai,\" the girl replied. {nw}"
+    show Kanae Worry3:
+        xalign 0.5 yalign 1.0
+    extend "\"Um ... it's hard to explain, though. It feels like turning a little to one side and pushing against the world, but not quite like that ... until the barrier that keeps us from falling out of the world gives way and I tumble through. But I can't even find my way back; the surface of reality ripples like a drop of water, so it never feels quite the same.... I wish I knew better! But like Nagato-san says, I've never found another slider who wanted to help me out.\""
+    nvl clear
+    scene bg ClubroomFullDay:
+        xpos -800 ypos 0
+        linear 0.1 xpos 0 ypos 0
+    show Haruhi Crossed Quest1 at left
+    show Koizumi Crossed Neutral1 at right
+    "\"You did mention others, though?\" Haruhi asked. \"So, what are these other sliders?\""
+    nvl clear
+    scene bg ClubroomFullDay:
+        xpos 0 ypos 0
+        linear 0.1 xpos -800 ypos 0
+    show Kyon Neutral3 at left
+    show Mikuru Maid Unhap2 at right
+    show Kanae Unhap2:
+        xalign 0.5 yalign 1.0
+    show YBook at TopRight behind Mikuru 
+    "\"There's three of them, and they seem to travel together,\" the girl answered, frowning. \"I don't even really know their names, but I know they work with my enemies. One of them is a pretty girl with a completely white face and long, long black hair — like a ghost. Other people aside from her friends and myself don't seem to be able to see her, and she moves so fast....\" She shivered. \"She scares me the most. She's always the last one before the metal shapes come from the sky and I have to run again....\""
+    nvl clear
+    show Kanae Unhap3:
+        xalign 0.5 yalign 1.0
+    show Kyon Ser3 at left 
+    "\"Suou Kuyou?\" Kyon asked, blinking in surprise, giving Yuki a questioning stare. Yuki said nothing, but to Kyon, her eyes looked troubled."
+    nvl clear
+    show Kyon Ser1 at left
+    show Kanae Unhap2:
+        xalign 0.5 yalign 1.0
+    "\"Um, another one is a boy about Sempai's age, but he has a very rude manner of speech and gray eyes. His hair is very long for a boy, and he always wears a blue uniform. He uses a very shiny gun of some sort. He hit me with it once before ... it doesn't kill people, I think, but it knocks them out.\""
+    nvl clear
+    scene bg ClubroomFullDay:
+        xpos -800 ypos 0
+        linear 0.1 xpos 0 ypos 0
+    show Haruhi Crossed Ang1 at left
+    show Koizumi Crossed Neutral1 at right
+    "\"I don't know who that guy is, but he already pisses me off!\" Haruhi announced, tapping one foot anxiously. \"If he shows his face around us, he's got a big surprise in store for him!\""
+    scene bg ClubroomFullDay:
+        xpos 0 ypos 0
+        linear 0.1 xpos -800 ypos 0
+    show Kyon Ser3 at left
+    show Mikuru Maid Unhap2 at right
+    show Kanae Smile1:
+        xalign 0.5 yalign 1.0
+    show YBook at TopRight behind Mikuru
+    "Kyon frowned. \"So, these other sliders are able to follow you, Michikyuu-san?\" he asked."
+    nvl clear
+    show Kyon Ser1 at left
+    show Kanae Hap2:
+        xalign 0.5 yalign 1.0
+    "\"Ah ... well.... Yes, but I think it's because of the third one.\" Kanae's smile fell as she added, {nw}"
+    show Kanae Unhap2:
+        xalign 0.5 yalign 1.0
+    extend "\"It's also why I like Sempai to call me Kanae-chan.\""
+    show Kanae Unhap3:
+        xalign 0.5 yalign 1.0
+    show Kyon Unhap2 at left
+    "\"Hmm? It isn't another version of {i}me{/i}, is it?\" Kyon asked, his eyes darkening."
+    nvl clear
+    show Kyon Unhap4 at left
+    show Kanae Hap2:
+        xalign 0.5 yalign 1.0
+    "\"Haha, thankfully, no,\" Kanae said, shaking her head quickly. \"I don't know what I'd do if I couldn't rely on Sempai. {nw}"
+    show Kanae Sad3:
+        xalign 0.5 yalign 1.0
+    extend "The other slider ... is another {i}me{/i}.\""
     # "\"Geez,\" Haruhi said with a wince. \"Come on, Kyon, don't be so formal! She's an underclassman, so it's not like people will make anything of it; show some sympathy!\""
     # "\"Er, sorry, Kanae-chan,\" he allowed. \"Well, I can understand you want help. But I'm not certain how much we can really do.\""
     # "\"I told you!\" Haruhi said in annoyance, slapping one palm against the center table. \"Yuki-chan! What program is currently in queue?\""
