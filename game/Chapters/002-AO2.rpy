@@ -446,6 +446,7 @@ label AO2:
     show Yuki Talk2 at center
     "\"Program three goal: Grant Suzumiya Haruhi the power to read minds.\""
     show Kyon Sup2 at right
+    show Ksweat at right
     show Yuki Side1 at center
     "\"Oh, gods, what a terrifying thought. Denied!\""
     show Haruhi Ang1 at left
@@ -453,6 +454,7 @@ label AO2:
     nvl clear
     show Yuki Talk1 at center
     "\"Program four goal: Replace actor in nighttime television drama with rabid wolverine.\""
+    hide Ksweat
     show Kyon Ang1 at right
     show Yuki Side1 at center
     "\"Denied. What's fun for you isn't necessarily fun for other people! And it really seems that you have no concept of the fact that there are consequences for your actions.\""
@@ -955,7 +957,9 @@ label AO2:
     nvl clear
     stop music fadeout 3
     show Kyon Sup2 at right
+    show Ksweat at right
     "\"I was ... kidding,\" {nw}"
+    hide Ksweat
     show Kyon Sigh2 at right
     extend "he groaned, rubbing the back of his head where it had hit the wall. There was no way he would catch up with her while recovering his breath." 
     
@@ -1019,7 +1023,9 @@ label AO2:
         xalign -1.0 yalign 1.0    
     "\"Naturally, this was quite awkward when I first was granted my powers, but I can usually tell my feelings apart from hers, now.\""
     nvl clear
-    show Mikuru Maid Smile1 at center behind Kyon, Koizumi with dissolve
+    show Mikuru Maid Smile1 at center behind Kyon, Koizumi
+    show MTray Maid at center behind Kyon, Koizumi
+    with dissolve    
     "\"There, there,\" Mikuru said soothingly, patting Koizumi's shoulder consolingly as she set his teacup before him. \"I know how you must feel, Koizumi-kun.\""
     nvl clear
     show Kyon Unhap1 at right
@@ -1038,11 +1044,13 @@ label AO2:
     show Kyon Sigh2 at right
     "\"Seems I'll be pretty busy yesterday,\" he replied nodding."
     nvl clear
+    hide MTray
     show Mikuru Think Maid Quest1 at center
     "\"We're going back to yesterday?\" Mikuru asked, blinking in surprise. \"But yesterday you told me you were getting tired of time travelling!\""
     show Kyon Neutral2 at right
     "\"Did I? Just after six o'clock, right?\""
     show Mikuru Maid Neutral1 at center
+    show MTray Maid at center
     "\"Um, that's right. Er ... is it alright for me to tell you that?\""
     nvl clear
     "He scribbled another note on the paper. \"I should be fine with this,\" he sighed, putting the note away. \"Now, Haruhi ran off in search of—\""
@@ -1052,16 +1060,19 @@ label AO2:
     hide Kyon
     hide Koizumi
     hide Mikuru
-    show Mikuru Maid Quest1 at right   
+    hide MTray
+    show Mikuru Maid Quest1 at right
+    show MTray Maid at right
     show Haruhi Hap4 at left
     show Kanae Sup1:
         xalign 0.2 yalign 1.0
     with dissolve
     "The door slammed open with a booming crash. \"Caught her!\" {nw}" 
-    play sound "SE/impact.mp3"
     show Kanae Sup1:
         xalign 0.8 yalign 1.4
-    with move   
+    with move
+    play sound "SE/impact.mp3"
+    hide MTray
     extend "Haruhi cheered, shoving the first year student into Mikuru, who dropped her empty tea tray and barely managed to keep herself and the smaller girl from falling over."
     show Mikuru Think Maid Quest1 at right
     show Kanae Wince1
