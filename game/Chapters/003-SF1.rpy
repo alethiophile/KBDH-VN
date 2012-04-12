@@ -83,6 +83,7 @@ label SF1:
         xpos 0 ypos 0
         linear 0.1 xpos -800 ypos 0
     show Kyon Sup1 at left
+    show Ksweat at left
     show Mikuru Think Maid Sup1 at right
     show Kanae Wince1:
         xalign 0.2 yalign 2.2
@@ -98,10 +99,12 @@ label SF1:
         xpos 0 ypos 0
         linear 0.1 xpos -800 ypos 0
     show Kyon Sup1 at left
+    show Ksweat at left
     show Mikuru Maid Quest1 at right
     show Kanae Wince1:
         xalign 0.2 yalign 2.2
-    "\"...ow,\" Kanae moaned. \"My head....\"" 
+    "\"...ow,\" Kanae moaned. \"My head....\""
+    hide Ksweat
     show Kyon Sigh1 at left
     "\"Okay, this is very quickly getting out of hand,\" Kyon decided. \"Nagato?\""
     nvl clear
@@ -331,7 +334,7 @@ label SF1:
         xpos 0 ypos 0
         linear 0.1 xpos -800 ypos 0
     show Kyon Ser3 at left
-    show Kanae Unhap1:
+    show Kanae Unhap3:
         xalign 0.5 yalign 1.0
     show Mikuru Maid Neutral2 at right
     "\"Obviously, we're interested in preventing that,\" Kyon added. \"I'm hoping you're on the same page.\""
@@ -435,7 +438,9 @@ label SF1:
     nvl clear
     show Kyon Worry1 at right
     show KBlush at right
-    "\"Er.... Well, your other self in that world went to Kouyouen and hadn't cut her hair, so when we sneaked into Kitago, I asked you— That is, I asked her to put her hair in a ponytail.\" She smirked, seeing the faint coloring of his cheeks."
+    "\"Er.... Well, your other self in that world went to Kouyouen and hadn't cut her hair, so when we sneaked into Kitago, I asked you— That is, I asked her to put her hair in a ponytail.\" {nw}"
+    show Haruhi Grin1 at center
+    extend "She smirked, seeing the faint coloring of his cheeks."
     show Haruhi Quest1 at center
     "\"Oh?\" she asked. \"Hmm, what do you think about me making my longer hair again?\""
     nvl clear

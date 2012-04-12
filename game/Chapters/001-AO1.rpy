@@ -710,6 +710,7 @@ label AO1_1:
     with dissolve
     "\"You're claiming that you're a slider?\" she asked, blinking, buying herself some time to think."
     show Kyon Casual Sup2 at right
+    show Ksweat at right
     "He was momentarily startled by the question, then exchanged a glance with Koizumi, who shrugged. "
     hide Haruhi
     hide Kyon
@@ -946,9 +947,11 @@ label AO1_2:
     "But still...."
     "\"Okay. Things are going to change, right now. Kyon, you want me to save Yuki, right?\""
     show Kyon Casual Sup2
+    show Ksweat at right
     "\"You mean, you don't?\" he asked, aghast."
     show Haruhi Casual Pout1 at left
     "She winced. \"Of course I do! But I want your opinion!\""
+    hide Ksweat
     show Kyon Casual Ang1 at right
     "\"Absolutely! Haven't I been clear enough!?\""
     nvl clear
@@ -962,7 +965,7 @@ label AO1_2:
     nvl clear
     "She nodded decisively, {nw}"
     show Haruhi Point Casual Surpr1 at center
-    extend "then her eyes widened slightly in realization. {nw}"
+    extend "then her eyes widened slightly\nin realization. {nw}"
     show Haruhi Point Casual Scold1 at center
     extend "\"Oh, and Koizumi? You're demoted. Kyon's obviously more trustworthy as a vice commander, since you already report to him anyway. Everyone got it? We're the bosses ... not your 'Organizations' or 'Thought Entities' or mysterious future 'superiors' who somehow control your minds!\""
     nvl clear
