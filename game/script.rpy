@@ -548,6 +548,7 @@ init:
     image Kanae Sad4 ="Sprites/Kanae/KanaeSad4.png"
     image Kanae Sad5 ="Sprites/Kanae/KanaeSad5.png"
     image Kanae Smile1 ="Sprites/Kanae/KanaeSmile1.png"
+    image Kanae Smile2 ="Sprites/Kanae/KanaeSmile2.png"
     image Kanae Sup1 ="Sprites/Kanae/KanaeSurprised1.png"
     image Kanae Sup2 ="Sprites/Kanae/KanaeSurprised2.png"
     image Kanae Unhap1 ="Sprites/Kanae/KanaeUnhappy1.png"

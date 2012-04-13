@@ -495,7 +495,7 @@ label SF1:
     
     call eyecatch2("December 200X","Monday, April 18") from SF1_sc003
     
-label Test:
+#label Test:
     scene bg ClubroomRightDay
     play music "Music/Yuuutsu.mp3"
     show Kyon Neutral3 at left
@@ -693,32 +693,93 @@ label Test:
     # "Haruhi grinned very brightly, chuckling. \"That's true,\" she allowed. \"Okay, vice commander, since we're here, and it seems Yuki's going to need some time to figure out the dimensional anchor, let's make sure you at least finish your homework. I'm not about to let your awesome excuses make the brigade look worse with sucky grades.\""
     # "Some day, Kyon realized, he would need to learn to keep his mouth shut."
     
-    # "* * *"
-    
-    # "\"I have determined the function of the anchor,\" Yuki announced, just as Kyon was finishing his last math questions beneath Haruhi's sharp gaze. Mikuru had briefly snuck away to the girl's bathroom to change back into her uniform, and Kanae was curled over the desk, sleeping soundly with her school bag as a pillow."
-    # "\"Excellent!\" Haruhi cheered, jolting the first year girl awake."
-    # "\"Nya....\" Kanae murmured, sitting up and rubbing her eyes."
-    # "\"So,\" Haruhi pressed, looking intently at Yuki, \"we can go to Kanae's home, now?\""
-    # "\"Negative,\" Nagato replied, her eyes swinging to focus briefly on Haruhi before locking on Kyon. \"We can begin conducting experiments to discern the nature and limitations of Kanae's ability to traverse realities.\""
-    # "Haruhi scowled, shaking her head. \"That's no fun,\" she groused. \"How long will it take?\""
-    # "\"Uncertain.\""
-    # "\"You know,\" Kyon noted, packing his homework away, \"you're disregarding something here, Haruhi. As I understand it, the Integrated Data Sentience Entity values new data more than anything else. In fact, at times, certain factions of it tried to provoke a response from you ... like the 'ghosts' that Sakanaka-san asked us to investigate.\""
-    # "\"Well, it's not like I can 'react' much without you and Yuki-chan approving it, now. Which reminds me.... Let me try another one.\" She clenched her eyes shut, mumbling, \"The hair on my head grows ... five times as fast.\""
-    # "\"Hyum?\" Kanae murmured, blinking as Mikuru dabbed at her mouth and wiped away the drool from her unintended nap. \"Oopsie! Thanks, Asahina-san.\""
-    # "\"Program loaded,\" Yuki said, blinking."
-    # "\"Er ... any side-effects to be aware of?\" Kyon asked."
-    # "Yuki turned to Haruhi. \"Are eyebrows to be included in this program?\""
-    # "\"Ack, no, I don't want hilariously bushy Asakura-type eyebrows,\" Haruhi said, shaking her head quickly. \"Just my hair ... you know, the part that gets styled regularly?\""
-    # "\"Understood. Modifications complete.\" Turning back to Kyon, she asked, \"Permission to proceed?\""
-    # "\"Granted,\" he said, shrugging. \"But aside from this amusing digression, the point I was trying to get to is that if we manage to discover data that is new to the Integrated Data Sentience Entity, they may end up willing to work with Nagato in the future in exchange for this data.\""
-    # "\"I didn't think of that,\" Haruhi allowed, glancing at Kyon. \"And hey, Yuki- chan ... that's it? There was no tingle, no glowy lights ... powers are supposed to look awesome, not be invisible! Remember that next time.\""
-    # "Yuki replied, \"Understood,\" and gave her tiny nod."
-    # "\"Good. Now, Kanae-chan, how long does it take for the other sliders to show up and find you?\""
-    # "\"Usually three or four weeks,\" the small girl said with a yawn, covering her mouth. \"Mmm. If I jump between worlds very quickly, it seems to take them a bit longer to show up. I'd guess probably four weeks from now? I landed badly the last time I jumped — I was about to call Sempai when I got scared by a loud noise and jumped right away ... so that should give me a bit of extra time.\""
-    # "\"Ooh,\" Haruhi realized, grinning. \"Hey, Kyon, if Yuki-chan and Kanae-chan can't figure out how it works together, we can capture the enemy sliders and beat the information out of them! They obviously have a way to track Kanae- chan, don't they?\""
-    # "\"And right on their heels, the alien invasion,\" he countered. \"Anyway, it's late; we should be getting out of the school.\""
-    # "Haruhi nodded absently, shutting the computer down and gathering her book bag. \"In any case, that gives us a hard cap of around four or five weeks to get it sorted out.\""
-    # "The other club members rose and gathered their things, Mikuru offering Kanae a hand when the younger girl wobbled tiredly on her feet. \"Understood,\" Yuki said softly. In the corridor, while Haruhi turned around and locked the club room door, the quiet girl slipped him a note. He pocketed it with a frown. Mikuru studiously pretended not to notice, while Kanae was looking the other way drowsily."
+    label Test:
+    play music "Music/moon.ogg"    
+    scene bg ClubroomFullDay:
+        xpos -400 ypos 0
+    show Kyon Ser1:
+        xalign 1.25 yalign 1.0
+    show Haruhi Unhap2 at left
+    show Yuki Right Talk1 at HalfRight
+    show Kanae Smile2:
+        xalign 0.4 yalign 1.2
+    with fade    
+    "\"I have determined the function of the anchor,\" Yuki announced, just as Kyon was finishing his last math questions beneath Haruhi's sharp gaze. Mikuru had briefly snuck away to the girl's bathroom to change back into her uniform, and Kanae was curled over the desk, sleeping soundly with her school bag as a pillow."
+    show Yuki Right Neutral1 at HalfRight
+    show Haruhi Hap4 at left
+    show Kanae Sup2:
+        xalign 0.4 yalign 1.0
+    with move
+    "\"Excellent!\" Haruhi cheered, jolting the first year girl awake."
+    show Kanae Worry2:
+         xalign 0.4 yalign 1.0
+    "\"Nya....\" Kanae murmured, sitting up and rubbing her eyes."
+    show Haruhi Worry1 at left
+    nvl clear
+    "\"So,\" Haruhi pressed, looking intently at Yuki, \"we can go to Kanae's home, now?\""
+    show Yuki Right Talk1 at HalfRight
+    "\"Negative,\" Nagato replied, her eyes swinging to focus briefly on Haruhi before locking on Kyon. \"We can begin conducting experiments to discern the nature and limitations of Kanae's ability to traverse realities.\""
+    show Haruhi Eyeroll1 at left
+    "Haruhi scowled, shaking her head. \"That's no fun,\" she groused. \"How long will it take?\""
+    show Yuki Right Talk2 at HalfRight
+    "\"Uncertain.\""
+    nvl clear
+    show Yuki Right Neutral1 at HalfRight
+    show Kyon Ser2:
+        xalign 1.25 yalign 1.0
+    "\"You know,\" Kyon noted, packing his homework away, \"you're disregarding something here, Haruhi. As I understand it, the Integrated Data Sentience Entity values new data more than anything else. In fact, at times, certain factions of it tried to provoke a response from you ... like the 'ghosts' that Sakanaka-san asked us to investigate.\""
+    show Haruhi Unhap2 at left
+    "\"Well, it's not like I can 'react' much without you and Yuki-chan approving it, now. Which reminds me.... Let me try another one.\"" 
+    show Haruhi Focus1 at left
+    "She clenched her eyes shut, mumbling, \"The hair on my head grows ... five times as fast.\""
+    nvl clear
+    show Kanae Worry3:
+        xalign 0.4 yalign 1.0
+    "\"Hyum?\" Kanae murmured, blinking as Mikuru dabbed at her mouth and wiped away the drool from her unintended nap.{nw}"
+    show Kanae Smile1:
+        xalign 0.4 yalign 1.0
+    "\"Oopsie! Thanks, Asahina-san.\""
+    show Yuki Right Talk1 at HalfRight
+    "\"Program loaded,\" Yuki said, blinking."
+    show Kyon Worry1:
+        xalign 1.25 yalign 1.0
+    "\"Er ... any side-effects to be aware of?\" Kyon asked."
+    nvl clear
+    show Yuki Right Talk2 at HalfRight
+    "Yuki turned to Haruhi. \"Are eyebrows to be included in this program?\""
+    show Haruhi Sigh2 at left
+    "\"Ack, no, I don't want hilariously bushy Asakura-type eyebrows,\" Haruhi said, shaking her head quickly. \"Just my hair ... you know, the part that gets styled regularly?\""
+    show Yuki Right Talk1 at HalfRight
+    "\"Understood. Modifications complete.\" Turning back to Kyon, she asked, \"Permission to proceed?\""
+    nvl clear
+    show Kyon Sigh2:
+        xalign 1.25 yalign 1.0
+    "\"Granted,\" he said, shrugging. \"But aside from this amusing digression, the point I was trying to get to is that if we manage to discover data that is new to the Integrated Data Sentience Entity, they may end up willing to work with Nagato in the future in exchange for this data.\""
+    show Haruhi Worry1 at left
+    "\"I didn't think of that,\" Haruhi allowed, glancing at Kyon. \"And hey, Yuki- chan ... that's it? There was no tingle, no glowy lights ... powers are supposed to look awesome, not be invisible! Remember that next time.\""
+    nvl clear
+    show Yuki Right Talk2 at HalfRight
+    "Yuki replied, \"Understood,\" and gave her tiny nod."
+    show Haruhi Quest1 at left
+    "\"Good. Now, Kanae-chan, how long does it take for the other sliders to show up and find you?\""
+    show Kanae Wince2:
+        xalign 0.4 yalign 1.0
+    "\"Usually three or four weeks,\" the small girl said with a yawn, covering her mouth."
+    nvl clear
+    show Kanae Sad3:
+        xalign 0.4 yalign 1.0
+    "\"Mmm. If I jump between worlds very quickly, it seems to take them a bit longer to show up. I'd guess probably four weeks from now? I landed badly the last time I jumped — I was about to call Sempai when I got scared by a loud noise and jumped right away ... so that should give me a bit of extra time.\""
+    show Haruhi Grin1 at left
+    "\"Ooh,\" Haruhi realized, grinning. \"Hey, Kyon, if Yuki-chan and Kanae-chan can't figure out how it works together, we can capture the enemy sliders and beat the information out of them! They obviously have a way to track Kanae- chan, don't they?\""
+    nvl clear
+    show Kyon Ser2:
+        xalign 1.25 yalign 1.0
+    "\"And right on their heels, the alien invasion,\" he countered. \"Anyway, it's late; we should be getting out of the school.\""
+    show Haruhi Sigh2 at left
+    "Haruhi nodded absently, shutting the computer down and gathering her book bag. \"In any case, that gives us a hard cap of around four or five weeks to get it sorted out.\""
+    scene black with dissolve
+    nvl clear
+    "The other club members rose and gathered their things, Mikuru offering Kanae a hand when the younger girl wobbled tiredly on her feet. \"Understood,\" Yuki said softly. In the corridor, while Haruhi turned around and locked the club room door, the quiet girl slipped him a note. He pocketed it with a frown. Mikuru studiously pretended not to notice, while Kanae was looking the other way drowsily."
 
     # "* * *"
     
