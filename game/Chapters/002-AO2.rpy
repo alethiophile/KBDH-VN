@@ -647,7 +647,7 @@ label AO2:
     "\"Five hundred and ninety ... four years of summer vacation?\" Haruhi asked, taken aback. \"I don't remember that!\""
     nvl clear
     show Yuki Right Talk2 at TenthRight
-    "\"No,\" Yuki agreed. \"Others near you began to experience resonant familiarity with cyclical events. It caused the others to experience some distress, despite your unawareness." 
+    "\"No,\" Yuki agreed. \"Others near you began to experience resonant familiarity with cyclical events. It caused the others to experience some distress, despite your unawareness.\"" 
     show Yuki Right Talk2 at TenthRight
     "\"I retained perfect awareness because of memories transfered back to me by the Integrated Data Sentience Entity.\""
     show Yuki Right Neutral2 at TenthRight
@@ -689,7 +689,7 @@ label AO2:
     nvl clear
     show Yuki Right Talk2 at TenthRight
     show Haruhi Casual Focus1 at TenthLeft
-    "\"In December, when he appeared to exhibit signs of further distress at the announcement of the SOS Brigade Christmas party, I determined the feeling to be mutual. Our situations had become sympathetic." 
+    "\"In December, when he appeared to exhibit signs of further distress at the announcement of the SOS Brigade Christmas party, I determined the feeling to be mutual. Our situations had become sympathetic.\"" 
     show Yuki Right Talk1 at TenthRight
     "\"I incorrectly inferred that he and I shared insights and would both prefer a world where you would cause neither of us distress. Acting on my emotions in this manner was an error.\""
     nvl clear
@@ -708,7 +708,7 @@ label AO2:
     "\"Possibly,\" Yuki said. \"I cannot guarantee my assessments are completely accurate. For example, acting on emotion and inferring his desires incorrectly.\""
     show Yuki Right Neutral1 at TenthRight
     show Haruhi Casual Sigh1 at TenthLeft
-    "\"Fine. In that case, it's now a priority. What can be done to make sure you won't commit another one of these 'errors'? Remember, I'm your boss now, so don't hold anything back!" 
+    "\"Fine. In that case, it's now a priority. What can be done to make sure you won't commit another one of these 'errors'? Remember, I'm your boss now, so don't hold anything back!\"" 
     show Haruhi Casual Pout1 at TenthLeft
     "\"Even if,\" she hesitated, forcing the words out, as uncomfortable and frustrating as it was, \"it means borrowing Kyon a little bit.\""
     nvl clear
@@ -736,7 +736,7 @@ label AO2:
     "\"Um ... what?\""
     nvl clear
     show Koizumi Think Casual Ser3 at left
-    "\"Well, as subordinates,\" Koizumi said suddenly, turning to Mikuru, \"we should work together, shouldn't we?" 
+    "\"Well, as subordinates,\" Koizumi said suddenly, turning to Mikuru, \"we should work together, shouldn't we?\"" 
     show Koizumi Think Casual Ser4 at left
     "\"The problem is this; as far as I understand things, Suzumiya-san has a certain ... interest ... in Fearless Leader.\""
     nvl clear
@@ -771,7 +771,7 @@ label AO2:
     "Staring into the mouth of the issue he'd been trying to defer, he asked, \"What do you think I should do, then? And please, say something more serious than the advice you gave me about last August.\""
     nvl clear
     show Koizumi Crossed Casual Sigh2 at left
-    "\"It's troubling,\" Koizumi acknowledged. \"For the time being, I can only ask you to be aware of it and hope that it can be dealt with reasonably." 
+    "\"It's troubling,\" Koizumi acknowledged. \"For the time being, I can only ask you to be aware of it and hope that it can be dealt with reasonably.\"" 
     show Koizumi Crossed Casual Ser2 at left
     "\"Moving on slightly and changing the topic to equally pressing, but only partially related matters, how should I proceed with the Organization?\""
     nvl clear
@@ -929,6 +929,7 @@ label AO2:
     with move
     show Haruhi Crossed Sup2:
         xalign 0.6 yalign 1.0 
+    $ _window = False
     extend "one foot accidentally tripping the boy from his precarious step, sending both hurtling down the stairs headfirst."
     nvl clear
     "Still hanging onto her shoulders, Kyon switched his stance as he fell, throwing himself down the stairs even faster, actually pushing off from the sides of the steps quickly enough to get his lower body underneath him before reaching the bottom."
@@ -1029,7 +1030,7 @@ label AO2:
     "\"There, there,\" Mikuru said soothingly, patting Koizumi's shoulder consolingly as she set his teacup before him. \"I know how you must feel, Koizumi-kun.\""
     nvl clear
     show Kyon Unhap1 at right
-    "Kyon held one hand out, palm facing towards the esper as though to deflect a beam attack. \"Koizumi, in retrospect my question was a mistake." 
+    "Kyon held one hand out, palm facing towards the esper as though to deflect a beam attack. \"Koizumi, in retrospect my question was a mistake.\"" 
     show Kyon Ang1 at right
     "\"Please never clarify that last remark to me,\" he declared, dropping his hand to the board and absently placing a stone of his own."
     nvl clear
@@ -1068,11 +1069,13 @@ label AO2:
         xalign 0.2 yalign 1.0
     with dissolve
     "The door slammed open with a booming crash. \"Caught her!\" {nw}" 
+    $ _window = True
     show Kanae Sup1:
         xalign 0.8 yalign 1.4
     with move
     play sound "SE/impact.mp3"
     hide MTray
+    $ _window = False
     extend "Haruhi cheered, shoving the first year student into Mikuru, who dropped her empty tea tray and barely managed to keep herself and the smaller girl from falling over."
     show Mikuru Think Maid Quest1 at right
     show Kanae Wince1
@@ -1157,7 +1160,7 @@ label AO2:
     nvl clear
     # show MikuruBig Grin2 at center
     show MikuruBig Grinwink at center
-    "\"Well ... I like to pretend,\" she said, sticking her tongue out again. \"Truthfully, despite what my younger self told you, our theory of projection back into time ran into an unexpected complication." 
+    "\"Well ... I like to pretend,\" she said, sticking her tongue out again. \"Truthfully, despite what my younger self told you, our theory of projection back into time ran into an unexpected complication.\"" 
     show MikuruBig Neutral1 at center
     "\"That is to say ... if you consider moments to be flat portraits, like frames of animation or film, and we make a projection onto a single frame, it's fleeting, effectively non-existent.\""
     show Kyon Casual Sigh2 at right
@@ -1185,7 +1188,7 @@ label AO2:
     "\"So maybe the 'why' is explained. I even know your motives ... but can you tell me anything about what will require whatever time travel is needed to demonstrate your theory?\""
     nvl clear
     show MikuruBig Ser2 at center
-    "\"Well ... I can break all kinds of classifications, but I have to say I shouldn't mention anything too specific,\" she said. \"If you do something, and then I tell you what that thing is before you've done it ... that can stress time and damage causality."
+    "\"Well ... I can break all kinds of classifications, but I have to say I shouldn't mention anything too specific,\" she said. \"If you do something, and then I tell you what that thing is before you've done it ... that can stress time and damage causality.\""
     show MikuruBig Neutral1 at center
     "\"But I can tell you a little, something that doesn't break any rules because you've probably considered it already.\""
     nvl clear
@@ -1195,10 +1198,10 @@ label AO2:
     "\"And of course, Nagato's superiors,\" she added, biting her lower lip. \"There's a {i}very{/i} specific reason for us to disregard so many rules and give you carte blanche with time travel ... and it's not just because you can be trusted.\""
     nvl clear
     show MikuruBig Worry2 at center
-    "\"Without the ability to define an event as predetermined, our precious discovery may never have come about. Our expanded realization could be taken away from us, because they pursue their own goals.\""
+    "\"Without the ability to define an event as predetermined, our precious discovery may never have come about. Our expanded realization could be taken away from us, because they pursue their own goals."
     nvl clear
     show MikuruBig Ser2 at center
-    "\"That being said, there's still the possibility of them changing our timeline and moving the future we live in into a parallel track ... something that may as well not even happen." 
+    "\"That being said, there's still the possibility of them changing our timeline and moving the future we live in into a parallel track ... something that may as well not even happen.\"" 
     show MikuruBig Sigh1 at center
     "\"So, you're trusted with this power to preserve our hopes and dreams. I apologize for putting so much responsibility on your shoulders.\""
     nvl clear
@@ -1210,7 +1213,7 @@ label AO2:
     "\"Mmm. Is there anything you're allowed to tell me about the smirking bastard?\""
     nvl clear
     show MikuruBig Worry1 at center
-    "\"Ah ... that person.... He is not likable. But I can't tell you much because I don't {i}know{/i} much. To us, he is a criminal, someone attempting to divert the timestream, much like Nagato's superiors at the moment." 
+    "\"Ah ... that person.... He is not likable. But I can't tell you much because I don't {i}know{/i} much. To us, he is a criminal, someone attempting to divert the timestream, much like Nagato's superiors at the moment.\"" 
     show MikuruBig Ser2 at center
     "\"It would be quite troublesome if they were to join forces, but ... I shouldn't speak further of that.\""
     show Kyon Casual Sigh2 at right
@@ -1229,9 +1232,9 @@ label AO2:
     show MKiss at center
     with dissolve
     "Before he could answer, she drew closer to him and his sense was swept away with the sensation of her lips touching his." 
+    nvl clear
     scene black with fade
     "She released him with a giggle and pointed him down the road to his home, whispering, \"I've missed doing that with you, Kyon-kun.\""
-    nvl clear
     "By the time his senses recovered enough to try and question her, she had been long gone."
     nvl clear
     
