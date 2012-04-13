@@ -929,6 +929,7 @@ label AO2:
     with move
     show Haruhi Crossed Sup2:
         xalign 0.6 yalign 1.0 
+    $ _window = False
     extend "one foot accidentally tripping the boy from his precarious step, sending both hurtling down the stairs headfirst."
     nvl clear
     "Still hanging onto her shoulders, Kyon switched his stance as he fell, throwing himself down the stairs even faster, actually pushing off from the sides of the steps quickly enough to get his lower body underneath him before reaching the bottom."
@@ -1068,11 +1069,13 @@ label AO2:
         xalign 0.2 yalign 1.0
     with dissolve
     "The door slammed open with a booming crash. \"Caught her!\" {nw}" 
+    $ _window = True
     show Kanae Sup1:
         xalign 0.8 yalign 1.4
     with move
     play sound "SE/impact.mp3"
     hide MTray
+    $ _window = False
     extend "Haruhi cheered, shoving the first year student into Mikuru, who dropped her empty tea tray and barely managed to keep herself and the smaller girl from falling over."
     show Mikuru Think Maid Quest1 at right
     show Kanae Wince1
@@ -1229,9 +1232,9 @@ label AO2:
     show MKiss at center
     with dissolve
     "Before he could answer, she drew closer to him and his sense was swept away with the sensation of her lips touching his." 
+    nvl clear
     scene black with fade
     "She released him with a giggle and pointed him down the road to his home, whispering, \"I've missed doing that with you, Kyon-kun.\""
-    nvl clear
     "By the time his senses recovered enough to try and question her, she had been long gone."
     nvl clear
     
