@@ -103,6 +103,7 @@ label SF1:
     show Mikuru Maid Quest1 at right
     show Kanae Wince1:
         xalign 0.2 yalign 2.2
+    $ _window = False
     "\"...ow,\" Kanae moaned. \"My head....\""
     hide Ksweat
     show Kyon Sigh1 at left
@@ -157,11 +158,13 @@ label SF1:
     show MTray Maid
     with moveinright
     "Mikuru poured a cup of tea and set it at the table, {nw}"
+    $ _window = True
     show Mikuru Maid Smile1 at right
     show MTray Maid at right
     show Kanae Worry3:
         xalign 0.5 yalign 1.0
     with move
+    $ _window = False
     extend "while Kanae slid a chair next to Kyon and huddled in it, trying to hide behind him from Haruhi's line of sight. \"U...um....\" she whimpered. \"Y...you're not supposed to know who I am so easily! I only meant to tell Sempai.\""
     nvl clear
     scene bg ClubroomFullDay:
@@ -358,6 +361,7 @@ label SF1:
     show Mikuru Maid Smile1 at right
     "\"Thank you, Sempai! Thank you, Suzumiya-san!\" Kanae cheered. Haruhi's smile slipped a bit."
     nvl clear
+    stop music fadeout 3
     
     call eyecatch("Monday, April 18") from SF1_sc001
     
@@ -385,22 +389,25 @@ label SF1:
     "Koizumi grinned back and bowed. \"You as well, vice commander.\""
     nvl clear
     hide Koizumi with moveoutleft
-    show Haruhi Sigh1 at center
-    "Haruhi heaved a sigh, watching him walk away. \"Kyon,\" she said, quietly, \"I'm trying not to be upset about this. Because that just makes more trouble." 
-    show Haruhi Worry1 at center
+    pass
+    show Kyon Neutral2 at right
+    show Haruhi Worry1 at TenthLeft 
+    with dissolve
+    "Haruhi heaved a sigh, watching him walk away. \"Kyon,\" she said, quietly, \"I'm trying not to be upset about this. Because that just makes more trouble.\"" 
+    show Haruhi Worry1 at TenthLeft
     "\"But more and more, this 'power' I've got really seems to suck! It's too dangerous to use, and just for having it, I endanger the world?\""
     nvl clear
-    show Haruhi Pout1 at center
+    show Haruhi Pout1 at TenthLeft
     "\"Everything I looked for hid from me until you made them show themselves?\""
     nvl clear
     show Kyon Ser3 at right
-    "\"Don't get too down,\" he told her. \"Remember, closed spaces result from your frustration. All you need to do to make Koizumi's job easier is be happy. "
+    "\"Don't get too down,\" he told her. \"Remember, closed spaces result from your frustration. All you need to do to make Koizumi's job easier is be happy.\""
     show Kyon Sigh1 at right
     "\"As long as you respect the boundaries of other people, I don't see why you can't be that. Especially since you now {i}know{/i} you've got a time traveler, an esper, and an alien in your club. Isn't that what you were looking for?\""
     nvl clear
-    show Haruhi Worry2 at center
+    show Haruhi Worry2 at TenthLeft
     "\"And a slider,\" Haruhi added, struggling to force a smile."
-    show Haruhi Pout1 at center
+    show Haruhi Pout1 at TenthLeft
     "\"It's like my wishes were granted by a literal genie who was looking for the wording loophole to keep me in the dark ... I mean, honestly, I'm a bit jealous. It seems that you got to do all the fun things while I was unaware!\""
     nvl clear
     show Kyon Ser3 at right
@@ -410,7 +417,7 @@ label SF1:
     nvl clear
     show Kyon Ser1 at right
     "\"What I {i}do{/i} care about is being there with the friends we've formed. Hey, Nagato explained what happened last December, right?\""
-    show Haruhi Unhap2 at center
+    show Haruhi Unhap2 at TenthLeft
     "\"Yeah,\" Haruhi said quietly, frowning. \"I guess Yuki must have been {i}really{/i} mad about me.... She doesn't show much, you know? And of course, something else to be jealous of — she opens up to you, not me.\""
     show Kyon Sigh2 at right
     nvl clear
@@ -418,30 +425,30 @@ label SF1:
     show Kyon Neutral2 at right
     "\"The only person I can never figure out reliably is you.\""
     nvl clear
-    show Haruhi Smile1 at center
+    show Haruhi Smile1 at TenthLeft
     "She smirked at that. \"Good,\" she decided. \"If you can solve aliens, time travelers, and everything else, at least there's one mystery left for you to focus on, right?\""
     show Kyon Worry1 at right
     "He looked away at the sky. \"Anyway,\" he said after an extended moment of silence, \"I had to leave that world because the people who made the brigade were there, but the brigade itself wasn't.\""
     nvl clear
-    show Haruhi Quest1 at center
+    show Haruhi Quest1 at TenthLeft
     "\"Yeah, Yuki mentioned that.... Hey, I want to know something about that world — Yuki set it up for you, you know. What was she like? More assertive? I have a hard time imagining her being pushy.\""
     nvl clear
     show Kyon Sigh2 at right
     "\"Eh ... she was more like a regular girl,\" he said, shaking his head. \"She was quiet, just like now ... but more talkative than she usually is.\""
-    show Haruhi Unhap2 at center
+    show Haruhi Unhap2 at TenthLeft
     "\"Was she cute?\" Haruhi pressed, studying the profile of his face as he stared away."
     nvl clear
     show Kyon Smile5 at right
     "\"She looked exactly the same, just with her glasses on again,\" he answered with a shrug. \"Except ... well, she was more expressive. She had a very pretty smile; Nagato doesn't smile, really. That's one of the three main things that stick with me.\""
-    show Haruhi Pout2 at center
+    show Haruhi Pout2 at TenthLeft
     "\"Hmm,\" she mused, trying to banish the rising frustration she felt. Her own fault for asking these questions, she supposed. \"What are the others?\""
     nvl clear
     show Kyon Worry1 at right
     show KBlush at right
     "\"Er.... Well, your other self in that world went to Kouyouen and hadn't cut her hair, so when we sneaked into Kitago, I asked you— That is, I asked her to put her hair in a ponytail.\" {nw}"
-    show Haruhi Grin1 at center
+    show Haruhi Grin1 at TenthLeft
     extend "She smirked, seeing the faint coloring of his cheeks."
-    show Haruhi Quest1 at center
+    show Haruhi Quest1 at TenthLeft
     "\"Oh?\" she asked. \"Hmm, what do you think about me making my longer hair again?\""
     nvl clear
     hide KBlush
@@ -450,24 +457,24 @@ label SF1:
     show Kyon Smile1 at right
     "\"What about toning it down a bit and just making it grow faster? Probably no one will notice if it finishes by the end of, say, summer vacation.\""
     nvl clear
-    show Haruhi Sigh1 at center
+    show Haruhi Sigh1 at TenthLeft
     "She counted the weeks in her head. \"Almost a full term away, huh? Well, I'm holding you to that,\" she decided. Some custodian of her powers he was going to be, if she could play his biases."
     show Kyon Neutral2 at right
     "\"Why do you want your hair longer again, anyway?\""
     nvl clear
-    show Haruhi Pout2 at center
-    show Hblush at center
+    show Haruhi Pout2 at TenthLeft
+    show Hblush at TenthLeft
     "She coughed quietly, looking another direction. \"So, what was the other thing that stuck with you?\""
     show Kyon Unhap1 at right
     "He shivered, looking away himself. \"Being stabbed.\""
     nvl clear
     hide Hblush
-    show Haruhi Grin1 at center
+    show Haruhi Grin1 at TenthLeft
     "\"Wow, that's pretty short of an ideal world,\" Haruhi observed, trying not to snicker. \"You made it out alright, though, didn't you? Any scars?\""
     nvl clear
     show Kyon Sigh2 at right
     "\"Of course not,\" he answered. \"My future self and a future Nagato had to go back and.... Well, things got a bit complicated. Anyway, Nagato healed the injury. But this was when I was supposed to be in a coma. A scar from a stab wound when I 'fell down the stairs' seems a bit odd, don't you think?\""
-    show Haruhi Quest1 at center
+    show Haruhi Quest1 at TenthLeft
     "\"True enough,\" she agreed. \"Anyway. I suppose we should investigate Kanae-chan's back story?\""
     nvl clear
     
