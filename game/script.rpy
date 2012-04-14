@@ -41,6 +41,7 @@ init:
     image bg ParkBench = "Backgrounds/ParkBench.png"
     image bg ParkPath = "Backgrounds/ParkPath.png"
     image bg SchoolTable = "Backgrounds/SchoolTable.jpg"
+    image bg Cab = "Backgrounds/Cab.jpg"
     
     image bg MemoryYuki = "Backgrounds/MemoryYuki.jpg"
     image bg MemoryMikuru = "Backgrounds/MemoryMikuru.jpg"
@@ -492,8 +493,10 @@ init:
     #Koizumi Sprites
     
     image Koizumi Shrug Sigh1 = "Sprites/Koizumi/KoizumiShrugSigh1.png"
+    image Koizumi Shrug Smile1 = "Sprites/Koizumi/KoizumiShrugSmile1.png"
     
     image Koizumi Shrug Casual Sigh1 = "Sprites/Koizumi/KoizumiShrugCasualSigh1.png"
+    image Koizumi Shrug Casual Smile1 = "Sprites/Koizumi/KoizumiShrugCasualSmile1.png"
     
     image Koizumi Think Ser1 = "Sprites/Koizumi/KoizumiThinkSerious1.png"
     image Koizumi Think Ser2 = "Sprites/Koizumi/KoizumiThinkSerious2.png"

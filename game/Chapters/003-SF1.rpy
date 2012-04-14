@@ -693,7 +693,7 @@ label SF1:
     
     call eyecatch("Monday, April 18") from SF1_sc004
     
-label Test:
+
     play music "Music/moon.ogg"    
     scene bg ClubroomFullDay:
         xpos -400 ypos 0
@@ -780,31 +780,78 @@ label Test:
     scene black with dissolve
     nvl clear
     "The other club members rose and gathered their things, Mikuru offering Kanae a hand when the younger girl wobbled tiredly on her feet. \"Understood,\" Yuki said softly. In the corridor, while Haruhi turned around and locked the club room door, the quiet girl slipped him a note. He pocketed it with a frown. Mikuru studiously pretended not to notice, while Kanae was looking the other way drowsily."
-
-    # "* * *"
+nvl clear
     
-    # "After parting with the others at the train station, Kyon wasn't entirely surprised to see a familiar black taxicab pull from a side-street, stopping nearby. Koizumi leaned over and opened the back door, so with no hesitation, Kyon climbed in next to him."
-    # "\"How did it go?\" he asked, before the esper could volunteer anything."
-    # "\"It was a bit rough,\" Koizumi replied, still smiling. \"It could have been much worse, though. As I have mentioned before, one of the most stressful parts about this is simply getting to where the closed space is in a timely manner. Quite fortunately, all the spaces were within the coast of Honshu, so there was no need to travel extremely far.\""
-    # "\"I hope it wasn't too much trouble. Hmm, I realize this isn't a critical issue, but out of curiosity, how much does it typically cost to deal with a Shinjin, anyway?\""
-    # "\"That's entirely dependant on how much travel time is involved,\" Koizumi replied, shrugging. \"Hokkaido or Okinawa are of course going to be more difficult to reach, while Tokyo is relatively simple, thanks to the bullet train. However, you are correct in that this isn't a critical issue.\" He nodded his head at Arakawa, in the driver's seat, and explained, \"As I am now a liaison, not a full member of the Organization, this has been arranged to give you an update on the progress of closed space, and somewhat more to request an update from you on the events within the brigade meeting after my departure.\""
-    # "\"Hey, Arakawa-san,\" Kyon said, nodding slightly. The older man grunted a wordless reply, giving a tiny nod of his own, his eyes fixed on the road. \"I'm a bit surprised that Mori-san isn't here.\""
-    # "\"She's still a bit ... um ... intimidated by your last meeting,\" Koizumi said, his smile turning apologetic."
-    # "Kyon blinked, wondering what he was going to have to have done. \"Okay,\" he allowed. \"In summary, we discussed Michikyuu Kanae and her abilities as a slider, the fact that she's being pursued by sliders who want to capture her, and that her home world was invaded by aliens. Possibly related to the Sky Canopy Domain.\""
-    # "Koizumi paled, shivering. \"My,\" he allowed. \"That's ... less than comforting.\""
-    # "\"Yeah. Kanae-chan is also lost, and doesn't have much control over her ability to slide; she's trying to find her way home, and someone who can help deal with the alien invasion. Surprisingly, we also discovered a limit to Haruhi's power. Namely, that she can't affect other worlds reliably, or the ability to travel to them.\""
-    # "\"Is it possible that the limitation was Nagato-san's?\" Koizumi asked after a moment."
-    # "\"It's possible,\" Kyon agreed, frowning. \"That hadn't occurred to me. On that subject, Nagato also explained that the Integrated Data Sentience Entity doesn't have the ability to travel to or observe alternate realities, either. They made a dimensional anchor, which was lost millions of years ago. Naturally, Nagato is using that to try and help Kanae out. It's my hope that any new data that Nagato discovers with Kanae's help can be used as a bargaining chip to get back on the good side of the entity.\""
-    # "\"I see....\""
-    # "\"On {i}that{/i} note,\" Kyon added, turning his attention to Arakawa, \"would it be possible to request that the Organization watch over Kanae as well? She's an important person in all of this, too.\""
-    # "\"I will pass that request on to Mori-san,\" the older man allowed. \"If you will permit a personal observation, I'm rather surprised you trust us so much.\""
-    # "\"Well, you've never threatened to kill Koizumi for displeasing you,\" Kyon said with a shrug. \"You've never intentionally treated him poorly because you thought that's the way things needed to be. As far as I know, anyway."
-    # "\"More importantly, you haven't given me a reason not to trust you yet. Sorry if I, um, frightened Mori-san,\" though he boggled at the thought he could intimidate someone with such a smile, \"but after all is said and done, I'd like us to be able to work together. Ultimately, isn't your goal the stability of the world, and the safety of Haruhi and the people important to her?\""
-    # "Koizumi worked his jaw for a moment, his smiling masked wiped away in a look of open-eyed astonishment before a real smile came to his lips."
-    # "\"I will pass that on as well,\" Arakawa said, nodding."
-    # "\"Is there anything else?\" Koizumi asked."
-    # "Kyon shook his head, realizing they were only a few blocks from his house. \"Just that I'm sorry for the closed spaces so far. I'll do my best to keep Haruhi in good spirits.\""
-    # "\"That is all we can ask for,\" Koizumi said, nodding. \"Thank you very much, vice commander.\""
+label Test:
+    play music "Music/MysteryTime.mp3"
+    scene bg SchoolEntranceLeft with fade
+    "After parting with the others at the train station, Kyon wasn't entirely surprised to see a familiar black taxicab pull from a side-street, stopping nearby. Koizumi leaned over and opened the back door, so with no hesitation, Kyon climbed in next to him."
+    scene bg Cab
+    show Kyon Ser3 at right
+    show Koizumi Crossed Smile1 at left
+    with fade
+    "\"How did it go?\" he asked, before the esper could volunteer anything."
+    nvl clear
+    show Koizumi Crossed Smile2 at left
+    "\"It was a bit rough,\" Koizumi replied, still smiling. \"It could have been much worse, though. As I have mentioned before, one of the most stressful parts about this is simply getting to where the closed space is in a timely manner. "
+    show Koizumi Think Smile1 at left
+    "Quite fortunately, all the spaces were within the coast of Honshu, so there was no need to travel extremely far.\""
+    show Kyon Puzzle1 at right
+    "\"I hope it wasn't too much trouble. Hmm, I realize this isn't a critical issue, but out of curiosity, how much does it typically cost to deal with a Shinjin, anyway?\""
+    nvl clear
+    show Koizumi Shrug Sigh1:
+        xalign -1.0 yalign 1.0
+    "\"That's entirely dependant on how much travel time is involved,\" Koizumi replied, shrugging."
+    show Koizumi Think Grin1 at left
+    "\"Hokkaido or Okinawa are of course going to be more difficult to reach, while Tokyo is relatively simple, thanks to the bullet train. However, you are correct in that this isn't a critical issue.\""
+    show Koizumi Think Ser4 at left
+    "He nodded his head at Arakawa, in the driver's seat, and explained, \"As I am now a liaison, not a full member of the Organization, this has been arranged to give you an update on the progress of closed space, and somewhat more to request an update from you on the events within the brigade meeting after my departure.\""
+    nvl clear
+    show Kyon Sigh2 at right
+    "\"Hey, Arakawa-san,\" Kyon said, nodding slightly. The older man grunted a wordless reply, giving a tiny nod of his own, his eyes fixed on the road. \"I'm a bit surprised that Mori-san isn't here.\""
+    show Koizumi Shrug Smile1:
+        xalign -1.0 yalign 1.0
+    "\"She's still a bit ... um ... intimidated by your last meeting,\" Koizumi said, his smile turning apologetic."
+    show Kyon Sigh1 at right
+    "Kyon blinked, wondering what he was going to have to have done." 
+    nvl clear
+    show Kyon Ser3 at right
+    "\"Okay,\" he allowed. \"In summary, we discussed Michikyuu Kanae and her abilities as a slider, the fact that she's being pursued by sliders who want to capture her, and that her home world was invaded by aliens. Possibly related to the Sky Canopy Domain.\""
+    show Koizumi Think Sup1 at left
+    "Koizumi paled, shivering. \"My,\" he allowed. \"That's ... less than comforting.\""
+    show Kyon Worry1 at right
+    nvl clear
+    "\"Yeah. Kanae-chan is also lost, and doesn't have much control over her ability to slide; she's trying to find her way home, and someone who can help deal with the alien invasion." 
+    show Kyon Neutral1 at right
+    "Surprisingly, we also discovered a limit to Haruhi's power. Namely, that she can't affect other worlds reliably, or the ability to travel to them.\""
+    show Koizumi Think Ser4 at left
+    "\"Is it possible that the limitation was Nagato-san's?\" Koizumi asked after a moment."
+    show Kyon Ser1 at right
+    nvl clear
+    "\"It's possible,\" Kyon agreed, frowning. \"That hadn't occurred to me. On that subject, Nagato also explained that the Integrated Data Sentience Entity doesn't have the ability to travel to or observe alternate realities, either."
+    show Kyon Ser3 at right
+    "They made a dimensional anchor, which was lost millions of years ago. Naturally, Nagato is using that to try and help Kanae out. It's my hope that any new data that Nagato discovers with Kanae's help can be used as a bargaining chip to get back on the good side of the entity.\""
+    show Koizumi Think Ser3 at left
+    "\"I see....\""
+    nvl clear
+    show Kyon Neutral2 at right
+    "\"On {i}that{/i} note,\" Kyon added, turning his attention to Arakawa, \"would it be possible to request that the Organization watch over Kanae as well? She's an important person in all of this, too.\""
+    "\"I will pass that request on to Mori-san,\" the older man allowed. \"If you will permit a personal observation, I'm rather surprised you trust us so much.\""
+    show Kyon Sigh2 at right
+    "\"Well, you've never threatened to kill Koizumi for displeasing you,\" Kyon said with a shrug. \"You've never intentionally treated him poorly because you thought that's the way things needed to be. As far as I know, anyway."
+    show Kyon Worry1 at right
+    nvl clear
+    "\"More importantly, you haven't given me a reason not to trust you yet. Sorry if I, um, frightened Mori-san,\" though he boggled at the thought he could intimidate someone with such a smile, \"but after all is said and done, I'd like us to be able to work together. Ultimately, isn't your goal the stability of the world, and the safety of Haruhi and the people important to her?\""
+    show Koizumi Think Sup1 at left
+    "Koizumi worked his jaw for a moment, his smiling masked wiped away in a look of open-eyed astonishment before a real smile came to his lips."
+    "\"I will pass that on as well,\" Arakawa said, nodding."
+    nvl clear
+    show Koizumi Crossed Smile1 at left
+    "\"Is there anything else?\" Koizumi asked."
+    show Kyon Sigh2 at right
+    "Kyon shook his head, realizing they were only a few blocks from his house. \"Just that I'm sorry for the closed spaces so far. I'll do my best to keep Haruhi in good spirits.\""
+    show Koizumi Think Smile1 at left
+    "\"That is all we can ask for,\" Koizumi said, nodding. \"Thank you very much, vice commander.\""
 
     # "* * *"
 
