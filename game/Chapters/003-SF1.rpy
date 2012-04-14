@@ -495,42 +495,41 @@ label SF1:
     
     call eyecatch2("December 200X","Monday, April 18") from SF1_sc003
     
-#label Test:
-    scene bg ClubroomRightDay
+    scene bg ClubroomLeftDay
     play music "Music/Yuuutsu.mp3"
-    show Kyon Neutral3 at left
+    show Haruhi Worry1 at left
     show Mikuru Think Maid Sad1 at right
     show MTears Think at right
-    show Kanae Worry3:
-        xalign 0.5 yalign 1.0
     with fade
     "Mikuru sniffled, listening to the end of Kanae's story. \"That's so sad!\" she whimpered. \"Poor Kanae-chan!\""
-    show Mikuru Think Maid Sad2 at right
-    show Kanae Hap2:
-        xalign 0.5 yalign 1.0
+    scene bg ClubroomFullDay:
+        xpos 0 ypos 0
+        linear 0.1 xpos -800 ypos 0
+    show Kyon Neutral3 at left
+    show Kanae Hap2 at center
+    show Yuki Right Neutral2 at right
     "\"It's not so bad!\" Kanae said brightly. \"Even though everything changes from world to world, I still have my family! Sometimes I even have friends! And most importantly, I almost always have Sempai.\""
     nvl clear
     scene bg ClubroomFullDay:
         xpos -800 ypos 0
         linear 0.1 xpos 0 ypos 0
     show Haruhi Worry1 at left
-    show Koizumi Think Ser3 at right
+    show Mikuru Think Maid Sad2 at right
+    show MTears Think at right
     "\"Ouch,\" Haruhi said, taken aback. \"That doesn't sound like a fun power at all.\""
     scene bg ClubroomFullDay:
         xpos 0 ypos 0
         linear 0.1 xpos -800 ypos 0
     show Kyon Neutral3 at left
-    show Mikuru Think Maid Sad2 at right
-    show MTears Think at right
-    show Kanae Hap2:
-        xalign 0.5 yalign 1.0
+    show Kanae Hap2 at center
+    show Yuki Right Neutral2 at right
     "\"I can't let it get me down,\" the small girl declared confidently. \"I've never been to the same world twice, so with so many out there, I'm bound to find what I need, as long as I don't give up!\""
     nvl clear
     scene bg ClubroomFullDay:
         xpos -800 ypos 0
         linear 0.1 xpos 0 ypos 0
     show Haruhi Hap4 at left
-    show Koizumi Think Grin1 at right
+    show Mikuru Maid Smile2 at right
     "\"That's a good attitude! But you don't need to look any further; I'm absolutely sure we can find Kanae-chan's way home and deal with the alien invaders! It'll be easy, won't it? {nw}"
     show Haruhi Hap1 at left
     extend "Yuki-chan, you know everything, so how do we help her find her way home to find out about these enemies?\""
@@ -539,109 +538,107 @@ label SF1:
         xpos 0 ypos 0
         linear 0.1 xpos -800 ypos 0
     show Kyon Neutral4 at left
-    show Mikuru Maid Unhap2 at right
-    show Kanae Neutral1:
-        xalign 0.5 yalign 1.0
-    show YBook at TopRight behind Mikuru
+    show Kanae Neutral1 at center
+    show Yuki Right Talk2 at right
     "\"Unknown,\" Yuki replied without hesitation. \"I am not capable of traversal to other realities; neither is the Integrated Data Sentience Entity. This ability, much like that of Suzumiya Haruhi, can be termed 'unique'. Until the arrival of Michikyuu Kanae, the theory of other realities could not actually be proved, only speculated.\""
     nvl clear
     show Kyon Neutral1 at left
+    show Yuki Right Neutral2 at right
     "\"Would that mean that they also don't know about Michikyuu-san, and they're still in the dark on this one?\" Kyon mused."
     show Kyon Neutral4 at left
-    show Kanae Sad2:
-        xalign 0.5 yalign 1.0
+    show Kanae Sad2 at center
     "\"It's Kanae-chan, Sempai,\" the underclassman reminded him."
-    show Kanae Sad4:
-        xalign 0.5 yalign 1.0
+    show Kanae Sad4 at center
+    show Yuki Right Talk2 at right
     "\"Possibly,\" Yuki allowed. \"Even though it is possible to discern Michikyuu Kanae's method of travel, I am unable to replicate or predict its function.\""
     nvl clear
     scene bg ClubroomFullDay:
         xpos -800 ypos 0
         linear 0.1 xpos 0 ypos 0
     show Haruhi Crossed Hap1 at left
-    show Koizumi Think Grin1 at right
+    show Mikuru Maid Neutral2 at right
     "\"Right,\" Haruhi decided, smacking one fist into her opposing palm. \"Then I just need to fix that, right?\""
     scene bg ClubroomFullDay:
         xpos 0 ypos 0
         linear 0.1 xpos -800 ypos 0
     show Kyon Neutral2 at left
-    show Mikuru Maid Unhap2 at right
-    show Kanae Neutral1:
-        xalign 0.5 yalign 1.0
+    show Kanae Neutral1 at center
+    show Yuki Right Neutral2 at right
     "\"Let's not be too hasty,\" Kyon warned. \"Michikyuu-san, how does your ability work?\""
     nvl clear
     show Kyon Neutral3 at left
-    show Kanae Unhap1:
-        xalign 0.5 yalign 1.0
+    show Kanae Unhap1 at center
     "\"It's Kanae-chan, Sempai,\" the girl replied. {nw}"
-    show Kanae Worry3:
-        xalign 0.5 yalign 1.0
+    show Kanae Worry3 at center
     extend "\"Um ... it's hard to explain, though. It feels like turning a little to one side and pushing against the world, but not quite like that ... until the barrier that keeps us from falling out of the world gives way and I tumble through. But I can't even find my way back; the surface of reality ripples like a drop of water, so it never feels quite the same.... I wish I knew better! But like Nagato-san says, I've never found another slider who wanted to help me out.\""
     nvl clear
     scene bg ClubroomFullDay:
         xpos -800 ypos 0
         linear 0.1 xpos 0 ypos 0
     show Haruhi Crossed Quest1 at left
-    show Koizumi Crossed Neutral1 at right
+    show Mikuru Maid Unhap2 at right
     "\"You did mention others, though?\" Haruhi asked. \"So, what are these other sliders?\""
     nvl clear
     scene bg ClubroomFullDay:
         xpos 0 ypos 0
         linear 0.1 xpos -800 ypos 0
     show Kyon Neutral3 at left
-    show Mikuru Maid Unhap2 at right
-    show Kanae Unhap2:
-        xalign 0.5 yalign 1.0
-    show YBook at TopRight behind Mikuru 
+    show Kanae Unhap2 at center
+    show Yuki Right Neutral2 at right
     "\"There's three of them, and they seem to travel together,\" the girl answered, frowning. \"I don't even really know their names, but I know they work with my enemies. One of them is a pretty girl with a completely white face and long, long black hair — like a ghost. Other people aside from her friends and myself don't seem to be able to see her, and she moves so fast....\" She shivered. \"She scares me the most. She's always the last one before the metal shapes come from the sky and I have to run again....\""
     nvl clear
-    show Kanae Unhap3:
-        xalign 0.5 yalign 1.0
+    show Kanae Unhap3 at center
     show Kyon Ser3 at left 
     "\"Suou Kuyou?\" Kyon asked, blinking in surprise, giving Yuki a questioning stare. Yuki said nothing, but to Kyon, her eyes looked troubled."
     nvl clear
     show Kyon Ser1 at left
-    show Kanae Unhap2:
-        xalign 0.5 yalign 1.0
+    show Kanae Unhap2 at center
     "\"Um, another one is a boy about Sempai's age, but he has a very rude manner of speech and gray eyes. His hair is very long for a boy, and he always wears a blue uniform. He uses a very shiny gun of some sort. He hit me with it once before ... it doesn't kill people, I think, but it knocks them out.\""
     nvl clear
     scene bg ClubroomFullDay:
         xpos -800 ypos 0
         linear 0.1 xpos 0 ypos 0
     show Haruhi Crossed Ang1 at left
-    show Koizumi Crossed Neutral1 at right
+    show Mikuru Maid Unhap2 at right
     "\"I don't know who that guy is, but he already pisses me off!\" Haruhi announced, tapping one foot anxiously. \"If he shows his face around us, he's got a big surprise in store for him!\""
     scene bg ClubroomFullDay:
         xpos 0 ypos 0
         linear 0.1 xpos -800 ypos 0
     show Kyon Ser3 at left
-    show Mikuru Maid Unhap2 at right
-    show Kanae Smile1:
-        xalign 0.5 yalign 1.0
-    show YBook at TopRight behind Mikuru
+    show Kanae Smile1 at center
+    show Yuki Right Neutral2 at right
     "Kyon frowned. \"So, these other sliders are able to follow you, Michikyuu-san?\" he asked."
     nvl clear
     show Kyon Ser1 at left
-    show Kanae Hap2:
-        xalign 0.5 yalign 1.0
+    show Kanae Hap2 at center
     "\"Ah ... well.... Yes, but I think it's because of the third one.\" Kanae's smile fell as she added, {nw}"
-    show Kanae Unhap2:
-        xalign 0.5 yalign 1.0
+    show Kanae Unhap2 at center
     extend "\"It's also why I like Sempai to call me Kanae-chan.\""
-    show Kanae Unhap3:
-        xalign 0.5 yalign 1.0
+    show Kanae Unhap3 at center
     show Kyon Unhap2 at left
     "\"Hmm? It isn't another version of {i}me{/i}, is it?\" Kyon asked, his eyes darkening."
     nvl clear
     show Kyon Unhap4 at left
-    show Kanae Hap2:
-        xalign 0.5 yalign 1.0
+    show Kanae Hap2 at center
     "\"Haha, thankfully, no,\" Kanae said, shaking her head quickly. \"I don't know what I'd do if I couldn't rely on Sempai. {nw}"
-    show Kanae Sad3:
-        xalign 0.5 yalign 1.0
+    show Kanae Sad3 at center
     extend "The other slider ... is another {i}me{/i}.\""
-    # "\"Geez,\" Haruhi said with a wince. \"Come on, Kyon, don't be so formal! She's an underclassman, so it's not like people will make anything of it; show some sympathy!\""
-    # "\"Er, sorry, Kanae-chan,\" he allowed. \"Well, I can understand you want help. But I'm not certain how much we can really do.\""
+    nvl clear
+    scene bg ClubroomFullDay:
+        xpos -800 ypos 0
+        linear 0.1 xpos 0 ypos 0
+    show Haruhi Sup1 at left
+    show Mikuru Maid Sad1 at right
+    "\"Geez,\" Haruhi said with a wince. {nw}"
+    show Haruhi Eyeroll1 at left
+    extend "\"Come on, Kyon, don't be so formal! She's an underclassman, so it's not like people will make anything of it; show some sympathy!\""
+    scene bg ClubroomFullDay:
+        xpos 0 ypos 0
+        linear 0.1 xpos -800 ypos 0
+    show Kyon Ser3 at left
+    show Kanae Sad5 at center
+    show Yuki Right Neutral2 at right
+    "\"Er, sorry, Kanae-chan,\" he allowed. \"Well, I can understand you want help. But I'm not certain how much we can really do.\""
     # "\"I told you!\" Haruhi said in annoyance, slapping one palm against the center table. \"Yuki-chan! What program is currently in queue?\""
     # "\"Program one,\" the light-haired girl said. \"Share every lunch with-\""
     # "\"The next one! Not that one!\""
@@ -692,8 +689,11 @@ label SF1:
     # "\"I beg your pardon?\" he asked, quirking one eyebrow higher. \"I don't have good excuses, I have {i}awesome{/i} excuses.\""
     # "Haruhi grinned very brightly, chuckling. \"That's true,\" she allowed. \"Okay, vice commander, since we're here, and it seems Yuki's going to need some time to figure out the dimensional anchor, let's make sure you at least finish your homework. I'm not about to let your awesome excuses make the brigade look worse with sucky grades.\""
     # "Some day, Kyon realized, he would need to learn to keep his mouth shut."
+    nvl clear
     
-    label Test:
+    call eyecatch("Monday, April 18") from SF1_sc004
+    
+label Test:
     play music "Music/moon.ogg"    
     scene bg ClubroomFullDay:
         xpos -400 ypos 0

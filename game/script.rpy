@@ -73,6 +73,8 @@ init:
     
     #Haruhi Sprites
     image Haruhi Sup1 = "Sprites/Haruhi/HaruhiSideSurprised1.png"
+    image Haruhi Sup2 = "Sprites/Haruhi/HaruhiSideSurprised2.png"
+    image Haruhi Sup3 = "Sprites/Haruhi/HaruhiSideSurprised3.png"
     image Haruhi Ang1 = "Sprites/Haruhi/HaruhiSideAngry1.png"
     image Haruhi Ang2 = "Sprites/Haruhi/HaruhiSideAngry2.png"
     image Haruhi Ang3 = "Sprites/Haruhi/HaruhiSideAngry3.png"
