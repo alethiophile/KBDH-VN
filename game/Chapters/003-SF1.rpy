@@ -780,9 +780,9 @@ label SF1:
     scene black with dissolve
     nvl clear
     "The other club members rose and gathered their things, Mikuru offering Kanae a hand when the younger girl wobbled tiredly on her feet. \"Understood,\" Yuki said softly. In the corridor, while Haruhi turned around and locked the club room door, the quiet girl slipped him a note. He pocketed it with a frown. Mikuru studiously pretended not to notice, while Kanae was looking the other way drowsily."
-nvl clear
+    nvl clear
     
-label Test:
+
     play music "Music/MysteryTime.mp3"
     scene bg SchoolEntranceLeft with fade
     "After parting with the others at the train station, Kyon wasn't entirely surprised to see a familiar black taxicab pull from a side-street, stopping nearby. Koizumi leaned over and opened the back door, so with no hesitation, Kyon climbed in next to him."
@@ -852,36 +852,98 @@ label Test:
     "Kyon shook his head, realizing they were only a few blocks from his house. \"Just that I'm sorry for the closed spaces so far. I'll do my best to keep Haruhi in good spirits.\""
     show Koizumi Think Smile1 at left
     "\"That is all we can ask for,\" Koizumi said, nodding. \"Thank you very much, vice commander.\""
+    nvl clear
 
-    # "* * *"
-
-    # "After enduring a haranguing lecture from his mother and missing dinner, Kyon went to his bedroom and checked the note Yuki had given him. It read simply, \"Call me.\""
-    # "Shrugging, he picked up the phone and did as he was told, dialing her number from long memory. She answered instantly, her trademark quiet breathing the only response until he spoke. \"What's going on, Nagato?\" he asked."
-    # "\"I am in need of assistance,\" she said quietly. \"I am requesting your aid immediately.\""
-    # "\"Okay,\" he said, glancing around his room. \"I'll do whatever I can to help. I can be there in twenty minutes, so—\""
-    # "\"Acknowledged. Standby for transfer.\""
-    # "\"...what?\" he managed, as the world around him violently exploded away, revealing a yawning chasm full of stars, brightly colored gaseous clouds as though from distant nebulae, and myriad bolts of violently crackling energy in every direction. When he came to his senses, he was laying on the floor of Nagato's apartment, staring dazedly up into the girl's eyes."
-    # "Looking around, he saw a shell-shocked Mikuru wearing nothing more than a towel about her midsection, and another wrapped around her head, seeming fresh out of the shower, and Kanae, sprawled on the floor near Nagato's table in pajamas and snoring contently."
-    # "\"Um,\" he managed, sitting up and turning his eyes away from Mikuru. He wordlessly pushed his jacket at her, since he hadn't even had time to change out of his uniform. \"What's going on, Nagato?\" he added, closing his cell phone."
-    # "She set down the receiver of her own phone and said without preamble, \"An error is likely to occur imminently.\""
-    # "\"Mmm, Sempai,\" Kanae murmured in her sleep with a quiet giggle."
-    # "\"Okay,\" he said, running his hands through his hair and trying not to look at either Mikuru or the sleeping girl who was dreaming about him with a blush on her cheeks. \"We have been relying on you too much. What can I do to help?\""
-    # "\"I have already received permission from Suzumiya Haruhi to borrow you,\" the quiet girl said. \"With the help of the dimensional anchor, Michikyuu Kanae's ability to slide, and Asahina Mikuru's ability to traverse time, I will attempt to create a sealed alternate reality where my error can be expressed without causing any damage to the reality we currently dwell in.\""
-    # "\"Do we need to bring Haruhi into this?\" he asked. \"I mean, she has to start whatever it is I authorize now, right?\""
-    # "\"Negative,\" Nagato answered. \"I have deconstructed all previously queued requests and reassembled them to form data structures that can be executed with your permission. They are 'junk data' that I cannot destroy; I must find a way to execute them to prevent long-term damage or undue stress to the fabric of reality.\""
-    # "\"Um, well, I want to help you,\" he said, nodding. \"As long as Asahina-san and Kanae-chan agree, then I can't think of a reason not to.\""
-    # "\"Er ... could I ... borrow some clothes, maybe?\" Mikuru asked, her voice strained with embarrassment. \"I don't mind doing whatever Kyon-kun needs, but this is a little.... Erm....\""
-    # "\"Hmm?\" Kanae drawled, sitting up. \"Oh? Eh? What's....\" She blinked, looking around with a furrowed brow. \"Did I slide in my sleep?\" she asked curiously. \"Sempai? Asahina-san? Nagato-san?\""
-    # "\"Er, Nagato's having some ... trouble,\" Kyon allowed, trying to keep from staring at Mikuru, now wearing his coat and a pair of towels, her face dark red."
-    # "\"Can I help?\" Kanae-asked, rubbing one eye sleepily."
-    # "Yuki gave a tiny nod in response. \"I will attempt to construct a world based on our collective needs,\" she answered. \"To prevent long-term physical or mental stress, I will initiate an encoded pulse with physical and mental mapping. Estimating forty minutes to error.\""
-    # "\"What do you need?\" Kyon asked quickly, rising to his feet."
-    # "\"Wrist.\""
-    # "Kyon nodded knowingly and presented one hand for Yuki to take before she bit his wrist, injecting him with nanites."
-    # "Her attention turned to Kanae, and she repeated the demand. At Kanae's uncertain, questioning glance, he assured her, \"It's fine. If she says it's for our own protection, I believe her.\" Kanae nodded uncertainly and followed suit."
-    # "With a whimpering sigh, one hand clutching the coat closed across her chest, Mikuru also offered her wrist. \"State your needs,\" Yuki added, turning her attention to Kyon."
-    # "\"Um, needs?\" he asked. \"I don't know ... I guess I need to learn martial arts, according to Tsuruya-san. That and to be able to help you, whatever that ends up requiring.\""
-    # "\"I'd like to be able to slide better, and know how to get back!\" Kanae added, offering a tiny smile."
-    # "Mikuru winced. \"Really, some clothes would be just great,\" she mumbled."
-    # "\"Initializing,\" Yuki replied."
-    # "Then the world around Kyon exploded away again, for the second time in the last half hour."
+label Test:
+    play music "Music/Nichijou.mp3"
+    scene bg KyonRoomLeftClosed with fade
+    "After enduring a haranguing lecture from his mother and missing dinner, Kyon went to his bedroom and checked the note Yuki had given him. It read simply, \"Call me.\""
+    "Shrugging, he picked up the phone and did as he was told, dialing her number from long memory. She answered instantly, her trademark quiet breathing the only response until he spoke. \"What's going on, Nagato?\" he asked."
+    "\"I am in need of assistance,\" she said quietly. \"I am requesting your aid immediately.\""
+    "\"Okay,\" he said, glancing around his room. \"I'll do whatever I can to help. I can be there in twenty minutes, so—\""
+    "\"Acknowledged. Standby for transfer.\""
+    nvl clear
+    stop music
+    play sound "SE/ShieldLaunch.wav"
+    scene bg Space:
+        xpos 0 ypos 0
+    with circleirisoutfast
+    "\"...what?\" he managed, as the world around him violently exploded away, revealing a yawning chasm full of stars, brightly colored gaseous clouds as though from distant nebulae, and myriad bolts of violently crackling energy in every direction." 
+    play sound "SE/Laser1.mp3" 
+    play sound2 "SE/elec1.mp3"
+    scene bg Space:
+        xpos 0 ypos 0
+        linear 0.5 xpos -800 ypos -1200
+    scene bg YukiRoomCenter with circleirisinfast
+    play music "Music/circulation.ogg"
+    show Yuki Side1 at left
+    show Kyon Sigh3 at right
+    with dissolve
+    nvl clear
+    "When he came to his senses, he was laying on the floor of Nagato's apartment, staring dazedly up into the girl's eyes."
+    show Mikuru Cower Face Sup2 at TopRight
+    show Kanae Face Smile2 at TopLeft
+    with dissolve
+    show Kyon Sup2 at right
+    "Looking around, he saw a shell-shocked Mikuru wearing nothing more than a towel about her midsection, and another wrapped around her head, seeming fresh out of the shower, and Kanae, sprawled on the floor near Nagato's table in pajamas and snoring contently."
+    nvl clear
+    show Kyon Worry1 at right
+    show KBlush at right
+    show Mikuru Cower Face Nervous1 at TopRight
+    show MBlush Cower Face at TopRight
+    "\"Um,\" he managed, sitting up and turning his eyes away from Mikuru. He wordlessly pushed his jacket at her, since he hadn't even had time to change out of his uniform. \"What's going on, Nagato?\" he added, closing his cell phone."
+    show Yuki Talk1 at left
+    "She set down the receiver of her own phone and said without preamble, \"An error is likely to occur imminently.\""
+    nvl clear
+    show KABlush Face at TopLeft
+    "\"Mmm, Sempai,\" Kanae murmured in her sleep with a quiet giggle."
+    show Kyon Sigh2 at right
+    "\"Okay,\" he said, running his hands through his hair and trying not to look at either Mikuru or the sleeping girl who was dreaming about him with a blush on her cheeks. \"We have been relying on you too much. What can I do to help?\""
+    show Yuki Talk2 at left
+    nvl clear
+    "\"I have already received permission from Suzumiya Haruhi to borrow you,\" the quiet girl said. \"With the help of the dimensional anchor, Michikyuu Kanae's ability to slide, and Asahina Mikuru's ability to traverse time, I will attempt to create a sealed alternate reality where my error can be expressed without causing any damage to the reality we currently dwell in.\""
+    show Kyon Ser3 at right
+    "\"Do we need to bring Haruhi into this?\" he asked. \"I mean, she has to start whatever it is I authorize now, right?\""
+    nvl clear
+    show Yuki Talk1 at left
+    "\"Negative,\" Nagato answered. \"I have deconstructed all previously queued requests and reassembled them to form data structures that can be executed with your permission. They are 'junk data' that I cannot destroy; I must find a way to execute them to prevent long-term damage or undue stress to the fabric of reality.\""
+    show Kyon Neutral2 at right
+    "\"Um, well, I want to help you,\" he said, nodding. \"As long as Asahina-san and Kanae-chan agree, then I can't think of a reason not to.\""
+    show Mikuru Cower Face Nervous3 at TopRight
+    "\"Er ... could I ... borrow some clothes, maybe?\" Mikuru asked, her voice strained with embarrassment. \"I don't mind doing whatever Kyon-kun needs, but this is a little.... Erm....\""
+    nvl clear
+    show Kanae Face Worry1 at TopLeft
+    hide KABlush
+    "\"Hmm?\" Kanae drawled, sitting up. \"Oh? Eh? What's....\" She blinked, looking around with a furrowed brow. \"Did I slide in my sleep?\" she asked curiously. \"Sempai? Asahina-san? Nagato-san?\""
+    show Kyon Worry1 at right
+    "\"Er, Nagato's having some ... trouble,\" Kyon allowed, trying to keep from staring at Mikuru, now wearing his coat and a pair of towels, her face dark red."
+    "\"Can I help?\" Kanae-asked, rubbing one eye sleepily."
+    nvl clear
+    show Yuki Talk2 at left
+    "Yuki gave a tiny nod in response. \"I will attempt to construct a world based on our collective needs,\" she answered. \"To prevent long-term physical or mental stress, I will initiate an encoded pulse with physical and mental mapping. Estimating forty minutes to error.\""
+    show Kyon Ser2 at right
+    "\"What do you need?\" Kyon asked quickly, rising to his feet."
+    show Yuki Talk1 at left
+    "\"Wrist.\""
+    nvl clear
+    "Kyon nodded knowingly and presented one hand for Yuki to take before she bit his wrist, injecting him with nanites."
+    show Kyon Sigh1 at right
+    "Her attention turned to Kanae, and she repeated the demand. At Kanae's uncertain, questioning glance, he assured her, \"It's fine. If she says it's for our own protection, I believe her.\" Kanae nodded uncertainly and followed suit."
+    show Mikuru Cower Face Nervous1 at TopRight
+    "With a whimpering sigh, one hand clutching the coat closed across her chest, Mikuru also offered her wrist. \"State your needs,\" Yuki added, turning her attention to Kyon."
+    show Kyon Puzzle1 at right
+    nvl clear
+    "\"Um, needs?\" he asked. \"I don't know ... I guess I need to learn martial arts, according to Tsuruya-san. That and to be able to help you, whatever that ends up requiring.\""
+    show Kanae Face Smile1 at TopLeft
+    "\"I'd like to be able to slide better, and know how to get back!\" Kanae added, offering a tiny smile."
+    show Mikuru Cower Face Wince1 at TopRight
+    "Mikuru winced. \"Really, some clothes would be just great,\" she mumbled."
+    nvl clear
+    show Yuki Talk2 at left
+    "\"Initializing,\" Yuki replied."
+    play sound "SE/ShieldLaunch.wav"
+    scene bg Space:
+        xpos 0 ypos 0
+    with circleirisoutfast
+    "Then the world around Kyon exploded away again, for the second time in the last half hour."
+    scene black with fade

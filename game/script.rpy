@@ -46,7 +46,7 @@ init:
     image bg MemoryYuki = "Backgrounds/MemoryYuki.jpg"
     image bg MemoryMikuru = "Backgrounds/MemoryMikuru.jpg"
     image bg MemoryKoizumi = "Backgrounds/MemoryKoizumi.jpg"
- 
+    image bg Space = "Backgrounds/Space.jpg"
     
     image white = "#ffffff"
     image black = "#000000"
@@ -457,6 +457,15 @@ init:
     image Mikuru Cower Casual Smile1 ="Sprites/Mikuru/MikuruCowerCasualSmile1.png"
     image MTears Casual = "Sprites/Mikuru/MTearsCowerCasual1.png"
     
+    image Mikuru Cower Face Wince1 = "Sprites/Mikuru/MikuruCowerFaceWince1.png"
+    image Mikuru Cower Face Nervous1 = "Sprites/Mikuru/MikuruCowerFaceNervous1.png"
+    image Mikuru Cower Face Nervous2 = "Sprites/Mikuru/MikuruCowerFaceNervous2.png"
+    image Mikuru Cower Face Nervous3 = "Sprites/Mikuru/MikuruCowerFaceNervous3.png"
+    image Mikuru Cower Face Sup1 = "Sprites/Mikuru/MikuruCowerFaceSurprised1.png"
+    image Mikuru Cower Face Sup2 = "Sprites/Mikuru/MikuruCowerFaceSurprised2.png"
+    image Mikuru Cower Sigh1 = "Sprites/Mikuru/MikuruCowerSigh1.png"
+    image MBlush Cower Face = "Sprites/Mikuru/MBlushFace.png"
+    
     image MikuruBig Grin1 = "Sprites/MikuruBig/MikuruBigGrin1.png"
     image MikuruBig Grin2 = "Sprites/MikuruBig/MikuruBigGrin2.png"
     image MikuruBig Hap1 = "Sprites/MikuruBig/MikuruBigHappy1.png"
@@ -565,6 +574,12 @@ init:
     image Kanae Worry2 = "Sprites/Kanae/KanaeWorry2.png"
     image Kanae Worry3 = "Sprites/Kanae/KanaeWorry3.png"
     
+    image Kanae Face Smile1 =  "Sprites/Kanae/KanaeFaceSmile1.png"
+    image Kanae Face Smile2  = "Sprites/Kanae/KanaeFaceSmile2.png"
+    image Kanae Face Worry1 =  "Sprites/Kanae/KanaeFaceWorry1.png"
+    
+    image KABlush Face = "Sprites/Kanae/KanaeFaceBlush.png"
+    
     #Taniguchi Sprites
     image Taniguchi Grin1 = "Sprites/Taniguchi/TaniguchiGrin1.png"
     image Taniguchi Sup1 = "Sprites/Taniguchi/TaniguchiSurprised1.png"
@@ -663,7 +678,11 @@ init python:
     flashbulb = Fade(0.2, 0.0, 0.8, color='#fff')
     slowflashbulb = Fade(1.0, 0.5, 2.0, color='#fff')
     fastdissolve = Dissolve(0.15)
-   
+    circleirisout = ImageDissolve("id_circleiris.png", 1.0, 8)
+    circleirisin = ImageDissolve("id_circleiris.png", 1.0, 8, reverse=True)
+    
+    circleirisoutfast = ImageDissolve("id_circleiris.png", 0.75, 8)
+    circleirisinfast = ImageDissolve("id_circleiris.png", 0.75, 8, reverse=True)
     renpy.music.register_channel("sound2", "sfx", 0)
     _preferences.set_volume("sfx", 0.5)
     
@@ -748,6 +767,8 @@ transform center_left:
 
 transform TopRight:
     xalign 1.0 yalign 0.0
+transform TopLeft:
+    xalign 0.0 yalign 0.0    
     
 transform HalfRight:
     xalign 0.75 yalign 1.0
