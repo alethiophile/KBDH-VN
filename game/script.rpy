@@ -42,11 +42,11 @@ init:
     image bg ParkPath = "Backgrounds/ParkPath.png"
     image bg SchoolTable = "Backgrounds/SchoolTable.jpg"
     image bg Cab = "Backgrounds/Cab.jpg"
-    
+    image bg Space = "Backgrounds/Space.jpg"
     image bg MemoryYuki = "Backgrounds/MemoryYuki.jpg"
     image bg MemoryMikuru = "Backgrounds/MemoryMikuru.jpg"
     image bg MemoryKoizumi = "Backgrounds/MemoryKoizumi.jpg"
-    image bg Space = "Backgrounds/Space.jpg"
+ 
     
     image white = "#ffffff"
     image black = "#000000"
@@ -387,6 +387,7 @@ init:
     image Mikuru Smile1 = "Sprites/Mikuru/MikuruSmile1.png"
     image Mikuru Smile2 = "Sprites/Mikuru/MikuruSmile2.png"
     image Mikuru Quest1 = "Sprites/Mikuru/MikuruQuestion1.png"
+    image Mikuru Quest2 = "Sprites/Mikuru/MikuruQuestion2.png"
     image Mikuru Unhap1 = "Sprites/Mikuru/MikuruUnhappy1.png"
     image Mikuru Unhap2 = "Sprites/Mikuru/MikuruUnhappy2.png"
     image MBlush1 = "Sprites/Mikuru/MBlush1.png"
@@ -401,6 +402,7 @@ init:
     image Mikuru Casual Smile1 = "Sprites/Mikuru/MikuruCasualSmile1.png"
     image Mikuru Casual Smile2 = "Sprites/Mikuru/MikuruCasualSmile2.png"
     image Mikuru Casual Quest1 = "Sprites/Mikuru/MikuruCasualQuestion1.png"
+    image Mikuru Casual Quest2 = "Sprites/Mikuru/MikuruCasualQuestion2.png"
     image Mikuru Casual Unhap1 = "Sprites/Mikuru/MikuruCasualUnhappy1.png"
     image Mikuru Casual Unhap2 = "Sprites/Mikuru/MikuruCasualUnhappy2.png"
     image MBlush1 Casual = "Sprites/Mikuru/MBlushCasual1.png"
@@ -415,6 +417,7 @@ init:
     image Mikuru Maid Smile1 = "Sprites/Mikuru/MikuruMaidSmile1.png"
     image Mikuru Maid Smile2 = "Sprites/Mikuru/MikuruMaidSmile2.png"
     image Mikuru Maid Quest1 = "Sprites/Mikuru/MikuruMaidQuestion1.png"
+    image Mikuru Maid Quest2 = "Sprites/Mikuru/MikuruMaidQuestion2.png"
     image Mikuru Maid Unhap1 = "Sprites/Mikuru/MikuruMaidUnhappy1.png"
     image Mikuru Maid Unhap2 = "Sprites/Mikuru/MikuruMaidUnhappy2.png"
     image MBlush1 Maid = "Sprites/Mikuru/MBlushMaid1.png"
@@ -465,6 +468,7 @@ init:
     image Mikuru Cower Face Sup2 = "Sprites/Mikuru/MikuruCowerFaceSurprised2.png"
     image Mikuru Cower Sigh1 = "Sprites/Mikuru/MikuruCowerSigh1.png"
     image MBlush Cower Face = "Sprites/Mikuru/MBlushFace.png"
+
     
     image MikuruBig Grin1 = "Sprites/MikuruBig/MikuruBigGrin1.png"
     image MikuruBig Grin2 = "Sprites/MikuruBig/MikuruBigGrin2.png"
@@ -499,8 +503,60 @@ init:
     
     image MKiss = "Sprites/MikuruBig/MKiss.png"
     
-    #Koizumi Sprites
+    #Tsuruya Sprites
+    image Tsuruya Ang1 = "Sprites/Tsuruya/TsuruyaAngry1.png"
+    image Tsuruya Ang2 = "Sprites/Tsuruya/TsuruyaAngry2.png"
+    image Tsuruya Grin1 = "Sprites/Tsuruya/TsuruyaGrin1.png"
+    image Tsuruya Grin2 = "Sprites/Tsuruya/TsuruyaGrin2.png"
+    image Tsuruya Hap1 = "Sprites/Tsuruya/TsuruyaHappy1.png"
+    image Tsuruya Hap2 = "Sprites/Tsuruya/TsuruyaHappy2.png"
+    image Tsuruya Hap3 = "Sprites/Tsuruya/TsuruyaHappy3.png"
+    image Tsuruya Hap4 = "Sprites/Tsuruya/TsuruyaHappy4.png"
+    image Tsuruya Hap5 = "Sprites/Tsuruya/TsuruyaHappy5.png"
+    image Tsuruya Hap6 = "Sprites/Tsuruya/TsuruyaHappy6.png"
+    image Tsuruya Laugh1 = "Sprites/Tsuruya/TsuruyaLaugh1.png"
+    image Tsuruya Laugh2 = "Sprites/Tsuruya/TsuruyaLaugh2.png"
+    image Tsuruya Quest1 = "Sprites/Tsuruya/TsuruyaQuestion1.png"
+    image Tsuruya Sigh1 = "Sprites/Tsuruya/TsuruyaSigh1.png"
+    image Tsuruya Smile1 = "Sprites/Tsuruya/TsuruyaSmile1.png"
+    image Tsuruya Smile2 = "Sprites/Tsuruya/TsuruyaSmile2.png"
+    image Tsuruya Smile3 = "Sprites/Tsuruya/TsuruyaSmile3.png"
+    image Tsuruya Smile4 = "Sprites/Tsuruya/TsuruyaSmile4.png"
+    image Tsuruya Sup1 = "Sprites/Tsuruya/TsuruyaSurprised1.png"
+    image Tsuruya Worry1 = "Sprites/Tsuruya/TsuruyaWorry1.png"
     
+    #Kanae Sprites
+    image Kanae Hap1 = "Sprites/Kanae/KanaeHappy1.png"
+    image Kanae Hap2 = "Sprites/Kanae/KanaeHappy2.png"
+    image Kanae Hap3 = "Sprites/Kanae/KanaeHappy3.png"
+    image Kanae Neutral1 = "Sprites/Kanae/KanaeNeutral1.png"
+    image Kanae Quest1 = "Sprites/Kanae/KanaeQuestion1.png"
+    image Kanae Sad1 = "Sprites/Kanae/KanaeSad1.png"
+    image Kanae Sad2 = "Sprites/Kanae/KanaeSad2.png"
+    image Kanae Sad3 = "Sprites/Kanae/KanaeSad3.png"
+    image Kanae Sad4 = "Sprites/Kanae/KanaeSad4.png"
+    image Kanae Sad5 = "Sprites/Kanae/KanaeSad5.png"
+    image Kanae Smile1 = "Sprites/Kanae/KanaeSmile1.png"
+    image Kanae Smile2 = "Sprites/Kanae/KanaeSmile2.png"
+    image Kanae Sup1 = "Sprites/Kanae/KanaeSurprised1.png"
+    image Kanae Sup2 = "Sprites/Kanae/KanaeSurprised2.png"
+    image Kanae Unhap1 = "Sprites/Kanae/KanaeUnhappy1.png"
+    image Kanae Unhap2 = "Sprites/Kanae/KanaeUnhappy2.png"
+    image Kanae Unhap3 = "Sprites/Kanae/KanaeUnhappy3.png"
+    image Kanae Wince1 = "Sprites/Kanae/KanaeWince1.png"
+    image Kanae Wince2 = "Sprites/Kanae/KanaeWince2.png"
+    image Kanae Worry1 = "Sprites/Kanae/KanaeWorry1.png"
+    image Kanae Worry2 = "Sprites/Kanae/KanaeWorry2.png"
+    image Kanae Worry3 = "Sprites/Kanae/KanaeWorry3.png"
+    
+    image Kanae Face Smile1 =  "Sprites/Kanae/KanaeFaceSmile1.png"
+    image Kanae Face Smile2  = "Sprites/Kanae/KanaeFaceSmile2.png"
+    image Kanae Face Worry1 =  "Sprites/Kanae/KanaeFaceWorry1.png"
+    
+    image KABlush Face = "Sprites/Kanae/KanaeFaceBlush.png"
+    
+    
+    #Koizumi Sprites
     image Koizumi Shrug Sigh1 = "Sprites/Koizumi/KoizumiShrugSigh1.png"
     image Koizumi Shrug Smile1 = "Sprites/Koizumi/KoizumiShrugSmile1.png"
     
@@ -548,37 +604,6 @@ init:
     image Koizumi Crossed Casual Sigh1 = "Sprites/Koizumi/KoizumiCrossedCasualSigh1.png"
     image Koizumi Crossed Casual Sigh2 = "Sprites/Koizumi/KoizumiCrossedCasualSigh2.png"
     image Koizumi Crossed Casual Neutral1 = "Sprites/Koizumi/KoizumiCrossedCasualNeutral1.png"
-    
-    
-    #Kanae Sprites
-    image Kanae Hap1 ="Sprites/Kanae/KanaeHappy1.png"
-    image Kanae Hap2 ="Sprites/Kanae/KanaeHappy2.png"
-    image Kanae Hap3 ="Sprites/Kanae/KanaeHappy3.png"
-    image Kanae Neutral1 ="Sprites/Kanae/KanaeNeutral1.png"
-    image Kanae Quest1 ="Sprites/Kanae/KanaeQuestion1.png"
-    image Kanae Sad1 ="Sprites/Kanae/KanaeSad1.png"
-    image Kanae Sad2 ="Sprites/Kanae/KanaeSad2.png"
-    image Kanae Sad3 ="Sprites/Kanae/KanaeSad3.png"
-    image Kanae Sad4 ="Sprites/Kanae/KanaeSad4.png"
-    image Kanae Sad5 ="Sprites/Kanae/KanaeSad5.png"
-    image Kanae Smile1 ="Sprites/Kanae/KanaeSmile1.png"
-    image Kanae Smile2 ="Sprites/Kanae/KanaeSmile2.png"
-    image Kanae Sup1 ="Sprites/Kanae/KanaeSurprised1.png"
-    image Kanae Sup2 ="Sprites/Kanae/KanaeSurprised2.png"
-    image Kanae Unhap1 ="Sprites/Kanae/KanaeUnhappy1.png"
-    image Kanae Unhap2 ="Sprites/Kanae/KanaeUnhappy2.png"
-    image Kanae Unhap3 ="Sprites/Kanae/KanaeUnhappy3.png"
-    image Kanae Wince1 = "Sprites/Kanae/KanaeWince1.png"
-    image Kanae Wince2 = "Sprites/Kanae/KanaeWince2.png"
-    image Kanae Worry1 = "Sprites/Kanae/KanaeWorry1.png"
-    image Kanae Worry2 = "Sprites/Kanae/KanaeWorry2.png"
-    image Kanae Worry3 = "Sprites/Kanae/KanaeWorry3.png"
-    
-    image Kanae Face Smile1 =  "Sprites/Kanae/KanaeFaceSmile1.png"
-    image Kanae Face Smile2  = "Sprites/Kanae/KanaeFaceSmile2.png"
-    image Kanae Face Worry1 =  "Sprites/Kanae/KanaeFaceWorry1.png"
-    
-    image KABlush Face = "Sprites/Kanae/KanaeFaceBlush.png"
     
     #Taniguchi Sprites
     image Taniguchi Grin1 = "Sprites/Taniguchi/TaniguchiGrin1.png"
@@ -678,11 +703,13 @@ init python:
     flashbulb = Fade(0.2, 0.0, 0.8, color='#fff')
     slowflashbulb = Fade(1.0, 0.5, 2.0, color='#fff')
     fastdissolve = Dissolve(0.15)
+   
     circleirisout = ImageDissolve("id_circleiris.png", 1.0, 8)
     circleirisin = ImageDissolve("id_circleiris.png", 1.0, 8, reverse=True)
     
     circleirisoutfast = ImageDissolve("id_circleiris.png", 0.75, 8)
     circleirisinfast = ImageDissolve("id_circleiris.png", 0.75, 8, reverse=True)
+    
     renpy.music.register_channel("sound2", "sfx", 0)
     _preferences.set_volume("sfx", 0.5)
     
@@ -693,12 +720,12 @@ init python:
     osl_left = Position(xanchor=0.5, yalign=1.0, xpos=-0.75) 
     osl_center = Position(xanchor=0.5, yalign=1.0, xpos=-0.5)
     osl_right = Position(xanchor=0.5, yalign=1.0, xpos=-0.25)
-    # positions on the (imaginary) screen situatet directly right of one shown.
+    # positions on the (imaginary) screen situated directly right of one shown.
     osr_center = Position(xanchor=0.5, yalign=1.0, xpos=1.5)
     osr_left = Position(xanchor=0.5, yalign=1.0, xpos=1.25)
     osr_right = Position(xanchor=0.5, yalign=1.0, xpos=-1.75) 
     
-    # position of the energy net, lower than truecenter, to cover the Ryoko better.
+    # position of the energy net, lower than truecenter, to cover Ryoko better.
     spike_net_pos = Position(xalign=0.5, ycenter=0.65)
     
     # position of title cards, i.e chapter-opening quotes.
@@ -768,8 +795,7 @@ transform center_left:
 transform TopRight:
     xalign 1.0 yalign 0.0
 transform TopLeft:
-    xalign 0.0 yalign 0.0    
-    
+    xalign 0.0 yalign 0.0      
 transform HalfRight:
     xalign 0.75 yalign 1.0
 transform HalfLeft:
@@ -779,13 +805,10 @@ transform TenthRight:
     xalign 0.90 yalign 1.0
 transform TenthLeft:
     xalign 0.10 yalign 1.0
-
     
 transform KyonRightFast:
     xalign -0.5 yalign 1.0
-    linear 0.2 xalign 2.0   
-#    linear 0.15 xalign 1.0   
-
+    linear 0.2 xalign 2.0
 
 init -1 python:
     # def show_date(st, at):

@@ -639,29 +639,157 @@ label SF1:
     show Kanae Sad5 at center
     show Yuki Right Neutral2 at right
     "\"Er, sorry, Kanae-chan,\" he allowed. \"Well, I can understand you want help. But I'm not certain how much we can really do.\""
-    # "\"I told you!\" Haruhi said in annoyance, slapping one palm against the center table. \"Yuki-chan! What program is currently in queue?\""
-    # "\"Program one,\" the light-haired girl said. \"Share every lunch with-\""
-    # "\"The next one! Not that one!\""
-    # "\"Program two: Cause Tanaka-sensei to become more interesting.\""
-    # "\"...tempting,\" Kyon allowed. \"But denied. You can ignore that, Nagato. Go ahead and clear out the queue again.\""
-    # "\"Understood.\""
-    # "\"Erg,\" Haruhi grumbled, grimacing, clenching her eyes shut in concentration. \"Um, Kanae-chan can control her sliding better to find her way home and back again.\" She opened one eye, peeking at Yuki. \"How about now?\""
-    # "Yuki blinked, a tiny crease appearing in her brow as her eyebrows drew the slightest bit closer together. \"Unable to process,\" she finally said. \"I cannot determine parameters of dimensional sliding. Because of this, it is not possible to determine the effects of attempting to initiate a change in Michikyuu Kanae's abilities; attempting to alter or tamper with them may cause unforeseen consequences.\""
-    # "\"Well, that's okay!\" Kanae said, slumping very slightly. \"I didn't really think it would be that easy....\""
-    # "\"I'm trying not to get frustrated,\" Haruhi growled, flinging herself into her seat. \"What do we need to do?\""
-    # "Mikuru wordlessly set another cup of tea before the brigade leader."
-    # "\"A better understanding of dimensional sliding is required,\" Yuki answered. \"A form of dimensional anchor allowing Michikyuu Kanae to travel away and then return would allow the method to be discerned more completely.\""
-    # "\"Eh ... now, where are we going to get such a thing?\" Haruhi wondered."
-    # "\"Is it possible that such a thing already exists?\" Mikuru asked, frowning."
-    # "Haruhi slumped further in her seat. \"I was hoping you could bring one from the future,\" she mumbled."
-    # "\"Eh!? No, no, moving objects like weapons and tools from the future is absolutely forbidden!\" the time traveler said, shaking her head quickly."
-    # "\"If even the Integrated Data Sentience Entity wasn't certain that such a thing as alternate realities or dimensions existed ... well, they exist outside of space and time,\" Kyon noted."
-    # "\"Correct. Therefore, this does not preclude the creation of tools or theories to interact with unproven facets of reality,\" Nagato said."
-    # "Haruhi and Kyon looked at her in surprise. \"You know something?\" she asked."
-    # "\"The Integrated Data Sentience Entity is nearly as old as the concept of information. Tools for the purpose of theoretical interactions have been prepared in the past. However, as the entity is a non-physical existence, that data exists at this point unfabricated; millions of years have passed since the last known creation of any such items.\""
-    # "\"Millions of years, huh?\" Kyon mused, rubbing his chin. \"Like, as long ago as the cave cricket?\""
-    # "Nagato nodded. Haruhi and Kanae looked at him questioningly, while Mikuru shivered, shaking her head again. Kyon looked at the clock and pulled his now very heavily marked note from his future self from his bag. \"Four fifty five,\" he commented, just before the door slammed open."
-    # "\"Ya-hoo!\" Tsuruya cheered, waving excitedly. \"Heya, Haru-nyan! Mikuru-chan, Nagato-chi, and, um, girl I don't know yet! Nice to meetchas!\""
+    nvl clear
+    scene bg ClubroomFullDay:
+        xpos -800 ypos 0
+        linear 0.1 xpos 0 ypos 0
+    show Haruhi Point Ang1 at left
+    show Mikuru Think Maid Sup1 at right
+    "\"I told you!\" Haruhi said in annoyance, slapping one palm against the center table. \"Yuki-chan! What program is currently in queue?\""
+    nvl clear
+    scene bg ClubroomFullDay:
+        xpos 0 ypos 0
+        linear 0.1 xpos -800 ypos 0
+    show Kyon Ser1 at left
+    show Kanae Sad4 at center
+    show Yuki Right Talk2 at right
+    "\"Program one,\" the light-haired girl said. \"Share every lunch with-\""
+    scene bg ClubroomFullDay:
+        xpos -800 ypos 0
+        linear 0.1 xpos 0 ypos 0
+    show Haruhi Ang4 at left
+    show Mikuru Maid Quest2 at right
+    "\"The next one! Not that one!\""
+    nvl clear
+    scene bg ClubroomFullDay:
+        xpos 0 ypos 0
+        linear 0.1 xpos -800 ypos 0
+    show Kyon Ser1 at left
+    show Kanae Sad4 at center
+    show Yuki Right Talk1 at right
+    "\"Program two: Cause Tanaka-sensei to become more interesting.\""
+    show Yuki Right Neutral1 at right
+    show Kyon Smile1 at left
+    "\"...tempting,\" Kyon allowed. {nw}"
+    show Kyon Ser3 at left
+    extend "\"But denied. You can ignore that, Nagato. Go ahead and clear out the queue again.\""
+    show Kyon Ser1 at left
+    show Yuki Right Talk2 at right
+    "\"Understood.\""
+    nvl clear
+    scene bg ClubroomFullDay:
+        xpos -800 ypos 0
+        linear 0.1 xpos 0 ypos 0
+    show Haruhi Crossed Tsun1 at left
+    show Mikuru Maid Quest2 at right
+    "\"Erg,\" Haruhi grumbled, grimacing, clenching her eyes shut in concentration. \"Um, Kanae-chan can control her sliding better to find her way home and back again.\" {nw}"
+    show Haruhi Crossed Worry1 at left
+    extend "She opened one eye, peeking at Yuki. \"How about now?\""
+    nvl clear
+    scene bg ClubroomFullDay:
+        xpos 0 ypos 0
+        linear 0.1 xpos -800 ypos 0
+    show Kyon Neutral3 at left
+    show Kanae Quest1 at center
+    show Yuki Side SmallBlink at right
+    "Yuki blinked, a tiny crease appearing in her brow as her eyebrows drew the slightest bit closer together. \"Unable to process,\" she finally said. {nw}"
+    show Yuki Talk1 at right
+    extend"\"I cannot determine parameters of dimensional sliding. Because of this, it is not possible to determine the effects of attempting to initiate a change in Michikyuu Kanae's abilities; attempting to alter or tamper with them may cause unforeseen consequences.\""
+    nvl clear
+    show Yuki Side1 at right
+    show Kanae Unhap2 at center
+    "\"Well, that's okay!\" Kanae said, slumping very slightly. \"I didn't really think it would be that easy....\""
+    nvl clear
+    scene bg ClubroomFullDay:
+        xpos -800 ypos 0
+        linear 0.1 xpos 0 ypos 0
+    show Haruhi Crossed Ang1 at left
+    show Mikuru Maid Neutral1 at right
+    "\"I'm trying not to get frustrated,\" Haruhi growled, flinging herself into her seat. \"What do we need to do?\""
+    show Haruhi Crossed Ang3 at left
+    hide Mikuru with moveoutright
+    show Mikuru Maid Neutral1 at HalfLeft
+    show MTray Maid at HalfLeft
+    with moveinright
+    pause 0.5
+    show Mikuru Maid Neutral1 at right
+    show MTray Maid at right
+    with move
+    "Mikuru wordlessly set another cup of tea before the brigade leader."
+    nvl clear
+    scene bg ClubroomFullDay:
+        xpos 0 ypos 0
+        linear 0.1 xpos -800 ypos 0
+    show Kyon Neutral3 at left
+    show Kanae Unhap3 at center
+    show Yuki Right Talk2 at right
+    "\"A better understanding of dimensional sliding is required,\" Yuki answered. \"A form of dimensional anchor allowing Michikyuu Kanae to travel away and then return would allow the method to be discerned more completely.\""
+    nvl clear
+    scene bg ClubroomFullDay:
+        xpos -800 ypos 0
+        linear 0.1 xpos 0 ypos 0
+    show Haruhi Quest1 at left
+    show Mikuru Think Maid Quest1 at right
+    "\"Eh ... now, where are we going to get such a thing?\" Haruhi wondered."
+    show Haruhi Smile1 at left
+    show Mikuru Maid Quest1 at right
+    "\"Is it possible that such a thing already exists?\" Mikuru asked, frowning."
+    nvl clear
+    show Haruhi Pout2 at left
+    show Mikuru Maid Quest2 at right
+    "Haruhi slumped further in her seat. \"I was hoping you could bring one from the future,\" she mumbled."
+    show Haruhi Pout1 at left
+    show Mikuru Think Maid Sup1 at right 
+    "\"Eh!? No, no, moving objects like weapons and tools from the future is absolutely forbidden!\" the time traveler said, shaking her head quickly."
+    nvl clear
+    scene bg ClubroomFullDay:
+        xpos 0 ypos 0
+        linear 0.1 xpos -800 ypos 0
+    show Kyon Neutral2 at left
+    show Kanae Neutral1 at center
+    show Yuki Right Neutral2 at right
+    "\"If even the Integrated Data Sentience Entity wasn't certain that such a thing as alternate realities or dimensions existed ... well, they exist outside of space and time,\" Kyon noted."
+    show Kyon Neutral3 at left
+    show Yuki Right Talk2 at right
+    "\"Correct. Therefore, this does not preclude the creation of tools or theories to interact with unproven facets of reality,\" Nagato said."
+    nvl clear
+    scene bg ClubroomFullDay:
+        xpos -800 ypos 0
+        linear 0.1 xpos 0 ypos 0
+    show Haruhi Crossed Sup1 at left
+    show Mikuru Maid Quest2 at right
+    "Haruhi and Kyon looked at her in surprise. \"You know something?\" she asked."
+    nvl clear
+    scene bg ClubroomFullDay:
+        xpos 0 ypos 0
+        linear 0.1 xpos -800 ypos 0
+    show Kyon Neutral3 at left
+    show Kanae Quest1 at center
+    show Yuki Right Talk1 at right
+    "\"The Integrated Data Sentience Entity is nearly as old as the concept of information. Tools for the purpose of theoretical interactions have been prepared in the past. However, as the entity is a non-physical existence, that data exists at this point unfabricated; millions of years have passed since the last known creation of any such items.\""
+    nvl clear
+    show Kyon Neutral1 at left
+    show Yuki Neutral1 at right
+    "\"Millions of years, huh?\" Kyon mused, rubbing his chin. \"Like, as long ago as the cave cricket?\""
+    nvl clear
+    show Kyon Neutral3 at left
+    "Nagato nodded. Haruhi and Kanae looked at him questioningly, while Mikuru shivered, shaking her head again. Kyon looked at the clock and pulled his now very heavily marked note from his future self from his bag. {nw}"
+    show Kyon Neutral2 at left
+    extend "\"Four fifty five,\" he commented, just before the door slammed open."
+    nvl clear
+    play sound "SE/doorclose.mp3"
+    play music "Music/KouchouKouchou.mp3"
+    scene bg ClubroomFullDay:
+        xpos -800 ypos 0
+        linear 0.1 xpos 0 ypos 0
+    show Haruhi Crossed Sup1 at left
+    show Mikuru Think Maid Sup1 at right
+    show Tsuruya Hap6 at center with moveinleft
+    "\"Ya-hoo!\" Tsuruya cheered, waving excitedly. \"Heya, Haru-nyan! Mikuru-chan, Nagato-chi, and, {nw}"
+    show Tsuruya Quest1 at center
+    extend "um, girl I don't know yet! {nw}"
+    show Tsuruya Hap2 at center
+    extend "Nice to meetchas!\""
     # "He turned his attention to the paper, jotting down some additional quick notes. \"Hey, Tsuruya-san,\" Haruhi replied, smiling back. \"What brings you here today?\""
     # "\"Kyon-kun asked mes!\" Tsuruya said, placing her hands on her hips and throwing her head back to laugh. \"After running into him yesterday, how could I not?\""
     # "\"What time did we meet, exactly?\" Kyon asked, glancing at her sidelong."
