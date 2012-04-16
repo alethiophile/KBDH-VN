@@ -982,7 +982,7 @@ label SF1:
     "\"That is all we can ask for,\" Koizumi said, nodding. \"Thank you very much, vice commander.\""
     nvl clear
 
-label Test:
+
     play music "Music/Nichijou.mp3"
     scene bg KyonRoomLeftClosed with fade
     "After enduring a haranguing lecture from his mother and missing dinner, Kyon went to his bedroom and checked the note Yuki had given him. It read simply, \"Call me.\""
@@ -1075,3 +1075,5 @@ label Test:
     with circleirisoutfast
     "Then the world around Kyon exploded away again, for the second time in the last half hour."
     scene black with fade
+    nvl clear
+    jump SF2    

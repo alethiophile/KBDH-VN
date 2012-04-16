@@ -19,6 +19,7 @@ init:
     image bg BeamOrange5 = "Backgrounds/BeamOrange5.jpg"
     image bg KyonRoomLeftClosed = "Backgrounds/KyonRoomLeftClosed.png"
     image bg KyonRoomLeftMorning = "Backgrounds/KyonRoomLeftMorning.png"
+    image bg KyonRoomRightMorning = "Backgrounds/KyonRoomRightMorning.png"
     image bg KyonHouseNight = "Backgrounds/KyonHouseNight.png"
     image bg KyonHouseDay = "Backgrounds/KyonHouseDay.png"
     image bg TownStreetNight1 = "Backgrounds/TownStreetNight1.png"
@@ -617,6 +618,12 @@ init:
     image Kunikida Smile1 ="Sprites/Kunikida/KunikidaSmile1.png"
     image Kunikida Smile2 ="Sprites/Kunikida/KunikidaSmile2.png"
 
+    #Nonoko Sprites
+    image Nonoko Smile1 = "Sprites/Nonoko/NonokoSmile1.png"
+    image Nonoko Sup1 = "Sprites/Nonoko/NonokoSurprised1.png"
+    image Nonoko Pout1 = "Sprites/Nonoko/NonokoPout1.png"
+    image Nonoko Hap1 = "Sprites/Nonoko/NonokoHappy1.png"
+    
     # image Credits0 = "Backgrounds/credits0.png"
     # image Credits1 = "Backgrounds/credits1.png"
     # image Credits2 = "Backgrounds/credits2.png"
