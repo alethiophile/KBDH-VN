@@ -477,6 +477,7 @@ label SF1:
     show Haruhi Quest1 at TenthLeft
     "\"True enough,\" she agreed. \"Anyway. I suppose we should investigate Kanae-chan's back story?\""
     nvl clear
+    stop music fadeout 3
     
     call eyecatch2("Monday, April 18","December 200X") from SF1_sc002
     
@@ -958,7 +959,7 @@ label SF1:
     nvl clear
     "\"It's possible,\" Kyon agreed, frowning. \"That hadn't occurred to me. On that subject, Nagato also explained that the Integrated Data Sentience Entity doesn't have the ability to travel to or observe alternate realities, either."
     show Kyon Ser3 at right
-    "They made a dimensional anchor, which was lost millions of years ago. Naturally, Nagato is using that to try and help Kanae out. It's my hope that any new data that Nagato discovers with Kanae's help can be used as a bargaining chip to get back on the good side of the entity.\""
+    "\"They made a dimensional anchor, which was lost millions of years ago. Naturally, Nagato is using that to try and help Kanae out. It's my hope that any new data that Nagato discovers with Kanae's help can be used as a bargaining chip to get back on the good side of the entity.\""
     show Koizumi Think Ser3 at left
     "\"I see....\""
     nvl clear
@@ -981,7 +982,6 @@ label SF1:
     show Koizumi Think Smile1 at left
     "\"That is all we can ask for,\" Koizumi said, nodding. \"Thank you very much, vice commander.\""
     nvl clear
-
 
     play music "Music/Nichijou.mp3"
     scene bg KyonRoomLeftClosed with fade
@@ -1077,3 +1077,389 @@ label SF1:
     scene black with fade
     nvl clear
     jump SF2    
+
+
+label SF1_test:
+    
+    # transform pan_scene_right:
+        # xpos 0
+        # linear 2 xpos -800
+    # $ renpy.layer_at_list([pan_scene_right])
+    
+    
+    transform PanScene_LeftToRight:
+        # xpos 0.0
+        linear 0.15 xpos -1.0
+        
+    transform PanScene_RightToLeft:
+        xpos -1.0
+        linear 0.15 xpos 0.0
+
+    transform PanScene_SetToRight:
+        xpos -1.0
+
+    transform PanScene_SetToLeft:
+        xpos 0.0
+        
+    transform left_RightScreen:
+        xpos 1.0 yalign 1.0
+        
+    transform center_RightScreen:
+        xpos 1.4 yalign 1.0 # xalign 0.5 yalign 1.0
+
+    transform right_RightScreen:
+        xpos 1.65 yalign 1.0
+        
+    transform TopRight_RightScreen:
+        xpos 1.6 yalign 0.0
+        
+    transform UnderLegs_RightScreen:
+        xalign 1.55 yalign 2.2
+    
+    # scene bg ClubroomFullDay:
+        # xpos 0 ypos 0
+    # show Haruhi Crossed Hap2 at left
+    # show Koizumi Think Ser3 at right
+    # "uno"
+    
+    # $ renpy.layer_at_list([PanScene_LeftToRight])
+    # show Kyon Neutral3: #at left
+        # xpos 1.0 yalign 1.0
+    # show Mikuru Maid Unhap1: #at right
+        # xalign 2.5  yalign 1.0
+    # "dos"
+    # $ renpy.layer_at_list([PanScene_RightToLeft])
+    # "tres"
+    # $ renpy.layer_at_list([PanScene_LeftToRight])
+    # "cuatro"    
+    # nvl clear
+    
+    
+    # .
+    # .
+    # Start rewriting
+    # .
+    # .
+
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 003 at card_pos
+    with slowfadein
+    play sound "SE/Pageflip3.mp3"
+    pause
+    nvl clear
+     
+    scene bg ClubroomFullDay:
+        xpos 0 ypos 0
+    $ renpy.layer_at_list([PanScene_SetToRight])
+    
+    play music "Music/Oi.mp3"
+    show Kyon Neutral3 at left_RightScreen
+    show Mikuru Maid Unhap1 at right_RightScreen
+    show MBlush1 Maid at right_RightScreen
+    show Kanae Wince1:
+        xpos 1.6 ypos 0.6 
+        #xalign 2.2 yalign 1.4
+    # with fade    
+    "\"P...please get your face out of my chest!\" Mikuru blurted out, her face coloring red."
+    show Kanae Sup1 #:
+        # xalign 2.2 yalign 1.4
+    "The first year student started, realizing where she was, then scurried beneath the table and clung to one of Kyon's legs. {nw}"
+    # show Kanae Wince2:
+    # $ _window = True
+    
+    show Kanae Worry1:
+        # linear 3 xalign 1.55 yalign 2.2
+        linear 2.0 pass
+        linear 0.5 xpos 1.15 ypos 0.8
+    # show Kanae Worry1 at UnderLegs_RightScreen with move
+        
+    # with move
+    $ _window = False
+    extend "\"Sempai!\" she whimpered. \"Save me!\""
+    nvl clear
+    show Kyon Neutral2 at left_RightScreen
+    "Placing another stone at the board, Kyon remarked, \"I'm threatening your piece, Koizumi; atari.\" Bending to look at the shivering girl who had grabbed onto him, he added, \"I don't think we've been introduced properly yet.\""
+    show Kyon Neutral3 at left_RightScreen
+    nvl clear
+    "He took a moment to study her features, while she shivered in fright, clinging to him. Her brown hair was shoulder-length, and very curly just at the tips — fairly distinctive, he thought. She was probably as tall as Yuki, but with an even slighter frame, not quite gangly, but not yet grown into her height. Her dark eyes stared up at him pleadingly."
+    nvl clear
+    $ renpy.layer_at_list([PanScene_RightToLeft])
+
+    show Haruhi Crossed Hap2 at left
+    show Koizumi Think Ser3 at right
+    "\"That all but confirms it,\" Haruhi declared, clapping her hands together and standing guard at the locked door. \"Okay, initiate, state your name and let go of the vice commander, {nw}"
+    show Haruhi Crossed Hap4 at left
+    extend "or I will issue a severe penalty!\""
+    $ renpy.layer_at_list([PanScene_LeftToRight])
+    show Kyon Neutral3 at left_RightScreen
+    show Mikuru Maid Unhap1 at right_RightScreen
+    show MBlush1 Maid at right_RightScreen
+    show Kanae Wince1:
+        xalign 1.55 yalign 2.2
+    "\"I-I really shouldn't,\" the girl stuttered. \"Sempai! Why aren't you helping me?\""
+    nvl clear
+    show Kyon Neutral2 at left_RightScreen
+    "\"Alright,\" Kyon relented. \"I'll help you out, but I need to know who you are, first.\""
+    show Kyon Neutral3 at left_RightScreen
+    show Kanae Sad1:
+        xalign 1.55 yalign 2.2
+    "\"Um! I'm Michikyuu Kanae,\" she said. \"What's going on here?\""
+    show Kyon Sigh2 at left_RightScreen
+    "\"It's my fault,\" Kyon said, sighing. \"Haruhi asked me what was up with you, and I said you probably knew alternate universe versions of us from sliding through dimensions.\""
+    nvl clear
+    "\"You already know!?\" the girl yelped, trying to jump away from Kyon, {nw}"
+    $ _window = True
+    show Kanae Wince1:
+        # xalign 1.55 yalign 2.0
+        linear 2.0 pass
+        linear 0.4 yalign 2.0
+    play sound "SE/impact.mp3"
+    pause 0.8
+    $ _window = False
+    hide MBlush1
+    show Mikuru Think Maid Sup1 at right_RightScreen
+    extend "but only smacking her head and jolting the table, scattering all the pieces across the board."
+    nvl clear
+    $ renpy.layer_at_list([PanScene_RightToLeft])
+    show Haruhi Crossed Smile1 at left
+    show Koizumi Shrug Sigh1 at right
+    "\"Just as well,\" Koizumi said with a shrug. \"I don't think a six stone advantage was going to help me much.\""
+    $ renpy.layer_at_list([PanScene_LeftToRight])
+    show Kyon Sup1 at left_RightScreen
+    show Ksweat at left_RightScreen
+    show Mikuru Think Maid Sup1 at right_RightScreen
+    show Kanae Wince1:
+        xalign 1.55 yalign 2.0
+    "\"Wait, you mean you're really a slider?\" Kyon asked, eyes widening in surprise. \"I was joking!\""
+    nvl clear
+    $ renpy.layer_at_list([PanScene_RightToLeft])
+    show Haruhi Point Amuse1 at left
+    show Koizumi Crossed Neutral1 at right
+    "\"Kyon, Kyon, Kyon,\" Haruhi chastised him, her grin even wider as she shook her head. \"Shame on you! You really thought that kind of thing would be a throwaway comment?\""
+    $ renpy.layer_at_list([PanScene_LeftToRight])
+    show Kyon Sup1 at left_RightScreen
+    show Ksweat at left_RightScreen
+    show Mikuru Maid Quest1 at right_RightScreen
+    show Kanae Wince1:
+        xalign 1.55 yalign 2.0
+    $ _window = False
+    "\"...ow,\" Kanae moaned. \"My head....\""
+    hide Ksweat
+    show Kyon Sigh1 at left_RightScreen
+    "\"Okay, this is very quickly getting out of hand,\" Kyon decided. \"Nagato?\""
+    nvl clear
+    show Kyon Sigh3 at left_RightScreen
+    show YBook at TopRight_RightScreen behind Mikuru
+    with dissolve
+    "The quiet girl had watched everything without remark so far, so contributed, \"Quantum displacement agent. Through the accumulation of distortions through the fabric of space-time, she can create a ripple and then ride the wavefront of that ripple into alternate, similar realities.\""
+    show Kyon Ser3 at left_RightScreen
+    "\"So, that means slider?\""
+    show Kyon Ser1 at left_RightScreen
+    "\"Yes.\""
+    nvl clear
+    hide YBook with dissolve
+    show Kyon Neutral2 at left_RightScreen
+    "\"Okay. Michikyuu-san, come out from the table and take a seat. I'll try and keep Haruhi from molesting you. Since you're a slider, please allow me to introduce you to the SOS Brigade,\" he said, gesturing to the others. \"It seems Haruhi has already decided that you've joined the club. Obviously, you're in good company, with one possible exception.\""
+    nvl clear
+    $ renpy.layer_at_list([PanScene_RightToLeft])
+    show Haruhi Crossed Hap2 at left
+    show Koizumi Crossed Smile1 at right
+    "\"But don't hold him being a normal person against him,\" Haruhi added quickly."
+    $ renpy.layer_at_list([PanScene_LeftToRight])
+    show Kyon Sigh2 at left_RightScreen
+    show Mikuru Maid Smile1 at right_RightScreen
+    show Kanae Wince1:
+        xalign 1.55 yalign 2.0
+    "\"Yes. That was precisely the exception I was thinking,\" he deadpanned."
+    nvl clear
+    $ renpy.layer_at_list([PanScene_RightToLeft])
+    show Haruhi Hap2 at left
+    show Koizumi Crossed Smile1 at right
+    "\"Mikuru-chan! Give our newest member a cup of tea and prepare the accords to record the addition of a slider to our ranks!\""
+    show Koizumi Think Sigh1 at right
+    "Gathering the loose stones from across the table, Koizumi remarked, \"Perhaps we shouldn't record more than her name and that she joined the brigade. We wouldn't want certain information to fall into the hands of others too easily.\""
+    nvl clear
+    $ renpy.layer_at_list([PanScene_LeftToRight])
+    show Kyon Neutral4 at left_RightScreen
+    show Kanae Wince1:
+        xalign 1.55 yalign 2.2
+    show Mikuru Maid Smile1 at right_RightScreen
+    # hide Mikuru with moveoutright
+    show Mikuru Maid Smile1
+    
+    show Mikuru Maid Smile1:
+        right_RightScreen
+        linear 1.0 xpos 2.9
+    show MTray Maid:
+        xpos 2.9 yalign 1.0
+    show Kanae Worry3:
+        linear 0.5 xalign 0.0 yalign 0.0 center_RightScreen
+        
+    show MTray Maid 
+    # with moveinright
+    "Mikuru poured a cup of tea and set it at the table, {nw}"
+    $ _window = True
+    
+    # show Mikuru Maid Smile1:
+        # xalign 0.0 right_RightScreen
+    # show MTray Maid:
+        # xalign 0.0 right_RightScreen
+    
+    show Mikuru Maid Smile1:
+        linear 1.0 right_RightScreen
+    show MTray Maid:
+        linear 1.0 right_RightScreen
+    # show Kanae Worry3 at center_RightScreen # with move
+    $ _window = False
+    extend "while Kanae slid a chair next to Kyon and huddled in it, trying to hide behind him from Haruhi's line of sight. \"U...um....\" she whimpered. \"Y...you're not supposed to know who I am so easily! I only meant to tell Sempai.\""
+    nvl clear
+    $ renpy.layer_at_list([PanScene_RightToLeft])
+    show Haruhi Eyeroll1 at left
+    show Koizumi Crossed Smile1 at right
+    "\"Hmm. You must be very close with Kyon in your world,\" Haruhi remarked, eyes narrowing. {nw}"
+    show Koizumi Crossed Uneasy1 at right
+    extend "Koizumi gave an uncomfortable twitch."
+    nvl clear
+    $ renpy.layer_at_list([PanScene_LeftToRight])
+    show Kyon Neutral4 at left_RightScreen
+    show Kanae Sup2 at center_RightScreen
+    show Mikuru Maid Smile1 at right_RightScreen
+    "\"Eh? Yes! Of course! In every world I've been to, Sempai is always willing to help me when I'm in trouble, even if he doesn't believe my story! And he's always very polite, and so kind....\" She coughed, nervously picking up her tea and sipping at it. {nw}"
+    show Kanae Sad3 at center_RightScreen
+    extend "After a taste, she said, \"I'm, um, not usually so impolite. I'm just a bit on edge....\""
+    nvl clear
+    $ renpy.layer_at_list([PanScene_RightToLeft])
+    show Haruhi Worry1 at left
+    show Koizumi Crossed Neutral1 at right
+    stop music fadeout 3
+    "\"'Every world'?\" Haruhi echoed, her eyes suddenly turning sympathetic as she stepped away from the door and sat next to Koizumi, opposite the younger girl. \"Do you mean, you're lost, Kanae-chan?\""
+    nvl clear
+    play music "Music/Fuyunoashioto.mp3"
+    $ renpy.layer_at_list([PanScene_LeftToRight])
+    show Kyon Neutral4 at left_RightScreen
+    show Kanae Worry2 at center_RightScreen
+    show Mikuru Maid Sad1 at right_RightScreen
+    "Kanae nodded, frowning. \"That's right,\" she agreed. \"And I'm still trying to find my way home. I've been through over a hundred worlds by now, ever since before middle school! But Sempai almost always tells me that it's big trouble for you to know I'm a slider, even when he doesn't believe me.\" {nw}"
+    show Kanae Quest1 at center_RightScreen
+    extend "Turning to Kyon, she asked, \"Sempai, why is it okay for her to know this time?\""
+    nvl clear
+    show Kyon Puzzle1 at left_RightScreen
+    "\"I told her yesterday,\" he said, considering. \"Michikyuu-san, are you telling me that in alternate realities, I went to middle school with Haruhi?\""
+    nvl clear
+    show Kyon Neutral4 at left_RightScreen
+    show Mikuru Maid Smile2 at right_RightScreen
+    show Kanae Hap1 at center_RightScreen
+    "\"Yes, sometimes,\" Kanae agreed, smiling. \"And sometimes junior high school as well. Mostly in those realities, I think it was because of a zoning change that had one or another of the schools you usually go to removed. Sorry, after so many worlds, I tend to pay more attention to where you are than why you're there. But please, call me Kanae-chan, Sempai.\""
+    show Kyon Neutral1 at left_RightScreen
+    "\"Huh,\" he mused. \"There really was a slider.\""
+    nvl clear
+    $ renpy.layer_at_list([PanScene_RightToLeft])
+    show Haruhi Hap4 at left
+    show Koizumi Crossed Smile1 at right
+    "\"There sure is!\" Haruhi agreed. \"I guess you lose the 'honorary slider' title. {nw}"
+    show Haruhi Hap1 at left
+    extend "Hmm, even though we can help her get home, I'm reluctant to give her up so soon after finding her.\""
+    $ renpy.layer_at_list([PanScene_LeftToRight])
+    show Kyon Neutral4 at left_RightScreen
+    show Kanae Sup2 at center_RightScreen
+    show Mikuru Maid Smile2 at right_RightScreen
+    "\"Y...you can?\" Kanae asked, surprised. \"B...but, I can't go home yet,\" she said, shaking her head quickly. {nw}"
+    show Kanae Worry3 at center_RightScreen
+    extend "\"Um, see, I'm not the only slider ... and the others don't like me much.\""
+    nvl clear
+    show Kyon Neutral2 at left_RightScreen
+    "\"I think this is the first time anyone's shown up that hasn't done so specifically to investigate Haruhi,\" Kyon said thoughtfully."
+    $ renpy.layer_at_list([PanScene_RightToLeft])
+    show Haruhi Hap1 at left
+    show Koizumi Crossed Smile1 at right
+    "\"She's not just a client who's also a slider,\" Haruhi warned. {nw}"
+    show Haruhi Unhap1 at left
+    extend "\"Until it's safe for her to go home, she's a member of the brigade! I'm serious about this.\""
+    nvl clear
+    $ renpy.layer_at_list([PanScene_LeftToRight])
+    show Kyon Neutral2 at left_RightScreen
+    show Kanae Neutral1 at center_RightScreen
+    show Mikuru Maid Smile2 at right_RightScreen
+    "\"Hmm. Nagato, how many queued programs from Haruhi?\""
+    show YBook at TopRight_RightScreen behind Mikuru with dissolve
+    "\"Eighty seven items in queue currently.\""
+    nvl clear
+    $ renpy.layer_at_list([PanScene_RightToLeft])
+    show Haruhi Crossed Ang1 at left
+    show Koizumi Crossed Neutral1 at right
+    hide YBook
+    "\"It's less than a hundred!\" Haruhi protested, her expression switching to a scowl. \"And just because you control my power doesn't mean you get to dictate brigade policy! You're a vice commander, not the commander! {nw}"
+    show Haruhi Crossed Hap2 at left
+    extend "Oh, speaking of which, Koizumi, where's the armband?\""
+    nvl clear
+    show Koizumi Shrug Sigh1:
+        xalign 2.3 yalign 1.0
+    "\"I lost it,\" he said with a friendly smile. \"My apologies.\""
+    show Koizumi Crossed Smile1 at right
+    show Haruhi Hap1 at left
+    "\"No problem,\" she said, shrugging, moving to the desk with the computer and pulling another red armband from the drawer. \"If you do find it, either give it to Kyon, or burn it — that's a unique badge of office!\""
+    nvl clear
+    $ renpy.layer_at_list([PanScene_LeftToRight])
+    show Kyon Neutral4 at left_RightScreen
+    show Kanae Worry3 at center_RightScreen
+    show Mikuru Maid Smile2 at right_RightScreen
+    "\"I feel more lost than usual,\" Kanae murmured, looking anxiously at Haruhi, {nw}"
+    show Kanae Smile1 at center_RightScreen
+    extend "then hopefully at Kyon. \"You'll take care of me, won't you, Sempai?\""
+    $ renpy.layer_at_list([PanScene_RightToLeft])
+    show Haruhi Hap4 at left
+    show Koizumi Think Smile1 at right
+    "\"Of course he will,\" Haruhi replied absently, writing out the characters for 'vice commander' in permanent marker. \"He's totally a sucker for you calling him 'Sempai' all the time. Look at that goofy expression!\""
+    nvl clear
+    $ renpy.layer_at_list([PanScene_LeftToRight])
+    show Kyon Sigh1 at left_RightScreen
+    show Kanae Smile1 at center_RightScreen
+    show Mikuru Maid Smile1 at right_RightScreen
+    "Kyon sighed and hung his head. \"No respect,\" he muttered. {nw}"
+    show Kyon Ser3 at left_RightScreen
+    extend "\"Michikyuu-san, I'm sorry to put this on hold so abruptly, but there's something that Koizumi and I need to discuss with Haruhi.\""
+    show Kyon Ser1 at left_RightScreen
+    show Kanae Hap2 at center_RightScreen
+    "\"That's fine, Sempai!\" she agreed. \"But, please, call me Kanae-chan.\""
+    nvl clear
+    show Kyon Ser3 at left_RightScreen
+    "\"Nagato, Asahina-san, would you mind watching over Michikyuu-san for a bit?\" he asked."
+    show YBook at TopRight_RightScreen behind Mikuru with dissolve
+    show Kyon Ser1 at left_RightScreen
+    show Kanae Unhap1 at center_RightScreen
+    "\"It's Kanae-chan, Sempai!\""
+    show Mikuru Maid Neutral2 at right_RightScreen
+    "\"No problem,\" Yuki agreed, while Mikuru offered a more hesitant nod."
+    nvl clear
+    $ renpy.layer_at_list([PanScene_RightToLeft])
+    show Haruhi Ang1 at left
+    show Koizumi Think Grin1 at right
+    "\"You think you've got something that's going to pull me away from finally getting a question in edgewise to a slider?\" Haruhi asked Kyon skeptically."
+    "Koizumi grinned, ducking his head apologetically as he stowed the go board and pieces. {nw}"
+    show Koizumi Think Grin2 at right
+    extend "\"Well,\" he said, \"it does concern the destruction of our world.\""
+    nvl clear
+    $ renpy.layer_at_list([PanScene_LeftToRight])
+    show Kyon Ser3 at left_RightScreen
+    show Kanae Unhap3 at center_RightScreen
+    show Mikuru Maid Neutral2 at right_RightScreen
+    "\"Obviously, we're interested in preventing that,\" Kyon added. \"I'm hoping you're on the same page.\""
+    $ renpy.layer_at_list([PanScene_RightToLeft])
+    show Haruhi Crossed Tsun2 at left
+    show Koizumi Think Grin1 at right
+    "\"Of course I am; what do you take me for?\" Haruhi groused. {nw}"
+    show Haruhi Crossed Hap1 at left
+    extend "\"But I meant what I said, Kanae-chan! You're part of the brigade now, and that means it's not just Kyon, but all of us who will watch out for you! {nw}"
+    show Haruhi Point Hap1 at left
+    extend"So come to this clubroom every day after class, or there will be a penalty!\""
+    nvl clear
+    $ renpy.layer_at_list([PanScene_LeftToRight])
+    show Kyon Smile1 at left_RightScreen
+    show Kanae Hap3 at center_RightScreen
+    show Mikuru Maid Smile1 at right_RightScreen
+    "\"Thank you, Sempai! Thank you, Suzumiya-san!\" Kanae cheered. Haruhi's smile slipped a bit."
+    nvl clear
+    stop music fadeout 3
