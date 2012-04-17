@@ -19,7 +19,6 @@ init:
     image bg BeamOrange5 = "Backgrounds/BeamOrange5.jpg"
     image bg KyonRoomLeftClosed = "Backgrounds/KyonRoomLeftClosed.png"
     image bg KyonRoomLeftMorning = "Backgrounds/KyonRoomLeftMorning.png"
-    image bg KyonRoomRightMorning = "Backgrounds/KyonRoomRightMorning.png"
     image bg KyonHouseNight = "Backgrounds/KyonHouseNight.png"
     image bg KyonHouseDay = "Backgrounds/KyonHouseDay.png"
     image bg TownStreetNight1 = "Backgrounds/TownStreetNight1.png"
@@ -43,7 +42,7 @@ init:
     image bg ParkPath = "Backgrounds/ParkPath.png"
     image bg SchoolTable = "Backgrounds/SchoolTable.jpg"
     image bg Cab = "Backgrounds/Cab.jpg"
-    image bg Space = "Backgrounds/Space.jpg"
+    
     image bg MemoryYuki = "Backgrounds/MemoryYuki.jpg"
     image bg MemoryMikuru = "Backgrounds/MemoryMikuru.jpg"
     image bg MemoryKoizumi = "Backgrounds/MemoryKoizumi.jpg"
@@ -461,16 +460,6 @@ init:
     image Mikuru Cower Casual Smile1 ="Sprites/Mikuru/MikuruCowerCasualSmile1.png"
     image MTears Casual = "Sprites/Mikuru/MTearsCowerCasual1.png"
     
-    image Mikuru Cower Face Wince1 = "Sprites/Mikuru/MikuruCowerFaceWince1.png"
-    image Mikuru Cower Face Nervous1 = "Sprites/Mikuru/MikuruCowerFaceNervous1.png"
-    image Mikuru Cower Face Nervous2 = "Sprites/Mikuru/MikuruCowerFaceNervous2.png"
-    image Mikuru Cower Face Nervous3 = "Sprites/Mikuru/MikuruCowerFaceNervous3.png"
-    image Mikuru Cower Face Sup1 = "Sprites/Mikuru/MikuruCowerFaceSurprised1.png"
-    image Mikuru Cower Face Sup2 = "Sprites/Mikuru/MikuruCowerFaceSurprised2.png"
-    image Mikuru Cower Sigh1 = "Sprites/Mikuru/MikuruCowerSigh1.png"
-    image MBlush Cower Face = "Sprites/Mikuru/MBlushFace.png"
-
-    
     image MikuruBig Grin1 = "Sprites/MikuruBig/MikuruBigGrin1.png"
     image MikuruBig Grin2 = "Sprites/MikuruBig/MikuruBigGrin2.png"
     image MikuruBig Hap1 = "Sprites/MikuruBig/MikuruBigHappy1.png"
@@ -550,13 +539,6 @@ init:
     image Kanae Worry2 = "Sprites/Kanae/KanaeWorry2.png"
     image Kanae Worry3 = "Sprites/Kanae/KanaeWorry3.png"
     
-    image Kanae Face Smile1 =  "Sprites/Kanae/KanaeFaceSmile1.png"
-    image Kanae Face Smile2  = "Sprites/Kanae/KanaeFaceSmile2.png"
-    image Kanae Face Worry1 =  "Sprites/Kanae/KanaeFaceWorry1.png"
-    
-    image KABlush Face = "Sprites/Kanae/KanaeFaceBlush.png"
-    
-    
     #Koizumi Sprites
     image Koizumi Shrug Sigh1 = "Sprites/Koizumi/KoizumiShrugSigh1.png"
     image Koizumi Shrug Smile1 = "Sprites/Koizumi/KoizumiShrugSmile1.png"
@@ -618,12 +600,6 @@ init:
     image Kunikida Smile1 ="Sprites/Kunikida/KunikidaSmile1.png"
     image Kunikida Smile2 ="Sprites/Kunikida/KunikidaSmile2.png"
 
-    #Nonoko Sprites
-    image Nonoko Smile1 = "Sprites/Nonoko/NonokoSmile1.png"
-    image Nonoko Sup1 = "Sprites/Nonoko/NonokoSurprised1.png"
-    image Nonoko Pout1 = "Sprites/Nonoko/NonokoPout1.png"
-    image Nonoko Hap1 = "Sprites/Nonoko/NonokoHappy1.png"
-    
     # image Credits0 = "Backgrounds/credits0.png"
     # image Credits1 = "Backgrounds/credits1.png"
     # image Credits2 = "Backgrounds/credits2.png"
@@ -711,12 +687,6 @@ init python:
     slowflashbulb = Fade(1.0, 0.5, 2.0, color='#fff')
     fastdissolve = Dissolve(0.15)
    
-    circleirisout = ImageDissolve("id_circleiris.png", 1.0, 8)
-    circleirisin = ImageDissolve("id_circleiris.png", 1.0, 8, reverse=True)
-    
-    circleirisoutfast = ImageDissolve("id_circleiris.png", 0.75, 8)
-    circleirisinfast = ImageDissolve("id_circleiris.png", 0.75, 8, reverse=True)
-    
     renpy.music.register_channel("sound2", "sfx", 0)
     _preferences.set_volume("sfx", 0.5)
     
@@ -801,8 +771,7 @@ transform center_left:
 
 transform TopRight:
     xalign 1.0 yalign 0.0
-transform TopLeft:
-    xalign 0.0 yalign 0.0      
+    
 transform HalfRight:
     xalign 0.75 yalign 1.0
 transform HalfLeft:
@@ -831,7 +800,8 @@ init -1 python:
         ("Obligatory Anachronic Order Explanation Arc - Chapter Two:\n\"Clear as Mud\"", "AO2"),
         ("Straightforward Flashback and Exposition Arc - Chapter Three:\n\"It Goes To Eleven\"", "SF1"),
          ("Label a scene you're working on test and use this", "Test"),
-        ("-----", "backtomain"),
+        # ("-----", "backtomain"),
+        ("Two screen scene test", "SF1_test"),
        
         ("Credits", "credits"),
         ("Another testbed, Eyecatchies", "test_Z0_eye"),
