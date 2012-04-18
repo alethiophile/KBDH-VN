@@ -610,16 +610,23 @@ init:
     
     #Taniguchi Sprites
     image Taniguchi Grin1 = "Sprites/Taniguchi/TaniguchiGrin1.png"
+    image Taniguchi Smile1 = "Sprites/Taniguchi/TaniguchiSmile1.png"
+    image Taniguchi Hap1 = "Sprites/Taniguchi/TaniguchiHappy1.png"
+    image Taniguchi Ser1 = "Sprites/Taniguchi/TaniguchiSerious1.png"
+    image Taniguchi Sigh1 = "Sprites/Taniguchi/TaniguchiSigh1.png"
     image Taniguchi Sup1 = "Sprites/Taniguchi/TaniguchiSurprised1.png"
     image Taniguchi Sup2 = "Sprites/Taniguchi/TaniguchiSurprised2.png"
+    
     
     #Kunikida Sprites
     image Kunikida Neutral1 = "Sprites/Kunikida/KunikidaNeutral1.png"
     image Kunikida Neutral2 = "Sprites/Kunikida/KunikidaNeutral2.png"
     image Kunikida Neutral3 = "Sprites/Kunikida/KunikidaNeutral3.png"
-    image Kunikida Smile1 ="Sprites/Kunikida/KunikidaSmile1.png"
-    image Kunikida Smile2 ="Sprites/Kunikida/KunikidaSmile2.png"
-
+    image Kunikida Smile1 = "Sprites/Kunikida/KunikidaSmile1.png"
+    image Kunikida Smile2 = "Sprites/Kunikida/KunikidaSmile2.png"
+    image Kunikida Ser1 = "Sprites/Kunikida/KunikidaSerious1.png"
+    image Kunikida Ser2 = "Sprites/Kunikida/KunikidaSerious2.png"
+    
     #Nonoko Sprites
     image Nonoko Smile1 = "Sprites/Nonoko/NonokoSmile1.png"
     image Nonoko Sup1 = "Sprites/Nonoko/NonokoSurprised1.png"

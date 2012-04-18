@@ -24,7 +24,9 @@ label SF2:
     nvl clear
     "Despite that initial surge of energy, once he reached the school, Kyon found himself drowsing, continually awoken by Haruhi's mechanical pencil jabbing him in the back just as he was about to drift off."
     nvl clear
-label Test:
+    
+    
+    
     play music "Music/ItsumoNoFuukei.mp3"
     scene bg classroom with fade:
         size (800,600)
@@ -329,30 +331,79 @@ label Test:
     nvl clear
     scene black with fade
     
-    # "* * *"
-    # "After class finished, Kyon cracked his neck, unconsciously stretching his muscles and joints while switching stance from foot to foot, as though in preparation for a fight. Suddenly knowing basic martial arts was strange, if very convenient from a practical standpoint. Knuckling back another yawn, he turned around to follow Haruhi to the clubroom, surprised to see her ordering a stack of note paper, still sitting at her desk."
-    # "\"Here,\" she said, thrusting the papers towards him without meeting his eyes. \"You're exempted from the club meeting today. Go home and get some rest. If you're not too tired tomorrow morning, we'll go over the homework before class.\""
-    # "\"...thanks,\" he managed, frowning. \"Um, Haruhi, are you upset with me?\""
-    # "\"Not with you,\" she said, grimacing. \"Anyway, I need to have a talk with Yuki- chan and Mikuru-chan.\""
-    # "He blinked away some of his exhaustion. \"If there's anything I can help you with—\""
-    # "\"This is something I have to figure out for myself,\" she said, shaking her head. \"Really, just get some rest. We're going to have a lot to talk about tomorrow.\""
-    # "\"Okay,\" he allowed, wishing that either of them were smiling at the moment. \"Well ... take care, then.\""
-    # "She nodded before breezing out of the classroom."
-    # "\"Trouble in paradise?\" Taniguchi mused, drawing close."
-    # "\"And what's this about you fighting thugs for Tsuruya-sempai?\" Kunikida asked, following with a concerned expression."
-    # "\"Yeah,\" Taniguchi said, nodding seriously. \"Suzumiya talking about nonsense like time traveling isn't going to raise too many questions, but people attacking a sempai, and you getting into fights? I hate to tell you that you should back off, since you and Suzumiya seem to be heading toward 'item' territory ... but if she's losing it, I don't think you want to get dragged down with her.\""
-    # "Kyon looked down to the stack of note papers in his hand. \"Thank you, Taniguchi,\" he said, struggling for an earnest tone. \"I should be honored to have a friend like you, trying to spare me the indignity of being dragged into a whirlpool of depravity and academic success.\""
-    # "Kunikida chuckled weakly. \"To be fair, Kyon,\" he said, shifting his shoulders uncomfortably, \"even if it wasn't worded diplomatically.... Well, perhaps it would be better to say that you're generally a respectable person. If you're, ah, pursuing companionship solely for help in studying, wouldn't Sasaki-san be a better choice?\""
-    # "Struggling to think of an acceptable response, Kyon frowned and cracked the knuckles on both hands, prompting his friends each to take a step back. \"What, precisely,\" he asked, \"has changed? Haruhi hasn't become somehow worse, or really that different than she was last year.\""
-    # "\"Yeah, well ... she's rubbing off on you,\" Taniguchi said, spreading his arms in a helpless gesture. \"It was great when you somehow were taming the shrew. Don't get me wrong, it was nothing short of a miracle that you were able to reach her! But now she's turning you a bit crazy.\""
-    # "\"I'm not sure what's gotten into you two,\" Kyon decided. \"But I haven't been resting well lately. Maybe I seem more docile because I'm tired, but you're probably making too much of it. What does a joke between Haruhi and myself have to do with the rest of us going about our business as normal?\""
-    # "\"Well, if it was just Haruhi, that'd be fine,\" Taniguchi said, shaking his head. \"But Tsuruya-sempai mentioned you getting into a fight on her behalf, as well. She's too well respected to be considered responsible for it, and she's not the type to spread baseless rumors, so naturally....\""
-    # "\"It's just that the general consensus is, grades aside ... if you're getting into trouble, Haruhi must be behind it,\" Kunikida finished. \"Especially since she mentioned it earlier ... that pretty much seemed to confirm that it wasn't a joke. You don't want a reputation as a delinquent, do you?\""
-    # "\"Tsuruya-sempai thinks I'm a delinquent?\" Kyon asked skeptically."
-    # "\"Well, no, she said you were a warrior-philosopher, or something else silly like that,\" Taniguchi said, shaking his head and making a dismissive gesture with one hand. \"But what else do you call someone who solves problems with violence?\""
-    # "\"A problem solver?\" Kyon asked. \"Anyway, I don't know what else to say, here. I appreciate the warning, I guess, but if it comes down to it, I'm at Haruhi's side until the end — so, sorry.\" When Taniguchi opened his mouth to say something else, Kyon raised a hand to forestall further comment. \"I'm really tired. I'm going home to get some rest. Maybe this whole thing is a product of inadequate sleep, and we'll all feel better about it tomorrow.\""
-    # "\"That seems very peaceable,\" Kunikida agreed, shooting Taniguchi a warning look as Kyon's hand dropped to his side."
-    # "Unsatisfied with silence, Taniguchi said, \"Well, be careful at least.\""
+    
+    
+label Test:
+    play music "Music/worldendsolo.ogg"
+    scene bg classroom:
+        size (800,600)
+    show Kyon Sigh2 at right
+    with fade
+    "After class finished, Kyon cracked his neck, unconsciously stretching his muscles and joints while switching stance from foot to foot, as though in preparation for a fight. Suddenly knowing basic martial arts was strange, if very convenient from a practical standpoint. Knuckling back another yawn, he turned around to follow Haruhi to the clubroom, surprised to see her ordering a stack of note paper, still sitting at her desk."
+    show Haruhi Pout1 at left with dissolve
+    show Hblush at left
+    "\"Here,\" she said, thrusting the papers towards him without meeting his eyes. \"You're exempted from the club meeting today. Go home and get some rest. If you're not too tired tomorrow morning, we'll go over the homework before class.\""
+    show Kyon Worry1 at right
+    nvl clear
+    "\"...thanks,\" he managed, frowning. \"Um, Haruhi, are you upset with me?\""
+    show Haruhi Pout2 at left
+    "\"Not with you,\" she said, grimacing. \"Anyway, I need to have a talk with Yuki- chan and Mikuru-chan.\""
+    show Kyon Ser3 at right
+    "He blinked away some of his exhaustion. \"If there's anything I can help you with—\""
+    hide Hblush
+    show Haruhi Sigh1 at left
+    nvl clear
+    "\"This is something I have to figure out for myself,\" she said, shaking her head. \"Really, just get some rest. We're going to have a lot to talk about tomorrow.\""
+    show Kyon Worry1 at right
+    "\"Okay,\" he allowed, wishing that either of them were smiling at the moment. \"Well ... take care, then.\""
+    hide Haruhi with dissolve
+    "She nodded before breezing out of the classroom."
+    nvl clear
+    show Kyon Neutral3 at right
+    show Taniguchi Grin1 at left behind Kyon with dissolve
+    "\"Trouble in paradise?\" Taniguchi mused, drawing close."
+    show Kunikida Ser1  at center behind Kyon with dissolve 
+    "\"And what's this about you fighting thugs for Tsuruya-sempai?\" Kunikida asked, following with a concerned expression."
+    show Taniguchi Smile1 at left
+    nvl clear
+    "\"Yeah,\" Taniguchi said, nodding seriously. \"Suzumiya talking about nonsense like time traveling isn't going to raise too many questions, but people attacking a sempai, and you getting into fights?"
+    show Taniguchi Hap1 at left
+    "I hate to tell you that you should back off, since you and Suzumiya seem to be heading toward 'item' territory ... but if she's losing it, I don't think you want to get dragged down with her.\""
+    show Kyon Sigh1 at right
+    nvl clear
+    "Kyon looked down to the stack of note papers in his hand. \"Thank you, Taniguchi,\" he said, struggling for an earnest tone. \"I should be honored to have a friend like you, trying to spare me the indignity of being dragged into a whirlpool of depravity and academic success.\""
+    show Kunikida Ser2 at center
+    "Kunikida chuckled weakly. \"To be fair, Kyon,\" he said, shifting his shoulders uncomfortably, \"even if it wasn't worded diplomatically.... Well, perhaps it would be better to say that you're generally a respectable person. If you're, ah, pursuing companionship solely for help in studying, wouldn't Sasaki-san be a better choice?\""
+    show Kyon Sigh3 at right
+    nvl clear
+    "Struggling to think of an acceptable response, Kyon frowned and cracked the knuckles on both hands, prompting his friends each to take a step back."
+    show Kyon Ser3 at right
+    "\"What, precisely,\" he asked, \"has changed? Haruhi hasn't become somehow worse, or really that different than she was last year.\""
+    show Taniguchi Ser1 at left
+    nvl clear
+    "\"Yeah, well ... she's rubbing off on you,\" Taniguchi said, spreading his arms in a helpless gesture. \"It was great when you somehow were taming the shrew. Don't get me wrong, it was nothing short of a miracle that you were able to reach her! But now she's turning you a bit crazy.\""
+    show Kyon Sigh2 at right
+    "\"I'm not sure what's gotten into you two,\" Kyon decided. \"But I haven't been resting well lately. Maybe I seem more docile because I'm tired, but you're probably making too much of it. What does a joke between Haruhi and myself have to do with the rest of us going about our business as normal?\""
+    show Taniguchi Sigh1 at left
+    nvl clear
+    "\"Well, if it was just Haruhi, that'd be fine,\" Taniguchi said, shaking his head. \"But Tsuruya-sempai mentioned you getting into a fight on her behalf, as well. She's too well respected to be considered responsible for it, and she's not the type to spread baseless rumors, so naturally....\""
+    show Kunikida Ser1 at center
+    "\"It's just that the general consensus is, grades aside ... if you're getting into trouble, Haruhi must be behind it,\" Kunikida finished. \"Especially since she mentioned it earlier ... that pretty much seemed to confirm that it wasn't a joke. You don't want a reputation as a delinquent, do you?\""
+    show Kyon Puzzle1 at right
+    nvl clear
+    "\"Tsuruya-sempai thinks I'm a delinquent?\" Kyon asked skeptically."
+    show Taniguchi Ser1 at left
+    "\"Well, no, she said you were a warrior-philosopher, or something else silly like that,\" Taniguchi said, shaking his head and making a dismissive gesture with one hand. \"But what else do you call someone who solves problems with violence?\""
+    show Kyon Ser2 at right
+    "\"A problem solver?\" Kyon asked. \"Anyway, I don't know what else to say, here. I appreciate the warning, I guess, but if it comes down to it, I'm at Haruhi's side until the end — so, sorry.\"" 
+    nvl clear
+    show Kyon Sigh2 at right
+    "When Taniguchi opened his mouth to say something else, Kyon raised a hand to forestall further comment. \"I'm really tired. I'm going home to get some rest. Maybe this whole thing is a product of inadequate sleep, and we'll all feel better about it tomorrow.\""
+    show Kunikida Neutral2 at center
+    "\"That seems very peaceable,\" Kunikida agreed, shooting Taniguchi a warning look as Kyon's hand dropped to his side."
+    nvl clear
+    show Taniguchi Sigh1 at left
+    "Unsatisfied with silence, Taniguchi said, \"Well, be careful at least.\""
     # "* * *"
     # "Haruhi reached the clubroom second, Yuki somehow being there first, as she usually was. \"Not visiting the computer research society much these days?\" she asked the slighter girl, who had almost finished her paperback."
     # "Yuki blinked slowly, then gave a minuscule shake of her head."
