@@ -539,6 +539,7 @@ init:
     image Kanae Sad5 = "Sprites/Kanae/KanaeSad5.png"
     image Kanae Smile1 = "Sprites/Kanae/KanaeSmile1.png"
     image Kanae Smile2 = "Sprites/Kanae/KanaeSmile2.png"
+    image Kanae Smile3 = "Sprites/Kanae/KanaeSmile3.png"
     image Kanae Sup1 = "Sprites/Kanae/KanaeSurprised1.png"
     image Kanae Sup2 = "Sprites/Kanae/KanaeSurprised2.png"
     image Kanae Unhap1 = "Sprites/Kanae/KanaeUnhappy1.png"
@@ -554,6 +555,7 @@ init:
     image Kanae Face Smile2  = "Sprites/Kanae/KanaeFaceSmile2.png"
     image Kanae Face Worry1 =  "Sprites/Kanae/KanaeFaceWorry1.png"
     
+    image KABlush = "Sprites/Kanae/KanaeBlush.png"
     image KABlush Face = "Sprites/Kanae/KanaeFaceBlush.png"
     
     
@@ -816,7 +818,44 @@ transform TenthLeft:
 transform KyonRightFast:
     xalign -0.5 yalign 1.0
     linear 0.2 xalign 2.0
+transform PanScene_LeftToRight:
+        # xpos 0.0
+        linear 0.15 xpos -1.0
+transform PanScene_LeftToCenter:
+        # xpos 0.0
+        linear 0.15 xpos -0.5        
+transform PanScene_CenterToLeft:
+        xpos -0.5
+        linear 0.15 xpos 0.0        
+transform PanScene_RightToLeft:
+        xpos -1.0
+        linear 0.15 xpos 0.0
+transform PanScene_RightToCenter:
+        xpos -1.0
+        linear 0.15 xpos -0.5
+transform PanScene_CenterToRight:
+        xpos -0.5
+        linear 0.15 xpos -1.0        
+transform PanScene_SetToRight:
+        xpos -1.0
 
+transform PanScene_SetToLeft:
+        xpos 0.0
+        
+transform left_RightScreen:
+        xpos 1.0 yalign 1.0
+        
+transform center_RightScreen:
+        xpos 1.4 yalign 1.0 # xalign 0.5 yalign 1.0
+
+transform right_RightScreen:
+        xpos 1.65 yalign 1.0
+        
+transform TopRight_RightScreen:
+        xpos 1.6 yalign 0.0
+        
+transform UnderLegs_RightScreen:
+        xalign 1.55 yalign 2.2
 init -1 python:
     # def show_date(st, at):
         # return Text("[date]", font="DejaVuSerif-Italic.ttf", size=25, color="#3cf"), None

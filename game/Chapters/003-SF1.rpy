@@ -1087,34 +1087,7 @@ label SF1_test:
     # $ renpy.layer_at_list([pan_scene_right])
     
     
-    transform PanScene_LeftToRight:
-        # xpos 0.0
-        linear 0.15 xpos -1.0
-        
-    transform PanScene_RightToLeft:
-        xpos -1.0
-        linear 0.15 xpos 0.0
-
-    transform PanScene_SetToRight:
-        xpos -1.0
-
-    transform PanScene_SetToLeft:
-        xpos 0.0
-        
-    transform left_RightScreen:
-        xpos 1.0 yalign 1.0
-        
-    transform center_RightScreen:
-        xpos 1.4 yalign 1.0 # xalign 0.5 yalign 1.0
-
-    transform right_RightScreen:
-        xpos 1.65 yalign 1.0
-        
-    transform TopRight_RightScreen:
-        xpos 1.6 yalign 0.0
-        
-    transform UnderLegs_RightScreen:
-        xalign 1.55 yalign 2.2
+    
     
     # scene bg ClubroomFullDay:
         # xpos 0 ypos 0

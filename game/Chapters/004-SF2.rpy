@@ -1,5 +1,5 @@
 label SF2:
-label Test:
+
 
     play music "Music/Morning.ogg"    
     scene bg KyonRoomRightMorning with fade
@@ -24,85 +24,311 @@ label Test:
     nvl clear
     "Despite that initial surge of energy, once he reached the school, Kyon found himself drowsing, continually awoken by Haruhi's mechanical pencil jabbing him in the back just as he was about to drift off."
     nvl clear
-#     
-    # "* * *"
-    # "Haruhi frowned at the boy in front of her. Why was he so tired? Things were finally getting interesting — really interesting.... Well, she couldn't entirely blame him for trying to ignore the class; he did have better things to think about. But it was no excuse to get a bad grade, especially after all the effort she had put into helping him with his homework."
-    # "After finishing with the assignments in class, she decided to make a quick study guide, something that would actually make him learn what he'd need for the upcoming test. He might be some kind of hero, but she was the one with the power to reshape reality, and he'd either let her teach him, or she'd persuade Yuki to {i}make{/i} him pay more attention in class."
-    # "Despite his protestations. He may be in charge of a lot, but he also would need a reminder that she was the supreme commander, and he was just a vice commander."
-    # "\"I am exhausted,\" he declared to no one in particular, when the lunch chime rang."
-    # "\"Oh? Time traveling?\" she asked him, teasing. \"Maybe fighting off more thugs to protect Tsuruya-san's honor?\""
-    # "Kunikida paused mid-step as he was about to approach Kyon, then suddenly seemed to think better of it after hearing that remark and moved to an empty seat near Taniguchi. \"Farewell forever, dear friends,\" Kyon sighed. \"Chased away by fear of Haruhi and being caught up in our madness.\""
-    # "\"Idiot,\" she retorted, smirking. \"Come on, if you're going to insist we can't talk about important things here, let's go to the clubroom for lunch.\""
-    # "\"Naturally,\" he returned, rising to his feet and falling into step beside her. \"There's no way {i}that{/i} comment could be misconstrued.\""
-    # "She snorted and gave him a sharp look, but admitted internally that she was pleased. He usually remembered his position, only usurping hers in times of dire emergency, or the occasional times when he ignored her position as his superior entirely and engaged in shameless flirting. Though that hadn't happened since shortly after Valentine's day, when she thought back on it. Well, it was kind of cute—"
-    # "She paused, mid-way through pummeling the thought into submission, and made herself face it head on. Alright, she admitted to herself. Kyon could be cute. There was no shame in admitting that, though; even though he was a 'normal' human, it was only on a technical level. He didn't have powers, but he was pretty cool. He handled the abnormal with a level head and a placid expression. That was respectable, at least. She nodded decisively."
-    # "\"Something on your mind?\" he asked, knuckling back another yawn."
-    # "\"Just wondering why you never have any energy,\" she commented, opening the clubroom door. Yuki was in her normal seat, already halfway through a thick paperback titled, 'The Life of Pi'. Seated at the table near Yuki, Mikuru was tiredly resewing her maid costume. \"Oh? What happened to the costume, Mikuru- chan?\""
-    # "\"Got a lot on {i}my{/i} mind,\" Kyon muttered, pulling his seat out and collapsing into it. \"Even if you don't. But, man am I {i}hungry{/i}.\""
-    # "\"It wasn't torn or anything,\" Mikuru answered, smiling. \"But this one seam scratched a tiny bit ... I realized how to restitch it to make it more comfortable.\""
-    # "\"Well, I like that enthusiasm!\" Haruhi said, nodding her approval. \"Hmm, I didn't know you knew a lot about sewing?\""
-    # "For some reason, the older girl looked vaguely haunted. \"Yes, I know rather a lot about sewing,\" she mumbled, lowering her face and focusing on her needlework."
-    # "\"Oh? Maybe I should get some supplies, and you can sew new costumes?\" Haruhi suggested."
-    # "\"I don't know how to design costumes,\" Mikuru answered evenly. \"Maybe I will tomorrow. Otherwise, if you bring me a pattern and cloth, I'm sure I can make it.\""
-    # "\"That's good ambition!\" she approved. \"Hey, Kyon, learn from her example, huh? Have a good reason to be tired. You were {i}totally{/i} dozing off during history. Luckily, I'm looking out for you, so I took some notes you can check out.\""
-    # "He blinked at her as she flourished the small stack of papers, taking them with a grave seated bow, made comical by the chopsticks he held in his mouth. \"Thanks,\" he managed around the utensils."
-    # "With obvious effort, he focused his eyes on the pages of notes she had taken, setting his chopsticks down. While he was distracted, she snagged his bento and the chopsticks, smirking as she finished the rest of it off. That'd teach him; next time he'd learn not to be so tired!"
-    # "He frowned at a particular line, turning his head sideways as he studied it. \"I don't think 'exactly like Genghis Kahn' tells me much,\" he said, glancing at her and then rolling his eyes when he saw his demolished lunch. \"Urg. Anyway, just saying something is like something else doesn't tell me anything when I don't remember the original reference.\""
-    # "\"You absolutely do,\" she challenged him. \"Didn't you say that I imposed order like Genghis Kahn, once?\""
-    # "\"What, wiping out all opposition in a bloody march with no quarter offered, replacing the older system with a regimented and cleanly run organization of your own devising?\" he asked, squinting. \"Something like that?\""
-    # "\"Exactly like that!\" she replied, beaming. \"Man, you are so book dumb sometimes!\""
-    # "\"I guess I did say that,\" he murmured, mildly disquieted. \"I must have perfected sleep-learning, or something.\""
-    # "\"You will improve with practice,\" Yuki remarked, flipping to the next page."
-    # "\"Anyway,\" he announced, rising to his feet, \"I'm still really hungry, so I think I'll see if there's anything left at the cafeteria.\""
-    # "\"There isn't,\" Kanae answered him, opening the door and ducking her head slightly. Koizumi stood behind her with a large paper bag in both hands. \"I was really hungry after last night, too, but I guess I took too long to get there — I had to run off campus and stop by the bakery a block and a half away. Thankfully, Koizumi-san helped me out!\""
-    # "Kyon blinked, frowning as he glanced at the pair, then sighed and sank back into his chair. His stomach gave an unsettling growl, and Haruhi began to feel a little sorry that she'd taken half his lunch ... but then, the cafeteria was empty, and {i}she{/i} was still hungry, too."
-    # "\"I didn't expect a lunch meeting,\" Koizumi said cheerfully. \"But when I saw Michikyuu-san heading out of the campus, I thought I'd see if she needed help with anything.\" Kanae pulled out a chair for herself and another for Koizumi as the esper closed the door behind him with one foot, then set the bag on the table. \"I hope no one has any problems with pork buns?\""
-    # "\"And chocolate cornets!\" Kanae added. Blushing slightly, she handed one of the buns to Kyon, adding, \"Thanks for last night, Sempai.\""
-    # "Haruhi couldn't help when one of her eyebrows twitched. \"Excuse me?\" she asked, distracted from the free food by that last comment."
-    # "\"It was the first time, I.... I mean....\" Kanae blushed more brightly. \"It wore me out quite a bit, but with Sempai and Nagato-san, I don't mind at all!\""
-    # "\"Kyon!\" Haruhi screeched, standing up so quickly the chair beneath her rolled across the floor until it crashed into the wall behind her. \"What is the meaning of this!?\""
-    # "\"I'm pretty worn out from last night, too,\" Mikuru added, covering her mouth as she yawned."
-    # "Koizumi winced, actually making a tiny whimper as he turned his gaze towards Kyon and begged, \"Please tell me that this is a misunderstanding?\""
-    # "\"I don't know what she's talking about,\" Kyon said defensively. \"I'm pretty sure I spent almost all last night learning martial arts.\""
-    # "\"That's amazing, {i}Neo{/i}, now what does it have to do with you wearing out an underclassman!?\" Haruhi demanded, glowering down at him."
-    # "He stared up in befuddlement for a long moment before understanding dawned in his eyes. \"It is {i}not{/i} like that!\" he insisted, jumping to his feet and dismissing his exhaustion to protest hotly, his own chair sliding backwards into the clothing rack. \"I swear to you — I did absolutely nothing inappropriate!\""
-    # "\"Then what {i}happened{/i}?\" Haruhi growled, her eyes narrowing."
-    # "\"Er, I said something wrong, maybe?\" Kanae said with an embarrassed chuckle, sticking her tongue out and miming a blow to her head. \"Last night I got to practice sliding! It took a long time, but I think I'm finally starting to learn how to control it a bit better, thanks to Sempai and Nagato-san! Asahina-san was there, too, but a lot of it gets really fuzzy....\""
-    # "\"T...that's all that it was, though?\" the brigade chief pressed, still glaring at Kyon."
-    # "\"Er ... um ... Asahina-san, do you think you could help, here?\" he asked, turning a pleading gaze on the tired upperclassman."
-    # "\"Kyon-kun was a good boy,\" Mikuru answered sleepily. \"It's Nagato-san's fault for teleporting me straight out of the shower.\""
-    # "\"I...it seems that a rather large closed space has appeared,\" Koizumi said in a mournful tone. \"I'm afraid I will be absent for a while....\" He bowed apologetically towards Haruhi, then nodded at Kyon, adding, \"I will leave everything else up to you.\""
-    # "As the esper marched out of the room, Kyon sighed and rubbed at his eyes, calling out, \"Good luck, Koizumi.\""
-    # "\"Yuki-chan,\" Haruhi said, before biting back her protest. Well, she {i}had{/i} agreed that the other girl could 'borrow' Kyon. But what did she need with Mikuru and Kanae?! \"I'm expecting an explanation for this!\" Come to think of it, what were the practical limitations of 'borrowing', anyway?"
-    # "Yuki raised her gaze from her book languidly. \"Last night,\" she began, without preamble, \"I neared overload due to queued data-creation and modification requests from you. To prevent overload, as per the instructions given by him and yourself, I undertook to dispose of all junk data and error-causing behaviors. After preparing all three subjects with nanites for preservation, Michikyuu Kanae attempted to slide to an alternate dimension, simultaneous to the activation of Asahina Mikuru's time travel device, while I engaged the dimensional anchor with a modified temporal anchor function."
-    # "\"The resultant actions, guided by stored data from yourself, were sufficient to create a semi-stable permeable reality governed by myself that was outside of both space and time, allowing me to ground myself from the negative attribute data that would cause error behavior. This same space was also used to simultaneously allow Michikyuu Kanae practice sliding between nested pocket-dimensions and Asahina Mikuru to undertake her requested training in sewing. Per his own instructions, he undertook martial arts training and assisted me with ... personal issues.\""
-    # "Yuki blinked once as Haruhi absorbed everything."
-    # "\"After spending sufficient time to resolve internal issues, I restored all of us to the baseline physical reality and undid the time-based changes in physical age, as well as clearing out all non-necessary mental data to prevent unintentional corruption or trauma of hosts by acquired data.\""
-    # "\"You mean,\" Haruhi said, struggling, \"everyone spent last night training on stuff, and then you wiped it all out?\""
-    # "\"Negative. The results of training remain, even if the specific datum of acquisition are no longer present. Additionally, physical conditioning is preserved, even though aging was reversed. In this way, muscle memory and skill can be preserved memetically.\""
-    # "\"How long did we actually spend there?\" Mikuru mused. \"It's strange, since I can ... kind of ... vaguely remember it, but not really {i}specifically{/i} recall much. Even so, I know much more about sewing, now.\" She gave a tiny shiver. \"{i}Much{/i} more. If I'd known, I'd have suggested something more serious....\""
-    # "\"One year of relative time was spent in training,\" Yuki answered."
-    # "\"That'd explain it,\" Kyon said, shaking his head and settling back into his seat. \"I remember all of the basics of what I learned, and I felt strangely light this morning. And, weirdly enough, I felt like I really, really missed—\" He coughed suddenly, staring into his half-eaten pork bun. \"But, yeah. That's what happened. It's funny, though ... I know a full year of training in martial arts ... which is pretty much enough to realize I've got a long way to go.\" He sighed, shaking his head. \"Anyway, sorry about that, Haruhi. I guess it did sound a bit strange, the way Kanae-chan said it.\""
-    # "\"Hehe.... My bad. Sorry, Sempai,\" Kanae added, still blushing as she half hid her face behind a pork bun."
-    # "\"I'll say,\" Haruhi agreed, feeling oddly deflated. \"But, that's no fun! Why am I left out?\""
-    # "\"Your presence would create more data,\" Yuki answered unapologetically. \"I would be more likely to enter an error state. This is undesirable.\""
-    # "\"Yeah, but I don't have to like it,\" Haruhi grumbled."
-    # "Kyon winced. \"You could try,\" he said, somewhat pleadingly. \"If not for us, then for Koizumi, who is working overtime for you, now.\""
-    # "\"Cornet?\" Kanae offered Haruhi sympathetically. \"Even though it felt like it was that long for us, Sempai still came back here with you the next day, right?\""
-    # "\"I guess,\" Haruhi agreed reluctantly, taking the pastry and biting the head end absently. \"But there better not be any fooling around in these dream- training things! And I don't care how busy you are, I'm {i}still{/i} making you pay attention in class, Kyon.\""
-    # "\"At least I've got that,\" he grumbled. \"Man, why am I so hungry?\""
-    # "\"You will require more protein to generate the mass your conditioning has come to expect from your training,\" Yuki answered, turning her gaze back to her book."
-    # "\"Yeah? I guess that makes sense. My own fault for asking for martial arts.\" Then he shook his head sharply, taking another bite from his pork bun before adding, \"Though it seems I'll need that to help Tsuruya-san a few days ago.\""
-    # "\"Huh? Yuki-chan, I would have expected you to take better care of him!\" Haruhi protested weakly, trying to remember that she needed to control her frustration."
-    # "Yuki looked up from her book, for a moment the merest hint of confusion flickering in her eyes. \"I thought you would wish to do that yourself,\" she said quietly."
-    # "\"Delicious pork bun,\" Kyon mumbled, devouring another and studiously ignoring the conversation. \"Thanks again, Kanae-chan.\""
-    # "Haruhi felt her face color as she nodded. \"Right,\" she decided. \"Come on, Kyon, grab another bun and let's get back to class before the bell, okay?\""
-    # "\"Sure,\" he agreed, taking the notes she had made for him and following her out of the clubroom. \"And, thanks for the help with my schoolwork.\""
-    # "\"No problem,\" she mumbled while they walked down the stairs. \"It's not as neat as training you in martial arts in your sleep, though.\""
-    # "\"It's something I can talk to my parents about without being sent to an institution,\" he told her, smirking. \"Isn't that something?\""
-    # "\"What's with you trying to be so nice?\""
-    # "\"It's no good seeing you when you're feeling down,\" he said, shrugging apologetically. \"Didn't I already tell you that?\""
-    # "\"Hmm,\" she mused, giving a weak smile. \"Well, that's something.\""
+label Test:
+    play music "Music/ItsumoNoFuukei.mp3"
+    scene bg classroom with fade:
+        size (800,600)
+    "Haruhi frowned at the boy in front of her. Why was he so tired? Things were finally getting interesting — really interesting.... Well, she couldn't entirely blame him for trying to ignore the class; he did have better things to think about. But it was no excuse to get a bad grade, especially after all the effort she had put into helping him with his homework."
+    "After finishing with the assignments in class, she decided to make a quick study guide, something that would actually make him learn what he'd need for the upcoming test. He might be some kind of hero, but she was the one with the power to reshape reality, and he'd either let her teach him, or she'd persuade Yuki to {i}make{/i} him pay more attention in class."
+    "Despite his protestations. He may be in charge of a lot, but he also would need a reminder that she was the supreme commander, and he was just a vice commander."
+    nvl clear
+    show Kyon Sigh2 at right
+    show Haruhi Quest1 at left
+    with dissolve
+    "\"I am exhausted,\" he declared to no one in particular, when the lunch chime rang."
+    show Haruhi Grin1 at left
+    "\"Oh? Time traveling?\" she asked him, teasing. \"Maybe fighting off more thugs to protect Tsuruya-san's honor?\""
+    "Kunikida paused mid-step as he was about to approach Kyon, then suddenly seemed to think better of it after hearing that remark and moved to an empty seat near Taniguchi."
+    nvl clear
+    show Kyon Sigh1 at right
+    "\"Farewell forever, dear friends,\" Kyon sighed. \"Chased away by fear of Haruhi and being caught up in our madness.\""
+    show Haruhi Smile3 at left
+    "\"Idiot,\" she retorted, smirking. \"Come on, if you're going to insist we can't talk about important things here, let's go to the clubroom for lunch.\""
+    scene bg hallway with wipeleft
+    show Kyon Sigh1 at right
+    nvl clear
+    show Haruhi Smile1 at left
+    with dissolve
+    "\"Naturally,\" he returned, rising to his feet and falling into step beside her. \"There's no way {i}that{/i} comment could be misconstrued.\""
+    show Haruhi Eyeroll1 at left
+    "She snorted and gave him a sharp look, but admitted internally that she was pleased. He usually remembered his position, only usurping hers in times of dire emergency, or the occasional times when he ignored her position as his superior entirely and engaged in shameless flirting." 
+    "Though that hadn't happened since shortly after Valentine's day, when she thought back on it. Well, it was kind of cute—"
+    nvl clear
+    show Haruhi Pout1 at left
+    show Hblush at left
+    "She paused, mid-way through pummeling the thought into submission, and made herself face it head on. Alright, she admitted to herself. Kyon could be cute. There was no shame in admitting that, though; even though he was a 'normal' human, it was only on a technical level." 
+    "He didn't have powers, but he was pretty cool. He handled the abnormal with a level head and a placid expression. That was respectable, at least. She nodded decisively."
+    show Kyon Puzzle1 at right
+    "\"Something on your mind?\" he asked, knuckling back another yawn."
+    nvl clear
+    hide Hblush
+    show Haruhi Quest1 at left
+    "\"Just wondering why you never have any energy,\" she commented, opening the clubroom door." 
+    stop music
+    play sound "SE/dooropenslow.mp3"
+    
+    scene bg ClubroomFullDay with slowflashbulb:
+        xpos 0 ypos 0
+    $ renpy.layer_at_list([PanScene_LeftToRight])
+    play music "Music/Nanika.mp3"
+    show YBook at TopRight_RightScreen
+    show Kyon Neutral3:
+         xpos 1.3 yalign 1.0
+    show Haruhi Quest1 at left_RightScreen
+    show Mikuru Neutral1 at right_RightScreen
+    "Yuki was in her normal seat, already halfway through a thick paperback titled, 'The Life of Pi'. Seated at the table near Yuki, Mikuru was tiredly resewing her maid costume. \"Oh? What happened to the costume, Mikuru- chan?\""
+    nvl clear
+    hide YBook with dissolve
+    show Kyon Sigh2:
+         xpos 1.3 yalign 1.0
+    "\"Got a lot on {i}my{/i} mind,\" Kyon muttered, pulling his seat out and collapsing into it. \"Even if you don't. But, man am I {i}hungry{/i}.\""
+    show Mikuru Smile2 at right_RightScreen
+    "\"It wasn't torn or anything,\" Mikuru answered, smiling. \"But this one seam scratched a tiny bit ... I realized how to restitch it to make it more comfortable.\""
+    show Haruhi Hap4 at left_RightScreen
+    "\"Well, I like that enthusiasm!\" Haruhi said, nodding her approval."
+    show Haruhi Quest1 at left_RightScreen
+    "\"Hmm, I didn't know you knew a lot about sewing?\""
+    nvl clear
+    show Mikuru Sad2 at right_RightScreen
+    "For some reason, the older girl looked vaguely haunted. \"Yes, I know rather a lot about sewing,\" she mumbled, lowering her face and focusing on her needlework."
+    show Haruhi Smile1 at left_RightScreen
+    "\"Oh? Maybe I should get some supplies, and you can sew new costumes?\" Haruhi suggested."
+    show Mikuru Neutral2 at right_RightScreen
+    "\"I don't know how to design costumes,\" Mikuru answered evenly. \"Maybe I will tomorrow. Otherwise, if you bring me a pattern and cloth, I'm sure I can make it.\""
+    nvl clear
+    show Mikuru Neutral1 at right_RightScreen
+    show Haruhi Hap1 at left_RightScreen
+    "\"That's good ambition!\" she approved."
+    show Haruhi Eyeroll1 at left_RightScreen
+    "\"Hey, Kyon, learn from her example, huh? Have a good reason to be tired. You were {i}totally{/i} dozing off during history. Luckily, I'm looking out for you, so I took some notes you can check out.\""
+    nvl clear
+    show Kyon Sigh3:
+         xpos 1.3 yalign 1.0
+    "He blinked at her as she flourished the small stack of papers, taking them with a grave seated bow, made comical by the chopsticks he held in his mouth. \"Thanks,\" he managed around the utensils."
+    show Kyon Worry1:
+         xpos 1.3 yalign 1.0
+    "With obvious effort, he focused his eyes on the pages of notes she had taken, setting his chopsticks down. While he was distracted, she snagged his bento and the chopsticks, smirking as she finished the rest of it off. That'd teach him; next time he'd learn not to be so tired!"
+    show Kyon Ser3:
+         xpos 1.3 yalign 1.0
+    "He frowned at a particular line, turning his head sideways as he studied it. \"I don't think 'exactly like Genghis Kahn' tells me much,\" he said, glancing at her and then rolling his eyes when he saw his demolished lunch. \"Urg. Anyway, just saying something is like something else doesn't tell me anything when I don't remember the original reference.\""
+    show Haruhi Ang2 at left_RightScreen
+    nvl clear
+    "\"You absolutely do,\" she challenged him. \"Didn't you say that I imposed order like Genghis Kahn, once?\""
+    show Kyon Sigh2:
+         xpos 1.3 yalign 1.0
+    "\"What, wiping out all opposition in a bloody march with no quarter offered, replacing the older system with a regimented and cleanly run organization of your own devising?\" he asked, squinting. \"Something like that?\""
+    show Haruhi Hap4 at left_RightScreen
+    "\"Exactly like that!\" she replied, beaming. \"Man, you are so book dumb sometimes!\""
+    show Kyon Puzzle1:
+         xpos 1.3 yalign 1.0
+    "\"I guess I did say that,\" he murmured, mildly disquieted. \"I must have perfected sleep-learning, or something.\""
+    nvl clear 
+    "\"You will improve with practice,\" Yuki remarked, flipping to the next page."
+    show Kyon Neutral2:
+         xpos 1.3 yalign 1.0
+    "\"Anyway,\" he announced, rising to his feet, \"I'm still really hungry, so I think I'll see if there's anything left at the cafeteria.\""
+    nvl clear
+    play sound "SE/dooropenfast.wav"
+    $ renpy.layer_at_list([PanScene_RightToLeft])
+    show Kanae Neutral1 at right
+    show Koizumi Crossed Neutral1 at center
+    "\"There isn't,\" Kanae answered him, opening the door and ducking her head slightly. Koizumi stood behind her with a large paper bag in both hands. \"I was really hungry after last night, too, but I guess I took too long to get there — I had to run off campus and stop by the bakery a block and a half away. Thankfully, Koizumi-san helped me out!\""
+    "Kyon blinked, frowning as he glanced at the pair, then sighed and sank back into his chair. His stomach gave an unsettling growl, and Haruhi began to feel a little sorry that she'd taken half his lunch ... but then, the cafeteria was empty, and {i}she{/i} was still hungry, too."
+    nvl clear
+    show Koizumi Shrug Sigh1 at center
+    "\"I didn't expect a lunch meeting,\" Koizumi said cheerfully. \"But when I saw Michikyuu-san heading out of the campus, I thought I'd see if she needed help with anything.\""
+    play sound "SE/doorclose.mp3"
+    show Koizumi Think Smile1 at center
+    "Kanae pulled out a chair for herself and another for Koizumi as the esper closed the door behind him with one foot, then set the bag on the table. \"I hope no one has any problems with pork buns?\""
+    show Kanae Smile3 at right
+    "\"And chocolate cornets!\" Kanae added.{nw}"
+    show Kanae Smile1 at right
+    show KABlush at right
+    play music "Music/YareYare.mp3"
+    "Blushing slightly, she handed one of the buns to Kyon, adding, \"Thanks for last night, Sempai.\""
+    nvl clear
+    $ renpy.layer_at_list([PanScene_LeftToRight])
+    show Haruhi Crossed Eyeroll1 at left_RightScreen
+    show Kyon Neutral3:
+         xpos 1.3 yalign 1.0
+    "Haruhi couldn't help when one of her eyebrows twitched. \"Excuse me?\" she asked, distracted from the free food by that last comment."
+    $ renpy.layer_at_list([PanScene_RightToCenter])
+    show Kanae Smile3 at right
+    show Koizumi Think Sup1 at center
+    "\"It was the first time, I.... I mean....\" Kanae blushed more brightly. \"It wore me out quite a bit, but with Sempai and Nagato-san, I don't mind at all!\""
+    nvl clear
+    show Haruhi Point Ang1 at left_RightScreen
+    play sound "SE/impact.mp3"
+    "\"Kyon!\" Haruhi screeched, standing up so quickly the chair beneath her rolled across the floor until it crashed into the wall behind her. \"What is the meaning of this!?\""
+    $ renpy.layer_at_list([PanScene_CenterToRight])
+    show Mikuru Sigh1 at right_RightScreen
+    "\"I'm pretty worn out from last night, too,\" Mikuru added, covering her mouth as she yawned."
+    nvl clear
+    $ renpy.layer_at_list([PanScene_RightToLeft])
+    show Koizumi Crossed Uneasy2 at center
+    "Koizumi winced, actually making a tiny whimper as he turned his gaze towards Kyon and begged, \"Please tell me that this is a misunderstanding?\""
+    $ renpy.layer_at_list([PanScene_LeftToRight])
+    show Kyon Ser3:
+         xpos 1.3 yalign 1.0
+    "\"I don't know what she's talking about,\" Kyon said defensively. \"I'm pretty sure I spent almost all last night learning martial arts.\""
+    show Haruhi Ang4 at left_RightScreen
+    "\"That's amazing, {i}Neo{/i}, now what does it have to do with you wearing out an underclassman!?\" Haruhi demanded, glowering down at him."
+    nvl clear
+    show Kyon Neutral3:
+         xpos 1.3 yalign 1.0
+    "He stared up in befuddlement for a long moment before understanding dawned in his eyes."
+    show Kyon Sup1:
+        xpos 1.3 yalign 1.0
+    show Ksweat:
+        xpos 1.3 yalign 1.0     
+    play sound "SE/impact.mp3"
+    "\"It is {i}not{/i} like that!\" he insisted, jumping to his feet and dismissing his exhaustion to protest hotly, his own chair sliding backwards into the clothing rack. \"I swear to you — I did absolutely nothing inappropriate!\""
+    show Haruhi Eyeroll1 at left_RightScreen
+    "\"Then what {i}happened{/i}?\" Haruhi growled, her eyes narrowing."
+    nvl clear
+    $ renpy.layer_at_list([PanScene_RightToCenter])
+    show Kanae Hap3 at right
+    hide KABlush
+    "\"Er, I said something wrong, maybe?\" Kanae said with an embarrassed chuckle, sticking her tongue out and miming a blow to her head. \"Last night I got to practice sliding! It took a long time, but I think I'm finally starting to learn how to control it a bit better, thanks to Sempai and Nagato-san! Asahina-san was there, too, but a lot of it gets really fuzzy....\""
+    show Haruhi Crossed Eyeroll1 at left_RightScreen
+    "\"T...that's all that it was, though?\" the brigade chief pressed, still glaring at Kyon."
+    nvl clear
+    show Kyon Worry1:
+        xpos 1.3 yalign 1.0     
+    "\"Er ... um ... Asahina-san, do you think you could help, here?\" he asked, turning a pleading gaze on the tired upperclassman."
+    $ renpy.layer_at_list([PanScene_CenterToRight])
+    show Mikuru Think Quest1 at right_RightScreen
+    stop music fadeout 2
+    "\"Kyon-kun was a good boy,\" Mikuru answered sleepily. \"It's Nagato-san's fault for teleporting me straight out of the shower.\""
+    play sound "SE/GlassBreak1.mp3"
+    nvl clear
+    $ renpy.layer_at_list([PanScene_RightToLeft])
+    show Koizumi Crossed Sigh1 at center
+    play music "Music/Kokuhaku.mp3"
+    "\"I...it seems that a rather large closed space has appeared,\" Koizumi said in a mournful tone. \"I'm afraid I will be absent for a while....\"" 
+    show Koizumi Shrug Sigh1 at center
+    "He bowed apologetically towards Haruhi, then nodded at Kyon, adding, \"I will leave everything else up to you.\""
+    hide Koizumi with dissolve
+    "As the esper marched out of the room, Kyon sighed and rubbed at his eyes, calling out, \"Good luck, Koizumi.\""
+    show Kanae Neutral1:
+         xpos 0.7 yalign 1.0  
+    show Yuki Side1 at right
+    with dissolve
+    $ renpy.layer_at_list([PanScene_LeftToCenter])
+    nvl clear
+    hide Ksweat
+    show Kyon Unhap1:
+        xpos 1.3 yalign 1.0   
+    show Haruhi Crossed Tsun1 at left_RightScreen    
+    "\"Yuki-chan,\" Haruhi said, before biting back her protest. Well, she {i}had{/i} agreed that the other girl could 'borrow' Kyon. But what did she need with Mikuru and Kanae?!" 
+    show Haruhi Crossed Tsun2 at left_RightScreen
+    "\"I'm expecting an explanation for this!\" Come to think of it, what were the practical limitations of 'borrowing', anyway?"
+    nvl clear
+    show Yuki Talk1 at right
+    "Yuki raised her gaze from her book languidly. \"Last night,\" she began, without preamble, \"I neared overload due to queued data-creation and modification requests from you." 
+    show Yuki Talk2 at right
+    "To prevent overload, as per the instructions given by him and yourself, I undertook to dispose of all junk data and error-causing behaviors." 
+    show Yuki Talk1 at right
+    "After preparing all three subjects with nanites for preservation, Michikyuu Kanae attempted to slide to an alternate dimension, simultaneous to the activation of Asahina Mikuru's time travel device, while I engaged the dimensional anchor with a modified temporal anchor function."
+    nvl clear
+    show Yuki Talk2 at right
+    "\"The resultant actions, guided by stored data from yourself, were sufficient to create a semi-stable permeable reality governed by myself that was outside of both space and time, allowing me to ground myself from the negative attribute data that would cause error behavior."
+    show Yuki Talk1 at right
+    "This same space was also used to simultaneously allow Michikyuu Kanae practice sliding between nested pocket-dimensions and Asahina Mikuru to undertake her requested training in sewing. Per his own instructions, he undertook martial arts training and assisted me with ... personal issues.\""
+    show Yuki Side Blink at right
+    show Haruhi Crossed Sup1 at left_RightScreen
+    "Yuki blinked once as Haruhi absorbed everything."
+    nvl clear
+    show Yuki Talk2 at right
+    "\"After spending sufficient time to resolve internal issues, I restored all of us to the baseline physical reality and undid the time-based changes in physical age, as well as clearing out all non-necessary mental data to prevent unintentional corruption or trauma of hosts by acquired data.\""
+    show Haruhi Crossed Worry1 at left_RightScreen
+    "\"You mean,\" Haruhi said, struggling, \"everyone spent last night training on stuff, and then you wiped it all out?\""
+    nvl clear
+    "\"Negative. The results of training remain, even if the specific datum of acquisition are no longer present. Additionally, physical conditioning is preserved, even though aging was reversed. In this way, muscle memory and skill can be preserved memetically.\""
+    $ renpy.layer_at_list([PanScene_CenterToRight])
+    show Mikuru Think Quest1 at right_RightScreen
+    "\"How long did we actually spend there?\" Mikuru mused. \"It's strange, since I can ... kind of ... vaguely remember it, but not really {i}specifically{/i} recall much. Even so, I know much more about sewing, now.\" She gave a tiny shiver. \"{i}Much{/i} more. If I'd known, I'd have suggested something more serious....\""
+    nvl clear
+    $ renpy.layer_at_list([PanScene_RightToCenter])
+    show Yuki Talk1 at right
+    "\"One year of relative time was spent in training,\" Yuki answered."
+    show Kyon Sigh1:
+        xpos 1.3 yalign 1.0   
+    "\"That'd explain it,\" Kyon said, shaking his head and settling back into his seat. \"I remember all of the basics of what I learned, and I felt strangely light this morning. And, weirdly enough, I felt like I really, really missed—\""
+    show Kyon Worry1:
+        xpos 1.3 yalign 1.0   
+    show KBlush:
+        xpos 1.3 yalign 1.0   
+    "He coughed suddenly, staring into his half-eaten pork bun."
+    nvl clear
+    hide KBlush
+    show Kyon Ser3:
+        xpos 1.3 yalign 1.0   
+    "\"But, yeah. That's what happened. It's funny, though ... I know a full year of training in martial arts ... which is pretty much enough to realize I've got a long way to go.\" He sighed, shaking his head. \"Anyway, sorry about that, Haruhi. I guess it did sound a bit strange, the way Kanae-chan said it.\""
+    show Kanae Smile3:
+         xpos 0.7 yalign 1.0
+    show KABlush:
+        xpos 0.435 yalign 1.0
+    "\"Hehe.... My bad. Sorry, Sempai,\" Kanae added, still blushing as she half hid her face behind a pork bun."
+    nvl clear
+    show Haruhi Pout2 at left_RightScreen
+    "\"I'll say,\" Haruhi agreed, feeling oddly deflated. \"But, that's no fun! Why am I left out?\""
+    show Yuki Talk2 at right
+    "\"Your presence would create more data,\" Yuki answered unapologetically. \"I would be more likely to enter an error state. This is undesirable.\""
+    show Haruhi Pout2 at left_RightScreen
+    "\"Yeah, but I don't have to like it,\" Haruhi grumbled."
+    nvl clear
+    show Kyon Worry1:
+        xpos 1.3 yalign 1.0   
+    "Kyon winced. \"You could try,\" he said, somewhat pleadingly. \"If not for us, then for Koizumi, who is working overtime for you, now.\""
+    show Kanae Worry1:
+         xpos 0.7 yalign 1.0
+    hide KABlush
+    "\"Cornet?\" Kanae offered Haruhi sympathetically. \"Even though it felt like it was that long for us, Sempai still came back here with you the next day, right?\""
+    show Haruhi Crossed Tsun1 at left_RightScreen
+    "\"I guess,\" Haruhi agreed reluctantly, taking the pastry and biting the head end absently. \"But there better not be any fooling around in these dream- training things! And I don't care how busy you are, I'm {i}still{/i} making you pay attention in class, Kyon.\""
+    nvl clear
+    show Kyon Sigh1:
+        xpos 1.3 yalign 1.0   
+    "\"At least I've got that,\" he grumbled. \"Man, why am I so hungry?\""
+    show Yuki Talk1 at right
+    "\"You will require more protein to generate the mass your conditioning has come to expect from your training,\" Yuki answered, turning her gaze back to her book."
+    show Kyon Sigh2:
+        xpos 1.3 yalign 1.0   
+    "\"Yeah? I guess that makes sense. My own fault for asking for martial arts.\" Then he shook his head sharply, taking another bite from his pork bun before adding, \"Though it seems I'll need that to help Tsuruya-san a few days ago.\""
+    nvl clear
+    show Haruhi Crossed Sigh1 at left_RightScreen
+    "\"Huh? Yuki-chan, I would have expected you to take better care of him!\" Haruhi protested weakly, trying to remember that she needed to control her frustration."
+    show Yuki Talk2 at right
+    "Yuki looked up from her book, for a moment the merest hint of confusion flickering in her eyes. \"I thought you would wish to do that yourself,\" she said quietly."
+    show Kyon Neutral2:
+        xpos 1.3 yalign 1.0   
+    "\"Delicious pork bun,\" Kyon mumbled, devouring another and studiously ignoring the conversation. \"Thanks again, Kanae-chan.\""
+    nvl clear
+    show Haruhi Pout1 at left_RightScreen
+    show Hblush at left_RightScreen
+    "Haruhi felt her face color as she nodded. \"Right,\" she decided. \"Come on, Kyon, grab another bun and let's get back to class before the bell, okay?\""
+    scene bg hallway with fade
+    show Kyon Smile1 at right
+    show Haruhi Pout1 at left
+    show Hblush at left
+    with dissolve
+    "\"Sure,\" he agreed, taking the notes she had made for him and following her out of the clubroom. \"And, thanks for the help with my schoolwork.\""
+    nvl clear
+    show Haruhi Pout2 at left
+    "\"No problem,\" she mumbled while they walked down the stairs. \"It's not as neat as training you in martial arts in your sleep, though.\""
+    show Kyon Smile2 at right
+    "\"It's something I can talk to my parents about without being sent to an institution,\" he told her, smirking. \"Isn't that something?\""
+    nvl clear
+    show Haruhi Quest1 at left
+    "\"What's with you trying to be so nice?\""
+    show Kyon Sigh2 at right
+    "\"It's no good seeing you when you're feeling down,\" he said, shrugging apologetically. \"Didn't I already tell you that?\""
+    show Haruhi Smile1 at left
+    "\"Hmm,\" she mused, giving a weak smile. \"Well, that's something.\""
+    nvl clear
+    scene black with fade
+    
     # "* * *"
     # "After class finished, Kyon cracked his neck, unconsciously stretching his muscles and joints while switching stance from foot to foot, as though in preparation for a fight. Suddenly knowing basic martial arts was strange, if very convenient from a practical standpoint. Knuckling back another yawn, he turned around to follow Haruhi to the clubroom, surprised to see her ordering a stack of note paper, still sitting at her desk."
     # "\"Here,\" she said, thrusting the papers towards him without meeting his eyes. \"You're exempted from the club meeting today. Go home and get some rest. If you're not too tired tomorrow morning, we'll go over the homework before class.\""
