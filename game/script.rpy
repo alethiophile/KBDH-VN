@@ -569,6 +569,7 @@ init:
     image Kanae Sad5 = "Sprites/Kanae/KanaeSad5.png"
     image Kanae Smile1 = "Sprites/Kanae/KanaeSmile1.png"
     image Kanae Smile2 = "Sprites/Kanae/KanaeSmile2.png"
+    image Kanae Smile3 = "Sprites/Kanae/KanaeSmile3.png"
     image Kanae Sup1 = "Sprites/Kanae/KanaeSurprised1.png"
     image Kanae Sup2 = "Sprites/Kanae/KanaeSurprised2.png"
     image Kanae Unhap1 = "Sprites/Kanae/KanaeUnhappy1.png"
@@ -584,6 +585,7 @@ init:
     image Kanae Face Smile2  = "Sprites/Kanae/KanaeFaceSmile2.png"
     image Kanae Face Worry1 =  "Sprites/Kanae/KanaeFaceWorry1.png"
     
+    image KABlush = "Sprites/Kanae/KanaeBlush.png"
     image KABlush Face = "Sprites/Kanae/KanaeFaceBlush.png"
     
     
@@ -640,6 +642,10 @@ init:
     image Taniguchi Grin1 = "Sprites/Taniguchi/TaniguchiGrin1.png"
     image Taniguchi Sup1 = "Sprites/Taniguchi/TaniguchiSurprised1.png"
     image Taniguchi Sup2 = "Sprites/Taniguchi/TaniguchiSurprised2.png"
+    image Taniguchi Smile1 = "Sprites/Taniguchi/TaniguchiSmile1.png"
+    image Taniguchi Hap1 = "Sprites/Taniguchi/TaniguchiHappy1.png"
+    image Taniguchi Ser1 = "Sprites/Taniguchi/TaniguchiSerious1.png"
+    image Taniguchi Sigh1 = "Sprites/Taniguchi/TaniguchiSigh1.png"
     
     #Kunikida Sprites
     image Kunikida Neutral1 = "Sprites/Kunikida/KunikidaNeutral1.png"
@@ -647,6 +653,10 @@ init:
     image Kunikida Neutral3 = "Sprites/Kunikida/KunikidaNeutral3.png"
     image Kunikida Smile1 ="Sprites/Kunikida/KunikidaSmile1.png"
     image Kunikida Smile2 ="Sprites/Kunikida/KunikidaSmile2.png"
+    image Kunikida Ser1 = "Sprites/Kunikida/KunikidaSerious1.png"
+    image Kunikida Ser2 = "Sprites/Kunikida/KunikidaSerious2.png"
+
+
 
     #Nonoko Sprites
     image Nonoko Smile1 = "Sprites/Nonoko/NonokoSmile1.png"
@@ -846,7 +856,38 @@ transform TenthLeft:
 transform KyonRightFast:
     xalign -0.5 yalign 1.0
     linear 0.2 xalign 2.0
-
+transform PanScene_LeftToRight:
+    # xpos 0.0
+    linear 0.15 xpos -1.0
+transform PanScene_LeftToCenter:
+    # xpos 0.0
+    linear 0.15 xpos -0.5
+transform PanScene_CenterToLeft:
+    xpos -0.5
+    linear 0.15 xpos 0.0
+transform PanScene_RightToLeft:
+    xpos -1.0 
+    linear 0.15 xpos 0.0
+transform PanScene_RightToCenter:
+    xpos -1.0
+    linear 0.15 xpos -0.5
+transform PanScene_CenterToRight:
+    xpos -0.5    
+    linear 0.15 xpos -1.0
+transform PanScene_SetToRight:
+    xpos -1.0    
+transform PanScene_SetToLeft:
+    xpos 0.0    
+transform left_RightScreen:
+    xpos 1.0 yalign 1.0    
+transform center_RightScreen:
+    xpos 1.4 yalign 1.0 # xalign 0.5 yalign 1.0    
+transform right_RightScreen:
+    xpos 1.65 yalign 1.0    
+transform TopRight_RightScreen:
+   xpos 1.6 yalign 0.0    
+transform UnderLegs_RightScreen:
+    xalign 1.55 yalign 2.2    
 init -1 python:
     # def show_date(st, at):
         # return Text("[date]", font="DejaVuSerif-Italic.ttf", size=25, color="#3cf"), None
