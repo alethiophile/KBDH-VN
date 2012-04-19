@@ -785,43 +785,210 @@ label SF1:
         linear 0.1 xpos 0 ypos 0
     show Haruhi Crossed Sup1 at left
     show Mikuru Think Maid Sup1 at right
-    show Tsuruya Hap6 at center with moveinleft
+    show Tsuruya Wave Hap3 at center with moveinleft
     "\"Ya-hoo!\" Tsuruya cheered, waving excitedly. \"Heya, Haru-nyan! Mikuru-chan, Nagato-chi, and, {nw}"
-    show Tsuruya Quest1 at center
+    show Tsuruya Wave Quest1 at center
     extend "um, girl I don't know yet! {nw}"
-    show Tsuruya Hap2 at center
+    show Tsuruya Wave Hap2 at center
     extend "Nice to meetchas!\""
-    # "He turned his attention to the paper, jotting down some additional quick notes. \"Hey, Tsuruya-san,\" Haruhi replied, smiling back. \"What brings you here today?\""
-    # "\"Kyon-kun asked mes!\" Tsuruya said, placing her hands on her hips and throwing her head back to laugh. \"After running into him yesterday, how could I not?\""
-    # "\"What time did we meet, exactly?\" Kyon asked, glancing at her sidelong."
-    # "\"Hmm?\" Tsuruya answered, her eyes focusing on him, though her smile didn't dim. \"You forgot? Well, I wasn't looking at my phone, but it was a bit after sunset! And thanks for helping me deal with those pushy fellows! Haru-nyan, don't let Kyon-kun get away! He seems quiet and unenthusiastic, but he's a real ace in the hole when it comes to fights! A regular warrior-philosopher!\" She mimed a few boxing jabs, then laughed loudly again. \"With an awesome dynamic entrance! Your wushu is pretty strong, Kyon-kun, so I appreciate your help!\""
-    # "\"No problem,\" he muttered, one eyebrow twitching as he added more to his note. \"If it's not too much, did you bring that thing I asked for?\""
-    # "\"Yep!\" she cheered. \"At four fifty five sharp, just like you said!\" She reached into her school bag and pulled out a small metal case, which she set on the table."
-    # "\"Kyon got in a fight yesterday?\" Haruhi asked, taken aback, then turning an intent gaze on the boy in question. \"Hmm.... I want to hear all about that!\""
-    # "\"You should ask him!\" Tsuruya laughed, pointing at Kyon. \"He was there!\" She stopped laughing abruptly and leaned in to peer at Kanae with a broad smile. \"Who's your new friend?\""
-    # "\"This is Michikyuu Kanae,\" Haruhi said, indicating the first year girl. \"Our newest member; a first year.\""
-    # "\"That makes sense!\" Tsuruya said brightly, nodding. \"She's got the same smell as everyone here but Kyon-kun! Well, nice to meetcha, Kanae-chan!\""
-    # "\"U...um, nice to meet you?\" Kanae managed. \"Um, sorry, what's your name?\""
-    # "\"Aha, sorry, sorry,\" Tsuruya chuckled. \"I forget to say sometimes! I'm Tsuruya Haruka! Well, I just came by to drop this off, but we'll see each other again soon, I betcha anything! So, take care, everyones, and thankie again, Kyon- kun!\" The excitable green-haired girl left as briskly as she arrived, closing the door behind her with an equally loud crash."
-    # "Muttering to himself, Kyon reached for the case, beaten to it by Haruhi as she snatched it across the table, undoing the metal latches and swinging it open. \"What's kept in here, I wonder?\" she mused, blinking in confusion as she pulled a metal rod about twelve centimeters long from a foam recess within. \"Hmm, it looks like it's covered with engravings ... but they're all connected, like circuitry. You asked Tsuruya-san for this yesterday?\""
-    # "\"I will,\" he answered her. \"Evidently.\" Turning his attention to Yuki, he asked, \"Titanium cesium alloy?\""
-    # "She blinked, then gave a nod. \"Correct,\" she answered. \"Furthermore, this is a lost prototype dimensional anchor.\""
-    # "\"Wow,\" Haruhi allowed, turning the item over in her hand and looking at it from all angles. \"How does it work?\""
-    # "\"Kanae-chan points it at enemy sliders and says, 'Dimensional Prism Power, Make-up',\" Kyon suggested, smirking."
-    # "\"Now you're just being silly,\" Haruhi answered, not even moving her eyes away from the rod."
-    # "\"I am uncertain,\" Yuki replied. \"I will investigate.\""
-    # "Haruhi handed the rod to the small girl, while Kanae watched breathlessly. \"Is this the answer we were looking for, Sempai?\" she asked him worriedly. \"This will help me find my way home?\""
-    # "\"I have no idea, but I'll apparently think so in the future,\" he answered. Turning to Mikuru, he added, \"Also, thank you very much, Asahina-san.\""
-    # "\"Um, what for?\" she asked, looking between Kyon and Yuki curiously."
-    # "\"You'll know some day,\" he answered, looking bleakly at his note to himself. \"I really, really hope that I get some calm days to focus on some normal things, soon. This is getting really out of hand.\""
-    # "\"Yeah,\" Haruhi jibed, rolling her eyes, \"you do love taking notes and paying attention in class. Without a good excuse to pay such weak attention, whatever would you do?\""
-    # "\"I beg your pardon?\" he asked, quirking one eyebrow higher. \"I don't have good excuses, I have {i}awesome{/i} excuses.\""
-    # "Haruhi grinned very brightly, chuckling. \"That's true,\" she allowed. \"Okay, vice commander, since we're here, and it seems Yuki's going to need some time to figure out the dimensional anchor, let's make sure you at least finish your homework. I'm not about to let your awesome excuses make the brigade look worse with sucky grades.\""
-    # "Some day, Kyon realized, he would need to learn to keep his mouth shut."
+    scene bg ClubroomFullDay:
+        xpos 0 ypos 0
+        linear 0.1 xpos -800 ypos 0
+    show Kyon Neutral4 at left
+    show Kanae Neutral1 at center
+    show Yuki Right Neutral2 at right
+    "He turned his attention to the paper, jotting down some additional quick notes. "
+    scene bg ClubroomFullDay:
+        xpos -800 ypos 0
+        linear 0.1 xpos 0 ypos 0
+    show Haruhi Hap1 at left
+    show Tsuruya Wave Smile2 at center
+    show Mikuru Maid Smile1 at right
+    extend "\"Hey, Tsuruya-san,\" Haruhi replied, smiling back. \"What brings you here today?\""
+    nvl clear
+    show Haruhi Smile3 at left
+    show Tsuruya Hap1 at center
+    "\"Kyon-kun asked mes!\" Tsuruya said, placing her hands on her hips and throwing her head back to laugh. \"After running into him yesterday, how could I not?\""
+    scene bg ClubroomFullDay:
+        xpos 0 ypos 0
+        linear 0.1 xpos -800 ypos 0
+    show Kyon Neutral2 at left
+    show Kanae Neutral1 at center
+    show Yuki Right Neutral2 at right
+    "\"What time did we meet, exactly?\" Kyon asked, glancing at her sidelong."
+    nvl clear
+    scene bg ClubroomFullDay:
+        xpos -800 ypos 0
+        linear 0.1 xpos 0 ypos 0
+    show Haruhi Smile2 at left
+    show Tsuruya Hap1 at center
+    show Mikuru Think Maid Sup1 at right
+    "\"Hmm?\" Tsuruya answered, her eyes focusing on him, though her smile didn't dim. \"You forgot? Well, I wasn't looking at my phone, but it was a bit after sunset! And thanks for helping me deal with those pushy fellows! Haru-nyan, don't let Kyon-kun get away! He seems quiet and unenthusiastic, but he's a real ace in the hole when it comes to fights! A regular warrior-philosopher!\" She mimed a few boxing jabs, then laughed loudly again. \"With an awesome dynamic entrance! Your wushu is pretty strong, Kyon-kun, so I appreciate your help!\""
+    nvl clear
+    scene bg ClubroomFullDay:
+        xpos 0 ypos 0
+        linear 0.1 xpos -800 ypos 0
+    show Kyon Sigh2 at left
+    show Kanae Sad2 at center
+    show Yuki Right Neutral1 at right
+    "\"No problem,\" he muttered, one eyebrow twitching as he added more to his note. {nw}"
+    show Kyon Neutral2 at left
+    extend "\"If it's not too much, did you bring that thing I asked for?\""
+    scene bg ClubroomFullDay:
+        xpos -800 ypos 0
+        linear 0.1 xpos 0 ypos 0
+    show Haruhi Smile2 at left
+    show Tsuruya Hap6 at center
+    show Mikuru Think Maid Sup1 at right
+    "\"Yep!\" she cheered. \"At four fifty five sharp, just like you said!\" She reached into her school bag and pulled out a small metal case, which she set on the table."
+    nvl clear
+    show Haruhi Crossed Sup2 at left
+    show Tsuruya Smile2 at center
+    "\"Kyon got in a fight yesterday?\" Haruhi asked, taken aback, then turning an intent gaze on the boy in question. {nw}"
+    show Haruhi Crossed Eyeroll1 at left
+    extend "\"Hmm.... I want to hear all about that!\""
+    show Tsuruya Laugh1 at center
+    "\"You should ask him!\" Tsuruya laughed, pointing at Kyon. \"He was there!\" {nw}"
+    show Tsuruya Hap2 at center
+    extend "She stopped laughing abruptly and leaned in to peer at Kanae with a broad smile. \"Who's your new friend?\""
+    nvl clear
+    show Haruhi Crossed Hap2 at left
+    show Tsuruya Smile3 at center
+    show Mikuru Maid Smile2 at right
+    "\"This is Michikyuu Kanae,\" Haruhi said, indicating the first year girl. \"Our newest member; a first year.\""
+    show Haruhi Crossed Smile1 at left
+    show Tsuruya Hap4 at center
+    "\"That makes sense!\" Tsuruya said brightly, nodding. \"She's got the same smell as everyone here but Kyon-kun! Well, nice to meetcha, Kanae-chan!\""
+    nvl clear
+    scene bg ClubroomFullDay:
+        xpos 0 ypos 0
+        linear 0.1 xpos -800 ypos 0
+    show Kyon Neutral3 at left
+    show Kanae Hap3 at center
+    show Yuki Right Neutral2 at right
+    "\"U...um, nice to meet you?\" Kanae managed. \"Um, sorry, what's your name?\""
+    nvl clear
+    scene bg ClubroomFullDay:
+        xpos -800 ypos 0
+        linear 0.1 xpos 0 ypos 0
+    show Haruhi Crossed Smile1 at left
+    show Tsuruya Laugh2 at center
+    show Mikuru Maid Smile1 at right
+    "\"Aha, sorry, sorry,\" Tsuruya chuckled. \"I forget to say sometimes! {nw}"
+    show Tsuruya Hap3 at center
+    extend "I'm Tsuruya Haruka! Well, I just came by to drop this off, but we'll see each other again soon, I betcha anything! "
+    show Tsuruya Wave Hap6 at center
+    extend "So, take care, everyones, and thankie again, Kyon- kun!\" {nw}"
+    hide Tsuruya with moveoutleft
+    play sound "SE/doorclose.mp3"
+    extend "The excitable green-haired girl left as briskly as she arrived, closing the door behind her with an equally loud crash."
+    nvl clear
+    show Haruhi Grin1 at right
+    show Mikuru Maid Quest2 at center
+    with move
+    "Muttering to himself, Kyon reached for the case, beaten to it by Haruhi as she snatched it across the table, undoing the metal latches and swinging it open. {nw}"
+    show Haruhi Quest1 at right
+    extend "\"What's kept in here, I wonder?\" she mused, blinking in confusion as she pulled a metal rod about twelve centimeters long from a foam recess within. \"Hmm, it looks like it's covered with engravings ... but they're all connected, like circuitry. {nw}"
+    show Haruhi Worry1 at right
+    extend "You asked Tsuruya-san for this yesterday?\""
+    nvl clear
+    scene bg ClubroomFullDay:
+        xpos 0 ypos 0
+        linear 0.1 xpos -800 ypos 0
+    show Kyon Ser3 at left
+    show Kanae Quest1 at center
+    show Yuki Right Neutral2 at right
+    "\"I will,\" he answered her. \"Evidently.\" {nw}"
+    show Kyon Ser3 Flip at left
+    extend "Turning his attention to Yuki, he asked, \"Titanium cesium alloy?\""
+    show Kyon Ser1 Flip at left
+    show Yuki Right Talk2 at right
+    "She blinked, then gave a nod. \"Correct,\" she answered. \"Furthermore, this is a lost prototype dimensional anchor.\""
+    nvl clear
+    scene bg ClubroomFullDay:
+        xpos -800 ypos 0
+        linear 0.1 xpos 0 ypos 0
+    show Mikuru Maid Quest2 at center
+    show Haruhi Sup2 at right
+    "\"Wow,\" Haruhi allowed, turning the item over in her hand and looking at it from all angles. {nw}"
+    show Haruhi Quest1 at right
+    extend "\"How does it work?\""
+    scene bg ClubroomFullDay:
+        xpos 0 ypos 0
+        linear 0.1 xpos -800 ypos 0
+    show Kyon Smile3 at left
+    show Kanae Quest1 at center
+    show Yuki Right Neutral2 at right
+    "\"Kanae-chan points it at enemy sliders and says, 'Dimensional Prism Power, Make-up',\" Kyon suggested, smirking."
+    scene bg ClubroomFullDay:
+        xpos -800 ypos 0
+        linear 0.1 xpos 0 ypos 0
+    show Mikuru Think Maid Quest2 at center
+    show Haruhi Eyeroll1 at right
+    "\"Now you're just being silly,\" Haruhi answered, not even moving her eyes away from the rod."
+    nvl clear
+    scene bg ClubroomFullDay:
+        xpos 0 ypos 0
+        linear 0.1 xpos -800 ypos 0
+    show Kyon Smile1 at left
+    show Kanae Smile1 at center
+    show Yuki Right Talk2 at right
+    "\"I am uncertain,\" Yuki replied. \"I will investigate.\""
+    show Haruhi Smile1 at HalfRight with moveinleft
+    pause 0.5
+    hide Haruhi with moveoutleft
+    "Haruhi handed the rod to the small girl, while Kanae watched breathlessly. {nw}"
+    show Kanae Unhap2 at center
+    extend "\"Is this the answer we were looking for, Sempai?\" she asked him worriedly. \"This will help me find my way home?\""
+    nvl clear
+    show Kyon Neutral2 at left
+    show Kanae Unhap3 at center
+    "\"I have no idea, but I'll apparently think so in the future,\" he answered. Turning to Mikuru, he added, \"Also, thank you very much, Asahina-san.\""
+    scene bg ClubroomFullDay:
+        xpos -800 ypos 0
+        linear 0.1 xpos 0 ypos 0
+    show Mikuru Think Maid Quest1 Flip at center
+    show Haruhi Smile1 at right
+    "\"Um, what for?\" she asked, looking between Kyon and Yuki curiously."
+    nvl clear
+    scene bg ClubroomFullDay:
+        xpos 0 ypos 0
+        linear 0.1 xpos -800 ypos 0
+    show Kyon Neutral2 at left
+    show Kanae Unhap3 at center
+    show Yuki Right Neutral2 at right
+    "\"You'll know some day,\" he answered, looking bleakly at his note to himself. \"I really, really hope that I get some calm days to focus on some normal things, soon. This is getting really out of hand.\""
+    scene bg ClubroomFullDay:
+        xpos -800 ypos 0
+        linear 0.1 xpos 0 ypos 0
+    show Mikuru Maid Smile2 at center
+    show Haruhi Grin2 at right
+    "\"Yeah,\" Haruhi jibed, rolling her eyes, \"you do love taking notes and paying attention in class. Without a good excuse to pay such weak attention, whatever would you do?\""
+    nvl clear
+    scene bg ClubroomFullDay:
+        xpos 0 ypos 0
+        linear 0.1 xpos -800 ypos 0
+    show Kyon Smile3 at left
+    show Kanae Smile1 at center
+    show Yuki Right Neutral2 at right
+    "\"I beg your pardon?\" he asked, quirking one eyebrow higher. \"I don't have good excuses, I have {i}awesome{/i} excuses.\""
+    nvl clear
+    scene bg ClubroomFullDay:
+        xpos -800 ypos 0
+        linear 0.1 xpos 0 ypos 0
+    show Mikuru Maid Smile1 at center
+    show Haruhi Hap4 at right
+    "Haruhi grinned very brightly, chuckling. \"That's true,\" she allowed. {nw}"
+    show Haruhi Hap1 at right 
+    extend "\"Okay, vice commander, since we're here, and it seems Yuki's going to need some time to figure out the dimensional anchor, let's make sure you at least finish your homework. {nw}"
+    show Haruhi Point Amuse1 at right
+    extend "I'm not about to let your awesome excuses make the brigade look worse with sucky grades.\""
+    nvl clear
+    scene black with dissolve
+    "Some day, Kyon realized, he would need to learn to keep his mouth shut."
     nvl clear
     
     call eyecatch("Monday, April 18") from SF1_sc004
-    
 
     play music "Music/moon.ogg"    
     scene bg ClubroomFullDay:
@@ -837,8 +1004,8 @@ label SF1:
     show Yuki Right Neutral1 at HalfRight
     show Haruhi Hap4 at left
     show Kanae Sup2:
-        xalign 0.4 yalign 1.0
-    with move
+        xalign 0.4 yalign 1.2
+        linear 0.1 yalign 1.0
     "\"Excellent!\" Haruhi cheered, jolting the first year girl awake."
     show Kanae Worry2:
          xalign 0.4 yalign 1.0
@@ -848,6 +1015,7 @@ label SF1:
     "\"So,\" Haruhi pressed, looking intently at Yuki, \"we can go to Kanae's home, now?\""
     show Yuki Right Talk1 at HalfRight
     "\"Negative,\" Nagato replied, her eyes swinging to focus briefly on Haruhi before locking on Kyon. \"We can begin conducting experiments to discern the nature and limitations of Kanae's ability to traverse realities.\""
+    nvl clear
     show Haruhi Eyeroll1 at left
     "Haruhi scowled, shaking her head. \"That's no fun,\" she groused. \"How long will it take?\""
     show Yuki Right Talk2 at HalfRight
@@ -857,7 +1025,10 @@ label SF1:
     show Kyon Ser2:
         xalign 1.25 yalign 1.0
     "\"You know,\" Kyon noted, packing his homework away, \"you're disregarding something here, Haruhi. As I understand it, the Integrated Data Sentience Entity values new data more than anything else. In fact, at times, certain factions of it tried to provoke a response from you ... like the 'ghosts' that Sakanaka-san asked us to investigate.\""
+    nvl clear
     show Haruhi Unhap2 at left
+    show Kyon Ser1:
+        xalign 1.25 yalign 1.0
     "\"Well, it's not like I can 'react' much without you and Yuki-chan approving it, now. Which reminds me.... Let me try another one.\"" 
     show Haruhi Focus1 at left
     "She clenched her eyes shut, mumbling, \"The hair on my head grows ... five times as fast.\""
@@ -884,12 +1055,14 @@ label SF1:
     show Kyon Sigh2:
         xalign 1.25 yalign 1.0
     "\"Granted,\" he said, shrugging. \"But aside from this amusing digression, the point I was trying to get to is that if we manage to discover data that is new to the Integrated Data Sentience Entity, they may end up willing to work with Nagato in the future in exchange for this data.\""
-    show Haruhi Worry1 at left
-    "\"I didn't think of that,\" Haruhi allowed, glancing at Kyon. \"And hey, Yuki- chan ... that's it? There was no tingle, no glowy lights ... powers are supposed to look awesome, not be invisible! Remember that next time.\""
     nvl clear
+    show Haruhi Worry1 at left
+    "\"I didn't think of that,\" Haruhi allowed, glancing at Kyon. \"And hey, Yuki-chan ... that's it? There was no tingle, no glowy lights ... powers are supposed to look awesome, not be invisible! Remember that next time.\""
     show Yuki Right Talk2 at HalfRight
     "Yuki replied, \"Understood,\" and gave her tiny nod."
+    nvl clear
     show Haruhi Quest1 at left
+    show Yuki Right Neutral2 at HalfRight
     "\"Good. Now, Kanae-chan, how long does it take for the other sliders to show up and find you?\""
     show Kanae Wince2:
         xalign 0.4 yalign 1.0
@@ -898,19 +1071,23 @@ label SF1:
     show Kanae Sad3:
         xalign 0.4 yalign 1.0
     "\"Mmm. If I jump between worlds very quickly, it seems to take them a bit longer to show up. I'd guess probably four weeks from now? I landed badly the last time I jumped — I was about to call Sempai when I got scared by a loud noise and jumped right away ... so that should give me a bit of extra time.\""
+    nvl clear
     show Haruhi Grin1 at left
-    "\"Ooh,\" Haruhi realized, grinning. \"Hey, Kyon, if Yuki-chan and Kanae-chan can't figure out how it works together, we can capture the enemy sliders and beat the information out of them! They obviously have a way to track Kanae- chan, don't they?\""
+    "\"Ooh,\" Haruhi realized, grinning. \"Hey, Kyon, if Yuki-chan and Kanae-chan can't figure out how it works together, we can capture the enemy sliders and beat the information out of them! They obviously have a way to track Kanae-chan, don't they?\""
     nvl clear
     show Kyon Ser2:
         xalign 1.25 yalign 1.0
     "\"And right on their heels, the alien invasion,\" he countered. \"Anyway, it's late; we should be getting out of the school.\""
     show Haruhi Sigh2 at left
+    show Kyon Ser1:
+        xalign 1.25 yalign 1.0
     "Haruhi nodded absently, shutting the computer down and gathering her book bag. \"In any case, that gives us a hard cap of around four or five weeks to get it sorted out.\""
     scene black with dissolve
     nvl clear
     "The other club members rose and gathered their things, Mikuru offering Kanae a hand when the younger girl wobbled tiredly on her feet. \"Understood,\" Yuki said softly. In the corridor, while Haruhi turned around and locked the club room door, the quiet girl slipped him a note. He pocketed it with a frown. Mikuru studiously pretended not to notice, while Kanae was looking the other way drowsily."
     nvl clear
     
+    call eyecatch("Monday, April 18") from SF1_sc005
 
     play music "Music/MysteryTime.mp3"
     scene bg SchoolEntranceLeft with fade
@@ -919,45 +1096,55 @@ label SF1:
     show Kyon Ser3 at right
     show Koizumi Crossed Smile1 at left
     with fade
-    "\"How did it go?\" he asked, before the esper could volunteer anything."
     nvl clear
+    "\"How did it go?\" he asked, before the esper could volunteer anything."
     show Koizumi Crossed Smile2 at left
+    show Kyon Ser1 at right
     "\"It was a bit rough,\" Koizumi replied, still smiling. \"It could have been much worse, though. As I have mentioned before, one of the most stressful parts about this is simply getting to where the closed space is in a timely manner. "
+    nvl clear
     show Koizumi Think Smile1 at left
     "Quite fortunately, all the spaces were within the coast of Honshu, so there was no need to travel extremely far.\""
     show Kyon Puzzle1 at right
     "\"I hope it wasn't too much trouble. Hmm, I realize this isn't a critical issue, but out of curiosity, how much does it typically cost to deal with a Shinjin, anyway?\""
     nvl clear
+    show Kyon Neutral3 at right
     show Koizumi Shrug Sigh1:
         xalign -1.0 yalign 1.0
     "\"That's entirely dependant on how much travel time is involved,\" Koizumi replied, shrugging."
     show Koizumi Think Grin1 at left
     "\"Hokkaido or Okinawa are of course going to be more difficult to reach, while Tokyo is relatively simple, thanks to the bullet train. However, you are correct in that this isn't a critical issue.\""
     show Koizumi Think Ser4 at left
+    nvl clear
     "He nodded his head at Arakawa, in the driver's seat, and explained, \"As I am now a liaison, not a full member of the Organization, this has been arranged to give you an update on the progress of closed space, and somewhat more to request an update from you on the events within the brigade meeting after my departure.\""
     nvl clear
     show Kyon Sigh2 at right
     "\"Hey, Arakawa-san,\" Kyon said, nodding slightly. The older man grunted a wordless reply, giving a tiny nod of his own, his eyes fixed on the road. \"I'm a bit surprised that Mori-san isn't here.\""
+    nvl clear
+    show Kyon Sigh4 at right
     show Koizumi Shrug Smile1:
         xalign -1.0 yalign 1.0
     "\"She's still a bit ... um ... intimidated by your last meeting,\" Koizumi said, his smile turning apologetic."
-    show Kyon Sigh1 at right
+    show Kyon Sigh3 at right
     "Kyon blinked, wondering what he was going to have to have done." 
     nvl clear
     show Kyon Ser3 at right
     "\"Okay,\" he allowed. \"In summary, we discussed Michikyuu Kanae and her abilities as a slider, the fact that she's being pursued by sliders who want to capture her, and that her home world was invaded by aliens. Possibly related to the Sky Canopy Domain.\""
+    nvl clear
     show Koizumi Think Sup1 at left
+    show Kyon Ser1 at right
     "Koizumi paled, shivering. \"My,\" he allowed. \"That's ... less than comforting.\""
     show Kyon Worry1 at right
-    nvl clear
     "\"Yeah. Kanae-chan is also lost, and doesn't have much control over her ability to slide; she's trying to find her way home, and someone who can help deal with the alien invasion." 
+    nvl clear
     show Kyon Neutral1 at right
-    "Surprisingly, we also discovered a limit to Haruhi's power. Namely, that she can't affect other worlds reliably, or the ability to travel to them.\""
+    "\"Surprisingly, we also discovered a limit to Haruhi's power. Namely, that she can't affect other worlds reliably, or the ability to travel to them.\""
     show Koizumi Think Ser4 at left
+    show Kyon Neutral4 at right
     "\"Is it possible that the limitation was Nagato-san's?\" Koizumi asked after a moment."
     show Kyon Ser1 at right
     nvl clear
     "\"It's possible,\" Kyon agreed, frowning. \"That hadn't occurred to me. On that subject, Nagato also explained that the Integrated Data Sentience Entity doesn't have the ability to travel to or observe alternate realities, either."
+    nvl clear
     show Kyon Ser3 at right
     "\"They made a dimensional anchor, which was lost millions of years ago. Naturally, Nagato is using that to try and help Kanae out. It's my hope that any new data that Nagato discovers with Kanae's help can be used as a bargaining chip to get back on the good side of the entity.\""
     show Koizumi Think Ser3 at left
@@ -965,14 +1152,18 @@ label SF1:
     nvl clear
     show Kyon Neutral2 at right
     "\"On {i}that{/i} note,\" Kyon added, turning his attention to Arakawa, \"would it be possible to request that the Organization watch over Kanae as well? She's an important person in all of this, too.\""
+    show Kyon Neutral3 at right
     "\"I will pass that request on to Mori-san,\" the older man allowed. \"If you will permit a personal observation, I'm rather surprised you trust us so much.\""
+    nvl clear
     show Kyon Sigh2 at right
     "\"Well, you've never threatened to kill Koizumi for displeasing you,\" Kyon said with a shrug. \"You've never intentionally treated him poorly because you thought that's the way things needed to be. As far as I know, anyway."
     show Kyon Worry1 at right
     nvl clear
     "\"More importantly, you haven't given me a reason not to trust you yet. Sorry if I, um, frightened Mori-san,\" though he boggled at the thought he could intimidate someone with such a smile, \"but after all is said and done, I'd like us to be able to work together. Ultimately, isn't your goal the stability of the world, and the safety of Haruhi and the people important to her?\""
+    nvl clear
     show Koizumi Think Sup1 at left
-    "Koizumi worked his jaw for a moment, his smiling masked wiped away in a look of open-eyed astonishment before a real smile came to his lips."
+    "Koizumi worked his jaw for a moment, his smiling mask wiped away in a look of open-eyed astonishment before a real smile came to his lips."
+    show Koizumi Think Grin1 at left
     "\"I will pass that on as well,\" Arakawa said, nodding."
     nvl clear
     show Koizumi Crossed Smile1 at left
@@ -982,6 +1173,8 @@ label SF1:
     show Koizumi Think Smile1 at left
     "\"That is all we can ask for,\" Koizumi said, nodding. \"Thank you very much, vice commander.\""
     nvl clear
+    
+    call eyecatch("Monday, April 18") from SF1_sc006
 
     play music "Music/Nichijou.mp3"
     scene bg KyonRoomLeftClosed with fade

@@ -94,6 +94,7 @@ init:
     image Haruhi Eyeroll1 = "Sprites/Haruhi/HaruhiSideEyeroll1.png"
     image Haruhi Quest1 = "Sprites/Haruhi/HaruhiSideQuestion1.png"
     image Haruhi Grin1 = "Sprites/Haruhi/HaruhiSideGrin1.png"
+    image Haruhi Grin2 = "Sprites/Haruhi/HaruhiSideGrin2.png"
     image Haruhi Worry1 = "Sprites/Haruhi/HaruhiSideWorry1.png"
     image Haruhi Worry2 = "Sprites/Haruhi/HaruhiSideWorry2.png"
     image Haruhi Smile1 = "Sprites/Haruhi/HaruhiSideSmile1.png"
@@ -125,6 +126,7 @@ init:
     image Haruhi Casual Eyeroll1 = "Sprites/Haruhi/HaruhiSideCasualEyeroll1.png"
     image Haruhi Casual Quest1 = "Sprites/Haruhi/HaruhiSideCasualQuestion1.png"
     image Haruhi Casual Grin1 = "Sprites/Haruhi/HaruhiSideCasualGrin1.png"
+    image Haruhi Casual Grin2 = "Sprites/Haruhi/HaruhiSideCasualGrin2.png"
     image Haruhi Casual Worry1 = "Sprites/Haruhi/HaruhiSideCasualWorry1.png"
     image Haruhi Casual Worry2 = "Sprites/Haruhi/HaruhiSideCasualWorry2.png"
     image Haruhi Casual Smile1 = "Sprites/Haruhi/HaruhiSideCasualSmile1.png"
@@ -211,6 +213,7 @@ init:
     image Kyon Sigh1 = "Sprites/Kyon/KyonSigh1.png"
     image Kyon Sigh2 = "Sprites/Kyon/KyonSigh2.png"
     image Kyon Sigh3 = "Sprites/Kyon/KyonSigh3.png"
+    image Kyon Sigh4 = "Sprites/Kyon/KyonSigh4.png"
     image Kyon Neutral1 = "Sprites/Kyon/KyonNeutral1.png"
     image Kyon Neutral2 = "Sprites/Kyon/KyonNeutral2.png"
     image Kyon Neutral3 = "Sprites/Kyon/KyonNeutral3.png"
@@ -245,6 +248,7 @@ init:
     image Kyon Casual Sigh1 = "Sprites/Kyon/KyonCasualSigh1.png"
     image Kyon Casual Sigh2 = "Sprites/Kyon/KyonCasualSigh2.png"
     image Kyon Casual Sigh3 = "Sprites/Kyon/KyonCasualSigh3.png"
+    image Kyon Casual Sigh4 = "Sprites/Kyon/KyonCasualSigh4.png"
     image Kyon Casual Neutral1 = "Sprites/Kyon/KyonCasualNeutral1.png"
     image Kyon Casual Neutral2 = "Sprites/Kyon/KyonCasualNeutral2.png"
     image Kyon Casual Neutral3 = "Sprites/Kyon/KyonCasualNeutral3.png"
@@ -280,6 +284,7 @@ init:
     image Coat = "Sprites/Kyon/KyonCoat.png"
 
     image Kyon Ser1 Flip = im.Flip("Sprites/Kyon/KyonSerious1.png", horizontal=True)
+    image Kyon Ser3 Flip = im.Flip("Sprites/Kyon/KyonSerious3.png", horizontal=True)
     image Kyon Ang1 Flip = im.Flip("Sprites/Kyon/KyonAngry1.png", horizontal=True)
     
     image KBlush = "Sprites/Kyon/KBlush.png"
@@ -431,20 +436,27 @@ init:
     image MTray Maid ="Sprites/Mikuru/MTrayMaid.png"
     
     image Mikuru Think Quest1 = "Sprites/Mikuru/MikuruThinkQuestion1.png"
+    image Mikuru Think Quest2 = "Sprites/Mikuru/MikuruThinkQuestion2.png"
     image Mikuru Think Sad1 = "Sprites/Mikuru/MikuruThinkSad1.png"
     image Mikuru Think Sad2 = "Sprites/Mikuru/MikuruThinkSad2.png"
     image Mikuru Think Sup1 = "Sprites/Mikuru/MikuruThinkSurprised1.png"
     
     image Mikuru Think Casual Quest1 = "Sprites/Mikuru/MikuruThinkCasualQuestion1.png"
+    image Mikuru Think Casual Quest2 = "Sprites/Mikuru/MikuruThinkCasualQuestion2.png"
     image Mikuru Think Casual Sad1 = "Sprites/Mikuru/MikuruThinkCasualSad1.png"
     image Mikuru Think Casual Sad2 = "Sprites/Mikuru/MikuruThinkCasualSad2.png"
     image Mikuru Think Casual Sup1 = "Sprites/Mikuru/MikuruThinkCasualSurprised1.png"
     
     image Mikuru Think Maid Quest1 = "Sprites/Mikuru/MikuruThinkMaidQuestion1.png"
+    image Mikuru Think Maid Quest2 = "Sprites/Mikuru/MikuruThinkMaidQuestion2.png"
     image Mikuru Think Maid Sad1 = "Sprites/Mikuru/MikuruThinkMaidSad1.png"
     image Mikuru Think Maid Sad2 = "Sprites/Mikuru/MikuruThinkMaidSad2.png"
     image Mikuru Think Maid Sup1 = "Sprites/Mikuru/MikuruThinkMaidSurprised1.png"
     image MTears Think = "Sprites/Mikuru/MTearsThink1.png"
+    
+    image Mikuru Think Quest1 Flip = im.Flip("Sprites/Mikuru/MikuruThinkQuestion1.png", horizontal=True)
+    image Mikuru Think Casual Quest1 Flip = im.Flip("Sprites/Mikuru/MikuruThinkCasualQuestion1.png", horizontal=True)
+    image Mikuru Think Maid Quest1 Flip = im.Flip("Sprites/Mikuru/MikuruThinkMaidQuestion1.png", horizontal=True)
     
     image Mikuru Cower Nervous1 = "Sprites/Mikuru/MikuruCowerNervous1.png"
     image Mikuru Cower Nervous2 = "Sprites/Mikuru/MikuruCowerNervous2.png"
@@ -532,6 +544,18 @@ init:
     image Tsuruya Sup1 = "Sprites/Tsuruya/TsuruyaSurprised1.png"
     image Tsuruya Worry1 = "Sprites/Tsuruya/TsuruyaWorry1.png"
     
+    image Tsuruya Wave Grin1 = "Sprites/Tsuruya/TsuruyaWaveGrin1.png"
+    image Tsuruya Wave Grin2 = "Sprites/Tsuruya/TsuruyaWaveGrin2.png"
+    image Tsuruya Wave Hap1 = "Sprites/Tsuruya/TsuruyaWaveHappy1.png"
+    image Tsuruya Wave Hap2 = "Sprites/Tsuruya/TsuruyaWaveHappy2.png"
+    image Tsuruya Wave Hap3 = "Sprites/Tsuruya/TsuruyaWaveHappy3.png"
+    image Tsuruya Wave Hap4 = "Sprites/Tsuruya/TsuruyaWaveHappy4.png"
+    image Tsuruya Wave Hap5 = "Sprites/Tsuruya/TsuruyaWaveHappy5.png"
+    image Tsuruya Wave Hap6 = "Sprites/Tsuruya/TsuruyaWaveHappy6.png"
+    image Tsuruya Wave Quest1 = "Sprites/Tsuruya/TsuruyaWaveQuestion1.png"
+    image Tsuruya Wave Smile1 = "Sprites/Tsuruya/TsuruyaWaveSmile1.png"
+    image Tsuruya Wave Smile2 = "Sprites/Tsuruya/TsuruyaWaveSmile2.png"
+    
     #Kanae Sprites
     image Kanae Hap1 = "Sprites/Kanae/KanaeHappy1.png"
     image Kanae Hap2 = "Sprites/Kanae/KanaeHappy2.png"
@@ -545,7 +569,6 @@ init:
     image Kanae Sad5 = "Sprites/Kanae/KanaeSad5.png"
     image Kanae Smile1 = "Sprites/Kanae/KanaeSmile1.png"
     image Kanae Smile2 = "Sprites/Kanae/KanaeSmile2.png"
-    image Kanae Smile3 = "Sprites/Kanae/KanaeSmile3.png"
     image Kanae Sup1 = "Sprites/Kanae/KanaeSurprised1.png"
     image Kanae Sup2 = "Sprites/Kanae/KanaeSurprised2.png"
     image Kanae Unhap1 = "Sprites/Kanae/KanaeUnhappy1.png"
@@ -561,7 +584,6 @@ init:
     image Kanae Face Smile2  = "Sprites/Kanae/KanaeFaceSmile2.png"
     image Kanae Face Worry1 =  "Sprites/Kanae/KanaeFaceWorry1.png"
     
-    image KABlush = "Sprites/Kanae/KanaeBlush.png"
     image KABlush Face = "Sprites/Kanae/KanaeFaceBlush.png"
     
     
@@ -616,23 +638,16 @@ init:
     
     #Taniguchi Sprites
     image Taniguchi Grin1 = "Sprites/Taniguchi/TaniguchiGrin1.png"
-    image Taniguchi Smile1 = "Sprites/Taniguchi/TaniguchiSmile1.png"
-    image Taniguchi Hap1 = "Sprites/Taniguchi/TaniguchiHappy1.png"
-    image Taniguchi Ser1 = "Sprites/Taniguchi/TaniguchiSerious1.png"
-    image Taniguchi Sigh1 = "Sprites/Taniguchi/TaniguchiSigh1.png"
     image Taniguchi Sup1 = "Sprites/Taniguchi/TaniguchiSurprised1.png"
     image Taniguchi Sup2 = "Sprites/Taniguchi/TaniguchiSurprised2.png"
-    
     
     #Kunikida Sprites
     image Kunikida Neutral1 = "Sprites/Kunikida/KunikidaNeutral1.png"
     image Kunikida Neutral2 = "Sprites/Kunikida/KunikidaNeutral2.png"
     image Kunikida Neutral3 = "Sprites/Kunikida/KunikidaNeutral3.png"
-    image Kunikida Smile1 = "Sprites/Kunikida/KunikidaSmile1.png"
-    image Kunikida Smile2 = "Sprites/Kunikida/KunikidaSmile2.png"
-    image Kunikida Ser1 = "Sprites/Kunikida/KunikidaSerious1.png"
-    image Kunikida Ser2 = "Sprites/Kunikida/KunikidaSerious2.png"
-    
+    image Kunikida Smile1 ="Sprites/Kunikida/KunikidaSmile1.png"
+    image Kunikida Smile2 ="Sprites/Kunikida/KunikidaSmile2.png"
+
     #Nonoko Sprites
     image Nonoko Smile1 = "Sprites/Nonoko/NonokoSmile1.png"
     image Nonoko Sup1 = "Sprites/Nonoko/NonokoSurprised1.png"
@@ -831,44 +846,7 @@ transform TenthLeft:
 transform KyonRightFast:
     xalign -0.5 yalign 1.0
     linear 0.2 xalign 2.0
-transform PanScene_LeftToRight:
-        # xpos 0.0
-        linear 0.15 xpos -1.0
-transform PanScene_LeftToCenter:
-        # xpos 0.0
-        linear 0.15 xpos -0.5        
-transform PanScene_CenterToLeft:
-        xpos -0.5
-        linear 0.15 xpos 0.0        
-transform PanScene_RightToLeft:
-        xpos -1.0
-        linear 0.15 xpos 0.0
-transform PanScene_RightToCenter:
-        xpos -1.0
-        linear 0.15 xpos -0.5
-transform PanScene_CenterToRight:
-        xpos -0.5
-        linear 0.15 xpos -1.0        
-transform PanScene_SetToRight:
-        xpos -1.0
 
-transform PanScene_SetToLeft:
-        xpos 0.0
-        
-transform left_RightScreen:
-        xpos 1.0 yalign 1.0
-        
-transform center_RightScreen:
-        xpos 1.4 yalign 1.0 # xalign 0.5 yalign 1.0
-
-transform right_RightScreen:
-        xpos 1.65 yalign 1.0
-        
-transform TopRight_RightScreen:
-        xpos 1.6 yalign 0.0
-        
-transform UnderLegs_RightScreen:
-        xalign 1.55 yalign 2.2
 init -1 python:
     # def show_date(st, at):
         # return Text("[date]", font="DejaVuSerif-Italic.ttf", size=25, color="#3cf"), None
