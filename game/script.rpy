@@ -32,6 +32,8 @@ init:
     image bg ClubroomLeftDay = "Backgrounds/ClubroomLeftDay.png"
     image bg ClubroomFullDay ="Backgrounds/ClubroomFullDay.jpg"
     image bg ClubroomRightDay = "Backgrounds/ClubroomRightDay.png"
+    image bg ClubroomBack = "Backgrounds/ClubBack.png"
+    image ClubTable ="Backgrounds/ClubTable.png"
     image bg YukiApartmentDay = "Backgrounds/YukiApartmentDay.png"
     image bg YukiApartmentNight = "Backgrounds/YukiApartmentNight.png"
     image bg YukiRoomLeft = "Backgrounds/YukiRoomLeft.png"
@@ -102,6 +104,8 @@ init:
     image Haruhi Unhap1 = "Sprites/Haruhi/HaruhiSideUnhappy1.png"
     image Haruhi Unhap2 = "Sprites/Haruhi/HaruhiSideUnhappy2.png"
     image Haruhi Focus1 = "Sprites/Haruhi/HaruhiSideFocus1.png"
+    image Haruhi Neutral1 ="Sprites/Haruhi/HaruhiSideNeutral1.png"
+    image Haruhi Neutral2 ="Sprites/Haruhi/HaruhiSideNeutral2.png"
     
     image Haruhi Casual Sup1 = "Sprites/Haruhi/HaruhiSideCasualSurprised1.png"
     image Haruhi Casual Sup2 = "Sprites/Haruhi/HaruhiSideCasualSurprised2.png"
@@ -131,6 +135,8 @@ init:
     image Haruhi Casual Unhap1 = "Sprites/Haruhi/HaruhiSideCasualUnhappy1.png"
     image Haruhi Casual Unhap2 = "Sprites/Haruhi/HaruhiSideCasualUnhappy2.png"
     image Haruhi Casual Focus1 = "Sprites/Haruhi/HaruhiSideCasualFocus1.png"
+    image Haruhi Casual Neutral1 ="Sprites/Haruhi/HaruhiSideCasualNeutral1.png"
+    image Haruhi Casual Neutral2 ="Sprites/Haruhi/HaruhiSideCasualNeutral2.png"
     
     image Haruhi Crossed Sup1 = "Sprites/Haruhi/HaruhiCrossedSurprised1.png"
     image Haruhi Crossed Sup2 = "Sprites/Haruhi/HaruhiCrossedSurprised2.png"

@@ -333,7 +333,7 @@ label SF2:
     
     
     
-label Test:
+
     play music "Music/worldendsolo.ogg"
     scene bg classroom:
         size (800,600)
@@ -404,48 +404,156 @@ label Test:
     nvl clear
     show Taniguchi Sigh1 at left
     "Unsatisfied with silence, Taniguchi said, \"Well, be careful at least.\""
-    # "* * *"
-    # "Haruhi reached the clubroom second, Yuki somehow being there first, as she usually was. \"Not visiting the computer research society much these days?\" she asked the slighter girl, who had almost finished her paperback."
-    # "Yuki blinked slowly, then gave a minuscule shake of her head."
-    # "\"Yuki-chan, we need to talk about Kyon.\""
-    # "The smaller girl gave a tiny nod and closed her book, turning to look at Haruhi expectantly."
-    # "For her part, the brigade leader walked to her desk, turning the computer on to give herself a brief distraction. \"You like Kyon, don't you?\" she finally blurted out."
-    # "\"Yes,\" Yuki answered softly, her eyes still fixed on Haruhi."
-    # "\"Um, anyway, Yuki-chan ... I {i}did{/i} say you could borrow him when you needed to,\" Haruhi admitted, frowning. \"But I'm having a hard time figuring things out right now.\""
-    # "Yuki said nothing, merely staring in silence."
-    # "\"I.... I mean, Kyon and I....\" She hesitated, uncertain what to say. Eventually, in a very quiet voice, she managed to ask, \"Are you going to start dating Kyon?\""
-    # "After blinking once, Yuki answered, \"I do not seek to initiate courtship rituals or physical intimacy with him, though I will reciprocate if he demonstrates an obvious inclination. However, as has been observed previously, my understanding of his genuine desires and emotions is faulty; I can therefore not safely assume that such demonstrations have occurred without verifying them through a third party.\""
-    # "Haruhi stared at the smaller girl hard, furrowing her brow. \"You're telling me,\" she said slowly, \"that you can't tell if Kyon likes you, and you don't want to mess things up? So you'd need to ask someone else if he really liked you and wanted to date?\""
-    # "Yuki's face tilted upwards slightly, as though she were considering the statement. \"Yes,\" she answered after an extended pause. \"That third party must be trusted; I would like to nominate you.\""
-    # "Drumming her fingers on the desk, glancing at the monitor as the OS screen flashed past and the generic blue background appeared, Haruhi asked, \"You want me to help you hook up with him?\""
-    # "The smaller girl's gaze lowered. \"Uncertain,\" she answered. \"Our behaviors do not conform to typical models among humans. I am unable to determine how this would change the interactions between the group definitively, but there is a significant probability that committing to such a course of action would result in dissatisfaction among most others.\""
-    # "\"Yeah,\" Haruhi sighed, rubbing at her temples. \"If only there was a way for everyone to be happy, huh? But there's only one Kyon to go around....\" She brightened suddenly. \"Ooh! Hey, Yuki-chan, what about, um, making a bunch of copies of Kyon!\""
-    # "She stared at Haruhi blankly for a minute, then pointedly turned her attention back to the book in her hands."
-    # "\"Yeah, you're right,\" Haruhi grumbled with another resigned sigh. \"Don't even let Kyon know I suggested that; he wouldn't like it.... Maybe I should just resign myself to letting him choose whoever he wants ... I mean....\" She trailed off, staring at the ceiling and musing absently until she was distracted by Kanae and Mikuru walking into the room."
-    # "\"Hello Suzumiya-san,\" Mikuru said sleepily, collecting her sewing kit and the maid costume from where it had been left to finish her repairs."
-    # "\"Hey, Mikuru-chan, Kanae-chan.\""
-    # "\"Hi, everyone,\" the younger girl mumbled. \"Oh, no Sempai...?\""
-    # "\"Close the door, Kanae-chan,\" Haruhi instructed. \"Lock it, too. Koizumi's ... working because I'm problematic, and I sent Kyon home to get some sleep.\""
-    # "\"Um?\" Mikuru noised, as Kanae followed her orders and took Koizumi's normal seat at the table. \"I...is something wrong? Suzumiya-san, if you and Kyon-kun aren't getting along—\""
-    # "\"It's nothing to do with him and I,\" she said crossly, rubbing at her forehead and spinning her chair to face the window, adjusting herself to sit cross- legged on the seat. \"Because, Mikuru-chan ... you like Kyon, don't you?\""
-    # "Mikuru yelped quietly, looking up in alarm and sucking the fingertip she had pricked with her sewing needle. \"Er.... That is.... Of course! He's a very good friend!\""
-    # "\"You don't have to act clueless and moe right now,\" Haruhi grumped. \"I mean, romantically. If I weren't being an obstacle to you, you'd try and date him, wouldn't you?\""
-    # "\"Er.... Uh....\""
-    # "\"Be honest!\""
-    # "\"It's ... forbidden,\" Mikuru said quietly. \"I...if you must know, then ... yes, I do like Kyon-kun ... he's reliable, and doesn't have ulterior motives. But I'm not {i}from{/i} this timeplane; I can't have, um, relationships with anyone from here. S...so, please don't think of me as a threat, Suzumiya-san! And you can't ask me to think of him without you being in the picture; if it weren't for {i}you{/i}, I never would have been sent back and been able to meet him anyway! I don't want to come between the two of you!\""
-    # "Haruhi stuck one foot out and turned the chair around to face her club members. Kanae rubbed at one eye and peered at Mikuru in bemused fascination, while Yuki's eyes were fixed firmly on Haruhi. Mikuru herself merely gazed at her sewing project with a bowed head, her hands not moving, her expression downcast."
-    # "\"I'm not a threat to you,\" Mikuru repeated quietly. \"I never could be.\""
-    # "\"I don't like that answer,\" Haruhi mumbled. \"It's just like an action movie where the hero dies. Or where the hero likes two girls, so one isn't quite as pure-hearted or kind as the other, and is killed to make it so the hero never has to choose. Yuki-chan likes Kyon, too. Augh! This is frustrating, really, really frustrating!\""
-    # "\"P...please don't get frustrated!\" Mikuru begged. \"There's nothing to worry about from me! Kyon-kun and I ... will never be more than friends.\""
-    # "Haruhi sighed, pushing the keyboard away from her so she could cross her arms and rest her head there. \"Maybe I'm thinking about things too hard,\" she forced out. \"Maybe, really, I should be asking who {i}he{/i} likes, right?\""
-    # "\"This got really serious,\" Kanae said, shivering. \"Um, what's going on?\""
-    # "\"I'm trying to sort things out,\" Haruhi answered. \"Kyon didn't mention it ... but for a while I thought maybe he liked me ... then I thought about it more and realized, maybe he's just being so nice to me because he {i}has{/i} to be.\""
-    # "\"That's not true at all!\" Kanae said firmly, shaking her head. \"I've been to a lot of worlds, and in some of them you have a power, and in some you don't. But Sempai likes you in a {i}lot{/i} of them. That can't be just coincidence.\""
-    # "\"He does?\" Haruhi asked hopefully, turning her eyes to the underclassman. \"It wouldn't be so much of a problem if he would just admit it and make the first move!\""
-    # "Kanae nodded quickly. \"Absolutely,\" she said cheerfully. \"It makes me a bit jealous; most worlds I jump to, he wants to help me but has to take care of you, more....\" She shrugged, her smile slipping momentarily before she forced more cheer. \"But ... that's what's great about Sempai! He doesn't have to want to ask me out to care about me and want to make sure I'm okay. And that's ... fine ... for me.\""
-    # "Haruhi drummed her fingertips on her desk absently. \"You really think so?\" she asked quietly, wondering about Kanae's actual feelings. Fleeing constantly through alternate realities, with Kyon as the only reliable person she knew.... That situation seemed oddly familiar."
-    # "\"I think so,\" Mikuru said earnestly. \"Don't let yourself get down, Suzumiya- san! If Kyon-kun ... didn't like you, he wouldn't have tried so hard when he asked you to help Nagato-san. He would have found a way to break things off with you at the same time, or give up your powers for good! He didn't, so....\""
-    # "Haruhi's fingers drummed the table again. \"I still don't like that answer,\" she mumbled."
+    nvl clear
+    
+    scene black with fade
+    
+label Test:    
+    play music "Music/HizundaKokoro.mp3"
+    scene bg ClubroomBack
+    show Yuki Chair1 at right
+    show ClubTable
+    
+    with fade
+    "Haruhi reached the clubroom second, Yuki somehow being there first, as she usually was."
+    scene bg ClubroomFullDay:
+        xpos 0 ypos 0
+    show Haruhi Quest1 at left
+    show Yuki Right Neutral1 at right
+    with dissolve
+    "\"Not visiting the computer research society much these days?\" she asked the slighter girl, who had almost finished her paperback."
+    show Yuki Right Neutral2 at right
+    "Yuki blinked slowly, then gave a minuscule shake of her head."
+    nvl clear
+    show Haruhi Neutral2 at left
+    "\"Yuki-chan, we need to talk about Kyon.\""
+    show Yuki Right Neutral2 at right
+    "The smaller girl gave a tiny nod and closed her book, turning to look at Haruhi expectantly."
+    show Haruhi Crossed Tsun1 at left
+    "For her part, the brigade leader walked to her desk, turning the computer on to give herself a brief distraction."
+    nvl clear
+    show Haruhi Crossed Tsun2 at left
+    show Hblush Crossed at left
+    "\"You like Kyon, don't you?\" she finally blurted out."
+    show Yuki Right Talk1 at right
+    "\"Yes,\" Yuki answered softly, her eyes still fixed on Haruhi."
+    nvl clear
+    show Haruhi Pout1 at left
+    hide Hblush
+    "\"Um, anyway, Yuki-chan ... I {i}did{/i} say you could borrow him when you needed to,\" Haruhi admitted, frowning. \"But I'm having a hard time figuring things out right now.\""
+    show Yuki Right Neutral1 at right
+    "Yuki said nothing, merely staring in silence."
+    nvl clear
+    show Hblush at left
+    show Haruhi Pout2 at left
+    "\"I.... I mean, Kyon and I....\" She hesitated, uncertain what to say. Eventually, in a very quiet voice, she managed to ask, \"Are you going to start dating Kyon?\""
+    show Yuki Right Talk1 at right
+    "After blinking once, Yuki answered, \"I do not seek to initiate courtship rituals or physical intimacy with him, though I will reciprocate if he demonstrates an obvious inclination." 
+    nvl clear
+    show Yuki Right Talk2 at right
+    "However, as has been observed previously, my understanding of his genuine desires and emotions is faulty; I can therefore not safely assume that such demonstrations have occurred without verifying them through a third party.\""
+    show Haruhi Eyeroll1 at left
+    "Haruhi stared at the smaller girl hard, furrowing her brow. \"You're telling me,\" she said slowly, \"that you can't tell if Kyon likes you, and you don't want to mess things up? So you'd need to ask someone else if he really liked you and wanted to date?\""
+    show Yuki Right Neutral1 at right
+    nvl clear
+    "Yuki's face tilted upwards slightly, as though she were considering the statement." 
+    show Yuki Right Talk1 at right
+    "\"Yes,\" she answered after an extended pause. \"That third party must be trusted; I would like to nominate you.\""
+    show Haruhi Pout1 at left
+    nvl clear
+    "Drumming her fingers on the desk, glancing at the monitor as the OS screen flashed past and the generic blue background appeared, Haruhi asked, \"You want me to help you hook up with him?\""
+    show Yuki Right Talk2 at right
+    "The smaller girl's gaze lowered. \"Uncertain,\" she answered. \"Our behaviors do not conform to typical models among humans. I am unable to determine how this would change the interactions between the group definitively, but there is a significant probability that committing to such a course of action would result in dissatisfaction among most others.\""
+    nvl clear
+    show Haruhi Sigh1 at left
+    "\"Yeah,\" Haruhi sighed, rubbing at her temples. \"If only there was a way for everyone to be happy, huh? But there's only one Kyon to go around....\""
+    show Haruhi Hap1 at left
+    "She brightened suddenly. \"Ooh! Hey, Yuki-chan, what about, um, making a bunch of copies of Kyon!\""
+    nvl clear
+    show Yuki Right Neutral1 at right
+    "She stared at Haruhi blankly for a minute, then pointedly turned her attention back to the book in her hands."
+    hide Yuki with dissolve
+    show Haruhi Sigh2 at left
+    "\"Yeah, you're right,\" Haruhi grumbled with another resigned sigh. \"Don't even let Kyon know I suggested that; he wouldn't like it.... Maybe I should just resign myself to letting him choose whoever he wants ... I mean....\"" 
+    show Haruhi Pout1 at left
+    "She trailed off, staring at the ceiling and musing absently until she was distracted by Kanae and Mikuru walking into the room."
+    nvl clear
+    play sound "SE/dooropenfast.wav"
+    hide Hblush 
+    show Mikuru Neutral1 at right
+    show Kanae Neutral1 at center
+    with dissolve
+    "\"Hello Suzumiya-san,\" Mikuru said sleepily, collecting her sewing kit and the maid costume from where it had been left to finish her repairs."
+    show Haruhi Neutral2 at left
+    "\"Hey, Mikuru-chan, Kanae-chan.\""
+    show Kanae Quest1 at center
+    "\"Hi, everyone,\" the younger girl mumbled. \"Oh, no Sempai...?\""
+    show Haruhi Sigh2 at left
+    nvl clear
+    "\"Close the door, Kanae-chan,\" Haruhi instructed. \"Lock it, too. Koizumi's ... working because I'm problematic, and I sent Kyon home to get some sleep.\""
+    play sound "SE/doorclose.mp3"
+    show Mikuru Think Quest1 at right
+    show Kanae Neutral1 at center
+    "\"Um?\" Mikuru noised, as Kanae followed her orders and took Koizumi's normal seat at the table. \"I...is something wrong? Suzumiya-san, if you and Kyon-kun aren't getting along—\""
+    show Haruhi Neutral2 at left
+    nvl clear
+    "\"It's nothing to do with him and I,\" she said crossly, rubbing at her forehead and spinning her chair to face the window, adjusting herself to sit cross- legged on the seat. \"Because, Mikuru-chan ... you like Kyon, don't you?\""
+    show Mikuru Cower Smile1 at right
+    "Mikuru yelped quietly, looking up in alarm and sucking the fingertip she had pricked with her sewing needle. \"Er.... That is.... Of course! He's a very good friend!\""
+    nvl clear
+    show Haruhi Eyeroll1 at left
+    "\"You don't have to act clueless and moe right now,\" Haruhi grumped. \"I mean, romantically. If I weren't being an obstacle to you, you'd try and date him, wouldn't you?\""
+    show Mikuru Cower Nervous3 at right
+    "\"Er.... Uh....\""
+    show Haruhi Ang4 at left
+    "\"Be honest!\""
+    show Mikuru Sad2 at right
+    nvl clear
+    "\"It's ... forbidden,\" Mikuru said quietly. \"I...if you must know, then ... yes, I do like Kyon-kun ... he's reliable, and doesn't have ulterior motives." 
+    show Mikuru Sad1 at right
+    "But I'm not {i}from{/i} this timeplane; I can't have, um, relationships with anyone from here. S...so, please don't think of me as a threat, Suzumiya-san! And you can't ask me to think of him without you being in the picture; if it weren't for {i}you{/i}, I never would have been sent back and been able to meet him anyway! I don't want to come between the two of you!\""
+    show Haruhi Unhap2 at left
+    show Kanae Worry1 at center
+    "Haruhi stuck one foot out and turned the chair around to face her club members. Kanae rubbed at one eye and peered at Mikuru in bemused fascination, while Yuki's eyes were fixed firmly on Haruhi. Mikuru herself merely gazed at her sewing project with a bowed head, her hands not moving, her expression downcast."
+    show Mikuru Sad2 at right
+    nvl clear
+    "\"I'm not a threat to you,\" Mikuru repeated quietly. \"I never could be.\""
+    show Haruhi Pout2 at left
+    "\"I don't like that answer,\" Haruhi mumbled. \"It's just like an action movie where the hero dies. Or where the hero likes two girls, so one isn't quite as pure-hearted or kind as the other, and is killed to make it so the hero never has to choose. Yuki-chan likes Kyon, too. Augh! This is frustrating, really, really frustrating!\""
+    show Mikuru Sad1 at right
+    nvl clear
+    "\"P...please don't get frustrated!\" Mikuru begged. \"There's nothing to worry about from me! Kyon-kun and I ... will never be more than friends.\""
+    show Haruhi Sigh1 at left
+    "Haruhi sighed, pushing the keyboard away from her so she could cross her arms and rest her head there. \"Maybe I'm thinking about things too hard,\" she forced out. \"Maybe, really, I should be asking who {i}he{/i} likes, right?\""
+    show Kanae Quest1 at center
+    nvl clear
+    "\"This got really serious,\" Kanae said, shivering. \"Um, what's going on?\""
+    show Haruhi Pout2 at left
+    show Hblush at left
+    "\"I'm trying to sort things out,\" Haruhi answered. \"Kyon didn't mention it ... but for a while I thought maybe he liked me ... then I thought about it more and realized, maybe he's just being so nice to me because he {i}has{/i} to be.\""
+    nvl clear
+    show Kanae Sup2 at center
+    "\"That's not true at all!\" Kanae said firmly, shaking her head. \"I've been to a lot of worlds, and in some of them you have a power, and in some you don't. But Sempai likes you in a {i}lot{/i} of them. That can't be just coincidence.\""
+    show Haruhi Quest1 at left
+    "\"He does?\" Haruhi asked hopefully, turning her eyes to the underclassman. \"It wouldn't be so much of a problem if he would just admit it and make the first move!\""
+    nvl clear
+    show Kanae Smile3 at center
+    "Kanae nodded quickly. \"Absolutely,\" she said cheerfully. \"It makes me a bit jealous; most worlds I jump to, he wants to help me but has to take care of you, more....\"" 
+    show Kanae Sad5 at center
+    "She shrugged, her smile slipping momentarily before she forced more cheer.{nw}"
+    show Kanae Smile1 at center
+    extend "\"But ... that's what's great about Sempai! He doesn't have to want to ask me out to care about me and want to make sure I'm okay. And that's ... fine ... for me.\""
+    show Haruhi Eyeroll1 at left
+    hide Hblush
+    nvl clear
+    "Haruhi drummed her fingertips on her desk absently. \"You really think so?\" she asked quietly, wondering about Kanae's actual feelings. Fleeing constantly through alternate realities, with Kyon as the only reliable person she knew.... That situation seemed oddly familiar."
+    show Mikuru Ser2 at right
+    "\"I think so,\" Mikuru said earnestly. \"Don't let yourself get down, Suzumiya- san! If Kyon-kun ... didn't like you, he wouldn't have tried so hard when he asked you to help Nagato-san. He would have found a way to break things off with you at the same time, or give up your powers for good! He didn't, so....\""
+    show Haruhi Pout2 at left
+    nvl clear
+    "Haruhi's fingers drummed the table again. \"I still don't like that answer,\" she mumbled."
+    
+    
     # "* * *"
     # "In a dark mood, Kyon strode out of the school grounds. He paused a few steps out of the gate as a mature woman in a sharp suit approached him, giving a terse nod. \"Mori-san,\" he greeted her neutrally, struggling to keep the irritation his classmates had instilled from his face."
     # "\"Sir,\" she greeted him, somewhat stiffly. \"I'm here for our meeting, as you requested?\""
