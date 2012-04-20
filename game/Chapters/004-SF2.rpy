@@ -1,8 +1,18 @@
+# Chapter 4, Straightforward Flashback and Exposition Arc.
+
 label SF2:
-
-
-    play music "Music/Morning.ogg"    
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 004 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
     scene bg KyonRoomRightMorning with fade
+    play music "Music/Morning.ogg"
     show Nonoko Smile1 at center with moveinleft
     play sound "SE/impact.mp3"
     show Nonoko Sup1 at center
@@ -25,7 +35,7 @@ label SF2:
     "Despite that initial surge of energy, once he reached the school, Kyon found himself drowsing, continually awoken by Haruhi's mechanical pencil jabbing him in the back just as he was about to drift off."
     nvl clear
     
-    
+    call eyecatch("Tuesday, April 19") from SF2_sc001
     
     play music "Music/ItsumoNoFuukei.mp3"
     scene bg classroom with fade:

@@ -1,6 +1,5 @@
 # Chapter 3, Straightforward Flashback and Exposition Arc.
 
-
 label SF1:
     if music_need:
         $ renpy.music.set_volume(0.2, .5, channel="music")
@@ -24,7 +23,6 @@ label SF1:
     show Kanae Sup1
     $ _window = True;
     "The first year student started, realizing where she was, then scurried beneath the table and clung to one of Kyon's legs. {nw}"
-    # show Kanae Wince2:
     show Kanae Worry1:
         xalign 0.2 yalign 2.2
     with move
@@ -1191,7 +1189,7 @@ label SF1:
     with circleirisoutfast
     "\"...what?\" he managed, as the world around him violently exploded away, revealing a yawning chasm full of stars, brightly colored gaseous clouds as though from distant nebulae, and myriad bolts of violently crackling energy in every direction." 
     play sound "SE/Laser1.mp3" 
-    play sound2 "SE/elec1.mp3"
+    #play sound "SE/elec1.mp3"
     scene bg Space:
         xpos 0 ypos 0
         linear 0.5 xpos -800 ypos -1200
@@ -1217,19 +1215,25 @@ label SF1:
     "She set down the receiver of her own phone and said without preamble, \"An error is likely to occur imminently.\""
     nvl clear
     show KABlush Face at TopLeft
+    show Yuki Side1 at left
     "\"Mmm, Sempai,\" Kanae murmured in her sleep with a quiet giggle."
     show Kyon Sigh2 at right
     "\"Okay,\" he said, running his hands through his hair and trying not to look at either Mikuru or the sleeping girl who was dreaming about him with a blush on her cheeks. \"We have been relying on you too much. What can I do to help?\""
     show Yuki Talk2 at left
     nvl clear
     "\"I have already received permission from Suzumiya Haruhi to borrow you,\" the quiet girl said. \"With the help of the dimensional anchor, Michikyuu Kanae's ability to slide, and Asahina Mikuru's ability to traverse time, I will attempt to create a sealed alternate reality where my error can be expressed without causing any damage to the reality we currently dwell in.\""
+    nvl clear
+    hide KBlush
     show Kyon Ser3 at right
     "\"Do we need to bring Haruhi into this?\" he asked. \"I mean, she has to start whatever it is I authorize now, right?\""
-    nvl clear
     show Yuki Talk1 at left
+    show Kyon Ser1 at right
     "\"Negative,\" Nagato answered. \"I have deconstructed all previously queued requests and reassembled them to form data structures that can be executed with your permission. They are 'junk data' that I cannot destroy; I must find a way to execute them to prevent long-term damage or undue stress to the fabric of reality.\""
+    nvl clear
+    show Yuki Side1 at left
     show Kyon Neutral2 at right
     "\"Um, well, I want to help you,\" he said, nodding. \"As long as Asahina-san and Kanae-chan agree, then I can't think of a reason not to.\""
+    show Kyon Neutral3 at right
     show Mikuru Cower Face Nervous3 at TopRight
     "\"Er ... could I ... borrow some clothes, maybe?\" Mikuru asked, her voice strained with embarrassment. \"I don't mind doing whatever Kyon-kun needs, but this is a little.... Erm....\""
     nvl clear
@@ -1238,24 +1242,31 @@ label SF1:
     "\"Hmm?\" Kanae drawled, sitting up. \"Oh? Eh? What's....\" She blinked, looking around with a furrowed brow. \"Did I slide in my sleep?\" she asked curiously. \"Sempai? Asahina-san? Nagato-san?\""
     show Kyon Worry1 at right
     "\"Er, Nagato's having some ... trouble,\" Kyon allowed, trying to keep from staring at Mikuru, now wearing his coat and a pair of towels, her face dark red."
-    "\"Can I help?\" Kanae-asked, rubbing one eye sleepily."
     nvl clear
+    "\"Can I help?\" Kanae-asked, rubbing one eye sleepily."
     show Yuki Talk2 at left
     "Yuki gave a tiny nod in response. \"I will attempt to construct a world based on our collective needs,\" she answered. \"To prevent long-term physical or mental stress, I will initiate an encoded pulse with physical and mental mapping. Estimating forty minutes to error.\""
+    nvl clear
     show Kyon Ser2 at right
     "\"What do you need?\" Kyon asked quickly, rising to his feet."
     show Yuki Talk1 at left
+    show Kyon Ser1 at right
     "\"Wrist.\""
-    nvl clear
+    show Yuki Side1 at left
     "Kyon nodded knowingly and presented one hand for Yuki to take before she bit his wrist, injecting him with nanites."
+    nvl clear
     show Kyon Sigh1 at right
     "Her attention turned to Kanae, and she repeated the demand. At Kanae's uncertain, questioning glance, he assured her, \"It's fine. If she says it's for our own protection, I believe her.\" Kanae nodded uncertainly and followed suit."
     show Mikuru Cower Face Nervous1 at TopRight
-    "With a whimpering sigh, one hand clutching the coat closed across her chest, Mikuru also offered her wrist. \"State your needs,\" Yuki added, turning her attention to Kyon."
-    show Kyon Puzzle1 at right
+    "With a whimpering sigh, one hand clutching the coat closed across her chest, Mikuru also offered her wrist. {nw}"
+    show Yuki Talk1 at left
+    extend "\"State your needs,\" Yuki added, turning her attention to Kyon."
     nvl clear
+    show Kyon Puzzle1 at right
+    show Yuki Side1 at left
     "\"Um, needs?\" he asked. \"I don't know ... I guess I need to learn martial arts, according to Tsuruya-san. That and to be able to help you, whatever that ends up requiring.\""
     show Kanae Face Smile1 at TopLeft
+    show Kyon Neutral3 at right
     "\"I'd like to be able to slide better, and know how to get back!\" Kanae added, offering a tiny smile."
     show Mikuru Cower Face Wince1 at TopRight
     "Mikuru winced. \"Really, some clothes would be just great,\" she mumbled."
@@ -1269,9 +1280,9 @@ label SF1:
     "Then the world around Kyon exploded away again, for the second time in the last half hour."
     scene black with fade
     nvl clear
-    jump SF2    
-
-
+    
+    jump SF2
+    
 label SF1_test:
     
     # transform pan_scene_right:

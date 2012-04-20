@@ -901,7 +901,8 @@ init -1 python:
         ("Obligatory Anachronic Order Explanation Arc - Chapter One:\n\"Scene Twelve, the Ninth Big Fight\"", "AO1_1"),
         ("Obligatory Anachronic Order Explanation Arc - Chapter Two:\n\"Clear as Mud\"", "AO2"),
         ("Straightforward Flashback and Exposition Arc - Chapter Three:\n\"It Goes To Eleven\"", "SF1"),
-         ("Label a scene you're working on test and use this", "Test"),
+        ("Straightforward Flashback and Exposition Arc - Chapter Four:\n\"Epileptic Plot Tree\"", "SF2"),
+        ("Label a scene you're working on test and use this", "Test"),
         # ("-----", "backtomain"),
         ("Two screen scene test", "SF1_test"),
        
