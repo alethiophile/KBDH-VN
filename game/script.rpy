@@ -663,6 +663,11 @@ init:
     image Nonoko Sup1 = "Sprites/Nonoko/NonokoSurprised1.png"
     image Nonoko Pout1 = "Sprites/Nonoko/NonokoPout1.png"
     image Nonoko Hap1 = "Sprites/Nonoko/NonokoHappy1.png"
+    image Nonoko Quest1 = "Sprites/Nonoko/NonokoQuestion1.png"
+    
+    #Mori Sprites
+    
+    image Mori = "Sprites/Mori/MoriPlaceholder2.png"
     
     # image Credits0 = "Backgrounds/credits0.png"
     # image Credits1 = "Backgrounds/credits1.png"
