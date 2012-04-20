@@ -491,6 +491,7 @@ label SF1:
     "Sometimes her sempai believed her, and sometimes he didn't. A few times, he told her he was an esper, and they weren't so different. Sometimes, and those were the worst, he wasn't anywhere in the world she could find. A few times, he said he knew aliens, time travelers, and a smaller handful of times, demons and other, stranger things. As the weeks turned into months, and then the months turned into years, she watched as in world by world, his attention shifted to other things, and he warned her away from the strange girl that had appeared by him frequently. In those worlds, he almost always believed her, but said he was powerless to help."
     "She had long ago lost count of how many worlds she'd been in, how many history tests she'd failed for remembering things correctly ... but differently. That didn't matter to her, though; in the end, he {i}always{/i} listened, and because of that, across countless worlds, Sempai was Sempai."
     nvl clear
+    stop music fadeout 3
     
     call eyecatch2("December 200X","Monday, April 18") from SF1_sc003
     
@@ -877,7 +878,9 @@ label SF1:
     extend "I'm Tsuruya Haruka! Well, I just came by to drop this off, but we'll see each other again soon, I betcha anything! "
     show Tsuruya Wave Hap6 at center
     extend "So, take care, everyones, and thankie again, Kyon- kun!\" {nw}"
+    $ _window = True
     hide Tsuruya with moveoutleft
+    $ _window = False
     play sound "SE/doorclose.mp3"
     extend "The excitable green-haired girl left as briskly as she arrived, closing the door behind her with an equally loud crash."
     nvl clear
@@ -897,9 +900,9 @@ label SF1:
     show Kanae Quest1 at center
     show Yuki Right Neutral2 at right
     "\"I will,\" he answered her. \"Evidently.\" {nw}"
-    show Kyon Ser3 Flip at left
+    # show Kyon Ser3 Flip at left
     extend "Turning his attention to Yuki, he asked, \"Titanium cesium alloy?\""
-    show Kyon Ser1 Flip at left
+    show Kyon Ser1 at left
     show Yuki Right Talk2 at right
     "She blinked, then gave a nod. \"Correct,\" she answered. \"Furthermore, this is a lost prototype dimensional anchor.\""
     nvl clear
@@ -985,6 +988,7 @@ label SF1:
     scene black with dissolve
     "Some day, Kyon realized, he would need to learn to keep his mouth shut."
     nvl clear
+    stop music fadeout 3
     
     call eyecatch("Monday, April 18") from SF1_sc004
 
@@ -1084,6 +1088,7 @@ label SF1:
     nvl clear
     "The other club members rose and gathered their things, Mikuru offering Kanae a hand when the younger girl wobbled tiredly on her feet. \"Understood,\" Yuki said softly. In the corridor, while Haruhi turned around and locked the club room door, the quiet girl slipped him a note. He pocketed it with a frown. Mikuru studiously pretended not to notice, while Kanae was looking the other way drowsily."
     nvl clear
+    stop music fadeout 3
     
     call eyecatch("Monday, April 18") from SF1_sc005
 
@@ -1171,6 +1176,7 @@ label SF1:
     show Koizumi Think Smile1 at left
     "\"That is all we can ask for,\" Koizumi said, nodding. \"Thank you very much, vice commander.\""
     nvl clear
+    stop music fadeout 3
     
     call eyecatch("Monday, April 18") from SF1_sc006
 

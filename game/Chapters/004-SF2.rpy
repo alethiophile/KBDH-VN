@@ -34,6 +34,7 @@ label SF2:
     nvl clear
     "Despite that initial surge of energy, once he reached the school, Kyon found himself drowsing, continually awoken by Haruhi's mechanical pencil jabbing him in the back just as he was about to drift off."
     nvl clear
+    stop music fadeout 3
     
     call eyecatch("Tuesday, April 19") from SF2_sc001
     
@@ -45,49 +46,49 @@ label SF2:
     "Despite his protestations. He may be in charge of a lot, but he also would need a reminder that she was the supreme commander, and he was just a vice commander."
     nvl clear
     show Kyon Sigh2 at right
-    show Haruhi Quest1 at left
+    show Haruhi Quest1 at TenthLeft
     with dissolve
     "\"I am exhausted,\" he declared to no one in particular, when the lunch chime rang."
-    show Haruhi Grin1 at left
+    show Haruhi Grin1 at TenthLeft
     "\"Oh? Time traveling?\" she asked him, teasing. \"Maybe fighting off more thugs to protect Tsuruya-san's honor?\""
     "Kunikida paused mid-step as he was about to approach Kyon, then suddenly seemed to think better of it after hearing that remark and moved to an empty seat near Taniguchi."
     nvl clear
     show Kyon Sigh1 at right
     "\"Farewell forever, dear friends,\" Kyon sighed. \"Chased away by fear of Haruhi and being caught up in our madness.\""
-    show Haruhi Smile3 at left
+    show Haruhi Smile3 at TenthLeft
     "\"Idiot,\" she retorted, smirking. \"Come on, if you're going to insist we can't talk about important things here, let's go to the clubroom for lunch.\""
     scene bg hallway with wipeleft
     show Kyon Sigh1 at right
     nvl clear
-    show Haruhi Smile1 at left
+    show Haruhi Smile1 at TenthLeft
     with dissolve
     "\"Naturally,\" he returned, rising to his feet and falling into step beside her. \"There's no way {i}that{/i} comment could be misconstrued.\""
-    show Haruhi Eyeroll1 at left
+    show Haruhi Eyeroll1 at TenthLeft
     "She snorted and gave him a sharp look, but admitted internally that she was pleased. He usually remembered his position, only usurping hers in times of dire emergency, or the occasional times when he ignored her position as his superior entirely and engaged in shameless flirting." 
     "Though that hadn't happened since shortly after Valentine's day, when she thought back on it. Well, it was kind of cute—"
     nvl clear
-    show Haruhi Pout1 at left
-    show Hblush at left
+    show Haruhi Pout1 at TenthLeft
+    show Hblush at TenthLeft
     "She paused, mid-way through pummeling the thought into submission, and made herself face it head on. Alright, she admitted to herself. Kyon could be cute. There was no shame in admitting that, though; even though he was a 'normal' human, it was only on a technical level." 
     "He didn't have powers, but he was pretty cool. He handled the abnormal with a level head and a placid expression. That was respectable, at least. She nodded decisively."
     show Kyon Puzzle1 at right
     "\"Something on your mind?\" he asked, knuckling back another yawn."
     nvl clear
     hide Hblush
-    show Haruhi Quest1 at left
+    show Haruhi Quest1 at TenthLeft
     "\"Just wondering why you never have any energy,\" she commented, opening the clubroom door." 
     stop music
     play sound "SE/dooropenslow.mp3"
     
     scene bg ClubroomFullDay with slowflashbulb:
         xpos 0 ypos 0
-    $ renpy.layer_at_list([PanScene_LeftToRight])
     play music "Music/Nanika.mp3"
     show YBook at TopRight_RightScreen
     show Kyon Neutral3:
          xpos 1.3 yalign 1.0
     show Haruhi Quest1 at left_RightScreen
     show Mikuru Neutral1 at right_RightScreen
+    $ renpy.layer_at_list([PanScene_LeftToRightSlow])
     "Yuki was in her normal seat, already halfway through a thick paperback titled, 'The Life of Pi'. Seated at the table near Yuki, Mikuru was tiredly resewing her maid costume. \"Oh? What happened to the costume, Mikuru- chan?\""
     nvl clear
     hide YBook with dissolve

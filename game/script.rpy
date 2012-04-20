@@ -859,6 +859,9 @@ transform KyonRightFast:
 transform PanScene_LeftToRight:
     # xpos 0.0
     linear 0.15 xpos -1.0
+transform PanScene_LeftToRightSlow:
+    # xpos 0.0
+    linear 1.5 xpos -1.0
 transform PanScene_LeftToCenter:
     # xpos 0.0
     linear 0.15 xpos -0.5
@@ -868,6 +871,9 @@ transform PanScene_CenterToLeft:
 transform PanScene_RightToLeft:
     xpos -1.0 
     linear 0.15 xpos 0.0
+transform PanScene_RightToLeftSlow:
+    xpos -1.0 
+    linear 1.5 xpos 0.0
 transform PanScene_RightToCenter:
     xpos -1.0
     linear 0.15 xpos -0.5
