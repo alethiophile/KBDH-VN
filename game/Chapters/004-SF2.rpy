@@ -408,7 +408,7 @@ label SF2:
     
     scene black with fade
     
-label Test:    
+label Test:
     play music "Music/HizundaKokoro.mp3"
     scene bg ClubroomBack
     show Yuki Chair1 at right
@@ -451,7 +451,7 @@ label Test:
     "After blinking once, Yuki answered, \"I do not seek to initiate courtship rituals or physical intimacy with him, though I will reciprocate if he demonstrates an obvious inclination." 
     nvl clear
     show Yuki Right Talk2 at right
-    "However, as has been observed previously, my understanding of his genuine desires and emotions is faulty; I can therefore not safely assume that such demonstrations have occurred without verifying them through a third party.\""
+    "\"However, as has been observed previously, my understanding of his genuine desires and emotions is faulty; I can therefore not safely assume that such demonstrations have occurred without verifying them through a third party.\""
     show Haruhi Eyeroll1 at left
     "Haruhi stared at the smaller girl hard, furrowing her brow. \"You're telling me,\" she said slowly, \"that you can't tell if Kyon likes you, and you don't want to mess things up? So you'd need to ask someone else if he really liked you and wanted to date?\""
     show Yuki Right Neutral1 at right
