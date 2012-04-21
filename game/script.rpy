@@ -892,11 +892,13 @@ transform PanScene_SetToLeft:
 transform left_RightScreen:
     xpos 1.0 yalign 1.0    
 transform center_RightScreen:
-    xpos 1.4 yalign 1.0 # xalign 0.5 yalign 1.0    
+    xpos 1.37 yalign 1.0 # xalign 0.5 yalign 1.0    
 transform right_RightScreen:
-    xpos 1.65 yalign 1.0    
+    xpos 1.71 yalign 1.0    
 transform TopRight_RightScreen:
-   xpos 1.6 yalign 0.0    
+   xpos 1.71 yalign 0.0
+transform HalfRight_RightScreen:
+   xpos 1.6 yalign 1.0    
 transform UnderLegs_RightScreen:
     xalign 1.55 yalign 2.2    
 init -1 python:
@@ -915,8 +917,7 @@ init -1 python:
         ("Straightforward Flashback and Exposition Arc - Chapter Four:\n\"Epileptic Plot Tree\"", "SF2"),
         ("Label a scene you're working on test and use this", "Test"),
         # ("-----", "backtomain"),
-        ("Two screen scene test", "SF1_test"),
-       
+               
         ("Credits", "credits"),
         ("Another testbed, Eyecatchies", "test_Z0_eye"),
         ("Another testbed, Title cards", "test_Z0_titles"),]
