@@ -566,7 +566,7 @@ label SF2:
     
     
 
-label Test:
+label ttest:
     play music "Music/Kyoufunohajimari.mp3"    
     scene bg SchoolEntranceLeft with fade
     show Kyon Neutral3 at right

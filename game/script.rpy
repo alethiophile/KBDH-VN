@@ -664,6 +664,8 @@ init:
     image Nonoko Pout1 = "Sprites/Nonoko/NonokoPout1.png"
     image Nonoko Hap1 = "Sprites/Nonoko/NonokoHappy1.png"
     image Nonoko Quest1 = "Sprites/Nonoko/NonokoQuestion1.png"
+    image Nonoko Laugh1 = "Sprites/Nonoko/NonokoLaughing1.png"
+    image Nonoko Yell1 = "sprites/Nonoko/NonokoYell1.png"
     
     #Mori Sprites
     
