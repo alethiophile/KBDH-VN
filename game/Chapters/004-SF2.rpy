@@ -211,13 +211,12 @@ label SF2:
     "\"Er ... um ... Asahina-san, do you think you could help, here?\" he asked, turning a pleading gaze on the tired upperclassman."
     $ renpy.layer_at_list([PanScene_CenterToRight])
     show Mikuru Think Quest1 at right_RightScreen
-    stop music fadeout 2
+    # stop music fadeout 2
     "\"Kyon-kun was a good boy,\" Mikuru answered sleepily. \"It's Nagato-san's fault for teleporting me straight out of the shower.\""
     play sound "SE/GlassBreak1.mp3"
     nvl clear
     $ renpy.layer_at_list([PanScene_RightToLeft])
     show Koizumi Crossed Sigh1 at center
-    play music "Music/Kokuhaku.mp3"
     "\"I...it seems that a rather large closed space has appeared,\" Koizumi said in a mournful tone. \"I'm afraid I will be absent for a while....\"" 
     show Koizumi Shrug Sigh1 at center
     "He bowed apologetically towards Haruhi, then nodded at Kyon, adding, \"I will leave everything else up to you.\""
@@ -237,6 +236,7 @@ label SF2:
     show Haruhi Crossed Tsun2 at left_RightScreen
     "\"I'm expecting an explanation for this!\" Come to think of it, what were the practical limitations of 'borrowing', anyway?"
     nvl clear
+    play music "Music/Kokuhaku.mp3"
     show Yuki Talk1 at right
     "Yuki raised her gaze from her book languidly. \"Last night,\" she began, without preamble, \"I neared overload due to queued data-creation and modification requests from you." 
     show Yuki Talk2 at right
@@ -323,23 +323,24 @@ label SF2:
     "Haruhi felt her face color as she nodded. \"Right,\" she decided. \"Come on, Kyon, grab another bun and let's get back to class before the bell, okay?\""
     scene bg hallway with fade
     show Kyon Smile1 at right
-    show Haruhi Pout1 at left
-    show Hblush at left
+    show Haruhi Pout1 at TenthLeft
+    show Hblush at TenthLeft
     with dissolve
     "\"Sure,\" he agreed, taking the notes she had made for him and following her out of the clubroom. \"And, thanks for the help with my schoolwork.\""
     nvl clear
-    show Haruhi Pout2 at left
+    show Haruhi Pout2 at TenthLeft
     "\"No problem,\" she mumbled while they walked down the stairs. \"It's not as neat as training you in martial arts in your sleep, though.\""
     show Kyon Smile2 at right
     "\"It's something I can talk to my parents about without being sent to an institution,\" he told her, smirking. \"Isn't that something?\""
     nvl clear
-    show Haruhi Quest1 at left
+    show Haruhi Quest1 at TenthLeft
     "\"What's with you trying to be so nice?\""
     show Kyon Sigh2 at right
     "\"It's no good seeing you when you're feeling down,\" he said, shrugging apologetically. \"Didn't I already tell you that?\""
-    show Haruhi Smile1 at left
+    show Haruhi Smile1 at TenthLeft
     "\"Hmm,\" she mused, giving a weak smile. \"Well, that's something.\""
     nvl clear
+    stop music fadeout 3
     scene black with fade
     
     
@@ -351,18 +352,18 @@ label SF2:
     show Kyon Sigh2 at right
     with fade
     "After class finished, Kyon cracked his neck, unconsciously stretching his muscles and joints while switching stance from foot to foot, as though in preparation for a fight. Suddenly knowing basic martial arts was strange, if very convenient from a practical standpoint. Knuckling back another yawn, he turned around to follow Haruhi to the clubroom, surprised to see her ordering a stack of note paper, still sitting at her desk."
-    show Haruhi Pout1 at left with dissolve
-    show Hblush at left
+    show Haruhi Pout1 at TenthLeft with dissolve
+    show Hblush at TenthLeft
     "\"Here,\" she said, thrusting the papers towards him without meeting his eyes. \"You're exempted from the club meeting today. Go home and get some rest. If you're not too tired tomorrow morning, we'll go over the homework before class.\""
     show Kyon Worry1 at right
     nvl clear
     "\"...thanks,\" he managed, frowning. \"Um, Haruhi, are you upset with me?\""
-    show Haruhi Pout2 at left
-    "\"Not with you,\" she said, grimacing. \"Anyway, I need to have a talk with Yuki- chan and Mikuru-chan.\""
+    show Haruhi Pout2 at TenthLeft
+    "\"Not with you,\" she said, grimacing. \"Anyway, I need to have a talk with Yuki-chan and Mikuru-chan.\""
     show Kyon Ser3 at right
     "He blinked away some of his exhaustion. \"If there's anything I can help you with—\""
     hide Hblush
-    show Haruhi Sigh1 at left
+    show Haruhi Sigh1 at TenthLeft
     nvl clear
     "\"This is something I have to figure out for myself,\" she said, shaking her head. \"Really, just get some rest. We're going to have a lot to talk about tomorrow.\""
     show Kyon Worry1 at right
@@ -416,7 +417,8 @@ label SF2:
     show Taniguchi Sigh1 at left
     "Unsatisfied with silence, Taniguchi said, \"Well, be careful at least.\""
     nvl clear
-    
+    stop music fadeout 3
+
     scene black with fade
     
 
@@ -563,7 +565,9 @@ label SF2:
     show Haruhi Pout2 at left
     nvl clear
     "Haruhi's fingers drummed the table again. \"I still don't like that answer,\" she mumbled."
-    
+    nvl clear
+    stop music fadeout 3
+    scene black with fade
     
 
 label ttest:
@@ -597,7 +601,7 @@ label ttest:
     show Kyon Neutral3 at right
     show Mori at left
     nvl clear
-    "Her eyes hardened and shifted to his; he felt he should be trying to return her hard stare, but could only gaze back lethargically.Hopefully, he told himself, the lack of excited reaction would convey some sense of confidence to her." 
+    "Her eyes hardened and shifted to his; he felt he should be trying to return her hard stare, but could only gaze back lethargically. Hopefully, he told himself, the lack of excited reaction would convey some sense of confidence to her." 
     show Mori at left
     "Surprisingly enough, it seemed to, and she quickly looked away again. \"In the meantime,\" she continued, unprompted, \"we're also following up on your request to ensure that Michikyuu Kanae is provided the same protection you are afforded. Naturally, since she's joined Suzumiya-san's club, this makes her a person of interest to us anyway.\""
     show Kyon Neutral2 at right
@@ -643,27 +647,31 @@ label ttest:
     "\"Nothing serious, for the moment,\" he said dismissively. \"Maybe a coffee machine for the club room, at the rate things are going.\""
     show Mori at left
     "\"If everything works out after tomorrow, it will be a small price to pay, Sir,\" Mori agreed as the car pulled to a stop. \"Koizumi-kun has made that request many times. Thank you again for your candor, and good luck with your objectives.\""
-    scene bg KyonHouseDay
-    show Kyon Smile4 at right
-    with fade
     nvl clear
+    play music "Music/Kanashimi.mp3"
+    scene bg KyonHouseDay with wipeup
+    show Kyon Smile4 at right
+    with dissolve
+    # scene bg KyonHouseDay
+    # show Kyon Smile4 at right
+    # with fade
     "\"Don't mention it, Mori-san,\" he replied, somewhat bemused as he opened the door and stepped out of the car, waving at the pair as the vehicle drove away. Did the clubroom actually have a coffee machine coming to it...? That would be amusing ... but he'd feel guilty if it got back to Haruhi as any kind of abuse of his authority."
-    show Nonoko Smile1 at center
+    show Nonoko Smile1 at TenthLeft
     with dissolve
     show Kyon Worry1 at right
     "He saw his sister approaching, looking over her shoulder at the vanishing car curiously. \"I even said I wasn't serious,\" he mumbled to himself. \"Well, it's not like everything I say I want will come to me. If it were, I'd wish that Haruhi and I could really get along, and she'd find a way to be happy.\""
-    show Nonoko Quest1 at center
+    show Nonoko Quest1 at TenthLeft
     nvl clear
     "\"Haru-nee-san isn't happy?\" his little sister asked, drawing close enough only to hear the last part."
     show Kyon Sigh2 at right
     "\"Oh, you know,\" he said with a yawn. \"She wants me to study harder.\""
-    show Nonoko Hap1 at center
+    show Nonoko Hap1 at TenthLeft
     nvl clear
     "\"So does Mom!\" his sister said brightly. \"She's always telling me to study harder than you, since you set the bar low!\""
     hide Kyon with dissolve
     "\"That's swell,\" he grumbled, rolling his eyes and heading into the house. \"Here's an easy bar to clear: I'm going to take a nap.\""
     nvl clear
-    show Nonoko Quest1 at center
+    show Nonoko Quest1 at TenthLeft
     "\"What does setting a bar mean?\""
     
     
