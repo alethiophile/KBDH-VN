@@ -1,6 +1,6 @@
 # Chapter 3, Straightforward Flashback and Exposition Arc.
 
-label SF1:
+label SF1: 
     if music_need:
         $ renpy.music.set_volume(0.2, .5, channel="music")
     stop music fadeout 3
