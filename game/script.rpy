@@ -156,10 +156,12 @@ init:
     image Haruhi Crossed Quest1 = "Sprites/Haruhi/HaruhiCrossedQuestion1.png"
     image Haruhi Crossed Grin1 = "Sprites/Haruhi/HaruhiCrossedGrin1.png"
     image Haruhi Crossed Worry1 = "Sprites/Haruhi/HaruhiCrossedWorry1.png"
+    image Haruhi Crossed Worry2 = "Sprites/Haruhi/HaruhiCrossedWorry2.png"
     image Haruhi Crossed Smile1 = "Sprites/Haruhi/HaruhiCrossedSmile1.png"
     image Haruhi Crossed Smile2 = "Sprites/Haruhi/HaruhiCrossedSmile2.png"
     image Haruhi Crossed Smile3 = "Sprites/Haruhi/HaruhiCrossedSmile3.png"
     image Haruhi Crossed Sigh1 = "Sprites/Haruhi/HaruhiCrossedSigh1.png"
+    image Haruhi Crossed Sigh2 = "Sprites/Haruhi/HaruhiCrossedSigh2.png"
     image Haruhi Crossed Tsun1 = "Sprites/Haruhi/HaruhiCrossedTsun1.png"
     image Haruhi Crossed Tsun2 = "Sprites/Haruhi/HaruhiCrossedTsun2.png"
     
@@ -179,10 +181,12 @@ init:
     image Haruhi Crossed Casual Quest1 = "Sprites/Haruhi/HaruhiCrossedCasualQuestion1.png"
     image Haruhi Crossed Casual Grin1 = "Sprites/Haruhi/HaruhiCrossedCasualGrin1.png"
     image Haruhi Crossed Casual Worry1 = "Sprites/Haruhi/HaruhiCrossedCasualWorry1.png"
+    image Haruhi Crossed Casual Worry2 = "Sprites/Haruhi/HaruhiCrossedCasualWorry2.png"
     image Haruhi Crossed Casual Smile1 = "Sprites/Haruhi/HaruhiCrossedCasualSmile1.png"
     image Haruhi Crossed Casual Smile2 = "Sprites/Haruhi/HaruhiCrossedCasualSmile2.png"
     image Haruhi Crossed Casual Smile3 = "Sprites/Haruhi/HaruhiCrossedCasualSmile3.png"
     image Haruhi Crossed Casual Sigh1 = "Sprites/Haruhi/HaruhiCrossedCasualSigh1.png"
+    image Haruhi Crossed Casual Sigh2 = "Sprites/Haruhi/HaruhiCrossedCasualSigh2.png"
     image Haruhi Crossed Casual Tsun1 = "Sprites/Haruhi/HaruhiCrossedCasualTsun1.png"
     image Haruhi Crossed Casual Tsun2 = "Sprites/Haruhi/HaruhiCrossedCasualTsun2.png"
     
@@ -645,7 +649,9 @@ init:
     image Taniguchi Smile1 = "Sprites/Taniguchi/TaniguchiSmile1.png"
     image Taniguchi Hap1 = "Sprites/Taniguchi/TaniguchiHappy1.png"
     image Taniguchi Ser1 = "Sprites/Taniguchi/TaniguchiSerious1.png"
+    image Taniguchi Ser2 = "Sprites/Taniguchi/TaniguchiSerious2.png"
     image Taniguchi Sigh1 = "Sprites/Taniguchi/TaniguchiSigh1.png"
+    image Taniguchi Sigh2 = "Sprites/Taniguchi/TaniguchiSigh2.png"
     
     #Kunikida Sprites
     image Kunikida Neutral1 = "Sprites/Kunikida/KunikidaNeutral1.png"
@@ -664,9 +670,10 @@ init:
     image Nonoko Pout1 = "Sprites/Nonoko/NonokoPout1.png"
     image Nonoko Hap1 = "Sprites/Nonoko/NonokoHappy1.png"
     image Nonoko Quest1 = "Sprites/Nonoko/NonokoQuestion1.png"
+    image Nonoko Laugh1 = "Sprites/Nonoko/NonokoLaughing1.png"
+    image Nonoko Yell1 = "sprites/Nonoko/NonokoYell1.png"
     
     #Mori Sprites
-    
     image Mori = "Sprites/Mori/MoriPlaceholder2.png"
     
     # image Credits0 = "Backgrounds/credits0.png"
