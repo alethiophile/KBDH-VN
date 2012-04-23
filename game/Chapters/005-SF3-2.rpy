@@ -59,4 +59,96 @@ label test2:
     "\"You're in a good mood,\" he said, rubbing his chin thoughtfully as he closed and pocketed his own phone. \"Have a good dream last night?\""
     nvl clear
     hide Haruhi Grin2 with dissolve
-    "She fought to keep her face from coloring, and quickly jogged past him so he couldn't see her expression. \"Wouldn't {i}you{/i} like to know,\" she said with a chuckle. \"Come on, let's study in the club room.\""
+    "She fought to keep her face from coloring, and quickly jogged past him so he couldn't see her expression. \"Wouldn't {i}you{/i} like to know,\" she said with a chuckle. \"Come on, let's study in the club room.\""   
+label test3:
+    stop music fadeout 1
+    scene bg ClubroomCenterDay with fade
+    queue music "Music/Nanika.mp3"
+    
+    show Haruhi Ang2 at left with dissolve
+    "\"Pathetic,\" Haruhi told him between bites of her delayed breakfast, observing Kyon's progress through his homework."    
+    show Kyon Sigh2 at right with dissolve    
+    "\"Thanks for the morale boost,\" he grumbled, struggling with another answer.{nw}"    
+    show Kyon Ser2 at right    
+    extend "\"Okay,\" he declared, finishing one of the many problems he had remaining. \"I'm not going to make it. I'll focus on the classes that happen before lunch, and finish the rest later. Math's an afternoon class, so....\""    
+    nvl clear    
+    show Haruhi Focus1 at left    
+    "She nodded dubiously, then turned around and put something in the club room's mini-fridge. He flipped through the history notes she had written, paying special attention to where she had underlined specific dates or names. History was defeated quickly, thanks to the accuracy of Haruhi's notes, and the sketchy grammar notes she had left were more than enough to bolster his own knowledge in that regard. It may not have been much, but at least he had one good subject...."
+    nvl clear    
+    "\"You hungry?\" she asked."    
+    show Kyon Neutral2 at right
+    "He nodded, glancing briefly at her before turning back to his homework. \"A bit,\" he admitted. \"Just don't feel like I'm getting enough these days. Constantly ravenous.... And I slept through dinner last night.\" He sighed, breaking from his homework to stretch his arms overhead. \"I really need to stop doing that.\""
+    nvl clear
+    show Haruhi Grin2 at left
+    "\"Nighttime heroics?\" she teased him, smirking. {nw}" 
+    show Haruhi Hap4 at left
+    extend "\"Alright. If you finish your homework for the periods before lunch, I'll let you have my leftovers during break. It's a good deal, you know! But the brigade chief can't just hand out rewards with no rhyme or reason, so, be sure to earn it!\""
+    nvl clear
+    show Kyon Smile4 at right
+    "\"Sure thing,\" he agreed, finishing up the last few lines he needed before he was done. \"Lucky there's no essay,\" he added, clenching and unclenching his right hand to relieve the writer's cramp he'd started to develop. After a glance at the clock, he started packing his homework and the notes Haruhi had made for him into his schoolbag. \"But, seriously Haruhi ... thanks for helping me out with my homework.\""
+    nvl clear
+    show Haruhi Sup1 at left
+    "Her face colored very slightly, {nw}"
+    show Haruhi Hap2 at left
+    extend "but she puffed out her chest and lifted her nose to sniff imperiously. \"I told you once, and I'll say it again,\" she insisted, \"no vice commander of mine is going to settle for bad grades when they can obviously earn better!\" She relaxed her stance a bit, stealing her own glance at the clock but not moving to collect her bag."
+    nvl clear
+    show Haruhi Pout1 at left
+    "\"But....\" After a brief hesitation, she blurted out, \"I'd help you even if you weren't the vice commander,\" without meeting his eyes. \"I'd do it for any member of the brigade ... you're just the only one that doesn't do well.\""
+    nvl clear
+    show Kyon Pain2 at right
+    "He winced, realizing that it was true.... Koizumi was smart enough that he was placed by his own merit, not Organization manipulation. Yuki's average was only short of being perfect by the four percent of answers she simply didn't bother completing. Mikuru struggled for her grades, but diligently did her homework despite brigade duties." 
+    nvl clear
+    "Haruhi, naturally, was Haruhi. So he had no real excuse for poor grades except for being unintelligent. His head sank, considering that. He couldn't even think to try and seek solace in Kanae's grades, whatever they were. It just didn't seem right to judge himself against an underclassman."
+    "\"Yeah,\" he allowed after a moment. \"It's a bit sad being the dumb one.\""
+    nvl clear
+    show Haruhi Unhap1 at left
+    "\"You're not dumb,\" Haruhi retorted with an instant roll of her eyes, snickering. \"You quote string theory and ancient philosophy offhand. I've seen your grades for grammar — and English. Obviously, your issue is motivation. You don't {i}really{/i} need my help with your homework ... it just seems that if I don't help you, you don't {i}do{/i} it.\""
+    nvl clear
+    show Kyon Smile2 at right
+    "She had him there, he realized, grimacing. \"Touche,\" he allowed, smirking. He decided to take a stab at something, unsure what Haruhi had let herself remember of the 'dream' the night before. \"Hey, can I ask you something?\""
+    show Haruhi Sigh1 at left
+    "\"Sure,\" she said quickly, nodding at him. \"But, we should head to class.\""
+    nvl clear
+    show Kyon Puzzle1 at right
+    "He rose from his seat and hefted his bag, while she shoved her own collection of papers into her bag. \"Haruhi, if I can ask you to be honest about this ... when you say you would do it for anyone in the brigade ... don't you really mean any of your friends?\""
+    nvl clear
+    show Haruhi Sup1 at left
+    "She made a choking noise, dropping the tupperware container on the floor. It remained sealed, and she hid her expression from him while she stooped to collect it. \"W...well, if you're going to be so blunt about it,\" she managed, her face dark with a blush. {nw}" 
+    show Haruhi Unhap2 at left
+    extend "She stomped one foot on the floor and waved the tupperware menacingly. \"Why are you asking me this now?!\""
+    show Kyon Worry1 at right
+    "\"It was something Kanae-chan mentioned the other day,\" he said with a shrug, opening the clubroom door. {nw}" 
+    play sound "SE/dooropenfast.wav"
+    extend"\"She said she was occasionally 'lucky enough to have friends'. I just sometimes worry that you forget that your fellow brigade members are friends, too, not only subordinates in the club.\""
+    nvl clear
+    show Haruhi Sup3 at left
+    "\"Man,\" Haruhi grumbled, closing the door then hurrying to Kyon's side, \"you make it sound like I can't stand having equals!\"  {nw}" 
+    show Haruhi Hap4 at left
+    extend "She playfully punched him in the shoulder, though he was surprised that it didn't sting in the slightest, even though he felt it. \"What, do you think that just because you're getting your homework done, now, I've turned stupid on you? Or weak? You know, if you had the chutzpa for it, you could have formed the SOS Brigade and I would have followed....\""
+    nvl clear
+    scene bg stairwell with fade
+    play sound "SE/footsteps13.mp3"
+    show Kyon Smile3 at right
+    "He glanced at her sidelong as they stepped into the stairwell. \"Really?\" he asked, raising one eyebrow. \"I find it hard to imagine....\""
+    show Haruhi Grin2 at left
+    "\"That's because you're laaaazy,\" she said, drawing out the sound and sticking her tongue out at him. \"If you had actually made the club instead of just giving me the idea.... But that's also why you're not an idiot, even if you do dumb things sometimes.\""
+    nvl clear
+    scene bg hallway with fade
+    show Kyon Smile2 at right
+    "\"Sing on sweet angel;\" Kyon retorted with a roll of his eyes, \"mine ears ache for thy faint praise; damning though it be.\""
+    show Haruhi Grin1 at left
+    "She snickered at him, narrowing her eyes as though she knew something he didn't. \"Oh, and now the refuge in sarcasm,\" she chided him. \"Sometimes, you are sooooo predictable. Hey, when did you pick up poetic verses, anyway? The haiku is kind of new.\""
+    nvl clear
+    show Kyon Sigh4 at right
+    "\"Felt a little left behind when you and Tsuruya were passing back and forth those poems you memorized a while back,\" he admitted. \"I read up on the style, but didn't feel like destroying precious brain cells to memorize anything.\""
+    show Haruhi Unhap1 at left
+    play sound "SE/dooropenfast.wav"
+    "\"That's exactly what I'm saying!\" Haruhi protested, stomping one foot on the floor as he slid open the door to the classroom. \"You're {i}lazy{/i}.\""
+    nvl clear
+    scene bg classroom with fade:
+       size (800,600)
+    "She fell silent at the sight of the classroom, all other students already seated, glancing over their shoulders at the pair. Everyone quickly looked away, though at a glance, Okabe-sensei hadn't arrived yet either. Shrugging, Kyon closed the door after Haruhi stepped through and went to his desk."
+    "\"Anyway,\" Haruhi continued in a semi-hushed tone, eyeing the other students in the room, \"what's going on, here?\""
+    "\"No idea,\" he tossed back just as quietly. His eyes scanned across Kunikida and Taniguchi, but both of them kept their eyes oriented directly forward. \"Seems a bit odd, though.\""
+    "\"Eh,\" Haruhi mused, tapping a fingertip on her desk thoughtfully. \"Well, I'm sure it's nothing ... probably.\""
+    "Kyon nodded, getting out his homework for the next period as well as the detested, unfinished math. If there was no teacher around...."
