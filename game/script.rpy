@@ -32,6 +32,7 @@ init:
     image bg ClubroomLeftDay = "Backgrounds/ClubroomLeftDay.png"
     image bg ClubroomFullDay ="Backgrounds/ClubroomFullDay.jpg"
     image bg ClubroomRightDay = "Backgrounds/ClubroomRightDay.png"
+    image bg ClubroomFullNight = "Backgrounds/ClubroomFullNight.png"
     image bg ClubroomBack = "Backgrounds/ClubBack.png"
     image ClubTable ="Backgrounds/ClubTable.png"
     image bg YukiApartmentDay = "Backgrounds/YukiApartmentDay.png"
@@ -39,6 +40,7 @@ init:
     image bg YukiRoomLeft = "Backgrounds/YukiRoomLeft.png"
     image bg YukiRoomRight = "Backgrounds/YukiRoomRight.png"
     image bg YukiRoomCenter = "Backgrounds/YukiRoomCenter.jpg"
+    image bg SchoolOutside1 = "Backgrounds/SchoolOutside1.png"
     image bg SchoolEntranceLeft = "Backgrounds/SchoolEntranceLeft.png"
     image bg Cafe = "Backgrounds/Cafe.jpg"
     image bg ParkBench = "Backgrounds/ParkBench.png"
@@ -49,6 +51,7 @@ init:
     image bg MemoryYuki = "Backgrounds/MemoryYuki.jpg"
     image bg MemoryMikuru = "Backgrounds/MemoryMikuru.jpg"
     image bg MemoryKoizumi = "Backgrounds/MemoryKoizumi.jpg"
+    image bg Kiss = "Backgrounds/kiss.jpg"
  
     
     image white = "#ffffff"
@@ -211,8 +214,18 @@ init:
     image Haruhi Point Casual Hap1 = "Sprites/Haruhi/HaruhiPointCasualHappy1.png"
     image Haruhi Point Casual Scold1 = "Sprites/Haruhi/HaruhiPointCasualScold1.png"
     
+    image Haruhi Hips Ang1 = "Sprites/Haruhi/HaruhiHipsAngry1.png"
+    image Haruhi Hips Ang2 = "Sprites/Haruhi/HaruhiHipsAngry2.png"
+    image Haruhi Hips Ang3 = "Sprites/Haruhi/HaruhiHipsAngry3.png"
+    
+    image Haruhi Hips Casual Ang1 = "Sprites/Haruhi/HaruhiHipsCasualAngry1.png"
+    image Haruhi Hips Casual Ang2 = "Sprites/Haruhi/HaruhiHipsCasualAngry2.png"
+    image Haruhi Hips Casual Ang3 = "Sprites/Haruhi/HaruhiHipsCasualAngry3.png"
+    
     image Hblush = "Sprites/Haruhi/HaruhiSideBlush1.png"
     image Hblush Casual = "Sprites/Haruhi/HaruhiSideCasualBlush1.png"
+    image Hblush Hips = "Sprites/Haruhi/HblushHips.png"
+    image Hblush Hips = "Sprites/Haruhi/HblushHipsCasual.png"
     image Htears ="Sprites/Haruhi/HTearsSide1.png"
     image Htears Casual = "Sprites/Haruhi/HTearsSideCasual1.png"
     # image Hblush Crossed = "Sprites/Haruhi/HBlushCrossed.png"
@@ -228,6 +241,7 @@ init:
     image Kyon Sigh2 = "Sprites/Kyon/KyonSigh2.png"
     image Kyon Sigh3 = "Sprites/Kyon/KyonSigh3.png"
     image Kyon Sigh4 = "Sprites/Kyon/KyonSigh4.png"
+    image Kyon Sigh5 = "Sprites/Kyon/KyonSigh5.png"
     image Kyon Neutral1 = "Sprites/Kyon/KyonNeutral1.png"
     image Kyon Neutral2 = "Sprites/Kyon/KyonNeutral2.png"
     image Kyon Neutral3 = "Sprites/Kyon/KyonNeutral3.png"
@@ -263,6 +277,7 @@ init:
     image Kyon Casual Sigh2 = "Sprites/Kyon/KyonCasualSigh2.png"
     image Kyon Casual Sigh3 = "Sprites/Kyon/KyonCasualSigh3.png"
     image Kyon Casual Sigh4 = "Sprites/Kyon/KyonCasualSigh4.png"
+    image Kyon Casual Sigh5 = "Sprites/Kyon/KyonCasualSigh5.png"
     image Kyon Casual Neutral1 = "Sprites/Kyon/KyonCasualNeutral1.png"
     image Kyon Casual Neutral2 = "Sprites/Kyon/KyonCasualNeutral2.png"
     image Kyon Casual Neutral3 = "Sprites/Kyon/KyonCasualNeutral3.png"
@@ -301,9 +316,11 @@ init:
     image Kyon Ser3 Flip = im.Flip("Sprites/Kyon/KyonSerious3.png", horizontal=True)
     image Kyon Ang1 Flip = im.Flip("Sprites/Kyon/KyonAngry1.png", horizontal=True)
     
+    image KTears = "Sprites/Kyon/Ktears.png"
     image KBlush = "Sprites/Kyon/KBlush.png"
     image KBlush Casual = "Sprites/Kyon/KBlushCasual.png"
     image KPaper = "Sprites/Kyon/KyonPaper.png"
+    
     
     #Asakura Sprites
     image Stabby = "Sprites/Asakura/AsakuraStabTest.png"
@@ -688,6 +705,159 @@ init:
     
     #Mori Sprites
     image Mori = "Sprites/Mori/MoriPlaceholder2.png"
+    
+    #Closed space variants
+    
+    image bg SchoolEntranceLeft CS = im.MatrixColor("Backgrounds/SchoolEntranceLeft.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image bg SchoolOutside1 CS = im.MatrixColor("Backgrounds/SchoolOutside1.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image bg hallway CS = im.MatrixColor("Backgrounds/hallway.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image bg ClubHallLeft CS = im.MatrixColor("Backgrounds/ClubHallLeft.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image bg ClubroomFullNight CS = im.MatrixColor("Backgrounds/ClubroomFullNight.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image ClubroomFullNight Glow = im.MatrixColor("Backgrounds/ClubroomFullNight.png",
+        im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(.35))
+# 
+#     
+    image Kyon CS Ser1 = im.MatrixColor("Sprites/Kyon/KyonSerious1.png",
+         im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Kyon CS Ser2 = im.MatrixColor("Sprites/Kyon/KyonSerious2.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Kyon CS Ser3 = im.MatrixColor("Sprites/Kyon/KyonSerious3.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Kyon CS Sigh1 = im.MatrixColor("Sprites/Kyon/KyonSigh1.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Kyon CS Sigh2 = im.MatrixColor("Sprites/Kyon/KyonSigh2.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Kyon CS Sigh3 = im.MatrixColor("Sprites/Kyon/KyonSigh3.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Kyon CS Sigh4 = im.MatrixColor("Sprites/Kyon/KyonSigh4.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Kyon CS Neutral1 = im.MatrixColor("Sprites/Kyon/KyonNeutral1.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Kyon CS Neutral2 = im.MatrixColor("Sprites/Kyon/KyonNeutral2.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Kyon CS Neutral3 = im.MatrixColor("Sprites/Kyon/KyonNeutral3.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Kyon CS Neutral4 = im.MatrixColor("Sprites/Kyon/KyonNeutral4.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Kyon CS Ang1 = im.MatrixColor("Sprites/Kyon/KyonAngry1.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Kyon CS Ang2 = im.MatrixColor("Sprites/Kyon/KyonAngry2.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Kyon CS Ang3 = im.MatrixColor("Sprites/Kyon/KyonAngry3.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Kyon CS Ang4 = im.MatrixColor("Sprites/Kyon/KyonAngry4.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Kyon CS Pain1 = im.MatrixColor("Sprites/Kyon/KyonPained1.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Kyon CS Pain2 = im.MatrixColor("Sprites/Kyon/KyonPained2.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Kyon CS Smile1 = im.MatrixColor("Sprites/Kyon/KyonSmile1.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Kyon CS Smile2 = im.MatrixColor("Sprites/Kyon/KyonSmile2.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Kyon CS Smile3 = im.MatrixColor("Sprites/Kyon/KyonSmile3.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Kyon CS Smile4 = im.MatrixColor("Sprites/Kyon/KyonSmile4.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Kyon CS Smile5 = im.MatrixColor("Sprites/Kyon/KyonSmile5.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Kyon CS Worry1 = im.MatrixColor("Sprites/Kyon/KyonWorry1.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Kyon CS Worry2 = im.MatrixColor("Sprites/Kyon/KyonWorry1.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Kyon CS Puzzle1 = im.MatrixColor("Sprites/Kyon/KyonPuzzled1.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Kyon CS Sup1 = im.MatrixColor("Sprites/Kyon/KyonSurprised1.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Kyon CS Sup2 = im.MatrixColor("Sprites/Kyon/KyonSurprised2.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Kyon CS Unhap1 = im.MatrixColor("Sprites/Kyon/KyonUnhappy1.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Kyon CS Unhap2 = im.MatrixColor("Sprites/Kyon/KyonUnhappy2.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Kyon CS Unhap3 = im.MatrixColor("Sprites/Kyon/KyonUnhappy3.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Kyon CS Unhap4 = im.MatrixColor("Sprites/Kyon/KyonUnhappy4.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Kyon CS Unhap5 = im.MatrixColor("Sprites/Kyon/KyonUnhappy5.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+#     
+#         
+    image Haruhi CS Sup1 = im.MatrixColor("Sprites/Haruhi/HaruhiSideSurprised1.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Haruhi CS Sup2 = im.MatrixColor("Sprites/Haruhi/HaruhiSideSurprised2.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Haruhi CS Sup3 = im.MatrixColor("Sprites/Haruhi/HaruhiSideSurprised3.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Haruhi CS Ang1 = im.MatrixColor("Sprites/Haruhi/HaruhiSideAngry1.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Haruhi CS Ang2 = im.MatrixColor("Sprites/Haruhi/HaruhiSideAngry2.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Haruhi CS Ang3 = im.MatrixColor("Sprites/Haruhi/HaruhiSideAngry3.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Haruhi CS Ang4 = im.MatrixColor("Sprites/Haruhi/HaruhiSideAngry4.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Haruhi CS Ang5 = im.MatrixColor("Sprites/Haruhi/HaruhiSideAngry5.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Haruhi CS Hap1 = im.MatrixColor("Sprites/Haruhi/HaruhiSideHappy1.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Haruhi CS Hap2 = im.MatrixColor("Sprites/Haruhi/HaruhiSideHappy2.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Haruhi CS Hap3 = im.MatrixColor("Sprites/Haruhi/HaruhiSideHappy3.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Haruhi CS Hap4 = im.MatrixColor("Sprites/Haruhi/HaruhiSideHappy4.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Haruhi CS Pout1 = im.MatrixColor("Sprites/Haruhi/HaruhiSidePout1.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Haruhi CS Pout2 = im.MatrixColor("Sprites/Haruhi/HaruhiSidePout2.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Haruhi CS Eyeroll1 = im.MatrixColor("Sprites/Haruhi/HaruhiSideEyeroll1.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Haruhi CS Eyeroll2 = im.MatrixColor("Sprites/Haruhi/HaruhiSideEyeroll2.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Haruhi CS Quest1 = im.MatrixColor("Sprites/Haruhi/HaruhiSideQuestion1.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Haruhi CS Quest2 = im.MatrixColor("Sprites/Haruhi/HaruhiSideQuestion2.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Haruhi CS Grin1 = im.MatrixColor("Sprites/Haruhi/HaruhiSideGrin1.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Haruhi CS Grin2 = im.MatrixColor("Sprites/Haruhi/HaruhiSideGrin2.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Haruhi CS Worry1 = im.MatrixColor("Sprites/Haruhi/HaruhiSideWorry1.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Haruhi CS Worry2 = im.MatrixColor("Sprites/Haruhi/HaruhiSideWorry2.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Haruhi CS Smile1 = im.MatrixColor("Sprites/Haruhi/HaruhiSideSmile1.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Haruhi CS Smile2 = im.MatrixColor("Sprites/Haruhi/HaruhiSideSmile2.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Haruhi CS Smile3 = im.MatrixColor("Sprites/Haruhi/HaruhiSideSmile3.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Haruhi CS Sigh1 = im.MatrixColor("Sprites/Haruhi/HaruhiSideSigh1.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Haruhi CS Sigh2 = im.MatrixColor("Sprites/Haruhi/HaruhiSideSigh2.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Haruhi CS Sigh3 = im.MatrixColor("Sprites/Haruhi/HaruhiSideSigh3.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Haruhi CS Unhap1 = im.MatrixColor("Sprites/Haruhi/HaruhiSideUnhappy1.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Haruhi CS Unhap2 = im.MatrixColor("Sprites/Haruhi/HaruhiSideUnhappy2.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Haruhi CS Unhap3 = im.MatrixColor("Sprites/Haruhi/HaruhiSideUnhappy3.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Haruhi CS Focus1 = im.MatrixColor("Sprites/Haruhi/HaruhiSideFocus1.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Haruhi CS Neutral1 = im.MatrixColor("Sprites/Haruhi/HaruhiSideNeutral1.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    image Haruhi CS Neutral2 = im.MatrixColor("Sprites/Haruhi/HaruhiSideNeutral2.png",    
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+#     
+    
     
     # image Credits0 = "Backgrounds/credits0.png"
     # image Credits1 = "Backgrounds/credits1.png"
