@@ -232,6 +232,7 @@ init:
     image Kyon Neutral2 = "Sprites/Kyon/KyonNeutral2.png"
     image Kyon Neutral3 = "Sprites/Kyon/KyonNeutral3.png"
     image Kyon Neutral4 = "Sprites/Kyon/KyonNeutral4.png"
+    image Kyon Neutral5 = "Sprites/Kyon/KyonNeutral5.png"
     image Kyon Ang1 = "Sprites/Kyon/KyonAngry1.png"
     image Kyon Ang2 = "Sprites/Kyon/KyonAngry2.png"
     image Kyon Ang3 = "Sprites/Kyon/KyonAngry3.png"
@@ -560,6 +561,8 @@ init:
     image Tsuruya Smile4 = "Sprites/Tsuruya/TsuruyaSmile4.png"
     image Tsuruya Sup1 = "Sprites/Tsuruya/TsuruyaSurprised1.png"
     image Tsuruya Worry1 = "Sprites/Tsuruya/TsuruyaWorry1.png"
+    image Tsuruya Worry2 = "Sprites/Tsuruya/TsuruyaWorry2.png"    
+    image Tsuruya Neutral1 = "Sprites/Tsuruya/TsuruyaNeutral1.png"
     
     image Tsuruya Wave Grin1 = "Sprites/Tsuruya/TsuruyaWaveGrin1.png"
     image Tsuruya Wave Grin2 = "Sprites/Tsuruya/TsuruyaWaveGrin2.png"
