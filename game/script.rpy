@@ -710,7 +710,6 @@ init:
     image Mori = "Sprites/Mori/MoriPlaceholder2.png"
     
     #Closed space variants
-    
     image bg SchoolEntranceLeft CS = im.MatrixColor("Backgrounds/SchoolEntranceLeft.png",
         im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
     image bg SchoolOutside1 CS = im.MatrixColor("Backgrounds/SchoolOutside1.png",
@@ -861,12 +860,6 @@ init:
         im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
 #     
     
-    
-    # image Credits0 = "Backgrounds/credits0.png"
-    # image Credits1 = "Backgrounds/credits1.png"
-    # image Credits2 = "Backgrounds/credits2.png"
-    # image Credits3 = "Backgrounds/credits3.png"
-    
     # "Stakes" for stake rain in Asakura capture scene.
     image stake1:
         "Sprites/Effects/stake.png"
@@ -895,7 +888,7 @@ init:
     # Title cards
     image creds 0 = Text("Presented by:\n\nBig Damn VN Brigade\n\nAgasa\nalethiophile\nFilraen\nOroboro\nPax Empyrean\nJason Ulloa\nZer0Null\n\n\nMany thanks to:\n\njonbob\nSpecular", text_align=0.5)
     image creds 1 = Text("Special thanks to:\n\nBrian Randall\nauthor of Kyon: Big Damn Hero\n\nand\n\nNagaru Tanigawa\nauthor of Suzumiya Haruhi series", text_align=0.5)
-    image creds 2 = Text("Disclaimer: This production makes use\nof intellectual property belongin to\nBrian Randall, Nagaru Tanigawa \nand others. No disrespect is intended.\n\nNeither Kyon: Big Damn Hero \nnor Suzumiya Haruhi and related \ncharacters are owned by anyone \nassociated with Big Damn VN", text_align=0.5)
+    image creds 2 = Text("Disclaimer: This production makes use\nof intellectual property belonging to\nBrian Randall, Nagaru Tanigawa \nand others. No disrespect is intended.\n\nNeither Kyon: Big Damn Hero \nnor Suzumiya Haruhi and related \ncharacters are owned by anyone \nassociated with Big Damn VN", text_align=0.5)
 
     # have to have different image tags so can show them staggered
     image screds0 = Text("Big Damn VN Brigade presents:", text_align=0.5, size=30)

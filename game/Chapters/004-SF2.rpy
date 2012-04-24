@@ -638,21 +638,25 @@ label SF2:
     nvl clear
     stop music fadeout 3
     
-    call eyecatch("Tuesday, April 19") from SF2_sc004    
+    call eyecatch("Tuesday, April 19") from SF2_sc004
 
 label ttest:
     play music "Music/Kyoufunohajimari.mp3"    
-    scene bg SchoolEntranceLeft with fade
+    scene bg SchoolEntranceLeft
     show Kyon Neutral3 at right
     show Mori at left
+    with fade
     "In a dark mood, Kyon strode out of the school grounds. He paused a few steps out of the gate as a mature woman in a sharp suit approached him, giving a terse nod."
     show Kyon Neutral2 at right
     "\"Mori-san,\" he greeted her neutrally, struggling to keep the irritation his classmates had instilled from his face."
+    show Kyon Neutral3 at right
     "\"Sir,\" she greeted him, somewhat stiffly. \"I'm here for our meeting, as you requested?\""
     nvl clear
     show Kyon Sigh1 at right
     "He took a deep breath and gave the woman a slow nod of his own. \"Is Koizumi in trouble?\" he asked."
+    show Kyon Sigh3 at right
     "Her expression eased slightly as she shook her head. \"He's just busy at the moment, Sir.\" He spent an idle moment wondering what the hell his future self was going to say to this woman that had made her so deferential to him. \"This way...?\""
+    nvl clear
     "The familiar black cab awaited a short distance down the street, and he shrugged at it in bemusement. It would get him home faster, letting him bypass the train. Which in turn, most likely meant that he {i}should{/i} get more sleep once he got home...." 
     nvl clear
     scene bg Cab with fade
@@ -661,43 +665,55 @@ label ttest:
     "He got into the back seat, Mori opening he door on the opposite side and sitting next to him. Arakawa wordlessly started the car up."
     show Kyon Neutral2 at right
     "He didn't feel like trying to puzzle through whatever it was that his future self had arranged, so he decided he'd try relying on raw bluster: \"If you'd care to begin...?\""
-    show Mori at left
     nvl clear
-    "\"Very well,\" she agreed. \"While en route to his current assignment, Koizumi- kun relayed an update on the situation with Suzumiya-san.\""
+    show Mori at left
+    show Kyon Neutral3 at right
+    "\"Very well,\" she agreed. \"While en route to his current assignment, Koizumi-kun relayed an update on the situation with Suzumiya-san.\""
     show Kyon Neutral2 at right
     "\"Okay. And...?\""
+    nvl clear
     show Mori at left
-    "\"So far,\" Mori said evenly, her eyes turning to fix on some distant point outside of the car window, \"everything regarding Suzumiya-san has matched your predictions. Assuming you're correct, and tomorrow morning is the peak of closed space creation for the two week period that we established, then we'll accept that you have the situation under control.\"" 
     show Kyon Neutral3 at right
+    "\"So far,\" Mori said evenly, her eyes turning to fix on some distant point outside of the car window, \"everything regarding Suzumiya-san has matched your predictions. Assuming you're correct, and tomorrow morning is the peak of closed space creation for the two week period that we established, then we'll accept that you have the situation under control.\"" 
     show Mori at left
     nvl clear
     "Her eyes hardened and shifted to his; he felt he should be trying to return her hard stare, but could only gaze back lethargically. Hopefully, he told himself, the lack of excited reaction would convey some sense of confidence to her." 
+    nvl clear
     show Mori at left
     "Surprisingly enough, it seemed to, and she quickly looked away again. \"In the meantime,\" she continued, unprompted, \"we're also following up on your request to ensure that Michikyuu Kanae is provided the same protection you are afforded. Naturally, since she's joined Suzumiya-san's club, this makes her a person of interest to us anyway.\""
     show Kyon Neutral2 at right
     nvl clear
     "\"Of course,\" he said, nodding. Why had he thought to request that from Arakawa? It made sense the Organization would watch over anyone in the Brigade {i}anyway{/i}, if only to determine who they were and what powers, if any, they might have. Stabbing blindly at the next conversation topic, he asked, \"And the puppet Student Council?\""
+    nvl clear
     show Mori at left
+    show Kyon Neutral3 at right
     "\"Well, as you said, Sir,\" Mori sighed, \"there's not much we can do about Kimidori Emiri. However, she was never part of our equations anyway; in fact, we typically tried to hide our agenda from her because the IDSE and ourselves have our own goals. If she's an enemy, I don't hesitate to lay that problem firmly at {i}your{/i} feet, since you've started this mess. That being said, we had nothing planned within the next two weeks anyway.\""
     show Kyon Sigh2 at right
     nvl clear
     "\"Right,\" he said, committing the details to memory. This would absolutely have to be written down if he was to manage whatever madness he was going to do last Sunday." 
+    nvl clear
     show Kyon Neutral2 at right
     "\"Good. Did Koizumi mention the potential IDSE bargaining chip we had on the table?\" Those words sounded good ... right out of an intrigue filled political drama. Doubtless Haruhi would be thrilled to hear this story later."
     show Mori at left
+    show Kyon Neutral3 at right
     "\"New data?\" Mori asked, giving a small nod. \"Again, that falls firmly into the area of 'not our problem'.\""
     show Kyon Ser3 at right
     nvl clear
     "\"I know,\" he said patiently. \"But if we're working together, well, as I mentioned before, I'd like us to be on friendly terms. My plan isn't something inane, like, 'bite off more than you can chew and chew it anyway'. While I am doing my best, I don't have the arrogance to believe I'm infallible.\""
+    nvl clear
     show Mori at left
+    show Kyon Ser1 at right
     "Mori turned her face back to him, her eyes softening as she raised her eyebrows. \"More and more, I'm starting to like you, Sir,\" she said with a wry grin." 
+    nvl clear
     show Mori at left
     "\"You remind me of myself at your age. Well, in that case, the only thing that occurred to me is that ... this entire thing, every action you've taken so far, could be an IDSE orchestrated ploy. That is to say ... for all we know, they've arranged things from behind the scenes specifically so that you would 'collar' Suzumiya-san and thus restrict their precious 'data creation' to a safely controlled vector.\""
     show Kyon Neutral3 at right
     nvl clear
     "The thought chilled him deeply, to consider he could have been manipulated so perfectly. If it were true, had Yuki betrayed him? Or was she, too, just a puppet? He didn't like the idea of anyone being a puppet for anyone else.... Resolving to ensure that Haruhi endured less harsh restrictions from himself in the future, he gave a thoughtful nod he didn't quite feel."
+    nvl clear
     show Kyon Neutral2 at right
     "\"Then again,\" he said, realizing that thanks to exhaustion, his expression hadn't changed despite his alarm, \"this also connects to the other theories of the Organization; Haruhi is God, for example.\"" 
+    nvl clear
     show Kyon Neutral3 at right
     "He'd never believed that one.... Able to warp reality, sure, but God? Even Koizumi said he hadn't bought into that one, and he was the closest thing to a Haruhi-worshiper Kyon had ever met. \"I don't think I'm going to ask Haruhi to create a rock she can't move anytime soon ... but we can't exactly prove this, can we?\""
     show Mori at left
@@ -705,16 +721,17 @@ label ttest:
     "\"We can't,\" Mori agreed. \"I'm guessing you had already considered it, then?\""
     show Kyon Sigh2 at right
     "\"Not really,\" he admitted. \"The theory's sound, but I don't believe any of us are predictable enough for the IDSE to risk it. I can easily see them wanting Haruhi controlled to provoke reactions safely, but threatening Yuki? After what I told them?" 
-    show Kyon Smile2 at right
-    "That's like giving a monkey a chainsaw and hoping that it'll create a new form of art. It might work, but probably it's just going to get messy and end poorly.\""
-    show Mori at left
     nvl clear
+    show Kyon Smile2 at right
+    "\"That's like giving a monkey a chainsaw and hoping that it'll create a new form of art. It might work, but probably it's just going to get messy and end poorly.\""
+    show Mori at left
     "Eyes widening in surprise, Mori laughed aloud; from the front seat, even Arakawa snickered. \"Your argument is as compelling as mine,\" Mori allowed, recovering."
+    nvl clear
     show Mori at left
     "\"Neither can truly be proven yet. Very well, Sir. I hope for all of our sakes, you're able to do as well as you claim. In the meantime, is there anything else your plans will require?\""
     show Kyon Neutral2 at right
-    nvl clear
     "\"Nothing serious, for the moment,\" he said dismissively. \"Maybe a coffee machine for the club room, at the rate things are going.\""
+    nvl clear
     show Mori at left
     "\"If everything works out after tomorrow, it will be a small price to pay, Sir,\" Mori agreed as the car pulled to a stop. \"Koizumi-kun has made that request many times. Thank you again for your candor, and good luck with your objectives.\""
     nvl clear
@@ -723,6 +740,7 @@ label ttest:
     show Kyon Smile4 at right
     with dissolve
     "\"Don't mention it, Mori-san,\" he replied, somewhat bemused as he opened the door and stepped out of the car, waving at the pair as the vehicle drove away. Did the clubroom actually have a coffee machine coming to it...? That would be amusing ... but he'd feel guilty if it got back to Haruhi as any kind of abuse of his authority."
+    nvl clear
     show Nonoko Smile1 at TenthLeft
     with dissolve
     show Kyon Worry1 at right
@@ -732,17 +750,20 @@ label ttest:
     "\"Haru-nee-san isn't happy?\" his little sister asked, drawing close enough only to hear the last part."
     show Kyon Sigh2 at right
     "\"Oh, you know,\" he said with a yawn. \"She wants me to study harder.\""
-    show Nonoko Hap1 at TenthLeft
     nvl clear
+    show Nonoko Hap1 at TenthLeft
+    show Kyon Sigh4 at right
     "\"So does Mom!\" his sister said brightly. \"She's always telling me to study harder than you, since you set the bar low!\""
     hide Kyon with dissolve
     "\"That's swell,\" he grumbled, rolling his eyes and heading into the house. \"Here's an easy bar to clear: I'm going to take a nap.\""
     nvl clear
     show Nonoko Quest1 at TenthLeft
     "\"What does setting a bar mean?\""
+    nvl clear
+    stop music fadeout 3
     
+    call eyecatch("Tuesday, April 19") from SF2_sc005
     
-    # "* * *"
     # "His eyes slowly blinked open from his nap, staring upward into Yuki's eyes as she peered down at him. He forced back a yawn and sat up, glancing around her apartment. Looking somewhat irritable and wearing a bathrobe, Mikuru knelt at the table, mumbling about getting phone calls first. Kanae was sitting next to Mikuru, working on her homework and evidently unperturbed."
     # "\"Hello?\" he said by way of greeting, looking down at himself ... he was wearing his dress shirt and slacks, too tired to change into his pajamas or strip. Though, that last thought was thankful, in retrospect."
     # "Kanae blinked at his voice and looked around. \"Oh!\" she exclaimed. \"This isn't my room! I didn't even feel the slide!\""
