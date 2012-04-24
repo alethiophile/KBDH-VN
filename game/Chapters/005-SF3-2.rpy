@@ -1,72 +1,6 @@
 # Chapter 5, Straightforward Flashback and Exposition Arc.
 #Need BG for the inside of Kyon's house. the outside is used as a placeholder.
-label SF3:
-#label Test:
-    # "\"It happens,\" he said casually, seeming unconcerned. Glancing at their surroundings, he observed, \"I don't see any Shinjin. Back in the school again?\""
-    # "\"I don't even understand how you can see this and not be alarmed,\" she said with a sigh, looking up at the sky with him. \"So ... you said that this happened last time when I got too frustrated, and then I accidentally almost destroyed the world?\""
-    # "\"That's what I've been told,\" he agreed. \"But we've got a little time, I think.\""
-    # "\"I can't help but feel a bit simple-minded if all it took for you to snap me out of this last time was....\" She trailed off and looked away. \"That wasn't an invitation,\" she added in warning when he lowered his gaze to study her."
-    # "He raised an eyebrow at her and said nothing before he shrugged, leading the way into the school building. He moved to the same locked door he had smashed the window of last time, but she stopped him with a shake of her head. Didn't he understand? This was the world she was constructing ... not even meaning to ... and he'd gone and told her what she was, here. \"I have the keys,\" she said, willing them to appear in her skirt pocket."
-    # "Naturally, they did, and he followed her, nonplussed. After a moment, she realized he was holding one hand out, very slightly towards her, though he didn't actually look at her directly. Fighting her own hesitation down, she took his hand in her own, and they walked together to the club room. \"You can take my arm,\" he suggested, just like the last time they had been in this strange space. \"It makes for a better mood.\""
-    # "She shook her head at that, then unlocked the door, wondering why she had bothered with keys ... she could just have willed the door open, after all. He flipped on the light after releasing her hand and went to the window, gazing outside. \"Well?\" she asked, breaking the silence and closing the door behind her. \"I'm sure you've got something to say.\""
-    # "\"I could say I'm sorry,\" he told her, shaking his head. \"Would that be enough?\""
-    # "\"It's not your fault,\" she sighed. \"I'm just ... really stressed out.\""
-    # "He shrugged, turning around and fiddling with the tea kettle for a minute. \"My tea still sucks,\" he warned her. \"It may not be deadly, but I can't promise anything.\""
-    # "\"You have to change the leaves,\" she observed. Then she shook her head again. \"Are you serious? Here we are on the verge of me destroying the world — again! — and all you can think to do is make tea?! Gods, if aliens arrived, what would you do, apologize for being out of crumpets and discuss the Hanshin Tigers?\""
-    # "He snorted, carelessly dumping the old leaves into the trash and eyeballing a replacement fill of tea leaves from one of the metal cannisters that Mikuru had bought. \"I'm not actually a fan of the Hanshin Tigers. Setting aside the aliens we've already met.... After dealing with some of the things I have ... last February, I guess it was? Anyway, a while back I told the universe, though in more words, that it could bring any trouble it wanted,\" he said resolutely, his attention focused on the kettle as it heated up. \"As long as we had the brigade together, I'd be able to handle it. With you in front of me, the others at our sides, and Tsuruya behind us ... I could deal with the smirking bastard, the Sky Canopy Domain.... Whatever the world brings, as long as we're a brigade, what did any of that matter?\""
-    # "\"But you get to have {i}fun{/i},\" she protested. \"And all I do is make {i}trouble{/i}. That's not fair for either of us!\""
-    # "\"Now you're being too hard on yourself,\" he said, straightening up with a frown. \"And that's not like you. Maybe I made a mistake telling you what I did.\""
-    # "\"And you only did it because of Yuki,\" she muttered, turning away. A glowing figure appeared on the distant skyline, and she focused her will on it, desperately wishing it would go away. After a shuddering heartbeat, it did, vanishing into motes of light. Kyon seemed not to notice, though he was watching her."
-    # "\"I would have done the same thing for Asahina-san or Koizumi,\" he returned levelly. \"And if I thought I could help, Tsuruya-san and Kanae-chan as well, even though we've only just met her.\""
-    # "\"What about me?\" she asked quietly. \"I understand that I'm the leader of the brigade, but does that mean that I'm just that?\""
-    # "\"That question,\" he said darkly, grimacing. \"You have no idea how long I've struggled with it. I asked myself last May, 'what is Haruhi to me?' You ... probably remember the answer I came up with.\""
-    # "She felt her face color and nodded stiffly, turning away again. \"And that's what's bothering me,\" she admitted. \"I guess I can't keep it bottled up, or I'll blow up the world as we know it. But reality bends itself the way I want it to. It's not right that {i}you{/i} do, too. How can I feel I'm achieving anything, if I'm cheating without even meaning to?\""
-    # "He said nothing for a long minute, pouring the water into the teapot over the tea leaves and ruminating. \"You're still being too hard on yourself,\" he decided, when pouring was complete. \"If I could only pick one thing to blame myself for, it would be for revealing things to you that changed who you were so much. That, honestly, I do regret. I don't regret saving Nagato. I don't regret being honest with you. But causing you pain because of what you know.... That, I never wanted at all. Please believe that, if nothing else.\""
-    # "\"I still don't know why you're so nice to me,\" she mumbled, staring at the floor."
-    # "\"I am an endless fountain of support,\" he agreed heartily. \"Telling you when I think your ideas are stupid, being unhelpful when you're starting to drag us into problems, sabotaging baseball tournaments you haphazardly coerce us to join even when I risk destroying the world by intentionally antagonizing you.... That's me, alright! An all around great guy.\" He shook his head with a roll of his eyes. \"I'm not sure what's gotten into you, Haruhi, but I'm not as perfect as you act right now, and you're nowhere {i}near{/i} the villain you make yourself out to be at the moment.\""
-    # "She stood up straighter and looked at him closely. Seemingly unconcerned, he filled two cups with tea and handed one to her. \"You are unreasonably reasonable,\" she accused, unable to keep a tiny smile from forming on her lips."
-    # "He inclined his head to her very slightly in acknowledgement as he took his seat."
-    # "\"Alright, mighty philosopher Kyon,\" she decided, \"riddle me this: what do I do now? I'm stressed out because of all this power I have that's too dangerous to play with, and the idea that I'm forcing people around me against their will — if I'm not outright breaking it. If there were a flaw that you could point out that I needed to fix, what would it be?\""
-    # "\"You should seek happiness,\" he said without hesitation, sipping at the tea and making a face. \"Ugh. And don't drink that tea, I think it turned out pretty nasty.\""
-    # "\"I'm trying to be serious here!\" she yelled. \"This is the end of the world as we know it!\""
-    # "\"And I feel fine,\" he said back in a sing-song tone, smirking. \"Come on, Haruhi. I mean it; you should seek what makes you happy. As far as your flaws, well, I could whine all {i}day{/i}, but to be honest, the one big thing you do is have no real respect for other people's feelings. No empathy.\" He raised a hand to forestall her protest and added, \"Even so, you've come a {i}very{/i} long way since we first met on that count, so who am I to judge?\""
-    # "\"Oh,\" she replied, deflating."
-    # "\"What, you wanted the boxed shoujou-romance answer of, 'Never change, you're perfect the way you are'?\" he asked, dropping his hand to the table. \"Well, we're real people in the real world, not characters in a television drama or manga. I know you'd be happier with {i}me{/i} if I had more energy and got better grades. None of us are perfect.\""
-    # "\"You sure aren't,\" she retorted, smiling again as she took her seat at the desk and sipped her tea. \"Ugh! You're right, next flaw, your tea is terrible.\""
-    # "\"I warned you,\" he said gravely, shrugging and sipping his tea anyway. \"Truth in advertising, right?\""
-    # "\"Yeah, well,\" she said, crossing her arms over her chest. \"I don't like ... not knowing where we stand with one another. I guess that's selfish.... Damn it, I want....\" She struggled for words, unable to meet his eyes."
-    # "\"You want to be in charge?\" he asked, leaning his face on one hand. \"You are the brigade leader, you know.\""
-    # "\"Yeah, but....\" Shifting her shoulders, she said, \"I'm not happy being a tsundere character. Just like you said, we're real people ... right?\""
-    # "He nodded, frowning slightly. \"I did say that, but I don't know what 'tsundere' means.\""
-    # "\"Stereotypical anime relationship?\" she asked. \"Girl likes boy, boy likes girl? Girl hits boy, boy mouths off to girl? You could change the order of operation, but it all works out the same.\""
-    # "\"Oh ... well, that's not a real relationship,\" he agreed. \"Just a mechanic to let the viewers know that a relationship exists while artificially keeping it from developing, since it's a minor point at best in the role of the show. Should have known you'd know the proper term for it.\""
-    # "\"Don't give me that!\" she snapped playfully. \"I bet you can name a dozen more characters that fit the stereotype than I could!\""
-    # "\"Probably true,\" he acquiesced. \"But I think we're both avoiding the main issue here. That's not us; you don't intentionally cause me trouble, and you listen when I complain. Sometimes, anyway.\""
-    # "\"W...well.... I'm not satisfied with your suggestion to make myself happy,\" she said, her smile fading. \"I mean, I know I {i}could{/i}. Just,\" she snapped the fingers of her right hand, \"{i}make{/i} ... things perfect. Clouds of sakura petals on demand, constant appropriate music somehow always surrounding us, no misunderstandings ever....\""
-    # "\"You'd get so bored of that,\" he said with a sigh, shaking his head. \"Actually, probably so would I.\""
-    # "\"Or, I could,\" she snapped her fingers again, \"{i}make{/i} myself happy with whatever happened, so that I was just satisfied all the time no matter what happened.\""
-    # "\"I don't buy that,\" he disagreed, sipping his tea again. \"It'd be just as true of your last suggestion, but the person who looked like you would not be Haruhi if you did that.\""
-    # "\"Wouldn't it be better for the world, though?\""
-    # "\"Honestly? I can't say that for certain,\" he said, shrugging. \"Look, I was given ... advice before I came here. And I don't mean to make you feel like this is less important than it actually is, but ... I haven't become the future self that travels back in time to last Sunday, yet. As strange as it all may sound, I'm confident that we get through this alright. Even without that knowledge, I'd still believe it to be true, though.\""
-    # "\"I ... want to be the person who can make you happy,\" she mumbled, her face coloring. \"I want to be able to draw you into the mysteries around us, and explore all of the fun things that happen ... but {i}together{/i}.\""
-    # "He nodded. \"Okay,\" he agreed. \"That sounds fine to me. There's no conspiracy trying to keep things hidden from you, anymore.\""
-    # "\"What I really wanted,\" she said softly, \"was to some day be the ... girl that ... you would confess to.\""
-    # "Looking away with a grimace, he sighed. \"I get that,\" he said quietly. \"And don't think it hadn't crossed my mind. But ... and don't take this the wrong way, but what could myself, who has never had an actual girlfriend, offer to someone with your confidence? Your dating history?\""
-    # "\"I'll have you know that our first kiss in May was my first kiss,\" she protested hotly, her face turning red. She felt Shinjin forming, smashing apart distant buildings, and struggled to disperse them. \"I wanted to {i}meet{/i} people, I am {i}not{/i} that kind of girl! Hell — you didn't even {i}ask me for permission{/i}!\""
-    # "He winced, ducking his head. \"Sorry; I didn't think you were! I just meant ... you know about relationships and how they're supposed to work. You show almost unlimited confidence. What am I able to or supposed to bring to the table? It's not that I wouldn't like to try, but.... What do I do when I fail you? When it's not enough? I want to try my best, but I {i}am{/i} just a normal person with extraordinary friends. Being dragged along behind you while weakly protesting is one thing ... but being rejected because you're bored with me....\" He trailed off and looked away, his face displaying a raw vulnerability she didn't think she had seen on it before. His eyes were shining, as though...."
-    # "He wasn't so great an actor that he could be faking it; he might maintain an impassive facade at times, but assuming some other emotion? She spent a long time mulling over what he said, studying that expression before she forced herself to act. \"Okay,\" she acquiesced, nodding. \"I guess ... I can see your point of view. So,\" she said, her voice shaking a little bit, \"I need to forget about my power.\""
-    # "He blinked at her, taken aback."
-    # "\"Or, not entirely forget, but ... um ... rewrite how I remember it a bit. I want to have a power, but I want something I can have fun with that doesn't mean destroying the universe on an accidental whim.\" She closed her eyes and took a deep breath. \"Here it goes,\" she decided. \"I trust you, Kyon ... if I can't trust you, I can't trust anyone. So ... I'm going to have a minor power to affect things ... objects, anything more I'll need Yuki-chan's help with, until I can learn to be responsible with that power.\""
-    # "\"Haruhi,\" he said, with the sound of his chair scraping across the floor as though he were standing up, \"you don't need to do this—\""
-    # "\"Shut up,\" she ordered tersely. \"My power's going to be more limited so I {i}can{/i} play with it without hurting or scaring people. I'm going to make myself ... a tiny bit more open-minded ... with regards to you. Don't say a word! You will thank me for this later! And then, um, I'm going to believe that if we all work together, like you believe, we can make the world a better place.\""
-    # "She nodded decisively, then opened her eyes. \"B...because I trust you, I'm going to try not to remember this when I wake up,\" she added. \"And ... you can tell me you're John Smith again if you need me to know everything, for some reason.\" He was standing close to her, one hand on her desk as he peered at her intently."
-    # "\"You're sure about this?\" he asked anxiously. \"You're ... still going to be the same Haruhi I know?\""
-    # "\"More than I have been lately,\" she agreed, nodding. \"I hope, anyway. Why else would I be giving you an emergency reset codeword? I may not have a mind like Yuki's, but I can still think ahead!\""
-    # "She rose from her seat smoothly, still gazing up into his face. \"So ... just in case I get this wrong, I want you to do what we did last time, so I'll have a good note to go out on.\""
-    # "He stared at her for a moment before a slow smile spread across his face. \"I'm going to do my best, Haruhi,\" he promised her, his hands rising to her shoulders, then sliding up to gently cup her cheeks. She let her eyes drift shut as her head tilted back and her lips pursed, the last thought through her mind as everything turned into light that he would probably notice the small change she had made in him, as well.... But he probably wouldn't mind too much."
-    # "* * *"    
-    
-    
+label SF3:   
 label Test:
     play music "Music/KyomutekiKuukan.mp3"
     scene bg SchoolOutside1 CS
@@ -143,7 +77,7 @@ label Test:
     show Haruhi Neutral2 at left
     "\"You have to change the leaves,\" she observed." 
     show Haruhi Unhap1 at left
-    stop music fadeout 2
+    stop music fadeout 5
     "Then she shook her head again. \"Are you serious? Here we are on the verge of me destroying the world — again! — and all you can think to do is make tea?! Gods, if aliens arrived, what would you do, apologize for being out of crumpets and discuss the Hanshin Tigers?\""
     show Kyon Sigh1
     nvl clear
@@ -341,14 +275,16 @@ label Test:
     nvl clear
     scene bg Kiss with dissolve
     "She let her eyes drift shut as her head tilted back and her lips pursed, the last thought through her mind as everything turned into light that he would probably notice the small change she had made in him, as well.... But he probably wouldn't mind too much."
-    
+    nvl clear
     
     stop music fadeout 3
     play music "Music/Nichijou.mp3"
     scene  bg KyonRoomRightMorning with fade
     play sound "SE/impact.mp3"
     "Kyon leapt out of bed with a handspring, landing in a crouch before the opening door and lunging instantly into the forbidden little-sister-submission-tickle-strike, completely foiling her attempt to sneak in and wake him up first. Only after he had reduced her to a shrieking, laughing pile, and his mother was tiredly staring up at the pair of them from the bottom of the stairs did he relent."
-    show Nonoko Laugh1 at left with dissolve
+    show Kyon Neutral3 at right
+    show Nonoko Laugh1 at left 
+    with dissolve
     "\"T...tickle-ninja!\" his sister protested, her face red from laughter. \"No fair!\" "   
     nvl clear
     show Kyon Smile3 at right with dissolve
@@ -356,8 +292,9 @@ label Test:
     "He grabbed his sister's wrists and hauled her upwards, leaving her to dangle a few centimeters over the floor before gently lowering her to stand and releasing her. She stuck her tongue out at him, giggling, then ran down the stairs to their mother."
     nvl clear
     scene bg KyonHouseDay with fade
-    show Nonoko Sup1 at left with dissolve
-    show Kyon Smile1 at right with dissolve
+    show Nonoko Sup1 at left 
+    show Kyon Smile1 at right 
+    with dissolve
     "\"Mom!\" she yelled. \"Kyon-kun had his brain eaten by a pod-person! The alien that's replaced him wakes up in the morning without needing help!\" "
     show Nonoko Smile1 at left
     "\"That's very nice, dear,\" he heard his mother say as she bustled back into the kitchen. \"Maybe he'll get good grades, too. Now wash up before breakfast.\" "
@@ -471,7 +408,8 @@ label test3:
     show Haruhi Hap4 at left
     extend "She playfully punched him in the shoulder, though he was surprised that it didn't sting in the slightest, even though he felt it. \"What, do you think that just because you're getting your homework done, now, I've turned stupid on you? Or weak? You know, if you had the chutzpa for it, you could have formed the SOS Brigade and I would have followed....\""
     nvl clear
-    scene bg stairwell with fade
+    scene bg stairwell with fade:
+        size (800,600)
     play sound "SE/footsteps13.mp3"
     show Kyon Smile3 at right
     "He glanced at her sidelong as they stepped into the stairwell. \"Really?\" he asked, raising one eyebrow. \"I find it hard to imagine....\""
@@ -497,6 +435,7 @@ label test3:
     "\"No idea,\" he tossed back just as quietly. His eyes scanned across Kunikida and Taniguchi, but both of them kept their eyes oriented directly forward. \"Seems a bit odd, though.\""
     "\"Eh,\" Haruhi mused, tapping a fingertip on her desk thoughtfully. \"Well, I'm sure it's nothing ... probably.\""
     "Kyon nodded, getting out his homework for the next period as well as the detested, unfinished math. If there was no teacher around...."
+    nvl clear
     
 label tttttest:
     stop music fadeout 1
@@ -613,9 +552,9 @@ label tttttest:
     nvl clear
     
     
-label te-est:    
+
     stop music fadeout 1
-    queue music "Music/Itsumo(Movie).mp3"
+    queue music "Music/Unzari da.mp3"
     scene bg ClubroomFullDay with fade:
         xpos 0 ypos 0
     $ renpy.layer_at_list([PanScene_SetToLeft])
@@ -629,8 +568,9 @@ label te-est:
     "\"Yeah, yeah,\" he replied with his standard lack of enthusiasm, bolting his last few bites away. \"You happen to know her classroom?\""
     show Mikuru Neutral2 at right_RightScreen
     "\"Um, 1-7,\" Mikuru offered helpfully, taking a seat at the table."
-    hide Kyon with moveoutleft
+    hide Kyon
     show Tsuruya Hap4 at center_RightScreen
+    with dissolve
     "Kyon rose and nodded, while Tsuruya slipped into the seat he had only just vacated. \"Thankie again for yesterday, Kyon-kun!\" the cheerful girl called out."
     nvl clear
     $ renpy.layer_at_list([PanScene_RightToLeft])
@@ -646,22 +586,28 @@ label te-est:
     nvl clear
     
     stop music fadeout 1
-    queue music "Music/GnossiennesDai3.mp3"
+    queue music "Music/stupefaction.ogg"
     show Tsuruya Neutral1 at center_RightScreen
-    "\"Well,\" Tsuruya said, her eyes narrowing as she peered around. \"There's a dark conspiracy underway,\" she said in a very quiet voice. \"Some peoples are doing unsavory things in the background! Naturally, I tried to investigate them so that I could takes care of them! But unsavory things are done by unsavory peoples, so ... on Sunday I found out the peoples responsible, but they were a bit rougher than the kind you can talk things out with! They outnumbered me and Kasai, and I thought I was in big trouble for sure when they knocked him down!\""
+    "\"Well,\" Tsuruya said, her eyes narrowing as she peered around. \"There's a dark conspiracy underway,\" she said in a very quiet voice. \"Some peoples are doing unsavory things in the background! Naturally, I tried to investigate them so that I could takes care of them!"
+    show Tsuruya Ang1 at center_RightScreen
+    "But unsavory things are done by unsavory peoples, so ... on Sunday I found out the peoples responsible, but they were a bit rougher than the kind you can talk things out with! They outnumbered me and Kasai, and I thought I was in big trouble for sure when they knocked him down!\""
     show Haruhi Quest2 at left_RightScreen
     "\"Kasai?\" Haruhi asked."
     nvl clear
-    show Tsuruya Hap1 at center_RightScreen
-    "\"Yeah! My bodyguard,\" Tsuruya said, nodding quickly. \"Anyway, Kyon-kun saved the day, so Kasai is goings to make it, though I was worried for a bit! That would be very bad, to have him be permanently injured for a little investigations on my part ... it'd make me look bad, too!\" She mimed a jabbing motion with one fist, grinning. \"I gots some training, but Kyon-kun was like a can of carbonated Bruce Lee and Jackie Chan that got all shook up! Bam! Pow! No joke, Haru-nyan, there were twelve of those bad guys still standing when Kyon came in, and there were none when he was done!\""
+    show Tsuruya Neutral1 at center_RightScreen
+    "\"Yeah! My bodyguard,\" Tsuruya said, nodding quickly. \"Anyway, Kyon-kun saved the day, so Kasai is goings to make it, though I was worried for a bit! That would be very bad, to have him be permanently injured for a little investigations on my part ... it'd make me look bad, too!\"" 
+    show Tsuruya Laugh1 at center_RightScreen
+    "She mimed a jabbing motion with one fist, grinning. \"I gots some training, but Kyon-kun was like a can of carbonated Bruce Lee and Jackie Chan that got all shook up! Bam! Pow! No joke, Haru-nyan, there were twelve of those bad guys still standing when Kyon came in, and there were none when he was done!\""
     nvl clear
     show Haruhi Quest1 at left_RightScreen
     "Haruhi raised one eyebrow. How much had Kyon actually learned from Yuki? At a glance, the girl in the corner only turned the pages in her book, nearly silently, not even looking up."
     show Mikuru Think Sup1 at right_RightScreen
     "\"K...Kyon-kun ... fought people?\" Mikuru asked, her face turning pale. \"W...was he in danger? Wait! Tsuruya-san — were {i}you{/i} in danger!?\""
     nvl clear
-    show Tsuruya Laugh1 at center_RightScreen
-    "\"I'm fine, Mikuru-chan! Kyon-kun was there!\" Tsuruya said brightly, sticking her tongue out before unwrapping her bento. \"Anyway, after helping me get Kasai to the hospital, Kyon-kun found out about my investigations and said that he wouldn't take no for an answer — he had to help me out with it, especially since Kasai was injured, and I wouldn't haves a bodyguard for the next few weeks while he was recovering.\""
+    show Tsuruya Laugh2 at center_RightScreen
+    "\"I'm fine, Mikuru-chan! Kyon-kun was there!\" Tsuruya said brightly, sticking her tongue out before unwrapping her bento." 
+    show Tsuruya Neutral1 at center_RightScreen
+    "\"Anyway, after helping me get Kasai to the hospital, Kyon-kun found out about my investigations and said that he wouldn't take no for an answer — he had to help me out with it, especially since Kasai was injured, and I wouldn't haves a bodyguard for the next few weeks while he was recovering.\""
     nvl clear
     show Mikuru Think Sad1 at right_RightScreen
     "\"W...weeks?\" Mikuru managed, wobbling unsteadily in her seat."
@@ -689,32 +635,36 @@ label te-est:
     "Nodding very slightly, Yuki turned her attention back to the pages before her. Haruhi glanced at the title, 'The Mirror of Her Dreams'."
     nvl clear
     show Tsuruya Worry1 at center_RightScreen
-    "Tsuruya's usual smiling expression had faded to a look of worry. \"Um, please, Haru-nyan, it's very importants, you know.... I made Kyon-kun promise that no matter what, he wouldn't reveal what he knew to anyones — even you — until the investigations was complete! But don't blame him; I made him promise! I...if you insists that he can't help me anymore, then ... I guess that's SOS Brigade rules, so I can't do much about it.\""
+    "Tsuruya's usual smiling expression had faded to a look of worry. \"Um, please, Haru-nyan, it's very importants, you know.... I made Kyon-kun promise that no matter what, he wouldn't reveal what he knew to anyones — even you — until the investigations was complete!" 
+    show Tsuruya Sigh1 at center_RightScreen
+    "But don't blame him; I made him promise! I...if you insists that he can't help me anymore, then ... I guess that's SOS Brigade rules, so I can't do much about it.\""
     nvl clear
     show Haruhi Pout1 at left_RightScreen
     "Haruhi grimaced, realizing that very likely, with time travel involved, Kyon made the promise because he had traveled back from some time after Haruhi already {i}knew{/i} what the investigation results were.{nw}"
-    show Haruhi Hap2 at left_RightScreen
+    show Haruhi Neutral2 at left_RightScreen
     extend "\"Alright,\" she agreed decisively. \"Next time I'd prefer you were more straightforward and brought requests like this to me directly! So I'll allow it this time, but I will need accurately recorded receipts accounting for all times and locations that you're utilizing Kyon in.\""
     nvl clear
     show Tsuruya Laugh1 at center_RightScreen
     "\"Ah, that's no problem,\" Tsuruya said brightly. \"I can even tells you where we were yesterday! I just ... can't says why yet.\""
-    show Haruhi Hap3 at left_RightScreen
+    show Haruhi Hap1 at left_RightScreen
     "\"So, where, then?\" Haruhi pressed."
     show Tsuruya Hap1 at center_RightScreen
     "\"Yesterday, I met Kyon-kun on the way to your club,\" Tsuruya explained, her smile returning full force. \"I guess he was just leaving; he said he was dismissed for the day and could help me out! Hmm, he didn't mention anything ... is there a rental fee or a deposit for Kyon-kun's help?\""
     nvl clear
-    show Haruhi Hap4 at left_RightScreen
-    "Haruhi blinked, then considered. She had suggested renting Yuki to the Computer Research Society once ... Kyon had adamantly vetoed that, but he wasn't here to veto this, and he'd somehow gotten roped into helping Tsuruya out anyway. But, then again.... \"Well, you're a good friend, so you can skip the deposit,\" she decided. \"I guess it wouldn't be fair to charge you after you shared your winter home with us, and invited us to the flower viewing. Just realize you're getting a great deal!\""
+    show Haruhi Sigh1 at left_RightScreen
+    "Haruhi blinked, then considered. She had suggested renting Yuki to the Computer Research Society once ... Kyon had adamantly vetoed that, but he wasn't here to veto this, and he'd somehow gotten roped into helping Tsuruya out anyway. But, then again...." 
+    show Haruhi Smile2 at left_RightScreen
+    "\"Well, you're a good friend, so you can skip the deposit,\" she decided. \"I guess it wouldn't be fair to charge you after you shared your winter home with us, and invited us to the flower viewing. Just realize you're getting a great deal!\""
     show Tsuruya Hap3 at center_RightScreen
     "\"For sure, Haru-nyan! Kyon-kun's super handy!\""
     nvl clear                                                                            
-    
-    stop music fadeout 1
-    queue music "Music/HizundaKokoro.mp3"
+    #stop music fadeout 1
+    #queue music "Music/HizundaKokoro.mp3"
     show Koizumi Think Ser4 at left
     $ renpy.layer_at_list([PanScene_RightToLeft])
-    show Kyon Worry1 at right with dissolve
-    show Kanae Worry2 at center with dissolve
+    show Kyon Worry1 at right
+    show Kanae Worry2 at center
+    with dissolve
     "After knocking, Kyon opened the door, his expression more sour than usual. A faint line of blood trickled down one cheek, and Kanae stood at his side, holding his free hand and looking downcast." 
     $ renpy.layer_at_list([PanScene_LeftToRight])
     show Haruhi Sup3 at left_RightScreen
