@@ -403,15 +403,16 @@ label test3:
     play sound "SE/dooropenfast.wav"
     extend"\"She said she was occasionally 'lucky enough to have friends'. I just sometimes worry that you forget that your fellow brigade members are friends, too, not only subordinates in the club.\""
     nvl clear
-    show Haruhi Sup3 at left
-    "\"Man,\" Haruhi grumbled, closing the door then hurrying to Kyon's side, \"you make it sound like I can't stand having equals!\"  {nw}" 
+    show Haruhi Ang4 at left
+    "\"Man,\" Haruhi grumbled, closing the door then hurrying to Kyon's side, \"you make it sound like I can't stand having equals!\""
     hide Hblush
     show Haruhi Hap4 at left
-    extend "She playfully punched him in the shoulder, though he was surprised that it didn't sting in the slightest, even though he felt it. \"What, do you think that just because you're getting your homework done, now, I've turned stupid on you? Or weak? You know, if you had the chutzpa for it, you could have formed the SOS Brigade and I would have followed....\""
+    play sound "SE/impact.mp3"
+    "She playfully punched him in the shoulder, though he was surprised that it didn't sting in the slightest, even though he felt it. \"What, do you think that just because you're getting your homework done, now, I've turned stupid on you? Or weak? You know, if you had the chutzpa for it, you could have formed the SOS Brigade and I would have followed....\""
     nvl clear
     scene bg stairwell with fade:
         size (800,600)
-    play sound "SE/footsteps13.mp3"
+    #play sound "SE/footsteps13.mp3"
     show Kyon Smile3 at right
     "He glanced at her sidelong as they stepped into the stairwell. \"Really?\" he asked, raising one eyebrow. \"I find it hard to imagine....\""
     show Haruhi Grin2 at left
