@@ -784,9 +784,36 @@ label ttest:
     # "\"Yeah,\" he agreed. \"No need to put off your error correction any further than required.\""
     # "\"Understood. Initializing,\" Yuki announced, and for a moment, Kyon wondered how Kanae could not have noticed being teleported as the world exploded away around him."
     # "Again."
-    # "* * *"
-    # "\"Kyon!\" Flashes of light, crackling energy dozens of orders of magnitude lower than the ones in the spaces that Yuki had pulled him through with her teleport echoed through his field of vision before his eyes snapped open to see Haruhi kneeling over him. She was wearing her school uniform, and he guessed without checking he was too."
-    # "He blearily blinked and sat up, squinting at the gray sky overhead. \"This again?\" he asked, stretching."
-    # "\"Sorry,\" she mumbled, unable to meet his eyes. \"I thought I was having a pretty bad day, then ... it got worse.\""
-    
+
+label Test:
+    stop music
+    scene black
+    show clouds
+    with fade
+    "\"Kyon!\"" 
+    play sound "SE/heartbeat.mp3"
+    show clouds CS with dissolve
+    show clouds with dissolve
+    pause 1
+    play sound "SE/heartbeat.mp3"
+    show clouds CS with dissolve
+    show clouds with dissolve
+    pause 1
+    play sound "SE/heartbeat.mp3"
+    show clouds CS with dissolve
+    show clouds with dissolve
+    pause 1
+    play music "Music/KyomutekiKuukan.mp3"
+    hide clouds
+    scene bg HaruhiCS
+    with dissolve
+    "Flashes of light, crackling energy dozens of orders of magnitude lower than the ones in the spaces that Yuki had pulled him through with her teleport echoed through his field of vision before his eyes snapped open to see Haruhi kneeling over him. She was wearing her school uniform, and he guessed without checking he was too."
+    scene bg SchoolOutside1 CS
+    show Haruhi CS Pout1 at left
+    show Kyon CS Sigh1 at right
+    with dissolve
+    "He blearily blinked and sat up, squinting at the gray sky overhead. \"This again?\" he asked, stretching."
+    show Haruhi CS Pout2 at left        
+    "\"Sorry,\" she mumbled, unable to meet his eyes. \"I thought I was having a pretty bad day, then ... it got worse.\""
+    nvl clear
     jump SF3

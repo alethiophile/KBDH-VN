@@ -52,7 +52,8 @@ init:
     image bg MemoryMikuru = "Backgrounds/MemoryMikuru.jpg"
     image bg MemoryKoizumi = "Backgrounds/MemoryKoizumi.jpg"
     image bg Kiss = "Backgrounds/kiss.jpg"
- 
+    image clouds = "id_clouds.png"
+    image bg HaruhiCS = "Backgrounds/HaruhiCS.jpg"
     
     image white = "#ffffff"
     image black = "#000000"
@@ -710,6 +711,9 @@ init:
     image Mori = "Sprites/Mori/MoriPlaceholder2.png"
     
     #Closed space variants
+    image clouds CS = im.MatrixColor("id_clouds.png",
+        im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
+    
     image bg SchoolEntranceLeft CS = im.MatrixColor("Backgrounds/SchoolEntranceLeft.png",
         im.matrix.saturation(.2) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
     image bg SchoolOutside1 CS = im.MatrixColor("Backgrounds/SchoolOutside1.png",
@@ -940,6 +944,7 @@ init python:
     renpy.music.set_volume(0.2, .5, channel="music")
     flashbulb = Fade(0.2, 0.0, 0.8, color='#fff')
     slowflashbulb = Fade(1.0, 0.5, 2.0, color='#fff')
+    slowdissolve = Dissolve(1.0)
     fastdissolve = Dissolve(0.15)
    
     circleirisout = ImageDissolve("id_circleiris.png", 1.0, 8)
@@ -1101,6 +1106,7 @@ init -1 python:
         ("Obligatory Anachronic Order Explanation Arc - Chapter Two:\n\"Clear as Mud\"", "AO2"),
         ("Straightforward Flashback and Exposition Arc - Chapter Three:\n\"It Goes To Eleven\"", "SF1"),
         ("Straightforward Flashback and Exposition Arc - Chapter Four:\n\"Epileptic Plot Tree\"", "SF2"),
+        ("Straightforward Flashback and Exposition Arc - Chapter Five: \n\"The Requisite Haruhi-and-Kyon in Closed Space Together Again Part (You Know The One)\"", "SF3"),
         ("Label a scene you're working on test and use this", "Test"),
         # ("-----", "backtomain"),
                

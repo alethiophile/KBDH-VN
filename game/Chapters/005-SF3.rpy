@@ -1,12 +1,13 @@
 # Chapter 5, Straightforward Flashback and Exposition Arc.
 #Need BG for the inside of Kyon's house. the outside is used as a placeholder.
 label SF3:   
-label Test:
-    play music "Music/KyomutekiKuukan.mp3"
-    scene bg SchoolOutside1 CS
-    show Haruhi CS Quest1 at left
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+        play music "Music/KyomutekiKuukan.mp3"
+        scene bg SchoolOutside1 CS
+    #scene bg SchoolOutside1 CS
+    show Haruhi CS Pout1 at left
     show Kyon CS Sigh1 at right
-    with fade
     "\"It happens,\" he said casually, seeming unconcerned. Glancing at their surroundings, he observed, \"I don't see any Shinjin. Back in the school again?\""
     show Haruhi CS Sigh2 at left
     "\"I don't even understand how you can see this and not be alarmed,\" she said with a sigh, looking up at the sky with him. \"So ... you said that this happened last time when I got too frustrated, and then I accidentally almost destroyed the world?\""
@@ -77,11 +78,11 @@ label Test:
     show Haruhi Neutral2 at left
     "\"You have to change the leaves,\" she observed." 
     show Haruhi Unhap1 at left
-    stop music fadeout 5
+    stop music fadeout 3
     "Then she shook her head again. \"Are you serious? Here we are on the verge of me destroying the world — again! — and all you can think to do is make tea?! Gods, if aliens arrived, what would you do, apologize for being out of crumpets and discuss the Hanshin Tigers?\""
     show Kyon Sigh1
     nvl clear
-    play music "Music/GodKnowsMusicBox.mp3"
+    queue music "Music/GodKnowsMusicBox.mp3"
     "He snorted, carelessly dumping the old leaves into the trash and eyeballing a replacement fill of tea leaves from one of the metal cannisters that Mikuru had bought. \"I'm not actually a fan of the Hanshin Tigers."
     show Kyon Sigh2 at right
     "Setting aside the aliens we've already met.... After dealing with some of the things I have ... last February, I guess it was? Anyway, a while back I told the universe, though in more words, that it could bring any trouble it wanted,\" he said resolutely, his attention focused on the kettle as it heated up." 
@@ -273,7 +274,7 @@ label Test:
     show KBlush at right
     "He stared at her for a moment before a slow smile spread across his face. \"I'm going to do my best, Haruhi,\" he promised her, his hands rising to her shoulders, then sliding up to gently cup her cheeks." 
     nvl clear
-    scene bg Kiss with dissolve
+    scene bg Kiss with slowdissolve
     "She let her eyes drift shut as her head tilted back and her lips pursed, the last thought through her mind as everything turned into light that he would probably notice the small change she had made in him, as well.... But he probably wouldn't mind too much."
     nvl clear
     
