@@ -519,8 +519,11 @@ init:
     image Mikuru Cower Face Nervous1 = "Sprites/Mikuru/MikuruCowerFaceNervous1.png"
     image Mikuru Cower Face Nervous2 = "Sprites/Mikuru/MikuruCowerFaceNervous2.png"
     image Mikuru Cower Face Nervous3 = "Sprites/Mikuru/MikuruCowerFaceNervous3.png"
+    image Mikuru Cower Face Smile1 = "Sprites/Mikuru/MikuruCowerFaceSmile1.png"
     image Mikuru Cower Face Sup1 = "Sprites/Mikuru/MikuruCowerFaceSurprised1.png"
     image Mikuru Cower Face Sup2 = "Sprites/Mikuru/MikuruCowerFaceSurprised2.png"
+    image Mikuru Cower Face Unhap1 = "Sprites/Mikuru/MikuruCowerFaceUnhappy1.png"
+    image Mikuru Cower Face Worry1 = "Sprites/Mikuru/MikuruCowerFaceWorry1.png"
     image Mikuru Cower Sigh1 = "Sprites/Mikuru/MikuruCowerSigh1.png"
     image MBlush Cower Face = "Sprites/Mikuru/MBlushFace.png"
 
@@ -619,8 +622,11 @@ init:
     image Kanae Worry2 = "Sprites/Kanae/KanaeWorry2.png"
     image Kanae Worry3 = "Sprites/Kanae/KanaeWorry3.png"
     
+    image Kanae Face Hap1 =  "Sprites/Kanae/KanaeFaceHappy1.png"
+    image Kanae Face Quest1 =  "Sprites/Kanae/KanaeFaceQuestion1.png"
     image Kanae Face Smile1 =  "Sprites/Kanae/KanaeFaceSmile1.png"
     image Kanae Face Smile2  = "Sprites/Kanae/KanaeFaceSmile2.png"
+    image Kanae Face Sup1  = "Sprites/Kanae/KanaeFaceSurprised1.png"
     image Kanae Face Worry1 =  "Sprites/Kanae/KanaeFaceWorry1.png"
     
     image KABlush = "Sprites/Kanae/KanaeBlush.png"

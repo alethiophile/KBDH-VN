@@ -764,27 +764,96 @@ label ttest:
     
     call eyecatch("Tuesday, April 19") from SF2_sc005
     
-    # "His eyes slowly blinked open from his nap, staring upward into Yuki's eyes as she peered down at him. He forced back a yawn and sat up, glancing around her apartment. Looking somewhat irritable and wearing a bathrobe, Mikuru knelt at the table, mumbling about getting phone calls first. Kanae was sitting next to Mikuru, working on her homework and evidently unperturbed."
-    # "\"Hello?\" he said by way of greeting, looking down at himself ... he was wearing his dress shirt and slacks, too tired to change into his pajamas or strip. Though, that last thought was thankful, in retrospect."
-    # "Kanae blinked at his voice and looked around. \"Oh!\" she exclaimed. \"This isn't my room! I didn't even feel the slide!\""
-    # "\"I did,\" Mikuru said with a sigh. \"Nagato-san, are you trying to embarrass me?\""
-    # "Yuki turned her gaze to Mikuru without changing expression. \"No,\" she answered. \"With your permission, we shall proceed again.\""
-    # "Shifting his shoulders, Kyon sat up and nodded. \"Is this going to be a nightly occurrence?\" he asked, trying to keep annoyance from entering his voice."
-    # "\"Unknown,\" Yuki answered. \"The amount of time Michikyuu Kanae will require to master her ability to shift dimensions is as of yet undetermined.\""
-    # "\"Oh, right,\" Kyon realized, blinking. This wasn't {i}just{/i} about Yuki dealing with her 'error' data. \"Well, in that case, I'm ready, Nagato. I think I've got a way to go before I finish what I chose to learn ... and I can't travel back to last Sunday until I finish it.\""
-    # "\"More sliding practice!\" Kanae cheered, throwing her hands into the air excitedly. \"I've never been so fortunate in any world I've jumped to!\""
-    # "\"Um, I should keep a positive attitude, too,\" Mikuru contributed. \"If it's not too much trouble, Nagato-san, could you call me before teleporting me here next time? I'd really like to arrive dressed ... if Suzumiya-san were to hear about, um, me arriving in such a condition on a regular basis, she'd probably become even more upset.\""
-    # "\"She's upset right now?\" Kyon asked, frowning. \"That's no good; what's wrong?\""
-    # "Yuki looked away, adopting an expression Kyon hadn't seen since he asked her what happened to people after they died. \"I should not say,\" she eventually answered."
-    # "\"Well,\" he said, frowning, \"I already {i}know{/i} that there's supposed to be a huge closed space incident tomorrow. Do you have any advice on that front?\""
-    # "Her eyes ponderously swung back to meet his. \"Seek happiness.\""
-    # "\"Er, um,\" Mikuru managed, her face turning red, \"you should ... make the first move. Suzumiya-san is just ... stressed that.... Well, I probably shouldn't say, either. But I trust you to sort things out!\""
-    # "\"Go Sempai!\" Kanae cheered again. \"I'm confident he can do it!\""
-    # "\"If you are ready to proceed?\" Yuki asked, turning her gaze to Kyon again."
-    # "\"Yeah,\" he agreed. \"No need to put off your error correction any further than required.\""
-    # "\"Understood. Initializing,\" Yuki announced, and for a moment, Kyon wondered how Kanae could not have noticed being teleported as the world exploded away around him."
-    # "Again."
+    play music "Music/circulation.ogg"
+    scene bg YukiRoomCenter
+    show Yuki Side1 at left
+    show Kyon Sigh3 at right
+    with fade
+    "His eyes slowly blinked open from his nap, staring upward into Yuki's eyes as she peered down at him. He forced back\na yawn and sat up, glancing around her apartment. "
+    show Mikuru Cower Face Unhap1 at TopRight
+    show Kanae Face Smile1 at TopLeft
+    with dissolve
+    extend "Looking somewhat irritable and wearing a bathrobe, Mikuru knelt at the table, mumbling about getting phone calls first. Kanae was sitting next to Mikuru, working on her homework and evidently unperturbed."
+    nvl clear
+    show Kyon Sigh2 at right
+    "\"Hello?\" he said by way of greeting, looking down at himself ... he was wearing his dress shirt and slacks, too tired to change into his pajamas or strip. Though, that last thought was thankful, in retrospect."
+    nvl clear
+    show Kyon Sigh3 at right
+    show Kanae Face Sup1 at TopLeft
+    "Kanae blinked at his voice and looked around. \"Oh!\" she exclaimed. \"This isn't my room! I didn't even feel the slide!\""
+    show Kanae Face Quest1 at TopLeft
+    "\"I did,\" Mikuru said with a sigh. \"Nagato-san, are you trying to embarrass me?\""
+    show Yuki Talk1 at left
+    "Yuki turned her gaze to Mikuru without changing expression. \"No,\" she answered. \"With your permission, we shall proceed again.\""
+    nvl clear
+    show Yuki Side1 at left
+    show Kyon Neutral2 at right
+    "Shifting his shoulders, Kyon sat up and nodded. \"Is this going to be a nightly occurrence?\" he asked, trying to keep annoyance from entering his voice."
+    show Kyon Neutral3 at right
+    show Yuki Talk2 at left
+    "\"Unknown,\" Yuki answered. \"The amount of time Michikyuu Kanae will require to master her ability to shift dimensions is as of yet undetermined.\""
+    nvl clear
+    show Yuki Side2 at left
+    show Kyon Neutral1 at right
+    "\"Oh, right,\" Kyon realized, blinking. This wasn't {i}just{/i} about Yuki dealing with her 'error' data. \"Well, in that case, I'm ready, Nagato. I think I've got a way to go before I finish what I chose to learn ... and I can't travel back to last Sunday until I finish it.\""
+    show Kyon Neutral3 at right
+    show Kanae Face Hap1 at TopLeft
+    "\"More sliding practice!\" Kanae cheered, throwing her hands into the air excitedly. \"I've never been so fortunate in any world I've jumped to!\""
+    nvl clear
+    show Kanae Face Smile1 at TopLeft
+    show Mikuru Cower Face Smile1 at TopRight
+    "\"Um, I should keep a positive attitude, too,\" Mikuru contributed. \"If it's not too much trouble, Nagato-san, could you call me before teleporting me here next time? I'd really like to arrive dressed ... if Suzumiya-san were to hear about, um, me arriving in such a condition on a regular basis, she'd probably become even more upset.\""
+    nvl clear
+    show Mikuru Cower Face Worry1 at TopRight
+    show Kyon Ser3 at right
+    "\"She's upset right now?\" Kyon asked, frowning. \"That's no good; what's wrong?\""
+    show Yuki SideDisappointed1 at left
+    show Kyon Ser1 at right
+    "Yuki looked away, adopting an expression Kyon hadn't seen since he asked her what happened to people after they died. "
+    show Yuki SideDisappointedTalk1 at left
+    extend "\"I should not say,\" she eventually answered."
+    nvl clear
+    show Yuki SideDisappointed1 at left
+    show Kyon Puzzle1 at right
+    "\"Well,\" he said, frowning, \"I already {i}know{/i} that there's supposed to be a huge closed space incident tomorrow. Do you have any advice on that front?\""
+    show Yuki Talk2 at left
+    show Kyon Worry1 at right
+    "Her eyes ponderously swung back to meet his. \"Seek happiness.\""
+    nvl clear
+    show Yuki Side2 at left
+    show Mikuru Cower Face Smile1 at TopRight
+    show MBlush Cower Face at TopRight
+    "\"Er, um,\" Mikuru managed, her face turning red, \"you should ... make the first move. Suzumiya-san is just ... stressed that.... Well, I probably shouldn't say, either. But I trust you to sort things out!\""
+    show Kanae Face Hap1 at TopLeft
+    show Mikuru Cower Face Worry1 at TopRight
+    "\"Go Sempai!\" Kanae cheered again. \"I'm confident he can do it!\""
+    nvl clear
+    show Kanae Face Smile1 at TopLeft
+    show Yuki Talk1 at left 
+    "\"If you are ready to proceed?\" Yuki asked, turning her gaze to Kyon again."
+    show Yuki Side1 at left
+    show Kyon Neutral2 at right
+    "\"Yeah,\" he agreed. \"No need to put off your error correction any further than required.\""
+    nvl clear
+    show Yuki Talk1 at left
+    show Kyon Neutral3 at right
+    "\"Understood. Initializing,\" Yuki announced, and for a moment, Kyon wondered how Kanae could not have noticed being teleported as the world exploded away around him."
+    nvl clear
+    play sound "SE/ShieldLaunch.wav"
+    scene bg Space:
+        xpos 0 ypos 0
+    with circleirisoutfast
+    scene black with fade
+    "Again."
+    nvl clear
 
+    stop music fadeout 3
+    show title 005 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
 label Test:
     stop music
     scene black
@@ -804,11 +873,13 @@ label Test:
     show clouds with dissolve
     pause 1
     play music "Music/KyomutekiKuukan.mp3"
+    nvl clear
     hide clouds
     scene bg HaruhiCS
     with dissolve
     "Flashes of light, crackling energy dozens of orders of magnitude lower than the ones in the spaces that Yuki had pulled him through with her teleport echoed through his field of vision before his eyes snapped open to see Haruhi kneeling over him. She was wearing her school uniform, and he guessed without checking he was too."
     scene bg SchoolOutside1 CS
+    nvl clear
     show Haruhi CS Pout1 at left
     show Kyon CS Sigh1 at right
     with dissolve
@@ -816,4 +887,5 @@ label Test:
     show Haruhi CS Pout2 at left        
     "\"Sorry,\" she mumbled, unable to meet his eyes. \"I thought I was having a pretty bad day, then ... it got worse.\""
     nvl clear
+    
     jump SF3
