@@ -854,7 +854,7 @@ label ttest:
     play sound "SE/Pageflip3.mp3"
     nvl clear
     
-label Test:
+label thatsaverynicetestyouhavethere:
     stop music
     scene black
     show clouds
