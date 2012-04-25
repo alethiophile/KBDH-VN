@@ -1,5 +1,5 @@
 # Chapter 5, Straightforward Flashback and Exposition Arc.
-#Need BG for the inside of Kyon's house. the outside is used as a placeholder.
+
 label SF3:   
     if music_need:
         $ renpy.music.set_volume(0.2, .5, channel="music")
