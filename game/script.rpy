@@ -730,7 +730,15 @@ init:
     image Nonoko Yell1 = "sprites/Nonoko/NonokoYell1.png"
     
     #Mori Sprites
-    image Mori = "Sprites/Mori/MoriPlaceholder2.png"
+    image Mori Neutral1 = im.Flip("Sprites/Mori/MoriNeutral1.png", horizontal=True)
+    image Mori Neutral2 = im.Flip("Sprites/Mori/MoriNeutral2.png", horizontal=True)
+    image Mori Serious1 = im.Flip("Sprites/Mori/MoriSerious1.png", horizontal=True)
+    image Mori Serious2 = im.Flip("Sprites/Mori/MoriSerious2.png", horizontal=True)
+    image Mori Sigh1= im.Flip("Sprites/Mori/MoriSigh1.png", horizontal=True)
+    image Mori Sigh2= im.Flip("Sprites/Mori/MoriSigh2.png", horizontal=True)
+    image Mori Smile1= im.Flip("Sprites/Mori/MoriSmile1.png", horizontal=True)
+    image Mori Smile2= im.Flip("Sprites/Mori/MoriSmile2.png", horizontal=True)
+    image Mori Nervous1= im.Flip("Sprites/Mori/MoriNervous1.png", horizontal=True)
     
     #Yamane Sprites
     image Yamane Neutral = "Sprites/Yamane/Yamane.png"
