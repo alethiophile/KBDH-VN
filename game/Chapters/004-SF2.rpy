@@ -254,10 +254,10 @@ label SF2:
     show Yuki Talk1 at right
     "Yuki raised her gaze from her book languidly. \"Last night,\" she began, without preamble, \"I neared overload due to queued data-creation and modification requests from you." 
     show Yuki Talk2 at right
-    "\"To prevent overload, as per the instructions given by him and yourself, I undertook to dispose of all junk data and error-causing behaviors." 
+    "\"To prevent overload, as per the instructions given by him and yourself, I undertook to dispose of all junk data and error-causing behaviors.\"" 
     nvl clear
     show Yuki Talk1 at right
-    "\"After preparing all three subjects with nanites for preservation, Michikyuu Kanae attempted to slide to an alternate dimension, simultaneous to the activation of Asahina Mikuru's time travel device, while I engaged the dimensional anchor with a modified temporal anchor function."
+    "\"After preparing all three subjects with nanites for preservation, Michikyuu Kanae attempted to slide to an alternate dimension, simultaneous to the activation of Asahina Mikuru's time travel device, while I engaged the dimensional anchor with a modified temporal anchor function.\""
     nvl clear
     show Yuki Talk2 at right
     "\"The resultant actions, guided by stored data from yourself, were sufficient to create a semi-stable permeable reality governed by myself that was outside of both space and time, allowing me to ground myself from the negative attribute data that would cause error behavior."
@@ -408,7 +408,7 @@ label SF2:
     show Kyon Neutral3 at right
     show Taniguchi Grin1 at left behind Kyon with dissolve
     "\"Trouble in paradise?\" Taniguchi mused, drawing close."
-    show Kunikida Ser1  at center behind Kyon with dissolve 
+    show Kunikida Ser1  at center behind Kyon, Taniguchi with dissolve 
     "\"And what's this about you fighting thugs for Tsuruya-sempai?\" Kunikida asked, following with a concerned expression."
     show Taniguchi Smile1 at left
     nvl clear
@@ -512,7 +512,7 @@ label SF2:
     "\"I.... I mean, Kyon and I....\" She hesitated, uncertain what to say. Eventually, in a very quiet voice, she managed to ask, \"Are you going to start dating Kyon?\""
     show Haruhi Pout1 at left
     show Yuki Right Talk1 at right
-    "After blinking once, Yuki answered, \"I do not seek to initiate courtship rituals or physical intimacy with him, though I will reciprocate if he demonstrates an obvious inclination." 
+    "After blinking once, Yuki answered, \"I do not seek to initiate courtship rituals or physical intimacy with him, though I will reciprocate if he demonstrates an obvious inclination.\""
     nvl clear
     show Yuki Right Talk2 at right
     "\"However, as has been observed previously, my understanding of his genuine desires and emotions is faulty; I can therefore not safely assume that such demonstrations have occurred without verifying them through a third party.\""
@@ -584,6 +584,7 @@ label SF2:
     show Mikuru Sad1 at right
     "\"But I'm not {i}from{/i} this timeplane; I can't have, um, relationships with anyone from here. S...so, please don't think of me as a threat, Suzumiya-san! And you can't ask me to think of him without you being in the picture; if it weren't for {i}you{/i}, I never would have been sent back and been able to meet him anyway! I don't want to come between the two of you!\""
     nvl clear
+    show Haruhi Unhap2 at left
     show Kanae Worry1 at center
     show Mikuru Unhap2 at right
     "Haruhi stuck one foot out and turned the chair around to face her club members. Kanae rubbed at one eye and peered at Mikuru in bemused fascination, while Yuki's eyes were fixed firmly on Haruhi. Mikuru herself merely gazed at her sewing project with a bowed head, her hands not moving, her expression downcast."

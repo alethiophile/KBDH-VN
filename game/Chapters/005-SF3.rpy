@@ -6,17 +6,18 @@ label SF3:
         play music "Music/KyomutekiKuukan.mp3"
         scene bg SchoolOutside1 CS
     #scene bg SchoolOutside1 CS
-    show Haruhi CS Pout1 at left
+    show Haruhi CS Pout1 at TenthLeft
     show Kyon CS Sigh1 at right
+    with fade
     "\"It happens,\" he said casually, seeming unconcerned. Glancing at their surroundings, he observed, \"I don't see any Shinjin. Back in the school again?\""
-    show Haruhi CS Sigh2 at left
+    show Haruhi CS Sigh2 at TenthLeft
     "\"I don't even understand how you can see this and not be alarmed,\" she said with a sigh, looking up at the sky with him. \"So ... you said that this happened last time when I got too frustrated, and then I accidentally almost destroyed the world?\""
     nvl clear
     show Kyon CS Neutral2 at right
     "\"That's what I've been told,\" he agreed. \"But we've got a little time, I think.\""
-    show Haruhi CS Neutral2 at left
+    show Haruhi CS Neutral2 at TenthLeft
     "\"I can't help but feel a bit simple-minded if all it took for you to snap me out of this last time was....\"" 
-    show Haruhi CS Pout2 at left
+    show Haruhi CS Pout2 at TenthLeft
     show Kyon CS Worry1 at right
     nvl clear
     "She trailed off and looked away. \"That wasn't an invitation,\" she added in warning when he lowered his gaze to study her."
@@ -24,16 +25,16 @@ label SF3:
     "He raised an eyebrow at her and said nothing before he shrugged, leading the way into the school building." 
     scene bg SchoolEntranceLeft CS
     show Kyon CS Neutral3 at right
-    show Haruhi CS Neutral1 at left
+    show Haruhi CS Neutral1 at TenthLeft
     with fade
     nvl clear
     "He moved to the same locked door he had smashed the window of last time, but she stopped him with a shake of her head. Didn't he understand? This was the world she was constructing ... not even meaning to ... and he'd gone and told her what she was, here." 
-    show Haruhi CS Neutral1 at left
+    show Haruhi CS Neutral1 at TenthLeft
     "\"I have the keys,\" she said, willing them to appear in her skirt pocket."
     play sound "SE/DoorOpenFast.wav"
     scene bg hallway CS
     show Kyon CS Neutral3 at right
-    show Haruhi CS Neutral1 at left
+    show Haruhi CS Neutral1 at TenthLeft
     with fade
     nvl clear
     "Naturally, they did, and he followed her, nonplussed. After a moment, she realized he was holding one hand out, very slightly towards her, though he didn't actually look at her directly." 
@@ -53,66 +54,72 @@ label SF3:
     "\"You can take my arm,\" he suggested, just like the last time they had been in this strange space. \"It makes for a better mood.\""
     play sound "SE/dooropenfast.wav"
     scene bg ClubroomFullNight CS
-    show Haruhi CS Neutral1 at left
+    show Haruhi CS Neutral1 at TenthLeft
     show Kyon CS Neutral3 at right
     with fade
     nvl clear
     "She shook her head at that, then unlocked the door, wondering why she had bothered with keys ... she could just have willed the door open, after all."
     play sound "SE/lightswitch.mp3"
     scene bg ClubroomFullNight
-    show Haruhi Neutral1 at left
+    show Haruhi Neutral1 at TenthLeft
     show Kyon Neutral3 at right
     with dissolve
     "He flipped on the light after releasing her hand and went to the window, gazing outside." 
     play sound "SE/doorclose.mp3"
-    show Haruhi Quest1 at left
+    show Haruhi Quest1 at TenthLeft
     nvl clear
     "\"Well?\" she asked, breaking the silence and closing the door behind her. \"I'm sure you've got something to say.\""
     show Kyon Ser3 at right
     "\"I could say I'm sorry,\" he told her, shaking his head. \"Would that be enough?\""
-    show Haruhi Sigh1 at left
+    show Haruhi Sigh1 at TenthLeft
     "\"It's not your fault,\" she sighed. \"I'm just ... really stressed out.\""
     show Kyon Neutral2 at right
     nvl clear
     "He shrugged, turning around and fiddling with the tea kettle for a minute. \"My tea still sucks,\" he warned her. \"It may not be deadly, but I can't promise anything.\""
-    show Haruhi Neutral2 at left
+    show Haruhi Neutral2 at TenthLeft
     "\"You have to change the leaves,\" she observed." 
-    show Haruhi Unhap1 at left
-    stop music fadeout 3
+    nvl clear
+    show Haruhi Unhap1 at TenthLeft
     "Then she shook her head again. \"Are you serious? Here we are on the verge of me destroying the world — again! — and all you can think to do is make tea?! Gods, if aliens arrived, what would you do, apologize for being out of crumpets and discuss the Hanshin Tigers?\""
     show Kyon Sigh1
-    nvl clear
-    queue music "Music/GodKnowsMusicBox.mp3"
+    stop music fadeout 10
     "He snorted, carelessly dumping the old leaves into the trash and eyeballing a replacement fill of tea leaves from one of the metal cannisters that Mikuru had bought. \"I'm not actually a fan of the Hanshin Tigers."
+    nvl clear
     show Kyon Sigh2 at right
-    "Setting aside the aliens we've already met.... After dealing with some of the things I have ... last February, I guess it was? Anyway, a while back I told the universe, though in more words, that it could bring any trouble it wanted,\" he said resolutely, his attention focused on the kettle as it heated up." 
+    stop music
+    play music "Music/GodKnowsMusicBox.mp3"
+    "\"Setting aside the aliens we've already met.... After dealing with some of the things I have ... last February, I guess it was? Anyway, a while back I told the universe, though in more words, that it could bring any trouble it wanted,\" he said resolutely, his attention focused on the kettle as it heated up." 
     show Kyon Ser2 at right
     nvl clear
     "\"As long as we had the brigade together, I'd be able to handle it. With you in front of me, the others at our sides, and Tsuruya behind us ... I could deal with the smirking bastard, the Sky Canopy Domain.... Whatever the world brings, as long as we're a brigade, what did any of that matter?\""
-    show Haruhi Pout2 at left
+    show Haruhi Pout2 at TenthLeft
     "\"But you get to have {i}fun{/i},\" she protested. \"And all I do is make {i}trouble{/i}. That's not fair for either of us!\""
     show Kyon Ser1 at right
     nvl clear
     "\"Now you're being too hard on yourself,\" he said, straightening up with a frown. \"And that's not like you. Maybe I made a mistake telling you what I did.\""
-    show Haruhi Crossed Pout1 at left
+    show Haruhi Crossed Pout1 at TenthLeft
     "\"And you only did it because of Yuki,\" she muttered, turning away." 
     nvl clear
+    $ _window = True
     show ClubroomFullNight Glow behind Haruhi with dissolve
+    $ _window = False
     "A glowing figure appeared on the distant skyline, and she focused her will on it, desperately wishing it would go away.{nw}" 
+    $ _window = True
     hide ClubroomFullNight with dissolve
+    $ _window = False
     extend " After a shuddering heartbeat, it did, vanishing into motes of light. Kyon seemed not to notice, though he was watching her."
     show Kyon Ser3 at right
     "\"I would have done the same thing for Asahina-san or Koizumi,\" he returned levelly. \"And if I thought I could help, Tsuruya-san and Kanae-chan as well, even though we've only just met her.\""
-    show Haruhi Pout2 at left
+    show Haruhi Pout2 at TenthLeft
     nvl clear
     "\"What about me?\" she asked quietly. \"I understand that I'm the leader of the brigade, but does that mean that I'm just that?\""
     show Kyon Worry1 at right
     "\"That question,\" he said darkly, grimacing. \"You have no idea how long I've struggled with it. I asked myself last May, 'what is Haruhi to me?' You ... probably remember the answer I came up with.\""
-    show Haruhi Crossed Pout1 at left
-    show Hblush Crossed at left
+    show Haruhi Crossed Pout1 at TenthLeft
+    show Hblush Crossed at TenthLeft
     nvl clear
     "She felt her face color and nodded stiffly, turning away again." 
-    show Haruhi Crossed Tsun2 at left
+    show Haruhi Crossed Tsun2 at TenthLeft
     "\"And that's what's bothering me,\" she admitted. \"I guess I can't keep it bottled up, or I'll blow up the world as we know it. But reality bends itself the way I want it to. It's not right that {i}you{/i} do, too. How can I feel I'm achieving anything, if I'm cheating without even meaning to?\""
     show Kyon Ser1 at right
     "He said nothing for a long minute, pouring the water into the teapot over the tea leaves and ruminating." 
@@ -121,7 +128,7 @@ label SF3:
     "\"You're still being too hard on yourself,\" he decided, when pouring was complete. \"If I could only pick one thing to blame myself for, it would be for revealing things to you that changed who you were so much." 
     show Kyon Worry1 at right
     "That, honestly, I do regret. I don't regret saving Nagato. I don't regret being honest with you. But causing you pain because of what you know.... That, I never wanted at all. Please believe that, if nothing else.\""
-    show Haruhi Pout1 at left
+    show Haruhi Pout1 at TenthLeft
     hide Hblush
     nvl clear
     "\"I still don't know why you're so nice to me,\" she mumbled, staring at the floor."
@@ -131,21 +138,21 @@ label SF3:
     nvl clear
     "He shook his head with a roll of his eyes. \"I'm not sure what's gotten into you, Haruhi, but I'm not as perfect as you act right now, and you're nowhere {i}near{/i} the villain you make yourself out to be at the moment.\""
     show Kyon Ser1 at right
-    show Haruhi Neutral1 at left
+    show Haruhi Neutral1 at TenthLeft
     "She stood up straighter and looked at him closely. Seemingly unconcerned, he filled two cups with tea and handed one to her." 
     nvl clear
-    show Haruhi Smile1 at left
+    show Haruhi Smile1 at TenthLeft
     "\"You are unreasonably reasonable,\" she accused, unable to keep a tiny smile from forming on her lips."
     show Kyon Neutral3 at right
     "He inclined his head to her very slightly in acknowledgement as he took his seat."
-    show Haruhi Sigh1 at left
+    show Haruhi Sigh1 at TenthLeft
     nvl clear
     "\"Alright, mighty philosopher Kyon,\" she decided, \"riddle me this: what do I do now? I'm stressed out because of all this power I have that's too dangerous to play with, and the idea that I'm forcing people around me against their will — if I'm not outright breaking it. If there were a flaw that you could point out that I needed to fix, what would it be?\""
     show Kyon Ser3 at right
     "\"You should seek happiness,\" he said without hesitation, sipping at the tea and making a face." 
     show Kyon Unhap1 at right
     "\"Ugh. And don't drink that tea, I think it turned out pretty nasty.\""
-    show Haruhi Hips Ang1 at left
+    show Haruhi Hips Ang1 at TenthLeft
     nvl clear
     "\"I'm trying to be serious here!\" she yelled. \"This is the end of the world as we know it!\""
     show Kyon Smile4 at right
@@ -154,55 +161,55 @@ label SF3:
     nvl clear
     "\"Come on, Haruhi. I mean it; you should seek what makes you happy. As far as your flaws, well, I could whine all {i}day{/i}, but to be honest, the one big thing you do is have no real respect for other people's feelings. No empathy.\"" 
     show Kyon Ser3 at right
-    show Haruhi Hips Ang2 at left
+    show Haruhi Hips Ang2 at TenthLeft
     "He raised a hand to forestall her protest and added, \"Even so, you've come a {i}very{/i} long way since we first met on that count, so who am I to judge?\""
     nvl clear
-    show Haruhi Pout2 at left
+    show Haruhi Pout2 at TenthLeft
     "\"Oh,\" she replied, deflating."
     show Kyon Sigh1 at right
     "\"What, you wanted the boxed shoujou-romance answer of, 'Never change, you're perfect the way you are'?\" he asked, dropping his hand to the table."
     show Kyon Ser2 at right
     "\"Well, we're real people in the real world, not characters in a television drama or manga. I know you'd be happier with {i}me{/i} if I had more energy and got better grades. None of us are perfect.\""
-    show Haruhi Smile1 at left
+    show Haruhi Smile1 at TenthLeft
     nvl clear
     "\"You sure aren't,\" she retorted, smiling again as she took her seat at the desk and sipped her tea."
-    show Haruhi Unhap1 at left
+    show Haruhi Unhap1 at TenthLeft
     "\"Ugh! You're right, next flaw, your tea is terrible.\""
     show Kyon Sigh2 at right
     "\"I warned you,\" he said gravely, shrugging and sipping his tea anyway. \"Truth in advertising, right?\""
-    show Haruhi Crossed Pout1 at left
-    show Hblush Crossed at left
+    show Haruhi Crossed Pout1 at TenthLeft
+    show Hblush Crossed at TenthLeft
     nvl clear
     "\"Yeah, well,\" she said, crossing her arms over her chest. \"I don't like ... not knowing where we stand with one another. I guess that's selfish.... Damn it, I want....\" She struggled for words, unable to meet his eyes."
     show Kyon Puzzle1 at right
     "\"You want to be in charge?\" he asked, leaning his face on one hand. \"You are the brigade leader, you know.\""
     nvl clear
-    show Haruhi Tsun2 at left
+    show Haruhi Tsun2 at TenthLeft
     "\"Yeah, but....\" Shifting her shoulders, she said, \"I'm not happy being a tsundere character. Just like you said, we're real people ... right?\""
     show Kyon Ser1 at right
     "He nodded, frowning slightly. \"I did say that, but I don't know what 'tsundere' means.\""
-    show Haruhi Quest1 at left
+    show Haruhi Quest1 at TenthLeft
     hide Hblush
     nvl clear
     "\"Stereotypical anime relationship?\" she asked. \"Girl likes boy, boy likes girl? Girl hits boy, boy mouths off to girl? You could change the order of operation, but it all works out the same.\""
     show Kyon Sigh1 at right
     "\"Oh ... well, that's not a real relationship,\" he agreed. \"Just a mechanic to let the viewers know that a relationship exists while artificially keeping it from developing, since it's a minor point at best in the role of the show. Should have known you'd know the proper term for it.\""
-    show Haruhi Grin1 at left
+    show Haruhi Grin1 at TenthLeft
     nvl clear
     "\"Don't give me that!\" she snapped playfully. \"I bet you can name a dozen more characters that fit the stereotype than I could!\""
     show Kyon Neutral2 at right
     "\"Probably true,\" he acquiesced. \"But I think we're both avoiding the main issue here. That's not us; you don't intentionally cause me trouble, and you listen when I complain. Sometimes, anyway.\""
-    show Haruhi Neutral2 at left
+    show Haruhi Neutral2 at TenthLeft
     nvl clear
     "\"W...well.... I'm not satisfied with your suggestion to make myself happy,\" she said, her smile fading. \"I mean, I know I {i}could{/i}. Just,\" she snapped the fingers of her right hand, \"{i}make{/i} ... things perfect. Clouds of sakura petals on demand, constant appropriate music somehow always surrounding us, no misunderstandings ever....\""
     show Kyon Sigh2 at right
     "\"You'd get so bored of that,\" he said with a sigh, shaking his head. \"Actually, probably so would I.\""
     nvl clear
-    show Haruhi Sigh1 at left
+    show Haruhi Sigh1 at TenthLeft
     "\"Or, I could,\" she snapped her fingers again, \"{i}make{/i} myself happy with whatever happened, so that I was just satisfied all the time no matter what happened.\""
     show Kyon Ser3 at right
     "\"I don't buy that,\" he disagreed, sipping his tea again. \"It'd be just as true of your last suggestion, but the person who looked like you would not be Haruhi if you did that.\""
-    show Haruhi Quest1 at left
+    show Haruhi Quest1 at TenthLeft
     nvl clear
     "\"Wouldn't it be better for the world, though?\""
     show Kyon Sigh2 at right
@@ -212,8 +219,8 @@ label SF3:
     "\"Look, I was given ... advice before I came here. And I don't mean to make you feel like this is less important than it actually is, but ... I haven't become the future self that travels back in time to last Sunday, yet." 
     show Kyon Ser3 at right
     "As strange as it all may sound, I'm confident that we get through this alright. Even without that knowledge, I'd still believe it to be true, though.\""
-    show Haruhi Pout2 at left
-    show Hblush at left
+    show Haruhi Pout2 at TenthLeft
+    show Hblush at TenthLeft
     nvl clear
     "\"I ... want to be the person who can make you happy,\" she mumbled, her face coloring. \"I want to be able to draw you into the mysteries around us, and explore all of the fun things that happen ... but {i}together{/i}.\""
     show Kyon Smile1 at right
@@ -224,13 +231,13 @@ label SF3:
     show Kyon Worry1 at right
     show KBlush at right
     "Looking away with a grimace, he sighed. \"I get that,\" he said quietly. \"And don't think it hadn't crossed my mind. But ... and don't take this the wrong way, but what could myself, who has never had an actual girlfriend, offer to someone with your confidence? Your dating history?\""
-    show Haruhi Hips Ang3 at left
-    show Hblush Hips at left
+    show Haruhi Hips Ang3 at TenthLeft
+    show Hblush Hips at TenthLeft
     nvl clear
     "\"I'll have you know that our first kiss in May was my first kiss,\" she protested hotly, her face turning red. She felt Shinjin forming, smashing apart distant buildings, and struggled to disperse them. \"I wanted to {i}meet{/i} people, I am {i}not{/i} that kind of girl! Hell — you didn't even {i}ask me for permission{/i}!\""
     show Kyon Worry2 at right
     "He winced, ducking his head. \"Sorry; I didn't think you were! I just meant ... you know about relationships and how they're supposed to work." 
-    show Haruhi Hips Ang2 at left
+    show Haruhi Hips Ang2 at TenthLeft
     show Kyon Puzzle1 at right
     nvl clear
     "You show almost unlimited confidence. What am I able to or supposed to bring to the table? It's not that I wouldn't like to try, but...." 
@@ -242,29 +249,29 @@ label SF3:
     hide Hblush
     show Haruhi Unhap2 
     "He wasn't so great an actor that he could be faking it; he might maintain an impassive facade at times, but assuming some other emotion? She spent a long time mulling over what he said, studying that expression before she forced herself to act." 
-    show Haruhi Sigh1 at left
+    show Haruhi Sigh1 at TenthLeft
     nvl clear
     "\"Okay,\" she acquiesced, nodding. \"I guess ... I can see your point of view. So,\" she said, her voice shaking a little bit, \"I need to forget about my power.\""
     hide KTears
     hide KBlush
     show Kyon Neutral4 at right
     "He blinked at her, taken aback."
-    show Haruhi Pout2 at left
+    show Haruhi Pout2 at TenthLeft
     "\"Or, not entirely forget, but ... um ... rewrite how I remember it a bit. I want to have a power, but I want something I can have fun with that doesn't mean destroying the universe on an accidental whim.\"" 
-    show Haruhi Focus1 at left
+    show Haruhi Focus1 at TenthLeft
     nvl clear
     "She closed her eyes and took a deep breath. \"Here it goes,\" she decided. \"I trust you, Kyon ... if I can't trust you, I can't trust anyone. So ... I'm going to have a minor power to affect things ... objects, anything more I'll need Yuki-chan's help with, until I can learn to be responsible with that power.\""
     show Kyon Sup2 at right
     "\"Haruhi,\" he said, with the sound of his chair scraping across the floor as though he were standing up, \"you don't need to do this—\""
-    show Haruhi Sigh2 at left
+    show Haruhi Sigh2 at TenthLeft
     nvl clear
     "\"Shut up,\" she ordered tersely. \"My power's going to be more limited so I {i}can{/i} play with it without hurting or scaring people. I'm going to make myself ... a tiny bit more open-minded ... with regards to you. Don't say a word! You will thank me for this later! And then, um, I'm going to believe that if we all work together, like you believe, we can make the world a better place.\""
-    show Haruhi Pout2 at left
+    show Haruhi Pout2 at TenthLeft
     "She nodded decisively, then opened her eyes. \"B...because I trust you, I'm going to try not to remember this when I wake up,\" she added. \"And ... you can tell me you're John Smith again if you need me to know everything, for some reason.\" He was standing close to her, one hand on her desk as he peered at her intently."
     show Kyon Worry2 at right
     nvl clear
     "\"You're sure about this?\" he asked anxiously. \"You're ... still going to be the same Haruhi I know?\""
-    show Haruhi Neutral2 at left
+    show Haruhi Neutral2 at TenthLeft
     "\"More than I have been lately,\" she agreed, nodding. \"I hope, anyway. Why else would I be giving you an emergency reset codeword? I may not have a mind like Yuki's, but I can still think ahead!\""
     show Haruhi Smile1 at center with move
     show Hblush at center
@@ -284,7 +291,7 @@ label SF3:
     play sound "SE/impact.mp3"
     "Kyon leapt out of bed with a handspring, landing in a crouch before the opening door and lunging instantly into the forbidden little-sister-submission-tickle-strike, completely foiling her attempt to sneak in and wake him up first. Only after he had reduced her to a shrieking, laughing pile, and his mother was tiredly staring up at the pair of them from the bottom of the stairs did he relent."
     show Kyon Neutral3 at right
-    show Nonoko Laugh1 at left 
+    show Nonoko Laugh1 at TenthLeft 
     with dissolve
     "\"T...tickle-ninja!\" his sister protested, her face red from laughter. \"No fair!\" "   
     nvl clear
@@ -293,11 +300,11 @@ label SF3:
     "He grabbed his sister's wrists and hauled her upwards, leaving her to dangle a few centimeters over the floor before gently lowering her to stand and releasing her. She stuck her tongue out at him, giggling, then ran down the stairs to their mother."
     nvl clear
     scene bg KyonHouseDay with fade
-    show Nonoko Sup1 at left 
+    show Nonoko Sup1 at TenthLeft 
     show Kyon Smile1 at right 
     with dissolve
     "\"Mom!\" she yelled. \"Kyon-kun had his brain eaten by a pod-person! The alien that's replaced him wakes up in the morning without needing help!\" "
-    show Nonoko Smile1 at left
+    show Nonoko Smile1 at TenthLeft
     "\"That's very nice, dear,\" he heard his mother say as she bustled back into the kitchen. \"Maybe he'll get good grades, too. Now wash up before breakfast.\" "
     nvl clear
     show Kyon Worry1 at right
@@ -306,7 +313,7 @@ label SF3:
     "Even if his future self would evidently find nothing worth mentioning to him via the letter he had passed to Haruhi, or a hidden message elsewhere. {nw}"     
     show Kyon Neutral2 at right    
     extend "After washing, gobbling down everything his mother put in front of him and still feeling hungry, he told his mother and sister, \"There's a math test tomorrow; I'm headed in early to study.\" "
-    show Nonoko Yell1 at left
+    show Nonoko Yell1 at TenthLeft
     "\"Pod-person!\" his sister yelled, as he left the house."
     nvl clear
 label test2:
@@ -325,54 +332,60 @@ label test2:
     stop music fadeout 1
     scene bg SchoolEntranceLeft
     queue music "Music/ItsumoNoFuukei.mp3"
-    show Haruhi Neutral1 at left with dissolve
+    show Haruhi Neutral1 at TenthLeft with dissolve
     "Stopping just before the gates, she realized she hadn't thought so specify where he was to meet her, so flipped her phone open and called him."
-    show Haruhi Ang4 at left
+    show Haruhi Ang4 at TenthLeft
     "\"Kyon!\" she barked, the second he picked up. \"Why aren't you here yet?\""
     show Kyon Smile2 at right with dissolve
     "He said nothing in response, merely stepping from behind the gatepost he had been leaning against with a raised eyebrow."
     nvl clear
-    show Haruhi Grin2 at left
+    show Haruhi Grin2 at TenthLeft
     "\"Well-played,\" she allowed, flipping her phone closed. \"For once, you dodge a penalty!\""
     show Kyon Smile3 at right
     "\"You're in a good mood,\" he said, rubbing his chin thoughtfully as he closed and pocketed his own phone. \"Have a good dream last night?\""
     nvl clear
+    $ _window = True
     hide Haruhi with moveoutright
+    $ _window = False
     "She fought to keep her face from coloring, and quickly jogged past him so he couldn't see her expression. \"Wouldn't {i}you{/i} like to know,\" she said with a chuckle. \"Come on, let's study in the club room.\""   
+    nvl clear
+    
 label test3:
     stop music fadeout 1
     scene bg ClubroomCenterDay with fade
     queue music "Music/Nanika.mp3"
     
-    show Haruhi Ang2 at left with dissolve
+    show Haruhi Ang2 at TenthLeft
+    show Kyon Sigh1 at right
+    with dissolve
     "\"Pathetic,\" Haruhi told him between bites of her delayed breakfast, observing Kyon's progress through his homework."    
-    show Kyon Sigh2 at right with dissolve    
+    show Kyon Sigh2 at right
     "\"Thanks for the morale boost,\" he grumbled, struggling with another answer.{nw}"    
     show Kyon Ser2 at right    
     extend "\"Okay,\" he declared, finishing one of the many problems he had remaining. \"I'm not going to make it. I'll focus on the classes that happen before lunch, and finish the rest later. Math's an afternoon class, so....\""    
     nvl clear    
-    show Haruhi Focus1 at left    
+    show Haruhi Focus1 at TenthLeft    
     "She nodded dubiously, then turned around and put something in the club room's mini-fridge. He flipped through the history notes she had written, paying special attention to where she had underlined specific dates or names. History was defeated quickly, thanks to the accuracy of Haruhi's notes, and the sketchy grammar notes she had left were more than enough to bolster his own knowledge in that regard. It may not have been much, but at least he had one good subject...."
     nvl clear    
     "\"You hungry?\" she asked."    
     show Kyon Neutral2 at right
     "He nodded, glancing briefly at her before turning back to his homework. \"A bit,\" he admitted. \"Just don't feel like I'm getting enough these days. Constantly ravenous.... And I slept through dinner last night.\" He sighed, breaking from his homework to stretch his arms overhead. \"I really need to stop doing that.\""
     nvl clear
-    show Haruhi Grin2 at left
+    show Haruhi Grin2 at TenthLeft
     "\"Nighttime heroics?\" she teased him, smirking. {nw}" 
-    show Haruhi Hap4 at left
+    show Haruhi Hap4 at TenthLeft
     extend "\"Alright. If you finish your homework for the periods before lunch, I'll let you have my leftovers during break. It's a good deal, you know! But the brigade chief can't just hand out rewards with no rhyme or reason, so, be sure to earn it!\""
     nvl clear
     show Kyon Smile4 at right
     "\"Sure thing,\" he agreed, finishing up the last few lines he needed before he was done. \"Lucky there's no essay,\" he added, clenching and unclenching his right hand to relieve the writer's cramp he'd started to develop. After a glance at the clock, he started packing his homework and the notes Haruhi had made for him into his schoolbag. \"But, seriously Haruhi ... thanks for helping me out with my homework.\""
     nvl clear
-    show Haruhi Sup1 at left
+    show Haruhi Sup1 at TenthLeft
     "Her face colored very slightly, {nw}"
-    show Hblush at left
-    show Haruhi Hap2 at left
+    show Hblush at TenthLeft
+    show Haruhi Hap2 at TenthLeft
     extend "but she puffed out her chest and lifted her nose to sniff imperiously. \"I told you once, and I'll say it again,\" she insisted, \"no vice commander of mine is going to settle for bad grades when they can obviously earn better!\" She relaxed her stance a bit, stealing her own glance at the clock but not moving to collect her bag."
     nvl clear
-    show Haruhi Pout1 at left
+    show Haruhi Pout1 at TenthLeft
     "\"But....\" After a brief hesitation, she blurted out, \"I'd help you even if you weren't the vice commander,\" without meeting his eyes. \"I'd do it for any member of the brigade ... you're just the only one that doesn't do well.\""
     nvl clear
     show Kyon Unhap1 at right
@@ -382,31 +395,31 @@ label test3:
     "\"Yeah,\" he allowed after a moment. \"It's a bit sad being the dumb one.\""
     nvl clear
     hide Hblush
-    show Haruhi Unhap1 at left
+    show Haruhi Unhap1 at TenthLeft
     "\"You're not dumb,\" Haruhi retorted with an instant roll of her eyes, snickering. \"You quote string theory and ancient philosophy offhand. I've seen your grades for grammar — and English. Obviously, your issue is motivation. You don't {i}really{/i} need my help with your homework ... it just seems that if I don't help you, you don't {i}do{/i} it.\""
     nvl clear
     show Kyon Smile2 at right
     "She had him there, he realized, grimacing. \"Touche,\" he allowed, smirking. He decided to take a stab at something, unsure what Haruhi had let herself remember of the 'dream' the night before. \"Hey, can I ask you something?\""
-    show Haruhi Sigh1 at left
+    show Haruhi Sigh1 at TenthLeft
     "\"Sure,\" she said quickly, nodding at him. \"But, we should head to class.\""
     nvl clear
     show Kyon Puzzle1 at right
     "He rose from his seat and hefted his bag, while she shoved her own collection of papers into her bag. \"Haruhi, if I can ask you to be honest about this ... when you say you would do it for anyone in the brigade ... don't you really mean any of your friends?\""
     nvl clear
-    show Haruhi Sup1 at left
+    show Haruhi Sup1 at TenthLeft
     "She made a choking noise, dropping the tupperware container on the floor. It remained sealed, and she hid her expression from him while she stooped to collect it. \"W...well, if you're going to be so blunt about it,\" she managed, her face dark with a blush. {nw}" 
-    show Hblush at left
-    show Haruhi Unhap2 at left
+    show Hblush at TenthLeft
+    show Haruhi Unhap2 at TenthLeft
     extend "She stomped one foot on the floor and waved the tupperware menacingly. \"Why are you asking me this now?!\""
     show Kyon Worry1 at right
     "\"It was something Kanae-chan mentioned the other day,\" he said with a shrug, opening the clubroom door. {nw}" 
     play sound "SE/dooropenfast.wav"
     extend"\"She said she was occasionally 'lucky enough to have friends'. I just sometimes worry that you forget that your fellow brigade members are friends, too, not only subordinates in the club.\""
     nvl clear
-    show Haruhi Ang4 at left
+    show Haruhi Ang4 at TenthLeft
     "\"Man,\" Haruhi grumbled, closing the door then hurrying to Kyon's side, \"you make it sound like I can't stand having equals!\""
     hide Hblush
-    show Haruhi Hap4 at left
+    show Haruhi Hap4 at TenthLeft
     play sound "SE/impact.mp3"
     "She playfully punched him in the shoulder, though he was surprised that it didn't sting in the slightest, even though he felt it. \"What, do you think that just because you're getting your homework done, now, I've turned stupid on you? Or weak? You know, if you had the chutzpa for it, you could have formed the SOS Brigade and I would have followed....\""
     nvl clear
@@ -415,18 +428,18 @@ label test3:
     #play sound "SE/footsteps13.mp3"
     show Kyon Smile3 at right
     "He glanced at her sidelong as they stepped into the stairwell. \"Really?\" he asked, raising one eyebrow. \"I find it hard to imagine....\""
-    show Haruhi Grin2 at left
+    show Haruhi Grin2 at TenthLeft
     "\"That's because you're laaaazy,\" she said, drawing out the sound and sticking her tongue out at him. \"If you had actually made the club instead of just giving me the idea.... But that's also why you're not an idiot, even if you do dumb things sometimes.\""
     nvl clear
     scene bg hallway with fade
     show Kyon Smile2 at right
     "\"Sing on sweet angel;\" Kyon retorted with a roll of his eyes, \"mine ears ache for thy faint praise; damning though it be.\""
-    show Haruhi Grin1 at left
+    show Haruhi Grin1 at TenthLeft
     "She snickered at him, narrowing her eyes as though she knew something he didn't. \"Oh, and now the refuge in sarcasm,\" she chided him. \"Sometimes, you are sooooo predictable. Hey, when did you pick up poetic verses, anyway? The haiku is kind of new.\""
     nvl clear
     show Kyon Sigh4 at right
     "\"Felt a little left behind when you and Tsuruya were passing back and forth those poems you memorized a while back,\" he admitted. \"I read up on the style, but didn't feel like destroying precious brain cells to memorize anything.\""
-    show Haruhi Unhap1 at left
+    show Haruhi Unhap1 at TenthLeft
     play sound "SE/dooropenfast.wav"
     "\"That's exactly what I'm saying!\" Haruhi protested, stomping one foot on the floor as he slid open the door to the classroom. \"You're {i}lazy{/i}.\""
     nvl clear
@@ -448,45 +461,45 @@ label tttttest:
     "After only a moment of consideration towards Kyon, who seemed to be behaving by working on his math homework, she tapped his shoulder and handed him the tupperware of leftovers. \"Keep up the good work, subordinate,\" she encouraged him, climbing to her feet and striding into the hallway to see what Sakanaka wanted."
     nvl clear
     scene bg hallway with fade
-    show Haruhi Hap1 at left with dissolve
+    show Haruhi Hap1 at TenthLeft with dissolve
     "\"Hey,\" she said to the other girl, once they were in the hallway and out of earshot from the other students. \"What's up, Sakanaka-san? Is JJ still okay?\" She made a mental note to try and visit Sakanaka sometime relatively soon ... since Yuki had fixed the problem of 'haunted' dogs, Haruhi hadn't had a chance to play with the terrier."
     nvl clear
     "\"He's fine,\" Sakanaka replied, smiling weakly. \"Um, Suzumiya-san, I don't mean to alarm you ... but ... um.... W...well, I feel I owe you honesty after everything you did for Rousseau. I'm sorry to be the one who bears this news to you, but....\""
     nvl clear
-    show Haruhi Neutral1 at left
+    show Haruhi Neutral1 at TenthLeft
     "\"Well?\" Haruhi asked, restraining the urge to tap one foot through sheer will alone. What news could Sakanaka have that would be important or critical? Given the powers of the SOS Brigade, what could even really be a concern? Though, she made herself realize, there was no way anyone outside of the SOS Brigade could know that."
     "Unable to meet her eyes, Sakanaka blurted out, \"Suzumiya-san, there's a rumor going around that Kyon-kun is two-timing you with Tsuruya-sempai!\""
     nvl clear
-    show Haruhi Sigh3 at left 
-    show Haruhi Neutral2 at left
+    show Haruhi Sigh3 at TenthLeft 
+    show Haruhi Neutral2 at TenthLeft
     "Haruhi blinked, staring at her classmate, and tried to suppress the smirk she felt forming. \"Really?\" she asked. \"That's ... pretty funny. So, where did this rumor start from?\""
     "\"Er ... that is....\" Sakanaka visibly deflated, staring at the floor. \"Tsuruya-sempai said it herself. R...really, I wouldn't believe a rumor spread about you offhand. But, others may, and.... Well, I feel you should know the truth!\""
     nvl clear
-    show Haruhi Sup2 at left
+    show Haruhi Sup2 at TenthLeft
     "\"She....\" Haruhi blinked and waved a hand dismissively. \"What {i}exactly{/i} did Tsuruya-san say?\""
     "\"I ... don't really trade in rumors, so I only overheard it from Yanagimoto- kun,\" Sakanaka allowed. \"But she insists that she verified it with Tsuruya- sempai herself.\""
-    show Haruhi Neutral1 at left
+    show Haruhi Neutral1 at TenthLeft
     "\"Yanagimoto,\" Haruhi murmured, concentrating. \"Oh, yeah, I remember her from when I joined the rhythmic gymnastics club. She sits in front of Goto-kun, right?\""
     nvl clear
     "\"Right,\" Sakanaka agreed. \"I don't ... want to cause trouble. I just thought you should know.\""
-    show Haruhi Sigh3 at left
+    show Haruhi Sigh3 at TenthLeft
     "\"Well, it's a misunderstanding,\" Haruhi said with a shrug. \"Last I heard, Kyon trashed some goons who were giving Tsuruya-san some trouble.\" Though, he was time traveling at the time, and technically, hadn't done it {i}yet{/i}. \"On Sunday, right?\""
     nvl clear
     "\"Um, maybe that's it,\" Sakanaka agreed with a weak shrug, trying to smile. \"There is ... another thing about Kyon-kun....\""
-    show Haruhi Quest2 at left
+    show Haruhi Quest2 at TenthLeft
     "Haruhi raised an eyebrow. \"What else is it? And who's spreading all these rumors?\" she asked."
     nvl clear
     "\"Aside from him ... um ... spending time with Tsuruya-sempai yesterday, he got into a fight with Ryuguu-san from class 3-4,\" Sakanaka added in a very hushed tone. \"No one is certain why, but, um, Ryuguu-san hasn't come back to school yet today. This fighting ... Kyon-kun's gathering a bit of a reputation as a delinquent.\""
     nvl clear
-    show Haruhi Neutral2 at left
+    show Haruhi Neutral2 at TenthLeft
     "\"Seems kind of sudden for him,\" Haruhi mused. \"But, hey, as long as he doesn't get in trouble with the school, what does it matter?\""
     "Sakanaka blinked, her eyes wide. \"Y...you don't care that he could be a violent person?\" she asked, astounded. \"That he spends time with other girls?\""
     nvl clear
-    show Haruhi Sigh3 at left
+    show Haruhi Sigh3 at TenthLeft
     "Haruhi shrugged, shaking her head. \"Nah, I'll give him a stern talking to, let him know he should watch his reputation,\" she said in answer. \"Him spending time with other girls {i}would{/i} bother me ... but Tsuruya-san's an honorary member of the SOS Brigade. How can I get mad at him for taking care of brigade business with her?\""
     nvl clear
     "\"I'm glad,\" Sakanaka decided, giving Haruhi a bright smile. \"I worried for nothing, then; sorry to trouble you, Suzumiya-san!\""
-    show Haruhi Hap1 at left
+    show Haruhi Hap1 at TenthLeft
     "\"No trouble at all,\" Haruhi returned, nodding at the other girl. \"Thanks for the update anyway. It's good to know where the brigade stands in the scheme of things....\" She glanced down the hallway, where their next teacher was approaching. \"Well, maybe we can chat later; I want to give Kyon a few choice words before class.\""
     nvl clear
     scene bg classroom with fade:
@@ -554,13 +567,13 @@ label tttttest:
     nvl clear
     
     
-
+    play sound "SE/dooropenfast.wav"
     stop music fadeout 1
     queue music "Music/Unzari da.mp3"
-    scene bg ClubroomFullDay with fade:
+    scene bg ClubroomFullDay with slowflashbulb:
         xpos 0 ypos 0
     $ renpy.layer_at_list([PanScene_SetToLeft])
-    show Koizumi Crossed Smile1 at center
+    show Koizumi Crossed Smile1 at center with dissolve
     "\"...greater self-contro— Ah, sorry,\" Koizumi said, breaking off with a grin, turning to look at her. \"Hello, everyone! Are we going to be meeting for lunch regularly, now?\""
     show Haruhi Point Hap1 at left with dissolve
     "\"Not a bad idea,\" she agreed, closing the door once everyone else was in. \"Hmm, where's Kanae-chan? Ah! Kyon, once you finish eating, go find her, will you?\""
@@ -568,7 +581,7 @@ label tttttest:
     $ renpy.layer_at_list([PanScene_LeftToRight])
     show Kyon Neutral3 at center_RightScreen with dissolve
     "\"Yeah, yeah,\" he replied with his standard lack of enthusiasm, bolting his last few bites away. \"You happen to know her classroom?\""
-    show Mikuru Neutral2 at right_RightScreen
+    show Mikuru Neutral2 at right_RightScreen with dissolve
     "\"Um, 1-7,\" Mikuru offered helpfully, taking a seat at the table."
     hide Kyon
     show Tsuruya Hap4 at center_RightScreen
@@ -631,10 +644,16 @@ label tttttest:
     nvl clear
     show Haruhi Eyeroll1 at left_RightScreen
     "\"You really think I would be satisfied with that?\" Haruhi asked flatly. \"I could easily revoke your Kyon-borrowing privileges, you know!\""
+    $ _window = True
+    show YBook at TopRight_RightScreen behind Mikuru with dissolve
+    $ _window = False
     "Yuki blinked and raised her eyes from her book, though her expression remained unchanged."
     show Haruhi Neutral1 at left_RightScreen
     "\"Not you, Yuki-chan,\" she added, glancing at the shorter girl."
     "Nodding very slightly, Yuki turned her attention back to the pages before her. Haruhi glanced at the title, 'The Mirror of Her Dreams'."
+    $ _window = True
+    hide YBook with dissolve
+    $ _window = False
     nvl clear
     show Tsuruya Worry1 at center_RightScreen
     "Tsuruya's usual smiling expression had faded to a look of worry. \"Um, please, Haru-nyan, it's very importants, you know.... I made Kyon-kun promise that no matter what, he wouldn't reveal what he knew to anyones — even you — until the investigations was complete!" 
@@ -642,7 +661,7 @@ label tttttest:
     "But don't blame him; I made him promise! I...if you insists that he can't help me anymore, then ... I guess that's SOS Brigade rules, so I can't do much about it.\""
     nvl clear
     show Haruhi Pout1 at left_RightScreen
-    "Haruhi grimaced, realizing that very likely, with time travel involved, Kyon made the promise because he had traveled back from some time after Haruhi already {i}knew{/i} what the investigation results were.{nw}"
+    "Haruhi grimaced, realizing that very likely, with time travel involved, Kyon made the promise because he had traveled back from some time after Haruhi already {i}knew{/i} what the investigation results were. {nw}"
     show Haruhi Neutral2 at left_RightScreen
     extend "\"Alright,\" she agreed decisively. \"Next time I'd prefer you were more straightforward and brought requests like this to me directly! So I'll allow it this time, but I will need accurately recorded receipts accounting for all times and locations that you're utilizing Kyon in.\""
     nvl clear
@@ -664,61 +683,90 @@ label tttttest:
     #queue music "Music/HizundaKokoro.mp3"
     show Koizumi Think Ser4 at left
     $ renpy.layer_at_list([PanScene_RightToLeft])
+    with None
+    play sound "SE/doorknock.mp3"
+    $ _window = True
+    pause 1
+    play sound "SE/dooropenfast.wav"
     show Kyon Worry1 at right
     show Kanae Worry2 at center
     with dissolve
+    $ _window = False
     "After knocking, Kyon opened the door, his expression more sour than usual. A faint line of blood trickled down one cheek, and Kanae stood at his side, holding his free hand and looking downcast." 
-    $ renpy.layer_at_list([PanScene_LeftToRight])
-    show Haruhi Sup3 at left_RightScreen
+    $ _window = True
+    show Haruhi Sup3:
+        linear 0.3 TenthRight # left_RightScreen
+    show Kyon Worry1:
+        linear 0.2 pass
+        linear 0.2 center_RightScreen
+    # with dissolve
+    $ _window = False
+    $ renpy.layer_at_list([PanScene_LeftToCenter])
     "\"Kyon!\" Haruhi yelped, rushing to his side and peering at the cut — more of a deep scratch, really. Even so, she dragged him to the nearest chair and sat him down. \"What happened?\""
     nvl clear
+    $ renpy.layer_at_list([PanScene_CenterToRight])
     show Tsuruya Sup1 at center_RightScreen
     "\"You're still bleeding?\" Tsuruya asked, blinking in surprise. \"But I put a bandage on that for you yesterday!\""
-    $ renpy.layer_at_list([PanScene_RightToLeft])
-    show Kyon Sigh1 at right
+    show Kyon Sigh1 at center_RightScreen
     "\"Long story,\" Kyon said, shaking his head and grimacing."
+    $ renpy.layer_at_list([PanScene_RightToLeft])
     show Kanae Worry3 at center
     "\"I'm sorry, Sempai,\" Kanae managed timidly, releasing his hand and taking a seat by Koizumi."
-    show Kyon Neutral2 at right
+    $ renpy.layer_at_list([PanScene_LeftToRight])    
+    show Kyon Neutral2 at center_RightScreen
     "\"Don't worry about it— Haruhi, Asahina-san and I need to take care of something relatively quickly.\""
     nvl clear
-    $ renpy.layer_at_list([PanScene_LeftToRight])    
     show Mikuru Sad2 at right_RightScreen
     "Mikuru stared, snapped out of her faint only to see the scratch, blood dribbling down Kyon's cheek to run along his chin."
-    show Mikuru Cower Nervous3 at right_RightScreen
+    $ renpy.layer_at_list([PanScene_RightToCenter])
+    # with None
+    show Mikuru Cower Nervous3:
+        linear 0.3 xpos 1.2
+    show Kyon Neutral2:
+        linear 0.2 pass
+        linear 0.1 xpos 1.3
+    show Tsuruya Sup1:
+        linear 0.3 right_RightScreen
     "\"Wah! Kyon-kun!\" she wailed, dashing to his side and dabbing at the injury with a handkerchief. \"I'll take you to the nurse's office, right away! Please don't die!\""
     nvl clear
-    show Haruhi Neutral1 at left_RightScreen
+    show Haruhi Neutral1 at TenthRight
     "Haruhi nodded, unhappy with how things were playing out, but understanding at least what went on. Time travel really explained quite a bit. \"Mikuru-chan,\" she said, waggling a finger, \"it's just a scratch. Kyon is made of tougher stuff! Now, remember yesterday, while we were in the club meeting. We were all in by ten minutes after class got out, right? Make sure he gets there alright.\""
-    show Mikuru Cower Sup1 at right_RightScreen
+    show Mikuru Cower Sup1
     "\"W...what?\""
-    $ renpy.layer_at_list([PanScene_RightToLeft])   
-    show Kyon Neutral4 at right
+    show Kyon Neutral4
     "\"Ah, got it,\" Kyon said, nodding sagely. \"Anything else?\""
     nvl clear
-    $ renpy.layer_at_list([PanScene_LeftToRight])   
-    show Haruhi Smile1 at left_RightScreen
+    show Haruhi Smile1 at TenthRight
     "\"I've agreed to let you help Tsuruya-san out when she asks,\" Haruhi added, drumming her fingertips on the tabletop. \"But I expect a full report from both of you when the 'investigation' is complete!\""
-    $ renpy.layer_at_list([PanScene_RightToLeft])    
+    # $ renpy.layer_at_list([PanScene_RightToLeft])    
     "Kyon nodded again, not reacting much except to look more thoughtful. Well, Haruhi admitted to herself, he really {i}was{/i} good at this time travel stuff.... Sadly, he was probably just the role-model Mikuru needed."
     nvl clear
-    show Kyon Neutral2 at right
+    show Kyon Neutral2
     "\"Right, I'll see you in class,\" Kyon decided, checking the clock on the wall and climbing back to his feet."
-    show Mikuru Ser2 at right_RightScreen
-    $ renpy.layer_at_list([PanScene_LeftToRight])   
+    show Mikuru Ser2
+    $ _window = True
     "\"The nurse's office, Kyon-kun,\" Mikuru insisted, taking Kyon's hand and leading him into the corridor, {nw}"
-    hide Mikuru Ser2 with moveoutleft
-    hide Kyon Neutral2
+    # $ _window = True
+    hide Mikuru 
+    hide Kyon
+    with dissolve
+    $ _window = False
     extend "the boy reaching back to push the door shut behind them."
+    $ _window = False
     nvl clear
-    show Haruhi Worry1 at left_RightScreen
+    show Haruhi Worry1 at TenthRight
+    # $ renpy.layer_at_list([PanScene_RightToLeft])      
     "\"Okay!\" Haruhi declared, turning to the downcast Kanae. \"What happened with Kyon? Why did he get cut getting you for lunch?\" And speaking of lunch ... she hadn't even managed to give Kyon the bento she had made! She didn't know who Tsuruya was investigating, but she was certain she'd make them pay!"
     show Kanae Sad3 at center
-    $ renpy.layer_at_list([PanScene_RightToLeft])      
+    show Tsuruya Sup1 at center_RightScreen
+    $ renpy.layer_at_list([PanScene_CenterToLeft])      
     "\"I...it's my fault,\" Kanae said meekly, hunching in on herself."
     $ renpy.layer_at_list([PanScene_LeftToRight])
     nvl clear
-    "In the corridor, Mikuru yelped something indistinct, moments before there was a strange "
+    "In the corridor, Mikuru yelped something indistinct, moments before there was a strange {nw}"
     play sound "SE/impact.mp3"
     show Tsuruya Smile3 at center_RightScreen
     extend "thudding noise and an eerie silence. \"Lunch with the brigade is exciting,\" Tsuruya decided, while Kanae sniffled meekly and blew her nose on her handkerchief."
+    nvl clear
+    stop music fadeout 2
+    return
