@@ -123,6 +123,8 @@ label Test:
     "\"Yeah, that's not the part I'm worried about,\" he said, smirking, though the expression vanished the moment his cheek pulled at the cut. \"Anyway, Haruhi won't mind me helping you out; I've been dismissed from club activities today.\""
     nvl clear
     show Tsuruya Hap5 at left
+    stop music fadeout 1
+    play music "Music/suspicion.ogg"
     "\"Oh! Perfects! We can keep on with our investigation!\" Tsuruya said excitedly, glancing around to make sure that no one was within eavesdropping distance. \"Okies, here's what I've found out so far ... those pushy fellows from Sunday, they have a contact in the school, a third year named Ryuguu Ryo-san. He loiters around on the campus behind the gym after school to make his deals. I want to questions him, but he's a big fellow, and Kasai's out ... so if you don't minds, could you be my muscle for a bit?\""
     nvl clear
     show Kyon Ser3 at right
@@ -181,7 +183,7 @@ label Test:
     "\"A bit,\" Ryuguu allowed, dropping his hands to his sides. \"Now, look, I'll sell to you, but only because my normal distributor is having problems. Understand that this is top-shelf stuff, meant to be shipped to the highest paying customers and then resold. So that's the kind of price I'm looking for. No copy protection, no censorship — this is the real deal.\""
     nvl clear
     show Kyon Sigh3 at right
-    #    .1
+    #    .1 (not sure how to make him blink)
     show Kyon Ser1 at right
     "Kyon blinked, wondering what the hell was going on, but deciding he already didn't like it. He tried to keep his expression neutral."
     show Tsuruya Grin2 at center
@@ -203,6 +205,9 @@ label Test:
     nvl clear
     "\"Oh, don't even think about it,\" Ryuguu retorted, waving a hand dismissively. \"I'm the one holding the cards here, so to speak. There's no way that—\""
     show Tsuruya Grin4 at center
+    stop music fadeout 1
+    queue music "Music/KamadoumaEnd.mp3"
+    
     "Tsuruya's hand darted out, lightning-fast, and she snatched two of the cards from Ryuguu's grasp before the boy could react. Immediately his face went red, and his scowl turned murderous. {nw}"
     
     #This fight needs a lot of editing...
@@ -226,7 +231,6 @@ label Test:
     nvl clear
     
     #and now we return to the usual quality directing.
-    
     "\"Wha,\" he managed, wincing. \"What are you.... Hey! I don't have to take this! I've got friends high up! You do not know who you're messing with!\""
     show Tsuruya Ang1 at center
     "\"Neither do you,\" Tsuruya retorted. \"But, like Kyon-kun said, there are some peoples you just don't mess with! And some of those peoples are the Tsuruya family! Which means you've already screwed up!\""
@@ -252,6 +256,8 @@ label Test:
     "\"'Was' is right,\" Kyon interjected. \"I think we all understand that you're {i}done{/i} with this, if you know what's good for you.\" Though, given what he already knew was going to happen tomorrow...."
     show Tsuruya Grin1 at center
     "\"Alright,\" Tsuruya said, nodding as she rose from her crouching position to her feet. \"Kyon-kun, put him to sleep again.\""
+    stop music fadeout 1
+    queue music "Music/MikurunoKokoro.mp3"
     nvl clear
     show Kyon Ser1 at right
     "Kyon nodded, stepping around Ryuguu's weakly flailing arms and easily wrapping the boy's neck in a choke-hold, which he held until Ryuguu passed out. {nw}"
@@ -297,7 +303,7 @@ label Test:
     show Kyon Neutral2 at right
     "\"How did everything go?\" he asked, once they were alone in the hallway."
     nvl clear
-    show Mikuru Think Quest2 at left
+    show Mikuru Think Quest2 at left with dissolve
     "\"Fine!\" she said anxiously, peering at the bandage on his face. \"The nurse said you were okay?\""
     show Kyon Sigh5 at right
     "\"I'll be fine,\" he assured her, grinning. \"Okay, um, we need to return to tomorrow ... can you take us to the clubroom, say ... two minutes before the bell at the end of lunch? That should be enough time to get back to class.\""
@@ -313,6 +319,7 @@ label Test:
     nvl clear
     "\"It is no problem,\" Yuki returned smoothly."
     "\"No trouble at all,\" Mikuru agreed, even though she had butterflies in her stomach just from remembering Kyon bleeding. It wasn't as bad as the time she'd seen him {i}stabbed{/i}, but she didn't have to like it one bit!"
+    
     "A knock sounded on the door, and Kyon turned around, pondering, \"Who could that be...?\""
     nvl clear
     "After a heartbeat, the door opened and Koizumi peered in, sighing with relief as he saw Kyon, though there was still tension in his gaze. \"I'm afraid I have some bad news, Kyon-kun,\" he said, smiling weakly. \"Ah ... school administration would like to speak with you ... though it seems that some strings were pulled, and the issue was somehow moved down to a meeting with the Student Council President. There's an emergency session now, so....\""
