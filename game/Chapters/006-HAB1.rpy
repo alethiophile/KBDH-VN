@@ -143,7 +143,7 @@ label Test:
     nvl clear
     "It took a moment, but Kyon was able to pick out the boy in question, somewhat unfamiliar without tape across his nose and one eye blackened. \"That's him,\" Kyon told her with a nod. \"I've seen him before.\" Tsuruya leapt into a thicket of bushes and he followed, almost landing on her, murmuring a quick apology beneath his breath as they crept forward to watch Ryuguu and his allies."
     nvl clear
-    show Yamane Neutral at right with dissolve
+    #show Yamane Neutral at right with dissolve
     "One of them Kyon knew — Yamane, from his own class, a shady looking character in his own right. Physically, the boy was as intimidating as Kunikida, and had large, round glasses and shadowed eyes, cursing him with the appearance and bearing of a sad otaku. {nw}"
     #show Manabe at left with dissolve
     extend "The other one was a taller, thin first year with blond hair. Both were carrying cameras and speaking with Ryuguu in low tones."
@@ -316,32 +316,32 @@ label Test:
     scene bg ClubroomFullDay with fade:
         xpos 0 ypos 0
     $ renpy.layer_at_list([PanScene_SetToRight])
-    show Kyon Smile3 at center
-    show Mikuru Smile2 at right
-    show Yuki Side1 at left
+    show Kyon Smile3 at center_RightScreen with dissolve
+    show Mikuru Smile2 at right_RightScreen with dissolve
+    show Yuki Side1 at left_RightScreen with dissolve
     "After completing the temporal transition, Mikuru lowered her hands from his shoulders, and Kyon's eyes opened, glancing around the clubroom. Unsurprisingly, Yuki was the only club member still left in the room. She closed her book and rose, moving to Kyon's side and raising one hand to his cheek briefly. He blinked, then grinned at the girl, tracing his fingertips across the bandage but leaving it in place. \"Thanks, Nagato,\" he said, nodding at her. \"And thank you, too, Asahina-san.\""
     nvl clear
-    show Yuki Talk1 at left
+    show Yuki Talk1 at left_RightScreen
     "\"It is no problem,\" Yuki returned smoothly."
-    show Mikuru Quest1 at right
+    show Mikuru Quest1 at right_RightScreen
     "\"No trouble at all,\" Mikuru agreed, even though she had butterflies in her stomach just from remembering Kyon bleeding. It wasn't as bad as the time she'd seen him {i}stabbed{/i}, but she didn't have to like it one bit!"
-    show Kyon Puzzle1 at center
+    show Kyon Puzzle1 at center_RightScreen
     "A knock sounded on the door, and Kyon turned around, pondering, \"Who could that be...?\""
     nvl clear
     stop music fadeout 1
     #queue music 
-    $ renpy.layer_at_list([PanScene_LeftToRight])
-    show Koizumi Think Ser2 at left_LeftScreen
+    $ renpy.layer_at_list([PanScene_RightToLeft])
+    show Koizumi Think Ser2 at left
     "After a heartbeat, the door opened and Koizumi peered in, sighing with relief as he saw Kyon, though there was still tension in his gaze. \"I'm afraid I have some bad news, Kyon-kun,\" he said, smiling weakly. \"Ah ... school administration would like to speak with you ... though it seems that some strings were pulled, and the issue was somehow moved down to a meeting with the Student Council President. There's an emergency session now, so....\""
     nvl clear
-    show Kyon Sup2 at right_LeftScreen
+    show Kyon Sup2 at right
     "\"Really?\" Kyon asked, surprised. \"I'm not sure what's stranger. That the Student Council can handle cases like this, or that they get to skip classes for it. Well, whatever.\""
-    show Koizumi Think Ser3 at left_LeftScreen
+    show Koizumi Think Ser3 at left
     "\"Don't forget, Kimidori Emiri will be there,\" Koizumi warned with a frown. \"Which probably explains {i}how{/i} the Student Council was given authority for this meeting.\""
     $ renpy.layer_at_list([PanScene_LeftToRight])
     "\"I will go,\" Yuki declared, her eyes fixed on Kyon."
     nvl clear
-    show Mikuru Think Sup1 at right_LeftScreen
+    show Mikuru Think Sup1 at right_RightScreen
     "\"M...me too,\" Mikuru managed, wishing she could sound as confident as Yuki."
     $ renpy.layer_at_list([PanScene_RightToLeft])
     show Koizumi Think Grin2 at left
@@ -366,6 +366,7 @@ label Test:
     #show President at right with dissolve at right
     "\"I don't...\" the president began, frowning and scanning across the group. \"I expected you to bring her along, if you were going to appear in force.\""
     show Kyon Neutral3 at center
+    nvl clear
     "\"Yeah, okay,\" Kyon allowed, relaxing his arms and taking on his more normal demeanor. \"So, do you have anything for me, President, or is this Kimidori- san's call?\""
     nvl clear
     #hide President with dissolve
@@ -388,7 +389,7 @@ label Test:
     nvl clear
     "\"Technically none,\" the president admitted. \"It's a behavior issue, but all accounts indicate you in self defense, or in defense of a classmate. Ryuguu- san is already being expelled just on the grounds of bringing a weapon into the school and assaulting fellow students ... though he was taken away in an ambulance. In any event, because of that, orders were handed down from the principal to discuss your behavior.... I have the authority to demand a meeting with an advisor for you — several if I believe that your behavior is likely to become problematic. Okabe-sensei is your advisor, right?\""
     nvl clear
-    show Kyon Pained2 at center
+    show Kyon Pain2 at center
     "Kyon grimaced. \"Don't get me wrong, he's a good guy, but I'm not exactly eager for that,\" he said. \"My family?\""
     "\"Already notified,\" the president said, almost apologetically. \"The administrative staff did that first thing.\""
     nvl clear
