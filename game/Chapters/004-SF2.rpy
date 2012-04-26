@@ -641,7 +641,7 @@ label SF2:
     
     call eyecatch("Tuesday, April 19") from SF2_sc004
 
-label Test:
+#label Test:
     play music "Music/Kyoufunohajimari.mp3"    
     scene bg SchoolEntranceLeft
     show Kyon Neutral3 at right
