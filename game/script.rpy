@@ -170,6 +170,7 @@ init:
     image Haruhi Crossed Pout1 = "Sprites/Haruhi/HaruhiCrossedPout1.png"
     image Haruhi Crossed Pout1 Bright = im.MatrixColor("Sprites/Haruhi/HaruhiCrossedPout1.png",
                                        im.matrix.brightness(.5))
+    image Haruhi Crossed Pout2 = "Sprites/Haruhi/HaruhiCrossedPout2.png"
     image Haruhi Crossed Eyeroll1 = "Sprites/Haruhi/HaruhiCrossedEyeroll1.png"
     image Haruhi Crossed Quest1 = "Sprites/Haruhi/HaruhiCrossedQuestion1.png"
     image Haruhi Crossed Grin1 = "Sprites/Haruhi/HaruhiCrossedGrin1.png"
@@ -195,6 +196,7 @@ init:
     image Haruhi Crossed Casual Pout1 = "Sprites/Haruhi/HaruhiCrossedCasualPout1.png"
     image Haruhi Crossed Casual Pout1 Bright = im.MatrixColor("Sprites/Haruhi/HaruhiCrossedCasualPout1.png",
                                        im.matrix.brightness(.5))
+    image Haruhi Crossed Casual Pout2 = "Sprites/Haruhi/HaruhiCrossedCasualPout2.png"
     image Haruhi Crossed Casual Eyeroll1 = "Sprites/Haruhi/HaruhiCrossedCasualEyeroll1.png"
     image Haruhi Crossed Casual Quest1 = "Sprites/Haruhi/HaruhiCrossedCasualQuestion1.png"
     image Haruhi Crossed Casual Grin1 = "Sprites/Haruhi/HaruhiCrossedCasualGrin1.png"
@@ -222,10 +224,12 @@ init:
     image Haruhi Hips Ang1 = "Sprites/Haruhi/HaruhiHipsAngry1.png"
     image Haruhi Hips Ang2 = "Sprites/Haruhi/HaruhiHipsAngry2.png"
     image Haruhi Hips Ang3 = "Sprites/Haruhi/HaruhiHipsAngry3.png"
+    image Haruhi Hips Ang4 = "Sprites/Haruhi/HaruhiHipsAngry4.png"
     
     image Haruhi Hips Casual Ang1 = "Sprites/Haruhi/HaruhiHipsCasualAngry1.png"
     image Haruhi Hips Casual Ang2 = "Sprites/Haruhi/HaruhiHipsCasualAngry2.png"
     image Haruhi Hips Casual Ang3 = "Sprites/Haruhi/HaruhiHipsCasualAngry3.png"
+    image Haruhi Hips Casual Ang4 = "Sprites/Haruhi/HaruhiHipsCasualAngry4.png"
     
     image Hblush = "Sprites/Haruhi/HaruhiSideBlush1.png"
     image Hblush Casual = "Sprites/Haruhi/HaruhiSideCasualBlush1.png"
@@ -264,7 +268,8 @@ init:
     image Kyon Smile4 = "Sprites/Kyon/KyonSmile4.png"
     image Kyon Smile5 = "Sprites/Kyon/KyonSmile5.png"
     image Kyon Worry1 = "Sprites/Kyon/KyonWorry1.png"
-    image Kyon Worry2 = "Sprites/Kyon/KyonWorry1.png"
+    image Kyon Worry2 = "Sprites/Kyon/KyonWorry2.png"
+    image Kyon Worry3 = "Sprites/Kyon/KyonWorry3.png"
     image Kyon Puzzle1 = "Sprites/Kyon/KyonPuzzled1.png"
     image Kyon Sup1 = "Sprites/Kyon/KyonSurprised1.png"
     image Kyon Sup2 = "Sprites/Kyon/KyonSurprised2.png"
@@ -301,6 +306,7 @@ init:
     image Kyon Casual Smile5 = "Sprites/Kyon/KyonCasualSmile5.png"
     image Kyon Casual Worry1 = "Sprites/Kyon/KyonCasualWorry1.png"
     image Kyon Casual Worry2 = "Sprites/Kyon/KyonCasualWorry2.png"
+    image Kyon Casual Worry3 = "Sprites/Kyon/KyonCasualWorry3.png"
     image Kyon Casual Puzzle1 = "Sprites/Kyon/KyonCasualPuzzled1.png"
     image Kyon Casual Sup1 = "Sprites/Kyon/KyonCasualSurprised1.png"
     image Kyon Casual Sup2 = "Sprites/Kyon/KyonCasualSurprised2.png"
