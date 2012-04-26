@@ -42,6 +42,7 @@ init:
     image bg YukiRoomCenter = "Backgrounds/YukiRoomCenter.jpg"
     image bg SchoolOutside1 = "Backgrounds/SchoolOutside1.png"
     image bg SchoolEntranceLeft = "Backgrounds/SchoolEntranceLeft.png"
+    image bg SchoolEntranceRight = "Backgrounds/SchoolEntranceLeft.png"
     image bg Cafe = "Backgrounds/Cafe.jpg"
     image bg ParkBench = "Backgrounds/ParkBench.png"
     image bg ParkPath = "Backgrounds/ParkPath.png"
@@ -54,6 +55,9 @@ init:
     image bg Kiss = "Backgrounds/kiss.jpg"
     image clouds = "id_clouds.png"
     image bg HaruhiCS = "Backgrounds/HaruhiCS.jpg"
+    image bg ClubHallLeft = "Backgrounds/ClubHallLeft.png"
+    image bg ClubHallRight = "Backgrounds/ClubHallRight.png"  
+    
     
     image white = "#ffffff"
     image black = "#000000"
@@ -519,8 +523,11 @@ init:
     image Mikuru Cower Face Nervous1 = "Sprites/Mikuru/MikuruCowerFaceNervous1.png"
     image Mikuru Cower Face Nervous2 = "Sprites/Mikuru/MikuruCowerFaceNervous2.png"
     image Mikuru Cower Face Nervous3 = "Sprites/Mikuru/MikuruCowerFaceNervous3.png"
+    image Mikuru Cower Face Smile1 = "Sprites/Mikuru/MikuruCowerFaceSmile1.png"
     image Mikuru Cower Face Sup1 = "Sprites/Mikuru/MikuruCowerFaceSurprised1.png"
     image Mikuru Cower Face Sup2 = "Sprites/Mikuru/MikuruCowerFaceSurprised2.png"
+    image Mikuru Cower Face Unhap1 = "Sprites/Mikuru/MikuruCowerFaceUnhappy1.png"
+    image Mikuru Cower Face Worry1 = "Sprites/Mikuru/MikuruCowerFaceWorry1.png"
     image Mikuru Cower Sigh1 = "Sprites/Mikuru/MikuruCowerSigh1.png"
     image MBlush Cower Face = "Sprites/Mikuru/MBlushFace.png"
 
@@ -563,6 +570,9 @@ init:
     image Tsuruya Ang2 = "Sprites/Tsuruya/TsuruyaAngry2.png"
     image Tsuruya Grin1 = "Sprites/Tsuruya/TsuruyaGrin1.png"
     image Tsuruya Grin2 = "Sprites/Tsuruya/TsuruyaGrin2.png"
+    image Tsuruya Grin3 = "Sprites/Tsuruya/TsuruyaGrin3.png"
+    image Tsuruya Grin4 = "Sprites/Tsuruya/TsuruyaGrin4.png"
+    image Tsuruya Grin5 = "Sprites/Tsuruya/TsuruyaGrin5.png"
     image Tsuruya Hap1 = "Sprites/Tsuruya/TsuruyaHappy1.png"
     image Tsuruya Hap2 = "Sprites/Tsuruya/TsuruyaHappy2.png"
     image Tsuruya Hap3 = "Sprites/Tsuruya/TsuruyaHappy3.png"
@@ -581,6 +591,8 @@ init:
     image Tsuruya Worry1 = "Sprites/Tsuruya/TsuruyaWorry1.png"
     image Tsuruya Worry2 = "Sprites/Tsuruya/TsuruyaWorry2.png"    
     image Tsuruya Neutral1 = "Sprites/Tsuruya/TsuruyaNeutral1.png"
+    image Tsuruya Susp1 = "Sprites/Tsuruya/TsuruyaSuspicious1.png"
+    image Tsuruya Ser1 = "Sprites/Tsuruya/TsuruyaSerious1.png"
     
     image Tsuruya Wave Grin1 = "Sprites/Tsuruya/TsuruyaWaveGrin1.png"
     image Tsuruya Wave Grin2 = "Sprites/Tsuruya/TsuruyaWaveGrin2.png"
@@ -619,8 +631,11 @@ init:
     image Kanae Worry2 = "Sprites/Kanae/KanaeWorry2.png"
     image Kanae Worry3 = "Sprites/Kanae/KanaeWorry3.png"
     
+    image Kanae Face Hap1 =  "Sprites/Kanae/KanaeFaceHappy1.png"
+    image Kanae Face Quest1 =  "Sprites/Kanae/KanaeFaceQuestion1.png"
     image Kanae Face Smile1 =  "Sprites/Kanae/KanaeFaceSmile1.png"
     image Kanae Face Smile2  = "Sprites/Kanae/KanaeFaceSmile2.png"
+    image Kanae Face Sup1  = "Sprites/Kanae/KanaeFaceSurprised1.png"
     image Kanae Face Worry1 =  "Sprites/Kanae/KanaeFaceWorry1.png"
     
     image KABlush = "Sprites/Kanae/KanaeBlush.png"
@@ -709,6 +724,9 @@ init:
     
     #Mori Sprites
     image Mori = "Sprites/Mori/MoriPlaceholder2.png"
+    
+    #Yamane Sprites
+    image Yamane Neutral = "Sprites/Yamane/Yamane.png"
     
     #Closed space variants
     image clouds CS = im.MatrixColor("id_clouds.png",
