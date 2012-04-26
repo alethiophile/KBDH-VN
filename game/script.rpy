@@ -57,6 +57,7 @@ init:
     image bg HaruhiCS = "Backgrounds/HaruhiCS.jpg"
     image bg ClubHallLeft = "Backgrounds/ClubHallLeft.png"
     image bg ClubHallRight = "Backgrounds/ClubHallRight.png"  
+    image bg StudentCouncil = "Backgrounds/StudentCouncilRoom.png"
     
     
     image white = "#ffffff"
@@ -225,6 +226,7 @@ init:
     image Haruhi Hips Ang2 = "Sprites/Haruhi/HaruhiHipsAngry2.png"
     image Haruhi Hips Ang3 = "Sprites/Haruhi/HaruhiHipsAngry3.png"
     image Haruhi Hips Ang4 = "Sprites/Haruhi/HaruhiHipsAngry4.png"
+    image Haurhi Hips Sigh1 = "Sprites/Haruhi/HaruhiHipsSigh1.png"
     
     image Haruhi Hips Casual Ang1 = "Sprites/Haruhi/HaruhiHipsCasualAngry1.png"
     image Haruhi Hips Casual Ang2 = "Sprites/Haruhi/HaruhiHipsCasualAngry2.png"
@@ -429,9 +431,8 @@ init:
         "Sprites/Yuki/YukiSide1.png"
         3
         repeat
-    
-    # Mikuru Sprites
-    
+   
+    # Mikuru Sprites 
     image Mikuru Neutral1 = "Sprites/Mikuru/MikuruNeutral1.png"
     image Mikuru Neutral2 = "Sprites/Mikuru/MikuruNeutral2.png"
     image Mikuru Sad1 = "Sprites/Mikuru/MikuruSad1.png"

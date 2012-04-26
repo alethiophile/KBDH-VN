@@ -76,7 +76,7 @@ label Test:
     
     stop music fadeout 1
     scene bg ClubHallLeft with fade
-    #queue music "Music/stupefaction.ogg"
+    queue music "Music/Yuuutsu.mp3"
     show Kyon Worry1 at right with dissolve
     show Mikuru Neutral2 at left with dissolve
     "His cheek still stinging, Kyon resolved to have it healed later — though by Tsuruya's unintentional hint, he knew he had the scratch before he went to help her. As much of a pain as it was (quite literally), it did establish a reasonable baseline for when he traveled back, which meant that he didn't do all of his time traveling in one big block at some future date. Though, that might build up into a daunting task...."
@@ -210,7 +210,7 @@ label Test:
     
     "Tsuruya's hand darted out, lightning-fast, and she snatched two of the cards from Ryuguu's grasp before the boy could react. Immediately his face went red, and his scowl turned murderous. {nw}"
     
-    #This fight needs a lot of editing...
+    #Not sure what you guys want done on the fight, so I only added the nvl clear
     
     extend "He launched a punch towards the tall girl in retaliation, growling from low in his throat."
     nvl clear
@@ -313,81 +313,131 @@ label Test:
     scene almostblack two with fade
     
     
-    
-    scene bg ClubHallLeft with fade    
+    scene bg ClubroomFullDay with fade:
+        xpos 0 ypos 0
+    $ renpy.layer_at_list([PanScene_SetToRight])
+    show Kyon Smile3 at center
+    show Mikuru Smile2 at right
+    show Yuki Side1 at left
     "After completing the temporal transition, Mikuru lowered her hands from his shoulders, and Kyon's eyes opened, glancing around the clubroom. Unsurprisingly, Yuki was the only club member still left in the room. She closed her book and rose, moving to Kyon's side and raising one hand to his cheek briefly. He blinked, then grinned at the girl, tracing his fingertips across the bandage but leaving it in place. \"Thanks, Nagato,\" he said, nodding at her. \"And thank you, too, Asahina-san.\""
     nvl clear
+    show Yuki Talk1 at left
     "\"It is no problem,\" Yuki returned smoothly."
+    show Mikuru Quest1 at right
     "\"No trouble at all,\" Mikuru agreed, even though she had butterflies in her stomach just from remembering Kyon bleeding. It wasn't as bad as the time she'd seen him {i}stabbed{/i}, but she didn't have to like it one bit!"
-    
+    show Kyon Puzzle1 at center
     "A knock sounded on the door, and Kyon turned around, pondering, \"Who could that be...?\""
     nvl clear
+    stop music fadeout 1
+    #queue music 
+    $ renpy.layer_at_list([PanScene_LeftToRight])
+    show Koizumi Think Ser2 at left_LeftScreen
     "After a heartbeat, the door opened and Koizumi peered in, sighing with relief as he saw Kyon, though there was still tension in his gaze. \"I'm afraid I have some bad news, Kyon-kun,\" he said, smiling weakly. \"Ah ... school administration would like to speak with you ... though it seems that some strings were pulled, and the issue was somehow moved down to a meeting with the Student Council President. There's an emergency session now, so....\""
     nvl clear
+    show Kyon Sup2 at right_LeftScreen
     "\"Really?\" Kyon asked, surprised. \"I'm not sure what's stranger. That the Student Council can handle cases like this, or that they get to skip classes for it. Well, whatever.\""
+    show Koizumi Think Ser3 at left_LeftScreen
     "\"Don't forget, Kimidori Emiri will be there,\" Koizumi warned with a frown. \"Which probably explains {i}how{/i} the Student Council was given authority for this meeting.\""
+    $ renpy.layer_at_list([PanScene_LeftToRight])
     "\"I will go,\" Yuki declared, her eyes fixed on Kyon."
     nvl clear
+    show Mikuru Think Sup1 at right_LeftScreen
     "\"M...me too,\" Mikuru managed, wishing she could sound as confident as Yuki."
+    $ renpy.layer_at_list([PanScene_RightToLeft])
+    show Koizumi Think Grin2 at left
     "\"And naturally,\" Koizumi agreed, bowing slightly, \"I will be at your side as well.\""
+    show Kyon Unhap2 at right
     "\"Okay, let's go,\" Kyon decided. \"Haruhi's going to burst into the middle of the meeting and be really pissed off about not being involved.\""
+    show Koizumi Think Sup1 at left
     "\"Ah.... You're certain?\" Koizumi asked."
     nvl clear
+    show Kyon Sigh2 at right
     "Kyon nodded, turning his cell phone back on. \"She absolutely will if you send a text to her just before we enter the Student Council room,\" he said. \"That should give Kimidori-san enough time to state her goals and reasons, but not to actually {i}do{/i} anything before Haruhi shows up. And despite what they've done so far, I doubt that Kimidori-san is stupid enough to try something in front of Haruhi.\""
     nvl clear
+    show Koizumi Think Grin1 at left
     "\"Good strategy,\" Koizumi agreed, preparing the text message and falling into file behind Kyon as he led the way to the club room. Yuki stood perfectly at his side, taking every step with the boy, and Mikuru fought down another surge of jealousy at the interface's confidence."
     nvl clear
+    scene bg StudentCouncil with fade
     "Kyon marched to the door and flung it open without knocking, startling the Student Council president as he shuffled through a short stack of papers. Kimidori Emiri sat in a chair to one side, her pad of paper and pen ready, though she seemed coolly expectant. Kyon strode to the middle of the room and stood in an arrogant pose, arms crossed over his chest as he stared down at the president with an expression of clear boredom. Yuki stood a half-step behind him on his left, eyes fixed on Emiri. Mikuru tried to take up a flanking position on his right, but was beaten by Koizumi, so settled for closing the door and standing next to Yuki."
     nvl clear
+    show Kyon Unhap2 at center with dissolve
+    show Koizumi Crossed Neutral1 at left with dissolve
     "\"Well?\" Kyon demanded, when the president spent a long moment staring. \"I'm here.\""
+    #show President at right with dissolve at right
     "\"I don't...\" the president began, frowning and scanning across the group. \"I expected you to bring her along, if you were going to appear in force.\""
+    show Kyon Neutral3 at center
     "\"Yeah, okay,\" Kyon allowed, relaxing his arms and taking on his more normal demeanor. \"So, do you have anything for me, President, or is this Kimidori- san's call?\""
     nvl clear
+    #hide President with dissolve
+    #show Emiri at right with dissolve at right
     "Emiri smiled awkwardly and set her pen down. \"Currently, everything here is within the technical limitations of the Student Council's jurisdiction,\" she explained. \"I do not plan to usurp the president; I'm merely a secretary.\""
+    show Kyon Ser2 at center
     "\"I really have no patience for intrigue, just now. I'm in the middle of an investigation that I'm honestly ashamed to find out you're doing nothing about,\" he said pointedly, staring at Emiri."
     nvl clear
     "Emiri looked confused and shook her head. \"I'm sorry, I'm afraid I don't understand....\""
+    #hide Emiri with dissolve
+    #show President with dissolve at right
     "\"This attitude doesn't become you,\" the president added with a frown at Kyon. \"My job is to keep Suzumiya-kun in line, not {i}you{/i}. Koizumi-kun, what's this all about?\""
+    show Koizumi Crossed Smile1 at left
     "\"Difficult to explain quickly,\" the esper said with a bright smile. \"For the moment, however, I answer to Kyon-kun as my superior ... and realistically, you probably should as well.\""
     nvl clear
     "Emiri blinked several times, her awkward smile slipping."
     "\"Really?\" the president asked, raising an eyebrow. \"Well, in that case,\" he asked sardonically, turning his attention back to Kyon, \"what's the plan?\""
+    show Kyon Neutral1 at center
     "\"Let's start with how much trouble I'm in for protecting Kanae-chan from that pervert,\" Kyon suggested."
     nvl clear
     "\"Technically none,\" the president admitted. \"It's a behavior issue, but all accounts indicate you in self defense, or in defense of a classmate. Ryuguu- san is already being expelled just on the grounds of bringing a weapon into the school and assaulting fellow students ... though he was taken away in an ambulance. In any event, because of that, orders were handed down from the principal to discuss your behavior.... I have the authority to demand a meeting with an advisor for you — several if I believe that your behavior is likely to become problematic. Okabe-sensei is your advisor, right?\""
     nvl clear
+    show Kyon Pained2 at center
     "Kyon grimaced. \"Don't get me wrong, he's a good guy, but I'm not exactly eager for that,\" he said. \"My family?\""
     "\"Already notified,\" the president said, almost apologetically. \"The administrative staff did that first thing.\""
     nvl clear
-    "\"Figured. Alright. So, I'm going to tell you right now, when this is over, you're actually going to thank me for what I did today, and what's going to happen in the coming days.\" Turning his full attention to Emiri, he added, \"Seeing as I'm not up for intrigue at the moment, can you cut to the chase and say {i}why{/i} you've pulled the strings you have to arrange this?\""
+    show Kyon Sigh1 at center
+    "\"Figured. Alright. So, I'm going to tell you right now, when this is over, you're actually going to thank me for what I did today, and what's going to happen in the coming days.\" {nw}"
+    #hide President with dissolve
+    #show Emiri with dissolve at right
+    show Kyon Ser2 at center
+    extend "Turning his full attention to Emiri, he added, \"Seeing as I'm not up for intrigue at the moment, can you cut to the chase and say {i}why{/i} you've pulled the strings you have to arrange this?\""
     nvl clear
     "Emiri sighed, shifting her shoulders uncomfortably. \"You are becoming a bit troublesome,\" she allowed, shaking her head. \"I wanted to relate to you in clear terms that all else aside, the entity has not deviated from their chosen course of action.\""
+    show Kyon Sigh2 at center
     "\"That's a real pity,\" Kyon sighed. \"I didn't want us to be enemies.\""
     nvl clear
     "\"Well, you made your decision,\" Emiri said with an apologetic shrug. \"I, personally, mean you no harm. My role has naturally changed, as I am denied administrative access over Nagato Yuki. For the time being, despite our differences concerning this issue at large, I wish to remain as neutral as possible to function as negotiator between yourselves and the entity. Until such time as you inform me otherwise, I will assume that you continue to maintain your stance. However ... should things change and you decide to side with us, the entity also holds no enmity against you.\""
     nvl clear
     "The student council president blinked and looked at his secretary sidelong, obviously very confused."
+    show Kyon Ser2 at center
     "\"I don't really believe that last part, but it's nice of you to say.\" After a breath, Kyon warned in a low voice, \"I just want to point out, though, that a challenge against any one of us is a challenge against {i}all{/i} of us, so even the entity may have bitten off more than it can chew.\""
     nvl clear
+    hide Koizumi Crossed Smile1 with dissolve
+    show Kyon Ser2 at left with dissolve
+    show Haruhi Hips Ang1 at center with moveinright
+    #hide Emiri with dissolve
+    #show President with dissolve at right
     "Before anyone could respond, the door crashed open with a reverberating smash, Haruhi stomping in and taking point in front of Kyon, shooting a dark glare at the president. \"Trying to pick us apart by calling out my underlings when I'm not around, eh?\" she challenged, bristling with fury. \"Well, you've got a lot to learn! A challenge against one of us is a challenge against {i}all{/i} of us!\""
     nvl clear
     "Mikuru blinked, catching Kyon's smirk at the girl in front of him as she echoed his words of only moments before. Emiri's expression had returned to blank neutrality, with small traces of surprise showing as she picked her pen back up and began jotting notes down."
+    show Haruhi Hips Ang4 at center
     "\"Really, you are the lowest example of politician!\" Haruhi spat, shaking her head at the president."
     nvl clear
     "For his part, the bespectacled boy gave her a cool look, pushing on the bridge of his glasses with two fingers, flashing bright reflective light off them perfectly into Haruhi's eyes as he adjusted the lenses. He instantly re- assumed his role in Haruhi's presence, his expression gleaming with cold malice. The chief of the SOS Brigade didn't flinch, her angry smile only growing wider."
     nvl clear
     "\"Even using underhanded tactics like calling my vice commander in during {i}classes{/i}?\" She paced back and forth shaking her head sadly. \"I thought you were a rival, maybe someday even an equal, but you're just a sad little man who hides behind whatever political tricks he can to cause trouble for people he doesn't like personally! Trying to make things difficult for Kyon when he defended a fellow student from a crazed pervert?! Don't make me think that Kitago is a school unworthy of its reputation!\""
+    show Haruhi Hips Sigh1 at center
     nvl clear
     "\"You overreact,\" the president said in a frosty tone. \"Marching in with your pompous attitude and blatant disregard for policy.... I invite you to check every step of the proceedings of this inquiry; you'll find that each and every one was in complete accordance with official guidelines and policies! The only breach here is that Kyon-kun was summoned alone. There was no request for Koizumi-kun, Nagato-kun, Asahina-kun, or yourself to be here."
     nvl clear
     "\"Really, storming your way into an official meeting that doesn't involve you personally? This matter has absolutely nothing to do with your so-called club, that unofficial organization that I refuse to acknowledge! This is a personal matter between the student council and a single student. Your show of force is both unseemly and needlessly exaggerated.\""
     nvl clear
+    show Haruhi Hips Ang1 at center
     "\"Ooh!\" Haruhi exclaimed, standing still to stomp one foot on the floor and shoot a murderous glare at the president. \"Nice try,\" she retorted with a sneer, \"but if it smells like a load of crap, looks like a load of crap, and acts like a load of crap ... then it's a {i}load of crap{/i}! One of my brigade members was attacked by a crazed student! Another of my brigade members did his civic duty not only as a member of the brigade you don't acknowledge, but as a {i}citizen{/i}! An upstanding {i}student{/i} of this school!"
     nvl clear
+    show Haruhi Hips Ang3 at center
     "\"You're all high-and-mighty behind your desk, proud of the fact that you get to pick on my crew just because you don't like them! What about all the other students who just {i}watched{/i} a crazed upperclassman with a {i}knife{/i} haul away a defenseless first year student? Not one of {i}them{/i} is worthy of reprimand?\""
     nvl clear    
     "The president's face was a mask of contempt and barely concealed rage. He slowly lowered his head, allowing the mirror-bright shine of his glasses to reflect to the floor and his eyes to become visible. \"Very well,\" he grated out, in the tone of someone who was having a tooth pulled without anesthetic. \"In light of the greater failing of the student populous in general, we will dismiss the {i}gross{/i} disciplinary issues in Kyon-kun's behavior ... {i}this{/i} time. After all, my quarrel isn't with your underlings, but you. Now leave, Suzumiya-kun, before my good graces run out.\""
-    nvl clear    
+    nvl clear
+    scene bg ClubHallRight with fade
     "Haruhi allowed herself a single imperious sniff before turning on her heel and grabbing Kyon's hand, hauling him out of the room. Mikuru hesitated, walking in step with Yuki when she finally left, though the shorter girl's eyes had been fixed on Emiri the entire time. Once they were in the hall, the time traveler released a shaky, explosive sigh. \"Scary,\" Mikuru moaned. \"And now we're late for class!\""
     nvl clear    
     "\"No problem, no problem!\" Haruhi said brightly, seeming charged with her victory over the student council president. \"Tell your teachers to take their complaints to the student council! They hauled us out of class for this, after all.\" Turning to Kyon, she added in a more serious tone, \"You need to be careful, Kyon! I can't always bail you out when you get into trouble like this! And you owe Koizumi-kun a thanks for texting me that this was even happening!\""
