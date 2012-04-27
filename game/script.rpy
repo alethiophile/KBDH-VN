@@ -1026,29 +1026,44 @@ init python:
     style.movie = Style(style.default)
     # Comment everything with "style.movie." below to disable the {=movie}{/=movie} tag effects
     # # style.movie.font = "DejaVuSansMono.ttf"
-    style.movie.font = "DejaVuSerif.ttf"
+    if persistent.text_styling == "Extra":
+        style.movie.font = "DejaVuSerif.ttf"
     # # style.movie.size = 23
     # # style.movie.kerning = 1
     
     # Loud voice
     style.loud = Style(style.default)
     # Comment everything with "style.loud." below to disable the {=loud}{/=loud} tag effects
-    style.loud.size = 24
+    if persistent.text_styling == "Extra":
+        style.loud.size = 24
     
     # Shouting voice
     style.shout = Style(style.default)
     # Comment everything with "style.shout." below to disable the {=shout}{/=shout} tag effects
-    style.shout.size = 32
+    if persistent.text_styling == "Extra":
+        style.shout.size = 32
     
     # Quieter voice
     style.quiet = Style(style.default)
     # Comment everything with "style.quiet." below to disable the {=quiet}{/=quiet} tag effects
-    # style.quiet.size = 20
+    # if persistent.text_styling == "Extra":
+        # style.quiet.size = 20
     
     # Whispering voice
     style.whisper = Style(style.default)
     # Comment everything with "style.whisper." below to disable the {=whisper}{/=whisper} tag effects
-    style.whisper.size = 15
+    if persistent.text_styling == "Extra":
+        style.whisper.size = 15
+        
+    renpy.register_style_preference("text", "Extra", style.movie, "font", "DejaVuSerif.ttf")
+    renpy.register_style_preference("text", "Extra", style.loud, "size", 24)
+    renpy.register_style_preference("text", "Extra", style.shout, "size", 32)
+    renpy.register_style_preference("text", "Extra", style.whisper, "size", 15)
+    
+    renpy.register_style_preference("text", "Vanilla", style.movie, "font", "DejaVuSans.ttf")
+    renpy.register_style_preference("text", "Vanilla", style.loud, "size", 22)
+    renpy.register_style_preference("text", "Vanilla", style.shout, "size", 22)
+    renpy.register_style_preference("text", "Vanilla", style.whisper, "size", 22)
     
     centered = Character(None, what_slow_cps=0, what_size = 27, what_outlines = [(1, "#000", 0, 0)],
                         what_layout="subtitle", what_xalign=0.5, what_text_align=0.5,
@@ -1128,6 +1143,8 @@ transform HalfRight_RightScreen:
    xpos 1.6 yalign 1.0    
 transform UnderLegs_RightScreen:
     xalign 1.563 yalign 2.2    
+    
+    
 init -1 python:
     # def show_date(st, at):
         # return Text("[date]", font="DejaVuSerif-Italic.ttf", size=25, color="#3cf"), None
@@ -1135,14 +1152,17 @@ init -1 python:
         return Text("[date1]", font="DejaVuSerif-Italic.ttf", size=25, color="#3cf"), None
     def show_date2(st, at):
         return Text("[date2]", font="DejaVuSerif-Italic.ttf", size=25, color="#3cf"), None
+        
+    if persistent.text_styling == None:
+        persistent.text_styling = "Extra"
     
     chapters = [
         ("In Media Res Prologue:\n\"Exactly What it Says on the Tin\"", "prologue"),
-        ("Obligatory Anachronic Order Explanation Arc - Chapter One:\n\"Scene Twelve, the Ninth Big Fight\"", "AO1_1"),
-        ("Obligatory Anachronic Order Explanation Arc - Chapter Two:\n\"Clear as Mud\"", "AO2"),
-        ("Straightforward Flashback and Exposition Arc - Chapter Three:\n\"It Goes To Eleven\"", "SF1"),
-        ("Straightforward Flashback and Exposition Arc - Chapter Four:\n\"Epileptic Plot Tree\"", "SF2"),
-        ("Straightforward Flashback and Exposition Arc - Chapter Five: \n\"The Requisite Haruhi-and-Kyon in Closed Space Together Again Part (You Know The One)\"", "SF3"),
+        ("Obligatory Anachronic Order \nExplanation Arc - Chapter One:\n\"Scene Twelve, the Ninth Big Fight\"", "AO1_1"),
+        ("Obligatory Anachronic Order \nExplanation Arc - Chapter Two:\n\"Clear as Mud\"", "AO2"),
+        ("Straightforward Flashback \nand Exposition Arc - Chapter Three:\n\"It Goes To Eleven\"", "SF1"),
+        ("Straightforward Flashback \nand Exposition Arc - Chapter Four:\n\"Epileptic Plot Tree\"", "SF2"),
+        ("Straightforward Flashback \nand Exposition Arc - Chapter Five: \n\"The Requisite Haruhi-and-Kyon \nin Closed Space Together Again Part \n(You Know The One)\"", "SF3"),
         ("Label a scene you're working on test and use this", "Test"),
         # ("-----", "backtomain"),
                
@@ -1381,7 +1401,11 @@ label test_Z0_eye:
     with MoveTransition(0.08)
     pause(0.1)
     show SpikeFlick at center
-    "\"You opened it already, I see.\""
+    "\"{=loud}You opened{/=loud} it already, {=shout}I see{/=shout}.\""
+    "[style.movie.font] - [style.loud.size] - [style.shout.size] - [style.whisper.size]"
+    $ style.shout.size = 10
+    "\"{=loud}You opened{/=loud} it already, {=shout}I see{/=shout}.\""
+    "!S[style.movie.font] - [style.loud.size] - [style.shout.size] - [style.whisper.size]"
     nvl clear
     # call the eyecatch routine, supply the date (text) to show and pause time if needed, specify the unique "from"
     call eyecatch2("Sample date", "Another date", 10.0, ecbg="white") from test_Z0_p0001
