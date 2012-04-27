@@ -670,6 +670,7 @@ label SF2:
     "The familiar black cab awaited a short distance down the street, and he shrugged at it in bemusement. It would get him home faster, letting him bypass the train. Which in turn, most likely meant that he {i}should{/i} get more sleep once he got home...." 
     nvl clear
     scene bg Cab with fade
+    play sfxloop "SE/CarBackgroundLong.mp3"
     show Kyon Neutral3 at right
     show Mori Neutral1 at left
     with dissolve
@@ -746,6 +747,7 @@ label SF2:
     show Mori Smile1 at left
     "\"If everything works out after tomorrow, it will be a small price to pay, Sir,\" Mori agreed as the car pulled to a stop. \"Koizumi-kun has made that request many times. Thank you again for your candor, and good luck with your objectives.\""
     nvl clear
+    stop sfxloop
     #play music "Music/Kanashimi.mp3"
     scene bg KyonHouseDay with wipeup
     show Kyon Smile4 at right
