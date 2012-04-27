@@ -34,12 +34,12 @@
     #"She nervously nodded, her heart settling a tiny bit when she took his hand and he led her down the hallway."
     #"* * *"
     
-label Test:
+label tttest:
     stop music fadeout 1
     scene bg ClubroomFullDay with fade:
         xpos 0 ypos 0
     $ renpy.layer_at_list([PanScene_SetToLeft])
-    queue music "Music/HizundaKokoro.mp3"
+    queue music "Music/Unzari da.mp3"
     show Koizumi Crossed Ser1 at left
     show Kanae Sad3 at center
     show Tsuruya Worry2 at center_RightScreen

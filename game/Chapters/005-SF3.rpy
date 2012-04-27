@@ -445,7 +445,6 @@ label test2:
     "She fought to keep her face from coloring, and quickly jogged past him so he couldn't see her expression. \"Wouldn't {i}you{/i} like to know,\" she said with a chuckle. \"Come on, let's study in the club room.\""   
     nvl clear
     
-label test3:
     stop music fadeout 1
     scene bg ClubroomCenterDay with fade
     queue music "Music/Nanika.mp3"
@@ -547,7 +546,6 @@ label test3:
     "Kyon nodded, getting out his homework for the next period as well as the detested, unfinished math. If there was no teacher around...."
     nvl clear
     
-label tttttest:
     stop music fadeout 1
     scene bg classroom with fade:
        size (800,600)
@@ -609,7 +607,6 @@ label tttttest:
     "\"I gathered,\" he sighed, taking a fresh sheet of paper and writing notes to himself."
     "Haruhi nodded thoughtfully, though he wouldn't be able to see the motion. It was a real pity she couldn't time travel herself, but at least she could be a significant contributor to Kyon's efforts in that regard."
     nvl clear
-     
 
     stop music fadeout 1
     queue music "Music/Itsumo(Movie).mp3"
@@ -662,7 +659,6 @@ label tttttest:
     nvl clear
     "\"I know, right?\" Haruhi said, smirking as they topped the stairs to the clubhouse and she reached for the doorknob. She wrenched it open as she usually did, catching part of a conversation between Koizumi and Kyon, both seated at the table. Yuki was seated in the corner, flipping through yet another book silently."
     nvl clear
-    
     
     play sound "SE/dooropenfast.wav"
     stop music fadeout 1
