@@ -40,7 +40,7 @@ init -1 python hide:
     ## The theme function takes a number of parameters that can
     ## customize the color scheme.
 
-    theme.roundrect(
+    theme.regal(
         # Color scheme: Basic Blue
                                     
         ## The color of an idle widget face.
