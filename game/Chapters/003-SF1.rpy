@@ -1001,6 +1001,7 @@ label SF1:
     play music "Music/MysteryTime.mp3"
     scene bg SchoolEntranceLeft with fade
     "After parting with the others at the train station, Kyon wasn't entirely surprised to see a familiar black taxicab pull from a side-street, stopping nearby. Koizumi leaned over and opened the back door, so with no hesitation, Kyon climbed in next to him."
+    play sfxloop "SE/CarBackgroundLong.mp3"
     scene bg Cab
     show Kyon Ser3 at right
     show Koizumi Crossed Smile1 at left
@@ -1082,6 +1083,7 @@ label SF1:
     show Koizumi Think Smile1 at left
     "\"That is all we can ask for,\" Koizumi said, nodding. \"Thank you very much, vice commander.\""
     nvl clear
+    stop sfxloop
     stop music fadeout 3
     
     call eyecatch("Monday, April 18") from SF1_sc006
