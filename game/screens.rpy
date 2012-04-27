@@ -188,7 +188,7 @@ screen Chapters:
         has vbox
         frame:
             side "l c":
-                area (0.0, 0.0, 450, 0.6)
+                area (0.0, 0.0, 450, 0.7)
                 
                 viewport:
                     yadjustment adj
@@ -204,7 +204,7 @@ screen Chapters:
                                 
                                 hbox:
                                     xalign 0.5
-                                    text name style "button_text" text_align 0.5 #min_width 420
+                                    text name style "button_text" size 20 text_align 0.5 #min_width 420
 
                 bar adjustment adj style "vscrollbar" 
                 
@@ -215,7 +215,8 @@ screen Chapters:
             xmargin 9
             xminimum 465
             action ShowMenu("main_menu")
-
+            
+        null height 5
 
        
 ##############################################################################
@@ -431,6 +432,14 @@ screen preferences:
             frame:
                 style_group "pref"
                 has vbox
+                
+                label _("Text Styling")#: [persistent.text_styling]")
+                textbutton _("Vanilla") action [SetField(persistent, "text_styling", "Vanilla"), StylePreference("text", "Vanilla")]
+                textbutton _("Extra") action [SetField(persistent, "text_styling", "Extra"), StylePreference("text", "Extra")]
+
+            frame:
+                style_group "pref"
+                has vbox
 
                 textbutton _("Joystick...") action Preference("joystick")
 
@@ -495,6 +504,7 @@ screen preferences:
                     textbutton "Test":
                         action Play("voice", config.sample_voice)
                         style "soundtest_button"
+    
 
 init -2 python:
     style.pref_frame.xfill = True
@@ -510,7 +520,8 @@ init -2 python:
     style.pref_slider.xalign = 1.0
 
     style.soundtest_button.xalign = 1.0
-
+    
+    
 
 ##############################################################################
 # Yes/No Prompt
