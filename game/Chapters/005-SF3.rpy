@@ -696,9 +696,9 @@ label tttttest:
     nvl clear
     "\"You mentioned it,\" Haruhi said, pulling a bento from the refrigerator and pushing her chair around the desk to sit at the table with the others. \"But I was helping Kyon with his homework, so we didn't have a lot of time to discuss it. Why?\""
     nvl clear
-    
+
     stop music fadeout 1
-    queue music "Music/stupefaction.ogg"
+    queue music "Music/SeishuniiJanaiKatsuNoVocal.mp3"
     show Tsuruya Neutral1 at center_RightScreen
     "\"Well,\" Tsuruya said, her eyes narrowing as she peered around. \"There's a dark conspiracy underway,\" she said in a very quiet voice. \"Some peoples are doing unsavory things in the background! Naturally, I tried to investigate them so that I could takes care of them!"
     show Tsuruya Ang1 at center_RightScreen
@@ -776,8 +776,8 @@ label tttttest:
     show Tsuruya Hap3 at center_RightScreen
     "\"For sure, Haru-nyan! Kyon-kun's super handy!\""
     nvl clear                                                                            
-    #stop music fadeout 1
-    #queue music "Music/HizundaKokoro.mp3"
+    stop music fadeout 1
+    queue music "Music/Unzari da.mp3"
     show Koizumi Think Ser4 at left
     $ renpy.layer_at_list([PanScene_RightToLeft])
     with None
