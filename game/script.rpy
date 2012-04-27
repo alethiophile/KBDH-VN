@@ -1121,13 +1121,13 @@ transform left_RightScreen:
 transform center_RightScreen:
     xpos 1.37 yalign 1.0 # xalign 0.5 yalign 1.0    
 transform right_RightScreen:
-    xpos 1.71 yalign 1.0    
+    xpos 1.65 yalign 1.0    
 transform TopRight_RightScreen:
    xpos 1.71 yalign 0.0
 transform HalfRight_RightScreen:
    xpos 1.6 yalign 1.0    
 transform UnderLegs_RightScreen:
-    xalign 1.55 yalign 2.2    
+    xalign 1.563 yalign 2.2    
 init -1 python:
     # def show_date(st, at):
         # return Text("[date]", font="DejaVuSerif-Italic.ttf", size=25, color="#3cf"), None

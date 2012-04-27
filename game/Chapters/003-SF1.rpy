@@ -22,9 +22,11 @@ label SF1:
     "\"P...please get your face out of my chest!\" Mikuru blurted out, her face coloring red."
     show Kanae Sup1
     "The first year student started, realizing where she was, then scurried beneath the table and clung to one of Kyon's legs. {nw}"
+    $ _window = True
     show Kanae Worry1:
         xalign 0.2 yalign 2.2
     with move
+    $ _window = False
     extend "\"Sempai!\" she whimpered. \"Save me!\""
     nvl clear
     show Kyon Neutral2 at left
@@ -35,7 +37,7 @@ label SF1:
     $ renpy.layer_at_list([PanScene_SetToRight])
     show Kyon Neutral3 at left_RightScreen
     show Kanae Worry1:
-        xalign 1.56 yalign 2.2
+        xalign 1.563 yalign 2.2
     show Mikuru Maid Unhap1 at right_RightScreen
     show MBlush1 Maid at right_RightScreen
     "He took a moment to study her features, while she shivered in fright, clinging to him. Her brown hair was shoulder-length, and very curly just at the tips — fairly distinctive, he thought. She was probably as tall as Yuki, but with an even slighter frame, not quite gangly, but not yet grown into her height. Her dark eyes stared up at him pleadingly."
@@ -68,17 +70,19 @@ label SF1:
     show Mikuru Maid Unhap1 at right
     show MBlush1 Maid at right
     "\"You already know!?\" the girl yelped, trying to jump away from Kyon, {nw}"
+    $ _window = True
     show Kanae Wince1:
         xalign 0.2 yalign 2.0
         linear 0.4 yalign 2.2
     play sound "SE/impact.mp3"
     pause 0.8
+    $ _window = False
     scene bg ClubroomFullDay:
         xpos 0 ypos 0
     $ renpy.layer_at_list([PanScene_SetToRight])
     show Kyon Sigh2 at left_RightScreen
     show Kanae Wince1:
-        xalign 1.56 yalign 2.2
+        xalign 1.563 yalign 2.2
     show Mikuru Think Maid Sup1 at right_RightScreen
     extend "but only smacking her head and jolting the table, scattering all the pieces across the board."
     nvl clear
@@ -837,6 +841,7 @@ label SF1:
     show Yuki Right Talk2 at right_RightScreen
     "\"I am uncertain,\" Yuki replied. \"I will investigate.\""
     scene bg ClubroomRightDay
+    $ _window = True
     show Kyon Smile1 at left
     show Kanae Smile1 at center
     show Yuki Right Neutral2 at right
@@ -844,6 +849,7 @@ label SF1:
     pause 0.5
     hide Haruhi with moveoutleft
     "Haruhi handed the rod to the small girl, while Kanae watched breathlessly. {nw}"
+    $ _window = False
     scene bg ClubroomFullDay:
         xpos 0 ypos 0
     $ renpy.layer_at_list([PanScene_SetToRight])
@@ -984,11 +990,11 @@ label SF1:
     show Kyon Ser1:
         xalign 1.25 yalign 1.0
     "Haruhi nodded absently, shutting the computer down and gathering her book bag. \"In any case, that gives us a hard cap of around four or five weeks to get it sorted out.\""
-    scene black with dissolve
     nvl clear
     "The other club members rose and gathered their things, Mikuru offering Kanae a hand when the younger girl wobbled tiredly on her feet. \"Understood,\" Yuki said softly. In the corridor, while Haruhi turned around and locked the club room door, the quiet girl slipped him a note. He pocketed it with a frown. Mikuru studiously pretended not to notice, while Kanae was looking the other way drowsily."
     nvl clear
-    stop music fadeout 3
+    scene black with dissolve
+    stop music fadeout 2
     
     call eyecatch("Monday, April 18") from SF1_sc005
 
