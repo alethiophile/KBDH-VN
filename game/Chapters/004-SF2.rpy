@@ -232,7 +232,12 @@ label SF2:
     "\"I...it seems that a rather large closed space has appeared,\" Koizumi said in a mournful tone. \"I'm afraid I will be absent for a while....\"" 
     show Koizumi Shrug Sigh1 at center
     "He bowed apologetically towards Haruhi, then nodded at Kyon, adding, \"I will leave everything else up to you.\""
+    $ _window = True
+    play sound "SE/dooropenfast.wav"
     hide Koizumi with dissolve
+    pause 0.5
+    play sound "SE/doorclose.mp3"
+    $ _window = False
     "As the esper marched out of the room, Kyon sighed and rubbed at his eyes, calling out, \"Good luck, Koizumi.\""
     show Kanae Neutral1:
          xpos 0.7 yalign 1.0  
@@ -252,6 +257,8 @@ label SF2:
     play music "Music/Kokuhaku.mp3"
     show Haruhi Crossed Tsun1 at left_RightScreen
     show Yuki Talk1 at right
+    show Kyon Neutral3:
+        xpos 1.3 yalign 1.0    
     "Yuki raised her gaze from her book languidly. \"Last night,\" she began, without preamble, \"I neared overload due to queued data-creation and modification requests from you." 
     show Yuki Talk2 at right
     "\"To prevent overload, as per the instructions given by him and yourself, I undertook to dispose of all junk data and error-causing behaviors.\"" 

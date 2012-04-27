@@ -364,9 +364,11 @@ label SF3:
     show Haruhi Neutral2 at TenthLeft
     show Kyon Worry3 at right
     "\"More than I have been lately,\" she agreed, nodding. \"I hope, anyway. Why else would I be giving you an emergency reset codeword? I may not have a mind like Yuki's, but I can still think ahead!\""
+    nvl clear
+    $ _window = True
     show Haruhi Smile1 at center with move
     show Hblush at center
-    nvl clear
+    $ _window = False
     "She rose from her seat smoothly, still gazing up into his face. \"So ... just in case I get this wrong, I want you to do what we did last time, so I'll have a good note to go out on.\""
     show Kyon Smile1 at right
     show KBlush at right
@@ -375,7 +377,7 @@ label SF3:
     scene bg Kiss with slowdissolve
     "She let her eyes drift shut as her head tilted back and her lips pursed, the last thought through her mind as everything turned into light that he would probably notice the small change she had made in him, as well.... But he probably wouldn't mind too much."
     nvl clear
-    stop music fadeout 3
+    stop music fadeout 8
     
     call eyecatch("Thursday, April 21") from SF3_sc001
     
@@ -547,9 +549,11 @@ label test3:
     
 label tttttest:
     stop music fadeout 1
-    queue music "Music/Yuuutsu.mp3"
     scene bg classroom with fade:
        size (800,600)
+    play sound "SE/WestminsterChimeShort.mp3"
+    pause 4
+    queue music "Music/Yuuutsu.mp3"
     "After the first period chime rang, Haruhi leaned back in her seat, sticking her feet out straight off the floor to stretch her calf muscles, and extended her arms over her head, balancing precariously. She felt something in her lower back pop into place and smiled slightly, turning her head to Kyon as she leaned forward, her toes touching the floor once more. Before she could speak, she saw Sakanaka rise from her seat two desks to the right and pad cautiously towards the door, beckoning Haruhi to follow."
     "After only a moment of consideration towards Kyon, who seemed to be behaving by working on his math homework, she tapped his shoulder and handed him the tupperware of leftovers. \"Keep up the good work, subordinate,\" she encouraged him, climbing to her feet and striding into the hallway to see what Sakanaka wanted."
     nvl clear
