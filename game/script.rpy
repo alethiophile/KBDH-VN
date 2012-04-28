@@ -247,6 +247,24 @@ init:
     # image Hblush Crossed = "Sprites/Haruhi/HBlushCrossed.png"
     image Hblush Crossed = "Sprites/Haruhi/HBlushCrossed copy.png"
     
+    #Haruhi image flips
+    image Haruhi Ang3 Flip = im.Flip("Sprites/Haruhi/HaruhiSideAngry3.png", horizontal=True)
+    image Haruhi Smile1 Flip = im.Flip("Sprites/Haruhi/HaruhiSideSmile1.png", horizontal=True)
+    image Haruhi Smile3 Flip = im.Flip("Sprites/Haruhi/HaruhiSideSmile3.png", horizontal=True)
+    image Haruhi Neutral2 Flip = im.Flip("Sprites/Haruhi/HaruhiSideNeutral2.png", horizontal=True)
+    image Haruhi Grin1 Flip = im.Flip("Sprites/Haruhi/HaruhiSideGrin1.png", horizontal=True)
+    image Haruhi Pout1 Flip = im.Flip("Sprites/Haruhi/HaruhiSidePout1.png", horizontal=True)
+    image Haruhi Pout2 Flip = im.Flip("Sprites/Haruhi/HaruhiSidePout2.png", horizontal=True)
+    image Haruhi Sigh1 Flip = im.Flip("Sprites/Haruhi/HaruhiSideSigh2.png", horizontal=True)
+    image Haruhi Sigh2 Flip = im.Flip("Sprites/Haruhi/HaruhiSideSigh2.png", horizontal=True)
+    image Haruhi Sup1 Flip = im.Flip("Sprites/Haruhi/HaruhiSideSurprised1.png", horizontal=True)
+    image Haruhi Hap1 Flip = im.Flip("Sprites/Haruhi/HaruhiSideHappy1.png", horizontal=True)
+    image Haruhi Hap2 Flip = im.Flip("Sprites/Haruhi/HaruhiSideHappy2.png", horizontal=True)
+    image Haruhi Hap3 Flip = im.Flip("Sprites/Haruhi/HaruhiSideHappy3.png", horizontal=True)
+    image Haruhi Hap4 Flip = im.Flip("Sprites/Haruhi/HaruhiSideHappy4.png", horizontal=True)
+    image Haruhi Quest2 Flip = im.Flip("Sprites/Haruhi/HaruhiSideQuestion2.png", horizontal=True)
+    
+    
     #Kyon Sprites
     image Kyon Ser1 = "Sprites/Kyon/KyonSerious1.png"
     image Kyon Ser2 = "Sprites/Kyon/KyonSerious2.png"
@@ -343,6 +361,30 @@ init:
     image KBlush = "Sprites/Kyon/KBlush.png"
     image KBlush Casual = "Sprites/Kyon/KBlushCasual.png"
     image KPaper = "Sprites/Kyon/KyonPaper.png"
+    
+    #Kyon image flips
+    image Kyon Neutral1 Flip = im.Flip("Sprites/Kyon/KyonNeutral1.png", horizontal=True)
+    image Kyon Neutral2 Flip = im.Flip("Sprites/Kyon/KyonNeutral2.png", horizontal=True)
+    image Kyon Neutral3 Flip = im.Flip("Sprites/Kyon/KyonNeutral3.png", horizontal=True)
+    image Kyon Neutral4 Flip = im.Flip("Sprites/Kyon/KyonNeutral4.png", horizontal=True)
+    image Kyon Sigh1 Flip = im.Flip("Sprites/Kyon/KyonSigh1.png", horizontal=True)
+    image Kyon Sigh2 Flip = im.Flip("Sprites/Kyon/KyonSigh2.png", horizontal=True)
+    image Kyon Puzzle1 Flip = im.Flip("Sprites/Kyon/KyonPuzzled1.png", horizontal=True)
+    image Kyon Smile1 Flip = im.Flip("Sprites/Kyon/KyonSmile1.png", horizontal=True)
+    image Kyon Smile2 Flip = im.Flip("Sprites/Kyon/KyonSmile2.png", horizontal=True)
+    image Kyon Smile3 Flip = im.Flip("Sprites/Kyon/KyonSmile3.png", horizontal=True)
+    image Kyon Smile4 Flip = im.Flip("Sprites/Kyon/KyonSmile4.png", horizontal=True)
+    image Kyon Ser1 Flip = im.Flip("Sprites/Kyon/KyonSerious1.png", horizontal=True)
+    image Kyon Ser2 Flip = im.Flip("Sprites/Kyon/KyonSerious2.png", horizontal=True)
+    image Kyon Sup1 Flip = im.Flip("Sprites/Kyon/KyonSurprised2.png", horizontal=True)
+    image Kyon Sup2 Flip = im.Flip("Sprites/Kyon/KyonSurprised2.png", horizontal=True)
+    image Kyon Unhap1 Flip = im.Flip("Sprites/Kyon/KyonUnhappy1.png", horizontal=True)
+    image Kyon Unhap2 Flip = im.Flip("Sprites/Kyon/KyonUnhappy2.png", horizontal=True)
+    image Kyon Unhap3 Flip = im.Flip("Sprites/Kyon/KyonUnhappy3.png", horizontal=True)
+    image Kyon Unhap4 Flip = im.Flip("Sprites/Kyon/KyonUnhappy4.png", horizontal=True)
+    image Kyon Worry1 Flip = im.Flip("Sprites/Kyon/KyonWorry1.png", horizontal=True)
+    image Kyon Worry2 Flip = im.Flip("Sprites/Kyon/KyonWorry2.png", horizontal=True)
+    image Kyon Worry3 Flip = im.Flip("Sprites/Kyon/KyonWorry3.png", horizontal=True)
     
     
     #Asakura Sprites
@@ -628,6 +670,16 @@ init:
     image Tsuruya Wave Smile1 = "Sprites/Tsuruya/TsuruyaWaveSmile1.png"
     image Tsuruya Wave Smile2 = "Sprites/Tsuruya/TsuruyaWaveSmile2.png"
     
+    image Tsuruya Grin1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaGrin1.png", horizontal=True)
+    image Tsuruya Grin2 Flip = im.Flip("Sprites/Tsuruya/TsuruyaGrin2.png", horizontal=True)
+    image Tsuruya Quest1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaQuestion1.png", horizontal=True)
+    image Tsuruya Worry1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaWorry1.png", horizontal=True)
+    image Tsuruya Worry2 Flip = im.Flip("Sprites/Tsuruya/TsuruyaWorry2.png", horizontal=True)
+    image Tsuruya Neutral1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaNeutral1.png", horizontal=True)
+    image Tsuruya Hap1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaHappy1.png", horizontal=True)
+    
+    
+    
     #Kanae Sprites
     image Kanae Hap1 = "Sprites/Kanae/KanaeHappy1.png"
     image Kanae Hap2 = "Sprites/Kanae/KanaeHappy2.png"
@@ -747,19 +799,34 @@ init:
     image Nonoko Yell1 = "sprites/Nonoko/NonokoYell1.png"
     
     #Mori Sprites
-    image Mori Neutral1 = im.Flip("Sprites/Mori/MoriNeutral1.png", horizontal=True)
-    image Mori Neutral2 = im.Flip("Sprites/Mori/MoriNeutral2.png", horizontal=True)
-    image Mori Neutral3 = im.Flip("Sprites/Mori/MoriNeutral3.png", horizontal=True)
-    image Mori Neutral4 = im.Flip("Sprites/Mori/MoriNeutral4.png", horizontal=True)
-    image Mori Ser1 = im.Flip("Sprites/Mori/MoriSerious1.png", horizontal=True)
-    image Mori Ser2 = im.Flip("Sprites/Mori/MoriSerious2.png", horizontal=True)
-    image Mori Ser3 = im.Flip("Sprites/Mori/MoriSerious3.png", horizontal=True)
-    image Mori Sigh1= im.Flip("Sprites/Mori/MoriSigh1.png", horizontal=True)
-    image Mori Sigh2= im.Flip("Sprites/Mori/MoriSigh2.png", horizontal=True)
-    image Mori Smile1= im.Flip("Sprites/Mori/MoriSmile1.png", horizontal=True)
-    image Mori Smile2= im.Flip("Sprites/Mori/MoriSmile2.png", horizontal=True)
-    image Mori Nervous1= im.Flip("Sprites/Mori/MoriNervous1.png", horizontal=True)
-    image Mori Hap1 = im.Flip("Sprites/Mori/MoriHappy1.png", horizontal=True)
+    image Mori Neutral1 = "Sprites/Mori/MoriNeutral1.png"
+    image Mori Neutral2 = "Sprites/Mori/MoriNeutral2.png"
+    image Mori Neutral3 = "Sprites/Mori/MoriNeutral3.png"
+    image Mori Neutral4 = "Sprites/Mori/MoriNeutral4.png"
+    image Mori Ser1 = "Sprites/Mori/MoriSerious1.png"
+    image Mori Ser2 = "Sprites/Mori/MoriSerious2.png"
+    image Mori Ser3 = "Sprites/Mori/MoriSerious3.png"
+    image Mori Sigh1= "Sprites/Mori/MoriSigh1.png"
+    image Mori Sigh2= "Sprites/Mori/MoriSigh2.png"
+    image Mori Smile1= "Sprites/Mori/MoriSmile1.png"
+    image Mori Smile2= "Sprites/Mori/MoriSmile2.png"
+    image Mori Nervous1= "Sprites/Mori/MoriNervous1.png"
+    image Mori Hap1 = "Sprites/Mori/MoriHappy1.png"
+    
+    
+    image Mori Neutral1 Flip = im.Flip("Sprites/Mori/MoriNeutral1.png", horizontal=True)
+    image Mori Neutral2 Flip = im.Flip("Sprites/Mori/MoriNeutral2.png", horizontal=True)
+    image Mori Neutral3 Flip = im.Flip("Sprites/Mori/MoriNeutral3.png", horizontal=True)
+    image Mori Neutral4 Flip = im.Flip("Sprites/Mori/MoriNeutral4.png", horizontal=True)
+    image Mori Ser1 Flip = im.Flip("Sprites/Mori/MoriSerious1.png", horizontal=True)
+    image Mori Ser2 Flip = im.Flip("Sprites/Mori/MoriSerious2.png", horizontal=True)
+    image Mori Ser3 Flip = im.Flip("Sprites/Mori/MoriSerious3.png", horizontal=True)
+    image Mori Sigh1 Flip = im.Flip("Sprites/Mori/MoriSigh1.png", horizontal=True)
+    image Mori Sigh2 Flip = im.Flip("Sprites/Mori/MoriSigh2.png", horizontal=True)
+    image Mori Smile1 Flip = im.Flip("Sprites/Mori/MoriSmile1.png", horizontal=True)
+    image Mori Smile2 Flip = im.Flip("Sprites/Mori/MoriSmile2.png", horizontal=True)
+    image Mori Nervous1 Flip = im.Flip("Sprites/Mori/MoriNervous1.png", horizontal=True)
+    image Mori Hap1 Flip = im.Flip("Sprites/Mori/MoriHappy1.png", horizontal=True)
     
     #Yamane Sprites
     #image Yamane Neutral = "Sprites/Yamane/Yamane.png"
