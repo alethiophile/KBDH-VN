@@ -1,3 +1,5 @@
+#Chapter 6, Heroic Antics Begin Arc
+
 #label HAB_1:
     #"After the lunch chime, Kanae had decided that she would return to the club room; if she were lucky, Sempai would be there! And if she weren't lucky, well, Sempai's friends were her friends, too, so that would be fine."
     #"But she had only made it a few steps down the hallway before a taller third year boy approached her, tape across his nose and a bruise marring his face deeply around one eye. He raised a hand in greeting before glancing around, then asked, \"Are you Michikyuu Kanae-san?\""

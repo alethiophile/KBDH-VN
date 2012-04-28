@@ -18,6 +18,7 @@ init:
     image bg BeamOrange4 = "Backgrounds/BeamOrange4.jpg"
     image bg BeamOrange5 = "Backgrounds/BeamOrange5.jpg"
     image bg KyonRoomLeftClosed = "Backgrounds/KyonRoomLeftClosed.png"
+    image bg KyonRoomRightClosed = "Backgrounds/KyonRoomRightClosed.png"
     image bg KyonRoomLeftMorning = "Backgrounds/KyonRoomLeftMorning.png"
     image bg KyonRoomRightMorning = "Backgrounds/KyonRoomRightMorning.png"
     image bg KyonHouseNight = "Backgrounds/KyonHouseNight.png"
@@ -58,6 +59,7 @@ init:
     image bg ClubHallLeft = "Backgrounds/ClubHallLeft.png"
     image bg ClubHallRight = "Backgrounds/ClubHallRight.png"  
     image bg StudentCouncil = "Backgrounds/StudentCouncilRoom.png"
+    image bg Alley = "Backgrounds/Alley.png"
     
     
     image white = "#ffffff"
@@ -601,6 +603,7 @@ init:
     image Tsuruya Neutral1 = "Sprites/Tsuruya/TsuruyaNeutral1.png"
     image Tsuruya Susp1 = "Sprites/Tsuruya/TsuruyaSuspicious1.png"
     image Tsuruya Ser1 = "Sprites/Tsuruya/TsuruyaSerious1.png"
+    image Tsuruya Sad1 = "Sprites/Tsuruya/TsuruyaSad1.png"
     
     image Tsuruya Wave Grin1 = "Sprites/Tsuruya/TsuruyaWaveGrin1.png"
     image Tsuruya Wave Grin2 = "Sprites/Tsuruya/TsuruyaWaveGrin2.png"
@@ -735,13 +738,17 @@ init:
     #Mori Sprites
     image Mori Neutral1 = im.Flip("Sprites/Mori/MoriNeutral1.png", horizontal=True)
     image Mori Neutral2 = im.Flip("Sprites/Mori/MoriNeutral2.png", horizontal=True)
+    image Mori Neutral3 = im.Flip("Sprites/Mori/MoriNeutral3.png", horizontal=True)
+    image Mori Neutral4 = im.Flip("Sprites/Mori/MoriNeutral4.png", horizontal=True)
     image Mori Serious1 = im.Flip("Sprites/Mori/MoriSerious1.png", horizontal=True)
     image Mori Serious2 = im.Flip("Sprites/Mori/MoriSerious2.png", horizontal=True)
+    image Mori Serious3 = im.Flip("Sprites/Mori/MoriSerious3.png", horizontal=True)
     image Mori Sigh1= im.Flip("Sprites/Mori/MoriSigh1.png", horizontal=True)
     image Mori Sigh2= im.Flip("Sprites/Mori/MoriSigh2.png", horizontal=True)
     image Mori Smile1= im.Flip("Sprites/Mori/MoriSmile1.png", horizontal=True)
     image Mori Smile2= im.Flip("Sprites/Mori/MoriSmile2.png", horizontal=True)
     image Mori Nervous1= im.Flip("Sprites/Mori/MoriNervous1.png", horizontal=True)
+    image Mori Hap1 = im.Flip("Sprites/Mori/MoriHappy1.png", horizontal=True)
     
     #Yamane Sprites
     image Yamane Neutral = "Sprites/Yamane/Yamane.png"
