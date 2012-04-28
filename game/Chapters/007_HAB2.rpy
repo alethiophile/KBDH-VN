@@ -4,7 +4,7 @@
 label Test:
     stop music fadeout 3
     scene bg KyonHouseNight with fade
-    #queue music "Music/Unzari da.mp3"
+    queue music "Music/Suspicion.ogg"
     show Kyon Worry3 at center with dissolve
     show Haruhi Crossed Ang3 at right with dissolve
     show Kanae Hap3 at left with dissolve
@@ -37,6 +37,7 @@ label Test:
     nvl clear
     "Kyon took a deep breath, watching Haruhi closely. His mother had previously always maintained a careful distance from his friends, respecting his boundaries. This was an entirely new facet of parental interference.... But not, he admitted, entirely unexpected. And he really didn't want to see Haruhi get into a fight with his mother."
     show Kyon Neutral5 at center
+    nvl clear
     "\"Mom,\" he said, pulling her attention from Haruhi's now watering eyes. \"Look, I'm not actually in any {i}trouble{/i} at school, and if I were, it had {i}nothing{/i} to do with Haruhi or the SOS Brigade.\""
     nvl clear
     "Her eyes locked back on his, while Haruhi continued to tremble. \"And?\" she asked him. \"I'd really like you to be a positive role model for your sister and make a stronger showing that you care about your future!\""
@@ -62,6 +63,8 @@ label Test:
     hide Kanae Smile 3 with dissolve
     "He watched the two girls head up the stairs to his room and braved the kitchen, enduring his mother's steely-eyed judgment while filling a pitcher and collecting a trio of plastic cups. {nw}"
     scene bg KyonRoomRightClosed with fade
+    stop music fadeout 1
+    queue music "Music/Kokuhaku.mp3"
     show Haruhi Smile1 at center with dissolve
     show Kanae Smile1 at right with dissolve
     extend "When he got into his room, Haruhi had already set out all of her own notes, and was digging through his schoolbag for his textbooks. Kanae was sitting on the edge of his bed, rifling through her own bag, though the younger girl broke off her work to give him a shaky smile."
@@ -86,6 +89,8 @@ label Test:
     nvl clear
     scene almostblack two with fade
     scene bg KyonRoomRightClosed with fade
+    stop music fadeout 1
+    queue music "Music/Nichijou.mp3"
     show Kyon Sigh2 at left with dissolve
     show Kanae Neutral1 at right with dissolve
     "\"Okay,\" Kyon declared, glancing at the clock then rubbing at the bridge of his nose. \"Time for a break! I have limits.\" He rose and stretched, Kanae bouncing off the edge of his bed and mimicking his movements, sticking her tongue out a bit in concentration."
@@ -169,6 +174,8 @@ label Test:
     
     #need train station bg
     scene bg TownStreetNight1 with fade
+    stop music fadeout 1
+    queue music "Music/MidnightInterval.mp3"
     "A grueling flashcard session was eventually followed by a tense, uncomfortable dinner. Afterward, Kyon gleefully escaped the house on the excuse of walking the girls to the train station, chased by the promise of talking with his father once the man came home."
     show Kanae Sad3 at center with dissolve
     "\"I'm sorry I couldn't be more helpful today, Sempai,\" Kanae said before stepping through the turnstile to board her train, ducking her head. \"But thank you for being my friend. And thank you, too, Suzumiya-san! It makes me very happy to have found this world!\""
@@ -192,22 +199,26 @@ label Test:
     nvl clear
     scene bg Cab with fade
     "Unsurprisingly, Arakawa's familiar black taxi pulled up within five minutes, Mori opening the door and gesturing him in. He climbed in next to the woman, irritated to realize that thanks to Haruhi and Kanae coming home with him, he hadn't even had time to change out of his uniform. This was becoming a bizarre habit."
+    nvl clear
     show Mori Neutral3 at right with dissolve
     "\"Thank you for responding to the situation so quickly,\" she said, breaking the silence as Arakawa accelerated the vehicle into the night."
     nvl clear
     show Kyon Neutral2 at left with dissolve
     "\"Can I get a summary of what you know so far?\" he asked, staring fixedly out the window, away from Mori. Why would his future self continually shove him into situations blind like this? Well, it wasn't that far off from his total lack of guidance to himself the week that Mikuru had been kidnapped ... though, with his new skills and connections, he should be able to prevent {i}that{/i} from happening again."
+    nvl clear
     show Mori Neutral2 at right
     "He caught the motion of her nod in the reflection off the window. \"Currently, as you have anticipated, today was much better than this morning. A few of our espers noted a sensation of increased tension earlier today, and it hasn't died down completely, but no closed space has actually formed.\""
     nvl clear
     show Kyon Smile4 at left
     "He nodded at that. \"Glad that's working,\" he allowed. \"But then, I've always thought Haruhi had the capability to be more reasonable than she usually chose to be.\""
     show Mori Neutral3 at right
+    nvl clear
     "\"You are absolutely the expert in that regard, Sir,\" Mori replied. \"We've got assigned watchers following her as per standard; she shouldn't be in any danger. The same for Michikyuu-san, now.  {nw}"
     show Mori Ser2 at right
     extend "Ah, but I'm side-tracking. While Tsuruya-san is affiliated with our Organization, her family has a strict policy of non-interference, which we respectfully work both ways — they don't mind us, and we don't mind them."
     nvl clear
     show Mori Ser3 at right
+    nvl clear
     "\"I was a bit hesitant to infringe on that, but the Tamaru brothers are watching her, as you insisted,\" she continued. \"You're positive that it was safe to pull them from surveillance on Asahina-san?\""
     show Kyon Unhap3 at left
     "\"I've got someone on that,\" he answered, making a mental note to kick his future self. Obviously, his future self was getting to enjoy time with Mikuru, while he was pitching himself headlong into another act of delinquency. \"What's Tsuruya-kun up to right now?\""
@@ -223,20 +234,21 @@ label Test:
     show Kyon Ser2 at left
     "\"While that's possible, right now Tsuruya-kun is a person of interest to the brigade,\" Kyon countered, tearing his eyes from the window to give Mori his most stern look. She met it without flinching, only pursing her lips slightly. \"Specifically, she and I are involved in an investigation concerning something that ... unless I miss my mark ... even the entity itself is unaware of. I wouldn't expect Asahina-san to know, but I'm surprised you seem unaware.\""
     show Mori Ser2 at right
-    "\"What?\" Mori asked, taken aback. \"What are you insinuating? Is this about that scuffle you got involved with at school this morning?\""
     nvl clear
+    "\"What?\" Mori asked, taken aback. \"What are you insinuating? Is this about that scuffle you got involved with at school this morning?\""
     show Kyon Neutral4 at left
     "\"And yesterday,\" he agreed."
     show Mori Sigh1 at right
     "\"No, that's not possible,\" she objected, shaking her head. \"We watched you all day; you didn't leave the house after we dropped you off.\""
+    nvl clear
     show Kyon Sigh2 at left
     "\"Use a bit of imagination.\""
     show Mori Ser2 at right
     "Mori frowned, squinting at him. \"You're working for the time travelers?\" she asked, her voice turning slightly bitter."
-    nvl clear
     show Kyon Ser2 at left
     "\"They work for {i}me{/i},\" he clarified."
     show Mori Ser3 at right
+    nvl clear
     "She stared at him doubtfully, then gave a slow nod. \"Okay,\" she allowed. \"That may account for some things. Then, what's this investigation you're undertaking? If it's something even the entity is unaware of—\""
     show Kyon Sigh1 at left
     "\"Classified,\" he told her with a shake of his head. \"Sorry. You'll get disclosure when the investigation is complete. Koizumi can give you a full report.\""
@@ -278,7 +290,7 @@ label Test:
     nvl clear
     "\"However.... I have it on reasonable authority that the ones we {i}are{/i} looking for.... That is, the people who gave Ryuguu a much needed lesson in humility ... are the ones we are seeking. In the spirit of preserving a relationship that has yet to sour, I will offer you the standard rate for your product. Just keep in mind, there might be a ... bonus ... if you can find the people who caused us so much grief last Sunday.\""
     nvl clear
-    show Kyon Worry4 at left
+    show Kyon Worry3 at left
     "Kyon chewed his lip, putting the Yakuza speech together. Ryuguu thought he was an associate, but wasn't? That made sense.... The Yakuza wanted revenge for what happened to them on Sunday? Well, that was undoubtedly going to be problematic, and inevitably tied to the 'investigation' that he and Tsuruya were now wrapped up in.  {nw}"
     show Tsuruya Quest1 at center
     extend "\"Uh-oh,\" Tsuruya said, very softly, backing up slowly, almost bumping into Kyon before he put a hand out to catch her shoulder."
@@ -288,8 +300,8 @@ label Test:
     show Tsuruya Hap5 at center
     extend "then relaxed instantly with a wide grin when she recognized him. The sudden motion caught Watanabe's attention, and Manabe followed his glance, gasping and pointing.  {nw}"
     
-    
-    #queue music
+    stop music fadeout 1
+    queue music "Music/KamadoumaEnd.mp3"
     extend "\"It's them!\" he yelled. \"Tsuruya and that delinquent! They're the ones who beat up Ryuguu-san — twice!\""
     nvl clear
     show Tsuruya Sad1 at center
@@ -353,8 +365,11 @@ label Test:
     "She hung up the phone without waiting for response, and Kyon could only blink in surprise when a limousine pulled to a stop outside the alley, a driver quickly climbing out and opening the door for them. Kyon gratefully collapsed into the back seat, only grunting when Tsuruya climbed in next to him and pulled out a first aid-kit. Confident that everything else would be taken care of, he let himself recede into comforting darkness as she pulled his head into her lap and began dabbing something on his eyebrow."
     nvl clear
     
-    
+    scene almostblack two with fade
     #scene
+    stop music fadeout 1
+    queue music "Music/Morning.ogg"
+    show Tsuruya Worry1 at left with dissolve
     "When his eyes tried lazily to open, only one of them did. A wad of cloth or something was pressing on his right eye, and he was laying on his back, squinting upward into lights that were too bright. Tsuruya was peering down at him in concern, while an unfamiliar middle-aged man with rolled up sleeves and surgical gloves did ... something to his face involving a needle and thread. He let his eye close again, though he remained conscious."
     nvl clear
     "Most of his face was reassuringly numb, but he felt Tsuruya's warm hands clasped together around his left hand. \"There,\" the man's voice said, slightly muffled by his surgical mask. \"Are you still with us, Kyon-dono?\""
@@ -362,33 +377,35 @@ label Test:
     "\"Absolutely, Kyon-dono,\" the man assured him."
     nvl clear
     "He opened his eyes again, surprised to find that his right eye opened, but was too swollen to open completely. He vaguely recognized the interior of Tsuruya's house, but wasn't sure which room he was in. Someone had laid a futon out for him and covered it with a thick cloth to prevent his blood from staining the mattress. The girl released his hand and helped him sit up."
+    show Tsuruya Worry2 at left
     "\"Kyon-kun?\" she asked him, her voice sounding surprisingly shy. \"You okay?\""
     nvl clear
     "\"I've been better,\" he allowed with a wry smirk. Turning to the surgeon, who was washing his hands carefully in a basin and had pulled down his mask, he added, \"Thank you, Sensei. Thank you as well, Tsuruya-kun.\""
+    show Tsuruya Neutral1 at left
     "\"This one was my fault,\" Tsuruya said, nodding firmly. \"If it's my fault, it's my responsibility! Oh, let me introduce you; this is Sakura-sensei, our family surgeon.\""
     nvl clear
     "Sakura gave a wry grin of his own and bowed, drying his hands on a towel. \"I can't give you much medicine, Kyon-dono, but when you're ready tonight, we'll give you something to help you sleep,\" he said. \"In the meantime, you shouldn't need antibiotics, and I can't get those without a prescription, so it's going to be very important to change the dressing on that wound regularly and keep it clean. Also, for today and tomorrow, keep an icepack on the injury whenever possible.\" He produced a strange, rounded strip of something like a bandage, adding, \"There are a few of these in the freezer; the staff can help you get one before you sleep.\""
     nvl clear
     "\"Ah ... thanks,\" Kyon managed. He felt a little bad ... Tsuruya was going so far out of her way, when he could just ask Yuki to fix it in the morning. \"Um! Shoot, my mom's going to flip out—\""
+    show Tsuruya Grin2 at left
     "\"No worries!\" Tsuruya said with a wide grin. \"I was worried for you, too, but when you fell asleep in the car, I got a phone call from your uncle Kintaro! He sounds {i}just{/i} like you! I do wonder how he got my number.... But he said he was borrowing your room tonight and was going to talk to your mother, so you should stay here and rest! I think he tried calling you, too, because he said to check your voice mail.\""
     nvl clear
     "\"Oh,\" he said. What uncle Kintaro? His uncle was named Keiichi. \"Oh, good.\""
+    show Tsuruya Hap1 at left
     "\"Now, come on,\" she instructed, wrapping the cooled compress around his head, adjusting it to cover his right eyebrow. \"We're going to take a bath and get some sleeps, okies?\""
     "\"Yeah,\" he agreed, nodding. \"You go first; I'd better check my voice mail.\""
     nvl clear
     "Sakura rose from packing away his medical equipment and bowed deeply to the pair of them. \"Take care, Kyon-dono, Tsuruya-san,\" he said."
+    hide Tsuruya Hap1 with dissolve
     "Kyon nodded tiredly, while Tsuruya waved to a maid and climbed to her feet. \"I'm headed to the bath,\" the girl told her maid, \"when Kyon-kun is ready, go ahead and send him in, then get our beds ready.\""
     "\"Understood,\" the servant replied, bowing deeply."
-    nvl clear
     "Shaking his head, Kyon turned his phone back on, unsurprised to see another voice mail. He retrieved it, hearing his future self tell him, with a faintly audible tinge of amusement: \"It seems strange, but it's the best thing to do. Take a bath, rest well, do whatever Tsuruya-kun asks. {i}Whatever{/i} Tsuruya-kun asks. You can leave the phone on now.\""
     nvl clear
     "Rolling his eyes, he tiredly climbed to his feet, approaching the maid with short steps. His arms and back were bruised from all of his falling and rolling, his knuckles were sore, his right ankle was protesting, and whatever anesthetic the doctor had used was starting to fade. The stitched up cut was beginning to fiercely sting, even with the cooling pack stuck to his head, and the purpling bruise over his collar bone was starting to promise aching neck muscles in the coming days."
-    nvl clear
     "\"Kyon-dono,\" the maid murmured, rising from her kneeling position, though her eyes were still fixed on the floor. \"The head of the Tsuruya family sends his personal regards and thanks for watching over his chosen heir. All of us are quite grateful for your effort so far, especially Kasai-san.\""
-    nvl clear
     "\"I'm just doing ... what anyone would do,\" he said, realizing how lame it was only after the words left his mouth. Sure, anyone who had casual access to instant training, time travel, and a covert organization that they had inadvertently cowed into doing their bidding would do the same."
-    "Even with her face oriented towards the floor, he could see the maid's mouth quirk into a smile. \"Even though others may, you {i}have{/i},\" the maid insisted. \"He further requests that you continue to watch over her until she completes her trials, and wishes to know what reward you desire in exchange for your services.\""
     nvl clear
+    "Even with her face oriented towards the floor, he could see the maid's mouth quirk into a smile. \"Even though others may, you {i}have{/i},\" the maid insisted. \"He further requests that you continue to watch over her until she completes her trials, and wishes to know what reward you desire in exchange for your services.\""
     "\"O...of course,\" he agreed. \"But, reward? That's.... No, thanks. I don't need much, and right now, Tsuruya-kun's already made sure that I got medical attention when I needed it, and a place to hide from my mother while she's angry.\" He bit his tongue, wondering if his words came more easily as a side- effect of the fading anesthetic. \"Er.... Well, I appreciate the offer, but I'm not helping Tsuruya-kun for a reward.\""
     nvl clear
     "The maid's smile widened. \"Thank you,\" she said, raising her face and peering cautiously at him. \"Then, if I may impose a small, personal request?\""
@@ -398,6 +415,9 @@ label Test:
     "\"Of course,\" he agreed, wondering why she needed to ask him twice. \"I don't think many people would want to see her unhappy.\""
     "The maid bowed low again, then gestured him to follow. \"This way to the baths,\" she said quietly. \"Leave your clothes in the changing room. We'll make sure they're clean by morning.\""
     nvl clear
+    #scene 
+    stop music fadeout 1
+    queue music "Music/Nanika.mp3"
     "\"Okay,\" he agreed, as she opened the changing room door for him and bowed yet again. He wondered briefly how quickly Tsuruya had washed ... she'd gotten cut on her wrist, too, but hopefully not very badly. The surgeon had probably taken care of her first; he'd have to ask her about it later, he decided, shutting the door on the maid and quickly stripping. After grabbing a modesty towel and wrapping it around himself, he slid open the door and stepped into the bathing area, freezing when he saw Tsuruya there, facing away from him."
     nvl clear
     "He couldn't help but stare as the girl leaned forward and gathered up a rinse basin, upending it over her head with a cry of, \"Kya~! Cold!\""

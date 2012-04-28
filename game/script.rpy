@@ -266,7 +266,7 @@ init:
     image Kyon Ang3 = "Sprites/Kyon/KyonAngry3.png"
     image Kyon Ang4 = "Sprites/Kyon/KyonAngry4.png"
     image Kyon Pain1 = "Sprites/Kyon/KyonPained1.png"
-    image Kyon Pain2 = "Sprites/Kyon/KyonPained2.png"
+    image Kyon Pain2 = "Sprites/Kyon/KyonPained2.png" 
     image Kyon Smile1 = "Sprites/Kyon/KyonSmile1.png"
     image Kyon Smile2 = "Sprites/Kyon/KyonSmile2.png"
     image Kyon Smile3 = "Sprites/Kyon/KyonSmile3.png"
@@ -275,7 +275,6 @@ init:
     image Kyon Worry1 = "Sprites/Kyon/KyonWorry1.png"
     image Kyon Worry2 = "Sprites/Kyon/KyonWorry2.png"
     image Kyon Worry3 = "Sprites/Kyon/KyonWorry3.png"
-    image Kyon Worry4 = "Sprites/Kyon/KyonWorry4.png"
     image Kyon Puzzle1 = "Sprites/Kyon/KyonPuzzled1.png"
     image Kyon Sup1 = "Sprites/Kyon/KyonSurprised1.png"
     image Kyon Sup2 = "Sprites/Kyon/KyonSurprised2.png"
@@ -752,7 +751,7 @@ init:
     image Mori Hap1 = im.Flip("Sprites/Mori/MoriHappy1.png", horizontal=True)
     
     #Yamane Sprites
-    image Yamane Neutral = "Sprites/Yamane/Yamane.png"
+    #image Yamane Neutral = "Sprites/Yamane/Yamane.png"
     
     #Closed space variants
     image clouds CS = im.MatrixColor("id_clouds.png",
