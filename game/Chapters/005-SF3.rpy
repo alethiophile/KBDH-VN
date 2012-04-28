@@ -132,7 +132,7 @@ label SF3:
     show Haruhi Unhap2 at TenthLeft
     show Kyon Sigh1
     stop music fadeout 10
-    "He snorted, carelessly dumping the old leaves into the trash and eyeballing a replacement fill of tea leaves from one of the metal cannisters that Mikuru had bought. \"I'm not actually a fan of the Hanshin Tigers."
+    "He snorted, carelessly dumping the old leaves into the trash and eyeballing a replacement fill of tea leaves from one of the metal cannisters that Mikuru had bought. \"I'm not actually a fan of the Hanshin Tigers.\""
     nvl clear
     show Kyon Sigh2 at right
     stop music
@@ -181,7 +181,7 @@ label SF3:
     show Kyon Ser1 at right
     "He said nothing for a long minute, pouring the water into the teapot over the tea leaves and ruminating." 
     show Kyon Sigh2 at right
-    "\"You're still being too hard on yourself,\" he decided, when pouring was complete. \"If I could only pick one thing to blame myself for, it would be for revealing things to you that changed who you were so much." 
+    "\"You're still being too hard on yourself,\" he decided, when pouring was complete. \"If I could only pick one thing to blame myself for, it would be for revealing things to you that changed who you were so much.\"" 
     nvl clear
     show Kyon Puzzle1 at right
     "\"That, honestly, I do regret. I don't regret saving Nagato. I don't regret being honest with you. But causing you pain because of what you know.... That, I never wanted at all. Please believe that, if nothing else.\""
@@ -323,7 +323,7 @@ label SF3:
     nvl clear
     "He winced, ducking his head. \"Sorry; I didn't think you were! I just meant ... you know about relationships and how they're supposed to work."
     show Kyon Puzzle1 at right
-    "\"You show almost unlimited confidence. What am I able to or supposed to bring to the table? It's not that I wouldn't like to try, but...." 
+    "\"You show almost unlimited confidence. What am I able to or supposed to bring to the table? It's not that I wouldn't like to try, but....\"" 
     show Kyon Worry1 at right
     nvl clear
     "\"What do I do when I fail you? When it's not enough? I want to try my best, but I {i}am{/i} just a normal person with extraordinary friends. Being dragged along behind you while weakly protesting is one thing ... but being rejected because you're bored with me....\"" 

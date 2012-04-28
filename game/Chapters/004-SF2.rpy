@@ -125,6 +125,7 @@ label SF2:
     show Kyon Worry1:
          xpos 1.3 yalign 1.0
     nvl clear
+    show Haruhi Grin1 at left_RightScreen
     "With obvious effort, he focused his eyes on the pages of notes she had taken, setting his chopsticks down. While he was distracted, she snagged his bento and the chopsticks, smirking as she finished the rest of it off. That'd teach him; next time he'd learn not to be so tired!"
     show Kyon Ser3:
          xpos 1.3 yalign 1.0
@@ -267,7 +268,7 @@ label SF2:
     "\"After preparing all three subjects with nanites for preservation, Michikyuu Kanae attempted to slide to an alternate dimension, simultaneous to the activation of Asahina Mikuru's time travel device, while I engaged the dimensional anchor with a modified temporal anchor function.\""
     nvl clear
     show Yuki Talk2 at right
-    "\"The resultant actions, guided by stored data from yourself, were sufficient to create a semi-stable permeable reality governed by myself that was outside of both space and time, allowing me to ground myself from the negative attribute data that would cause error behavior."
+    "\"The resultant actions, guided by stored data from yourself, were sufficient to create a semi-stable permeable reality governed by myself that was outside of both space and time, allowing me to ground myself from the negative attribute data that would cause error behavior.\""
     nvl clear
     show Yuki Talk1 at right
     "\"This same space was also used to simultaneously allow Michikyuu Kanae practice sliding between nested pocket-dimensions and Asahina Mikuru to undertake her requested training in sewing. Per his own instructions, he undertook martial arts training and assisted me with ... personal issues.\""
@@ -419,7 +420,7 @@ label SF2:
     "\"And what's this about you fighting thugs for Tsuruya-sempai?\" Kunikida asked, following with a concerned expression."
     show Taniguchi Smile1 at left
     nvl clear
-    "\"Yeah,\" Taniguchi said, nodding seriously. \"Suzumiya talking about nonsense like time traveling isn't going to raise too many questions, but people attacking a sempai, and you getting into fights?"
+    "\"Yeah,\" Taniguchi said, nodding seriously. \"Suzumiya talking about nonsense like time traveling isn't going to raise too many questions, but people attacking a sempai, and you getting into fights?\""
     nvl clear
     show Taniguchi Hap1 at left
     "\"I hate to tell you that you should back off, since you and Suzumiya seem to be heading toward 'item' territory ... but if she's losing it, I don't think you want to get dragged down with her.\""
@@ -548,6 +549,7 @@ label SF2:
     nvl clear
     show Yuki Right Neutral1 at right
     "She stared at Haruhi blankly for a minute, then pointedly turned her attention back to the book in her hands."
+    $ _window = True
     hide Yuki with dissolve
     show Haruhi Sigh2 at left
     "\"Yeah, you're right,\" Haruhi grumbled with another resigned sigh. \"Don't even let Kyon know I suggested that; he wouldn't like it.... Maybe I should just resign myself to letting him choose whoever he wants ... I mean....\"" 
@@ -559,6 +561,7 @@ label SF2:
     show Mikuru Neutral1 at right
     show Kanae Neutral1 at center
     with dissolve
+    $ _window = False
     "\"Hello Suzumiya-san,\" Mikuru said sleepily, collecting her sewing kit and the maid costume from where it had been left to finish her repairs."
     show Haruhi Neutral2 at left
     "\"Hey, Mikuru-chan, Kanae-chan.\""
@@ -586,7 +589,7 @@ label SF2:
     show Haruhi Ang5 at left
     show Mikuru Sad2 at right
     nvl clear
-    "\"It's ... forbidden,\" Mikuru said quietly. \"I...if you must know, then ... yes, I do like Kyon-kun ... he's reliable, and doesn't have ulterior motives." 
+    "\"It's ... forbidden,\" Mikuru said quietly. \"I...if you must know, then ... yes, I do like Kyon-kun ... he's reliable, and doesn't have ulterior motives.\"" 
     nvl clear
     show Mikuru Sad1 at right
     "\"But I'm not {i}from{/i} this timeplane; I can't have, um, relationships with anyone from here. S...so, please don't think of me as a threat, Suzumiya-san! And you can't ask me to think of him without you being in the picture; if it weren't for {i}you{/i}, I never would have been sent back and been able to meet him anyway! I don't want to come between the two of you!\""
@@ -687,7 +690,7 @@ label SF2:
     show Mori Neutral1 at left
     show Kyon Neutral3 at right
     "\"So far,\" Mori said evenly, her eyes turning to fix on some distant point outside of the car window, \"everything regarding Suzumiya-san has matched your predictions. Assuming you're correct, and tomorrow morning is the peak of closed space creation for the two week period that we established, then we'll accept that you have the situation under control.\"" 
-    show Mori Serious1 at left
+    show Mori Ser1 at left
     nvl clear
     "Her eyes hardened and shifted to his; he felt he should be trying to return her hard stare, but could only gaze back lethargically. Hopefully, he told himself, the lack of excited reaction would convey some sense of confidence to her." 
     nvl clear
@@ -732,7 +735,7 @@ label SF2:
     nvl clear
     "\"We can't,\" Mori agreed. \"I'm guessing you had already considered it, then?\""
     show Kyon Sigh2 at right
-    "\"Not really,\" he admitted. \"The theory's sound, but I don't believe any of us are predictable enough for the IDSE to risk it. I can easily see them wanting Haruhi controlled to provoke reactions safely, but threatening Yuki? After what I told them?" 
+    "\"Not really,\" he admitted. \"The theory's sound, but I don't believe any of us are predictable enough for the IDSE to risk it. I can easily see them wanting Haruhi controlled to provoke reactions safely, but threatening Yuki? After what I told them?\""
     nvl clear
     show Kyon Smile2 at right
     "\"That's like giving a monkey a chainsaw and hoping that it'll create a new form of art. It might work, but probably it's just going to get messy and end poorly.\""
