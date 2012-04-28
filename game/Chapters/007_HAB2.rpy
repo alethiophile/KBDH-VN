@@ -1,7 +1,7 @@
 #Chapter 7, Heroic Antics Begin Arc
 
 #label HAB2:
-label Test:
+#label Test:
     stop music fadeout 3
     scene bg KyonHouseNight with fade
     queue music "Music/Suspicion.ogg"
