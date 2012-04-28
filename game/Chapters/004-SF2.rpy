@@ -706,7 +706,7 @@ label SF2:
     nvl clear
     show Kyon Neutral2 at right
     "\"Good. Did Koizumi mention the potential IDSE bargaining chip we had on the table?\" Those words sounded good ... right out of an intrigue filled political drama. Doubtless Haruhi would be thrilled to hear this story later."
-    show Mori Serious2 at left
+    show Mori Ser2 at left
     show Kyon Neutral3 at right
     "\"New data?\" Mori asked, giving a small nod. \"Again, that falls firmly into the area of 'not our problem'.\""
     show Kyon Ser3 at right
@@ -717,7 +717,7 @@ label SF2:
     show Kyon Ser1 at right
     "Mori turned her face back to him, her eyes softening as she raised her eyebrows. \"More and more, I'm starting to like you, Sir,\" she said with a wry grin." 
     nvl clear
-    show Mori Serious1 at left
+    show Mori Ser1 at left
     "\"You remind me of myself at your age. Well, in that case, the only thing that occurred to me is that ... this entire thing, every action you've taken so far, could be an IDSE orchestrated ploy. That is to say ... for all we know, they've arranged things from behind the scenes specifically so that you would 'collar' Suzumiya-san and thus restrict their precious 'data creation' to a safely controlled vector.\""
     show Kyon Neutral3 at right
     nvl clear

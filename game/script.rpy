@@ -275,6 +275,7 @@ init:
     image Kyon Worry1 = "Sprites/Kyon/KyonWorry1.png"
     image Kyon Worry2 = "Sprites/Kyon/KyonWorry2.png"
     image Kyon Worry3 = "Sprites/Kyon/KyonWorry3.png"
+    image Kyon Worry4 = "Sprites/Kyon/KyonWorry4.png"
     image Kyon Puzzle1 = "Sprites/Kyon/KyonPuzzled1.png"
     image Kyon Sup1 = "Sprites/Kyon/KyonSurprised1.png"
     image Kyon Sup2 = "Sprites/Kyon/KyonSurprised2.png"
@@ -740,9 +741,9 @@ init:
     image Mori Neutral2 = im.Flip("Sprites/Mori/MoriNeutral2.png", horizontal=True)
     image Mori Neutral3 = im.Flip("Sprites/Mori/MoriNeutral3.png", horizontal=True)
     image Mori Neutral4 = im.Flip("Sprites/Mori/MoriNeutral4.png", horizontal=True)
-    image Mori Serious1 = im.Flip("Sprites/Mori/MoriSerious1.png", horizontal=True)
-    image Mori Serious2 = im.Flip("Sprites/Mori/MoriSerious2.png", horizontal=True)
-    image Mori Serious3 = im.Flip("Sprites/Mori/MoriSerious3.png", horizontal=True)
+    image Mori Ser1 = im.Flip("Sprites/Mori/MoriSerious1.png", horizontal=True)
+    image Mori Ser2 = im.Flip("Sprites/Mori/MoriSerious2.png", horizontal=True)
+    image Mori Ser3 = im.Flip("Sprites/Mori/MoriSerious3.png", horizontal=True)
     image Mori Sigh1= im.Flip("Sprites/Mori/MoriSigh1.png", horizontal=True)
     image Mori Sigh2= im.Flip("Sprites/Mori/MoriSigh2.png", horizontal=True)
     image Mori Smile1= im.Flip("Sprites/Mori/MoriSmile1.png", horizontal=True)
