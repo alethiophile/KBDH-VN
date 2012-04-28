@@ -250,7 +250,7 @@ label SF1:
     extend "Oh, speaking of which, Koizumi, where's the armband?\""
     nvl clear
     show Koizumi Shrug Sigh1:
-        xalign 2.3 yalign 1.0
+        xalign 2.2 yalign 1.0
     "\"I lost it,\" he said with a friendly smile. \"My apologies.\""
     show Koizumi Crossed Smile1 at right
     show Haruhi Hap1 at left
@@ -349,7 +349,7 @@ label SF1:
     show Kyon Neutral2 at right
     show Haruhi Worry1 at TenthLeft 
     with dissolve
-    "Haruhi heaved a sigh, watching him walk away. \"Kyon,\" she said, quietly, \"I'm trying not to be upset about this. Because that just makes more trouble.\"" 
+    "Haruhi heaved a sigh, watching him walk away. \"Kyon,\" she said, quietly, \"I'm trying not to be upset about this. Because that just makes more trouble." 
     show Haruhi Worry1 at TenthLeft
     "\"But more and more, this 'power' I've got really seems to suck! It's too dangerous to use, and just for having it, I endanger the world?\""
     nvl clear
@@ -357,7 +357,7 @@ label SF1:
     "\"Everything I looked for hid from me until you made them show themselves?\""
     nvl clear
     show Kyon Ser3 at right
-    "\"Don't get too down,\" he told her. \"Remember, closed spaces result from your frustration. All you need to do to make Koizumi's job easier is be happy.\""
+    "\"Don't get too down,\" he told her. \"Remember, closed spaces result from your frustration. All you need to do to make Koizumi's job easier is be happy."
     show Kyon Sigh1 at right
     "\"As long as you respect the boundaries of other people, I don't see why you can't be that. Especially since you now {i}know{/i} you've got a time traveler, an esper, and an alien in your club. Isn't that what you were looking for?\""
     nvl clear
@@ -381,7 +381,7 @@ label SF1:
     show Kyon Neutral2 at right
     "\"The only person I can never figure out reliably is you.\""
     nvl clear
-    show Haruhi Smile1 at TenthLeft
+    show Haruhi Smile3 at TenthLeft
     "She smirked at that. \"Good,\" she decided. \"If you can solve aliens, time travelers, and everything else, at least there's one mystery left for you to focus on, right?\""
     show Kyon Worry1 at right
     "He looked away at the sky. \"Anyway,\" he said after an extended moment of silence, \"I had to leave that world because the people who made the brigade were there, but the brigade itself wasn't.\""
@@ -1010,16 +1010,16 @@ label SF1:
     "\"How did it go?\" he asked, before the esper could volunteer anything."
     show Koizumi Crossed Smile2 at left
     show Kyon Ser1 at right
-    "\"It was a bit rough,\" Koizumi replied, still smiling. \"It could have been much worse, though. As I have mentioned before, one of the most stressful parts about this is simply getting to where the closed space is in a timely manner. "
+    "\"It was a bit rough,\" Koizumi replied, still smiling. \"It could have been much worse, though. As I have mentioned before, one of the most stressful parts about this is simply getting to where the closed space is in a timely manner.\" "
     nvl clear
     show Koizumi Think Smile1 at left
-    "Quite fortunately, all the spaces were within the coast of Honshu, so there was no need to travel extremely far.\""
+    "\"Quite fortunately, all the spaces were within the coast of Honshu, so there was no need to travel extremely far.\""
     show Kyon Puzzle1 at right
     "\"I hope it wasn't too much trouble. Hmm, I realize this isn't a critical issue, but out of curiosity, how much does it typically cost to deal with a Shinjin, anyway?\""
     nvl clear
     show Kyon Neutral3 at right
     show Koizumi Shrug Sigh1:
-        xalign -1.0 yalign 1.0
+        xalign -1.12 yalign 1.0
     "\"That's entirely dependant on how much travel time is involved,\" Koizumi replied, shrugging."
     show Koizumi Think Grin1 at left
     "\"Hokkaido or Okinawa are of course going to be more difficult to reach, while Tokyo is relatively simple, thanks to the bullet train. However, you are correct in that this isn't a critical issue.\""
@@ -1032,7 +1032,7 @@ label SF1:
     nvl clear
     show Kyon Sigh4 at right
     show Koizumi Shrug Smile1:
-        xalign -1.0 yalign 1.0
+        xalign -1.12 yalign 1.0
     "\"She's still a bit ... um ... intimidated by your last meeting,\" Koizumi said, his smile turning apologetic."
     show Kyon Sigh3 at right
     "Kyon blinked, wondering what he was going to have to have done." 
@@ -1044,7 +1044,7 @@ label SF1:
     show Kyon Ser1 at right
     "Koizumi paled, shivering. \"My,\" he allowed. \"That's ... less than comforting.\""
     show Kyon Worry1 at right
-    "\"Yeah. Kanae-chan is also lost, and doesn't have much control over her ability to slide; she's trying to find her way home, and someone who can help deal with the alien invasion." 
+    "\"Yeah. Kanae-chan is also lost, and doesn't have much control over her ability to slide; she's trying to find her way home, and someone who can help deal with the alien invasion.\""
     nvl clear
     show Kyon Neutral1 at right
     "\"Surprisingly, we also discovered a limit to Haruhi's power. Namely, that she can't affect other worlds reliably, or the ability to travel to them.\""
@@ -1066,7 +1066,7 @@ label SF1:
     "\"I will pass that request on to Mori-san,\" the older man allowed. \"If you will permit a personal observation, I'm rather surprised you trust us so much.\""
     nvl clear
     show Kyon Sigh2 at right
-    "\"Well, you've never threatened to kill Koizumi for displeasing you,\" Kyon said with a shrug. \"You've never intentionally treated him poorly because you thought that's the way things needed to be. As far as I know, anyway."
+    "\"Well, you've never threatened to kill Koizumi for displeasing you,\" Kyon said with a shrug. \"You've never intentionally treated him poorly because you thought that's the way things needed to be. As far as I know, anyway.\""
     show Kyon Worry1 at right
     nvl clear
     "\"More importantly, you haven't given me a reason not to trust you yet. Sorry if I, um, frightened Mori-san,\" though he boggled at the thought he could intimidate someone with such a smile, \"but after all is said and done, I'd like us to be able to work together. Ultimately, isn't your goal the stability of the world, and the safety of Haruhi and the people important to her?\""
