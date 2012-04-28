@@ -99,6 +99,7 @@ init:
     image Haruhi Hap2 = "Sprites/Haruhi/HaruhiSideHappy2.png"
     image Haruhi Hap3 = "Sprites/Haruhi/HaruhiSideHappy3.png"
     image Haruhi Hap4 = "Sprites/Haruhi/HaruhiSideHappy4.png"
+    image Haruhi Hap5 = "Sprites/Haruhi/HaruhiSideHappy5.png"
     image Haruhi Pout1 = "Sprites/Haruhi/HaruhiSidePout1.png"
     image Haruhi Pout1 Bright = im.MatrixColor("Sprites/Haruhi/HaruhiSidePout1.png",
                                        im.matrix.brightness(.5))
@@ -136,6 +137,7 @@ init:
     image Haruhi Casual Hap2 = "Sprites/Haruhi/HaruhiSideCasualHappy2.png"
     image Haruhi Casual Hap3 = "Sprites/Haruhi/HaruhiSideCasualHappy3.png"
     image Haruhi Casual Hap4 = "Sprites/Haruhi/HaruhiSideCasualHappy4.png"
+    image Haruhi Casual Hap5 = "Sprites/Haruhi/HaruhiSideCasualHappy5.png"
     image Haruhi Casual Pout1 = "Sprites/Haruhi/HaruhiSideCasualPout1.png"
     image Haruhi Casual Pout1 Bright = im.MatrixColor("Sprites/Haruhi/HaruhiSideCasualPout1.png",
                                        im.matrix.brightness(.5))
@@ -272,6 +274,8 @@ init:
     image Kyon Smile3 = "Sprites/Kyon/KyonSmile3.png"
     image Kyon Smile4 = "Sprites/Kyon/KyonSmile4.png"
     image Kyon Smile5 = "Sprites/Kyon/KyonSmile5.png"
+    image Kyon Smile6 = "Sprites/Kyon/KyonSmile6.png"
+    image Kyon Smile7 = "Sprites/Kyon/KyonSmile7.png"
     image Kyon Worry1 = "Sprites/Kyon/KyonWorry1.png"
     image Kyon Worry2 = "Sprites/Kyon/KyonWorry2.png"
     image Kyon Worry3 = "Sprites/Kyon/KyonWorry3.png"
@@ -309,6 +313,8 @@ init:
     image Kyon Casual Smile3 = "Sprites/Kyon/KyonCasualSmile3.png"
     image Kyon Casual Smile4 = "Sprites/Kyon/KyonCasualSmile4.png"
     image Kyon Casual Smile5 = "Sprites/Kyon/KyonCasualSmile5.png"
+    image Kyon Casual Smile6 = "Sprites/Kyon/KyonCasualSmile6.png"
+    image Kyon Casual Smile7 = "Sprites/Kyon/KyonCasualSmile7.png"
     image Kyon Casual Worry1 = "Sprites/Kyon/KyonCasualWorry1.png"
     image Kyon Casual Worry2 = "Sprites/Kyon/KyonCasualWorry2.png"
     image Kyon Casual Worry3 = "Sprites/Kyon/KyonCasualWorry3.png"
