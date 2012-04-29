@@ -1087,6 +1087,7 @@ label SF1:
     stop music fadeout 3
     
     call eyecatch("Monday, April 18") from SF1_sc006
+    
 
     play music "Music/Nichijou.mp3"
     scene bg KyonRoomLeftClosed with fade
@@ -1113,22 +1114,28 @@ label SF1:
     show Kyon Sigh3 at right
     with dissolve
     nvl clear
+    
     "When he came to his senses, he was laying on the floor of Nagato's apartment, staring dazedly up into the girl's eyes."
-    show Mikuru Cower Face Sup2 at TopRight
-    show Kanae Face Smile2 at TopLeft
+    show Mikuru Cower Towel Sup2 behind Kyon:
+         xalign 1.3 yalign 1.2
+    show Kanae Night Smile2:
+        xalign 0.3 yalign 1.9
     with dissolve
     show Kyon Sup2 at right
     "Looking around, he saw a shell-shocked Mikuru wearing nothing more than a towel about her midsection, and another wrapped around her head, seeming fresh out of the shower, and Kanae, sprawled on the floor near Nagato's table in pajamas and snoring contently."
     nvl clear
     show Kyon Worry1 at right
     show KBlush at right
-    show Mikuru Cower Face Nervous1 at TopRight
-    show MBlush Cower Face at TopRight
+    show Mikuru Cower Towel Nervous1:
+        xalign 1.3 yalign 1.2
+    show MBlush Cower Towel behind Kyon:
+        xalign 1.3 yalign 1.2
     "\"Um,\" he managed, sitting up and turning his eyes away from Mikuru. He wordlessly pushed his jacket at her, since he hadn't even had time to change out of his uniform. \"What's going on, Nagato?\" he added, closing his cell phone."
     show Yuki Talk1 at left
     "She set down the receiver of her own phone and said without preamble, \"An error is likely to occur imminently.\""
     nvl clear
-    show KABlush Face at TopLeft
+    show KABlush:
+        xalign 0.3 yalign 1.9
     show Yuki Side1 at left
     "\"Mmm, Sempai,\" Kanae murmured in her sleep with a quiet giggle."
     show Kyon Sigh2 at right
@@ -1148,11 +1155,14 @@ label SF1:
     show Kyon Neutral2 at right
     "\"Um, well, I want to help you,\" he said, nodding. \"As long as Asahina-san and Kanae-chan agree, then I can't think of a reason not to.\""
     show Kyon Neutral3 at right
-    show Mikuru Cower Face Nervous3 at TopRight
+    show Mikuru Cower Towel Nervous3:
+        xalign 1.3 yalign 1.2
     "\"Er ... could I ... borrow some clothes, maybe?\" Mikuru asked, her voice strained with embarrassment. \"I don't mind doing whatever Kyon-kun needs, but this is a little.... Erm....\""
     nvl clear
-    show Kanae Face Worry1 at TopLeft
     hide KABlush
+    show Kanae Night Worry1:
+        xalign 0.3 yalign 1.2
+    with move    
     "\"Hmm?\" Kanae drawled, sitting up. \"Oh? Eh? What's....\" She blinked, looking around with a furrowed brow. \"Did I slide in my sleep?\" she asked curiously. \"Sempai? Asahina-san? Nagato-san?\""
     show Kyon Worry1 at right
     "\"Er, Nagato's having some ... trouble,\" Kyon allowed, trying to keep from staring at Mikuru, now wearing his coat and a pair of towels, her face dark red."
@@ -1171,7 +1181,8 @@ label SF1:
     nvl clear
     show Kyon Sigh1 at right
     "Her attention turned to Kanae, and she repeated the demand. At Kanae's uncertain, questioning glance, he assured her, \"It's fine. If she says it's for our own protection, I believe her.\" Kanae nodded uncertainly and followed suit."
-    show Mikuru Cower Face Nervous1 at TopRight
+    show Mikuru Cower Towel Nervous1:
+        xalign 1.3 yalign 1.2
     "With a whimpering sigh, one hand clutching the coat closed across her chest, Mikuru also offered her wrist. {nw}"
     show Yuki Talk1 at left
     extend "\"State your needs,\" Yuki added, turning her attention to Kyon."
@@ -1179,10 +1190,12 @@ label SF1:
     show Kyon Puzzle1 at right
     show Yuki Side1 at left
     "\"Um, needs?\" he asked. \"I don't know ... I guess I need to learn martial arts, according to Tsuruya-san. That and to be able to help you, whatever that ends up requiring.\""
-    show Kanae Face Smile1 at TopLeft
+    show Kanae Night Smile1:
+        xalign 0.3 yalign 1.2
     show Kyon Neutral3 at right
     "\"I'd like to be able to slide better, and know how to get back!\" Kanae added, offering a tiny smile."
-    show Mikuru Cower Face Wince1 at TopRight
+    show Mikuru Cower Towel Wince1:
+        xalign 1.3 yalign 1.2
     "Mikuru winced. \"Really, some clothes would be just great,\" she mumbled."
     nvl clear
     show Yuki Talk2 at left
