@@ -86,7 +86,7 @@ label SF2:
     scene bg ClubroomFullDay with slowflashbulb:
         xpos 0 ypos 0
     play music "Music/Nanika.mp3"
-    show YBook at TopRight_RightScreen
+    # show YBook at TopRight_RightScreen
     show Kyon Neutral3:
          xpos 1.3 yalign 1.0
     show Haruhi Quest1 at left_RightScreen
@@ -94,7 +94,7 @@ label SF2:
     $ renpy.layer_at_list([PanScene_LeftToRightSlow])
     "Yuki was in her normal seat, already halfway through a thick paperback titled, 'The Life of Pi'. Seated at the table near Yuki, Mikuru was tiredly resewing her maid costume. \"Oh? What happened to the costume, Mikuru-chan?\""
     nvl clear
-    hide YBook with dissolve
+    # hide YBook with dissolve
     show Kyon Sigh2:
          xpos 1.3 yalign 1.0
     "\"Got a lot on {i}my{/i} mind,\" Kyon muttered, pulling his seat out and collapsing into it. \"Even if you don't. But, man am I {i}hungry{/i}.\""
@@ -410,13 +410,19 @@ label SF2:
     "\"This is something I have to figure out for myself,\" she said, shaking her head. \"Really, just get some rest. We're going to have a lot to talk about tomorrow.\""
     show Kyon Worry1 at right
     "\"Okay,\" he allowed, wishing that either of them were smiling at the moment. \"Well ... take care, then.\""
-    hide Haruhi with dissolve
+    $ _window = True
+    hide Haruhi with moveoutright
+    $ _window = False
     "She nodded before breezing out of the classroom."
     nvl clear
     show Kyon Neutral3 at right
+    $ _window = True
     show Taniguchi Grin1 at left behind Kyon with dissolve
+    $ _window = False
     "\"Trouble in paradise?\" Taniguchi mused, drawing close."
+    $ _window = True
     show Kunikida Ser1  at center behind Kyon, Taniguchi with dissolve 
+    $ _window = False
     "\"And what's this about you fighting thugs for Tsuruya-sempai?\" Kunikida asked, following with a concerned expression."
     show Taniguchi Smile1 at left
     nvl clear
@@ -551,6 +557,7 @@ label SF2:
     "She stared at Haruhi blankly for a minute, then pointedly turned her attention back to the book in her hands."
     $ _window = True
     hide Yuki with dissolve
+    $ _window = False
     show Haruhi Sigh2 at left
     "\"Yeah, you're right,\" Haruhi grumbled with another resigned sigh. \"Don't even let Kyon know I suggested that; he wouldn't like it.... Maybe I should just resign myself to letting him choose whoever he wants ... I mean....\"" 
     nvl clear
@@ -558,9 +565,10 @@ label SF2:
     "She trailed off, staring at the ceiling and musing absently until she was distracted by Kanae and Mikuru walking into the room."
     nvl clear
     play sound "SE/dooropenfast.wav"
+    $ _window = True
     show Mikuru Neutral1 at right
     show Kanae Neutral1 at center
-    with dissolve
+    with moveinleft
     $ _window = False
     "\"Hello Suzumiya-san,\" Mikuru said sleepily, collecting her sewing kit and the maid costume from where it had been left to finish her repairs."
     show Haruhi Neutral2 at left
