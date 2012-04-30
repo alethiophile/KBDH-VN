@@ -36,7 +36,7 @@
     #"She nervously nodded, her heart settling a tiny bit when she took his hand and he led her down the hallway."
     #"* * *"
     
-label tttest:
+#label Test:
     stop music fadeout 1
     scene bg ClubroomFullDay with fade:
         xpos 0 ypos 0
@@ -53,8 +53,10 @@ label tttest:
     $ renpy.layer_at_list([PanScene_RightToLeft])
     show Koizumi Sigh2 at left
     "\"A share of the blame is mine, as well,\" Koizumi added, grimacing. \"We are supposed to be watching over Michikyuu-san ... but obviously, we missed this.\""
+    show YBook at TopRight with dissolve
     "\"Logically,\" Yuki said, not raising her eyes from her book, \"this is a predetermined event. If the effect precedes the cause, responsibility becomes difficult to determine.\""
     $ renpy.layer_at_list([PanScene_LeftToRight])
+    hide YBook
     show Haruhi Crossed Quest1 at left_RightScreen
     nvl clear
     "\"I'll have to ask Kyon about that later,\" Haruhi murmured. \"He's good at that stuff. Anyway, Tsuruya-san, Kanae-chan, I'm confident that Kyon will be just fine — but now I {i}really{/i} want to know what this investigation is about!\""
@@ -152,7 +154,7 @@ label tttest:
     extend "The other one was a taller, thin first year with blond hair. Both were carrying cameras and speaking with Ryuguu in low tones."
     nvl clear
     "He couldn't pick out more than the occasional tone of voice; words weren't carrying at this distance. At a glance, Tsuruya was staring intently, mouthing occasional words to herself and giving slight nods. Kyon was taken aback; could she read lips? {nw}"
-    hide Yamane Neutral with dissolve
+    #hide Yamane Neutral with dissolve
     #hide Manabe with dissolve
     extend " \"Okay,\" she whispered, when Yamane shook his head sharply and turned away, leaving the older boy with the first year in tow. \"Once they're gone, let's go talk to him, okay?\""
     "\"Do you know what they were talking about?\" he whispered back."
@@ -211,12 +213,14 @@ label tttest:
     show Tsuruya Grin4 at center
     stop music fadeout 1
     queue music "Music/KamadoumaEnd.mp3"
+    nvl clear
     "Tsuruya's hand darted out, lightning-fast, and she snatched two of the cards from Ryuguu's grasp before the boy could react. Immediately his face went red, and his scowl turned murderous. {nw}"
     
     #Not sure what you guys want done on the fight, so I didn't do much
     
     extend "He launched a punch towards the tall girl in retaliation, growling from low in his throat."
     nvl clear
+    show Kyon Ser1 at right
     "Already waiting for such an opening, Kyon grabbed the extended fist as Ryuguu attacked, while Tsuruya ducked away. Giving an unbalancing wrench to the captured appendage, Kyon pulled Ryuguu off balance and spun him around before shoving the boy violently forward, his arm pinned behind his back at an awkward angle. The third year boy's nose smashed into the equipment shed behind him, making a loud crunch and sending a spray of blood out."
     nvl clear
     "\"Gwah!\" Ryuguu choked out, his free hand scrabbling at the wall of the shed. \"What the fu—\""
@@ -234,13 +238,12 @@ label tttest:
     show Tsuruya Ser1 at center
     "\"Understandable,\" Tsuruya agreed, turning her attention to the bag at Ryuguu's side, pulling more media and a digital camera from within, transferring everything to her own bag. \"So, I don't think good cops bad cops will cut it here....\""
     show Tsuruya Hap5 at center
+    nvl clear
     "Tsuruya tapped her chin thoughtfully, then pulled off the prone Ryugu's belt and tightly bound his wrists before him. \"Okies!\" she said decisively. \"We'll go with bad cop worse cop! You be worse cop, so just stand over there and look real angry at him! I betcha that'd scare most anyones.\""
     nvl clear
     show Kyon Ser3 at right
     "Kyon took a breath and did as she instructed, having no trouble maintaining his glower at the prone boy as Tsuruya cheerfully slapped him awake, ignoring the blood flowing from Ryuguu's nose. \"Wakey-wakey!\" Tsuruya called, stepping back when Ryuguu jerked awake and tried to fumble for her. \"Okies! Now, you want to answers some of my questions, or maybe let Kyon-kun heres give you some more manual attitude adjustments?\""
     nvl clear
-    
-    
     "\"Wha,\" he managed, wincing. \"What are you.... Hey! I don't have to take this! I've got friends high up! You do not know who you're messing with!\""
     show Tsuruya Ang1 at center
     "\"Neither do you,\" Tsuruya retorted. \"But, like Kyon-kun said, there are some peoples you just don't mess with! And some of those peoples are the Tsuruya family! Which means you've already screwed up!\""
@@ -359,11 +362,12 @@ label tttest:
     $ renpy.layer_at_list([PanScene_RightToLeft])
     show Koizumi Think Grin2 at left
     "\"And naturally,\" Koizumi agreed, bowing slightly, \"I will be at your side as well.\""
+    nvl clear
     show Kyon Unhap2 at right
     "\"Okay, let's go,\" Kyon decided. \"Haruhi's going to burst into the middle of the meeting and be really pissed off about not being involved.\""
-    nvl clear
     show Koizumi Think Sup1 at left
     "\"Ah.... You're certain?\" Koizumi asked."
+    nvl clear
     show Kyon Sigh2 at right
     "Kyon nodded, turning his cell phone back on. \"She absolutely will if you send a text to her just before we enter the Student Council room,\" he said. \"That should give Kimidori-san enough time to state her goals and reasons, but not to actually {i}do{/i} anything before Haruhi shows up. And despite what they've done so far, I doubt that Kimidori-san is stupid enough to try something in front of Haruhi.\""
     nvl clear
@@ -374,10 +378,11 @@ label tttest:
     stop music fadeout 1
     queue music "Music/MysteryTime.mp3"
     play sound "SE/dooropenfast"
+    show Kyon Ser1 at center with dissolve
+    show Koizumi Crossed Neutral1 at left with dissolve
     "Kyon marched to the door and flung it open without knocking, startling the Student Council president as he shuffled through a short stack of papers. Kimidori Emiri sat in a chair to one side, her pad of paper and pen ready, though she seemed coolly expectant. Kyon strode to the middle of the room and stood in an arrogant pose, arms crossed over his chest as he stared down at the president with an expression of clear boredom. Yuki stood a half-step behind him on his left, eyes fixed on Emiri. Mikuru tried to take up a flanking position on his right, but was beaten by Koizumi, so settled for closing the door and standing next to Yuki."
     nvl clear
-    show Kyon Unhap2 at center with dissolve
-    show Koizumi Crossed Neutral1 at left with dissolve
+    show Kyon Unhap2 at center
     "\"Well?\" Kyon demanded, when the president spent a long moment staring. \"I'm here.\""
     #show President at right with dissolve at right
     "\"I don't...\" the president began, frowning and scanning across the group. \"I expected you to bring her along, if you were going to appear in force.\""
@@ -427,13 +432,13 @@ label tttest:
     show Kyon Ser2 at center
     "\"I don't really believe that last part, but it's nice of you to say.\" After a breath, Kyon warned in a low voice, \"I just want to point out, though, that a challenge against any one of us is a challenge against {i}all{/i} of us, so even the entity may have bitten off more than it can chew.\""
     nvl clear
+    stop music fadeout 1
+    queue music "Music/Oi.mp3"
     hide Koizumi Crossed Smile1 with dissolve
     show Kyon Smile2 at left with dissolve
     show Haruhi Hips Ang1 at center with moveinleft
     #hide Emiri with dissolve
     #show President with dissolve at right
-    stop music fadeout 1
-    queue music "Music/Oi.mp3"
     "Before anyone could respond, the door crashed open with a reverberating smash, Haruhi stomping in and taking point in front of Kyon, shooting a dark glare at the president. \"Trying to pick us apart by calling out my underlings when I'm not around, eh?\" she challenged, bristling with fury. \"Well, you've got a lot to learn! A challenge against one of us is a challenge against {i}all{/i} of us!\""
     nvl clear
     "Mikuru blinked, catching Kyon's smirk at the girl in front of him as she echoed his words of only moments before. Emiri's expression had returned to blank neutrality, with small traces of surprise showing as she picked her pen back up and began jotting notes down."

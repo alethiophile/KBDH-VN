@@ -61,6 +61,7 @@ init:
     image bg ClubHallRight = "Backgrounds/ClubHallRight.png"  
     image bg StudentCouncil = "Backgrounds/StudentCouncilRoom.png"
     image bg Alley = "Backgrounds/Alley.png"
+    image bg LivingRoom = "Backgrounds/LivingRoom.png"
     
     
     image white = "#ffffff"
@@ -690,11 +691,23 @@ init:
     
     image Tsuruya Grin1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaGrin1.png", horizontal=True)
     image Tsuruya Grin2 Flip = im.Flip("Sprites/Tsuruya/TsuruyaGrin2.png", horizontal=True)
+    image Tsuruya Grin3 Flip = im.Flip("Sprites/Tsuruya/TsuruyaGrin3.png", horizontal=True)
+    image Tsuruya Grin4 Flip = im.Flip("Sprites/Tsuruya/TsuruyaGrin4.png", horizontal=True)
+    image Tsuruya Grin5 Flip = im.Flip("Sprites/Tsuruya/TsuruyaGrin5.png", horizontal=True)
     image Tsuruya Quest1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaQuestion1.png", horizontal=True)
     image Tsuruya Worry1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaWorry1.png", horizontal=True)
     image Tsuruya Worry2 Flip = im.Flip("Sprites/Tsuruya/TsuruyaWorry2.png", horizontal=True)
     image Tsuruya Neutral1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaNeutral1.png", horizontal=True)
     image Tsuruya Hap1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaHappy1.png", horizontal=True)
+    image Tsuruya Hap2 Flip = im.Flip("Sprites/Tsuruya/TsuruyaHappy2.png", horizontal=True)
+    image Tsuruya Hap3 Flip = im.Flip("Sprites/Tsuruya/TsuruyaHappy3.png", horizontal=True)
+    image Tsuruya Hap4 Flip = im.Flip("Sprites/Tsuruya/TsuruyaHappy4.png", horizontal=True)
+    image Tsuruya Hap5 Flip = im.Flip("Sprites/Tsuruya/TsuruyaHappy5.png", horizontal=True)
+    image Tsuruya Ang1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaAngry1.png", horizontal=True)
+    image Tsuruya Ang2 Flip = im.Flip("Sprites/Tsuruya/TsuruyaAngry2.png", horizontal=True)
+    image Tsuruya Ang3 Flip = im.Flip("Sprites/Tsuruya/TsuruyaAngry3.png", horizontal=True)
+    image Tsuruya Ang4 Flip = im.Flip("Sprites/Tsuruya/TsuruyaAngry4.png", horizontal=True)
+    
     
     
     
