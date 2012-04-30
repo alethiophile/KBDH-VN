@@ -575,6 +575,10 @@ init:
     image Mikuru Cower Sigh1 = "Sprites/Mikuru/MikuruCowerSigh1.png"
     image Mikuru Cower Wince1 = "Sprites/Mikuru/MikuruCowerWince1.png"
     image Mikuru Cower Smile1 ="Sprites/Mikuru/MikuruCowerSmile1.png"
+    image Mikuru Cower Smile2 ="Sprites/Mikuru/MikuruCowerSmile2.png"
+    image Mikuru Cower Unhap1 = "Sprites/Mikuru/MikuruCowerUnhappy1.png"
+    image Mikuru Cowerl Worry1 = "Sprites/Mikuru/MikuruCowerWorry1.png"
+    
     image MBlush Cower = "Sprites/Mikuru/MikuruCowerBlush1.png"
     image MBlush Cower Towel = "Sprites/Mikuru/MblushCowerTowel.png"
     image MTears = "Sprites/Mikuru/MTearsCower1.png"
@@ -587,6 +591,10 @@ init:
     image Mikuru Cower Casual Sigh1 = "Sprites/Mikuru/MikuruCowerCasualSigh1.png"
     image Mikuru Cower Casual Wince1 = "Sprites/Mikuru/MikuruCowerCasualWince1.png"
     image Mikuru Cower Casual Smile1 ="Sprites/Mikuru/MikuruCowerCasualSmile1.png"
+    image Mikuru Cower Casual Smile2 ="Sprites/Mikuru/MikuruCowerCasualSmile2.png"
+    image Mikuru Cower Casual Unhap1 = "Sprites/Mikuru/MikuruCowerCasualUnhappy1.png"
+    image Mikuru Cower Casual Worry1 = "Sprites/Mikuru/MikuruCowerCasualWorry1.png"
+    
     image MTears Casual = "Sprites/Mikuru/MTearsCowerCasual1.png"
     
     image Mikuru Cower Face Wince1 = "Sprites/Mikuru/MikuruCowerFaceWince1.png"
@@ -606,6 +614,9 @@ init:
     image Mikuru Cower Towel Nervous1 = "Sprites/Mikuru/MikuruCowerTowelNervous1.png"
     image Mikuru Cower Towel Nervous3 = "Sprites/Mikuru/MikuruCowerTowelNervous3.png"
     image Mikuru Cower Towel Sup2 = "Sprites/Mikuru/MikuruCowerTowelSurprised2.png"
+    image Mikuru Cower Towel Unhap1 = "Sprites/Mikuru/MikuruCowerTowelUnhappy1.png"
+    image Mikuru Cower Towel Worry1 = "Sprites/Mikuru/MikuruCowerTowelWorry1.png"
+    image Mikuru Cower Towel Smile2 ="Sprites/Mikuru/MikuruCowerTowelSmile2.png"
     
     image MikuruBig Grin1 = "Sprites/MikuruBig/MikuruBigGrin1.png"
     image MikuruBig Grin2 = "Sprites/MikuruBig/MikuruBigGrin2.png"
