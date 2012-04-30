@@ -952,7 +952,9 @@ label test2:
     show Tsuruya Sup1 at center_RightScreen
     "\"I...it's my fault,\" Kanae said meekly, hunching in on herself."
     $ renpy.layer_at_list([PanScene_LeftToRight])
-    "In the corridor, Mikuru yelped something indistinct, moments before there was a strange {nw}"
+    "In the corridor, Mikuru yelped {nw}"
+    play sound "SE/MikuruYelp.wav"
+    extend "something indistinct, moments before there was a strange {nw}"
     play sound "SE/impact.mp3"
     show Tsuruya Smile3 at center_RightScreen
     extend "thudding noise and an eerie silence. \"Lunch with the brigade is exciting,\" Tsuruya decided, while Kanae sniffled meekly and blew her nose on her handkerchief."
