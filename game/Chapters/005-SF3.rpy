@@ -15,7 +15,7 @@ label SF3:
     scene black
     show clouds
     with fade
-    "\"Kyon!\"" 
+    "{=loud}\"Kyon!\"{/=loud}" 
     play sound "SE/heartbeat.mp3"
     show clouds CS with dissolve
     show clouds with dissolve
@@ -108,6 +108,7 @@ label SF3:
     show Kyon Neutral3 at right
     with dissolve
     "He flipped on the light after releasing her hand and went to the window, gazing outside." 
+    # We REALLY need quieter door closing SE for serious scenes.
     play sound "SE/doorclose.mp3"
     show Haruhi Quest1 at TenthLeft
     nvl clear
@@ -215,7 +216,7 @@ label SF3:
     "\"Ugh. And don't drink that tea, I think it turned out pretty nasty.\""
     show Haruhi Hips Ang1 at TenthLeft
     nvl clear
-    "\"I'm trying to be serious here!\" she yelled. \"This is the end of the world as we know it!\""
+    "{=shout}\"I'm trying to be serious here!\"{/=shout} she yelled. {=shout}\"This is the end of the world as we know it!\"{/=shout}"
     show Haruhi Hips Ang2 at TenthLeft
     show Kyon Smile4 at right
     "\"And I feel fine,\" he said back in a sing-song tone, smirking."
@@ -317,7 +318,7 @@ label SF3:
     show Haruhi Hips Ang3 at TenthLeft
     show Hblush Hips at TenthLeft
     nvl clear
-    "\"I'll have you know that our first kiss in May was my first kiss,\" she protested hotly, her face turning red. She felt Shinjin forming, smashing apart distant buildings, and struggled to disperse them. \"I wanted to {i}meet{/i} people, I am {i}not{/i} that kind of girl! Hell — you didn't even {i}ask me for permission{/i}!\""
+    "{=loud}\"I'll have you know that our first kiss in May was my first kiss,\"{/=loud} she protested hotly, her face turning red. She felt Shinjin forming, smashing apart distant buildings, and struggled to disperse them. {=loud}\"I wanted to {i}meet{/i} people, I am {i}not{/i} that kind of girl! Hell — you didn't even {i}ask me for permission{/i}!\"{/=loud}"
     show Kyon Worry2 at right
     show Haruhi Hips Ang4 at TenthLeft
     nvl clear
@@ -399,7 +400,7 @@ label SF3:
     show Nonoko Sup1 at TenthLeft 
     show Kyon Smile1 at right 
     with dissolve
-    "\"Mom!\" she yelled. \"Kyon-kun had his brain eaten by a pod-person! The alien that's replaced him wakes up in the morning without needing help!\" "
+    "{=loud}\"Mom!\"{/=loud} she yelled. {=loud}\"Kyon-kun had his brain eaten by a pod-person! The alien that's replaced him wakes up in the morning without needing help!\"{/=loud} "
     show Nonoko Smile1 at TenthLeft
     "\"That's very nice, dear,\" he heard his mother say as she bustled back into the kitchen. \"Maybe he'll get good grades, too. Now wash up before breakfast.\" "
     nvl clear
@@ -410,7 +411,7 @@ label SF3:
     show Kyon Neutral2 at right    
     extend "After washing, gobbling down everything his mother put in front of him and still feeling hungry, he told his mother and sister, \"There's a math test tomorrow; I'm headed in early to study.\" "
     show Nonoko Yell1 at TenthLeft
-    "\"Pod-person!\" his sister yelled, as he left the house."
+    "{=shout}\"Pod-person!\"{/=shout} his sister yelled, as he left the house."
     nvl clear
     stop music fadeout 3
     
@@ -434,7 +435,7 @@ label test2:
     show Haruhi Neutral1 at TenthLeft with dissolve
     "Stopping just before the gates, she realized she hadn't thought so specify where he was to meet her, so flipped her phone open and called him."
     show Haruhi Ang4 at TenthLeft
-    "\"Kyon!\" she barked, the second he picked up. \"Why aren't you here yet?\""
+    "{=loud}\"Kyon!\"{/=loud} she barked, the second he picked up. {=loud}\"Why aren't you here yet?\"{/=loud}"
     nvl clear
     show Haruhi Ang5 at TenthLeft
     show Kyon Smile2 at right with dissolve
