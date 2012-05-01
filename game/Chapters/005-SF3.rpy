@@ -34,7 +34,7 @@ label SF3:
     scene bg HaruhiCS
     with dissolve
     "Flashes of light, crackling energy dozens of orders of magnitude lower than the ones in the spaces that Yuki had pulled him through with her teleport echoed through his field of vision before his eyes snapped open to see Haruhi kneeling over him. She was wearing her school uniform, and he guessed without checking he was too."
-    scene bg SchoolOutside1 CS
+    scene bg SchoolOutside Night CS
     nvl clear
     show Haruhi CS Pout1 at TenthLeft
     show Kyon CS Sigh1 at right

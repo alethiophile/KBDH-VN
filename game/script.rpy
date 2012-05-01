@@ -42,7 +42,8 @@ init:
     image bg YukiRoomLeft = "Backgrounds/YukiRoomLeft.png"
     image bg YukiRoomRight = "Backgrounds/YukiRoomRight.png"
     image bg YukiRoomCenter = "Backgrounds/YukiRoomCenter.jpg"
-    image bg SchoolOutside1 = "Backgrounds/SchoolOutside1.png"
+    image bg SchoolOutside = "Backgrounds/SchoolOutside.png"
+    image bg SchoolOutside Night = "Backgrounds/SchoolOutsideNight.png"
     image bg SchoolEntranceLeft = "Backgrounds/SchoolEntranceLeft.png"
     image bg SchoolEntranceRight = "Backgrounds/SchoolEntranceLeft.png"
     image bg Cafe = "Backgrounds/Cafe.jpg"
@@ -929,9 +930,11 @@ init:
     image Haruhi CS Pout1 = im.MatrixColor("Sprites/Haruhi/HaruhiSidePout1.png",
         im.matrix.saturation(.15) * im.matrix.tint(.80, .80, 1.0) * im.matrix.brightness(-.35))
     
-    image bg SchoolOutside1 CS = im.MatrixColor("Backgrounds/SchoolOutside1.png",
+    image bg SchoolOutside CS = im.MatrixColor("Backgrounds/SchoolOutside.png",
         im.matrix.saturation(.15) * im.matrix.tint(.80, .80, 1.0) * im.matrix.brightness(-.35))
     
+    image bg SchoolOutside Night CS = im.MatrixColor("Backgrounds/SchoolOutsideNight.png",
+        im.matrix.saturation(.15) * im.matrix.tint(.80, .80, 1.0) * im.matrix.brightness(-.05))
     
     image bg SchoolEntranceLeft CS = im.MatrixColor("Backgrounds/SchoolEntranceLeft.png",
         im.matrix.saturation(.15) * im.matrix.tint(.80, .80, 1.0) * im.matrix.brightness(-.35))
