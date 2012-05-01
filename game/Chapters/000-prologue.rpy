@@ -85,7 +85,7 @@ label prologue:
     show Haruhi Hap3 at center_left
     "Her irritation vanished instantly, replaced with wide-eyed excitement. She clapped her hands together and hopped from foot to foot."
     show Haruhi Hap4 at center_left
-    "\"Yes!\" she cheered. \"It's been so {i}boring{/i} lately!\""
+    "{=loud}\"Yes!\"{/=loud} she cheered. \"It's been so {i}boring{/i} lately!\""
     nvl clear
     "\"This better not be your fault!\""
     show Kyon Sigh1 at right
@@ -485,10 +485,10 @@ label prologue2:
     extend "\"And some of my gear is messed up from the impact and overload. While this is fun for you, I wouldn't mind some medical assistance.\""
     nvl clear
     show Haruhi Hap3 at center
-    "\"Sure!\" she said cheerfully, clapping one hand on his\nshoulder. "
+    "\"Sure!\" she said cheerfully, {nw}"
     play sound "SE/impact.mp3"
     show Kyon Pain1 at right
-    extend "\"Happy, healing, all-better thoughts!\""
+    extend "clapping one hand on his\nshoulder. {w=0.3}\"Happy, healing, all-better thoughts!\""
     scene bg roofclose
     show Asakura Sigh1 at center
     show Spike5 at center
@@ -673,7 +673,7 @@ label prologue2:
     "The smaller girl turned her gaze back to Ryouko's bound form, the faintest hint of a smile coming to her lips."
     nvl clear
     scene black
-    stop music fadeout 0
+    stop music fadeout 0.2
     "\"I will not let you harm him again.\""
     nvl clear
     # scene black with dissolve

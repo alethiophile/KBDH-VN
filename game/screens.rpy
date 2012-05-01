@@ -473,6 +473,14 @@ screen preferences:
                 label _("Auto-Forward Time")
                 bar value Preference("auto-forward time")
 
+            frame:
+                style_group "pref"
+                has vbox
+                
+                label _("Eyecatch style")#: [persistent.text_styling]")
+                textbutton _("Moves In-Out") action SetField(persistent, "eyecatch_styling", "Moves")
+                textbutton _("Dissolves") action SetField(persistent, "eyecatch_styling", "Dissolves")
+
         vbox:
             frame:
                 style_group "pref"

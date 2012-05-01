@@ -431,6 +431,7 @@ label SF1:
     show Kyon Sigh2 at right
     "\"Of course not,\" he answered. \"My future self and a future Nagato had to go back and.... Well, things got a bit complicated. Anyway, Nagato healed the injury. But this was when I was supposed to be in a coma. A scar from a stab wound when I 'fell down the stairs' seems a bit odd, don't you think?\""
     show Haruhi Quest1 at TenthLeft
+    nvl clear
     "\"True enough,\" she agreed. \"Anyway. I suppose we should investigate Kanae-chan's back story?\""
     nvl clear
     stop music fadeout 3
@@ -706,16 +707,16 @@ label SF1:
     show Haruhi Crossed Sup1 at left
     show Mikuru Think Maid Sup1 at right
     show Tsuruya Wave Hap3 at center with moveinleft
-    "\"Ya-hoo!\" Tsuruya cheered, waving excitedly. \"Heya, Haru-nyan! Mikuru-chan, Nagato-chi, and, {nw}"
+    "{=shout}\"Ya-hoo!\"{/=shout} Tsuruya cheered, waving excitedly. {=loud}\"Heya, Haru-nyan! Mikuru-chan, Nagato-chi, and,{/=loud} {nw}"
     scene bg ClubroomFullDay:
         xpos 0 ypos 0
     $ renpy.layer_at_list([PanScene_SetToLeft])
     show Haruhi Crossed Sup1 at left
     show Mikuru Think Maid Sup1 at right
     show Tsuruya Wave Quest1 at center
-    extend "um, girl I don't know yet! {nw}"
+    extend "um, {=loud}girl I don't know yet!{/=loud} {nw}"
     show Tsuruya Wave Hap2 at center
-    extend "Nice to meetchas!\""
+    extend "{=loud}Nice to meetchas!\"{/=loud}"
     $ renpy.layer_at_list([PanScene_LeftToRight])
     show Kyon Neutral4 at left_RightScreen
     show Kanae Neutral1 at center_RightScreen
@@ -825,17 +826,19 @@ label SF1:
     "\"Wow,\" Haruhi allowed, turning the item over in her hand and looking at it from all angles. {nw}"
     show Haruhi Quest1 at right
     extend "\"How does it work?\""
-    $ renpy.layer_at_list([PanScene_LeftToRight])
+    # $ renpy.layer_at_list([PanScene_LeftToRight])
+    $ renpy.layer_at_list([PanScene_LeftToOffCenterL])
     show Kyon Smile3 at left_RightScreen
     show Kanae Quest1 at center_RightScreen
     show Yuki Right Neutral2 at right_RightScreen
     "\"Kanae-chan points it at enemy sliders and says, 'Dimensional Prism Power, Make-up',\" Kyon suggested, smirking."
-    $ renpy.layer_at_list([PanScene_RightToLeft])
+    # $ renpy.layer_at_list([PanScene_RightToLeft])
     show Mikuru Think Maid Quest2 at center
     show Haruhi Eyeroll1 at right
     "\"Now you're just being silly,\" Haruhi answered, not even moving her eyes away from the rod."
     nvl clear
-    $ renpy.layer_at_list([PanScene_LeftToRight])
+    # $ renpy.layer_at_list([PanScene_LeftToRight])
+    $ renpy.layer_at_list([PanScene_OffCenterLToRight])
     show Kyon Smile1 at left_RightScreen
     show Kanae Smile1 at center_RightScreen
     show Yuki Right Talk2 at right_RightScreen
@@ -861,28 +864,33 @@ label SF1:
     show Kyon Neutral2 at left_RightScreen
     show Kanae Unhap3 at center_RightScreen
     "\"I have no idea, but I'll apparently think so in the future,\" he answered. Turning to Mikuru, he added, \"Also, thank you very much, Asahina-san.\""
-    $ renpy.layer_at_list([PanScene_RightToLeft])
+    # $ renpy.layer_at_list([PanScene_RightToLeft])
+    $ renpy.layer_at_list([PanScene_RightToOffCenterL])
     show Mikuru Think Maid Quest1 Flip at center
     show Haruhi Smile1 at right
     "\"Um, what for?\" she asked, looking between Kyon and Yuki curiously."
     nvl clear
-    $ renpy.layer_at_list([PanScene_LeftToRight])
+    # $ renpy.layer_at_list([PanScene_LeftToRight])
+    $ renpy.layer_at_list([PanScene_OffCenterLToRight])
     show Kyon Neutral2 at left_RightScreen
     show Kanae Unhap3 at center_RightScreen
     show Yuki Right Neutral2 at right_RightScreen
     "\"You'll know some day,\" he answered, looking bleakly at his note to himself. \"I really, really hope that I get some calm days to focus on some normal things, soon. This is getting really out of hand.\""
-    $ renpy.layer_at_list([PanScene_RightToLeft])
+    # $ renpy.layer_at_list([PanScene_RightToLeft])
+    $ renpy.layer_at_list([PanScene_RightToOffCenterL])
     show Mikuru Maid Smile2 at center
     show Haruhi Grin2 at right
     "\"Yeah,\" Haruhi jibed, rolling her eyes, \"you do love taking notes and paying attention in class. Without a good excuse to pay such weak attention, whatever would you do?\""
     nvl clear
-    $ renpy.layer_at_list([PanScene_LeftToRight])
+    # $ renpy.layer_at_list([PanScene_LeftToRight])
+    $ renpy.layer_at_list([PanScene_OffCenterLToRight])
     show Kyon Smile3 at left_RightScreen
     show Kanae Smile1 at center_RightScreen
     show Yuki Right Neutral2 at right_RightScreen
     "\"I beg your pardon?\" he asked, quirking one eyebrow higher. \"I don't have good excuses, I have {i}awesome{/i} excuses.\""
     nvl clear
-    $ renpy.layer_at_list([PanScene_RightToLeft])
+    # $ renpy.layer_at_list([PanScene_RightToLeft])
+    $ renpy.layer_at_list([PanScene_RightToOffCenterL])
     show Mikuru Maid Smile1 at center
     show Haruhi Hap4 at right
     "Haruhi grinned very brightly, chuckling. \"That's true,\" she allowed. {nw}"
@@ -914,9 +922,10 @@ label SF1:
     show Kanae Sup2:
         xalign 0.4 yalign 1.2
         linear 0.1 yalign 1.0
-    "\"Excellent!\" Haruhi cheered, jolting the first year girl awake."
+    "{=loud}\"Excellent!\"{/=loud} Haruhi cheered, {nw}"
     show Kanae Worry2:
-         xalign 0.4 yalign 1.0
+        xalign 0.4 yalign 1.0
+    extend "jolting the first year girl awake."
     "\"Nya....\" Kanae murmured, sitting up and rubbing her eyes."
     show Haruhi Worry1 at left
     nvl clear
@@ -1111,94 +1120,86 @@ label SF1:
     scene bg YukiRoomCenter with circleirisinfast
     play music "Music/circulation.ogg"
     show Yuki Side1 at left
-    show Kyon Sigh3 at right
+    show Kyon Sigh3 at pretr1_kyonpos
     with dissolve
     nvl clear
     
+    
+    
     "When he came to his senses, he was laying on the floor of Nagato's apartment, staring dazedly up into the girl's eyes."
-    show Mikuru Cower Towel Sup2 behind Kyon:
-         xalign 1.3 yalign 1.2
-    show Kanae Night Smile2:
-        xalign 0.3 yalign 1.9
+    show Mikuru Cower Towel Sup2 behind Kyon at pretr1_mikurupos
+    show Kanae Night Smile2 at pretr1_kanaepos1
     with dissolve
-    show Kyon Sup2 at right
+    show Kyon Sup2
     "Looking around, he saw a shell-shocked Mikuru wearing nothing more than a towel about her midsection, and another wrapped around her head, seeming fresh out of the shower, and Kanae, sprawled on the floor near Nagato's table in pajamas and snoring contently."
     nvl clear
-    show Kyon Worry1 at right
-    show KBlush at right
-    show Mikuru Cower Towel Nervous1:
-        xalign 1.3 yalign 1.2
-    show MBlush Cower Towel behind Kyon:
-        xalign 1.3 yalign 1.2
+    show Kyon Worry1
+    show KBlush at pretr1_kyonpos
+    show Mikuru Cower Towel Nervous1
+    show MBlush Cower Towel behind Kyon at pretr1_mikurupos
     "\"Um,\" he managed, sitting up and turning his eyes away from Mikuru. He wordlessly pushed his jacket at her, since he hadn't even had time to change out of his uniform. \"What's going on, Nagato?\" he added, closing his cell phone."
-    show Yuki Talk1 at left
+    show Yuki Talk1
     "She set down the receiver of her own phone and said without preamble, \"An error is likely to occur imminently.\""
     nvl clear
-    show KABlush:
-        xalign 0.3 yalign 1.9
-    show Yuki Side1 at left
+    show KABlush at pretr1_kanaepos1
+    show Yuki Side1
     "\"Mmm, Sempai,\" Kanae murmured in her sleep with a quiet giggle."
-    show Kyon Sigh2 at right
+    show Kyon Sigh2
     "\"Okay,\" he said, running his hands through his hair and trying not to look at either Mikuru or the sleeping girl who was dreaming about him with a blush on her cheeks. \"We have been relying on you too much. What can I do to help?\""
-    show Yuki Talk2 at left
+    show Yuki Talk2
     nvl clear
     "\"I have already received permission from Suzumiya Haruhi to borrow you,\" the quiet girl said. \"With the help of the dimensional anchor, Michikyuu Kanae's ability to slide, and Asahina Mikuru's ability to traverse time, I will attempt to create a sealed alternate reality where my error can be expressed without causing any damage to the reality we currently dwell in.\""
     nvl clear
     hide KBlush
-    show Kyon Ser3 at right
+    show Kyon Ser3
     "\"Do we need to bring Haruhi into this?\" he asked. \"I mean, she has to start whatever it is I authorize now, right?\""
-    show Yuki Talk1 at left
-    show Kyon Ser1 at right
+    show Yuki Talk1
+    show Kyon Ser1
     "\"Negative,\" Nagato answered. \"I have deconstructed all previously queued requests and reassembled them to form data structures that can be executed with your permission. They are 'junk data' that I cannot destroy; I must find a way to execute them to prevent long-term damage or undue stress to the fabric of reality.\""
     nvl clear
-    show Yuki Side1 at left
-    show Kyon Neutral2 at right
+    show Yuki Side1
+    show Kyon Neutral2
     "\"Um, well, I want to help you,\" he said, nodding. \"As long as Asahina-san and Kanae-chan agree, then I can't think of a reason not to.\""
-    show Kyon Neutral3 at right
-    show Mikuru Cower Towel Nervous3:
-        xalign 1.3 yalign 1.2
+    show Kyon Neutral3
+    show Mikuru Cower Towel Nervous3
     "\"Er ... could I ... borrow some clothes, maybe?\" Mikuru asked, her voice strained with embarrassment. \"I don't mind doing whatever Kyon-kun needs, but this is a little.... Erm....\""
     nvl clear
     hide KABlush
-    show Kanae Night Worry1:
-        xalign 0.3 yalign 1.2
+    show Kanae Night Worry1 at pretr1_kanaepos2
     with move    
     "\"Hmm?\" Kanae drawled, sitting up. \"Oh? Eh? What's....\" She blinked, looking around with a furrowed brow. \"Did I slide in my sleep?\" she asked curiously. \"Sempai? Asahina-san? Nagato-san?\""
-    show Kyon Worry1 at right
+    show Kyon Worry1
     "\"Er, Nagato's having some ... trouble,\" Kyon allowed, trying to keep from staring at Mikuru, now wearing his coat and a pair of towels, her face dark red."
     nvl clear
     "\"Can I help?\" Kanae-asked, rubbing one eye sleepily."
-    show Yuki Talk2 at left
+    show Yuki Talk2
     "Yuki gave a tiny nod in response. \"I will attempt to construct a world based on our collective needs,\" she answered. \"To prevent long-term physical or mental stress, I will initiate an encoded pulse with physical and mental mapping. Estimating forty minutes to error.\""
     nvl clear
-    show Kyon Ser2 at right
+    show Kyon Ser2
     "\"What do you need?\" Kyon asked quickly, rising to his feet."
-    show Yuki Talk1 at left
-    show Kyon Ser1 at right
+    show Yuki Talk1
+    show Kyon Ser1
     "\"Wrist.\""
-    show Yuki Side1 at left
+    show Yuki Side1
     "Kyon nodded knowingly and presented one hand for Yuki to take before she bit his wrist, injecting him with nanites."
     nvl clear
-    show Kyon Sigh1 at right
+    show Kyon Sigh1
     "Her attention turned to Kanae, and she repeated the demand. At Kanae's uncertain, questioning glance, he assured her, \"It's fine. If she says it's for our own protection, I believe her.\" Kanae nodded uncertainly and followed suit."
-    show Mikuru Cower Towel Nervous1:
-        xalign 1.3 yalign 1.2
+    show Mikuru Cower Towel Nervous1
     "With a whimpering sigh, one hand clutching the coat closed across her chest, Mikuru also offered her wrist. {nw}"
-    show Yuki Talk1 at left
+    show Yuki Talk1
     extend "\"State your needs,\" Yuki added, turning her attention to Kyon."
     nvl clear
-    show Kyon Puzzle1 at right
-    show Yuki Side1 at left
+    show Kyon Puzzle1
+    show Yuki Side1
     "\"Um, needs?\" he asked. \"I don't know ... I guess I need to learn martial arts, according to Tsuruya-san. That and to be able to help you, whatever that ends up requiring.\""
-    show Kanae Night Smile1:
-        xalign 0.3 yalign 1.2
-    show Kyon Neutral3 at right
+    show Kanae Night Smile1
+    show Kyon Neutral3
     "\"I'd like to be able to slide better, and know how to get back!\" Kanae added, offering a tiny smile."
-    show Mikuru Cower Towel Wince1:
-        xalign 1.3 yalign 1.2
+    show Mikuru Cower Towel Wince1
     "Mikuru winced. \"Really, some clothes would be just great,\" she mumbled."
     nvl clear
-    show Yuki Talk2 at left
+    show Yuki Talk2
     "\"Initializing,\" Yuki replied."
     play sound "SE/ShieldLaunch.wav"
     scene bg Space:

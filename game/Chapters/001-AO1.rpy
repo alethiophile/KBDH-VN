@@ -21,7 +21,7 @@ label AO1_1:
     show Haruhi Hap3 at left
     "Haruhi bounced on her heels with a wide grin, holding Kyon's cell phone in both hands as she remained in the center of the glowing circle."
     show Haruhi Hap4 at left
-    "\"I {i}knew{/i} it!\" she cheered.{nw} "
+    "{=loud}\"I {i}knew{/i} it!\"{/=loud} she cheered.{nw} "
     show Haruhi Hap1 at left
     extend "\"There was {i}something{/i} off about Asakura! What is it?\""
     nvl clear
@@ -98,7 +98,7 @@ label AO1_1:
     nvl clear
     "\"Now, I've converted the entire space of this stairwell into-\""
     hide Asakura
-    "Kyon spun on one foot, crying out with a great, {=shout}\"Ki-yah!\"{/=shout} "
+    "Kyon spun on one foot, crying out with a great {=shout}\"Ki-yah!\"{/=shout} {p=1}{nw}"
     play sound "SE/lowswoosh.mp3"
     pause (0.2)
     play sound "SE/impact.mp3"
@@ -109,7 +109,7 @@ label AO1_1:
     #with hpunch
     # extend and kicking the door halfway across the roof."
     $ nvl_erase()
-    "Kyon spun on one foot, crying out with a great, \"Ki-yah!\"{fast} and kicking the door halfway across the roof."
+    "Kyon spun on one foot, crying out with a great \"Ki-yah!\"{fast} and kicking the door halfway across the roof."
     show Haruhi Sup1 at left
     pause (.01)
     show Kyon Ser1 at left behind Haruhi
@@ -117,11 +117,15 @@ label AO1_1:
     show Coat at left behind Haruhi
     with moveinright
     pause (0.5)
+    show Kyon Ser1 at osl_left 
+    show Skinsuit at osl_left
+    show Coat at osl_left
+    show Haruhi Sup1 at osl_left
+    with moveoutleft
     hide Kyon
     hide Haruhi
     hide Skinsuit
     hide Coat
-    with moveoutleft
     "Sparing no more time, he swept Haruhi up in one arm and dashed through the opening."
     scene bg roof with wiperight
     nvl clear
