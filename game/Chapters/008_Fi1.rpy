@@ -1,5 +1,5 @@
 #label Fi1:
-label Test:
+# label Test:
     stop music fadeout 3
     #queue music
     scene bg YukiRoomCenter with fade
@@ -202,7 +202,7 @@ label Test:
     "\"Ah! Thankie, Kyon-kun!\" Tsuruya cheered, waving brightly before she twirled, her hair flaring behind her as she dashed away."
     hide Tsuruya with dissolve
     nvl clear
-    show 
+    # show 
     show Haruhi Neutral2 at center
     "\"So—\" Haruhi asked, breaking off when she saw Kyon furtively try to hide a note from his shoe locker in his blazer pocket.  {nw}"
     show Haruhi Quest1 at center

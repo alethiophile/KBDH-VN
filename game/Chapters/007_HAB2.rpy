@@ -2,7 +2,7 @@
 
 
 #label HAB2:
-label Test:
+# label Test:
     stop music fadeout 3
     scene bg LivingRoom with fade
     queue music "Music/Suspicion.ogg"
