@@ -83,16 +83,27 @@ label SF2:
     stop music
     play sound "SE/dooropenslow.mp3"
     
-    scene bg ClubroomFullDay with slowflashbulb:
-        xpos 0 ypos 0
+label Test:    
+    scene bg ClubroomBack
+    show Yuki Chair1:
+        xalign 0.8 yalign 1.0
+    show MSew:
+        xalign 1.15 yalign 0.6
+    show ClubTable
+    with slowflashbulb
     play music "Music/Nanika.mp3"
+    "Yuki was in her normal seat, already halfway through a thick paperback titled, 'The Life of Pi'. Seated at the table near Yuki, Mikuru was tiredly resewing her maid costume. \"Oh? What happened to the costume, Mikuru-chan?\""
+    scene bg ClubroomFullDay:
+        xpos 0 ypos 0
+    
     # show YBook at TopRight_RightScreen
     show Kyon Neutral3:
          xpos 1.3 yalign 1.0
     show Haruhi Quest1 at left_RightScreen
     show Mikuru Neutral1 at right_RightScreen
+    with dissolve
     $ renpy.layer_at_list([PanScene_LeftToRightSlow])
-    "Yuki was in her normal seat, already halfway through a thick paperback titled, 'The Life of Pi'. Seated at the table near Yuki, Mikuru was tiredly resewing her maid costume. \"Oh? What happened to the costume, Mikuru-chan?\""
+    
     nvl clear
     # hide YBook with dissolve
     show Kyon Sigh2:
@@ -786,8 +797,8 @@ label SF2:
     stop music fadeout 3
     
     call eyecatch("Tuesday, April 19") from SF2_sc005
+
     
-label Test:    
     play music "Music/circulation.ogg"
     scene bg YukiRoomCenter
     show Yuki Side1 at left

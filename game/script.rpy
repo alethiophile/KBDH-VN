@@ -639,6 +639,8 @@ init:
     image MikuruBig Worry1 = "Sprites/MikuruBig/MikuruBigWorry1.png"
     image MikuruBig Worry2 = "Sprites/MikuruBig/MikuruBigWorry2.png"
     
+    image MSew = "Sprites/Mikuru/MikuruSew.png"
+    
     image MikuruBig Wink:
         "Sprites/MikuruBig/MikuruBigHappy1.png"
         0.5
