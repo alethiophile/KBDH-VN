@@ -431,6 +431,7 @@ label SF1:
     show Kyon Sigh2 at right
     "\"Of course not,\" he answered. \"My future self and a future Nagato had to go back and.... Well, things got a bit complicated. Anyway, Nagato healed the injury. But this was when I was supposed to be in a coma. A scar from a stab wound when I 'fell down the stairs' seems a bit odd, don't you think?\""
     show Haruhi Quest1 at TenthLeft
+    nvl clear
     "\"True enough,\" she agreed. \"Anyway. I suppose we should investigate Kanae-chan's back story?\""
     nvl clear
     stop music fadeout 3
@@ -706,16 +707,16 @@ label SF1:
     show Haruhi Crossed Sup1 at left
     show Mikuru Think Maid Sup1 at right
     show Tsuruya Wave Hap3 at center with moveinleft
-    "\"Ya-hoo!\" Tsuruya cheered, waving excitedly. \"Heya, Haru-nyan! Mikuru-chan, Nagato-chi, and, {nw}"
+    "{=shout}\"Ya-hoo!\"{/=shout} Tsuruya cheered, waving excitedly. {=loud}\"Heya, Haru-nyan! Mikuru-chan, Nagato-chi, and,{/=loud} {nw}"
     scene bg ClubroomFullDay:
         xpos 0 ypos 0
     $ renpy.layer_at_list([PanScene_SetToLeft])
     show Haruhi Crossed Sup1 at left
     show Mikuru Think Maid Sup1 at right
     show Tsuruya Wave Quest1 at center
-    extend "um, girl I don't know yet! {nw}"
+    extend "um, {=loud}girl I don't know yet!{/=loud} {nw}"
     show Tsuruya Wave Hap2 at center
-    extend "Nice to meetchas!\""
+    extend "{=loud}Nice to meetchas!\"{/=loud}"
     $ renpy.layer_at_list([PanScene_LeftToRight])
     show Kyon Neutral4 at left_RightScreen
     show Kanae Neutral1 at center_RightScreen
@@ -914,9 +915,10 @@ label SF1:
     show Kanae Sup2:
         xalign 0.4 yalign 1.2
         linear 0.1 yalign 1.0
-    "\"Excellent!\" Haruhi cheered, jolting the first year girl awake."
+    "{=loud}\"Excellent!\"{/=loud} Haruhi cheered, {nw}"
     show Kanae Worry2:
-         xalign 0.4 yalign 1.0
+        xalign 0.4 yalign 1.0
+    extend "jolting the first year girl awake."
     "\"Nya....\" Kanae murmured, sitting up and rubbing her eyes."
     show Haruhi Worry1 at left
     nvl clear

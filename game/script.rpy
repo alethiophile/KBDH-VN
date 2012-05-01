@@ -1257,9 +1257,9 @@ transform PanScene_SetToLeft:
 transform left_RightScreen:
     xpos 1.0 yalign 1.0    
 transform center_RightScreen:
-    xpos 1.37 yalign 1.0 # xalign 0.5 yalign 1.0    
+    xpos 1.367 yalign 1.0 # xalign 0.5 yalign 1.0    
 transform right_RightScreen:
-    xpos 1.65 yalign 1.0    
+    xpos 1.712 yalign 1.0    
 transform TopRight_RightScreen:
    xpos 1.71 yalign 0.0
 transform HalfRight_RightScreen:
@@ -1357,7 +1357,8 @@ label credits:
 label eyecatch(date="", pause_time=3.0, r=0, ecbg="black"):
     scene eyebg with Dissolve(1)
     # call eyecatch_coatinout(date, date, pause_time) from eyecatch_generic
-    call eyecatch_random(date, date, pause_time, r) from eyecatch_generic
+    # call eyecatch_random(date, date, pause_time, r) from eyecatch_generic
+    call eyecatch_dissolves(date, date, pause_time, r) from eyecatch_generic
     scene black with Dissolve(0.5)
     return
 
@@ -1365,7 +1366,8 @@ label eyecatch(date="", pause_time=3.0, r=0, ecbg="black"):
 label eyecatch2(date1="", date2="", pause_time=3.0, r=0, ecbg="black"):
     scene eyebg with Dissolve(1)
     # call eyecatch_coatinout(pause_time) from eyecatch_generic
-    call eyecatch_random(date1, date2, pause_time, r) from eyecatch_generic2
+    # call eyecatch_random(date1, date2, pause_time, r) from eyecatch_generic2
+    call eyecatch_dissolves(date1, date2, pause_time, r) from eyecatch_generic2
     scene black with Dissolve(0.5)
     return
 
@@ -1430,7 +1432,68 @@ label eyecatch_darken2(date1="", date2="", pause_time=2.0):
     centered "{nw}"
     return
     
-    
+label eyecatch_dissolves(date1="", date2="", pause_time=2.0, r=0):
+    # randomly choses the way logo appears and disappears with every call
+    # uses dissolve and coatin/coatout.
+    $ pause2 = pause_time/2
+    # scene black with Dissolve(1)
+    if r == 0 or r > 5:
+        $ r = renpy.random.randint(1, 5)
+        
+    if r == 1:
+        show BDVNlogo at truecenter
+        show eyeDate 1 at date_pos
+        with Dissolve(1.0)
+        pause pause2
+        show eyeDate 2 at date_pos with wiperight
+        pause pause2
+        hide BDVNlogo
+        hide eyeDate
+        with Dissolve(1.0)
+    elif r == 2:
+        show BDVNlogo at truecenter
+        show eyeDate 1 at date_pos
+        with coatin
+        pause pause2
+        show eyeDate 2 at date_pos with wipeleft
+        pause pause2
+        hide BDVNlogo
+        hide eyeDate
+        with coatout  
+    elif r == 3:
+        show BDVNlogo at truecenter
+        show eyeDate 1 at date_pos
+        with coatin
+        pause pause2
+        show eyeDate 2 at date_pos with wipeleft
+        pause pause2
+        hide BDVNlogo
+        hide eyeDate
+        with coatout   
+    elif r == 4:
+        show BDVNlogo at truecenter
+        show eyeDate 1 at date_pos
+        with circleirisin
+        pause pause2
+        show eyeDate 2 at date_pos with wipeleft
+        pause pause2
+        hide BDVNlogo
+        hide eyeDate
+        with circleirisout  
+    else:
+        show BDVNlogo at truecenter
+        show eyeDate 1 at date_pos
+        with circleirisout
+        pause pause2
+        show eyeDate 2 at date_pos with dissolve
+        pause pause2
+        hide BDVNlogo
+        hide eyeDate
+        with circleirisin
+    # Works just as well as hardpause in prevesting skipping the fade, but does not block the rollback
+    centered "{nw}"
+    return
+
 label eyecatch_random(date1="", date2="", pause_time=2.0, r=0):
     # randomly choses the way logo appears and disappears with every call
     $ pause2 = pause_time/2
@@ -1526,7 +1589,7 @@ label test_Z0_eye:
     show SpikeFlick at center
     "\"{=loud}You opened{/=loud} it already, {=shout}I see{/=shout}.\""
     "[style.movie.font] - [style.loud.size] - [style.shout.size] - [style.whisper.size]"
-    $ style.shout.size = 10
+    call eyecatch2(pause_time=3.0, "Date 1", "Second one") from test_Z0_p0000
     "\"{=loud}You opened{/=loud} it already, {=shout}I see{/=shout}.\""
     "!S[style.movie.font] - [style.loud.size] - [style.shout.size] - [style.whisper.size]"
     nvl clear
