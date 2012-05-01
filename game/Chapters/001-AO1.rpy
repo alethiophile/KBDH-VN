@@ -306,7 +306,7 @@ label AO1_1:
     nvl clear
     play music "Music/Nichijou.mp3"
     $ renpy.music.set_volume(0.5, .5, channel="music")
-    scene bg KyonRoomLeftClosed with fade
+    scene bg KyonKitchenRight with fade
     nvl clear
     "That day had started normally enough, but then, in his experience, that was true of nearly all days." 
     "This had caused him to become naturally suspicious of every day, to the point where he was starting to suspect a slow but sure slide into absolute paranoia."

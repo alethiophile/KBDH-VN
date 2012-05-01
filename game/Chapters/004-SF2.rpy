@@ -83,18 +83,29 @@ label SF2:
     stop music
     play sound "SE/dooropenslow.mp3"
     
-    scene bg ClubroomFullDay with slowflashbulb:
-        xpos 0 ypos 0
+label Test:    
+    scene bg ClubroomBack
+    show Yuki Chair1:
+        xalign 0.8 yalign 1.0
+    show MSew:
+        xalign 1.15 yalign 0.6
+    show ClubTable
+    with slowflashbulb
     play music "Music/Nanika.mp3"
-    show YBook at TopRight_RightScreen
+    "Yuki was in her normal seat, already halfway through a thick paperback titled, 'The Life of Pi'. Seated at the table near Yuki, Mikuru was tiredly resewing her maid costume. \"Oh? What happened to the costume, Mikuru-chan?\""
+    scene bg ClubroomFullDay:
+        xpos 0 ypos 0
+    
+    # show YBook at TopRight_RightScreen
     show Kyon Neutral3:
          xpos 1.3 yalign 1.0
     show Haruhi Quest1 at left_RightScreen
     show Mikuru Neutral1 at right_RightScreen
+    with dissolve
     $ renpy.layer_at_list([PanScene_LeftToRightSlow])
-    "Yuki was in her normal seat, already halfway through a thick paperback titled, 'The Life of Pi'. Seated at the table near Yuki, Mikuru was tiredly resewing her maid costume. \"Oh? What happened to the costume, Mikuru-chan?\""
+    
     nvl clear
-    hide YBook with dissolve
+    # hide YBook with dissolve
     show Kyon Sigh2:
          xpos 1.3 yalign 1.0
     "\"Got a lot on {i}my{/i} mind,\" Kyon muttered, pulling his seat out and collapsing into it. \"Even if you don't. But, man am I {i}hungry{/i}.\""
@@ -410,13 +421,19 @@ label SF2:
     "\"This is something I have to figure out for myself,\" she said, shaking her head. \"Really, just get some rest. We're going to have a lot to talk about tomorrow.\""
     show Kyon Worry1 at right
     "\"Okay,\" he allowed, wishing that either of them were smiling at the moment. \"Well ... take care, then.\""
-    hide Haruhi with dissolve
+    $ _window = True
+    hide Haruhi with moveoutright
+    $ _window = False
     "She nodded before breezing out of the classroom."
     nvl clear
     show Kyon Neutral3 at right
+    $ _window = True
     show Taniguchi Grin1 at left behind Kyon with dissolve
+    $ _window = False
     "\"Trouble in paradise?\" Taniguchi mused, drawing close."
+    $ _window = True
     show Kunikida Ser1  at center behind Kyon, Taniguchi with dissolve 
+    $ _window = False
     "\"And what's this about you fighting thugs for Tsuruya-sempai?\" Kunikida asked, following with a concerned expression."
     show Taniguchi Smile1 at left
     nvl clear
@@ -551,6 +568,7 @@ label SF2:
     "She stared at Haruhi blankly for a minute, then pointedly turned her attention back to the book in her hands."
     $ _window = True
     hide Yuki with dissolve
+    $ _window = False
     show Haruhi Sigh2 at left
     "\"Yeah, you're right,\" Haruhi grumbled with another resigned sigh. \"Don't even let Kyon know I suggested that; he wouldn't like it.... Maybe I should just resign myself to letting him choose whoever he wants ... I mean....\"" 
     nvl clear
@@ -558,9 +576,10 @@ label SF2:
     "She trailed off, staring at the ceiling and musing absently until she was distracted by Kanae and Mikuru walking into the room."
     nvl clear
     play sound "SE/dooropenfast.wav"
+    $ _window = True
     show Mikuru Neutral1 at right
     show Kanae Neutral1 at center
-    with dissolve
+    with moveinleft
     $ _window = False
     "\"Hello Suzumiya-san,\" Mikuru said sleepily, collecting her sewing kit and the maid costume from where it had been left to finish her repairs."
     show Haruhi Neutral2 at left
@@ -651,8 +670,7 @@ label SF2:
     
     call eyecatch("Tuesday, April 19") from SF2_sc004
 
-#label Test:
-    play music "Music/Kyoufunohajimari.mp3"    
+    play music "Music/KyoufunohajimariStart.mp3"    
     scene bg SchoolEntranceLeft
     show Kyon Neutral3 at right
     show Mori Neutral1 Flip at left
@@ -779,6 +797,7 @@ label SF2:
     stop music fadeout 3
     
     call eyecatch("Tuesday, April 19") from SF2_sc005
+
     
     play music "Music/circulation.ogg"
     scene bg YukiRoomCenter
@@ -786,8 +805,10 @@ label SF2:
     show Kyon Sigh3 at right
     with fade
     "His eyes slowly blinked open from his nap, staring upward into Yuki's eyes as she peered down at him. He forced back\na yawn and sat up, glancing around her apartment. "
-    show Mikuru Cower Face Unhap1 at TopRight
-    show Kanae Face Smile1 at TopLeft
+    show Mikuru Cower Towel Unhap1 behind Kyon:
+        xalign 0.7 yalign 1.2
+    show Kanae Night Smile1:
+        xalign 0.3 yalign 1.2
     with dissolve
     extend "Looking somewhat irritable and wearing a bathrobe, Mikuru knelt at the table, mumbling about getting phone calls first. Kanae was sitting next to Mikuru, working on her homework and evidently unperturbed."
     nvl clear
@@ -795,9 +816,11 @@ label SF2:
     "\"Hello?\" he said by way of greeting, looking down at himself ... he was wearing his dress shirt and slacks, too tired to change into his pajamas or strip. Though, that last thought was thankful, in retrospect."
     nvl clear
     show Kyon Sigh3 at right
-    show Kanae Face Sup1 at TopLeft
+    show Kanae Night Sup1:
+        xalign 0.3 yalign 1.2
     "Kanae blinked at his voice and looked around. \"Oh!\" she exclaimed. \"This isn't my room! I didn't even feel the slide!\""
-    show Kanae Face Quest1 at TopLeft
+    show Kanae Night Quest1:
+        xalign 0.3 yalign 1.2
     "\"I did,\" Mikuru said with a sigh. \"Nagato-san, are you trying to embarrass me?\""
     show Yuki Talk1 at left
     "Yuki turned her gaze to Mikuru without changing expression. \"No,\" she answered. \"With your permission, we shall proceed again.\""
@@ -813,14 +836,18 @@ label SF2:
     show Kyon Neutral1 at right
     "\"Oh, right,\" Kyon realized, blinking. This wasn't {i}just{/i} about Yuki dealing with her 'error' data. \"Well, in that case, I'm ready, Nagato. I think I've got a way to go before I finish what I chose to learn ... and I can't travel back to last Sunday until I finish it.\""
     show Kyon Neutral3 at right
-    show Kanae Face Hap1 at TopLeft
+    show Kanae Night Hap1:
+        xalign 0.3 yalign 1.2
     "\"More sliding practice!\" Kanae cheered, throwing her hands into the air excitedly. \"I've never been so fortunate in any world I've jumped to!\""
     nvl clear
-    show Kanae Face Smile1 at TopLeft
-    show Mikuru Cower Face Smile1 at TopRight
+    show Kanae Night Smile1:
+        xalign 0.3 yalign 1.2
+    show Mikuru Cower Towel Smile2:
+        xalign 0.7 yalign 1.2
     "\"Um, I should keep a positive attitude, too,\" Mikuru contributed. \"If it's not too much trouble, Nagato-san, could you call me before teleporting me here next time? I'd really like to arrive dressed ... if Suzumiya-san were to hear about, um, me arriving in such a condition on a regular basis, she'd probably become even more upset.\""
     nvl clear
-    show Mikuru Cower Face Worry1 at TopRight
+    show Mikuru Cower Towel Worry1:
+        xalign 0.7 yalign 1.2
     show Kyon Ser3 at right
     "\"She's upset right now?\" Kyon asked, frowning. \"That's no good; what's wrong?\""
     show Yuki SideDisappointed1 at left
@@ -837,14 +864,19 @@ label SF2:
     "Her eyes ponderously swung back to meet his. \"Seek happiness.\""
     nvl clear
     show Yuki Side2 at left
-    show Mikuru Cower Face Smile1 at TopRight
-    show MBlush Cower Face at TopRight
+    show Mikuru Cower Towel Smile2:
+        xalign 0.7 yalign 1.2
+    show MBlush Cower Towel:
+        xalign 0.7 yalign 1.2
     "\"Er, um,\" Mikuru managed, her face turning red, \"you should ... make the first move. Suzumiya-san is just ... stressed that.... Well, I probably shouldn't say, either. But I trust you to sort things out!\""
-    show Kanae Face Hap1 at TopLeft
-    show Mikuru Cower Face Worry1 at TopRight
+    show Kanae Night Hap1:
+        xalign 0.3 yalign 1.
+    show Mikuru Cower Towel Worry1:
+        xalign 0.7 yalign 1.2
     "\"Go Sempai!\" Kanae cheered again. \"I'm confident he can do it!\""
     nvl clear
-    show Kanae Face Smile1 at TopLeft
+    show Kanae Night Smile1:
+        xalign 0.3 yalign 1.
     show Yuki Talk1 at left 
     "\"If you are ready to proceed?\" Yuki asked, turning her gaze to Kyon again."
     show Yuki Side1 at left

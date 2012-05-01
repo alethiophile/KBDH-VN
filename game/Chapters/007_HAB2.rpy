@@ -1,20 +1,25 @@
 #Chapter 7, Heroic Antics Begin Arc
 
+
 #label HAB2:
-#label Test:
+# label Test:
     stop music fadeout 3
-    scene bg KyonHouseDay with fade
+    scene bg LivingRoom with fade
     queue music "Music/Suspicion.ogg"
     show Kyon Worry3 at center with dissolve
     show Haruhi Crossed Ang3 at right with dissolve
     show Kanae Hap3 at left with dissolve
-    "Kyon fidgeted uncomfortably, watching the sparks fly between Haruhi's eyes and his mother's. He wasn't certain what would amuse him more; his mother being terrified of Haruhi, or Haruhi being terrified of his mother. The idea of it being funny faded when he realized that, ultimately, any leftover irritation would spill soundly onto his head. He spared a silent prayer of thanks for the fact that his sister had been sent to her room to avoid witnessing the current confrontation, even though she would inevitably hound him with questions about it later."
+    "Kyon fidgeted uncomfortably, watching the sparks fly between Haruhi's eyes and his mother's. He wasn't certain what would amuse him more; his mother being terrified of Haruhi, or Haruhi being terrified of his mother. The idea of it being funny faded when he realized that, ultimately, any leftover irritation would spill soundly onto his head."
+    nvl clear
+    "He spared a silent prayer of thanks for the fact that his sister had been sent to her room to avoid witnessing the current confrontation, even though she would inevitably hound him with questions about it later."
     nvl clear
     "Kanae finished her explanation, the story delivered with embarrassing shoujou- romance panache, complete with descriptions of some uber-bishonen action-hero that trailed flowing sakura petals wherever he moved, and a villainous Ryuguu Ryo that literally slobbered over the hapless damsel in distress. She even embarrassedly referenced swooning into Kyon's arms as the bishonen figure that he gathered was supposed to be him carried her to safety, when the villain was left defeated and shamed."
+    nvl clear
     "Naturally, Haruhi ate the description of these over-the-top antics up with a {i}spoon{/i}, nodding in confirmation to every point, as though she'd actually been there. Just as naturally, Kyon's mother didn't believe it for a second."
     nvl clear
-    "\"Really,\" the woman said after a moment, her cool eyes breaking from Haruhi's long enough to touch on Kanae's, then away to Kyon's, where they hardened into twin orbs of pure menace, the like he had only previously seen from Haruhi herself. Deciding it was a woman-only-power that they all accessed at various levels of maturity, he gave it up as a lost cause. He could at least take consolation in the fact that he'd — somehow — manage to cow Mori into acting subservient, even if there was no way in hell he'd pull the same off with his mother, Haruhi, or probably his sister."
-    nvl clear
+    "\"Really,\" the woman said after a moment, her cool eyes breaking from Haruhi's long enough to touch on Kanae's, then away to Kyon's, where they hardened into twin orbs of pure menace, the like he had only previously seen from Haruhi herself. Deciding it was a woman-only-power that they all accessed at various levels of maturity, he gave it up as a lost cause." 
+    nvl clear 
+    "He could at least take consolation in the fact that he'd — somehow — manage to cow Mori into acting subservient, even if there was no way in hell he'd pull the same off with his mother, Haruhi, or probably his sister."
     "\"I'm a bit disappointed in you, Kyon,\" she finally said, tuning out the girls that argued on his behalf. \"Getting into fights? That is {i}not{/i} how you were raised!\""
     nvl clear
     show Kyon Sigh2 at center
@@ -26,13 +31,16 @@
     "\"Yeah, but.... Ryuguu Ryo was expelled,\" Kyon said, shaking his head. \"I was reprimanded. I acted in self-defense, and to protect Kanae-chan. You think it's bad that I could have been hurt? What if {i}Kanae-chan{/i} was hurt?\""
     nvl clear
     show Kyon Unhap1 at center
-    "His mother raised her eyebrows. \"You're acting like a delinquent,\" she judged, which he couldn't help but wince at. Jabbing a finger into his chest and leaning forward to shoot him a look of dire intent, she added, \"Here's your ultimatum, Kyon. If you can't clean up your act — by which I mean 90 or better on {i}every{/i} test and assignment from this point forward, then I'm pulling you out of that trouble-making club and sending you {i}straight{/i} back to cram school! Sasaki-chan's mother called me a few days ago, you know! So don't think I haven't been keeping my eyes open for such opportunities — I won't let you throw your chances of a successful career after college away for some fleeting highschool flings and juvenile lapses in judgment!\""
+    "His mother raised her eyebrows. \"You're acting like a delinquent,\" she judged, which he couldn't help but wince at. Jabbing a finger into his chest and leaning forward to shoot him a look of dire intent, she added, \"Here's your ultimatum, Kyon. If you can't clean up your act — by which I mean 90 or better on {i}every{/i} test and assignment from this point forward, then I'm pulling you out of that trouble-making club and sending you {i}straight{/i} back to cram school!\""
     nvl clear
-    #show Kanae
+    "\"Sasaki-chan's mother called me a few days ago, you know! So don't think I haven't been keeping my eyes open for such opportunities — I won't let you throw your chances of a successful career after college away for some fleeting highschool flings and juvenile lapses in judgment!\""
+    nvl clear
+    show Kanae Sad1 at left
     show Haruhi Crossed Sup2 at right
     "Kanae blinked, looking stung. Haruhi flinched at the mention of Sasaki, and Kyon could feel her trembling through the couch at the rest of the ultimatum. {nw}"
     show Haruhi Ang3 Flip at right
     extend "\"That won't happen!\" the girl swore, jumping to her feet in agitation. \"Kyon and I have been working together on his studying habits! He's going to do {i}much{/i} better on tomorrow's test!\""
+    nvl clear
     "\"I'm sure,\" his mother said dryly, standing up straight and staring down her nose imperiously at Haruhi. \"You've already accomplished miracles for him so far.\""
     nvl clear
     "Kyon took a deep breath, watching Haruhi closely. His mother had previously always maintained a careful distance from his friends, respecting his boundaries. This was an entirely new facet of parental interference.... But not, he admitted, entirely unexpected. And he really didn't want to see Haruhi get into a fight with his mother."
@@ -124,12 +132,15 @@
     "\"Y...yeah, but if this makes you quit the brigade—\""
     nvl clear
     show Kyon Ser2 Flip at left
-    "\"Haruhi,\" he said sternly, looking up from her notes, \"if I won't let aliens, enemy organizations, or that smirking bastard let me get split off from the brigade, do you really think my mother is going to stop me? It's no good seeing her mad at me, but she'll get over it as long as I come through on getting my test scores up. And even if I do fail, well.... I don't think it's any good relying on Nagato or Asahina-san to fix things, but unless I somehow get expelled from school,\" and that he {i}would{/i} cheat to fix, if he had to, \"then it's not happening. Despite everything, my record with the school should be decent. I have bad grades, and I got into one fight that everyone acknowledges wasn't my fault. It's not the end of the world, is it?\""
+    "\"Haruhi,\" he said sternly, looking up from her notes, \"if I won't let aliens, enemy organizations, or that smirking bastard let me get split off from the brigade, do you really think my mother is going to stop me? It's no good seeing her mad at me, but she'll get over it as long as I come through on getting my test scores up.\""
+    nvl clear
+    "\"And even if I do fail, well.... I don't think it's any good relying on Nagato or Asahina-san to fix things, but unless I somehow get expelled from school,\" and that he {i}would{/i} cheat to fix, if he had to, \"then it's not happening. Despite everything, my record with the school should be decent. I have bad grades, and I got into one fight that everyone acknowledges wasn't my fault. It's not the end of the world, is it?\""
     nvl clear
     show Haruhi Pout2 Flip at center
     "Haruhi nodded, setting her cup on the tray. \"I just don't like it when things entirely outside of my control can cause problems I can't fix ... even though they'll be problems for me,\" she said. {nw}"
     show Haruhi Sigh1 Flip at center
     extend "Then she shook her head. \"That sounds really selfish, doesn't it?\""
+    nvl clear
     show Kyon Neutral2 Flip at left
     "\"Well,\" he mused, as Kanae put away her homework, \"that may be true.... But when you're talking about wanting a friend to do well so you can be together, then while it's a bit selfish, it's also because you care about your friend, isn't it?\""
     nvl clear
@@ -159,11 +170,15 @@
     "\"I didn't,\" Kyon retorted. \"When he called to tell me how much he was in love, his explanation was so bad I thought he was trying to confess to {i}me{/i}!\""
     nvl clear
     show Kanae Hap1 at right
-    "\"I didn't hear that story!\" Kanae said, giggling herself, a tiny blush coming to her cheeks. \"Ooh, Sempai with another boy! Such a naughty thought!\" Her eyes turned distant and her blush deepened. \"Hum, Sempai and Koizumi-san....\""
+    "\"I didn't hear that story!\" Kanae said, giggling herself, a tiny blush coming to her cheeks. \"Ooh, Sempai with another boy! Such a naughty thought!\" {nw}"
+    show KABlush at right
+    extend "Her eyes turned distant and her blush deepened. \"Hum, Sempai and Koizumi-san....\""
+    nvl clear
     show Kyon Ser2 Flip at left
     "\"Stop that train of thought {i}right there{/i},\" Kyon insisted, holding one hand out and grimacing. \"I invoke my vice commander powers to revoke your speaking privileges! Not funny, Kanae-chan!\""
     nvl clear
     hide Kanae Hap1 with dissolve
+    hide KABlush
     show Haruhi Sigh2 Flip at center
     "The girl giggled again, grabbing Kyon's pillow and hiding her face behind it, trying to stifle her laughter. \"Alright,\" Haruhi said decisively, \"enough break time! Kanae-chan, help me cut up some paper to make flashcards. Kyon, get us—  {nw}"
     show Haruhi Quest2 Flip at center
@@ -178,14 +193,14 @@
     stop music fadeout 1
     queue music "Music/MidnightInterval.mp3"
     "A grueling flashcard session was eventually followed by a tense, uncomfortable dinner. Afterward, Kyon gleefully escaped the house on the excuse of walking the girls to the train station, chased by the promise of talking with his father once the man came home."
-    show Kanae Sad3 at center with dissolve
+    show Kanae Hap1 at center with dissolve
     "\"I'm sorry I couldn't be more helpful today, Sempai,\" Kanae said before stepping through the turnstile to board her train, ducking her head. \"But thank you for being my friend. And thank you, too, Suzumiya-san! It makes me very happy to have found this world!\""
     nvl clear
-    hide Kanae Sad3 with dissolve
-    show Haruhi Crossed Tsun2 at center with dissolve
+    hide Kanae with dissolve
+    show Haruhi Pout1 at center with dissolve
     "Haruhi hesitated until the smaller girl was out of sight, then turned to face Kyon. \"Um,\" she began, uncertainly, before faltering. He could sense that she wanted to say something, but was unable to force it out. \"W...well, come to school early tomorrow.... If your mother is upset, I'll bring you something so you can eat properly, and we'll work on all the flashcards you had trouble with, okay?\""
     nvl clear
-    hide Haruhi Tsun2 with dissolve
+    hide Haruhi with dissolve
     "\"Absolutely,\" he agreed, nodding. He watched her walk away, unsettled when his cell-phone buzzed. He pulled it from his pocket, surprised to see he had a voice-mail ... but no missed calls. Confused, he pressed the button to retrieve it as he strolled back home, his steps freezing when a very familiar voice spoke:"
     "\"Call Mori-san, tell her to meet you {i}now{/i}, then turn off the phone. Also, 'hi' from tomorrow.\""
     "\"{i}Damn{/i} it, future-me,\" he growled, ignoring the stares the nearest passers-by gave him and searching quickly for Koizumi's number. The esper picked up after two rings, attentive as always."
@@ -221,11 +236,13 @@
     show Mori Ser3 at right
     nvl clear
     "\"I was a bit hesitant to infringe on that, but the Tamaru brothers are watching her, as you insisted,\" she continued. \"You're positive that it was safe to pull them from surveillance on Asahina-san?\""
+    nvl clear
     show Kyon Unhap3 Flip at left
     "\"I've got someone on that,\" he answered, making a mental note to kick his future self. Obviously, his future self was getting to enjoy time with Mikuru, while he was pitching himself headlong into another act of delinquency. \"What's Tsuruya-kun up to right now?\""
     nvl clear
     show Mori Neutral4 at right
     "\"Ah ... well ... it doesn't look good,\" Mori said glumly. \"This could seriously damage relations between ourselves and her family if it comes out, so ... moving forward with our strict policy of letting you handle your own problems, we'd like to remain as uninvolved as possible.\""
+    nvl clear
     show Kyon Sup2 Flip at left
     "\"What doesn't look good?\" Kyon asked, realizing they were heading straight into the heart of Nishinomiya's shadier low-rent and high-crime district."
     nvl clear
@@ -262,6 +279,8 @@
     show Mori Hap1 at right
     "Mori smiled, a tiny hint of that menacing smile she sometimes offered returning with a sharp gleam. \"I've got my eyes on you,\" she assured him."
     scene bg Alley with fade
+    stop music fadeout 1
+    queue music "Music/Suspicion.ogg"
     "He nodded again, then jogged down the street, nervously ducking into the alley that Mori had indicated before freezing, nearly stumbling over a trash bag as his eyes slowly adjusted to the dark. Moving more carefully forward, he studied the walls of the buildings until he found the steel door and pounded one fist on it, following the pattern that Mori had given him.\""
     nvl clear
     "Seconds later, the eye-level steel plate snapped back, revealing a furrowed brow and a pair of angry eyes. \"What?\" a surly voice asked him, before taking in his uniform. \"Oh, local color, eh? You here to buy, or sell?\""
@@ -279,13 +298,17 @@
     show Tsuruya Grin1 Flip at center with dissolve
     "Five other people were in the room with him. He spotted Tsuruya first, standing not far from himself on one edge of a shabby red carpet, wearing a skirt and blouse — not her uniform or the kimono he had previously seen her in.  {nw}"
     #show Manabe at right with dissolve
-    extend "Beyond her was a boy that it took Kyon a minute to place — Manabe, from Kanae's class, slightly unfamiliar in casual clothes, but his blond hair stuck out. Manabe was bowing nervously to the man behind the desk, a thirtish looking Yakuza in proud color, much more understated white and powder blue. Deducing that he must be Watanabe, Kyon mentally labeled the other two yakuza thugs as Scar, for the giant jagged silver streak that ran vertically across his face and through one eye, and Hat, for the fedora he angled low over his eyes."
+    extend "Beyond her was a boy that it took Kyon a minute to place — Manabe, from Kanae's class, slightly unfamiliar in casual clothes, but his blond hair stuck out." 
+    nvl clear
+    "Manabe was bowing nervously to the man behind the desk, a thirtish looking Yakuza in proud color, much more understated white and powder blue. Deducing that he must be Watanabe, Kyon mentally labeled the other two yakuza thugs as Scar, for the giant jagged silver streak that ran vertically across his face and through one eye, and Hat, for the fedora he angled low over his eyes."
     nvl clear
     "Manabe rose from his bow and said, his voice breaking very slightly, \"We apologize again for the issue with Ryuguu-san, Watanabe-san. But, as we have said ... his issues are not our issues, and he was merely a middle-man. Production has not been affected in the slightest, as you can see from the latest batch....\""
     nvl clear
     "\"The money we make from distributing these isn't bad,\" Watanabe allowed, his eyes flicking across the monitors. \"However, what you don't understand is that the money is also trivial compared to our proper businesses. It is, at best, a semi-lucrative sideline. We are businessmen, and we act professionally.\""
     nvl clear
-    "Watanabe pulled a cigar from a box on the desk. Scar wordlessly produced a clipper from a pocket and snipped one end, and Hat wordlessly produced a lighter, which Watanabe used to ignite the tip. After a few thoughtful puffs, Watanabe's eyes drifted across the room, lingering briefly on Kyon, then on Tsuruya, before fixing on Manabe again. \"I understand that you consider yourselves aspiring businessmen, and I will admit ... production quality is high. Delivery is generally very prompt. You do your jobs well, all things considered. However, our primary issue is not the product.\""
+    "Watanabe pulled a cigar from a box on the desk. Scar wordlessly produced a clipper from a pocket and snipped one end, and Hat wordlessly produced a lighter, which Watanabe used to ignite the tip. After a few thoughtful puffs, Watanabe's eyes drifted across the room, lingering briefly on Kyon, then on Tsuruya, before fixing on Manabe again."
+    nvl clear
+    "\"I understand that you consider yourselves aspiring businessmen, and I will admit ... production quality is high. Delivery is generally very prompt. You do your jobs well, all things considered. However, our primary issue is not the product.\""
     nvl clear
     "He took a longer draw and stared into Manabe's face. \"Our issue is that we do not like to be ... toyed with. Ryuguu was under the impression that for all his toadying and glorified delivery-boy status, he mattered to us. Sadly, he did not. He is as irrelevant as you might be. And Ryuguu thinks that we are, in some way, interested in avenging him. We are not. Ultimately, we do not care."
     nvl clear
@@ -308,60 +331,102 @@
     show Tsuruya Sad1 at center
     "Tsuruya winced, briefly pressing against Kyon and shoving something into his hand as she turned to face the four in the room. Watanabe rose to his feet, grinning around his cigar. \"How convenient,\" he said in a smooth voice, eyes narrowing sharply. \"Get them!\" he roared, pointing at the pair menacingly."
     nvl clear
+    show Tsuruya Ang1 at center
     "Tsuruya sprang a step to Kyon's left, leaving him to turn and face the doorway he had walked through. Brute charged him with a guttural howl, and he sidestepped with a trip, knocking the big guy down and pivoting to face him again. No way the knockdown would put him out, but— The crackling discharge of a stun gun directly into the big man's spine drew his attention to Tsuruya, where she rose, stepping carefully back from the twitching figure, her weapon raised in a defensive position."
     nvl clear
     show Kyon Ser1 Flip at left
-    "After glancing at his own hand, Kyon recognized a collapsible baton — how had Tsuruya gotten such things? Dismissing that, he gave it a good shake, relieved when it sprang open to its full length just as Hat reached him, and Scar windmilled his arms and leapt frantically backwards out of Tsuruya's range. Hat screamed something unintelligible and started with a maneuver that part of Kyon's subliminal training recognized as a double-feint; he side-stepped away from Brute's prone form, cracking his baton sharply across Hat's knuckles when they were extended from the punch."
+    "After glancing at his own hand, Kyon recognized a collapsible baton — how had Tsuruya gotten such things? Dismissing that, he gave it a good shake, relieved when it sprang open to its full length just as Hat reached him, and Scar windmilled his arms and leapt frantically backwards out of Tsuruya's range."
+    nvl clear
+    "Hat screamed something unintelligible and started with a maneuver that part of Kyon's subliminal training recognized as a double-feint; he side-stepped away from Brute's prone form, cracking his baton sharply across Hat's knuckles when they were extended from the punch."
     nvl clear
     "Hat yelped and shook his now-bleeding hand. Kyon sidestepped the next punch from Hat, right into an axe-kick from Watanabe. He felt his collar bone strain under the impact as he was brutally slammed to the floor, staring up at Watanabe's grinning face and jarring his head when he landed. \"Ya got {i}spunk{/i}, kid,\" the Yakuza said, \"but you chose the wrong people to fu—\""
     nvl clear
     "Kyon rolled desperately to one side, losing the baton and narrowly evading a kick to his head. After hitting the stack of boxes, he hastily righted himself and glanced at Tsuruya. Scar was slowly backing her into a corner, using his belt as a whip to try and disarm the girl. Manabe stood in front of the desk and stared, gaping."
     nvl clear
-    "Taking mental inventory, Kyon decided to switch to the offensive. Hat and Watanabe were coordinated, experienced fighters. He had the equivalent of a few years of non-specific martial arts training, and none of the physical conditioning to back it up. Hat should logically be weakened, so was the obvious target. Turning slightly towards Hat, Kyon slipped backwards and jerked himself towards Watanabe with an elbow-slam to the Yakuza's solar- plexus, allowing the momentum from the attack to carry into his fist, which snapped upwards and smashed the man's nose, causing another one of those unfortunately familiar crunches."
+    "Taking mental inventory, Kyon decided to switch to the offensive. Hat and Watanabe were coordinated, experienced fighters. He had the equivalent of a few years of non-specific martial arts training, and none of the physical conditioning to back it up. Hat should logically be weakened, so was the obvious target."
     nvl clear
-    "Watanabe screeched and flailed, the hot ash of his cigar falling down the sleeve of Kyon's uniform as the man tripped back and crashed to the floor. Even though Kyon was facing Hat, he was overextended and couldn't bring a fist into guard position quickly enough. Hat's knuckles may have been bloodied on one hand, but he landed a kick just over Kyon's eye, sending the boy flying back to land atop the injured Yakuza boss. Grunting in pain, Kyon felt Watanabe's arms wrap around him, holding him prone as Hat gathered a loose mop handle from the floor and raised it in a giant over-hand swing, his eyes still filled with dizzied glowing sparks."
+    "Turning slightly towards Hat, Kyon slipped backwards and jerked himself towards Watanabe with an elbow-slam to the Yakuza's solar- plexus, allowing the momentum from the attack to carry into his fist, which snapped upwards and smashed the man's nose, causing another one of those unfortunately familiar crunches."
+    nvl clear
+    "Watanabe screeched and flailed, the hot ash of his cigar falling down the sleeve of Kyon's uniform as the man tripped back and crashed to the floor. Even though Kyon was facing Hat, he was overextended and couldn't bring a fist into guard position quickly enough."
+    nvl clear
+    "Hat's knuckles may have been bloodied on one hand, but he landed a kick just over Kyon's eye, sending the boy flying back to land atop the injured Yakuza boss. Grunting in pain, Kyon felt Watanabe's arms wrap around him, holding him prone as Hat gathered a loose mop handle from the floor and raised it in a giant over-hand swing, his eyes still filled with dizzied glowing sparks."
     nvl clear
     "Relying on the Yakuza boss's grip, Kyon managed to force a roll in time to use Watanabe as a shield. The blow caused Watanabe to cry out in pain and release Kyon to roll to his feet again, though this time Kyon immediately lashed forward and kicked Watanabe in the ribs. As the boss curled up around his kicked side, Kyon elbow-dropped below another one of Hat's kicks, driving all of his attack power into Watanabe's kidney."
     nvl clear
     "Watanabe retched loudly and twitched. Kyon rolled away, dazedly wondering how much of the fight he was going to spend on the floor. As he righted himself again, he glared with his good left eye. The kick from Hat had cut open his eyebrow, and blood was filling his right eye. Hat's eyes flicked to Watanabe, on the floor, then to Kyon. Kyon tensed to charge, just as Tsuruya cried out in pain."
     nvl clear
-    "Not giving himself time to think about it, the second Hat turned to glance at the girl, Kyon leapt forward with a flying kick to Hat's left shoulder, landing on the floor yet again and executing a prone-trip, bringing Hat crashing to the ground at his side. With one hand injured and the other shoulder too weakened from the flying kick, Hat collapsed with a scream. Kyon rolled — yet again — away from the corner where Tsuruya and Scar would be, then kicked Hat's prone form in the chest, following it up with a knee-drop to the Yakuza's midsection. He shakily climbed to his feet to see that Tsuruya was bleeding from a deep welt on one wrist, but Scar was prone, frothing at the mouth with her stun gun pressed into his gut and chattering with discharge."
+    "Not giving himself time to think about it, the second Hat turned to glance at the girl, Kyon leapt forward with a flying kick to Hat's left shoulder, landing on the floor yet again and executing a prone-trip, bringing Hat crashing to the ground at his side. With one hand injured and the other shoulder too weakened from the flying kick, Hat collapsed with a scream."
     nvl clear
-    "He spun on Manabe before the first year student could think to involve himself and stalked forward, stopping outside of striking range of the smaller boy. \"You want to talk, or are you next?\" he spat. Kyon despaired inwardly; he must have bitten his cheek when he was kicked or fell at some point. His mouth was literally full of blood, and his spittle flecked Manabe's face and clothes. His own blood was dripping across his blazer, and the cigar had probably singed it as well. The smell was undoubtedly going to linger...."
+    "Kyon rolled — yet again — away from the corner where Tsuruya and Scar would be, then kicked Hat's prone form in the chest, following it up with a knee-drop to the Yakuza's midsection. He shakily climbed to his feet to see that Tsuruya was bleeding from a deep welt on one wrist, but Scar was prone, frothing at the mouth with her stun gun pressed into his gut and chattering with discharge."
     nvl clear
+    show Tsuruya Ang1 Flip at left
+    show Kyon Ang3 at center
+    "He spun on Manabe before the first year student could think to involve himself and stalked forward, stopping outside of striking range of the smaller boy. \"You want to talk, or are you next?\" he spat. Kyon despaired inwardly; he must have bitten his cheek when he was kicked or fell at some point."
+    nvl clear
+    "His mouth was literally full of blood, and his spittle flecked Manabe's face and clothes. His own blood was dripping across his blazer, and the cigar had probably singed it as well. The smell was undoubtedly going to linger...."
+    nvl clear
+    show Kyon Ser3 at center
     "Sharpening his one good eye on the boy, he felt more than saw Tsuruya stepping to his right side, her stun gun still chattering as she joined him in staring. \"You okay?\" he asked, turning slightly towards her, but still keeping Manabe in his field of vision."
     nvl clear
+    show Tsuruya Ang4 Flip at left
     "The boy whimpered, as Tsuruya nodded. \"Good enough to get some answers from this guy. Okay, Satoshi-chan, make it quick-like.\" Tsuruya chuckled, adding, \"We're on a schedule.\""
     "Manabe worked his jaw quickly and finally blurted out, \"I'm a nobody! I'm just a grunt! P...please don't kill me!\" The boy actually dropped to his knees, eyes filling with tears. \"I'm too {i}beautiful{/i} to die!\""
     nvl clear
+    show Kyon Sigh1 at center
     "\"Oh, gods,\" Kyon groaned, fishing his handkerchief from his pocket and pressing it against his split eyebrow. The wound was too fresh to be tender, only a combination of half-numb and pins-and-needles tingling. \"Tsuruya-kun, he's going to be useless — put him out of my misery, won't you?\""
+    show Tsuruya Grin4 Flip at left
     "\"You got it!\" she said cheerfully, raising the stun gun and flashing a Mori- quality smile at Manabe."
     nvl clear
     "\"I'll tell you anything!\" Manabe wailed, throwing himself to the floor and groveling. \"Anything you want to know!\""
+    show Kyon Ser2 at center
     "\"The truth,\" Kyon growled, walking around the desks and checking the Yakuza computer."
     nvl clear
     "An amateurishly assembled rig, he assessed, lower quality than anything he'd seen in the computer research society. After collapsing into the single rickety chair, he spent a few moments checking it out to make certain, and was pleased to determine that there was no modem or internet connection. A shoe box on the desk not far from the cigar box was stuffed with mini-discs, SD cards, and countless post-it notes."
     "\"I'm just following orders! I do first years, and, um, my seniors take care of the rest!\""
     nvl clear
+    show Kyon Ang4 at center
     "\"Tsuruya-kun, can I borrow the stun gun?\" Kyon asked. \"You can work this chump over with the baton for answers.\""
+    show Tsuruya Grin5 Flip at left
     "\"Good thinking!\" she cheered, handing the weapon over after collecting the baton and tapping it against one palm, eyes fixed on Manabe."
     "\"Y...Yamane-san handles the second years,\" Manabe continued, on the verge of tears. \"Daimonji-san is in charge of third years! W...we just wanted to make some money!\""
     nvl clear
-    "Kyon set every drive but the primary to quick format waited until they were done, then opened the system while it was still running, and shielding his good eye, fried the entire array with the stun gun. The resultant explosion of sparks caused Manabe to shriek in alarm and sob again."
+    "Kyon set every drive but the primary to quick format waited until they were done, then opened the system while it was still running, and shielding his good eye,  {nw}"
+    play sound "SE/elec1.mp3"
+    extend "fried the entire array with the stun gun. The resultant explosion of sparks caused Manabe to shriek in alarm and sob again."
     "\"I'll give you the names of all the first year collectors!\" the blond boy wept. \"That's all I know! Honest!\""
     nvl clear
+    play sound "SE/GlassBreak3.mp3"
+    queue sound "SE/GlassBreak3.mp3"
+    queue sound "SE/GlassBreak3.mp3"
     "For good measure, Kyon then tore the drives from the system and flung them to the floor hard enough to crack the casings, each crash causing Manabe to devolve further into a whimpering mound. Tsuruya tapped him lightly on the back of the head with the baton and collected the names he shakily quoted, writing them on a notepad she had kept in one pocket."
     nvl clear
+    show Tsuruya Hap5 Flip at left
     "\"Alright,\" Tsuruya decided, once Kyon had declared the computer system to be dead, and Manabe had finished his litany of names, \"have a nice nap, Satoshi- chan!\""
-    "\"W...what?\" the boy managed, before Tsuruya whipped the baton sideways across the top of his head, and his eyes crossed as he collapsed to the floor."
-    "\"Hey, hey, Kyon-kun,\" Tsuruya said, quickly running to him and embracing him again. \"You okay? I owe you mega big time! I got in ways over my head! Dunno what I'd do if you hadn't shown up!\""
+    "\"W...what?\" the boy managed, before Tsuruya whipped the baton sideways  {nw}"
+    play sound "SE/Impact.mp3"
+    extend "across the top of his head, and his eyes crossed as he collapsed to the floor."
     nvl clear
+    show Tsuruya Hap4 Flip at left
+    "\"Hey, hey, Kyon-kun,\" Tsuruya said, quickly running to him and embracing him again. \"You okay? I owe you mega big time! I got in ways over my head! Dunno what I'd do if you hadn't shown up!\""
+    show Kyon Puzzle1 at center
     "\"Let's just get out of here,\" he said, his voice shaking. \"I'm not feeling so hot at the moment.\""
+    show Tsuruya Quest1 at left
     "\"Okies! You want to go home? Hospital?\" She partially broke from the embrace, pulling his right arm across the back of her neck and leaving her left arm around his back to help him walk."
     nvl clear
-    "\"Oh, hells, I can't go home like this,\" he said in dismay. \"My mom's already flipping out over the idea of me being a delinquent! The hospital....\" His head hurt, and he felt himself slipping away by the minute. Delayed shock reaction? Blood loss? Adrenaline rush fading? There was something about a hospital, but he couldn't use his phone to call Mori; he had turned it off for an important reason that was slipping from his grasp. \"No hospital,\" he managed."
+    show Kyon Sup2 at center
+    "\"Oh, hells, I can't go home like this,\" he said in dismay. \"My mom's already flipping out over the idea of me being a delinquent! The hospital....\" His head hurt, and he felt himself slipping away by the minute. Delayed shock reaction? Blood loss? Adrenaline rush fading? There was something about a hospital, but he couldn't use his phone to call Mori; he had turned it off for an important reason that was slipping from his grasp.  {nw}"
+    show Kyon Sigh1 at center
+    "\"No hospital,\" he managed."
     nvl clear
-    "\"Gotcha covered!\" she said cheerfully, setting him down on a stool near the doorway as she fought the numerous bolts and locks, then struggled to open the heavy portal. After resuming her position at his side, helping guide him down the dark alley, she pulled her phone from one pocket and held down a single button until someone answered. \"Car!\" she barked into the handheld. \"Now! I want a medical kit — actually, it may take stitches — bring Sakura-sensei in. I want him ready by the time we get home!\""
+    show Tsuruya Hap3 at left
+    "\"Gotcha covered!\" she said cheerfully, setting him down on a stool near the doorway as she fought the numerous bolts and locks, then struggled to open the heavy portal.  {nw}"
+    scene bg Alley with fade
+    show Kyon Sigh1 at center with dissolve
+    show Tsuruya Hap3 at left with dissolve    
+    extend "After resuming her position at his side, helping guide him down the dark alley,  {nw}"
+    play sound "SE/CellRing.mp3"
+    show Tsuruya Ang3 Flip at left
+    extend "she pulled her phone from one pocket and held down a single button until someone answered. \"Car!\" she barked into the handheld. \"Now! I want a medical kit — actually, it may take stitches — bring Sakura-sensei in. I want him ready by the time we get home!\""
     nvl clear
     "She hung up the phone without waiting for response, and Kyon could only blink in surprise when a limousine pulled to a stop outside the alley, a driver quickly climbing out and opening the door for them. Kyon gratefully collapsed into the back seat, only grunting when Tsuruya climbed in next to him and pulled out a first aid-kit. Confident that everything else would be taken care of, he let himself recede into comforting darkness as she pulled his head into her lap and began dabbing something on his eyebrow."
     nvl clear
