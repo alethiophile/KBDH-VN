@@ -1118,6 +1118,7 @@ init:
     
     # Most likely needs {font=fancyfont.ttf}magic{/font} to pull off properly...
     image BDVNlogo = Text("{size=80}{b}{k=3}KYON:\n{/k}{/b}{/size}{size=40}{k=-1.0}Big Damn Hero{/k}{/size}", color="#3cf")
+    image BDVNlogoBlack = Text("{size=80}{b}{k=3}KYON:\n{/k}{/b}{/size}{size=40}{k=-1.0}Big Damn Hero{/k}{/size}", color="#000")
     
     # Title cards, i.e chapter-opening quotes
     image title 000 = Text("{space=500}{b}{size=+1}Thursday, June 2, 2011{/size}{/b}\n\n\n\n\"Chapter Two: Don't Just SAY You Have a Bad Feeling, DO Something About It!\"\n\n\"...but I digress. When you get that feeling, you know the one, in the back of your head? The one that makes you think something is off about the situation? It may be right. Granted, you may also be tumbling headlong into a fit of paranoia that will end terribly for you and everyone you love. But what if you're NOT? Remember, if you're aware of things, you know most people think you're crazy anyway. Is it going to hurt that much more to overreact rather than just label something a false alarm?\"\n\n\"Practical Heroism and You: Awareness\" — Tadamichi Kyousuke", font="DejaVuSerif-Italic.ttf", size=18, line_leading=3, justify=True, xmaximum=750)
@@ -1548,7 +1549,23 @@ label eyecatch_random(date1="", date2="", pause_time=2.0, r=0):
     centered "{nw}"
     return
 
-    
+label eyecatch_white(date="", pause_time=3.0, r=0, ecbg="black"):
+    scene white with Dissolve(1)
+    # call eyecatch_random(date, date, pause_time, r)
+    $ pause2 = pause_time/2
+    $ date1 = date
+    $ date2 = date
+    show BDVNlogoBlack at truecenter
+    show eyeDate 1 at date_pos
+    with coatin
+    pause pause2
+    show eyeDate 2 at date_pos with dissolve
+    pause pause2
+    hide BDVNlogoBlack
+    hide eyeDate
+    with coatout
+    scene white with Dissolve(0.5)
+    return    
     
 label test_Z0_eye:
     scene bg MorningSky

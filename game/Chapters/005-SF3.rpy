@@ -133,10 +133,10 @@ label SF3:
     show Kyon Sigh1
     stop music fadeout 10
     "He snorted, carelessly dumping the old leaves into the trash and eyeballing a replacement fill of tea leaves from one of the metal cannisters that Mikuru had bought. \"I'm not actually a fan of the Hanshin Tigers.\""
+    stop music
     nvl clear
     show Kyon Sigh2 at right
-    stop music
-    play music "Music/GodKnowsMusicBox.mp3"
+    play music "Music/GodKnowsMusicBox.mp3" fadein 7
     "\"Setting aside the aliens we've already met.... After dealing with some of the things I have ... last February, I guess it was? Anyway, a while back I told the universe, though in more words, that it could bring any trouble it wanted,\" he said resolutely, his attention focused on the kettle as it heated up." 
     show Kyon Ser3 at right
     nvl clear
@@ -377,10 +377,18 @@ label SF3:
     scene bg Kiss with slowdissolve
     "She let her eyes drift shut as her head tilted back and her lips pursed, the last thought through her mind as everything turned into light that he would probably notice the small change she had made in him, as well.... But he probably wouldn't mind too much."
     nvl clear
-    stop music fadeout 8
+    stop music fadeout 12
     
-    call eyecatch("Thursday, April 21") from SF3_sc001
+    # call eyecatch("Thursday, April 21") from SF3_sc001
+
     
+    call eyecatch_white("", 8, "white") from SF3_sc001
+    stop music
+    # To uncomment for firat release
+    
+    # scene black with dissolve
+    # jump credits
+        
     play music "Music/Nichijou.mp3"
     scene bg KyonRoomRightMorning with fade
     play sound "SE/impact.mp3"
