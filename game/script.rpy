@@ -67,6 +67,7 @@ init:
     
     image white = "#ffffff"
     image black = "#000000"
+    image transpwhite = "#ffffffcc"
     image yukibackground = "#ccccff"
     # image title0 = "Backgrounds/title0.png"
     # image title1 = "Backgrounds/title1.png"
@@ -1126,8 +1127,9 @@ init:
     
     # Most likely needs {font=fancyfont.ttf}magic{/font} to pull off properly...
     image BDVNlogo = Text("{size=80}{b}{k=3}KYON:\n{/k}{/b}{/size}{size=40}{k=-1.0}Big Damn Hero{/k}{/size}", color="#3cf")
+    image SOSlogoborder = "Backgrounds/eyecatchlogos.png"
     image BDVNlogoBlack = Text("{size=80}{b}{k=3}KYON:\n{/k}{/b}{/size}{size=40}{k=-1.0}Big Damn Hero{/k}{/size}", color="#000")
-    
+
     # Title cards, i.e chapter-opening quotes
     image title 000 = Text("{space=500}{b}{size=+1}Thursday, June 2, 2011{/size}{/b}\n\n\n\n\"Chapter Two: Don't Just SAY You Have a Bad Feeling, DO Something About It!\"\n\n\"...but I digress. When you get that feeling, you know the one, in the back of your head? The one that makes you think something is off about the situation? It may be right. Granted, you may also be tumbling headlong into a fit of paranoia that will end terribly for you and everyone you love. But what if you're NOT? Remember, if you're aware of things, you know most people think you're crazy anyway. Is it going to hurt that much more to overreact rather than just label something a false alarm?\"\n\n\"Practical Heroism and You: Awareness\" — Tadamichi Kyousuke", font="DejaVuSerif-Italic.ttf", size=18, line_leading=3, justify=True, xmaximum=750)
     image title 001 = Text("{space=500}{b}{size=+1}Sunday, April 17, 2011{/size}{/b}\n\n\n\n\"Chapter One: The Truth is the Greatest Weapon\"\n\n\"...of dozens of issues with maintaining a 'masquerade' scenario. Generally, unless it's absolutely required, it's a bad idea. There will be fallout. If it must be done, the truth is still going to be the ultimate weapon — plan accordingly, and make sure it's a weapon that will serve you, and not any enemies. Barring that, make fast friends with someone who can BS better than you.\"\n\n\"Cover\" — Author Unknown", font="DejaVuSerif-Italic.ttf", size=18, line_leading=3, justify=True, xmaximum=750)
@@ -1154,6 +1156,7 @@ init python:
     teleportfaster = ImageDissolve("id_teleport.png", 1.0, 0)
     coatin = ImageDissolve("id_clouds.png", 1.0, 0)
     coatout = ImageDissolve("id_clouds.png", 1.0, 0, reverse=True)
+    logosin = ImageDissolve("logosfade.png", 2.0, 0)
     menu = nvl_menu
     style.nvl_window.background = "nvl_window.png"
     style.nvl_window.xpadding = 55
@@ -1456,7 +1459,32 @@ label credits:
     pause
     stop music
     return
-    
+
+
+
+
+# White eyecatch routine with single date to show.
+label white_eyecatch_single(date="", pause_time=3.0, r=0, ecbg="black"):
+    #scene eyebg with Dissolve(1)
+    $ date = "\n\n\n\n" + date
+    show transpwhite with slowdissolve
+    show SOSlogoborder with logosin
+    # call eyecatch_coatinout(date, date, pause_time) from eyecatch_generic
+    call eyecatch_coatinout(date, date, pause_time) from white_eyecatch_s
+    scene black with Dissolve(0.5)
+    return
+
+# White eyecatch routine with two dates to show, second replacing first.
+label white_eyecatch_double(date1="", date2="", pause_time=3.0, r=0, ecbg="black"):
+    #scene eyebg with Dissolve(1)
+    $ date1 = "\n\n\n\n" + date1
+    $ date2 = "\n\n\n\n" + date2
+    show transpwhite with slowdissolve
+    show SOSlogoborder with logosin
+    # call eyecatch_coatinout(date, date, pause_time) from eyecatch_generic
+    call eyecatch_coatinout(date1, date2, pause_time) from white_eyecatch_d
+    scene black with Dissolve(0.5)
+    return
 
 # Generic eyecatch routine with single date to show.
 label eyecatch(date="", pause_time=3.0, r=0, ecbg="black"):
@@ -1773,9 +1801,15 @@ label test_Z0_eye:
     show TownHillLeftMorning
     show Haruhi Smile3 at left
     with dissolve
+    "Now a new spiffy eyecatch with white screenage!"
+    call white_eyecatch_double ("Febtober 3.14, 1592", "Febtober 2.71828, 1592") from test_Z0_p0006
+    scene bg MorningSky
+    show TownHillLeftMorning
+    show Haruhi Smile3 at left
+    with dissolve
     "Thats all!"
     # If you specify the names of arguments, you don't have to worry about positions
-    call eyecatch(pause_time=3.0, r=5) from test_Z0_p0006
+    call eyecatch(pause_time=3, r=5) from test_Z0_p0007
     return
 
 
