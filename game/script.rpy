@@ -1467,8 +1467,8 @@ label credits:
 label white_eyecatch_single(date="", pause_time=3.0, r=0, ecbg="black"):
     #scene eyebg with Dissolve(1)
     $ date = "\n\n\n\n" + date
-    show transpwhite with slowdissolve
     show SOSlogoborder with logosin
+    show transpwhite behind SOSlogoborder with slowdissolve
     # call eyecatch_coatinout(date, date, pause_time) from eyecatch_generic
     call eyecatch_coatinout(date, date, pause_time) from white_eyecatch_s
     scene black with Dissolve(0.5)
@@ -1479,8 +1479,8 @@ label white_eyecatch_double(date1="", date2="", pause_time=3.0, r=0, ecbg="black
     #scene eyebg with Dissolve(1)
     $ date1 = "\n\n\n\n" + date1
     $ date2 = "\n\n\n\n" + date2
-    show transpwhite with slowdissolve
     show SOSlogoborder with logosin
+    show transpwhite behind SOSlogoborder with slowdissolve
     # call eyecatch_coatinout(date, date, pause_time) from eyecatch_generic
     call eyecatch_coatinout(date1, date2, pause_time) from white_eyecatch_d
     scene black with Dissolve(0.5)
