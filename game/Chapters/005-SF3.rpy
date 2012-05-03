@@ -377,13 +377,17 @@ label SF3:
     nvl clear
     scene bg Kiss with slowdissolve
     "She let her eyes drift shut as her head tilted back and her lips pursed, the last thought through her mind as everything turned into light that he would probably notice the small change she had made in him, as well.... But he probably wouldn't mind too much."
-    nvl clear
     stop music fadeout 12
-    
+    $ _window = True
+    scene white with Dissolve(12.0)
+    $ _window = False
+    nvl clear
+    $ renpy.pause(.5, hard=True)
     # call eyecatch("Thursday, April 21") from SF3_sc001
-
+    jump credits
     
     call eyecatch_white("", 8, "white") from SF3_sc001
+    
     stop music
     # To uncomment for firat release
     
@@ -727,7 +731,7 @@ label test2:
     show Haruhi Grin2 at left
     "\"I know, right?\" Haruhi said, smirking as they topped the stairs to the clubhouse and she reached for the doorknob. She wrenched it open as she usually did, catching part of a conversation between Koizumi and Kyon, both seated at the table. Yuki was seated in the corner, flipping through yet another book silently."
     nvl clear
-    
+
     play sound "SE/dooropenfast.wav"
     stop music fadeout 1
     queue music "Music/Unzari da.mp3"
