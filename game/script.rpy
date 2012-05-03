@@ -1121,7 +1121,22 @@ init:
     image screds0 = Text("Big Damn VN Brigade presents:", text_align=0.5, size=30)
     image screds1 = Text("based on the work by\nBrian Randall", text_align=0.5, size=30)
     image screds2 = Text("in turn based on the\nSuzumiya Haruhi series by\nNagaru Tanigawa", text_align=0.5, size=30)
-
+    
+    # Text for simple Credit Roll. Needs editing. And {font=fancyfont.ttf}magic{/font}...
+    image credroll = Text("\n{size=+5}Presented by:{/size}\n\nBig Damn VN Brigade:\n\nAgasa\nalethiophile\nFilraen\nOroboro\nPax Empyrean\nJason Ulloa\nZer0Null\n\n\nMany thanks to:\n\njonbob\nSpecular\n\n\n\n\n\nSpecial thanks to:\n\nBrian Randall\nauthor of Kyon: Big Damn Hero\n\nand\n\nNagaru Tanigawa\nauthor of Suzumiya Haruhi series\n\n\nAnd everyone\nwho totally voluntarily\ndonated the assets\nfor our noble cause\n^_______________^\n\n\n\n\n\nDisclaimer: This production makes use\nof intellectual property belonging to\nBrian Randall, Nagaru Tanigawa \nand others. No disrespect is intended.\n\nNeither Kyon: Big Damn Hero \nnor Suzumiya Haruhi and related \ncharacters are owned by anyone \nassociated with Big Damn VN\n", text_align=0.5, size=30)
+    
+    #A quick next episode preview
+    image Popen = Text("Next time on Kyon: Big Damn Hero", text_align=0.5, size=30)
+    image Popen2:
+        Text("Next time on Kyon: Big Damn Hero", text_align=0.5, size=35, outlines=[(2, "#000", 0, 0)])
+        rotate -15
+    image P1 = "Backgrounds/P1.jpg"
+    image P2 = "Backgrounds/P2.jpg"
+    image P3 = "Backgrounds/P3.jpg"
+    image P4 = "Backgrounds/P4.jpg"
+    image P5 = "Backgrounds/P5.jpg"
+    image Pexit = Text("See you again!", text_align=0.5, size=30)
+    
     # "Image" showing the date
     # image eyeDate = DynamicDisplayable(show_date)
     image eyeDate 1 = DynamicDisplayable(show_date1)
@@ -1130,7 +1145,7 @@ init:
     image eyebg = ConditionSwitch("ecbg == 'white'", "#fff", "True", "#000")
     
     # Most likely needs {font=fancyfont.ttf}magic{/font} to pull off properly...
-    image BDVNlogo = Text("{size=80}{b}{k=3}KYON:\n{/k}{/b}{/size}{size=40}{k=-1.0}Big Damn Hero{/k}{/size}", color="#3cf")
+    image BDVNlogo = Text("{size=80}{b}{k=3}KYON:\n{/k}{/b}{/size}{size=40}{k=-1.0}Big Damn Hero{/k}{/size}", color="#3cf", outlines=[(1, "#000", 4, 3)])
     image SOSlogoborder = "Backgrounds/eyecatchlogos.png"
     image BDVNlogoBlack = Text("{size=80}{b}{k=3}KYON:\n{/k}{/b}{/size}{size=40}{k=-1.0}Big Damn Hero{/k}{/size}", color="#000")
 
@@ -1143,6 +1158,8 @@ init:
     image title 005 = Text("{space=480}{b}{size=+1}Thursday, April 21, 2011{/size}{/b}\n\n\n\n\"Chapter Seven: Practical Considerations for the Apocalypse\"\n\n\"...if that happens, and there's nothing else to be done, the next question is going to be survival. There are things more important than food, water, or even reasonable shelter. There's no reason to try and survive alone, unless you're just a die-hard, and even then you're still probably clinging to hope. So make sure you're not alone, or else there's not much reason to keep on going.\"\n\n\"Clearing the Event Horizon: How Close is Too Close?\" — Tadamichi Kyousuke", font="DejaVuSerif-Italic.ttf", size=18, line_leading=3, justify=True, xmaximum=750)
 
 init python:
+    config.layers.insert(1, 'upper')
+    
     #basechar = Character(None, kind=nvl)
     basechar = Character(None, kind=nvl, what_outlines = [(1, "#000", 0, 0)])
     kyon = Character("Kyon", kind=basechar, color="#777755")
@@ -1381,9 +1398,9 @@ init -1 python:
     # def show_date(st, at):
         # return Text("[date]", font="DejaVuSerif-Italic.ttf", size=25, color="#3cf"), None
     def show_date1(st, at):
-        return Text("[date1]", font="DejaVuSerif-Italic.ttf", size=25, color="#3cf"), None
+        return Text("[date1]", font="DejaVuSerif-Italic.ttf", size=25, color="#3cf", outlines=[(1, "#000", 2, 1)]), None
     def show_date2(st, at):
-        return Text("[date2]", font="DejaVuSerif-Italic.ttf", size=25, color="#3cf"), None
+        return Text("[date2]", font="DejaVuSerif-Italic.ttf", size=25, color="#3cf", outlines=[(1, "#000", 2, 1)]), None
         
     if persistent.text_styling == None:
         persistent.text_styling = "Extra"
@@ -1402,6 +1419,7 @@ init -1 python:
         # ("-----", "backtomain"),
                
         ("Credits", "credits"),
+        ("Credits (rolling)", "credits_roll"),
         ("Another testbed, Eyecatchies", "test_Z0_eye"),
         ("Another testbed, Title cards", "test_Z0_titles"),]
         
@@ -1440,12 +1458,12 @@ label start:
 label credits:
     # Done with special character (and one Text() "image" to show both ways.)
     # Text() way supports transitions (and positioning) easily, but *needs* pauses. Character way is straight-up.
-    stop music
-    # play music "Music/ItsumoReprise.mp3"
+    #stop music
+    play music "Music/GodKnowsMetal(edit).ogg"
     scene black with fade
     # The hardpause calls are necessary because otherwise Ren'py wants to skip over all the pause statements on a single press of the key.
     # show Credits0 with dissolve
-    show creds 0 at truecenter with Dissolve(1.0)
+    show creds 0 at truecenter with Dissolve(3.0)
     pause
     $ renpy.pause(.1, hard=True)
     # show Credits1 with dissolve
@@ -1461,9 +1479,102 @@ label credits:
     hide creds with Dissolve(1.0)
     show BDVNlogo at truecenter with Dissolve(2.0)
     pause
+    stop music fadeout 2
+    jump Preview
+    
+label credits_roll:
+    play music "Music/GodKnowsMetal(edit).ogg"
+    scene black with dissolve
+    show credroll at Position(xalign=0.5, yanchor=0.0, ypos=1.0) with None
+    show credroll at Position(xalign=0.5, yanchor=1.0, ypos=1.0) with MoveTransition(14)
+    show BDVNlogo at Position(xalign=0.5, yanchor=0.5, ypos=1.5) with None
+    show BDVNlogo:
+        linear 5 ypos 0.5
+    show credroll:
+        linear 5 ypos 0.0
+    pause
+    stop music fadeout 1
+    hide BDVNlogo with coatout
+    jump Preview2
+    
+    
+label Preview:
+    play music "Music/Bouken(Credits).mp3"
+    scene P1:
+        size (800,600)
+    show Popen at truecenter
+    with fade
+    #pause
+    $ renpy.pause(3.0, hard=True)
+    scene P2 with dissolve:
+        size (800,600)
+    #pause
+    $ renpy.pause(3.0, hard=True)
+    scene P3 with dissolve:
+        size (800,600)
+    #pause
+    $ renpy.pause(3.0, hard=True)
+    scene P4 with dissolve:
+        size (800,600)
+    #pause
+    $ renpy.pause(3.0, hard=True)
+    scene P5 with dissolve:
+        size (800,600)
+    $ renpy.pause(3.0, hard=True)    
+    scene black with fade
+    hide Popen
+    show Pexit at truecenter
+    with dissolve
     stop music
+    #pause
+    $ renpy.pause(3.0, hard=True)
     return
-
+    
+    
+label Preview2:
+    play music "Music/Bouken(Credits).mp3"
+    # scene black with dissolve
+    show P1 at truecenter:
+        size (800,600)
+    show Popen2 at Position(xanchor=0.5, xpos=0.55, yanchor=0.5, ypos=0.75) onlayer upper
+    pause 3.0
+    $ renpy.pause(0.1, hard=True)
+    show P2 at Position(xanchor=0.5, xpos=1.5, yalign=0.5):
+        size (800,600)
+    show P2 at truecenter with moveinleft:
+        size (800,600)
+    hide P1
+    pause 3.0
+    $ renpy.pause(0.1, hard=True)
+    show P3 at Position(xanchor=0.5, xpos=-0.5, yalign=0.5):
+        size (800,600)
+    show P3 at truecenter with moveinright:
+        size (800,600)
+    hide P2
+    pause 3.0
+    $ renpy.pause(0.1, hard=True)
+    show P4 at Position(yanchor=0.5, ypos=-0.5, xalign=0.5):
+        size (800,600)
+    show P4 at truecenter with moveintop:
+        size (800,600)
+    hide P3
+    pause 3.0
+    $ renpy.pause(0.1, hard=True)
+    # show P5 at Position(yanchor=0.5, ypos=-0.5, xalign=0.5):
+        # size (800,600)
+    show P5 at truecenter with dissolve:
+        size (800,600)
+    hide P4
+    pause 3.0
+    $ renpy.pause(0.1, hard=True) 
+    hide Popen2 onlayer upper  
+    scene black with dissolve
+    show Pexit at truecenter
+    with dissolve
+    stop music
+    #pause
+    $ renpy.pause(3.0, hard=True)
+    return
 
 
 
@@ -1474,7 +1585,7 @@ label white_eyecatch_single(date="", pause_time=3.0, r=0, ecbg="black"):
     show SOSlogoborder with logosin
     show transpwhite behind SOSlogoborder with slowdissolve
     # call eyecatch_coatinout(date, date, pause_time) from eyecatch_generic
-    call eyecatch_coatinout(date, date, pause_time) from white_eyecatch_s
+    call eyecatch_dissolves(date, date, pause_time) from white_eyecatch_s
     scene black with Dissolve(0.5)
     return
 
@@ -1486,7 +1597,7 @@ label white_eyecatch_double(date1="", date2="", pause_time=3.0, r=0, ecbg="black
     show SOSlogoborder with logosin
     show transpwhite behind SOSlogoborder with slowdissolve
     # call eyecatch_coatinout(date, date, pause_time) from eyecatch_generic
-    call eyecatch_coatinout(date1, date2, pause_time) from white_eyecatch_d
+    call eyecatch_dissolves(date1, date2, pause_time) from white_eyecatch_d
     scene black with Dissolve(0.5)
     return
 
@@ -1503,13 +1614,13 @@ label eyecatch(date="", pause_time=3.0, r=0, ecbg="black"):
 
 # Generic eyecatch routine with two dates to show, second replacing first.
 label eyecatch2(date1="", date2="", pause_time=3.0, r=0, ecbg="black"):
-    scene eyebg with Dissolve(1)
+    scene image(ecbg) with Dissolve(1)
     # call eyecatch_coatinout(pause_time) from eyecatch_generic
     if persistent.eyecatch_styling == "Moves":
         call eyecatch_random(date1, date2, pause_time, r) from eyecatch_genericM2
     else:
         call eyecatch_dissolves(date1, date2, pause_time, r) from eyecatch_genericD2
-    scene black with Dissolve(0.5)
+    scene image(ecbg) with Dissolve(0.5)
     return
 
     
@@ -1722,27 +1833,14 @@ label eyecatch_white(date="", pause_time=3.0, r=0, ecbg="black"):
 label test_Z0_eye:
     scene bg MorningSky
     show TownHillLeftMorning
+    show Haruhi Smile3 at left
+    with dissolve
+    "Now a new spiffy eyecatch with white screenage!"
+    call white_eyecatch_double ("Febtober 3.14, 1592", "Febtober 2.71828, 1592") from test_Z0_p1006
+    scene bg MorningSky
+    show TownHillLeftMorning
     # show Kyon Sigh1 at right
     show Asakura Unhap1 at center
-    show stake1 at Position(xanchor=0.5, yanchor=1.0, xpos=450, ypos=0)
-    show stake2 at Position(xanchor=0.5, yanchor=1.0, xpos=500, ypos=0)
-    show stake3 behind Asakura at Position(xanchor=0.5, yanchor=1.0, xpos=370, ypos=0)
-    show stake4 behind Asakura at Position(xanchor=0.5, yanchor=1.0, xpos=300, ypos=0)
-    play sound "SE/netlaunch.mp3"
-    pause (1)
-    play sound "SE/stake1.mp3"
-    show stake2 at Position(xanchor=0.5, yanchor=1.0, xpos=600, ypos=1.2)
-    with MoveTransition(0.08)
-    play sound2 "SE/stake2.mp3"
-    show stake1 at Position(xanchor=0.5, yanchor=1.0, xpos=500, ypos=1.2)
-    with MoveTransition(0.08)
-    play sound "SE/stake3.mp3"
-    show stake3 behind Asakura at Position(xanchor=0.5, yanchor=1.0, xpos=330, ypos=1.2)
-    with MoveTransition(0.08)
-    play sound "SE/stake1.mp3"
-    show stake4 behind Asakura at Position(xanchor=0.5, yanchor=1.0, xpos=190, ypos=1.2)
-    with MoveTransition(0.08)
-    pause(0.1)
     show SpikeFlick at center
     "\"{=loud}You opened{/=loud} it already, {=shout}I see{/=shout}.\""
     "[style.movie.font] - [style.loud.size] - [style.shout.size] - [style.whisper.size]"
@@ -1801,12 +1899,6 @@ label test_Z0_eye:
     # call the eyecatch routine, can supply nothing if nothing needs to be changed, specify the unique "from"
     call eyecatch_random("Febtober 3.14, 1592", "Febtober 2.71828, 1592") from test_Z0_p0005
     # activate the next scene with dissolve (or whatever else).
-    scene bg MorningSky
-    show TownHillLeftMorning
-    show Haruhi Smile3 at left
-    with dissolve
-    "Now a new spiffy eyecatch with white screenage!"
-    call white_eyecatch_double ("Febtober 3.14, 1592", "Febtober 2.71828, 1592") from test_Z0_p0006
     scene bg MorningSky
     show TownHillLeftMorning
     show Haruhi Smile3 at left

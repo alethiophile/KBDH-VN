@@ -83,7 +83,7 @@ label SF2:
     stop music
     play sound "SE/dooropenslow.mp3"
     
-#label Test:    
+
     scene bg ClubroomBack
     show Yuki Chair1:
         xalign 0.8 yalign 1.0
@@ -911,3 +911,4 @@ label SF2:
     nvl clear
 
     jump SF3
+
