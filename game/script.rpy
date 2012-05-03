@@ -1499,13 +1499,13 @@ label eyecatch(date="", pause_time=3.0, r=0, ecbg="black"):
 
 # Generic eyecatch routine with two dates to show, second replacing first.
 label eyecatch2(date1="", date2="", pause_time=3.0, r=0, ecbg="black"):
-    scene eyebg with Dissolve(1)
+    scene image(ecbg) with Dissolve(1)
     # call eyecatch_coatinout(pause_time) from eyecatch_generic
     if persistent.eyecatch_styling == "Moves":
         call eyecatch_random(date1, date2, pause_time, r) from eyecatch_genericM2
     else:
         call eyecatch_dissolves(date1, date2, pause_time, r) from eyecatch_genericD2
-    scene black with Dissolve(0.5)
+    scene image(ecbg) with Dissolve(0.5)
     return
 
     
