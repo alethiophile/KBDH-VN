@@ -1756,7 +1756,6 @@ label eyecatch_white(date="", pause_time=3.0, r=0, ecbg="black"):
     scene white with Dissolve(0.5)
     return    
     
-label test_Z0_eye:
     scene bg MorningSky
     show TownHillLeftMorning
     # show Kyon Sigh1 at right
@@ -1838,6 +1837,7 @@ label test_Z0_eye:
     # call the eyecatch routine, can supply nothing if nothing needs to be changed, specify the unique "from"
     call eyecatch_random("Febtober 3.14, 1592", "Febtober 2.71828, 1592") from test_Z0_p0005
     # activate the next scene with dissolve (or whatever else).
+label test_Z0_eye:
     scene bg MorningSky
     show TownHillLeftMorning
     show Haruhi Smile3 at left
