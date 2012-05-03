@@ -87,6 +87,7 @@ label prologue:
     show Haruhi Hap4 at center_left
     "{=loud}\"Yes!\"{/=loud} she cheered. \"It's been so {i}boring{/i} lately!\""
     nvl clear
+    show Kyon Ser2
     "\"This better not be your fault!\""
     show Kyon Sigh1 at right
     "He shook his head in irritation, then patted his left coat pocket. Then right, then both pants pockets, then the back of each hand."
