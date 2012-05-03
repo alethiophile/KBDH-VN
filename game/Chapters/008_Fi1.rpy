@@ -1,5 +1,5 @@
 #label Fi1:
-# label Test:
+label Test:
     stop music fadeout 3
     #queue music
     scene bg YukiRoomCenter with fade
@@ -8,7 +8,7 @@
     show Kanae Night Worry1 at right behind Mikuru with dissolve
     "Kyon woke on the floor again, peering up into the eyes of a familiar girl. This was practically becoming a habit, he decided, sitting up and glancing around Yuki's apartment. Mikuru was wearing pajamas, dazedly wobbling in a sitting position while Kanae patted her back. Yuki simply tracked his eyes with her typical level expression, though he thought he caught a hint of some concern in her gaze."
     nvl clear
-    show Kyon Smile6 at center
+    show Kyon Smile6 at center with dissolve
     "He raised a hand to his right eyebrow, but unsurprisingly the injury had been fixed, the stitches already gone. \"Thanks, Nagato,\" he told her earnestly."
     show Yuki Talk1 at left
     "\"You were under the influence of a consciousness-altering drug,\" she said, blinking. \"When you did not respond to phone calls I undertook emergency procedures and brought you here.\""
@@ -24,12 +24,12 @@
     "\"I am fine,\" she answered smoothly. He was starting to suspect that she would say that no matter what the truth was, so gave her a considering stare."
     show Kyon Puzzle1 at center
     "\"Are you sure?\""
-    show Yuki Sad Talk1 at left
+    show Yuki SadTalk1 at left
     "Her mouth opened, then closed, and her head lowered slightly, the faintest furrowing of her brows showing deeper consideration. \"...uncertain,\" she finally allowed."
     nvl clear
     show Kyon Neutral2 at center
     "\"Do you want to talk about it?\""
-    show Yuki Talk1 at left
+    show Yuki Side Blink at left
     "She blinked, straightening up and giving a minuscule nod. \"Error-correction session is prepared. A higher than usual amount of junk-data was created earlier today.\" She paused, her pupils dilating the tiniest amount before she blinked again, adding, \"Error is likely to occur within five minutes. The session will also take longer to resolve.\""
     nvl clear
     show Kyon Neutral5 at center
@@ -37,7 +37,7 @@
     show Yuki Side Blink at left
     "She blinked, and though she didn't physically react otherwise, he was certain some small amount of tension drained from her. \"Kanae-chan?\" he asked, looking at the other two girls. \"Asahina-san? Do you agree?\""
     nvl clear
-    show Kanae Night Happy 2 at right
+    show Kanae Night Happy2 at right
     "\"Absolutely!\" Kanae replied without hesitation."
     show Mikuru Cower Casual Sup1 at TenthRight
     "Mikuru blinked snapping out of her daze. \"Oh! Er, yes, of course!\" she agreed, looking a bit bewildered. \"Anything!\""
@@ -45,12 +45,13 @@
     "\"...understood,\" Nagato allowed, the tiniest, nearly invisible hints of a smile touching the corners of her mouth before reality exploded away yet again."
     nvl clear
     
-    scene almostblack 2 with fade
+    scene almostblack two with fade
     #scene 
     stop music fadeout 1
     #queue music
     "He woke again, head reeling with the 'extended' session. He didn't want to think how much longer in 'relative time' he'd spent in training with Nagato. If the average session was a 'short' single year...."
     "Blinking, he realized he was staring at the ceiling of another unfamiliar room ... though details began to trickle back into place. Last night, he'd taken a bath with Tsuruya, though the blood loss from his injury kept him from reacting embarrassingly ... except to get very light-headed. He'd tried his best not to stare at the girl, but she was totally unabashed, completely uncaring. True to her words, she had scrubbed his back in return without hesitation, and then carefully washed his hair so he wouldn't get any shampoo or soap in his wound."
+    nvl clear
     "After that, she'd led him to her room, where two futons had been set up side- by-side. He was wearing a light robe, one that matched Tsuruya's ... and evidently in the middle of the night at some point, she'd rolled over onto his futon and wrapped her arms around him. She slept with her hair done up in a pair of buns on either side of her head, probably so she wouldn't pull her hair when she shifted about."
     nvl clear
     "As he stared at her in bewilderment, his eyes tracking down to where her robe was left open by her slumbering movements— He quickly looked away, fighting down a surge of panic. Okay, light-headed from blood loss and following his future self's orders was one thing ... but this ... {i}this{/i} was the kind of thing that would cause Haruhi to level most of the city, and that was probably before closed space or her powers came into the picture."
@@ -138,7 +139,7 @@
     show Tsuruya Laugh1 at right
     "Tsuruya's eyes lit up and she dropped her schoolbag, flinging herself at him in a big hug. \"I'm so glad!\" she enthused, as he reflexively hugged her back. \"I'm not allowed to ask for helps for me, but I'll make sure your family is okay — even if I have to yell and scream, okies?\""
     nvl clear
-    show Kyon Smile6 at right
+    show Kyon Smile6 at left
     "He glanced around at the other occasional passers-by, thankfully no other students from their school. Patting her on the back as she released him, beaming a brighter smile than usual, he admitted, \"I wish I could say that you shouldn't do that ... but I don't want my family, or anyone else from the brigade to get caught up in this if we can help it, so ... thank you very much, Tsuruya-kun.\""
     nvl clear
     show Tsuruya Quest1 at right
@@ -157,8 +158,8 @@
     show Haruhi Crossed Ang2 at right with dissolve
     "\"You're late,\" Haruhi growled, her expression dark. \"I've been waiting for you for five minutes already!\""
     show Kyon Neutral5 at center with dissolve
-    "\"Sorry,\" he said, hanging his head. \"Um, something came up.\""
     show Tsuruya Hap5 Flip at left with dissolve
+    "\"Sorry,\" he said, hanging his head. \"Um, something came up.\""
     "\"Totally not Kyon-kun's fault!\" Tsuruya chirped from his side. \"I was keeping him with top secret research for our investigation!\""
     nvl clear
     show Haruhi Crossed Quest1 at right
@@ -181,7 +182,7 @@
     nvl clear
     show Kyon Neutral1 at center
     "\"Yeah, I was told I look just like my grandfather when he was my age,\" Kyon agreed.  {nw}"
-    show Kyon Worry3 at left
+    show Kyon Worry3 at center
     extend "He suddenly grimaced, muttering, \"I hope that doesn't mean anything.\""
     show Haruhi Sigh1 at right
     "Haruhi shook her head. \"Well, right now,\" she said, leading the way again, \"my primary concern is making sure that Kyon passes his test and stays in the brigade! So while I don't want to shut the investigation down, the test is more important.\""
@@ -191,12 +192,12 @@
     show Haruhi Unhap1 at right
     "\"Again?\" Haruhi asked, grimacing. \"Hmm.... The math test is after lunch, so I'd really like to make sure that he spends that time studying. I suppose after school should be alright, though I hope this doesn't keep up much longer.\""
     nvl clear
-    scene bg Lockers with fade
-    show Tsuruya Smile4 Flip at left
+    scene bg LockersLeft with fade
+    show Tsuruya Smile4 Flip at left with dissolve
     "\"Okies! I thinks we can finish our investigation by tomorrow ... maybe it might take a day or two longer?\" she pondered, gazing at the sky thoughtfully. \"Anyways, we're making really great progress! You'll be {i}mega{/i} happy with what we'll have for you when it's over, nyoro~!\" She blinked, turning her attention to Haruhi before they parted ways for their respective shoe lockers. \"Oopsie, I forgot to tell you where Kyon-kun and I met up for your receipt!\""
     nvl clear
-    show Kyon Neutral1 at right
-    show Haruhi Grin1 Flip at center
+    show Kyon Neutral1 at right with dissolve
+    show Haruhi Grin1 Flip at center with dissolve
     "\"Receipt?\" Kyon asked, glancing at Haruhi and smirking. \"Ah, don't worry, Tsuruya-kun, I'll tell her.\""
     show Tsuruya Hap6 Flip at left
     "\"Ah! Thankie, Kyon-kun!\" Tsuruya cheered, waving brightly before she twirled, her hair flaring behind her as she dashed away."
@@ -215,6 +216,7 @@
     show Kyon Smile2 at right
     extend "By the time she had changed her shoes and turned back, he had the almost-concealed smug expression of managing to pull one over on her. She pursed her lips, resisting the urge to smirk and give herself away."
     nvl clear
+    scene bg Hallway with fade
     
     "\"Anyway,\" she said, walking by his side on the way to the club room, \"what happened with Tsuruya-san yesterday? And when did she become 'Tsuruya-kun' to you?\""
     "\"Yesterday,\" he said, relaxing, one hand patting his left pocket. Well, that suggested her guess about where the box had gone was accurate. \"Or ... technically the day before. Part of the investigation; she said we should be more of equals, instead of sempai and kohai.\""

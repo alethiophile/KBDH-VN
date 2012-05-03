@@ -63,6 +63,8 @@ init:
     image bg StudentCouncil = "Backgrounds/StudentCouncilRoom.png"
     image bg Alley = "Backgrounds/Alley.png"
     image bg LivingRoom = "Backgrounds/LivingRoom.png"
+    image bg LockersLeft = "Backgrounds/LockersLeft.png"
+    image bg LockersRight = "Backgrounds/LockersRight.png"
     
     
     image white = "#ffffff"
@@ -273,6 +275,8 @@ init:
     image Haruhi Hap4 Flip = im.Flip("Sprites/Haruhi/HaruhiSideHappy4.png", horizontal=True)
     image Haruhi Quest1 Flip = im.Flip("Sprites/Haruhi/HaruhiSideQuestion1.png", horizontal=True)
     image Haruhi Quest2 Flip = im.Flip("Sprites/Haruhi/HaruhiSideQuestion2.png", horizontal=True)
+    image Haruhi Unhap1 Flip = im.Flip("Sprites/Haruhi/HaruhiSideUnhappy1.png", horizontal=True)
+    image Haruhi Unhap2 Flip = im.Flip("Sprites/Haruhi/HaruhiSideUnhappy2.png", horizontal=True)
     
     
     #Kyon Sprites
