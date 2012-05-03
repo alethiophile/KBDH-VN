@@ -1117,7 +1117,16 @@ init:
     image screds0 = Text("Big Damn VN Brigade presents:", text_align=0.5, size=30)
     image screds1 = Text("based on the work by\nBrian Randall", text_align=0.5, size=30)
     image screds2 = Text("in turn based on the\nSuzumiya Haruhi series by\nNagaru Tanigawa", text_align=0.5, size=30)
-
+    
+    #A quick next episode preview
+    image Popen = Text("Next time on Kyon: Big Damn Hero", text_align=0.5, size=30)
+    image P1 = "Backgrounds/P1.jpg"
+    image P2 = "Backgrounds/P2.jpg"
+    image P3 = "Backgrounds/P3.jpg"
+    image P4 = "Backgrounds/P4.jpg"
+    image P5 = "Backgrounds/P5.jpg"
+    image Pexit = Text("See you again!", text_align=0.5, size=30)
+    
     # "Image" showing the date
     # image eyeDate = DynamicDisplayable(show_date)
     image eyeDate 1 = DynamicDisplayable(show_date1)
@@ -1436,12 +1445,12 @@ label start:
 label credits:
     # Done with special character (and one Text() "image" to show both ways.)
     # Text() way supports transitions (and positioning) easily, but *needs* pauses. Character way is straight-up.
-    stop music
-    # play music "Music/ItsumoReprise.mp3"
+    #stop music
+    play music "Music/GodKnowsMetal(edit).ogg"
     scene black with fade
     # The hardpause calls are necessary because otherwise Ren'py wants to skip over all the pause statements on a single press of the key.
     # show Credits0 with dissolve
-    show creds 0 at truecenter with Dissolve(1.0)
+    show creds 0 at truecenter with Dissolve(3.0)
     pause
     $ renpy.pause(.1, hard=True)
     # show Credits1 with dissolve
@@ -1457,9 +1466,41 @@ label credits:
     hide creds with Dissolve(1.0)
     show BDVNlogo at truecenter with Dissolve(2.0)
     pause
+    stop music fadeout 2
+    jump Preview
+    
+    
+label Preview:
+    play music "Music/Bouken(Credits).mp3"
+    scene P1:
+        size (800,600)
+    show Popen at truecenter
+    with fade
+    #pause
+    $ renpy.pause(3.0, hard=True)
+    scene P2 with dissolve:
+        size (800,600)
+    #pause
+    $ renpy.pause(3.0, hard=True)
+    scene P3 with dissolve:
+        size (800,600)
+    #pause
+    $ renpy.pause(3.0, hard=True)
+    scene P4 with dissolve:
+        size (800,600)
+    #pause
+    $ renpy.pause(3.0, hard=True)
+    scene P5 with dissolve:
+        size (800,600)
+    $ renpy.pause(3.0, hard=True)    
+    scene black with fade
+    hide Popen
+    show Pexit at truecenter
+    with dissolve
     stop music
+    #pause
+    $ renpy.pause(3.0, hard=True)
     return
-
 
 
 
