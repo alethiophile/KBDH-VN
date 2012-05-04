@@ -535,14 +535,10 @@ label AO2:
     show Haruhi Smile1 at left
     "Haruhi shifted her shoulders, allowing a small bit of tension to fade. \"Um, thanks,\" she mumbled. \"I'll let you buy me a sanshoku bread.\""
     show Kyon Sigh2 at right
-    stop music fadeout 3
     "He nodded, deciding that silence would be the best course of action for the moment."
     nvl clear
     $ _window = False
-    # scene black with dissolve
-    # $ renpy.pause(.2, hard=True)
-    # show BDVNlogo at truecenter with Dissolve(2.0)
-    # pause 5
+    stop music fadeout 2
     
     # Calling a generic "eyecatch" routine, with dates unique "from"
     call eyecatch2("Monday, April 18","Sunday, April 17") from AO2_sc004
@@ -713,7 +709,7 @@ label AO2:
     show Haruhi Casual Pout1 at TenthLeft
     "\"Even if,\" she hesitated, forcing the words out, as uncomfortable and frustrating as it was, \"it means borrowing Kyon a little bit.\""
     nvl clear
-    
+    stop music fadeout 2
     
 
     call eyecatch("Sunday, April 17") from AO2_sc006
@@ -848,7 +844,9 @@ label AO2:
     "\"Well, I should be going to meet with my colleagues, and then I imagine I will have a very ... eventful meeting with my superiors,\" Koizumi announced, rising to his feet. \"I'll leave you two to discuss things as you see fit; don't worry about the bill. I'll settle it on my way out.\""
     show Kyon Casual Neutral3 at right
     show Mikuru Casual Neutral1 at center
+    $ _window = True
     hide Koizumi with moveoutleft
+    $ _window = False
     "Mikuru and Kyon nodded their thanks at the esper as he left, and finished their drinks in silence."
     nvl clear
     show Kyon Casual Neutral2 at right
@@ -856,34 +854,28 @@ label AO2:
     show Mikuru Casual Smile1 at center
     show MBlush1 Casual at center
     "Smiling shyly, she suggested, \"Ah ... let's go for a walk.\""
-    nvl clear                             
+    nvl clear
+    stop music fadeout 2
 
     call eyecatch2("Sunday, April 17","Monday, April 18") from AO2_sc007
 
     play music "Music/ItsumoNoFuukei.mp3"
     scene bg hallway
-    show Kyon Neutral3:
-        xalign 0.9 yalign 1.0    
-    show Haruhi Pout1:
-        xalign 0.2 yalign 1.0    
-    show Hblush: 
-        xalign 0.2 yalign 1.0    
+    show Kyon Neutral3 at right
+    show Haruhi Pout1 at TenthLeft
+    show Hblush at TenthLeft
     with fade    
     "After class had finished, Haruhi restrained her pace to a sedate walk, keeping in step with Kyon. \"I should say one thing,\" she said quietly. \"I mean, honestly.\""
-    show Kyon Neutral2:
-        xalign 0.9 yalign 1.0    
+    show Kyon Neutral2
     "\"Sure,\" he said, not even glancing towards her. \"What's that?\""
     nvl clear
-    show Haruhi Pout2:
-        xalign 0.2 yalign 1.0   
+    show Haruhi Pout2
     "\"Um.... I guess, all things considered, I want to say thanks for always sticking with me, even when I caused trouble. I just wish you had told me about it beforehand! I mean, if you\nhad—\""
     nvl clear
     scene bg stairwell with wiperight:
         size (800,600)
-    show Kyon Neutral3:
-        xalign 0.9 yalign 1.0   
-    show Haruhi Pout1:
-        xalign 0.4 yalign 1.0       
+    show Kyon Neutral3 at right
+    show Haruhi Pout1 at TenthLeft
     show Kanae Wince1 at right with moveinright
     play sound "SE/impact.mp3"
     pause(0.01)
@@ -1083,7 +1075,7 @@ label AO2:
     # if sprite does not change its position, no need to repeat said position over and over
     "\"Eep,\" the first year girl squeaked, her face pressed into Mikuru's chest. \"Aaugh! I'm in trouble! Someone help me!\""
     nvl clear
-    
+    stop music fadeout 3
     call eyecatch2("Monday, April 18","Sunday, April 17") from AO2_sc008
     
     play music "Music/MikurunoKokoro.mp3"
