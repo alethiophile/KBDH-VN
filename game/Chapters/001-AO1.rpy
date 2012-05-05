@@ -340,9 +340,13 @@ label AO1_1:
     # stop music fadeout 1
     play music "Music/Nagato2.mp3"
     "He calculated the ride to Nagato's place as a twenty minute trip, at one point."
-    scene bg TownStreetDay1 with wiperight
+    # scene bg TownStreetDay1 with wiperight
+    # pause 1
+    # scene bg TownStreetDay2 with wiperight
+    # pause 1
+    scene bg Library with wiperight
     pause 1
-    scene bg TownStreetDay2 with wiperight
+    scene bg TownStreetDay3 with wiperight
     pause 1
     scene bg YukiApartmentDay with wiperight:
     "When he reached the lobby, barely pausing long enough to lock up his bike, he wondered if he'd beaten his best time, but didn't feel the need to check."

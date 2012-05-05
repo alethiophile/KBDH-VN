@@ -1,4 +1,4 @@
-﻿# This is a proof-of-concept K:BDH VN. Main script file; contains init code and code declarations.
+﻿# K:BDH VN main script file; contains init code and code declarations.
 
 init:
     image almostblack one = "#0008"
@@ -28,6 +28,7 @@ init:
     image bg TownStreetNight2 = "Backgrounds/TownStreetNight2.png"
     image bg TownStreetDay1 = "Backgrounds/TownStreetDay1.jpg"
     image bg TownStreetDay2 = "Backgrounds/TownStreetDay2.jpg"
+    image bg TownStreetDay3 = "Backgrounds/TownStreetDay3.jpg"
     image bg Elevator = "Backgrounds/ElevatorInterior.png"
     image bg ClubHallLeft = "Backgrounds/ClubHallLeft.png"
     image bg ClubroomCenterDay = "Backgrounds/ClubroomCenterDay.png"
@@ -63,6 +64,7 @@ init:
     image bg StudentCouncil = "Backgrounds/StudentCouncilRoom.png"
     image bg Alley = "Backgrounds/Alley.png"
     image bg LivingRoom = "Backgrounds/LivingRoom.png"
+    image bg Library = "Backgrounds/Library.jpg"
     image bg LockersLeft = "Backgrounds/LockersLeft.png"
     image bg LockersRight = "Backgrounds/LockersRight.png"
     
@@ -1148,6 +1150,13 @@ init:
     image BDVNlogo = Text("{size=80}{b}{k=3}KYON:\n{/k}{/b}{/size}{size=40}{k=-1.0}Big Damn Hero{/k}{/size}", color="#3cf", outlines=[(1, "#000", 4, 3)])
     image SOSlogoborder = "Backgrounds/eyecatchlogos.png"
     image BDVNlogoBlack = Text("{size=80}{b}{k=3}KYON:\n{/k}{/b}{/size}{size=40}{k=-1.0}Big Damn Hero{/k}{/size}", color="#000")
+    image WaitForInputBlinking:
+        Text("{size=40}►  \n{/size}", color="#fff", outlines=[(1, "#000", 4, 3)])
+        0.8
+        Text("{size=40}\n{/size}", color="#fff", outlines=[(1, "#000", 4, 3)])
+        0.8
+        repeat
+
 
     # Title cards, i.e chapter-opening quotes
     image title 000 = Text("{space=500}{b}{size=+1}Thursday, June 2, 2011{/size}{/b}\n\n\n\n\"Chapter Two: Don't Just SAY You Have a Bad Feeling, DO Something About It!\"\n\n\"...but I digress. When you get that feeling, you know the one, in the back of your head? The one that makes you think something is off about the situation? It may be right. Granted, you may also be tumbling headlong into a fit of paranoia that will end terribly for you and everyone you love. But what if you're NOT? Remember, if you're aware of things, you know most people think you're crazy anyway. Is it going to hurt that much more to overreact rather than just label something a false alarm?\"\n\n\"Practical Heroism and You: Awareness\" — Tadamichi Kyousuke", font="DejaVuSerif-Italic.ttf", size=18, line_leading=3, justify=True, xmaximum=750)
@@ -1486,12 +1495,16 @@ label credits_roll:
     play music "Music/GodKnowsMetal(edit).ogg"
     scene black with dissolve
     show credroll at Position(xalign=0.5, yanchor=0.0, ypos=1.0) with None
-    show credroll at Position(xalign=0.5, yanchor=1.0, ypos=1.0) with MoveTransition(14)
+    show credroll at Position(xalign=0.5, yanchor=1.0, ypos=1.0) with MoveTransition(21)
     show BDVNlogo at Position(xalign=0.5, yanchor=0.5, ypos=1.5) with None
     show BDVNlogo:
         linear 5 ypos 0.5
     show credroll:
         linear 5 ypos 0.0
+    show WaitForInputBlinking:
+        alpha 0.0 right
+        linear 5 pass
+        alpha 1.0
     pause
     stop music fadeout 1
     hide BDVNlogo with coatout
