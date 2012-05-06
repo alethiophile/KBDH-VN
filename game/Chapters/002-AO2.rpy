@@ -719,7 +719,7 @@ label AO2:
     show Mikuru Casual Neutral1 at center
     show Kyon Casual Ser1 at right  
     show Koizumi Shrug Casual Sigh1:
-        xalign -1.0 yalign 1.0    
+        xalign -1.15 yalign 1.0    
     with fade    
     "\"It is related to what Fearless Leader is trying to avoid admitting to himself,\" Koizumi said, glancing at Mikuru over his drink. "
     show Koizumi Think Casual Grin1 at left

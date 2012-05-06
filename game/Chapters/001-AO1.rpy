@@ -575,7 +575,7 @@ label AO1_1:
     scene black with dissolve
     "He gave a solemn nod, and she internalized a sigh."
     "What, was Kyon just acting?"
-    "Was this is unsubtle way of saying he wanted to be a star in the next movie, not just a camera man?"
+    "Was this his unsubtle way of saying he wanted to be a star in the next movie, not just a camera man?"
     "She had to admit, his emotion seemed genuine, but why couldn't he just have asked her? "
     "There was an awful lot he could have just asked for, and never bothered to!"
     "That thought was drop-kicked to fly off next to the last banished thought."
