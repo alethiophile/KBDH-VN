@@ -778,7 +778,7 @@ label AO1_1:
     $ _window = False
     scene black with dissolve
     stop music fadeout 5
-    "{=loud}\"I {i}knew{/i} I'd find you again!\"{=loud}"
+    "{=loud}\"I {i}knew{/i} I'd find you again!\"{/=loud}"
     nvl clear
     
     # Calling a generic "eyecatch" routine
@@ -1104,7 +1104,7 @@ label AO1_2:
     "\"I never knew you could do all those things! I mean, I suspected, since you were the best member of the Brigade next to myself and everything, but that was {i}amazing!{/i}\""
     nvl clear
     show Haruhi Smile3 at left
-    play sound "Pageflip3.mp3"
+    play sound "SE/Pageflip3.mp3"
     "Her smile not fading in the slightest, she handed him an envelope, the seal already broken."
     show Haruhi Hap2 at left
     "\"You said I should give this to you,\" she added. "

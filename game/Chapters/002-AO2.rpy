@@ -146,7 +146,7 @@ label AO2:
     show Kunikida Neutral2 at center
     "\"Aha ... well ... I'll leave the two of you to yourselves, then,\" {nw}"
     $ _window = True
-    show Kunikida at right with move
+    show Kunikida Neutral2 at right with move
     hide Kunikida with moveoutright
     extend "Kunikida said, bowing slightly as he drew away."
     nvl clear
@@ -745,7 +745,7 @@ label AO2:
     show Mikuru Casual Sigh1 at center
     show MBlush1 Casual at center
     "\"W...well, that's not too surprising,\" Mikuru said. She had trouble looking Kyon in the eyes and her face reddened, but she asked,"
-    show Mikuru Casual Think Quest1 at center
+    show Mikuru Think Casual Quest1 at center
     hide MBlush1
     "\"But, Kyon-kun didn't notice when ... Suzumiya-san jumped on him in the clubroom?\""
     nvl clear
@@ -1011,7 +1011,7 @@ label AO2:
     show Kyon Neutral2 at right
     "\"I know you mentioned you were aware of her emotional state at one point, but I never learned the specifics.\""
     nvl clear
-    show Koizumi Smile1 at left
+    show Koizumi Think Smile1 at left
     "\"Only particularly intense emotions are felt,\" he answered, staring at the board and placing his first stone thoughtfully. \"Even then, it's frequently vague ... it doesn't give me any clue as to where she is, for example, just whatever intense emotion is there.\""
     show Koizumi Shrug Sigh1:
         xalign -1.0 yalign 1.0    

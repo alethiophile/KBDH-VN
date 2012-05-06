@@ -253,10 +253,10 @@ label SF3:
     show Kyon Puzzle1 at right
     "\"You want to be in charge?\" he asked, leaning his face on one hand. \"You are the brigade leader, you know.\""
     nvl clear
-    show Haruhi Tsun2 at TenthLeft
+    show Haruhi Crossed Tsun2 at TenthLeft
     show Kyon Worry1 at right
     "\"Yeah, but....\" Shifting her shoulders, she said, \"I'm not happy being a tsundere character. Just like you said, we're real people ... right?\""
-    show Haruhi Tsun1 at TenthLeft
+    show Haruhi Crossed Tsun1 at TenthLeft
     show Kyon Ser3 at right
     "He nodded, frowning slightly. \"I did say that, but I don't know what 'tsundere' means.\""
     show Kyon Ser1 at right

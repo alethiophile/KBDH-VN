@@ -691,7 +691,7 @@ label SF1:
     "\"The Integrated Data Sentience Entity is nearly as old as the concept of information. Tools for the purpose of theoretical interactions have been prepared in the past. However, as the entity is a non-physical existence, that data exists at this point unfabricated; millions of years have passed since the last known creation of any such items.\""
     nvl clear
     show Kyon Neutral1 at left_RightScreen
-    show Yuki Neutral1 at right_RightScreen
+    show Yuki Right Neutral1 at right_RightScreen
     "\"Millions of years, huh?\" Kyon mused, rubbing his chin. \"Like, as long ago as the cave cricket?\""
     nvl clear
     show Kyon Neutral3 at left_RightScreen
