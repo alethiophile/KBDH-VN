@@ -972,5 +972,7 @@ label test2:
     show Tsuruya Smile3 at center_RightScreen
     extend "thudding noise and an eerie silence. \"Lunch with the brigade is exciting,\" Tsuruya decided, while Kanae sniffled meekly and blew her nose on her handkerchief."
     nvl clear
+    
+    #jump HAB1
     stop music fadeout 2
     return

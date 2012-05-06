@@ -1,8 +1,22 @@
 #Chapter 6, Heroic Antics Begin Arc
 
-#label HAB_1:
-    #"After the lunch chime, Kanae had decided that she would return to the club room; if she were lucky, Sempai would be there! And if she weren't lucky, well, Sempai's friends were her friends, too, so that would be fine."
-    #"But she had only made it a few steps down the hallway before a taller third year boy approached her, tape across his nose and a bruise marring his face deeply around one eye. He raised a hand in greeting before glancing around, then asked, \"Are you Michikyuu Kanae-san?\""
+label HAB1:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 006 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+    scene bg hallway with fade
+    play music "Music/suspicion.ogg"
+    show Kanae Neutral1 at right
+    "After the lunch chime, Kanae had decided that she would return to the club room; if she were lucky, Sempai would be there! And if she weren't lucky, well, Sempai's friends were her friends, too, so that would be fine."
+    #show Ryuugu at left
+    "But she had only made it a few steps down the hallway before a taller third year boy approached her, tape across his nose and a bruise marring his face deeply around one eye. He raised a hand in greeting before glancing around, then asked, \"Are you Michikyuu Kanae-san?\""
     #"\"Um,\" she managed, a bit unnerved by the delinquent-looking student before her. \"Yes? Are you looking for the SOS Brigade, maybe? I'm just a new member, so I don't know much yet.\""
     #"\"No, no,\" he said, glancing around nervously, then breaking into a smile that she really didn't trust; the kind of expression she'd seen on the rude boy who chased her across dimensions. For a panicked instance, she considered sliding away ... but she couldn't do that! Not with Sempai here, and for the first time in hundreds of worlds, someone who could help her learn how to slide better! What if she couldn't find her way back? It was still very hard, even with the practice that Yuki helped her get...."
     #"\"Hey,\" he said suddenly, \"you know ... Kyon, right?\""
@@ -34,7 +48,6 @@
     #"This time, her sempai was more brutal, adding the boy's sudden momentum to a fierce kidney jab, a leg sweep, then a swift kick to the hand holding the knife, sending it clattering across the hallway through her ruined lunch, the uneasy silence of the surrounding students punctuated with a sickening crunch. The other boy howled, clutching his injured hand in agony and rolling around on his back, tears streaming from his eyes."
     #"\"You,\" Kyon declared, using a more polite form and pointing at the nearest watching boy. \"See that he gets to the nurse's office.\" He held one hand out to her, adding, \"Let's get out of here, Kanae-chan.\""
     #"She nervously nodded, her heart settling a tiny bit when she took his hand and he led her down the hallway."
-    #"* * *"
     
 #label Test:
     stop music fadeout 1

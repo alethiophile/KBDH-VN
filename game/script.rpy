@@ -68,7 +68,6 @@ init:
     image bg LockersLeft = "Backgrounds/LockersLeft.png"
     image bg LockersRight = "Backgrounds/LockersRight.png"
     
-    
     image white = "#ffffff"
     image black = "#000000"
     image transpwhite = "#ffffffcc"
@@ -280,7 +279,6 @@ init:
     image Haruhi Unhap1 Flip = im.Flip("Sprites/Haruhi/HaruhiSideUnhappy1.png", horizontal=True)
     image Haruhi Unhap2 Flip = im.Flip("Sprites/Haruhi/HaruhiSideUnhappy2.png", horizontal=True)
     
-    
     #Kyon Sprites
     image Kyon Ser1 = "Sprites/Kyon/KyonSerious1.png"
     image Kyon Ser2 = "Sprites/Kyon/KyonSerious2.png"
@@ -402,7 +400,6 @@ init:
     image Kyon Worry2 Flip = im.Flip("Sprites/Kyon/KyonWorry2.png", horizontal=True)
     image Kyon Worry3 Flip = im.Flip("Sprites/Kyon/KyonWorry3.png", horizontal=True)
     
-    
     #Asakura Sprites
     image Stabby = "Sprites/Asakura/AsakuraStabTest.png"
     
@@ -428,7 +425,6 @@ init:
         5.0
         repeat
         
-    
     #Yuki Sprites
     image Yuki EyesClosed1 = "Sprites/Yuki/YukiSideEyesClosed1.png"
     image Yuki EyesClosed1 Bright = im.MatrixColor("Sprites/Yuki/YukiSideEyesClosed1.png",
@@ -464,7 +460,6 @@ init:
     image Yuki Chair2 = "Sprites/Yuki/YukiChair2.png"
     image Yuki Chair3 = "Sprites/Yuki/YukiChair3.png"
     image Yuki Chair4 = "Sprites/Yuki/YukiChair4.png"
-    
     
     image Yuki Right Neutral1 = "Sprites/Yuki/YukiRightNeutral1.png"
     image Yuki Right Neutral2 = "Sprites/Yuki/YukiRightNeutral2.png"
@@ -622,7 +617,6 @@ init:
     image Mikuru Cower Face Worry1 = "Sprites/Mikuru/MikuruCowerFaceWorry1.png"
     image Mikuru Cower Sigh1 = "Sprites/Mikuru/MikuruCowerSigh1.png"
     image MBlush Cower Face = "Sprites/Mikuru/MBlushFace.png"
-
     
     image Mikuru Cower Towel Wince1 = "Sprites/Mikuru/MikuruCowerTowelWince1.png"
     image Mikuru Cower Towel Nervous1 = "Sprites/Mikuru/MikuruCowerTowelNervous1.png"
@@ -716,6 +710,7 @@ init:
     image Tsuruya Wave Smile1 = "Sprites/Tsuruya/TsuruyaWaveSmile1.png"
     image Tsuruya Wave Smile2 = "Sprites/Tsuruya/TsuruyaWaveSmile2.png"
     
+    #Tsuruya image flips
     image Tsuruya Grin1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaGrin1.png", horizontal=True)
     image Tsuruya Grin2 Flip = im.Flip("Sprites/Tsuruya/TsuruyaGrin2.png", horizontal=True)
     image Tsuruya Grin3 Flip = im.Flip("Sprites/Tsuruya/TsuruyaGrin3.png", horizontal=True)
@@ -741,10 +736,7 @@ init:
     image Tsuruya Ang2 Flip = im.Flip("Sprites/Tsuruya/TsuruyaAngry2.png", horizontal=True)
     image Tsuruya Ang3 Flip = im.Flip("Sprites/Tsuruya/TsuruyaAngry3.png", horizontal=True)
     image Tsuruya Ang4 Flip = im.Flip("Sprites/Tsuruya/TsuruyaAngry4.png", horizontal=True)
-    
-    
-    
-    
+        
     #Kanae Sprites
     image Kanae Hap1 = "Sprites/Kanae/KanaeHappy1.png"
     image Kanae Hap2 = "Sprites/Kanae/KanaeHappy2.png"
@@ -803,7 +795,6 @@ init:
     
     image KABlush = "Sprites/Kanae/KanaeBlush.png"
     image KABlush Face = "Sprites/Kanae/KanaeFaceBlush.png"
-    
     
     #Koizumi Sprites
     image Koizumi Shrug Sigh1 = "Sprites/Koizumi/KoizumiShrugSigh1.png"
@@ -877,8 +868,6 @@ init:
     image Kunikida Ser1 = "Sprites/Kunikida/KunikidaSerious1.png"
     image Kunikida Ser2 = "Sprites/Kunikida/KunikidaSerious2.png"
 
-
-
     #Nonoko Sprites
     image Nonoko Smile1 = "Sprites/Nonoko/NonokoSmile1.png"
     image Nonoko Sup1 = "Sprites/Nonoko/NonokoSurprised1.png"
@@ -902,7 +891,6 @@ init:
     image Mori Smile2= "Sprites/Mori/MoriSmile2.png"
     image Mori Nervous1= "Sprites/Mori/MoriNervous1.png"
     image Mori Hap1 = "Sprites/Mori/MoriHappy1.png"
-    
     
     image Mori Neutral1 Flip = im.Flip("Sprites/Mori/MoriNeutral1.png", horizontal=True)
     image Mori Neutral2 Flip = im.Flip("Sprites/Mori/MoriNeutral2.png", horizontal=True)
@@ -962,7 +950,6 @@ init:
         im.matrix.saturation(.15) * im.matrix.tint(.80, .80, 1.0) * im.matrix.brightness(-.35))
     image Kyon CS Ser3 = im.MatrixColor("Sprites/Kyon/KyonSerious3.png",
         im.matrix.saturation(.15) * im.matrix.tint(.80, .80, 1.0) * im.matrix.brightness(-.35))
-    
     image Kyon CS Sigh2 = im.MatrixColor("Sprites/Kyon/KyonSigh2.png",
         im.matrix.saturation(.15) * im.matrix.tint(.80, .80, 1.0) * im.matrix.brightness(-.35))
     image Kyon CS Sigh3 = im.MatrixColor("Sprites/Kyon/KyonSigh3.png",
@@ -1045,8 +1032,6 @@ init:
         im.matrix.saturation(.15) * im.matrix.tint(.80, .80, 1.0) * im.matrix.brightness(-.35))
     image Haruhi CS Hap4 = im.MatrixColor("Sprites/Haruhi/HaruhiSideHappy4.png",
         im.matrix.saturation(.15) * im.matrix.tint(.80, .80, 1.0) * im.matrix.brightness(-.35))
-    
-    
     image Haruhi CS Eyeroll1 = im.MatrixColor("Sprites/Haruhi/HaruhiSideEyeroll1.png",
         im.matrix.saturation(.15) * im.matrix.tint(.80, .80, 1.0) * im.matrix.brightness(-.35))
     image Haruhi CS Eyeroll2 = im.MatrixColor("Sprites/Haruhi/HaruhiSideEyeroll2.png",
@@ -1087,7 +1072,6 @@ init:
         im.matrix.saturation(.15) * im.matrix.tint(.80, .80, 1.0) * im.matrix.brightness(-.35))
     image Haruhi CS Neutral2 = im.MatrixColor("Sprites/Haruhi/HaruhiSideNeutral2.png",    
         im.matrix.saturation(.15) * im.matrix.tint(.80, .80, 1.0) * im.matrix.brightness(-.35))
-#     
     
     # "Stakes" for stake rain in Asakura capture scene.
     image stake1:
@@ -1157,7 +1141,6 @@ init:
         0.8
         repeat
 
-
     # Title cards, i.e chapter-opening quotes
     image title 000 = Text("{space=500}{b}{size=+1}Thursday, June 2, 2011{/size}{/b}\n\n\n\n\"Chapter Two: Don't Just SAY You Have a Bad Feeling, DO Something About It!\"\n\n\"...but I digress. When you get that feeling, you know the one, in the back of your head? The one that makes you think something is off about the situation? It may be right. Granted, you may also be tumbling headlong into a fit of paranoia that will end terribly for you and everyone you love. But what if you're NOT? Remember, if you're aware of things, you know most people think you're crazy anyway. Is it going to hurt that much more to overreact rather than just label something a false alarm?\"\n\n\"Practical Heroism and You: Awareness\" — Tadamichi Kyousuke", font="DejaVuSerif-Italic.ttf", size=18, line_leading=3, justify=True, xmaximum=750)
     image title 001 = Text("{space=500}{b}{size=+1}Sunday, April 17, 2011{/size}{/b}\n\n\n\n\"Chapter One: The Truth is the Greatest Weapon\"\n\n\"...of dozens of issues with maintaining a 'masquerade' scenario. Generally, unless it's absolutely required, it's a bad idea. There will be fallout. If it must be done, the truth is still going to be the ultimate weapon — plan accordingly, and make sure it's a weapon that will serve you, and not any enemies. Barring that, make fast friends with someone who can BS better than you.\"\n\n\"Cover\" — Author Unknown", font="DejaVuSerif-Italic.ttf", size=18, line_leading=3, justify=True, xmaximum=750)
@@ -1165,7 +1148,8 @@ init:
     image title 003 = Text("{space=500}{b}{size=+1}Monday, April 18, 2011{/size}{/b}\n\n\n\n\"Chapter One: Expect the Unexpected\"\n\n\"...aside from them, however, there aren't many who can genuinely expect all things and calculate accordingly. So in a practical situations what it really means is: don't be so expectant of something happening, that any other result is a surprise. That's probably the best you can do, anyway.\"\n\n\"Roll With the Punches\" — Tadamichi Kyousuke", font="DejaVuSerif-Italic.ttf", size=18, line_leading=3, justify=True, xmaximum=750)
     image title 004 = Text("{space=500}{b}{size=+1}Tuesday, April 19, 2011{/size}{/b}\n\n\n\n\"Chapter Twelve: As in Training, As in Life\"\n\n\"...but just as in the training world, you will inevitably take some blows.\nThat's the purpose of practice, isn't it? Perfection may be a myth, but success is not. So train to be good enough, and most importantly, when you get hit, learn to take it.\"\n\n\"Roll With the Punches\" — Tadamichi Kyousuke", font="DejaVuSerif-Italic.ttf", size=18, line_leading=3, justify=True, xmaximum=750)
     image title 005 = Text("{space=480}{b}{size=+1}Thursday, April 21, 2011{/size}{/b}\n\n\n\n\"Chapter Seven: Practical Considerations for the Apocalypse\"\n\n\"...if that happens, and there's nothing else to be done, the next question is going to be survival. There are things more important than food, water, or even reasonable shelter. There's no reason to try and survive alone, unless you're just a die-hard, and even then you're still probably clinging to hope. So make sure you're not alone, or else there's not much reason to keep on going.\"\n\n\"Clearing the Event Horizon: How Close is Too Close?\" — Tadamichi Kyousuke", font="DejaVuSerif-Italic.ttf", size=18, line_leading=3, justify=True, xmaximum=750)
-
+    image title 006 = Text("{space=480}{b}{size=+1}Thursday, April 21, 2011{/size}{/b}\n\n\n\n\"Chapter One: Crossing the Threshold\"\n\n\"...eventually, this means that you can reach a point where words no longer suffice. Civility is all well and good, but sometimes the simple message of overpowering force is the one that the situation requires. Use your judgment on when this moment is, but keep in mind that I call it a last resort for a reason; once you initiate violence, you're committed until victory or failure.\"\n\n\"The Last Resort: Violence and You\" — Tadamichi Kyousuke", font="DejaVuSerif-Italic.ttf", size=18, line_leading=3, justify=True, xmaximum=750)
+    image title 007 = Text("{space=480}{b}{size=+1}Thursday, April 21, 2011{/size}{/b}\n\n\n\n\"Chapter Two: Excuses\"\n\n\"If you can't come up with a legitimate excuse, you have two fall-back options. First, you can take refuge in audacity and say something so outlandish you're dismissed (bonus points if you tell the truth with a straight face). And if that doesn't work, place the burden of justifying your whereabouts on someone else. If neither of these options pan out, run far, run fast.\"\n\n\"Cover\" — Author Unknown", font="DejaVuSerif-Italic.ttf", size=18, line_leading=3, justify=True, xmaximum=750)
 init python:
     config.layers.insert(1, 'upper')
     
@@ -1299,7 +1283,6 @@ init python:
         config.keymap['toggle_music'].append('m')
         config.keymap['toggle_music'].append('M')
     
-        
 transform center_left:
     xalign 0.1 yalign 1.0
 
@@ -1401,8 +1384,6 @@ transform pretr1_kanaepos1:
 transform pretr1_kanaepos2:
     xanchor 0.5 xpos 0.37 yanchor 1.0 ypos 1.1
     
-    
-    
 init -1 python:
     # def show_date(st, at):
         # return Text("[date]", font="DejaVuSerif-Italic.ttf", size=25, color="#3cf"), None
@@ -1424,6 +1405,7 @@ init -1 python:
         ("Straightforward Flashback \nand Exposition Arc - Chapter Three:\n\"It Goes To Eleven\"", "SF1"),
         ("Straightforward Flashback \nand Exposition Arc - Chapter Four:\n\"Epileptic Plot Tree\"", "SF2"),
         ("Straightforward Flashback \nand Exposition Arc - Chapter Five: \n\"The Requisite Haruhi-and-Kyon \nin Closed Space Together Again Part \n(You Know The One)\"", "SF3"),
+        # ("Heroic Antics Begin Arc - Chapter Six: \n\"Finally, Some Action\"", "HAB1"),
         ("Label a scene you're working on test and use this", "Test"),
         # ("-----", "backtomain"),
                
@@ -1462,8 +1444,6 @@ label start:
     hide BDVNlogo with coatout
     jump prologue
 
-    
-    
 label credits:
     # Done with special character (and one Text() "image" to show both ways.)
     # Text() way supports transitions (and positioning) easily, but *needs* pauses. Character way is straight-up.
@@ -1510,7 +1490,6 @@ label credits_roll:
     hide BDVNlogo with coatout
     jump Preview2
     
-    
 label Preview:
     play music "Music/Bouken(Credits).mp3"
     scene P1:
@@ -1542,7 +1521,6 @@ label Preview:
     #pause
     $ renpy.pause(3.0, hard=True)
     return
-    
     
 label Preview2:
     play music "Music/Bouken(Credits).mp3"
@@ -1589,8 +1567,6 @@ label Preview2:
     $ renpy.pause(3.0, hard=True)
     return
 
-
-
 # White eyecatch routine with single date to show.
 label white_eyecatch_single(date="", pause_time=3.0, r=0, ecbg="black"):
     #scene eyebg with Dissolve(1)
@@ -1635,7 +1611,6 @@ label eyecatch2(date1="", date2="", pause_time=3.0, r=0, ecbg="black"):
         call eyecatch_dissolves(date1, date2, pause_time, r) from eyecatch_genericD2
     scene image(ecbg) with Dissolve(0.5)
     return
-
     
 label eyecatch_simple(date1="", date2="", pause_time=2.0):
     # Simple version
@@ -1921,7 +1896,6 @@ label test_Z0_eye:
     call eyecatch(pause_time=3, r=5) from test_Z0_p0007
     return
 
-
 label test_Z0_titles:
     scene black
     show title 000 at card_pos with slowfadein
@@ -1935,4 +1909,8 @@ label test_Z0_titles:
     show title 004 at card_pos with slowfadein
     pause
     show title 005 at card_pos with slowfadein
+    pause
+    show title 006 at card_pos with slowfadein
+    pause
+    show title 007 at card_pos with slowfadein
     pause
