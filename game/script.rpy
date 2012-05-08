@@ -1400,20 +1400,22 @@ init -1 python:
         persistent.eyecatch_styling = "Moves"
     
     chapters = [
-        ("In Media Res Prologue:\n\"Exactly What it Says on the Tin\"", "prologue"),
-        ("Obligatory Anachronic Order \nExplanation Arc - Chapter One:\n\"Scene Twelve, the Ninth Big Fight\"", "AO1_1"),
-        ("Obligatory Anachronic Order \nExplanation Arc - Chapter Two:\n\"Clear as Mud\"", "AO2"),
-        ("Straightforward Flashback \nand Exposition Arc - Chapter Three:\n\"It Goes To Eleven\"", "SF1"),
-        ("Straightforward Flashback \nand Exposition Arc - Chapter Four:\n\"Epileptic Plot Tree\"", "SF2"),
-        ("Straightforward Flashback \nand Exposition Arc - Chapter Five: \n\"The Requisite Haruhi-and-Kyon \nin Closed Space Together Again Part \n(You Know The One)\"", "SF3"),
+        ("In Media Res Prologue: Exactly What it Says on the Tin", "prologue", True),
+        ("Obligatory Anachronic Order Explanation Arc", "", False),
+        ("Chapter One: Scene Twelve, the Ninth Big Fight", "AO1_1", True),
+        ("Chapter Two: Clear as Mud", "AO2", True),
+        ("Straightforward Flashback and Exposition Arc", "", False),
+        ("Chapter Three: It Goes To Eleven", "SF1", True),
+        ("Chapter Four: Epileptic Plot Tree", "SF2", True),
+        ("Chapter Five: The Requisite Haruhi-and-Kyon in Closed Space Together Again Part (You Know The One)", "SF3", True),
         # ("Heroic Antics Begin Arc - Chapter Six: \n\"Finally, Some Action\"", "HAB1"),
-        ("Label a scene you're working on test and use this", "Test"),
+        ("Label a scene you're working on test and use this", "Test", True),
         # ("-----", "backtomain"),
                
-        ("Credits", "credits"),
-        ("Credits (rolling)", "credits_roll"),
-        ("Another testbed, Eyecatchies", "test_Z0_eye"),
-        ("Another testbed, Title cards", "test_Z0_titles"),]
+        ("Credits", "credits", True),
+        ("Credits (rolling)", "credits_roll", True),
+        ("Another testbed, Eyecatchies", "test_Z0_eye", True),
+        ("Another testbed, Title cards", "test_Z0_titles", True),]
         
     ecbg = "black"
 

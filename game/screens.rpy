@@ -195,16 +195,21 @@ screen Chapters:
                     mousewheel True
                     
                     vbox:
-                        for name, label in chapters:
-                            button:
-                                action Start(label)
-                                #left_padding 20
-                                xfill True
-                                size_group "chb"
+                        for name, label, buttonp in chapters:
+                            if buttonp:
+                                button:
+                                    action Start(label)
+                                    #left_padding 20
+                                    xfill True
+                                    size_group "chb"
                                 
+                                    hbox:
+                                        xalign 0.5
+                                        text name style "button_text" size 20 text_align 0.5 #min_width 420
+                            else:
                                 hbox:
                                     xalign 0.5
-                                    text name style "button_text" size 20 text_align 0.5 #min_width 420
+                                    text name style "button_text" size 20 text_align 0.5
 
                 bar adjustment adj style "vscrollbar" 
                 
