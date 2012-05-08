@@ -386,7 +386,7 @@ label SF3:
     # call eyecatch("Thursday, April 21") from SF3_sc001
     jump credits
     
-    call eyecatch_white("", 8, "white") from SF3_sc001
+    call eyecatch_fancy("", "", 8, "white") from SF3_sc001
     
     stop music
     # To uncomment for firat release
@@ -427,7 +427,7 @@ label SF3:
     nvl clear
     stop music fadeout 3
     
-    call eyecatch("Thursday, April 21") from SF3_sc002
+    call eyecatch_fancy("Thursday, April 21") from SF3_sc002
     
 label test2:
     scene almostblack two with fade
@@ -464,7 +464,7 @@ label test2:
     "She fought to keep her face from coloring, and quickly jogged past him so he couldn't see her expression. \"Wouldn't {i}you{/i} like to know,\" she said with a chuckle. \"Come on, let's study in the club room.\""   
     nvl clear
     
-    call eyecatch("Thursday, April 21") from SF3_sc003
+    call eyecatch_fancy("Thursday, April 21") from SF3_sc003
     
     stop music fadeout 1
     scene bg ClubroomCenterDay with fade
@@ -592,7 +592,7 @@ label test2:
     nvl clear
     stop music fadeout 3
     
-    call eyecatch("Thursday, April 21") from SF3_sc004
+    call eyecatch_fancy("Thursday, April 21") from SF3_sc004
     
     scene bg classroom with fade:
        size (800,600)
@@ -664,7 +664,7 @@ label test2:
     nvl clear
     stop music fadeout 3
     
-    call eyecatch("Thursday, April 21") from SF3_sc005
+    call eyecatch_fancy("Thursday, April 21") from SF3_sc005
     
     queue music "Music/Itsumo(Movie).mp3"
     scene bg hallway with fade

@@ -319,7 +319,7 @@ label SF1:
     nvl clear
     stop music fadeout 3
     
-    call eyecatch("Monday, April 18") from SF1_sc001
+    call eyecatch_fancy("Monday, April 18") from SF1_sc001
     
     play music "Music/HaruhiNoOmoi.mp3"    
     scene bg SchoolTable
@@ -436,7 +436,7 @@ label SF1:
     nvl clear
     stop music fadeout 3
     
-    call eyecatch2("Monday, April 18","December 200X") from SF1_sc002
+    call eyecatch_fancy("Monday, April 18","December 200X") from SF1_sc002
     
     scene black
     play music "Music/Kankyou.mp3"
@@ -452,7 +452,7 @@ label SF1:
     nvl clear
     stop music fadeout 3
     
-    call eyecatch2("December 200X","Monday, April 18") from SF1_sc003
+    call eyecatch_fancy("December 200X","Monday, April 18") from SF1_sc003
     
     scene bg ClubroomFullDay:
         xpos 0 ypos 0
@@ -904,7 +904,7 @@ label SF1:
     nvl clear
     stop music fadeout 3
     
-    call eyecatch("Monday, April 18") from SF1_sc004
+    call eyecatch_fancy("Monday, April 18") from SF1_sc004
 
     play music "Music/moon.ogg"    
     scene bg ClubroomFullDay:
@@ -1005,7 +1005,7 @@ label SF1:
     scene black with dissolve
     stop music fadeout 2
     
-    call eyecatch("Monday, April 18") from SF1_sc005
+    call eyecatch_fancy("Monday, April 18") from SF1_sc005
 
     play music "Music/MysteryTime.mp3"
     scene bg SchoolEntranceLeft with fade
@@ -1095,7 +1095,7 @@ label SF1:
     stop sfxloop
     stop music fadeout 3
     
-    call eyecatch("Monday, April 18") from SF1_sc006
+    call eyecatch_fancy("Monday, April 18") from SF1_sc006
     
 
     play music "Music/Nichijou.mp3"

@@ -36,7 +36,7 @@ label SF2:
     nvl clear
     stop music fadeout 3
     
-    call eyecatch("Tuesday, April 19") from SF2_sc001
+    call eyecatch_fancy("Tuesday, April 19") from SF2_sc001
     
     play music "Music/ItsumoNoFuukei.mp3"
     scene bg classroom with fade:
@@ -396,7 +396,7 @@ label SF2:
     nvl clear
     stop music fadeout 3
         
-    call eyecatch("Tuesday, April 19") from SF2_sc002
+    call eyecatch_fancy("Tuesday, April 19") from SF2_sc002
 
     play music "Music/worldendsolo.ogg"
     scene bg classroom:
@@ -503,7 +503,7 @@ label SF2:
     nvl clear
     stop music fadeout 3
 
-    call eyecatch("Tuesday, April 19") from SF2_sc003
+    call eyecatch_fancy("Tuesday, April 19") from SF2_sc003
 
     play music "Music/HizundaKokoro.mp3"
     scene bg ClubroomBack
@@ -677,7 +677,7 @@ label SF2:
     nvl clear
     stop music fadeout 3
     
-    call eyecatch("Tuesday, April 19") from SF2_sc004
+    call eyecatch_fancy("Tuesday, April 19") from SF2_sc004
 
     play music "Music/KyoufunohajimariStart.mp3"    
     scene bg SchoolEntranceLeft
@@ -811,7 +811,7 @@ label SF2:
     nvl clear
     stop music fadeout 3
     
-    call eyecatch("Tuesday, April 19") from SF2_sc005
+    call eyecatch_fancy("Tuesday, April 19") from SF2_sc005
 
     
     play music "Music/circulation.ogg"

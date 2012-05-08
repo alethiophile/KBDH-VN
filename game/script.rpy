@@ -1131,7 +1131,8 @@ init:
     image eyebg = ConditionSwitch("ecbg == 'white'", "#fff", "True", "#000")
     
     # Most likely needs {font=fancyfont.ttf}magic{/font} to pull off properly...
-    image BDVNlogo = Text("{size=80}{b}{k=3}KYON:\n{/k}{/b}{/size}{size=40}{k=-1.0}Big Damn Hero{/k}{/size}", color="#3cf", outlines=[(1, "#000", 4, 3)])
+#    image BDVNlogo = Text("{size=80}{b}{k=3}KYON:\n{/k}{/b}{/size}{size=40}{k=-1.0}Big Damn Hero{/k}{/size}", color="#3cf", outlines=[(1, "#000", 4, 3)])
+    image BDVNlogo = Text("{font=praetorianacad.ttf}{size=115}KYON\n{/size}{size=40}Big Damn Hero{/size}{/font}", color="#3cf", outlines=[(1, "#000", 4, 3)])
     image SOSlogoborder = "Backgrounds/eyecatchlogos.png"
     image BDVNlogoBlack = Text("{size=80}{b}{k=3}KYON:\n{/k}{/b}{/size}{size=40}{k=-1.0}Big Damn Hero{/k}{/size}", color="#000")
     image WaitForInputBlinking:
@@ -1568,26 +1569,30 @@ label Preview2:
     return
 
 # White eyecatch routine with single date to show.
-label white_eyecatch_single(date="", pause_time=3.0, r=0, ecbg="black"):
-    #scene eyebg with Dissolve(1)
-    $ date = "\n\n\n\n" + date
-    show SOSlogoborder with logosin
-    show transpwhite behind SOSlogoborder with slowdissolve
-    # call eyecatch_coatinout(date, date, pause_time) from eyecatch_generic
-    call eyecatch_dissolves(date, date, pause_time) from white_eyecatch_s
-    scene black with Dissolve(0.5)
-    return
+# label white_eyecatch_single(date="", pause_time=3.0, r=0, ecbg="black"):
+#     #scene eyebg with Dissolve(1)
+#     $ date = "\n\n\n\n" + date
+#     show SOSlogoborder with logosin
+#     show transpwhite behind SOSlogoborder with slowdissolve
+#     # call eyecatch_coatinout(date, date, pause_time) from eyecatch_generic
+#     call eyecatch_dissolves(date, date, pause_time) from white_eyecatch_s
+#     scene black with Dissolve(0.5)
+#     return
 
-# White eyecatch routine with two dates to show, second replacing first.
-label white_eyecatch_double(date1="", date2="", pause_time=3.0, r=0, ecbg="black"):
+# White eyecatch routine with two dates to show, second replacing first. Default
+# values are a wonderful thing.
+label eyecatch_fancy(date1="", date2=date1, pause_time=3.0, r=0, ecbg="black"):
     #scene eyebg with Dissolve(1)
+    $ nw = _window
+    $ _window = False
     $ date1 = "\n\n\n\n" + date1
     $ date2 = "\n\n\n\n" + date2
     show SOSlogoborder with logosin
     show transpwhite behind SOSlogoborder with slowdissolve
     # call eyecatch_coatinout(date, date, pause_time) from eyecatch_generic
-    call eyecatch_dissolves(date1, date2, pause_time) from white_eyecatch_d
+    call eyecatch_dissolves(date1, date2, pause_time, r) from white_eyecatch_d
     scene black with Dissolve(0.5)
+    $ _window = nw
     return
 
 # Generic eyecatch routine with single date to show.
@@ -1824,7 +1829,7 @@ label test_Z0_eye:
     show Haruhi Smile3 at left
     with dissolve
     "Now a new spiffy eyecatch with white screenage!"
-    call white_eyecatch_double ("Febtober 3.14, 1592", "Febtober 2.71828, 1592") from test_Z0_p1006
+    call eyecatch_fancy("Febtober 3.14, 1592") from test_Z0_p1006
     scene bg MorningSky
     show TownHillLeftMorning
     # show Kyon Sigh1 at right

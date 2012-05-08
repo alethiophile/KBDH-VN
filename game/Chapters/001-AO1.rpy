@@ -427,7 +427,7 @@ label AO1_1:
     nvl clear
     
     # Calling a generic "eyecatch" routine, with unique "from"
-    call eyecatch("Sunday, April 17") from AO1_sc001
+    call eyecatch_fancy("Sunday, April 17") from AO1_sc001
     
     scene bg YukiApartmentDay with fade
     play music "Music/Kankyou.mp3"
@@ -782,7 +782,7 @@ label AO1_1:
     nvl clear
     
     # Calling a generic "eyecatch" routine
-    call eyecatch2("Sunday, April 17", "Thursday, June 2") from AO1_sc002
+    call eyecatch_fancy("Sunday, April 17", "Thursday, June 2") from AO1_sc002
     
     jump prologue2
 
@@ -820,7 +820,7 @@ label AO1_2:
     # pause 5
     
     # Calling a generic "eyecatch" routine, with unique "from"
-    call eyecatch2("Monday, April 18", "Sunday, April 17") from AO1_sc003
+    call eyecatch_fancy("Monday, April 18", "Sunday, April 17") from AO1_sc003
 
     play music "Music/GnossiennesDai3.mp3"
     scene bg YukiRoomCenter
@@ -1071,7 +1071,7 @@ label AO1_2:
     # pause 5
 
     # Calling a generic "eyecatch" routine, with unique "from"
-    call eyecatch2("Sunday, April 17", "Monday, April 18") from AO1_sc004
+    call eyecatch_fancy("Sunday, April 17", "Monday, April 18") from AO1_sc004
     
     play music "Music/Itsumo(Movie).mp3"
     scene bg MorningSky

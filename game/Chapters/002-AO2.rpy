@@ -100,7 +100,7 @@ label AO2:
     
     play sound "SE/WestminsterChimeShort.mp3"
     # Calling a generic "eyecatch" routine with date (first argument in (), "" to nhow no date) and custom pause time (second argument in ()), with unique "from"
-    call eyecatch("Monday, April 18", 10.0) from AO2_sc001
+    call eyecatch_fancy("Monday, April 18", 10.0) from AO2_sc001
     stop sound fadeout 2
     play music "Music/Nanika.mp3"
     
@@ -203,7 +203,7 @@ label AO2:
     # pause 2.0
     
     # Calling a generic "eyecatch" routine, with unique "from"
-    call eyecatch2("Monday, April 18", "Sunday, April 17") from AO2_sc002
+    call eyecatch_fancy("Monday, April 18", "Sunday, April 17") from AO2_sc002
     
     play music "Music/Kokuhaku.mp3"
     
@@ -331,7 +331,7 @@ label AO2:
     # pause 5
     
     # Calling a generic "eyecatch" routine, with dates and unique "from"
-    call eyecatch2("Sunday, April 17","Monday, April 18") from AO2_sc003
+    call eyecatch_fancy("Sunday, April 17","Monday, April 18") from AO2_sc003
     
 #     
 
@@ -541,7 +541,7 @@ label AO2:
     stop music fadeout 2
     
     # Calling a generic "eyecatch" routine, with dates unique "from"
-    call eyecatch2("Monday, April 18","Sunday, April 17") from AO2_sc004
+    call eyecatch_fancy("Monday, April 18","Sunday, April 17") from AO2_sc004
     
     play music "Music/suspicion.ogg"
     scene bg Cafe with fade
@@ -594,7 +594,7 @@ label AO2:
     "\"What's that?\" Mikuru asked, glancing at Koizumi sidelong."
     nvl clear
     stop music fadeout 2
-    call eyecatch("Sunday, April 17") from AO2_sc005
+    call eyecatch_fancy("Sunday, April 17") from AO2_sc005
     
     
 
@@ -712,7 +712,7 @@ label AO2:
     stop music fadeout 2
     
 
-    call eyecatch("Sunday, April 17") from AO2_sc006
+    call eyecatch_fancy("Sunday, April 17") from AO2_sc006
 
     play music "Music/WitchInGoldCenba.ogg"
     scene bg Cafe
@@ -857,7 +857,7 @@ label AO2:
     nvl clear
     stop music fadeout 2
 
-    call eyecatch2("Sunday, April 17","Monday, April 18") from AO2_sc007
+    call eyecatch_fancy("Sunday, April 17","Monday, April 18") from AO2_sc007
 
     play music "Music/ItsumoNoFuukei.mp3"
     scene bg hallway
@@ -1076,7 +1076,7 @@ label AO2:
     "\"Eep,\" the first year girl squeaked, her face pressed into Mikuru's chest. \"Aaugh! I'm in trouble! Someone help me!\""
     nvl clear
     stop music fadeout 3
-    call eyecatch2("Monday, April 18","Sunday, April 17") from AO2_sc008
+    call eyecatch_fancy("Monday, April 18","Sunday, April 17") from AO2_sc008
     
     play music "Music/MikurunoKokoro.mp3"
     scene bg ParkBench

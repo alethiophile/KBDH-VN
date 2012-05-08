@@ -683,7 +683,7 @@ label prologue2:
     # pause 5
     
     # Calling a generic "eyecatch" routine
-    call eyecatch2("Thursday, June 2", "Monday, April 18") from prolog_p001
+    call eyecatch_fancy("Thursday, June 2", "Monday, April 18") from prolog_p001
     
     # Approx. 21 minutes of reading at this point.
     jump AO1_2
