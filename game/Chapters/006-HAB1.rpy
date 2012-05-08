@@ -15,7 +15,7 @@ label HAB1:
     play music "Music/suspicion.ogg"
     show Kanae Neutral1 at right
     "After the lunch chime, Kanae had decided that she would return to the club room; if she were lucky, Sempai would be there! And if she weren't lucky, well, Sempai's friends were her friends, too, so that would be fine."
-    #show Ryuugu at left
+    #show Ryo at left
     "But she had only made it a few steps down the hallway before a taller third year boy approached her, tape across his nose and a bruise marring his face deeply around one eye. He raised a hand in greeting before glancing around, then asked, \"Are you Michikyuu Kanae-san?\""
     #"\"Um,\" she managed, a bit unnerved by the delinquent-looking student before her. \"Yes? Are you looking for the SOS Brigade, maybe? I'm just a new member, so I don't know much yet.\""
     #"\"No, no,\" he said, glancing around nervously, then breaking into a smile that she really didn't trust; the kind of expression she'd seen on the rude boy who chased her across dimensions. For a panicked instance, she considered sliding away ... but she couldn't do that! Not with Sempai here, and for the first time in hundreds of worlds, someone who could help her learn how to slide better! What if she couldn't find her way back? It was still very hard, even with the practice that Yuki helped her get...."
