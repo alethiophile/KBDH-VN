@@ -100,7 +100,7 @@ label AO2:
     
     play sound "SE/WestminsterChimeShort.mp3"
     # Calling a generic "eyecatch" routine with date (first argument in (), "" to nhow no date) and custom pause time (second argument in ()), with unique "from"
-    call eyecatch_fancy("Monday, April 18", 10.0) from AO2_sc001
+    call eyecatch_fancy("Monday, April 18") from AO2_sc001
     stop sound fadeout 2
     play music "Music/Nanika.mp3"
     
@@ -544,10 +544,11 @@ label AO2:
     call eyecatch_fancy("Monday, April 18","Sunday, April 17") from AO2_sc004
     
     play music "Music/suspicion.ogg"
-    scene bg Cafe with fade
+    scene bg Cafe
     show Mikuru Casual Neutral1 at center
     show Kyon Casual Ser1 at right  
     show Koizumi Crossed Casual Ser1 at left
+    with fade
     "After settling into a corner of a relatively new cafe, at least, one Kyon didn't recognize immediately, they sat in silence until their drinks were served."
     show Koizumi Crossed Casual Ser2 at left
     "When his latte arrived, Koizumi began, saying, \"It is possible that Nagato-san may curtail the creation of closed space, but my suspicion is that the opposite is more likely to be true.\""
