@@ -384,7 +384,7 @@ label SF3:
     nvl clear
     $ renpy.pause(.5, hard=True)
     # call eyecatch("Thursday, April 21") from SF3_sc001
-    jump credits
+    jump credits_roll
     
     call eyecatch_fancy("", "", 8, "white") from SF3_sc001
     
