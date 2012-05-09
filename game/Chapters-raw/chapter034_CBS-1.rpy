@@ -256,7 +256,7 @@ label CBS_1:
     "\"Yeah, sure.\""
     "\"Do you prefer the Folksmen version, or the way the New—\""
     "\"Just play it,\" Fujiya growled."
-    "\"Uh ... okay, right.\" The warbling harmonica began again, louder this time, and Fujiya mumbled, \"Kowa-Keigo-Kyon, eh? So you really do have mystic powers.\""
+    "\"Uh ... okay, right.\" The warbling harmonica began again, louder this time, and Fujiya mumbled, \"Kowa-Keigo Kyon, eh? So you really do have mystic powers.\""
     "\"Something like that,\" Kyon allowed, just as quietly. \"I'm here as a representative of the Tsuruya branch of the Yamaguchi-gumi.\""
     "\"Damn, your branch is something else, sending a messenger in here,\" Fujiya mumbled dubiously. \"Well, what's the deal, then? I'm guessing that more Sumiyoshi-rengo are showing up throughout town?\""
     "\"That's right,\" Kyon agreed, quickly outlining the facts of the raid and what they knew of recent Sumiyoshi-rengo losses. Fujiya looked at first unsettled, then disgusted, until he finished."

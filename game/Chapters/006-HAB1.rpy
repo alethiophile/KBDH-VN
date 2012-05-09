@@ -536,7 +536,7 @@ label HAB1:
     nvl clear
     "\"Yeah, I hear Yanagimoto's got a bunch of them to trade,\" Haruhi added. \"Of course, it's really hard to believe any of them for me, but if you want baseless rumors, go nuts....\""
     show Taniguchi Grin1 at left
-    "\"Will do!\" Taniguchi said cheerfully. \"A B plus isn't too far off from an A minus!\" Turning around, he stepped over to Yanagimoto's desk and immediately tried to strike up a conversation."
+    "\"Will do!\" Taniguchi said cheerfully. \"A 'B-plus' isn't too far off from an 'A-minus'!\" Turning around, he stepped over to Yanagimoto's desk and immediately tried to strike up a conversation."
     hide Taniguchi Grin1 with dissolve
     "\"Sometimes, I worry about that guy,\" Kyon said, shaking his head."
     nvl clear

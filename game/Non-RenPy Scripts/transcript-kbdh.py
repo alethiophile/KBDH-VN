@@ -2,7 +2,7 @@
 # The cding line above must remain for the long dash to work.
 
 
-KBDH-VN transcripting python scriipt
+# KBDH-VN transcripting python scriipt
 
 # Inputs: 
 #     source : array with local text fie names
@@ -67,60 +67,64 @@ sources = [ "kbdh00.txt",
             "kbdh48.txt", 
             "kbdh49.txt", 
             "kbdh50.txt", 
-            "kbdh51.txt"]
+            "kbdh51.txt", 
+            "kbdh52.txt", 
+            "kbdh53.txt"]
 
-chapter_labels = [  "ch000_IMRP", 
-                    "ch001_AO_1", 
-                    "ch002_AO_2", 
-                    "ch003_SF_1", 
-                    "ch004_SF_2", 
-                    "ch005_SF_3", 
-                    "ch006_HAB_1", 
-                    "ch007_HAB_2", 
-                    "ch008_Fi_1", 
-                    "ch009_Fi_2", 
-                    "ch010_HAB_3", 
-                    "ch011_HAB_4", 
-                    "ch012_HAB_5", 
-                    "ch013_Fi_3", 
-                    "ch014_Fi_4", 
-                    "ch015_Fa_1", 
-                    "ch016_Fa_2", 
-                    "ch017_Fa_3", 
-                    "ch018_Fa_4", 
-                    "ch019_GU_1", 
-                    "ch020_GU_2", 
-                    "ch021_GU_3", 
-                    "ch022_GU_4", 
-                    "ch023_GU_5", 
-                    "ch024_IC_1", 
-                    "ch025_IC_2", 
-                    "ch026_IC_3", 
-                    "ch027_IC_4", 
-                    "ch028_IC_5", 
-                    "ch029_TL_1", 
-                    "ch030_TL_2", 
-                    "ch031_TL_3", 
-                    "ch032_TL_4", 
-                    "ch033_TL_5", 
-                    "ch034_CBS_1", 
-                    "ch035_CBS_2", 
-                    "ch036_CBS_3", 
-                    "ch037_CBS_4", 
-                    "ch038_CBS_5", 
-                    "ch039_SB_1", 
-                    "ch040_SB_2", 
-                    "ch041_SB_3", 
-                    "ch042_SB_4", 
-                    "ch043_SB_5", 
-                    "ch044_OB_1", 
-                    "ch045_OB_2", 
-                    "ch046_OB_3", 
-                    "ch047_OB_4", 
-                    "ch048_OB_5", 
-                    "ch049_OB_6", 
-                    "ch050_OB_7", 
-                    "ch051_LL_1"]
+chapter_labels = [  "IMRP", 
+                    "AO_1", 
+                    "AO_2", 
+                    "SF_1", 
+                    "SF_2", 
+                    "SF_3", 
+                    "HAB_1", 
+                    "HAB_2", 
+                    "Fi_1", 
+                    "Fi_2", 
+                    "HAB_3", 
+                    "HAB_4", 
+                    "HAB_5", 
+                    "Fi_3", 
+                    "Fi_4", 
+                    "Fa_1", 
+                    "Fa_2", 
+                    "Fa_3", 
+                    "Fa_4", 
+                    "GU_1", 
+                    "GU_2", 
+                    "GU_3", 
+                    "GU_4", 
+                    "GU_5", 
+                    "IC_1", 
+                    "IC_2", 
+                    "IC_3", 
+                    "IC_4", 
+                    "IC_5", 
+                    "TL_1", 
+                    "TL_2", 
+                    "TL_3", 
+                    "TL_4", 
+                    "TL_5", 
+                    "CBS_1", 
+                    "CBS_2", 
+                    "CBS_3", 
+                    "CBS_4", 
+                    "CBS_5", 
+                    "SB_1", 
+                    "SB_2", 
+                    "SB_3", 
+                    "SB_4", 
+                    "SB_5", 
+                    "OB_1", 
+                    "OB_2", 
+                    "OB_3", 
+                    "OB_4", 
+                    "OB_5", 
+                    "OB_6", 
+                    "OB_7", 
+                    "LL_1", 
+                    "LL_2", 
+                    "LL_3"]
 
 targets = [ "chapter000_IMRP.rpy", 
             "chapter001_AO-1.rpy", 
@@ -173,11 +177,13 @@ targets = [ "chapter000_IMRP.rpy",
             "chapter048_OB-5.rpy", 
             "chapter049_OB-6.rpy", 
             "chapter050_OB-7.rpy", 
-            "chapter051_LL-1.rpy"]
+            "chapter051_LL-1.rpy", 
+            "chapter052_LL-2.rpy", 
+            "chapter053_LL-3.rpy"]
             
-for i in range(min(len(sources), len(targets))): # To iterate through all files
+# for i in range(min(len(sources), len(targets))): # To iterate through all files
 # for i in [len(sources)-1]: # for last element of array only
-    #label = chapter_labels[i]
+for i in range(6, min(len(sources), len(targets))): # From 6 to end of sources or targets
     file_source = open(sources[i], 'r')
     file_target = open(targets[i], 'w')
     
@@ -191,8 +197,6 @@ for i in range(min(len(sources), len(targets))): # To iterate through all files
         text = text.replace('_', '{/i}', 1)
     
     text = re.sub(r"(?<!\n)\n(?!\n)", " ", text)
-#    text = re.sub(r'(?<=(,|;|\.|\!|\?))"\n', '" \n', text)
-#    text = re.sub(r"(?<=(,|;|\.|\!|\?))\n", " \n", text)
     text = text.replace(r'"', r'\"')
     
     text = re.sub(r"\n+", r'"\n    "', text)

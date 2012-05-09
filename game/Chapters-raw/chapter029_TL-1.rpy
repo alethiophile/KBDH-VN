@@ -7,7 +7,7 @@ label TL_1:
     "\"Being friends isn't so bad,\" Kyon countered, frowning."
     "\"Ah, poor Kyon,\" Taniguchi said in a consoling tone. \"Well, that's fine! If you're in Suzumiya's 'friend' zone, you've got other options!\""
     "\"Is sanity among them?\" Kunikida asked, picking at his lunch."
-    "\"Don't be silly! I'm talking about Asahina-san, or either of the younger 'A minuses' — Nagato and that first year, Michikyuu Kanae. Ran into her a while back ... she's kind of cute, in that pettanko, lolicon way, you know? Not to my tastes, but Kyon has a thing for 'strange girls,' so....\""
+    "\"Don't be silly! I'm talking about Asahina-san, or either of the younger 'A-minuses' — Nagato and that first year, Michikyuu Kanae. Ran into her a while back ... she's kind of cute, in that pettanko, lolicon way, you know? Not to my tastes, but Kyon has a thing for 'strange girls,' so....\""
     "\"Did you just insult my kohai?\" Kyon asked his taller classmate, wondering if he should practice his intimidating smile."
     "Taniguchi didn't even look up, still shoveling vegetables from his lunch into his mouth. \"No, of course not,\" he said between mouthfuls. \"Face it, her attributes are {i}absolutely{/i} appealing to some types! I'm not judging you if you're one of them, I'm just trying to remind you that you've got options! Pretty decent ones, too.\""
     "\"I'm not sure exactly what you're trying to say with that,\" Kyon answered tiredly, picking at the meal Haruhi had given him, \"but I think I should point out to you that I liked you a lot more when you obsessed over your {i}own{/i} relationships.\""
