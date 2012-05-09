@@ -80,7 +80,7 @@ label SF3:
     show Haruhi CS Neutral1 at TenthLeft
     with fade
     nvl clear
-    "Naturally, they did, and he followed her, nonplussed. After a moment, she realized he was holding one hand out, very slightly towards her, though he didn't actually look at her directly." 
+    "Naturally, they did, and he followed her, nonplussed. After a moment, she realized he was holding one hand out, very slightly toward her, though he didn't actually look at her directly." 
     show Haruhi CS Smile1:
         xalign 0.3 yalign 1.0
     show Kyon CS Smile1:
@@ -397,7 +397,7 @@ label SF3:
     play music "Music/Nichijou.mp3"
     scene bg KyonRoomRightMorning with fade
     play sound "SE/impact.mp3"
-    "Kyon leapt out of bed with a handspring, landing in a crouch before the opening door and lunging instantly into the forbidden little-sister-submission-tickle-strike, completely foiling her attempt to sneak in and wake him up first. Only after he had reduced her to a shrieking, laughing pile, and his mother was tiredly staring up at the pair of them from the bottom of the stairs did he relent."
+    "Kyon leaped out of bed with a handspring, landing in a crouch before the opening door and lunging instantly into the forbidden little-sister-submission-tickle-strike, completely foiling her attempt to sneak in and wake him up first. Only after he had reduced her to a shrieking, laughing pile, and his mother was tiredly staring up at the pair of them from the bottom of the stairs did he relent."
     show Kyon Neutral3 at right
     show Nonoko Laugh1 at TenthLeft 
     with dissolve
@@ -406,7 +406,7 @@ label SF3:
     show Kyon Smile3 at right
     "\"When you wake up with as much energy as I do,\" he told her sternly, \"no surprise attack is going to be effective enough.\" "
     nvl clear
-    "He grabbed his sister's wrists and hauled her upwards, leaving her to dangle a few centimeters over the floor before gently lowering her to stand and releasing her. She stuck her tongue out at him, giggling, then ran down the stairs to their mother."
+    "He grabbed his sister's wrists and hauled her upward, leaving her to dangle a few centimeters over the floor before gently lowering her to stand and releasing her. She stuck her tongue out at him, giggling, then ran down the stairs to their mother."
     nvl clear
     scene bg KyonHouseDay with fade
     show Nonoko Sup1 at TenthLeft 
@@ -439,7 +439,7 @@ label test2:
     "\"I said I'd help him with his homework,\" she realized aloud, hurrying her pace and rushing to the kitchen. No parents around, still, which was good for today. That meant she could cheat. He always gave her a long-suffering sigh and mumbled about responsibility when she did, but what he didn't know, he couldn't whine about."
     nvl clear
     "So, under her dutiful eye, she watched utensils and ingredients dance across the kitchen, laboring as intently as a quartet of herself ... or a single eight-armed girl, she supposed, but that thought caused her control to wander. Focusing more intently, she watched as preparations finished, then spent an annoying ten minutes combing through every cupboard and pantry door in the house until she found her old bento and the spare. \"He'd better appreciate this,\" she mumbled, wrapping them both after packing them unreasonably full."
-    "That done, she tucked the packages into her bag and settled on stuffing the remaining portion of rice and assorted bento ingredients into a single tupperware. Inelegant, but she could eat while drilling him on his homework. She hurried out the door and to school."
+    "That done, she tucked the packages into her bag and settled on stuffing the remaining portion of rice and assorted bento ingredients into a single plastic container. Inelegant, but she could eat while drilling him on his homework. She hurried out the door and to school."
     nvl clear
     stop music fadeout 1
     scene bg SchoolEntranceLeft
@@ -536,10 +536,10 @@ label test2:
     nvl clear
     show Haruhi Sup1 at TenthLeft
     show Kyon Worry1 at right
-    "She made a choking noise, dropping the tupperware container on the floor. It remained sealed, and she hid her expression from him while she stooped to collect it. \"W...well, if you're going to be so blunt about it,\" she managed, her\nface dark with a blush. {nw}" 
+    "She made a choking noise, dropping the container on the floor. It remained sealed, and she hid her expression from him while she stooped to collect it. \"W...well, if you're going to be so blunt about it,\" she managed, her\nface dark with a blush. {nw}" 
     show Hblush at TenthLeft
     show Haruhi Unhap1 at TenthLeft
-    extend "She stomped one foot on the floor and waved the tupperware menacingly. \"Why are you asking me this now?!\""
+    extend "She stomped one foot on the floor and waved the container menacingly. \"Why are you asking me this now?!\""
     nvl clear
     show Kyon Puzzle1 at right
     show Haruhi Unhap2 at TenthLeft
@@ -599,8 +599,8 @@ label test2:
     play sound "SE/WestminsterChimeShort.mp3"
     pause 4
     queue music "Music/Yuuutsu.mp3"
-    "After the first period chime rang, Haruhi leaned back in her seat, sticking her feet out straight off the floor to stretch her calf muscles, and extended her arms over her head, balancing precariously. She felt something in her lower back pop into place and smiled slightly, turning her head to Kyon as she leaned forward, her toes touching the floor once more. Before she could speak, she saw Sakanaka rise from her seat two desks to the right and pad cautiously towards the door, beckoning Haruhi to follow."
-    "After only a moment of consideration towards Kyon, who seemed to be behaving by working on his math homework, she tapped his shoulder and handed him the tupperware of leftovers. \"Keep up the good work, subordinate,\" she encouraged him, climbing to her feet and striding into the hallway to see what Sakanaka wanted."
+    "After the first period chime rang, Haruhi leaned back in her seat, sticking her feet out straight off the floor to stretch her calf muscles, and extended her arms over her head, balancing precariously. She felt something in her lower back pop into place and smiled slightly, turning her head to Kyon as she leaned forward, her toes touching the floor once more. Before she could speak, she saw Sakanaka rise from her seat two desks to the right and pad cautiously toward the door, beckoning Haruhi to follow."
+    "After only a moment of consideration toward Kyon, who seemed to be behaving by working on his math homework, she tapped his shoulder and handed him the container of leftovers. \"Keep up the good work, subordinate,\" she encouraged him, climbing to her feet and striding into the hallway to see what Sakanaka wanted."
     nvl clear
     scene bg hallway with fade
     show Haruhi Hap1 at TenthLeft with dissolve
@@ -755,7 +755,7 @@ label test2:
     nvl clear
     $ renpy.layer_at_list([PanScene_RightToLeft])
     show Kyon Smile1 at right
-    "\"No problem,\" he replied, heading towards the door. He paused with one hand on the knob and added, \"Though, if you want to update Haruhi on the situation, that'd save me some work.\""
+    "\"No problem,\" he replied, heading toward the door. He paused with one hand on the knob and added, \"Though, if you want to update Haruhi on the situation, that'd save me some work.\""
     hide Kyon Smile1 with dissolve
     $ renpy.layer_at_list([PanScene_LeftToRight])
     show Tsuruya Hap3 at center_RightScreen
