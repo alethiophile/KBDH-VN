@@ -1271,18 +1271,42 @@ init python:
                         what_layout="subtitle", what_xalign=0.5, what_text_align=0.5,
                         window_background=None, window_yminimum=0, window_xfill=False, 
                         window_xalign=0.5, window_yalign=0.5) 
-
+                        
     if config.developer:
         config.keymap['skip'].remove('K_LCTRL')
         config.keymap['skip'].remove('K_RCTRL')
         config.keymap['skip'].append('K_LALT')
         config.keymap['skip'].append('K_RALT')
-        config.keymap['hide_windows'].append('K_BACKSPACE')
         config.keymap['reload_game'].append('r')
         config.keymap['inspector'].append('i')
         config.keymap['developer'].append('d')
         config.keymap['toggle_music'].append('m')
         config.keymap['toggle_music'].append('M')
+        
+        # config.keymap['viewport_up'].append('K_KP9')
+        # config.keymap['viewport_down'].append('K_KP3')
+        
+    config.keymap['viewport_up'].append('K_PAGEUP')
+    config.keymap['viewport_down'].append('K_PAGEDOWN')
+    config.keymap['rollback'].append('K_KP9')
+    config.keymap['rollforward'].append('K_KP3')
+    config.keymap['hide_windows'].append('K_BACKSPACE')
+    
+    for action in config.keymap.keys():
+        if 'K_UP' in config.keymap[action]:
+            config.keymap[action].append('K_KP8')
+        if 'K_DOWN' in config.keymap[action]:
+            config.keymap[action].append('K_KP2')
+        if 'K_LEFT' in config.keymap[action]:
+            config.keymap[action].append('K_KP4')
+        if 'K_RIGHT' in config.keymap[action]:
+            config.keymap[action].append('K_KP6')
+        if 'K_PAGEUP' in config.keymap[action]:
+            config.keymap[action].append('K_KP9')
+        if 'K_PAGEDOWN' in config.keymap[action]:
+            config.keymap[action].append('K_KP3')
+        
+        
     
 transform center_left:
     xalign 0.1 yalign 1.0
