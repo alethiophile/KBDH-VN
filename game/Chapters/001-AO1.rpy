@@ -13,11 +13,12 @@ label AO1_1:
         # copy last 'play music' from the previous chapter (if scene is continued) or start apropriate chapter music
         play music "music/YukiAsakuraFight.mp3" fadein 1
     #Preparation for Chapter end
-        show Kyon Ser2 at right
+        show Kyon Ser1 at right
         show Skinsuit at right
         show Coat at right
         with dissolve
     hide Asakura
+    show Kyon Ser1 at right
     show Haruhi Hap3 at left
     "Haruhi bounced on her heels with a wide grin, holding Kyon's cell phone in both hands as she remained in the center of the glowing circle."
     show Haruhi Hap4 at left
@@ -42,6 +43,7 @@ label AO1_1:
     show Kyon Neutral2 at right
     extend "\"From the same place as Yuki-chan and Kimidori, but she tried to kill me once.\""
     show Haruhi Sup1 at left
+    show Kyon Neutral3
     "\"Whaaaat? What did you do to make her mad?\" Haruhi asked, looking at him in bemusement."
     nvl clear
     hide Kyon
@@ -60,15 +62,18 @@ label AO1_1:
     "\"Really, I'd hoped to see a new state, maybe even provoke it with his death."
     show Asakura Smile2 at left
     "\"But, those toys seem to say that's already happened! So disappointing ... I suppose if I'd been more patient, I could see it anyway?\""
+    show Asakura Smile1
     show Kyon Sigh1 at right
     show Skinsuit at right
     show Coat at right
     "\"I personally like to see it as a lesson on the effects of {i}randomly stabbing people,{/i}\" Kyon muttered."
     nvl clear
-    show Asakura Smile1 at left
+    show Kyon Sigh3
+    show Asakura Smile3 at left
     "\"Oh, it wasn't random,\" she countered.{nw} "
     show Asakura Smile2 at left
     extend "\"It was highly specific! I put a whole two hours of thought into it, you know. For us, that's quite a while!\""
+    show Asakura Smile1  
     show Kyon Ser2 at right
     "\"I'm touched,\" he said dryly."
     nvl clear
@@ -135,9 +140,11 @@ label AO1_1:
     show Skinsuit at right
     show Coat at right
     with moveinleft
+    show Kyon Ser2
     "\"Confined spaces,\" he answered, sliding to a halt in the middle of the roof and setting her down.{fast} \"Speed dial two again.\""
     $ _window = True
     nvl clear
+    show Kyon Ser1
     show Haruhi Pout1 at left
     pause .4
     play sound "SE/Barrier1.mp3"
@@ -151,7 +158,8 @@ label AO1_1:
     show Haruhi Quest1 at left
     "\"So, what's so great about this if she can just turn it off, anyway?\""
     nvl clear
-    show Kyon Ser1 at right
+    show Haruhi Quest2
+    show Kyon Ser3 at right
     play sound "SE/SaberOn.mp3"
     "\"It's a barrier and emergency help function,\" he answered, reactivating the beam saber and reassuming a defensive stance."
     show Kyon Ser2 at right
@@ -262,11 +270,7 @@ label AO1_1:
     "The inner carbon-nano-weave of the greatcoat and the force field of the skinsuit beneath it converted the stabbing force into a distributed shock wave, so instead of being pierced, Kyon was merely hit with the force of a speeding minivan, flying clear across the roof with a choked grunt."
     nvl clear
     scene bg roof
-    show Asakura Smile1:
-        xalign 0.6 yalign 1.0
-        #xalign 0.0 yalign 1.0
-        #linear 0.1 xalign 0.6 # at right
-    show Asakura Smile1 at HalfRight
+    show Asakura Smile3 at HalfRight
     "\"In the end,\" Asakura remarked, watching his form tumble off the edge of the school building, \"all those toys are pretty silly if you don't actually know how to use them.\""
     show Haruhi Hap1 at left
     "\"You have to give him credit, though,\" Haruhi said, peering very closely at the knives frozen over her barrier, not even glancing back to where Kyon had vanished."
@@ -296,7 +300,6 @@ label AO1_1:
     "How had it come to this, anyway...?"
     stop music
     nvl clear
-    # scene title1 with slowfadein
     scene black 
     show title 001 at card_pos 
     with slowfadein
@@ -354,14 +357,16 @@ label AO1_1:
     "{=loud}\"Nagato!\"{/=loud} he called, the second she picked up. {=loud}\"It's me!\"{/=loud}"
     nvl clear
     "The door opened."
+    nvl clear
     scene bg YukiRoomCenter with wipeup
     "After taking the elevator to her floor, he slowed his mad pace, seeing her standing outside the doorway to her apartment, waiting for him."
     nvl clear
     show Yuki Side1 at TenthLeft
     "He tried to imagine that he saw some relief around her eyes when he reached her side, but wasn't confident enough to be certain that was the case."
-    show Kyon Casual Ser1 at right
+    show Kyon Casual Ser2 at right
     "\"Nagato,\" he said, nodding. \"What's wrong?\""
     nvl clear
+    show Kyon Casual Ser1
     show Yuki Side2
     "She gestured him inside, leading him to the table."
     "He kicked off his shoes and went to the kotatsu, watching her warily."
@@ -369,6 +374,7 @@ label AO1_1:
     nvl clear
     show Yuki Talk1
     "\"The Integrated Data Sentience Entity has determined that I have become a liability,\" she said in a soft monotone, nearly devoid of inflection."
+    show Yuki Side1
     show Kyon Casual Sup1 at right
     nvl clear
     "He stared at her for a long minute, blinking. \"What ... do you mean?\""
@@ -381,10 +387,12 @@ label AO1_1:
     show Kyon Casual Sigh1 at right
     show Yuki Side1
     "After taking a deep breath, he growled, \"There isn't enough milk in the world.\""
+    show Kyon Casual Sigh3
     show Yuki Side Blink
     "She blinked several times in response."
     show Kyon Casual Worry2 at right
     "\"How set is this?\" he asked, his hands shaking too much to hold the teacup properly."
+    show Kyon Casual Worry3
     show Yuki Talk2
     "\"It is absolute.\""
     nvl clear
@@ -392,6 +400,7 @@ label AO1_1:
     show Kyon Casual Sigh1 at right
     "He took another deep breath, then jumped to his feet, nearly upsetting the table, and began pacing back and forth in her living room."
     show Yuki Side2
+    show Kyon Casual Sigh3
     "She watched him silently."
     nvl clear
     show Kyon Casual Ser2 at right
@@ -402,6 +411,7 @@ label AO1_1:
     "Biting off a curse, he asked, \"Can I use your phone, Nagato? I need to call Haruhi and the others.\""
     nvl clear
     show Yuki SideDisappointedTalk1
+    show Kyon Casual Worry3
     "For a moment, mild disappointment flickered around her eyes. \"It is not necessary.\""
     show Yuki Side1
     show Kyon Casual Ser1 at right
@@ -414,6 +424,7 @@ label AO1_1:
     "{=shout}\"I don't care!\"{/=shout} he shouted."
     "\"I've always relied on you — now that you need help, I am {i}not{/i} going to just stand by and watch you get taken away from— from us!\""
     show Yuki Side Blink
+    show Kyon Casual Ser1
     "She blinked, considering, then lowered her head slightly in her infinitesimal nod."
     nvl clear
     show Yuki Talk1
@@ -421,6 +432,7 @@ label AO1_1:
     show Kyon Casual Sigh1 at right
     show Yuki Side1
     "\"So, I need to make some phone calls.\""
+    show Kyon Casual Sigh3
     show Yuki Talk2
     "\"Understood.\""
     stop music fadeout 3
@@ -458,6 +470,7 @@ label AO1_1:
     show Haruhi Crossed Casual Worry1 at HalfLeft
     "\"But if you're sick, you shouldn't be up and about anyway.\""
     nvl clear
+    show Haruhi Crossed Casual Worry2
     show Yuki Talk1 at left
     "\"Not sick,\" Yuki answered."
     show Haruhi Casual Ang3 at HalfLeft
@@ -496,6 +509,7 @@ label AO1_1:
     "\"This better not be a joke!\""
     nvl clear
     show Kyon Casual Ang1 at right
+    show Haruhi Casual Ang5
     "\"I wish it was,\" he said back crossly, and she found herself taken aback at the force in his tone."
     scene black with dissolve
     nvl clear
@@ -517,6 +531,7 @@ label AO1_1:
     show Haruhi Casual Quest1 at TenthLeft
     with dissolve
     "\"Alright,\" she said evenly. \"Tell me what's going on.\""
+    show Haruhi Casual Quest2
     show Kyon Casual Worry1 at right
     "Kyon ran his hands through his hair and began pacing, not looking at her."
     show Haruhi Casual Sigh1
@@ -525,36 +540,45 @@ label AO1_1:
     show Kyon Casual Sigh1 at right
     "\"Have a seat,\" he said."
     "\"This may take a bit, and I need a promise from you before we start.\""
+    show Kyon Casual Sigh3
     $ _window = True
     show Haruhi Casual Ang1 at left with move
     $ _window = False
     "\"I'm not making a blind promise,\" she retorted, though she did take the seat opposite Koizumi, between Mikuru and Yuki."
     nvl clear
+    show Haruhi Casual Ang5
     "Yuki wordlessly poured her a cup of tea, which she threw back in a single gulp."
-    show Kyon Casual Ser1 at right
+    show Kyon Casual Ser3 at right
     "\"I need you to promise to listen to everything we have to say before leaving,\" he answered."
     nvl clear
-    show Haruhi Casual Pout1 at left
+    show Kyon Casual Ser1
+    show Haruhi Casual Pout2 at left
     "\"That's stupid,\" she grumbled."
     show Haruhi Casual Ang2 at left
     "\"If Yuki's in danger, what kind of person do you take me for?\""
+    show Haruhi Casual Ang5
     "She wasn't {i}that{/i} bad about ignoring the needs of her brigade members."
     nvl clear
     show Kyon Casual Ser2 at right
     "\"Even so.\""
+    show Kyon Casual Ser1
     show Haruhi Casual Sigh1 at left
     "\"Fine,\" she sighed. \"I promise. Now can you get on with it?\""
     nvl clear
-    show Kyon Casual Ser1 at right
+    show Haruhi Casual Sigh3
+    show Kyon Casual Ser2 at right
     "\"Okay,\" he said, pacing around to the window."
     show Kyon Casual Ser3 at right
     "\"Almost a year ago — last May — we ended up going on a city search where no one but you and I showed up.\""
     show Haruhi Casual Eyeroll1 at left
+    show Kyon Casual Ser1
     "\"I remember,\" she said, annoyed."
+    show Haruhi Casual Eyeroll2
     "A stupid practical joke on his part ... though, it had given her the idea for the movie."
     nvl clear
     show Kyon Casual Ser2 at right
     "\"I told you that aliens, espers, and time travelers really existed, right?\""
+    show Kyon Casual Ser1
     show Haruhi Casual Ang3 at left
     "\"We're going back to that?\" she asked, raising an eyebrow. \"Really?\""
     show Kyon Casual Sigh2 at right
@@ -563,12 +587,13 @@ label AO1_1:
     show Kyon Casual Ser3 at right
     "\"Koizumi, you promised that if it had to happen, you'd stand next to me when Yuki needed our help. Remember?\""
     scene bg YukiRoomCenter
-    show Koizumi Crossed Casual Ser1 at left
+    show Koizumi Crossed Casual Sigh1 at left
     show Haruhi Crossed Casual Ang3 at right
     with dissolve
     "\"Yes,\" the smiling boy said, though his smile had completely vanished. "
     show Koizumi Crossed Casual Ser2
     "\"As much as it scares me.... Suzumiya-san, Kyon-kun is speaking the truth.\""
+    show Koizumi Crossed Casual Ser1
     show Haruhi Crossed Casual Ang2
     "\"You're an esper?\" she asked him doubtfully."
     nvl clear
@@ -581,29 +606,33 @@ label AO1_1:
     "That thought was drop-kicked to fly off next to the last banished thought."
     nvl clear
     scene bg YukiRoomCenter 
-    show Haruhi Crossed Casual Grin1 at center
+    show Haruhi Crossed Casual Ang3 at center
     show Mikuru Cower Casual Nervous1 at left
     with dissolve
     "\"And, Mikuru, you're a time traveler?\" she asked, idly spinning her teacup on the table before her."
-    show Mikuru Cower Casual Nervous2
+    show Mikuru Cower Casual Nervous3
     "\"Um ... that is ... I can't....\""
+    show Mikuru Cower Casual Nervous2
     show Kyon Casual Ser3 at right 
     "\"Asahina-san,\" Kyon broke in suddenly, \"please ask your supervisor to declassify this for me.\""
     nvl clear
+    show Kyon Casual Ser1
     "Mikuru stared at Kyon, her eyes large and confused."
     show Mikuru Cower Casual Nervous1 at left
     "\"Y...yes,\" she agreed, her glance flickering nervously to Haruhi before she pressed a hand against the side of her face, and her eyes became unfocused."
     show Mikuru Cower Casual Sup1 at left
     nvl clear
     "They abruptly snapped back into focus, though her expression had become comically bewildered \"I ... they said yes!? I don't understand! Kyon-kun, how—\""
-    show Kyon Casual Worry1 at right
+    show Kyon Casual Puzzle1 at right
     "\"That's ... classified,\" he answered, looking away."
-    show Kyon Casual Ser1 at right
+    show Kyon Casual Ser3 at right
     "\"Anyway, go ahead and explain it to Haruhi.\""
     nvl clear
+    show Kyon Casual Ser1
     show Mikuru Cower Casual Neutral1 at left
     "\"Oh! Um, Suzumiya-san ... what he says is true! I am a time traveler, though, it's more accurate to say that I'm a visitor from the future who is projected into the past, almost like a two-dimensional image projected into—\""
     show Haruhi Crossed Casual Eyeroll1 at center
+    show Mikuru Cower Casual Nervous1
     "\"Right, right,\" Haruhi cut her off. \"You're a time traveler. Understood.\""
     nvl clear
     scene black with dissolve
@@ -617,17 +646,20 @@ label AO1_1:
     show Kyon Casual Ser1 at right
     with dissolve
     "\"And you're an alien?\""
+    show Haruhi Crossed Casual Worry2
     show Yuki Talk1 at left
     "\"The function allowing me to confirm or deny that data has been denied at this juncture in time,\" she answered."
     show Yuki Talk2 at left
     "Turning to Kyon, she added, \"One hour and twenty minutes remain.\""
     nvl clear
+    show Yuki Side2
     show Kyon Casual Worry2 at right
     "He bit off a curse, running his hands through his hair."
+    nvl clear
     $ _window = True
     scene bg YukiRoomCenter
     show Kyon Casual Ser1 at right
-    show Haruhi Casual Worry1 at TenthLeft
+    show Haruhi Casual Quest2 at TenthLeft
     with dissolve
     $ _window = False
     "Haruhi was taken aback again ... he obviously didn't like getting bad grades or doing poorly on exams, but he almost never got {i}this{/i} stressed about things. "
@@ -644,30 +676,36 @@ label AO1_1:
     "\"Let's just cut to the chase — this isn't really fun, especially since it's at my expense!\""
     nvl clear
     stop music fadeout 3
-    show Kyon Casual Ang1 at right
+    show Haruhi Casual Unhap2
+    show Kyon Casual Ang2 at right
     "{=loud}\"At {i}your{/i} expense—\"{/=loud}"
     show Haruhi Casual Sup1
+    show Kyon Casual Unhap4
     "That had done it, she realized, flinching back."
-    show Kyon Casual Sigh1 at right
+    show Kyon Casual Sigh3 at right
     show Haruhi Casual Worry1
     "Now some of his anger was directed at her, though he quickly controlled it, smacking one palm against his face."
     play music "Music/Ready.mp3"
-    show Kyon Casual Ser1 at right
+    show Kyon Casual Ser3 at right
     nvl clear
     "\"Last May,\" he said, \"you came to class with your hair in a ponytail.\""
+    show Kyon Casual Ser1
     show Haruhi Casual Pout1
     show Hblush Casual at TenthLeft
     "She suddenly couldn't meet his eyes, and a previously suplexed thought began to climb back into her awareness."
     nvl clear
     show Haruhi Casual Ang2
     "\"It was hot!\" she said defensively. \"What of it?\""
+    show Haruhi Casual Ang5
     show Kyon Casual Ser3 at right
     "\"You had a dream — a nightmare — that night,\" he added."
+    show Kyon Casual Ser1
     show Haruhi Casual Ang1
     "\"So?\""
     nvl clear
     show Haruhi Casual Sigh1
     "She forced her heartbeat to still. "
+    show Haruhi Casual Sigh3
     "She'd {i}told{/i} him that much, why wouldn't he remember?"
     "She did, after all, even now."
     nvl clear
@@ -684,10 +722,11 @@ label AO1_1:
     "Yuki merely stared at her, unblinking."
     nvl clear
     scene bg YukiRoomCenter
-    show Haruhi Casual Pout1 at TenthLeft
+    show Haruhi Casual Pout2 at TenthLeft
     show Kyon Casual Ser1 at right
     with dissolve
     "\"I never told anyone that,\" she mumbled."
+    show Haruhi Casual Pout1
     show Kyon Casual Ser2 at right
     "\"In the end, I told you that I wanted to come back to {i}this{/i} world,\" Kyon said."
     show Kyon Casual Ser3 at right
@@ -695,10 +734,12 @@ label AO1_1:
     show Kyon Casual Ser2 at right
     extend "Do I have to say what I did to wake you up?\""
     nvl clear
+    show Kyon Casual Ser1
     show Hblush Casual at TenthLeft
     "She felt her face color."
     show Haruhi Casual Quest1
     "\"N...no,\" she managed. \"Who— No, {i}what{/i} are you?\""
+    show Haruhi Casual Quest2
     show Kyon Casual Sigh2 at right
     "\"I am a normal person,\" he told her, shrugging."
     nvl clear
@@ -716,12 +757,14 @@ label AO1_1:
     show Kyon Casual Ser1 at right
     with dissolve
     "\"You're claiming that you're a slider?\" she asked, blinking, buying herself some time to think."
+    show Haruhi Casual Quest2
     show Kyon Casual Sup2 at right
     show Ksweat at right
     "He was momentarily startled by the question, then exchanged a glance with Koizumi, who shrugged. "
     $ _window = True
     hide Haruhi
     hide Kyon
+    hide Ksweat
     with dissolve
     show Koizumi Crossed Casual Smile1 at center
     with dissolve
@@ -735,26 +778,28 @@ label AO1_1:
     hide Koizumi
     with dissolve
     show Kyon Casual Sigh1 at right
-    show Haruhi Casual Worry1 at TenthLeft
+    show Haruhi Casual Quest2 at TenthLeft
     with dissolve
     $ _window = False
     "\"Nevermind that!\" he said quickly, shaking his head."
     show Kyon Casual Ser3 at right
     "\"Haruhi, there's something I have to tell you, something I think will make you believe me.\""
+    show Kyon Casual Ser1
     show Haruhi Casual Quest1
     "\"What's that?\" She couldn't think of anything else to say or ask."
     nvl clear
-    show Kyon Casual Ser1 at right
+    show Haruhi Casual Quest2
+    show Kyon Casual Ser2 at right
     "\"Tanabata last year was the first time I traveled back in time,\" he began, his expression solemn."
     show Kyon Casual Ser3 at right
     "\"I went to a night three years earlier. That would be Tanabata four years ago."
-    show Kyon Casual Ser1 at right
     "\"While I was there, I was sent to East Middle school, carrying Asahina-san on my back.\""
     nvl clear
+    show Kyon Casual Ser1
     show Haruhi Casual Sup2
     "\"Y...you're...\" she gasped, her eyes widening as the world around her spun, the amazing, simultaneously horrifying and delightful realization that he was speaking the truth was making her dizzy."
     nvl clear
-    show Kyon Casual Ser2 at right
+    show Kyon Casual Ser3 at right
     "\"And I met a younger version of yourself, and wrote the message, 'I am here' on the school grounds, following your instructions. You asked who I was, and I told you that I went by ..."
     nvl clear
     show Kyon Casual Ser1 at right

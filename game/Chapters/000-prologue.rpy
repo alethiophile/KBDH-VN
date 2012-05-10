@@ -77,61 +77,76 @@ label prologue:
     "Her momentum carried her forward, resulting in him pressing one hand flat against her chest, just below her neck."
     "Her eyes quickly sharpened, her features fixed into a scowl."
     nvl clear
-    show Haruhi Ang3 at center_left
+    show Haruhi Unhap1 at center_left
     "{=loud}\"What the hell, Kyon!?\"{/=loud}"
     $ _window = True
+    show Haruhi Unhap2
     show Kyon Ser1 at right with move
+    show Kyon Ser3
     "He held up one hand and said, \"Something's up.\""
+    show Kyon Ser1
     show Haruhi Hap3 at center_left
     "Her irritation vanished instantly, replaced with wide-eyed excitement. She clapped her hands together and hopped from foot to foot."
     show Haruhi Hap4 at center_left
     "{=loud}\"Yes!\"{/=loud} she cheered. \"It's been so {i}boring{/i} lately!\""
     nvl clear
+    show Haruhi Hap5
     show Kyon Ser2
     "\"This better not be your fault!\""
     show Kyon Sigh1 at right
     "He shook his head in irritation, then patted his left coat pocket. Then right, then both pants pockets, then the back of each hand."
+    show Kyon Sigh3
     "After that, he traced the fingertips of his right hand above his ear, eyes distant, and pulled his cell phone from one pocket."
     nvl clear
     show Haruhi Ang1 at center_left
     "\"What is it?\" she asked, when he spent a long minute studying the screen."
+    show Haruhi Ang5
     show Kyon Neutral1 at right
     "\"Maybe a false alarm,\" he admitted, shifting his shoulders.{nw} "
     show Kyon Ang1 at right
-    extend "\"Are you messing with me?\""   
+    extend "\"Are you messing with me?\""
+    show Kyon Ser1
     show Haruhi Ang2 at center_left
     "\"I should be asking you that! But whatever! You hauled me all the way out here—by my shirt, I might add!—so tongues are going to wag! If you're going to do this, then you know what I want!\""
     show Haruhi Hap1 at center_left
     nvl clear
     show Kyon Sigh2 at right
     "\"Haruhi....\""
+    show Kyon Sigh4
     show Haruhi Hap2 at center_left
     "\"Do it!\" she said, bouncing on the balls of her feet in excitement. \"I want to see it!\""
+    show Haruhi Smile3
     show Kyon Neutral2 at right
     "\"Is now really the time? Break's going to be over soon—\""
+    show Kyon Neutral3
     show Haruhi Hap3 at center_left
     "\"Get it out now! I want to see!\""
     nvl clear
     show Kyon Sigh1 at right
     "Heaving the sigh of the eternally doomed, he put his phone away and muttered underneath his breath."
+    show Kyon Sigh3
     show Haruhi Hap4 at center_left
     "\"Do that voice, too! You know the one? Like from a movie voice-over guy? I love that! Do it! Come on!\""
+    show Haruhi Hap5
     show Kyon Ser1 at right
     "\"Fine,\" he grumbled.{nw}"
     show Kyon Sigh2 at right
     extend " \"But you come up with the excuse for class.\""
     nvl clear
-    show Haruhi Hap4 at center_left
+    show Kyon Sigh4
+    show Haruhi Hap1 at center_left
     "\"Student council president,\" she said without hesitation. \"Blame him.\""
     show Kyon Sigh2 at right
+    show Haruhi Smile3
     "\"Ahem,\" he coughed, shooting her a dark look.{nw}"
-    show Kyon Ser1 at right
+    show Kyon Ser3 at right
     stop music
     extend " \"Take a step back, I don't want to catch you in the interdiction field again.\""
-    show Haruhi Hap4 at center_left
+    show Kyon Ser1
+    show Haruhi Hap5 at center_left
     "She nodded and stepped backwards, against the wall."
     $ _window = True
-    show Haruhi Hap4:
+    show Haruhi Hap5:
         xalign 0.1 yalign 1.0
         linear 0.4 xalign 0.0
     $ renpy.pause(0.4, hard=True)
@@ -139,8 +154,6 @@ label prologue:
     play music "music/YukiAsakuraFight.mp3" fadein 1
     # Set this up EVERY time last 'play music' in chapter is started
     $ music_need = False
-    # show Kyon Ser2 at right
-    # pause 1
     play sound "SE/DunDun.mp3"
     show Kyon Sigh3 at right
     "{w=1.0}Standing perfectly straight, hands at his sides, he closed his eyes, and began speaking in his best faux movie announcer voice-over."
@@ -158,9 +171,11 @@ label prologue:
     play sound "SE/CloakOff.mp3"
     show Coat at right with coatin
     extend "as a knee-length tan greatcoat coalesced, covering his shoulders with a thick mantle."
+    show Kyon Ser1
     show Haruhi Hap3 at left
     "\"Doesn't that get hot?\" Her smile had only grown, her eyes shining with anticipation."
     nvl clear
+    show Haruhi Smile3
     show Kyon Neutral2 at right
     "\"We had environmental conditioning added last night, since the weather's heating up,\" he said in a normal voice."
     show Kyon Ser2 at right
@@ -190,21 +205,25 @@ label prologue:
     "Pulling a well-crafted sword hilt with no cross-guard or blade from one pocket, he released it horizontally, and it hung before him between the other weapons. \"{=movie}Beam saber is at full capacity.{/=movie}\""
     show Kyon Ser1 at right
     "After pulling his cell phone from one pocket, he brushed his fingertips over his ear, revealing three dull metal studs in the skinsuit."
+    show Kyon Ser2
     "\"{=movie}All systems nominal; no proximity alarms—{/=movie}\""
     nvl clear
     show Kyon Ang1 at right
     "He broke off suddenly, scowling. \"Okay,\" he said in his normal voice. \"My mistake. We've got incoming.\""
+    show Kyon Ser1
     show Haruhi Hap4:
         xalign 0.0 yalign 1.0
         linear 0.1 xalign 0.1
     "{=loud}\"God damn it, Kyon, you're so cool when you do this,\"{/=loud} Haruhi gushed, clapping her hands together. \"What is it?\""
     nvl clear
+    show Haruhi Hap5
     show Kyon Neutral1 at right
     "\"I'm not sure,\" he said, as a cold, familiar chuckle echoed."
     show Kyon Ser1 at right
     "One eyebrow twitched and he stowed his weapons, banishing the ring of light and flinging his phone at Haruhi."
     show Kyon Ser2 at right
     "\"Speed dial two,\" he snapped. \"Stay in the circle.\""
+    show Kyon Ser1
     show Haruhi Pout1:
         xalign 0.1 yalign 1.0
         linear 0.4 xalign 0.0
@@ -246,11 +265,14 @@ label prologue:
     show Coat at right
     with dissolve
     "\"Long time no see,\" he said, switching stance to the long-sword style, Ni-Ten Ichi Ryu."
+    show Kyon Ser1
     show Asakura Frown2 at left
     "\"Um.... Hm. This is different. You've certainly changed, Kyon-kun.\""
     nvl clear
     show Kyon Ser2 at right
+    show Asakura Frown1
     "\"That's funny, Asakura-san, because you haven't.\""
+    nvl clear
     
     jump AO1_1
 

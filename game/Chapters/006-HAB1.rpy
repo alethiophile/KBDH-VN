@@ -13,15 +13,23 @@ label HAB1:
     
     scene bg hallway with fade
     play music "Music/suspicion.ogg"
-    show Kanae Neutral1 at right
+    show Kanae Neutral1 at TenthRight
     "After the lunch chime, Kanae had decided that she would return to the club room; if she were lucky, Sempai would be there! And if she weren't lucky, well, Sempai's friends were her friends, too, so that would be fine."
     #show Ryo at left
     "But she had only made it a few steps down the hallway before a taller third year boy approached her, tape across his nose and a bruise marring his face deeply around one eye. He raised a hand in greeting before glancing around, then asked, \"Are you Michikyuu Kanae-san?\""
-    #"\"Um,\" she managed, a bit unnerved by the delinquent-looking student before her. \"Yes? Are you looking for the SOS Brigade, maybe? I'm just a new member, so I don't know much yet.\""
-    #"\"No, no,\" he said, glancing around nervously, then breaking into a smile that she really didn't trust; the kind of expression she'd seen on the rude boy who chased her across dimensions. For a panicked instance, she considered sliding away ... but she couldn't do that! Not with Sempai here, and for the first time in hundreds of worlds, someone who could help her learn how to slide better! What if she couldn't find her way back? It was still very hard, even with the practice that Yuki helped her get...."
-    #"\"Hey,\" he said suddenly, \"you know ... Kyon, right?\""
-    #"\"Sempai?\" she said, smiling. Was this boy some sort of friend of her sempai's, asking for help? Maybe that was it.... \"Yes! Is something the matter?\""
-    #"\"Eh, no, I just heard....\" He trailed off and glanced around again, though the only ones around them were other students heading to their lunches, occasionally pausing to look at her or the taller boy. \"Well, there is one thing,\" he allowed. \"Could you come with me for a bit...?\""
+    nvl clear
+    show Kanae Unhap2
+    "\"Um,\" she managed, a bit unnerved by the delinquent-looking student before her. \"Yes? Are you looking for the SOS Brigade, maybe? I'm just a new member, so I don't know much yet.\""
+    nvl clear
+    show Kanae Unhap3
+    #show Ryo
+    "\"No, no,\" he said, glancing around nervously, then breaking into a smile that she really didn't trust; the kind of expression she'd seen on the rude boy who chased her across dimensions. For a panicked instance, she considered sliding away ... but she couldn't do that! Not with Sempai here, and for the first time in hundreds of worlds, someone who could help her learn how to slide better! What if she couldn't find her way back? It was still very hard, even with the practice that Yuki helped her get...."
+    nvl clear
+    "\"Hey,\" he said suddenly, \"you know ... Kyon, right?\""
+    show Kanae Hap2
+    "\"Sempai?\" she said, smiling. Was this boy some sort of friend of her sempai's, asking for help? Maybe that was it.... \"Yes! Is something the matter?\""
+    show Kanae Smile1
+    "\"Eh, no, I just heard....\" He trailed off and glanced around again, though the only ones around them were other students heading to their lunches, occasionally pausing to look at her or the taller boy. \"Well, there is one thing,\" he allowed. \"Could you come with me for a bit...?\""
     #"\"I.... I think I'd better go see Sempai first,\" she decided, shaking her head."
     #"The boy's face twisted in annoyance before he shook his head and declared abruptly, \"I need you to come with me; your 'sempai' is causing a lot of trouble to us!\""
     #"At this point, all of the surrounding students had stopped moving, turning attention to the pair. Kanae backed up a few steps anxiously, and when the upperclassman moved towards her, she sprinted away as quickly as she could, managing to make it halfway to the clubroom before he seized her shoulder and brought her down to the hallway floor. She whimpered, her lunch spilling out of her bento all across the walkway, while more students crowded around. \"Help!\" she yelled, cowering when the boy, huffing for breath, grabbed her wrist and hauled her unceremoniously to her feet."
