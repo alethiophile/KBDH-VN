@@ -4,7 +4,6 @@ init:
     image almostblack one = "#0008"
     image almostblack two = "#000e"
     image bg classroom = "Backgrounds/classroom.jpg"
-    image hallway = "Backgrounds/hallway.png"
     image bg hallway = "Backgrounds/hallway.png"
     image bg stairwell = "Backgrounds/stairwell.jpg"
     image bg stairwellbarrier = "Backgrounds/stairwellbarrier.jpg"
