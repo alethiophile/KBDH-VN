@@ -48,7 +48,8 @@ label prologue:
     show Kyon Ser1 at osr_center
     with fast_move
     # Z0: end of "pulling"
-    scene bg hallway with None:
+    scene white
+    show bg hallway with None:
         xanchor .5 yanchor .5
         xpos .5 ypos .5
         linear .5 rotate 360
