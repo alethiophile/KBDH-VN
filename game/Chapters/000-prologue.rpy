@@ -27,8 +27,11 @@ label prologue:
     nvl clear
     "—he was there first, seizing the decorative ties of her sailor uniform's neckerchief and making for the door at top speed." 
     nvl clear
-    scene bg hallway with fade:
+    scene black:
         size (800,600)
+    show hallway:
+        size (800,600)
+    with fade    
     # Z0: Added the "pulling" of Hauhi
     show Haruhi Sup1 at osl_center
     show Kyon Ser1 at osl_right
@@ -48,7 +51,7 @@ label prologue:
     show Kyon Ser1 at osr_center
     with fast_move
     # Z0: end of "pulling"
-    scene bg hallway with None:
+    show hallway with None:
         xanchor .5 yanchor .5
         xpos .5 ypos .5
         linear .5 rotate 360
