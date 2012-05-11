@@ -1109,7 +1109,7 @@ init:
     image screds2 = Text("in turn based on the\nSuzumiya Haruhi series by\nNagaru Tanigawa", text_align=0.5, size=30)
     
     # Text for simple Credit Roll. Needs editing. And {font=fancyfont.ttf}magic{/font}...
-    image credroll = Text("\n{size=+5}Presented by:{/size}\n\nBig Damn VN Brigade:\n\nAgasa\nalethiophile\nFilraen\nOroboro\nZfish9\nJason Ulloa\nZer0Null\n\n\nMany thanks to:\n\njonbob\nSpecular\nPax_Empyrean\neternaleye\n\n\n\n\n\n\nSpecial thanks to:\n\nBrian Randall\nauthor of Kyon: Big Damn Hero\n\nand\n\nNagaru Tanigawa\nauthor of Suzumiya Haruhi series\n\n\nAnd everyone\nwho totally voluntarily\ndonated the assets\nfor our noble cause\n^_______________^\n\n\n\n\n\nDisclaimer: This production makes use\nof intellectual property belonging to\nBrian Randall, Nagaru Tanigawa \nand others. No disrespect is intended.\n\nNeither Kyon: Big Damn Hero \nnor Suzumiya Haruhi and related \ncharacters are owned by anyone \nassociated with Big Damn VN\n", text_align=0.5, size=30)
+    image credroll = Text("\n{size=+5}Presented by:{/size}\n\nBig Damn VN Brigade:\n\nAgasa\nalethiophile\nFilraen\nOroboro\nZfish9\nJason Ulloa\nZero Null\n\n\nMany thanks to:\n\njonbob\nSpecular\nPax_Empyrean\neternaleye\n\n\n\n\n\n\nSpecial thanks to:\n\nBrian Randall\nauthor of Kyon: Big Damn Hero\n\nand\n\nNagaru Tanigawa\nauthor of Suzumiya Haruhi series\n\n\nAnd everyone\nwho totally voluntarily\ndonated the assets\nfor our noble cause\n^_______________^\n\n\n\n\n\nDisclaimer: This production makes use\nof intellectual property belonging to\nBrian Randall, Nagaru Tanigawa \nand others. No disrespect is intended.\n\nNeither Kyon: Big Damn Hero \nnor Suzumiya Haruhi and related \ncharacters are owned by anyone \nassociated with Big Damn VN\n", text_align=0.5, size=30)
     
     #A quick next episode preview
     image Popen = Text("Next time on Kyon: Big Damn Hero", text_align=0.5, size=30)
@@ -1421,25 +1421,34 @@ init -1 python:
         persistent.text_styling = "Extra"
     
     if persistent.eyecatch_styling == None:
-        persistent.eyecatch_styling = "Moves"
+        persistent.eyecatch_styling = "Dissolves"
     
     chapters = [
-        ("In Media Res Prologue: Exactly What it Says on the Tin", "prologue", True),
-        ("Obligatory Anachronic Order Explanation Arc", "", False),
-        ("Chapter One: Scene Twelve, the Ninth Big Fight", "AO1_1", True),
-        ("Chapter Two: Clear as Mud", "AO2", True),
-        ("Straightforward Flashback and Exposition Arc", "", False),
-        ("Chapter Three: It Goes To Eleven", "SF1", True),
-        ("Chapter Four: Epileptic Plot Tree", "SF2", True),
-        ("Chapter Five: The Requisite Haruhi-and-Kyon in Closed Space Together Again Part (You Know The One)", "SF3", True),
+        [
+            ("In Media Res Prologue:\nExactly What it Says on the Tin", "prologue", True)
+        ],
+        [
+            ("Obligatory Anachronic Order Explanation Arc", "", False),
+            ("Chapter One: Scene Twelve,\nthe Ninth Big Fight", "AO1_1", True),
+            ("Chapter Two: Clear as Mud", "AO2", True)
+        ],
+        [
+            ("Straightforward Flashback and Exposition Arc", "", False),
+            ("Chapter Three: It Goes To Eleven", "SF1", True),
+            ("Chapter Four: Epileptic Plot Tree", "SF2", True),
+            ("Chapter Five: The Requisite Haruhi-and-Kyon in Closed Space Together Again Part (You Know The One)", "SF3", True)
+        ],
         # ("Heroic Antics Begin Arc - Chapter Six: \n\"Finally, Some Action\"", "HAB1"),
-        ("Label a scene you're working on test and use this", "Test", True),
-        # ("-----", "backtomain"),
-               
-        ("Credits", "credits", True),
-        ("Credits (rolling)", "credits_roll", True),
-        ("Another testbed, Eyecatchies", "test_Z0_eye", True),
-        ("Another testbed, Title cards", "test_Z0_titles", True),]
+        
+        [
+            ("Label a scene you're working on test and use this", "Test", True),
+            # ("-----", "backtomain"),
+                   
+            ("Credits", "credits", True),
+            ("Credits (rolling)", "credits_roll", True),
+            ("Another testbed, Eyecatchies", "test_Z0_eye", True),
+            ("Another testbed, Title cards", "test_Z0_titles", True)],
+        ]
         
     ecbg = "black"
 
@@ -1508,10 +1517,10 @@ label credits_roll:
         linear 5 ypos 0.5
     show credroll:
         linear 5 ypos 0.0
-    show WaitForInputBlinking:
-        alpha 0.0 right
-        linear 5 pass
-        alpha 1.0
+    # show WaitForInputBlinking:
+        # alpha 0.0 right
+        # linear 5 pass
+        # alpha 1.0
     pause
     stop music fadeout 1
     hide BDVNlogo with coatout

@@ -186,7 +186,7 @@ screen Chapters:
         #background None
 
         has vbox
-        frame:
+        vbox:
             side "l c":
                 area (0.0, 0.0, 450, 0.7)
                 
@@ -195,21 +195,24 @@ screen Chapters:
                     mousewheel True
                     
                     vbox:
-                        for name, label, buttonp in chapters:
-                            if buttonp:
-                                button:
-                                    action Start(label)
-                                    #left_padding 20
-                                    xfill True
-                                    size_group "chb"
-                                
-                                    hbox:
-                                        xalign 0.5
-                                        text name style "button_text" size 20 text_align 0.5 #min_width 420
-                            else:
-                                hbox:
-                                    xalign 0.5
-                                    text name style "button_text" size 20 text_align 0.5 color "#000"
+                        for arc in chapters:
+                            frame:
+                                has vbox
+                                for name, label, buttonp in arc:
+                                    if buttonp:
+                                            button:
+                                                action Start(label)
+                                                ypadding 5
+                                                xfill True
+                                                size_group "chb"
+                                            
+                                                hbox:
+                                                    xalign 0.5
+                                                    text name style "button_text" size 18 line_leading -2 text_align 0.5 #min_width 420
+                                    else:
+                                        hbox:
+                                            xalign 0.5
+                                            text name style "button_text" size 18 text_align 0.5 color "#000"
 
                 bar adjustment adj style "vscrollbar" 
                 
@@ -248,7 +251,7 @@ screen main_menu:
 
         has vbox
 
-        textbutton _("Start Game") action Start()
+        textbutton _("Start from\nthe Beginning") action Start()
         textbutton _("Load Game") action ShowMenu("load")
         textbutton _("Chapters") action ShowMenu("Chapters")
         textbutton _("Preferences") action ShowMenu("preferences")
@@ -479,13 +482,13 @@ screen preferences:
                 label _("Auto-Forward Time")
                 bar value Preference("auto-forward time")
 
-            frame:
-                style_group "pref"
-                has vbox
+            # frame:
+                # style_group "pref"
+                # has vbox
                 
-                label _("Eyecatch style")#: [persistent.text_styling]")
-                textbutton _("Moves In-Out") action SetField(persistent, "eyecatch_styling", "Moves")
-                textbutton _("Dissolves") action SetField(persistent, "eyecatch_styling", "Dissolves")
+                # label _("Eyecatch style")#: [persistent.text_styling]")
+                # textbutton _("Moves In-Out") action SetField(persistent, "eyecatch_styling", "Moves")
+                # textbutton _("Dissolves") action SetField(persistent, "eyecatch_styling", "Dissolves")
 
         vbox:
             frame:

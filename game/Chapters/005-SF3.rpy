@@ -381,6 +381,7 @@ label SF3:
     $ _window = True
     scene white with Dissolve(12.0)
     $ _window = False
+    scene black with Dissolve(3.0)
     nvl clear
     $ renpy.pause(.5, hard=True)
     # call eyecatch("Thursday, April 21") from SF3_sc001
