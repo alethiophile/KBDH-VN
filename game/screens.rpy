@@ -209,7 +209,7 @@ screen Chapters:
                             else:
                                 hbox:
                                     xalign 0.5
-                                    text name style "button_text" size 20 text_align 0.5
+                                    text name style "button_text" size 20 text_align 0.5 color "#000"
 
                 bar adjustment adj style "vscrollbar" 
                 
