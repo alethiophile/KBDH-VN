@@ -831,7 +831,6 @@ label AO1_1:
     
     jump prologue2
 
-
 label AO1_2:
     nvl clear
     play music "Music/Morning.ogg"
@@ -855,7 +854,7 @@ label AO1_2:
     nvl clear
     stop music fadeout 2
     $ _window = True
-    scene black  with dissolve
+    scene black with dissolve
     "Now Haruhi, as she understood it, believed that she could change reality...."
     $ _window = False
     nvl clear
@@ -873,14 +872,13 @@ label AO1_2:
     show Htears Casual at left
     with fade
     "\"But you're saying, I have a {i}power{/i} I don't even know about?\" Haruhi asked, now pacing anxiously back and forth."
-    show Haruhi Casual Unhap2 at left
     "\"Why would you have kept this a secret from me?! Even more than the fact that you're the people I've been looking for, the fact that I can do things!\""
-    show Haruhi Casual Unhap1 at left
+    show Haruhi Casual Unhap2 at left
     "She looked on the verge of tears and laughter at the same time."
     nvl clear
     hide Haruhi
     hide Htears
-    show Koizumi Crossed Casual Ser1 at center
+    show Koizumi Crossed Casual Sigh1 at center
     with dissolve
     "\"That was the decision of my superiors,\" Koizumi offered, frowning."
     show Koizumi Crossed Casual Ser2 at center
@@ -905,14 +903,16 @@ label AO1_2:
     "\"Focus is on preventing my imminent deletion,\" the interface finally answered. \"Limited resources.\""
     nvl clear
     hide Yuki
-    show Haruhi Casual Unhap2 at left
+    show Haruhi Casual Unhap1 at left
     show Kyon Casual Ser1 at right
     show Htears Casual at left
     with dissolve
     "\"So, all along, the lowliest ranking member of the SOS Brigade is the only one who ever actually tried to tell me the truth,\" Haruhi grumbled."
+    show Haruhi Casual Unhap2
     show Kyon Casual Sigh1 at right
     "\"That aside,\" Kyon said, shifting his shoulders, \"we can talk about this later. I'm sorry, but I'm really worried about Nagato. Since you believe us, or at least, I think you do...\""
     nvl clear
+    show Kyon Casual Sigh3
     show Haruhi Casual Unhap1 at left
     "\"I don't,\" she countered. \"I believe {i}you{/i}. Because you {i}tried{/i}. But....\" She trailed off and shrugged, gesturing to the other three."
     show Haruhi Casual Ang4 at left
@@ -954,16 +954,20 @@ label AO1_2:
     nvl clear
     "\"And in every case, all three of them couldn't tell you because their bosses {i}told{/i} them not to.\""
     nvl clear
+    show Kyon Casual Ser1
     show Haruhi Casual Ang4 at left
     "\"What about {i}your{/i} boss,\" she snapped, turning to eye Kyon with suspicion. \"What does that person say?\""
     show Kyon Casual Sigh1 at right
+    show Haruhi Casual Ang5
     "\"Right now she's asking me if she has any reason to trust her closest friends,\" he answered."
-    show Kyon Casual Worry1 at right
+    show Kyon Casual Puzzle1 at right
     "\"And I'm begging her to, because that may be the only way to save Nagato's life.\""
     nvl clear
+    show Kyon Casual Worry1
     show Haruhi Casual Eyeroll1 at left
     "\"I.... I'm your boss?\" she asked, narrowing her eyes in suspicion. \"You don't work for anyone else?\""
-    show Kyon Casual Ser1 at right
+    show Haruhi Casual Eyeroll2
+    show Kyon Casual Ser3 at right
     "\"Thankfully,\" he agreed, nodding. "
     nvl clear
     show Kyon Casual Sigh2 at right
@@ -973,11 +977,14 @@ label AO1_2:
     show Kyon Casual Ser3 at right
     "\"But I've only ever done things because I felt it was important for you, or for the sake of the entire world.\""
     nvl clear
+    show Kyon Casual Ser1
     show Haruhi Casual Worry1 at left
     "\"The entire world?\" she pressed, struggling to contain all the new information. \"You've saved the world?\""
+    show Haruhi Casual Quest2
     show Kyon Casual Sigh1 at right
     "\"Technically, {i}you{/i} did,\" he said, shaking his head. \"I just convinced you to do it ... but we already went over that.\""
     nvl clear
+    show Kyon Casual Sigh3
     show Haruhi Casual Quest1 at left
     "\"So you're some kind of undercover hero without any of his own special abilities that fights to take care of me, and to save the world?\" she asked."
     hide Haruhi
@@ -987,6 +994,7 @@ label AO1_2:
     with dissolve
     "\"Yes,\" Mikuru said quickly, nodding. \"He absolutely does! I don't know if you'll believe me, but it's the truth!\""
     show Yuki Talk1 at left
+    show Mikuru Cower Casual Nervous1
     "\"When this reality was overwritten with a reality where you had no powers, and none of our factions existed,\" Yuki contributed suddenly, \"he found a way to restore this reality once more, actually creating a parallel universe.\""
     nvl clear
     hide Mikuru
@@ -995,22 +1003,29 @@ label AO1_2:
     show Kyon Casual Ser1 at right
     with dissolve
     "\"Then I'll believe that,\" she allowed, as strange as it seemed."
+    show Haruhi Casual Sigh3
     "But he must be ... it made sense that John Smith was Kyon if he was a normal person who called in favors from others."
     nvl clear
-    show Haruhi Casual Worry1
+    show Haruhi Casual Worry2
     "But still...."
+    show Haruhi Casual Ang1
     "\"Okay. Things are going to change, right now. Kyon, you want me to save Yuki, right?\""
+    show Haruhi Casual Ang5
     show Kyon Casual Sup2
     show Ksweat at right
     "\"You mean, you don't?\" he asked, aghast."
-    show Haruhi Casual Pout1 at left
+    show Haruhi Casual Pout2 at left
     "She winced. \"Of course I do! But I want your opinion!\""
     hide Ksweat
+    show Haruhi Casual Pout1
     show Kyon Casual Ang1 at right
     "\"Absolutely! Haven't I been clear enough!?\""
     nvl clear
-    show Haruhi Casual Ang3 at left
-    "\"Okay, then,\" Haruhi decided. \"But no more running around behind my back! Anyone who can't do this is out of the Brigade.\""
+    show Kyon Casual Ser1
+    show Haruhi Casual Ang2 at left
+    "\"Okay, then,\" Haruhi decided. {nw}"
+    show Haruhi Casual Ang4
+    extend "\"But no more running around behind my back! Anyone who can't do this is out of the Brigade.\""
     hide Haruhi
     hide Kyon
     show Haruhi Point Casual Ang1 at center
@@ -1049,6 +1064,7 @@ label AO1_2:
     show Yuki Side2 at center
     with dissolve
     "\"Well, fine,\" Haruhi grumbled, narrowing her eyes. \"I can trust {i}him{/i}.\""
+    show Haruhi Casual Eyeroll2
     show Kyon Casual Ser2 at right
     "\"Right,\" Kyon said, looking at the interface at the table. \"Nagato, how much time is left?\""
     show Yuki Talk2 at center
@@ -1059,6 +1075,7 @@ label AO1_2:
     show Yuki Side1 at center
     "\"So ... how do we do this?\" Haruhi asked, biting her lip. \"How do I use my power?\""
     nvl clear
+    show Haruhi Casual Quest2
     show Kyon Casual Ser3 at right
     "\"Your power is very dangerous,\" Kyon warned her. \"If it's used incorrectly, you might accidentally destroy the universe. But Nagato can use that power safely. {w}So, my idea is that you can become her boss and replace the Integrated Data Sentience Entity for her, and hopefully we won't have to destroy them. {w}If we have to, then they have to go ... that's all there is to it. But if we can avoid that ... well. Nagato, can you do what I'm thinking of?\""
     nvl clear
@@ -1066,11 +1083,14 @@ label AO1_2:
     show Yuki Talk1 at center
     "Yuki blinked several times, then said, \"A memetic link can be formed between myself and Suzumiya Haruhi, such that all created data is cached within an internal buffer for analysis to await approval or disapproval. This will require the permissions of Suzumiya Haruhi, and an additional password carrier.\" Her eyes fixed on Kyon. \"That carrier shall be you. Is this acceptable?\""
     nvl clear
+    show Yuki Side1
     show Haruhi Casual Sigh1 at left
     "\"If that's how it has to be done,\" Haruhi agreed with a shrug. \"I don't want you to die, Yuki.... Kyon?\""
+    show Haruhi Casual Sigh3
     show Kyon Casual Ser2 at right
     "\"Yeah,\" he said, nodding quickly. \"Let's do it.\""
     nvl clear
+    show Kyon Casual Ser1
     $ _window = True
     show Yuki Side1 at HalfLeft with move
     $ _window = False
@@ -1081,7 +1101,7 @@ label AO1_2:
     show Yuki Talk2 at HalfLeft
     "\"Awaiting data creation.\""
     nvl clear
-    # show Haruhi Casual Quest1 at left
+    show Yuki Side2
     show Haruhi Casual Ang1 at left
     "\"Data creation?\" Haruhi asked, frowning. \"What does that {i}mean{/i} exactly?\""
     $ _window = True
@@ -1091,24 +1111,29 @@ label AO1_2:
     "\"It has to do with how ... what she is views our world,\" Koizumi supplied helpfully. \"From our point of view, think of it as the ability to create new aspects of reality. I believe she is prepared for you to try and use your powers.\""
     nvl clear
     scene bg YukiRoomCenter
+    show Yuki Side1 at HalfLeft
     show Haruhi Casual Ang1 at left
     show Kyon Casual Ser1 at right
-    show Yuki Side1 at center
     with dissolve
     "\"Yeah, but ... how do I do that?\""
+    show Haruhi Casual Unhap2
     show Kyon Casual Ser2 at right
     "\"Try and believe something,\" Kyon suggested. \"Believe that Yuki is going to be fine, and will report to you from now on.\""
     nvl clear
+    show Kyon Casual Ser1
     show Haruhi Casual Focus1 at left
     "Haruhi shifted her gaze to the smaller girl before her, then took a deep breath and closed her eyes, concentrating."
-    show Haruhi Casual Sigh1 at left
+    show Haruhi Casual Sigh2 at left
     "\"Yuki works for me,\" she muttered. \"She's a real alien ... but she's going to break away from her bosses and work for {i}me{/i}....\""
     nvl clear
-    show Yuki Talk2 at center
+    show Haruhi Casual Focus1
+    show Yuki Talk2
     "\"Program loaded,\" Yuki said. Turning her eyes to Kyon, she asked, \"Permission to proceed?\""
+    show Yuki Side2
     show Kyon Casual Ser3 at right
     stop music fadeout 3
     "\"Granted,\" he said without hesitation."
+    show Kyon Casual Ser1
     nvl clear
     # scene black with dissolve
     # $ renpy.pause(.2, hard=True)
@@ -1183,10 +1208,7 @@ label AO1_2:
     "He eyed her, then shook his head. He'd brought this upon himself."
     "Maybe, with luck, Nagato could act as a controlling agent and keep Haruhi in line. "
     "Maybe, he told himself. "
-    # nvl clear
     "If this was what it took to save Nagato...."  
     nvl clear
     
-    # Always place "jump credits" at the (current) end. Credits ARE important! ^___^
     jump AO2
-    #jump credits

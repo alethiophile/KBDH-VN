@@ -7,7 +7,6 @@ label prologue:
     scene black
     show title 000 at card_pos 
     with slowfadein
-    
     pause
     play sound "SE/Pageflip3.mp3" 
 
@@ -67,12 +66,6 @@ label prologue:
     show Kyon Ser1 at center
     show Haruhi Ang3 at center_left
     with fast_move
-    #show Kyon Ser1: 
-    #    xalign -0.25 yalign 1.0
-    #    linear 0.25 center
-    #show Haruhi Ang3: 
-    #    xalign -0.50 yalign 1.0
-    #    linear 0.25 center_left
     # Z0: End of "stopping"
     "Her momentum carried her forward, resulting in him pressing one hand flat against her chest, just below her neck."
     "Her eyes quickly sharpened, her features fixed into a scowl."
@@ -275,8 +268,7 @@ label prologue:
     nvl clear
     
     jump AO1_1
-
-
+    
 label prologue2:
     # Still the part of ch001__AO_1
     $ renpy.music.set_volume(0.2, .5, channel="music")
@@ -351,18 +343,6 @@ label prologue2:
     play sound "SE/netlaunch.mp3"
     pause (1)
     play sound "SE/stake1.mp3"
-    # show Spike1 at center #center
-    # pause (0.05)
-    # play sound2 "SE/stake2.mp3"
-    # show Spike2 at center #center
-    # pause (0.05)
-    # play sound "SE/stake3.mp3"
-    # show Spike3 at center #center
-    # pause (0.05)
-    # play sound "SE/stake1.mp3"
-    # show Spike4 at center #center
-    # pause (0.5)
-    
     show stake2 at Position(xanchor=0.5, yanchor=1.0, xpos=600, ypos=1.2)
     with MoveTransition(0.08)
     play sound2 "SE/stake2.mp3"
@@ -375,11 +355,6 @@ label prologue2:
     show stake4 behind Asakura at Position(xanchor=0.5, yanchor=1.0, xpos=190, ypos=1.2)
     with MoveTransition(0.08)
     pause(0.1)
-    
-    # hide Spike1
-    # hide Spike2
-    # hide Spike3
-    # hide Spike4
     show Spike5 at center
     play sound "SE/elec1.mp3"
     "It fired with a rasping cough, launching a ring of metallic spikes to burrow into the rooftop around Ryouko, and then a grid of crackling brissant energy raked between each of the spikes, snaring the girl in a glowing, shuddering net."
@@ -394,32 +369,36 @@ label prologue2:
     hide Spike5
     scene bg roof
     show Haruhi Ang1 at left
-    show Kyon Ser2 at right
+    show Kyon Ser1 at right
     show Skinsuit at right
     show Coat at right  
     "\"Is that going to hurt her?\" Haruhi asked, crossing her arms over her chest and raising an eyebrow at Kyon in concern."
     play music "Music/circulation.ogg"
     nvl clear
+    show Haruhi Ang5
+    show Kyon Ang1
     "\"Hurt her?\" he asked, somewhat indignantly."
-    show Kyon Ang1 at right
+    show Kyon Ser2 at right
     "\"Haruhi, she's tried to kill me. Three times, now, and you just saw one of them! Your primary concern is that I not hurt her?\""
     show Kyon Sigh1 at right
     play sound "SE/Guncock.mp3"
     "He muttered to himself beneath his breath, folding away his firearm into storage."
     nvl clear
     show Haruhi Ang3 at left
-    nvl clear
+    show Kyon Sigh3
     "Haruhi tapped a toe impatiently, still staring at him."
-    show Kyon Neutral1 at right
+    show Kyon Ser2 at right
     "Pulling a phone identical to the one Haruhi was holding from one pocket, he punched a key. \"Nagato should be here shortly,\" he added, shaking his head."
-    show Kyon Ser1 at right
+    show Kyon Ser3 at right
     nvl clear
     "\"This is all up to you. I already know you'll take care of things just fine.\""
+    show Kyon Ser1
     show Haruhi Hap4 at left
     "\"Yes!\" she said, pumping one fist in the air. \"I get to do something! "
     show Haruhi Hap1 at left
     extend "Hey, how's the future?\""
     nvl clear
+    show Haruhi Smile3
     show Kyon Sigh1 at right
     "\"It's awesome,\" he said, annoyed. "
     show Kyon Ser2 at right
@@ -429,17 +408,20 @@ label prologue2:
     nvl clear
     show Kyon Neutral2 at right
     "\"And you won't see me tomorrow at school, because I'm going to be ... well. You'll find out.\""
-    show Haruhi Pout1 at left
+    show Kyon Neutral3
+    show Haruhi Pout2 at left
     "\"Okay,\" she agreed, frowning. "
     show Haruhi Quest1 at left
     extend "\"But, hey, why aren't you going to be around?\""
     nvl clear
-    show Kyon Ser1 at right
+    show Haruhi Quest2
+    show Kyon Ser3 at right
     "\"Further information is not available here,\" he warned, shaking his head."
-    show Kyon Smile1 at right
+    show Kyon Smile6 at right
     "\"Now, when you see that other me, tell him I said 'hi', like I always do.\""
     show Kyon Ser1 at right
     "He paused before glancing at his phone again with a grimace."
+    show Kyon Ser3
     "\"My time's up,\"{nw}"
     play sound "SE/CloakOn.mp3"
     hide Kyon
@@ -455,7 +437,6 @@ label prologue2:
     "\"What?\" Ryouko asked, still trapped in the containment field. "
     show Asakura Smile3 at center
     extend "\"He just abandoned me here with you?\""
-    #play music "Music/NagatoTheme.mp3"
     scene bg roofright
     pause (0.5)
     play sound "SE/impact.mp3"
@@ -524,7 +505,7 @@ label prologue2:
     show Kyon Pain1 at right
     show Skinsuit at right
     show Coat at right
-    show Haruhi Worry1 at center
+    show Haruhi Quest2 at center
     "\"Granted.\" Kyon said, {nw}"
     $ _window = True
     play sound "SE/heal1.mp3"
@@ -546,11 +527,14 @@ label prologue2:
     "\"Oh, that feels so much better! Thank you; that probably saved my life."
     show Kyon Neutral2 at right
     "\"And for future reference, you can probably assume that I'm okay with that one being used.\""
+    show Kyon Neutral3
     "\"Acknowledged,\" Nagato agreed."
     nvl clear
     $ _window = True
-    show Haruhi Smile2 at left with move
+    show Haruhi Smile3 at left with move
+    show Haruhi Hap2
     "\"Hmm, hey, Kyon, you know, you're going to have to really step up your game,\" Haruhi said suddenly, tossing his cell phone back to him."
+    show Haruhi Smile3
     show Kyon Ser1 at right
     play sound "SE/woosh.mp3"
     hide Skinsuit with wipedown
@@ -561,15 +545,17 @@ label prologue2:
     show Kyon Ser2 at right
     "\"What's that supposed to mean?\" he asked in irritation."
     nvl clear
+    show Kyon Ser1
     show Haruhi Sigh1 at left
     "\"Well, this is fun and all, but you can hardly expect me to take your lectures on using power responsibly seriously when you're always relying on your future self to save you,\" she warned, raising one finger and waggling it at him."
+    show Haruhi Sigh3
     show Kyon Sigh2 at right
     "He sighed and hung his head. \"You know, I really am trying my hardest,\""
     show Kyon Worry1 at right
     show Haruhi Worry1 at left
     extend " he muttered, crossing his arms over his chest and looking away towards the sea."
     nvl clear
-    show Kyon Ser1 at right
+    show Kyon Ser3 at right
     "\"But I can't just leave you alone, and Nagato can't handle another interface right now.\""
     scene bg roofclose
     show Asakura Smile2  at center
@@ -590,34 +576,35 @@ label prologue2:
     show Haruhi Sup1 at left
     show Kyon Ser1 at right
     "{=shout}\"Waaaait!\"{/=shout} Haruhi yelled, stomping one foot and spinning to face Yuki."
-    # show Haruhi Ang2 at left
     show Haruhi Crossed Ang2 at left
     "\"'Dispatched'? I don't think so! If you need something from her, there's got to be a way to do it without killing her!"
-    # show Haruhi Ang1 at left
-    show Haruhi Crossed Ang2 at left
+    show Haruhi Crossed Ang1 at left
     "\"What's the point of running into another alien, just to kill them?\""
     nvl clear
-    show Kyon Sigh1 at right
+    show Haruhi Crossed Ang3
+    show Kyon Sigh2 at right
     "\"But the fighting is fine,\" Kyon observed, stretching his arms above his head, then swiveling his hips and stretching his spine out."
-    show Kyon Ang1 at right
+    show Kyon Sigh1 at right
     "\"After all, no one of any importance was smashed off a building.\""
+    show Kyon Sigh3
     show Haruhi Eyeroll1 at left
     nvl clear
     "\"Kyon!\""
+    show Haruhi Eyeroll2
     show Kyon Sigh2 at right
     "\"Alright,\" he said, shaking his head."
     nvl clear
-    show Kyon Ser1 at right
+    show Kyon Ser3 at right
     "\"I don't really want Asakura to die either. But if her body were destroyed, she'd just go back to the place she came from."
-    show Kyon Worry1 at right
+    show Kyon Puzzle1 at right
     "\"At least, as I understand it.\" He shot a questioning glance towards Nagato."
     nvl clear
+    show Kyon Worry1
     "She didn't meet his eyes."
     nvl clear
     show Haruhi Hap1 at left
     "\"Good!\" Haruhi nodded decisively, grinning again."
-    # show Haruhi Smile3 at left
-    show Haruhi Crossed Smile1 at left
+    show Haruhi Crossed Hap1 at left
     "\"Yuki, let's come up with a backup plan. Something that will let you get your power-up and let us reform Ryouko. Can we do that?\""
     scene bg roofclose
     show Asakura Frown1  at center
@@ -634,22 +621,19 @@ label prologue2:
     show Yuki Side1
     $ _window = False
     "\"Hmm,\" Haruhi mused, narrowing her eyes and peering intently at Ryouko, who merely watched back curiously."
-    show Haruhi Ang2 at left
+    show Haruhi Ang1 at left
     play music "Music/Oi.mp3"
     "\"Um ... some kind of second chance ... a chance to start over, prove herself, and ... let's see, realize she doesn't want to kill Kyon at all.\""
     nvl clear
-    show Haruhi Smile2 at left
+    show Haruhi Ang2 at left
     "\"And she gets to give Yuki what she needs to make her equal to the next interface that comes along.... But no brainwashing, that's not cool."
-    show Haruhi Smile3 at left
+    show Haruhi Hap2 at left
     "\"So, maybe an 'evil' module or something like that, which Yuki can purify and use for good, letting Ryouko learn how to become a nicer person?\""
     nvl clear
     show Haruhi Hap3 at left
     "\"Yeah! That sounds very good! Let's do that.\""
-    show Haruhi Smile2 at left
+    show Haruhi Smile3 at left
     nvl clear
-    #show Asakura Frown3 at center
-    #pause (0.4)
-    #show Asakura Frown1 at center
     show Asakura Blink1 at center
     "The pinned interface blinked several times, then turned her eyes to Kyon from beneath the glowing energy net."
     show Asakura Frown2 at center
@@ -667,8 +651,9 @@ label prologue2:
     "\"We can be reasonable!\" Ryouko protested."
     show Kyon Sigh1 at right
     "\"You're probably the most reasonable person I've ever had try to kill me,\" Kyon agreed."
-    show Kyon Ang1 at right
+    show Kyon Ang4 at right
     "\"But I remember that time you did stab me all too well.\""
+    show Kyon Unhap5
     show Haruhi Ang1 at left
     "\"No stabbing!\" Haruhi said in a chastising tone. "
     show Haruhi Ang2 at left
@@ -677,6 +662,7 @@ label prologue2:
     show Haruhi Smile1 at left
     show Kyon Neutral1 at right
     "\"...you don't really think that's her prime concern, do you? Aside from which, did you even vote last time?\""
+    show Kyon Neutral4
     show Asakura Frown1 at center
     "\"It isn't,\" Ryouko agreed. \"And no, she didn't. "
     show Asakura Smile2 at center
@@ -684,25 +670,24 @@ label prologue2:
     show Kyon Puzzle1 at right
     "\"Anything that I should know about this program, Nagato?\" Kyon asked, quirking one eyebrow higher."
     nvl clear
+    show Kyon Worry1
     show Yuki Talk1 at HalfLeft
     "\"It will be beneficial to all involved,\" Nagato assured him, while Haruhi nodded knowingly."
     show Kyon Sigh2 at right
+    show Yuki Side1
     show Asakura Unhap1 at center
     "\"Okay,\" he sighed, shaking his head."
-    show Kyon Ser1 at right
+    show Kyon Ser3 at right
     "\"Granted.\""
     nvl clear
+    show Kyon Ser1
     show Yuki Side2 at HalfLeft
     "The smaller girl turned her gaze back to Ryouko's bound form, the faintest hint of a smile coming to her lips."
     nvl clear
     scene black
-    stop music fadeout 0.2
+    stop music fadeout 1
     "\"I will not let you harm him again.\""
     nvl clear
-    # scene black with dissolve
-    # $ renpy.pause(.2, hard=True)
-    # show BDVNlogo at truecenter with Dissolve(2.0)
-    # pause 5
     
     # Calling a generic "eyecatch" routine
     call eyecatch_fancy("Thursday, June 2", "Monday, April 18") from prolog_p001
