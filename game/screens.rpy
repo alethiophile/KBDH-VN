@@ -251,7 +251,7 @@ screen main_menu:
 
         has vbox
 
-        textbutton _("Start from\nthe Beginning") action Start()
+        textbutton _("Start Game") action Start()
         textbutton _("Load Game") action ShowMenu("load")
         textbutton _("Chapters") action ShowMenu("Chapters")
         textbutton _("Preferences") action ShowMenu("preferences")
