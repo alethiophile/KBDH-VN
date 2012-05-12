@@ -9,7 +9,8 @@ label AO2:
         show TownHillLeftMorning
     show Haruhi Quest1 at left    
     "\"Anyway,\" Haruhi said, glancing at Kyon again as they topped the hill, \"what's it all mean?\""
-    show Kyon Ser1 at right
+    show Haruhi Quest2
+    show Kyon Ser3 at right
     "\"I'm not entirely sure,\" he admitted, scanning his eyes across the other two lines before folding the letter back up and stuffing it into a pocket. \"I'm guessing it'll make sense when it happens.\""
     nvl clear
     
@@ -17,47 +18,52 @@ label AO2:
     show title 002 at card_pos 
     with slowfadein
     pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
     
-    # scene bg MorningSky
-    # show TownHillLeftMorning
-    # show Haruhi Quest1 at left 
-    # show Kyon Ser1 at right
-    # with fade
-    
-    # scene bg SchoolEntranceLeft with wiperight
     scene bg SchoolEntranceLeft with fade
-    show Haruhi Smile2 at left
+    show Haruhi Neutral2 at left
     show Mikuru Neutral1 at center
     show Kyon Neutral3 at right
     with dissolve
     "\"So, you're good at time travel?\" she asked, nodding as Mikuru drew in range."
+    show Haruhi Neutral1
     show Mikuru Cower Nervous2 at center
     "\"Ah!\" the upperclassman yelped, wincing. \"S...Suzumiya-san, you can't talk about it so carelessly! People might overhear!\""
+    show Mikuru Cower Nervous1
     show Haruhi Eyeroll1 at left
     "\"What do I care?\" she asked, rolling her eyes. \"It's real, so I don't see a reason to hide it!\""
     nvl clear
+    show Haruhi Eyeroll2
     show Kyon Sigh1 at right
     "\"Because if you're careless, you might end up causing a paradox,\" Kyon said patiently."
-    show Mikuru Ser1 at center
+    show Kyon Sigh3
+    show Mikuru Ser2 at center
     "Mikuru nodded furiously in agreement. \"If the timeplane is shattered,\" she whispered in a quiet, conspiratorial voice, \"then multiple realities could result. A break in the timeline could classified information!\""
     show Mikuru Sad2 at center
     "Her face fell again. \"Ooh....\""
     nvl clear
+    show Mikuru Unhap1
     show Haruhi Sigh1 at left
+    show Kyon Neutral3
     "\"Geez, that's gotta be annoying,\" Haruhi conceded. \"Well, you can tell me if he's good at it, right? Time travel, I mean.\""
+    show Haruhi Smile1
     show Mikuru Sigh1 at center
     "\"He's better at it than I am,\" Mikuru said with a crestfallen sigh."
     show Mikuru Sad2 at center
     "\"I'm supposed to be a professional! But sometimes it feels like I was sent here to learn from him.\""
     nvl clear
+    show Mikuru Unhap1
     show Haruhi Hap4 at left
     "\"Hah! Okay, I'll admit, I had my doubts before. Mikuru the time traveler? Silly. Mikuru the cute and hilariously inept time traveler, relying on Kyon for support? Entirely plausible!\""
     nvl clear
-    show Kyon Ser2 at right
+    show Haruhi Hap5
+    show Kyon Ser3 at right
     $ _window = True
     "\"Be nice,\" Kyon said, shooting Haruhi a mild scowl. \"If it weren't for Asahina-san and her bosses helping us out ... things might be a lot worse right now.\"{nw}"
     show Mikuru Smile1 at center
     pause
+    show Kyon Ser1
     show Haruhi Sigh1 at left
     $ _window = False
     "\"Alright,\" Haruhi allowed, smothering the irritation that arose when Mikuru's face lit up at Kyon's comment. \"But this doesn't get you out of mascot duty!\""
@@ -72,14 +78,17 @@ label AO2:
     show Haruhi Quest1 at left
     "\"But, seriously, is that why you're always seeming so tired and lazy, and your grades tend to suck?\" she asked in a soft tone."
     nvl clear
+    show Haruhi Quest2
     show Kyon Ser3 at right
     "He looked at her sharply. \"Only sometimes,\" he said. \"Uh ... the week of February — you remember when I called you in a panic to say Asahina-san had been kidnapped?\""
+    show Kyon Ser1
     show Haruhi Worry1 at left
     "She nodded, remembering it vaguely. \"Except, she was with me. I thought you said it was a really lousy prank call?\""
-    show Kyon Ser1 at right
+    show Kyon Ser2 at right
+    show Haruhi Quest2
     "\"A version of her from a week in the future was with me,\" he said in a low voice. \"And she {i}was{/i} kidnapped.\"" 
     nvl clear
-    show Kyon Ser2 at right
+    show Kyon Ser3 at right
     show Haruhi Sup1 at left
     "\"I spent that entire week running around making excuses to you so I could try and follow some set of obscure instructions from the future. It's not usually so bad ... that's why I did panic and called you, even though it was probably stupid.\""
     show Kyon Sigh2 at right
@@ -87,32 +96,34 @@ label AO2:
     nvl clear
     scene bg classroom with wiperight:
         size (800,600)
-    show Kyon Ang1 at right
+    show Kyon Unhap4 at right
     show Haruhi Smile1 at left
     with dissolve
     "She watched the way his eyes tracked to Taniguchi, the other boy smirking widely. Kyon almost immediately adopted a scowl."
-    show Haruhi Pout1 at left
+    show Haruhi Pout2 at left
     "\"Well,\" she mumbled, \"you didn't tell me you were John Smith. If you {i}had{/i}....\""
+    show Haruhi Pout1
     show Kyon Sigh2 at right
     stop music fadeout 3
     "He sighed, nodding. \"Let's talk about that later,\" he suggested, taking his seat."
+    show Kyon Sigh4
     nvl clear
     
     play sound "SE/WestminsterChimeShort.mp3"
     # Calling a generic "eyecatch" routine with date (first argument in (), "" to nhow no date) and custom pause time (second argument in ()), with unique "from"
     call eyecatch_fancy("Monday, April 18") from AO2_sc001
     stop sound fadeout 2
+    
     play music "Music/Nanika.mp3"
-    
-    
     scene bg classroom: 
         size (800,600)
     show Kunikida Neutral1 at HalfLeft
-    show Taniguchi Grin1 at HalfRight
+    show Taniguchi Hap1 at HalfRight
     show Kyon Neutral3 at right
-    show Haruhi Ang4 at left
+    show Haruhi Ang5 at left
     with fade
     "\"So,\" Taniguchi said with a huge grin, approaching Kyon's desk during the first break. \"I hear that things between you and Suzumiya are getting ... closer?\""
+    show Taniguchi Grin1
     show Kyon Sigh1 at right
     "Kunikida and Kyon exchanged a look, then turned to the other boy. \"Why don't you ask her?\" Kyon asked, jerking a thumb over his shoulder to point to the girl in question."
     nvl clear

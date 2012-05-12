@@ -300,13 +300,14 @@ label AO1_1:
     "How had it come to this, anyway...?"
     stop music
     nvl clear
+    
     scene black 
     show title 001 at card_pos 
     with slowfadein
-    
     pause
     play sound "SE/Pageflip3.mp3"
     nvl clear
+    
     play music "Music/Nichijou.mp3"
     $ renpy.music.set_volume(0.5, .5, channel="music")
     scene bg KyonKitchenRight with fade
@@ -1154,15 +1155,16 @@ label AO1_2:
         xalign 0.0 yalign 1.0
         linear 0.1 xalign 0.6
     play sound "SE/impact.mp3"
-    extend "literally." 
-    
+    extend "literally."
     "The girl shot out from behind one of the pillars supporting the heavy structure keeping rainwater off the train platform, nearly plowing him over as she launched herself, arms wrapping around him as she swung around with her momentum, crying out, \"YES!\""
     nvl clear
+    show Haruhi Hap5
     "Struggling and only barely managing to keep his balance, he eyed all of the other Kitago students around them, watching with raised eyebrows and open smirks."
-    show Kyon Sigh3 at right
+    show Kyon Sigh2 at right
     "\"Hey,\" he managed, remembering his new role as the vice commander, and everything they had discussed the previous night."     
-    show Kyon Smile1 at right
+    show Kyon Smile6 at right
     "\"What's going on?\""
+    show Kyon Smile1
     nvl clear
     $ _window = True
     show Haruhi Hap3 at left with move
@@ -1181,30 +1183,38 @@ label AO1_2:
     show Haruhi Hap4 at left
     "\"You said to put it in your shoe locker, but why wait? What's so great about messages in shoe lockers?\""
     nvl clear
+    show Haruhi Hap5
     show Kyon Sigh2 at right
-    "\"They pretty much never go well for me,\" he sighed, taking the envelope and eyeing the broken seal. "
+    "\"They pretty much never go well for me,\" he sighed, taking the envelope and eyeing the broken seal."
+    show Kyon Sigh4
     "It was just a sticker, something that looked like it might have been stolen from one of his sister's collections. "
     show Kyon Sigh1 at right
     "\"You opened it already, I see.\""
     nvl clear
-    show Haruhi Smile3 at left
+    show Kyon Sigh3
+    show Haruhi Hap1 at left
     "\"Well, of course! Doesn't make any sense to me, though. I probably wouldn't have opened it if you hadn't told me it wouldn't make any sense to me."
     show Haruhi Quest1 at left
     "\"Why did you want me to give you a letter from yourself, though?\""
+    show Haruhi Quest2
     show Kyon Sigh2 at right
     nvl clear
     "The skies were clear of rain, if gray, so he sighed and pulled the letter out of the envelope while proceeding up the hill."
-    show Kyon Neutral3 at right
+    show Kyon Neutral2 at right
     "\"I'm guessing,\" he said mildly, \"that since I just went home last night, I'm going to be time traveling back to yesterday relatively soon.\""
-    show Haruhi Smile3 at left
+    show Kyon Neutral3
+    show Haruhi Hap1 at left
     nvl clear
     "\"Hmm...\" she mused, considering. \"Can I go with you?\""
-    show Kyon Smile2 at right
+    show Haruhi Smile3
+    show Kyon Smile7 at right
     "\"'No, she can't',\" he quoted the first line of the note, scrawled hastily in his own handwriting. \"Well, seems that future me is a bit of a smart-ass.\""
-    show Haruhi Crossed Tsun1 at left
+    show Kyon Smile2
+    show Haruhi Crossed Tsun2 at left
     "\"Humph! I could have told you that.\""
     nvl clear
-    show Kyon Sigh2 at right
+    show Haruhi Crossed Tsun1
+    show Kyon Sigh4 at right
     "He eyed her, then shook his head. He'd brought this upon himself."
     "Maybe, with luck, Nagato could act as a controlling agent and keep Haruhi in line. "
     "Maybe, he told himself. "
