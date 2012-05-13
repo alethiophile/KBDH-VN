@@ -236,72 +236,94 @@ label AO2:
     call eyecatch_fancy("Monday, April 18", "Sunday, April 17") from AO2_sc002
     
     play music "Music/Kokuhaku.mp3"
-    
     scene bg YukiRoomCenter
     show Haruhi Casual Worry1 at left
     show Yuki Side1 at HalfLeft
     show Kyon Casual Ser1 at right
     with fade
     "\"So,\" Haruhi asked, her back to the large window of Yuki's living room, \"did it work?\""
-    show Yuki Talk1 at center with move
+    show Haruhi Casual Quest2
+    show Yuki Side1 at center with move
+    show Yuki Talk1
     "Yuki removed her fingertips from Haruhi's head and said, \"Yes.\""
-    show Kyon Casual Worry1 at right
+    show Kyon Casual Puzzle1 at right
+    show Yuki Side1
     "\"You're not going to die?\" Kyon asked quickly."
     nvl clear
+    show Kyon Casual Worry1
     show Yuki Talk2 at center
     "Turning to face him, Yuki gave a small nod. \"I am no longer connected or accessible to the Integrated Data Sentience Entity,\" she said. \"They will not be able to delete me remotely.\""
+    show Yuki Side2
     show Kyon Casual Sigh1 at right
-    "\"Good,\" he sighed, relaxing.{nw} "
-    show Kyon Casual Smile1 at right
+    "\"Good,\" he sighed, relaxing. "
+    show Kyon Casual Smile6 at right
     extend "\"Thank you, Haruhi.\""
     nvl clear
-    show Haruhi Casual Pout1 at left
+    show Kyon Casual Smile4
+    show Haruhi Casual Pout2 at left
     "\"I already told you,\" she grumbled, \"I'm not about to let\na brigade member get into trouble. And hurting Yuki because.... {nw}"
     show Haruhi Casual Quest1 at left
     extend "Hey, actually, come to think of it, what was their reason?\""
+    show Kyon Casual Neutral3
+    show Haruhi Casual Quest2
     show Yuki Talk1 at center
     "\"To prevent me from committing errors,\" Yuki answered. \"My makeup had been determined to destabilize, and I was scheduled for deletion prior to this error occurring.\""
     nvl clear
+    show Yuki Side1
     show Haruhi Casual Worry1 at left
     "\"What's this error, then?\""
+    show Haruhi Casual Quest2
     show Yuki Talk2 at center
     "\"Unknown.\""
+    show Yuki Side2
     show Haruhi Casual Quest1 at left
     "\"Is it going to happen?\""
     show Yuki Talk1 at center
+    show Haruhi Casual Quest2
     "\"Unknown.\""
     nvl clear
-    show Haruhi Casual Unhap2 at left
+    show Yuki Side1
+    show Haruhi Casual Unhap1 at left
     "\"Hmm.... Hey, Kyon, you've always known Yuki best.\" Haruhi turned to look at him sternly. \"What's it all mean?\""
+    show Haruhi Casual Unhap2
     show Kyon Casual Ser1 at right
-    "He frowned thoughtfully, his attention already focused on the smaller girl. \"Is this something on the scale of the incident from December?\" he asked."
+    "He frowned thoughtfully, his attention already focused on the smaller girl. {nw}"
+    show Kyon Casual Ser3
+    extend "\"Is this something on the scale of the incident from December?\" he asked."
+    show Kyon Casual Ser1
     show Yuki Side Blink at center
     "The pale-haired girl blinked. \"Possibly.\""
     nvl clear
     show Yuki Side1 at center
-    show Kyon Casual Worry1 at right
+    show Kyon Casual Puzzle1 at right
     "\"Is there any way we can try and prevent that from happening?\" he asked, shifting his shoulders."
-    show Haruhi Casual Ang3 at left
+    show Kyon Casual Worry1
+    show Haruhi Casual Ang6 at left
     "\"I don't like being left in the dark,\" Haruhi said crossly. \"So, what's this 'incident' about?\""
+    show Haruhi Casual Ang3
     show Yuki Side Blink at center
     "Yuki blinked, then passed her eyes over everyone in the room in turn, lingering on Kyon and Haruhi before saying, \"I would like to speak of this privately.\""
     nvl clear
     show Yuki Side2 at center
     show Kyon Casual Sigh2 at right
     "\"Alright,\" Kyon agreed, shrugging his shoulders. \"I already remember, so I can respect that. Ah ... I know that this is a lot to take in, Haruhi, so is it okay if we talk about it later? Maybe at the brigade meeting tomorrow?\""
+    show Kyon Casual Sigh4
     show Haruhi Casual Quest1 at left
     "She hesitated a moment, then nodded. \"I suppose that you want me to stay here?\" she asked Yuki."
     nvl clear
-    show Yuki Side2 at center
+    show Haruhi Casual Quest2
+    show Yuki Side1 at center
     "The quiet girl offered a nod of her own in return."
-    show Haruhi Casual Unhap2 at left
+    show Haruhi Casual Unhap1 at left
     "\"Well, alright then.\" In a warning tone, Haruhi added, \"The rest of you aren't off the hook yet, you know!\""
     nvl clear
     scene bg YukiRoomCenter
-    show Koizumi Crossed Casual Ser1 at left
-    show Mikuru Casual Neutral1 at right
+    show Koizumi Crossed Casual Ser2 at left
+    show Mikuru Casual Neutral2 at right
     with dissolve
     "\"Of course,\" Koizumi said, nodding. \"I understand. In that case, Nagato-san, Suzumiya-san ... we shall take our leave?\""
+    show Koizumi Crossed Casual Ser1
+    show Mikuru Casual Quest1
     "\"Y...yes,\" Mikuru agreed, nodding as well. \"See you tomorrow.\""
     nvl clear
     scene bg Elevator with wiperight
@@ -313,34 +335,45 @@ label AO2:
     show Kyon Casual Sigh1 at right
     "Once the three of them were in the elevator, heading down, Kyon said, \"I'm going to guess that you've got a small encyclopedia worth of questions for me, Koizumi.\""
     show Koizumi Crossed Casual Ser2 at left
+    show Kyon Casual Sigh3
     "\"My greatest question,\" the esper replied without hesitation, \"is if this was all necessary.\""
     nvl clear
+    show Koizumi Crossed Casual Ser1
     show Mikuru Casual Sad2 at center
     "\"It was,\" Mikuru mumbled, her head bowed as the elevator stopped and the door opened. \"This was a predetermined event.\""
-    show Koizumi Crossed Casual Sigh2 at left
+    show Koizumi Crossed Casual Sigh1 at left
+    show Mikuru Casual Unhap1
     "\"Is that so?\" Shaking his head, Koizumi added, \"I rushed over and missed lunch. I suspect you must have, as well. I think we have a lot to discuss ... so why don't we go to our usual cafe? My treat.\""
     nvl clear
+    show Koizumi Crossed Casual Ser1
     show Kyon Casual Sigh2 at right
     "\"That sounds fine by me,\" Kyon said with a shrug. The group stepped out of the elevator, only Kyon glancing at the snoozing supervisor in the lobby office. \"Asahina-san?\""
     show Mikuru Casual Quest1 at center
+    show Kyon Casual Sigh4
     "\"Um. Yes, okay,\" the time traveler agreed. \"But ... maybe we could go somewhere closer? Suzumiya-san might call and want to speak with us after ... um.\""
     nvl clear
-    show Koizumi Crossed Casual Neutral1 at left
+    show Mikuru Casual Neutral2
+    show Koizumi Crossed Casual Neutral2 at left
     "\"Fine,\" Koizumi agreed, gesturing to the building entrance and leading the way."
     nvl clear
     scene bg YukiApartmentDay with wipeleft
     show Mikuru Casual Neutral1 at center
-    show Kyon Casual Neutral3 at right
+    show Kyon Casual Neutral2 at right
     show Koizumi Crossed Casual Ser1 at left
     with dissolve
     "Once they stepped out of the tall apartment building, Kyon asked, \"Is closed space still a concern?\""
+    show Kyon Casual Neutral3
     show Koizumi Crossed Casual Sigh1 at left
-    "\"Right now, Suzumiya-san is more bewildered than anything else,\" the esper said, shaking his head. \"But even though I requested this discussion, I still need a few minutes to order my thoughts.\""
+    "\"Right now, Suzumiya-san is more bewildered than anything else,\" the esper said, shaking his head. {nw}"
+    show Koizumi Crossed Casual Ser2
+    extend "\"But even though I requested this discussion, I still need a few minutes to order my thoughts.\""
     nvl clear
+    show Koizumi Crossed Casual Ser1
     show Kyon Casual Ser2 at right
     "\"Okay. Asahina-san, I know I requested your superiors back me up on explaining who you are to Haruhi, but I'm still not clear on why they suddenly decided that it was okay for you to do ... whatever I said,\" Kyon said, shifting his shoulders."
-    show Kyon Casual Worry1 at right
+    show Kyon Casual Puzzle1 at right
     "\"Was there anything else in that message?\""
+    show Kyon Casual Worry1
     show Mikuru Casual Unhap1 at center
     show MBlush1 Casual at center
     "\"Um, no,\" she answered, her face turning pink, her eyes looking away."
@@ -348,13 +381,12 @@ label AO2:
     show Kyon Casual Sigh2 at right
     show Koizumi Crossed Casual Sigh2 at left
     "Both boys exchanged a glance, then shrugged."
+    show Kyon Casual Sigh4
+    show Koizumi Crossed Casual Sigh4
     nvl clear
     $ _window = False
-    
-   
-    
-    # play sound "SE/WestminsterChimeShort.mp3"
     stop music fadeout 3
+
     # scene black with dissolve
     # $ renpy.pause(.2, hard=True)
     # show BDVNlogo at truecenter with Dissolve(2.0)
@@ -363,10 +395,6 @@ label AO2:
     # Calling a generic "eyecatch" routine, with dates and unique "from"
     call eyecatch_fancy("Sunday, April 17","Monday, April 18") from AO2_sc003
     
-#     
-
-    
-    stop music
     play music "Music/Yuuutsu.mp3"
     scene bg classroom with fade: 
         size (800,600)

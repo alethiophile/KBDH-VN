@@ -834,7 +834,10 @@ init:
     image Koizumi Crossed Uneasy3 = "Sprites/Koizumi/KoizumiCrossedUneasy3.png"
     image Koizumi Crossed Sigh1 = "Sprites/Koizumi/KoizumiCrossedSigh1.png"
     image Koizumi Crossed Sigh2 = "Sprites/Koizumi/KoizumiCrossedSigh2.png"
+    image Koizumi Crossed Sigh3 = "Sprites/Koizumi/KoizumiCrossedSigh3.png"
+    image Koizumi Crossed Sigh4 = "Sprites/Koizumi/KoizumiCrossedSigh4.png"
     image Koizumi Crossed Neutral1 = "Sprites/Koizumi/KoizumiCrossedNeutral1.png"
+    image Koizumi Crossed Neutral2 = "Sprites/Koizumi/KoizumiCrossedNeutral2.png"
     
     image Koizumi Crossed Casual Ser1 = "Sprites/Koizumi/KoizumiCrossedCasualSerious1.png"
     image Koizumi Crossed Casual Ser2 = "Sprites/Koizumi/KoizumiCrossedCasualSerious2.png"
@@ -845,7 +848,10 @@ init:
     image Koizumi Crossed Casual Uneasy3 = "Sprites/Koizumi/KoizumiCrossedCasualUneasy3.png"
     image Koizumi Crossed Casual Sigh1 = "Sprites/Koizumi/KoizumiCrossedCasualSigh1.png"
     image Koizumi Crossed Casual Sigh2 = "Sprites/Koizumi/KoizumiCrossedCasualSigh2.png"
+    image Koizumi Crossed Casual Sigh3 = "Sprites/Koizumi/KoizumiCrossedCasualSigh3.png"
+    image Koizumi Crossed Casual Sigh4 = "Sprites/Koizumi/KoizumiCrossedCasualSigh4.png"
     image Koizumi Crossed Casual Neutral1 = "Sprites/Koizumi/KoizumiCrossedCasualNeutral1.png"
+    image Koizumi Crossed Casual Neutral2 = "Sprites/Koizumi/KoizumiCrossedCasualNeutral2.png"
     
     #Taniguchi Sprites
     image Taniguchi Grin1 = "Sprites/Taniguchi/TaniguchiGrin1.png"
