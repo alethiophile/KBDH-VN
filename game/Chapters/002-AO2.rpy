@@ -127,11 +127,14 @@ label AO2:
     show Kyon Sigh1 at right
     "Kunikida and Kyon exchanged a look, then turned to the other boy. \"Why don't you ask her?\" Kyon asked, jerking a thumb over his shoulder to point to the girl in question."
     nvl clear
+    show Kyon Sigh3
     show Taniguchi Sup1 at HalfRight
     "\"Eh!? Suzumiya?\" Taniguchi asked, stunned. \"But, it's break! Why are you still in the classroom?\""
-    show Haruhi Ang3 at left
+    show Haruhi Ang6 at left
+    show Taniguchi Unhap2
     "\"Why is that any of your business?\" she asked him coolly, her eyes narrowing into sharp lines."
     show Taniguchi Sup2 at HalfRight
+    show Haruhi Ang3
     "\"I just remembered somewhere else I had to be,\" {nw}"
     $ _window = True
     hide Taniguchi Sup2 with moveoutright
@@ -140,20 +143,25 @@ label AO2:
     nvl clear
     show Kyon Sigh2 at right
     "Kyon sighed, shaking his head."
+    show Kyon Sigh4
     $ _window = True
-    show Kunikida Smile1 at center with move
+    show Kunikida Smile3 at center with move
     $ _window = False
     "\"Well,\" Kunikida said, shrugging and offering a placating smile. \"It's none of my business either. But I thought I'd pass on that pretty much the entire school has caught on by now ... I wouldn't be terribly surprised if a teacher were to ask you about it, either.\""
     nvl clear
+    show Kunikida Smile1
     show Haruhi Ang1 at left
     "\"Ask us about what?\" Haruhi asked, her voice falsely innocent. \"We're just ordinary high school students!\""
     show Kunikida Neutral3 at center
+    show Haruhi Ang5
     "\"Er ... that is....\" Kunikida bowed his head slightly and shifted his gaze to stare out the window. \"Your ... 'display' at the train station.\""
     nvl clear
+    show Kunikida Neutral1
     show Kyon Unhap1 at right
     "Kyon groaned and lowered his head to his desk."
     show Haruhi Ang2 at left
     "\"Well, the answer is still going to be that it's none of their business! Absolutely none!\""
+    show Haruhi Ang5
     show Kunikida Neutral2 at center
     "\"Aha ... well ... I'll leave the two of you to yourselves, then,\" {nw}"
     $ _window = True
@@ -162,15 +170,19 @@ label AO2:
     extend "Kunikida said, bowing slightly as he drew away."
     nvl clear
     show Kyon Ser1 at right
-    "Straightening up once his friend had gone, Kyon turned in his chair to face Haruhi. \"Do you understand the need to be somewhat subtle with all these things?\" he asked."
+    "Straightening up once his friend had gone, Kyon turned in his chair to face Haruhi. {nw}"
+    show Kyon Ser3
+    extend "\"Do you understand the need to be somewhat subtle with all these things?\" he asked."
+    show Kyon Ser1
     show Haruhi Ang1 at left
     "\"You told me yesterday,\" she said in annoyance."
-    show Kyon Sigh2 at right
+    show Haruhi Ang5
+    show Kyon Sigh4 at right
     "He blinked, then pulled the letter he had written himself from the future from his pocket and scribbled a note on it."
     nvl clear
     show Haruhi Eyeroll1 at left
     "\"I'll be careful ... even if it is {i}boring{/i}. But it's not like it's {i}that{/i} outlandish for a girl to be close to a guy. At our age, it's practically expected."
-    show Haruhi Ang3 at left
+    show Haruhi Ang6 at left
     "\"Isn't that what Greaseball McGee over there,\" she said, nodding at Taniguchi as he slunk back into the classroom, \"is all about?\""
     nvl clear
     show Haruhi Ang4 at left
@@ -181,14 +193,18 @@ label AO2:
     show Haruhi Eyeroll1 at left
     show Kyon Worry1 at right
     "He flinched back from her gaze as her eyes lit up with intensity, adding, \"So, unless you've got some other girlfriend I should {i}know{/i} about, maybe Miyochiki—\""
+    show Haruhi Eyeroll2
     show Kyon Ser2 at right
     "\"Miyokichi,\" he corrected her flatly. \"And it's a real compliment to me that you seriously consider an eleven year old girl to be my only valid romantic prospect.\""
     nvl clear
+    show Kyon Ser1
     show Haruhi Ang4 at left
     "\"Whatever!\" she snapped, her face darkening. \"If not her, maybe that ... that Sasaki—\""
+    show Haruhi Ang5
     show Kyon Sigh1 at right
     "\"Ugh,\" he interjected again, this time with a small shudder. \"She's a friend, but I really can't stand who she chooses to associate with these days.\""
     nvl clear
+    show Kyon Sigh3
     show Haruhi Sigh1 at left
     "For some reason, Haruhi calmed substantially at that. \"Anyway,\" she said more smoothly, \"if you're not actually dating anyone, then you have no actual girlfriend to get jealous of our studying together."
     show Haruhi Smile2 at left
@@ -197,13 +213,16 @@ label AO2:
     show Kyon Puzzle1 at right
     "\"So, you're okay with the entire school thinking that we're dating?\" he asked, unconvinced."
     show Haruhi Sigh1 at left
+    show Kyon Worry1
     "\"Well,\" she said quickly, looking away out the window again. \"No, I mean, we're obviously not. But hey, if they jump to that conclusion, what do we care? We can set anyone who asks straight.\""
     nvl clear
+    show Haruhi Sigh3
     show Kyon Smile1 at right
     "He allowed his lips to quirk very slightly into a smile."
-    show Haruhi Smile2 at left
+    show Haruhi Hap1 at left
     "\"Plus,\" she added, still staring out the window, \"you've got to give authorization for all of my powers, so there's no way in hell I'm letting you further out of reach than I have to.\""
     show Kyon Unhap1 at right
+    show Haruhi Smile3
     stop music fadeout 3
     "Sighing, he lowered his head to the desk again."
     nvl clear

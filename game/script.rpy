@@ -102,6 +102,7 @@ init:
     image Haruhi Ang3 = "Sprites/Haruhi/HaruhiSideAngry3.png"
     image Haruhi Ang4 = "Sprites/Haruhi/HaruhiSideAngry4.png"
     image Haruhi Ang5 = "Sprites/Haruhi/HaruhiSideAngry5.png"
+    image Haruhi Ang6= "Sprites/Haruhi/HaruhiSideAngry6.png"
     image Haruhi Hap1 = "Sprites/Haruhi/HaruhiSideHappy1.png"
     image Haruhi Hap2 = "Sprites/Haruhi/HaruhiSideHappy2.png"
     image Haruhi Hap3 = "Sprites/Haruhi/HaruhiSideHappy3.png"
@@ -140,6 +141,7 @@ init:
     image Haruhi Casual Ang3 = "Sprites/Haruhi/HaruhiSideCasualAngry3.png"
     image Haruhi Casual Ang4 = "Sprites/Haruhi/HaruhiSideCasualAngry4.png"
     image Haruhi Casual Ang5 = "Sprites/Haruhi/HaruhiSideCasualAngry5.png"
+    image Haruhi Casual Ang6 = "Sprites/Haruhi/HaruhiSideCasualAngry6.png"
     image Haruhi Casual Hap1 = "Sprites/Haruhi/HaruhiSideCasualHappy1.png"
     image Haruhi Casual Hap2 = "Sprites/Haruhi/HaruhiSideCasualHappy2.png"
     image Haruhi Casual Hap3 = "Sprites/Haruhi/HaruhiSideCasualHappy3.png"
@@ -858,6 +860,7 @@ init:
     image Taniguchi Sigh1 = "Sprites/Taniguchi/TaniguchiSigh1.png"
     image Taniguchi Sigh2 = "Sprites/Taniguchi/TaniguchiSigh2.png"
     image Taniguchi Unhap1 = "Sprites/Taniguchi/TaniguchiUnhappy1.png"
+    image Taniguchi Unhap2 = "Sprites/Taniguchi/TaniguchiUnhappy2.png"
     
     #Kunikida Sprites
     image Kunikida Neutral1 = "Sprites/Kunikida/KunikidaNeutral1.png"
@@ -865,6 +868,7 @@ init:
     image Kunikida Neutral3 = "Sprites/Kunikida/KunikidaNeutral3.png"
     image Kunikida Smile1 ="Sprites/Kunikida/KunikidaSmile1.png"
     image Kunikida Smile2 ="Sprites/Kunikida/KunikidaSmile2.png"
+    image Kunikida Smile3 ="Sprites/Kunikida/KunikidaSmile3.png"
     image Kunikida Ser1 = "Sprites/Kunikida/KunikidaSerious1.png"
     image Kunikida Ser2 = "Sprites/Kunikida/KunikidaSerious2.png"
 
