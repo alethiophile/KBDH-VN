@@ -140,7 +140,7 @@ label HAB1:
     nvl clear
     show Tsuruya Sup1
     "She blinked suddenly, pausing to stare his cheek, then frowned sharply. \"Ooh, you better come with me, first of all,\" she decided, seizing his wrist and leading him back into the school. {nw}" 
-    scene bg LockersLeft with fade
+    scene bg LockersDayLeft with fade
     show Tsuruya Hap5 at left with dissolve
     extend "He followed in bemusement until they reached her locker and she produced a first aid kit, cleaning his wound and then applying a bandage. \"There,\" she said, once her treatment was done, grinning again. There was a twinkle in her eyes as she added, \"Don't get a scar, unless you gets another one to make it cross-shaped. That makes you way more rugged and bish!\""
     nvl clear

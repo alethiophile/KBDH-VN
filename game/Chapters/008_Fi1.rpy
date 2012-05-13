@@ -192,7 +192,7 @@ label Test:
     show Haruhi Unhap1 
     "\"Again?\" Haruhi asked, grimacing. \"Hmm.... The math test is after lunch, so I'd really like to make sure that he spends that time studying. I suppose after school should be alright, though I hope this doesn't keep up much longer.\""
     nvl clear
-    scene bg LockersLeft with fade
+    scene bg LockersDayLeft with fade
     show Tsuruya Smile4 Flip at left with dissolve
     "\"Okies! I thinks we can finish our investigation by tomorrow ... maybe it might take a day or two longer?\" she pondered, gazing at the sky thoughtfully. \"Anyways, we're making really great progress! You'll be {i}mega{/i} happy with what we'll have for you when it's over, nyoro~!\" She blinked, turning her attention to Haruhi before they parted ways for their respective shoe lockers. \"Oopsie, I forgot to tell you where Kyon-kun and I met up for your receipt!\""
     nvl clear
@@ -216,8 +216,10 @@ label Test:
     show Kyon Smile2 
     extend "By the time she had changed her shoes and turned back, he had the almost-concealed smug expression of managing to pull one over on her. She pursed her lips, resisting the urge to smirk and give herself away."
     nvl clear
-    scene bg Hallway with fade
     
+    scene bg hallway with fade
+    #show Haruhi at right with dissolve
+    #show Kyon at left with dissolve
     "\"Anyway,\" she said, walking by his side on the way to the club room, \"what happened with Tsuruya-san yesterday? And when did she become 'Tsuruya-kun' to you?\""
     "\"Yesterday,\" he said, relaxing, one hand patting his left pocket. Well, that suggested her guess about where the box had gone was accurate. \"Or ... technically the day before. Part of the investigation; she said we should be more of equals, instead of sempai and kohai.\""
     nvl clear
