@@ -139,6 +139,8 @@ init:
     image Haruhi Focus1 = "Sprites/Haruhi/HaruhiSideFocus1.png"
     image Haruhi Neutral1 ="Sprites/Haruhi/HaruhiSideNeutral1.png"
     image Haruhi Neutral2 ="Sprites/Haruhi/HaruhiSideNeutral2.png"
+    image Haruhi Neutral3 ="Sprites/Haruhi/HaruhiSideNeutral3.png"
+    image Haruhi Neutral4 ="Sprites/Haruhi/HaruhiSideNeutral4.png"
     
     image Haruhi Casual Sup1 = "Sprites/Haruhi/HaruhiSideCasualSurprised1.png"
     image Haruhi Casual Sup2 = "Sprites/Haruhi/HaruhiSideCasualSurprised2.png"
@@ -178,6 +180,8 @@ init:
     image Haruhi Casual Focus1 = "Sprites/Haruhi/HaruhiSideCasualFocus1.png"
     image Haruhi Casual Neutral1 ="Sprites/Haruhi/HaruhiSideCasualNeutral1.png"
     image Haruhi Casual Neutral2 ="Sprites/Haruhi/HaruhiSideCasualNeutral2.png"
+    image Haruhi Casual Neutral3 ="Sprites/Haruhi/HaruhiSideCasualNeutral3.png"
+    image Haruhi Casual Neutral4 ="Sprites/Haruhi/HaruhiSideCasualNeutral4.png"
     
     image Haruhi Crossed Sup1 = "Sprites/Haruhi/HaruhiCrossedSurprised1.png"
     image Haruhi Crossed Sup2 = "Sprites/Haruhi/HaruhiCrossedSurprised2.png"
