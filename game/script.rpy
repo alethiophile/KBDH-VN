@@ -197,6 +197,7 @@ init:
                                        im.matrix.brightness(.5))
     image Haruhi Crossed Pout2 = "Sprites/Haruhi/HaruhiCrossedPout2.png"
     image Haruhi Crossed Eyeroll1 = "Sprites/Haruhi/HaruhiCrossedEyeroll1.png"
+    image Haruhi Crossed Eyeroll2 = "Sprites/Haruhi/HaruhiCrossedEyeroll2.png"
     image Haruhi Crossed Quest1 = "Sprites/Haruhi/HaruhiCrossedQuestion1.png"
     image Haruhi Crossed Grin1 = "Sprites/Haruhi/HaruhiCrossedGrin1.png"
     image Haruhi Crossed Worry1 = "Sprites/Haruhi/HaruhiCrossedWorry1.png"
@@ -223,6 +224,7 @@ init:
                                        im.matrix.brightness(.5))
     image Haruhi Crossed Casual Pout2 = "Sprites/Haruhi/HaruhiCrossedCasualPout2.png"
     image Haruhi Crossed Casual Eyeroll1 = "Sprites/Haruhi/HaruhiCrossedCasualEyeroll1.png"
+    image Haruhi Crossed Casual Eyeroll2 = "Sprites/Haruhi/HaruhiCrossedCasualEyeroll2.png"
     image Haruhi Crossed Casual Quest1 = "Sprites/Haruhi/HaruhiCrossedCasualQuestion1.png"
     image Haruhi Crossed Casual Grin1 = "Sprites/Haruhi/HaruhiCrossedCasualGrin1.png"
     image Haruhi Crossed Casual Worry1 = "Sprites/Haruhi/HaruhiCrossedCasualWorry1.png"
@@ -508,6 +510,8 @@ init:
         repeat
    
     # Mikuru Sprites 
+    image Mikuru Hap1 = "Sprites/Mikuru/MikuruHappy1.png"
+    image Mikuru Hap2 = "Sprites/Mikuru/MikuruHappy2.png"
     image Mikuru Neutral1 = "Sprites/Mikuru/MikuruNeutral1.png"
     image Mikuru Neutral2 = "Sprites/Mikuru/MikuruNeutral2.png"
     image Mikuru Sad1 = "Sprites/Mikuru/MikuruSad1.png"
@@ -526,6 +530,8 @@ init:
     image Mikuru Unhap3 = "Sprites/Mikuru/MikuruUnhappy3.png"
     image MBlush1 = "Sprites/Mikuru/MBlush1.png"
   
+    image Mikuru Casual Hap1 = "Sprites/Mikuru/MikuruCasualHappy1.png"
+    image Mikuru Casual Hap2 = "Sprites/Mikuru/MikuruCasualHappy2.png"
     image Mikuru Casual Neutral1 = "Sprites/Mikuru/MikuruCasualNeutral1.png"
     image Mikuru Casual Neutral2 = "Sprites/Mikuru/MikuruCasualNeutral2.png"
     image Mikuru Casual Sad1 = "Sprites/Mikuru/MikuruCasualSad1.png"
@@ -544,6 +550,8 @@ init:
     image Mikuru Casual Unhap3 = "Sprites/Mikuru/MikuruCasualUnhappy3.png"
     image MBlush1 Casual = "Sprites/Mikuru/MBlushCasual1.png"
     
+    image Mikuru Maid Hap1 = "Sprites/Mikuru/MikuruMaidHappy1.png"
+    image Mikuru Maid Hap2 = "Sprites/Mikuru/MikuruMaidHappy2.png"
     image Mikuru Maid Neutral1 = "Sprites/Mikuru/MikuruMaidNeutral1.png"
     image Mikuru Maid Neutral2 = "Sprites/Mikuru/MikuruMaidNeutral2.png"
     image Mikuru Maid Sad1 = "Sprites/Mikuru/MikuruMaidSad1.png"
@@ -565,6 +573,7 @@ init:
     
     image Mikuru Think Quest1 = "Sprites/Mikuru/MikuruThinkQuestion1.png"
     image Mikuru Think Quest2 = "Sprites/Mikuru/MikuruThinkQuestion2.png"
+    image Mikuru Think Quest3 = "Sprites/Mikuru/MikuruThinkQuestion3.png"
     image Mikuru Think Sad1 = "Sprites/Mikuru/MikuruThinkSad1.png"
     image Mikuru Think Sad2 = "Sprites/Mikuru/MikuruThinkSad2.png"
     image Mikuru Think Sad3 = "Sprites/Mikuru/MikuruThinkSad3.png"
@@ -574,6 +583,7 @@ init:
     
     image Mikuru Think Casual Quest1 = "Sprites/Mikuru/MikuruThinkCasualQuestion1.png"
     image Mikuru Think Casual Quest2 = "Sprites/Mikuru/MikuruThinkCasualQuestion2.png"
+    image Mikuru Think Casual Quest3 = "Sprites/Mikuru/MikuruThinkCasualQuestion3.png"
     image Mikuru Think Casual Sad1 = "Sprites/Mikuru/MikuruThinkCasualSad1.png"
     image Mikuru Think Casual Sad2 = "Sprites/Mikuru/MikuruThinkCasualSad2.png"
     image Mikuru Think Casual Sad3 = "Sprites/Mikuru/MikuruThinkCasualSad3.png"
@@ -583,6 +593,7 @@ init:
     
     image Mikuru Think Maid Quest1 = "Sprites/Mikuru/MikuruThinkMaidQuestion1.png"
     image Mikuru Think Maid Quest2 = "Sprites/Mikuru/MikuruThinkMaidQuestion2.png"
+    image Mikuru Think Maid Quest3 = "Sprites/Mikuru/MikuruThinkMaidQuestion3.png"
     image Mikuru Think Maid Sad1 = "Sprites/Mikuru/MikuruThinkMaidSad1.png"
     image Mikuru Think Maid Sad2 = "Sprites/Mikuru/MikuruThinkMaidSad2.png"
     image Mikuru Think Maid Sad3 = "Sprites/Mikuru/MikuruThinkMaidSad3.png"
@@ -830,7 +841,9 @@ init:
     image Koizumi Think Grin2 = "Sprites/Koizumi/KoizumiThinkGrin2.png"
     image Koizumi Think Sup1 = "Sprites/Koizumi/KoizumiThinkSurprised1.png"
     image Koizumi Think Smile1 = "Sprites/Koizumi/KoizumiThinkSmile1.png"
+    image Koizumi Think Smile2 = "Sprites/Koizumi/KoizumiThinkSmile2.png"
     image Koizumi Think Sigh1 = "Sprites/Koizumi/KoizumiThinkSigh1.png"
+    image Koizumi Think Worry1 = "Sprites/Koizumi/KoizumiThinkWorry1.png"
     
     image Koizumi Think Casual Ser1 = "Sprites/Koizumi/KoizumiThinkCasualSerious1.png"
     image Koizumi Think Casual Ser2 = "Sprites/Koizumi/KoizumiThinkCasualSerious2.png"
@@ -840,12 +853,16 @@ init:
     image Koizumi Think Casual Grin2 = "Sprites/Koizumi/KoizumiThinkCasualGrin2.png"
     image Koizumi Think Casual Sup1 = "Sprites/Koizumi/KoizumiThinkCasualSurprised1.png"
     image Koizumi Think Casual Smile1 = "Sprites/Koizumi/KoizumiThinkCasualSmile1.png"
+    image Koizumi Think Casual Smile2 = "Sprites/Koizumi/KoizumiThinkCasualSmile2.png"
     image Koizumi Think Casual Sigh1 = "Sprites/Koizumi/KoizumiThinkCasualSigh1.png"
+    image Koizumi Think Casual Worry1 = "Sprites/Koizumi/KoizumiThinkCasualWorry1.png"
     
     image Koizumi Crossed Ser1 = "Sprites/Koizumi/KoizumiCrossedSerious1.png"
     image Koizumi Crossed Ser2 = "Sprites/Koizumi/KoizumiCrossedSerious2.png"
     image Koizumi Crossed Smile1 = "Sprites/Koizumi/KoizumiCrossedSmile1.png"
     image Koizumi Crossed Smile2 = "Sprites/Koizumi/KoizumiCrossedSmile2.png"
+    image Koizumi Crossed Smile3 = "Sprites/Koizumi/KoizumiCrossedSmile3.png"
+    image Koizumi Crossed Smile4 = "Sprites/Koizumi/KoizumiCrossedSmile4.png"
     image Koizumi Crossed Uneasy1 = "Sprites/Koizumi/KoizumiCrossedUneasy1.png"
     image Koizumi Crossed Uneasy2 = "Sprites/Koizumi/KoizumiCrossedUneasy2.png"
     image Koizumi Crossed Uneasy3 = "Sprites/Koizumi/KoizumiCrossedUneasy3.png"
@@ -860,6 +877,8 @@ init:
     image Koizumi Crossed Casual Ser2 = "Sprites/Koizumi/KoizumiCrossedCasualSerious2.png"
     image Koizumi Crossed Casual Smile1 = "Sprites/Koizumi/KoizumiCrossedCasualSmile1.png"
     image Koizumi Crossed Casual Smile2 = "Sprites/Koizumi/KoizumiCrossedCasualSmile2.png"
+    image Koizumi Crossed Casual Smile3 = "Sprites/Koizumi/KoizumiCrossedCasualSmile3.png"
+    image Koizumi Crossed Casual Smile4 = "Sprites/Koizumi/KoizumiCrossedCasualSmile4.png"
     image Koizumi Crossed Casual Uneasy1 = "Sprites/Koizumi/KoizumiCrossedCasualUneasy1.png"
     image Koizumi Crossed Casual Uneasy2 = "Sprites/Koizumi/KoizumiCrossedCasualUneasy2.png"
     image Koizumi Crossed Casual Uneasy3 = "Sprites/Koizumi/KoizumiCrossedCasualUneasy3.png"
