@@ -513,6 +513,7 @@ init:
     image Mikuru Sad1 = "Sprites/Mikuru/MikuruSad1.png"
     image Mikuru Sad2 = "Sprites/Mikuru/MikuruSad2.png"
     image Mikuru Sigh1 = "Sprites/Mikuru/MikuruSigh1.png"
+    image Mikuru Sigh2 = "Sprites/Mikuru/MikuruSigh2.png"
     image Mikuru Ser1 = "Sprites/Mikuru/MikuruSerious1.png"
     image Mikuru Ser2 = "Sprites/Mikuru/MikuruSerious2.png"
     image Mikuru Ser3 = "Sprites/Mikuru/MikuruSerious3.png"
@@ -522,6 +523,7 @@ init:
     image Mikuru Quest2 = "Sprites/Mikuru/MikuruQuestion2.png"
     image Mikuru Unhap1 = "Sprites/Mikuru/MikuruUnhappy1.png"
     image Mikuru Unhap2 = "Sprites/Mikuru/MikuruUnhappy2.png"
+    image Mikuru Unhap3 = "Sprites/Mikuru/MikuruUnhappy3.png"
     image MBlush1 = "Sprites/Mikuru/MBlush1.png"
   
     image Mikuru Casual Neutral1 = "Sprites/Mikuru/MikuruCasualNeutral1.png"
@@ -529,6 +531,7 @@ init:
     image Mikuru Casual Sad1 = "Sprites/Mikuru/MikuruCasualSad1.png"
     image Mikuru Casual Sad2 = "Sprites/Mikuru/MikuruCasualSad2.png"
     image Mikuru Casual Sigh1 = "Sprites/Mikuru/MikuruCasualSigh1.png"
+    image Mikuru Casual Sigh2 = "Sprites/Mikuru/MikuruCasualSigh2.png"
     image Mikuru Casual Ser1 = "Sprites/Mikuru/MikuruCasualSerious1.png"
     image Mikuru Casual Ser2 = "Sprites/Mikuru/MikuruCasualSerious2.png"
     image Mikuru Casual Ser3 = "Sprites/Mikuru/MikuruCasualSerious3.png"
@@ -538,6 +541,7 @@ init:
     image Mikuru Casual Quest2 = "Sprites/Mikuru/MikuruCasualQuestion2.png"
     image Mikuru Casual Unhap1 = "Sprites/Mikuru/MikuruCasualUnhappy1.png"
     image Mikuru Casual Unhap2 = "Sprites/Mikuru/MikuruCasualUnhappy2.png"
+    image Mikuru Casual Unhap3 = "Sprites/Mikuru/MikuruCasualUnhappy3.png"
     image MBlush1 Casual = "Sprites/Mikuru/MBlushCasual1.png"
     
     image Mikuru Maid Neutral1 = "Sprites/Mikuru/MikuruMaidNeutral1.png"
@@ -545,6 +549,7 @@ init:
     image Mikuru Maid Sad1 = "Sprites/Mikuru/MikuruMaidSad1.png"
     image Mikuru Maid Sad2 = "Sprites/Mikuru/MikuruMaidSad2.png"
     image Mikuru Maid Sigh1 = "Sprites/Mikuru/MikuruMaidSigh1.png"
+    image Mikuru Maid Sigh2 = "Sprites/Mikuru/MikuruMaidSigh2.png"
     image Mikuru Maid Ser1 = "Sprites/Mikuru/MikuruMaidSerious1.png"
     image Mikuru Maid Ser2 = "Sprites/Mikuru/MikuruMaidSerious2.png"
     image Mikuru Maid Ser3 = "Sprites/Mikuru/MikuruMaidSerious3.png"
@@ -554,6 +559,7 @@ init:
     image Mikuru Maid Quest2 = "Sprites/Mikuru/MikuruMaidQuestion2.png"
     image Mikuru Maid Unhap1 = "Sprites/Mikuru/MikuruMaidUnhappy1.png"
     image Mikuru Maid Unhap2 = "Sprites/Mikuru/MikuruMaidUnhappy2.png"
+    image Mikuru Maid Unhap3 = "Sprites/Mikuru/MikuruMaidUnhappy3.png"
     image MBlush1 Maid = "Sprites/Mikuru/MBlushMaid1.png"
     image MTray Maid ="Sprites/Mikuru/MTrayMaid.png"
     
