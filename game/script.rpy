@@ -1173,6 +1173,14 @@ init:
     # image eyeDate = DynamicDisplayable(show_date)
     image eyeDate 1 = DynamicDisplayable(show_date1)
     image eyeDate 2 = DynamicDisplayable(show_date2)
+
+    image eyeDateColor 1 = DynamicDisplayable(lambda st, at: [Text("[date1]", font="DejaVuSerif-Italic.ttf", size=25, color=ecfg, outlines=[(1, "#000", 2, 1)]), None])
+    image eyeDateColor 2 = DynamicDisplayable(lambda st, at: [Text("[date2]", font="DejaVuSerif-Italic.ttf", size=25, color=ecfg, outlines=[(1, "#000", 2, 1)]), None])
+    
+    image KBDHLogoWhite = "Backgrounds/KBDHLogo-White.png"
+    image KBDHLogoColor = DynamicDisplayable(KBDH_Color)
+    
+    image eyeSolidBackground = DynamicDisplayable(lambda st, at: [ecbg, None])
     
     image eyebg = ConditionSwitch("ecbg == 'white'", "#fff", "True", "#000")
     
@@ -1269,7 +1277,7 @@ init python:
     adj = ui.adjustment()
     music_need = True
     ecbg = "black"
-    
+    ecfg = "fff"
     # Faux movie announcer voice
     style.movie = Style(style.default)
     # Comment everything with "style.movie." below to disable the {=movie}{/=movie} tag effects
@@ -1463,6 +1471,15 @@ init -1 python:
     def show_date2(st, at):
         return Text("[date2]", font="DejaVuSerif-Italic.ttf", size=25, color="#3cf", outlines=[(1, "#000", 2, 1)]), None
         
+    def color_matrix (c):
+        color_tuple = color(c)
+        return [ color_tuple[0]/255.0,                      0,                      0,                      0, 0, 
+                                      0, color_tuple[1]/255.0,                      0,                      0, 0, 
+                                      0,                      0, color_tuple[2]/255.0,                      0, 0, 
+                                      0,                      0,                      0, color_tuple[3]/255.0, 0 ]
+    def KBDH_Color(st, at):
+        return im.MatrixColor("Backgrounds/KBDHLogo-White.png", color_matrix(ecfg)), None
+        
     if persistent.text_styling == None:
         persistent.text_styling = "Extra"
     
@@ -1497,6 +1514,7 @@ init -1 python:
         ]
         
     ecbg = "black"
+    ecfg = "fff"
 
 label backtomain:
     return
@@ -1558,11 +1576,16 @@ label credits_roll:
     scene black with dissolve
     show credroll at Position(xalign=0.5, yanchor=0.0, ypos=1.0) with None
     show credroll at Position(xalign=0.5, yanchor=1.0, ypos=1.0) with MoveTransition(21)
-    show BDVNlogo at Position(xalign=0.5, yanchor=0.5, ypos=1.5) with None
-    show BDVNlogo:
+    show KBDHLogoWhite at Position(xalign=0.5, yanchor=0.5, ypos=1.5) with None
+    show KBDHLogoWhite:
         linear 5 ypos 0.5
     show credroll:
         linear 5 ypos 0.0
+    # show BDVNlogo at Position(xalign=0.5, yanchor=0.5, ypos=1.5) with None
+    # show BDVNlogo:
+        # linear 5 ypos 0.5
+    # show credroll:
+        # linear 5 ypos 0.0
     # show WaitForInputBlinking:
         # alpha 0.0 right
         # linear 5 pass
@@ -1635,7 +1658,7 @@ label Preview2:
     $ renpy.pause(0.1, hard=True)
     # show P5 at Position(yanchor=0.5, ypos=-0.5, xalign=0.5):
         # size (800,600)
-    show P5 at truecenter with dissolve:
+    show P5 at truecenter with moveinright:
         size (800,600)
     hide P4
     pause 3.0
@@ -1903,6 +1926,30 @@ label eyecatch_white(date="", pause_time=3.0, r=0, ecbg="black"):
     with coatout
     scene white with Dissolve(0.5)
     return    
+
+label eyecatch_generic(date1="", date2="", pause_time = 3.0, r = 0, ecbg = "900", ecfgcolor = "fff"):
+    
+    $ ecfg = ecfgcolor
+    # Define transitions
+    if r < 1 or r > 5:
+        $ r = renpy.random.randint(1, 5)
+
+    $ eyecatch_transition_in = [moveinright, moveinleft, moveintop, moveinbottom, coatin][r-1]
+    $ eyecatch_transition_out = [moveoutleft, moveoutright, moveoutbottom, moveouttop, coatout][r-1]
+    
+    scene eyeSolidBackground with Dissolve(1)
+    show KBDHLogoColor at truecenter
+    show eyeDateColor 1 at date_pos
+    with eyecatch_transition_in
+    pause (pause_time * 0.3)
+    show eyeDateColor 2 at date_pos with wiperight
+    pause (pause_time * 0.7)
+    hide KBDHLogoColor
+    hide eyeDateColor
+    with eyecatch_transition_out
+    show eyeSolidBackground
+    return
+
     
 label test_Z0_eye:
     scene bg MorningSky
@@ -1977,6 +2024,9 @@ label test_Z0_eye:
     show TownHillLeftMorning
     show Haruhi Smile3 at left
     with dissolve
+    scene bg Library with dissolve
+    "Call to eyecatch with custom foreground and background colors. Using a placeholder image (image should be white on transparent background)"
+    call eyecatch_generic("starting", "well... not anymore", 3.0, 0, "#ddd", "#222")
     "Thats all!"
     # If you specify the names of arguments, you don't have to worry about positions
     call eyecatch(pause_time=3, r=5) from test_Z0_p0007
