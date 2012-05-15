@@ -241,12 +241,14 @@ init:
     image Haruhi Point Ang1 = "Sprites/Haruhi/HaruhiPointAngry1.png"
     image Haruhi Point Hap1 = "Sprites/Haruhi/HaruhiPointHappy1.png"
     image Haruhi Point Scold1 = "Sprites/Haruhi/HaruhiPointScold1.png"
+    image Haruhi Point Scold2 = "Sprites/Haruhi/HaruhiPointScold2.png"
     
     image Haruhi Point Casual Amuse1 = "Sprites/Haruhi/HaruhiPointCasualAmused1.png"
     image Haruhi Point Casual Surpr1 = "Sprites/Haruhi/HaruhiPointCasualSurprised1.png"
     image Haruhi Point Casual Ang1 = "Sprites/Haruhi/HaruhiPointCasualAngry1.png"
     image Haruhi Point Casual Hap1 = "Sprites/Haruhi/HaruhiPointCasualHappy1.png"
     image Haruhi Point Casual Scold1 = "Sprites/Haruhi/HaruhiPointCasualScold1.png"
+    image Haruhi Point Casual Scold2 = "Sprites/Haruhi/HaruhiPointCasualScold2.png"
     
     image Haruhi Hips Ang1 = "Sprites/Haruhi/HaruhiHipsAngry1.png"
     image Haruhi Hips Ang2 = "Sprites/Haruhi/HaruhiHipsAngry2.png"
@@ -616,7 +618,7 @@ init:
     image Mikuru Cower Smile1 ="Sprites/Mikuru/MikuruCowerSmile1.png"
     image Mikuru Cower Smile2 ="Sprites/Mikuru/MikuruCowerSmile2.png"
     image Mikuru Cower Unhap1 = "Sprites/Mikuru/MikuruCowerUnhappy1.png"
-    image Mikuru Cowerl Worry1 = "Sprites/Mikuru/MikuruCowerWorry1.png"
+    image Mikuru Cower Worry1 = "Sprites/Mikuru/MikuruCowerWorry1.png"
     
     image MBlush Cower = "Sprites/Mikuru/MikuruCowerBlush1.png"
     image MBlush Cower Towel = "Sprites/Mikuru/MblushCowerTowel.png"
