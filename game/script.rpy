@@ -127,6 +127,7 @@ init:
     image Haruhi Grin2 = "Sprites/Haruhi/HaruhiSideGrin2.png"
     image Haruhi Worry1 = "Sprites/Haruhi/HaruhiSideWorry1.png"
     image Haruhi Worry2 = "Sprites/Haruhi/HaruhiSideWorry2.png"
+    image Haruhi Worry3 = "Sprites/Haruhi/HaruhiSideWorry3.png"
     image Haruhi Smile1 = "Sprites/Haruhi/HaruhiSideSmile1.png"
     image Haruhi Smile2 = "Sprites/Haruhi/HaruhiSideSmile2.png"
     image Haruhi Smile3 = "Sprites/Haruhi/HaruhiSideSmile3.png"
@@ -168,6 +169,7 @@ init:
     image Haruhi Casual Grin2 = "Sprites/Haruhi/HaruhiSideCasualGrin2.png"
     image Haruhi Casual Worry1 = "Sprites/Haruhi/HaruhiSideCasualWorry1.png"
     image Haruhi Casual Worry2 = "Sprites/Haruhi/HaruhiSideCasualWorry2.png"
+    image Haruhi Casual Worry3 = "Sprites/Haruhi/HaruhiSideCasualWorry3.png"
     image Haruhi Casual Smile1 = "Sprites/Haruhi/HaruhiSideCasualSmile1.png"
     image Haruhi Casual Smile2 = "Sprites/Haruhi/HaruhiSideCasualSmile2.png"
     image Haruhi Casual Smile3 = "Sprites/Haruhi/HaruhiSideCasualSmile3.png"
@@ -241,12 +243,14 @@ init:
     image Haruhi Point Ang1 = "Sprites/Haruhi/HaruhiPointAngry1.png"
     image Haruhi Point Hap1 = "Sprites/Haruhi/HaruhiPointHappy1.png"
     image Haruhi Point Scold1 = "Sprites/Haruhi/HaruhiPointScold1.png"
+    image Haruhi Point Scold2 = "Sprites/Haruhi/HaruhiPointScold2.png"
     
     image Haruhi Point Casual Amuse1 = "Sprites/Haruhi/HaruhiPointCasualAmused1.png"
     image Haruhi Point Casual Surpr1 = "Sprites/Haruhi/HaruhiPointCasualSurprised1.png"
     image Haruhi Point Casual Ang1 = "Sprites/Haruhi/HaruhiPointCasualAngry1.png"
     image Haruhi Point Casual Hap1 = "Sprites/Haruhi/HaruhiPointCasualHappy1.png"
     image Haruhi Point Casual Scold1 = "Sprites/Haruhi/HaruhiPointCasualScold1.png"
+    image Haruhi Point Casual Scold2 = "Sprites/Haruhi/HaruhiPointCasualScold2.png"
     
     image Haruhi Hips Ang1 = "Sprites/Haruhi/HaruhiHipsAngry1.png"
     image Haruhi Hips Ang2 = "Sprites/Haruhi/HaruhiHipsAngry2.png"
@@ -334,6 +338,7 @@ init:
     image Kyon Unhap3 ="Sprites/Kyon/KyonUnhappy3.png"
     image Kyon Unhap4 ="Sprites/Kyon/KyonUnhappy4.png"
     image Kyon Unhap5 ="Sprites/Kyon/KyonUnhappy5.png"
+    image Kyon Unhap6 ="Sprites/Kyon/KyonUnhappy6.png"
     
     image Kyon Casual Ser1 = "Sprites/Kyon/KyonCasualSerious1.png"
     image Kyon Casual Ser2 = "Sprites/Kyon/KyonCasualSerious2.png"
@@ -373,6 +378,7 @@ init:
     image Kyon Casual Unhap3 ="Sprites/Kyon/KyonCasualUnhappy3.png"
     image Kyon Casual Unhap4 ="Sprites/Kyon/KyonCasualUnhappy4.png"
     image Kyon Casual Unhap5 ="Sprites/Kyon/KyonCasualUnhappy5.png"
+    image Kyon Casual Unhap6 ="Sprites/Kyon/KyonCasualUnhappy6.png"
     
     image Ksweat = "Sprites/Kyon/KyonSweat1.png"
     image Skinsuit = "Sprites/Kyon/KyonSkinsuitTemplate.png"
@@ -616,7 +622,7 @@ init:
     image Mikuru Cower Smile1 ="Sprites/Mikuru/MikuruCowerSmile1.png"
     image Mikuru Cower Smile2 ="Sprites/Mikuru/MikuruCowerSmile2.png"
     image Mikuru Cower Unhap1 = "Sprites/Mikuru/MikuruCowerUnhappy1.png"
-    image Mikuru Cowerl Worry1 = "Sprites/Mikuru/MikuruCowerWorry1.png"
+    image Mikuru Cower Worry1 = "Sprites/Mikuru/MikuruCowerWorry1.png"
     
     image MBlush Cower = "Sprites/Mikuru/MikuruCowerBlush1.png"
     image MBlush Cower Towel = "Sprites/Mikuru/MblushCowerTowel.png"
@@ -667,11 +673,13 @@ init:
     image MikuruBig Neutral2 = "Sprites/MikuruBig/MikuruBigNeutral2.png"
     image MikuruBig Quest1 = "Sprites/MikuruBig/MikuruBigQuestion1.png"
     image MikuruBig Sad1 = "Sprites/MikuruBig/MikuruBigSad1.png"
+    image MikuruBig Sad2 = "Sprites/MikuruBig/MikuruBigSad2.png"
     image MikuruBig Ser1 = "Sprites/MikuruBig/MikuruBigSerious1.png"
     image MikuruBig Ser2 = "Sprites/MikuruBig/MikuruBigSerious2.png"
     image MikuruBig Sigh1 = "Sprites/MikuruBig/MikuruBigSigh1.png"
     image MikuruBig Smile1 = "Sprites/MikuruBig/MikuruBigSmile1.png"
     image MikuruBig Smile2 = "Sprites/MikuruBig/MikuruBigSmile2.png"
+    image MikuruBig Smile3 = "Sprites/MikuruBig/MikuruBigSmile3.png"
     image MikuruBig Sup1 = "Sprites/MikuruBig/MikuruBigSurprised1.png"
     image MikuruBig Sup2 = "Sprites/MikuruBig/MikuruBigSurprised2.png"
     image MikuruBig Worry1 = "Sprites/MikuruBig/MikuruBigWorry1.png"
@@ -771,8 +779,10 @@ init:
     image Kanae Hap1 = "Sprites/Kanae/KanaeHappy1.png"
     image Kanae Hap2 = "Sprites/Kanae/KanaeHappy2.png"
     image Kanae Hap3 = "Sprites/Kanae/KanaeHappy3.png"
+    image Kanae Hap4 = "Sprites/Kanae/KanaeHappy4.png"
     image Kanae Neutral1 = "Sprites/Kanae/KanaeNeutral1.png"
     image Kanae Quest1 = "Sprites/Kanae/KanaeQuestion1.png"
+    image Kanae Quest2 = "Sprites/Kanae/KanaeQuestion2.png"
     image Kanae Sad1 = "Sprites/Kanae/KanaeSad1.png"
     image Kanae Sad2 = "Sprites/Kanae/KanaeSad2.png"
     image Kanae Sad3 = "Sprites/Kanae/KanaeSad3.png"
@@ -795,8 +805,10 @@ init:
     image Kanae Night Hap1 = "Sprites/Kanae/KanaeNightHappy1.png"
     image Kanae Night Hap2 = "Sprites/Kanae/KanaeNightHappy2.png"
     image Kanae Night Hap3 = "Sprites/Kanae/KanaeNightHappy3.png"
+    image Kanae Night Hap4 = "Sprites/Kanae/KanaeNightHappy4.png"
     image Kanae Night Neutral1 = "Sprites/Kanae/KanaeNightNeutral1.png"
     image Kanae Night Quest1 = "Sprites/Kanae/KanaeNightQuestion1.png"
+    image Kanae Night Quest2 = "Sprites/Kanae/KanaeNightQuestion2.png"
     image Kanae Night Sad1 = "Sprites/Kanae/KanaeNightSad1.png"
     image Kanae Night Sad2 = "Sprites/Kanae/KanaeNightSad2.png"
     image Kanae Night Sad3 = "Sprites/Kanae/KanaeNightSad3.png"
@@ -2018,7 +2030,7 @@ label test_Z0_eye:
     with dissolve
     "And another one. (but effect may be the same. Randomness, y'know)"
     # call the eyecatch routine, can supply nothing if nothing needs to be changed, specify the unique "from"
-    call eyecatch_random("Febtober 3.14, 1592", "Febtober 2.71828, 1592") from test_Z0_p0005
+    call eyecatch_random("Febtober 3.14, 1592", "Febtober 2.7, 1828") from test_Z0_p0005
     # activate the next scene with dissolve (or whatever else).
     scene bg MorningSky
     show TownHillLeftMorning
