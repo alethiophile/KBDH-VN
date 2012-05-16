@@ -53,8 +53,9 @@ label AO1_1:
     show Asakura Frown3 at left
     with dissolve
     # No crossed-arm Asakura sprite = changing the text to not require that.
-    # "\"Er,\" Asakura said, crossing her arms beneath her chest."
-    "\"Er,\" Asakura said with a slight frown. "
+    # By policy, don't alter the text.
+    "\"Er,\" Asakura said, crossing her arms beneath her chest."
+    # "\"Er,\" Asakura said with a slight frown. "
     show Asakura Frown2 at left
     "\"Evidently my information requires an update. I was sent to dispatch Kyon-kun, because he's become an undesirable element for my superiors.\""
     show Asakura Sup1 at left
