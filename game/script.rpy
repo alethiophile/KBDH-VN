@@ -197,6 +197,7 @@ init:
                                        im.matrix.brightness(.5))
     image Haruhi Crossed Pout2 = "Sprites/Haruhi/HaruhiCrossedPout2.png"
     image Haruhi Crossed Eyeroll1 = "Sprites/Haruhi/HaruhiCrossedEyeroll1.png"
+    image Haruhi Crossed Eyeroll2 = "Sprites/Haruhi/HaruhiCrossedEyeroll2.png"
     image Haruhi Crossed Quest1 = "Sprites/Haruhi/HaruhiCrossedQuestion1.png"
     image Haruhi Crossed Grin1 = "Sprites/Haruhi/HaruhiCrossedGrin1.png"
     image Haruhi Crossed Worry1 = "Sprites/Haruhi/HaruhiCrossedWorry1.png"
@@ -223,6 +224,7 @@ init:
                                        im.matrix.brightness(.5))
     image Haruhi Crossed Casual Pout2 = "Sprites/Haruhi/HaruhiCrossedCasualPout2.png"
     image Haruhi Crossed Casual Eyeroll1 = "Sprites/Haruhi/HaruhiCrossedCasualEyeroll1.png"
+    image Haruhi Crossed Casual Eyeroll2 = "Sprites/Haruhi/HaruhiCrossedCasualEyeroll2.png"
     image Haruhi Crossed Casual Quest1 = "Sprites/Haruhi/HaruhiCrossedCasualQuestion1.png"
     image Haruhi Crossed Casual Grin1 = "Sprites/Haruhi/HaruhiCrossedCasualGrin1.png"
     image Haruhi Crossed Casual Worry1 = "Sprites/Haruhi/HaruhiCrossedCasualWorry1.png"
@@ -239,12 +241,14 @@ init:
     image Haruhi Point Ang1 = "Sprites/Haruhi/HaruhiPointAngry1.png"
     image Haruhi Point Hap1 = "Sprites/Haruhi/HaruhiPointHappy1.png"
     image Haruhi Point Scold1 = "Sprites/Haruhi/HaruhiPointScold1.png"
+    image Haruhi Point Scold2 = "Sprites/Haruhi/HaruhiPointScold2.png"
     
     image Haruhi Point Casual Amuse1 = "Sprites/Haruhi/HaruhiPointCasualAmused1.png"
     image Haruhi Point Casual Surpr1 = "Sprites/Haruhi/HaruhiPointCasualSurprised1.png"
     image Haruhi Point Casual Ang1 = "Sprites/Haruhi/HaruhiPointCasualAngry1.png"
     image Haruhi Point Casual Hap1 = "Sprites/Haruhi/HaruhiPointCasualHappy1.png"
     image Haruhi Point Casual Scold1 = "Sprites/Haruhi/HaruhiPointCasualScold1.png"
+    image Haruhi Point Casual Scold2 = "Sprites/Haruhi/HaruhiPointCasualScold2.png"
     
     image Haruhi Hips Ang1 = "Sprites/Haruhi/HaruhiHipsAngry1.png"
     image Haruhi Hips Ang2 = "Sprites/Haruhi/HaruhiHipsAngry2.png"
@@ -508,11 +512,14 @@ init:
         repeat
    
     # Mikuru Sprites 
+    image Mikuru Hap1 = "Sprites/Mikuru/MikuruHappy1.png"
+    image Mikuru Hap2 = "Sprites/Mikuru/MikuruHappy2.png"
     image Mikuru Neutral1 = "Sprites/Mikuru/MikuruNeutral1.png"
     image Mikuru Neutral2 = "Sprites/Mikuru/MikuruNeutral2.png"
     image Mikuru Sad1 = "Sprites/Mikuru/MikuruSad1.png"
     image Mikuru Sad2 = "Sprites/Mikuru/MikuruSad2.png"
     image Mikuru Sigh1 = "Sprites/Mikuru/MikuruSigh1.png"
+    image Mikuru Sigh2 = "Sprites/Mikuru/MikuruSigh2.png"
     image Mikuru Ser1 = "Sprites/Mikuru/MikuruSerious1.png"
     image Mikuru Ser2 = "Sprites/Mikuru/MikuruSerious2.png"
     image Mikuru Ser3 = "Sprites/Mikuru/MikuruSerious3.png"
@@ -522,13 +529,17 @@ init:
     image Mikuru Quest2 = "Sprites/Mikuru/MikuruQuestion2.png"
     image Mikuru Unhap1 = "Sprites/Mikuru/MikuruUnhappy1.png"
     image Mikuru Unhap2 = "Sprites/Mikuru/MikuruUnhappy2.png"
+    image Mikuru Unhap3 = "Sprites/Mikuru/MikuruUnhappy3.png"
     image MBlush1 = "Sprites/Mikuru/MBlush1.png"
   
+    image Mikuru Casual Hap1 = "Sprites/Mikuru/MikuruCasualHappy1.png"
+    image Mikuru Casual Hap2 = "Sprites/Mikuru/MikuruCasualHappy2.png"
     image Mikuru Casual Neutral1 = "Sprites/Mikuru/MikuruCasualNeutral1.png"
     image Mikuru Casual Neutral2 = "Sprites/Mikuru/MikuruCasualNeutral2.png"
     image Mikuru Casual Sad1 = "Sprites/Mikuru/MikuruCasualSad1.png"
     image Mikuru Casual Sad2 = "Sprites/Mikuru/MikuruCasualSad2.png"
     image Mikuru Casual Sigh1 = "Sprites/Mikuru/MikuruCasualSigh1.png"
+    image Mikuru Casual Sigh2 = "Sprites/Mikuru/MikuruCasualSigh2.png"
     image Mikuru Casual Ser1 = "Sprites/Mikuru/MikuruCasualSerious1.png"
     image Mikuru Casual Ser2 = "Sprites/Mikuru/MikuruCasualSerious2.png"
     image Mikuru Casual Ser3 = "Sprites/Mikuru/MikuruCasualSerious3.png"
@@ -538,13 +549,17 @@ init:
     image Mikuru Casual Quest2 = "Sprites/Mikuru/MikuruCasualQuestion2.png"
     image Mikuru Casual Unhap1 = "Sprites/Mikuru/MikuruCasualUnhappy1.png"
     image Mikuru Casual Unhap2 = "Sprites/Mikuru/MikuruCasualUnhappy2.png"
+    image Mikuru Casual Unhap3 = "Sprites/Mikuru/MikuruCasualUnhappy3.png"
     image MBlush1 Casual = "Sprites/Mikuru/MBlushCasual1.png"
     
+    image Mikuru Maid Hap1 = "Sprites/Mikuru/MikuruMaidHappy1.png"
+    image Mikuru Maid Hap2 = "Sprites/Mikuru/MikuruMaidHappy2.png"
     image Mikuru Maid Neutral1 = "Sprites/Mikuru/MikuruMaidNeutral1.png"
     image Mikuru Maid Neutral2 = "Sprites/Mikuru/MikuruMaidNeutral2.png"
     image Mikuru Maid Sad1 = "Sprites/Mikuru/MikuruMaidSad1.png"
     image Mikuru Maid Sad2 = "Sprites/Mikuru/MikuruMaidSad2.png"
     image Mikuru Maid Sigh1 = "Sprites/Mikuru/MikuruMaidSigh1.png"
+    image Mikuru Maid Sigh2 = "Sprites/Mikuru/MikuruMaidSigh2.png"
     image Mikuru Maid Ser1 = "Sprites/Mikuru/MikuruMaidSerious1.png"
     image Mikuru Maid Ser2 = "Sprites/Mikuru/MikuruMaidSerious2.png"
     image Mikuru Maid Ser3 = "Sprites/Mikuru/MikuruMaidSerious3.png"
@@ -554,11 +569,13 @@ init:
     image Mikuru Maid Quest2 = "Sprites/Mikuru/MikuruMaidQuestion2.png"
     image Mikuru Maid Unhap1 = "Sprites/Mikuru/MikuruMaidUnhappy1.png"
     image Mikuru Maid Unhap2 = "Sprites/Mikuru/MikuruMaidUnhappy2.png"
+    image Mikuru Maid Unhap3 = "Sprites/Mikuru/MikuruMaidUnhappy3.png"
     image MBlush1 Maid = "Sprites/Mikuru/MBlushMaid1.png"
     image MTray Maid ="Sprites/Mikuru/MTrayMaid.png"
     
     image Mikuru Think Quest1 = "Sprites/Mikuru/MikuruThinkQuestion1.png"
     image Mikuru Think Quest2 = "Sprites/Mikuru/MikuruThinkQuestion2.png"
+    image Mikuru Think Quest3 = "Sprites/Mikuru/MikuruThinkQuestion3.png"
     image Mikuru Think Sad1 = "Sprites/Mikuru/MikuruThinkSad1.png"
     image Mikuru Think Sad2 = "Sprites/Mikuru/MikuruThinkSad2.png"
     image Mikuru Think Sad3 = "Sprites/Mikuru/MikuruThinkSad3.png"
@@ -568,6 +585,7 @@ init:
     
     image Mikuru Think Casual Quest1 = "Sprites/Mikuru/MikuruThinkCasualQuestion1.png"
     image Mikuru Think Casual Quest2 = "Sprites/Mikuru/MikuruThinkCasualQuestion2.png"
+    image Mikuru Think Casual Quest3 = "Sprites/Mikuru/MikuruThinkCasualQuestion3.png"
     image Mikuru Think Casual Sad1 = "Sprites/Mikuru/MikuruThinkCasualSad1.png"
     image Mikuru Think Casual Sad2 = "Sprites/Mikuru/MikuruThinkCasualSad2.png"
     image Mikuru Think Casual Sad3 = "Sprites/Mikuru/MikuruThinkCasualSad3.png"
@@ -577,6 +595,7 @@ init:
     
     image Mikuru Think Maid Quest1 = "Sprites/Mikuru/MikuruThinkMaidQuestion1.png"
     image Mikuru Think Maid Quest2 = "Sprites/Mikuru/MikuruThinkMaidQuestion2.png"
+    image Mikuru Think Maid Quest3 = "Sprites/Mikuru/MikuruThinkMaidQuestion3.png"
     image Mikuru Think Maid Sad1 = "Sprites/Mikuru/MikuruThinkMaidSad1.png"
     image Mikuru Think Maid Sad2 = "Sprites/Mikuru/MikuruThinkMaidSad2.png"
     image Mikuru Think Maid Sad3 = "Sprites/Mikuru/MikuruThinkMaidSad3.png"
@@ -599,7 +618,7 @@ init:
     image Mikuru Cower Smile1 ="Sprites/Mikuru/MikuruCowerSmile1.png"
     image Mikuru Cower Smile2 ="Sprites/Mikuru/MikuruCowerSmile2.png"
     image Mikuru Cower Unhap1 = "Sprites/Mikuru/MikuruCowerUnhappy1.png"
-    image Mikuru Cowerl Worry1 = "Sprites/Mikuru/MikuruCowerWorry1.png"
+    image Mikuru Cower Worry1 = "Sprites/Mikuru/MikuruCowerWorry1.png"
     
     image MBlush Cower = "Sprites/Mikuru/MikuruCowerBlush1.png"
     image MBlush Cower Towel = "Sprites/Mikuru/MblushCowerTowel.png"
@@ -650,11 +669,13 @@ init:
     image MikuruBig Neutral2 = "Sprites/MikuruBig/MikuruBigNeutral2.png"
     image MikuruBig Quest1 = "Sprites/MikuruBig/MikuruBigQuestion1.png"
     image MikuruBig Sad1 = "Sprites/MikuruBig/MikuruBigSad1.png"
+    image MikuruBig Sad2 = "Sprites/MikuruBig/MikuruBigSad2.png"
     image MikuruBig Ser1 = "Sprites/MikuruBig/MikuruBigSerious1.png"
     image MikuruBig Ser2 = "Sprites/MikuruBig/MikuruBigSerious2.png"
     image MikuruBig Sigh1 = "Sprites/MikuruBig/MikuruBigSigh1.png"
     image MikuruBig Smile1 = "Sprites/MikuruBig/MikuruBigSmile1.png"
     image MikuruBig Smile2 = "Sprites/MikuruBig/MikuruBigSmile2.png"
+    image MikuruBig Smile3 = "Sprites/MikuruBig/MikuruBigSmile3.png"
     image MikuruBig Sup1 = "Sprites/MikuruBig/MikuruBigSurprised1.png"
     image MikuruBig Sup2 = "Sprites/MikuruBig/MikuruBigSurprised2.png"
     image MikuruBig Worry1 = "Sprites/MikuruBig/MikuruBigWorry1.png"
@@ -824,7 +845,9 @@ init:
     image Koizumi Think Grin2 = "Sprites/Koizumi/KoizumiThinkGrin2.png"
     image Koizumi Think Sup1 = "Sprites/Koizumi/KoizumiThinkSurprised1.png"
     image Koizumi Think Smile1 = "Sprites/Koizumi/KoizumiThinkSmile1.png"
+    image Koizumi Think Smile2 = "Sprites/Koizumi/KoizumiThinkSmile2.png"
     image Koizumi Think Sigh1 = "Sprites/Koizumi/KoizumiThinkSigh1.png"
+    image Koizumi Think Worry1 = "Sprites/Koizumi/KoizumiThinkWorry1.png"
     
     image Koizumi Think Casual Ser1 = "Sprites/Koizumi/KoizumiThinkCasualSerious1.png"
     image Koizumi Think Casual Ser2 = "Sprites/Koizumi/KoizumiThinkCasualSerious2.png"
@@ -834,12 +857,16 @@ init:
     image Koizumi Think Casual Grin2 = "Sprites/Koizumi/KoizumiThinkCasualGrin2.png"
     image Koizumi Think Casual Sup1 = "Sprites/Koizumi/KoizumiThinkCasualSurprised1.png"
     image Koizumi Think Casual Smile1 = "Sprites/Koizumi/KoizumiThinkCasualSmile1.png"
+    image Koizumi Think Casual Smile2 = "Sprites/Koizumi/KoizumiThinkCasualSmile2.png"
     image Koizumi Think Casual Sigh1 = "Sprites/Koizumi/KoizumiThinkCasualSigh1.png"
+    image Koizumi Think Casual Worry1 = "Sprites/Koizumi/KoizumiThinkCasualWorry1.png"
     
     image Koizumi Crossed Ser1 = "Sprites/Koizumi/KoizumiCrossedSerious1.png"
     image Koizumi Crossed Ser2 = "Sprites/Koizumi/KoizumiCrossedSerious2.png"
     image Koizumi Crossed Smile1 = "Sprites/Koizumi/KoizumiCrossedSmile1.png"
     image Koizumi Crossed Smile2 = "Sprites/Koizumi/KoizumiCrossedSmile2.png"
+    image Koizumi Crossed Smile3 = "Sprites/Koizumi/KoizumiCrossedSmile3.png"
+    image Koizumi Crossed Smile4 = "Sprites/Koizumi/KoizumiCrossedSmile4.png"
     image Koizumi Crossed Uneasy1 = "Sprites/Koizumi/KoizumiCrossedUneasy1.png"
     image Koizumi Crossed Uneasy2 = "Sprites/Koizumi/KoizumiCrossedUneasy2.png"
     image Koizumi Crossed Uneasy3 = "Sprites/Koizumi/KoizumiCrossedUneasy3.png"
@@ -854,6 +881,8 @@ init:
     image Koizumi Crossed Casual Ser2 = "Sprites/Koizumi/KoizumiCrossedCasualSerious2.png"
     image Koizumi Crossed Casual Smile1 = "Sprites/Koizumi/KoizumiCrossedCasualSmile1.png"
     image Koizumi Crossed Casual Smile2 = "Sprites/Koizumi/KoizumiCrossedCasualSmile2.png"
+    image Koizumi Crossed Casual Smile3 = "Sprites/Koizumi/KoizumiCrossedCasualSmile3.png"
+    image Koizumi Crossed Casual Smile4 = "Sprites/Koizumi/KoizumiCrossedCasualSmile4.png"
     image Koizumi Crossed Casual Uneasy1 = "Sprites/Koizumi/KoizumiCrossedCasualUneasy1.png"
     image Koizumi Crossed Casual Uneasy2 = "Sprites/Koizumi/KoizumiCrossedCasualUneasy2.png"
     image Koizumi Crossed Casual Uneasy3 = "Sprites/Koizumi/KoizumiCrossedCasualUneasy3.png"
@@ -1148,6 +1177,14 @@ init:
     # image eyeDate = DynamicDisplayable(show_date)
     image eyeDate 1 = DynamicDisplayable(show_date1)
     image eyeDate 2 = DynamicDisplayable(show_date2)
+
+    image eyeDateColor 1 = DynamicDisplayable(lambda st, at: [Text("[date1]", font="DejaVuSerif-Italic.ttf", size=25, color=ecfg, outlines=[(1, "#000", 2, 1)]), None])
+    image eyeDateColor 2 = DynamicDisplayable(lambda st, at: [Text("[date2]", font="DejaVuSerif-Italic.ttf", size=25, color=ecfg, outlines=[(1, "#000", 2, 1)]), None])
+    
+    image KBDHLogoWhite = "Backgrounds/KBDHLogo-White.png"
+    image KBDHLogoColor = DynamicDisplayable(KBDH_Color)
+    
+    image eyeSolidBackground = DynamicDisplayable(lambda st, at: [ecbg, None])
     
     image eyebg = ConditionSwitch("ecbg == 'white'", "#fff", "True", "#000")
     
@@ -1244,7 +1281,7 @@ init python:
     adj = ui.adjustment()
     music_need = True
     ecbg = "black"
-    
+    ecfg = "fff"
     # Faux movie announcer voice
     style.movie = Style(style.default)
     # Comment everything with "style.movie." below to disable the {=movie}{/=movie} tag effects
@@ -1438,6 +1475,15 @@ init -1 python:
     def show_date2(st, at):
         return Text("[date2]", font="DejaVuSerif-Italic.ttf", size=25, color="#3cf", outlines=[(1, "#000", 2, 1)]), None
         
+    def color_matrix (c):
+        color_tuple = color(c)
+        return [ color_tuple[0]/255.0,                      0,                      0,                      0, 0, 
+                                      0, color_tuple[1]/255.0,                      0,                      0, 0, 
+                                      0,                      0, color_tuple[2]/255.0,                      0, 0, 
+                                      0,                      0,                      0, color_tuple[3]/255.0, 0 ]
+    def KBDH_Color(st, at):
+        return im.MatrixColor("Backgrounds/KBDHLogo-White.png", color_matrix(ecfg)), None
+        
     if persistent.text_styling == None:
         persistent.text_styling = "Extra"
     
@@ -1472,6 +1518,7 @@ init -1 python:
         ]
         
     ecbg = "black"
+    ecfg = "fff"
 
 label backtomain:
     return
@@ -1533,11 +1580,16 @@ label credits_roll:
     scene black with dissolve
     show credroll at Position(xalign=0.5, yanchor=0.0, ypos=1.0) with None
     show credroll at Position(xalign=0.5, yanchor=1.0, ypos=1.0) with MoveTransition(21)
-    show BDVNlogo at Position(xalign=0.5, yanchor=0.5, ypos=1.5) with None
-    show BDVNlogo:
+    show KBDHLogoWhite at Position(xalign=0.5, yanchor=0.5, ypos=1.5) with None
+    show KBDHLogoWhite:
         linear 5 ypos 0.5
     show credroll:
         linear 5 ypos 0.0
+    # show BDVNlogo at Position(xalign=0.5, yanchor=0.5, ypos=1.5) with None
+    # show BDVNlogo:
+        # linear 5 ypos 0.5
+    # show credroll:
+        # linear 5 ypos 0.0
     # show WaitForInputBlinking:
         # alpha 0.0 right
         # linear 5 pass
@@ -1610,7 +1662,7 @@ label Preview2:
     $ renpy.pause(0.1, hard=True)
     # show P5 at Position(yanchor=0.5, ypos=-0.5, xalign=0.5):
         # size (800,600)
-    show P5 at truecenter with dissolve:
+    show P5 at truecenter with moveinright:
         size (800,600)
     hide P4
     pause 3.0
@@ -1878,6 +1930,30 @@ label eyecatch_white(date="", pause_time=3.0, r=0, ecbg="black"):
     with coatout
     scene white with Dissolve(0.5)
     return    
+
+label eyecatch_generic(date1="", date2="", pause_time = 3.0, r = 0, ecbg = "900", ecfgcolor = "fff"):
+    
+    $ ecfg = ecfgcolor
+    # Define transitions
+    if r < 1 or r > 5:
+        $ r = renpy.random.randint(1, 5)
+
+    $ eyecatch_transition_in = [moveinright, moveinleft, moveintop, moveinbottom, coatin][r-1]
+    $ eyecatch_transition_out = [moveoutleft, moveoutright, moveoutbottom, moveouttop, coatout][r-1]
+    
+    scene eyeSolidBackground with Dissolve(1)
+    show KBDHLogoColor at truecenter
+    show eyeDateColor 1 at date_pos
+    with eyecatch_transition_in
+    pause (pause_time * 0.3)
+    show eyeDateColor 2 at date_pos with wiperight
+    pause (pause_time * 0.7)
+    hide KBDHLogoColor
+    hide eyeDateColor
+    with eyecatch_transition_out
+    show eyeSolidBackground
+    return
+
     
 label test_Z0_eye:
     scene bg MorningSky
@@ -1952,6 +2028,9 @@ label test_Z0_eye:
     show TownHillLeftMorning
     show Haruhi Smile3 at left
     with dissolve
+    scene bg Library with dissolve
+    "Call to eyecatch with custom foreground and background colors. Using a placeholder image (image should be white on transparent background)"
+    call eyecatch_generic("starting", "well... not anymore", 3.0, 0, "#ddd", "#222")
     "Thats all!"
     # If you specify the names of arguments, you don't have to worry about positions
     call eyecatch(pause_time=3, r=5) from test_Z0_p0007

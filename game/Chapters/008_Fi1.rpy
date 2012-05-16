@@ -217,97 +217,184 @@ label Test:
     extend "By the time she had changed her shoes and turned back, he had the almost-concealed smug expression of managing to pull one over on her. She pursed her lips, resisting the urge to smirk and give herself away."
     nvl clear
     
-    scene bg hallway with fade
-    #show Haruhi at right with dissolve
-    #show Kyon at left with dissolve
+    scene bg ClubHallLeft with fade
+    show Haruhi Hap2 at left with dissolve
     "\"Anyway,\" she said, walking by his side on the way to the club room, \"what happened with Tsuruya-san yesterday? And when did she become 'Tsuruya-kun' to you?\""
+    show Kyon Smile7 at right with dissolve
     "\"Yesterday,\" he said, relaxing, one hand patting his left pocket. Well, that suggested her guess about where the box had gone was accurate. \"Or ... technically the day before. Part of the investigation; she said we should be more of equals, instead of sempai and kohai.\""
     nvl clear
+    show Haruhi Hap1
     "\"And...?\" she prompted, poking his back with a fingertip."
+    show Kyon Neutral1
     "He twisted away from the prod and gave her a sidelong glance. \"And what?\" he asked. \"I already met up with you after that. It's classified.\""
+    show Haruhi Hap3
     "\"Just give me some non-essential details,\" she pressed. \"I'm dying to know what's going on!\""
+    show Kyon Sigh1
     "He shook his head resolutely. \"No,\" he insisted. \"You solved the mystery that Koizumi came up with last Winter with minimal clues.\""
     nvl clear
+    show Haruhi Unhap1
     "\"Bah! Well, you still need to tell me where you were yesterday.\""
+    show Kyon Neutral1
     "\"I do?\""
+    show Haruhi Smile3 
     "She nodded vigorously. \"Of course you do,\" she insisted. \"Tsuruya-san is under strict orders to account for all of her Kyon usage until this investigation is complete!\""
     nvl clear
-    "\"Um.... Well, we went to a really bad section of town and had a ... dispute with four....\" He trailed off, squinting, then smiled, nodding. \"Four very pushy fellows. Yeah, that's how she would put it.\""
+    show Kyon Puzzle1
+    "\"Um.... Well, we went to a really bad section of town and had a ... dispute with four....\" He trailed off, squinting, {nw}"
+    show Kyon Smile3
+    extend "then smiled, nodding. \"Four very pushy fellows. Yeah, that's how she would put it.\""
+    show Haruhi Neutral3
     "\"Where did she meet you?\" she pressed."
+    show Kyon Sigh2
     "\"Downtown,\" he said with a shrug. \"I got a voice mail to help her out just after we split up at the train station.\""
     nvl clear
+    
+    scene bg ClubroomRightDay with fade
+    show Kyon Sigh2 at right with dissolve
+    show Haruhi Hap4 at left with dissolve
     "She nodded, then unlocked the door to the clubroom, swinging it open and gesturing him in. After she had set her bag on the table, she glanced back and frowned. \"I forgot to close the door,\" she noted, \"take care of that, huh?\""
     nvl clear
-    "He scowled, halfway lowered into his seat, but nodded and rose, heading to the portal. With one swift lunge, she swept a kick at the back of his shins, causing him to stumble. \"What the hell—\" he tried to protest, before she shoved him to the ground and leapt atop him, straddling his back and wrestling to get at his blazer pocket."
-    "\"Fork it over!\" she demanded, unable to keep from grinning while she used her power to make the door slam shut."
+    show Kyon Sigh3
+    stop music fadeout 1
+    play music "Music/YareYare.mp3"
+    "He scowled, halfway lowered into his seat, but nodded and rose, heading to the portal.  {nw}"
+    play sound "SE/Impact.mp3"
+    extend "With one swift lunge, she swept a kick at the back of his shins, causing him to stumble.  {nw}"
+    show Kyon Sup1
+    extend " \"What the hell—\" he tried to protest, before she shoved him to the ground  {nw}"
+    hide Kyon with dissolve
+    play sound "SE/Impact.mp3"
+    show Haruhi Hap4 at center
+    "and leapt atop him, straddling his back and wrestling to get at his blazer pocket."
+    show Haruhi Point Hap1
+    "\"Fork it over!\" she demanded, unable to keep from grinning while she used her power to make {nw}"
+    play sound "SE/doorclose.mp3"
+    extend "the door slam shut."
     "\"Why— You— Haruhi!\""
     nvl clear
     "He was much more purposeful when he struggled, rolling his arms and shoulders, twisting about and trying to evade her grip. He'd gotten surprisingly stronger, too! Not that it mattered; she could tell he couldn't bring himself to use his full force against her. It was kind of cute, really, but still an easily exploitable weakness. His skill was troublesome though, so she found herself laying flat on his back, one arm snaking beneath him to wend into his blazer pocket."
     nvl clear
+    show Haruhi Point Amuse1
     "\"You think you can keep something {i}else{/i} hidden from me?\" she growled."
     "She knew she was fighting a bit dirty, her breath tickling the back of his neck so he dare not jerk his head back and hit her face. When his lower body began to twist further, she managed to tangle her legs around his, though she felt the motion slide her skirt up ... well, that was why she had closed the door, and it wasn't like {i}he{/i} could see anything but the floor."
     nvl clear
-    "\"Damn it, Haruhi! Let me go! It's none of your business!\" She rolled the tangled pair of them to one side to give herself better access to his pocket, just as the door swung open again."
-    "Mikuru backed into the room, humming to herself and carrying a large box with a plastic handle across the top with both hands. \"Hello? Is someone here—\" she began cautiously, turning around after she set down the box, her eyes widening in shock as she saw the tangled duo."
+    "\"Damn it, Haruhi! Let me go! It's none of your business!\" She rolled the tangled pair of them to one side to give herself better access to his pocket,  {nw}"
+    play sound "SE/dooropenslow"
+    extend "just as the door swung open again."
+    show Mikuru Hap2 at right
+    "Mikuru backed into the room, humming to herself and carrying a large box with a plastic handle across the top with both hands. \"Hello? Is someone here—\"  {nw}"
+    show Mikuru Think Sup1
+    extend "she began cautiously, turning around after she set down the box, her eyes widening in shock as she saw the tangled duo."
     nvl clear
-    "Before she could yelp and run away as she had last time, Haruhi made the door slam shut and demanded, \"Help me, Mikuru-chan! Come here immediately!\""
+    show Haruhi Point Hap1
+    "Before she could yelp and run away as she had last time,  {nw}"
+    play sound "SE/doorclose.mp3"
+    extend "Haruhi made the door slam shut and demanded, \"Help me, Mikuru-chan! Come here immediately!\""
+    show Mikuru Cower Nervous2
     "The time traveler boggled, slipping back a half step before the order reached her, and she shook her head. \"Y.... But.... What?\" she whimpered."
     nvl clear
     "\"Don't listen to her!\" Kyon pleaded, desperately grabbing Haruhi's wrist as it thrust towards the note, stopped so close her fingertips could touch the edge of the envelope. \"Help me, Asahina-san! Call in the J.S.D.F., or the police! I'm being assaulted! Get me pepper spray, a stun gun — {i}anything{/i}!\""
     nvl clear
-    "\"Come here!\" Haruhi insisted, struggling, but unable to drive her right hand deeper into Kyon's pocket. Her left hand was flat against the floor, providing her leverage and balance. Kyon grunted and managed to roll to one side, able to bring both hands to bear against Haruhi, leaving their noses centimeters apart, her hand slowly being forced from its goal. With tiny, mincing steps, as though she had been ordered into a bonfire, Mikuru crept closer, flinching with each change in the struggle."
+    show Haruhi Point Scold2
+    "\"Come here!\" Haruhi insisted, struggling, but unable to drive her right hand deeper into Kyon's pocket. Her left hand was flat against the floor, providing her leverage and balance. Kyon grunted and managed to roll to one side, able to bring both hands to bear against Haruhi, leaving their noses centimeters apart, her hand slowly being forced from its goal. {nw}"
+    show Mikuru Cower Nervous2 at TenthRight
+    "With tiny, mincing steps, as though she had been ordered into a bonfire, Mikuru crept closer, flinching with each change in the struggle."
     nvl clear
     "\"Don't ... let her ... get it,\" Kyon grated out, Haruhi's right wrist captured in his left hand. His right hand was on her shoulder, slowly lifting her up off him."
+    show Haruhi Point Ang1
     "\"No ... you ... don't,\" Haruhi growled in return, letting him push her completely upright as Mikuru drew in range, then grabbing the upperclassman's wrist and hauling her unceremoniously to collapse onto Kyon."
+    hide Mikuru
     nvl clear
     "\"Kya~!\" Mikuru wailed, thrashing aimlessly, her chest mashed into Kyon's face. He struggled mightily, legs kicking, hands flailing as he was uncertain where to put them. \"S...Suzumiya-san! Why— AAH! K...Kyon-kun — n...not there — OOH!\""
     nvl clear
+    show Haruhi Point Hap1
     "Ignoring the time traveler's protests for the moment, Haruhi reoriented herself and thrust her hand into Kyon's blazer again, fishing out the note with a victorious cheer. \"Haha!\" she cried, leaping away from Kyon and holding it overhead. \"Keep him pinned, Mikuru-chan!\" she encouraged, tearing open the envelope and unfolding the note within quickly."
     nvl clear
+    show Haruhi Hap1
     "She scanned the first line with a wide grin: \"Suzumiya-san, this letter isn't for you. Shame!\""
+    show Haruhi Unhap2
     "Her smile vanished and she scowled at the paper, which other than those clear words was covered with a sequence of probably meaningful symbols, but all she could decipher was a trail of squiggles, stars, and odd whorls and loops until the last line: \"And you should apologize to that Mikuru!\""
     nvl clear
-    "\"Oh, damn,\" she cursed, hauling Mikuru's whimpering form off Kyon. \"Well, good work, Mikuru-chan!\""
+    show Haruhi Sigh2
+    "\"Oh, damn,\" she cursed, hauling Mikuru's whimpering form off Kyon.  {nw}"
+    show Haruhi Smile3
+    extend "\"Well, good work, Mikuru-chan!\""
+    show Mikuru Cower Wince1 at right
     "Collapsing back into a kneeling pile, the upperclassman returned an incomprehensible series of sobs. Kyon sucked in a greedy breath, his eyes unfocused, then coughed, gasping to recover."
     nvl clear
+    show Haruhi Worry1
     "\"Sorry,\" Haruhi added after a moment, frowning petulantly. \"It was still worth a try, though.\""
+    show Kyon Sigh5 at left
     "\"I might have died happy,\" Kyon managed, dazed."
+    show Mikuru Cower Nervous3
     "Mikuru's crying subsided to mere whimpers. \"S...Suzumiya-san, why do you do this to me?\" she moaned. \"Are you mad at me? Did I do something wrong?\""
     nvl clear
+    show Haruhi Neutral2
     "\"Don't be silly,\" Haruhi chastised her. \"It was a last-second plan to try and distract Kyon — you used your moe charms perfectly!\""
+    #show Mikuru Cower Blink?
     "With a wide-eyed blink, the time traveler turned to stare at her, eyes still watery."
+    show Haruhi Unhap3
     "\"Ah, okay, okay,\" Haruhi allowed, wincing. \"I'm sorry, Mikuru-chan — but it was Kyon! Not some stranger this time, right?\""
     nvl clear
+    show Mikuru Cower Smile2
     "\"I...if it was Kyon, I don't mind so much,\" Mikuru agreed hesitantly, though she was still blushing and her face was marked with tears."
+    show Haruhi Unhap1
     "\"Arg! I just don't like being left behind!\" Haruhi stamped one foot angrily on the floor for emphasis. \"I should have known that time travelers wouldn't let me see anything I wasn't supposed to.\""
     nvl clear
+    show Kyon Unhap2
     "\"Damn it, Haruhi!\" Kyon protested, seeming to come back to his senses as he sat up and gave her a sharp stare. \"What was that all about!?\""
-    "\"Oh, why are you complaining?\" she retorted. \"You had two very attractive girls all over you {i}and{/i} you got a face full of Mikuru-chan's bountiful assets!\" She narrowed her eyes and leaned towards Kyon. \"What, you think that was bad, or something?\""
+    show Haruhi Neutral2
+    "\"Oh, why are you complaining?\" she retorted. \"You had two very attractive girls all over you {i}and{/i} you got a face full of Mikuru-chan's bountiful assets!\"  {nw}"
+    show Haruhi Eyeroll2
+    extend "She narrowed her eyes and leaned towards Kyon. \"What, you think that was bad, or something?\""
     nvl clear
-    "\"Er, well,\" he managed, suddenly deflated, before he shook his head and gave her a stern look. \"What about Asahina-san's feelings? Doesn't that strike you as being thoughtless to her?\""
+    show Kyon Neutral1
+    "\"Er, well,\" he managed, suddenly deflated, before he shook his head and gave her a stern look.  {nw}"
+    show Kyon Ser2
+    extend "\"What about Asahina-san's feelings? Doesn't that strike you as being thoughtless to her?\""
+    show Mikuru Cower Worry1
     "\"It's ... okay,\" Mikuru managed, hunching in on herself where she sat on the floor. Her face reddened further and she stared intently at the space between her knees. \"Um, if it's Kyon-kun....\""
+    show Kyon Neutral4
     "He stared at her, confused, obviously trying to puzzle things out."
     nvl clear
+    show Haruhi Hap4
     "\"Right, see?\" Haruhi said insistently. \"Anyway, Kyon, you and {i}I{/i} were much closer than that.\" Which reminded her.... She spent a moment smoothing her skirt back down. \"Now, what's this letter mean, anyway?\" she asked, handing it to the boy."
+    show Kyon Neutral2
     "He remained sitting on the floor, puzzling over it briefly, then shook his head. \"It's not for you and one of us should apologize to Asahina-san,\" he told her."
+    show Haruhi Eyeroll1
     "\"Well, I know {i}that{/i}. I want to know what the squiggles mean!\""
     nvl clear
+    show Kyon Worry1
     "Shrugging, he offered the note to Mikuru. \"Um, Asahina-san, I'm really sorry about that,\" he added."
     "\"Notes,\" Haruhi declared, turning her attention to her schoolbag, while Mikuru hesitantly accepted the paper and scanned the message. Her notes were in the top, neatly organized, so she got those out. Where was Kyon's schoolbag, anyway? Had he brought nothing but a bento with him?"
+    show Mikuru Quest1
     "Mikuru hesitantly said, \"Um, I'm not certain, Kyon-kun ... it says you should go to the usual place you read your messages? Something will be waiting for you there? And you should take the box with you? What box?\""
     nvl clear
+    show Haruhi Unhap1
     "\"Make it quick,\" Haruhi ordered. \"You've still got to study!\""
+    show Kyon Sigh2
     "\"Yeah, yeah,\" he groused, rising to stand and helping Mikuru to her feet before striding into the hallway. \"Don't worry; I've got the box ... as long as it wasn't crushed earlier.\""
+    show Haruhi Unhap3
+    play sound "SE/doorclose.mp3"
     "\"Quick!\" she demanded again, as he closed the door. \"Man,\" she sighed, shaking her head and turning to Mikuru. \"That guy!\""
     nvl clear
+    show Mikuru Sad2
     "\"He's ... not bad,\" Mikuru said hesitantly from her spot on the floor, looking up with watery eyes. \"Not at all!\""
+    show Haruhi Sup1
     "\"Ack, turn the moe down!\" Haruhi protested. \"I have no idea how Kyon manages to keep himself from running off with you, but if you don't get that under control, I'll do it myself!\""
+    show Mikuru Cower Nervous1
     "Mikuru squeaked, leaping to her feet and rubbing at her eyes with her handkerchief quickly. \"N...no, no,\" she said quickly, shaking her head. \"I'll be good! I'm not getting in your way! Y...you shouldn't go too far like that!\""
     nvl clear
-    "\"I hate that quitter's attitude,\" Haruhi grumbled, shaking her head, then glancing to the box that the older girl had left by the doorway. \"Anyway, what's in the box, Mikuru-chan?\""
+    show Haruhi Unhap2
+    "\"I hate that quitter's attitude,\" Haruhi grumbled, shaking her head, then glancing to the box that the older girl had left by the doorway.  {nw}"
+    show Haruhi Quest1
+    extend "\"Anyway, what's in the box, Mikuru-chan?\""
+    show Mikuru Hap2
     "\"Oh!\" Mikuru said, smiling already. \"Um, yesterday afternoon, Kyon-kun met me, um, hmm.... Not long after class got out, was it? He was waiting by the train station when I got off and he asked if I needed help with anything! I'd been putting it off for a while, but I decided that since Kyon-kun was there I'd get a new sewing machine!\""
     nvl clear
+    show Haruhi Eyeroll1
     "Haruhi stared at Mikuru. \"You didn't think about the fact that he was supposed to be talking with his parents?\" she asked, pulling out her cell phone and texting Kyon."
+    show Mikuru Quest1
     "\"Well...\" Mikuru began."
     nvl clear
     

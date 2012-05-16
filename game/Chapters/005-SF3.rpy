@@ -377,13 +377,16 @@ label SF3:
     nvl clear
     scene bg Kiss with slowdissolve
     "She let her eyes drift shut as her head tilted back and her lips pursed, the last thought through her mind as everything turned into light that he would probably notice the small change she had made in him, as well.... But he probably wouldn't mind too much."
-    stop music fadeout 12
-    $ _window = True
-    scene white with Dissolve(12.0)
-    $ _window = False
-    scene black with Dissolve(3.0)
     nvl clear
+    stop music fadeout 12
+    # $ _window = True
+    # scene white with Dissolve(12.0)
+    $ _window = False
+    # scene black with Dissolve(3.0)
     $ renpy.pause(.5, hard=True)
+    call eyecatch_generic("", "", 8, 5, "#fff", "#000")
+    scene white
+
     # call eyecatch("Thursday, April 21") from SF3_sc001
     jump credits_roll
     
