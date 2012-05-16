@@ -127,6 +127,7 @@ init:
     image Haruhi Grin2 = "Sprites/Haruhi/HaruhiSideGrin2.png"
     image Haruhi Worry1 = "Sprites/Haruhi/HaruhiSideWorry1.png"
     image Haruhi Worry2 = "Sprites/Haruhi/HaruhiSideWorry2.png"
+    image Haruhi Worry3 = "Sprites/Haruhi/HaruhiSideWorry3.png"
     image Haruhi Smile1 = "Sprites/Haruhi/HaruhiSideSmile1.png"
     image Haruhi Smile2 = "Sprites/Haruhi/HaruhiSideSmile2.png"
     image Haruhi Smile3 = "Sprites/Haruhi/HaruhiSideSmile3.png"
@@ -168,6 +169,7 @@ init:
     image Haruhi Casual Grin2 = "Sprites/Haruhi/HaruhiSideCasualGrin2.png"
     image Haruhi Casual Worry1 = "Sprites/Haruhi/HaruhiSideCasualWorry1.png"
     image Haruhi Casual Worry2 = "Sprites/Haruhi/HaruhiSideCasualWorry2.png"
+    image Haruhi Casual Worry3 = "Sprites/Haruhi/HaruhiSideCasualWorry3.png"
     image Haruhi Casual Smile1 = "Sprites/Haruhi/HaruhiSideCasualSmile1.png"
     image Haruhi Casual Smile2 = "Sprites/Haruhi/HaruhiSideCasualSmile2.png"
     image Haruhi Casual Smile3 = "Sprites/Haruhi/HaruhiSideCasualSmile3.png"
@@ -336,6 +338,7 @@ init:
     image Kyon Unhap3 ="Sprites/Kyon/KyonUnhappy3.png"
     image Kyon Unhap4 ="Sprites/Kyon/KyonUnhappy4.png"
     image Kyon Unhap5 ="Sprites/Kyon/KyonUnhappy5.png"
+    image Kyon Unhap6 ="Sprites/Kyon/KyonUnhappy6.png"
     
     image Kyon Casual Ser1 = "Sprites/Kyon/KyonCasualSerious1.png"
     image Kyon Casual Ser2 = "Sprites/Kyon/KyonCasualSerious2.png"
@@ -375,6 +378,7 @@ init:
     image Kyon Casual Unhap3 ="Sprites/Kyon/KyonCasualUnhappy3.png"
     image Kyon Casual Unhap4 ="Sprites/Kyon/KyonCasualUnhappy4.png"
     image Kyon Casual Unhap5 ="Sprites/Kyon/KyonCasualUnhappy5.png"
+    image Kyon Casual Unhap6 ="Sprites/Kyon/KyonCasualUnhappy6.png"
     
     image Ksweat = "Sprites/Kyon/KyonSweat1.png"
     image Skinsuit = "Sprites/Kyon/KyonSkinsuitTemplate.png"
@@ -2026,7 +2030,7 @@ label test_Z0_eye:
     with dissolve
     "And another one. (but effect may be the same. Randomness, y'know)"
     # call the eyecatch routine, can supply nothing if nothing needs to be changed, specify the unique "from"
-    call eyecatch_random("Febtober 3.14, 1592", "Febtober 2.71828, 1592") from test_Z0_p0005
+    call eyecatch_random("Febtober 3.14, 1592", "Febtober 2.7, 1828") from test_Z0_p0005
     # activate the next scene with dissolve (or whatever else).
     scene bg MorningSky
     show TownHillLeftMorning
