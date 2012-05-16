@@ -28,7 +28,10 @@ init -1 python hide:
     # These control the name and version of the game, that are reported
     # with tracebacks and other debugging logs.
     config.name = "Kyon: Big Damn Hero"
-    config.version = "0.1.0"
+    # config.version = "0.1.0"
+    config.version = "Vol.01"
+    
+    config.window_icon = "tinykyon.png"
 
     #########################################
     # Themes

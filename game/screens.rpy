@@ -246,8 +246,8 @@ screen main_menu:
     frame:
         style_group "mm"
         xalign .98
-        yalign .98
-        # yalign .02
+        # yalign .98
+        yalign .02
 
         has vbox
 
