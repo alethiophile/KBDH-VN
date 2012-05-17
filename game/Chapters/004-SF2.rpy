@@ -13,22 +13,26 @@ label SF2:
     
     scene bg KyonRoomRightMorning with fade
     play music "Music/Morning.ogg"
+    show Kyon Sigh1 at right
     show Nonoko Smile1 at center with moveinleft
     play sound "SE/impact.mp3"
-    show Nonoko Sup1 at center
-    show Kyon Sigh1 at right
+    show Nonoko Sup1
     "After a brief window of inaction, Kyon awoke to the sensation of impending peril, one hand shooting out from beneath the covers and grasping his sister's descending elbow before she could strike his midsection. \"Urk!\" she whimpered. \"You blocked!?\""
-    show Kyon Puzzle1 at right
+    show Kyon Puzzle1
     "\"Is it time to get up?\" he asked tiredly, sitting up and releasing his sister's arm."
-    show Nonoko Pout1 at center
+    show Kyon Worry1
+    show Nonoko Pout2
     nvl clear
     "She pouted, rubbing at her elbow. \"No,\" she admitted sullenly. \"I got up early to get you up, because it's fun.\""
-    show Kyon Smile2 at right
+    show Nonoko Pout1
+    show Kyon Smile7
     "He stared at her, then gave a broad grin. \"You're a hundred years too young to try that on me,\" he said defiantly, glancing at his clock and preemptively turning off his alarm."
-    show Nonoko Hap1 at center
+    show Nonoko Hap1
+    show Kyon Smile2
     nvl clear
     "{=loud}\"You win this round!\"{/=loud} his sister cried with mock rage, grinning back and sticking out her tongue. {=loud}\"Next time I'll be the victor!\"{/=loud}"
-    show Kyon Sigh2 at right
+    show Kyon Sigh2
+    show Nonoko Smile1
     "\"I'm sure,\" he answered, knuckling back a yawn and climbing out of bed. \"Come on, let's get cleaned up.\""
     scene black with fade
     nvl clear
@@ -46,16 +50,19 @@ label SF2:
     "Despite his protestations. He may be in charge of a lot, but he also would need a reminder that she was the supreme commander, and he was just a vice commander."
     nvl clear
     show Kyon Sigh2 at right
-    show Haruhi Quest1 at TenthLeft
+    show Haruhi Neutral4 at TenthLeft
     with dissolve
     "\"I am exhausted,\" he declared to no one in particular, when the lunch chime rang."
-    show Haruhi Grin1 at TenthLeft
+    show Kyon Sigh4
+    show Haruhi Grin2
     "\"Oh? Time traveling?\" she asked him, teasing. \"Maybe fighting off more thugs to protect Tsuruya-san's honor?\""
+    show Haruhi Grin1
     "Kunikida paused mid-step as he was about to approach Kyon, then suddenly seemed to think better of it after hearing that remark and moved to an empty seat near Taniguchi."
     nvl clear
-    show Kyon Sigh1 at right
+    show Kyon Sigh1
     "\"Farewell forever, dear friends,\" Kyon sighed. \"Chased away by fear of Haruhi and being caught up in our madness.\""
-    show Haruhi Smile3 at TenthLeft
+    show Kyon Sigh3
+    show Haruhi Grin2
     "\"Idiot,\" she retorted, smirking. \"Come on, if you're going to insist we can't talk about important things here, let's go to the clubroom for lunch.\""
     scene bg hallway with wipeleft
     show Kyon Sigh1 at right
@@ -64,91 +71,97 @@ label SF2:
     with dissolve
     "\"Naturally,\" he returned, rising to his feet and falling into step beside her. \"There's no way {i}that{/i} comment could be misconstrued.\""
     nvl clear
-    show Haruhi Eyeroll1 at TenthLeft
+    show Kyon Sigh3
+    show Haruhi Eyeroll2
     "She snorted and gave him a sharp look, but admitted internally that she was pleased. He usually remembered his position, only usurping hers in times of dire emergency, or the occasional times when he ignored her position as his superior entirely and engaged in shameless flirting." 
     "Though that hadn't happened since shortly after Valentine's day, when she thought back on it. Well, it was kind of cute—"
     nvl clear
-    show Haruhi Pout1 at TenthLeft
+    show Haruhi Pout1
     show Hblush at TenthLeft
     "She paused, mid-way through pummeling the thought into submission, and made herself face it head on. Alright, she admitted to herself. Kyon could be cute. There was no shame in admitting that, though; even though he was a 'normal' human, it was only on a technical level." 
     nvl clear
     "He didn't have powers, but he was pretty cool. He handled the abnormal with a level head and a placid expression. That was respectable, at least. She nodded decisively."
-    show Kyon Puzzle1 at right
+    show Kyon Puzzle1
     "\"Something on your mind?\" he asked, knuckling back another yawn."
     nvl clear
     hide Hblush
-    show Haruhi Quest1 at TenthLeft
+    show Kyon Worry1
+    show Haruhi Quest1
     "\"Just wondering why you never have any energy,\" she commented, opening the clubroom door." 
     nvl clear
     stop music
     play sound "SE/dooropenslow.mp3"
     
-
     scene bg ClubroomBack
     show Yuki Chair1:
         xalign 0.8 yalign 1.0
     show MSew:
         xalign 1.15 yalign 0.6
-    # ClubTable needs HEAVY antialiasing, and some passes of Eraser. (Remove this comment when its done)
     show ClubTable
     with slowflashbulb
     play music "Music/Nanika.mp3"
     "Yuki was in her normal seat, already halfway through a thick paperback titled, 'The Life of Pi'. Seated at the table near Yuki, Mikuru was tiredly resewing her maid costume. \"Oh? What happened to the costume, Mikuru-chan?\""
     scene bg ClubroomFullDay:
         xpos 0 ypos 0
-    
-    # show YBook at TopRight_RightScreen
-    show Haruhi Quest1 at left_RightScreen
+    show Haruhi Neutral4 at left_RightScreen
     show Mikuru Neutral1 at right_RightScreen
     show Kyon Neutral3 at center_RightScreen
     with dissolve
     $ renpy.layer_at_list([PanScene_LeftToRightSlow])
-    
     nvl clear
-    # hide YBook with dissolve
     show Kyon Sigh2
-         # xpos 1.3 yalign 1.0
     "\"Got a lot on {i}my{/i} mind,\" Kyon muttered, pulling his seat out and collapsing into it. \"Even if you don't. But, man am I {i}hungry{/i}.\""
-    show Mikuru Smile2# at right_RightScreen
+    show Kyon Sigh4
+    show Mikuru Smile3
     "\"It wasn't torn or anything,\" Mikuru answered, smiling. \"But this one seam scratched a tiny bit ... I realized how to restitch it to make it more comfortable.\""
     nvl clear
-    show Haruhi Hap4# at left_RightScreen
+    show Mikuru Smile2
+    show Haruhi Hap4
     "\"Well, I like that enthusiasm!\" Haruhi said, nodding her approval."
-    show Haruhi Quest1# at left_RightScreen
+    show Haruhi Quest1
     "\"Hmm, I didn't know you knew a lot about sewing?\""
     nvl clear
-    show Mikuru Sad2# at right_RightScreen
+    show Haruhi Quest2
+    show Mikuru Sad2
     "For some reason, the older girl looked vaguely haunted. \"Yes, I know rather a lot about sewing,\" she mumbled, lowering her face and focusing on her needlework."
-    show Haruhi Smile1# at left_RightScreen
+    show Mikuru Unhap1
+    show Haruhi Hap1
     "\"Oh? Maybe I should get some supplies, and you can sew new costumes?\" Haruhi suggested."
     nvl clear
-    show Mikuru Neutral2# at right_RightScreen
+    show Haruhi Smile3
+    show Mikuru Quest1
     "\"I don't know how to design costumes,\" Mikuru answered evenly. \"Maybe I will tomorrow. Otherwise, if you bring me a pattern and cloth, I'm sure I can make it.\""
-    show Mikuru Neutral1# at right_RightScreen
-    show Haruhi Hap1# at left_RightScreen
+    show Mikuru Neutral1
+    show Haruhi Hap1
     "\"That's good ambition!\" she approved."
-    show Haruhi Eyeroll1# at left_RightScreen
+    show Haruhi Eyeroll1
     "\"Hey, Kyon, learn from her example, huh? Have a good reason to be tired. You were {i}totally{/i} dozing off during history. Luckily, I'm looking out for you, so I took some notes you can check out.\""
     nvl clear
+    show Haruhi Eyeroll2
     show Kyon Sigh3
     "He blinked at her as she flourished the small stack of papers, taking them with a grave seated bow, made comical by the chopsticks he held in his mouth. \"Thanks,\" he managed around the utensils."
     show Kyon Worry1
     nvl clear
-    show Haruhi Grin1# at left_RightScreen
+    show Haruhi Grin1
     "With obvious effort, he focused his eyes on the pages of notes she had taken, setting his chopsticks down. While he was distracted, she snagged his bento and the chopsticks, smirking as she finished the rest of it off. That'd teach him; next time he'd learn not to be so tired!"
     show Kyon Ser3
     nvl clear
     "He frowned at a particular line, turning his head sideways as he studied it. \"I don't think 'exactly like Genghis Kahn' tells me much,\" he said, glancing at her and then rolling his eyes when he saw his demolished lunch. \"Urg. Anyway, just saying something is like something else doesn't tell me anything when I don't remember the original reference.\""
-    show Haruhi Ang2# at left_RightScreen
+    show Haruhi Ang2
+    show Kyon Ser1
     nvl clear
     "\"You absolutely do,\" she challenged him. \"Didn't you say that I imposed order like Genghis Kahn, once?\""
     show Kyon Sigh2
+    show Haruhi Ang5
     "\"What, wiping out all opposition in a bloody march with no quarter offered, replacing the older system with a regimented and cleanly run organization of your own devising?\" he asked, squinting. \"Something like that?\""
     nvl clear
-    show Haruhi Hap4# at left_RightScreen
+    show Kyon Sigh4
+    show Haruhi Hap4
     "\"Exactly like that!\" she replied, beaming. \"Man, you are so book dumb sometimes!\""
+    show Haruhi Hap5
     show Kyon Puzzle1
     "\"I guess I did say that,\" he murmured, mildly disquieted. \"I must have perfected sleep-learning, or something.\""
+    show Kyon Worry1
     nvl clear 
     "\"You will improve with practice,\" Yuki remarked, flipping to the next page."
     show Kyon Neutral2
@@ -156,21 +169,23 @@ label SF2:
     nvl clear
     play sound "SE/dooropenfast.wav"
     $ renpy.layer_at_list([PanScene_RightToLeft])
-    show Kanae Neutral1 at right
+    show Kanae Hap2 at right
     show Koizumi Crossed Neutral1 at center
     "\"There isn't,\" Kanae answered him, opening the door and ducking her head slightly. Koizumi stood behind her with a large paper bag in both hands. \"I was really hungry after last night, too, but I guess I took too long to get there — I had to run off campus and stop by the bakery a block and a half away. Thankfully, Koizumi-san helped me out!\""
     nvl clear
+    show Kanae Smile1
     "Kyon blinked, frowning as he glanced at the pair, then sighed and sank back into his chair. His stomach gave an unsettling growl, and Haruhi began to feel a little sorry that she'd taken half his lunch ... but then, the cafeteria was empty, and {i}she{/i} was still hungry, too."
     nvl clear
-    show Koizumi Shrug Sigh1 at center
+    show Koizumi Shrug Sigh1
     "\"I didn't expect a lunch meeting,\" Koizumi said cheerfully. \"But when I saw Michikyuu-san heading out of the campus, I thought I'd see if she needed help with anything.\""
     play sound "SE/doorclose.mp3"
-    show Koizumi Think Smile1 at center
+    show Koizumi Think Smile2
     "Kanae pulled out a chair for herself and another for Koizumi as the esper closed the door behind him with one foot, then set the bag on the table. \"I hope no one has any problems with pork buns?\""
-    show Kanae Smile3 at right
+    show Koizumi Think Smile1
+    show Kanae Hap4
     nvl clear
     "\"And chocolate cornets!\" Kanae added. {nw}"
-    show Kanae Smile1 at right
+    show Kanae Hap2
     show KABlush at right
     play music "Music/YareYare.mp3"
     extend "Blushing slightly, she handed one of the buns to Kyon, adding, \"Thanks for last night, Sempai.\""
@@ -178,73 +193,75 @@ label SF2:
     $ renpy.layer_at_list([PanScene_LeftToRight])
     show Haruhi Crossed Eyeroll1 at left_RightScreen
     show Kyon Neutral3 at center_RightScreen
-    "Haruhi couldn't help when one of her eyebrows twitched. \"Excuse me?\" she asked, distracted from the free food by that last comment."
-    # $ renpy.layer_at_list([PanScene_RightToCenter])
+    "Haruhi couldn't help when one of her eyebrows twitched. {nw}"
+    show Haruhi Crossed Eyeroll2
+    extend "\"Excuse me?\" she asked, distracted from the free food by that last comment."
+    show Haruhi Crossed Eyeroll1
     $ renpy.layer_at_list([PanScene_RightToOffCenterR])
-    show Kanae Smile3 at right
+    show Kanae Hap4
     show Koizumi Think Sup1
     "\"It was the first time, I.... I mean....\" Kanae blushed more brightly. \"It wore me out quite a bit, but with Sempai and Nagato-san, I don't mind at all!\""
     nvl clear
+    show Kanae Smile3
     show Haruhi Point Ang1
     play sound "SE/impact.mp3"
     "{=shout}\"Kyon!\"{/=shout} Haruhi screeched, standing up so quickly the chair beneath her rolled across the floor until it crashed into the wall behind her. {=loud}\"What is the meaning of this!?\"{/=loud}"
-    # $ renpy.layer_at_list([PanScene_CenterToRight])
+    show Haruhi Hips Ang4
     $ renpy.layer_at_list([PanScene_OffCenterRToRight])
-    show Mikuru Sigh1 at right_RightScreen
+    show Mikuru Sigh1
     "\"I'm pretty worn out from last night, too,\" Mikuru added, covering her mouth as she yawned."
     nvl clear
-    # $ renpy.layer_at_list([PanScene_RightToLeft])
     $ renpy.layer_at_list([PanScene_RightToOffCenterL])
-    # Kinda up in air with ^this^ one. On plus side, no empty corner. On minus side, Haruhi's cuting off.
-    show Koizumi Crossed Uneasy2# at center
+    show Mikuru Sigh2
+    show Koizumi Crossed Uneasy2
     "Koizumi winced, actually making a tiny whimper as he turned his gaze towards Kyon and begged, \"Please tell me that this is a misunderstanding?\""
     $ renpy.layer_at_list([PanScene_LeftToRight])
-    show Kyon Ser3#:
-         # xpos 1.3 yalign 1.0
+    show Kyon Ser3
     "\"I don't know what she's talking about,\" Kyon said defensively. \"I'm pretty sure I spent almost all last night learning martial arts.\""
     nvl clear
-    show Haruhi Ang4# at left_RightScreen
+    show Kyon Ser1
+    show Haruhi Ang4
     "{=loud}\"That's amazing, {i}Neo{/i}, now what does it have to do with you wearing out an underclassman!?\"{/=loud} Haruhi demanded, glowering down at him."
-    show Kyon Neutral3#:
-         # xpos 1.3 yalign 1.0
+    show Haruhi Ang5
+    show Kyon Neutral3
     "He stared up in befuddlement for a long moment before understanding dawned in his eyes."
     nvl clear
     show Kyon Sup1
     show Ksweat at center_RightScreen
     play sound "SE/impact.mp3"
     "{=shout}\"It is {i}not{/i} like that!\"{/=shout} he insisted, jumping to his feet and dismissing his exhaustion to protest hotly, his own chair sliding backwards into the clothing rack. {=loud}\"I swear to you — I did absolutely nothing inappropriate!\"{/=loud}"
-    show Haruhi Eyeroll1# at left_RightScreen
+    show Haruhi Eyeroll1
     "{=loud}\"Then what {i}happened{/i}?\"{/=loud} Haruhi growled, her eyes narrowing."
+    show Kyon Worry3
+    show Haruhi Eyeroll2
     nvl clear
-    # $ renpy.layer_at_list([PanScene_RightToCenter])
     $ renpy.layer_at_list([PanScene_RightToOffCenterR])
-    show Kanae Hap3# at right
+    show Kanae Hap3
     hide KABlush
     "\"Er, I said something wrong, maybe?\" Kanae said with an embarrassed chuckle, sticking her tongue out and miming a blow to her head. \"Last night I got to practice sliding! It took a long time, but I think I'm finally starting to learn how to control it a bit better, thanks to Sempai and Nagato-san! Asahina-san was there, too, but a lot of it gets really fuzzy....\""
-    show Haruhi Crossed Eyeroll1 at left_RightScreen
+    show Kanae Smile1
+    show Haruhi Crossed Eyeroll2
     "\"T...that's all that it was, though?\" the brigade chief pressed, still glaring at Kyon."
-    show Kanae Smile1# at right
+    show Haruhi Crossed Eyeroll1
     nvl clear
-    show Kyon Worry1#:
-        # xpos 1.3 yalign 1.0     
+    hide Ksweat
+    show Kyon Puzzle1     
     "\"Er ... um ... Asahina-san, do you think you could help, here?\" he asked, turning a pleading gaze on the tired upperclassman."
-    # $ renpy.layer_at_list([PanScene_CenterToRight])
+    show Kyon Worry1
     $ renpy.layer_at_list([PanScene_OffCenterRToRight])
-    show Mikuru Think Quest1# at right_RightScreen
-    # stop music fadeout 2
+    show Mikuru Think Quest1
     "\"Kyon-kun was a good boy,\" Mikuru answered sleepily. \"It's Nagato-san's fault for teleporting me straight out of the shower.\""
     play sound "SE/DunDun.mp3"
-    #play sound "SE/GlassBreak1.mp3"
     nvl clear
-    # $ renpy.layer_at_list([PanScene_RightToLeft])
     $ renpy.layer_at_list([PanScene_RightToOffCenterL])
-    show Koizumi Crossed Sigh1# at center
+    show Koizumi Crossed Sigh1
     "\"I...it seems that a rather large closed space has appeared,\" Koizumi said in a mournful tone. \"I'm afraid I will be absent for a while....\"" 
     show Koizumi Shrug Sigh1 at center
     "He bowed apologetically towards Haruhi, then nodded at Kyon, adding, \"I will leave everything else up to you.\""
     $ _window = True
     play sound "SE/dooropenfast.wav"
-    hide Koizumi with moveoutleft #dissolve
+    #moveoutleft/right won't work properly on a two-screen scene such as this. 
+    hide Koizumi with dissolve
     pause 0.5
     play sound "SE/doorclose.mp3"
     $ _window = False
@@ -253,146 +270,150 @@ label SF2:
          xpos 0.7 yalign 1.0  
     show Yuki Side1 at right
     with dissolve
-    # $ renpy.layer_at_list([PanScene_LeftToCenter])
     $ renpy.layer_at_list([PanScene_LeftToOffCenterR])
     nvl clear
-    hide Ksweat
-    show Kyon Unhap1#:
-        # xpos 1.3 yalign 1.0   
-    show Haruhi Crossed Tsun1# at left_RightScreen    
-    "\"Yuki-chan,\" Haruhi said, before biting back her protest. Well, she {i}had{/i} agreed that the other girl could 'borrow' Kyon. But what did she need with Mikuru and Kanae?!" 
+    show Kyon Unhap1
+    show Haruhi Crossed Tsun2
+    "\"Yuki-chan,\" Haruhi said, before biting back her protest. {nw}"
+    show Haruhi Crossed Tsun1
+    extend "Well, she {i}had{/i} agreed that the other girl could 'borrow' Kyon. But what did she need with Mikuru and Kanae?!" 
     stop music fadeout 3
-    show Haruhi Crossed Tsun2# at left_RightScreen
+    show Haruhi Crossed Tsun2
     "\"I'm expecting an explanation for this!\" Come to think of it, what were the practical limitations of 'borrowing', anyway?"
     nvl clear
     play music "Music/Kokuhaku.mp3"
-    show Haruhi Crossed Tsun1# at left_RightScreen
-    show Yuki Talk1 at right
-    show Kyon Neutral3#:
-        # xpos 1.3 yalign 1.0    
+    show Haruhi Crossed Tsun1
+    show Yuki Talk1
+    show Kyon Neutral3
     "Yuki raised her gaze from her book languidly. \"Last night,\" she began, without preamble, \"I neared overload due to queued data-creation and modification requests from you." 
-    show Yuki Talk2# at right
+    show Yuki Talk2
     "\"To prevent overload, as per the instructions given by him and yourself, I undertook to dispose of all junk data and error-causing behaviors.\"" 
     nvl clear
-    show Yuki Talk1# at right
+    show Yuki Talk1
     "\"After preparing all three subjects with nanites for preservation, Michikyuu Kanae attempted to slide to an alternate dimension, simultaneous to the activation of Asahina Mikuru's time travel device, while I engaged the dimensional anchor with a modified temporal anchor function.\""
     nvl clear
-    show Yuki Talk2# at right
+    show Yuki Talk2
     "\"The resultant actions, guided by stored data from yourself, were sufficient to create a semi-stable permeable reality governed by myself that was outside of both space and time, allowing me to ground myself from the negative attribute data that would cause error behavior.\""
     nvl clear
-    show Yuki Talk1# at right
+    show Yuki Talk1
     "\"This same space was also used to simultaneously allow Michikyuu Kanae practice sliding between nested pocket-dimensions and Asahina Mikuru to undertake her requested training in sewing. Per his own instructions, he undertook martial arts training and assisted me with ... personal issues.\""
-    show Yuki Side Blink at right
-    show Haruhi Crossed Sup1 at left_RightScreen
+    show Yuki Side Blink
+    show Haruhi Crossed Worry2
     "Yuki blinked once as Haruhi absorbed everything."
     nvl clear
-    show Yuki Talk2# at right
+    show Yuki Talk2
     "\"After spending sufficient time to resolve internal issues, I restored all of us to the baseline physical reality and undid the time-based changes in physical age, as well as clearing out all non-necessary mental data to prevent unintentional corruption or trauma of hosts by acquired data.\""
-    show Haruhi Crossed Worry1# at left_RightScreen
-    show Yuki Side2# at right
+    show Haruhi Crossed Worry1
+    show Yuki Side2
     "\"You mean,\" Haruhi said, struggling, \"everyone spent last night training on stuff, and then you wiped it all out?\""
     nvl clear
-    show Yuki Talk2# at right
+    show Haruhi Crossed Worry2
+    show Yuki Talk2
     "\"Negative. The results of training remain, even if the specific datum of acquisition are no longer present. Additionally, physical conditioning is preserved, even though aging was reversed. In this way, muscle memory and skill can be preserved memetically.\""
-    # $ renpy.layer_at_list([PanScene_CenterToRight])
     $ renpy.layer_at_list([PanScene_OffCenterRToRight])
     nvl clear
-    show Mikuru Think Quest1# at right_RightScreen
+    show Mikuru Think Quest1
     "\"How long did we actually spend there?\" Mikuru mused. \"It's strange, since I can ... kind of ... vaguely remember it, but not really {i}specifically{/i} recall much. Even so, I know much more about sewing, now.\" She gave a tiny shiver. \"{i}Much{/i} more. If I'd known, I'd have suggested something more serious....\""
+    show Mikuru Neutral2
     nvl clear
-    # $ renpy.layer_at_list([PanScene_RightToCenter])
     $ renpy.layer_at_list([PanScene_RightToOffCenterR])
-    show Yuki Talk1# at right
+    show Yuki Talk1
     "\"One year of relative time was spent in training,\" Yuki answered."
-    show Yuki Side1 at right
-    show Kyon Sigh1#:
-        # xpos 1.3 yalign 1.0   
+    show Yuki Side1
+    show Kyon Sigh1  
     "\"That'd explain it,\" Kyon said, shaking his head and settling back into his seat. \"I remember all of the basics of what I learned, and I felt strangely light this morning. And, weirdly enough, I felt like I really, really missed—\""
-    show Kyon Worry1#:
-        # xpos 1.3 yalign 1.0   
+    show Kyon Worry1
     show KBlush at center_RightScreen
     "He coughed suddenly, staring into his half-eaten pork bun."
     nvl clear
     hide KBlush
-    show Kyon Ser3#:
-        # xpos 1.3 yalign 1.0
+    show Kyon Ser3
     "\"But, yeah. That's what happened. It's funny, though ... I know a full year of training in martial arts ... which is pretty much enough to realize I've got a long way to go.\" He sighed, shaking his head. \"Anyway, sorry about that, Haruhi. I guess it did sound a bit strange, the way Kanae-chan said it.\""
-    show Kyon Ser1#:
-        # xpos 1.3 yalign 1.0
-    show Kanae Smile3#:
-         # xpos 0.7 yalign 1.0
+    $ renpy.layer_at_list([PanScene_OffCenterRToOffCenterL])
+    show Kyon Ser1
+    show Kanae Smile3
     show KABlush:
         xpos 0.435 yalign 1.0
     "\"Hehe.... My bad. Sorry, Sempai,\" Kanae added, still blushing as she half hid her face behind a pork bun."
     nvl clear
-    show Haruhi Pout2# at left_RightScreen
+    show Haruhi Pout2
     "\"I'll say,\" Haruhi agreed, feeling oddly deflated. \"But, that's no fun! Why am I left out?\""
-    show Yuki Talk2# at right
+    show Haruhi Pout1
+    show Yuki Talk2
     "\"Your presence would create more data,\" Yuki answered unapologetically. \"I would be more likely to enter an error state. This is undesirable.\""
-    show Yuki Side2# at right
-    show Haruhi Pout2# at left_RightScreen
+    show Yuki Side2
+    show Haruhi Pout2
     "\"Yeah, but I don't have to like it,\" Haruhi grumbled."
+    show Haruhi Pout1
+    $ renpy.layer_at_list([PanScene_OffCenterLToOffCenterR])
     nvl clear
-    show Kyon Worry1#:
-        # xpos 1.3 yalign 1.0   
+    show Kyon Puzzle1
     "Kyon winced. \"You could try,\" he said, somewhat pleadingly. \"If not for us, then for Koizumi, who is working overtime for you, now.\""
-    show Kanae Worry1#:
-         # xpos 0.7 yalign 1.0
+    show Kyon Worry1
+    $ renpy.layer_at_list([PanScene_OffCenterRToOffCenterL])
+    show Kanae Worry1
     hide KABlush
-    "\"Cornet?\" Kanae offered Haruhi sympathetically. \"Even though it felt like it was that long for us, Sempai still came back here with you the next day, right?\""
+    "\"Cornet?\" Kanae offered Haruhi sympathetically. {nw}"
+    show Kanae Unhap2
+    extend "\"Even though it felt like it was that long for us, Sempai still came back here with you the next day, right?\""
     nvl clear
-    show Haruhi Crossed Tsun1# at left_RightScreen
+    show Kanae Unhap3
+    show Haruhi Crossed Tsun2
     "\"I guess,\" Haruhi agreed reluctantly, taking the pastry and biting the head end absently. \"But there better not be any fooling around in these dream-training things! And I don't care how busy you are, I'm {i}still{/i} making you pay attention in class, Kyon.\""
+    show Haruhi Crossed Tsun1
+    $ renpy.layer_at_list([PanScene_OffCenterLToOffCenterR])
     nvl clear
-    show Kyon Sigh1#:
-        # xpos 1.3 yalign 1.0
+    show Kyon Sigh1
     "\"At least I've got that,\" he grumbled. \"Man, why am I so hungry?\""
-    show Kyon Sigh3#:
-        # xpos 1.3 yalign 1.0
-    show Yuki Talk1# at right
+    show Kyon Sigh3
+    show Yuki Talk1
     "\"You will require more protein to generate the mass your conditioning has come to expect from your training,\" Yuki answered, turning her gaze back to her book."
     nvl clear
-    show Kyon Sigh2#:
-        # xpos 1.3 yalign 1.0
-    show Yuki Side1# at right
+    show Kyon Sigh2
+    show Yuki Side1
     "\"Yeah? I guess that makes sense. My own fault for asking for martial arts.\" Then he shook his head sharply, taking another bite from his pork bun before adding, \"Though it seems I'll need that to help Tsuruya-san a few days ago.\""
     nvl clear
-    show Kyon Sigh4#:
-        # xpos 1.3 yalign 1.0
-    show Haruhi Crossed Sigh1# at left_RightScreen
+    show Kyon Sigh4
+    show Haruhi Crossed Sigh1
     "\"Huh? Yuki-chan, I would have expected you to take better care of him!\" Haruhi protested weakly, trying to remember that she needed to control her frustration."
-    show Haruhi Crossed Sigh2# at left_RightScreen
-    show Yuki Talk2# at right
+    show Haruhi Crossed Sigh2
+    show Yuki Talk2
     "Yuki looked up from her book, for a moment the merest hint of confusion flickering in her eyes. \"I thought you would wish to do that yourself,\" she said quietly."
     nvl clear
-    show Yuki Side2# at right
-    show Kyon Neutral2#:
-        # xpos 1.3 yalign 1.0
+    show Yuki Side2
+    show Kyon Neutral2
     "\"Delicious pork bun,\" Kyon mumbled, devouring another and studiously ignoring the conversation. \"Thanks again, Kanae-chan.\""
-    show Kyon Neutral3#:
-        # xpos 1.3 yalign 1.0
-    show Haruhi Pout1# at left_RightScreen
+    show Kyon Neutral3
+    show Haruhi Pout2
     show Hblush at left_RightScreen
     "Haruhi felt her face color as she nodded. \"Right,\" she decided. \"Come on, Kyon, grab another bun and let's get back to class before the bell, okay?\""
     nvl clear
     scene bg hallway with fade
-    show Kyon Smile1 at right
+    show Kyon Smile6 at right
     show Haruhi Pout1 at TenthLeft
     show Hblush at TenthLeft
     with dissolve
     "\"Sure,\" he agreed, taking the notes she had made for him and following her out of the clubroom. \"And, thanks for the help with my schoolwork.\""
-    show Haruhi Pout2# at TenthLeft
+    show Kyon Smile1
+    show Haruhi Pout2
     "\"No problem,\" she mumbled while they walked down the stairs. \"It's not as neat as training you in martial arts in your sleep, though.\""
     nvl clear
-    show Kyon Smile2# at right
+    show Haruhi Pout1
+    show Kyon Smile7
     "\"It's something I can talk to my parents about without being sent to an institution,\" he told her, smirking. \"Isn't that something?\""
-    show Haruhi Quest1# at TenthLeft
+    show Kyon Smile2
+    show Haruhi Quest1
     "\"What's with you trying to be so nice?\""
     nvl clear
-    show Kyon Sigh2# at right
+    show Haruhi Quest2
+    show Kyon Sigh2
     "\"It's no good seeing you when you're feeling down,\" he said, shrugging apologetically. \"Didn't I already tell you that?\""
-    show Haruhi Smile1# at TenthLeft
-    "\"Hmm,\" she mused, giving a weak smile. \"Well, that's something.\""
+    show Kyon Sigh4
+    show Haruhi Smile1
+    "\"Hmm,\" she mused, giving a weak smile. {nw}"
+    show Haruhi Neutral3
+    extend "\"Well, that's something.\""
+    show Haruhi Smile1
     nvl clear
     stop music fadeout 3
         
@@ -408,18 +429,18 @@ label SF2:
     show Haruhi Pout1 at TenthLeft with dissolve
     show Hblush at TenthLeft
     "\"Here,\" she said, thrusting the papers towards him without meeting his eyes. \"You're exempted from the club meeting today. Go home and get some rest. If you're not too tired tomorrow morning, we'll go over the homework before class.\""
-    show Kyon Worry1# at right
+    show Kyon Worry1
     nvl clear
     "\"...thanks,\" he managed, frowning. \"Um, Haruhi, are you upset with me?\""
-    show Haruhi Pout2# at TenthLeft
+    show Haruhi Pout2
     "\"Not with you,\" she said, grimacing. \"Anyway, I need to have a talk with Yuki-chan and Mikuru-chan.\""
-    show Kyon Ser3# at right
+    show Kyon Ser3
     "He blinked away some of his exhaustion. \"If there's anything I can help you with—\""
     hide Hblush
-    show Haruhi Sigh1# at TenthLeft
+    show Haruhi Sigh1
     nvl clear
     "\"This is something I have to figure out for myself,\" she said, shaking her head. \"Really, just get some rest. We're going to have a lot to talk about tomorrow.\""
-    show Kyon Worry1# at right
+    show Kyon Worry1
     "\"Okay,\" he allowed, wishing that either of them were smiling at the moment. \"Well ... take care, then.\""
     $ _window = True
     hide Haruhi with moveoutright
