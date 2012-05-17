@@ -965,92 +965,101 @@ label SF1:
         xalign 0.4 yalign 1.2
     with fade    
     "\"I have determined the function of the anchor,\" Yuki announced, just as Kyon was finishing his last math questions beneath Haruhi's sharp gaze. Mikuru had briefly snuck away to the girl's bathroom to change back into her uniform, and Kanae was curled over the desk, sleeping soundly with her school bag as a pillow."
-    show Yuki Right Neutral1 at HalfRight
-    show Haruhi Hap4 at left
-    show Kanae Sup2:
-        xalign 0.4 yalign 1.2
-        linear 0.1 yalign 1.0
+    show Yuki Right Neutral1
+    show Haruhi Hap4
+    show Kanae Sup2
     "{=loud}\"Excellent!\"{/=loud} Haruhi cheered, {nw}"
-    show Kanae Worry2:
-        xalign 0.4 yalign 1.0
+    show Kanae Worry2
     extend "jolting the first year girl awake."
-    "\"Nya....\" Kanae murmured, sitting up and rubbing her eyes."
-    show Haruhi Worry1 at left
-    nvl clear
-    "\"So,\" Haruhi pressed, looking intently at Yuki, \"we can go to Kanae's home, now?\""
-    show Yuki Right Talk1 at HalfRight
-    "\"Negative,\" Nagato replied, her eyes swinging to focus briefly on Haruhi before locking on Kyon. \"We can begin conducting experiments to discern the nature and limitations of Kanae's ability to traverse realities.\""
-    nvl clear
-    show Haruhi Eyeroll1 at left
-    "Haruhi scowled, shaking her head. \"That's no fun,\" she groused. \"How long will it take?\""
-    show Yuki Right Talk2 at HalfRight
-    "\"Uncertain.\""
-    nvl clear
-    show Yuki Right Neutral1 at HalfRight
-    show Kyon Ser2:
-        xalign 1.25 yalign 1.0
-    "\"You know,\" Kyon noted, packing his homework away, \"you're disregarding something here, Haruhi. As I understand it, the Integrated Data Sentience Entity values new data more than anything else. In fact, at times, certain factions of it tried to provoke a response from you ... like the 'ghosts' that Sakanaka-san asked us to investigate.\""
-    nvl clear
-    show Haruhi Unhap2 at left
-    show Kyon Ser1:
-        xalign 1.25 yalign 1.0
-    "\"Well, it's not like I can 'react' much without you and Yuki-chan approving it, now. Which reminds me.... Let me try another one.\"" 
-    show Haruhi Focus1 at left
-    "She clenched her eyes shut, mumbling, \"The hair on my head grows ... five times as fast.\""
-    nvl clear
-    show Kanae Worry3:
-        xalign 0.4 yalign 1.0
-    "\"Hyum?\" Kanae murmured, blinking as Mikuru dabbed at her mouth and wiped away the drool from her unintended nap.{nw}"
-    show Kanae Smile1:
-        xalign 0.4 yalign 1.0
-    "\"Oopsie! Thanks, Asahina-san.\""
-    show Yuki Right Talk1 at HalfRight
-    "\"Program loaded,\" Yuki said, blinking."
-    show Kyon Worry1:
-        xalign 1.25 yalign 1.0
-    "\"Er ... any side-effects to be aware of?\" Kyon asked."
-    nvl clear
-    show Yuki Right Talk2 at HalfRight
-    "Yuki turned to Haruhi. \"Are eyebrows to be included in this program?\""
-    show Haruhi Sigh2 at left
-    "\"Ack, no, I don't want hilariously bushy Asakura-type eyebrows,\" Haruhi said, shaking her head quickly. \"Just my hair ... you know, the part that gets styled regularly?\""
-    show Yuki Right Talk1 at HalfRight
-    "\"Understood. Modifications complete.\" Turning back to Kyon, she asked, \"Permission to proceed?\""
-    nvl clear
-    show Kyon Sigh2:
-        xalign 1.25 yalign 1.0
-    "\"Granted,\" he said, shrugging. \"But aside from this amusing digression, the point I was trying to get to is that if we manage to discover data that is new to the Integrated Data Sentience Entity, they may end up willing to work with Nagato in the future in exchange for this data.\""
-    nvl clear
-    show Haruhi Worry1 at left
-    "\"I didn't think of that,\" Haruhi allowed, glancing at Kyon. \"And hey, Yuki-chan ... that's it? There was no tingle, no glowy lights ... powers are supposed to look awesome, not be invisible! Remember that next time.\""
-    show Yuki Right Talk2 at HalfRight
-    "Yuki replied, \"Understood,\" and gave her tiny nod."
-    nvl clear
-    show Haruhi Quest1 at left
-    show Yuki Right Neutral2 at HalfRight
-    "\"Good. Now, Kanae-chan, how long does it take for the other sliders to show up and find you?\""
-    show Kanae Wince2:
-        xalign 0.4 yalign 1.0
-    "\"Usually three or four weeks,\" the small girl said with a yawn, covering her mouth."
-    nvl clear
+    show Haruhi Hap5
     show Kanae Sad3:
         xalign 0.4 yalign 1.0
+    with move
+    "\"Nya....\" Kanae murmured, sitting up and rubbing her eyes."
+    show Kanae Worry2
+    show Haruhi Worry1
+    nvl clear
+    "\"So,\" Haruhi pressed, looking intently at Yuki, \"we can go to Kanae's home, now?\""
+    show Haruhi Neutral1
+    show Yuki Right Talk1
+    "\"Negative,\" Nagato replied, her eyes swinging to focus briefly on Haruhi before locking on Kyon. \"We can begin conducting experiments to discern the nature and limitations of Kanae's ability to traverse realities.\""
+    nvl clear
+    show Yuki Right Neutral1
+    show Haruhi Eyeroll1
+    "Haruhi scowled, shaking her head. \"That's no fun,\" she groused. \"How long will it take?\""
+    show Haruhi Eyeroll2
+    show Yuki Right Talk2
+    "\"Uncertain.\""
+    nvl clear
+    show Yuki Right Neutral1
+    show Kyon Ser2
+    "\"You know,\" Kyon noted, packing his homework away, \"you're disregarding something here, Haruhi. As I understand it, the Integrated Data Sentience Entity values new data more than anything else. In fact, at times, certain factions of it tried to provoke a response from you ... like the 'ghosts' that Sakanaka-san asked us to investigate.\""
+    nvl clear
+    show Haruhi Unhap1
+    show Kyon Ser1
+    "\"Well, it's not like I can 'react' much without you and Yuki-chan approving it, now. Which reminds me.... Let me try another one.\"" 
+    show Haruhi Focus1
+    "She clenched her eyes shut, mumbling, \"The hair on my head grows ... five times as fast.\""
+    nvl clear
+    show Kanae Worry3
+    "\"Hyum?\" Kanae murmured, blinking as Mikuru dabbed at her mouth and wiped away the drool from her unintended nap."
+    show Kanae Smile1
+    "\"Oopsie! Thanks, Asahina-san.\""
+    show Yuki Right Talk1
+    "\"Program loaded,\" Yuki said, blinking."
+    show Yuki Right Neutral1
+    show Kyon Puzzle1
+    "\"Er ... any side-effects to be aware of?\" Kyon asked."
+    nvl clear
+    show Kyon Worry1
+    show Yuki Right Talk2
+    "Yuki turned to Haruhi. \"Are eyebrows to be included in this program?\""
+    show Yuki Right Neutral2
+    show Haruhi Sigh2
+    "\"Ack, no, I don't want hilariously bushy Asakura-type eyebrows,\" Haruhi said, shaking her head quickly. \"Just my hair ... you know, the part that gets styled regularly?\""
+    show Haruhi Unhap2
+    show Yuki Right Talk1
+    "\"Understood. Modifications complete.\" Turning back to Kyon, she asked, \"Permission to proceed?\""
+    nvl clear
+    show Yuki Right Neutral1
+    show Kyon Sigh2
+    "\"Granted,\" he said, shrugging. \"But aside from this amusing digression, the point I was trying to get to is that if we manage to discover data that is new to the Integrated Data Sentience Entity, they may end up willing to work with Nagato in the future in exchange for this data.\""
+    nvl clear
+    show Kyon Sigh4
+    show Haruhi Worry1
+    "\"I didn't think of that,\" Haruhi allowed, glancing at Kyon. \"And hey, Yuki-chan ... that's it? There was no tingle, no glowy lights ... powers are supposed to look awesome, not be invisible! Remember that next time.\""
+    show Haruhi Neutral1
+    show Yuki Right Talk2
+    "Yuki replied, \"Understood,\" and gave her tiny nod."
+    nvl clear
+    show Haruhi Quest1
+    show Yuki Right Neutral2
+    "\"Good. Now, Kanae-chan, how long does it take for the other sliders to show up and find you?\""
+    show Haruhi Quest2
+    show Kanae Wince2
+    "\"Usually three or four weeks,\" the small girl said with a yawn, covering her mouth."
+    nvl clear
+    show Kanae Sad3
     "\"Mmm. If I jump between worlds very quickly, it seems to take them a bit longer to show up. I'd guess probably four weeks from now? I landed badly the last time I jumped — I was about to call Sempai when I got scared by a loud noise and jumped right away ... so that should give me a bit of extra time.\""
     nvl clear
-    show Haruhi Grin1 at left
+    show Kanae Worry2
+    show Haruhi Grin2
     "\"Ooh,\" Haruhi realized, grinning. \"Hey, Kyon, if Yuki-chan and Kanae-chan can't figure out how it works together, we can capture the enemy sliders and beat the information out of them! They obviously have a way to track Kanae-chan, don't they?\""
     nvl clear
-    show Kyon Ser2:
-        xalign 1.25 yalign 1.0
+    show Haruhi Grin1
+    show Kyon Ser2
     "\"And right on their heels, the alien invasion,\" he countered. \"Anyway, it's late; we should be getting out of the school.\""
-    show Haruhi Sigh2 at left
-    show Kyon Ser1:
-        xalign 1.25 yalign 1.0
+    show Haruhi Sigh2
+    show Kyon Ser1
     "Haruhi nodded absently, shutting the computer down and gathering her book bag. \"In any case, that gives us a hard cap of around four or five weeks to get it sorted out.\""
     nvl clear
-    "The other club members rose and gathered their things, Mikuru offering Kanae a hand when the younger girl wobbled tiredly on her feet. \"Understood,\" Yuki said softly. In the corridor, while Haruhi turned around and locked the club room door, the quiet girl slipped him a note. He pocketed it with a frown. Mikuru studiously pretended not to notice, while Kanae was looking the other way drowsily."
+    show Haruhi Unhap3
+    "The other club members rose and gathered their things, Mikuru offering Kanae a hand when the younger girl wobbled tiredly on her feet. {nw}"
+    show Yuki Right Talk2
+    extend "\"Understood,\" Yuki said softly. In the corridor, while Haruhi turned around and locked the club room door, the quiet girl slipped him a note. "
+    show Yuki Right Neutral2
+    extend "He pocketed it with a frown. Mikuru studiously pretended not to notice, while Kanae was looking the other way drowsily."
     nvl clear
-    scene black with dissolve
     stop music fadeout 2
     
     call eyecatch_fancy("Monday, April 18") from SF1_sc005
@@ -1065,80 +1074,91 @@ label SF1:
     with fade
     nvl clear
     "\"How did it go?\" he asked, before the esper could volunteer anything."
-    show Koizumi Crossed Smile2 at left
-    show Kyon Ser1 at right
+    show Koizumi Crossed Smile2
+    show Kyon Ser1
     "\"It was a bit rough,\" Koizumi replied, still smiling. \"It could have been much worse, though. As I have mentioned before, one of the most stressful parts about this is simply getting to where the closed space is in a timely manner.\" "
     nvl clear
-    show Koizumi Think Smile1 at left
+    show Koizumi Think Grin2
     "\"Quite fortunately, all the spaces were within the coast of Honshu, so there was no need to travel extremely far.\""
-    show Kyon Puzzle1 at right
+    show Koizumi Think Grin1
+    show Kyon Puzzle1
     "\"I hope it wasn't too much trouble. Hmm, I realize this isn't a critical issue, but out of curiosity, how much does it typically cost to deal with a Shinjin, anyway?\""
     nvl clear
-    show Kyon Neutral3 at right
+    show Kyon Neutral3
     show Koizumi Shrug Sigh1:
         xalign -1.12 yalign 1.0
     "\"That's entirely dependant on how much travel time is involved,\" Koizumi replied, shrugging."
-    show Koizumi Think Grin1 at left
+    show Koizumi Think Grin2 at left
     "\"Hokkaido or Okinawa are of course going to be more difficult to reach, while Tokyo is relatively simple, thanks to the bullet train. However, you are correct in that this isn't a critical issue.\""
-    show Koizumi Think Ser4 at left
+    show Koizumi Think Ser4
     nvl clear
     "He nodded his head at Arakawa, in the driver's seat, and explained, \"As I am now a liaison, not a full member of the Organization, this has been arranged to give you an update on the progress of closed space, and somewhat more to request an update from you on the events within the brigade meeting after my departure.\""
     nvl clear
-    show Kyon Sigh2 at right
+    show Koizumi Think Ser3
+    show Kyon Sigh2
     "\"Hey, Arakawa-san,\" Kyon said, nodding slightly. The older man grunted a wordless reply, giving a tiny nod of his own, his eyes fixed on the road. \"I'm a bit surprised that Mori-san isn't here.\""
     nvl clear
-    show Kyon Sigh4 at right
-    show Koizumi Shrug Smile1:
+    show Kyon Sigh4
+    show Koizumi Shrug Sigh1:
         xalign -1.12 yalign 1.0
     "\"She's still a bit ... um ... intimidated by your last meeting,\" Koizumi said, his smile turning apologetic."
-    show Kyon Sigh3 at right
+    show Koizumi Think Grin1 at left
+    show Kyon Sigh3
     "Kyon blinked, wondering what he was going to have to have done." 
     nvl clear
-    show Kyon Ser3 at right
+    show Kyon Ser3
     "\"Okay,\" he allowed. \"In summary, we discussed Michikyuu Kanae and her abilities as a slider, the fact that she's being pursued by sliders who want to capture her, and that her home world was invaded by aliens. Possibly related to the Sky Canopy Domain.\""
     nvl clear
-    show Koizumi Think Sup1 at left
-    show Kyon Ser1 at right
+    show Koizumi Think Sup1
+    show Kyon Ser1
     "Koizumi paled, shivering. \"My,\" he allowed. \"That's ... less than comforting.\""
-    show Kyon Worry1 at right
+    show Koizumi Think Worry1
+    show Kyon Puzzle1
     "\"Yeah. Kanae-chan is also lost, and doesn't have much control over her ability to slide; she's trying to find her way home, and someone who can help deal with the alien invasion.\""
     nvl clear
-    show Kyon Neutral1 at right
+    show Kyon Neutral1
     "\"Surprisingly, we also discovered a limit to Haruhi's power. Namely, that she can't affect other worlds reliably, or the ability to travel to them.\""
-    show Koizumi Think Ser4 at left
-    show Kyon Neutral4 at right
+    show Koizumi Think Ser4
+    show Kyon Neutral4
     "\"Is it possible that the limitation was Nagato-san's?\" Koizumi asked after a moment."
-    show Kyon Ser1 at right
+    show Koizumi Think Ser3
+    show Kyon Ser3
     nvl clear
     "\"It's possible,\" Kyon agreed, frowning. \"That hadn't occurred to me. On that subject, Nagato also explained that the Integrated Data Sentience Entity doesn't have the ability to travel to or observe alternate realities, either."
     nvl clear
-    show Kyon Ser3 at right
+    show Kyon Ser2
     "\"They made a dimensional anchor, which was lost millions of years ago. Naturally, Nagato is using that to try and help Kanae out. It's my hope that any new data that Nagato discovers with Kanae's help can be used as a bargaining chip to get back on the good side of the entity.\""
-    show Koizumi Think Ser3 at left
+    show Kyon Ser1
+    show Koizumi Think Ser4
     "\"I see....\""
     nvl clear
-    show Kyon Neutral2 at right
+    show Koizumi Think Ser3
+    show Kyon Neutral2
     "\"On {i}that{/i} note,\" Kyon added, turning his attention to Arakawa, \"would it be possible to request that the Organization watch over Kanae as well? She's an important person in all of this, too.\""
-    show Kyon Neutral3 at right
+    show Kyon Neutral3
     "\"I will pass that request on to Mori-san,\" the older man allowed. \"If you will permit a personal observation, I'm rather surprised you trust us so much.\""
     nvl clear
-    show Kyon Sigh2 at right
+    show Kyon Sigh2
     "\"Well, you've never threatened to kill Koizumi for displeasing you,\" Kyon said with a shrug. \"You've never intentionally treated him poorly because you thought that's the way things needed to be. As far as I know, anyway.\""
-    show Kyon Worry1 at right
+    show Kyon Puzzle1
     nvl clear
     "\"More importantly, you haven't given me a reason not to trust you yet. Sorry if I, um, frightened Mori-san,\" though he boggled at the thought he could intimidate someone with such a smile, \"but after all is said and done, I'd like us to be able to work together. Ultimately, isn't your goal the stability of the world, and the safety of Haruhi and the people important to her?\""
     nvl clear
-    show Koizumi Think Sup1 at left
+    show Kyon Worry1
+    show Koizumi Think Sup1
     "Koizumi worked his jaw for a moment, his smiling mask wiped away in a look of open-eyed astonishment before a real smile came to his lips."
-    show Koizumi Think Grin1 at left
+    show Koizumi Think Grin1
     "\"I will pass that on as well,\" Arakawa said, nodding."
     nvl clear
-    show Koizumi Crossed Smile1 at left
+    show Koizumi Crossed Smile3
     "\"Is there anything else?\" Koizumi asked."
-    show Kyon Sigh2 at right
+    show Koizumi Crossed Smile1
+    show Kyon Sigh2
     "Kyon shook his head, realizing they were only a few blocks from his house. \"Just that I'm sorry for the closed spaces so far. I'll do my best to keep Haruhi in good spirits.\""
-    show Koizumi Think Smile1 at left
+    show Kyon Sigh4
+    show Koizumi Think Smile2
     "\"That is all we can ask for,\" Koizumi said, nodding. \"Thank you very much, vice commander.\""
+    show Koizumi Think Smile1
     nvl clear
     stop sfxloop
     stop music fadeout 3
@@ -1161,7 +1181,6 @@ label SF1:
     with circleirisoutfast
     "\"...what?\" he managed, as the world around him violently exploded away, revealing a yawning chasm full of stars, brightly colored gaseous clouds as though from distant nebulae, and myriad bolts of violently crackling energy in every direction." 
     play sound "SE/Laser1.mp3" 
-    #play sound "SE/elec1.mp3"
     scene bg Space:
         xpos 0 ypos 0
         linear 0.5 xpos -800 ypos -1200
@@ -1171,9 +1190,6 @@ label SF1:
     show Kyon Sigh3 at pretr1_kyonpos
     with dissolve
     nvl clear
-    
-    
-    
     "When he came to his senses, he was laying on the floor of Nagato's apartment, staring dazedly up into the girl's eyes."
     show Mikuru Cower Towel Sup2 behind Kyon at pretr1_mikurupos
     show Kanae Night Smile2 at pretr1_kanaepos1
@@ -1185,7 +1201,10 @@ label SF1:
     show KBlush at pretr1_kyonpos
     show Mikuru Cower Towel Nervous1
     show MBlush Cower Towel behind Kyon at pretr1_mikurupos
-    "\"Um,\" he managed, sitting up and turning his eyes away from Mikuru. He wordlessly pushed his jacket at her, since he hadn't even had time to change out of his uniform. \"What's going on, Nagato?\" he added, closing his cell phone."
+    "\"Um,\" he managed, sitting up and turning his eyes away from Mikuru. He wordlessly pushed his jacket at her, since he hadn't even had time to change out of his uniform. {nw}"
+    show Kyon Puzzle1
+    extend "\"What's going on, Nagato?\" he added, closing his cell phone."
+    show Kyon Worry1
     show Yuki Talk1
     "She set down the receiver of her own phone and said without preamble, \"An error is likely to occur imminently.\""
     nvl clear
@@ -1194,6 +1213,7 @@ label SF1:
     "\"Mmm, Sempai,\" Kanae murmured in her sleep with a quiet giggle."
     show Kyon Sigh2
     "\"Okay,\" he said, running his hands through his hair and trying not to look at either Mikuru or the sleeping girl who was dreaming about him with a blush on her cheeks. \"We have been relying on you too much. What can I do to help?\""
+    show Kyon Sigh4
     show Yuki Talk2
     nvl clear
     "\"I have already received permission from Suzumiya Haruhi to borrow you,\" the quiet girl said. \"With the help of the dimensional anchor, Michikyuu Kanae's ability to slide, and Asahina Mikuru's ability to traverse time, I will attempt to create a sealed alternate reality where my error can be expressed without causing any damage to the reality we currently dwell in.\""
@@ -1212,14 +1232,19 @@ label SF1:
     show Mikuru Cower Towel Nervous3
     "\"Er ... could I ... borrow some clothes, maybe?\" Mikuru asked, her voice strained with embarrassment. \"I don't mind doing whatever Kyon-kun needs, but this is a little.... Erm....\""
     nvl clear
+    show Mikuru Cower Towel Nervous1
     hide KABlush
     show Kanae Night Worry1 at pretr1_kanaepos2
     with move    
     "\"Hmm?\" Kanae drawled, sitting up. \"Oh? Eh? What's....\" She blinked, looking around with a furrowed brow. \"Did I slide in my sleep?\" she asked curiously. \"Sempai? Asahina-san? Nagato-san?\""
-    show Kyon Worry1
+    show Kanae Night Sad4
+    show Kyon Puzzle1
     "\"Er, Nagato's having some ... trouble,\" Kyon allowed, trying to keep from staring at Mikuru, now wearing his coat and a pair of towels, her face dark red."
     nvl clear
+    show Kyon Worry1
+    show Kanae Night Sad3
     "\"Can I help?\" Kanae-asked, rubbing one eye sleepily."
+    show Kanae Night Worry2
     show Yuki Talk2
     "Yuki gave a tiny nod in response. \"I will attempt to construct a world based on our collective needs,\" she answered. \"To prevent long-term physical or mental stress, I will initiate an encoded pulse with physical and mental mapping. Estimating forty minutes to error.\""
     nvl clear
@@ -1232,7 +1257,9 @@ label SF1:
     "Kyon nodded knowingly and presented one hand for Yuki to take before she bit his wrist, injecting him with nanites."
     nvl clear
     show Kyon Sigh1
+    show Kanae Night Quest2
     "Her attention turned to Kanae, and she repeated the demand. At Kanae's uncertain, questioning glance, he assured her, \"It's fine. If she says it's for our own protection, I believe her.\" Kanae nodded uncertainly and followed suit."
+    show Kyon Sigh3
     show Mikuru Cower Towel Nervous1
     "With a whimpering sigh, one hand clutching the coat closed across her chest, Mikuru also offered her wrist. {nw}"
     show Yuki Talk1
@@ -1241,9 +1268,10 @@ label SF1:
     show Kyon Puzzle1
     show Yuki Side1
     "\"Um, needs?\" he asked. \"I don't know ... I guess I need to learn martial arts, according to Tsuruya-san. That and to be able to help you, whatever that ends up requiring.\""
-    show Kanae Night Smile1
+    show Kanae Night Hap2
     show Kyon Neutral3
     "\"I'd like to be able to slide better, and know how to get back!\" Kanae added, offering a tiny smile."
+    show Kanae Night Smile1
     show Mikuru Cower Towel Wince1
     "Mikuru winced. \"Really, some clothes would be just great,\" she mumbled."
     nvl clear
