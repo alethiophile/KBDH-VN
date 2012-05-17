@@ -529,6 +529,7 @@ init:
     image Mikuru Ser3 = "Sprites/Mikuru/MikuruSerious3.png"
     image Mikuru Smile1 = "Sprites/Mikuru/MikuruSmile1.png"
     image Mikuru Smile2 = "Sprites/Mikuru/MikuruSmile2.png"
+    image Mikuru Smile3 = "Sprites/Mikuru/MikuruSmile3.png"
     image Mikuru Quest1 = "Sprites/Mikuru/MikuruQuestion1.png"
     image Mikuru Quest2 = "Sprites/Mikuru/MikuruQuestion2.png"
     image Mikuru Unhap1 = "Sprites/Mikuru/MikuruUnhappy1.png"
@@ -549,6 +550,7 @@ init:
     image Mikuru Casual Ser3 = "Sprites/Mikuru/MikuruCasualSerious3.png"
     image Mikuru Casual Smile1 = "Sprites/Mikuru/MikuruCasualSmile1.png"
     image Mikuru Casual Smile2 = "Sprites/Mikuru/MikuruCasualSmile2.png"
+    image Mikuru Casual Smile3 = "Sprites/Mikuru/MikuruCasualSmile3.png"
     image Mikuru Casual Quest1 = "Sprites/Mikuru/MikuruCasualQuestion1.png"
     image Mikuru Casual Quest2 = "Sprites/Mikuru/MikuruCasualQuestion2.png"
     image Mikuru Casual Unhap1 = "Sprites/Mikuru/MikuruCasualUnhappy1.png"
@@ -569,6 +571,7 @@ init:
     image Mikuru Maid Ser3 = "Sprites/Mikuru/MikuruMaidSerious3.png"
     image Mikuru Maid Smile1 = "Sprites/Mikuru/MikuruMaidSmile1.png"
     image Mikuru Maid Smile2 = "Sprites/Mikuru/MikuruMaidSmile2.png"
+    image Mikuru Maid Smile3 = "Sprites/Mikuru/MikuruMaidSmile3.png"
     image Mikuru Maid Quest1 = "Sprites/Mikuru/MikuruMaidQuestion1.png"
     image Mikuru Maid Quest2 = "Sprites/Mikuru/MikuruMaidQuestion2.png"
     image Mikuru Maid Unhap1 = "Sprites/Mikuru/MikuruMaidUnhappy1.png"
@@ -930,6 +933,7 @@ init:
     image Nonoko Smile1 = "Sprites/Nonoko/NonokoSmile1.png"
     image Nonoko Sup1 = "Sprites/Nonoko/NonokoSurprised1.png"
     image Nonoko Pout1 = "Sprites/Nonoko/NonokoPout1.png"
+    image Nonoko Pout2 = "Sprites/Nonoko/NonokoPout2.png"
     image Nonoko Hap1 = "Sprites/Nonoko/NonokoHappy1.png"
     image Nonoko Quest1 = "Sprites/Nonoko/NonokoQuestion1.png"
     image Nonoko Laugh1 = "Sprites/Nonoko/NonokoLaughing1.png"
@@ -1432,9 +1436,15 @@ transform PanScene_LeftToOffCenterR:
 transform PanScene_OffCenterLToLeft:
     xpos -0.3
     linear 0.15 xpos 0.0
+transform PanScene_OffCenterLToOffCenterR:
+    xpos -0.3
+    linear 0.15 xpos -0.7
 transform PanScene_OffCenterRToLeft:
     xpos -0.7
     linear 0.15 xpos 0.0
+transform PanScene_OffCenterRToOffCenterL:
+    xpos -0.7
+    linear 0.15 xpos -0.3
 transform PanScene_RightToOffCenterL:
     xpos -1.0
     linear 0.15 xpos -0.3
