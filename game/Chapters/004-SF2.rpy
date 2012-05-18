@@ -426,22 +426,29 @@ label SF2:
     with fade
     "After class finished, Kyon cracked his neck, unconsciously stretching his muscles and joints while switching stance from foot to foot, as though in preparation for a fight. Suddenly knowing basic martial arts was strange, if very convenient from a practical standpoint. Knuckling back another yawn, he turned around to follow Haruhi to the clubroom, surprised to see her ordering a stack of note paper, still sitting at her desk."
     nvl clear
-    show Haruhi Pout1 at TenthLeft with dissolve
+    show Kyon Sigh4
+    show Haruhi Pout2 at TenthLeft with dissolve
     show Hblush at TenthLeft
     "\"Here,\" she said, thrusting the papers towards him without meeting his eyes. \"You're exempted from the club meeting today. Go home and get some rest. If you're not too tired tomorrow morning, we'll go over the homework before class.\""
-    show Kyon Worry1
+    show Haruhi Pout1
+    show Kyon Puzzle1
     nvl clear
     "\"...thanks,\" he managed, frowning. \"Um, Haruhi, are you upset with me?\""
+    show Kyon Worry1
     show Haruhi Pout2
     "\"Not with you,\" she said, grimacing. \"Anyway, I need to have a talk with Yuki-chan and Mikuru-chan.\""
+    show Haruhi Pout1
     show Kyon Ser3
     "He blinked away some of his exhaustion. \"If there's anything I can help you with—\""
+    show Kyon Ser1
     hide Hblush
     show Haruhi Sigh1
     nvl clear
     "\"This is something I have to figure out for myself,\" she said, shaking her head. \"Really, just get some rest. We're going to have a lot to talk about tomorrow.\""
-    show Kyon Worry1
+    show Haruhi Sigh3
+    show Kyon Puzzle1
     "\"Okay,\" he allowed, wishing that either of them were smiling at the moment. \"Well ... take care, then.\""
+    show Kyon Worry1
     $ _window = True
     hide Haruhi with moveoutright
     $ _window = False
@@ -449,78 +456,78 @@ label SF2:
     nvl clear
     show Kyon Neutral3 at right
     $ _window = True
-    show Taniguchi Grin1 at left behind Kyon with dissolve
+    show Taniguchi Smile1 at left behind Kyon with dissolve
     $ _window = False
     "\"Trouble in paradise?\" Taniguchi mused, drawing close."
+    show Taniguchi Grin1
     $ _window = True
-    show Kunikida Ser1  at center behind Kyon, Taniguchi with dissolve 
+    show Kunikida Ser2 at center behind Kyon, Taniguchi with dissolve 
     $ _window = False
     "\"And what's this about you fighting thugs for Tsuruya-sempai?\" Kunikida asked, following with a concerned expression."
-    # show Taniguchi Smile1 at left
-    show Taniguchi Ser1# at left
+    show Kunikida Ser1
+    show Taniguchi Ser1
     nvl clear
     "\"Yeah,\" Taniguchi said, nodding seriously. \"Suzumiya talking about nonsense like time traveling isn't going to raise too many questions, but people attacking a sempai, and you getting into fights?\""
     nvl clear
-    # show Taniguchi Hap1# at left
     show Taniguchi Ser3
     "\"I hate to tell you that you should back off, since you and Suzumiya seem to be heading toward 'item' territory ... but if she's losing it, I don't think you want to get dragged down with her.\""
-    # show Taniguchi Grin1# at left
     show Taniguchi Ser2
-    show Kyon Sigh1# at right
+    show Kyon Sigh1
     nvl clear
     "Kyon looked down to the stack of note papers in his hand. \"Thank you, Taniguchi,\" he said, struggling for an earnest tone. \"I should be honored to have a friend like you, trying to spare me the indignity of being dragged into a whirlpool of depravity and academic success.\""
     nvl clear
-    show Kyon Sigh3# at right
-    show Kunikida Ser2# at center
+    show Kyon Sigh3
+    show Kunikida Ser2
     "Kunikida chuckled weakly. \"To be fair, Kyon,\" he said, shifting his shoulders uncomfortably, \"even if it wasn't worded diplomatically.... Well, perhaps it would be better to say that you're generally a respectable person. If you're, ah, pursuing companionship solely for help in studying, wouldn't Sasaki-san be a better choice?\""
     nvl clear
-    show Kyon Sigh3# at right
-    show Kunikida Ser1# at center
+    show Kyon Sigh3
+    show Kunikida Ser1
     "Struggling to think of an acceptable response, Kyon frowned and cracked the knuckles on both hands, {nw}"
     show Taniguchi Ser2:
         linear 0.3 xpos -0.05
     show Kunikida Ser1:
         linear 0.3 xpos 0.45
     extend "prompting his friends each to take a step back."
-    show Kyon Ser3# at right
+    show Kyon Ser3
     "\"What, precisely,\" he asked, \"has changed? Haruhi hasn't become somehow worse, or really that different than she was last year.\""
     nvl clear
     show Taniguchi Ser1 at left with move
-    show Kyon Ser1# at right
+    show Kyon Ser1
     "\"Yeah, well ... she's rubbing off on you,\" Taniguchi said, spreading his arms in a helpless gesture. \"It was great when you somehow were taming the shrew. Don't get me wrong, it was nothing short of a miracle that you were able to reach her! But now she's turning you a bit crazy.\""
     nvl clear
-    show Taniguchi Ser2# at left
-    show Kyon Sigh2# at right
+    show Taniguchi Ser2
+    show Kyon Sigh2
     "\"I'm not sure what's gotten into you two,\" Kyon decided. \"But I haven't been resting well lately. Maybe I seem more docile because I'm tired, but you're probably making too much of it. What does a joke between Haruhi and myself have to do with the rest of us going about our business as normal?\""
     nvl clear
-    show Taniguchi Sigh1# at left
-    show Kyon Sigh4# at right
+    show Taniguchi Sigh1
+    show Kyon Sigh4
     "\"Well, if it was just Haruhi, that'd be fine,\" Taniguchi said, shaking his head. \"But Tsuruya-sempai mentioned you getting into a fight on her behalf, as well. She's too well respected to be considered responsible for it, and she's not the type to spread baseless rumors, so naturally....\""
     nvl clear
-    show Taniguchi Sigh2# at left
+    show Taniguchi Sigh2
     show Kunikida Ser2 at center with move
     "\"It's just that the general consensus is, grades aside ... if you're getting into trouble, Haruhi must be behind it,\" Kunikida finished. \"Especially since she mentioned it earlier ... that pretty much seemed to confirm that it wasn't a joke. You don't want a reputation as a delinquent, do you?\""
     nvl clear
-    show Kunikida Ser1# at center
-    show Kyon Puzzle1# at right
+    show Kunikida Ser1
+    show Kyon Puzzle1
     "\"Tsuruya-sempai thinks I'm a delinquent?\" Kyon asked skeptically."
-    show Taniguchi Ser1# at left
-    show Kyon Neutral3# at right
+    show Taniguchi Ser1
+    show Kyon Neutral3
     "\"Well, no, she said you were a warrior-philosopher, or something else silly like that,\" Taniguchi said, shaking his head and making a dismissive gesture with one hand. \"But what else do you call someone who solves problems with violence?\""
     nvl clear
-    show Taniguchi Ser2# at left
-    show Kyon Ser2# at right
+    show Taniguchi Ser2
+    show Kyon Ser2
     "\"A problem solver?\" Kyon asked. \"Anyway, I don't know what else to say, here. I appreciate the warning, I guess, but if it comes down to it, I'm at Haruhi's side until the end — so, sorry.\"" 
     nvl clear
-    show Kyon Sigh2# at right
+    show Kyon Sigh2
     "When Taniguchi opened his mouth to say something else, Kyon raised a hand to forestall further comment. \"I'm really tired. I'm going home to get some rest. Maybe this whole thing is a product of inadequate sleep, and we'll all feel better about it tomorrow.\""
     nvl clear
-    show Kunikida Neutral2# at center
-    show Kyon Sigh4# at right
+    show Kunikida Neutral2
+    show Kyon Sigh4
     "\"That seems very peaceable,\" Kunikida agreed, shooting Taniguchi a warning look as Kyon's hand dropped to his side."
-    show Taniguchi Sigh1# at left
-    show Kunikida Neutral1# at center
+    show Taniguchi Sigh1
+    show Kunikida Neutral1
     "Unsatisfied with silence, Taniguchi said, \"Well, be careful at least.\""
+    show Taniguchi Sigh2
     nvl clear
     stop music fadeout 3
 
@@ -538,163 +545,184 @@ label SF2:
     show Yuki Right Neutral1 at right
     with dissolve
     "\"Not visiting the computer research society much these days?\" she asked the slighter girl, who had almost finished her paperback."
-    show Yuki Right Neutral2 at right
+    show Haruhi Quest2
+    show Yuki Right Neutral2
     "Yuki blinked slowly, then gave a minuscule shake of her head."
     nvl clear
-    show Haruhi Neutral2 at left
+    show Haruhi Neutral2
     "\"Yuki-chan, we need to talk about Kyon.\""
-    show Yuki Right Neutral2 at right
+    show Haruhi Neutral1
+    show Yuki Right Neutral2
     "The smaller girl gave a tiny nod and closed her book, turning to look at Haruhi expectantly."
-    show Haruhi Crossed Tsun1 at left
+    show Haruhi Crossed Tsun1
     "For her part, the brigade leader walked to her desk, turning the computer on to give herself a brief distraction."
     nvl clear
-    show Haruhi Crossed Tsun2 at left
+    show Haruhi Crossed Tsun2
     show Hblush Crossed at left
     "\"You like Kyon, don't you?\" she finally blurted out."
-    show Yuki Right Talk1 at right
+    show Haruhi Crossed Tsun1
+    show Yuki Right Talk1
     "\"Yes,\" Yuki answered softly, her eyes still fixed on Haruhi."
     nvl clear
-    show Yuki Right Neutral1 at right
-    show Haruhi Pout1 at left
+    show Yuki Right Neutral1
+    show Haruhi Pout2
     hide Hblush
     "\"Um, anyway, Yuki-chan ... I {i}did{/i} say you could borrow him when you needed to,\" Haruhi admitted, frowning. \"But I'm having a hard time figuring things out right now.\""
-    show Yuki Right Neutral2 at right
+    show Haruhi Pout1
+    show Yuki Right Neutral2
     "Yuki said nothing, merely staring in silence."
     nvl clear
     show Hblush at left
-    show Haruhi Pout2 at left
+    show Haruhi Pout2
     "\"I.... I mean, Kyon and I....\" She hesitated, uncertain what to say. Eventually, in a very quiet voice, she managed to ask, \"Are you going to start dating Kyon?\""
-    show Haruhi Pout1 at left
-    show Yuki Right Talk1 at right
+    show Haruhi Pout1
+    show Yuki Right Talk1
     "After blinking once, Yuki answered, \"I do not seek to initiate courtship rituals or physical intimacy with him, though I will reciprocate if he demonstrates an obvious inclination.\""
     nvl clear
-    show Yuki Right Talk2 at right
+    show Yuki Right Talk2
     "\"However, as has been observed previously, my understanding of his genuine desires and emotions is faulty; I can therefore not safely assume that such demonstrations have occurred without verifying them through a third party.\""
-    show Yuki Right Neutral2 at right
-    show Haruhi Eyeroll1 at left
+    show Yuki Right Neutral2 
+    show Haruhi Eyeroll1
     hide Hblush
     "Haruhi stared at the smaller girl hard, furrowing her brow. \"You're telling me,\" she said slowly, \"that you can't tell if Kyon likes you, and you don't want to mess things up? So you'd need to ask someone else if he really liked you and wanted to date?\""
-    show Yuki Right Neutral1 at right
+    show Haruhi Eyeroll2
+    show Yuki Right Neutral1
     nvl clear
     "Yuki's face tilted upwards slightly, as though she were considering the statement." 
-    show Yuki Right Talk1 at right
+    show Yuki Right Talk1
     "\"Yes,\" she answered after an extended pause. \"That third party must be trusted; I would like to nominate you.\""
-    show Haruhi Pout1 at left
-    show Yuki Right Neutral2 at right
+    show Haruhi Pout1
+    show Yuki Right Neutral2
     nvl clear
-    "Drumming her fingers on the desk, glancing at the monitor as the OS screen flashed past and the generic blue background appeared, Haruhi asked, \"You want me to help you hook up with him?\""
+    "Drumming her fingers on the desk, glancing at the monitor as the OS screen flashed past and the generic blue background appeared, Haruhi asked, {nw}"
+    show Haruhi Pout2
+    extend "\"You want me to help you hook up with him?\""
     nvl clear
-    show Yuki Right Talk2 at right
+    show Haruhi Pout1
+    show Yuki Right Talk2
     "The smaller girl's gaze lowered. \"Uncertain,\" she answered. \"Our behaviors do not conform to typical models among humans. I am unable to determine how this would change the interactions between the group definitively, but there is a significant probability that committing to such a course of action would result in dissatisfaction among most others.\""
     nvl clear
-    show Haruhi Sigh1 at left
-    show Yuki Right Neutral2 at right
+    show Haruhi Sigh1
+    show Yuki Right Neutral2
     "\"Yeah,\" Haruhi sighed, rubbing at her temples. \"If only there was a way for everyone to be happy, huh? But there's only one Kyon to go around....\""
-    show Haruhi Hap1 at left
+    show Haruhi Hap1
     "She brightened suddenly. \"Ooh! Hey, Yuki-chan, what about, um, making a bunch of copies of Kyon!\""
     nvl clear
-    show Yuki Right Neutral1 at right
+    show Haruhi Smile3
+    show Yuki Right Neutral1
     "She stared at Haruhi blankly for a minute, then pointedly turned her attention back to the book in her hands."
     $ _window = True
     hide Yuki with dissolve
     $ _window = False
-    show Haruhi Sigh2 at left
+    show Haruhi Sigh2
     "\"Yeah, you're right,\" Haruhi grumbled with another resigned sigh. \"Don't even let Kyon know I suggested that; he wouldn't like it.... Maybe I should just resign myself to letting him choose whoever he wants ... I mean....\"" 
     nvl clear
-    show Haruhi Pout1 at left
+    show Haruhi Pout1
     "She trailed off, staring at the ceiling and musing absently until she was distracted by Kanae and Mikuru walking into the room."
     nvl clear
     play sound "SE/dooropenfast.wav"
     $ _window = True
-    show Mikuru Neutral1 at right
+    show Mikuru Sigh2 at right
     show Kanae Neutral1 at center
     with moveinleft
     $ _window = False
+    show Mikuru Sigh1
     "\"Hello Suzumiya-san,\" Mikuru said sleepily, collecting her sewing kit and the maid costume from where it had been left to finish her repairs."
-    show Haruhi Neutral2 at left
+    show Mikuru Sigh2
+    show Haruhi Neutral2
     "\"Hey, Mikuru-chan, Kanae-chan.\""
-    show Kanae Quest1 at center
+    show Haruhi Neutral1
+    show Kanae Quest1
     "\"Hi, everyone,\" the younger girl mumbled. \"Oh, no Sempai...?\""
-    show Haruhi Sigh2 at left
+    show Kanae Quest2
+    show Haruhi Sigh2
     nvl clear
     "\"Close the door, Kanae-chan,\" Haruhi instructed. \"Lock it, too. Koizumi's ... working because I'm problematic, and I sent Kyon home to get some sleep.\""
-    # Don't we have a quieter door closing sound? That loud one doesn't really fit the atmosphere.
-    play sound "SE/doorclose.mp3"
-    show Mikuru Think Quest1 at right
-    show Kanae Neutral1 at center
+    play sound "SE/doorclose2.mp3"
+    show Haruhi Unhap3
+    show Mikuru Think Quest2
+    show Kanae Neutral1
     "\"Um?\" Mikuru noised, as Kanae followed her orders and took Koizumi's normal seat at the table. \"I...is something wrong? Suzumiya-san, if you and Kyon-kun aren't getting along—\""
-    show Haruhi Neutral2 at left
+    show Mikuru Think Quest3
+    show Haruhi Neutral2
     nvl clear
     "\"It's nothing to do with him and I,\" she said crossly, rubbing at her forehead and spinning her chair to face the window, adjusting herself to sit cross-legged on the seat. \"Because, Mikuru-chan ... you like Kyon, don't you?\""
-    show Mikuru Cower Smile1 at right
+    show Haruhi Neutral1
+    show Mikuru Cower Smile1
     "Mikuru yelped quietly, looking up in alarm and sucking the fingertip she had pricked with her sewing needle. \"Er.... That is.... Of course! He's a very good friend!\""
     nvl clear
-    show Haruhi Eyeroll1 at left
+    show Mikuru Cower Nervous1
+    show Haruhi Eyeroll1
     "\"You don't have to act clueless and moe right now,\" Haruhi grumped. \"I mean, romantically. If I weren't being an obstacle to you, you'd try and date him, wouldn't you?\""
-    show Mikuru Cower Nervous3 at right
-    show Kanae Worry1 at center
+    show Haruhi Eyeroll2
+    show Mikuru Cower Nervous3
+    show Kanae Worry1
     "\"Er.... Uh....\""
-    show Haruhi Ang4 at left
+    show Haruhi Ang4
     "\"Be honest!\""
-    show Haruhi Ang5 at left
-    show Mikuru Sad2 at right
+    show Haruhi Ang5
+    show Mikuru Sad2
     nvl clear
     "\"It's ... forbidden,\" Mikuru said quietly. \"I...if you must know, then ... yes, I do like Kyon-kun ... he's reliable, and doesn't have ulterior motives.\"" 
     nvl clear
-    show Mikuru Sad1 at right
+    show Mikuru Sad1
     "\"But I'm not {i}from{/i} this timeplane; I can't have, um, relationships with anyone from here. S...so, please don't think of me as a threat, Suzumiya-san! And you can't ask me to think of him without you being in the picture; if it weren't for {i}you{/i}, I never would have been sent back and been able to meet him anyway! I don't want to come between the two of you!\""
     nvl clear
-    show Haruhi Unhap2 at left
-    show Mikuru Unhap2 at right
+    show Haruhi Unhap2
+    show Mikuru Unhap2
     "Haruhi stuck one foot out and turned the chair around to face her club members. Kanae rubbed at one eye and peered at Mikuru in bemused fascination, while Yuki's eyes were fixed firmly on Haruhi. Mikuru herself merely gazed at her sewing project with a bowed head, her hands not moving, her expression downcast."
-    show Mikuru Sad2 at right
+    show Mikuru Sad2
     nvl clear
     "\"I'm not a threat to you,\" Mikuru repeated quietly. \"I never could be.\""
-    show Haruhi Pout2 at left
-    show Mikuru Unhap1 at right
+    show Haruhi Pout2
+    show Mikuru Unhap1
     "\"I don't like that answer,\" Haruhi mumbled. \"It's just like an action movie where the hero dies. Or where the hero likes two girls, so one isn't quite as pure-hearted or kind as the other, and is killed to make it so the hero never has to choose. Yuki-chan likes Kyon, too. {nw}"
-    show Haruhi Unhap3 at left
+    show Haruhi Sigh2
     extend "Augh! This is frustrating, really, really frustrating!\""
-    show Mikuru Sad1 at right
+    show Haruhi Unhap3
+    show Mikuru Sad1
     nvl clear
     "\"P...please don't get frustrated!\" Mikuru begged. \"There's nothing to worry about from me! Kyon-kun and I ... will never be more than friends.\""
-    show Haruhi Sigh1 at left
-    show Mikuru Unhap2 at right
+    show Haruhi Sigh1
+    show Mikuru Unhap2
     "Haruhi sighed, pushing the keyboard away from her so she could cross her arms and rest her head there. \"Maybe I'm thinking about things too hard,\" she forced out. \"Maybe, really, I should be asking who {i}he{/i} likes, right?\""
-    show Haruhi Sigh3 at left
-    show Kanae Quest1 at center
+    show Haruhi Sigh3
+    show Kanae Unhap2
     nvl clear
     "\"This got really serious,\" Kanae said, shivering. \"Um, what's going on?\""
-    show Haruhi Pout2 at left
+    show Kanae Unhap3
+    show Haruhi Pout2
     show Hblush at left
     "\"I'm trying to sort things out,\" Haruhi answered. \"Kyon didn't mention it ... but for a while I thought maybe he liked me ... then I thought about it more and realized, maybe he's just being so nice to me because he {i}has{/i} to be.\""
     nvl clear
-    show Haruhi Pout1 at left
-    show Kanae Sup2 at center
+    show Haruhi Pout1
+    show Kanae Sup2
     "\"That's not true at all!\" Kanae said firmly, shaking her head. \"I've been to a lot of worlds, and in some of them you have a power, and in some you don't. But Sempai likes you in a {i}lot{/i} of them. That can't be just coincidence.\""
-    show Haruhi Quest1 at left
-    show Kanae Unhap3 at center
+    show Haruhi Quest1
+    show Kanae Unhap3
     "\"He does?\" Haruhi asked hopefully, turning her eyes to the underclassman. \"It wouldn't be so much of a problem if he would just admit it and make the first move!\""
     nvl clear
-    show Haruhi Quest2 at left
-    show Kanae Smile3 at center
+    show Haruhi Quest2
+    show Kanae Hap4
     "Kanae nodded quickly. \"Absolutely,\" she said cheerfully. \"It makes me a bit jealous; most worlds I jump to, he wants to help me but has to take care of you, more....\"" 
-    show Kanae Sad5 at center
-    "She shrugged, her smile slipping momentarily before she forced more cheer.{nw}"
-    show Kanae Smile1 at center
+    show Kanae Sad5
+    "She shrugged, her smile slipping momentarily before she forced more cheer. {nw}"
+    show Kanae Hap3
     extend "\"But ... that's what's great about Sempai! He doesn't have to want to ask me out to care about me and want to make sure I'm okay. And that's ... fine ... for me.\""
-    show Haruhi Eyeroll1 at left
+    show Kanae Smile1
+    show Haruhi Eyeroll1
     hide Hblush
     nvl clear
     "Haruhi drummed her fingertips on her desk absently. \"You really think so?\" she asked quietly, wondering about Kanae's actual feelings. Fleeing constantly through alternate realities, with Kyon as the only reliable person she knew.... That situation seemed oddly familiar."
     nvl clear
-    show Haruhi Eyeroll2 at left
-    show Mikuru Ser2 at right
+    show Haruhi Eyeroll2
+    show Mikuru Ser2
     "\"I think so,\" Mikuru said earnestly. \"Don't let yourself get down, Suzumiya-san! If Kyon-kun ... didn't like you, he wouldn't have tried so hard when he asked you to help Nagato-san. He would have found a way to break things off with you at the same time, or give up your powers for good! He didn't, so....\""
     nvl clear
-    show Haruhi Pout2 at left
-    show Mikuru Ser3 at right
+    show Haruhi Pout2
+    show Mikuru Ser3
     "Haruhi's fingers drummed the table again. \"I still don't like that answer,\" she mumbled."
+    show Haruhi Pout1
     nvl clear
     stop music fadeout 3
     
@@ -706,18 +734,18 @@ label SF2:
     show Mori Neutral1 Flip at left
     with fade
     "In a dark mood, Kyon strode out of the school grounds. He paused a few steps out of the gate as a mature woman in a sharp suit approached him, giving a terse nod."
-    show Kyon Neutral2# at right
+    show Kyon Neutral2
     "\"Mori-san,\" he greeted her neutrally, struggling to keep the irritation his classmates had instilled from his face."
-    show Kyon Neutral3# at right
-    show Mori Nervous1 Flip# at left
+    show Kyon Neutral3
+    show Mori Nervous1 Flip
     "\"Sir,\" she greeted him, somewhat stiffly. \"I'm here for our meeting, as you requested?\""
     nvl clear
-    show Kyon Sigh1# at right
+    show Kyon Sigh1
     "He took a deep breath and gave the woman a slow nod of his own. \"Is Koizumi in trouble?\" he asked."
-    show Kyon Sigh3# at right
-    # show Mori Sigh1 Flip at left
+    show Kyon Sigh3
     show Mori Neutral2 Flip
     "Her expression eased slightly as she shook her head. \"He's just busy at the moment, Sir.\" He spent an idle moment wondering what the hell his future self was going to say to this woman that had made her so deferential to him. \"This way...?\""
+    show Mori Neutral1 Flip
     nvl clear
     "The familiar black cab awaited a short distance down the street, and he shrugged at it in bemusement. It would get him home faster, letting him bypass the train. Which in turn, most likely meant that he {i}should{/i} get more sleep once he got home...." 
     nvl clear
@@ -727,108 +755,120 @@ label SF2:
     show Mori Neutral1 Flip at left
     with dissolve
     "He got into the back seat, Mori opening he door on the opposite side and sitting next to him. Arakawa wordlessly started the car up."
-    show Kyon Neutral2# at right
+    show Kyon Neutral2
     "He didn't feel like trying to puzzle through whatever it was that his future self had arranged, so he decided he'd try relying on raw bluster: \"If you'd care to begin...?\""
     nvl clear
-    show Mori Neutral2 Flip# at left
-    show Kyon Neutral3# at right
+    show Mori Neutral2 Flip
+    show Kyon Neutral3
     "\"Very well,\" she agreed. \"While en route to his current assignment, Koizumi-kun relayed an update on the situation with Suzumiya-san.\""
-    show Kyon Neutral2# at right
+    show Mori Neutral1 Flip
+    show Kyon Neutral2
     "\"Okay. And...?\""
     nvl clear
-    show Mori Neutral1 Flip# at left
-    show Kyon Neutral3# at right
+    show Mori Neutral2 Flip
+    show Kyon Neutral3
     "\"So far,\" Mori said evenly, her eyes turning to fix on some distant point outside of the car window, \"everything regarding Suzumiya-san has matched your predictions. Assuming you're correct, and tomorrow morning is the peak of closed space creation for the two week period that we established, then we'll accept that you have the situation under control.\"" 
-    show Mori Ser1 Flip# at left
+    show Mori Ser1 Flip
     nvl clear
     "Her eyes hardened and shifted to his; he felt he should be trying to return her hard stare, but could only gaze back lethargically. Hopefully, he told himself, the lack of excited reaction would convey some sense of confidence to her." 
     nvl clear
-    show Mori Nervous1 Flip# at left
+    show Mori Nervous1 Flip
     "Surprisingly enough, it seemed to, and she quickly looked away again. \"In the meantime,\" she continued, unprompted, \"we're also following up on your request to ensure that Michikyuu Kanae is provided the same protection you are afforded. Naturally, since she's joined Suzumiya-san's club, this makes her a person of interest to us anyway.\""
-    show Kyon Neutral2# at right
+    show Kyon Neutral2
     nvl clear
     "\"Of course,\" he said, nodding. Why had he thought to request that from Arakawa? It made sense the Organization would watch over anyone in the Brigade {i}anyway{/i}, if only to determine who they were and what powers, if any, they might have. Stabbing blindly at the next conversation topic, he asked, \"And the puppet Student Council?\""
     nvl clear
-    # show Mori Sigh1 Flip# at left
-    show Mori Neutral3 Flip# at left
-    show Kyon Neutral3# at right
+    show Mori Neutral3 Flip
+    show Kyon Neutral3
     "\"Well, as you said, Sir,\" Mori sighed, \"there's not much we can do about Kimidori Emiri. However, she was never part of our equations anyway; in fact, we typically tried to hide our agenda from her because the IDSE and ourselves have our own goals. If she's an enemy, I don't hesitate to lay that problem firmly at {i}your{/i} feet, since you've started this mess. That being said, we had nothing planned within the next two weeks anyway.\""
-    show Kyon Sigh2# at right
+    show Mori Neutral1 Flip
+    show Kyon Sigh2
     nvl clear
     "\"Right,\" he said, committing the details to memory. This would absolutely have to be written down if he was to manage whatever madness he was going to do last Sunday." 
     nvl clear
-    show Kyon Neutral2# at right
+    show Kyon Neutral2
     "\"Good. Did Koizumi mention the potential IDSE bargaining chip we had on the table?\" Those words sounded good ... right out of an intrigue filled political drama. Doubtless Haruhi would be thrilled to hear this story later."
-    # show Mori Ser2 Flip# at left
     show Mori Neutral4 Flip
-    show Kyon Neutral3# at right
+    show Kyon Neutral3
     "\"New data?\" Mori asked, giving a small nod. \"Again, that falls firmly into the area of 'not our problem'.\""
-    show Kyon Ser3# at right
+    show Kyon Ser3
     nvl clear
     "\"I know,\" he said patiently. \"But if we're working together, well, as I mentioned before, I'd like us to be on friendly terms. My plan isn't something inane, like, 'bite off more than you can chew and chew it anyway'. While I am doing my best, I don't have the arrogance to believe I'm infallible.\""
     nvl clear
-    show Mori Grin1 Flip# at left
-    show Kyon Ser1# at right
+    show Mori Grin1 Flip
+    show Kyon Ser1
     "Mori turned her face back to him, her eyes softening as she raised her eyebrows. \"More and more, I'm starting to like you, Sir,\" she said with a wry grin." 
     nvl clear
-    show Mori Ser1 Flip# at left
+    show Mori Ser1 Flip
     "\"You remind me of myself at your age. Well, in that case, the only thing that occurred to me is that ... this entire thing, every action you've taken so far, could be an IDSE orchestrated ploy. That is to say ... for all we know, they've arranged things from behind the scenes specifically so that you would 'collar' Suzumiya-san and thus restrict their precious 'data creation' to a safely controlled vector.\""
-    show Kyon Neutral3# at right
+    show Kyon Neutral3
     nvl clear
     "The thought chilled him deeply, to consider he could have been manipulated so perfectly. If it were true, had Yuki betrayed him? Or was she, too, just a puppet? He didn't like the idea of anyone being a puppet for anyone else.... Resolving to ensure that Haruhi endured less harsh restrictions from himself in the future, he gave a thoughtful nod he didn't quite feel."
     nvl clear
-    show Kyon Neutral2# at right
+    show Kyon Neutral2
     "\"Then again,\" he said, realizing that thanks to exhaustion, his expression hadn't changed despite his alarm, \"this also connects to the other theories of the Organization; Haruhi is God, for example.\"" 
     nvl clear
-    show Kyon Neutral3# at right
-    "He'd never believed that one.... Able to warp reality, sure, but God? Even Koizumi said he hadn't bought into that one, and he was the closest thing to a Haruhi-worshiper Kyon had ever met. \"I don't think I'm going to ask Haruhi to create a rock she can't move anytime soon ... but we can't exactly prove this, can we?\""
-    show Mori Neutral2 Flip# at left
+    show Kyon Neutral3
+    "He'd never believed that one.... Able to warp reality, sure, but God? Even Koizumi said he hadn't bought into that one, and he was the closest thing to a Haruhi-worshiper Kyon had ever met. {nw}"
+    show Kyon Neutral2
+    extend "\"I don't think I'm going to ask Haruhi to create a rock she can't move anytime soon ... but we can't exactly prove this, can we?\""
+    show Kyon Neutral3
+    show Mori Neutral2 Flip
     nvl clear
     "\"We can't,\" Mori agreed. \"I'm guessing you had already considered it, then?\""
-    show Kyon Sigh2# at right
+    show Mori Neutral1 Flip
+    show Kyon Sigh2
     "\"Not really,\" he admitted. \"The theory's sound, but I don't believe any of us are predictable enough for the IDSE to risk it. I can easily see them wanting Haruhi controlled to provoke reactions safely, but threatening Yuki? After what I told them?\""
     nvl clear
-    show Kyon Smile2# at right
+    show Kyon Smile7
     "\"That's like giving a monkey a chainsaw and hoping that it'll create a new form of art. It might work, but probably it's just going to get messy and end poorly.\""
-    show Mori Smile1 Flip# at left
+    show Kyon Smile2
+    show Mori Smile1 Flip
     "Eyes widening in surprise, Mori laughed aloud; from the front seat, even Arakawa snickered. \"Your argument is as compelling as mine,\" Mori allowed, recovering."
     nvl clear
-    # show Mori Smile2 Flip# at left
     show Mori Smile3 Flip
     "\"Neither can truly be proven yet. Very well, Sir. I hope for all of our sakes, you're able to do as well as you claim. {nw}"
     show Mori Neutral2 Flip
     extend "In the meantime, is there anything else your plans will require?\""
-    show Kyon Neutral2# at right
+    show Mori Neutral1 Flip
+    show Kyon Neutral2
     "\"Nothing serious, for the moment,\" he said dismissively. \"Maybe a coffee machine for the club room, at the rate things are going.\""
     nvl clear
-    show Mori Smile1 Flip# at left
+    show Kyon Neutral3
+    show Mori Smile1 Flip
     "\"If everything works out after tomorrow, it will be a small price to pay, Sir,\" Mori agreed as the car pulled to a stop. \"Koizumi-kun has made that request many times. Thank you again for your candor, and good luck with your objectives.\""
     nvl clear
     stop sfxloop
-    #play music "Music/Kanashimi.mp3"
     scene bg KyonHouseDay with wipeup
-    show Kyon Smile4 at right
+    show Kyon Smile6 at right
     with dissolve
-    "\"Don't mention it, Mori-san,\" he replied, somewhat bemused as he opened the door and stepped out of the car, waving at the pair as the vehicle drove away. Did the clubroom actually have a coffee machine coming to it...? That would be amusing ... but he'd feel guilty if it got back to Haruhi as any kind of abuse of his authority."
+    "\"Don't mention it, Mori-san,\" he replied, somewhat bemused as he opened the door and stepped out of the car, waving at the pair as the vehicle drove away. {nw}"
+    show Kyon Smile4
+    extend "Did the clubroom actually have a coffee machine coming to it...? That would be amusing ... but he'd feel guilty if it got back to Haruhi as any kind of abuse of his authority."
     nvl clear
     show Nonoko Smile1 at TenthLeft
     with dissolve
-    show Kyon Worry1# at right
-    "He saw his sister approaching, looking over her shoulder at the vanishing car curiously. \"I even said I wasn't serious,\" he mumbled to himself. \"Well, it's not like everything I say I want will come to me. If it were, I'd wish that Haruhi and I could really get along, and she'd find a way to be happy.\""
-    show Nonoko Quest1# at TenthLeft
+    show Kyon Worry1
+    "He saw his sister approaching, looking over her shoulder at the vanishing car curiously. {nw}"
+    show Kyon Puzzle1
+    extend "\"I even said I wasn't serious,\" he mumbled to himself. \"Well, it's not like everything I say I want will come to me. If it were, I'd wish that Haruhi and I could really get along, and she'd find a way to be happy.\""
+    show Kyon Worry1
+    show Nonoko Quest1
     nvl clear
     "\"Haru-nee-san isn't happy?\" his little sister asked, drawing close enough only to hear the last part."
-    show Kyon Sigh2# at right
+    show Kyon Sigh2
     "\"Oh, you know,\" he said with a yawn. \"She wants me to study harder.\""
     nvl clear
-    show Nonoko Hap1# at TenthLeft
-    show Kyon Sigh4# at right
+    show Nonoko Hap1
+    show Kyon Sigh4
     "\"So does Mom!\" his sister said brightly. \"She's always telling me to study harder than you, since you set the bar low!\""
+    show Nonoko Smile1
     hide Kyon with dissolve
     "\"That's swell,\" he grumbled, rolling his eyes and heading into the house. \"Here's an easy bar to clear: I'm going to take a nap.\""
     nvl clear
-    show Nonoko Quest1# at TenthLeft
+    show Nonoko Quest1
     "\"What does setting a bar mean?\""
+    show Nonoko Smile1
     nvl clear
     stop music fadeout 3
     
@@ -848,79 +888,72 @@ label SF2:
     with dissolve
     extend "Looking somewhat irritable and wearing a bathrobe, Mikuru knelt at the table, mumbling about getting phone calls first. Kanae was sitting next to Mikuru, working on her homework and evidently unperturbed."
     nvl clear
-    show Kyon Sigh2 at right
+    show Kyon Sigh2
     "\"Hello?\" he said by way of greeting, looking down at himself ... he was wearing his dress shirt and slacks, too tired to change into his pajamas or strip. Though, that last thought was thankful, in retrospect."
     nvl clear
-    show Kyon Sigh3 at right
-    show Kanae Night Sup1:
-        xalign 0.3 yalign 1.2
+    show Kyon Sigh3
+    show Kanae Night Sup1
     "Kanae blinked at his voice and looked around. \"Oh!\" she exclaimed. \"This isn't my room! I didn't even feel the slide!\""
-    show Kanae Night Quest1:
-        xalign 0.3 yalign 1.2
+    show Mikuru Cower Towel Nervous3
+    show Kanae Night Quest1
     "\"I did,\" Mikuru said with a sigh. \"Nagato-san, are you trying to embarrass me?\""
-    show Yuki Talk1 at left
+    show Mikuru Cower Towel Nervous1
+    show Kanae Night Quest2
+    show Yuki Talk1
     "Yuki turned her gaze to Mikuru without changing expression. \"No,\" she answered. \"With your permission, we shall proceed again.\""
     nvl clear
-    show Yuki Side1 at left
-    show Kyon Neutral2 at right
+    show Yuki Side1
+    show Kyon Neutral2
     "Shifting his shoulders, Kyon sat up and nodded. \"Is this going to be a nightly occurrence?\" he asked, trying to keep annoyance from entering his voice."
-    show Kyon Neutral3 at right
-    show Yuki Talk2 at left
+    show Kyon Neutral3
+    show Yuki Talk2
     "\"Unknown,\" Yuki answered. \"The amount of time Michikyuu Kanae will require to master her ability to shift dimensions is as of yet undetermined.\""
     nvl clear
-    show Yuki Side2 at left
-    show Kyon Neutral1 at right
+    show Yuki Side2
+    show Kyon Neutral1
     "\"Oh, right,\" Kyon realized, blinking. This wasn't {i}just{/i} about Yuki dealing with her 'error' data. \"Well, in that case, I'm ready, Nagato. I think I've got a way to go before I finish what I chose to learn ... and I can't travel back to last Sunday until I finish it.\""
-    show Kyon Neutral3 at right
-    show Kanae Night Hap1:
-        xalign 0.3 yalign 1.2
+    show Kyon Neutral3
+    show Kanae Night Hap1
     "\"More sliding practice!\" Kanae cheered, throwing her hands into the air excitedly. \"I've never been so fortunate in any world I've jumped to!\""
     nvl clear
-    show Kanae Night Smile1:
-        xalign 0.3 yalign 1.2
-    show Mikuru Cower Towel Smile2:
-        xalign 0.7 yalign 1.2
+    show Kanae Night Smile1
+    show Mikuru Cower Towel Smile2
     "\"Um, I should keep a positive attitude, too,\" Mikuru contributed. \"If it's not too much trouble, Nagato-san, could you call me before teleporting me here next time? I'd really like to arrive dressed ... if Suzumiya-san were to hear about, um, me arriving in such a condition on a regular basis, she'd probably become even more upset.\""
     nvl clear
-    show Mikuru Cower Towel Worry1:
-        xalign 0.7 yalign 1.2
-    show Kyon Ser3 at right
+    show Mikuru Cower Towel Worry1
+    show Kyon Ser3
     "\"She's upset right now?\" Kyon asked, frowning. \"That's no good; what's wrong?\""
-    show Yuki SideDisappointed1 at left
-    show Kyon Ser1 at right
+    show Yuki SideDisappointed1
+    show Kyon Ser1
     "Yuki looked away, adopting an expression Kyon hadn't seen since he asked her what happened to people after they died. "
-    show Yuki SideDisappointedTalk1 at left
+    show Yuki SideDisappointedTalk1
     extend "\"I should not say,\" she eventually answered."
     nvl clear
-    show Yuki SideDisappointed1 at left
-    show Kyon Puzzle1 at right
+    show Yuki SideDisappointed1
+    show Kyon Puzzle1
     "\"Well,\" he said, frowning, \"I already {i}know{/i} that there's supposed to be a huge closed space incident tomorrow. Do you have any advice on that front?\""
-    show Yuki Talk2 at left
-    show Kyon Worry1 at right
+    show Yuki Talk2
+    show Kyon Worry1
     "Her eyes ponderously swung back to meet his. \"Seek happiness.\""
     nvl clear
-    show Yuki Side2 at left
-    show Mikuru Cower Towel Smile2:
-        xalign 0.7 yalign 1.2
+    show Yuki Side2
+    show Mikuru Cower Towel Smile2
     show MBlush Cower Towel:
         xalign 0.7 yalign 1.2
     "\"Er, um,\" Mikuru managed, her face turning red, \"you should ... make the first move. Suzumiya-san is just ... stressed that.... Well, I probably shouldn't say, either. But I trust you to sort things out!\""
-    show Kanae Night Hap1:
-        xalign 0.3 yalign 1.
-    show Mikuru Cower Towel Worry1:
-        xalign 0.7 yalign 1.2
+    show Kanae Night Hap1
+    show Mikuru Cower Towel Worry1
     "\"Go Sempai!\" Kanae cheered again. \"I'm confident he can do it!\""
     nvl clear
-    show Kanae Night Smile1:
-        xalign 0.3 yalign 1.
-    show Yuki Talk1 at left 
+    show Kanae Night Smile1
+    show Yuki Talk1
     "\"If you are ready to proceed?\" Yuki asked, turning her gaze to Kyon again."
-    show Yuki Side1 at left
-    show Kyon Neutral2 at right
+    show Yuki Side1
+    show Kyon Neutral2
     "\"Yeah,\" he agreed. \"No need to put off your error correction any further than required.\""
     nvl clear
-    show Yuki Talk1 at left
-    show Kyon Neutral3 at right
+    show Yuki Talk1
+    show Kyon Neutral3
     "\"Understood. Initializing,\" Yuki announced, and for a moment, Kyon wondered how Kanae could not have noticed being teleported as the world exploded away around him."
     nvl clear
     play sound "SE/ShieldLaunch.wav"
@@ -932,4 +965,3 @@ label SF2:
     nvl clear
 
     jump SF3
-
