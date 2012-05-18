@@ -1299,22 +1299,22 @@ init python:
     style.movie = Style(style.default)
     # Comment everything with "style.movie." below to disable the {=movie}{/=movie} tag effects
     # # style.movie.font = "DejaVuSansMono.ttf"
-    if persistent.text_styling == "Extra":
-        style.movie.font = "DejaVuSerif.ttf"
+    # if persistent.text_styling == "Extra":
+    #     style.movie.font = "DejaVuSerif.ttf"
     # # style.movie.size = 23
     # # style.movie.kerning = 1
     
     # Loud voice
     style.loud = Style(style.default)
     # Comment everything with "style.loud." below to disable the {=loud}{/=loud} tag effects
-    if persistent.text_styling == "Extra":
-        style.loud.size = 24
+    # if persistent.text_styling == "Extra":
+    #     style.loud.size = 24
     
     # Shouting voice
     style.shout = Style(style.default)
     # Comment everything with "style.shout." below to disable the {=shout}{/=shout} tag effects
-    if persistent.text_styling == "Extra":
-        style.shout.size = 32
+    # if persistent.text_styling == "Extra":
+    #     style.shout.size = 32
     
     # Quieter voice
     style.quiet = Style(style.default)
@@ -1325,8 +1325,8 @@ init python:
     # Whispering voice
     style.whisper = Style(style.default)
     # Comment everything with "style.whisper." below to disable the {=whisper}{/=whisper} tag effects
-    if persistent.text_styling == "Extra":
-        style.whisper.size = 15
+    # if persistent.text_styling == "Extra":
+    #     style.whisper.size = 15
         
     renpy.register_style_preference("text", "Extra", style.movie, "font", "DejaVuSerif.ttf")
     renpy.register_style_preference("text", "Extra", style.loud, "size", 24)
@@ -1504,7 +1504,7 @@ init -1 python:
         return im.MatrixColor("Backgrounds/KBDHLogo-White.png", color_matrix(ecfg)), None
         
     if persistent.text_styling == None:
-        persistent.text_styling = "Extra"
+        persistent.text_styling = "Vanilla"
     
     if persistent.eyecatch_styling == None:
         persistent.eyecatch_styling = "Dissolves"
