@@ -1533,7 +1533,9 @@ init -1 python:
             ("Credits", "credits", True),
             ("Credits (rolling)", "credits_roll", True),
             ("Another testbed, Eyecatchies", "test_Z0_eye", True),
-            ("Another testbed, Title cards", "test_Z0_titles", True)],
+            ("Another testbed, Title cards", "test_Z0_titles", True),
+            ("A test!", "test2", True)
+            ],
         ]
         
     ecbg = "black"
@@ -1968,6 +1970,7 @@ label eyecatch_generic(date1="", date2="", pause_time = 3.0, r = 0, ecbg = "900"
     pause (pause_time * 0.3)
     show eyeDateColor 2 at date_pos with wiperight
     pause (pause_time * 0.7)
+    centered "{nw}" # If it skips over the out transitions, then it really messes up the rolling credits later. Don't ask me why.
     hide KBDHLogoColor
     hide eyeDateColor
     with eyecatch_transition_out

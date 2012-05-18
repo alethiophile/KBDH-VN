@@ -384,6 +384,7 @@ label SF3:
     $ _window = False
     # scene black with Dissolve(3.0)
     $ renpy.pause(.5, hard=True)
+label test2:
     call eyecatch_generic("", "", 8, 5, "#fff", "#000")
     scene white
 
@@ -433,7 +434,7 @@ label SF3:
     
     call eyecatch_fancy("Thursday, April 21") from SF3_sc002
     
-label test2:
+#label test2:
     scene almostblack two with fade
     queue music "Music/Aruame.mp3"
     "She woke up, staring at the ceiling of her room and blinking. She'd had a dream.... She knew it was important, but the details kept slipping just out of her reach. She got out of bed and went about her morning routine, concentrating on the hazy recollections. Kyon was there ... and it was at school."
