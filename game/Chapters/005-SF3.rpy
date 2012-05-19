@@ -389,7 +389,7 @@ label test2:
     scene white
 
     # call eyecatch("Thursday, April 21") from SF3_sc001
-    jump credits_roll
+    #ump credits_roll
     
     call eyecatch_fancy("", "", 8, "white") from SF3_sc001
     
@@ -977,7 +977,8 @@ label test2:
     show Tsuruya Smile3 at center_RightScreen
     extend "thudding noise and an eerie silence. \"Lunch with the brigade is exciting,\" Tsuruya decided, while Kanae sniffled meekly and blew her nose on her handkerchief."
     nvl clear
-    
-    #jump HAB1
     stop music fadeout 2
+    
+    jump HAB1
+    
     return

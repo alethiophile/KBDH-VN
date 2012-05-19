@@ -1,4 +1,4 @@
-#label Fi1:
+label Fi1:
 label Test:
     stop music fadeout 3
     #queue music
