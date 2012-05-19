@@ -502,3 +502,5 @@ label HAB2:
     "\"That makes sense!\" She abruptly moved away from him, before turning around and giving him an unabashed eyeful. \"Okay, now I'll scrub your back!\""
     "He felt suddenly that he was in danger of significantly more blood loss than from his just-stitched eyebrow."
     nvl clear
+    
+    jump Fi1

@@ -561,3 +561,5 @@ label HAB1:
     "\"Hmm,\" Kyon mused, handing the empty bento back to her. \"That's a good point! Thanks, Haruhi.\""
     "She nodded, catching another gesture from Sakanaka and turning her head in time to see the other girl wink at her and make a small 'victory' sign. Haruhi couldn't help but grin at her friend and return the sign."
     nvl clear
+    
+    jump HAB2
