@@ -398,46 +398,82 @@ label Test:
     "\"Well...\" Mikuru began."
     nvl clear
     
-    
+    scene bg hallway with fade
     "Kyon's 'usual spot' for reading notes found in the shoe locker was the boy's bathroom — last stall. If Mikuru didn't remember leaving him the note, it was obviously the older Mikuru who had left it. And the box that he hadn't found the time to open. He was just contemplating opening it when his cell notified him of an incoming text: \"You meet with Mikuru yesterday at her train station after school. You owe me big time!\""
+    #scene bg Bathroom with fade
+    show Kyon Neutral2 Flip at left with dissolve
     "\"Thanks, Haruhi,\" he muttered at the message as he stepped into the unlocked stall, almost mashing his face into a very familiar chest again."
     nvl clear
+    show MikuruBig Hap3 at right with dissolve
     "\"I thought you said mine were bigger?\" the older Mikuru asked with a pout, undoing the top two buttons of her shirt. \"And look, the star-shaped mole — she doesn't have one of those, does she?\""
-    "He blinked, staring at the cleavage in question before forcing his eyes up to meet hers. She was amused despite the pout, eyes narrowed in mirth, still dressed in the white blouse and miniskirt, though she was wearing outdoor shoes. His own indoor shoes were going to be ruined soon, he deduced. \"Lately,\" he said without preamble, \"it seems that every other thing that happens to me is right out of the pages of a poorly plotted ero manga.\""
+    show Kyon Worry3 Flip
+    "He blinked, staring at the cleavage in question before forcing his eyes up to meet hers. She was amused despite the pout, eyes narrowed in mirth, still dressed in the white blouse and miniskirt, though she was wearing outdoor shoes. His own indoor shoes were going to be ruined soon, he deduced. {nw}"
+    show Kyon Sigh2 Flip
+    extend "\"Lately,\" he said without preamble, \"it seems that every other thing that happens to me is right out of the pages of a poorly plotted ero manga.\""
     nvl clear
+    show MikuruBig Quest1
     "She blinked at him in confusion. \"Ah ... I think we should start this conversation over?\""
+    show Kyon Unhap6 Flip
     "He slapped himself, shaking his head to clear it. \"Yes,\" he agreed. \"Sorry. It's been a strange day— Make that week. Even by life-with-Haruhi standards. Um ... I'm guessing it's a critical issue if you're here?\""
+    show MikuruBig Grin1
     "\"A small thing,\" she said in answer, smiling at him again. \"But somewhat critical, yes.\""
+    show Kyon Neutral2 Flip
     "\"Where do I start?\" he asked."
     nvl clear
+    show MikuruBig Smile3
     "She pointed at the box he was holding in his right hand. \"Open it up,\" she said."
-    "He shrugged and pocketed the cell phone, folding the box's lid back and peering inside. Other than some crumpled paper for padding, the only thing within was a wrist watch with a leather strap. \"Um, thanks,\" he said, lifting it out and staring at it. Who used a watch these days anyway? Everyone could tell time with their cell phones, only children and folks like ... Mikuru.... \"Oh! Is this like the watch you wear?\" He turned his eyes to hers curiously."
+    show Kyon Neutral3 Flip
+    "He shrugged and pocketed the cell phone, folding the box's lid back and peering inside. Other than some crumpled paper for padding, the only thing within was a wrist watch with a leather strap. \"Um, thanks,\" he said, lifting it out and staring at it. Who used a watch these days anyway? {nw}" 
+    show Kyon Neutral1 Flip
+    extend "Everyone could tell time with their cell phones, only children and folks like ... Mikuru.... \"Oh! Is this like the watch you wear?\" He turned his eyes to hers curiously."
     nvl clear
+    show MikuruBig Hap3
     "She nodded brightly. \"That's right,\" she told him. \"You know we can't bring things back ... that's forbidden. But these work with modern technology from this era, so I wish it could be nicer, but it should still be useful for you anyway.\""
     "Nodding, he put it on his left wrist after a moment of consideration, realizing that his cell phone would work for that, too.... Then again, he might need to shut his phone off at times, so having a backup would ultimately be for the best."
     nvl clear
+    show MikuruBig Neutral2
     "\"Well, that's the critical thing at the moment,\" she said, nodding. \"Now, will you come with me?\""
+    show Kyon Puzzle1 Flip
     "\"Er, okay,\" he agreed, nodding. \"But I'm not sure I understand...?\""
+    show MikuruBig Grin2
     "\"Don't worry about it,\" she said, shaking her head and placing her hands on his shoulders. \"I'll show you. Now, close your eyes?\""
+    scene 
     nvl clear
+    scene almostblack two with fade
+    scene bg Alley with fade
+    show MikuruBig Grin2 at right with dissolve
+    show Kyon Neutral1 Flip at left with dissolve
     "\"Right....\" That familiar, unsettling lurch of time travel. When he opened his eyes, he was standing in an alley not far from a train station, the position of the sun.... He gave up trying to figure it out, remembering he had been given a watch for just that reason. \"Now we're back to yesterday, not long after school,\" he observed, marveling at the mechanical hands as they adjusted themselves to the present time, and the small digital display giving the day, month, and year corrected itself as well."
     "\"Exactly right!\""
     nvl clear
+    show Kyon Smile3 Flip
     "\"Nice. Thanks, Asahina-san. I appreciate this. Does it do anything else?\" Very likely it let them track him, but considering he had no way to move through time on his own, that didn't bother him."
-    "\"Hmm, well, this is where I leave you for today,\" she answered with a smile. \"You'll have to ask my younger self any other questions you might have. And I'm afraid that my identity is still classified to her.\" At his sharp look, she ducked her head slightly. \"Okay, I'll give you something good to keep that secret....\" She trailed off with a giggle, closing in to plant another electrifying kiss on his lips. \"Now, take good care of that younger Mikuru~!\""
+    show MikuruBig Hap3
+    "\"Hmm, well, this is where I leave you for today,\" she answered with a smile. \"You'll have to ask my younger self any other questions you might have. And I'm afraid that my identity is still classified to her.\" At his sharp look, she ducked her head slightly. {nw}"
+    hide Kyon
+    hide MikuruBig
+    show MKiss
+    extend "\"Okay, I'll give you something good to keep that secret....\" She trailed off with a giggle, closing in to plant another electrifying kiss on his lips. \"Now, take good care of that younger Mikuru~!\""
     nvl clear
+    hide MKiss
+    show Kyon Neutral5 Flip
     "\"Bwah,\" he managed, recovering his senses after she had gone — again. Some day, he resolved, he was going to point out that they hadn't had whatever first kiss she thought she was following up on."
     "It was a low priority item, but some day."
     "Absolutely."
     nvl clear
+    #scene TrainStation
+    show Kyon Neutral3 at center
     "Still somewhat dazed, he wandered out of the alley and towards the train station. \"Right,\" he realized, seeing that the next train wouldn't be in for several minutes. He pulled his cell phone from his pocket and frowned. His other self would just be getting off at a different station with Kanae and Haruhi. He hadn't received any calls, but even so...."
     "Scrolling through his phone history, he made an entry in the address book for Mori, then double-checked Tsuruya's before finding Koizumi and calling the esper up. \"Hello?\" Koizumi answered after a single ring. \"This is Koizumi!\""
     nvl clear
+    show Kyon Neutral2
     "\"Hey, Koizumi,\" he greeted the other boy. \"Listen, would it be problematic if I were to call Mori-san and ask for a favor?\""
     "\"I ... don't suppose it would be problematic to speak with her,\" Koizumi said after a moment of thoughtful hesitation. \"But, what kind of favor?\""
+    show Kyon Sigh2
     "Remembering what Mori had mentioned in the car, he explained, \"I'm going to have the Tamaru brothers pulled from watching Asahina-san and moved over to watch Tsuruya-kun; she's going to need it.\""
     nvl clear
     "\"Um ... that's ... very delicate territory for the Organization, as I understand it,\" Koizumi began apologetically. \"I don't know that I could reasonably relay that request.... Er, that is, I can ask for you, but it seems likely that she would refuse to help.\""
+    show Kyon Sigh1
     "\"Hmm, you're probably right,\" he realized with a frown. \"Well, in that case, I have to take care of something else. Sorry for the trouble, but thanks, Koizumi.\""
     nvl clear
     "\"No trouble at all!\" the esper assured cheerfully. \"If you need anything else, call me any time!\""
@@ -445,130 +481,216 @@ label Test:
     "After disconnecting, he pulled up Mori's number and dialed it."
     "\"H...hello?\" she answered, sounding a bit unsettled. \"Sir?\""
     nvl clear
+    show Kyon Puzzle1
     "\"Yeah, hey,\" he said, glancing around the train station, where a few other folks were having their own conversations with cell phones. \"This is a bit last minute, but I'm concerned about Tsuruya-kun. I need you to pull the Tamaru brothers from watching Asahina-san and have them keep an eye on Tsuruya-kun for me.\""
     "\"H...how do you know who's on assignment?!\" she asked in response. \"How did you get this number!?\""
     nvl clear
+    show Kyon Neutral2
     "\"Classified,\" he returned, dropping his volume and scanning for eavesdroppers. \"But trust me; if you don't do this, something could happen to damage the Organization's relationship with the most powerful ninkyo dantai family in town. If that's too much for you, just watch her and I'll take care of things myself.\" He reviewed what he had just said, and restrained the urge to slap himself again. Did he just say 'ninkyo dantai' aloud in public?"
     nvl clear
     "\"...very well, Sir,\" she grudgingly agreed. \"But this is all on your head if it goes wrong.\""
+    show Kyon Sigh2
     "\"Yep,\" he agreed, hanging up and sighing before shutting off his phone."
+    show Mikuru Casual Quest1 at left
     "\"Kyon-kun?\" a familiar voice from behind him asked in surprise."
     nvl clear
-    
-    
-    
+    scene almostblack two with fade
+    #scene bg trainstation with fade
+    show Kyon Sigh2 Flip at left
+    show Mikuru Casual Quest1 at right
     "Mikuru stared in surprise, not expecting to see Kyon there when she reached her train station. She smiled weakly, tilting her head to one side. \"Is something wrong?\" she asked in concern, looking closely at his face. \"I thought you were going to speak with your parents? And what's that mark on one cheek?\""
+    show Kyon Neutral1 Flip
     "\"It's nothing,\" he assured her. \"I, uh ... slipped. Anyway, my father doesn't get home until late this evening, so, judgment has been delayed.\""
     nvl clear
+    show Mikuru Think Casual Quest2
     "\"What about Suzumiya-san?\" she pressed, worried."
+    show Kyon Smile3 Flip   
     "\"Everything's taken care of,\" he said with a grin. \"Actually, I'm here to see you.\" Her heart gave a tiny excited lurch."
+    show Mikuru Think Casual Sup1
     "\"M...me?\" she managed in reply, unable to meet his eyes. \"W...what's going on? Do we need to go somewhere? And when?\" she asked, looking around the train station. There were far too many people here.... There was a nearby alley that might be subtle enough, but she was a bit scared of the idea of walking into such a place so openly."
     nvl clear
-    "\"Um, nothing like that,\" he said, shaking his head quickly and frowning. \"Man, I'm starting to depend really heavily on everyone.... That can't be good. Um, for today, I'm standing in for the Organization folks who usually watch over you,\" he explained, ducking his head slightly. \"I'm not much good at being a shadowy watcher, or whatever, so I thought I'd see if we could walk together, or if there was anything I could help you with.\""
+    show Kyon Sigh2 Flip
+    "\"Um, nothing like that,\" he said, shaking his head quickly and frowning. \"Man, I'm starting to depend really heavily on everyone.... That can't be good. {nw}"
+    show Kyon Sigh5 Flip
+    extend "Um, for today, I'm standing in for the Organization folks who usually watch over you,\" he explained, ducking his head slightly. \"I'm not much good at being a shadowy watcher, or whatever, so I thought I'd see if we could walk together, or if there was anything I could help you with.\""
     nvl clear
+    show Mikuru Casual Think Quest1
     "She had thought Koizumi's associates might have been tracking her, but she wasn't actually certain before. She tried not to think about it; she had Kyon's attention for the moment, not theirs. \"If Kyon-kun isn't too busy, there is something I could use help with,\" she said hesitantly. \"Um, it's a bit of shopping, if that's not too much trouble...?\""
+    show Kyon Smile3 Flip
     "He spread his arms in a shrug and grinned. \"If that's all you need, no problem,\" he assured her. \"I'd be glad to help you out. What are you looking for?\""
     nvl clear
+    scene bg TownStreetDay2
+    show Kyon Smile3 Flip at TenthLeft
+    show Mikuru Casual Smile2 at center
     "She smiled softly and turned away, beckoning him to follow. He fell into step at her side with no hesitation, hands in his pockets casually. Trying to be a bit subtle about it, she looked at him sidelong. His uniform was nearly immaculate, as though he'd put it on and not even sat down for a day of school. Lately, he had seemed drained of energy, due to their recent late night training sessions with Nagato. After a minute of study, she realized he was walking slightly differently, shoulders a bit more relaxed, chin slightly higher. Other than the already fading mark across one cheek, he looked ... really good."
     nvl clear
     "A part of her hoped that everyone around them got the mistaken impression they were a young couple out on a date. Her best chances at {i}that{/i} had derailed into a long explanation on her true self and the nature of time-planes, or 'important missions' from her superiors. While she was glad she could be as honest with Kyon as her conditioning allowed, it also bothered her the way his eyes had initially gone distant once she told him it was only because of Haruhi's presence that she was around."
     nvl clear
     "She resisted the temptation to take his arm in hers. At the moment, he seemed relaxed but energetic. She hadn't been feeling {i}quite{/i} as exhausted lately, and Kanae seemed to be holding up better, too.... But Kyon had an awful lot of energy left, for someone who had just finished a full day of school."
+    show Mikuru Casual Smile3
     "\"You seem livelier these days,\" she finally judged, giving him a happy smile. \"I'm glad for you!\""
     nvl clear
+    show Kyon Sigh5 Flip
     "\"Some days are better than others,\" he agreed, nodding. \"Today might have its difficulties for me, but it's going pretty well for me just now.\""
+    show Mikuru Casual Quest1
     "\"I like that! It's very positive. Are you, um, working with Koizumi-kun's Organization, now?\" she asked, as the crowds near them thinned out, granting a small degree of privacy."
+    show Kyon Smile3 Flip
     "He smirked at something and shook his head. \"Not really,\" he replied. \"Some of our goals overlap. I'm all about the SOS Brigade — you know that.\""
     nvl clear
+    show Mikuru Casual Sigh1
     "\"Really?\" she asked doubtfully."
+    show Kyon Sigh5 Flip
     "He glanced at her and removed his hands from his pockets, spreading them in a helpless shrug. \"Okay, you got me,\" he admitted. \"For me, it's the people who are in the brigade. Call it what you will; I'm a sucker for the anime cliche. You know, friends to the end, that kind of thing?\""
     nvl clear
+    show Mikuru Casual Smile1
     "She giggled, shaking her head. \"That sounds better,\" she agreed. \"What's wrong with that?\""
+    show Kyon Neutral1 Flip
     "\"Mmm, nothing, I guess.\""
+    show Mikuru Casual Neutral1
     "She shook her head again, giving him a smile before gesturing to a large storefront. The outside windows were filled with swaths of cloth, sewing supplies, and layouts of do-it-yourself clothing patterns. \"Um, I'd like to get some things from here.\""
     nvl clear
+    show Kyon Neutral2 Flip 
     "He raised an eyebrow, scanning around as they stepped inside. High shelves were covered with full bolts of cloth, and at a glance, he was the only remotely male figure in the entire store, aside from a mannequin in a heavy winter coat, obviously still up from the last sale, and overdue to be redressed or put into storage. \"Sure,\" he said, shrugging. \"This is stuff you know much better than I do, so I hope you don't mind if I just carry things for you?\""
     nvl clear
+    show Mikuru Casual Hap1
     "Embarrassingly enough, that was what she had wanted his help for more than anything else. \"That's no trouble!\" she assured him, leading the way to the back, where the sewing machines were. \"Do you think Suzumiya-san will mind if I keep a sewing machine in the club room? I wanted to get an over-locking sewing machine to make things faster than I can by hand, but my place is a bit crowded....\""
+    show Kyon Neutral5 Flip
     "He scratched his head, looking around at the display models. \"As long as you used it, I think she'd most likely approve of it,\" he said slowly. \"But, keep in mind, she'll also probably take it as an excuse to have you make even more costumes!\""
     nvl clear
+    show Mikuru Casual Smile2
     "\"T...that's okay,\" she said, turning to examine one of the more compact designs. \"Um.... I'm ... allowed to learn all about current techniques for sewing, cooking ... that sort of thing.\""
-    "\"Allowed?\" he mused. She winced; that probably should have been classified. \"So, it's research for your superiors?\""
+    show Kyon Neutral1 Flip
+    "\"Allowed?\" he mused. {nw}"
+    show Mikuru Casual Sad2
+    extend "She winced; that probably should have been classified. \"So, it's research for your superiors?\""
+    show Mikuru Casual Sigh1
     "\"A bit,\" she admitted, moving to the next model. \"They don't ... really think it's that important, but it's one of the things I'm allowed to do.\""
     nvl clear
+    show Kyon Ser3 Flip
     "\"I don't like the way that sounds,\" he said after a moment. \"I understand that you have to be careful to make sure that predetermined events aren't altered, and things like that.... But at the extent where you can't do anything on your own?\""
+    show Mikuru Casual Ser2
     "\"The future can be very delicate,\" she mumbled, repeating the rhetoric she had been given herself so often. \"Personal indulgences should never jeopardize causality.\""
+    show Kyon Puzzle1 Flip
     "\"You're more like Nagato than I realized,\" Kyon mumbled, looking away."
     nvl clear
+    show Mikuru Casual Think Sup1
     "\"What?! I don't....\" She bit her lip, staring at the floor. But he thought highly of the alien, didn't he? Surely he couldn't have meant it as an insult. \"How do you mean?\""
+    show Kyon Sigh2 Flip
     "\"Er, sorry,\" he sighed, rubbing at his temples. \"That was the wrong thing to say. You said once that you thought that Nagato envied you because she knew too much?\""
+    show Mikuru Think Casual Quest3
     "Mikuru nodded, finally settling on an economical over-lock sewing machine, and struggling to pull it free from the boxes around it."
     nvl clear
     "\"Let me,\" Kyon insisted, reaching over her and grabbing the plastic handle across the top of one of the boxes, lifting it easily one-handed."
+    show Mikuru Think Casual Quest2
     "\"Ah, thanks,\" she managed. \"Um, even though it's different, I think I can understand why she's anxious. Sometimes, I do know enough about a mission's details, and knowing isn't much help — it can cause a lot of stress. In Nagato-san's case, wouldn't she know ... everything?\""
     nvl clear
+    show Kyon Neutral3 Flip
     "\"Maybe, but that's not the point,\" he said, shaking his head. \"She doesn't, anymore. If you had the choice between knowing nothing at all, or knowing everything, and in either case you had to accomplish some goal, which would you prefer?\""
+    show Mikuru Think Casual Quest1
     "\"Actually,\" she said hesitantly, \"I wouldn't mind knowing {i}nothing{/i}, if I was going to accomplish the goal anyway. In that case, wouldn't knowing anything just be a burden? If I was absolutely certain of success, then I would agree that ignorance is bliss. It's the uncertainty that bothers me so much.\""
     nvl clear
+    show Kyon Neutral1 Flip
     "He blinked at her, his mouth dropping open slightly."
+    show Mikuru Think Casual Sad1
     "\"Ah, that sounds stupid,\" she said fretfully, looking away from his reaction. \"Um, I suppose it would be better to know everything?\""
+    show Kyon Neutral5 Flip 
     "\"N...no, you're absolutely right,\" he said, shaking his head. \"That's.... Wow.\" He shook his head again, then gestured down the aisle. \"That was an insightful and eye-opening observation, Asahina-san.\""
     nvl clear
+    show Mikuru Think Casual Quest2
     "\"Was it really so helpful?\" she wondered."
+    show Kyon Neutral1 Flip
     "\"Yeah, as a matter of fact. But, anyway, the thing of it is this; you and Nagato are both severely limited by your abilities. Right now, she's separate from the IDSE, so she's got less restrictions than usual, but she's also in a lot of danger. I asked her ... you may remember ... during that endless August, if she'd ever done anything 'fun' for herself during the entire series of time loops.\""
     nvl clear
-    "\"Of course she hadn't,\" Mikuru remembered. \"But, how is that like ... me?\" she managed, the implications sinking in. \"Oh ... well ... that's true, isn't it?\" She sighed, stopping before a bolt of fabric and running her fingers across it without seeing. \"I suppose in a way you're right,\" she said in a small, nervous voice. \"D...did you mean what you told me last Sunday? After Koizumi left and we were alone?\""
+    show Mikuru Casual Quest1
+    "\"Of course she hadn't,\" Mikuru remembered. \"But, how is that like  {nw}"
+    show Mikuru Casual Sad1
+    extend "... me?\" she managed, the implications sinking in. \"Oh ... well ... that's true, isn't it?\" She sighed, stopping before a bolt of fabric and running her fingers across it without seeing. \"I suppose in a way you're right,\" she said in a small, nervous voice. \"D...did you mean what you told me last Sunday? After Koizumi left and we were alone?\""
+    show Kyon Puzzle1 Flip 
     "He didn't meet her eyes. \"Well, you know me,\" he said, shifting his shoulders. \"After your dizzy spell?\""
     nvl clear
+    show Mikuru Casual Quest1
     "Her face flushed, and she managed a nod. \"I don't know what came over me,\" she admitted. \"It seemed a familiar sensation, for some reason....\""
+    show Kyon Neutral2 Flip
     "\"Er, probably low blood sugar,\" he reasoned, nodding quickly. \"Best not to dwell on it.\""
+    show Mikuru Casual Quest2
     "\"Perhaps you're right. Um, but I remember what you said, about ... making my own impressions in the world, and I wonder if it can really be done?\""
     nvl clear
+    show Kyon Smile3 Flip
     "\"That's absolutely already happened,\" he returned, grinning. \"Say ... when we nailed that can to the ground?\""
     "She nodded, her face heating up again."
     "\"Well, even if you want to say it was me doing it, I never would have if you hadn't translated those instructions. Even though the initiative may have been provided by the future, without you, that event never could have happened!\""
     nvl clear
     "Sometimes, she thought, his relative ignorance of the mechanics of temporal physics made him something of an idiot savant. She could think of twelve laws that refuted his explanation, but they were all smashed aside by the reality that as far as she could tell, he was {i}right{/i}. It should have been impossible for the events that she had participated in last December, too.... Though, that recollection became immediately hazy every time she tried to focus on anything except for Kyon's injuries. And those ... she did not like to focus on at all."
     nvl clear
-    "\"That's just what you said last Sunday,\" she said, smiling weakly. \"And, um.... That's what I want! I mean, I'm not ... very helpful, or reliable ... I'm nothing like Nagato-san, or even Koizumi-kun.... I'd like some day to be the Mikuru who rescues you, not the one who ... well.\" She sighed and hung her head."
+    show Mikuru Casual Smile2
+    "\"That's just what you said last Sunday,\" she said, smiling weakly. \"And, um.... That's what I want! I mean, I'm not ... very helpful, or reliable ... I'm nothing like Nagato-san, or even Koizumi-kun.... I'd like some day to be the Mikuru who rescues you, not the one who ... well.\" {nw}"
+    show Mikuru Casual Unhap3
+    extend "She sighed and hung her head."
+    show Kyon Sigh1 Flip
     "\"I'm not sure where you're going with this but I can tell you with absolute certainty that you're wrong,\" he said resolutely. \"You're much stronger than you give yourself credit for, especially to handle as much as you do without knowing the reasons behind it.\""
     nvl clear
+    show Mikuru Casual Hap2
     "\"You really think so?\" she asked hopefully, bringing her head up and nervously meeting his eyes."
+    show Kyon Neutral2 Flip
     "He nodded, looking around the store. \"I know it. Um, anyway, you never seem very happy when you talk about your work. So, sorry if I was bothering you.\""
+    show Mikuru Casual Smile2
     "\"It's no bother!\" she said, giving him a smile she didn't fully feel. \"I'm just always afraid I'll say the wrong thing and only say 'classified information' instead of something genuinely helpful.\""
     nvl clear
+    show Kyon Neutral1 Flip
     "\"Really?\" he mused. \"Over the last few days, I've come to develop a whole new level of respect for the phrase, to be honest.\""
+    show Mikuru Casual Sigh1
     "\"There is a limit to the novelty,\" she said, shaking her head. \"You can't think it's fun to want to explain something to someone and be forbidden, do you?\""
     nvl clear
+    show Kyon Pain2 Flip
     "\"No,\" he admitted, grimacing again. \"I didn't think of that. Well, let's talk about something more cheerful?\""
+    show Mikuru Casual Smile2
     "\"Okay,\" she agreed. \"What would you like to discuss?\""
+    show Kyon Neutral2 Flip
     "\"Ah ... so, what else are you looking for here?\" he asked, glancing around."
     nvl clear
+    show Mikuru Casual Think Quest1
     "\"Um, some pattern paper, maybe?\" she mused. \"I'll need more pins ... and more cloth, for certain....\" She looked around the store again, trying to decide where she would go next. \"Um, or did you want to leave?\" she worried aloud, turning to look at him with concern. Making him spend so long listening to her speak of such things at a sewing supply store ... surely there were things he'd rather be doing with his time."
     nvl clear
+    show Kyon Smile3 Flip
     "\"Hey, I asked if there was anything I could help you with,\" he told her, grinning. \"This is better than buying tea because of mysterious instructions or getting into another fight.\" He winced when he caught her flinch at that remark. \"Ah, nevermind that,\" he said quickly, shaking his head. \"Suffice to say that I don't mind helping you at all.\""
     nvl clear
     "She knew she should just thank him politely and finish her shopping, but she just couldn't forget what they had spoken of after parting with Koizumi that fateful Sunday, where Kyon had told Haruhi everything. She spent a long minute struggling with what she should do, feeling her face heat up as she dithered. She practically leapt in shock when he tapped her shoulder, leaning towards her with concern in his eyes."
     nvl clear
+    show Kyon Worry1 Flip
     "\"You okay?\" he asked. His concern turned to irritation. \"More orders from the future?\""
+    show Mikuru Casual Sigh1
     "\"N...no,\" she managed, shaking her head quickly. He relaxed visibly and she realized she had been running her fingertips over the same piece of cloth over and over for several minutes."
     nvl clear
+    show Mikuru Casual Quest1
     "\"J...just thinking,\" she said, taking the bolt — she didn't even know what it was, but if she didn't do something to distract herself from her embarrassment she was going to do something she'd regret. \"Could you carry this for me?\" she asked, not meeting his eyes."
+    show Kyon Smile6 Flip
     "\"Anything for you,\" he agreed. She wished and hoped she could ask him what he meant by that ... what the complete implications were. But she knew it was an impossible dream, and even if it {i}were{/i} possible, with Haruhi...."
     nvl clear
+    #scene
+    show Mikuru Think Casual Quest1 at center with dissolve
+    show Kyon Neutral3 Flip at TenthLeft
     "Mumbling a nervous thanks to the boy, she strolled around the store, unable to bring herself to speak on anything else for fear of causing what she knew would only be trouble later, while he struggled to strike up a conversation about anything. After buying far more cloth than she could ever feasibly need, and further burdening Kyon with it all, they finally left the store."
     nvl clear
+    show Kyon Neutral1 Flip
     "\"Where next?\" Kyon asked, glancing at his wristwatch briefly."
     "\"Let's drop this off at my place,\" she said hesitantly."
     nvl clear
+    #scene 
+    show Kyon Neutral3 at right with dissolve
+    show Mikuru Casual Neutral1 at left with dissolve 
     "He nodded and followed her the three blocks to her studio, a single-room apartment not far from the train station. After letting him in, he kicked off his shoes and unburdened himself in the corner she directed, before he took a look around, studying her temporary home. She felt embarrassed, even though everything was neat and orderly. Her futon was folded away, she didn't have a television, and the only furniture of note was her desk and a second-hand kotatsu."
     nvl clear
+    show Kyon Neutral1
     "Still, she had managed to behave so far. \"Well,\" he said, when the silence began to drag uncomfortably, only punctuated by a growling stomach, \"is there anything else I can help you with, Asahina-san?\""
+    show Mikuru Casual Hap2
     "Her resolve snapped, and she blurted out, \"Let me treat you to dinner to thank you!\""
     nvl clear
     
-    
+    scene bg ClubroomRightDay with fade
+    show Mikuru Think Quest1 at right with dissolve
+    show Haruhi Neutral1 at left with dissolve
     "\"Um.... After he dropped off the sewing machine, he went home to speak with his father,\" Mikuru said, nodding."
+    show Haruhi Unhap1
     "Haruhi studied the other girl thoughtfully, catching the nervous hesitation in her answer. She raised an eyebrow. \"Really?\" she asked. \"Is that all?\""
     nvl clear
     "Mikuru nodded quickly again, though Haruhi was certain she saw a sheen of nervous sweat on her forehead. Oh, yes, she decided, narrowing her eyes at the time traveler. Kyon was going to answer for this. The only way he could possibly be in two places at once yesterday was with time travel ... and that meant an abuse of power, despite all of his warnings to her. As soon as she figured out how he had time traveled without letting the brigade's only time traveler know."
