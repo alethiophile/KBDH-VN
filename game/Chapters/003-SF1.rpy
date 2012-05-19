@@ -863,9 +863,11 @@ label SF1:
     play sound "SE/doorclose.mp3"
     extend "The excitable green-haired girl left as briskly as she arrived, closing the door behind her with an equally loud crash."
     nvl clear
+    $ _window = True
     show Haruhi Grin1 at right
     show Mikuru Maid Quest2 at center
     with move
+    $ _window = False
     "Muttering to himself, Kyon reached for the case, beaten to it by Haruhi as she snatched it across the table, undoing the metal latches and swinging it open. {nw}"
     scene bg ClubroomFullDay:
         xpos 0 ypos 0
@@ -946,14 +948,14 @@ label SF1:
     show Haruhi Grin2
     "\"Yeah,\" Haruhi jibed, rolling her eyes, \"you do love taking notes and paying attention in class. Without a good excuse to pay such weak attention, whatever would you do?\""
     nvl clear
-    $ renpy.layer_at_list([PanScene_OffCenterLToRight])
+    # $ renpy.layer_at_list([PanScene_OffCenterLToRight])
     show Kyon Smile3
     show Kanae Smile1
     show Yuki Right Neutral2
     "\"I beg your pardon?\" he asked, quirking one eyebrow higher. \"I don't have good excuses, I have {i}awesome{/i} excuses.\""
     nvl clear
     show Kyon Smile2
-    $ renpy.layer_at_list([PanScene_RightToOffCenterL])
+    # $ renpy.layer_at_list([PanScene_RightToOffCenterL])
     show Mikuru Maid Smile1
     show Haruhi Hap4
     "Haruhi grinned very brightly, chuckling. \"That's true,\" she allowed. {nw}"
