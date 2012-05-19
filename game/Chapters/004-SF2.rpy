@@ -197,16 +197,19 @@ label SF2:
     show Haruhi Crossed Eyeroll2
     extend "\"Excuse me?\" she asked, distracted from the free food by that last comment."
     show Haruhi Crossed Eyeroll1
-    $ renpy.layer_at_list([PanScene_RightToOffCenterR])
+    # $ renpy.layer_at_list([PanScene_RightToOffCenterR])
+    $ renpy.layer_at_list([PanScene_RightToOffCenterL])
     show Kanae Hap4
     show Koizumi Think Sup1
     "\"It was the first time, I.... I mean....\" Kanae blushed more brightly. \"It wore me out quite a bit, but with Sempai and Nagato-san, I don't mind at all!\""
     nvl clear
     show Kanae Smile3
-    show Haruhi Point Ang1
+    show Haruhi Point Ang1 zorder 1
     play sound "SE/impact.mp3"
+    $ renpy.layer_at_list([PanScene_OffCenterLToOffCenterR])
     "{=shout}\"Kyon!\"{/=shout} Haruhi screeched, standing up so quickly the chair beneath her rolled across the floor until it crashed into the wall behind her. {=loud}\"What is the meaning of this!?\"{/=loud}"
     show Haruhi Hips Ang4
+    # $ renpy.layer_at_list([PanScene_OffCenterRToRight])
     $ renpy.layer_at_list([PanScene_OffCenterRToRight])
     show Mikuru Sigh1
     "\"I'm pretty worn out from last night, too,\" Mikuru added, covering her mouth as she yawned."
@@ -266,8 +269,8 @@ label SF2:
     play sound "SE/doorclose.mp3"
     $ _window = False
     "As the esper marched out of the room, Kyon sighed and rubbed at his eyes, calling out, \"Good luck, Koizumi.\""
-    show Kanae Neutral1:
-         xpos 0.7 yalign 1.0  
+    show Kanae Neutral1 at center #:
+         # xpos 0.7 yalign 1.0  
     show Yuki Side1 at right
     with dissolve
     $ renpy.layer_at_list([PanScene_LeftToOffCenterR])

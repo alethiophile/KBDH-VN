@@ -438,13 +438,13 @@ screen preferences:
                 label _("Text Speed")
                 bar value Preference("text speed")
 
-            # frame:
-            #     style_group "pref"
-            #     has vbox
+            frame:
+                style_group "pref"
+                has vbox
                 
-            #     label _("Text Styling")#: [persistent.text_styling]")
-            #     textbutton _("Vanilla") action [SetField(persistent, "text_styling", "Vanilla"), StylePreference("text", "Vanilla")]
-            #     textbutton _("Extra") action [SetField(persistent, "text_styling", "Extra"), StylePreference("text", "Extra")]
+                label _("Text Styling")#: [persistent.text_styling]")
+                textbutton _("Vanilla") action [SetField(persistent, "text_styling", "Vanilla"), StylePreference("text", "Vanilla")]
+                textbutton _("Extra") action [SetField(persistent, "text_styling", "Extra"), StylePreference("text", "Extra")]
 
             frame:
                 style_group "pref"

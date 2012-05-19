@@ -1234,6 +1234,8 @@ init:
     image title 005 = Text("{space=480}{b}{size=+1}Thursday, April 21, 2011{/size}{/b}\n\n\n\n\"Chapter Seven: Practical Considerations for the Apocalypse\"\n\n\"...if that happens, and there's nothing else to be done, the next question is going to be survival. There are things more important than food, water, or even reasonable shelter. There's no reason to try and survive alone, unless you're just a die-hard, and even then you're still probably clinging to hope. So make sure you're not alone, or else there's not much reason to keep on going.\"\n\n\"Clearing the Event Horizon: How Close is Too Close?\" — Tadamichi Kyousuke", font="DejaVuSerif-Italic.ttf", size=18, line_leading=3, justify=True, xmaximum=750)
     image title 006 = Text("{space=480}{b}{size=+1}Thursday, April 21, 2011{/size}{/b}\n\n\n\n\"Chapter One: Crossing the Threshold\"\n\n\"...eventually, this means that you can reach a point where words no longer suffice. Civility is all well and good, but sometimes the simple message of overpowering force is the one that the situation requires. Use your judgment on when this moment is, but keep in mind that I call it a last resort for a reason; once you initiate violence, you're committed until victory or failure.\"\n\n\"The Last Resort: Violence and You\" — Tadamichi Kyousuke", font="DejaVuSerif-Italic.ttf", size=18, line_leading=3, justify=True, xmaximum=750)
     image title 007 = Text("{space=480}{b}{size=+1}Thursday, April 21, 2011{/size}{/b}\n\n\n\n\"Chapter Two: Excuses\"\n\n\"If you can't come up with a legitimate excuse, you have two fall-back options. First, you can take refuge in audacity and say something so outlandish you're dismissed (bonus points if you tell the truth with a straight face). And if that doesn't work, place the burden of justifying your whereabouts on someone else. If neither of these options pan out, run far, run fast.\"\n\n\"Cover\" — Author Unknown", font="DejaVuSerif-Italic.ttf", size=18, line_leading=3, justify=True, xmaximum=750)
+    
+    
 init python:
     config.layers.insert(1, 'upper')
     
@@ -1474,7 +1476,8 @@ transform PanScene_OffCenterRToRight:
 transform left_RightScreen:
     xpos 1.0 yalign 1.0    
 transform center_RightScreen:
-    xpos 1.367 yalign 1.0 # xalign 0.5 yalign 1.0    
+    # xpos 1.367 yalign 1.0
+    xpos 1.5 yalign 1.0 xanchor 0.5 # xalign 0.5 yalign 1.0    
 transform right_RightScreen:
     xanchor 1.0 xpos 2.0 yalign 1.0
     # xpos 1.712 yalign 1.0    
@@ -1516,7 +1519,7 @@ init -1 python:
         return im.MatrixColor("Backgrounds/KBDHLogo-White.png", color_matrix(ecfg)), None
         
     if persistent.text_styling == None:
-        persistent.text_styling = "Vanilla"
+        persistent.text_styling = "Extra"
     
     if persistent.eyecatch_styling == None:
         persistent.eyecatch_styling = "Dissolves"
