@@ -24,6 +24,8 @@ init:
     image bg KyonHouseNight = "Backgrounds/KyonHouseNight.png"
     image bg KyonHouseDay = "Backgrounds/KyonHouseDay.png"
     image bg KyonKitchenRight = "Backgrounds/KyonKitchenRight.png"
+    #image bg KyonKitchenLeft = "Backgrounds/KyonKitchenLeft.png"
+    image bg KyonHallway = "Backgrounds/KyonHallway.png"
     image bg TownStreetNight1 = "Backgrounds/TownStreetNight1.png"
     image bg TownStreetNight2 = "Backgrounds/TownStreetNight2.png"
     image bg TownStreetDay1 = "Backgrounds/TownStreetDay1.jpg"

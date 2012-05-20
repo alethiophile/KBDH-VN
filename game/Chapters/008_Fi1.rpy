@@ -1,5 +1,5 @@
 label Fi1:
-label Test:
+#label Test:
     stop music fadeout 3
     queue music "Music/NagatoTheme.mp3"
     scene bg YukiRoomCenter with fade
