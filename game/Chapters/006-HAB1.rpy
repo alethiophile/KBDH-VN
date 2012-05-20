@@ -13,30 +13,85 @@ label HAB1:
     
     scene bg hallway with fade
     play music "Music/suspicion.ogg"
-    show Kanae Neutral1 at TenthRight
+    show Kanae Neutral1 at HalfRight
     "After the lunch chime, Kanae had decided that she would return to the club room; if she were lucky, Sempai would be there! And if she weren't lucky, well, Sempai's friends were her friends, too, so that would be fine."
-    #show Ryo at left
+    show Ryo Neutral at TenthLeft #Neutral
     "But she had only made it a few steps down the hallway before a taller third year boy approached her, tape across his nose and a bruise marring his face deeply around one eye. He raised a hand in greeting before glancing around, then asked, \"Are you Michikyuu Kanae-san?\""
     nvl clear
     show Kanae Unhap2
     "\"Um,\" she managed, a bit unnerved by the delinquent-looking student before her. \"Yes? Are you looking for the SOS Brigade, maybe? I'm just a new member, so I don't know much yet.\""
     nvl clear
     show Kanae Unhap3
-    #show Ryo
-    "\"No, no,\" he said, glancing around nervously, then breaking into a smile that she really didn't trust; the kind of expression she'd seen on the rude boy who chased her across dimensions. For a panicked instance, she considered sliding away ... but she couldn't do that! Not with Sempai here, and for the first time in hundreds of worlds, someone who could help her learn how to slide better! What if she couldn't find her way back? It was still very hard, even with the practice that Yuki helped her get...."
+    show Ryo Neutral #Nervous
+    "\"No, no,\" he said, glancing around nervously, {nw}"
+    show Ryo Neutral #Grin
+    extend "then breaking into a smile that she really didn't trust; the kind of expression she'd seen on the rude boy who chased her across dimensions. For a panicked instance, she considered sliding away ... but she couldn't do that! Not with Sempai here, and for the first time in hundreds of worlds, someone who could help her learn how to slide better! What if she couldn't find her way back? It was still very hard, even with the practice that Yuki helped her get...."
     nvl clear
+    show Ryo Neutral #Grin - Open Mouth
     "\"Hey,\" he said suddenly, \"you know ... Kyon, right?\""
+    show Ryo Neutral #Grin - Closed Mouth
     show Kanae Hap2
     "\"Sempai?\" she said, smiling. Was this boy some sort of friend of her sempai's, asking for help? Maybe that was it.... \"Yes! Is something the matter?\""
+    show Ryo Neutral #Nervous
     show Kanae Smile1
     "\"Eh, no, I just heard....\" He trailed off and glanced around again, though the only ones around them were other students heading to their lunches, occasionally pausing to look at her or the taller boy. \"Well, there is one thing,\" he allowed. \"Could you come with me for a bit...?\""
-    #"\"I.... I think I'd better go see Sempai first,\" she decided, shaking her head."
-    #"The boy's face twisted in annoyance before he shook his head and declared abruptly, \"I need you to come with me; your 'sempai' is causing a lot of trouble to us!\""
-    #"At this point, all of the surrounding students had stopped moving, turning attention to the pair. Kanae backed up a few steps anxiously, and when the upperclassman moved towards her, she sprinted away as quickly as she could, managing to make it halfway to the clubroom before he seized her shoulder and brought her down to the hallway floor. She whimpered, her lunch spilling out of her bento all across the walkway, while more students crowded around. \"Help!\" she yelled, cowering when the boy, huffing for breath, grabbed her wrist and hauled her unceremoniously to her feet."
-    #"\"Shut up,\" he snapped, glancing around and dragging her away from the spilled lunch, \"come with me before—\""
-    #"\"You,\" a voice spat, using the rudest, most informal form of the word. The boy dragging her stilled, tightening his grip on her wrist as her sempai strode across the messy remnants of her lunch, eyes narrowed in annoyance. \"Let her go.\""
-    #"\"Sempai!\" she cheered, though her voice shook nervously."
-    #"The boy holding her jerked her roughly back when she tried to break free. \"Oh, yeah?\" he asked. \"I don't think so, not after yesterday! You're getting in way over your head, and you're about to learn a thing or two about screwing with the wrong people!\""
+    show Ryo Neutral #Nervous - Closed Mouth
+    show Kanae Sad1
+    nvl clear
+    "\"I.... I think I'd better go see Sempai first,\" she decided, shaking her head."
+    show Kanae Sad4
+    show Ryo Neutral #Angry
+    "The boy's face twisted in annoyance before he shook his head and declared abruptly, \"I need you to come with me; your 'sempai' is causing a lot of trouble to us!\""
+    nvl clear
+    show Kanae Sad4
+    show Ryo Neutral #Angry - Closed Mouth
+    "At this point, all of the surrounding students had stopped moving, turning attention to the pair. "
+    show Kanae Sad4 at TenthRight with move
+    extend "Kanae backed up a few steps anxiously, {nw}"
+    show Ryo Neutral at HalfLeft with move #Angry - Closed Mouth
+    extend "and when the upperclassman moved towards her, {nw}"
+    hide Kanae with moveoutright
+    extend "she sprinted away as quickly as she could, {nw}"
+    hide Ryo Neutral with moveoutright
+    show Ryo Neutral at HalfLeft
+    show Kanae Wince1 at center
+    with moveinleft
+    show Kanae Wince2
+    extend "managing to make it halfway to the clubroom before he seized her shoulder {nw}"
+    show Kanae Wince2:
+        xalign 0.5 yalign 1.0
+        linear 0.4 yalign 3.0
+    extend "and brought her down to the hallway floor. {w}She whimpered, her lunch spilling out of her bento all across the walkway, while more students crowded around. "
+    show Kanae Wince2:
+        xalign 0.5 yalign 3.0
+        linear 0.8 yalign 1.0
+    extend "\"Help!\" she yelled, cowering when the boy, huffing for breath, grabbed her wrist and hauled her unceremoniously to her feet."
+    nvl clear
+    stop music fadeout 2
+    show Kanae Wince1
+    show Ryo Neutral #Angry - Angrier Version
+    "\"Shut up,\" he snapped, glancing around and dragging her away from the spilled lunch, \"come with me before—\""
+    show Ryo Neutral #Angry - Closed Mouth
+    play music "Music/Hostiles.mp3"
+    "\"You,\" a voice spat, using the rudest, most informal form of the word. "
+    show Kyon Unhap4 at right with moveinright
+    extend "The boy dragging her stilled, tightening his grip on her wrist as her sempai strode across the messy remnants of her lunch, eyes narrowed in annoyance. {nw}"
+    show Kyon Ang2
+    extend "\"Let her go.\""
+    show Kyon Unhap4
+    show Kanae Hap3
+    "\"Sempai!\" she cheered, though her voice shook nervously."
+    nvl clear
+    show Kanae Smile1:
+        xalign 0.6 yalign 1.0
+    with fast_move
+    show Kanae Wince2:
+        xalign 0.6 yalign 1.0
+        linear 0.1 xalign 0.5
+    "The boy holding her jerked her roughly back when she tried to break free. "
+    show Ryo Neutral #Angry - Angrier Version
+    show Kanae Wince1
+    extend "\"Oh, yeah?\" he asked. \"I don't think so, not after yesterday! You're getting in way over your head, and you're about to learn a thing or two about screwing with the wrong people!\""
     #"\"Really?\" her sempai asked, stopping a handful of steps away from the other boy, almost within distance to reach out and grab her. He shifted his feet, rising slightly to balance on the balls of either, while constantly shifting his weight back and forth a minute distance. \"I think you're the one who's going to be in more trouble; causing a scene like this? With so many witnesses? The question in my mind is what you might hope to accomplish.\" He glanced around at the surrounding students and added, \"Though, I'm going to admit a certain share of disappointment in the other students that none of them even {i}tried{/i} to stop you.\""
     #"All of the boys in the crowd shifted their gazes to their feet, while the girls began a low murmur."
     #"\"Where's all the fight you had yesterday?\" the boy sneered. \"You swore up and down that if I dared to lay a finger on any of your 'subordinates' that you'd crush me — any time, any place. Well, I don't like being played like a chump, no matter how badass you think you {i}are{/i}. You don't get the jump on me, this time.\""
