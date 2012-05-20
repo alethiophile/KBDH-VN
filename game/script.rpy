@@ -987,6 +987,9 @@ init:
     #Yamane Sprites
     #image Yamane Neutral = "Sprites/Yamane/Yamane.png"
     
+    #Ryo Sprites
+    image Ryo Neutral = "Sprites/Ryo/Ryo.png"
+    
     #Closed space variants
     image clouds CS = im.MatrixColor("id_clouds.png",
         im.matrix.saturation(.15) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
@@ -1234,7 +1237,7 @@ init:
     image title 005 = Text("{space=480}{b}{size=+1}Thursday, April 21, 2011{/size}{/b}\n\n\n\n\"Chapter Seven: Practical Considerations for the Apocalypse\"\n\n\"...if that happens, and there's nothing else to be done, the next question is going to be survival. There are things more important than food, water, or even reasonable shelter. There's no reason to try and survive alone, unless you're just a die-hard, and even then you're still probably clinging to hope. So make sure you're not alone, or else there's not much reason to keep on going.\"\n\n\"Clearing the Event Horizon: How Close is Too Close?\" — Tadamichi Kyousuke", font="DejaVuSerif-Italic.ttf", size=18, line_leading=3, justify=True, xmaximum=750)
     image title 006 = Text("{space=480}{b}{size=+1}Thursday, April 21, 2011{/size}{/b}\n\n\n\n\"Chapter One: Crossing the Threshold\"\n\n\"...eventually, this means that you can reach a point where words no longer suffice. Civility is all well and good, but sometimes the simple message of overpowering force is the one that the situation requires. Use your judgment on when this moment is, but keep in mind that I call it a last resort for a reason; once you initiate violence, you're committed until victory or failure.\"\n\n\"The Last Resort: Violence and You\" — Tadamichi Kyousuke", font="DejaVuSerif-Italic.ttf", size=18, line_leading=3, justify=True, xmaximum=750)
     image title 007 = Text("{space=480}{b}{size=+1}Thursday, April 21, 2011{/size}{/b}\n\n\n\n\"Chapter Two: Excuses\"\n\n\"If you can't come up with a legitimate excuse, you have two fall-back options. First, you can take refuge in audacity and say something so outlandish you're dismissed (bonus points if you tell the truth with a straight face). And if that doesn't work, place the burden of justifying your whereabouts on someone else. If neither of these options pan out, run far, run fast.\"\n\n\"Cover\" — Author Unknown", font="DejaVuSerif-Italic.ttf", size=18, line_leading=3, justify=True, xmaximum=750)
-    
+    image title 008 = Text("{space=480}{b}{size=+1}Thursday, April 21, 2011{/size}{/b}\n\n\n\n\"File K:3419.8.19/2011.4.21\"\n\n\"...so, I think, maybe, sometimes it might be okay to be a little selfish, as long as you don't jeopardize anything. That's the really hard part, though ... how can you ever tell? I suppose that means erring on the side of caution ... no matter how it hurts. But sometimes ... just a little bit ... it's nice to be selfish.\"\n\n\"[[CLASSIFIED]\" -- Paraea Mons T.E.S.A. Dataplume", font="DejaVuSerif-Italic.ttf", size=18, line_leading=3, justify=True, xmaximum=750)
     
 init python:
     config.layers.insert(1, 'upper')
@@ -1539,8 +1542,14 @@ init -1 python:
             ("Chapter Four: Epileptic Plot Tree", "SF2", True),
             ("Chapter Five: The Requisite Haruhi-and-Kyon in Closed Space Together Again Part (You Know The One)", "SF3", True)
         ],
-        # ("Heroic Antics Begin Arc - Chapter Six: \n\"Finally, Some Action\"", "HAB1"),
-        
+        [   ("Heroic Antics Begin Arc", "", False),
+            ("Chapter Six: Finally, Some Action", "HAB1", True),
+            ("Chapter Seven: Rise To Delinquency; Requisite Angst Spots", "HAB2", True),
+        ],
+        [
+            ("Filler Arc", "", False),
+            ("Chapter Eight: Relationship Building", "Fi1", True),
+        ],
         [
             ("Label a scene you're working on test and use this", "Test", True),
             # ("-----", "backtomain"),
@@ -2091,4 +2100,6 @@ label test_Z0_titles:
     show title 006 at card_pos with slowfadein
     pause
     show title 007 at card_pos with slowfadein
+    pause
+    show title 008 at card_pos with slowfadein
     pause
