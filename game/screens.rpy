@@ -235,6 +235,12 @@ screen Chapters:
 
 screen main_menu:
 
+    python:
+        if persistent.set_text_styling == None:
+            renpy.set_style_preference("text", "Vanilla")
+            persistent.text_styling = "Vanilla"
+            persistent.set_text_styling = True    
+
     # This ensures that any other menu screen is replaced.
     tag menu
 

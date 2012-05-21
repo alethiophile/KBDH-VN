@@ -1347,16 +1347,16 @@ init python:
     # if persistent.text_styling == "Extra":
     #     style.whisper.size = 15
         
-    renpy.register_style_preference("text", "Extra", style.movie, "font", "DejaVuSerif.ttf")
-    renpy.register_style_preference("text", "Extra", style.loud, "size", 24)
-    renpy.register_style_preference("text", "Extra", style.shout, "size", 32)
-    renpy.register_style_preference("text", "Extra", style.whisper, "size", 15)
-    
     renpy.register_style_preference("text", "Vanilla", style.movie, "font", "DejaVuSans.ttf")
     renpy.register_style_preference("text", "Vanilla", style.loud, "size", 22)
     renpy.register_style_preference("text", "Vanilla", style.shout, "size", 22)
     renpy.register_style_preference("text", "Vanilla", style.whisper, "size", 22)
     
+    renpy.register_style_preference("text", "Extra", style.movie, "font", "DejaVuSerif.ttf")
+    renpy.register_style_preference("text", "Extra", style.loud, "size", 24)
+    renpy.register_style_preference("text", "Extra", style.shout, "size", 32)
+    renpy.register_style_preference("text", "Extra", style.whisper, "size", 15)
+
     centered = Character(None, what_slow_cps=0, what_size = 27, what_outlines = [(1, "#000", 0, 0)],
                         what_layout="subtitle", what_xalign=0.5, what_text_align=0.5,
                         window_background=None, window_yminimum=0, window_xfill=False, 
@@ -1522,9 +1522,9 @@ init -1 python:
                                       0,                      0,                      0, color_tuple[3]/255.0, 0 ]
     def KBDH_Color(st, at):
         return im.MatrixColor("Backgrounds/KBDHLogo-White.png", color_matrix(ecfg)), None
-        
+
     if persistent.text_styling == None:
-        persistent.text_styling = "Extra"
+        persistent.text_styling = "Vanilla"
     
     if persistent.eyecatch_styling == None:
         persistent.eyecatch_styling = "Dissolves"
