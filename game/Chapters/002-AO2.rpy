@@ -1174,7 +1174,7 @@ label AO2:
     show Koizumi Think Smile2
     "\"Only particularly intense emotions are felt,\" he answered, staring at the board and placing his first stone thoughtfully. \"Even then, it's frequently vague ... it doesn't give me any clue as to where she is, for example, just whatever intense emotion is there.\""
     show Koizumi Shrug Sigh1:
-        xalign -1.0 yalign 1.0    
+        xalign -1.15 yalign 1.0    
     "\"Naturally, this was quite awkward when I first was granted my powers, but I can usually tell my feelings apart from hers, now.\""
     nvl clear
     show Mikuru Maid Hap1 at center behind Kyon, Koizumi

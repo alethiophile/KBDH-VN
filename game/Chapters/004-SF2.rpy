@@ -290,13 +290,13 @@ label SF2:
     show Kyon Neutral3
     "Yuki raised her gaze from her book languidly. \"Last night,\" she began, without preamble, \"I neared overload due to queued data-creation and modification requests from you." 
     show Yuki Talk2
-    "\"To prevent overload, as per the instructions given by him and yourself, I undertook to dispose of all junk data and error-causing behaviors.\"" 
+    "\"To prevent overload, as per the instructions given by him and yourself, I undertook to dispose of all junk data and error-causing behaviors." 
     nvl clear
     show Yuki Talk1
-    "\"After preparing all three subjects with nanites for preservation, Michikyuu Kanae attempted to slide to an alternate dimension, simultaneous to the activation of Asahina Mikuru's time travel device, while I engaged the dimensional anchor with a modified temporal anchor function.\""
+    "\"After preparing all three subjects with nanites for preservation, Michikyuu Kanae attempted to slide to an alternate dimension, simultaneous to the activation of Asahina Mikuru's time travel device, while I engaged the dimensional anchor with a modified temporal anchor function."
     nvl clear
     show Yuki Talk2
-    "\"The resultant actions, guided by stored data from yourself, were sufficient to create a semi-stable permeable reality governed by myself that was outside of both space and time, allowing me to ground myself from the negative attribute data that would cause error behavior.\""
+    "\"The resultant actions, guided by stored data from yourself, were sufficient to create a semi-stable permeable reality governed by myself that was outside of both space and time, allowing me to ground myself from the negative attribute data that would cause error behavior."
     nvl clear
     show Yuki Talk1
     "\"This same space was also used to simultaneously allow Michikyuu Kanae practice sliding between nested pocket-dimensions and Asahina Mikuru to undertake her requested training in sewing. Per his own instructions, he undertook martial arts training and assisted me with ... personal issues.\""
@@ -580,7 +580,7 @@ label SF2:
     "\"I.... I mean, Kyon and I....\" She hesitated, uncertain what to say. Eventually, in a very quiet voice, she managed to ask, \"Are you going to start dating Kyon?\""
     show Haruhi Pout1
     show Yuki Right Talk1
-    "After blinking once, Yuki answered, \"I do not seek to initiate courtship rituals or physical intimacy with him, though I will reciprocate if he demonstrates an obvious inclination.\""
+    "After blinking once, Yuki answered, \"I do not seek to initiate courtship rituals or physical intimacy with him, though I will reciprocate if he demonstrates an obvious inclination."
     nvl clear
     show Yuki Right Talk2
     "\"However, as has been observed previously, my understanding of his genuine desires and emotions is faulty; I can therefore not safely assume that such demonstrations have occurred without verifying them through a third party.\""
@@ -666,7 +666,7 @@ label SF2:
     show Haruhi Ang5
     show Mikuru Sad2
     nvl clear
-    "\"It's ... forbidden,\" Mikuru said quietly. \"I...if you must know, then ... yes, I do like Kyon-kun ... he's reliable, and doesn't have ulterior motives.\"" 
+    "\"It's ... forbidden,\" Mikuru said quietly. \"I...if you must know, then ... yes, I do like Kyon-kun ... he's reliable, and doesn't have ulterior motives." 
     nvl clear
     show Mikuru Sad1
     "\"But I'm not {i}from{/i} this timeplane; I can't have, um, relationships with anyone from here. S...so, please don't think of me as a threat, Suzumiya-san! And you can't ask me to think of him without you being in the picture; if it weren't for {i}you{/i}, I never would have been sent back and been able to meet him anyway! I don't want to come between the two of you!\""
@@ -757,7 +757,7 @@ label SF2:
     show Kyon Neutral3 at right
     show Mori Neutral1 Flip at left
     with dissolve
-    "He got into the back seat, Mori opening he door on the opposite side and sitting next to him. Arakawa wordlessly started the car up."
+    "He got into the back seat, Mori opening the door on the opposite side and sitting next to him. Arakawa wordlessly started the car up."
     show Kyon Neutral2
     "He didn't feel like trying to puzzle through whatever it was that his future self had arranged, so he decided he'd try relying on raw bluster: \"If you'd care to begin...?\""
     nvl clear
@@ -865,6 +865,7 @@ label SF2:
     show Nonoko Hap1
     show Kyon Sigh4
     "\"So does Mom!\" his sister said brightly. \"She's always telling me to study harder than you, since you set the bar low!\""
+    $ _window = True
     show Nonoko Smile1
     hide Kyon with dissolve
     "\"That's swell,\" he grumbled, rolling his eyes and heading into the house. \"Here's an easy bar to clear: I'm going to take a nap.\""
