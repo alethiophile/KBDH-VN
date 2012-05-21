@@ -1297,10 +1297,11 @@ init python:
     circleirisinfast = ImageDissolve("id_circleiris.png", 0.75, 8, reverse=True)
     
     renpy.music.register_channel("sound2", "sfx", 0)
-    _preferences.set_volume("sfx", 0.5)
     
     renpy.music.register_channel("sfxloop", "sfx", 1)
-    _preferences.set_volume("sfx", 0.5)
+    if persistent.volume_set == None:
+        _preferences.set_volume("sfx", 0.5)
+        persistent.volume_set = True
     
     # positions on the (imaginary) screen situated directly left of one shown.
     osl_left = Position(xanchor=0.5, yalign=1.0, xpos=-0.75) 
