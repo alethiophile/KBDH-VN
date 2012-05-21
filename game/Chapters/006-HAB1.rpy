@@ -13,9 +13,9 @@ label HAB1:
     
     scene bg hallway with fade
     play music "Music/suspicion.ogg"
-    show Kanae Neutral1 at HalfRight
+    show Kanae Neutral1 at HalfRight with dissolve
     "After the lunch chime, Kanae had decided that she would return to the club room; if she were lucky, Sempai would be there! And if she weren't lucky, well, Sempai's friends were her friends, too, so that would be fine."
-    show Ryo Neutral at TenthLeft #Neutral
+    show Ryo Neutral at TenthLeft with dissolve #Neutral
     "But she had only made it a few steps down the hallway before a taller third year boy approached her, tape across his nose and a bruise marring his face deeply around one eye. He raised a hand in greeting before glancing around, then asked, \"Are you Michikyuu Kanae-san?\""
     nvl clear
     show Kanae Unhap2
@@ -53,17 +53,17 @@ label HAB1:
     hide Kanae with moveoutright
     extend "she sprinted away as quickly as she could, {nw}"
     hide Ryo Neutral with moveoutright
-    show Ryo Neutral at HalfLeft
-    show Kanae Wince1 at center
+    show Ryo Neutral at TenthLeft
+    show Kanae Wince1 at HalfLeft
     with moveinleft
     show Kanae Wince2
     extend "managing to make it halfway to the clubroom before he seized her shoulder {nw}"
     show Kanae Wince2:
-        xalign 0.5 yalign 1.0
+        xalign 0.25 yalign 1.0
         linear 0.4 yalign 3.0
     extend "and brought her down to the hallway floor. {w}She whimpered, her lunch spilling out of her bento all across the walkway, while more students crowded around. "
     show Kanae Wince2:
-        xalign 0.5 yalign 3.0
+        xalign 0.25 yalign 3.0
         linear 0.8 yalign 1.0
     extend "\"Help!\" she yelled, cowering when the boy, huffing for breath, grabbed her wrist and hauled her unceremoniously to her feet."
     nvl clear
@@ -83,29 +83,126 @@ label HAB1:
     "\"Sempai!\" she cheered, though her voice shook nervously."
     nvl clear
     show Kanae Smile1:
-        xalign 0.6 yalign 1.0
+        xalign 0.4 yalign 1.0
     with fast_move
     show Kanae Wince2:
-        xalign 0.6 yalign 1.0
-        linear 0.1 xalign 0.5
+        xalign 0.4 yalign 1.0
+        linear 0.1 xalign 0.25
     "The boy holding her jerked her roughly back when she tried to break free. "
     show Ryo Neutral #Angry - Angrier Version
     show Kanae Wince1
     extend "\"Oh, yeah?\" he asked. \"I don't think so, not after yesterday! You're getting in way over your head, and you're about to learn a thing or two about screwing with the wrong people!\""
-    #"\"Really?\" her sempai asked, stopping a handful of steps away from the other boy, almost within distance to reach out and grab her. He shifted his feet, rising slightly to balance on the balls of either, while constantly shifting his weight back and forth a minute distance. \"I think you're the one who's going to be in more trouble; causing a scene like this? With so many witnesses? The question in my mind is what you might hope to accomplish.\" He glanced around at the surrounding students and added, \"Though, I'm going to admit a certain share of disappointment in the other students that none of them even {i}tried{/i} to stop you.\""
-    #"All of the boys in the crowd shifted their gazes to their feet, while the girls began a low murmur."
-    #"\"Where's all the fight you had yesterday?\" the boy sneered. \"You swore up and down that if I dared to lay a finger on any of your 'subordinates' that you'd crush me — any time, any place. Well, I don't like being played like a chump, no matter how badass you think you {i}are{/i}. You don't get the jump on me, this time.\""
-    #"\"If I said it, it must be true,\" her sempai allowed, his gaze constantly flicking about the other boy, occasionally meeting hers. \"But if you're any kind of man, you'll let her go and we can settle this properly.\""
-    #"With a sudden growl, the boy released her wrist and shoved her towards her sempai, hard. Her sempai rolled back on his feet, both arms going about her as he flung himself backwards, twisting to take the other boy's kick on his side and shielding her with his body. He landed in a slide, releasing her and then rolling to his feet in a single smooth motion, crouching just over her head while the crowd around gasped quietly."
-    #"\"Kanae-chan,\" he said, not looking at her, \"are you okay?\""
-    #"\"I'm okay,\" she said shakily, thinking she might have been bruised, but certainly no worse."
-    #"He nodded, then straightened up, stepping towards the middle of the hallway, his eyes locked on the other boy. \"Alright, you,\" he said, using the derogatory 'kisama' again, \"what the hell is your problem?\""
-    #"The other boy growled, then surged forward, swinging a powerful punch towards her sempai. He leaned to one side, seizing the thug's extended fist and spinning, turning all of the larger boy's force into forward momentum, flipping him completely upside-down before slamming to the floor on his back in the scattered bits of her lunch. Her sempai danced away a half-step, light on his feet, hands loosely at his sides. Kanae quickly hopped to her feet and scurried away. Almost immediately she found herself contained in a protective circle of the girls standing on the sidelines, people she didn't know offering murmurs of sympathy and asking if she was okay. She tried not to laugh or cry at the absurdity of the situation."
-    #"So far, only her pride and her lunch had been lost."
-    #"Coughing, the other boy climbed to his feet, eyes shadowed with rage, his breathing ragged and furious. \"You utter bastard!\" he spat at her sempai. \"I don't know where you get this sudden attitude, but you are in {i}way{/i} over your head! If I don't stop you here, things are only going to get worse for you!\""
-    #"\"In that case,\" her sempai suggested in oddly reasonable tones, \"why not just give up? If you want me to suffer, wouldn't it be easier to ignore me and let your bosses, presumably people more competent than you, deal with the situation?\""
-    #"The boy growled, then sank to his knees. \"I'm powerless,\" he moaned, wrapping his arms around himself and hunching in."
-    #"Shifting his shoulders, her sempai gave a terse nod and clenched one hand into a fist tightly, the crackling, snapping noises from his tendons clearly audible in the hallway. \"Good,\" he judged. \"Now see that this never happens again.\" He relaxed his stance and turned to Kanae; her protective circle backed away seamlessly to let him approach her, the other girls looking at him with shy smiles or bashful grins. \"You're certain you're okay?\" he asked, putting one hand on her shoulder and focusing his full attention on her, seemingly unaware of the other students."
+    nvl clear
+    show Ryo Neutral #Angry - Closed Mouth
+    show Kyon Ang4
+    "\"Really?\" her sempai asked, stopping a handful of steps away from the other boy, almost within distance to reach out and grab her. He shifted his feet, rising slightly to balance on the balls of either, while constantly shifting his weight back and forth a minute distance. \"I think you're the one who's going to be in more trouble; causing a scene like this? With so many witnesses? The question in my mind is what you might hope to accomplish.\" He glanced around at the surrounding students and added, {nw}"
+    show Kyon Unhap2
+    extend "\"Though, I'm going to admit a certain share of disappointment in the other students that none of them even {i}tried{/i} to stop you.\""
+    show Kyon Unhap4
+    nvl clear
+    "All of the boys in the crowd shifted their gazes to their feet, while the girls began a low murmur."
+    nvl clear
+    show Ryo Neutral #Angry - Sneer
+    "\"Where's all the fight you had yesterday?\" the boy sneered. \"You swore up and down that if I dared to lay a finger on any of your 'subordinates' that you'd crush me — any time, any place. {nw}"
+    show Ryo Neutral #Angry - Angrier Version
+    extend "Well, I don't like being played like a chump, no matter how badass you think you {i}are{/i}. You don't get the jump on me, this time.\""
+    nvl clear
+    show Ryo Neutral #Angry - Closed Mouth
+    show Kyon Ang3
+    "\"If I said it, it must be true,\" her sempai allowed, his gaze constantly flicking about the other boy, occasionally meeting hers. {nw}"
+    show Kyon Ang4
+    extend "\"But if you're any kind of man, you'll let her go and we can settle this properly.\""
+    nvl clear
+    show Ryo Neutral #Angry - Closed Mouth - Angrier Version
+    show Kyon Unhap5 behind Kanae
+    show Kanae Wince2:
+        xalign 0.70 yalign 1.0
+    with fast_move
+    show Kyon Unhap1
+    play sound "SE/impact.mp3"
+    "With a sudden growl, the boy released her wrist and shoved her towards her sempai, hard. {nw}"
+    show Kyon Unhap1:
+        xalign 1.15 yalign 1.0
+    show Kanae Wince2:
+        xalign 0.85 yalign 1.0
+    with fast_move
+    extend "{w}Her sempai rolled back on his feet, both arms going about her as he flung himself backwards, {nw}"
+    show Ryo Neutral #Angry - Attack Version - Flipped Right
+    show Kyon Unhap6 Flip:
+        xalign 0.85 yalign 1.0
+    show Kanae Sad2 at right
+    with fast_move
+    play sound "SE/impact.mp3"
+    extend "twisting to take the other boy's kick on his side and shielding her with his body. {nw}"
+    show Kanae Wince2:
+        xalign 2.0 yalign 3.0
+    show Kyon Pain1 Flip:
+        xalign 2.0 yalign 3.0
+    with move
+    #play sound "SE/sliding sound effect here"
+    extend "He landed in a slide, "
+    show Kyon Unhap5:
+        xalign 1.15 yalign 1.25
+    with fast_move
+    extend "releasing her and then rolling to his feet in a single smooth motion, crouching just over her head while the crowd around gasped quietly."
+    nvl clear
+    show Kyon Unhap2
+    "\"Kanae-chan,\" he said, not looking at her, \"are you okay?\""
+    show Kyon Unhap4
+    "\"I'm okay,\" she said shakily, thinking she might have been bruised, but certainly no worse."
+    show Kyon Unhap4 at HalfRight with move
+    show Kyon Ang2
+    "He nodded, then straightened up, stepping towards the middle of the hallway, his eyes locked on the other boy. \"Alright, you,\" he said, using the derogatory 'kisama' again, \"what the hell is your problem?\""
+    nvl clear
+    show Kyon Unhap4
+    "The other boy growled, then surged forward, swinging a powerful punch towards her sempai. "
+    show Ryo Neutral at center with fast_move #Angry - Attack Version - Flipped Right
+    show Kyon Unhap5 Flip at HalfLeft with fast_move
+    show Ryo Neutral at HalfRight with move: #Angry - Attack Version - Flipped Right
+        xanchor 0 yanchor 0
+        xpos 0.5 ypos 1.0
+        linear 0.4 rotate 90 
+    play sound "SE/impact.mp3"
+    extend "He leaned to one side, seizing the thug's extended fist and spinning, turning all of the larger boy's force into forward momentum, flipping him completely upside-down before slamming to the floor on his back in the scattered bits of her lunch. "
+    show Kyon Unhap5 Flip at TenthLeft with fast_move
+    hide Ryo
+    extend "Her sempai danced away a half-step, light on his feet, hands loosely at his sides. "
+    show Kanae Sup1:
+        xalign 0.85 yalign 1.0
+    with fast_move
+    extend "Kanae quickly hopped to her feet and scurried away. {nw}"
+    hide Kanae with moveoutright
+    extend "Almost immediately she found herself contained in a protective circle of the girls standing on the sidelines, people she didn't know offering murmurs of sympathy and asking if she was okay. She tried not to laugh or cry at the absurdity of the situation."
+    nvl clear
+    "So far, only her pride and her lunch had been lost."
+    nvl clear
+    show Ryo Neutral:
+        xalign 0.75 yalign 15.0
+    show Ryo Neutral at HalfRight with move #Angry - Angrier Version
+    "Coughing, the other boy climbed to his feet, eyes shadowed with rage, his breathing ragged and furious. \"You utter bastard!\" he spat at her sempai. \"I don't know where you get this sudden attitude, but you are in {i}way{/i} over your head! If I don't stop you here, things are only going to get worse for you!\""
+    nvl clear
+    show Ryo Neutral #Angry - Closed Mouth
+    show Kyon Ser3 Flip
+    "\"In that case,\" her sempai suggested in oddly reasonable tones, \"why not just give up? If you want me to suffer, wouldn't it be easier to ignore me and let your bosses, presumably people more competent than you, deal with the situation?\""
+    show Kyon Ser1 Flip
+    show Ryo Neutral with move: #Unhappy
+        xalign 0.75 yalign 4.5
+    "The boy growled, then sank to his knees. \"I'm powerless,\" he moaned, wrapping his arms around himself and hunching in."
+    nvl clear
+    show Ryo Neutral #Unhappy - Closed Mouth
+    "Shifting his shoulders, her sempai gave a terse nod and clenched one hand into a fist tightly, the crackling, snapping noises from his tendons clearly audible in the hallway. {nw}"
+    show Kyon Ser2 Flip
+    extend "\"Good,\" he judged. \"Now see that this never happens again.\" "
+    show Kyon Ser1 Flip:
+        xalign -0.25 yalign 1.0
+    show Ryo Neutral: #Unhappy - Closed Mouth
+        xalign 0.25 yalign 4.5
+    show Kanae Unhap3 at right
+    with dissolve
+    show Kyon Ser1 Flip at HalfRight with move
+    extend "He relaxed his stance and turned to Kanae; her protective circle backed away seamlessly to let him approach her, the other girls looking at him with shy smiles or bashful grins. {nw}"
+    show Kyon Ser3 Flip
+    extend "\"You're certain you're okay?\" he asked, putting one hand on her shoulder and focusing his full attention on her, seemingly unaware of the other students."
     #"\"Sempai!\" she shrieked, a moment too late, as the other boy produced a knife from his coat and charged abruptly at her sempai."
     #"With speed she didn't think was possible, her sempai snapped his head back and threw himself to the floor, a potentially lethal stab to the side of the head reduced to a short, shallow scratch on one cheek. Rolling with the momentum of his evasion, her sempai quickly righted himself and lunged, grabbing the other boy's wrist and yanking him violently backwards, just as he reached for Kanae again."
     #"This time, her sempai was more brutal, adding the boy's sudden momentum to a fierce kidney jab, a leg sweep, then a swift kick to the hand holding the knife, sending it clattering across the hallway through her ruined lunch, the uneasy silence of the surrounding students punctuated with a sickening crunch. The other boy howled, clutching his injured hand in agony and rolling around on his back, tears streaming from his eyes."
