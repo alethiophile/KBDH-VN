@@ -48,9 +48,9 @@ label Fi1:
     nvl clear
     
     scene almostblack two with fade
-    #scene 
+    scene bg TsuruyaGuestRoomDay with fade
     stop music fadeout 1
-    queue musicv "Music/Morning.ogg"
+    queue music "Music/Morning.ogg"
     "He woke again, head reeling with the 'extended' session. He didn't want to think how much longer in 'relative time' he'd spent in training with Nagato. If the average session was a 'short' single year...."
     "Blinking, he realized he was staring at the ceiling of another unfamiliar room ... though details began to trickle back into place. Last night, he'd taken a bath with Tsuruya, though the blood loss from his injury kept him from reacting embarrassingly ... except to get very light-headed. He'd tried his best not to stare at the girl, but she was totally unabashed, completely uncaring. True to her words, she had scrubbed his back in return without hesitation, and then carefully washed his hair so he wouldn't get any shampoo or soap in his wound."
     nvl clear
@@ -79,7 +79,7 @@ label Fi1:
     "\"Onwards to breakfast!\" she declared, seizing his wrist and hauling him through the doorway, into the rest of the house."
     nvl clear
     
-    #scene
+    scene bg TsuruyaKitchen with fade
     stop music fadeout 1
     queue music "Music/Sunaonakimochi.mp3"
     show Tsuruya Hap1 at right with dissolve
@@ -496,7 +496,7 @@ label Fi1:
     "It was a low priority item, but some day."
     "Absolutely."
     nvl clear
-    #scene TrainStation
+    scene bg TrainStation with fade
     show Kyon Neutral3 at center with dissolve
     "Still somewhat dazed, he wandered out of the alley and towards the train station. \"Right,\" he realized, seeing that the next train wouldn't be in for several minutes. He pulled his cell phone from his pocket and frowned. His other self would just be getting off at a different station with Kanae and Haruhi. He hadn't received any calls, but even so...."
     nvl clear
@@ -535,11 +535,12 @@ label Fi1:
     "\"Kyon-kun?\" a familiar voice from behind him asked in surprise."
     nvl clear
     scene almostblack two with fade
-    #scene bg trainstation with fade
+    scene bg TrainStation with fade
     stop music fadeout 1
     queue music "Music/TenderScenery.mp3"
     show Kyon Sigh2 Flip at left
     show Mikuru Quest1 at right
+    with dissolve
     "Mikuru stared in surprise, not expecting to see Kyon there when she reached her train station. She smiled weakly, tilting her head to one side. \"Is something wrong?\" she asked in concern, looking closely at his face. \"I thought you were going to speak with your parents? And what's that mark on one cheek?\""
     show Kyon Neutral1 Flip
     nvl clear
@@ -564,9 +565,10 @@ label Fi1:
     show Kyon Smile3 Flip
     "He spread his arms in a shrug and grinned. \"If that's all you need, no problem,\" he assured her. \"I'd be glad to help you out. What are you looking for?\""
     nvl clear
-    scene bg TownStreetDay2
-    show Kyon Smile3 Flip at TenthLeft with dissolve
-    show Mikuru Smile2 at center with dissolve
+    scene bg TownLeft with fade
+    show Kyon Smile3 Flip at TenthLeft
+    show Mikuru Smile2 at center
+    with dissolve
     "She smiled softly and turned away, beckoning him to follow. He fell into step at her side with no hesitation, hands in his pockets casually. Trying to be a bit subtle about it, she looked at him sidelong. His uniform was nearly immaculate, as though he'd put it on and not even sat down for a day of school. Lately, he had seemed drained of energy, due to their recent late night training sessions with Nagato."
     nvl clear
     "After a minute of study, she realized he was walking slightly differently, shoulders a bit more relaxed, chin slightly higher. Other than the already fading mark across one cheek, he looked ... really good."
@@ -599,7 +601,10 @@ label Fi1:
     show Mikuru Neutral1
     "She shook her head again, giving him a smile before gesturing to a large storefront. The outside windows were filled with swaths of cloth, sewing supplies, and layouts of do-it-yourself clothing patterns. \"Um, I'd like to get some things from here.\""
     nvl clear
-    show Kyon Neutral2 Flip 
+    scene bg Supermarket with fade
+    show Mikuru Neutral1 at center
+    show Kyon Neutral2 Flip at TenthLeft
+    with dissolve
     "He raised an eyebrow, scanning around as they stepped inside. High shelves were covered with full bolts of cloth, and at a glance, he was the only remotely male figure in the entire store, aside from a mannequin in a heavy winter coat, obviously still up from the last sale, and overdue to be redressed or put into storage. \"Sure,\" he said, shrugging. \"This is stuff you know much better than I do, so I hope you don't mind if I just carry things for you?\""
     nvl clear
     show Mikuru Hap1
@@ -728,7 +733,7 @@ label Fi1:
     show Kyon Smile6 Flip
     "\"Anything for you,\" he agreed. She wished and hoped she could ask him what he meant by that ... what the complete implications were. But she knew it was an impossible dream, and even if it {i}were{/i} possible, with Haruhi...."
     nvl clear
-    #scene
+    scene bg TownLeft with fade
     show Mikuru Think Quest1 at center with dissolve
     show Kyon Neutral3 Flip at TenthLeft
     "Mumbling a nervous thanks to the boy, she strolled around the store, unable to bring herself to speak on anything else for fear of causing what she knew would only be trouble later, while he struggled to strike up a conversation about anything. After buying far more cloth than she could ever feasibly need, and further burdening Kyon with it all, they finally left the store."
@@ -737,7 +742,7 @@ label Fi1:
     "\"Where next?\" Kyon asked, glancing at his wristwatch briefly."
     "\"Let's drop this off at my place,\" she said hesitantly."
     nvl clear
-    #scene 
+    scene bg MikuruApartment with fade
     show Kyon Neutral3 at right with dissolve
     show Mikuru Neutral1 at left with dissolve 
     "He nodded and followed her the three blocks to her studio, a single-room apartment not far from the train station. After letting him in, he kicked off his shoes and unburdened himself in the corner she directed, before he took a look around, studying her temporary home. She felt embarrassed, even though everything was neat and orderly. Her futon was folded away, she didn't have a television, and the only furniture of note was her desk and a second-hand kotatsu."

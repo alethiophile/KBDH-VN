@@ -189,7 +189,7 @@ label HAB2:
     scene almostblack two with fade
     
     #need train station bg
-    scene bg TownStreetNight1 with fade
+    scene bg TrainStation with fade
     stop music fadeout 1
     queue music "Music/MidnightInterval.mp3"
     "A grueling flashcard session was eventually followed by a tense, uncomfortable dinner. Afterward, Kyon gleefully escaped the house on the excuse of walking the girls to the train station, chased by the promise of talking with his father once the man came home."
@@ -288,7 +288,7 @@ label HAB2:
     nvl clear
     "\"Alright.\" The plate slammed back into place and then Kyon heard the sounds of several bolts being thrown before the steel door ponderously opened inward. The man behind the door was a bit shorter than him, but stocky, with the build of a practiced fighter and numerous small scars across his face. He was wearing a brightly colored cherry-red suit with a lime green tie and a loud blue shirt — a screaming advertisement of his Yakuza status. \"In,\" he grunted, gesturing Kyon forward with one meaty paw."
     nvl clear
-    #scene
+    scene bg WatanabeBase with fade
     show Kyon Neutral3 Flip at left with dissolve
     "Kyon nodded and stepped in before the short brute laboriously shoved the door shut behind him. The room was square and dimly lit, a single other doorway visible on the opposite side of the room. \"It's okay if I...?\" Kyon began, gesturing at the doorway."
     "\"Go,\" Brute replied with another sour grunt. \"Watanabe-san is with some other customers, so watch your mouth.\""
@@ -432,7 +432,7 @@ label HAB2:
     nvl clear
     
     scene almostblack two with fade
-    #scene
+    scene bg TsuruyaGuestRoomNight with fade
     stop music fadeout 1
     queue music "Music/Morning.ogg"
     show Tsuruya Worry1 Flip at left with dissolve
@@ -482,7 +482,7 @@ label HAB2:
     "\"Of course,\" he agreed, wondering why she needed to ask him twice. \"I don't think many people would want to see her unhappy.\""
     "The maid bowed low again, then gestured him to follow. \"This way to the baths,\" she said quietly. \"Leave your clothes in the changing room. We'll make sure they're clean by morning.\""
     nvl clear
-    #scene 
+    scene bg TsuruyaBath
     stop music fadeout 1
     queue music "Music/Nanika.mp3"
     "\"Okay,\" he agreed, as she opened the changing room door for him and bowed yet again. He wondered briefly how quickly Tsuruya had washed ... she'd gotten cut on her wrist, too, but hopefully not very badly. The surgeon had probably taken care of her first; he'd have to ask her about it later, he decided, shutting the door on the maid and quickly stripping. After grabbing a modesty towel and wrapping it around himself, he slid open the door and stepped into the bathing area, freezing when he saw Tsuruya there, facing away from him."

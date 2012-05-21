@@ -439,12 +439,13 @@ label test2:
     call eyecatch_fancy("Thursday, April 21") from SF3_sc002
     
 #label test2:
-    scene almostblack two with fade
+    scene bg HaruhiBedroomDay with fade
     queue music "Music/Aruame.mp3"
     "She woke up, staring at the ceiling of her room and blinking. She'd had a dream.... She knew it was important, but the details kept slipping just out of her reach. She got out of bed and went about her morning routine, concentrating on the hazy recollections. Kyon was there ... and it was at school."
     "Something had been different about it, she was certain, but all she could remember was the kiss. And she'd had {i}that{/i} dream before. Before Kyon's revelation to her that she had a power. Remembering that she could do such things, and ensuring no parents were around to witness it, she closed one eye and pointed at a toothbrush, pleased as it wobbled unsteadily out of the holder and drifted to her hand."    
     nvl clear
     "Good, she thought. {i}That{/i} hadn't been a dream ... even if kissing Kyon had been. She felt her face warm up as she remembered the conversation she had with Yuki and Mikuru the day before. Even Kanae had some input, despite her relative newness to the group."
+    scene bg HaruhiKitchenDay with fade
     "\"I said I'd help him with his homework,\" she realized aloud, hurrying her pace and rushing to the kitchen. No parents around, still, which was good for today. That meant she could cheat. He always gave her a long-suffering sigh and mumbled about responsibility when she did, but what he didn't know, he couldn't whine about."
     nvl clear
     "So, under her dutiful eye, she watched utensils and ingredients dance across the kitchen, laboring as intently as a quartet of herself ... or a single eight-armed girl, she supposed, but that thought caused her control to wander. Focusing more intently, she watched as preparations finished, then spent an annoying ten minutes combing through every cupboard and pantry door in the house until she found her old bento and the spare. \"He'd better appreciate this,\" she mumbled, wrapping them both after packing them unreasonably full."

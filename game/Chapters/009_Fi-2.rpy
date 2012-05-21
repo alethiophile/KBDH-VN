@@ -11,8 +11,7 @@ label Test:
     #"\"[CLASSIFIED]\" — Paraea Mons T.E.S.A. Dataplume"
     #"* * *"
     
-    scene bg TownStreetDay2
-    #scene (Mikuru's apartment) Yay placeholders >.>
+    scene bg MikuruApartment with fade
     stop music fadeout 3
     #queue music "Music/
     show Kyon Neutral3 at center
@@ -51,13 +50,13 @@ label Test:
     show Kyon Smile4
     "\"True enough.\" He really had to stop getting caught in his uniform so much.... Even with the amazing bloodstain removal skills of Tsuruya's servants, something else that he tried not to think about too hard, he was going to wear it out long before the year was over. Possibly even before it was time to switch to summer uniforms, at the current rate."
     nvl clear
-    #Scene _ with fade
-    #show Kyon at Center
-    #Show Mikuru at Left
+    scene bg Udon with fade
+    show Kyon at Center
+    show Mikuru at Left
     "He stepped out of the apartment first, and she closed and locked it behind them before giving him a bright smile and leading the way down the street towards a noodle stall. After they had taken seats on the stools beneath the curtain, the elderly proprietor greeted the girl like a long-lost granddaughter. She cheerfully introduced him by his nickname."
     nvl clear
     "\"Ah, is this the boy I've heard so much about?\" the old man asked, a dangerous glint in his eyes as he turned his gaze towards Kyon."
-    show Mikuru Neutral1 at left
+    show Mikuru Neutral1
     show MBlush1 at left
     "\"Um, yes,\" she admitted, her face turning red as she looked down, unable to meet either gaze."
     nvl clear
