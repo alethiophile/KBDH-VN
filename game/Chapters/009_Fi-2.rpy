@@ -51,8 +51,8 @@ label Test:
     "\"True enough.\" He really had to stop getting caught in his uniform so much.... Even with the amazing bloodstain removal skills of Tsuruya's servants, something else that he tried not to think about too hard, he was going to wear it out long before the year was over. Possibly even before it was time to switch to summer uniforms, at the current rate."
     nvl clear
     scene bg Udon with fade
-    show Kyon at Center
-    show Mikuru at Left
+    show Kyon Smile4 at center
+    show Mikuru Smile1 at left
     "He stepped out of the apartment first, and she closed and locked it behind them before giving him a bright smile and leading the way down the street towards a noodle stall. After they had taken seats on the stools beneath the curtain, the elderly proprietor greeted the girl like a long-lost granddaughter. She cheerfully introduced him by his nickname."
     nvl clear
     "\"Ah, is this the boy I've heard so much about?\" the old man asked, a dangerous glint in his eyes as he turned his gaze towards Kyon."
@@ -94,8 +94,7 @@ label Test:
     "Why did Mikuru look briefly annoyed at the old man, Kyon wondered, as he offered his thanks and prepared to eat."
     nvl clear
     
-    scene bg TownStreetNight2 with fade
-    #scene train station with fade
+    scene bg TrainStation with fade
     "After walking Mikuru back to her apartment, Kyon agreed to meet with her again in the morning to help carry the sewing machine to school. He wasn't certain how it would end up working out that she didn't seem to realize there were, at least temporarily, two of him at school at the same time.... But it did let him correct the oversight of forgetting that while he had stayed at Tsuruya's — a haven for the temporally displaced — he had forgotten his schoolbag at home."
     "He took a train back to Kitaguchi station, checked the watch that Mikuru's older self had given him and turned his cell phone on, pulling up his voice mail and leaving himself the well-remembered message from the previous night. After a few minutes he figured out how to flag the message as 'new', and shut the phone off again. Another few minutes waiting in a dark alley with a reasonable view of the train station let him see his past-self swear loudly."
     nvl clear
