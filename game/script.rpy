@@ -1556,6 +1556,9 @@ init -1 python:
     if persistent.eyecatch_styling == None:
         persistent.eyecatch_styling = "Dissolves"
     
+    if persistent.preview_adv == None:
+        persistent.preview_adv = True
+        
     chapters = [
         [
             ("In Media Res Prologue:\nExactly What it Says on the Tin", "prologue", True)
@@ -1712,36 +1715,51 @@ label Preview2:
     show P1 at truecenter:
         size (800,600)
     show Popen2 at Position(xanchor=0.5, xpos=0.55, yanchor=0.5, ypos=0.75) onlayer upper
-    pause 3.0
-    $ renpy.pause(0.1, hard=True)
+    if persistent.preview_adv:
+        pause 3.0
+        $ renpy.pause(0.1, hard=True)
+    else:
+        pause
     show P2 at Position(xanchor=0.5, xpos=1.5, yalign=0.5):
         size (800,600)
     show P2 at truecenter with moveinleft:
         size (800,600)
     hide P1
-    pause 3.0
-    $ renpy.pause(0.1, hard=True)
+    if persistent.preview_adv:
+        pause 3.0
+        $ renpy.pause(0.1, hard=True)
+    else:
+        pause
     show P3 at Position(xanchor=0.5, xpos=-0.5, yalign=0.5):
         size (800,600)
     show P3 at truecenter with moveinright:
         size (800,600)
     hide P2
-    pause 3.0
-    $ renpy.pause(0.1, hard=True)
+    if persistent.preview_adv:
+        pause 3.0
+        $ renpy.pause(0.1, hard=True)
+    else:
+        pause
     show P4 at Position(yanchor=0.5, ypos=-0.5, xalign=0.5):
         size (800,600)
     show P4 at truecenter with moveintop:
         size (800,600)
     hide P3
-    pause 3.0
-    $ renpy.pause(0.1, hard=True)
+    if persistent.preview_adv:
+        pause 3.0
+        $ renpy.pause(0.1, hard=True)
+    else:
+        pause
     # show P5 at Position(yanchor=0.5, ypos=-0.5, xalign=0.5):
         # size (800,600)
     show P5 at truecenter with moveinright:
         size (800,600)
     hide P4
-    pause 3.0
-    $ renpy.pause(0.1, hard=True) 
+    if persistent.preview_adv:
+        pause 3.0
+        $ renpy.pause(0.1, hard=True)
+    else:
+        pause 
     hide Popen2 onlayer upper  
     scene black with dissolve
     show Pexit at truecenter

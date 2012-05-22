@@ -488,6 +488,14 @@ screen preferences:
                 label _("Auto-Forward Time")
                 bar value Preference("auto-forward time")
 
+            frame:
+                style_group "pref"
+                has vbox
+                
+                label _("Preview autoadvance")#: [persistent.text_styling]")
+                textbutton _("On") action SetField(persistent, "preview_adv", True)
+                textbutton _("Off") action SetField(persistent, "preview_adv", False)
+
             # frame:
                 # style_group "pref"
                 # has vbox
