@@ -203,13 +203,73 @@ label HAB1:
     extend "He relaxed his stance and turned to Kanae; her protective circle backed away seamlessly to let him approach her, the other girls looking at him with shy smiles or bashful grins. {nw}"
     show Kyon Ser3 Flip
     extend "\"You're certain you're okay?\" he asked, putting one hand on her shoulder and focusing his full attention on her, seemingly unaware of the other students."
-    #"\"Sempai!\" she shrieked, a moment too late, as the other boy produced a knife from his coat and charged abruptly at her sempai."
-    #"With speed she didn't think was possible, her sempai snapped his head back and threw himself to the floor, a potentially lethal stab to the side of the head reduced to a short, shallow scratch on one cheek. Rolling with the momentum of his evasion, her sempai quickly righted himself and lunged, grabbing the other boy's wrist and yanking him violently backwards, just as he reached for Kanae again."
-    #"This time, her sempai was more brutal, adding the boy's sudden momentum to a fierce kidney jab, a leg sweep, then a swift kick to the hand holding the knife, sending it clattering across the hallway through her ruined lunch, the uneasy silence of the surrounding students punctuated with a sickening crunch. The other boy howled, clutching his injured hand in agony and rolling around on his back, tears streaming from his eyes."
-    #"\"You,\" Kyon declared, using a more polite form and pointing at the nearest watching boy. \"See that he gets to the nurse's office.\" He held one hand out to her, adding, \"Let's get out of here, Kanae-chan.\""
-    #"She nervously nodded, her heart settling a tiny bit when she took his hand and he led her down the hallway."
+    nvl clear
+    show Kyon Ser1 Flip
+    show Kanae Sup2
+    "\"Sempai!\" she shrieked, a moment too late, {nw}"
+    show Ryo Neutral at HalfLeft with fast_move #Angry - With Knife - Flipped Right
+    extend "as the other boy produced a knife from his coat and charged abruptly at her sempai."
+    nvl clear
+    play sound "SE/lowswoosh.mp3"
+    show Ryo Neutral: #Angry - With Knife - Flipped Right
+        xalign 0.6 yalign 1.0
+    show Kyon Unhap5:
+        xalign 0.75 yalign 5.0
+    with fast_move
+    show Kyon Unhap5:
+        xalign 0.95 yalign 5.0
+    show Kanae Unhap1
+    "With speed she didn't think was possible, her sempai snapped his head back and threw himself to the floor, a potentially lethal stab to the side of the head reduced to a short, shallow scratch on one cheek. "
+    show Ryo Neutral: #Angry - With Knife - Flipped Right
+        xalign 0.7 yalign 1.0
+    with move
+    extend "Rolling with the momentum of his evasion, her sempai quickly righted himself and lunged, {nw}"
+    show Kyon Unhap5 at HalfLeft with fast_move
+    show Ryo Neutral: #Pain
+        xalign 0.7 yalign 1.0
+        linear 0.1 xalign 0.5
+    extend "grabbing the other boy's wrist and yanking him violently backwards, just as he reached for Kanae again."
+    nvl clear
+    show Kanae Wince1
+    show Kyon Unhap5 Flip:
+        xalign 0.25 yalign 1.0
+        linear 0.1 xalign 0.05
+    play sound "SE/impact.mp3"
+    show Ryo Neutral: #Pain
+    "This time, her sempai was more brutal, adding the boy's sudden momentum to a fierce kidney jab, {nw}"
+    play sound "SE/lowswoosh.mp3"
+    show Kyon Unhap5 Flip:
+        xalign 0.1 yalign 2.5
+    show Ryo Neutral at HalfRight: #Pain
+        xanchor 0 yanchor 0
+        xpos 0.5 ypos 1.0
+        linear 0.4 rotate 90
+    with move
+    extend "a leg sweep, {nw}"
+    play sound "SE/impact.mp3"
+    extend "then a swift kick to the hand holding the knife, {nw}"
+    show Kyon Unhap5 Flip with move:
+        xalign 0.1 yalign 1.0
+    hide Ryo
+    #play sound "SE/knife clattering across floor sound effect here"
+    extend "sending it clattering across the hallway through her ruined lunch, the uneasy silence of the surrounding students punctuated with a sickening crunch. The other boy howled, clutching his injured hand in agony and rolling around on his back, tears streaming from his eyes."
+    nvl clear
+    show Kyon Ser2 Flip
+    "\"You,\" Kyon declared, using a more polite form and pointing at the nearest watching boy. \"See that he gets to the nurse's office.\" "
+    show Kanae Worry1
+    show Kyon Ser3 Flip at center with move 
+    extend "He held one hand out to her, adding, \"Let's get out of here, Kanae-chan.\""
+    show Kanae Smile2
+    show Kyon Ser1 Flip
+    "She nervously nodded, her heart settling a tiny bit when she took his hand and he led her down the hallway."
+    hide Kanae
+    hide Kyon
+    with moveoutright
+    nvl clear
+    stop music fadeout 3
     
-#label Test:
+    call eyecatch_fancy("Thursday, April 21") from HAB1_sc001
+    
     stop music fadeout 1
     scene bg ClubroomFullDay with fade:
         xpos 0 ypos 0
