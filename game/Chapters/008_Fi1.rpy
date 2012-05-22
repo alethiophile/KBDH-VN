@@ -93,7 +93,7 @@ label Fi1:
     nvl clear
     show Kyon Neutral2 
     "\"Shouldn't be a problem,\" he agreed after mulling it over. She beamed him a smile and they left her estate together on foot after she had summoned a pair of bentos as though by magic, snapping her fingers and having a maid scurry into the room to offer them."
-    scene bg TownStreetDay2 with fade
+    scene bg TsuruyaHouseDay with fade
     show Kyon Puzzle1 at left with dissolve
     nvl clear
     "\"You know, Tsuruya-kun,\" he remarked with a sidelong glance at her, \"I'm worried Haruhi might get the wrong idea if she hears that I stayed with you last night.\""
@@ -107,7 +107,10 @@ label Fi1:
     show Tsuruya Quest1
     "\"Ooh?\" Tsuruya mused, blinking quickly, her cheeks taking on a pink tinge. \"What's that, Kyon-kun?\""
     nvl clear
-    show Kyon Puzzle1 
+    scene bg TownLeft with fade
+    show Kyon Puzzle1 at left
+    show Tsuruya Quest1 at right
+    with dissolve
     stop music fadeout 1
     queue music "Music/MysteryTime.mp3"
     "\"Those yakuza saw us yesterday ... and they seem pretty mad about last Sunday. So, we're probably going to see more of them — and that's really going to hurt us.\" He shook his head. \"I'm not sure about myself, but Manabe said your name, too. Since we just left them all behind, he probably told them everything he knows about us.\""
@@ -471,8 +474,7 @@ label Fi1:
     "\"Don't worry about it,\" she said, shaking her head and placing her hands on his shoulders. \"I'll show you. Now, close your eyes?\""
     scene 
     nvl clear
-    scene almostblack two with fade
-    scene bg Alley with fade
+    scene bg Alley2Evening with fade
     show MikuruBig Grin2 at right with dissolve
     show Kyon Neutral1 Flip at left with dissolve
     "\"Right....\" That familiar, unsettling lurch of time travel. When he opened his eyes, he was standing in an alley not far from a train station, the position of the sun.... He gave up trying to figure it out, remembering he had been given a watch for just that reason."

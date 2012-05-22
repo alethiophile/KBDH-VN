@@ -4,7 +4,7 @@
 label HAB2:
 #label Test:
     stop music fadeout 3
-    scene bg LivingRoom with fade
+    scene bg KyonLivingRoomEvening with fade
     queue music "Music/Suspicion.ogg"
     show Kyon Worry3 at center with dissolve
     show Haruhi Crossed Ang3 at right with dissolve
@@ -278,7 +278,7 @@ label HAB2:
     nvl clear
     show Mori Hap1 
     "Mori smiled, a tiny hint of that menacing smile she sometimes offered returning with a sharp gleam. \"I've got my eyes on you,\" she assured him."
-    scene bg Alley with fade
+    scene bg Alley1Evening with fade
     stop music fadeout 1
     queue music "Music/Suspicion.ogg"
     "He nodded again, then jogged down the street, nervously ducking into the alley that Mori had indicated before freezing, nearly stumbling over a trash bag as his eyes slowly adjusted to the dark. Moving more carefully forward, he studied the walls of the buildings until he found the steel door and pounded one fist on it, following the pattern that Mori had given him.\""
@@ -420,7 +420,7 @@ label HAB2:
     nvl clear
     show Tsuruya Hap3 
     "\"Gotcha covered!\" she said cheerfully, setting him down on a stool near the doorway as she fought the numerous bolts and locks, then struggled to open the heavy portal.  {nw}"
-    scene bg Alley with fade
+    scene bg Alley1Evening with fade
     show Kyon Sigh1 at center with dissolve
     show Tsuruya Hap3 at left with dissolve    
     extend "After resuming her position at his side, helping guide him down the dark alley,  {nw}"
