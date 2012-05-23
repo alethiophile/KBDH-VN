@@ -104,65 +104,95 @@ label Test:
     nvl clear
     "Hard-earned, and well deserved, after all. He walked back home, hands in his pockets, wondering if he actually would receive any phone calls. He wouldn't need to make any, at least ... not until he had to call Tsuruya, anyway."
     nvl clear
-    #scene bg KyonKitchenLeft with fade
+    scene bg KyonKitchenLeft with fade
+    #show Akane at left
+    #show KyonDad at Right
+    #with dissolve
     "His good mood was crushed almost instantly by the oppressive atmosphere inside the house when he opened the door. After kicking his shoes off and hiding them, so his parents wouldn't ask why he was walking around in his indoor school shoes, he walked into the dining room, where his father was just finishing his dinner. Looking a bit worn from an arduous day at the office, the tired salaryman pushed the plate with the last few bites left on it away from himself."
     nvl clear
     "Kyon's mother sat in the seat to his father's side, her eyes meeting his briefly in warning. \"Well,\" she said abruptly, rising from her seat. \"I'll leave you two to discuss things.\""
     "With that, she strode to the stairway, causing his little sister to squeak in alarm as her eavesdropping location was discovered. Kyon's father took a deep breath and stepped back from the table, gesturing Kyon to follow him as he slowly walked back outside."
     nvl clear
+    scene bg KyonHouseNight with fade
+    #show KyonDad at left
+    show Kyon Neutral3 at right
+    with dissolve
     "Kyon obediently followed, maintaining a careful distance as his father glanced at the house's windows and then fished a pack of cigarettes from one pocket of his suit jacket. After lighting one of the sticks, the man gave his son a level gaze. \"So,\" he asked, \"is she worth it?\""
     nvl clear
     "For a long minute, he could only stare at his father and the glowing tip of the brand in his mouth. Was who worth it? Tsuruya, who had gotten him into the investigation? Kanae, who was just a bystander? Mikuru, who controlled the time travel that let him get into such a mixed up situation? Yuki, maybe, who had given him the training he needed to win the fight?"
     nvl clear
     "Or maybe Haruhi, who everything was centered around even if she wasn't — for once — really involved herself?"
+    show Kyon Neutral2
     "He didn't even know which girl it was about ... but then he realized it didn't matter; he already had the answer in every case. \"Absolutely,\" he swore."
     nvl clear
     "His father grunted wordlessly, then knelt and stubbed the remains of the cigarette out. \"Good,\" he decided. \"Okay, you just need to understand your mother's concern. She doesn't honestly demand much of you ... reasonable grades and a clean record. If you're going to get into trouble at school, you'd better make sure that your grades are a lot better.\""
+    show Kyon Neutral3
     "He nodded. That wasn't terribly different from what his mother had said anyway. \"I understand.\""
     nvl clear
     "\"It's not too hard to make her happy,\" his father continued, putting his hands into his pockets and staring up at the sky. \"There's no way you could come home from school one day and announce that you had, say, rescued an heiress from rampant hoodlums and secured a position at her father's company. So, her point of view is that there's no future in fighting.... Well.\" The man shrugged."
     nvl clear
+    show Kyon Neutral5
     "\"But it wasn't anything like that!\" Kyon protested. \"Ryuguu was attacking Kanae-chan — he pulled a knife on me! What was I supposed to do? I swear, I'm not going around looking for trouble.\""
     nvl clear
     "The man's eyes drifted down from the dim sky, and one eyebrow quirked up. \"Kyon-kun ... you're not a martial artist, or a samurai. I think it's good that you stood up for your classmate, don't get me wrong. But at the same time ... you can easily get in over your head. Neither your mother nor myself want to see you get hurt. And like any parents, we want you to be safe and happy. That may mean being a bit more cautious now, but when you're older and capable of having a real career, it will all be for the best, won't it?\""
     nvl clear
+    show Kyon Puzzle1
     "\"I understand,\" Kyon said slowly."
     "His father snorted. \"But?\""
+    show Kyon Neutral1
     "\"Well.... Uncle Keiichi never even went to college, and from his stories he was a real troublemaker in school, too, but he's got a career.\""
     nvl clear
     "\"Eh ... yes, but your uncle Keiichi also married a shrine maiden and most of his 'career' is funded by a Yakuza family,\" the man countered. \"No offense to him, but your mother wouldn't have been born if it weren't for the fact his parents thought they could raise a better-behaved and more responsible child. He's a very eccentric character, and that's not a standard the rest of us should hold ourselves to.\""
     nvl clear
     "Even if uncle Keiichi lived in the country, Kyon couldn't help but think that he was probably one of the most popular people in his village; the townspeople routinely called him 'the magician of words'. Obviously his grandparents on his mother's side didn't know what they were talking about. Weren't they both novelists? They probably spent more time paying attention to their writing than the world immediately around them."
     nvl clear
+    show Kyon Neutral2
     "\"I'm not sure I'm happy giving up the possibility of doing things differently and still being successful,\" he finally told his father."
     nvl clear
     "The man grunted at that, nodding slowly. \"Fair enough,\" he allowed. \"Even so ... the point of this is that while you may pursue some slim chance, a solid education is a sure thing. Since it's not possible to know the future, your mother's primary concern is that you at least keep that one reasonable goal in sight, regardless of whatever else you do.\""
     nvl clear
-    "Kyon sighed. Probably best not to mention the fact that he {i}had{/i} rescued a wealthy heiress, he was {i}already{/i} involved with a ninkyo dantai family, and as a matter of fact, at least until some time tomorrow morning, he {i}did{/i} know the future because he'd already {i}been{/i} there. \"So, if I'm like Haruhi and place first in testing this term, I can cause any trouble I want as long as it doesn't get me expelled?\" he said instead."
+    show Kyon Sigh4
+    "Kyon sighed. Probably best not to mention the fact that he {i}had{/i} rescued a wealthy heiress, he was {i}already{/i} involved with a ninkyo dantai family, and as a matter of fact, at least until some time tomorrow morning, he {i}did{/i} know the future because he'd already {i}been{/i} there. {nw}"
+    show Kyon Neutral2
+    extend "\"So, if I'm like Haruhi and place first in testing this term, I can cause any trouble I want as long as it doesn't get me expelled?\" he said instead."
     nvl clear
-    "His father blinked languidly, his lips quirking in a smile. \"I'm not sure about that,\" he said. \"But, if you place in the top ten, I'll help you get your license over summer break. How about that?\""
+    "His father blinked languidly, his lips quirking in a smile. \"I'm not sure about that,\" he said. \"But, if you place in the top ten, I'll help you get your license over summer break. How about that?\""  
+    show Kyon Smile4
     "He smiled weakly, realizing that the offer was only made because of a certainty that he would fall short. \"I'll hold you to it,\" he said, nodding. He may as well just ask Arakawa or Yuki for the lesson."
     nvl clear
     "\"So, we're understood that you'll keep your mother happy, or at least try your best?\""
+    show Kyon Neutral1
     "\"I'll try my best,\" he promised."
     "\"Good,\" the man said, reaching forward and clapping one hand on his shoulder firmly. \"Good. I'm glad we had this talk, Kyon-kun. Oh, also, since you brought your uncle up, your aunt Rika wanted to know if you'd be going up to visit for Golden Week.\""
     nvl clear
+    show Kyon Sigh2
     "\"Better known as being strong-armed into day-care services,\" Kyon mumbled. \"I'm not sure yet.\" What would Haruhi have planned for the vacation?"
     "\"Well, if your grades go down, your mother will send you off anyway,\" the man warned. \"With nothing but study guides to keep you company. Good luck!\""
     nvl clear
     "Kyon nodded as his father went back into the house, then sat down on the porch and pulled his cell phone from his pocket. How long had he spent fighting the yakuza with Tsuruya? When had he passed out in the back of her limousine? He should have paid closer attention, he realized. Deciding it was close enough, he called and left himself another voice mail, then went inside to use the house's phone to call Tsuruya."
     nvl clear
+    scene bg KyonHallway with fade
+    show Kyon Smile6 at right
+    show Nonoko Worry1 at left
     "Just after he hung up, he heard his sister's footsteps on the stairs, and she peeked at him cautiously around the corner. \"Hey,\" he said to her, realizing he hadn't actually seen her in over a day, from his perspective. He turned off his cell phone and flopped onto the couch. \"What's up?\""
+    show Nonoko Worry2
     "\"Is Kyon-kun in trouble?\" she asked worriedly."
     nvl clear
+    show Kyon Smile3
     "\"No more than usual,\" he assured her. \"I just got this really tough undercover job saving the world.\""
+    show Nonoko Worry1
     "She padded into the living room to give him a skeptical stare."
+    show Kyon Smile7
     "\"Haruhi's idea,\" he added. \"For Tsuruya-kun.\""
     nvl clear
+    show Nonoko Hap1
     "Her skepticism faded, and she gave him a look of fierce determination, clenching one fist and nodding. \"Kyon-kun can do it!\" she said with complete conviction. \"For Haru-nee-san and Tsuru-nee-san, you'd better!\""
+    show Kyon Sigh2
     "\"Don't I know it,\" he sighed, leaning forward to ruffle her hair."
     nvl clear
+    show Nonoko Quest1
     "\"You took care of Yuki-nee-san when she was sick, right? Is she doing better now?\""
+    show Kyon Neutral2
     "\"Yeah, actually. Well, anyway, enough relaxing for me. I've got a test to study for tomorrow.\" And he had to leave early to meet with Mikuru and help her carry the new sewing machine...."
     nvl clear
     

@@ -24,7 +24,7 @@ init:
     image bg KyonHouseNight = "Backgrounds/KyonHouseNight.png"
     image bg KyonHouseDay = "Backgrounds/KyonHouseDay.png"
     image bg KyonKitchenRight = "Backgrounds/KyonKitchenRight.png"
-    #image bg KyonKitchenLeft = "Backgrounds/KyonKitchenLeft.png"
+    image bg KyonKitchenLeft = "Backgrounds/KyonKitchenLeft.png"
     image bg KyonHallway = "Backgrounds/KyonHallway.png"
     image bg KyonLivingRoomDay = "Backgrounds/KyonLivingRoomDay.png"
     image bg KyonLivingRoomEvening = "Backgrounds/KyonLivingRoomEvening.png"
@@ -978,6 +978,8 @@ init:
     image Nonoko Quest1 = "Sprites/Nonoko/NonokoQuestion1.png"
     image Nonoko Laugh1 = "Sprites/Nonoko/NonokoLaughing1.png"
     image Nonoko Yell1 = "sprites/Nonoko/NonokoYell1.png"
+    image Nonoko Worry1 = "sprites/Nonoko/NonokoWorry1.png"
+    image Nonoko Worry2 = "sprites/Nonoko/NonokoWorry2.png"
     
     #Mori Sprites
     image Mori Neutral1 = "Sprites/Mori/MoriNeutral1.png"
