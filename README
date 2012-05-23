@@ -6,10 +6,12 @@ Although, the forum might be a better place to put it: www.soulriders.net/forum/
 
 First release is finished! Time to work on the second half of Chapter 5 and fix all the mistakes I (Zfish9) made on chapters 6-8 :D
 
-Segment the paragraphs in 6-8 much more with linebreaks. 
-They flow in an uninterrupted wall of text without any user interaction until the screen is full, right now.
+Add Sakanaka to her scenes, and Ryo's needs to be bandaged and broken, unlike he is now, in his presentation scene.
 
-Add the Kyon cheek cut to relevant scenes in chapter 6-8 and before.
+Segment the paragraphs in 6-8 much more with linebreaks.
+Sometimes they flow in an uninterrupted wall of text without any user interaction until the screen is full, right now, and that's not good.
+
+Add the Kyon cheek cut to relevant scenes in chapter 6-8 and before (sprites/Kyon/cheekcut/).
 
 Search for "blush" in chapter 6. Haruhi should blush at one point, but her sprite doesn't do it.
 
@@ -17,6 +19,11 @@ Remove the "Mikuru no Kokoro" tenderly romantic theme from the scene in which Ky
 It's deeply dissonant. A few other BGMs earlier in the 6th chapter are sorta off, too.
 
 On that note, use SeishuniiJanaiKatsu more when fang-tan is around.
+
+The music used during Kanae's explanation of the fight to Kyon's Mom is used in Umineko during grisly murderinvestigating. This scene is far more relaxed, and even has an humorous bent. Maybe, change.
+Same scene: from what we saw, Kyon's living room is quite different. Maybe find a better fitting one?
+
+Haruhi's bedroom looks sort of austere for a teenage girl with cute hair decs. Needs something better?
 
 Fix the blush in TsuruyaTemplate.png. It was cropped and damaged badly.
 
