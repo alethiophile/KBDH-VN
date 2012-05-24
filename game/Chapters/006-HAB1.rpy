@@ -63,7 +63,7 @@ label HAB1:
     show Kanae Wince2:
         xalign 0.25 yalign 1.0
         linear 0.4 yalign 3.0
-    play sound "SE/Thump1.wav"    
+    play sound "SE/Thump1.wav"
     extend "and brought her down to the hallway floor. {w}She whimpered, her lunch spilling out of her bento all across the walkway, while more students crowded around. "
     show Kanae Wince2:
         xalign 0.25 yalign 3.0
@@ -101,7 +101,7 @@ label HAB1:
     "\"Really?\" her sempai asked, stopping a handful of steps away from the other boy, almost within distance to reach out and grab her. He shifted his feet, rising slightly to balance on the balls of either, while constantly shifting his weight back and forth a minute distance." 
     "\"I think you're the one who's going to be in more trouble; causing a scene like this? With so many witnesses? The question in my mind is what you might hope to accomplish.\"" 
     nvl clear
-    "He glanced around at the surrounding students and added, {nw}"
+    "He glanced around at the surrounding students and\nadded, {nw}"
     show Kyon Unhap2
     extend "\"Though, I'm going to admit a certain share of disappointment in the other students that none of them even {i}tried{/i} to stop you.\""
     show Kyon Unhap4
@@ -146,7 +146,6 @@ label HAB1:
         xalign 2.0 yalign 3.0
     with move
     play sound "SE/slide.wav"
-    #play sound "SE/sliding sound effect here"
     extend "He landed in a slide, "
     show Kyon Unhap5:
         xalign 1.15 yalign 1.25
@@ -238,7 +237,7 @@ label HAB1:
     with move
     extend "Rolling with the momentum of his evasion, her sempai quickly righted himself and lunged, {nw}"
     show Kyon Unhap5 at HalfLeft
-    show Kcut Fresh1 at HalfLeft
+    show Kcut Fresh1 behind Ryo at HalfLeft
     with fast_move
     show Ryo Neutral: #Pain
         xalign 0.7 yalign 1.0
@@ -265,8 +264,11 @@ label HAB1:
         xpos 0.5 ypos 1.0
         linear 0.4 rotate 90
     with move
+    play sound "SE/Thump1.wav"
+    pause 0.2
     extend "a leg sweep, {nw}"
     play sound "SE/impact.mp3"
+    play sound2 "SE/knifeslide.mp3"
     extend "then a swift kick to the hand holding the knife, {nw}"
     show Kyon Unhap5 Flip:
         xalign 0.1 yalign 1.0
@@ -274,7 +276,6 @@ label HAB1:
         xalign 0.1 yalign 1.0    
     with move    
     hide Ryo
-    #play sound "SE/knife clattering across floor sound effect here"
     extend "sending it clattering across the hallway through her ruined lunch, the uneasy silence of the surrounding students punctuated with a sickening crunch. The other boy howled, clutching his injured hand in agony and rolling around on his back, tears streaming from his eyes."
     nvl clear
     show Kyon Ser2 Flip
