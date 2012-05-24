@@ -781,6 +781,7 @@ init:
     image Tsuruya Quest2 = "Sprites/Tsuruya/TsuruyaQuestion2.png"
     image Tsuruya Sigh1 = "Sprites/Tsuruya/TsuruyaSigh1.png"
     image Tsuruya Sigh2 = "Sprites/Tsuruya/TsuruyaSigh2.png"
+    image Tsuruya Sigh3 = "Sprites/Tsuruya/TsuruyaSigh3.png"
     image Tsuruya Smile1 = "Sprites/Tsuruya/TsuruyaSmile1.png"
     image Tsuruya Smile2 = "Sprites/Tsuruya/TsuruyaSmile2.png"
     image Tsuruya Smile3 = "Sprites/Tsuruya/TsuruyaSmile3.png"
@@ -789,7 +790,8 @@ init:
     image Tsuruya Smile6 = "Sprites/Tsuruya/TsuruyaSmile6.png"
     image Tsuruya Sup1 = "Sprites/Tsuruya/TsuruyaSurprised1.png"
     image Tsuruya Worry1 = "Sprites/Tsuruya/TsuruyaWorry1.png"
-    image Tsuruya Worry2 = "Sprites/Tsuruya/TsuruyaWorry2.png"    
+    image Tsuruya Worry2 = "Sprites/Tsuruya/TsuruyaWorry2.png"
+    image Tsuruya Worry3 = "Sprites/Tsuruya/TsuruyaWorry3.png"
     image Tsuruya Neutral1 = "Sprites/Tsuruya/TsuruyaNeutral1.png"
     image Tsuruya Neutral2 = "Sprites/Tsuruya/TsuruyaNeutral2.png"
     image Tsuruya Susp1 = "Sprites/Tsuruya/TsuruyaSuspicious1.png"
@@ -987,6 +989,7 @@ init:
     image Kunikida Ser2 = "Sprites/Kunikida/KunikidaSerious2.png"
 
     #Nonoko Sprites
+    image Nonoko Ang1 = "Sprites/Nonoko/NonokoAngry1.png"
     image Nonoko Smile1 = "Sprites/Nonoko/NonokoSmile1.png"
     image Nonoko Sup1 = "Sprites/Nonoko/NonokoSurprised1.png"
     image Nonoko Pout1 = "Sprites/Nonoko/NonokoPout1.png"

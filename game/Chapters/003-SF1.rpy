@@ -222,14 +222,12 @@ label SF1:
     show Kyon Neutral1
     "\"Huh,\" he mused. \"There really was a slider.\""
     nvl clear
-    # $ renpy.layer_at_list([PanScene_RightToLeft])
     $ renpy.layer_at_list([PanScene_RightToOffCenterL])
     show Haruhi Hap4 at center
     show Koizumi Crossed Smile1 at right
     "\"There sure is!\" Haruhi agreed. \"I guess you lose the 'honorary slider' title. {nw}"
     show Haruhi Hap1
     extend "Hmm, even though we can help her get home, I'm reluctant to give her up so soon after finding her.\""
-    # $ renpy.layer_at_list([PanScene_LeftToRight])
     $ renpy.layer_at_list([PanScene_OffCenterLToRight])
     show Kyon Neutral4
     show Kanae Sup2
@@ -241,7 +239,6 @@ label SF1:
     show Kanae Unhap3
     show Kyon Neutral2
     "\"I think this is the first time anyone's shown up that hasn't done so specifically to investigate Haruhi,\" Kyon said thoughtfully."
-    # $ renpy.layer_at_list([PanScene_RightToLeft])
     $ renpy.layer_at_list([PanScene_RightToOffCenterL])
     show Haruhi Hap1
     show Koizumi Crossed Smile1
@@ -249,7 +246,6 @@ label SF1:
     show Haruhi Unhap1
     extend "\"Until it's safe for her to go home, she's a member of the brigade! I'm serious about this.\""
     nvl clear
-    # $ renpy.layer_at_list([PanScene_LeftToRight])
     $ renpy.layer_at_list([PanScene_OffCenterLToRight])
     show Kyon Neutral2
     show Kanae Neutral1
@@ -259,7 +255,6 @@ label SF1:
     show YBook at TopRight_RightScreen behind Mikuru with dissolve
     "\"Eighty seven items in queue currently.\""
     nvl clear
-    # $ renpy.layer_at_list([PanScene_RightToLeft])
     $ renpy.layer_at_list([PanScene_RightToOffCenterL])
     show Haruhi Crossed Ang1
     show Koizumi Crossed Neutral1
@@ -276,7 +271,6 @@ label SF1:
     show Haruhi Hap1
     "\"No problem,\" she said, shrugging, moving to the desk with the computer and pulling another red armband from the drawer. \"If you do find it, either give it to Kyon, or burn it — that's a unique badge of office!\""
     nvl clear
-    # $ renpy.layer_at_list([PanScene_LeftToRight])
     $ renpy.layer_at_list([PanScene_OffCenterLToRight])
     show Kyon Neutral4
     show Kanae Worry3
@@ -284,13 +278,11 @@ label SF1:
     "\"I feel more lost than usual,\" Kanae murmured, looking anxiously at Haruhi, {nw}"
     show Kanae Hap4
     extend "then hopefully at Kyon. \"You'll take care of me, won't you, Sempai?\""
-    # $ renpy.layer_at_list([PanScene_RightToLeft])
     $ renpy.layer_at_list([PanScene_RightToOffCenterL])
     show Haruhi Hap4
     show Koizumi Think Smile1
     "\"Of course he will,\" Haruhi replied absently, writing out the characters for 'vice commander' in permanent marker. \"He's totally a sucker for you calling him 'Sempai' all the time. Look at that goofy expression!\""
     nvl clear
-    # $ renpy.layer_at_list([PanScene_LeftToRight])
     $ renpy.layer_at_list([PanScene_OffCenterLToRight])
     show Kyon Sigh1
     show Kanae Smile3
@@ -313,7 +305,6 @@ label SF1:
     show Mikuru Maid Neutral2
     "\"No problem,\" Yuki agreed, while Mikuru offered a more hesitant nod."
     nvl clear
-    # $ renpy.layer_at_list([PanScene_RightToLeft])
     $ renpy.layer_at_list([PanScene_RightToOffCenterL])
     show Haruhi Ang1
     show Koizumi Think Grin1
@@ -324,13 +315,11 @@ label SF1:
     show Koizumi Think Grin2
     extend "\"Well,\" he said, \"it does concern the destruction of our world.\""
     nvl clear
-    # $ renpy.layer_at_list([PanScene_LeftToRight])
     $ renpy.layer_at_list([PanScene_OffCenterLToRight])
     show Kyon Ser3
     show Kanae Unhap3
     show Mikuru Maid Neutral2
     "\"Obviously, we're interested in preventing that,\" Kyon added. \"I'm hoping you're on the same page.\""
-    # $ renpy.layer_at_list([PanScene_RightToLeft])
     $ renpy.layer_at_list([PanScene_RightToOffCenterL])
     show Haruhi Crossed Tsun2
     show Koizumi Think Grin1
@@ -340,7 +329,6 @@ label SF1:
     show Haruhi Point Hap1
     extend"So come to this clubroom every day after class, or there will be a penalty!\""
     nvl clear
-    # $ renpy.layer_at_list([PanScene_LeftToRight])
     $ renpy.layer_at_list([PanScene_OffCenterLToRight])
     show Kyon Smile1
     show Kanae Hap3
@@ -527,14 +515,12 @@ label SF1:
     with fade
     "Mikuru sniffled, listening to the end of Kanae's story. \"That's so sad!\" she whimpered. \"Poor Kanae-chan!\""
     $ renpy.layer_at_list([PanScene_LeftToRight])
-    # $ renpy.layer_at_list([PanScene_LeftToOffCenterR])
     show Kyon Neutral3 at left_RightScreen
     show Kanae Hap2 at center_RightScreen
     show Yuki Right Neutral2 at right_RightScreen
     "\"It's not so bad!\" Kanae said brightly. \"Even though everything changes from world to world, I still have my family! Sometimes I even have friends! And most importantly, I almost always have Sempai.\""
     nvl clear
     $ renpy.layer_at_list([PanScene_RightToLeft])
-    # $ renpy.layer_at_list([PanScene_OffCenterRToLeft])
     show Haruhi Worry1
     show Mikuru Think Maid Sad2
     "\"Ouch,\" Haruhi said, taken aback. \"That doesn't sound like a fun power at all.\""
@@ -895,7 +881,6 @@ label SF1:
     show Haruhi Quest1
     extend "\"How does it work?\""
     show Haruhi Quest2
-    # $ renpy.layer_at_list([PanScene_LeftToOffCenterL])
     show Kyon Smile3
     show Kanae Quest1
     show Yuki Right Neutral2 
@@ -937,25 +922,21 @@ label SF1:
     show Haruhi Smile1 at right
     "\"Um, what for?\" she asked, looking between Kyon and Yuki curiously."
     nvl clear
-    # $ renpy.layer_at_list([PanScene_OffCenterLToRight])
     show Kyon Neutral2
     show Kanae Unhap3
     show Yuki Right Neutral2
     "\"You'll know some day,\" he answered, looking bleakly at his note to himself. \"I really, really hope that I get some calm days to focus on some normal things, soon. This is getting really out of hand.\""
     show Kyon Neutral3
-    # $ renpy.layer_at_list([PanScene_RightToOffCenterL])
     show Mikuru Maid Smile2
     show Haruhi Grin2
     "\"Yeah,\" Haruhi jibed, rolling her eyes, \"you do love taking notes and paying attention in class. Without a good excuse to pay such weak attention, whatever would you do?\""
     nvl clear
-    # $ renpy.layer_at_list([PanScene_OffCenterLToRight])
     show Kyon Smile3
     show Kanae Smile1
     show Yuki Right Neutral2
     "\"I beg your pardon?\" he asked, quirking one eyebrow higher. \"I don't have good excuses, I have {i}awesome{/i} excuses.\""
     nvl clear
     show Kyon Smile2
-    # $ renpy.layer_at_list([PanScene_RightToOffCenterL])
     show Mikuru Maid Smile1
     show Haruhi Hap4
     "Haruhi grinned very brightly, chuckling. \"That's true,\" she allowed. {nw}"
@@ -1181,7 +1162,6 @@ label SF1:
     stop music fadeout 3
     
     call eyecatch_fancy("Monday, April 18") from SF1_sc006
-    
 
     play music "Music/Nichijou.mp3"
     scene bg KyonRoomLeftClosed with fade

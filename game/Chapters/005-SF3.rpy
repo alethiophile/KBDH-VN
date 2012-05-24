@@ -107,9 +107,8 @@ label SF3:
     show Haruhi Neutral1 at TenthLeft
     show Kyon Neutral3 at right
     with dissolve
-    "He flipped on the light after releasing her hand and went to the window, gazing outside." 
-    # We REALLY need quieter door closing SE for serious scenes.
-    play sound "SE/doorclose.mp3"
+    "He flipped on the light after releasing her hand and went to the window, gazing outside."
+    play sound "SE/doorclose2.mp3"
     show Haruhi Quest1
     nvl clear
     "\"Well?\" she asked, breaking the silence and closing the door behind her. \"I'm sure you've got something to say.\""
@@ -379,17 +378,11 @@ label SF3:
     "She let her eyes drift shut as her head tilted back and her lips pursed, the last thought through her mind as everything turned into light that he would probably notice the small change she had made in him, as well.... But he probably wouldn't mind too much."
     nvl clear
     stop music fadeout 12
-    # $ _window = True
-    # scene white with Dissolve(12.0)
     $ _window = False
-    # scene black with Dissolve(3.0)
     $ renpy.pause(.5, hard=True)
 label test2:
     call eyecatch_generic("", "", 8, 5, "#fff", "#000")
     scene white
-
-    # call eyecatch("Thursday, April 21") from SF3_sc001
-    #ump credits_roll
     
     call eyecatch_fancy("", "", 8, "white") from SF3_sc001
     
@@ -408,9 +401,11 @@ label test2:
     with dissolve
     nvl clear
     "\"T...tickle-ninja!\" his sister protested, her face red from laughter. \"No fair!\" "   
-    show Kyon Smile3 
+    show Kyon Smile3
     "\"When you wake up with as much energy as I do,\" he told her sternly, \"no surprise attack is going to be effective enough.\" "
     nvl clear
+    show Kyon Smile2
+    show Nonoko Smile1
     "He grabbed his sister's wrists and hauled her upward, leaving her to dangle a few centimeters over the floor before gently lowering her to stand and releasing her. She stuck her tongue out at him, giggling, then ran down the stairs to their mother."
     nvl clear
     scene bg KyonHallway with fade
@@ -421,24 +416,21 @@ label test2:
     show Nonoko Smile1 at TenthLeft
     "\"That's very nice, dear,\" he heard his mother say as she bustled back into the kitchen. \"Maybe he'll get good grades, too. Now wash up before breakfast.\" "
     nvl clear
-    #scene bg KyonKitchenLeft with fade
-    #show Nonoko Sup1 at TenthLeft 
-    #show Kyon Smile1 at right 
-    #with dissolve
     show Kyon Worry1 
     "\"Hmm,\" he mused, his smile fading as his dream and the vague, uncertain memory of Yuki's 'training' session replayed themselves in his mind. The training was a headache, and he had thought oddly draining.... Maybe Yuki just hadn't perfected it, the first time? Even so, it was hard to grin when he considered what Haruhi might have done to herself that night."
     nvl clear
     "Even if his future self would evidently find nothing worth mentioning to him via the letter he had passed to Haruhi, or a hidden message elsewhere. {nw}"     
     show Kyon Neutral2
     extend "After washing, gobbling down everything his mother put in front of him and still feeling hungry, he told his mother and sister, \"There's a math test tomorrow; I'm headed in early to study.\" "
-    show Nonoko Yell1 
+    show Kyon Neutral3
+    show Nonoko Yell1
     "{=shout}\"Pod-person!\"{/=shout} his sister yelled, as he left the house."
     nvl clear
+    show Nonoko Ang1
     stop music fadeout 3
     
     call eyecatch_fancy("Thursday, April 21") from SF3_sc002
     
-#label test2:
     scene bg HaruhiBedroomDay with fade
     queue music "Music/Aruame.mp3"
     "She woke up, staring at the ceiling of her room and blinking. She'd had a dream.... She knew it was important, but the details kept slipping just out of her reach. She got out of bed and went about her morning routine, concentrating on the hazy recollections. Kyon was there ... and it was at school."
@@ -568,7 +560,6 @@ label test2:
     nvl clear
     scene bg stairwell with fade:
         size (800,600)
-    #play sound "SE/footsteps13.mp3"
     show Kyon Smile3 at right
     "He glanced at her sidelong as they stepped into the stairwell. \"Really?\" he asked, raising one eyebrow. \"I find it hard to imagine....\""
     show Haruhi Grin2 at TenthLeft
@@ -896,11 +887,10 @@ label test2:
     "After knocking, Kyon opened the door, his expression more sour than usual. A faint line of blood trickled down one cheek, and Kanae stood at his side, holding his free hand and looking downcast." 
     $ _window = True
     show Haruhi Sup3:
-        linear 0.3 TenthRight # left_RightScreen
+        linear 0.3 TenthRight
     show Kyon Worry1:
         linear 0.2 pass
         linear 0.2 center_RightScreen
-    # with dissolve
     $ _window = False
     $ renpy.layer_at_list([PanScene_LeftToCenter])
     "\"Kyon!\" Haruhi yelped, rushing to his side and peering at the cut — more of a deep scratch, really. Even so, she dragged him to the nearest chair and sat him down. \"What happened?\""
@@ -960,7 +950,6 @@ label test2:
     show Mikuru Ser2
     $ _window = True
     "\"The nurse's office, Kyon-kun,\" Mikuru insisted, taking Kyon's hand and leading him into the corridor, {nw}"
-    # $ _window = True
     hide Mikuru 
     hide Kyon
     with dissolve

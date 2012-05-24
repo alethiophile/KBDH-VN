@@ -313,35 +313,48 @@ label HAB1:
     "\"Ah,\" Tsuruya said, her smile vanishing. \"Well, he had that cut yesterdays, so that's not your fault,\" she assured the smaller girl. \"Really, I'm the one who needs to apologize! If I weren't borrowing Kyon-kun, they wouldn't have thought that you'd be a target!\" She rose from her seat and gave a full ninety degree bow to Kanae. \"I'm sorry,\" she added."
     nvl clear
     $ renpy.layer_at_list([PanScene_RightToLeft])
+    show Kanae Sad5
     show Koizumi Sigh2
     "\"A share of the blame is mine, as well,\" Koizumi added, grimacing. \"We are supposed to be watching over Michikyuu-san ... but obviously, we missed this.\""
+    show Koizumi Sigh4
     show YBook at TopRight with dissolve
     "\"Logically,\" Yuki said, not raising her eyes from her book, \"this is a predetermined event. If the effect precedes the cause, responsibility becomes difficult to determine.\""
     $ renpy.layer_at_list([PanScene_LeftToRight])
     hide YBook
     show Haruhi Crossed Quest1
+    show Tsuruya Worry3
     nvl clear
     "\"I'll have to ask Kyon about that later,\" Haruhi murmured. \"He's good at that stuff. Anyway, Tsuruya-san, Kanae-chan, I'm confident that Kyon will be just fine — but now I {i}really{/i} want to know what this investigation is about!\""
     nvl clear
-    show Tsuruya Smile1
-    "\"Sorry,\" Tsuruya said again with a weak chuckle, only managing to smile a tiny bit as she straightened up and sat down. \"That's still top secret.... Um! Kanae-chan, it isn't much, but you can have my leftover lunch, since yours got spilled! This doesn't make up for what you've suffered, but please consider it the first step of my apology!\""
+    show Haruhi Crossed Worry2
+    show Tsuruya Sigh3
+    "\"Sorry,\" Tsuruya said again with a weak chuckle, only managing to smile a tiny bit as she straightened up and sat down. \"That's still top secret.... {nw}"
+    show Tsuruya Hap4
+    extend "Um! Kanae-chan, it isn't much, but you can have my leftover lunch, since yours got spilled! This doesn't make up for what you've suffered, but please consider it the first step of my apology!\""
     $ renpy.layer_at_list([PanScene_RightToLeft])
     show Kanae Worry3
     "\"I'm not very hungry,\" Kanae said, shaking her head uncertainly."
     nvl clear
     show Haruhi Crossed Ang2
+    show Tsuruya Smile1
     $ renpy.layer_at_list([PanScene_LeftToRight])
     "\"You have to eat properly or you won't finish growing,\" Haruhi chastised. \"Hmm, I made an extra bento for.... Er, well, I made an extra bento. There should be enough to go around.\""
     show Kanae Smile1
     $ renpy.layer_at_list([PanScene_RightToLeft])    
     "Kanae nodded uncertainly, offering the other girls a weak smile. She was right to trust in her sempai, she decided. And these other new friends, while not very familiar, were the best friends she'd had in a long time...."
     $ renpy.layer_at_list([PanScene_LeftToRight])
-    show Tsuruya Smile3
+    show Haruhi Crossed Worry2
+    show Tsuruya Hap6
     nvl clear
     "\"Right, right!\" Tsuruya said brightly. \"And tomorrows, I'll escort you from your class to this clubroom for lunch! That way they'll have to deal with mes instead of you!\""
+    scene bg ClubroomRightDay
+    show Haruhi Crossed Worry2 at left
+    show Tsuruya Smile3 at center
     nvl clear
-    
     stop music fadeout 1
+    
+    call eyecatch_fancy("Thursday, April 21") from HAB1_sc002
+    
     scene bg ClubHallLeft with fade
     queue music "Music/MikurunoKokoro.mp3"
     show Kyon Worry1 at right with dissolve
