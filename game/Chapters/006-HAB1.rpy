@@ -18,14 +18,15 @@ label HAB1:
     show Ryo Neutral at TenthLeft with dissolve #Neutral
     "But she had only made it a few steps down the hallway before a taller third year boy approached her, tape across his nose and a bruise marring his face deeply around one eye. He raised a hand in greeting before glancing around, then asked, \"Are you Michikyuu Kanae-san?\""
     nvl clear
-    show Kanae Unhap2
+    show Kanae Worry1
     "\"Um,\" she managed, a bit unnerved by the delinquent-looking student before her. \"Yes? Are you looking for the SOS Brigade, maybe? I'm just a new member, so I don't know much yet.\""
     nvl clear
     show Kanae Unhap3
     show Ryo Neutral #Nervous
     "\"No, no,\" he said, glancing around nervously, {nw}"
     show Ryo Neutral #Grin
-    extend "then breaking into a smile that she really didn't trust; the kind of expression she'd seen on the rude boy who chased her across dimensions. For a panicked instance, she considered sliding away ... but she couldn't do that! Not with Sempai here, and for the first time in hundreds of worlds, someone who could help her learn how to slide better! What if she couldn't find her way back? It was still very hard, even with the practice that Yuki helped her get...."
+    extend "then breaking into a smile that she really didn't trust; the kind of expression she'd seen on the rude boy who chased her across dimensions. For a panicked instance, she considered sliding away ... but she couldn't do that!" 
+    "Not with Sempai here, and for the first time in hundreds of worlds, someone who could help her learn how to slide better! What if she couldn't find her way back? It was still very hard, even with the practice that Yuki helped her get...."
     nvl clear
     show Ryo Neutral #Grin - Open Mouth
     "\"Hey,\" he said suddenly, \"you know ... Kyon, right?\""
@@ -53,6 +54,7 @@ label HAB1:
     hide Kanae with moveoutright
     extend "she sprinted away as quickly as she could, {nw}"
     hide Ryo Neutral with moveoutright
+    scene bg ClubHallLeft with wiperight
     show Ryo Neutral at TenthLeft
     show Kanae Wince1 at HalfLeft
     with moveinleft
@@ -61,11 +63,12 @@ label HAB1:
     show Kanae Wince2:
         xalign 0.25 yalign 1.0
         linear 0.4 yalign 3.0
+    play sound "SE/Thump1.wav"    
     extend "and brought her down to the hallway floor. {w}She whimpered, her lunch spilling out of her bento all across the walkway, while more students crowded around. "
     show Kanae Wince2:
         xalign 0.25 yalign 3.0
         linear 0.8 yalign 1.0
-    extend "\"Help!\" she yelled, cowering when the boy, huffing for breath, grabbed her wrist and hauled her unceremoniously to her feet."
+    "\"Help!\" she yelled, cowering when the boy, huffing for breath, grabbed her wrist and hauled her unceremoniously to her feet."
     nvl clear
     stop music fadeout 2
     show Kanae Wince1
@@ -95,11 +98,13 @@ label HAB1:
     nvl clear
     show Ryo Neutral #Angry - Closed Mouth
     show Kyon Ang4
-    "\"Really?\" her sempai asked, stopping a handful of steps away from the other boy, almost within distance to reach out and grab her. He shifted his feet, rising slightly to balance on the balls of either, while constantly shifting his weight back and forth a minute distance. \"I think you're the one who's going to be in more trouble; causing a scene like this? With so many witnesses? The question in my mind is what you might hope to accomplish.\" He glanced around at the surrounding students and added, {nw}"
+    "\"Really?\" her sempai asked, stopping a handful of steps away from the other boy, almost within distance to reach out and grab her. He shifted his feet, rising slightly to balance on the balls of either, while constantly shifting his weight back and forth a minute distance." 
+    "\"I think you're the one who's going to be in more trouble; causing a scene like this? With so many witnesses? The question in my mind is what you might hope to accomplish.\"" 
+    nvl clear
+    "He glanced around at the surrounding students and added, {nw}"
     show Kyon Unhap2
     extend "\"Though, I'm going to admit a certain share of disappointment in the other students that none of them even {i}tried{/i} to stop you.\""
     show Kyon Unhap4
-    nvl clear
     "All of the boys in the crowd shifted their gazes to their feet, while the girls began a low murmur."
     nvl clear
     show Ryo Neutral #Angry - Sneer
@@ -115,6 +120,7 @@ label HAB1:
     nvl clear
     show Ryo Neutral #Angry - Closed Mouth - Angrier Version
     show Kyon Unhap5 behind Kanae
+    play sound "SE/lowswoosh.mp3"
     show Kanae Wince2:
         xalign 0.70 yalign 1.0
     with fast_move
@@ -139,6 +145,7 @@ label HAB1:
     show Kyon Pain1 Flip:
         xalign 2.0 yalign 3.0
     with move
+    play sound "SE/slide.wav"
     #play sound "SE/sliding sound effect here"
     extend "He landed in a slide, "
     show Kyon Unhap5:
@@ -156,6 +163,7 @@ label HAB1:
     nvl clear
     show Kyon Unhap4
     "The other boy growled, then surged forward, swinging a powerful punch towards her sempai. "
+    play sound "SE/lowswoosh.mp3"
     show Ryo Neutral at center with fast_move #Angry - Attack Version - Flipped Right
     show Kyon Unhap5 Flip at HalfLeft with fast_move
     show Ryo Neutral at HalfRight with move: #Angry - Attack Version - Flipped Right
@@ -172,7 +180,7 @@ label HAB1:
     with fast_move
     extend "Kanae quickly hopped to her feet and scurried away. {nw}"
     hide Kanae with moveoutright
-    extend "Almost immediately she found herself contained in a protective circle of the girls standing on the sidelines, people she didn't know offering murmurs of sympathy and asking if she was okay. She tried not to laugh or cry at the absurdity of the situation."
+    "Almost immediately she found herself contained in a protective circle of the girls standing on the sidelines, people she didn't know offering murmurs of sympathy and asking if she was okay. She tried not to laugh or cry at the absurdity of the situation."
     nvl clear
     "So far, only her pride and her lunch had been lost."
     nvl clear
@@ -211,6 +219,9 @@ label HAB1:
     extend "as the other boy produced a knife from his coat and charged abruptly at her sempai."
     nvl clear
     play sound "SE/lowswoosh.mp3"
+    play sound2 "SE/clink.mp3"
+    show Cut with cutright
+    hide Cut with fastdissolve
     show Ryo Neutral: #Angry - With Knife - Flipped Right
         xalign 0.6 yalign 1.0
     show Kyon Unhap5:
@@ -218,13 +229,17 @@ label HAB1:
     with fast_move
     show Kyon Unhap5:
         xalign 0.95 yalign 5.0
+    show Kcut Fresh1:
+        xalign 0.95 yalign 5.0
     show Kanae Unhap1
     "With speed she didn't think was possible, her sempai snapped his head back and threw himself to the floor, a potentially lethal stab to the side of the head reduced to a short, shallow scratch on one cheek. "
     show Ryo Neutral: #Angry - With Knife - Flipped Right
         xalign 0.7 yalign 1.0
     with move
     extend "Rolling with the momentum of his evasion, her sempai quickly righted himself and lunged, {nw}"
-    show Kyon Unhap5 at HalfLeft with fast_move
+    show Kyon Unhap5 at HalfLeft
+    show Kcut Fresh1 at HalfLeft
+    with fast_move
     show Ryo Neutral: #Pain
         xalign 0.7 yalign 1.0
         linear 0.1 xalign 0.5
@@ -234,12 +249,17 @@ label HAB1:
     show Kyon Unhap5 Flip:
         xalign 0.25 yalign 1.0
         linear 0.1 xalign 0.05
+    show Kcut Fresh2 Flip:
+        xalign 0.25 yalign 1.0
+        linear 0.1 xalign 0.05    
     play sound "SE/impact.mp3"
     show Ryo Neutral: #Pain
     "This time, her sempai was more brutal, adding the boy's sudden momentum to a fierce kidney jab, {nw}"
     play sound "SE/lowswoosh.mp3"
     show Kyon Unhap5 Flip:
         xalign 0.1 yalign 2.5
+    show Kcut Running1 Flip:
+        xalign 0.1 yalign 2.5    
     show Ryo Neutral at HalfRight: #Pain
         xanchor 0 yanchor 0
         xpos 0.5 ypos 1.0
@@ -248,22 +268,30 @@ label HAB1:
     extend "a leg sweep, {nw}"
     play sound "SE/impact.mp3"
     extend "then a swift kick to the hand holding the knife, {nw}"
-    show Kyon Unhap5 Flip with move:
+    show Kyon Unhap5 Flip:
         xalign 0.1 yalign 1.0
+    show Kcut Running1 Flip:
+        xalign 0.1 yalign 1.0    
+    with move    
     hide Ryo
     #play sound "SE/knife clattering across floor sound effect here"
     extend "sending it clattering across the hallway through her ruined lunch, the uneasy silence of the surrounding students punctuated with a sickening crunch. The other boy howled, clutching his injured hand in agony and rolling around on his back, tears streaming from his eyes."
     nvl clear
     show Kyon Ser2 Flip
+    show Kcut Running2 Flip
     "\"You,\" Kyon declared, using a more polite form and pointing at the nearest watching boy. \"See that he gets to the nurse's office.\" "
     show Kanae Worry1
-    show Kyon Ser3 Flip at center with move 
+    show Kyon Ser3 Flip at center
+    show Kcut Running3 Flip at center
+    with move
     extend "He held one hand out to her, adding, \"Let's get out of here, Kanae-chan.\""
     show Kanae Smile2
     show Kyon Ser1 Flip
+    show Kcut Running4 Flip behind Kanae
     "She nervously nodded, her heart settling a tiny bit when she took his hand and he led her down the hallway."
     hide Kanae
     hide Kyon
+    hide Kcut
     with moveoutright
     nvl clear
     stop music fadeout 3

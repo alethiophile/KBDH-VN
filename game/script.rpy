@@ -125,6 +125,7 @@ init:
     image Spike4 = "Sprites/Effects/NetSpike4.png"
     image Spike5 = "Sprites/Effects/NetSpike5.png"
     image knifethrow = "Sprites/Effects/knifethrowlong.png"
+    image Cut = "Sprites/Effects/cuttest.png"
     
     image TownHillLeftMorning =  "Backgrounds/TownHillLeftMorning.png"
     
@@ -424,6 +425,22 @@ init:
     image KBlush = "Sprites/Kyon/KBlush.png"
     image KBlush Casual = "Sprites/Kyon/KBlushCasual.png"
     image KPaper = "Sprites/Kyon/KyonPaper.png"
+    
+    image Kcut Clotted = "Sprites/Kyon/cheekcut/clotted.png"
+    image Kcut Fresh1 = "Sprites/Kyon/cheekcut/fresh1.png"
+    image Kcut Fresh2 = "Sprites/Kyon/cheekcut/fresh2.png"
+    image Kcut Running1 = "Sprites/Kyon/cheekcut/running1.png"
+    image Kcut Running2 = "Sprites/Kyon/cheekcut/running2.png"
+    image Kcut Running3 = "Sprites/Kyon/cheekcut/running3.png"
+    image Kcut Running4 = "Sprites/Kyon/cheekcut/running4.png"
+    
+    image Kcut Clotted Flip =  im.Flip("Sprites/Kyon/cheekcut/clotted.png", horizontal=True)
+    image Kcut Fresh1 Flip =  im.Flip("Sprites/Kyon/cheekcut/fresh1.png", horizontal=True)
+    image Kcut Fresh2 Flip =  im.Flip("Sprites/Kyon/cheekcut/fresh2.png", horizontal=True)
+    image Kcut Running1 Flip =  im.Flip("Sprites/Kyon/cheekcut/running1.png", horizontal=True)
+    image Kcut Running2 Flip = im.Flip( "Sprites/Kyon/cheekcut/running2.png", horizontal=True)
+    image Kcut Running3 Flip =  im.Flip("Sprites/Kyon/cheekcut/running3.png", horizontal=True)
+    image Kcut Running4 Flip =  im.Flip("Sprites/Kyon/cheekcut/running4.png", horizontal=True)
     
     #Kyon image flips
     image Kyon Neutral1 Flip = im.Flip("Sprites/Kyon/KyonNeutral1.png", horizontal=True)
@@ -1290,6 +1307,7 @@ init python:
     coatin = ImageDissolve("id_clouds.png", 1.0, 0)
     coatout = ImageDissolve("id_clouds.png", 1.0, 0, reverse=True)
     logosin = ImageDissolve("logosfade.png", 2.0, 0)
+    cutright = ImageDissolve("id_leftright.png",0.2, 0)
     menu = nvl_menu
     style.nvl_window.background = "nvl_window.png"
     style.nvl_window.xpadding = 55
