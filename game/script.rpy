@@ -102,13 +102,12 @@ init:
     image bg Supermarket = "Backgrounds/Supermarket.png"
     image bg MikuruApartment = "Backgrounds/MikuruApartment.png"
     image bg Udon = "Backgrounds/Udon.png"
+    image TownHillLeftMorning =  "Backgrounds/TownHillLeftMorning.png"
     
     image white = "#ffffff"
     image black = "#000000"
     image transpwhite = "#ffffffcc"
     image yukibackground = "#ccccff"
-    # image title0 = "Backgrounds/title0.png"
-    # image title1 = "Backgrounds/title1.png"
     image Barrier = "Backgrounds/barrier2.jpg"
     image Bluesword = "Backgrounds/bluesword1.png"
     image field = "Sprites/Effects/InterdictionField.png"
@@ -126,8 +125,6 @@ init:
     image Spike5 = "Sprites/Effects/NetSpike5.png"
     image knifethrow = "Sprites/Effects/knifethrowlong.png"
     image Cut = "Sprites/Effects/cuttest.png"
-    
-    image TownHillLeftMorning =  "Backgrounds/TownHillLeftMorning.png"
     
     #Haruhi Sprites
     image Haruhi Sup1 = "Sprites/Haruhi/HaruhiSideSurprised1.png"
@@ -231,6 +228,7 @@ init:
     image Haruhi Crossed Eyeroll2 = "Sprites/Haruhi/HaruhiCrossedEyeroll2.png"
     image Haruhi Crossed Quest1 = "Sprites/Haruhi/HaruhiCrossedQuestion1.png"
     image Haruhi Crossed Grin1 = "Sprites/Haruhi/HaruhiCrossedGrin1.png"
+    image Haruhi Crossed Grin2 = "Sprites/Haruhi/HaruhiCrossedGrin2.png"
     image Haruhi Crossed Worry1 = "Sprites/Haruhi/HaruhiCrossedWorry1.png"
     image Haruhi Crossed Worry2 = "Sprites/Haruhi/HaruhiCrossedWorry2.png"
     image Haruhi Crossed Smile1 = "Sprites/Haruhi/HaruhiCrossedSmile1.png"
@@ -258,6 +256,7 @@ init:
     image Haruhi Crossed Casual Eyeroll2 = "Sprites/Haruhi/HaruhiCrossedCasualEyeroll2.png"
     image Haruhi Crossed Casual Quest1 = "Sprites/Haruhi/HaruhiCrossedCasualQuestion1.png"
     image Haruhi Crossed Casual Grin1 = "Sprites/Haruhi/HaruhiCrossedCasualGrin1.png"
+    image Haruhi Crossed Casual Grin2 = "Sprites/Haruhi/HaruhiCrossedCasualGrin2.png"
     image Haruhi Crossed Casual Worry1 = "Sprites/Haruhi/HaruhiCrossedCasualWorry1.png"
     image Haruhi Crossed Casual Worry2 = "Sprites/Haruhi/HaruhiCrossedCasualWorry2.png"
     image Haruhi Crossed Casual Smile1 = "Sprites/Haruhi/HaruhiCrossedCasualSmile1.png"
@@ -308,13 +307,16 @@ init:
     image Haruhi Ang3 Flip = im.Flip("Sprites/Haruhi/HaruhiSideAngry3.png", horizontal=True)
     image Haruhi Smile1 Flip = im.Flip("Sprites/Haruhi/HaruhiSideSmile1.png", horizontal=True)
     image Haruhi Smile3 Flip = im.Flip("Sprites/Haruhi/HaruhiSideSmile3.png", horizontal=True)
-    image Haruhi Neutral1 Flip = im.Flip("Sprites/Haruhi/HaruhiSideNeutral2.png", horizontal=True)
+    image Haruhi Neutral1 Flip = im.Flip("Sprites/Haruhi/HaruhiSideNeutral1.png", horizontal=True)
     image Haruhi Neutral2 Flip = im.Flip("Sprites/Haruhi/HaruhiSideNeutral2.png", horizontal=True)
+    image Haruhi Neutral3 Flip = im.Flip("Sprites/Haruhi/HaruhiSideNeutral3.png", horizontal=True)
+    image Haruhi Neutral4 Flip = im.Flip("Sprites/Haruhi/HaruhiSideNeutral4.png", horizontal=True)
     image Haruhi Grin1 Flip = im.Flip("Sprites/Haruhi/HaruhiSideGrin1.png", horizontal=True)
     image Haruhi Pout1 Flip = im.Flip("Sprites/Haruhi/HaruhiSidePout1.png", horizontal=True)
     image Haruhi Pout2 Flip = im.Flip("Sprites/Haruhi/HaruhiSidePout2.png", horizontal=True)
-    image Haruhi Sigh1 Flip = im.Flip("Sprites/Haruhi/HaruhiSideSigh2.png", horizontal=True)
+    image Haruhi Sigh1 Flip = im.Flip("Sprites/Haruhi/HaruhiSideSigh1.png", horizontal=True)
     image Haruhi Sigh2 Flip = im.Flip("Sprites/Haruhi/HaruhiSideSigh2.png", horizontal=True)
+    image Haruhi Sigh3 Flip = im.Flip("Sprites/Haruhi/HaruhiSideSigh3.png", horizontal=True)
     image Haruhi Sup1 Flip = im.Flip("Sprites/Haruhi/HaruhiSideSurprised1.png", horizontal=True)
     image Haruhi Sup2 Flip = im.Flip("Sprites/Haruhi/HaruhiSideSurprised2.png", horizontal=True)
     image Haruhi Sup3 Flip = im.Flip("Sprites/Haruhi/HaruhiSideSurprised3.png", horizontal=True)
@@ -326,6 +328,7 @@ init:
     image Haruhi Quest2 Flip = im.Flip("Sprites/Haruhi/HaruhiSideQuestion2.png", horizontal=True)
     image Haruhi Unhap1 Flip = im.Flip("Sprites/Haruhi/HaruhiSideUnhappy1.png", horizontal=True)
     image Haruhi Unhap2 Flip = im.Flip("Sprites/Haruhi/HaruhiSideUnhappy2.png", horizontal=True)
+    image Haruhi Unhap3 Flip = im.Flip("Sprites/Haruhi/HaruhiSideUnhappy3.png", horizontal=True)
     
     #Kyon Sprites
     image Kyon Ser1 = "Sprites/Kyon/KyonSerious1.png"
@@ -644,6 +647,7 @@ init:
     image Mikuru Think Sad2 = "Sprites/Mikuru/MikuruThinkSad2.png"
     image Mikuru Think Sad3 = "Sprites/Mikuru/MikuruThinkSad3.png"
     image Mikuru Think Sad4 = "Sprites/Mikuru/MikuruThinkSad4.png"
+    image Mikuru Think Sad5 = "Sprites/Mikuru/MikuruThinkSad5.png"
     image Mikuru Think Sup1 = "Sprites/Mikuru/MikuruThinkSurprised1.png"
     image Mikuru Think Sup2 = "Sprites/Mikuru/MikuruThinkSurprised2.png"
     
@@ -654,6 +658,7 @@ init:
     image Mikuru Think Casual Sad2 = "Sprites/Mikuru/MikuruThinkCasualSad2.png"
     image Mikuru Think Casual Sad3 = "Sprites/Mikuru/MikuruThinkCasualSad3.png"
     image Mikuru Think Casual Sad4 = "Sprites/Mikuru/MikuruThinkCasualSad4.png"
+    image Mikuru Think Casual Sad5 = "Sprites/Mikuru/MikuruThinkCasualSad5.png"
     image Mikuru Think Casual Sup1 = "Sprites/Mikuru/MikuruThinkCasualSurprised1.png"
     image Mikuru Think Casual Sup2 = "Sprites/Mikuru/MikuruThinkCasualSurprised2.png"
     
@@ -664,6 +669,7 @@ init:
     image Mikuru Think Maid Sad2 = "Sprites/Mikuru/MikuruThinkMaidSad2.png"
     image Mikuru Think Maid Sad3 = "Sprites/Mikuru/MikuruThinkMaidSad3.png"
     image Mikuru Think Maid Sad4 = "Sprites/Mikuru/MikuruThinkMaidSad4.png"
+    image Mikuru Think Maid Sad5 = "Sprites/Mikuru/MikuruThinkMaidSad5.png"
     image Mikuru Think Maid Sup1 = "Sprites/Mikuru/MikuruThinkMaidSurprised1.png"
     image Mikuru Think Maid Sup2 = "Sprites/Mikuru/MikuruThinkMaidSurprised2.png"
     image MTears Think = "Sprites/Mikuru/MTearsThink1.png"
@@ -1033,6 +1039,9 @@ init:
     image Mori Smile3 Flip = im.Flip("Sprites/Mori/MoriSmile3.png", horizontal=True)
     image Mori Nervous1 Flip = im.Flip("Sprites/Mori/MoriNervous1.png", horizontal=True)
     image Mori Hap1 Flip = im.Flip("Sprites/Mori/MoriHappy1.png", horizontal=True)
+    
+    #Sakanaka Sprites
+    image Sakanaka Neutral = "Sprites/Sakanaka/SakanakaNeutral.png"
     
     #Yamane Sprites
     #image Yamane Neutral = "Sprites/Yamane/Yamane.png"
