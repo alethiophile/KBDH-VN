@@ -685,6 +685,7 @@ init:
     image Mikuru Cower Sup1 = "Sprites/Mikuru/MikuruCowerSurprised1.png"
     image Mikuru Cower Sigh1 = "Sprites/Mikuru/MikuruCowerSigh1.png"
     image Mikuru Cower Wince1 = "Sprites/Mikuru/MikuruCowerWince1.png"
+    image Mikuru Cower Quest1 = "Sprites/Mikuru/MikuruCowerQuestion1.png"
     image Mikuru Cower Smile1 ="Sprites/Mikuru/MikuruCowerSmile1.png"
     image Mikuru Cower Smile2 ="Sprites/Mikuru/MikuruCowerSmile2.png"
     image Mikuru Cower Unhap1 = "Sprites/Mikuru/MikuruCowerUnhappy1.png"
@@ -701,11 +702,11 @@ init:
     image Mikuru Cower Casual Sup1 = "Sprites/Mikuru/MikuruCowerCasualSurprised1.png"
     image Mikuru Cower Casual Sigh1 = "Sprites/Mikuru/MikuruCowerCasualSigh1.png"
     image Mikuru Cower Casual Wince1 = "Sprites/Mikuru/MikuruCowerCasualWince1.png"
+    image Mikuru Cower Casual Quest1 = "Sprites/Mikuru/MikuruCowerCasualQuestion1.png"
     image Mikuru Cower Casual Smile1 ="Sprites/Mikuru/MikuruCowerCasualSmile1.png"
     image Mikuru Cower Casual Smile2 ="Sprites/Mikuru/MikuruCowerCasualSmile2.png"
     image Mikuru Cower Casual Unhap1 = "Sprites/Mikuru/MikuruCowerCasualUnhappy1.png"
     image Mikuru Cower Casual Worry1 = "Sprites/Mikuru/MikuruCowerCasualWorry1.png"
-    
     image MTears Casual = "Sprites/Mikuru/MTearsCowerCasual1.png"
     
     image Mikuru Cower Face Wince1 = "Sprites/Mikuru/MikuruCowerFaceWince1.png"
@@ -721,6 +722,7 @@ init:
     image MBlush Cower Face = "Sprites/Mikuru/MBlushFace.png"
     
     image Mikuru Cower Towel Wince1 = "Sprites/Mikuru/MikuruCowerTowelWince1.png"
+    image Mikuru Cower Towel Quest1 = "Sprites/Mikuru/MikuruCowerTowelQuest1.png"
     image Mikuru Cower Towel Nervous1 = "Sprites/Mikuru/MikuruCowerTowelNervous1.png"
     image Mikuru Cower Towel Nervous3 = "Sprites/Mikuru/MikuruCowerTowelNervous3.png"
     image Mikuru Cower Towel Sup2 = "Sprites/Mikuru/MikuruCowerTowelSurprised2.png"
@@ -1454,12 +1456,9 @@ init python:
             config.keymap[action].append('K_KP9')
         if 'K_PAGEDOWN' in config.keymap[action]:
             config.keymap[action].append('K_KP3')
-        
-        
     
 transform center_left:
     xalign 0.1 yalign 1.0
-
 transform TopRight:
     xalign 1.0 yalign 0.0
 transform TopLeft:
@@ -1468,15 +1467,19 @@ transform HalfRight:
     xalign 0.75 yalign 1.0
 transform HalfLeft:
     xalign 0.25 yalign 1.0
-    
 transform TenthRight:
     xalign 0.90 yalign 1.0
 transform TenthLeft:
     xalign 0.10 yalign 1.0
-    
 transform KyonRightFast:
     xalign -0.5 yalign 1.0
     linear 0.2 xalign 2.0
+
+transform PanScene_SetToRight:
+    xpos -1.0    
+transform PanScene_SetToLeft:
+    xpos 0.0
+
 transform PanScene_LeftToRight:
     # xpos 0.0
     linear 0.15 xpos -1.0
@@ -1500,12 +1503,7 @@ transform PanScene_RightToCenter:
     linear 0.15 xpos -0.5
 transform PanScene_CenterToRight:
     xpos -0.5    
-    linear 0.15 xpos -1.0
-transform PanScene_SetToRight:
-    xpos -1.0    
-transform PanScene_SetToLeft:
-    xpos 0.0    
-    
+    linear 0.15 xpos -1.0    
 transform PanScene_LeftToOffCenterL:
     # xpos 0.0
     linear 0.15 xpos -0.3
@@ -1536,6 +1534,12 @@ transform PanScene_OffCenterLToRight:
 transform PanScene_OffCenterRToRight:
     xpos -0.7  
     linear 0.15 xpos -1.0
+transform PanScene_CenterToOffCenterL:
+    xpos -0.5    
+    linear 0.15 xpos -0.3
+transform PanScene_CenterToOffCenterR:
+    xpos -0.5    
+    linear 0.15 xpos -0.7
     
 transform left_RightScreen:
     xpos 1.0 yalign 1.0    

@@ -854,14 +854,26 @@ label test2:
     $ renpy.layer_at_list([PanScene_LeftToRight])    
     "\"Ooh! Naturally,\" she agreed, nodding brightly. \"Yous are a sharp one, huh?\""
     nvl clear
-    show Mikuru Sigh1 
+    show Tsuruya Smile2
+    show Mikuru Sigh1
+    scene bg ClubroomRightDay
+    show Haruhi Neutral1 at left
+    show Tsuruya Smile2 at center
+    show Mikuru Sigh1 behind Tsuruya:
+        xalign 1.0 yalign 1.0
+        linear 0.6 yalign 1.1    
     "\"H...hehe...\" Mikuru wheezed, slumping in her chair in a faint."
-    show Haruhi Sigh2 
+    show Haruhi Sigh2
     "\"That girl has got to get some spine,\" Haruhi muttered. " 
     show Haruhi Quest1
     extend "\"What about yesterday, though?\""
-    show Haruhi Quest2 
-    show Tsuruya Laugh1 
+    scene bg ClubroomFullDay:
+        xpos 0 ypos 0
+    $ renpy.layer_at_list([PanScene_SetToRight])
+    show Haruhi Quest2 at left_RightScreen
+    show Tsuruya Laugh1 at center_RightScreen
+    show Mikuru Sigh1 behind Tsuruya:
+        xalign 2.536 yalign 1.1
     "\"Oh, that,\" Tsuruya said with a chuckle. \"Well, my investigation's still top-secret, so I can't say anythings about it to anyone but Kyon-kun until it's resolved.\""
     nvl clear
     show Tsuruya Smile4 
@@ -912,9 +924,10 @@ label test2:
     show Haruhi Smile3 
     show Tsuruya Hap3 
     "\"For sure, Haru-nyan! Kyon-kun's super handy!\""
+    show Tsuruya Smile2
     nvl clear                                                                            
-
     stop music fadeout 1
+    
     queue music "Music/Unzari da.mp3"
     show Koizumi Think Ser3 at left
     $ renpy.layer_at_list([PanScene_RightToLeft])
@@ -924,67 +937,77 @@ label test2:
     pause 1
     play sound "SE/dooropenfast.wav"
     show Kyon Worry1 at right
+    show Kcut Running4 at right
     show Kanae Worry2 at center
     with dissolve
     $ _window = False
     "After knocking, Kyon opened the door, his expression more sour than usual. A faint line of blood trickled down one cheek, and Kanae stood at his side, holding his free hand and looking downcast." 
     $ _window = True
+    $ renpy.layer_at_list([PanScene_LeftToCenter])
     show Haruhi Sup3:
-        linear 0.3 TenthRight
+        linear 0.3 xalign 1.1
     show Kyon Worry1:
         linear 0.2 pass
-        linear 0.2 center_RightScreen
+        linear 0.2 xalign 1.65
+    show Kcut Running4:
+        linear 0.2 pass
+        linear 0.2 xalign 1.65
     $ _window = False
-    $ renpy.layer_at_list([PanScene_LeftToCenter])
     "\"Kyon!\" Haruhi yelped, rushing to his side and peering at the cut — more of a deep scratch, really. Even so, she dragged him to the nearest chair and sat him down. \"What happened?\""
     nvl clear
-    $ renpy.layer_at_list([PanScene_CenterToRight])
-    show Tsuruya Sup1 at center_RightScreen
+    $ renpy.layer_at_list([PanScene_CenterToOffCenterR])
+    show Haruhi Neutral4
+    show Tsuruya Sup1
     "\"You're still bleeding?\" Tsuruya asked, blinking in surprise. \"But I put a bandage on that for you yesterday!\""
-    show Kyon Sigh1 at center_RightScreen
-    show Tsuruya Quest2 at center_RightScreen
+    show Kyon Sigh1
+    show Tsuruya Quest2
     "\"Long story,\" Kyon said, shaking his head and grimacing."
-    $ renpy.layer_at_list([PanScene_RightToLeft])
-    show Haruhi Worry2 at TenthRight
-    show Kanae Worry3 at center
+    $ renpy.layer_at_list([PanScene_OffCenterRToLeft])
+    show Kyon Sigh3
+    show Haruhi Worry2
+    show Kanae Worry3
     "\"I'm sorry, Sempai,\" Kanae managed timidly, releasing his hand and taking a seat by Koizumi."
-    show Kanae Unhap3 at center
+    show Kanae Unhap3
     $ renpy.layer_at_list([PanScene_LeftToRight])    
     nvl clear
-    show Kyon Neutral2 at center_RightScreen
+    show Kyon Neutral2
     "\"Don't worry about it— Haruhi, Asahina-san and I need to take care of something relatively quickly.\""
-    show Kyon Neutral3 at center_RightScreen
-    show Mikuru Sad2 at right_RightScreen
+    show Kyon Neutral3
+    show Mikuru Sad2
     "Mikuru stared, snapped out of her faint only to see the scratch, blood dribbling down Kyon's cheek to run along his chin."
-    $ renpy.layer_at_list([PanScene_RightToCenter])
-    # with None
+    $ _window = True
+    $ renpy.layer_at_list([PanScene_SetToRight])
+    show Kyon behind Mikuru
+    show Kcut behind Mikuru
     show Mikuru Cower Nervous3:
-        linear 0.3 xpos 1.2
-    show Kyon Neutral3:
-        linear 0.2 pass
-        linear 0.1 xpos 1.3
+        linear 0.3 xpos 2.15 yalign 1.0
     show Tsuruya Sup1:
-        linear 0.3 right_RightScreen
+        linear 0.2 pass
+        linear 0.2 right_RightScreen
+    $ _window = False
     nvl clear
     "\"Wah! Kyon-kun!\" she wailed, dashing to his side and dabbing at the injury with a handkerchief. \"I'll take you to the nurse's office, right away! Please don't die!\""
     nvl clear
+    $ renpy.layer_at_list([PanScene_RightToOffCenterR])
+    show Tsuruya Smile5
     show Mikuru Cower Nervous1
-    show Haruhi Neutral1 at TenthRight
+    show Haruhi Neutral1
     "Haruhi nodded, unhappy with how things were playing out, but understanding at least what went on. Time travel really explained quite a bit. {nw}"
-    show Haruhi Neutral2 at TenthRight
+    show Haruhi Neutral2
     extend "\"Mikuru-chan,\" she said, waggling a finger, \"it's just a scratch. Kyon is made of tougher stuff! Now, remember yesterday, while we were in the club meeting. We were all in by ten minutes after class got out, right? Make sure he gets there alright.\""
-    show Haruhi Neutral1 at TenthRight
+    show Haruhi Neutral1
     show Mikuru Cower Sup1
     "\"W...what?\""
     nvl clear
+    show Mikuru Cower Quest1
     show Kyon Neutral1
     "\"Ah, got it,\" Kyon said, nodding sagely. \"Anything else?\""
-    show Haruhi Neutral2 at TenthRight
+    show Haruhi Neutral2
     show Kyon Neutral4
     show Mikuru Cower Nervous1
     "\"I've agreed to let you help Tsuruya-san out when she asks,\" Haruhi added, drumming her fingertips on the tabletop. \"But I expect a full report from both of you when the 'investigation' is complete!\""
     nvl clear
-    show Haruhi Neutral1 at TenthRight
+    show Haruhi Neutral1
     show Kyon Neutral3
     "Kyon nodded again, not reacting much except to look more thoughtful. Well, Haruhi admitted to herself, he really {i}was{/i} good at this time travel stuff.... Sadly, he was probably just the role-model Mikuru needed."
     nvl clear
@@ -995,29 +1018,31 @@ label test2:
     "\"The nurse's office, Kyon-kun,\" Mikuru insisted, taking Kyon's hand and leading him into the corridor, {nw}"
     hide Mikuru 
     hide Kyon
+    hide Kcut
     with dissolve
     $ _window = False
+    play sound "SE/doorclose2.mp3"
     extend "the boy reaching back to push the door shut behind them."
     $ _window = False
     nvl clear
-    $ renpy.layer_at_list([PanScene_CenterToLeft])
-    show Haruhi Worry1 at TenthRight
+    $ renpy.layer_at_list([PanScene_OffCenterRToLeft])
+    show Haruhi Worry1 at right with move
     "\"Okay!\" Haruhi declared, turning to the downcast Kanae. \"What happened with Kyon? Why did he get cut getting you for lunch?\" And speaking of lunch ... she hadn't even managed to give Kyon the bento she had made! She didn't know who Tsuruya was investigating, but she was certain she'd make them pay!"
     nvl clear
-    show Haruhi Neutral1 at TenthRight
-    show Kanae Sad3 at center
-    show Tsuruya Sup1 at center_RightScreen
+    show Haruhi Neutral1
+    show Kanae Sad3
+    show Tsuruya Sup1
     "\"I...it's my fault,\" Kanae said meekly, hunching in on herself."
     $ renpy.layer_at_list([PanScene_LeftToRight])
     "In the corridor, Mikuru yelped {nw}"
     play sound "SE/MikuruYelp.wav"
     extend "something indistinct, moments before there was a strange {nw}"
     play sound "SE/impact.mp3"
-    show Tsuruya Smile3 at center_RightScreen
-    extend "thudding noise and an eerie silence. \"Lunch with the brigade is exciting,\" Tsuruya decided, while Kanae sniffled meekly and blew her nose on her handkerchief."
+    show Tsuruya Smile3
+    extend "thudding noise and an eerie silence. {nw}"
+    show Tsuruya Hap4
+    extend "\"Lunch with the brigade is exciting,\" Tsuruya decided, while Kanae sniffled meekly and blew her nose on her handkerchief."
     nvl clear
-    stop music fadeout 2
+    stop music fadeout 3
     
     jump HAB1
-    
-    return

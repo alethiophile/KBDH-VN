@@ -169,7 +169,7 @@ label HAB1:
         xanchor 0 yanchor 0
         xpos 0.5 ypos 1.0
         linear 0.4 rotate 90 
-    play sound "SE/impact.mp3"
+    play sound "SE/Thump1.wav"
     extend "He leaned to one side, seizing the thug's extended fist and spinning, turning all of the larger boy's force into forward momentum, flipping him completely upside-down before slamming to the floor on his back in the scattered bits of her lunch. "
     show Kyon Unhap5 Flip at TenthLeft with fast_move
     hide Ryo
@@ -179,7 +179,7 @@ label HAB1:
     with fast_move
     extend "Kanae quickly hopped to her feet and scurried away. {nw}"
     hide Kanae with moveoutright
-    "Almost immediately she found herself contained in a protective circle of the girls standing on the sidelines, people she didn't know offering murmurs of sympathy and asking if she was okay. She tried not to laugh or cry at the absurdity of the situation."
+    extend "Almost immediately she found herself contained in a protective circle of the girls standing on the sidelines, people she didn't know offering murmurs of sympathy and asking if she was okay. She tried not to laugh or cry at the absurdity of the situation."
     nvl clear
     "So far, only her pride and her lunch had been lost."
     nvl clear
@@ -223,7 +223,7 @@ label HAB1:
     hide Cut with fastdissolve
     show Ryo Neutral: #Angry - With Knife - Flipped Right
         xalign 0.6 yalign 1.0
-    show Kyon Unhap5:
+    show Kyon Unhap5 Flip:
         xalign 0.75 yalign 5.0
     with fast_move
     show Kyon Unhap5:
@@ -357,8 +357,10 @@ label HAB1:
     
     scene bg ClubHallLeft with fade
     queue music "Music/MikurunoKokoro.mp3"
-    show Kyon Worry1 at right with dissolve
-    show Mikuru Neutral2 at left with dissolve
+    show Kyon Worry1 at right
+    show Kcut Running4 at right
+    show Mikuru Neutral2 at left
+    with dissolve
     "His cheek still stinging, Kyon resolved to have it healed later — though by Tsuruya's unintentional hint, he knew he had the scratch before he went to help her. As much of a pain as it was (quite literally), it did establish a reasonable baseline for when he traveled back, which meant that he didn't do all of his time traveling in one big block at some future date. Though, that might build up into a daunting task...."
     nvl clear
     "\"It's like homework all over again,\" he grumbled, stopping before the Computer Research Society's room, and turning to face Mikuru. \"Asahina-san, can you take us back right here to ten minutes after club started yesterday?\""
