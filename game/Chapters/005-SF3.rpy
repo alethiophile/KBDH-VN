@@ -598,86 +598,87 @@ label test2:
     stop music fadeout 3
     
     call eyecatch_fancy("Thursday, April 21") from SF3_sc004
-    
+label Test:    
     scene bg classroom with fade:
        size (800,600)
     play sound "SE/WestminsterChimeShort.mp3"
     pause 4
     queue music "Music/Yuuutsu.mp3"
     "After the first period chime rang, Haruhi leaned back in her seat, sticking her feet out straight off the floor to stretch her calf muscles, and extended her arms over her head, balancing precariously. She felt something in her lower back pop into place and smiled slightly, turning her head to Kyon as she leaned forward, her toes touching the floor once more. Before she could speak, she saw Sakanaka rise from her seat two desks to the right and pad cautiously toward the door, beckoning Haruhi to follow."
-    "After only a moment of consideration toward Kyon, who seemed to be behaving by working on his math homework, she tapped his shoulder and handed him the container of leftovers. \"Keep up the good work, subordinate,\" she encouraged him, climbing to her feet and striding into the hallway to see what Sakanaka wanted."
+    "After only a moment of consideration toward Kyon, who seemed to be behaving by working on his math homework, she tapped his shoulder and handed him the container of leftovers." 
+    "\"Keep up the good work, subordinate,\" she encouraged him, climbing to her feet and striding into the hallway to see what Sakanaka wanted."
     nvl clear
     scene bg hallway with fade
-    show Sakanaka Neutral at TenthLeft #Neutral - Mouth Closed
+    show Sakanaka Serious1 at TenthLeft #Neutral - Mouth Closed
     show Haruhi Hap1 Flip at TenthRight
     with dissolve
     "\"Hey,\" she said to the other girl, once they were in the hallway and out of earshot from the other students. \"What's up, Sakanaka-san? Is JJ still okay?\" She made a mental note to try and visit Sakanaka sometime relatively soon ... since Yuki had fixed the problem of 'haunted' dogs, Haruhi hadn't had a chance to play with the terrier."
     nvl clear
-    show Sakanaka Neutral #Uneasy
+    show Sakanaka Neutral1  #Uneasy
     show Haruhi Smile3 Flip
     "\"He's fine,\" Sakanaka replied, smiling weakly. \"Um, Suzumiya-san, I don't mean to alarm you ... but ... um.... W...well, I feel I owe you honesty after everything you did for Rousseau. I'm sorry to be the one who bears this news to you, but....\""
     nvl clear
-    show Sakanaka Neutral #Uneasy - Mouth Closed
+    #show Sakanaka Neutral
     show Haruhi Neutral2 Flip
     "\"Well?\" Haruhi asked, restraining the urge to tap one foot through sheer will alone. What news could Sakanaka have that would be important or critical? Given the powers of the SOS Brigade, what could even really be a concern? Though, she made herself realize, there was no way anyone outside of the SOS Brigade could know that."
-    show Sakanaka Neutral #Serious - Eyes Closed
+    show Sakanaka Uneasy1 #Serious - Eyes Closed
     show Haruhi Neutral1 Flip
     "Unable to meet her eyes, Sakanaka blurted out, \"Suzumiya-san, there's a rumor going around that Kyon-kun is two-timing you with Tsuruya-sempai!\""
     nvl clear
-    show Sakanaka Neutral #Serious - Eyes Closed - Mouth Closed
+    #show Sakanaka Neutral #Serious - Eyes Closed - Mouth Closed
     show Haruhi Neutral3 Flip
     "Haruhi blinked, staring at her classmate, and tried to suppress the smirk she felt forming. \"Really?\" she asked. \"That's ... pretty funny. So, where did this rumor start from?\""
-    show Sakanaka Neutral #Unhappy
+    show Sakanaka Unhappy1 #Unhappy
     show Haruhi Neutral4 Flip
     "\"Er ... that is....\" Sakanaka visibly deflated, staring at the floor. {nw}"
-    show Sakanaka Neutral #Serious
+    #show Sakanaka Neutral #Serious
     extend "\"Tsuruya-sempai said it herself. R...really, I wouldn't believe a rumor spread about you offhand. But, others may, and.... Well, I feel you should know the truth!\""
     nvl clear
-    show Sakanaka Neutral #Serious - Closed Mouth
+    #show Sakanaka Neutral #Serious - Closed Mouth
     show Haruhi Neutral2 Flip
     "\"She....\" Haruhi blinked and waved a hand dismissively. \"What {i}exactly{/i} did Tsuruya-san say?\""
-    show Sakanaka Neutral
+    show Sakanaka Neutral1
     show Haruhi Neutral1 Flip
     "\"I ... don't really trade in rumors, so I only overheard it from Yanagimoto-kun,\" Sakanaka allowed. \"But she insists that she verified it with Tsuruya- sempai herself.\""
-    show Sakanaka Neutral #Neutral - Closed Mouth
+    #show Sakanaka Neutral #Neutral - Closed Mouth
     show Haruhi Unhap1 Flip
     "\"Yanagimoto,\" Haruhi murmured, concentrating. \"Oh, yeah, I remember her from when I joined the rhythmic gymnastics club. She sits in front of Goto-kun, right?\""
     nvl clear
-    show Sakanaka Neutral #Serious
+    show Sakanaka Serious1 #Serious
     show Haruhi Unhap2 Flip
     "\"Right,\" Sakanaka agreed. \"I don't ... want to cause trouble. I just thought you should know.\""
-    show Sakanaka Neutral #Serious - Closed Mouth
+    #show Sakanaka Neutral #Serious - Closed Mouth
     show Haruhi Sigh2 Flip
     "\"Well, it's a misunderstanding,\" Haruhi said with a shrug. \"Last I heard, Kyon trashed some goons who were giving Tsuruya-san some trouble.\" Though, he was time traveling at the time, and technically, hadn't done it {i}yet{/i}. \"On Sunday, right?\""
     nvl clear
-    show Sakanaka Neutral #Smile - Small Smile - Mouth Open
+    show Sakanaka Smile1 #Smile - Small Smile - Mouth Open
     show Haruhi Unhap3 Flip
     "\"Um, maybe that's it,\" Sakanaka agreed with a weak shrug, trying to smile. {nw}"
-    show Sakanaka Neutral #Uneasy
-    extend "\"There is ... another thing about Kyon-kun....\""
-    show Sakanaka Neutral #Smile - Small Smile - Mouth Closed
+    show Sakanaka Uneasy1  #Uneasy
+    "\"There is ... another thing about Kyon-kun....\""
+    #show Sakanaka Neutral #Smile - Small Smile - Mouth Closed
     show Haruhi Quest1 Flip
     "Haruhi raised an eyebrow. \"What else is it? And who's spreading all these rumors?\" she asked."
     nvl clear
-    show Sakanaka Neutral #Serious - Narrow Eyes
+    show Sakanaka Serious1  #Serious - Narrow Eyes
     show Haruhi Quest2 Flip
     "\"Aside from him ... um ... spending time with Tsuruya-sempai yesterday, he got into a fight with Ryuguu-san from class 3-4,\" Sakanaka added in a very hushed tone. \"No one is certain why, but, um, Ryuguu-san hasn't come back to school yet today. This fighting ... Kyon-kun's gathering a bit of a reputation as a delinquent.\""
     nvl clear
-    show Sakanaka Neutral #Serious - Narrow Eyes - Mouth Closed
+    #show Sakanaka Neutral #Serious - Narrow Eyes - Mouth Closed
     show Haruhi Neutral2 Flip
     "\"Seems kind of sudden for him,\" Haruhi mused. \"But, hey, as long as he doesn't get in trouble with the school, what does it matter?\""
-    show Sakanaka Neutral #Surprise
+    show Sakanaka Neutral1 #Surprise
     show Haruhi Neutral1 Flip
     "Sakanaka blinked, her eyes wide. \"Y...you don't care that he could be a violent person?\" she asked, astounded. \"That he spends time with other girls?\""
     nvl clear
-    show Sakanaka Neutral #Surprise - Mouth Closed
+    #show Sakanaka Neutral #Surprise - Mouth Closed
     show Haruhi Sigh1 Flip
     "Haruhi shrugged, shaking her head. \"Nah, I'll give him a stern talking to, let him know he should watch his reputation,\" she said in answer. \"Him spending time with other girls {i}would{/i} bother me ... but Tsuruya-san's an honorary member of the SOS Brigade. How can I get mad at him for taking care of brigade business with her?\""
-    show Sakanaka Neutral #Happy - Wide Smile - Mouth Open
+    show Sakanaka Smile2  #Happy - Wide Smile - Mouth Open
     show Haruhi Sigh3 Flip
     "\"I'm glad,\" Sakanaka decided, giving Haruhi a bright smile. \"I worried for nothing, then; sorry to trouble you, Suzumiya-san!\""
     nvl clear
-    show Sakanaka Neutral #Smile - Wide Smile - Mouth Closed
+    show Sakanaka Smile1 #Smile - Wide Smile - Mouth Closed
     show Haruhi Hap1 Flip
     "\"No trouble at all,\" Haruhi returned, nodding at the other girl. \"Thanks for the update anyway. It's good to know where the brigade stands in the scheme of things....\" She glanced down the hallway, where their next teacher was approaching. \"Well, maybe we can chat later; I want to give Kyon a few choice words before class.\""
     nvl clear
