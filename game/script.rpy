@@ -341,6 +341,7 @@ init:
     image Kyon Sigh3 = "Sprites/Kyon/KyonSigh3.png"
     image Kyon Sigh4 = "Sprites/Kyon/KyonSigh4.png"
     image Kyon Sigh5 = "Sprites/Kyon/KyonSigh5.png"
+    image Kyon Sigh6 = "Sprites/Kyon/KyonSigh6.png"
     image Kyon Neutral1 = "Sprites/Kyon/KyonNeutral1.png"
     image Kyon Neutral2 = "Sprites/Kyon/KyonNeutral2.png"
     image Kyon Neutral3 = "Sprites/Kyon/KyonNeutral3.png"
@@ -372,6 +373,11 @@ init:
     image Kyon Unhap5 ="Sprites/Kyon/KyonUnhappy5.png"
     image Kyon Unhap6 ="Sprites/Kyon/KyonUnhappy6.png"
     
+    image Kyon Blink:
+        "Sprites/Kyon/KyonSigh6.png"
+        0.2
+        "Sprites/Kyon/KyonSerious1.png"
+    
     image Kyon Casual Ser1 = "Sprites/Kyon/KyonCasualSerious1.png"
     image Kyon Casual Ser2 = "Sprites/Kyon/KyonCasualSerious2.png"
     image Kyon Casual Ser2 Bright = im.MatrixColor("Sprites/Kyon/KyonCasualSerious2.png",
@@ -382,6 +388,7 @@ init:
     image Kyon Casual Sigh3 = "Sprites/Kyon/KyonCasualSigh3.png"
     image Kyon Casual Sigh4 = "Sprites/Kyon/KyonCasualSigh4.png"
     image Kyon Casual Sigh5 = "Sprites/Kyon/KyonCasualSigh5.png"
+    image Kyon Casual Sigh6 = "Sprites/Kyon/KyonCasualSigh6.png"
     image Kyon Casual Neutral1 = "Sprites/Kyon/KyonCasualNeutral1.png"
     image Kyon Casual Neutral2 = "Sprites/Kyon/KyonCasualNeutral2.png"
     image Kyon Casual Neutral3 = "Sprites/Kyon/KyonCasualNeutral3.png"
@@ -419,10 +426,6 @@ init:
     image Coat Bright = im.MatrixColor("Sprites/Kyon/KyonCoat.png",
                                        im.matrix.brightness(.5))
     image Coat = "Sprites/Kyon/KyonCoat.png"
-
-    image Kyon Ser1 Flip = im.Flip("Sprites/Kyon/KyonSerious1.png", horizontal=True)
-    image Kyon Ser3 Flip = im.Flip("Sprites/Kyon/KyonSerious3.png", horizontal=True)
-    image Kyon Ang1 Flip = im.Flip("Sprites/Kyon/KyonAngry1.png", horizontal=True)
     
     image KTears = "Sprites/Kyon/Ktears.png"
     image KBlush = "Sprites/Kyon/KBlush.png"
@@ -446,6 +449,7 @@ init:
     image Kcut Running4 Flip =  im.Flip("Sprites/Kyon/cheekcut/running4.png", horizontal=True)
     
     #Kyon image flips
+    image Kyon Ang1 Flip = im.Flip("Sprites/Kyon/KyonAngry1.png", horizontal=True)
     image Kyon Neutral1 Flip = im.Flip("Sprites/Kyon/KyonNeutral1.png", horizontal=True)
     image Kyon Neutral2 Flip = im.Flip("Sprites/Kyon/KyonNeutral2.png", horizontal=True)
     image Kyon Neutral3 Flip = im.Flip("Sprites/Kyon/KyonNeutral3.png", horizontal=True)
@@ -467,6 +471,7 @@ init:
     image Kyon Smile6 Flip = im.Flip("Sprites/Kyon/KyonSmile6.png", horizontal=True)
     image Kyon Ser1 Flip = im.Flip("Sprites/Kyon/KyonSerious1.png", horizontal=True)
     image Kyon Ser2 Flip = im.Flip("Sprites/Kyon/KyonSerious2.png", horizontal=True)
+    image Kyon Ser3 Flip = im.Flip("Sprites/Kyon/KyonSerious3.png", horizontal=True)
     image Kyon Sup1 Flip = im.Flip("Sprites/Kyon/KyonSurprised2.png", horizontal=True)
     image Kyon Sup2 Flip = im.Flip("Sprites/Kyon/KyonSurprised2.png", horizontal=True)
     image Kyon Unhap1 Flip = im.Flip("Sprites/Kyon/KyonUnhappy1.png", horizontal=True)
@@ -643,6 +648,7 @@ init:
     image Mikuru Think Quest1 = "Sprites/Mikuru/MikuruThinkQuestion1.png"
     image Mikuru Think Quest2 = "Sprites/Mikuru/MikuruThinkQuestion2.png"
     image Mikuru Think Quest3 = "Sprites/Mikuru/MikuruThinkQuestion3.png"
+    image Mikuru Think Quest4 = "Sprites/Mikuru/MikuruThinkQuestion4.png"
     image Mikuru Think Sad1 = "Sprites/Mikuru/MikuruThinkSad1.png"
     image Mikuru Think Sad2 = "Sprites/Mikuru/MikuruThinkSad2.png"
     image Mikuru Think Sad3 = "Sprites/Mikuru/MikuruThinkSad3.png"
@@ -654,6 +660,7 @@ init:
     image Mikuru Think Casual Quest1 = "Sprites/Mikuru/MikuruThinkCasualQuestion1.png"
     image Mikuru Think Casual Quest2 = "Sprites/Mikuru/MikuruThinkCasualQuestion2.png"
     image Mikuru Think Casual Quest3 = "Sprites/Mikuru/MikuruThinkCasualQuestion3.png"
+    image Mikuru Think Casual Quest4 = "Sprites/Mikuru/MikuruThinkCasualQuestion4.png"
     image Mikuru Think Casual Sad1 = "Sprites/Mikuru/MikuruThinkCasualSad1.png"
     image Mikuru Think Casual Sad2 = "Sprites/Mikuru/MikuruThinkCasualSad2.png"
     image Mikuru Think Casual Sad3 = "Sprites/Mikuru/MikuruThinkCasualSad3.png"
@@ -665,6 +672,7 @@ init:
     image Mikuru Think Maid Quest1 = "Sprites/Mikuru/MikuruThinkMaidQuestion1.png"
     image Mikuru Think Maid Quest2 = "Sprites/Mikuru/MikuruThinkMaidQuestion2.png"
     image Mikuru Think Maid Quest3 = "Sprites/Mikuru/MikuruThinkMaidQuestion3.png"
+    image Mikuru Think Maid Quest4 = "Sprites/Mikuru/MikuruThinkMaidQuestion4.png"
     image Mikuru Think Maid Sad1 = "Sprites/Mikuru/MikuruThinkMaidSad1.png"
     image Mikuru Think Maid Sad2 = "Sprites/Mikuru/MikuruThinkMaidSad2.png"
     image Mikuru Think Maid Sad3 = "Sprites/Mikuru/MikuruThinkMaidSad3.png"
@@ -673,6 +681,7 @@ init:
     image Mikuru Think Maid Sup1 = "Sprites/Mikuru/MikuruThinkMaidSurprised1.png"
     image Mikuru Think Maid Sup2 = "Sprites/Mikuru/MikuruThinkMaidSurprised2.png"
     image MTears Think = "Sprites/Mikuru/MTearsThink1.png"
+    image MBlush Think = "Sprites/Mikuru/MBlushThink1.png"
     
     image Mikuru Think Quest1 Flip = im.Flip("Sprites/Mikuru/MikuruThinkQuestion1.png", horizontal=True)
     image Mikuru Think Casual Quest1 Flip = im.Flip("Sprites/Mikuru/MikuruThinkCasualQuestion1.png", horizontal=True)
@@ -777,6 +786,7 @@ init:
     image Tsuruya Grin3 = "Sprites/Tsuruya/TsuruyaGrin3.png"
     image Tsuruya Grin4 = "Sprites/Tsuruya/TsuruyaGrin4.png"
     image Tsuruya Grin5 = "Sprites/Tsuruya/TsuruyaGrin5.png"
+    image Tsuruya Grin6 = "Sprites/Tsuruya/TsuruyaGrin6.png"
     image Tsuruya Hap1 = "Sprites/Tsuruya/TsuruyaHappy1.png"
     image Tsuruya Hap2 = "Sprites/Tsuruya/TsuruyaHappy2.png"
     image Tsuruya Hap3 = "Sprites/Tsuruya/TsuruyaHappy3.png"
@@ -1046,7 +1056,7 @@ init:
     image Sakanaka Neutral = "Sprites/Sakanaka/SakanakaNeutral.png"
     
     #Yamane Sprites
-    #image Yamane Neutral = "Sprites/Yamane/Yamane.png"
+    image Yamane Neutral = "Sprites/Yamane/YamaneLostCool.png"
     
     #Ryo Sprites
     image Ryo Neutral = "Sprites/Ryo/Ryo.png"
