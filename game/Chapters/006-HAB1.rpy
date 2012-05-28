@@ -680,17 +680,26 @@ label HAB1:
     show Tsuruya Grin6
     "\"I thought you were dismissed from the club today?\" she asked, raising one eyebrow and smirking."
     show Tsuruya Grin3
-    show Kyon Unhap1
-    "\"Oh, yeah,\" he agreed, frowning. \"Well, I have to head back in anyway, since ... I forgot my shoes. Yeah. I'll see you tomorrow, alright, Tsuruya-sempai?\""
+    show Kyon Unhap6
+    "\"Oh, yeah,\" he agreed, frowning. \"Well, I have to head back\nin anyway, since {nw}"
+    show Kyon Puzzle1
+    extend "... I forgot my shoes. Yeah. I'll see you tomorrow, alright, Tsuruya-sempai?\""
+    nvl clear
+    show Kyon Worry1
     show Tsuruya Hap1
     "\"Hehe, you can just call me Tsuruya,\" she said with a wink, glancing at his indoor shoes. \"I'd let you get away with more, but I don't want Haru-nyan to get the wrong idea!\""
-    nvl clear
+    show Tsuruya Smile2
     show Kyon Smile3
-    "\"How about Tsuruya-kun?\" he asked, smirking before the twinge from his cut reminded him why he shouldn't."
-    show Tsuruya Hap2
-    "\"I like it!\" she approved, nodding vigorously. \"We're working on this investigation togethers!\""
+    "\"How about Tsuruya-kun?\" he asked, {nw}"
     show Kyon Smile2
+    extend "smirking before the twinge from his cut reminded him why he shouldn't."
+    show Tsuruya Hap7
+    "\"I like it!\" she approved, nodding vigorously. \"We're working on this investigation togethers!\""
+    nvl clear
+    show Tsuruya Smile4
+    show Kyon Smile7
     "\"You got it,\" he agreed, nodding back. \"Take care, Tsuruya-kun.\""
+    show Kyon Smile2
     show Tsuruya Hap5
     "\"You too, Kyon-kun!\" she called back, waving as she strode towards the school gates."
     nvl clear
@@ -698,47 +707,68 @@ label HAB1:
     "After scraping as much of the mud and dirt from his indoor shoes as he could, Kyon trudged wearily to the club house, taking the longer route to avoid encountering anyone being released from the club meeting. {nw}"
     play sound "SE/doorknock"
     "He knocked on the calligraphy clubroom door, pleased when Mikuru answered, bowing and excusing herself from her impromptu meeting with her former club members."
-    show Kyon Neutral2 at right
-    "\"How did everything go?\" he asked, once they were alone in the hallway."
     nvl clear
-    show Mikuru Think Quest2 at left with dissolve
+    show Kyon Neutral2 at TenthRight
+    show Mikuru Think Quest3 at TenthLeft
+    with dissolve
+    "\"How did everything go?\" he asked, once they were alone in the hallway."
+    show Kyon Neutral3
+    show Mikuru Think Quest2
     "\"Fine!\" she said anxiously, peering at the bandage on his face. \"The nurse said you were okay?\""
+    nvl clear
     show Kyon Sigh5
+    show Mikuru Think Quest3
     "\"I'll be fine,\" he assured her, grinning. \"Okay, um, we need to return to tomorrow ... can you take us to the clubroom, say ... two minutes before the bell at the end of lunch? That should be enough time to get back to class.\""
-    show Mikuru Smile2
+    show Kyon Smile4
+    show Mikuru Smile3
     "\"Okay,\" she agreed, her eyes unfocusing briefly before she turned to face him, placing a hand on either shoulder. \"Close your eyes,\" she reminded him, as always."
     nvl clear   
     scene almostblack two with fade
-    scene bg ClubroomFullDay with fade:
+    scene bg ClubroomRightDay with fade
+    scene bg ClubroomFullDay:
         xpos 0 ypos 0
     $ renpy.layer_at_list([PanScene_SetToRight])
-    show Kyon Smile3 at center_RightScreen with dissolve
-    show Mikuru Smile2 at right_RightScreen with dissolve
-    show Yuki Side1 at left_RightScreen with dissolve
-    "After completing the temporal transition, Mikuru lowered her hands from his shoulders, and Kyon's eyes opened, glancing around the clubroom. Unsurprisingly, Yuki was the only club member still left in the room. She closed her book and rose, moving to Kyon's side and raising one hand to his cheek briefly. He blinked, then grinned at the girl, tracing his fingertips across the bandage but leaving it in place. \"Thanks, Nagato,\" he said, nodding at her. \"And thank you, too, Asahina-san.\""
+    show Kyon Smile4 at center_RightScreen
+    show Mikuru Smile2 at right_RightScreen
+    show Yuki Side1 at left_RightScreen
+    with dissolve
+    "After completing the temporal transition, Mikuru lowered her hands from his shoulders, and Kyon's eyes opened, glancing around the clubroom. Unsurprisingly, Yuki was the only club member still left in the room. She closed her book and rose, moving to Kyon's side and raising one hand to his cheek briefly. He blinked, then grinned at the girl, tracing his fingertips across the bandage but leaving it in place. {nw}"
+    show Kyon Smile6
+    extend "\"Thanks, Nagato,\" he said, nodding at her. \"And thank you, too, Asahina-san.\""
     nvl clear
+    show Kyon Smile4
     show Yuki Talk1
     "\"It is no problem,\" Yuki returned smoothly."
+    show Yuki Side1
     show Mikuru Quest1
     "\"No trouble at all,\" Mikuru agreed, even though she had butterflies in her stomach just from remembering Kyon bleeding. It wasn't as bad as the time she'd seen him {i}stabbed{/i}, but she didn't have to like it one bit!"
+    show Mikuru Neutral1
     show Kyon Puzzle1
-    play sound "SE/doorknock"
+    play sound "SE/doorknock.mp3"
     "A knock sounded on the door, and Kyon turned around, pondering, \"Who could that be...?\""
     nvl clear
     stop music fadeout 1
+    play sound "SE/dooropenfast.wav"
     queue music "Music/WitchInGoldCenba.ogg"
     $ renpy.layer_at_list([PanScene_RightToLeft])
-    show Koizumi Think Ser2 at left
-    play sound "SE/dooropenslow"
-    "After a heartbeat, the door opened and Koizumi peered in, sighing with relief as he saw Kyon, though there was still tension in his gaze. \"I'm afraid I have some bad news, Kyon-kun,\" he said, smiling weakly. \"Ah ... school administration would like to speak with you ... though it seems that some strings were pulled, and the issue was somehow moved down to a meeting with the Student Council President. There's an emergency session now, so....\""
+    show Koizumi Think Sigh1 at left with dissolve
+    "After a heartbeat, the door opened and Koizumi peered in, sighing with relief as he saw Kyon, though there was still tension in his gaze. \"I'm afraid I have some bad news, Kyon-kun,\" he said, smiling weakly. \"Ah ... school administration would like to speak with you ... {nw}"
+    show Koizumi Think Ser2
+    extend "though it seems that some strings were pulled, and the issue was somehow moved down to a meeting with the Student Council President. There's an emergency session now, so....\""
     nvl clear
+    show Koizumi Think Ser1
     show Kyon Sup2 at right with dissolve
-    "\"Really?\" Kyon asked, surprised. \"I'm not sure what's stranger. That the Student Council can handle cases like this, or that they get to skip classes for it. Well, whatever.\""
-    show Koizumi Think Ser3
+    "\"Really?\" Kyon asked, surprised. \"I'm not sure what's stranger. That the Student Council can handle cases like this, or that they get to skip classes for it. {nw}"
+    show Kyon Neutral2
+    extend "Well, whatever.\""
+    show Kyon Neutral3
+    show Koizumi Think Ser4
     "\"Don't forget, Kimidori Emiri will be there,\" Koizumi warned with a frown. \"Which probably explains {i}how{/i} the Student Council was given authority for this meeting.\""
     $ renpy.layer_at_list([PanScene_LeftToRight])
-    "\"I will go,\" Yuki declared, her eyes fixed on Kyon."
     nvl clear
+    show Yuki Talk1
+    "\"I will go,\" Yuki declared, her eyes fixed on Kyon."
+    show Yuki Side1
     show Mikuru Think Sup1
     "\"M...me too,\" Mikuru managed, wishing she could sound as confident as Yuki."
     $ renpy.layer_at_list([PanScene_RightToLeft])
