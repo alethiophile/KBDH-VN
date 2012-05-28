@@ -793,6 +793,7 @@ init:
     image Tsuruya Hap4 = "Sprites/Tsuruya/TsuruyaHappy4.png"
     image Tsuruya Hap5 = "Sprites/Tsuruya/TsuruyaHappy5.png"
     image Tsuruya Hap6 = "Sprites/Tsuruya/TsuruyaHappy6.png"
+    image Tsuruya Hap7 = "Sprites/Tsuruya/TsuruyaHappy7.png"
     image Tsuruya Laugh1 = "Sprites/Tsuruya/TsuruyaLaugh1.png"
     image Tsuruya Laugh2 = "Sprites/Tsuruya/TsuruyaLaugh2.png"
     image Tsuruya Quest1 = "Sprites/Tsuruya/TsuruyaQuestion1.png"
@@ -850,6 +851,7 @@ init:
     image Tsuruya Hap4 Flip = im.Flip("Sprites/Tsuruya/TsuruyaHappy4.png", horizontal=True)
     image Tsuruya Hap5 Flip = im.Flip("Sprites/Tsuruya/TsuruyaHappy5.png", horizontal=True)
     image Tsuruya Hap6 Flip = im.Flip("Sprites/Tsuruya/TsuruyaHappy6.png", horizontal=True)
+    image Tsuruya Hap7 Flip = im.Flip("Sprites/Tsuruya/TsuruyaHappy7.png", horizontal=True)
     image Tsuruya Ang1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaAngry1.png", horizontal=True)
     image Tsuruya Ang2 Flip = im.Flip("Sprites/Tsuruya/TsuruyaAngry2.png", horizontal=True)
     image Tsuruya Ang3 Flip = im.Flip("Sprites/Tsuruya/TsuruyaAngry3.png", horizontal=True)
@@ -1382,7 +1384,9 @@ init python:
     # position for dates in eyecatches.
     date_pos = Position(xanchor=1.0, yanchor=0.0, xpos=790, ypos=10)  
     
+    slow_move = MoveTransition(1.0)
     fast_move = MoveTransition(0.2)
+    rapid_move = MoveTransition(0.1)
     
     # Screen shake effect.
     sshake = Shake((0, 0, 0, 0), 1.0, dist=30)

@@ -525,90 +525,161 @@ label HAB1:
     stop music fadeout 1
     queue music "Music/KamadoumaEnd.mp3"
     nvl clear
-    "Tsuruya's hand darted out, lightning-fast, and she snatched two of the cards from Ryuguu's grasp before the boy could react. Immediately his face went red, and his scowl turned murderous. {nw}"
-    
-    #Not sure what you guys want done on the fight, so I didn't do much
-    
+    "Tsuruya's hand darted out, lightning-fast, and she snatched two of the cards from Ryuguu's grasp before the boy could react. Immediately his face went red, and his scowl turned murderous. "
+    show Ryo Neutral at TenthLeft with fast_move
     extend "He launched a punch towards the tall girl in retaliation, growling from low in his throat."
     nvl clear
-    show Kyon Ser1
-    "Already waiting for such an opening, Kyon grabbed the extended fist as Ryuguu attacked, while Tsuruya ducked away. Giving an unbalancing wrench to the captured appendage, Kyon pulled Ryuguu off balance and spun him around before shoving the boy violently forward, his arm pinned behind his back at an awkward angle. The third year boy's nose smashed into the equipment shed behind him, making a loud crunch and sending a spray of blood out."
+    show Tsuruya Sup1 at right
+    show Kyon Unhap5 at HalfRight
+    with rapid_move
+    play sound "SE/lowswoosh.mp3"
+    pause 0.2
+    play sound "SE/impact.mp3"
+    "Already waiting for such an opening, Kyon grabbed the extended fist as Ryuguu attacked, while Tsuruya ducked\naway. "
+    play sound "SE/impact.mp3"
+    show Kyon Unhap5 at HalfLeft
+    show Ryo Neutral:
+        xalign -0.2 yalign 1.0
+    with rapid_move
+    extend "Giving an unbalancing wrench to the captured appendage, Kyon pulled Ryuguu off balance and spun him around before shoving the boy violently forward, his arm pinned behind his back at an awkward angle. The third year boy's nose smashed into the equipment shed behind him, making a loud crunch and sending a spray of blood out."
     nvl clear
+    show Tsuruya Ang1
     "\"Gwah!\" Ryuguu choked out, his free hand scrabbling at the wall of the shed. \"What the fu—\""
+    play sound "SE/impact.mp3"
+    show Ryo Neutral:
+        xalign 0.0 yalign 1.0
+        linear 0.1 xalign -0.2
     show Kyon Ang3
     "Kyon jerked him away from the wall and shoved him forward again, resulting in another meaty smash. \"Free is sounding like a good price to me right now,\" he managed, struggling to calm himself and keep the fury from his voice. \"You,\" he said, gladly falling back onto the course informal version of the word, \"need to understand something here."
     nvl clear
     show Kyon Ang2
-    "\"You are not the biggest business in this school, or this town. There are certain people in this school you {i}do not{/i} screw with. If you ever even {i}think{/i} of laying a finger on any of my subordinates, or interfering with any of them in any way, believe me, this is going to be the {i}least{/i} of your worries. Any time, any place — I will not allow it.\" He pulled the boy back, spinning him around, and when Ryuguu belatedly tried to punch with his free hand, he tilted his head to one side, narrowly dodging the blow and returning a much stronger one, which sent the upperclassman smashing back into the shed, eyes rolling up before he collapsed."
+    "\"You are not the biggest business in this school, or this town. There are certain people in this school you {i}do not{/i} screw with. If you ever even {i}think{/i} of laying a finger on any of my subordinates, or interfering with any of them in any way, believe me, this is going to be the {i}least{/i} of your worries.\nAny time, any place — I will not allow it.\" "
+    show Kyon Unhap5 at center
+    show Ryo Neutral at left
+    with move
+    extend "He pulled the boy back, spinning him around, and when Ryuguu belatedly tried to punch with his free hand, {nw}"
+    play sound "SE/lowswoosh.mp3"
+    show Kyon Unhap5:
+        xalign 0.5 yalign 1.0
+        linear 0.2 yalign 1.5
+    pause 0.2
+    extend "he tilted his head to one side, narrowly dodging the blow {nw}"
+    play sound "SE/impact.mp3"
+    pause 0.15
+    show Ryo Neutral with rapid_move:
+        xalign -0.2 yalign 1.0
+    play sound "SE/impact.mp3"
+    pause 0.2
+    show Ryo Neutral with slow_move:
+        xalign -0.2 yalign 20.0
+    play sound "SE/Thump1.wav"
+    hide Ryo
+    extend "and returning a much stronger one, which sent the upperclassman smashing back into the shed, eyes rolling up before he collapsed."
     nvl clear
+    show Kyon Unhap5:
+        xalign 0.5 yalign 1.5
+        linear 0.2 yalign 1.0
     show Tsuruya Sup1
-    "\"Yow,\" Tsuruya allowed, eyes wide. \"You okay there, Kyon-kun?\" Despite her question, her attention was on the prone boy as she crouched, rifling through his pockets and pulling out a small stack of mini-discs and SD cards. \"We could have gotten more answers out of him, you knows....\""
+    "\"Yow,\" Tsuruya allowed, eyes wide. \"You okay there, Kyon-kun?\" {nw}"
+    show Tsuruya Ang3:
+        xalign 1.0 yalign 1.0
+        linear 0.2 xalign 0.08 yalign 2.44
+    show Kyon Unhap5 at HalfRight with fast_move
+    extend "Despite her question, her attention was on the prone boy as she crouched, rifling through his pockets and pulling out a small stack of mini-discs and SD cards. \"We could have gotten more answers out of him, you knows....\""
     show Kyon Sigh1
     "\"Still can,\" Kyon pointed out, cracking his neck and expelling a long sigh. \"Sorry. This guy ... really pisses me off.\""
     nvl clear
+    show Kyon Sigh3
     show Tsuruya Ser1
     "\"Understandable,\" Tsuruya agreed, turning her attention to the bag at Ryuguu's side, pulling more media and a digital camera from within, transferring everything to her own bag. \"So, I don't think good cops bad cops will cut it here....\""
     show Tsuruya Hap5
     nvl clear
     "Tsuruya tapped her chin thoughtfully, then pulled off the prone Ryugu's belt and tightly bound his wrists before him. \"Okies!\" she said decisively. \"We'll go with bad cop worse cop! You be worse cop, so just stand over there and look real angry at him! I betcha that'd scare most anyones.\""
     nvl clear
-    show Kyon Ser3
-    "Kyon took a breath and did as she instructed, having no trouble maintaining his glower at the prone boy as Tsuruya cheerfully slapped him awake, ignoring the blood flowing from Ryuguu's nose. \"Wakey-wakey!\" Tsuruya called, stepping back when Ryuguu jerked awake and tried to fumble for her. \"Okies! Now, you want to answers some of my questions, or maybe let Kyon-kun heres give you some more manual attitude adjustments?\""
+    show Kyon Unhap4
+    "Kyon took a breath and did as she instructed, having no trouble maintaining his glower at the prone boy as Tsuruya cheerfully slapped him awake, ignoring the blood flowing\nfrom Ryuguu's nose. \"Wakey-wakey!\" Tsuruya called, {nw}"
+    show Tsuruya Hap5:
+        xalign 0.08 yalign 2.44
+        linear 0.2 xalign 1.0 yalign 1.0
+    show Kyon Unhap4 at center with fast_move
+    extend "stepping back when Ryuguu jerked awake and tried to fumble for her. {w}\"Okies! Now, you want to answers some of my questions, or maybe let Kyon-kun heres give you some more manual attitude adjustments?\""
     nvl clear
+    show Tsuruya Grin2
     "\"Wha,\" he managed, wincing. \"What are you.... Hey! I don't have to take this! I've got friends high up! You do not know who you're messing with!\""
-    show Tsuruya Ang1
+    show Tsuruya Ang3
     "\"Neither do you,\" Tsuruya retorted. \"But, like Kyon-kun said, there are some peoples you just don't mess with! And some of those peoples are the Tsuruya family! Which means you've already screwed up!\""
     nvl clear
-    show Kyon Ser1
+    show Tsuruya Ang1
+    show Kyon Unhap5
     "Kyon obligingly cracked his knuckles slowly, one at a time, his gaze locked on the upperclassman's eyes."
+    nvl clear
     "Ryuguu shivered, then blurted out, \"Fine! Take everything I have! I'm just a middle-man; it's all on your own damn heads if you piss off my big brothers! But because I'm just a middle-man, I don't know anything! I collect and distribute, but that's {i}it{/i}! I don't know how everyone works; they do their own things, and as long as we get our goods, we don't ask questions!\""
     nvl clear
     show Tsuruya Ser1
     "\"That first years you were talking with,\" Tsuruya said primly. \"What's his name?\""
+    show Tsuruya Ang1
     "\"T...that.... Manabe Satoshi, class 1-7,\" Ryuguu said, sweating nervously."
+    show Tsuruya Ser1
     "\"Good! Good! And who else...?\""
+    show Tsuruya Ang1
     "\"Just him and Yamane Jun, class 2-5,\" Ryuguu whimpered. \"I swear! They handle everything else! I'm just a go-between!\""
     nvl clear
     show Tsuruya Neutral1
     "\"Hmm, hmm,\" Tsuruya noised, nodding. \"And on the other sides? You collects from those two, who do you sells to?\""
+    show Tsuruya Neutral2
     "\"T...that's.... They aren't around anymore,\" Ryuguu said, sweating. \"They got arrested on Sunday! I'm still looking—\""
-    show Tsuruya Ang2
+    show Tsuruya Ang4
     "\"{i}Wrong{/i}!\" she yelled in his face."
     nvl clear
+    show Tsuruya Ang2
     "\"W...was looking,\" Ryuguu allowed, shaking, \"f...for a new distributor to sell to!\""
     show Kyon Ang2
     "\"'Was' is right,\" Kyon interjected. \"I think we all understand that you're {i}done{/i} with this, if you know what's good for you.\" Though, given what he already knew was going to happen tomorrow...."
-    show Tsuruya Grin1
+    show Kyon Unhap4
+    show Tsuruya Grin6
     "\"Alright,\" Tsuruya said, nodding as she rose from her crouching position to her feet. \"Kyon-kun, put him to sleep again.\""
-    stop music fadeout 1
-    queue music "Music/MikurunoKokoro.mp3"
     nvl clear
+    show Tsuruya Grin4
     show Kyon Ser1
     "Kyon nodded, stepping around Ryuguu's weakly flailing arms and easily wrapping the boy's neck in a choke-hold, which he held until Ryuguu passed out. {nw}"
     show Kyon Sigh1
     extend "Once the upperclassman was prone on the ground, he took a deep breath and closed his eyes, double-checking to see that the bigger boy still had a pulse. {nw}"
-    show Kyon Smile1
+    stop music fadeout 3
+    show Kyon Smile6
     extend "\"Sorry,\" he told Tsuruya, opening his eyes as he rose and giving her a weak smile. \"This is.... It's....\""
     nvl clear
-    show Tsuruya Smile4
+    queue music "Music/MikurunoKokoro.mp3"
+    show Kyon Smile1
+    show Tsuruya Hap7 with move:
+        xalign 0.65 yalign 1.0
     "He was surprised when Tsuruya leaned into him, giving a tight hug. \"It's okay,\" she said soothingly, patting his head. \"This kinds of detective work is enough to turn even someone like you hot blooded! And that's fine; Haru-nyan is in good hands! Since you're helping me out, I am too!\""
     nvl clear
+    show Tsuruya Smile4
     show Kyon Smile2
-    "He hesitantly hugged her back, realizing the source for the 'two-timing' rumor. Obviously, someone was within range to see all this.... \"Thanks, Tsuruya-sempai,\" he managed, the upperclassman's friendly embrace banishing his anger. \"A...anyway, like I said, any time you need help with this investigation, let me know.\""
-    show Tsuruya Hap4
+    "He hesitantly hugged her back, realizing the source for the 'two-timing' rumor. Obviously, someone was within range to see all this.... {nw}"
+    show Kyon Smile7
+    extend "\"Thanks, Tsuruya-sempai,\" he managed, the upperclassman's friendly embrace banishing his anger. \"A...anyway, like I said, any time you need help with this investigation, let me know.\""
+    show Kyon Smile2
+    show Tsuruya Hap4 at right with move
     nvl clear
     "\"You got it!\" she enthused, breaking the contact and grinning at him. \"I'll start investigatings those other two! But it's a lot bigger than just the two of them.... Which one do you think we should go after first?\""
-    show Kyon Worry1
+    show Tsuruya Smile2
+    show Kyon Puzzle1
     "\"Kanae-chan is in class 1-7,\" he said, frowning. \"I'm a bit worried about her....\""
     nvl clear
+    show Kyon Worry1
     show Tsuruya Hap5
     "\"You got it,\" Tsuruya agreed. \"Satoshi-san should be easier to shake down than Ryuguu-san, here.\""
     scene bg SchoolEntranceLeft with fade
-    show Kyon Neutral2 at left with dissolve
+    show Tsuruya Smile2 at HalfRight
+    show Kyon Neutral2 at HalfLeft
+    with dissolve
     "He followed Tsuruya back to the school entrance, nodding at her. \"Okay, you take care,\" he told her. \"I've got to get back ... uh ... to Haruhi.\""
     nvl clear
-    show Tsuruya Grin3 at right with dissolve
+    show Kyon Neutral3
+    show Tsuruya Grin6
     "\"I thought you were dismissed from the club today?\" she asked, raising one eyebrow and smirking."
+    show Tsuruya Grin3
     show Kyon Unhap1
     "\"Oh, yeah,\" he agreed, frowning. \"Well, I have to head back in anyway, since ... I forgot my shoes. Yeah. I'll see you tomorrow, alright, Tsuruya-sempai?\""
     show Tsuruya Hap1
