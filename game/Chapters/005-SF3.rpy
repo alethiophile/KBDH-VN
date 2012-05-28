@@ -614,11 +614,13 @@ label Test:
     with dissolve
     "\"Hey,\" she said to the other girl, once they were in the hallway and out of earshot from the other students. \"What's up, Sakanaka-san? Is JJ still okay?\" She made a mental note to try and visit Sakanaka sometime relatively soon ... since Yuki had fixed the problem of 'haunted' dogs, Haruhi hadn't had a chance to play with the terrier."
     nvl clear
-    show Sakanaka Neutral1
+    show Sakanaka Smile1
     show Haruhi Smile3 Flip
-    "\"He's fine,\" Sakanaka replied, smiling weakly. \"Um, Suzumiya-san, I don't mean to alarm you ... but ... um.... W...well, I feel I owe you honesty after everything you did for Rousseau. I'm sorry to be the one who bears this news to you, but....\""
+    "\"He's fine,\" Sakanaka replied, smiling weakly. {nw}"
+    show Sakanaka Neutral2
+    extend "\"Um, Suzumiya-san, I don't mean to alarm you ... but ... um.... W...well, I feel I owe you honesty after everything you did for Rousseau. I'm sorry to be the one who bears this news to you, but....\""
     nvl clear
-    show Sakanaka Uneasy1
+    show Sakanaka Uneasy2
     show Haruhi Neutral2 Flip
     "\"Well?\" Haruhi asked, restraining the urge to tap one foot through sheer will alone. What news could Sakanaka have that would be important or critical? Given the powers of the SOS Brigade, what could even really be a concern? Though, she made herself realize, there was no way anyone outside of the SOS Brigade could know that."
     show Sakanaka Neutral1
@@ -628,7 +630,7 @@ label Test:
     show Sakanaka Ser1
     show Haruhi Neutral3 Flip
     "Haruhi blinked, staring at her classmate, and tried to suppress the smirk she felt forming. \"Really?\" she asked. \"That's ... pretty funny. So, where did this rumor start from?\""
-    show Sakanaka Unhap1
+    show Sakanaka Unhap2
     show Haruhi Neutral4 Flip
     "\"Er ... that is....\" Sakanaka visibly deflated, staring at the floor. {nw}"
     show Sakanaka Neutral1
@@ -644,10 +646,10 @@ label Test:
     show Haruhi Unhap1 Flip
     "\"Yanagimoto,\" Haruhi murmured, concentrating. \"Oh, yeah, I remember her from when I joined the rhythmic gymnastics club. She sits in front of Goto-kun, right?\""
     nvl clear
-    show Sakanaka Neutral1
+    show Sakanaka Neutral2
     show Haruhi Unhap2 Flip
     "\"Right,\" Sakanaka agreed. \"I don't ... want to cause trouble. I just thought you should know.\""
-    show Sakanaka Ser1
+    show Sakanaka Ser2
     show Haruhi Sigh2 Flip
     "\"Well, it's a misunderstanding,\" Haruhi said with a shrug. \"Last I heard, Kyon trashed some goons who were giving Tsuruya-san some trouble.\" Though, he was time traveling at the time, and technically, hadn't done it {i}yet{/i}. \"On Sunday, right?\""
     nvl clear

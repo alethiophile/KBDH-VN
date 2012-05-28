@@ -1056,12 +1056,16 @@ init:
     
     #Sakanaka Sprites
     image Sakanaka Neutral1 = "Sprites/Sakanaka/SakanakaNeutral1.png"
+    image Sakanaka Neutral2 = "Sprites/Sakanaka/SakanakaNeutral2.png"
     image Sakanaka Ser1  = "Sprites/Sakanaka/SakanakaSerious1.png"
+    image Sakanaka Ser2  = "Sprites/Sakanaka/SakanakaSerious2.png"
     image Sakanaka Smile1 = "Sprites/Sakanaka/SakanakaSmile1.png"
     image Sakanaka Smile2 = "Sprites/Sakanaka/SakanakaSmile2.png"
     image Sakanaka Smile3 = "Sprites/Sakanaka/SakanakaSmile3.png"
     image Sakanaka Uneasy1 = "Sprites/Sakanaka/SakanakaUneasy1.png"
+    image Sakanaka Uneasy2 = "Sprites/Sakanaka/SakanakaUneasy2.png"
     image Sakanaka Unhap1 = "Sprites/Sakanaka/SakanakaUnhappy1.png"
+    image Sakanaka Unhap2 = "Sprites/Sakanaka/SakanakaUnhappy2.png"
     
     #Yamane Sprites
     image Yamane Neutral = "Sprites/Yamane/YamaneLostCool.png"
