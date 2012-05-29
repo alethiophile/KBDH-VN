@@ -1,14 +1,22 @@
 #Chapter 7, Heroic Antics Begin Arc
 
-
 label HAB2:
-#label Test:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
     stop music fadeout 3
+    scene black
+    show title 007 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
     scene bg KyonLivingRoomEvening with fade
     queue music "Music/Suspicion.ogg"
-    show Kyon Worry3 at center with dissolve
-    show Haruhi Crossed Ang3 at right with dissolve
-    show Kanae Hap3 at left with dissolve
+    show Kyon Worry3 at center
+    show Haruhi Crossed Ang3 at right
+    show Kanae Hap3 at left
+    with dissolve
     "Kyon fidgeted uncomfortably, watching the sparks fly between Haruhi's eyes and his mother's. He wasn't certain what would amuse him more; his mother being terrified of Haruhi, or Haruhi being terrified of his mother. The idea of it being funny faded when he realized that, ultimately, any leftover irritation would spill soundly onto his head."
     nvl clear
     "He spared a silent prayer of thanks for the fact that his sister had been sent to her room to avoid witnessing the current confrontation, even though she would inevitably hound him with questions about it later."

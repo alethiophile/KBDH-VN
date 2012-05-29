@@ -439,6 +439,7 @@ init:
     image Kcut Running2 = "Sprites/Kyon/cheekcut/running2.png"
     image Kcut Running3 = "Sprites/Kyon/cheekcut/running3.png"
     image Kcut Running4 = "Sprites/Kyon/cheekcut/running4.png"
+    image Kcut Bandage = "Sprites/Kyon/cheekcut/bandage.png"
     
     image Kcut Clotted Flip =  im.Flip("Sprites/Kyon/cheekcut/clotted.png", horizontal=True)
     image Kcut Fresh1 Flip =  im.Flip("Sprites/Kyon/cheekcut/fresh1.png", horizontal=True)
@@ -447,6 +448,7 @@ init:
     image Kcut Running2 Flip = im.Flip( "Sprites/Kyon/cheekcut/running2.png", horizontal=True)
     image Kcut Running3 Flip =  im.Flip("Sprites/Kyon/cheekcut/running3.png", horizontal=True)
     image Kcut Running4 Flip =  im.Flip("Sprites/Kyon/cheekcut/running4.png", horizontal=True)
+    image Kcut Bandage Flip =  im.Flip("Sprites/Kyon/cheekcut/bandage.png", horizontal=True)
     
     #Kyon image flips
     image Kyon Ang1 Flip = im.Flip("Sprites/Kyon/KyonAngry1.png", horizontal=True)
@@ -469,6 +471,7 @@ init:
     image Kyon Smile4 Flip = im.Flip("Sprites/Kyon/KyonSmile4.png", horizontal=True)
     image Kyon Smile5 Flip = im.Flip("Sprites/Kyon/KyonSmile5.png", horizontal=True)
     image Kyon Smile6 Flip = im.Flip("Sprites/Kyon/KyonSmile6.png", horizontal=True)
+    image Kyon Smile7 Flip = im.Flip("Sprites/Kyon/KyonSmile7.png", horizontal=True)
     image Kyon Ser1 Flip = im.Flip("Sprites/Kyon/KyonSerious1.png", horizontal=True)
     image Kyon Ser2 Flip = im.Flip("Sprites/Kyon/KyonSerious2.png", horizontal=True)
     image Kyon Ser3 Flip = im.Flip("Sprites/Kyon/KyonSerious3.png", horizontal=True)
@@ -520,6 +523,7 @@ init:
     image Yuki SideDisappointed1 = "Sprites/Yuki/YukiSideDisappointed1.png"
     image Yuki SideDisappointedTalk1 = "Sprites/Yuki/YukiSideDisappointedTalk1.png"
     image Yuki SideEyesClosed1 = "Sprites/Yuki/YukiSideEyesClosed1.png"
+    image Yuki Ang1 = "Sprites/Yuki/YukiSideAngry1.png"
     image Yuki Talk1 = "Sprites/Yuki/YukiSideTalk1.png"
     image Yuki Talk2 = "Sprites/Yuki/YukiSideTalk2.png"
     image Yuki Sad1 = "Sprites/Yuki/YukiSideSad1.png"
@@ -534,6 +538,7 @@ init:
                                        im.matrix.brightness(.5))
     image Yuki Casual Side1 = "Sprites/Yuki/YukiSideCasual1.png"
     image Yuki Casual Side2 = "Sprites/Yuki/YukiSideCasual2.png"
+    image Yuki Casual Ang1 = "Sprites/Yuki/YukiSideCasualAngry1.png"
     image Yuki Casual Talk1 = "Sprites/Yuki/YukiSideCasualTalk1.png"
     image Yuki Casual Talk2 = "Sprites/Yuki/YukiSideCasualTalk2.png"
     image Yuki Casual Sad1 = "Sprites/Yuki/YukiSideCasualSad1.png"
@@ -693,6 +698,7 @@ init:
     image Mikuru Cower Neutral1 = "Sprites/Mikuru/MikuruCowerNeutral1.png"
     image Mikuru Cower Sup1 = "Sprites/Mikuru/MikuruCowerSurprised1.png"
     image Mikuru Cower Sigh1 = "Sprites/Mikuru/MikuruCowerSigh1.png"
+    image Mikuru Cower Sigh2 = "Sprites/Mikuru/MikuruCowerSigh2.png"
     image Mikuru Cower Wince1 = "Sprites/Mikuru/MikuruCowerWince1.png"
     image Mikuru Cower Quest1 = "Sprites/Mikuru/MikuruCowerQuestion1.png"
     image Mikuru Cower Smile1 ="Sprites/Mikuru/MikuruCowerSmile1.png"
@@ -710,6 +716,7 @@ init:
     image Mikuru Cower Casual Neutral1 = "Sprites/Mikuru/MikuruCowerCasualNeutral1.png"
     image Mikuru Cower Casual Sup1 = "Sprites/Mikuru/MikuruCowerCasualSurprised1.png"
     image Mikuru Cower Casual Sigh1 = "Sprites/Mikuru/MikuruCowerCasualSigh1.png"
+    image Mikuru Cower Casual Sigh2 = "Sprites/Mikuru/MikuruCowerCasualSigh2.png"
     image Mikuru Cower Casual Wince1 = "Sprites/Mikuru/MikuruCowerCasualWince1.png"
     image Mikuru Cower Casual Quest1 = "Sprites/Mikuru/MikuruCowerCasualQuestion1.png"
     image Mikuru Cower Casual Smile1 ="Sprites/Mikuru/MikuruCowerCasualSmile1.png"
