@@ -81,7 +81,7 @@ label Fi1:
     
     scene bg TsuruyaKitchen with fade
     stop music fadeout 1
-    queue music "Music/Sunaonakimochi.mp3"
+    queue music "Music/MegassaKoukishin.mp3"
     show Tsuruya Hap1 at right with dissolve
     show Kyon Neutral3 at left with dissolve
     "After eating enough sumptuous fare to feel like a total glutton, Kyon was somewhat surprised to see that Tsuruya had eaten just as eagerly. \"Ah, good, good,\" she decided, leaning back and patting her stomach. \"Mmm, school isn't for a bit, did you want to walk the grounds with me before it starts?\""

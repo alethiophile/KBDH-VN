@@ -10,7 +10,7 @@ label HAB2:
     pause
     play sound "SE/Pageflip3.mp3"
     nvl clear
-    
+
     scene bg KyonLivingRoomEvening with fade
     queue music "Music/Suspicion.ogg"
     show Kyon Worry3 at center
@@ -25,13 +25,13 @@ label HAB2:
     nvl clear
     "Naturally, Haruhi ate the description of these over-the-top antics up with a {i}spoon{/i}, nodding in confirmation to every point, as though she'd actually been there. Just as naturally, Kyon's mother didn't believe it for a second."
     nvl clear
-    "\"Really,\" the woman said after a moment, her cool eyes breaking from Haruhi's long enough to touch on Kanae's, then away to Kyon's, where they hardened into twin orbs of pure menace, the like he had only previously seen from Haruhi herself. Deciding it was a woman-only-power that they all accessed at various levels of maturity, he gave it up as a lost cause." 
+    "\"Really,\" the woman said after a moment, her cool eyes breaking from Haruhi's long enough to touch on Kanae's, then away to Kyon's, where they hardened into twin orbs of pure menace, the like he had only previously seen from Haruhi herself. Deciding it was a woman-only-power that they all accessed at various levels of maturity, he gave it up as a lost cause."
     nvl clear 
     "He could at least take consolation in the fact that he'd — somehow — manage to cow Mori into acting subservient, even if there was no way in hell he'd pull the same off with his mother, Haruhi, or probably his sister."
     "\"I'm a bit disappointed in you, Kyon,\" she finally said, tuning out the girls that argued on his behalf. \"Getting into fights? That is {i}not{/i} how you were raised!\""
     nvl clear
     show Kyon Sigh2
-    "\"I also wasn't raised to look the other way when a crime was being committed,\" he said, shifting uncomfortably in his seat on the couch beneath his mother's gaze. \"Kanae-chan may have ... embellished ... a little bit, but what she said is generally true; I only did what I did to protect her.\" He'd taken off the bandage on his face shortly after leaving the school; Yuki had repaired the damage already, and he didn't know if his mother was certain of the severity of the actual combat."
+    "\"I also wasn't raised to look the other way when a crime was being committed,\" he said, shifting uncomfortably in his seat on the couch beneath his mother's gaze.{p}\"Kanae-chan may have ... embellished ... a little bit, but what she said is generally true; I only did what I did to protect her.\" He'd taken off the bandage on his face shortly after leaving the school; Yuki had repaired the damage already, and he didn't know if his mother was certain of the severity of the actual combat."
     nvl clear
     "\"And you couldn't find a teacher, or someone who could deal with it? You didn't call the police?\" his mother countered. \"Yes, there is an expectation that as a good young man you'll do the {i}right{/i} thing, but you're not some television hero! You are not judge, jury, and executioner! We live in a society of rules and laws, and those are meant to be followed — aside from which, that boy had a {i}knife{/i}! What if you'd been hurt?\""
     nvl clear
@@ -39,7 +39,7 @@ label HAB2:
     "\"Yeah, but.... Ryuguu Ryo was expelled,\" Kyon said, shaking his head. \"I was reprimanded. I acted in self-defense, and to protect Kanae-chan. You think it's bad that I could have been hurt? What if {i}Kanae-chan{/i} was hurt?\""
     nvl clear
     show Kyon Unhap1
-    "His mother raised her eyebrows. \"You're acting like a delinquent,\" she judged, which he couldn't help but wince at. Jabbing a finger into his chest and leaning forward to shoot him a look of dire intent, she added, \"Here's your ultimatum, Kyon. If you can't clean up your act — by which I mean 90 or better on {i}every{/i} test and assignment from this point forward, then I'm pulling you out of that trouble-making club and sending you {i}straight{/i} back to cram school!\""
+    "His mother raised her eyebrows. \"You're acting like a delinquent,\" she judged, which he couldn't help but wince at. Jabbing a finger into his chest and leaning forward to shoot him a look of dire intent, she added, \"Here's your ultimatum, Kyon. {w}If you can't clean up your act — by which I mean 90 or better on {i}every{/i} test and assignment from this point forward, then I'm pulling you out of that trouble-making club and sending you {i}straight{/i} back to cram school!\""
     nvl clear
     "\"Sasaki-chan's mother called me a few days ago, you know! So don't think I haven't been keeping my eyes open for such opportunities — I won't let you throw your chances of a successful career after college away for some fleeting highschool flings and juvenile lapses in judgment!\""
     nvl clear
@@ -77,13 +77,14 @@ label HAB2:
     nvl clear
     hide Haruhi Crossed Pout2 with dissolve
     hide Kanae Smile 3 with dissolve
-    "He watched the two girls head up the stairs to his room and braved the kitchen, enduring his mother's steely-eyed judgment while filling a pitcher and collecting a trio of plastic cups. {nw}"
+    show Kyon Sigh4
+    "He watched the two girls head up the stairs to his room and braved the kitchen, enduring his mother's steely-eyed judgment while filling a pitcher and collecting a trio of plastic cups."
     scene bg KyonRoomRightClosed with fade
     stop music fadeout 1
     queue music "Music/Kokuhaku.mp3"
     show Haruhi Smile1 Flip at center with dissolve
     show Kanae Smile1 at right with dissolve
-    extend "When he got into his room, Haruhi had already set out all of her own notes, and was digging through his schoolbag for his textbooks. Kanae was sitting on the edge of his bed, rifling through her own bag, though the younger girl broke off her work to give him a shaky smile."
+    extend " When he got into his room, Haruhi had already set out all of her own notes, and was digging through his schoolbag for his textbooks. Kanae was sitting on the edge of his bed, rifling through her own bag, though the younger girl broke off her work to give him a shaky smile."
     nvl clear
     "\"S...so,\" Haruhi said, shifting her shoulders, \"I guess if I can't ... help you out enough, you can probably get ... Yuki-chan to fix things for you, right?\""
     show Kyon Neutral1 Flip at left with dissolve
@@ -179,14 +180,15 @@ label HAB2:
     nvl clear
     show Kanae Hap1
     "\"I didn't hear that story!\" Kanae said, giggling herself, a tiny blush coming to her cheeks. \"Ooh, Sempai with another boy! Such a naughty thought!\" {nw}"
-    show KABlush
+    show KABlush at right
     extend "Her eyes turned distant and her blush deepened. \"Hum, Sempai and Koizumi-san....\""
     nvl clear
     show Kyon Ser2 Flip
     "\"Stop that train of thought {i}right there{/i},\" Kyon insisted, holding one hand out and grimacing. \"I invoke my vice commander powers to revoke your speaking privileges! Not funny, Kanae-chan!\""
     nvl clear
-    hide Kanae Hap1 with dissolve
-    hide KABlush
+    hide Kanae Hap1 
+    hide KABlush   
+    with dissolve
     show Haruhi Sigh2 Flip
     "The girl giggled again, grabbing Kyon's pillow and hiding her face behind it, trying to stifle her laughter. \"Alright,\" Haruhi said decisively, \"enough break time! Kanae-chan, help me cut up some paper to make flashcards. Kyon, get us—  {nw}"
     show Haruhi Quest2 Flip
@@ -206,7 +208,7 @@ label HAB2:
     nvl clear
     hide Kanae with dissolve
     show Haruhi Pout1 at center with dissolve
-    "Haruhi hesitated until the smaller girl was out of sight, then turned to face Kyon. \"Um,\" she began, uncertainly, before faltering. He could sense that she wanted to say something, but was unable to force it out. \"W...well, come to school early tomorrow.... If your mother is upset, I'll bring you something so you can eat properly, and we'll work on all the flashcards you had trouble with, okay?\""
+    "Haruhi hesitated until the smaller girl was out of sight, then turned to face Kyon. \"Um,\" she began, uncertainly, before faltering.{w}He could sense that she wanted to say something, but was unable to force it out. \"W...well, come to school early tomorrow.... If your mother is upset, I'll bring you something so you can eat properly, and we'll work on all the flashcards you had trouble with, okay?\""
     nvl clear
     hide Haruhi with dissolve
     "\"Absolutely,\" he agreed, nodding. He watched her walk away, unsettled when his cell-phone buzzed. He pulled it from his pocket, surprised to see he had a voice-mail ... but no missed calls. Confused, he pressed the button to retrieve it as he strolled back home, his steps freezing when a very familiar voice spoke:"
@@ -294,7 +296,7 @@ label HAB2:
     "Seconds later, the eye-level steel plate snapped back, revealing a furrowed brow and a pair of angry eyes. \"What?\" a surly voice asked him, before taking in his uniform. \"Oh, local color, eh? You here to buy, or sell?\""
     "\"Buy,\" he answered, shifting his shoulders."
     nvl clear
-    "\"Alright.\" The plate slammed back into place and then Kyon heard the sounds of several bolts being thrown before the steel door ponderously opened inward. The man behind the door was a bit shorter than him, but stocky, with the build of a practiced fighter and numerous small scars across his face. He was wearing a brightly colored cherry-red suit with a lime green tie and a loud blue shirt — a screaming advertisement of his Yakuza status. \"In,\" he grunted, gesturing Kyon forward with one meaty paw."
+    "\"Alright.\" The plate slammed back into place and then Kyon heard the sounds of several bolts being thrown before the steel door ponderously opened inward. {w}The man behind the door was a bit shorter than him, but stocky, with the build of a practiced fighter and numerous small scars across his face. He was wearing a brightly colored cherry-red suit with a lime green tie and a loud blue shirt — a screaming advertisement of his Yakuza status. \"In,\" he grunted, gesturing Kyon forward with one meaty paw."
     nvl clear
     scene bg WatanabeBase with fade
     show Kyon Neutral3 Flip at left with dissolve

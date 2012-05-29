@@ -434,7 +434,7 @@ init:
     
     image Kcut Clotted = "Sprites/Kyon/cheekcut/clotted.png"
     image Kcut Fresh1 = "Sprites/Kyon/cheekcut/fresh1.png"
-    image Kcut Fresh2 = "Sprites/Kyon/cheekcut/fresh2.png"
+    image Kcut Clotting = "Sprites/Kyon/cheekcut/fresh2.png"
     image Kcut Running1 = "Sprites/Kyon/cheekcut/running1.png"
     image Kcut Running2 = "Sprites/Kyon/cheekcut/running2.png"
     image Kcut Running3 = "Sprites/Kyon/cheekcut/running3.png"

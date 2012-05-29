@@ -2,26 +2,41 @@
 Although, the forum might be a better place to put it: www.soulriders.net/forum/index.php/board,345.0
 -----
 
+GENERAL TIPS:
+Never scale a background without checking it's RGB color first. Indexed color backgrounds needs to be converted or they become jagged when scaling.
+
+To fade, for example, a blushing character, do this:
+    hide Kanae Hap1
+    hide KABlush
+    with dissolve
+which makes blush and character to dissolve together, and not, for example:
+    hide Kanae Hap1 with dissolve
+    hide KABlush  
+which causes the blushing to disappear in a bang after Kanae is gone.
 
 
+
+
+TODO CHECKLIST:
 First release is finished! Time to work on the second half of Chapter 5 and fix all the mistakes I (Zfish9) made on chapters 6-8 :D
 
-Add Sakanaka to her scenes, and Ryo's needs to be bandaged and broken, unlike he is now, in his presentation scene.
+Rebuild KyonRoomRightClosed.png, it got the aforementioned Jagging due to indexed colors.
 
-Segment the paragraphs in 6-8 much more with linebreaks.
+WatanabeBase is all wrong - it's a warehouse with a forklift, it's supposed to be a messy, not huge storeroom with computers.
+The fight scene needs work too, it's very static and bland. Needs more animations. (absence of many sprites is secondary)
+
+Ryo needs to be bandaged and broken, unlike he is now, in his presentation scene.
+
+Segment the paragraphs in 7-8 more, using linebreaks. (to do from Watanabe's hidedout on.)
 Sometimes they flow in an uninterrupted wall of text without any user interaction until the screen is full, right now, and that's not good.
+Especially bad at the point when Ninja TsuruyaMaid is shown in chapter 7.
 
-Add the Kyon cheek cut to relevant scenes in chapter 6-8 and before (sprites/Kyon/cheekcut/).
 
 Search for "blush" in chapter 6. Haruhi should blush at one point, but her sprite doesn't do it.
 
-Remove the "Mikuru no Kokoro" tenderly romantic theme from the scene in which Kyon strangles Ryuugu. The following Tsuruya scene is sweet, but... no.
-It's deeply dissonant. A few other BGMs earlier in the 6th chapter are sorta off, too.
+A few BGMs in the 6th chapter are sorta off. On that note, use SeishuniiJanaiKatsu more when fang-tan is around. Maybe when they storm the photo ring.
 
-On that note, use SeishuniiJanaiKatsu more when fang-tan is around.
-
-The music used during Kanae's explanation of the fight to Kyon's Mom is used in Umineko during grisly murderinvestigating. This scene is far more relaxed, and even has an humorous bent. Maybe, change.
-Same scene: from what we saw, Kyon's living room is quite different. Maybe find a better fitting one?
+From what we saw, Kyon's living room is quite different from the one shown in Ch.7, Maybe find a better fitting one?
 
 Haruhi's bedroom looks sort of austere for a teenage girl with cute hair decs. Needs something better?
 
