@@ -12,7 +12,7 @@ label HAB1:
     nvl clear
     
     scene bg hallway with fade
-    play music "Music/suspicion.ogg"
+    play music "Music/Hinichi jouhe no sasoi.mp3"
     show Kanae Neutral1 at HalfRight with dissolve
     "After the lunch chime, Kanae had decided that she would return to the club room; if she were lucky, Sempai would be there! And if she weren't lucky, well, Sempai's friends were her friends, too, so that would be fine."
     show Ryo Neutral at TenthLeft with dissolve #Neutral
@@ -418,12 +418,13 @@ label HAB1:
     "She blinked suddenly, pausing to stare his cheek, then frowned sharply. \"Ooh, you better come with me, first of all,\" she decided, seizing his wrist and leading him back into the school. {nw}" 
     scene bg LockersDayLeft with fade
     show Tsuruya Hap5 at left with dissolve
-    extend "He followed in bemusement until they reached her locker and she produced a first aid kit, cleaning his wound and then applying a bandage. \"There,\" she said, once her treatment was done, grinning again. There was a twinkle in her eyes as she added, \"Don't get a scar, unless you gets another one to make it cross-shaped. That makes you way more rugged and bish!\""
+    "He followed in bemusement until they reached her locker and she produced a first aid kit, cleaning his wound and then applying a bandage."
     nvl clear
     show Tsuruya Smile3
     show Kyon Smile3 at right
     show Kcut Bandage at right
     with dissolve
+    "\"There,\" she said, once her treatment was done, grinning again. There was a twinkle in her eyes as she added, \"Don't get a scar, unless you gets another one to make it cross-shaped. That makes you way more rugged and bish!\""
     "\"Yeah, that's not the part I'm worried about,\" he said, smirking, though the expression vanished the moment his cheek pulled at the cut. {nw}"
     show Kyon Neutral2
     extend "\"Anyway, Haruhi won't mind me helping you out; I've been dismissed from club activities today.\""
@@ -432,10 +433,12 @@ label HAB1:
     show Tsuruya Hap5
     stop music fadeout 1
     play music "Music/suspicion.ogg"
-    "\"Oh! Perfects! We can keep on with our investigation!\" Tsuruya said excitedly, glancing around to make sure that no one was within eavesdropping distance. \"Okies, here's what I've found out so far ... those pushy fellows from Sunday, they have a contact in the school, a third year named Ryuguu Ryo-san. He loiters around on the campus behind the gym after school to make his deals. I want to questions him, but he's a big fellow, and Kasai's out ... so if you don't minds, could you be my muscle for a bit?\""
+    "\"Oh! Perfects! We can keep on with our investigation!\" Tsuruya said excitedly, glancing around to make sure that no one was within eavesdropping distance."
+    show Tsuruya Grin4
+    "\"Okies, here's what I've found out so far ... those pushy fellows from Sunday, they have a contact in the school, a third year named Ryuguu Ryo-san. He loiters around on the campus behind the gym after school to make his deals. I want to questions him, but he's a big fellow, and Kasai's out ... so if you don't minds, could you be my muscle for a bit?\""
     nvl clear
     show Tsuruya Grin2
-    show Kyon Ser3
+    show Kyon Ser3      
     "\"Sure,\" Kyon agreed, realizing that the boy he had just fought with (from his perspective) must have been Ryuguu. Well, the informal 'you' would still serve for him. \"So, any plan? Maybe a little good cop, bad cop?\""
     show Tsuruya Hap1
     show Kyon Ser1
