@@ -21,7 +21,8 @@ label HAB2:
     nvl clear
     "He spared a silent prayer of thanks for the fact that his sister had been sent to her room to avoid witnessing the current confrontation, even though she would inevitably hound him with questions about it later."
     nvl clear
-    "Kanae finished her explanation, the story delivered with embarrassing shoujou- romance panache, complete with descriptions of some uber-bishonen action-hero that trailed flowing sakura petals wherever he moved, and a villainous Ryuguu Ryo that literally slobbered over the hapless damsel in distress. She even embarrassedly referenced swooning into Kyon's arms as the bishonen figure that he gathered was supposed to be him carried her to safety, when the villain was left defeated and shamed."
+    show Kanae Smile1
+    "Kanae finished her explanation, the story delivered with embarrassing shoujou-romance panache, complete with descriptions of some uber-bishonen action-hero that trailed flowing sakura petals wherever he moved, and a villainous Ryuguu Ryo that literally slobbered over the hapless damsel in distress. She even embarrassedly referenced swooning into Kyon's arms as the bishonen figure that he gathered was supposed to be him carried her to safety, when the villain was left defeated and shamed."
     nvl clear
     "Naturally, Haruhi ate the description of these over-the-top antics up with a {i}spoon{/i}, nodding in confirmation to every point, as though she'd actually been there. Just as naturally, Kyon's mother didn't believe it for a second."
     nvl clear
@@ -30,11 +31,14 @@ label HAB2:
     "He could at least take consolation in the fact that he'd — somehow — manage to cow Mori into acting subservient, even if there was no way in hell he'd pull the same off with his mother, Haruhi, or probably his sister."
     "\"I'm a bit disappointed in you, Kyon,\" she finally said, tuning out the girls that argued on his behalf. \"Getting into fights? That is {i}not{/i} how you were raised!\""
     nvl clear
+    show Kanae Unhap2
     show Kyon Sigh2
-    "\"I also wasn't raised to look the other way when a crime was being committed,\" he said, shifting uncomfortably in his seat on the couch beneath his mother's gaze.{p}\"Kanae-chan may have ... embellished ... a little bit, but what she said is generally true; I only did what I did to protect her.\" He'd taken off the bandage on his face shortly after leaving the school; Yuki had repaired the damage already, and he didn't know if his mother was certain of the severity of the actual combat."
+    "\"I also wasn't raised to look the other way when a crime was being committed,\" he said, shifting uncomfortably in his seat on the couch beneath his mother's gaze. {w}\"Kanae-chan may have ... embellished ... a little bit, but what she said is generally true; I only did what I did to protect her.\" He'd taken off the bandage on his face shortly after leaving the school; Yuki had repaired the damage already, and he didn't know if his mother was certain of the severity of the actual combat."
     nvl clear
+    show Kyon Sigh4
     "\"And you couldn't find a teacher, or someone who could deal with it? You didn't call the police?\" his mother countered. \"Yes, there is an expectation that as a good young man you'll do the {i}right{/i} thing, but you're not some television hero! You are not judge, jury, and executioner! We live in a society of rules and laws, and those are meant to be followed — aside from which, that boy had a {i}knife{/i}! What if you'd been hurt?\""
     nvl clear
+    show Kanae Unhap3
     show Kyon Ser2
     "\"Yeah, but.... Ryuguu Ryo was expelled,\" Kyon said, shaking his head. \"I was reprimanded. I acted in self-defense, and to protect Kanae-chan. You think it's bad that I could have been hurt? What if {i}Kanae-chan{/i} was hurt?\""
     nvl clear
@@ -45,10 +49,13 @@ label HAB2:
     nvl clear
     show Kanae Sad1
     show Haruhi Crossed Sup2
+    show Kyon Worry1 
     "Kanae blinked, looking stung. Haruhi flinched at the mention of Sasaki, and Kyon could feel her trembling through the couch at the rest of the ultimatum. {nw}"
-    show Haruhi Ang3 Flip
+    show Haruhi Ang6 Flip
     extend "\"That won't happen!\" the girl swore, jumping to her feet in agitation. \"Kyon and I have been working together on his studying habits! He's going to do {i}much{/i} better on tomorrow's test!\""
     nvl clear
+    show Haruhi Ang3 Flip
+    show Kanae Sad4
     "\"I'm sure,\" his mother said dryly, standing up straight and staring down her nose imperiously at Haruhi. \"You've already accomplished miracles for him so far.\""
     nvl clear
     "Kyon took a deep breath, watching Haruhi closely. His mother had previously always maintained a careful distance from his friends, respecting his boundaries. This was an entirely new facet of parental interference.... But not, he admitted, entirely unexpected. And he really didn't want to see Haruhi get into a fight with his mother."
@@ -56,51 +63,69 @@ label HAB2:
     nvl clear
     "\"Mom,\" he said, pulling her attention from Haruhi's now watering eyes. \"Look, I'm not actually in any {i}trouble{/i} at school, and if I were, it had {i}nothing{/i} to do with Haruhi or the SOS Brigade.\""
     nvl clear
+    show Kyon Neutral4
     "Her eyes locked back on his, while Haruhi continued to tremble. \"And?\" she asked him. \"I'd really like you to be a positive role model for your sister and make a stronger showing that you care about your future!\""
     show Kyon Ser2
     "\"I care a lot more about the future than you think,\" he couldn't help but grumble. \"And I think you're overreacting. If you have to yell, fine, yell — but don't take it out on my friends. They didn't do anything to deserve this.\""
     nvl clear
-    "To Kyon's surprise, his mother took a half step back, eyebrows raising. \"You have your terms,\" she decided, shaking her head. \"If you really care, I think this would be a good time to start studying for tomorrow's test. And I'd {i}better{/i} not hear from the school again!\" With that, she turned and stalked away, shooting one last dark glance over her shoulder before loudly banging pots and pans around in the kitchen, despite the fact that dinner was hours away yet."
+    show Kyon Ser1
+    "To Kyon's surprise, his mother took a half step back, eyebrows raising. \"You have your terms,\" she decided, shaking her head. {w}\"If you really care, I think this would be a good time to start studying for tomorrow's test. And I'd {i}better{/i} not hear from the school again!\" {w}With that, she turned and stalked away, shooting one last dark glance over her shoulder before loudly banging pots and pans around in the kitchen, despite the fact that dinner was hours away yet."
     nvl clear
-    show Kyon Neutral2
-    "Looking between Kanae and Haruhi, Kyon climbed up from his seat and shook his head. \"Haruhi,\" he said softly, though his gaze was out the window, \"I'm in a bit of trouble. Would you be willing to help me study?\" It was the {i}last{/i} thing he wanted to do ... but it was also the only thing he could think of to calm Haruhi, and more closed space.... What the hell had brought Sasaki's name up again? First Kunikida bringing it up off-hand a few days ago, then his own mother? This didn't seem to be coincidence."
+    show Kyon Puzzle1
+    "Looking between Kanae and Haruhi, Kyon climbed up from his seat and shook his head. \"Haruhi,\" he said softly, though his gaze was out the window, \"I'm in a bit of trouble. Would you be willing to help me study?\" {w}It was the {i}last{/i} thing he wanted to do ... but it was also the only thing he could think of to calm Haruhi, and more closed space.... What the hell had brought Sasaki's name up again? First Kunikida bringing it up off-hand a few days ago, then his own mother? This didn't seem to be coincidence."
+    show Kyon Worry1
     "He resolved to ask Yuki about it later."
     nvl clear
     show Haruhi Crossed Pout2
     "\"Yeah,\" she answered, her voice a little rough, unable to meet his eyes. After a moment of hesitation, he placed one hand on her shoulder. She flinched, but didn't shy away, leaning ever so slightly into the contact. \"U...um. I'll ... wait in your room, if that's okay?\""
     nvl clear
-    show Kyon Smile3
+    show Haruhi Crossed Pout1
+    show Kyon Smile6
     "He nodded at her, then turned to Kanae. The younger girl had her head bowed, her own eyes shadowed. \"Do you want to join us?\" he asked, forcing a smile he didn't feel. \"We can help you with your homework; I'll consider it a much needed review.\""
     nvl clear
+    show Kyon Smile4
     show Kanae Smile3
     "\"Um! Y...yeah, of course!\" Kanae nodded quickly, glancing nervously in the direction of the kitchen. \"If I can help Sempai, then absolutely!\""
     nvl clear
-    hide Haruhi Crossed Pout2 with dissolve
-    hide Kanae Smile 3 with dissolve
+    hide Haruhi Crossed Pout2
+    hide Kanae Smile 3
+    with dissolve
     show Kyon Sigh4
     "He watched the two girls head up the stairs to his room and braved the kitchen, enduring his mother's steely-eyed judgment while filling a pitcher and collecting a trio of plastic cups."
     scene bg KyonRoomRightClosed with fade
     stop music fadeout 1
     queue music "Music/Kokuhaku.mp3"
-    show Haruhi Smile1 Flip at center with dissolve
-    show Kanae Smile1 at right with dissolve
+    show Haruhi Smile1 Flip at center
+    show Kanae Smile1 at right
+    with dissolve
     extend " When he got into his room, Haruhi had already set out all of her own notes, and was digging through his schoolbag for his textbooks. Kanae was sitting on the edge of his bed, rifling through her own bag, though the younger girl broke off her work to give him a shaky smile."
     nvl clear
+    show Haruhi Neutral3 Flip
     "\"S...so,\" Haruhi said, shifting her shoulders, \"I guess if I can't ... help you out enough, you can probably get ... Yuki-chan to fix things for you, right?\""
-    show Kyon Neutral1 Flip at left with dissolve
+    show Haruhi Neutral4 Flip
+    show Kyon Neutral4 Flip at left with moveinleft
+    show Kyon Neutral1 Flip
     "\"Hadn't thought of that,\" Kyon admitted, setting the pitcher on a tray next to the cups. \"Guess I could, but it seems like cheating.... And, anyway, Nagato takes care of things that I can't feasibly learn otherwise. That'd be abusing her power. Weren't you just telling me I was smart, but lazy?\""
     nvl clear
+    show Kyon Neutral3 Flip
     show Haruhi Smile3 Flip
-    "\"Yeah,\" she admitted with a small, but heartfelt smile. She glanced at the door then closed one eye, concentrating, and to Kyon's surprise, it swung shut. \"Is it okay if I practice?\" she asked him, a trace of nervousness in her voice."
+    "\"Yeah,\" she admitted with a small, but heartfelt smile. She glanced at the door then closed one eye, concentrating, and to Kyon's surprise, it swung shut. {nw}"
+    show Haruhi Quest1 Flip
+    extend "\"Is it okay if I practice?\" she asked him, a trace of nervousness in her voice."
     nvl clear
     show Kyon Neutral2 Flip
-    "\"Sure,\" he said, nodding. She had mentioned something about changing her power ... if only she'd thought to let him know how! Haruhi stared intently and levitated a handful of things from his desk drawer — a ruler, some paper- clips that he'd long ago stuck together into a chain, and a ball of assorted rubber-bands."
+    show Haruhi Neutral4 Flip
+    "\"Sure,\" he said, nodding. She had mentioned something about changing her power ... if only she'd thought to let him know how! {w}Haruhi stared intently and levitated a handful of things from his desk drawer — a ruler, some paper-clips that he'd long ago stuck together into a chain, and a ball of assorted rubber-bands."
     nvl clear
+    show Kyon Neutral3 Flip
     show Kanae Sup1
     "\"When did you learn to do that?\" Kanae asked, intrigued. \"I thought you needed Nagato-san's help to use your power?\""
     show Haruhi Neutral2 Flip
+    show Kanae Quest2
     "\"Just the big stuff,\" Haruhi said, shaking her head, the arrangement before her wobbling unsteadily. \"I can move things ... when I get really stressed it helps me calm down.\""
     nvl clear
+    show Haruhi Neutral1 Flip
+    show Kanae Smile1
     "Kyon pondered, then turned his attention to his homework, glad that Haruhi had given herself a constructive outlet. Certainly, he hadn't gotten any texts or calls from Koizumi or Mori, which seemed to be a good sign."
     nvl clear
     "Kanae occasionally interrupted him to ask him to look over her work, and he usually had to ask Haruhi to help him out ... embarrassingly enough, homework from a year ago {i}was{/i} a critical review for him. After playing with her telekinesis long enough for Kyon to finish his homework, she put everything but the paper-clips away, studiously unchaining them one-by-one, then stacking them neatly in the drawer."
@@ -109,96 +134,138 @@ label HAB2:
     scene bg KyonRoomRightClosed with fade
     stop music fadeout 1
     queue music "Music/Nichijou.mp3"
-    show Kyon Sigh2 Flip at left with dissolve
-    show Kanae Neutral1 at right with dissolve
+    show Kyon Sigh2 Flip at left
+    show Kanae Neutral1 at right
+    show Haruhi Smile1 Flip at center
+    with dissolve
     "\"Okay,\" Kyon declared, glancing at the clock then rubbing at the bridge of his nose. \"Time for a break! I have limits.\" He rose and stretched, Kanae bouncing off the edge of his bed and mimicking his movements, sticking her tongue out a bit in concentration."
-    show Haruhi Grin1 Flip at center with dissolve
+    show Kyon Sigh4 Flip
+    show Haruhi Grin2 Flip
     "Haruhi snickered at the first year student, saying, \"Kanae-chan, you're going to need a bit more practice before you just launch into martial kata.\""
     nvl clear
+    show Haruhi Grin1 Flip
     show Kyon Neutral4 Flip
     "Kyon blinked, realizing that Haruhi was right ... and he hadn't even realized he was going through a basic series of martial forms. Learning things subconsciously ... or without the specific memories of learning it was not without certain flaws. It might be for the best that he didn't try and learn his class that way, unless there was no other option."
     nvl clear
-    show Kanae Smile3
+    show Kanae Hap4
+    show Haruhi Smile2 Flip
     "\"I know,\" Kanae admitted, giggling. \"But maybe I should ask Nagato-san to learn martial arts, too? Then I could defend myself better, and Sempai wouldn't have gotten in trouble....\""
     nvl clear
+    show Kanae Smile3
     show Kyon Puzzle1 Flip
     "\"Ryuguu was a pretty big guy,\" Kyon disagreed, shaking his head. \"Martial arts is mostly about subtlety over force, but he had a knife, too; he could have hurt you pretty badly if you fought seriously. If you really want, you can probably ask Nagato later, but I thought you needed more practice sliding?\""
-    show Kanae Smile1
+    nvl clear
+    show Kanae Hap2
+    show Kyon Worry1 Flip
     "She ducked her head, giggling. \"That's true! I guess I'll have to depend on Sempai for now....\""
-    show Kyon Smile4 Flip
+    show Kyon Smile6 Flip
+    show Kanae Smile1
     "\"That's what we're here for,\" he assured her."
     nvl clear
+    show Kyon Smile4 Flip
     show Haruhi Pout1 Flip
-    "Haruhi poured herself a glass of water as Kanae settled back to the bed and Kyon finished the final form of the kata he had started, sinking to sit before the study materials again. Maybe he should ask Haruhi to make him a more avid studier, he thought with a sigh. \"Hey, Kyon,\" she said, holding the cup by her face, peering intently into its depths."
+    "Haruhi poured herself a glass of water as Kanae settled back to the bed and Kyon finished the final form of the kata he had started, sinking to sit before the study materials again. Maybe he should ask Haruhi to make him a more avid studier, he thought with a sigh. {nw}"
+    show Haruhi Pout2 Flip
+    extend "\"Hey, Kyon,\" she said, holding the cup by her face, peering intently into its depths."
     show Kyon Neutral2 Flip
+    show Haruhi Pout1 Flip
     "\"Yeah?\" he asked, flipping through his own poorly written and generally incomplete notes."
     nvl clear
+    show Kyon Neutral3 Flip
     show Haruhi Pout2 Flip
     "\"I'm sorry about this....\""
     show Kyon Sigh2 Flip
-    "\"It's not your fault,\" he said, shrugging as he reached the end of his notes, and the beginning of Haruhi's. \"And, anyway, while my mom doesn't usually get mad at me, I haven't gotten into a fight at school since....\" He paused thinking back. \"I don't think ever, actually. So, I can kind of see where she's coming from.\""
     show Haruhi Pout1 Flip
+    show Kanae Neutral1
+    "\"It's not your fault,\" he said, shrugging as he reached the end of his notes, and the beginning of Haruhi's. \"And, anyway, while my mom doesn't usually get mad at me, I haven't gotten into a fight at school since....\" He paused thinking back. \"I don't think ever, actually. So, I can kind of see where she's coming from.\""
+    show Kyon Sigh4 Flip
+    show Haruhi Pout2 Flip
     "\"Y...yeah, but if this makes you quit the brigade—\""
     nvl clear
+    show Haruhi Pout1 Flip
     show Kyon Ser2 Flip
-    "\"Haruhi,\" he said sternly, looking up from her notes, \"if I won't let aliens, enemy organizations, or that smirking bastard let me get split off from the brigade, do you really think my mother is going to stop me? It's no good seeing her mad at me, but she'll get over it as long as I come through on getting my test scores up.\""
+    "\"Haruhi,\" he said sternly, looking up from her notes, \"if I won't let aliens, enemy organizations, or that smirking bastard let me get split off from the brigade, do you really think my mother is going to stop me? It's no good seeing her mad at me, but she'll get over it as long as I come through on getting my test scores up."
     nvl clear
+    show Kyon Ser3 Flip
     "\"And even if I do fail, well.... I don't think it's any good relying on Nagato or Asahina-san to fix things, but unless I somehow get expelled from school,\" and that he {i}would{/i} cheat to fix, if he had to, \"then it's not happening. Despite everything, my record with the school should be decent. I have bad grades, and I got into one fight that everyone acknowledges wasn't my fault. It's not the end of the world, is it?\""
     nvl clear
+    show Kyon Ser1 Flip
     show Haruhi Pout2 Flip
     "Haruhi nodded, setting her cup on the tray. \"I just don't like it when things entirely outside of my control can cause problems I can't fix ... even though they'll be problems for me,\" she said. {nw}"
     show Haruhi Sigh1 Flip
     extend "Then she shook her head. \"That sounds really selfish, doesn't it?\""
     nvl clear
     show Kyon Neutral2 Flip
+    show Haruhi Sigh3 Flip
     "\"Well,\" he mused, as Kanae put away her homework, \"that may be true.... But when you're talking about wanting a friend to do well so you can be together, then while it's a bit selfish, it's also because you care about your friend, isn't it?\""
     nvl clear
+    show Kyon Neutral3 Flip
     show Haruhi Pout2 Flip
     "Haruhi shifted her shoulders and looked away, her fingertips fidgeting nervously. \"I guess,\" she allowed."
+    show Haruhi Pout1 Flip
     show Kanae Quest1
     "\"Suzumiya-san,\" Kanae began uncertainly, \"are you unhappy to be friends with Kyon?\""
+    show Kanae Quest2
     show Haruhi Sup1 Flip
     "\"W...what?! Of course not!\" Haruhi yelped, staring at the younger girl as though she had sprouted an extra head. \"Why would you think that!?\""
     nvl clear
     show Kanae Wince2
     "\"Y...you just seemed nervous,\" Kanae said, flinching back. \"Um, I'm sorry!\""
-    show Haruhi Pout1 Flip
+    show Kanae Wince1
+    show Haruhi Pout2 Flip
     "\"M...maybe I'm a little ... unused to having ... friends,\" Haruhi admitted, pouting at the floor. \"I ... kind of scared people away for a while.... So I got used to having to do my own thing, and not caring about other people. And ... maybe that's not the best way to look at the world.\""
     nvl clear
+    show Haruhi Pout1 Flip
+    show Kanae Unhap3
     show Kyon Neutral1 Flip
     "\"Is that so?\" Kyon asked, raising an eyebrow. \"I always thought you were at your strongest when you were doing things for others.\""
+    show Kyon Neutral4 Flip
     show Haruhi Hap1 Flip
+    show Kanae Smile1
     "\"Yeah?\" Haruhi asked, brightening. \"Like when?\""
     nvl clear
     show Kyon Smile3 Flip
+    show Haruhi Smile3 Flip
     "\"Like when you and Nagato filled in for the band members at the cultural festival,\" he suggested. \"Or the time that you insisted I visit Nagato because you thought she said my name. Maybe the time that you helped Sakanaka-san out with her dog? What about the time you insisted that Nagato meet the boy who thought he was in love with her, because you said everyone deserved a chance?\""
     nvl clear
+    show Kyon Smile2 Flip
     show Haruhi Hap4 Flip
     "\"Yeah,\" Haruhi agreed, chuckling. \"I guess you're right! Oh, man, that letter was so pathetic, too! I kind of felt for the guy, though....\""
     show Kyon Sup2 Flip
+    show Haruhi Hap5 Flip
     "\"I didn't,\" Kyon retorted. \"When he called to tell me how much he was in love, his explanation was so bad I thought he was trying to confess to {i}me{/i}!\""
     nvl clear
+    show Kyon Worry3 Flip
     show Kanae Hap1
     "\"I didn't hear that story!\" Kanae said, giggling herself, a tiny blush coming to her cheeks. \"Ooh, Sempai with another boy! Such a naughty thought!\" {nw}"
     show KABlush at right
     extend "Her eyes turned distant and her blush deepened. \"Hum, Sempai and Koizumi-san....\""
     nvl clear
     show Kyon Ser2 Flip
+    show Kanae Smile1
     "\"Stop that train of thought {i}right there{/i},\" Kyon insisted, holding one hand out and grimacing. \"I invoke my vice commander powers to revoke your speaking privileges! Not funny, Kanae-chan!\""
     nvl clear
-    hide Kanae Hap1 
-    hide KABlush   
-    with dissolve
+    show Kyon Ser1 Flip
+    show Kanae Hap4:
+        xalign 1.0 yalign 1.0
+        linear 0.4 yalign 2.2
+    show KABlush:
+        xalign 1.0 yalign 1.0
+        linear 0.4 yalign 2.2
     show Haruhi Sigh2 Flip
     "The girl giggled again, grabbing Kyon's pillow and hiding her face behind it, trying to stifle her laughter. \"Alright,\" Haruhi said decisively, \"enough break time! Kanae-chan, help me cut up some paper to make flashcards. Kyon, get us—  {nw}"
-    show Haruhi Quest2 Flip
+    show Haruhi Quest1 Flip
     extend "I mean, could you get us some more water?\""
-    show Kyon Smile4 Flip
-    "\"No problem,\" he agreed, giving Haruhi a smile before taking up the empty pitcher and steeling himself to face his mother's ire once more."
     nvl clear
-    scene almostblack two with fade
+    show Haruhi Quest2 Flip
+    show Kyon Smile6 Flip
+    "\"No problem,\" he agreed, giving Haruhi a smile before taking up the empty pitcher and steeling himself to face his mother's ire once more."
+    show Kyon Smile4 Flip
+    nvl clear
+    stop music fadeout 3
     
-    #need train station bg
+    call eyecatch_fancy("Thursday, April 21") from HAB2_sc001
+    
     scene bg TrainStation with fade
     stop music fadeout 1
     queue music "Music/MidnightInterval.mp3"
