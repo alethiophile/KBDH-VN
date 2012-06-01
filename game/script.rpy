@@ -1690,10 +1690,11 @@ init -1 python:
             ("Credits (rolling)", "credits_roll", True),
             ("Another testbed, Eyecatchies", "test_Z0_eye", True),
             ("Another testbed, Title cards", "test_Z0_titles", True),
-            ("A test!", "test2", True)
+            ("Hyperlinks", "test_hyperlinks", True)
             ],
         ]
         
+    style.hyperlink_text = style.default
     ecbg = "black"
     ecfg = "fff"
 
@@ -2148,6 +2149,14 @@ label eyecatch_generic(date1="", date2="", pause_time = 3.0, r = 0, ecbg = "900"
     show eyeSolidBackground
     return
 
+label test_hyperlinks:
+    scene bg MorningSky
+    "This is test text for {a=hypertest}hyperlinks{/a}!"
+    return
+
+label hypertest:
+    "Text!"
+    return
     
 label test_Z0_eye:
     scene bg MorningSky
