@@ -1363,7 +1363,6 @@ init:
     image title 008 = Text("{space=480}{b}{size=+1}Thursday, April 21, 2011{/size}{/b}\n\n\n\n\"File K:3419.8.19/2011.4.21\"\n\n\"...so, I think, maybe, sometimes it might be okay to be a little selfish, as long as you don't jeopardize anything. That's the really hard part, though ... how can you ever tell? I suppose that means erring on the side of caution ... no matter how it hurts. But sometimes ... just a little bit ... it's nice to be selfish.\"\n\n\"[[CLASSIFIED]\" -- Paraea Mons T.E.S.A. Dataplume", font="DejaVuSerif-Italic.ttf", size=18, line_leading=3, justify=True, xmaximum=750)
     
 init python:
-    import os, hashlib
     config.layers.insert(1, 'upper')
     
     #basechar = Character(None, kind=nvl)
@@ -1691,11 +1690,28 @@ init -1 python:
             ("Credits (rolling)", "credits_roll", True),
             ("Another testbed, Eyecatchies", "test_Z0_eye", True),
             ("Another testbed, Title cards", "test_Z0_titles", True),
+            ("Hyperlinks", "test_hyperlinks", True)
             ("Trope Collection System Test!", "test_collect_tropes", True),
             ("A test!", "test2", True)
             ],
         ]
         
+#    style.hyperlink_text = style.default
+
+    if persistent.collected_tropes == None:
+        persistent.collected_tropes = {}
+
+    def clicked_func(x):
+        renpy.sound.play("SE/block.mp3")
+        if not x in persistent.collected_tropes.keys():
+            persistent.collected_tropes[x] = True
+        return None
+
+    style.default.hyperlink_functions = (
+        lambda x: style.default,
+        clicked_func,
+        lambda x: None
+        )
     ecbg = "black"
     ecfg = "fff"
 
@@ -2150,6 +2166,14 @@ label eyecatch_generic(date1="", date2="", pause_time = 3.0, r = 0, ecbg = "900"
     show eyeSolidBackground
     return
 
+label test_hyperlinks:
+    scene bg MorningSky
+    "This is test text for {a=Ordinary High School Student}hyperlinks{/a}!"
+    return
+
+label hypertest:
+    "Text!"
+    return
     
 label test_Z0_eye:
     scene bg MorningSky
@@ -2282,4 +2306,3 @@ if result == 1:
 else:
    "Choice 2 was for you!"
 return
-
