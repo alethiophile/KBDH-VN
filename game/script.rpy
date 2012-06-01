@@ -1696,9 +1696,13 @@ init -1 python:
         
 #    style.hyperlink_text = style.default
 
+    if persistent.collected_tropes == None:
+        persistent.collected_tropes = {}
+
     def clicked_func(x):
-        print "Function called with '%s'" % x
         renpy.sound.play("SE/block.mp3")
+        if not x in persistent.collected_tropes.keys():
+            persistent.collected_tropes[x] = True
         return None
 
     style.default.hyperlink_functions = (

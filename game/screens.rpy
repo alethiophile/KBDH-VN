@@ -226,6 +226,50 @@ screen Chapters:
             
         null height 5
 
+##########################################################################
+# Tropes screen
+#
+# Used to show collected tropes
+
+screen Tropes:
+    # This ensures that any other menu screen is replaced.
+    tag menu
+
+    frame:
+        style_group "chm"
+        xanchor 0.0
+        yanchor 0.0
+        xpos 0.1
+        ypos 0.1
+        #background None
+
+        has vbox
+        vbox:
+            side "l c":
+                area (0.0, 0.0, 450, 0.7)
+                
+                viewport:
+                    yadjustment adj
+                    mousewheel True
+                    
+                    vbox:
+                        for t in persistent.collected_tropes.keys():
+                            hbox:
+                                xalign 0.5
+                                text t style "button_text" size 18 text_align 0.5 color "#000"
+
+                bar adjustment adj style "vscrollbar" 
+                
+        null height 5
+
+        textbutton "Dismiss.":
+            #size_group "chb"
+            xmargin 9
+            xminimum 465
+            action ShowMenu("main_menu")
+            
+        null height 5
+
        
 ##############################################################################
 # Main Menu 
@@ -260,6 +304,7 @@ screen main_menu:
         textbutton _("Start Game") action Start()
         textbutton _("Load Game") action ShowMenu("load")
         textbutton _("Chapters") action ShowMenu("Chapters")
+        textbutton _("Tropes") action ShowMenu("Tropes")
         textbutton _("Preferences") action ShowMenu("preferences")
         textbutton _("Help") action Help()
         textbutton _("Quit") action Quit(confirm=False)
