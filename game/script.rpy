@@ -1690,8 +1690,7 @@ init -1 python:
             ("Credits (rolling)", "credits_roll", True),
             ("Another testbed, Eyecatchies", "test_Z0_eye", True),
             ("Another testbed, Title cards", "test_Z0_titles", True),
-            ("Hyperlinks", "test_hyperlinks", True)
-            ("Trope Collection System Test!", "test_collect_tropes", True),
+            ("Trope Collection System Test!", "test_hyperlinks", True),
             ("A test!", "test2", True)
             ],
         ]
@@ -2171,7 +2170,7 @@ label test_hyperlinks:
     "This is test text for {a=Ordinary High School Student}hyperlinks{/a}!"
     return
 
-label hypertest:
+label Ordinary_High_School_Student:
     "Text!"
     return
     
@@ -2278,31 +2277,3 @@ label test_Z0_titles:
     pause
     return
 
-    
-label test_collect_tropes:
-    scene bg Library with dissolve
-    "I'm testing for the tropes catching system."
-    "Let's go for a Theme Music Power-Up!"
-    
-
-$ result = renpy.imagemap("transparent.png", "transparent.png", [
-        (0, 0, 100, 100, "ThemeMusicPU"),
-        (100, 100, 200, 200, "Fake"),
-        (0, 0, 800, 600, "NTC"),
-        ], focus="imagemap")
-
-if result == "ThemeMusicPU":
-  "Congrats, trope caught!"
-else:
-  "No trope, bad bad!"
-
-$ ui.textbutton("Choice 1", clicked=ui.returns(1))
-$ ui.textbutton("Choice 2", clicked=ui.returns(2))
-#$ ui.close()
-
-$ result = ui.interact(suppress_overlay=False, suppress_window=False)
-if result == 1:
-   "You picked choice 1!"
-else:
-   "Choice 2 was for you!"
-return

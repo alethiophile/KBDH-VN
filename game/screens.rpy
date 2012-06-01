@@ -234,7 +234,9 @@ screen Chapters:
 screen Tropes:
     # This ensures that any other menu screen is replaced.
     tag menu
-
+    
+    use main_menu
+    
     frame:
         style_group "chm"
         xanchor 0.0
