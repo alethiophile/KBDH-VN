@@ -1084,7 +1084,28 @@ init:
     image Yamane Neutral = "Sprites/Yamane/YamaneLostCool.png"
     
     #Ryo Sprites
-    image Ryo Neutral = "Sprites/Ryo/Ryo.png"
+    image Ryo Ang1 = "Sprites/Ryo/RyoAngry1.png"
+    image Ryo Ang2 = "Sprites/Ryo/RyoAngry2.png"
+    image Ryo Attack1 = "Sprites/Ryo/RyoAttack1.png"
+    image Ryo Attack2 = "Sprites/Ryo/RyoAttack2.png"
+    image Ryo Grin1 = "Sprites/Ryo/RyoGrin1.png"
+    image Ryo Grin2 = "Sprites/Ryo/RyoGrin2.png"
+    image Ryo Neutral1 = "Sprites/Ryo/RyoNeutral1.png"
+    image Ryo Shifty1 = "Sprites/Ryo/RyoShifty1.png"
+    image Ryo Shifty2 = "Sprites/Ryo/RyoShifty2.png"
+    image Ryo Shifty3 = "Sprites/Ryo/RyoShifty3.png"
+    
+    image Ryo Band Ang1 = "Sprites/Ryo/RyoBandAngry1.png"
+    image Ryo Band Ang2 = "Sprites/Ryo/RyoBandAngry2.png"
+    image Ryo Band Attack1 = "Sprites/Ryo/RyoBandAttack1.png"
+    image Ryo Band Attack2 = "Sprites/Ryo/RyoBandAttack2.png"
+    image Ryo Band Grin1 = "Sprites/Ryo/RyoBandGrin1.png"
+    image Ryo Band Grin2 = "Sprites/Ryo/RyoBandGrin2.png"
+    image Ryo Band Neutral1 = "Sprites/Ryo/RyoBandNeutral1.png"
+    image Ryo Band Shifty1 = "Sprites/Ryo/RyoBandShifty1.png"
+    image Ryo Band Shifty2 = "Sprites/Ryo/RyoBandShifty2.png"
+    image Ryo Band Shifty3 = "Sprites/Ryo/RyoBandShifty3.png"
+    image Ryo Band Sneer1 = "Sprites/Ryo/RyoBandSneer1.png"
     
     #Closed space variants
     image clouds CS = im.MatrixColor("id_clouds.png",
