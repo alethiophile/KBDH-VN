@@ -1694,7 +1694,18 @@ init -1 python:
             ],
         ]
         
-    style.hyperlink_text = style.default
+#    style.hyperlink_text = style.default
+
+    def clicked_func(x):
+        print "Function called with '%s'" % x
+        renpy.sound.play("SE/block.mp3")
+        return None
+
+    style.default.hyperlink_functions = (
+        lambda x: style.default,
+        clicked_func,
+        lambda x: None
+        )
     ecbg = "black"
     ecfg = "fff"
 
@@ -2151,7 +2162,7 @@ label eyecatch_generic(date1="", date2="", pause_time = 3.0, r = 0, ecbg = "900"
 
 label test_hyperlinks:
     scene bg MorningSky
-    "This is test text for {a=hypertest}hyperlinks{/a}!"
+    "This is test text for {a=Ordinary High School Student}hyperlinks{/a}!"
     return
 
 label hypertest:
