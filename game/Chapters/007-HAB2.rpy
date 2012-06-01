@@ -36,15 +36,17 @@ label HAB2:
     nvl clear
     show Kanae Unhap2
     show Kyon Sigh2
+    show Haruhi Crossed Worry1
     "\"I also wasn't raised to look the other way when a crime was being committed,\" he said, shifting uncomfortably in his seat on the couch beneath his mother's gaze. {w}\"Kanae-chan may have ... embellished ... a little bit, but what she said is generally true; I only did what I did to protect her.\""
+    show Kyon Sigh4
     "He'd taken off the bandage on his face shortly after leaving the school; Yuki had repaired the damage already, and he didn't know if his mother was certain of the severity of the actual combat."
     nvl clear
-    show Kyon Sigh4
     "\"And you couldn't find a teacher, or someone who could deal with it? You didn't call the police?\" his mother countered. \"Yes, there is an expectation that as a good young man you'll do the {i}right{/i} thing, but you're not some television hero! You are not judge, jury, and executioner!"
-    "We live in a society of rules and laws, and those are meant to be followed — aside from which, that boy had a {i}knife{/i}! What if you'd been hurt?\""
+    "\"We live in a society of rules and laws, and those are meant to be followed — aside from which, that boy had a {i}knife{/i}! What if you'd been hurt?\""
     nvl clear
     show Kanae Unhap3
     show Kyon Ser2
+    show Haruhi Crossed Ang3
     "\"Yeah, but.... Ryuguu Ryo was expelled,\" Kyon said, shaking his head. \"I was reprimanded. I acted in self-defense, and to protect Kanae-chan. You think it's bad that I could have been hurt? What if {i}Kanae-chan{/i} was hurt?\""
     nvl clear
     show Kyon Unhap1
@@ -99,14 +101,14 @@ label HAB2:
     hide Kanae Smile 3
     with dissolve
     show Kyon Sigh4
-    "He watched the two girls head up the stairs to his room and braved the kitchen, enduring his mother's steely-eyed judgment while filling a pitcher and collecting a trio of plastic cups."
+    "He watched the two girls head up the stairs to his room and braved the kitchen, enduring his mother's steely-eyed judgment while filling a pitcher and collecting a trio of plastic cups. "
     scene bg KyonRoomRightClosed with fade
     stop music fadeout 1
     queue music "Music/Kokuhaku.mp3"
     show Haruhi Smile1 Flip at center
     show Kanae Smile1 at right
     with dissolve
-    "When he got into his room, Haruhi had already set out all of her own notes, and was digging through his schoolbag for his textbooks. Kanae was sitting on the edge of his bed, rifling through her own bag, though the younger girl broke off her work to give him a shaky smile."
+    extend "When he got into his room, Haruhi had already set out all of her own notes, and was digging through his schoolbag for his textbooks. Kanae was sitting on the edge of his bed, rifling through her own bag, though the younger girl broke off her work to give him a shaky smile."
     nvl clear
     show Haruhi Neutral3 Flip
     "\"S...so,\" Haruhi said, shifting her shoulders, \"I guess if I can't ... help you out enough, you can probably get ... Yuki-chan to fix things for you, right?\""

@@ -15,47 +15,53 @@ label HAB1:
     play music "Music/Hinichi jouhe no sasoi.mp3"
     show Kanae Neutral1 at HalfRight with dissolve
     "After the lunch chime, Kanae had decided that she would return to the club room; if she were lucky, Sempai would be there! And if she weren't lucky, well, Sempai's friends were her friends, too, so that would be fine."
-    show Ryo Neutral at TenthLeft with dissolve #Neutral
+    show Ryo Band Neutral1 at TenthLeft with dissolve
     "But she had only made it a few steps down the hallway before a taller third year boy approached her, tape across his nose and a bruise marring his face deeply around one eye. He raised a hand in greeting before glancing around, then asked, \"Are you Michikyuu Kanae-san?\""
     nvl clear
     show Kanae Worry1
     "\"Um,\" she managed, a bit unnerved by the delinquent-looking student before her. \"Yes? Are you looking for the SOS Brigade, maybe? I'm just a new member, so I don't know much yet.\""
     nvl clear
     show Kanae Unhap3
-    show Ryo Neutral #Nervous
-    "\"No, no,\" he said, glancing around nervously, {nw}"
-    show Ryo Neutral #Grin
+    show Ryo Band Shifty1
+    "\"No, no,\" he said, {nw}"
+    show Ryo Band Shifty2
+    extend "glancing around nervously, {nw}"
+    show Ryo Band Shifty3
     extend "then breaking into a smile that she really didn't trust; the kind of expression she'd seen on the rude boy who chased her across dimensions. For a panicked instance, she considered sliding away ... but she couldn't do that!" 
     "Not with Sempai here, and for the first time in hundreds of worlds, someone who could help her learn how to slide better! What if she couldn't find her way back? It was still very hard, even with the practice that Yuki helped her get...."
     nvl clear
-    show Ryo Neutral #Grin - Open Mouth
+    show Ryo Band Grin2
     "\"Hey,\" he said suddenly, \"you know ... Kyon, right?\""
-    show Ryo Neutral #Grin - Closed Mouth
+    show Ryo Band Grin1
     show Kanae Hap2
     "\"Sempai?\" she said, smiling. Was this boy some sort of friend of her sempai's, asking for help? Maybe that was it.... \"Yes! Is something the matter?\""
-    show Ryo Neutral #Nervous
+    show Ryo Band Shifty1
     show Kanae Smile1
-    "\"Eh, no, I just heard....\" He trailed off and glanced around again, though the only ones around them were other students heading to their lunches, occasionally pausing to look at her or the taller boy. \"Well, there is one thing,\" he allowed. \"Could you come with me for a bit...?\""
-    show Ryo Neutral #Nervous - Closed Mouth
+    "\"Eh, no, I just heard....\" He trailed off and glanced around again, though the only ones around them were other students heading to their lunches, occasionally pausing to look at her or the taller boy. {nw}"
+    show Ryo Band Grin2
+    extend "\"Well, there is one thing,\" he allowed. \"Could you come with me for a bit...?\""
+    show Ryo Band Grin1
     show Kanae Sad1
     nvl clear
     "\"I.... I think I'd better go see Sempai first,\" she decided, shaking her head."
     show Kanae Sad4
-    show Ryo Neutral #Angry
-    "The boy's face twisted in annoyance before he shook his head and declared abruptly, \"I need you to come with me; your 'sempai' is causing a lot of trouble to us!\""
+    show Ryo Band Ang1
+    "The boy's face twisted in annoyance before he shook his head and declared abruptly, {nw}"
+    show Ryo Band Ang2
+    extend "\"I need you to come with me; your 'sempai' is causing a lot of trouble to us!\""
     nvl clear
     show Kanae Sad4
-    show Ryo Neutral #Angry - Closed Mouth
+    show Ryo Band Ang1
     "At this point, all of the surrounding students had stopped moving, turning attention to the pair. "
     show Kanae Sad4 at TenthRight with move
     extend "Kanae backed up a few steps anxiously, {nw}"
-    show Ryo Neutral at HalfLeft with move #Angry - Closed Mouth
+    show Ryo Band Ang1 at HalfLeft with move
     extend "and when the upperclassman moved towards her, {nw}"
     hide Kanae with moveoutright
     extend "she sprinted away as quickly as she could, {nw}"
-    hide Ryo Neutral with moveoutright
+    hide Ryo with moveoutright
     scene bg ClubHallLeft with wiperight
-    show Ryo Neutral at TenthLeft
+    show Ryo Band Ang1 at TenthLeft
     show Kanae Wince1 at HalfLeft
     with moveinleft
     show Kanae Wince2
@@ -72,9 +78,9 @@ label HAB1:
     nvl clear
     stop music fadeout 2
     show Kanae Wince1
-    show Ryo Neutral #Angry - Angrier Version
+    show Ryo Band Ang2
     "\"Shut up,\" he snapped, glancing around and dragging her away from the spilled lunch, \"come with me before—\""
-    show Ryo Neutral #Angry - Closed Mouth
+    show Ryo Band Ang1
     play music "Music/Hostiles.mp3"
     "\"You,\" a voice spat, using the rudest, most informal form of the word. "
     show Kyon Unhap4 at right with moveinright
@@ -92,11 +98,11 @@ label HAB1:
         xalign 0.4 yalign 1.0
         linear 0.1 xalign 0.25
     "The boy holding her jerked her roughly back when she tried to break free. "
-    show Ryo Neutral #Angry - Angrier Version
+    show Ryo Band Ang2
     show Kanae Wince1
     extend "\"Oh, yeah?\" he asked. \"I don't think so, not after yesterday! You're getting in way over your head, and you're about to learn a thing or two about screwing with the wrong people!\""
     nvl clear
-    show Ryo Neutral #Angry - Closed Mouth
+    show Ryo Band Ang1
     show Kyon Ang4
     "\"Really?\" her sempai asked, stopping a handful of steps away from the other boy, almost within distance to reach out and grab her. He shifted his feet, rising slightly to balance on the balls of either, while constantly shifting his weight back and forth a minute distance." 
     "\"I think you're the one who's going to be in more trouble; causing a scene like this? With so many witnesses? The question in my mind is what you might hope to accomplish.\"" 
@@ -107,18 +113,18 @@ label HAB1:
     show Kyon Unhap4
     "All of the boys in the crowd shifted their gazes to their feet, while the girls began a low murmur."
     nvl clear
-    show Ryo Neutral #Angry - Sneer
+    show Ryo Band Sneer1
     "\"Where's all the fight you had yesterday?\" the boy sneered. \"You swore up and down that if I dared to lay a finger on any of your 'subordinates' that you'd crush me — any time, any place. {nw}"
-    show Ryo Neutral #Angry - Angrier Version
+    show Ryo Band Ang2
     extend "Well, I don't like being played like a chump, no matter how badass you think you {i}are{/i}. You don't get the jump on me, this time.\""
     nvl clear
-    show Ryo Neutral #Angry - Closed Mouth
+    show Ryo Band Ang1
     show Kyon Ang3
     "\"If I said it, it must be true,\" her sempai allowed, his gaze constantly flicking about the other boy, occasionally meeting hers. {nw}"
     show Kyon Ang4
     extend "\"But if you're any kind of man, you'll let her go and we can settle this properly.\""
     nvl clear
-    show Ryo Neutral #Angry - Closed Mouth - Angrier Version
+    show Ryo Band Ang1 
     show Kyon Unhap5 behind Kanae
     play sound "SE/lowswoosh.mp3"
     show Kanae Wince2:
@@ -133,7 +139,7 @@ label HAB1:
         xalign 0.85 yalign 1.0
     with fast_move
     extend "{w}Her sempai rolled back on his feet, both arms going about her as he flung himself backwards, {nw}"
-    show Ryo Neutral #Angry - Attack Version - Flipped Right
+    show Ryo Band Attack1 Flip
     show Kyon Unhap6 Flip:
         xalign 0.85 yalign 1.0
     show Kanae Sad2 at right
@@ -163,9 +169,9 @@ label HAB1:
     show Kyon Unhap4
     "The other boy growled, then surged forward, swinging a powerful punch towards her sempai. "
     play sound "SE/lowswoosh.mp3"
-    show Ryo Neutral at center with fast_move #Angry - Attack Version - Flipped Right
+    show Ryo Band Attack2 Flip at center with fast_move
     show Kyon Unhap5 Flip at HalfLeft with fast_move
-    show Ryo Neutral at HalfRight with move: #Angry - Attack Version - Flipped Right
+    show Ryo Band Attack1 at HalfRight with move:
         xanchor 0 yanchor 0
         xpos 0.5 ypos 1.0
         linear 0.4 rotate 90 
@@ -183,26 +189,26 @@ label HAB1:
     nvl clear
     "So far, only her pride and her lunch had been lost."
     nvl clear
-    show Ryo Neutral:
+    show Ryo Band Ang2:
         xalign 0.75 yalign 15.0
-    show Ryo Neutral at HalfRight with move #Angry - Angrier Version
+    show Ryo Band Ang2 at HalfRight with move
     "Coughing, the other boy climbed to his feet, eyes shadowed with rage, his breathing ragged and furious. \"You utter bastard!\" he spat at her sempai. \"I don't know where you get this sudden attitude, but you are in {i}way{/i} over your head! If I don't stop you here, things are only going to get worse for you!\""
     nvl clear
-    show Ryo Neutral #Angry - Closed Mouth
+    show Ryo Band Ang1
     show Kyon Ser3 Flip
     "\"In that case,\" her sempai suggested in oddly reasonable tones, \"why not just give up? If you want me to suffer, wouldn't it be easier to ignore me and let your bosses, presumably people more competent than you, deal with the situation?\""
     show Kyon Ser1 Flip
-    show Ryo Neutral with move: #Unhappy
+    show Ryo Band Neutral1 with move:
         xalign 0.75 yalign 4.5
     "The boy growled, then sank to his knees. \"I'm powerless,\" he moaned, wrapping his arms around himself and hunching in."
     nvl clear
-    show Ryo Neutral #Unhappy - Closed Mouth
+    show Ryo Band Shifty2
     "Shifting his shoulders, her sempai gave a terse nod and clenched one hand into a fist tightly, the crackling, snapping noises from his tendons clearly audible in the hallway. {nw}"
     show Kyon Ser2 Flip
     extend "\"Good,\" he judged. \"Now see that this never happens again.\" "
     show Kyon Ser1 Flip:
         xalign -0.25 yalign 1.0
-    show Ryo Neutral: #Unhappy - Closed Mouth
+    show Ryo Band Shifty2:
         xalign 0.25 yalign 4.5
     show Kanae Unhap3 at right
     with dissolve
@@ -214,14 +220,14 @@ label HAB1:
     show Kyon Ser1 Flip
     show Kanae Sup2
     "\"Sempai!\" she shrieked, a moment too late, {nw}"
-    show Ryo Neutral at HalfLeft with fast_move #Angry - With Knife - Flipped Right
+    show Ryo Band Attack1 Flip at HalfLeft with fast_move
     extend "as the other boy produced a knife from his coat and charged abruptly at her sempai."
     nvl clear
     play sound "SE/lowswoosh.mp3"
     play sound2 "SE/clink.mp3"
     show Cut with cutright
     hide Cut with fastdissolve
-    show Ryo Neutral: #Angry - With Knife - Flipped Right
+    show Ryo Band Attack2 Flip:
         xalign 0.6 yalign 1.0
     show Kyon Unhap5 Flip:
         xalign 0.75 yalign 5.0
@@ -232,14 +238,14 @@ label HAB1:
         xalign 0.95 yalign 5.0
     show Kanae Unhap1
     "With speed she didn't think was possible, her sempai snapped his head back and threw himself to the floor, a potentially lethal stab to the side of the head reduced to a short, shallow scratch on one cheek. "
-    show Ryo Neutral: #Angry - With Knife - Flipped Right
+    show Ryo Band Attack1 Flip:
         xalign 0.7 yalign 1.0
     with move
     extend "Rolling with the momentum of his evasion, her sempai quickly righted himself and lunged, {nw}"
     show Kyon Unhap5 at HalfLeft
     show Kcut Fresh1 behind Ryo at HalfLeft
     with fast_move
-    show Ryo Neutral: #Pain
+    show Ryo Band Sneer1:
         xalign 0.7 yalign 1.0
         linear 0.1 xalign 0.5
     extend "grabbing the other boy's wrist and yanking him violently backwards, just as he reached for Kanae again."
@@ -248,18 +254,18 @@ label HAB1:
     show Kyon Unhap5 Flip:
         xalign 0.25 yalign 1.0
         linear 0.1 xalign 0.05
-    show Kcut Fresh1 Flip:
+    show Kcut Fresh2 Flip:
         xalign 0.25 yalign 1.0
         linear 0.1 xalign 0.05    
     play sound "SE/impact.mp3"
-    show Ryo Neutral: #Pain
+    show Ryo Band Sneer1:
     "This time, her sempai was more brutal, adding the boy's sudden momentum to a fierce kidney jab, {nw}"
     play sound "SE/lowswoosh.mp3"
     show Kyon Unhap5 Flip:
         xalign 0.1 yalign 2.5
     show Kcut Running1 Flip:
         xalign 0.1 yalign 2.5    
-    show Ryo Neutral at HalfRight: #Pain
+    show Ryo Band Sneer1 at HalfRight:
         xanchor 0 yanchor 0
         xpos 0.5 ypos 1.0
         linear 0.4 rotate 90
@@ -358,7 +364,7 @@ label HAB1:
     scene bg ClubHallLeft with fade
     queue music "Music/MikurunoKokoro.mp3"
     show Kyon Worry1 at right
-    show Kcut Running3 at right
+    show Kcut Clotted at right
     show Mikuru Neutral2 at left
     with dissolve
     "His cheek still stinging, Kyon resolved to have it healed later — though by Tsuruya's unintentional hint, he knew he had the scratch before he went to help her. As much of a pain as it was (quite literally), it did establish a reasonable baseline for when he traveled back, which meant that he didn't do all of his time traveling in one big block at some future date. Though, that might build up into a daunting task...."
@@ -387,7 +393,7 @@ label HAB1:
     show Mikuru Think Sad3 at left
     show MBlush Think at left
     show Kyon Neutral1 at right
-    show Kcut Running3 at right
+    show Kcut Clotted at right
     with dissolve
     "\"We made it?\" he asked, as Mikuru hesitantly lowered her hands, her face still red."
     show Kyon Neutral4
@@ -417,14 +423,16 @@ label HAB1:
     show Tsuruya Sup1
     "She blinked suddenly, pausing to stare his cheek, then frowned sharply. \"Ooh, you better come with me, first of all,\" she decided, seizing his wrist and leading him back into the school. {nw}" 
     scene bg LockersDayLeft with fade
-    show Tsuruya Hap5 at left with dissolve
-    "He followed in bemusement until they reached her locker and she produced a first aid kit, cleaning his wound and then applying a bandage."
+    show Tsuruya Smile2 at left with dissolve
+    extend "He followed in bemusement until they reached her locker and she produced a first aid kit, cleaning his wound and then applying a bandage."
     nvl clear
-    show Tsuruya Smile3
-    show Kyon Smile3 at right
+    show Tsuruya Hap1 with None
+    show Kyon Smile4 at right
     show Kcut Bandage at right
     with dissolve
     "\"There,\" she said, once her treatment was done, grinning again. There was a twinkle in her eyes as she added, \"Don't get a scar, unless you gets another one to make it cross-shaped. That makes you way more rugged and bish!\""
+    show Tsuruya Smile3
+    show Kyon Smile6
     "\"Yeah, that's not the part I'm worried about,\" he said, smirking, though the expression vanished the moment his cheek pulled at the cut. {nw}"
     show Kyon Neutral2
     extend "\"Anyway, Haruhi won't mind me helping you out; I've been dismissed from club activities today.\""
@@ -453,7 +461,7 @@ label HAB1:
     "\"Now, I don't know Ryuguu-san, because we don't share a class together,\" Tsuruya warned in a whisper, \"but how many people are there hanging out around here?\""
     nvl clear
     hide Tsuruya Ser1 with dissolve
-    show Ryo Neutral at center with dissolve
+    show Ryo Neutral1 at center with dissolve
     "It took a moment, but Kyon was able to pick out the boy in question, somewhat unfamiliar without tape across his nose and one eye blackened. \"That's him,\" Kyon told her with a nod. \"I've seen him before.\" Tsuruya leapt into a thicket of bushes and he followed, almost landing on her, murmuring a quick apology beneath his breath as they crept forward to watch Ryuguu and his allies."
     nvl clear
     show Yamane Neutral at right with dissolve
@@ -481,24 +489,29 @@ label HAB1:
     show Tsuruya Susp1
     "\"Hmm, so he's probably a foreman or one of the workers,\" Tsuruya mused, eyes sharpening. \"Okies, they're gone; let's get Ryuguu-san before anyone else shows up or he leaves.\""
     show Tsuruya Smile1 at center with move
-    show Ryo Neutral at left with dissolve
+    show Ryo Neutral1 at left with dissolve
     nvl clear
-    "Kyon nodded at her, and the pair stood up, walking out of the bush and brushing leaves off. Ryuguu saw them emerge and jolted a bit, then crossed his arms over his chest and scowled. \"What?\" he snapped, the moment they drew within hearing range."
+    "Kyon nodded at her, and the pair stood up, walking out of the bush and brushing leaves off. Ryuguu saw them emerge and jolted a bit, then crossed his arms over his chest and scowled. {nw}"
+    show Ryo Ang1
+    extend "\"What?\" he snapped, the moment they drew within hearing range."
     nvl clear
     show Kyon Ser1
     "Uncertain of his role, Kyon just took up the loose, relaxed stance he had used when fighting Ryuguu last time, and said nothing."
     show Tsuruya Hap4
     "\"How's business?\" Tsuruya asked, suddenly politely professional."
+    show Ryo Neutral1
     show Tsuruya Smile2
     "Ryuguu frowned, then said, \"Shouldn't be any of yours.... But.... Well, I heard you were a bit ... strange, Tsuruya-san. So, you want to buy?\""
     nvl clear
     show Tsuruya Hap5
     "\"Maybe,\" Tsuruya allowed. \"Whatcha got?\""
+    show Ryo Shifty2
     show Tsuruya Smile1
     "\"If you don't know, I'm not selling.\""
     show Tsuruya Grin6
     "\"Oh, I knows what you're selling,\" she said evenly. \"Hum.... Anything from this year's students?\""
     nvl clear
+    show Ryo Neutral1
     show Tsuruya Grin4
     "\"A bit,\" Ryuguu allowed, dropping his hands to his sides. \"Now, look, I'll sell to you, but only because my normal distributor is having problems. Understand that this is top-shelf stuff, meant to be shipped to the highest paying customers and then resold. So that's the kind of price I'm looking for. No copy protection, no censorship — this is the real deal.\""
     nvl clear
@@ -506,33 +519,43 @@ label HAB1:
     "Kyon blinked, wondering what the hell was going on, but deciding he already didn't like it. He tried to keep his expression neutral."
     show Tsuruya Grin5
     "\"So, what's the price?\" Tsuruya asked, grinning. \"I didn't bring a checkbook with me, nyoro~!\""
+    show Ryo Grin1
     show Tsuruya Grin2
     nvl clear
     "\"Right now I've got three SD cards, sorted by year,\" Ryuguu said, shifting his speech pattern from 'thug' to 'semi-competent salesman'. He fanned out the three cards between his fingertips, turning them back and forth to show Tsuruya both sides of the small digital chips. \"First year, twenty thousand yen, second year, fifteen thousand, third year, fifteen thousand.\""
     show Tsuruya Hap4
     "\"And these are sources?\" Tsuruya pressed. \"Originals, so there's no copies?\""
     nvl clear
+    show Ryo Grin2
     show Tsuruya Smile1
     "\"What, you want them exclusively?\" Ryuguu asked, quirking one eyebrow up in a smirk."
+    show Ryo Grin1
     show Tsuruya Grin6
     "Tsuruya nodded quickly. \"Think about it,\" she said. \"If I'm paying to be a reseller, what's the point if the next guys comes along and buys them then undercuts me? Yous got to be a sharp businessman to make it here, don'tcha?\""
+    show Ryo Shifty2
     show Tsuruya Grin3
     nvl clear
-    "\"Double the price,\" he said, shrugging. \"Then, sure, I'll give you everything and exclusive distribution. Only caveat is that I'm absolutely keeping personal copies.\""
+    "\"Double the price,\" he said, shrugging. {nw}"
+    show Ryo Shifty3
+    extend "\"Then, sure, I'll give you everything and exclusive distribution. Only caveat is that I'm absolutely keeping personal copies.\""
     show Tsuruya Grin5
     "\"Hmm,\" Tsuruya replied, touching one fingertip to her lips and gazing upward, musing. \"Well, one hundred thousand yens is rather a lot, don'tcha think? Especially since I'm trying to see if I'm in the third years?\" She turned to Kyon and asked, \"Should we apply our discount?\""
+    show Ryo Shifty2
     show Kyon Ser3
     show Tsuruya Grin2
     nvl clear
     "\"Yeah,\" Kyon agreed, nodding. \"I think we can negotiate a better price.\""
+    show Ryo Neutral1
     show Kyon Ser1
     "\"Oh, don't even think about it,\" Ryuguu retorted, waving a hand dismissively. \"I'm the one holding the cards here, so to speak. There's no way that—\""
     show Tsuruya Grin4
     stop music fadeout 1
     queue music "Music/KamadoumaEnd.mp3"
     nvl clear
-    "Tsuruya's hand darted out, lightning-fast, and she snatched two of the cards from Ryuguu's grasp before the boy could react. Immediately his face went red, and his scowl turned murderous. "
-    show Ryo Neutral at TenthLeft with fast_move
+    "Tsuruya's hand darted out, lightning-fast, and she snatched two of the cards from Ryuguu's grasp before the boy could react. {nw}"
+    show Ryo Attack1 Flip
+    extend "Immediately his face went red, and his scowl turned murderous. "
+    show Ryo Attack1 Flip at TenthLeft with fast_move
     extend "He launched a punch towards the tall girl in retaliation, growling from low in his throat."
     nvl clear
     show Tsuruya Sup1:
@@ -547,7 +570,7 @@ label HAB1:
     play sound "SE/impact.mp3"
     show Kyon Unhap5 at HalfLeft
     show Kcut Bandage at HalfLeft
-    show Ryo Neutral:
+    show Ryo Ang1:
         xalign -0.2 yalign 1.0
     with rapid_move
     extend "Giving an unbalancing wrench to the captured appendage, Kyon pulled Ryuguu off balance and spun him around before shoving the boy violently forward, his arm pinned behind his back at an awkward angle. The third year boy's nose smashed into the equipment shed behind him, making a loud crunch and sending a spray of blood out."
@@ -555,7 +578,7 @@ label HAB1:
     show Tsuruya Ang1
     "\"Gwah!\" Ryuguu choked out, his free hand scrabbling at the wall of the shed. \"What the fu—\""
     play sound "SE/impact.mp3"
-    show Ryo Neutral:
+    show Ryo Ang1:
         xalign 0.0 yalign 1.0
         linear 0.1 xalign -0.2
     show Kyon Ang3
@@ -565,9 +588,10 @@ label HAB1:
     "\"You are not the biggest business in this school, or this town. There are certain people in this school you {i}do not{/i} screw with. If you ever even {i}think{/i} of laying a finger on any of my subordinates, or interfering with any of them in any way, believe me, this is going to be the {i}least{/i} of your worries.\nAny time, any place — I will not allow it.\" "
     show Kyon Unhap5 at center
     show Kcut Bandage at center
-    show Ryo Neutral at left
+    show Ryo Attack1 at left
     with move
     extend "He pulled the boy back, spinning him around, and when Ryuguu belatedly tried to punch with his free hand, {nw}"
+    show Ryo Attack2 Flip
     play sound "SE/lowswoosh.mp3"
     show Kyon Unhap5:
         xalign 0.5 yalign 1.0
@@ -579,11 +603,11 @@ label HAB1:
     extend "he tilted his head to one side, narrowly dodging the blow {nw}"
     play sound "SE/impact.mp3"
     pause 0.15
-    show Ryo Neutral with rapid_move:
+    show Ryo Attack1 with rapid_move:
         xalign -0.2 yalign 1.0
     play sound "SE/impact.mp3"
     pause 0.2
-    show Ryo Neutral with slow_move:
+    show Ryo Ang1 with slow_move:
         xalign -0.2 yalign 20.0
     play sound "SE/Thump1.wav"
     hide Ryo
