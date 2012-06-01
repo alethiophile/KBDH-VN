@@ -1363,6 +1363,7 @@ init:
     image title 008 = Text("{space=480}{b}{size=+1}Thursday, April 21, 2011{/size}{/b}\n\n\n\n\"File K:3419.8.19/2011.4.21\"\n\n\"...so, I think, maybe, sometimes it might be okay to be a little selfish, as long as you don't jeopardize anything. That's the really hard part, though ... how can you ever tell? I suppose that means erring on the side of caution ... no matter how it hurts. But sometimes ... just a little bit ... it's nice to be selfish.\"\n\n\"[[CLASSIFIED]\" -- Paraea Mons T.E.S.A. Dataplume", font="DejaVuSerif-Italic.ttf", size=18, line_leading=3, justify=True, xmaximum=750)
     
 init python:
+    import os, hashlib
     config.layers.insert(1, 'upper')
     
     #basechar = Character(None, kind=nvl)
@@ -1690,6 +1691,7 @@ init -1 python:
             ("Credits (rolling)", "credits_roll", True),
             ("Another testbed, Eyecatchies", "test_Z0_eye", True),
             ("Another testbed, Title cards", "test_Z0_titles", True),
+            ("Trope Collection System Test!", "test_collect_tropes", True),
             ("A test!", "test2", True)
             ],
         ]
@@ -2250,5 +2252,34 @@ label test_Z0_titles:
     pause
     show title 008 at card_pos with slowfadein
     pause
+    return
+
     
+label test_collect_tropes:
+    scene bg Library with dissolve
+    "I'm testing for the tropes catching system."
+    "Let's go for a Theme Music Power-Up!"
     
+
+$ result = renpy.imagemap("transparent.png", "transparent.png", [
+        (0, 0, 100, 100, "ThemeMusicPU"),
+        (100, 100, 200, 200, "Fake"),
+        (0, 0, 800, 600, "NTC"),
+        ], focus="imagemap")
+
+if result == "ThemeMusicPU":
+  "Congrats, trope caught!"
+else:
+  "No trope, bad bad!"
+
+$ ui.textbutton("Choice 1", clicked=ui.returns(1))
+$ ui.textbutton("Choice 2", clicked=ui.returns(2))
+#$ ui.close()
+
+$ result = ui.interact(suppress_overlay=False, suppress_window=False)
+if result == 1:
+   "You picked choice 1!"
+else:
+   "Choice 2 was for you!"
+return
+
