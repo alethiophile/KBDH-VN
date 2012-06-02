@@ -591,7 +591,7 @@ label HAB1:
     show Kcut Bandage at center
     show Ryo Attack1 at left
     with move
-     "He pulled the boy back, spinning him around, and when Ryuguu belatedly tried to punch with his free hand, {nw}"
+    extend "He pulled the boy back, spinning him around, and when Ryuguu belatedly tried to punch with his free hand, {nw}"
     show Ryo Attack2 Flip
     play sound "SE/lowswoosh.mp3"
     show Kyon Unhap5:

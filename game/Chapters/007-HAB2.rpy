@@ -285,11 +285,14 @@ label HAB2:
     nvl clear
     hide Kanae with dissolve
     show Haruhi Pout1 at center with dissolve
-    "Haruhi hesitated until the smaller girl was out of sight, then turned to face Kyon. \"Um,\" she began, uncertainly, before faltering.{w}He could sense that she wanted to say something, but was unable to force it out. \"W...well, come to school early tomorrow.... If your mother is upset, I'll bring you something so you can eat properly, and we'll work on all the flashcards you had trouble with, okay?\""
+    "Haruhi hesitated until the smaller girl was out of sight, then turned to face Kyon. \"Um,\" she began, uncertainly, before faltering. He could sense that she wanted to say something, but was unable to force it out. "
+    show Haruhi Pout2
+    extend "\"W...well, come to school early tomorrow.... If your mother is upset, I'll bring you something so you can eat properly, and we'll work on all the flashcards you had trouble with, okay?\""
     nvl clear
     hide Haruhi with dissolve
     "\"Absolutely,\" he agreed, nodding. He watched her walk away, unsettled when his cell-phone buzzed. He pulled it from his pocket, surprised to see he had a voice-mail ... but no missed calls. Confused, he pressed the button to retrieve it as he strolled back home, his steps freezing when a very familiar voice spoke:"
     "\"Call Mori-san, tell her to meet you {i}now{/i}, then turn off the phone. Also, 'hi' from tomorrow.\""
+    nvl clear
     "\"{i}Damn{/i} it, future-me,\" he growled, ignoring the stares the nearest passers-by gave him and searching quickly for Koizumi's number. The esper picked up after two rings, attentive as always."
     "\"Hello again, Kyon-kun,\" he answered cheerfully. \"What else can I do for you today?\""
     "\"Get Mori-san to call me,\" he snapped. \"It's urgent.\""
@@ -297,6 +300,7 @@ label HAB2:
     "Without waiting for a response, he hung up, staring at the phone balefully. Less than a minute later it rang, an unfamiliar number displaying on the screen. He answered without hesitation, \"Mori-san?\""
     "\"Sir?\" the woman asked him cautiously."
     "Before she could continue, he said, \"I need you to meet with me right now — I'm at Kitaguchi station.\""
+    nvl clear
     "\"Understood, Sir,\" she replied, disconnecting. Guessing that his future self needed to use the phone, he grumbled and turned it off."
     "Done for the moment, he went to a bench before the station and waited."
     nvl clear
@@ -306,15 +310,19 @@ label HAB2:
     show Mori Neutral3 at right with dissolve
     "\"Thank you for responding to the situation so quickly,\" she said, breaking the silence as Arakawa accelerated the vehicle into the night."
     nvl clear
+    show Mori Neutral1
     show Kyon Neutral2 Flip at left with dissolve
     "\"Can I get a summary of what you know so far?\" he asked, staring fixedly out the window, away from Mori. Why would his future self continually shove him into situations blind like this? Well, it wasn't that far off from his total lack of guidance to himself the week that Mikuru had been kidnapped ... though, with his new skills and connections, he should be able to prevent {i}that{/i} from happening again."
     nvl clear
+    show Kyon Neutral3 Flip
     show Mori Neutral2
     "He caught the motion of her nod in the reflection off the window. \"Currently, as you have anticipated, today was much better than this morning. A few of our espers noted a sensation of increased tension earlier today, and it hasn't died down completely, but no closed space has actually formed.\""
     nvl clear
-    show Kyon Smile4 Flip
+    show Mori Neutral1
+    show Kyon Smile6 Flip
     "He nodded at that. \"Glad that's working,\" he allowed. \"But then, I've always thought Haruhi had the capability to be more reasonable than she usually chose to be.\""
     show Mori Neutral3
+    show Kyon Smile4 Flip
     nvl clear
     "\"You are absolutely the expert in that regard, Sir,\" Mori replied. \"We've got assigned watchers following her as per standard; she shouldn't be in any danger. The same for Michikyuu-san, now.  {nw}"
     show Mori Ser2
@@ -324,47 +332,61 @@ label HAB2:
     nvl clear
     "\"I was a bit hesitant to infringe on that, but the Tamaru brothers are watching her, as you insisted,\" she continued. \"You're positive that it was safe to pull them from surveillance on Asahina-san?\""
     nvl clear
+    show Mori Ser1
     show Kyon Unhap3 Flip
     "\"I've got someone on that,\" he answered, making a mental note to kick his future self. Obviously, his future self was getting to enjoy time with Mikuru, while he was pitching himself headlong into another act of delinquency. \"What's Tsuruya-kun up to right now?\""
     nvl clear
+    show Kyon Unhap5 Flip
     show Mori Neutral4
     "\"Ah ... well ... it doesn't look good,\" Mori said glumly. \"This could seriously damage relations between ourselves and her family if it comes out, so ... moving forward with our strict policy of letting you handle your own problems, we'd like to remain as uninvolved as possible.\""
     nvl clear
-    show Kyon Sup2 Flip 
+    show Kyon Sup2 Flip
     "\"What doesn't look good?\" Kyon asked, realizing they were heading straight into the heart of Nishinomiya's shadier low-rent and high-crime district."
     nvl clear
+    show Kyon Worry3 Flip
     show Mori Neutral3 
     "\"She's visiting someone we don't have files on. Probably a Yakuza or just some shady character ... most likely not anyone of interest to our Organization or the others. If you don't mind me saying so, while it seems a bit suspicious, there's no real indicator that this is something she's unfamiliar with. I don't know her personal habits, but it's entirely possible she's simply collecting something of personal interest to herself.\""
     nvl clear
-    show Kyon Ser2 Flip 
+    show Mori Neutral1
+    show Kyon Ser2 Flip
     "\"While that's possible, right now Tsuruya-kun is a person of interest to the brigade,\" Kyon countered, tearing his eyes from the window to give Mori his most stern look. She met it without flinching, only pursing her lips slightly. \"Specifically, she and I are involved in an investigation concerning something that ... unless I miss my mark ... even the entity itself is unaware of. I wouldn't expect Asahina-san to know, but I'm surprised you seem unaware.\""
     show Mori Ser2
+    show Kyon Ser1 Flip
     nvl clear
     "\"What?\" Mori asked, taken aback. \"What are you insinuating? Is this about that scuffle you got involved with at school this morning?\""
-    show Kyon Neutral4 Flip 
+    show Mori Ser1
+    show Kyon Neutral1 Flip 
     "\"And yesterday,\" he agreed."
+    show Kyon Neutral4 Flip
     show Mori Sigh1
     "\"No, that's not possible,\" she objected, shaking her head. \"We watched you all day; you didn't leave the house after we dropped you off.\""
     nvl clear
     show Kyon Sigh2 Flip
     "\"Use a bit of imagination.\""
-    show Mori Ser2 
+    show Kyon Sigh4 Flip
+    show Mori Ser2
     "Mori frowned, squinting at him. \"You're working for the time travelers?\" she asked, her voice turning slightly bitter."
-    show Kyon Ser2 Flip 
+    show Kyon Ser2 Flip
+    show Mori Ser1
     "\"They work for {i}me{/i},\" he clarified."
-    show Mori Ser3 
+    show Kyon Ser1 Flip
+    show Mori Ser3
     nvl clear
     "She stared at him doubtfully, then gave a slow nod. \"Okay,\" she allowed. \"That may account for some things. Then, what's this investigation you're undertaking? If it's something even the entity is unaware of—\""
+    show Mori Ser1
     show Kyon Sigh1 Flip
     "\"Classified,\" he told her with a shake of his head. \"Sorry. You'll get disclosure when the investigation is complete. Koizumi can give you a full report.\""
     nvl clear
-    show Mori Neutral1 
+    show Kyon Sigh3 Flip
+    show Mori Neutral2
     "\"Alright,\" she allowed again, frowning as Arakawa stopped the cab. \"From here,\" she said, pointing, \"one block that way, take the alley to the right. On the left side of the alley there's a steel door with a viewing portal — the kind with a steel plate across it. The secret knock goes like this.\" She demonstrated, tapping one fingertip against the back of Arakawa's headrest. \"I'm afraid that's all the information I can offer.\""
-    hide Kyon Sigh1 Flip with dissolve
-    "\"Good enough,\" he decided, climbing out of the car. \"I may end up leaving with Tsuruya-kun; if you're trying to keep her from seeing you, I won't really be able to notify you.\""
     nvl clear
+    show Mori Neutral1
+    hide Kyon with dissolve
+    "\"Good enough,\" he decided, climbing out of the car. \"I may end up leaving with Tsuruya-kun; if you're trying to keep her from seeing you, I won't really be able to notify you.\""
     show Mori Hap1 
     "Mori smiled, a tiny hint of that menacing smile she sometimes offered returning with a sharp gleam. \"I've got my eyes on you,\" she assured him."
+    nvl clear
     scene bg Alley1Evening with fade
     stop music fadeout 1
     queue music "Music/Suspicion.ogg"
@@ -377,7 +399,10 @@ label HAB2:
     nvl clear
     scene bg WatanabeBase with fade
     show Kyon Neutral3 Flip at left with dissolve
-    "Kyon nodded and stepped in before the short brute laboriously shoved the door shut behind him. The room was square and dimly lit, a single other doorway visible on the opposite side of the room. \"It's okay if I...?\" Kyon began, gesturing at the doorway."
+    "Kyon nodded and stepped in before the short brute laboriously shoved the door shut behind him. The room was square and dimly lit, a single other doorway visible on the opposite side of the room. {nw}"
+    show Kyon Neutral2 Flip
+    extend "\"It's okay if I...?\" Kyon began, gesturing at the doorway."
+    show Kyon Neutral3 Flip
     "\"Go,\" Brute replied with another sour grunt. \"Watanabe-san is with some other customers, so watch your mouth.\""
     nvl clear
     "Nodding absently, Kyon stepped through the doorway, entering a long, rectangular room. The outer perimeter was completely lined with boxes of varying sizes, all the way up to the ceiling. At the far end of the rectangular space was a makeshift desk made out of sturdier boxes and a length of board. Computer equipment had been spread haphazardly around, most notably a row of four monitors, which lit the back wall with a flickering series of glowing lights, mostly a fleshy pink tone and soft blue."
