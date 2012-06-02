@@ -480,7 +480,8 @@ label HAB1:
     show Kyon Ser1 at right
     show Kcut Bandage at right
     with dissolve
-    "\"I'm not that goods yet,\" Tsuruya said apologetically, giggling very quietly. \"But I got that Ryuguu-san is mad at the other twos. Somethings went wrong, probably what we did on Sunday, so Ryuguu-san's having trouble, and the other two.... Hmm. The one with glasses said something about not caring about Ryuguu-san's problems, and that he still wanted money. I guess Ryuguu-san must owe him something.... The first year student was just following along, doing what he was tolds; he doesn't seem to be as high up on the food chains.\""
+    "\"I'm not that goods yet,\" Tsuruya said apologetically, giggling very quietly. \"But I got that Ryuguu-san is mad at the other twos. Somethings went wrong, probably what we did on Sunday, so Ryuguu-san's having trouble, and the other two.... "
+    "Hmm. The one with glasses said something about not caring about Ryuguu-san's problems, and that he still wanted money. I guess Ryuguu-san must owe him something.... The first year student was just following along, doing what he was tolds; he doesn't seem to be as high up on the food chains.\""
     nvl clear
     show Tsuruya Neutral2
     show Kyon Ser3
@@ -529,7 +530,7 @@ label HAB1:
     show Ryo Grin2
     show Tsuruya Smile1
     "\"What, you want them exclusively?\" Ryuguu asked, quirking one eyebrow up in a smirk."
-    show Ryo Grin1
+    show Ryo Shifty1
     show Tsuruya Grin6
     "Tsuruya nodded quickly. \"Think about it,\" she said. \"If I'm paying to be a reseller, what's the point if the next guys comes along and buys them then undercuts me? Yous got to be a sharp businessman to make it here, don'tcha?\""
     show Ryo Shifty2
@@ -590,7 +591,7 @@ label HAB1:
     show Kcut Bandage at center
     show Ryo Attack1 at left
     with move
-    extend "He pulled the boy back, spinning him around, and when Ryuguu belatedly tried to punch with his free hand, {nw}"
+     "He pulled the boy back, spinning him around, and when Ryuguu belatedly tried to punch with his free hand, {nw}"
     show Ryo Attack2 Flip
     play sound "SE/lowswoosh.mp3"
     show Kyon Unhap5:
@@ -892,7 +893,8 @@ label HAB1:
     "\"Let's start with how much trouble I'm in for protecting Kanae-chan from that pervert,\" Kyon suggested."
     nvl clear
     show Kyon Neutral3
-    "\"Technically none,\" the president admitted. \"It's a behavior issue, but all accounts indicate you in self defense, or in defense of a classmate. Ryuguu-san is already being expelled just on the grounds of bringing a weapon into the school and assaulting fellow students ...{w} though he was taken away in an ambulance. In any event, because of that, orders were handed down from the principal to discuss your behavior.... I have the authority to demand a meeting with an advisor for you — several if I believe that your behavior is likely to become problematic. Okabe-sensei is your advisor, right?\""
+    "\"Technically none,\" the president admitted. \"It's a behavior issue, but all accounts indicate you in self defense, or in defense of a classmate. Ryuguu-san is already being expelled just on the grounds of bringing a weapon into the school and assaulting fellow students ..."
+    "though he was taken away in an ambulance. In any event, because of that, orders were handed down from the principal to discuss your behavior.... I have the authority to demand a meeting with an advisor for you — several if I believe that your behavior is likely to become problematic. Okabe-sensei is your advisor, right?\""
     nvl clear
     show Kyon Unhap1
     "Kyon grimaced. {nw}"
@@ -914,7 +916,8 @@ label HAB1:
     "\"That's a real pity,\" Kyon sighed. \"I didn't want us to be enemies.\""
     nvl clear
     show Kyon Sigh4
-    "\"Well, you made your decision,\" Emiri said with an apologetic shrug. \"I, personally, mean you no harm. My role has naturally changed, as I am denied administrative access over Nagato Yuki. For the time being, despite our differences concerning this issue at large, I wish to remain as neutral as possible to function as negotiator between yourselves and the entity.{w} Until such time as you inform me otherwise, I will assume that you continue to maintain your stance. However ... should things change and you decide to side with us, the entity also holds no enmity against you.\""
+    "\"Well, you made your decision,\" Emiri said with an apologetic shrug. \"I, personally, mean you no harm. My role has naturally changed, as I am denied administrative access over Nagato Yuki. For the time being, despite our differences concerning this issue at large, I wish to remain as neutral as possible to function as negotiator between yourselves and the entity."
+    "Until such time as you inform me otherwise, I will assume that you continue to maintain your stance. However ... should things change and you decide to side with us, the entity also holds no enmity against you.\""
     nvl clear
     "The student council president blinked and looked at his secretary sidelong, obviously very confused."
     show Kyon Ser2
