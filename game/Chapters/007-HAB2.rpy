@@ -544,7 +544,7 @@ label HAB2:
     nvl clear
     
     scene almostblack two with fade
-    scene bg TsuruyaGuestRoomNight with fade
+    scene bg TsuruyaFutonDay with fade
     stop music fadeout 1
     queue music "Music/Morning.ogg"
     show Tsuruya Worry1 Flip at left with dissolve

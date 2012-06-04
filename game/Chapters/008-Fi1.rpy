@@ -3,9 +3,10 @@ label Fi1:
     stop music fadeout 3
     queue music "Music/NagatoTheme.mp3"
     scene bg YukiRoomCenter with fade
-    show Yuki Side2 at left with dissolve
-    show Mikuru Cower Casual Sigh1 at TenthRight with dissolve
-    show Kanae Night Worry1 at right behind Mikuru with dissolve
+    show Yuki Side2 at left 
+    show Mikuru Cower Casual Sigh1 at TenthRight 
+    show Kanae Night Worry1 at right behind Mikuru 
+    with dissolve
     "Kyon woke on the floor again, peering up into the eyes of a familiar girl. This was practically becoming a habit, he decided, sitting up and glancing around Yuki's apartment. Mikuru was wearing pajamas, dazedly wobbling in a sitting position while Kanae patted her back. Yuki simply tracked his eyes with her typical level expression, though he thought he caught a hint of some concern in her gaze."
     nvl clear
     show Kyon Smile6 at center with dissolve
@@ -48,7 +49,7 @@ label Fi1:
     nvl clear
     
     scene almostblack two with fade
-    scene bg TsuruyaGuestRoomDay with fade
+    scene bg TsuruyaFutonDay with fade
     stop music fadeout 1
     queue music "Music/Morning.ogg"
     "He woke again, head reeling with the 'extended' session. He didn't want to think how much longer in 'relative time' he'd spent in training with Nagato. If the average session was a 'short' single year...."
@@ -82,8 +83,9 @@ label Fi1:
     scene bg TsuruyaKitchen with fade
     stop music fadeout 1
     queue music "Music/MegassaKoukishin.mp3"
-    show Tsuruya Hap1 at right with dissolve
-    show Kyon Neutral3 at left with dissolve
+    show Tsuruya Hap1 at right 
+    show Kyon Neutral3 at left 
+    with dissolve
     "After eating enough sumptuous fare to feel like a total glutton, Kyon was somewhat surprised to see that Tsuruya had eaten just as eagerly. \"Ah, good, good,\" she decided, leaning back and patting her stomach. \"Mmm, school isn't for a bit, did you want to walk the grounds with me before it starts?\""
     nvl clear
     show Kyon Unhap1
@@ -172,8 +174,9 @@ label Fi1:
     queue music "Music/Itsumo(Movie).mp3"
     show Haruhi Crossed Ang2 at right with dissolve
     "\"You're late,\" Haruhi growled, her expression dark. \"I've been waiting for you for five minutes already!\""
-    show Kyon Neutral5 at center with dissolve
-    show Tsuruya Hap5 Flip at left with dissolve
+    show Kyon Neutral5 at center
+    show Tsuruya Hap5 Flip at left 
+    with dissolve
     "\"Sorry,\" he said, hanging his head. \"Um, something came up.\""
     "\"Totally not Kyon-kun's fault!\" Tsuruya chirped from his side. \"I was keeping him with top secret research for our investigation!\""
     nvl clear
@@ -268,8 +271,9 @@ label Fi1:
     nvl clear
     
     scene bg ClubroomRightDay with fade
-    show Kyon Sigh2 at right with dissolve
-    show Haruhi Hap4 at left with dissolve
+    show Kyon Sigh2 at right 
+    show Haruhi Hap4 at left 
+    with dissolve
     "She nodded, then unlocked the door to the clubroom, swinging it open and gesturing him in. After she had set her bag on the table, she glanced back and frowned. \"I forgot to close the door,\" she noted, \"take care of that, huh?\""
     nvl clear
     show Kyon Sigh3
@@ -475,8 +479,9 @@ label Fi1:
     scene 
     nvl clear
     scene bg Alley2Evening with fade
-    show MikuruBig Grin2 at right with dissolve
-    show Kyon Neutral1 Flip at left with dissolve
+    show MikuruBig Grin2 at right 
+    show Kyon Neutral1 Flip at left 
+    with dissolve
     "\"Right....\" That familiar, unsettling lurch of time travel. When he opened his eyes, he was standing in an alley not far from a train station, the position of the sun.... He gave up trying to figure it out, remembering he had been given a watch for just that reason."
     nvl clear
     "\"Now we're back to yesterday, not long after school,\" he observed, marveling at the mechanical hands as they adjusted themselves to the present time, and the small digital display giving the day, month, and year corrected itself as well."
@@ -603,7 +608,7 @@ label Fi1:
     show Mikuru Neutral1
     "She shook her head again, giving him a smile before gesturing to a large storefront. The outside windows were filled with swaths of cloth, sewing supplies, and layouts of do-it-yourself clothing patterns. \"Um, I'd like to get some things from here.\""
     nvl clear
-    scene bg Supermarket with fade
+    scene bg FabricShop with fade
     show Mikuru Neutral1 at center
     show Kyon Neutral2 Flip at TenthLeft
     with dissolve
@@ -745,8 +750,9 @@ label Fi1:
     "\"Let's drop this off at my place,\" she said hesitantly."
     nvl clear
     scene bg MikuruApartment with fade
-    show Kyon Neutral3 at right with dissolve
-    show Mikuru Neutral1 at left with dissolve 
+    show Kyon Neutral3 at right 
+    show Mikuru Neutral1 at left 
+    with dissolve 
     "He nodded and followed her the three blocks to her studio, a single-room apartment not far from the train station. After letting him in, he kicked off his shoes and unburdened himself in the corner she directed, before he took a look around, studying her temporary home. She felt embarrassed, even though everything was neat and orderly. Her futon was folded away, she didn't have a television, and the only furniture of note was her desk and a second-hand kotatsu."
     nvl clear
     show Kyon Neutral1
@@ -757,8 +763,9 @@ label Fi1:
     
     scene bg ClubroomRightDay with fade
     stop music fadeout 1
-    show Mikuru Think Quest1 at right with dissolve
-    show Haruhi Neutral1 at left with dissolve
+    show Mikuru Think Quest1 at right
+    show Haruhi Neutral1 at left 
+    with dissolve
     "\"Um.... After he dropped off the sewing machine, he went home to speak with his father,\" Mikuru said, nodding."
     show Haruhi Unhap1
     "Haruhi studied the other girl thoughtfully, catching the nervous hesitation in her answer. She raised an eyebrow. \"Really?\" she asked. \"Is that all?\""
