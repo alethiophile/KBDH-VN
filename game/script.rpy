@@ -1676,7 +1676,8 @@ init -1 python:
             ("Chapter Four: Epileptic Plot Tree", "SF2", True),
             ("Chapter Five: The Requisite Haruhi-and-Kyon in Closed Space Together Again Part (You Know The One)", "SF3", True)
         ],
-        [   ("Heroic Antics Begin Arc", "", False),
+        [   ("Volume II prologue", "Vol02_start", True),
+            ("Heroic Antics Begin Arc", "", False),
             ("Chapter Six: Finally, Some Action", "HAB1", True),
             ("Chapter Seven: Rise To Delinquency; Requisite Angst Spots", "HAB2", True),
         ],
@@ -1699,6 +1700,52 @@ init -1 python:
         
 #    style.hyperlink_text = style.default
 
+    if persistent.unlockedAchievs == None:
+        persistent.unlockedAchievs = []
+    achievements = []
+    achievements.append(['The Beginning', 'Started reading from the very beginning', 2])
+    achievements.append(['The Narrator', 'Mastered the best faux movie announcer voice-over', 1])
+    achievements.append(['The Call', 'Responded to The Call ... from the Yuki', 1])
+    achievements.append(['Stab The Stab', 'Took down the Asakura', 1])
+    achievements.append(['The Awakening', 'Awakened the Goddess', 3])
+    
+    def getAchievID(name):
+        i_i = 0
+        for iter in achievements:
+            if iter[0] == name:
+                return i_i
+            else:
+                i_i += 1
+        return -1
+    
+    def UnlockAchiev(name='~!default~!', id='~!default~!'):
+        global persistent
+        if id == '~!default~!':
+            if name == '~!default~!':
+                return False
+            id = getAchievID(name)
+            if id != -1:
+                if id not in persistent.unlockedAchievs:
+                    persistent.balance += achievements[id][2]
+                    persistent.unlockedAchievs.append(id)
+                return True
+            else:
+                return False
+        else:
+            if id < len(achievements):
+                if id not in persistent.unlockedAchievs:
+                    persistent.balance += achievements[id][2]
+                    persistent.unlockedAchievs.append(id)
+                return True
+            else:
+                return False
+    
+    if persistent.balance == None:
+        persistent.balance = 0
+    
+    # Set this to the maximum number of tropes one can get
+    max_tropes = 10
+    
     if persistent.collected_tropes == None:
         persistent.collected_tropes = {}
 
@@ -1706,6 +1753,7 @@ init -1 python:
         renpy.sound.play("SE/block.mp3")
         if not x in persistent.collected_tropes.keys():
             persistent.collected_tropes[x] = True
+            persistent.balance += 1
         return None
 
     style.default.hyperlink_functions = (
@@ -1723,6 +1771,7 @@ label start:
     # Z0 : intro. 
     stop music
     scene black
+    $ UnlockAchiev(id=0)
     show screds0 with dissolve:
         xalign 0.5
         yalign 0.2

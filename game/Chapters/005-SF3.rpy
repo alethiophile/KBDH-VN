@@ -385,7 +385,7 @@ label test2:
     scene white
     
     call eyecatch_fancy("", "", 8, "white") from SF3_sc001
-    
+label Vol02_start:    
     stop music
     # To uncomment for firat release
     

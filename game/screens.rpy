@@ -226,6 +226,49 @@ screen Chapters:
             
         null height 5
 
+
+##############################################################################
+# Extras menu
+#
+# Screen that's used to display the Extras menu
+
+screen Extras:
+    
+    # This ensures that any other menu screen is replaced.
+    tag menu
+    
+    use main_menu
+    
+    # The main menu buttons."
+    frame:
+        style_group "em"
+        xanchor 0.0
+        yanchor 0.0
+        xpos 0.1
+        ypos 0.1
+        #background None
+
+        has vbox
+        # vbox:
+            # side "l c":
+                # area (0.0, 0.0, 450, 0.7)
+        
+        textbutton _("Achievements") action ShowMenu("Achievscr")
+        textbutton _("Tropes Collection") action ShowMenu("Tropes")
+        textbutton _("Skynet Database") #action ShowMenu("Database")
+        textbutton _("Skynet Mediaplayer") #action ShowMenu("Musicbox")
+        textbutton _("Skynet Wallpapers") #action ShowMenu("BG_gallery")
+        textbutton _("Skynet Avatars") #action ShowMenu("Sprites_gallery")
+        null height 5
+        textbutton _("Dismiss") action ShowMenu("main_menu")
+        
+        
+init -2 python:
+
+    # Make all the main menu buttons be the same size.
+    style.em_button.size_group = "em"
+
+
 ##########################################################################
 # Tropes screen
 #
@@ -238,37 +281,158 @@ screen Tropes:
     use main_menu
     
     frame:
-        style_group "chm"
+        style_group "tm"
+        # style "gm_nav_button"
         xanchor 0.0
         yanchor 0.0
         xpos 0.1
         ypos 0.1
         #background None
 
+        # frame:
         has vbox
+        hbox:
+            fixed:
+                xmaximum 430
+                ymaximum 50
+                xcenter 0.55
+                text "{b}Welcome to the Spot-The-Tropes'\ncaught trope collection.{/b}" style "button_text" size 19 color "#fff" #outlines [(1, "#000", 0, 0)]
+            textbutton "?" action ShowMenu("SpotTheTrope_help")
+            
+        $ Ncaught = len(persistent.collected_tropes)
+        text "{b}You caught [Ncaught] / [max_tropes] tropes. \nYou currently have [persistent.balance] Þ.{/b}" style "button_text" size 18 color "#fff" #outlines [(1, "#000", 0, 0)]
+            
         vbox:
             side "l c":
                 area (0.0, 0.0, 450, 0.7)
-                
-                viewport:
-                    yadjustment adj
-                    mousewheel True
+                frame:
+                    left_margin 5
+                    xpadding 10
+                    ypadding 10
                     
-                    vbox:
-                        for t in persistent.collected_tropes.keys():
-                            hbox:
-                                xalign 0.5
-                                text t style "button_text" size 18 text_align 0.5 color "#000"
+                    viewport:
+                        yadjustment adj
+                        mousewheel True
+                        
+                        vbox:
+                            for t in persistent.collected_tropes.keys():
+                                hbox:
+                                    xalign 0.5
+                                    text t style "button_text" size 18 text_align 0.5 color "#000"
 
                 bar adjustment adj style "vscrollbar" 
                 
         null height 5
 
-        textbutton "Dismiss.":
+        textbutton "Back.":
             #size_group "chb"
-            xmargin 9
+            xmargin 5
             xminimum 465
-            action ShowMenu("main_menu")
+            action ShowMenu("Extras")
+            
+        null height 5
+
+                
+##############################################################################
+# SpotTheTrope help
+#
+# Screen that's used to display the help message for Spot-The-Trope 'game'
+
+screen SpotTheTrope_help:
+    
+    # use main_menu
+    
+    window:
+        style "mm_root"
+    
+    tag menu
+    
+    modal True
+
+    frame:
+        style_group "yesno_prompt"
+        xfill True
+        xmargin 100
+        ycenter .5
+
+        frame:
+            # background Frame('#6496c8', 1, 1)
+            xpadding 25
+            ypadding 25
+            vbox:
+                xfill True
+                spacing 25
+
+                text "Describe the Spot-The-Trope here.\nEach trope caught will net you 1 (one) Þ, which you can spend on unlocking the features in Extras menu.":
+                    text_align 0.5
+                    xalign 0.5
+
+                hbox:
+                    spacing 100
+                    xalign .5
+                    textbutton "Dismiss":
+                        action ShowMenu("Tropes")
+
+
+##############################################################################
+# Achievement screen
+#
+# Shows the Achievements what user unlocked and what user has yet to unlock.
+
+screen Achievscr:
+    # This ensures that any other menu screen is replaced.
+    tag menu
+
+    use main_menu
+
+    frame:
+        style_group "chm"
+        xanchor 0.0
+        yanchor 0.0
+        xpos 0.1
+        ypos 0.1
+        xpadding 10
+        ypadding 10
+        #background None
+
+        has vbox
+        
+        text '{b}Achievements{/b}' style "button_text" text_align 0.5 color "#fff" #outlines [(1, "#000", 0, 0)]
+        $ i_l1 = len(persistent.unlockedAchievs)
+        $ i_l2 = len(achievements)
+        text '{b}earned [i_l1] / [i_l2]{/b}' style "button_text" size 18 line_leading -2 text_align 0.5 color "#fff" #outlines [(1, "#000", 0, 0)]
+        
+        vbox:
+            side "l c":
+                area (0.0, 0.0, 450, 0.7)
+                frame:
+                    left_margin 5
+                    xpadding 10
+                    ypadding 10
+                    
+                    viewport:
+                        yadjustment adj
+                        mousewheel True
+                        
+                        vbox:
+                            xfill True
+                            for i_i in range(0, len(achievements)):
+                                if i_i in persistent.unlockedAchievs:
+                                    text achievements[i_i][0] style "button_text" size 20 line_leading 2 xalign 0.0 color "#000" 
+                                    text achievements[i_i][1] style "button_text" size 16 line_leading -2 xalign 0.0 color "#000" first_indent 20
+                                else:
+                                    text achievements[i_i][0] style "button_text" size 20 line_leading 2 xalign 0.0
+                                    text '???' style "button_text" size 16 line_leading -2 xalign 0.0 first_indent 20
+                            
+                bar adjustment adj style "vscrollbar"
+                
+        null height 5
+
+        textbutton "Back.":
+            #size_group "chb"
+            xmargin 5
+            xminimum 470
+            action ShowMenu("Extras")
             
         null height 5
 
@@ -304,9 +468,10 @@ screen main_menu:
         has vbox
 
         textbutton _("Start Game") action Start()
+        textbutton _("Newest Volume") action Start('Vol02_start')
         textbutton _("Load Game") action ShowMenu("load")
         textbutton _("Chapters") action ShowMenu("Chapters")
-        textbutton _("Tropes") action ShowMenu("Tropes")
+        textbutton _("Extras") action ShowMenu("Extras")
         textbutton _("Preferences") action ShowMenu("preferences")
         textbutton _("Help") action Help()
         textbutton _("Quit") action Quit(confirm=False)
