@@ -1702,13 +1702,18 @@ init -1 python:
 
     if persistent.unlockedAchievs == None:
         persistent.unlockedAchievs = []
+     
     achievements = []
+    
+    # Achievement['Name of the achievement', 'Achievement description', reward for earning it]
+    # Achievements are displayed in the oder they are registered.
     achievements.append(['The Beginning', 'Started reading from the very beginning', 2])
     achievements.append(['The Narrator', 'Mastered the best faux movie announcer voice-over', 1])
     achievements.append(['The Call', 'Responded to The Call ... from the Yuki', 1])
     achievements.append(['Stab The Stab', 'Took down the Asakura', 1])
     achievements.append(['The Awakening', 'Awakened the Goddess', 3])
     
+    # Given the name of the achievement return its ID (number)
     def getAchievID(name):
         i_i = 0
         for iter in achievements:
@@ -1718,6 +1723,8 @@ init -1 python:
                 i_i += 1
         return -1
     
+    # To unlock the achievement either call "$ UnlockAchiev('Name of the achievement')"
+    # or "$ UnlockAchiev(id=achievenemt_ID)"    (without " of course)
     def UnlockAchiev(name='~!default~!', id='~!default~!'):
         global persistent
         if id == '~!default~!':
