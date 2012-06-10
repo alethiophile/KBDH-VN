@@ -598,7 +598,7 @@ label Vol02_start:
     stop music fadeout 3
     
     call eyecatch_fancy("Thursday, April 21") from SF3_sc004
-label Test:    
+label _Test:    
     scene bg classroom with fade:
        size (800,600)
     play sound "SE/WestminsterChimeShort.mp3"

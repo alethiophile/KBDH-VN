@@ -435,7 +435,7 @@ label Fi1:
     queue music "Music/Nanika.mp3"
     "Kyon's 'usual spot' for reading notes found in the shoe locker was the boy's bathroom — last stall. If Mikuru didn't remember leaving him the note, it was obviously the older Mikuru who had left it. And the box that he hadn't found the time to open. He was just contemplating opening it when his cell notified him of an incoming text: \"You meet with Mikuru yesterday at her train station after school. You owe me big time!\""
     nvl clear
-    #scene bg Bathroom with fade
+    scene bg SchoolBathroom with fade
     show Kyon Neutral2 Flip at left with dissolve
     "\"Thanks, Haruhi,\" he muttered at the message as he stepped into the unlocked stall, almost mashing his face into a very familiar chest again."
     show MikuruBig Hap3 at right with dissolve
@@ -749,7 +749,7 @@ label Fi1:
     "\"Where next?\" Kyon asked, glancing at his wristwatch briefly."
     "\"Let's drop this off at my place,\" she said hesitantly."
     nvl clear
-    scene bg MikuruApartment with fade
+    scene bg MikuruRoom with fade
     show Kyon Neutral3 at right 
     show Mikuru Neutral1 at left 
     with dissolve 

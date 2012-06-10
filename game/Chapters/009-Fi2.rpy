@@ -1,4 +1,4 @@
-#label Test:
+label Test:
 #label Fi_2:
     # Kyon: Big Damn Hero"
     ## Filler Arc II"
@@ -11,10 +11,10 @@
     #"\"[CLASSIFIED]\" — Paraea Mons T.E.S.A. Dataplume"
     #"* * *"
     
-    scene bg MikuruApartment with fade
+    scene bg MikuruRoom with fade
     stop music fadeout 3
     #queue music "Music/
-    show Kyon Neutral3 at center
+    show Kyon Neutral3 at TenthRight
     show Mikuru Unhap2 at TenthLeft
     with dissolve
     "Kyon looked at Mikuru sidelong. She'd been acting a bit nervous the entire time they had been together ... which seemed mostly to be in keeping from the first time he had thought she had asked him out on a 'date', but too anxious for the week in February that two of her had existed simultaneously. It would have been nicer if she'd offered to cook for him, but given the relatively cramped conditions of her apartment, he could understand her reluctance to do so."
@@ -196,54 +196,95 @@
     "\"Yeah, actually. Well, anyway, enough relaxing for me. I've got a test to study for tomorrow.\" And he had to leave early to meet with Mikuru and help her carry the new sewing machine...."
     nvl clear
     
-    
+    scene bg MikuruApartment with fade
+    show Mikuru Smile2 at left
+    show Kyon Smile4 at right
+    with dissolve
     "After a night of rest that felt oddly unusual for not involving one of Yuki's training scenarios, he left early to reach Mikuru's place. According to his wristwatch he was exactly on time, and reached her apartment door just as she opened it, greeting him with another of the shy smiles she had adopted lately. What exactly was he going to say to her next Sunday, anyway?"
     nvl clear
+    show Mikuru Hap2
     "\"Good morning, Kyon-kun,\" she said cheerfully. \"You don't think we'll be too early?\""
+    show Kyon Puzzle1
     "He bit his tongue, remembering what Mikuru would be subjected to the second she reached the clubroom. \"Not too early,\" he managed."
     nvl clear
+    scene bg TownStreetDay1 with fade
+    show Kyon Smile4 at right
+    show Mikuru Smile1 at left
+    with dissolve
     "They traded bags, her carrying his schoolbag, and him carrying the sewing machine and the large, heavier bag of cloth and assorted other sewing supplies. After they got off the train, walking up the hill, she added, \"It's nice to walk to school together, Kyon-kun. Thank you for helping me out.\""
     nvl clear
+    show Kyon Smile6
     "\"No problem at all.\""
+    show Mikuru Smile3
     "She pointed at an intersection as they passed it, remarking, \"I would usually meet Tsuruya-san there, if we walked together.\""
     nvl clear
+    show Kyon Worry1
     "\"She's a good person,\" he replied, glancing at his watch and frowning. \"I'm glad she looks out for you.\""
+    show Mikuru Quest1
     "Mikuru gave him a puzzled smile. \"Are you okay?\" she finally asked. \"You've been acting worried all morning.\""
     nvl clear
+    show Kyon Puzzle2
     "\"Ah, well,\" he started, glancing up the hill and seeing Tsuruya's familiar hair swaying in the distance. Next to her, a boy without a schoolbag, just rounding a bend in the road.... And Haruhi would ambush them at the gates, followed by a brief chat at the shoe lockers. No doubt about it; he had to come up with a stalling tactic. What could he say?"
     nvl clear
+    show Kyon Puzzle1
     "He stopped, setting down the sewing machine and the bag, then turning to face Mikuru. Her attention was nervously riveted to him, and while he still wasn't certain what he was going to do last Sunday, he was grateful for it. \"Listen,\" he said, without preamble, \"about Haruhi?\""
     nvl clear
+    show Mikuru Sad2
     "Her expression dropped. \"I haven't heard anything yet,\" she said, shaking her head with a vague one-handed gesture. \"Is something wrong?\""
+    show Kyon Worry1
     "\"Um, it's just.... When Haruhi goes too far, it's okay to tell her so.\""
     nvl clear
+    show Mikuru Quest2
     "She looked at him oddly and gave a dubious nod. \"I don't really understand, but I believe you, so okay,\" she agreed."
     "Somehow, that only made him feel worse."
     nvl clear
+    scene bg LockersDayLeft
+    show Kyon Neutral1 at right
+    show Mikuru Neutral2 at left
+    with dissolve
     "After delaying her a short while, he stopped at the shoe lockers, still wearing his indoor shoes. He set down the sewing machine and said, \"I need to check for something in my classroom. I'll meet you back with the extra cloth here, or the clubroom. Is it okay if I leave the sewing machine here?\""
     nvl clear
-    "\"Ah, you carried it all the way up the hill,\" she said, shaking her head. \"Um, I can carry it the rest of the way!\" She handed him his schoolbag, and he nodded his head in thanks to her before dashing immediately to the first floor washroom, just catching sight of the older Mikuru ducking inside. She squeaked in alarm, still cute to his eyes when he understood her motives better."
+    show Mikuru Smile3
+    "\"Ah, you carried it all the way up the hill,\" she said, shaking her head. \"Um, I can carry it the rest of the way!\" She handed him his schoolbag, and he nodded his head in thanks to her before dashing immediately to the first floor washroom, just catching sight of the older Mikuru ducking inside."
+    scene bg SchoolBathroom
+    show Kyon Neutral3 Flip at left
+    show MikuruBig Sup1 at right
+    "She squeaked in alarm, still cute to his eyes when he understood her motives better."
     nvl clear
+    show MikuruBig Quest1
     "With her wide eyes and balled fists held together beneath her chin, he still felt that urge to protect her. \"W...what...\" she began, looking confused. \"You shouldn't be here yet!\""
+    show Kyon Neutral2 Flip
     "\"Long story,\" he told her, checking his wristwatch. \"Okay, so ... we have a few minutes?\""
     nvl clear
+    show MikuruBig Worry2
     "\"How....\" She frowned. \"My past self remembers you being in the clubroom when she entered it. There shouldn't be two of you!\""
+    show Kyon Sigh2 Flip
     "\"Well, somehow it's become a predetermined event,\" he said with an apologetic shrug. \"You take me back to yesterday afternoon to meet your past self at the train station; this ends up sparing me a lot of trouble from my parents involving a fight with some yakuza, so I really don't mind.\""
     nvl clear
-    "\"The slow path?\" she mused, frowning. Her eyes went distant as she tilted her head slightly to one side, then sighed with a smile. \"It must be so!\" she decided, shaking her head a bit. \"Um ... I don't have time to explain it right now, and it would be a bit suspicious for you to ask my younger self. Ah, I hate to ask you to rely on her even more, but perhaps Nagato-san could explain it to you?\""
+    show MikuruBig Ser2
+    "\"The slow path?\" she mused, frowning. Her eyes went distant as she tilted her head slightly to one side, then sighed with a smile. \"It must be so!\" she decided, shaking her head a bit."
+    show MikuruBig Grin2
+    "\"Um ... I don't have time to explain it right now, and it would be a bit suspicious for you to ask my younger self. Ah, I hate to ask you to rely on her even more, but perhaps Nagato-san could explain it to you?\""
+    show Kyon Neutral1 Flip
     "\"Explain what?\""
     nvl clear
+    show MikuruBig Hap3
     "\"Temporal displacement,\" she answered. \"Time travelers normally have a way to monitor their deviation from standard, but you're more of a passenger, so without your own TPDD to monitor such things.... A...anyway! Since you're here, now, there's one thing I should tell you. Um ... this may be a lot to ask, but please don't rush back to Suzumiya-san?\" Her face took on a blush and she suddenly couldn't meet his eyes. \"It would be, um, awkward if you were to overhear certain things.... And it would go against the way I remembered events.\" Her eyes suddenly widened. \"Oh, my! I hope that means you don't eavesdrop!\""
     nvl clear
+    show Kyon Sigh1 Flip
     "He wanted to face-palm, but instead made himself check his watch. Less than a minute; his past self was probably already in the hall headed towards them. \"Sometimes it sounds like you really want me to misbehave,\" he noted. \"It might be easier for both of us if you were more careful, Asahina-san.\""
     nvl clear
+    show MikuruBig Quest1
     "She adopted a clearly feigned look of surprise. \"You really think so?\" she asked."
+    show Kyon Sigh2 Flip
     "\"You'll see in less than a minute,\" he answered dryly, stepping into a free stall and closing the door."
     nvl clear
+    hide MikuruBig with dissolve
     "He heard Mikuru's older self hum thoughtfully as she stepped into the appointed meeting stall, and he held his breath when he heard his past self mutter about Haruhi."
     nvl clear
     "There was no resisting the smirk at Mikuru's reaction to his past self's line regarding ero manga, though he spared a moment to despair his past self's ignorance. What if someone {i}else{/i} were hiding in the room? Mikuru's older self had only just arrived, after all, she hadn't had time to check either. After the unnerving clunking noise that signified his past-self's departure, he checked the other stalls ... but of course, they were empty."
     nvl clear
+    scene bg ClubHallLeft with fade
     "In any case, he realized he wasn't likely to do such a thing again; he now knew to check. After glancing at his wristwatch again, he hustled quickly to the clubroom, still hauling the large bag of cloth for Mikuru. Was he supposed to eavesdrop, he wondered? Was that Mikuru's unsubtle hint? Pondering, his footsteps slowed as he approached the clubroom door."
     nvl clear
     
