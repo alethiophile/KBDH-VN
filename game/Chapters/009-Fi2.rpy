@@ -258,6 +258,7 @@ label Test:
     nvl clear
     show MikuruBig Worry2
     "\"How....\" She frowned. \"My past self remembers you being in the clubroom when she entered it. There shouldn't be two of you!\""
+    nvl clear
     show Kyon Sigh2 Flip
     "\"Well, somehow it's become a predetermined event,\" he said with an apologetic shrug. \"You take me back to yesterday afternoon to meet your past self at the train station; this ends up sparing me a lot of trouble from my parents involving a fight with some yakuza, so I really don't mind.\""
     nvl clear
@@ -265,15 +266,22 @@ label Test:
     "\"The slow path?\" she mused, frowning. Her eyes went distant as she tilted her head slightly to one side, then sighed with a smile. \"It must be so!\" she decided, shaking her head a bit."
     show MikuruBig Grin2
     "\"Um ... I don't have time to explain it right now, and it would be a bit suspicious for you to ask my younger self. Ah, I hate to ask you to rely on her even more, but perhaps Nagato-san could explain it to you?\""
+    nvl clear
     show Kyon Neutral1 Flip
     "\"Explain what?\""
-    nvl clear
     show MikuruBig Hap3
-    "\"Temporal displacement,\" she answered. \"Time travelers normally have a way to monitor their deviation from standard, but you're more of a passenger, so without your own TPDD to monitor such things.... A...anyway! Since you're here, now, there's one thing I should tell you. Um ... this may be a lot to ask, but please don't rush back to Suzumiya-san?\" Her face took on a blush and she suddenly couldn't meet his eyes. \"It would be, um, awkward if you were to overhear certain things.... And it would go against the way I remembered events.\" Her eyes suddenly widened. \"Oh, my! I hope that means you don't eavesdrop!\""
+    "\"Temporal displacement,\" she answered. \"Time travelers normally have a way to monitor their deviation from standard, but you're more of a passenger, so without your own TPDD to monitor such things....\""
     nvl clear
+    "\"A...anyway! Since you're here, now, there's one thing I should tell you. Um ... this may be a lot to ask, but please don't rush back to Suzumiya-san?\"" 
+    show MBigBlush1 at right
+    "Her face took on a blush and she suddenly couldn't meet his eyes. \"It would be, um, awkward if you were to overhear certain things.... And it would go against the way I remembered events.\""
+    nvl clear
+    show MikuruBig Sup1
+    "Her eyes suddenly widened. \"Oh, my! I hope that means you don't eavesdrop!\""
     show Kyon Sigh1 Flip
     "He wanted to face-palm, but instead made himself check his watch. Less than a minute; his past self was probably already in the hall headed towards them. \"Sometimes it sounds like you really want me to misbehave,\" he noted. \"It might be easier for both of us if you were more careful, Asahina-san.\""
     nvl clear
+    hide MBigBlush1
     show MikuruBig Quest1
     "She adopted a clearly feigned look of surprise. \"You really think so?\" she asked."
     show Kyon Sigh2 Flip
@@ -288,54 +296,101 @@ label Test:
     "In any case, he realized he wasn't likely to do such a thing again; he now knew to check. After glancing at his wristwatch again, he hustled quickly to the clubroom, still hauling the large bag of cloth for Mikuru. Was he supposed to eavesdrop, he wondered? Was that Mikuru's unsubtle hint? Pondering, his footsteps slowed as he approached the clubroom door."
     nvl clear
     
-    
+    scene bg ClubroomRightDay
+    show Haruhi Eyeroll2 at left
+    show Mikuru Unhap2 at right
+    with dissolve
     "\"Alright,\" Haruhi grumbled, after listening to Mikuru's rushed explanation of her meeting with Kyon. \"Alright, fine. So, Kyon offered to help you out, you dragged him with you to go shopping, used him as a pack-mule, and that's {i}it{/i}?\" she asked."
+    show Mikuru Sad1
     "Mikuru nodded nervously. \"That's exactly it,\" she agreed. \"T...that's all!\""
     nvl clear
+    show Haruhi Pout2
     "\"I'm disappointed in you,\" Haruhi told her upperclassman. \"Really, you told me that you {i}liked{/i} Kyon. And when the oblivious wonder drops a golden opportunity straight into your lap, you assign him to heavy lifting?! It's like you're not even trying!\""
+    show Mikuru Think Quest2
     "\"T...trying?\" Mikuru asked, her eyes wide and confused. \"What?\""
     nvl clear
+    show Haruhi Sigh1
     "\"Seriously,\" Haruhi chided her, \"if we're going to be any kind of romantic rivals, you should leap at a chance like that! Drag him with you to dinner, then go for a nice walk somewhere after! Your moe powers are wasted settling for what you did. Completely wasted!\""
     nvl clear
+    show Mikuru Think Sup1
     "Mikuru opened her mouth and struggled for words, but all she could do was stare and work her jaw silently before she tilted her head slightly to one side and stared at Haruhi as though the younger girl had suddenly gone mad. Which, Haruhi realized, she might think from her perspective."
     nvl clear
+    show Haruhi Worry1
     "\"Mikuru-chan,\" she said, shaking her head, \"you told me that you 'couldn't' have a relationship in this time, right?\""
+    show Mikuru Think Sad5
     "\"R...right,\" the time traveler agreed. \"I told you I wasn't a threat! Please believe me, Suzumiya-san—\""
     nvl clear
+    show Haruhi Ang2
     "\"Oh, shut up about that,\" she snapped. \"Seriously! 'I'm not a threat'? That sounds like a recipe for misery! Especially since you have your own feelings anyway! There's a very obvious solution, Mikuru-chan. You should have seen it by now!\""
+    show Mikuru Cower Quest1
     "\"T...there is?\" Mikuru looked mystified and more than a little scared, but Haruhi caught the flash of hope in her eyes anyway. \"What is it?\""
     nvl clear
+    show Haruhi Hap1
     "\"If you {i}really{/i} believe that you can't have a relationship, then why not try anyway?\" Haruhi asked. \"Consider it a practice run! If you're going to give up and tell yourself it'll never work out, what do you stand to lose by trying your best, anyway?\""
     nvl clear
+    show Mikuru Cower Sup1
     "\"Y...you {i}want{/i} me to be your romantic rival?\" Mikuru managed, boggling."
+    show Haruhi Sup1
+    show Hblush at left
     "\"Who said anything about romance?\" Haruhi threw back, her face reddening."
+    show Mikuru Cower Nervous2
     "\"You did, just a minute ago!\""
     nvl clear
-    "Her blush deepened. \"Well,\" she managed, looking away. \"Yeah, okay. I guess I did. Anyway, it's not like I want us to compete ... but if you're so adamant it'll never work out, what about the things you could learn from at least trying!? What you need to do is give it your best shot anyway! Kyon's a nice enough guy, even if he is a bit clueless. I guess I can't blame you for liking him.... But I {i}will{/i} blame you for sitting by the sidelines without even trying and making yourself unhappy because you're too scared to do anything about it! Trying to think of it as a competition with me will let you see what you can really do when you find someone you {i}can{/i} be with!\""
+    show Haruhi Pout2
+    "Her blush deepened. \"Well,\" she managed, looking away. \"Yeah, okay. I guess I did. Anyway, it's not like I want us to compete ... but if you're so adamant it'll never work out, what about the things you could learn from at least trying!? What you need to do is give it your best shot anyway! Kyon's a nice enough guy, even if he is a bit clueless.\""
+    nvl clear
+    "\"I guess I can't blame you for liking him.... But I {i}will{/i} blame you for sitting by the sidelines without even trying and making yourself unhappy because you're too scared to do anything about it! Trying to think of it as a competition with me will let you see what you can really do when you find someone you {i}can{/i} be with!\""
     nvl clear
     "Mikuru continued to stare, seemingly stunned by the barrage of words."
+    show Haruhi Crossed Sigh1 Flip
+    show Hblush Crossed Flip at left
     "\"It's not like I'd be happy about it,\" Haruhi continued, crossing her arms over her chest. \"But I like that you {i}act{/i} dojikko and moe for the club. It won't actually help you in the long run to {i}be{/i} that way. You have to have more confidence!\""
     nvl clear
+    show Mikuru Think Sad5
     "\"U...um....\" Mikuru swallowed nervously, and Haruhi watched the older girl slowly gather herself together, straightening up from her cringing. \"What's 'dojikko' mean?\""
     nvl clear
-    "Haruhi stared. \"If we were in a comedy anime, that line would cause a face- fault,\" she deadpanned. \"Am I the only person who reads— Never mind!\" She shook her head, banishing the complaint. \"Okay, look, dojikko characters are clumsy and harmless, they're part of the cast to evoke a 'big-brother' instinct, or play up the role of fan service. Don't get me wrong, it's pretty awesome that you have those characteristics! But while it's fine for an anime character, real people need more depth! So let's work on making your dojikko moe-factor something you use to appeal to a guy you like, not just the extent of who you truly {i}are{/i}.\""
+    hide Hblush
+    show Haruhi Crossed Sup1 Flip    
+    "Haruhi stared. \"If we were in a comedy anime, that line would cause a face- fault,\" she deadpanned. \"Am I the only person who reads— Never mind!\" She shook her head, banishing the complaint."
+    show Haruhi Crossed Quest1 Flip
+    "\"Okay, look, dojikko characters are clumsy and harmless, they're part of the cast to evoke a 'big-brother' instinct, or play up the role of fan service. Don't get me wrong, it's pretty awesome that you have those characteristics! But while it's fine for an anime character, real people need more depth! So let's work on making your dojikko moe-factor something you use to appeal to a guy you like, not just the extent of who you truly {i}are{/i}.\""
     nvl clear
+    show Mikuru Think Sad3
     "Mikuru blinked several times at Haruhi. \"...I don't think I understand,\" she finally admitted, giving an apologetic smile. \"You can't really want me to get in your way, can you?\""
+    show Haruhi Sigh2
     "Sighing deeply, Haruhi shook her head. \"Try harder for Kyon,\" she said. Surely that would be clear enough? \"I'm just saying that if you can't really get anywhere, it won't hurt you to learn as much as you can in the meantime!\""
     nvl clear
+    #play sound knock
+    #play sound door
+    show Kyon Puzzle1 Flip at left
+    show Haruhi Neutral1 at center
+    with dissolve
     "A knock sounded at the door, cutting off further discussion before Kyon pulled it open. \"I'm back,\" he said, looking troubled."
+    show Mikuru Smile3
     "\"Oh!\" Mikuru managed, turning to look at him, her smile returning. \"Was everything okay?\""
     nvl clear
+    show Kyon Sigh6 Flip
     "\"Classified,\" he answered with a grimace. \"But it's taken care of.\""
+    show Mikuru Quest1
     "Mikuru looked confused, but shook her head and moved to pick up her new sewing machine. \"Um, is it okay if I leave this here, Suzumiya-san?\" she asked."
     nvl clear
-    "Haruhi looked at the box, then considered the free space in the club room. Things could be shuffled around to fit it, she was certain. \"It shouldn't be a problem,\" she said, nodding. Could Mikuru make new costumes? That would certainly save her a bit of money on getting a new outfit for Mikuru every so often ... or even one for herself. \"We should talk about that at lunch,\" she decided. \"In the meantime....\" She turned her attention to Kyon as he set his schoolbag on the tabletop, and another bag full of cloth near Mikuru. \"You need to study!\""
+    show Haruhi Hap1
+    "Haruhi looked at the box, then considered the free space in the club room. Things could be shuffled around to fit it, she was certain. \"It shouldn't be a problem,\" she said, nodding. Could Mikuru make new costumes? That would certainly save her a bit of money on getting a new outfit for Mikuru every so often ... or even one for herself. \"We should talk about that at lunch,\" she decided."
     nvl clear
+    show Haruhi Ang1
+    "\"In the meantime....\" She turned her attention to Kyon as he set his schoolbag on the tabletop, and another bag full of cloth near Mikuru. \"You need to study!\""
+    show Kyon Sigh2 Flip
     "\"Yay,\" Kyon said flatly. \"Is there any greater joy?\""
+    nvl clear
+    show Haruhi Grin2
     "\"Getting a good grade for your hard work and staying in the brigade?\""
+    show Kyon Smile6 Flip
     "He blinked, smirking at her as he took a seat. \"Well played, brigade chief. Well played.\""
+    show Haruhi Hap5
     "\"Naturally,\" she agreed, shuffling the flashcards they had made the night before. \"That's why you're just the vice commander.\""
     nvl clear
+    
+    
     
     nvl clear
     "Lessons were very difficult for Mikuru to follow in the wake of Haruhi's bizarre announcement. It didn't help when she took into account further confusion about what a message specifically encoded for her meant for Kyon. He seemed to have dealt with it without trouble, and she knew he lacked her conditioning and the other tools that she had been given specific for her duty as a time traveler. Even so, that didn't slow him down in the slightest."

@@ -302,7 +302,6 @@ init:
     image Hblush Hips = "Sprites/Haruhi/HblushHipsCasual.png"
     image Htears ="Sprites/Haruhi/HTearsSide1.png"
     image Htears Casual = "Sprites/Haruhi/HTearsSideCasual1.png"
-    # image Hblush Crossed = "Sprites/Haruhi/HBlushCrossed.png"
     image Hblush Crossed = "Sprites/Haruhi/HBlushCrossed copy.png"
     
     #Haruhi image flips
@@ -339,6 +338,12 @@ init:
     image Haruhi Unhap1 Flip = im.Flip("Sprites/Haruhi/HaruhiSideUnhappy1.png", horizontal=True)
     image Haruhi Unhap2 Flip = im.Flip("Sprites/Haruhi/HaruhiSideUnhappy2.png", horizontal=True)
     image Haruhi Unhap3 Flip = im.Flip("Sprites/Haruhi/HaruhiSideUnhappy3.png", horizontal=True)
+    
+    image Haruhi Crossed Sigh1 Flip = im.Flip("Sprites/Haruhi/HaruhiCrossedSigh1.png", horizontal=True)
+    image Haruhi Crossed Sup1 Flip = im.Flip("Sprites/Haruhi/HaruhiCrossedSurprised1.png", horizontal=True)
+    image Haruhi Crossed Quest1 Flip = im.Flip("Sprites/Haruhi/HaruhiCrossedQuestion1.png", horizontal=True)
+    
+    image Hblush Crossed Flip= "Sprites/Haruhi/HBlushCrossed.png"
     
     #Kyon Sprites
     image Kyon Ser1 = "Sprites/Kyon/KyonSerious1.png"
@@ -781,6 +786,8 @@ init:
     image MikuruBig Sup2 = "Sprites/MikuruBig/MikuruBigSurprised2.png"
     image MikuruBig Worry1 = "Sprites/MikuruBig/MikuruBigWorry1.png"
     image MikuruBig Worry2 = "Sprites/MikuruBig/MikuruBigWorry2.png"
+    
+    image MBigBlush1 = "Sprites/MikuruBig/MBigBlush1.png"
     
     image MSew = "Sprites/Mikuru/MikuruSew.png"
     
