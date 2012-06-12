@@ -1,4 +1,4 @@
-label Test:
+label wasaTest:
 #label Fi_2:
     # Kyon: Big Damn Hero"
     ## Filler Arc II"
@@ -390,80 +390,155 @@ label Test:
     "\"Naturally,\" she agreed, shuffling the flashcards they had made the night before. \"That's why you're just the vice commander.\""
     nvl clear
     
-    
-    
+label Test:
+    scene bg MikuruClass with fade
     nvl clear
     "Lessons were very difficult for Mikuru to follow in the wake of Haruhi's bizarre announcement. It didn't help when she took into account further confusion about what a message specifically encoded for her meant for Kyon. He seemed to have dealt with it without trouble, and she knew he lacked her conditioning and the other tools that she had been given specific for her duty as a time traveler. Even so, that didn't slow him down in the slightest."
-    nvl clear
     "But that didn't mean she could simply ignore it. She was supposed to be studying phenomena surrounding Haruhi, so why had the sudden shift to follow Kyon's orders even come about? Not the she minded ... but it did make her feel remarkably incompetent that he seemed both better informed and better equipped to handle things."
     nvl clear
     "Then again, it wasn't as though she could expect him to be given his own TPDD or conditioning ... to say nothing of the training requirements. Could Yuki fill those requirements for Kyon? Come to think of it, with Haruhi's help, could he be given everything else he needed to just leave her completely behind?"
-    nvl clear
     "She sighed, lowering her head and pondering the notebook paper before her. It was one thing to try and be helpful, but she was wondering if she really was even that. She had taken Kyon back in time for something she got light-headed even thinking about, and she hadn't done anything {i}but{/i} ferry him back in time."
     nvl clear
     "It wouldn't have bothered her nearly so much, except for the fact that the mysterious note had given her orders to relay verbal instructions to him, and then ... she was out of the loop. As if that weren't problem enough, it was immediately followed by Haruhi insisting that she torture herself with a pursuit she was destined to fail, and the order to become more confident?"
-    nvl clear
     "There was a certain temptation to throw aside her orders from her superiors and do what Haruhi said. She was already skirting dangerously close to the lines by having dinner and a shopping session with Kyon, as far from her ideal date as those events had been. She was reasonably sure he wasn't even supposed to know where she lived, to say nothing of her inviting him into her apartment, however briefly!"
     nvl clear
+    show Tsuruya Hap5 at right with dissolve
     "If she didn't get her act together, and soon, she was likely to be recalled. She was roused from her contemplation by Tsuruya poking her elbow. \"Helloooo~!\" the taller girl called, peering at her intently, smirking. \"What's gotcha distracted, Mikuru-chan?\""
+    nvl clear
+    show Mikuru Neutral3 at left with dissolve
     "\"Ah, oh, just things,\" she answered, shaking her head and climbing to her feet. On to the clubroom, then, where she would have to figure out some way to satisfy Haruhi and simultaneously keep herself in control."
     nvl clear
+    show Tsuruya Neutral1
     "\"Okies,\" Tsuruya said, raising one eyebrow. \"Well, I gots to escort Kanae- chan, like I promised, so see you soonish!\""
+    hide Tsuruya
     "With that, the green-haired girl whirled and sped off."
     nvl clear
+    scene bg ClubroomFullDay with slowflashbulb:
+        xpos 0 ypos 0
+    $ renpy.layer_at_list([PanScene_SetToLeft])
+    show Kyon Neutral3 Flip at center_RightScreen
+    show Haruhi Neutral1 Flip at right_RightScreen
+    show Koizumi Crossed Smile4:
+        xalign 0.6 yalign 1.0
+    show Yuki Side1:
+        xalign 0.3 yalign 1.0
+    with dissolve
     "Alone, Mikuru walked slowly to the club room, not entirely surprised that Kanae and Tsuruya caught up with her as she reached the door. She opened it to let the other girls in first, only to see Kyon and Haruhi already sitting at the table, with Koizumi and Yuki across from them."
     nvl clear
-    "Yuki tapped the keys of one of the laptops, an empty bento at her side. Koizumi picked at his own bento, studying the couple sitting opposite him. Haruhi was grilling Kyon with questions for the upcoming math test. The really unusual thing was the fact that Kyon had — for some reason — three bento boxes next to him, and was evidently just finishing the last one."
+    "Yuki tapped the keys of one of the laptops, an empty bento at her side. Koizumi picked at his own bento, studying the couple sitting opposite him."
+    $ renpy.layer_at_list([PanScene_LeftToRight])
+    "Haruhi was grilling Kyon with questions for the upcoming math test. The really unusual thing was the fact that Kyon had — for some reason — three bento boxes next to him, and was evidently just finishing the last one."
     nvl clear
     "Haruhi glanced at the stack of empty boxes, but Mikuru was positive that the three closest to Kyon were his ... everyone else had their own. \"Wow,\" Kanae said, peering in. \"You must be really hungry, Sempai!\""
     nvl clear
     "\"His mom's starving him as some strange form of punishment,\" Haruhi explained, rolling her eyes. \"Sure, tuna is supposed to be 'brain food', because it's high in protein, but just fish and rice?\""
     nvl clear
+    show Tsuruya Smile3 Flip at right behind Koizumi
+    show Kanae Neutral1 at left_RightScreen behind Kyon
+    with dissolve
     "Tsuruya looked thoughtful, eying the lunch boxes before closing the door and taking a seat next to Koizumi. Kanae had already claimed the space on Kyon's other side, so Mikuru was left with the choice of sitting next to Yuki or Haruhi."
     nvl clear
-    "She resolved to rush to the club room more quickly next time, and debated internally before choosing to sit next to Yuki. For her part, the impassive girl didn't react, merely tapping a few more keys out. Unable to resist, Mikuru stole a glance at the laptop, seeing nothing more than a text editor. Able to sense the gaze, Yuki's eyes snapped immediately towards her as the text file was minimized, and a splash screen for The Day of Sagittarius III appeared."
+    $ renpy.layer_at_list([PanScene_RightToLeft])
+    show Mikuru Neutral2 at left with dissolve
+    "She resolved to rush to the club room more quickly next time, and debated internally before choosing to sit next to Yuki. For her part, the impassive girl didn't react, merely tapping a few more keys out."
+    nvl clear
+    "Unable to resist, Mikuru stole a glance at the laptop, seeing nothing more than a text editor. Able to sense the gaze, Yuki's eyes snapped immediately towards her as the text file was minimized, and a splash screen for The Day of Sagittarius III appeared."
     nvl clear
     "Mikuru quickly looked away, receiving the unspoken message without any trouble. To her surprise, however, Yuki turned to look towards Koizumi, then adjusted the laptop so that the esper couldn't see the screen — but Mikuru could. Maybe Yuki thought that Mikuru was trustworthy enough not to peek, and the esper wasn't?"
     nvl clear
-    "That offered a tiny bit of encouragement. She respectfully avoided looking at the screen, though the sudden shift in color to the white background of the text editor let her know that Yuki was back to her original project. She unwrapped her lunch and ate it, watching the other club members. Tsuruya quickly engaged Kanae in a conversation over an anime they were both watching, and Koizumi observed the pair with his usual smile, looking slightly more amused than usual."
+    "That offered a tiny bit of encouragement. She respectfully avoided looking at the screen, though the sudden shift in color to the white background of the text editor let her know that Yuki was back to her original project. She unwrapped her lunch and ate it, watching the other club members."
+    show Tsuruya Hap4 Flip
+    show Koizumi Crossed Smile1
+    "Tsuruya quickly engaged Kanae in a conversation over an anime they were both watching, and Koizumi observed the pair with his usual smile, looking slightly more amused than usual."
     nvl clear
+    $ renpy.layer_at_list([PanScene_LeftToCenter])
+    show Tsuruya Neutral1 Flip
     "\"No, no,\" Tsuruya said, shaking her head. \"Trope-tan doesn't do thats! Sounds a bit out-of-character, don't it?\""
+    show Kanae Quest1
     "\"Er,\" Kanae managed, frowning. \"Maybe I'm remembering it wrong? I mean ... doesn't every episode end with her using the Chekhov Beam to stop the monster of the week?\""
     nvl clear
+    show Tsuruya Hap1 Flip
     "\"Usually,\" Tsuruya agreed, chuckling. \"Unless it's one of those 'power of heart' episodes. But Uncyclo-tan is the big bad! They're not on the same sentai team.\""
+    show Kanae Unhap1
     "\"I thought Ae-tan was the main villain,\" Kanae said with a pout. \"Wasn't Uncyclo-tan just her minion?\""
     nvl clear
+    show Tsuruya Quest1 Flip
     "\"Who's Ae-tan? Is that a nickname for Wikipe-tan?\""
+    show Kanae Unhap2
     "Kanae tapped her lower lip with a frown. \"Um ... maybe ... I'm thinking of a different series?\""
     nvl clear
+    show Tsuruya Hap2 Flip
+    show Kyon Unhap4
     "\"Maybe,\" Tsuruya agreed with a shrug. \"Okies! It was nice having lunch with you, but I gots to do some more investigation work—\" She cut off with a giggle at Kyon's sharp look, quickly adding, \"Nothing dangerous right now, Kyon-kun!\""
     nvl clear
-    "\"Well, call me if that changes, Tsuruya-kun,\" Kyon warned, before being smacked over the head by Haruhi's stack of flashcards. \"Ow! Hey! I thought you didn't like tsundere characters!\""
+    $ renpy.layer_at_list([PanScene_CenterToRight])
+    show Kyon Smile6
+    "\"Well, call me if that changes, Tsuruya-kun,\" Kyon warned, "
+    show Kyon Sup1 Flip
+    extend "before being smacked over the head by Haruhi's stack of flashcards. \"Ow! Hey! I thought you didn't like tsundere characters!\""
     nvl clear
+    show Haruhi Ang1 Flip
     "\"I don't,\" Haruhi groused, looking at him oddly. \"But I don't think I mentioned that to you. Anyway, it was a stack of cards! Are you saying it really hurt?\""
+    hide Tsuruya
+    show Kyon Worry1 Flip
+    show Mikuru:
+        xalign 0.3 yalign 1.0        
+    show Yuki:
+        xalign 0.65 yalign 1.0        
+    show Koizumi at right
     "\"No,\" he admitted as Tsuruya left. \"Just.... Nevermind.\""
     nvl clear
+    $ renpy.layer_at_list([PanScene_RightToLeft])
+    show Mikuru Think Quest4
     "After putting away her own empty bento, Mikuru pondered what to do with her remaining free time. She brightened when she recalled the pattern paper. That would be a nice distraction from things. She could make something for Kyon — that should satisfy Haruhi's demands without making her own life more difficult than she needed to."
     nvl clear
     "She spent a long minute thinking of what to make before she finally settled on a heavy coat. Kyon's last coat had gotten fairly worn after the last winter, and even if the season were warming up.... Well, it was something. One of the bolts of cloth she had picked up with Kyon was treated to be water resistant — the one she had grabbed because she didn't want to seem completely unaware of the outside world. She couldn't imagine what else she would make with it for Kyon."
     nvl clear
     "He really didn't seem the type to wear an apron, and a tablecloth didn't seem very personal, so a coat was the answer. The clubroom's table was large enough for her to unroll a huge sheet of the stuff, but she would have to ask someone else to move, and she thought she'd be better off designing on the small- scale, first. She pulled a notepad from the bookshelf behind her and began sketching rough dimensions and designs. There was rather a lot of that cloth, so she could make a full-length coat."
     nvl clear
-    "An image from a recent television drama she had seen came to mind — it was a bit militaristic, but she thought Kyon would look quite dashing in a greatcoat, so decided to style her design after that. She'd only roughed out the basic features — pockets, buttons she'd need to pick up later, a rain flap that could be flipped over into a hood — when she felt Yuki's unsettling gaze on her. She looked up in alarm, but the contact-purposed interface merely commented, \"Interesting,\" before turning back to whatever she was writing."
+    "An image from a recent television drama she had seen came to mind — it was a bit militaristic, but she thought Kyon would look quite dashing in a greatcoat, so decided to style her design after that."
+    show Mikuru Think Quest3
+    "She'd only roughed out the basic features — pockets, buttons she'd need to pick up later, a rain flap that could be flipped over into a hood — when she felt Yuki's unsettling gaze on her."
     nvl clear
-    "\"What's that, then?\" Haruhi asked, her interest piqued. She glanced at the sketch before her eyes widened. \"You're making that for Kyon?\" she added, flashcards forgotten for the moment."
+    show Yuki Talk2
+    "She looked up in alarm, but the contact-purposed interface merely commented, \"Interesting,\" before turning back to whatever she was writing."
+    $ renpy.layer_at_list([PanScene_LeftToRight])
+    show Haruhi Quest1 Flip
+    "\"What's that, then?\" Haruhi asked, her interest piqued. She glanced at the sketch before her eyes widened."
+    show Haruhi Sup1 Flip
+    extend "\"You're making that for Kyon?\" she added, flashcards forgotten for the moment."
+    $ renpy.layer_at_list([PanScene_RightToLeft])
+    show Mikuru Think Quest1
     "\"I...I was thinking of it,\" Mikuru agreed, nodding. \"Is something wrong?\""
     nvl clear
-    "Haruhi raised an eyebrow thoughtfully, while Kyon tried to crane his neck to see the sketch from his seat. The brigade chief snatched the paper out of Mikuru's hands, hiding it from Kyon's sight and shoving the flashcards at Koizumi. \"Keep studying,\" she ordered, walking around the table to sit at Mikuru's side, studying the image intently."
+    $ renpy.layer_at_list([PanScene_LeftToRight])
+    show Kyon Neutral4
+    "Haruhi raised an eyebrow thoughtfully, while Kyon tried to crane his neck to see the sketch from his seat. The brigade chief snatched the paper out of Mikuru's hands, hiding it from Kyon's sight and shoving the flashcards at Koizumi."
+    show Haruhi Neutral3 at left with dissolve
+    $ renpy.layer_at_list([PanScene_RightToLeft])    
+    "\"Keep studying,\" she ordered, walking around the table to sit at Mikuru's side, studying the image intently."
     nvl clear
-    "Kyon looked irritated, but Koizumi obligingly continued the study session. One eye watching Kyon closely, Haruhi explained, \"I've seen.... Um, maybe....\" She grinned and nodded decisively, setting the sketch between the two of them. \"It needs pockets on the inside,\" she said in a conspiratorial whisper. \"In the sleeves, too, and I think it should have ties so that the sleeves can be rolled back and buttoned into place. And make it ... I think about seven centimeters longer. Yeah, that's right. It's going to be tan colored, right?\""
+    show Kyon Unhap4
+    #show Kyon at left_RightScreen puts him at the very center of the scene for some reason. xalign 1.3 yalign 1.0  puts him at the same spot. center_RightScreen is offscreen, and TenthLeft_RightScreen creates an error.
+    show Kanae at right_RightScreen
+    show Koizumi Crossed Smile3
+    $ renpy.layer_at_list([PanScene_LeftToCenter])
+    "Kyon looked irritated, but Koizumi obligingly continued the study session."
+    $ renpy.layer_at_list([PanScene_CenterToLeft])
+    show Haruhi Hap2
+    "One eye watching Kyon closely, Haruhi explained, \"I've seen.... Um, maybe....\" She grinned and nodded decisively, setting the sketch between the two of them. \"It needs pockets on the inside,\" she said in a conspiratorial whisper."
     nvl clear
+    "\"In the sleeves, too, and I think it should have ties so that the sleeves can be rolled back and buttoned into place. And make it ... I think about seven centimeters longer. Yeah, that's right. It's going to be tan colored, right?\""
+    show Mikuru Think Quest3
     "She nodded, feeling another tiny surge of irritation that — once again — everyone but her seemed to know what was going on. She tried to banish the feeling. Knowing nothing shouldn't bother her, knowing everything was too stressful ... but knowing just enough to feel really clueless ... that wasn't any fun at all."
     nvl clear
+    show Haruhi Hap3
     "\"Okay,\" Haruhi whispered, her grin widening. \"Don't let Kyon know about it until it's done. How long do you think it'll take?\""
     nvl clear
+    show Mikuru Think Quest1
     "Keeping it hidden from Kyon would require him to avoid the clubroom, or her to haul the heavy machine back to her already cramped apartment. \"A few days, probably,\" she answered, frowning thoughtfully. \"Maybe Sunday if I come in while class isn't in session.... Otherwise, Kyon-kun might see me working on it.\""
     nvl clear
+    show Haruhi Hap1
     "\"Not a problem,\" Haruhi decided. \"If Tsuruya's keeping him occupied anyway, then you should have plenty of time.\""
     nvl clear
     
