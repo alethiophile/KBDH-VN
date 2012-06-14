@@ -1,4 +1,4 @@
-label wasaTest:
+label Test:
 #label Fi_2:
     # Kyon: Big Damn Hero"
     ## Filler Arc II"
@@ -17,15 +17,17 @@ label wasaTest:
     show Kyon Neutral3 at TenthRight
     show Mikuru Unhap2 at TenthLeft
     with dissolve
-    "Kyon looked at Mikuru sidelong. She'd been acting a bit nervous the entire time they had been together ... which seemed mostly to be in keeping from the first time he had thought she had asked him out on a 'date', but too anxious for the week in February that two of her had existed simultaneously. It would have been nicer if she'd offered to cook for him, but given the relatively cramped conditions of her apartment, he could understand her reluctance to do so."
+    "Kyon looked at Mikuru sidelong. She'd been acting a bit nervous the entire time they had been together ... which seemed mostly to be in keeping from the first time he had thought she had asked him out on a 'date', but too anxious for the week in February that two of her had existed simultaneously."
     nvl clear
+    "It would have been nicer if she'd offered to cook for him, but given the relatively cramped conditions of her apartment, he could understand her reluctance to do so."
     show Kyon Neutral5
     "\"Um, sure,\" he said, rolling his shoulders and then stretching his arms, a bit stiff after all of the lugging he had done for her. Then he shook his head, \"No, wait — why do you have to treat me? Let me treat you.\""
+    nvl clear
     show Mikuru Sad2
     "\"But....\" She sighed, looking downcast. \"That's no different than usual,\" she mumbled. \"So, um, please, let me treat you?\""
-    nvl clear
     show Kyon Sigh3
     "\"What do you mean it's no different?\" he asked, furrowing his brow."
+    nvl clear
     show Mikuru Sad1
     "\"Er, that is ... um ... well, you always have to treat all of us,\" she explained, ducking her head. \"So, that doesn't seem fair. Please?\""
     show Kyon Sigh5
@@ -51,15 +53,18 @@ label wasaTest:
     "\"True enough.\" He really had to stop getting caught in his uniform so much.... Even with the amazing bloodstain removal skills of Tsuruya's servants, something else that he tried not to think about too hard, he was going to wear it out long before the year was over. Possibly even before it was time to switch to summer uniforms, at the current rate."
     nvl clear
     scene bg Udon with fade
-    show Kyon Smile4 at center
-    show Mikuru Smile1 at left
-    "He stepped out of the apartment first, and she closed and locked it behind them before giving him a bright smile and leading the way down the street towards a noodle stall. After they had taken seats on the stools beneath the curtain, the elderly proprietor greeted the girl like a long-lost granddaughter. She cheerfully introduced him by his nickname."
+    show Kyon Smile4 at TenthRight
+    show Mikuru Smile1 at TenthLeft
+    "He stepped out of the apartment first, and she closed and locked it behind them before giving him a bright smile and leading the way down the street towards a noodle stall."
+    "After they had taken seats on the stools beneath the curtain, the elderly proprietor greeted the girl like a long-lost granddaughter. She cheerfully introduced him by his nickname."
     nvl clear
+    show Kyon Neutral3
     "\"Ah, is this the boy I've heard so much about?\" the old man asked, a dangerous glint in his eyes as he turned his gaze towards Kyon."
     show Mikuru Neutral1
-    show MBlush1 at left
+    show MBlush1 at TenthLeft
     "\"Um, yes,\" she admitted, her face turning red as she looked down, unable to meet either gaze."
     nvl clear
+    show Kyon Worry3
     "The old man gave a friendly chuckle, but his eyes looked even more menacing towards Kyon. \"Well, I'm sure he'll take good care of you!\" he said cheerfully, mouthing a silent, \"or else\" at the end. \"Now, what can I get you, Asahina-chan? And yourself, Kyon-san?\""
     show Mikuru Hap2
     "\"Um, my usual, please,\" she said, looking up. \"Oh, Kyon-kun, you should try the seafood udon — it's quite good, but usually too much for me!\""
@@ -78,12 +83,14 @@ label wasaTest:
     extend "\"I...it's okay to pretend just this once, right?\""
     nvl clear
     show Kyon Smile6
-    "\"More than just this once would be fine with me,\" he said. He bit his tongue, then realized that his slip would be harmless; Haruhi would be eating with his past self at that moment. No chance she would stumble across this! He was half tempted to add a comment that she didn't need to pretend, either, but she was so nervous there was no reason to alarm her."
+    "\"More than just this once would be fine with me,\" he said. He bit his tongue, then realized that his slip would be harmless; Haruhi would be eating with his past self at that moment."
+    "No chance she would stumble across this! He was half tempted to add a comment that she didn't need to pretend, either, but she was so nervous there was no reason to alarm her."
     nvl clear
     show Mikuru Hap1
     "She brightened even further. \"I'm glad!\" she cheered. \"It only seems right that I pay you back for all the work you did for me today!\""
+    "He nodded thoughtfully, taking one of the still-warm buns and sampling it cautiously. No filling, but they were well-made, he decided."
     nvl clear
-    "He nodded thoughtfully, taking one of the still-warm buns and sampling it cautiously. No filling, but they were well-made, he decided. He watched the old man on the other side of the counter hum as he stirred and mixed various ingredients, and absently reached for another bun, freezing when he realized that Mikuru was doing the same, and their hands touched. {nw}"
+    "He watched the old man on the other side of the counter hum as he stirred and mixed various ingredients, and absently reached for another bun, freezing when he realized that Mikuru was doing the same, and their hands touched. {nw}"
     show Kyon Smile3
     extend " \"Ah, sorry,\" he said, chuckling."
     nvl clear
@@ -95,22 +102,29 @@ label wasaTest:
     nvl clear
     
     scene bg TrainStation with fade
-    "After walking Mikuru back to her apartment, Kyon agreed to meet with her again in the morning to help carry the sewing machine to school. He wasn't certain how it would end up working out that she didn't seem to realize there were, at least temporarily, two of him at school at the same time.... But it did let him correct the oversight of forgetting that while he had stayed at Tsuruya's — a haven for the temporally displaced — he had forgotten his schoolbag at home."
-    "He took a train back to Kitaguchi station, checked the watch that Mikuru's older self had given him and turned his cell phone on, pulling up his voice mail and leaving himself the well-remembered message from the previous night. After a few minutes he figured out how to flag the message as 'new', and shut the phone off again. Another few minutes waiting in a dark alley with a reasonable view of the train station let him see his past-self swear loudly."
+    "After walking Mikuru back to her apartment, Kyon agreed to meet with her again in the morning to help carry the sewing machine to school."
+    "He wasn't certain how it would end up working out that she didn't seem to realize there were, at least temporarily, two of him at school at the same time."
+    "...But it did let him correct the oversight of forgetting that while he had stayed at Tsuruya's — a haven for the temporally displaced — he had forgotten his schoolbag at home."
     nvl clear
+    "He took a train back to Kitaguchi station, checked the watch that Mikuru's older self had given him and turned his cell phone on, pulling up his voice mail and leaving himself the well-remembered message from the previous night."
+    "After a few minutes he figured out how to flag the message as 'new', and shut the phone off again. Another few minutes waiting in a dark alley with a reasonable view of the train station let him see his past-self swear loudly."
     "He couldn't help but chuckle at his past self's cursing when the voice mail was checked. \"I guess I can see why she does it,\" he said aloud, shaking his head. \"Still....\""
     nvl clear
-    "Once he was certain his past self had turned the phone off, he turned his phone back on. Now he just had to go home, face his father's wrath, and take advantage of the extra time to study for tomorrow's test. It was nice not needing to worry about fighting the yakuza that his past self would successfully deal with, or think too hard about the bath and bed he would share with Tsuruya."
-    nvl clear
+    "Once he was certain his past self had turned the phone off, he turned his phone back on. Now he just had to go home, face his father's wrath, and take advantage of the extra time to study for tomorrow's test."
+    "It was nice not needing to worry about fighting the yakuza that his past self would successfully deal with, or think too hard about the bath and bed he would share with Tsuruya."
     "Hard-earned, and well deserved, after all. He walked back home, hands in his pockets, wondering if he actually would receive any phone calls. He wouldn't need to make any, at least ... not until he had to call Tsuruya, anyway."
     nvl clear
     scene bg KyonKitchenLeft with fade
     #show Akane at left
     #show KyonDad at Right
     #with dissolve
-    "His good mood was crushed almost instantly by the oppressive atmosphere inside the house when he opened the door. After kicking his shoes off and hiding them, so his parents wouldn't ask why he was walking around in his indoor school shoes, he walked into the dining room, where his father was just finishing his dinner. Looking a bit worn from an arduous day at the office, the tired salaryman pushed the plate with the last few bites left on it away from himself."
+    "His good mood was crushed almost instantly by the oppressive atmosphere inside the house when he opened the door."
+    "After kicking his shoes off and hiding them, so his parents wouldn't ask why he was walking around in his indoor school shoes, he walked into the dining room, where his father was just finishing his dinner."
     nvl clear
+    "Looking a bit worn from an arduous day at the office, the tired salaryman pushed the plate with the last few bites left on it away from himself."
+    #show Akane _
     "Kyon's mother sat in the seat to his father's side, her eyes meeting his briefly in warning. \"Well,\" she said abruptly, rising from her seat. \"I'll leave you two to discuss things.\""
+    nvl clear
     "With that, she strode to the stairway, causing his little sister to squeak in alarm as her eavesdropping location was discovered. Kyon's father took a deep breath and stepped back from the table, gesturing Kyon to follow him as he slowly walked back outside."
     nvl clear
     scene bg KyonHouseNight with fade
@@ -134,7 +148,9 @@ label wasaTest:
     show Kyon Neutral5
     "\"But it wasn't anything like that!\" Kyon protested. \"Ryuguu was attacking Kanae-chan — he pulled a knife on me! What was I supposed to do? I swear, I'm not going around looking for trouble.\""
     nvl clear
-    "The man's eyes drifted down from the dim sky, and one eyebrow quirked up. \"Kyon-kun ... you're not a martial artist, or a samurai. I think it's good that you stood up for your classmate, don't get me wrong. But at the same time ... you can easily get in over your head. Neither your mother nor myself want to see you get hurt. And like any parents, we want you to be safe and happy. That may mean being a bit more cautious now, but when you're older and capable of having a real career, it will all be for the best, won't it?\""
+    "The man's eyes drifted down from the dim sky, and one eyebrow quirked up. \"Kyon-kun ... you're not a martial artist, or a samurai. I think it's good that you stood up for your classmate, don't get me wrong. But at the same time ... you can easily get in over your head.\""
+    nvl clear
+    "\"Neither your mother nor myself want to see you get hurt. And like any parents, we want you to be safe and happy. That may mean being a bit more cautious now, but when you're older and capable of having a real career, it will all be for the best, won't it?\""
     nvl clear
     show Kyon Puzzle1
     "\"I understand,\" Kyon said slowly."
@@ -142,9 +158,11 @@ label wasaTest:
     show Kyon Neutral1
     "\"Well.... Uncle Keiichi never even went to college, and from his stories he was a real troublemaker in school, too, but he's got a career.\""
     nvl clear
-    "\"Eh ... yes, but your uncle Keiichi also married a shrine maiden and most of his 'career' is funded by a Yakuza family,\" the man countered. \"No offense to him, but your mother wouldn't have been born if it weren't for the fact his parents thought they could raise a better-behaved and more responsible child. He's a very eccentric character, and that's not a standard the rest of us should hold ourselves to.\""
+    "\"Eh ... yes, but your uncle Keiichi also married a shrine maiden and most of his 'career' is funded by a Yakuza family,\" the man countered."
+    "\"No offense to him, but your mother wouldn't have been born if it weren't for the fact his parents thought they could raise a better-behaved and more responsible child. He's a very eccentric character, and that's not a standard the rest of us should hold ourselves to.\""
     nvl clear
-    "Even if uncle Keiichi lived in the country, Kyon couldn't help but think that he was probably one of the most popular people in his village; the townspeople routinely called him 'the magician of words'. Obviously his grandparents on his mother's side didn't know what they were talking about. Weren't they both novelists? They probably spent more time paying attention to their writing than the world immediately around them."
+    "Even if uncle Keiichi lived in the country, Kyon couldn't help but think that he was probably one of the most popular people in his village; the townspeople routinely called him 'the magician of words'."
+    "Obviously his grandparents on his mother's side didn't know what they were talking about. Weren't they both novelists? They probably spent more time paying attention to their writing than the world immediately around them."
     nvl clear
     show Kyon Neutral2
     "\"I'm not sure I'm happy giving up the possibility of doing things differently and still being successful,\" he finally told his father."
@@ -152,17 +170,19 @@ label wasaTest:
     "The man grunted at that, nodding slowly. \"Fair enough,\" he allowed. \"Even so ... the point of this is that while you may pursue some slim chance, a solid education is a sure thing. Since it's not possible to know the future, your mother's primary concern is that you at least keep that one reasonable goal in sight, regardless of whatever else you do.\""
     nvl clear
     show Kyon Sigh4
-    "Kyon sighed. Probably best not to mention the fact that he {i}had{/i} rescued a wealthy heiress, he was {i}already{/i} involved with a ninkyo dantai family, and as a matter of fact, at least until some time tomorrow morning, he {i}did{/i} know the future because he'd already {i}been{/i} there. {nw}"
+    "Kyon sighed. Probably best not to mention the fact that he {i}had{/i} rescued a wealthy heiress, he was {i}already{/i} involved with a ninkyo dantai family, and as a matter of fact, at least until some time tomorrow morning, he {i}did{/i} know the future because he'd already {i}been{/i} there."
+    nvl clear
     show Kyon Neutral2
-    extend "\"So, if I'm like Haruhi and place first in testing this term, I can cause any trouble I want as long as it doesn't get me expelled?\" he said instead."
+    "\"So, if I'm like Haruhi and place first in testing this term, I can cause any trouble I want as long as it doesn't get me expelled?\" he said instead."
     nvl clear
     "His father blinked languidly, his lips quirking in a smile. \"I'm not sure about that,\" he said. \"But, if you place in the top ten, I'll help you get your license over summer break. How about that?\""  
+    nvl clear
     show Kyon Smile4
     "He smiled weakly, realizing that the offer was only made because of a certainty that he would fall short. \"I'll hold you to it,\" he said, nodding. He may as well just ask Arakawa or Yuki for the lesson."
-    nvl clear
     "\"So, we're understood that you'll keep your mother happy, or at least try your best?\""
     show Kyon Neutral1
     "\"I'll try my best,\" he promised."
+    nvl clear
     "\"Good,\" the man said, reaching forward and clapping one hand on his shoulder firmly. \"Good. I'm glad we had this talk, Kyon-kun. Oh, also, since you brought your uncle up, your aunt Rika wanted to know if you'd be going up to visit for Golden Week.\""
     nvl clear
     show Kyon Sigh2
@@ -264,11 +284,12 @@ label wasaTest:
     nvl clear
     show MikuruBig Ser2
     "\"The slow path?\" she mused, frowning. Her eyes went distant as she tilted her head slightly to one side, then sighed with a smile. \"It must be so!\" she decided, shaking her head a bit."
+    nvl clear
     show MikuruBig Grin2
     "\"Um ... I don't have time to explain it right now, and it would be a bit suspicious for you to ask my younger self. Ah, I hate to ask you to rely on her even more, but perhaps Nagato-san could explain it to you?\""
-    nvl clear
     show Kyon Neutral1 Flip
     "\"Explain what?\""
+    nvl clear
     show MikuruBig Hap3
     "\"Temporal displacement,\" she answered. \"Time travelers normally have a way to monitor their deviation from standard, but you're more of a passenger, so without your own TPDD to monitor such things....\""
     nvl clear
@@ -290,6 +311,7 @@ label wasaTest:
     hide MikuruBig with dissolve
     "He heard Mikuru's older self hum thoughtfully as she stepped into the appointed meeting stall, and he held his breath when he heard his past self mutter about Haruhi."
     nvl clear
+    show Kyon Smile2
     "There was no resisting the smirk at Mikuru's reaction to his past self's line regarding ero manga, though he spared a moment to despair his past self's ignorance. What if someone {i}else{/i} were hiding in the room? Mikuru's older self had only just arrived, after all, she hadn't had time to check either. After the unnerving clunking noise that signified his past-self's departure, he checked the other stalls ... but of course, they were empty."
     nvl clear
     scene bg ClubHallLeft with fade
@@ -352,16 +374,18 @@ label wasaTest:
     hide Hblush
     show Haruhi Crossed Sup1 Flip    
     "Haruhi stared. \"If we were in a comedy anime, that line would cause a face- fault,\" she deadpanned. \"Am I the only person who reads— Never mind!\" She shook her head, banishing the complaint."
+    nvl clear
     show Haruhi Crossed Quest1 Flip
-    "\"Okay, look, dojikko characters are clumsy and harmless, they're part of the cast to evoke a 'big-brother' instinct, or play up the role of fan service. Don't get me wrong, it's pretty awesome that you have those characteristics! But while it's fine for an anime character, real people need more depth! So let's work on making your dojikko moe-factor something you use to appeal to a guy you like, not just the extent of who you truly {i}are{/i}.\""
+    "\"Okay, look, dojikko characters are clumsy and harmless, they're part of the cast to evoke a 'big-brother' instinct, or play up the role of fan service. Don't get me wrong, it's pretty awesome that you have those characteristics!\""
+    "\"But while it's fine for an anime character, real people need more depth! So let's work on making your dojikko moe-factor something you use to appeal to a guy you like, not just the extent of who you truly {i}are{/i}.\""
     nvl clear
     show Mikuru Think Sad3
     "Mikuru blinked several times at Haruhi. \"...I don't think I understand,\" she finally admitted, giving an apologetic smile. \"You can't really want me to get in your way, can you?\""
     show Haruhi Sigh2
     "Sighing deeply, Haruhi shook her head. \"Try harder for Kyon,\" she said. Surely that would be clear enough? \"I'm just saying that if you can't really get anywhere, it won't hurt you to learn as much as you can in the meantime!\""
     nvl clear
-    #play sound knock
-    #play sound door
+    queue sound "SE/DoorKnock.mp3"
+    queue sound "SEDoorOpenFast.mp3"
     show Kyon Puzzle1 Flip at left
     show Haruhi Neutral1 at center
     with dissolve
@@ -390,22 +414,26 @@ label wasaTest:
     "\"Naturally,\" she agreed, shuffling the flashcards they had made the night before. \"That's why you're just the vice commander.\""
     nvl clear
     
-label Test:
     scene bg MikuruClass with fade
     nvl clear
-    "Lessons were very difficult for Mikuru to follow in the wake of Haruhi's bizarre announcement. It didn't help when she took into account further confusion about what a message specifically encoded for her meant for Kyon. He seemed to have dealt with it without trouble, and she knew he lacked her conditioning and the other tools that she had been given specific for her duty as a time traveler. Even so, that didn't slow him down in the slightest."
+    "Lessons were very difficult for Mikuru to follow in the wake of Haruhi's bizarre announcement. It didn't help when she took into account further confusion about what a message specifically encoded for her meant for Kyon."
+    "He seemed to have dealt with it without trouble, and she knew he lacked her conditioning and the other tools that she had been given specific for her duty as a time traveler. Even so, that didn't slow him down in the slightest."
     "But that didn't mean she could simply ignore it. She was supposed to be studying phenomena surrounding Haruhi, so why had the sudden shift to follow Kyon's orders even come about? Not the she minded ... but it did make her feel remarkably incompetent that he seemed both better informed and better equipped to handle things."
     nvl clear
-    "Then again, it wasn't as though she could expect him to be given his own TPDD or conditioning ... to say nothing of the training requirements. Could Yuki fill those requirements for Kyon? Come to think of it, with Haruhi's help, could he be given everything else he needed to just leave her completely behind?"
-    "She sighed, lowering her head and pondering the notebook paper before her. It was one thing to try and be helpful, but she was wondering if she really was even that. She had taken Kyon back in time for something she got light-headed even thinking about, and she hadn't done anything {i}but{/i} ferry him back in time."
+    "Then again, it wasn't as though she could expect him to be given his own TPDD or conditioning ... to say nothing of the training requirements."
+    "Could Yuki fill those requirements for Kyon? Come to think of it, with Haruhi's help, could he be given everything else he needed to just leave her completely behind?"
+    "She sighed, lowering her head and pondering the notebook paper before her. It was one thing to try and be helpful, but she was wondering if she really was even that."
+    "She had taken Kyon back in time for something she got light-headed even thinking about, and she hadn't done anything {i}but{/i} ferry him back in time."
     nvl clear
-    "It wouldn't have bothered her nearly so much, except for the fact that the mysterious note had given her orders to relay verbal instructions to him, and then ... she was out of the loop. As if that weren't problem enough, it was immediately followed by Haruhi insisting that she torture herself with a pursuit she was destined to fail, and the order to become more confident?"
-    "There was a certain temptation to throw aside her orders from her superiors and do what Haruhi said. She was already skirting dangerously close to the lines by having dinner and a shopping session with Kyon, as far from her ideal date as those events had been. She was reasonably sure he wasn't even supposed to know where she lived, to say nothing of her inviting him into her apartment, however briefly!"
+    "It wouldn't have bothered her nearly so much, except for the fact that the mysterious note had given her orders to relay verbal instructions to him, and then ... she was out of the loop."
+    "As if that weren't problem enough, it was immediately followed by Haruhi insisting that she torture herself with a pursuit she was destined to fail, and the order to become more confident?"
+    "There was a certain temptation to throw aside her orders from her superiors and do what Haruhi said. She was already skirting dangerously close to the lines by having dinner and a shopping session with Kyon, as far from her ideal date as those events had been."
+    "She was reasonably sure he wasn't even supposed to know where she lived, to say nothing of her inviting him into her apartment, however briefly!"
     nvl clear
-    show Tsuruya Hap5 at right with dissolve
+    show Tsuruya Hap5 at TenthRight with dissolve
     "If she didn't get her act together, and soon, she was likely to be recalled. She was roused from her contemplation by Tsuruya poking her elbow. \"Helloooo~!\" the taller girl called, peering at her intently, smirking. \"What's gotcha distracted, Mikuru-chan?\""
     nvl clear
-    show Mikuru Neutral3 at left with dissolve
+    show Mikuru Neutral3 at TenthLeft with dissolve
     "\"Ah, oh, just things,\" she answered, shaking her head and climbing to her feet. On to the clubroom, then, where she would have to figure out some way to satisfy Haruhi and simultaneously keep herself in control."
     nvl clear
     show Tsuruya Neutral1
@@ -413,7 +441,7 @@ label Test:
     hide Tsuruya
     "With that, the green-haired girl whirled and sped off."
     nvl clear
-    scene bg ClubroomFullDay with slowflashbulb:
+    scene bg ClubroomFullDay with fade:
         xpos 0 ypos 0
     $ renpy.layer_at_list([PanScene_SetToLeft])
     show Kyon Neutral3 Flip at center_RightScreen
@@ -447,6 +475,7 @@ label Test:
     "Mikuru quickly looked away, receiving the unspoken message without any trouble. To her surprise, however, Yuki turned to look towards Koizumi, then adjusted the laptop so that the esper couldn't see the screen — but Mikuru could. Maybe Yuki thought that Mikuru was trustworthy enough not to peek, and the esper wasn't?"
     nvl clear
     "That offered a tiny bit of encouragement. She respectfully avoided looking at the screen, though the sudden shift in color to the white background of the text editor let her know that Yuki was back to her original project. She unwrapped her lunch and ate it, watching the other club members."
+    nvl clear
     show Tsuruya Hap4 Flip
     show Koizumi Crossed Smile1
     "Tsuruya quickly engaged Kanae in a conversation over an anime they were both watching, and Koizumi observed the pair with his usual smile, looking slightly more amused than usual."
@@ -472,6 +501,7 @@ label Test:
     "\"Maybe,\" Tsuruya agreed with a shrug. \"Okies! It was nice having lunch with you, but I gots to do some more investigation work—\" She cut off with a giggle at Kyon's sharp look, quickly adding, \"Nothing dangerous right now, Kyon-kun!\""
     nvl clear
     $ renpy.layer_at_list([PanScene_CenterToRight])
+    show Kanae Neutral1
     show Kyon Smile6
     "\"Well, call me if that changes, Tsuruya-kun,\" Kyon warned, "
     show Kyon Sup1 Flip
@@ -490,11 +520,16 @@ label Test:
     nvl clear
     $ renpy.layer_at_list([PanScene_RightToLeft])
     show Mikuru Think Quest4
-    "After putting away her own empty bento, Mikuru pondered what to do with her remaining free time. She brightened when she recalled the pattern paper. That would be a nice distraction from things. She could make something for Kyon — that should satisfy Haruhi's demands without making her own life more difficult than she needed to."
+    "After putting away her own empty bento, Mikuru pondered what to do with her remaining free time. She brightened when she recalled the pattern paper. That would be a nice distraction from things."
+    "She could make something for Kyon — that should satisfy Haruhi's demands without making her own life more difficult than she needed to."
     nvl clear
-    "She spent a long minute thinking of what to make before she finally settled on a heavy coat. Kyon's last coat had gotten fairly worn after the last winter, and even if the season were warming up.... Well, it was something. One of the bolts of cloth she had picked up with Kyon was treated to be water resistant — the one she had grabbed because she didn't want to seem completely unaware of the outside world. She couldn't imagine what else she would make with it for Kyon."
+    "She spent a long minute thinking of what to make before she finally settled on a heavy coat. Kyon's last coat had gotten fairly worn after the last winter, and even if the season were warming up.... Well, it was something."
     nvl clear
-    "He really didn't seem the type to wear an apron, and a tablecloth didn't seem very personal, so a coat was the answer. The clubroom's table was large enough for her to unroll a huge sheet of the stuff, but she would have to ask someone else to move, and she thought she'd be better off designing on the small- scale, first. She pulled a notepad from the bookshelf behind her and began sketching rough dimensions and designs. There was rather a lot of that cloth, so she could make a full-length coat."
+    "One of the bolts of cloth she had picked up with Kyon was treated to be water resistant — the one she had grabbed because she didn't want to seem completely unaware of the outside world. She couldn't imagine what else she would make with it for Kyon."
+    "He really didn't seem the type to wear an apron, and a tablecloth didn't seem very personal, so a coat was the answer."
+    nvl clear
+    "The clubroom's table was large enough for her to unroll a huge sheet of the stuff, but she would have to ask someone else to move, and she thought she'd be better off designing on the small- scale, first."
+    "She pulled a notepad from the bookshelf behind her and began sketching rough dimensions and designs. There was rather a lot of that cloth, so she could make a full-length coat."
     nvl clear
     "An image from a recent television drama she had seen came to mind — it was a bit militaristic, but she thought Kyon would look quite dashing in a greatcoat, so decided to style her design after that."
     show Mikuru Think Quest3
@@ -503,35 +538,40 @@ label Test:
     show Yuki Talk2
     "She looked up in alarm, but the contact-purposed interface merely commented, \"Interesting,\" before turning back to whatever she was writing."
     $ renpy.layer_at_list([PanScene_LeftToRight])
+    show Yuki Side1
     show Haruhi Quest1 Flip
     "\"What's that, then?\" Haruhi asked, her interest piqued. She glanced at the sketch before her eyes widened."
     show Haruhi Sup1 Flip
     extend "\"You're making that for Kyon?\" she added, flashcards forgotten for the moment."
+    nvl clear
     $ renpy.layer_at_list([PanScene_RightToLeft])
     show Mikuru Think Quest1
     "\"I...I was thinking of it,\" Mikuru agreed, nodding. \"Is something wrong?\""
-    nvl clear
     $ renpy.layer_at_list([PanScene_LeftToRight])
     show Kyon Neutral4
+    show Haruhi Crossed Grin1
     "Haruhi raised an eyebrow thoughtfully, while Kyon tried to crane his neck to see the sketch from his seat. The brigade chief snatched the paper out of Mikuru's hands, hiding it from Kyon's sight and shoving the flashcards at Koizumi."
-    show Haruhi Neutral3 at left with dissolve
+    nvl clear
+    show Haruhi Ang1 at left with dissolve
     $ renpy.layer_at_list([PanScene_RightToLeft])    
     "\"Keep studying,\" she ordered, walking around the table to sit at Mikuru's side, studying the image intently."
     nvl clear
     show Kyon Unhap4
-    #show Kyon at left_RightScreen puts him at the very center of the scene for some reason. xalign 1.3 yalign 1.0  puts him at the same spot. center_RightScreen is offscreen, and TenthLeft_RightScreen creates an error.
-    show Kanae at right_RightScreen
+    #Not moving Kyon to fit better, as Kyon at left_RightScreen puts him at the very center of the scene for some reason, and xalign 1.3 yalign 1.0  puts him at the same spot. center_RightScreen is offscreen, and TenthLeft_RightScreen creates an error.
     show Koizumi Crossed Smile3
     $ renpy.layer_at_list([PanScene_LeftToCenter])
     "Kyon looked irritated, but Koizumi obligingly continued the study session."
     $ renpy.layer_at_list([PanScene_CenterToLeft])
-    show Haruhi Hap2
-    "One eye watching Kyon closely, Haruhi explained, \"I've seen.... Um, maybe....\" She grinned and nodded decisively, setting the sketch between the two of them. \"It needs pockets on the inside,\" she said in a conspiratorial whisper."
+    show Haruhi Eyeroll1
+    "One eye watching Kyon closely, Haruhi explained, \"I've seen.... Um, maybe....\" {nw}"
+    show Haruhi Hap1
+    extend "She grinned and nodded decisively, setting the sketch between the two of them. \"It needs pockets on the inside,\" she said in a conspiratorial whisper."
     nvl clear
     "\"In the sleeves, too, and I think it should have ties so that the sleeves can be rolled back and buttoned into place. And make it ... I think about seven centimeters longer. Yeah, that's right. It's going to be tan colored, right?\""
     show Mikuru Think Quest3
-    "She nodded, feeling another tiny surge of irritation that — once again — everyone but her seemed to know what was going on. She tried to banish the feeling. Knowing nothing shouldn't bother her, knowing everything was too stressful ... but knowing just enough to feel really clueless ... that wasn't any fun at all."
+    "She nodded, feeling another tiny surge of irritation that — once again — everyone but her seemed to know what was going on. She tried to banish the feeling."
     nvl clear
+    "Knowing nothing shouldn't bother her, knowing everything was too stressful ... but knowing just enough to feel really clueless ... that wasn't any fun at all."
     show Haruhi Hap3
     "\"Okay,\" Haruhi whispered, her grin widening. \"Don't let Kyon know about it until it's done. How long do you think it'll take?\""
     nvl clear
@@ -542,17 +582,22 @@ label Test:
     "\"Not a problem,\" Haruhi decided. \"If Tsuruya's keeping him occupied anyway, then you should have plenty of time.\""
     nvl clear
     
-    
+    scene bg Cab with fade
+    #show Kyon Suit at center with dissolve
     "It was strange, Kyon mused, to feel uncomfortable in a suit. He wore his school uniform enough that he had assumed he would be completely at home wearing a suit and tie, but sitting in the back of Tsuruya's limousine headed towards her estate ... he felt awkward. Tsuruya herself wasn't there, sending the driver to fetch him from his house and meet at her estate."
     nvl clear
     "The last time he had been there, he'd been a bit too badly injured to really care about the surroundings, so he found himself nervously checking the back seat for bloodstains or other proof of the battle. Evidently the car was cleaned by the same people who had gotten the blood out of his school uniform, as there wasn't a trace left in sight."
     nvl clear
     "He tried to relax, but there wasn't much comforting to think about. Haruhi's study sessions had given him a headache, but he was also surprised at how confident he was in his test scores. They wouldn't find out until tomorrow for certain, and it was possible he would miss the mark and fall below the critically required ninety.... But he felt sure that he had done much better than usual."
     nvl clear
-    "After pulling through the gates to the Tsuruya estate, the vehicle stopped. Even though he was fairly certain that he was supposed to wait for the driver to open his door, he let himself out, scanning around for Tsuruya. He spotted her quickly, standing on the path between the driveway and the house wearing a very elaborate kimono, her hair done up in an intricate bun."
+    scene bg TsuruyaHouseNight with fade
+    #show Kyon Suit at left with dissolve
+    "After pulling through the gates to the Tsuruya estate, the vehicle stopped. Even though he was fairly certain that he was supposed to wait for the driver to open his door, he let himself out, scanning around for Tsuruya."
+    "He spotted her quickly, standing on the path between the driveway and the house wearing a very elaborate kimono, her hair done up in an intricate bun."
     nvl clear
+    #show Tsuruya Kimono Wave at center with dissolve
     "She waved, and he walked to meet her, bowing his head as he approached. \"I hope I'm not under-dressed,\" he commented, adjusting his tie and glancing at the dark blue suit he was wearing, which was quite plain in contrast to her outfit."
-    nvl clear
+    #show Tsuruya Kimono
     "\"Looks good on you,\" she assured him, smirking. \"Okies, come on a walk with me?\""
     nvl clear
     "It felt more like an insistence than a question, but he agreed, falling into step just behind her as she leisurely strolled towards the garden. \"I don't want to make a mistake and upset your father, or embarrass you,\" he commented, glancing at the surroundings, but too worried to really enjoy the view."
@@ -568,33 +613,50 @@ label Test:
     nvl clear
     "Tsuruya nodded quickly. \"Yeah, yeah.... In class todays she was all kinds of distracted and moody. Like she's pining for some guy! But I don't know what guy Mikuru-chan likes.\" She turned a questioning glance at Kyon. \"What do you think?\""
     nvl clear
-    "\"I don't know; I hadn't thought about it,\" he admitted, grimacing. He wasn't anyone to judge, but there was a real rush of jealousy as soon as the girl at his side brought it up. Damn it, anyone who thought about laying a hand on Mikuru was going to have to go through him! Then again.... \"I don't think I should ask her about that. Wouldn't it be, er ... her own personal business?\""
+    "\"I don't know; I hadn't thought about it,\" he admitted, grimacing. He wasn't anyone to judge, but there was a real rush of jealousy as soon as the girl at his side brought it up."
+    "Damn it, anyone who thought about laying a hand on Mikuru was going to have to go through him! Then again.... \"I don't think I should ask her about that. Wouldn't it be, er ... her own personal business?\""
     nvl clear
     "Tsuruya's glance was very shrewd. She poked him firmly in the shoulder. \"Kyon- kun never considered that he might be the guy she's pining for?\" she mused. \"I'm not sures if that's noble or dense!\""
     nvl clear
-    "\"H...hey!\" he protested, frowning. \"I wish that Asahina-san were interested in me like that! What healthy male wouldn't? But....\" He trailed off, frowning. Wasn't her older self always taking advantage of her visits to kiss him? But what did {i}that{/i} mean? \"Well, with Haruhi,\" he began lamely, before sighing and shaking his head."
+    "\"H...hey!\" he protested, frowning. \"I wish that Asahina-san were interested in me like that! What healthy male wouldn't? But....\" He trailed off, frowning."
+    "Wasn't her older self always taking advantage of her visits to kiss him? But what did {i}that{/i} mean? \"Well, with Haruhi,\" he began lamely, before sighing and shaking his head."
     nvl clear
     "\"You're a popular guy,\" Tsuruya acquiesced, smirking. \"Okies! I'll talk with her tomorrow mornings, and find out what's going on!\""
     "\"Anything you can do to cheer her up,\" he agreed. \"I don't like seeing her unhappy, either.\""
     nvl clear
     "She blinked and turned another questioning gaze on him. He studiously looked away, remembering his conversation with Tsuruya's maid as his face colored."
     nvl clear
+    #show Shinobu at right with dissolve
     "Just as the silence was becoming awkward, a maid — possibly the same one, he couldn't tell them apart — stepped out from behind a tree on the path ahead of them. \"Haruka-san, Kyon-dono,\" she said, bowing. \"Tsuruya-sama is ready to speak with the two of you now.\""
-    nvl clear
     "\"Okies,\" Tsuruya said, giggling a bit. \"This way, Kyon-kun!\""
     nvl clear
-    "He followed the girl into the sprawling mansion, as she led him down a maze of twisting hallways before finally entering a large meeting hall. Most of the Tsuruya estate was a single floor, baring any scary basements Kyon was happy not to know about, but he saw that this room had a raised ceiling, which suggested that one of the few parts of the house that seemed to be higher was merely to provide a wider open area like they one they entered."
+    scene bg TsuruyaMeetingNight with fade
+    "He followed the girl into the sprawling mansion, as she led him down a maze of twisting hallways before finally entering a large meeting hall."
+    "Most of the Tsuruya estate was a single floor, baring any scary basements Kyon was happy not to know about, but he saw that this room had a raised ceiling, which suggested that one of the few parts of the house that seemed to be higher was merely to provide a wider open area like they one they entered."
     nvl clear
-    "The room was ten meters wide at least, and probably twice that in length. Banners and well preserved Tsuruya family heirlooms adorned the walls, ranging from a picture of an ancestor seemingly from just before World War Two, to a cracked and re-lacquered woodcut that looked like it was straight out of the fifteenth century — and probably was. Ancient weapons hung here and there, presumably keepsakes of prominent familial figures. The far end of the room was a raised platform, reminding Kyon of a dais."
+    "The room was ten meters wide at least, and probably twice that in length. Banners and well preserved Tsuruya family heirlooms adorned the walls, ranging from a picture of an ancestor seemingly from just before World War Two, to a cracked and re-lacquered woodcut that looked like it was straight out of the fifteenth century — and probably was."
+    "Ancient weapons hung here and there, presumably keepsakes of prominent familial figures. The far end of the room was a raised platform, reminding Kyon of a dais."
     nvl clear
-    "The far wall of the room was covered with a floor-length and wall-wide sheet of cloth bearing the symbol he guessed was the Tsuruya family kumon, the ancient crest from their family's founding. The stylized classic shapes of five cranes in a wheel formation beneath the peaked roof of a great house. Below that, on a large cushion was a man that seemed small only compared to the massive regalia behind him. If the large figure of the Tsuruya family patriarch wasn't imposing enough, the identically dressed and immaculate men in blue suits lining the sides of the room in orderly rows were enough to make him even more nervous."
+    "The far wall of the room was covered with a floor-length and wall-wide sheet of cloth bearing the symbol he guessed was the Tsuruya family kumon, the ancient crest from their family's founding. The stylized classic shapes of five cranes in a wheel formation beneath the peaked roof of a great house."
     nvl clear
-    "He counted twenty other men in the room in two rows of ten, facing the entryway as he tried to keep from stumbling, following in Tsuruya's composed, poised wake. The Tsuruya family patriarch was as tall as Kyon while sitting cross-legged on a thin cushion atop the dais, sporting neatly groomed short green hair — identical in shade to the girl's, while his amused, knowing smirk betrayed an identical fang as well. Despite the fact that every other man was wearing a suit in the room, the patriarch managed to make all of the others look under-dressed, wearing only a green robe, less formal than the girl's, with the family crest patterned all across it."
+    "Below that, on a large cushion was a man that seemed small only compared to the massive regalia behind him. If the large figure of the Tsuruya family patriarch wasn't imposing enough, the identically dressed and immaculate men in blue suits lining the sides of the room in orderly rows were enough to make him even more nervous."
+    nvl clear
+    "He counted twenty other men in the room in two rows of ten, facing the entryway as he tried to keep from stumbling, following in Tsuruya's composed, poised wake."
+    #show TsuruyaSama:
+    #    xalign 0.3 yalign 1.0   
+    #with dissolve
+    "The Tsuruya family patriarch was as tall as Kyon while sitting cross-legged on a thin cushion atop the dais, sporting neatly groomed short green hair — identical in shade to the girl's, while his amused, knowing smirk betrayed an identical fang as well."
+    "Despite the fact that every other man was wearing a suit in the room, the patriarch managed to make all of the others look under-dressed, wearing only a green robe, less formal than the girl's, with the family crest patterned all across it."
     nvl clear
     "Moreover, he had one arm free of the robe, baring half his chest and revealing the complex and detailed tattoos adorning him. Kyon tried not to gawk; it must have taken real courage and quite some time to have the vivid image of a fierce crane fishing a dragon from the heavens tattooed. It looked so lifelike, he practically expected it to leap off the man with one flexed muscle."
     nvl clear
+    #show Shinobu at left with dissolve
     "Nervously searching for something familiar to comfort him in this madness, Kyon spotted a maid in the customary outfit kneeling just below the dais on the man's right side, holding a tray before her, eyes downcast. Was she the same one that had spoken to him and asked that he watch over Tsuruya? The same one — somehow — that had met them on the path through the gardens? There was still no way to be sure."
     nvl clear
+    #show KyonSuit at right
+    #show TsuruyaKimono:
+    #   xalign 0.7 yalign 1.0   
+    #with dissolve
     "Tsuruya strode to within a few paces of the patriarch, then knelt and bowed deeply, her forehead almost touching the floor. Stopping a step short of the girl, Kyon followed suit without hesitation. \"Rise,\" the man chuckled. \"Dearest daughter, have you called mes back here to report on your trial?\""
     nvl clear
     "Kyon fought to restrain a hilarious snicker, remaining bowed even when Tsuruya rose. They shared the speech impediment as well as the fang. \"Progress is good,\" she said, \"but I called you here to ask aid for a strong ally!\""
@@ -622,7 +684,9 @@ label Test:
     nvl clear
     "The man nodded as the maid rose, shuffling before him and holding out the tray. With brisk, efficient movements, the patriarch poured three small dishes of sake, mixing in salt and something glittery that Kyon couldn't quite make out. He took a dish, and the tray was moved to the girl. She took a dish as well, and then the tray was before Kyon."
     nvl clear
-    "In a soft voice that Kyon was sure no one else could hear, the maid instructed him, \"Drink exactly half, in three small sips.\" He nodded minutely, amazed his hand wasn't shaking as he took the last dish. \"For family,\" the man announced, taking a sip. Tsuruya sipped as well, so Kyon followed suit; he was reasonably sure it was sake, but it had the taste of strong salt, and glittering flakes of ... something ... were floating within. \"For justice,\" and a second sip. \"For honor,\" with a final sip."
+    "In a soft voice that Kyon was sure no one else could hear, the maid instructed him, \"Drink exactly half, in three small sips.\" He nodded minutely, amazed his hand wasn't shaking as he took the last dish."
+    nvl clear
+    "\"For family,\" the man announced, taking a sip. Tsuruya sipped as well, so Kyon followed suit; he was reasonably sure it was sake, but it had the taste of strong salt, and glittering flakes of ... something ... were floating within. \"For justice,\" and a second sip. \"For honor,\" with a final sip."
     nvl clear
     "The maid then exchanged the girl's cup with her father's, and whispered to Kyon, \"Hold still and wait.\""
     "This time, the girl spoke the words, she and her father drinking a sip at each invocation. When it was done, the maid took Kyon's cup and exchanged it with Tsuruya's. \"Now you,\" the maid whispered quietly."
@@ -635,18 +699,25 @@ label Test:
     nvl clear
     "Yeah, Haruhi was going to love hearing about this."
     nvl clear
-    
-    
+
+    scene bg KyonKitchenLeft with fade
+    #show Akane at left
+    #show KyonSuit at right
+    #with dissolve
     "\"So,\" his mother said, when he finally returned home, eyeing his choice of outfit when he walked through the door. \"Trying to cultivate a respectable image?\""
     "\"Yep,\" he answered, still musing over his somewhat unexpected initiation, fingering the pin with the Tsuruya family crest that he had been given."
     nvl clear
     "\"It wasn't a special occasion?\""
     "\"Ah, just met up with a classmate, chatted with her family a bit.\""
+    show Nonoko Laugh1 at TenthRight with moveinleft:
+        .1
     "His sister charged down the stairs and flung herself at him. \"Change out of that suit and play with me!\" she demanded. \"I finished my homework!\""
     nvl clear
     "He patted her on the head. \"Alright,\" he agreed."
     "\"Well, as long as you're through with being a delinquent,\" his mother decided."
     "Snorting, he ruffled his sister's hair until she let go of him. \"Yeah, delinquency wasn't working out, so I just skipped straight to joining the Yamaguchi-gumi.\""
     nvl clear
+    #hide KyonSuit
     "He walked up the stairs to change his clothes, while his mother stared, eyes narrowed. \"That's not funny!\" she yelled up after him."
+    show Nonoko
     "A chuckle escaped him as he heard his sister ask, \"What's a 'Yamaguchi-gumi'?\""

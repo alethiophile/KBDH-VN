@@ -41,6 +41,9 @@ init:
     image bg TsuruyaKitchen = "Backgrounds/TsuruyaKitchen.png"
     image bg TsuruyaHouseDay = "Backgrounds/TsuruyaHouseDay.png"
     image bg TsuruyaHouseNight = "Backgrounds/TsuruyaHouseNight.png"
+    image bg TsuruyaMeetingDay = "Backgrounds/TsuruyaMeetingHallDay.png"
+    image bg TsuruyaMeetingEvening = "Backgrounds/TsuruyaMeetingHallEvening.png"
+    image bg TsuruyaMeetingNight = "Backgrounds/TsuruyaMeetingHallNight.png"
     image bg TownStreetNight1 = "Backgrounds/TownStreetNight1.png"
     image bg TownStreetNight2 = "Backgrounds/TownStreetNight2.png"
     image bg TownStreetDay1 = "Backgrounds/TownStreetDay1.jpg"
@@ -304,6 +307,7 @@ init:
     image Htears ="Sprites/Haruhi/HTearsSide1.png"
     image Htears Casual = "Sprites/Haruhi/HTearsSideCasual1.png"
     image Hblush Crossed = "Sprites/Haruhi/HBlushCrossed copy.png"
+    image Hblush Crossed Flip= im.Flip("Sprites/Haruhi/HBlushCrossed copy.png", horizontal=True)
     
     #Haruhi image flips
     image Haruhi Ang1 Flip = im.Flip("Sprites/Haruhi/HaruhiSideAngry1.png", horizontal=True)
@@ -344,8 +348,7 @@ init:
     image Haruhi Crossed Sup1 Flip = im.Flip("Sprites/Haruhi/HaruhiCrossedSurprised1.png", horizontal=True)
     image Haruhi Crossed Quest1 Flip = im.Flip("Sprites/Haruhi/HaruhiCrossedQuestion1.png", horizontal=True)
     
-    image Hblush Crossed Flip= "Sprites/Haruhi/HBlushCrossed.png"
-    
+   
     #Kyon Sprites
     image Kyon Ser1 = "Sprites/Kyon/KyonSerious1.png"
     image Kyon Ser2 = "Sprites/Kyon/KyonSerious2.png"
