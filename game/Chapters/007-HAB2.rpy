@@ -398,7 +398,7 @@ label HAB2:
     nvl clear
     play sound "SE/dooropenslow.mp3"
     "\"Alright.\" The plate slammed back into place and then Kyon heard the sounds of several bolts being thrown before the steel door ponderously opened inward." 
-    
+label Test:        
     "The man behind the door was a bit shorter than him, but stocky, with the build of a practiced fighter and numerous small scars across his face. He was wearing a brightly colored cherry-red suit with a lime green tie and a loud blue shirt — a screaming advertisement of his Yakuza status. \"In,\" he grunted, gesturing Kyon forward with one meaty paw."
     nvl clear
     stop sfxloop
@@ -407,7 +407,8 @@ label HAB2:
         linear 4.0 xpos -800 ypos 0
     pause 4    
     scene bg WatanabeBaseRight
-    show Kyon Neutral3 Flip at left with dissolve
+    show Kyon Neutral3 Flip at left
+    with dissolve
     "Kyon nodded and stepped in before the short brute laboriously shoved the door shut behind him. The room was square and dimly lit, a single other doorway visible on the opposite side of the room. {nw}"
     show Kyon Neutral2 Flip
     extend "\"It's okay if I...?\" Kyon began, gesturing at the doorway."
@@ -440,11 +441,12 @@ label HAB2:
     show Tsuruya Casual Quest1 Flip 
     extend "\"Uh-oh,\" Tsuruya said, very softly, backing up slowly, almost bumping into Kyon before he put a hand out to catch her shoulder."
     nvl clear
+
     show Tsuruya Casual Neutral1 with dissolve
     "She spun in alarm, eyes widening,  {nw}"
     show Tsuruya Casual Hap5
     extend "then relaxed instantly with a wide grin when she recognized him. The sudden motion caught Watanabe's attention, and Manabe followed his glance, gasping and pointing.  {nw}"
-    
+
     stop music fadeout 1
     queue music "Music/KamadoumaEnd.mp3"
     extend "\"It's them!\" he yelled. \"Tsuruya and that delinquent! They're the ones who beat up Ryuguu-san — twice!\""
@@ -452,10 +454,38 @@ label HAB2:
     show Tsuruya Casual Sad1
     "Tsuruya winced, briefly pressing against Kyon and shoving something into his hand as she turned to face the four in the room. Watanabe rose to his feet, grinning around his cigar. \"How convenient,\" he said in a smooth voice, eyes narrowing sharply. \"Get them!\" he roared, pointing at the pair menacingly."
     nvl clear
-    show Tsuruya Casual Ang1
-    "Tsuruya sprang a step to Kyon's left, leaving him to turn and face the doorway he had walked through. Brute charged him with a guttural howl, and he sidestepped with a trip, knocking the big guy down and pivoting to face him again. No way the knockdown would put him out, but— The crackling discharge of a stun gun directly into the big man's spine drew his attention to Tsuruya, where she rose, stepping carefully back from the twitching figure, her weapon raised in a defensive position."
+    play sound "SE/lowswoosh.mp3"
+    show Tsuruya Casual Ang1:
+        xalign 0.5 yalign 1.0
+        linear 0.2 xalign -0.2
+    show Kyon Ser1 Flip:    
+        xalign 0.0 yalign 1.0
+        linear 0.2 xalign 0.6
+    "Tsuruya sprang a step to Kyon's left, leaving him to turn and face the doorway he had walked through." 
+    play sound "SE/impact.mp3"
+    show lowkick1 with cutright
+    hide lowkick1 with dissolve
+    play sound "SE/slide.wav"
+    extend "Brute charged him with a guttural howl, and he sidestepped with a trip, knocking the big guy down and pivoting to face him again. No way the knockdown would put him out, but—" 
+    show Tsuruya Casual Grin4
+    play sound "SE/elec1.mp3"
+    show yellow
+    pause 0.1
+    hide yellow
+    pause 0.1
+    show cyan
+    pause 0.1
+    hide cyan
+    pause 0.1
+    show white
+    pause 0.1
+    hide white
+    
+    "The crackling discharge of a stun gun directly into the big man's spine drew his attention to Tsuruya, where she rose, stepping carefully back from the twitching figure, her weapon raised in a defensive position."
     nvl clear
-    show Kyon Ser1 Flip
+    play sound "SE/lowswoosh.mp3"
+    hide Tsuruya with moveoutleft
+    show Kyon Ser1
     "After glancing at his own hand, Kyon recognized a collapsible baton — how had Tsuruya gotten such things? Dismissing that, he gave it a good shake, relieved when it sprang open to its full length just as Hat reached him, and Scar windmilled his arms and leapt frantically backwards out of Tsuruya's range."
     nvl clear
     "Hat screamed something unintelligible and started with a maneuver that part of Kyon's subliminal training recognized as a double-feint; he side-stepped away from Brute's prone form, cracking his baton sharply across Hat's knuckles when they were extended from the punch."

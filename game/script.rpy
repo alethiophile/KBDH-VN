@@ -3,6 +3,7 @@
 init:
     image almostblack one = "#0008"
     image almostblack two = "#000e"
+    
     image bg classroom = "Backgrounds/classroom.jpg"
     image bg hallway = "Backgrounds/hallway.png"
     image bg stairwell = "Backgrounds/stairwell.jpg"
@@ -114,8 +115,12 @@ init:
     image bg Udon = "Backgrounds/Udon.png"
     image TownHillLeftMorning =  "Backgrounds/TownHillLeftMorning.png"
     
+    image lowkick1 = im.Alpha("Backgrounds/Effects/lowkick1.png", 0.75)
+    
     image white = "#ffffff"
     image black = "#000000"
+    image yellow = "#FFFF00"
+    image cyan = "#00FFFF"
     image transpwhite = "#ffffffcc"
     image yukibackground = "#ccccff"
     image Barrier = "Backgrounds/barrier2.jpg"
