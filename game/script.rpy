@@ -103,7 +103,9 @@ init:
     image bg LockersEveningRight = "Backgrounds/LockersEveningRight.png"
     image bg LockersEveningFull = "Backgrounds/LockersEveningFull.png"
     image bg TrainStation = "Backgrounds/TrainStation.png"
-    image bg WatanabeBase = "Backgrounds/WatanabeBase.png"
+    image bg WatanabeBaseLeft = "Backgrounds/WatanabeBaseLeft.jpg"
+    image bg WatanabeBaseRight = "Backgrounds/WatanabeBaseRight.jpg"
+    image bg WatanabeBaseFull = "Backgrounds/WatanabeBaseFull.jpg"
     image bg Supermarket = "Backgrounds/Supermarket.png"
     image bg FabricShop = "Backgrounds/FabricShop.png"
     image bg MikuruRoom = "Backgrounds/MikuruRoom.png"
@@ -851,6 +853,47 @@ init:
     image Tsuruya Ser1 = "Sprites/Tsuruya/TsuruyaSerious1.png"
     image Tsuruya Sad1 = "Sprites/Tsuruya/TsuruyaSad1.png"
     
+    
+    image Tsuruya Casual Ang1 = "Sprites/Tsuruya/TsuruyaCasualAngry1.png"
+    image Tsuruya Casual Ang2 = "Sprites/Tsuruya/TsuruyaCasualAngry2.png"
+    image Tsuruya Casual Ang3 = "Sprites/Tsuruya/TsuruyaCasualAngry3.png"
+    image Tsuruya Casual Ang4 = "Sprites/Tsuruya/TsuruyaCasualAngry4.png"
+    image Tsuruya Casual Grin1 = "Sprites/Tsuruya/TsuruyaCasualGrin1.png"
+    image Tsuruya Casual Grin2 = "Sprites/Tsuruya/TsuruyaCasualGrin2.png"
+    image Tsuruya Casual Grin3 = "Sprites/Tsuruya/TsuruyaCasualGrin3.png"
+    image Tsuruya Casual Grin4 = "Sprites/Tsuruya/TsuruyaCasualGrin4.png"
+    image Tsuruya Casual Grin5 = "Sprites/Tsuruya/TsuruyaCasualGrin5.png"
+    image Tsuruya Casual Grin6 = "Sprites/Tsuruya/TsuruyaCasualGrin6.png"
+    image Tsuruya Casual Hap1 = "Sprites/Tsuruya/TsuruyaCasualHappy1.png"
+    image Tsuruya Casual Hap2 = "Sprites/Tsuruya/TsuruyaCasualHappy2.png"
+    image Tsuruya Casual Hap3 = "Sprites/Tsuruya/TsuruyaCasualHappy3.png"
+    image Tsuruya Casual Hap4 = "Sprites/Tsuruya/TsuruyaCasualHappy4.png"
+    image Tsuruya Casual Hap5 = "Sprites/Tsuruya/TsuruyaCasualHappy5.png"
+    image Tsuruya Casual Hap6 = "Sprites/Tsuruya/TsuruyaCasualHappy6.png"
+    image Tsuruya Casual Hap7 = "Sprites/Tsuruya/TsuruyaCasualHappy7.png"
+    image Tsuruya Casual Laugh1 = "Sprites/Tsuruya/TsuruyaCasualLaugh1.png"
+    image Tsuruya Casual Laugh2 = "Sprites/Tsuruya/TsuruyaCasualLaugh2.png"
+    image Tsuruya Casual Quest1 = "Sprites/Tsuruya/TsuruyaCasualQuestion1.png"
+    image Tsuruya Casual Quest2 = "Sprites/Tsuruya/TsuruyaCasualQuestion2.png"
+    image Tsuruya Casual Sigh1 = "Sprites/Tsuruya/TsuruyaCasualSigh1.png"
+    image Tsuruya Casual Sigh2 = "Sprites/Tsuruya/TsuruyaCasualSigh2.png"
+    image Tsuruya Casual Sigh3 = "Sprites/Tsuruya/TsuruyaCasualSigh3.png"
+    image Tsuruya Casual Smile1 = "Sprites/Tsuruya/TsuruyaCasualSmile1.png"
+    image Tsuruya Casual Smile2 = "Sprites/Tsuruya/TsuruyaCasualSmile2.png"
+    image Tsuruya Casual Smile3 = "Sprites/Tsuruya/TsuruyaCasualSmile3.png"
+    image Tsuruya Casual Smile4 = "Sprites/Tsuruya/TsuruyaCasualSmile4.png"
+    image Tsuruya Casual Smile5 = "Sprites/Tsuruya/TsuruyaCasualSmile5.png"
+    image Tsuruya Casual Smile6 = "Sprites/Tsuruya/TsuruyaCasualSmile6.png"
+    image Tsuruya Casual Sup1 = "Sprites/Tsuruya/TsuruyaCasualSurprised1.png"
+    image Tsuruya Casual Worry1 = "Sprites/Tsuruya/TsuruyaCasualWorry1.png"
+    image Tsuruya Casual Worry2 = "Sprites/Tsuruya/TsuruyaCasualWorry2.png"
+    image Tsuruya Casual Worry3 = "Sprites/Tsuruya/TsuruyaCasualWorry3.png"
+    image Tsuruya Casual Neutral1 = "Sprites/Tsuruya/TsuruyaCasualNeutral1.png"
+    image Tsuruya Casual Neutral2 = "Sprites/Tsuruya/TsuruyaCasualNeutral2.png"
+    image Tsuruya Casual Susp1 = "Sprites/Tsuruya/TsuruyaCasualSuspicious1.png"
+    image Tsuruya Casual Ser1 = "Sprites/Tsuruya/TsuruyaCasualSerious1.png"
+    image Tsuruya Casual Sad1 = "Sprites/Tsuruya/TsuruyaCasualSad1.png"
+    
     image Tsuruya Wave Grin1 = "Sprites/Tsuruya/TsuruyaWaveGrin1.png"
     image Tsuruya Wave Grin2 = "Sprites/Tsuruya/TsuruyaWaveGrin2.png"
     image Tsuruya Wave Hap1 = "Sprites/Tsuruya/TsuruyaWaveHappy1.png"
@@ -890,6 +933,34 @@ init:
     image Tsuruya Ang2 Flip = im.Flip("Sprites/Tsuruya/TsuruyaAngry2.png", horizontal=True)
     image Tsuruya Ang3 Flip = im.Flip("Sprites/Tsuruya/TsuruyaAngry3.png", horizontal=True)
     image Tsuruya Ang4 Flip = im.Flip("Sprites/Tsuruya/TsuruyaAngry4.png", horizontal=True)
+    
+    
+    image Tsuruya Casual Grin1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualGrin1.png", horizontal=True)
+    image Tsuruya Casual Grin2 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualGrin2.png", horizontal=True)
+    image Tsuruya Casual Grin3 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualGrin3.png", horizontal=True)
+    image Tsuruya Casual Grin4 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualGrin4.png", horizontal=True)
+    image Tsuruya Casual Grin5 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualGrin5.png", horizontal=True)
+    image Tsuruya Casual Smile1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualSmile1.png", horizontal=True)
+    image Tsuruya Casual Smile2 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualSmile2.png", horizontal=True)
+    image Tsuruya Casual Smile3 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualSmile3.png", horizontal=True)
+    image Tsuruya Casual Smile4 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualSmile4.png", horizontal=True)
+    image Tsuruya Casual Smile5 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualSmile5.png", horizontal=True)
+    image Tsuruya Casual Smile6 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualSmile6.png", horizontal=True)
+    image Tsuruya Casual Quest1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualQuestion1.png", horizontal=True)
+    image Tsuruya Casual Worry1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualWorry1.png", horizontal=True)
+    image Tsuruya Casual Worry2 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualWorry2.png", horizontal=True)
+    image Tsuruya Casual Neutral1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualNeutral1.png", horizontal=True)
+    image Tsuruya Casual Hap1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualHappy1.png", horizontal=True)
+    image Tsuruya Casual Hap2 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualHappy2.png", horizontal=True)
+    image Tsuruya Casual Hap3 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualHappy3.png", horizontal=True)
+    image Tsuruya Casual Hap4 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualHappy4.png", horizontal=True)
+    image Tsuruya Casual Hap5 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualHappy5.png", horizontal=True)
+    image Tsuruya Casual Hap6 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualHappy6.png", horizontal=True)
+    image Tsuruya Casual Hap7 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualHappy7.png", horizontal=True)
+    image Tsuruya Casual Ang1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualAngry1.png", horizontal=True)
+    image Tsuruya Casual Ang2 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualAngry2.png", horizontal=True)
+    image Tsuruya Casual Ang3 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualAngry3.png", horizontal=True)
+    image Tsuruya Casual Ang4 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualAngry4.png", horizontal=True)
         
     #Kanae Sprites
     image Kanae Hap1 = "Sprites/Kanae/KanaeHappy1.png"
@@ -1411,7 +1482,7 @@ init python:
     config.empty_window = nvl_show_core
     config.window_hide_transition = dissolve
     config.window_show_transition = dissolve
-    renpy.music.set_volume(0.2, .5, channel="music")
+    renpy.music.set_volume(0.4, .5, channel="music")
     flashbulb = Fade(0.2, 0.0, 0.8, color='#fff')
     slowflashbulb = Fade(1.0, 0.5, 2.0, color='#fff')
     slowdissolve = Dissolve(1.0)

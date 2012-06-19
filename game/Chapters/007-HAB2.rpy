@@ -104,11 +104,11 @@ label HAB2:
     "He watched the two girls head up the stairs to his room and braved the kitchen, enduring his mother's steely-eyed judgment while filling a pitcher and collecting a trio of plastic cups. "
     scene bg KyonRoomRightClosed with fade
     stop music fadeout 1
-    queue music "Music/Kokuhaku.mp3"
+    queue music "Music/Tanzaku no Mukou ni.mp3"
     show Haruhi Smile1 Flip at center
     show Kanae Smile1 at right
     with dissolve
-    extend "When he got into his room, Haruhi had already set out all of her own notes, and was digging through his schoolbag for his textbooks. Kanae was sitting on the edge of his bed, rifling through her own bag, though the younger girl broke off her work to give him a shaky smile."
+    "When he got into his room, Haruhi had already set out all of her own notes, and was digging through his schoolbag for his textbooks. Kanae was sitting on the edge of his bed, rifling through her own bag, though the younger girl broke off her work to give him a shaky smile."
     nvl clear
     show Haruhi Neutral3 Flip
     "\"S...so,\" Haruhi said, shifting her shoulders, \"I guess if I can't ... help you out enough, you can probably get ... Yuki-chan to fix things for you, right?\""
@@ -142,8 +142,8 @@ label HAB2:
     nvl clear
     scene almostblack two with fade
     scene bg KyonRoomRightClosed with fade
-    stop music fadeout 1
-    queue music "Music/Nichijou.mp3"
+    #stop music fadeout 1
+    #queue music "Music/Nichijou.mp3"
     show Kyon Sigh2 Flip at left
     show Kanae Neutral1 at right
     show Haruhi Smile1 Flip at center
@@ -305,6 +305,7 @@ label HAB2:
     "Done for the moment, he went to a bench before the station and waited."
     nvl clear
     scene bg Cab with fade
+    play sfxloop "SE/CarBackgroundLong.mp3"
     "Unsurprisingly, Arakawa's familiar black taxi pulled up within five minutes, Mori opening the door and gesturing him in. He climbed in next to the woman, irritated to realize that thanks to Haruhi and Kanae coming home with him, he hadn't even had time to change out of his uniform. This was becoming a bizarre habit."
     nvl clear
     show Mori Neutral3 at right with dissolve
@@ -395,9 +396,17 @@ label HAB2:
     "Seconds later, the eye-level steel plate snapped back, revealing a furrowed brow and a pair of angry eyes. \"What?\" a surly voice asked him, before taking in his uniform. \"Oh, local color, eh? You here to buy, or sell?\""
     "\"Buy,\" he answered, shifting his shoulders."
     nvl clear
-    "\"Alright.\" The plate slammed back into place and then Kyon heard the sounds of several bolts being thrown before the steel door ponderously opened inward. {w}The man behind the door was a bit shorter than him, but stocky, with the build of a practiced fighter and numerous small scars across his face. He was wearing a brightly colored cherry-red suit with a lime green tie and a loud blue shirt — a screaming advertisement of his Yakuza status. \"In,\" he grunted, gesturing Kyon forward with one meaty paw."
+    play sound "SE/dooropenslow.mp3"
+    "\"Alright.\" The plate slammed back into place and then Kyon heard the sounds of several bolts being thrown before the steel door ponderously opened inward." 
+    
+    "The man behind the door was a bit shorter than him, but stocky, with the build of a practiced fighter and numerous small scars across his face. He was wearing a brightly colored cherry-red suit with a lime green tie and a loud blue shirt — a screaming advertisement of his Yakuza status. \"In,\" he grunted, gesturing Kyon forward with one meaty paw."
     nvl clear
-    scene bg WatanabeBase with fade
+    stop sfxloop
+    scene bg WatanabeBaseFull with fade:
+        xpos 0 ypos 0
+        linear 4.0 xpos -800 ypos 0
+    pause 4    
+    scene bg WatanabeBaseRight
     show Kyon Neutral3 Flip at left with dissolve
     "Kyon nodded and stepped in before the short brute laboriously shoved the door shut behind him. The room was square and dimly lit, a single other doorway visible on the opposite side of the room. {nw}"
     show Kyon Neutral2 Flip
@@ -407,7 +416,7 @@ label HAB2:
     nvl clear
     "Nodding absently, Kyon stepped through the doorway, entering a long, rectangular room. The outer perimeter was completely lined with boxes of varying sizes, all the way up to the ceiling. At the far end of the rectangular space was a makeshift desk made out of sturdier boxes and a length of board. Computer equipment had been spread haphazardly around, most notably a row of four monitors, which lit the back wall with a flickering series of glowing lights, mostly a fleshy pink tone and soft blue."
     nvl clear
-    show Tsuruya Grin1 Flip at center with dissolve
+    show Tsuruya Casual Grin1 Flip at center with dissolve
     "Five other people were in the room with him. He spotted Tsuruya first, standing not far from himself on one edge of a shabby red carpet, wearing a skirt and blouse — not her uniform or the kimono he had previously seen her in.  {nw}"
     #show Manabe at right with dissolve
     extend "Beyond her was a boy that it took Kyon a minute to place — Manabe, from Kanae's class, slightly unfamiliar in casual clothes, but his blond hair stuck out." 
@@ -428,22 +437,22 @@ label HAB2:
     nvl clear
     show Kyon Worry3 Flip
     "Kyon chewed his lip, putting the Yakuza speech together. Ryuguu thought he was an associate, but wasn't? That made sense.... The Yakuza wanted revenge for what happened to them on Sunday? Well, that was undoubtedly going to be problematic, and inevitably tied to the 'investigation' that he and Tsuruya were now wrapped up in.  {nw}"
-    show Tsuruya Quest1 Flip 
+    show Tsuruya Casual Quest1 Flip 
     extend "\"Uh-oh,\" Tsuruya said, very softly, backing up slowly, almost bumping into Kyon before he put a hand out to catch her shoulder."
     nvl clear
-    show Tsuruya Neutral1 with dissolve
+    show Tsuruya Casual Neutral1 with dissolve
     "She spun in alarm, eyes widening,  {nw}"
-    show Tsuruya Hap5
+    show Tsuruya Casual Hap5
     extend "then relaxed instantly with a wide grin when she recognized him. The sudden motion caught Watanabe's attention, and Manabe followed his glance, gasping and pointing.  {nw}"
     
     stop music fadeout 1
     queue music "Music/KamadoumaEnd.mp3"
     extend "\"It's them!\" he yelled. \"Tsuruya and that delinquent! They're the ones who beat up Ryuguu-san — twice!\""
     nvl clear
-    show Tsuruya Sad1
+    show Tsuruya Casual Sad1
     "Tsuruya winced, briefly pressing against Kyon and shoving something into his hand as she turned to face the four in the room. Watanabe rose to his feet, grinning around his cigar. \"How convenient,\" he said in a smooth voice, eyes narrowing sharply. \"Get them!\" he roared, pointing at the pair menacingly."
     nvl clear
-    show Tsuruya Ang1
+    show Tsuruya Casual Ang1
     "Tsuruya sprang a step to Kyon's left, leaving him to turn and face the doorway he had walked through. Brute charged him with a guttural howl, and he sidestepped with a trip, knocking the big guy down and pivoting to face him again. No way the knockdown would put him out, but— The crackling discharge of a stun gun directly into the big man's spine drew his attention to Tsuruya, where she rose, stepping carefully back from the twitching figure, her weapon raised in a defensive position."
     nvl clear
     show Kyon Ser1 Flip
@@ -471,7 +480,7 @@ label HAB2:
     nvl clear
     "Kyon rolled — yet again — away from the corner where Tsuruya and Scar would be, then kicked Hat's prone form in the chest, following it up with a knee-drop to the Yakuza's midsection. He shakily climbed to his feet to see that Tsuruya was bleeding from a deep welt on one wrist, but Scar was prone, frothing at the mouth with her stun gun pressed into his gut and chattering with discharge."
     nvl clear
-    show Tsuruya Ang1 Flip at left
+    show Tsuruya Casual Ang1 Flip at left
     show Kyon Ang3 at center
     "He spun on Manabe before the first year student could think to involve himself and stalked forward, stopping outside of striking range of the smaller boy. \"You want to talk, or are you next?\" he spat. Kyon despaired inwardly; he must have bitten his cheek when he was kicked or fell at some point."
     nvl clear
@@ -480,13 +489,13 @@ label HAB2:
     show Kyon Ser3
     "Sharpening his one good eye on the boy, he felt more than saw Tsuruya stepping to his right side, her stun gun still chattering as she joined him in staring. \"You okay?\" he asked, turning slightly towards her, but still keeping Manabe in his field of vision."
     nvl clear
-    show Tsuruya Ang4 Flip
+    show Tsuruya Casual Ang4 Flip
     "The boy whimpered, as Tsuruya nodded. \"Good enough to get some answers from this guy. Okay, Satoshi-chan, make it quick-like.\" Tsuruya chuckled, adding, \"We're on a schedule.\""
     "Manabe worked his jaw quickly and finally blurted out, \"I'm a nobody! I'm just a grunt! P...please don't kill me!\" The boy actually dropped to his knees, eyes filling with tears. \"I'm too {i}beautiful{/i} to die!\""
     nvl clear
     show Kyon Sigh1
     "\"Oh, gods,\" Kyon groaned, fishing his handkerchief from his pocket and pressing it against his split eyebrow. The wound was too fresh to be tender, only a combination of half-numb and pins-and-needles tingling. \"Tsuruya-kun, he's going to be useless — put him out of my misery, won't you?\""
-    show Tsuruya Grin4 Flip
+    show Tsuruya Casual Grin4 Flip
     "\"You got it!\" she said cheerfully, raising the stun gun and flashing a Mori- quality smile at Manabe."
     nvl clear
     "\"I'll tell you anything!\" Manabe wailed, throwing himself to the floor and groveling. \"Anything you want to know!\""
@@ -498,7 +507,7 @@ label HAB2:
     nvl clear
     show Kyon Ang4 
     "\"Tsuruya-kun, can I borrow the stun gun?\" Kyon asked. \"You can work this chump over with the baton for answers.\""
-    show Tsuruya Grin5 Flip 
+    show Tsuruya Casual Grin5 Flip 
     "\"Good thinking!\" she cheered, handing the weapon over after collecting the baton and tapping it against one palm, eyes fixed on Manabe."
     "\"Y...Yamane-san handles the second years,\" Manabe continued, on the verge of tears. \"Daimonji-san is in charge of third years! W...we just wanted to make some money!\""
     nvl clear
@@ -512,17 +521,17 @@ label HAB2:
     queue sound "SE/GlassBreak3.mp3"
     "For good measure, Kyon then tore the drives from the system and flung them to the floor hard enough to crack the casings, each crash causing Manabe to devolve further into a whimpering mound. Tsuruya tapped him lightly on the back of the head with the baton and collected the names he shakily quoted, writing them on a notepad she had kept in one pocket."
     nvl clear
-    show Tsuruya Hap5 Flip
+    show Tsuruya Casual Hap5 Flip
     "\"Alright,\" Tsuruya decided, once Kyon had declared the computer system to be dead, and Manabe had finished his litany of names, \"have a nice nap, Satoshi- chan!\""
     "\"W...what?\" the boy managed, before Tsuruya whipped the baton sideways  {nw}"
     play sound "SE/Impact.mp3"
     extend "across the top of his head, and his eyes crossed as he collapsed to the floor."
     nvl clear
-    show Tsuruya Hap4 Flip
+    show Tsuruya Casual Hap4 Flip
     "\"Hey, hey, Kyon-kun,\" Tsuruya said, quickly running to him and embracing him again. \"You okay? I owe you mega big time! I got in ways over my head! Dunno what I'd do if you hadn't shown up!\""
     show Kyon Puzzle1 
     "\"Let's just get out of here,\" he said, his voice shaking. \"I'm not feeling so hot at the moment.\""
-    show Tsuruya Quest1 
+    show Tsuruya Casual Quest1 
     "\"Okies! You want to go home? Hospital?\" She partially broke from the embrace, pulling his right arm across the back of her neck and leaving her left arm around his back to help him walk."
     nvl clear
     show Kyon Sup2 
@@ -530,14 +539,14 @@ label HAB2:
     show Kyon Sigh1 
     "\"No hospital,\" he managed."
     nvl clear
-    show Tsuruya Hap3 
+    show Tsuruya Casual Hap3 
     "\"Gotcha covered!\" she said cheerfully, setting him down on a stool near the doorway as she fought the numerous bolts and locks, then struggled to open the heavy portal.  {nw}"
     scene bg Alley1Evening with fade
     show Kyon Sigh1 at center with dissolve
-    show Tsuruya Hap3 at left with dissolve    
+    show Tsuruya Casual Hap3 at left with dissolve    
     extend "After resuming her position at his side, helping guide him down the dark alley,  {nw}"
     play sound "SE/CellRing.mp3"
-    show Tsuruya Ang3 Flip
+    show Tsuruya Casual Ang3 Flip
     extend "she pulled her phone from one pocket and held down a single button until someone answered. \"Car!\" she barked into the handheld. \"Now! I want a medical kit — actually, it may take stitches — bring Sakura-sensei in. I want him ready by the time we get home!\""
     nvl clear
     "She hung up the phone without waiting for response, and Kyon could only blink in surprise when a limousine pulled to a stop outside the alley, a driver quickly climbing out and opening the door for them. Kyon gratefully collapsed into the back seat, only grunting when Tsuruya climbed in next to him and pulled out a first aid-kit. Confident that everything else would be taken care of, he let himself recede into comforting darkness as she pulled his head into her lap and began dabbing something on his eyebrow."
