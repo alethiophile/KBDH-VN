@@ -483,14 +483,54 @@ label Test:
     
     "The crackling discharge of a stun gun directly into the big man's spine drew his attention to Tsuruya, where she rose, stepping carefully back from the twitching figure, her weapon raised in a defensive position."
     nvl clear
-    play sound "SE/lowswoosh.mp3"
+    play sound "SE/evasion.ogg"
     hide Tsuruya with moveoutleft
-    show Kyon Ser1
-    "After glancing at his own hand, Kyon recognized a collapsible baton — how had Tsuruya gotten such things? Dismissing that, he gave it a good shake, relieved when it sprang open to its full length just as Hat reached him, and Scar windmilled his arms and leapt frantically backwards out of Tsuruya's range."
+    show Kyon Ser1 Flip
+    "After glancing at his own hand, Kyon recognized a collapsible baton — how had Tsuruya gotten such things?" 
+    play sound "SE/lowswoosh.mp3"
+    "Dismissing that, he gave it a good shake, relieved when it sprang open to its full length just as Hat reached him, and Scar windmilled his arms and leapt frantically backwards out of Tsuruya's range."
     nvl clear
-    "Hat screamed something unintelligible and started with a maneuver that part of Kyon's subliminal training recognized as a double-feint; he side-stepped away from Brute's prone form, cracking his baton sharply across Hat's knuckles when they were extended from the punch."
+    "Hat screamed something unintelligible and started with a maneuver that part of Kyon's subliminal training recognized as a double-feint;" 
+    play sound "SE/evasion.ogg"
+    show Kyon Ser1 Flip:    
+        xalign 0.6 yalign 1.0
+        linear 0.2 xalign 0.4
+    extend "he side-stepped away from Brute's prone form, "
+    play sound "SE/blow4.ogg"
+    show transblack
+    show hit1:
+        xalign 0.8 yalign 0.6
+    with fastdissolve
+    hide transblack
+    hide hit1
+    with fasterdissolve
+    extend "cracking his baton sharply across Hat's knuckles when they were extended from the punch."
     nvl clear
-    "Hat yelped and shook his now-bleeding hand. Kyon sidestepped the next punch from Hat, right into an axe-kick from Watanabe. He felt his collar bone strain under the impact as he was brutally slammed to the floor, staring up at Watanabe's grinning face and jarring his head when he landed. \"Ya got {i}spunk{/i}, kid,\" the Yakuza said, \"but you chose the wrong people to fu—\""
+    "Hat yelped and shook his now-bleeding hand." 
+    show transblack
+    show punch1:
+         xalign 0.6 yalign 0.6
+    show Kyon Ser1 Flip:
+        xalign 0.4 yalign 1.0
+        linear 0.2 xalign 0.2
+    with rightleft    
+    hide transblack
+    hide punch1
+    with fasterdissolve
+    extend "Kyon sidestepped the next punch from Hat,"
+    play sound "SE/bite.ogg"
+    show transred
+    show Kyon Pain1 Flip:
+        xalign 0.2 yalign 1.0
+        linear 0.2 yalign 1.5
+    show Ksweat Flip:
+        xalign 0.2 yalign 1.5
+    show axekick1 with down: 
+         xalign 0.2 yalign 0.6
+    hide transred
+    hide axekick1
+    with fasterdissolve
+    extend "right into an axe-kick from Watanabe. He felt his collar bone strain under the impact as he was brutally slammed to the floor, staring up at Watanabe's grinning face and jarring his head when he landed. \"Ya got {i}spunk{/i}, kid,\" the Yakuza said, \"but you chose the wrong people to fu—\""
     nvl clear
     "Kyon rolled desperately to one side, losing the baton and narrowly evading a kick to his head. After hitting the stack of boxes, he hastily righted himself and glanced at Tsuruya. Scar was slowly backing her into a corner, using his belt as a whip to try and disarm the girl. Manabe stood in front of the desk and stared, gaping."
     nvl clear

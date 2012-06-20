@@ -116,10 +116,18 @@ init:
     image TownHillLeftMorning =  "Backgrounds/TownHillLeftMorning.png"
     
     image lowkick1 = im.Alpha("Backgrounds/Effects/lowkick1.png", 0.75)
+    image hit1 = "Backgrounds/Effects/hit1.png"
+    image punch1 = "Backgrounds/Effects/punch1.png"
+    image transblack = im.Alpha("Backgrounds/Effects/black.png", 0.75)
+    image transred = im.Alpha("Backgrounds/Effects/red.png", 0.75)
+    image axekick1 = "Backgrounds/Effects/axekick1.png"
     
     image white = "#ffffff"
+    
     image black = "#000000"
     image yellow = "#FFFF00"
+    
+    
     image cyan = "#00FFFF"
     image transpwhite = "#ffffffcc"
     image yukibackground = "#ccccff"
@@ -517,6 +525,8 @@ init:
     image Kyon Worry3 Flip = im.Flip("Sprites/Kyon/KyonWorry3.png", horizontal=True)
     image Kyon Pain1 Flip = im.Flip("Sprites/Kyon/KyonPained1.png", horizontal=True)
     image Kyon Pain2 Flip = im.Flip("Sprites/Kyon/KyonPained2.png", horizontal=True)
+    
+    image Ksweat Flip = im.Flip("Sprites/Kyon/KyonSweat1.png", horizontal=True)
     
     #Asakura Sprites
     image Stabby = "Sprites/Asakura/AsakuraStabTest.png"
@@ -1480,6 +1490,8 @@ init python:
     coatout = ImageDissolve("id_clouds.png", 1.0, 0, reverse=True)
     logosin = ImageDissolve("logosfade.png", 2.0, 0)
     cutright = ImageDissolve("id_leftright.png",0.2, 0)
+    rightleft = ImageDissolve("id_rightleft.png",0.2, 0)
+    down = ImageDissolve("id_down.png",0.2, 0)
     menu = nvl_menu
     style.nvl_window.background = "nvl_window.png"
     style.nvl_window.xpadding = 55
@@ -1492,6 +1504,7 @@ init python:
     slowflashbulb = Fade(1.0, 0.5, 2.0, color='#fff')
     slowdissolve = Dissolve(1.0)
     fastdissolve = Dissolve(0.15)
+    fasterdissolve = Dissolve(0.075)
    
     circleirisout = ImageDissolve("id_circleiris.png", 1.0, 8)
     circleirisin = ImageDissolve("id_circleiris.png", 1.0, 8, reverse=True)
