@@ -517,7 +517,7 @@ label Test:
     hide transblack
     hide punch1
     with fasterdissolve
-    extend "Kyon sidestepped the next punch from Hat,"
+    extend " Kyon sidestepped the next punch from Hat,"
     play sound "SE/bite.ogg"
     show transred
     show Kyon Pain1 Flip:
@@ -530,13 +530,80 @@ label Test:
     hide transred
     hide axekick1
     with fasterdissolve
-    extend "right into an axe-kick from Watanabe. He felt his collar bone strain under the impact as he was brutally slammed to the floor, staring up at Watanabe's grinning face and jarring his head when he landed. \"Ya got {i}spunk{/i}, kid,\" the Yakuza said, \"but you chose the wrong people to fu—\""
+    extend " right into an axe-kick from Watanabe. He felt his collar bone strain under the impact as he was brutally slammed to the floor, staring up at Watanabe's grinning face and jarring his head when he landed. \"Ya got {i}spunk{/i}, kid,\" the Yakuza said, \"but you chose the wrong people to fu—\""
     nvl clear
+    scene 
+    play sound "SE/lowswoosh.mp3"
+   
+    scene bg WatanabeBaseFull:
+        xpos -800
+    show Kyon Ang1 Flip:
+        xalign 1.2 yalign 1.5
+        linear 0.2 xalign 0.5 yalign 1.5
+    show Ksweat Flip:
+        xalign 1.2 yalign 1.5 
+        linear 0.2 xalign 1.0 yalign 1.5
+    #pause 0.2    
+    #$ renpy.layer_at_list([PanScene_RightToCenter])
+    scene bg WatanabeBaseFull:
+        xpos -800 ypos 0
+        linear 0.3 xpos 0 ypos 0
+    #scene bg WatanabeBaseLeft with wiperightfast   
+    show Kyon Ang1 :
+        xalign 1.5  yalign 1.5
+        linear 0.3 xalign 1.0 yalign 1.0
+    show Ksweat:
+        xalign 1.5  yalign 1.5
+        linear 0.2 xalign 1.0 yalign 1.0
+    nvl clear
+    show Tsuruya Laugh Casual Ang1 Flip:
+        xalign -0.4  yalign 1.0
+    show Tsweat Laugh Casual Flip:
+        xalign -0.4  yalign 1.0
+        
+    play sound2 "SE/knifeslide.mp3"    
     "Kyon rolled desperately to one side, losing the baton and narrowly evading a kick to his head. After hitting the stack of boxes, he hastily righted himself and glanced at Tsuruya. Scar was slowly backing her into a corner, using his belt as a whip to try and disarm the girl. Manabe stood in front of the desk and stared, gaping."
-    nvl clear
+    show Kyon Ser1 Flip at right
+     
     "Taking mental inventory, Kyon decided to switch to the offensive. Hat and Watanabe were coordinated, experienced fighters. He had the equivalent of a few years of non-specific martial arts training, and none of the physical conditioning to back it up. Hat should logically be weakened, so was the obvious target."
     nvl clear
-    "Turning slightly towards Hat, Kyon slipped backwards and jerked himself towards Watanabe with an elbow-slam to the Yakuza's solar- plexus, allowing the momentum from the attack to carry into his fist, which snapped upwards and smashed the man's nose, causing another one of those unfortunately familiar crunches."
+    play sound "SE/evasion.ogg"
+    show Kyon Ser1 Flip :
+        xalign 1.0  yalign 1.0
+        linear 0.2 xalign 0.8
+    "Turning slightly towards Hat, Kyon slipped backwards"
+    hide Ksweat
+    play sound "SE/lowswoosh.mp3"
+    scene bg WatanabeBaseFull:
+        xpos 0 ypos 0
+        linear 0.3 xpos -600 ypos 0
+    show Tsuruya Laugh Casual Ang1 Flip:
+        xalign -0.4  yalign 1.0  
+        linear 0.2 xalign -1.0
+    show Kyon Ang1 Flip:
+        xalign 0.8  yalign 1.0
+        linear 0.3 xalign 0.4 yalign 1.1
+    pause 0.1
+    play sound2  "SE/slide.wav"
+    show transblack
+    show punch2 with cutright:
+        xalign 0.9  yalign 0.8
+    #    linear 0.2 xalign 1.4
+    hide transblack
+    hide punch2
+    with fasterdissolve
+    extend "and jerked himself towards Watanabe with an elbow-slam to the Yakuza's solar- plexus, allowing the momentum from the attack to carry into his fist,{fast}"
+    play sound "SE/bite.ogg"
+    show transred
+    show Kyon Ang1 Flip:
+        xalign 0.4  yalign 1.1
+        linear 0.2 xalign 0.4 yalign 1.0
+    show punch3 with up:
+        xalign 0.9  yalign 0.6
+    hide transred
+    hide punch3
+    with fasterdissolve
+    extend " which snapped upwards and smashed the man's nose, causing another one of those unfortunately familiar crunches."
     nvl clear
     "Watanabe screeched and flailed, the hot ash of his cigar falling down the sleeve of Kyon's uniform as the man tripped back and crashed to the floor. Even though Kyon was facing Hat, he was overextended and couldn't bring a fist into guard position quickly enough."
     nvl clear

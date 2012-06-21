@@ -117,7 +117,9 @@ init:
     
     image lowkick1 = im.Alpha("Backgrounds/Effects/lowkick1.png", 0.75)
     image hit1 = "Backgrounds/Effects/hit1.png"
-    image punch1 = "Backgrounds/Effects/punch1.png"
+    image punch1 = "Backgrounds/Effects/Punch1.png"
+    image punch2 = "Backgrounds/Effects/Punch2.png"
+    image punch3 = "Backgrounds/Effects/Punch3.png"
     image transblack = im.Alpha("Backgrounds/Effects/black.png", 0.75)
     image transred = im.Alpha("Backgrounds/Effects/red.png", 0.75)
     image axekick1 = "Backgrounds/Effects/axekick1.png"
@@ -921,6 +923,20 @@ init:
     image Tsuruya Wave Smile1 = "Sprites/Tsuruya/TsuruyaWaveSmile1.png"
     image Tsuruya Wave Smile2 = "Sprites/Tsuruya/TsuruyaWaveSmile2.png"
     
+    image Tsuruya Laugh Ang1  = "Sprites/Tsuruya/TsuruyaLaughAngry1.png"
+    image Tsuruya Laugh Ang2  = "Sprites/Tsuruya/TsuruyaLaughAngry2.png"
+    image Tsuruya Laugh Unhap1  = "Sprites/Tsuruya/TsuruyaLaughUnhapp1.png"
+    
+    image Tsuruya Laugh Casual Ang1  = "Sprites/Tsuruya/TsuruyaLaughCasualAngry1.png"
+    image Tsuruya Laugh Casual Ang2  = "Sprites/Tsuruya/TsuruyaLaughCasualAngry2.png"
+    image Tsuruya Laugh Casual Unhap1  = "Sprites/Tsuruya/TsuruyaLaughCasualUnhappy1.png"
+    
+    image Tsweat = "Sprites/Tsuruya/Tsweat.png"
+    image Tsweat Casual = "Sprites/Tsuruya/TsweatCasual.png"
+    
+    image Tsweat Laugh = "Sprites/Tsuruya/TsweatLaugh.png"
+    image Tsweat Laugh Casual = "Sprites/Tsuruya/TsweatLaughCasual.png"
+    
     #Tsuruya image flips
     image Tsuruya Grin1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaGrin1.png", horizontal=True)
     image Tsuruya Grin2 Flip = im.Flip("Sprites/Tsuruya/TsuruyaGrin2.png", horizontal=True)
@@ -976,7 +992,21 @@ init:
     image Tsuruya Casual Ang2 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualAngry2.png", horizontal=True)
     image Tsuruya Casual Ang3 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualAngry3.png", horizontal=True)
     image Tsuruya Casual Ang4 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualAngry4.png", horizontal=True)
-        
+    
+    image Tsuruya Laugh Ang1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaLaughAngry1.png", horizontal=True)
+    image Tsuruya Laugh Ang2 Flip = im.Flip("Sprites/Tsuruya/TsuruyaLaughAngry2.png", horizontal=True)
+    image Tsuruya Laugh Unhap1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaLaughUnhappy1.png", horizontal=True)
+    
+    image Tsuruya Laugh Casual Ang1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaLaughCasualAngry1.png", horizontal=True)
+    image Tsuruya Laugh Casual Ang2 Flip = im.Flip("Sprites/Tsuruya/TsuruyaLaughCasualAngry2.png", horizontal=True)
+    image Tsuruya Laugh Casual Unhap1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaLaughCasualUnhappy1.png", horizontal=True)
+    
+    image Tsweat Flip = im.Flip("Sprites/Tsuruya/Tsweat.png", horizontal=True)
+    image Tsweat Casual Flip = im.Flip("Sprites/Tsuruya/TsweatCasual.png", horizontal=True)
+    
+    image Tsweat Laugh Flip = im.Flip("Sprites/Tsuruya/TsweatLaugh.png", horizontal=True)
+    image Tsweat Laugh Casual Flip = im.Flip("Sprites/Tsuruya/TsweatLaughCasual.png", horizontal=True)
+    
     #Kanae Sprites
     image Kanae Hap1 = "Sprites/Kanae/KanaeHappy1.png"
     image Kanae Hap2 = "Sprites/Kanae/KanaeHappy2.png"
@@ -1492,6 +1522,7 @@ init python:
     cutright = ImageDissolve("id_leftright.png",0.2, 0)
     rightleft = ImageDissolve("id_rightleft.png",0.2, 0)
     down = ImageDissolve("id_down.png",0.2, 0)
+    up = ImageDissolve("id_up.png",0.2, 0)
     menu = nvl_menu
     style.nvl_window.background = "nvl_window.png"
     style.nvl_window.xpadding = 55
