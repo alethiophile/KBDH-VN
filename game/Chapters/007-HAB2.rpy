@@ -389,6 +389,7 @@ label HAB2:
     "Mori smiled, a tiny hint of that menacing smile she sometimes offered returning with a sharp gleam. \"I've got my eyes on you,\" she assured him."
     nvl clear
     scene bg Alley1Evening with fade
+    stop sfxloop
     stop music fadeout 1
     queue music "Music/Suspicion.ogg"
     "He nodded again, then jogged down the street, nervously ducking into the alley that Mori had indicated before freezing, nearly stumbling over a trash bag as his eyes slowly adjusted to the dark. Moving more carefully forward, he studied the walls of the buildings until he found the steel door and pounded one fist on it, following the pattern that Mori had given him.\""
@@ -401,7 +402,6 @@ label HAB2:
 label Test:        
     "The man behind the door was a bit shorter than him, but stocky, with the build of a practiced fighter and numerous small scars across his face. He was wearing a brightly colored cherry-red suit with a lime green tie and a loud blue shirt — a screaming advertisement of his Yakuza status. \"In,\" he grunted, gesturing Kyon forward with one meaty paw."
     nvl clear
-    stop sfxloop
     scene bg WatanabeBaseFull with fade:
         xpos 0 ypos 0
         linear 4.0 xpos -800 ypos 0
@@ -441,12 +441,10 @@ label Test:
     show Tsuruya Casual Quest1 Flip 
     extend "\"Uh-oh,\" Tsuruya said, very softly, backing up slowly, almost bumping into Kyon before he put a hand out to catch her shoulder."
     nvl clear
-
     show Tsuruya Casual Neutral1 with dissolve
     "She spun in alarm, eyes widening,  {nw}"
     show Tsuruya Casual Hap5
     extend "then relaxed instantly with a wide grin when she recognized him. The sudden motion caught Watanabe's attention, and Manabe followed his glance, gasping and pointing.  {nw}"
-
     stop music fadeout 1
     queue music "Music/KamadoumaEnd.mp3"
     extend "\"It's them!\" he yelled. \"Tsuruya and that delinquent! They're the ones who beat up Ryuguu-san — twice!\""
@@ -461,7 +459,7 @@ label Test:
     show Kyon Ser1 Flip:    
         xalign 0.0 yalign 1.0
         linear 0.2 xalign 0.6
-    "Tsuruya sprang a step to Kyon's left, leaving him to turn and face the doorway he had walked through." 
+    "Tsuruya sprang a step to Kyon's left, leaving him to turn and face the doorway he had walked through. " 
     play sound "SE/impact.mp3"
     show lowkick1 with cutright
     hide lowkick1 with dissolve
@@ -480,7 +478,6 @@ label Test:
     show white
     pause 0.1
     hide white
-    
     "The crackling discharge of a stun gun directly into the big man's spine drew his attention to Tsuruya, where she rose, stepping carefully back from the twitching figure, her weapon raised in a defensive position."
     nvl clear
     play sound "SE/evasion.ogg"
@@ -490,7 +487,7 @@ label Test:
     play sound "SE/lowswoosh.mp3"
     "Dismissing that, he gave it a good shake, relieved when it sprang open to its full length just as Hat reached him, and Scar windmilled his arms and leapt frantically backwards out of Tsuruya's range."
     nvl clear
-    "Hat screamed something unintelligible and started with a maneuver that part of Kyon's subliminal training recognized as a double-feint;" 
+    "Hat screamed something unintelligible and started with a maneuver that part of Kyon's subliminal training recognized as a double-feint; " 
     play sound "SE/evasion.ogg"
     show Kyon Ser1 Flip:    
         xalign 0.6 yalign 1.0
@@ -508,6 +505,7 @@ label Test:
     nvl clear
     "Hat yelped and shook his now-bleeding hand." 
     show transblack
+    play sound "SE/evasion.ogg"
     show punch1:
          xalign 0.6 yalign 0.6
     show Kyon Ser1 Flip:
@@ -534,7 +532,6 @@ label Test:
     nvl clear
     scene 
     play sound "SE/lowswoosh.mp3"
-   
     scene bg WatanabeBaseFull:
         xpos -800
     show Kyon Ang1 Flip:
@@ -560,18 +557,17 @@ label Test:
         xalign -0.4  yalign 1.0
     show Tsweat Laugh Casual Flip:
         xalign -0.4  yalign 1.0
-        
     play sound2 "SE/knifeslide.mp3"    
     "Kyon rolled desperately to one side, losing the baton and narrowly evading a kick to his head. After hitting the stack of boxes, he hastily righted himself and glanced at Tsuruya. Scar was slowly backing her into a corner, using his belt as a whip to try and disarm the girl. Manabe stood in front of the desk and stared, gaping."
     show Kyon Ser1 Flip at right
-     
+    nvl clear
     "Taking mental inventory, Kyon decided to switch to the offensive. Hat and Watanabe were coordinated, experienced fighters. He had the equivalent of a few years of non-specific martial arts training, and none of the physical conditioning to back it up. Hat should logically be weakened, so was the obvious target."
     nvl clear
     play sound "SE/evasion.ogg"
     show Kyon Ser1 Flip :
         xalign 1.0  yalign 1.0
         linear 0.2 xalign 0.8
-    "Turning slightly towards Hat, Kyon slipped backwards"
+    "Turning slightly towards Hat, Kyon slipped backwards "
     hide Ksweat
     play sound "SE/lowswoosh.mp3"
     scene bg WatanabeBaseFull:
@@ -592,7 +588,7 @@ label Test:
     hide transblack
     hide punch2
     with fasterdissolve
-    extend "and jerked himself towards Watanabe with an elbow-slam to the Yakuza's solar- plexus, allowing the momentum from the attack to carry into his fist,{fast}"
+    extend "and jerked himself towards Watanabe with an elbow-slam to the Yakuza's solar-plexus, allowing the momentum from the attack to carry into his fist,{fast}"
     play sound "SE/bite.ogg"
     show transred
     show Kyon Ang1 Flip:
