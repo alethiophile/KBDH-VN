@@ -439,7 +439,7 @@ label AO2:
     show Haruhi Crossed Ang1
     "\"Bah! I never wanted that! Espers with the duty to save the world, aliens with important research missions, time travelers who are only here to work — the goal was to have {i}fun{/i}.\""
     nvl clear
-    scene bg stairwell with wipeup:
+    scene bg stairwell2 with wipeup:
          size (800,600)
     show Kyon Ser3 at right
     show Haruhi Unhap2 at left
@@ -1022,7 +1022,7 @@ label AO2:
     show Haruhi Pout2
     "\"Um.... I guess, all things considered, I want to say thanks for always sticking with me, even when I caused trouble. I just wish you had told me about it beforehand! I mean, if you\nhad—\""
     nvl clear
-    scene bg stairwell with wiperight:
+    scene bg stairwell2 with wiperight:
         size (800,600)
     show Kyon Neutral3 at right
     show Haruhi Pout1 at TenthLeft

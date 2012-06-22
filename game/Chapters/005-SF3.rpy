@@ -561,7 +561,7 @@ label Vol02_start:
     play sound "SE/impact.mp3"
     "She playfully punched him in the shoulder, though he was surprised that it didn't sting in the slightest, even though he felt it. \"What, do you think that just because you're getting your homework done, now, I've turned stupid on you? Or weak? You know, if you had the chutzpa for it, you could have formed the SOS Brigade and I would have followed....\""
     nvl clear
-    scene bg stairwell with fade:
+    scene bg stairwell2 with fade:
         size (800,600)
     show Kyon Smile3 at right
     "He glanced at her sidelong as they stepped into the stairwell. \"Really?\" he asked, raising one eyebrow. \"I find it hard to imagine....\""
