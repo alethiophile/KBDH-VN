@@ -108,6 +108,7 @@ init:
     image bg WatanabeBaseLeft = "Backgrounds/WatanabeBaseLeft.jpg"
     image bg WatanabeBaseRight = "Backgrounds/WatanabeBaseRight.jpg"
     image bg WatanabeBaseFull = "Backgrounds/WatanabeBaseFull.jpg"
+    image bg WatanabeBaseCenter = "Backgrounds/WatanabeBaseCenter.jpg"
     image bg Supermarket = "Backgrounds/Supermarket.png"
     image bg FabricShop = "Backgrounds/FabricShop.png"
     image bg MikuruRoom = "Backgrounds/MikuruRoom.png"
@@ -123,7 +124,9 @@ init:
     image punch3 = "Backgrounds/Effects/Punch3.png"
     image transblack = im.Alpha("Backgrounds/Effects/black.png", 0.75)
     image transred = im.Alpha("Backgrounds/Effects/red.png", 0.75)
+    image hazered = im.Alpha("Backgrounds/Effects/red.png", 0.25)
     image axekick1 = "Backgrounds/Effects/axekick1.png"
+    image kick1 = "Backgrounds/Effects/kick1.png"
     
     image white = "#ffffff"
     

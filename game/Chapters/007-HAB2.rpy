@@ -605,9 +605,40 @@ label Test:
     with fasterdissolve
     extend " which snapped upwards and smashed the man's nose, causing another one of those unfortunately familiar crunches."
     nvl clear
+    play sound "SE/slide.wav"
+    play sound2 "SE/sizzle3.mp3"
+    show Kyon Sup1 Flip
     "Watanabe screeched and flailed, the hot ash of his cigar falling down the sleeve of Kyon's uniform as the man tripped back and crashed to the floor. Even though Kyon was facing Hat, he was overextended and couldn't bring a fist into guard position quickly enough."
     nvl clear
-    "Hat's knuckles may have been bloodied on one hand, but he landed a kick just over Kyon's eye, sending the boy flying back to land atop the injured Yakuza boss. Grunting in pain, Kyon felt Watanabe's arms wrap around him, holding him prone as Hat gathered a loose mop handle from the floor and raised it in a giant over-hand swing, his eyes still filled with dizzied glowing sparks."
+    play sound "SE/bite.ogg"
+    show transred
+    show Kyon Pain1 Flip
+    show kick1 with rightleft:
+        xalign 1.0  yalign 1.3
+    "Hat's knuckles may have been bloodied on one hand, but he landed a kick just over Kyon's eye, {fast}"
+    play sound "SE/homerun.mp3"
+    
+    scene bg WatanabeBaseFull:
+        xpos -600 ypos 0
+        linear 0.15 xpos -200 ypos 0
+    show Kyon Pain1 Flip:
+        xalign 0.4  yalign 1.0
+        linear 0.15 xalign 0.0 yalign 1.0
+    show hazered
+    pause 0.8
+    play sound2 "SE/slide.wav"
+    show Kyon Pain2 Flip:
+        xalign 0.0  yalign 1.0
+        linear 0.3 xalign -0.1 yalign 1.9    
+    
+    extend "sending the boy flying back to land atop the injured Yakuza boss. {fast}"
+    scene bg WatanabeBaseFull:
+        xpos -200 ypos 0
+    show Kyon Pain1 Flip:
+        xalign -0.1  yalign 1.9
+    show hazered
+    with pixellate    
+    "Grunting in pain, Kyon felt Watanabe's arms wrap around him, holding him prone as Hat gathered a loose mop handle from the floor and raised it in a giant over-hand swing, his eyes still filled with dizzied glowing sparks."
     nvl clear
     "Relying on the Yakuza boss's grip, Kyon managed to force a roll in time to use Watanabe as a shield. The blow caused Watanabe to cry out in pain and release Kyon to roll to his feet again, though this time Kyon immediately lashed forward and kicked Watanabe in the ribs. As the boss curled up around his kicked side, Kyon elbow-dropped below another one of Hat's kicks, driving all of his attack power into Watanabe's kidney."
     nvl clear
