@@ -442,7 +442,7 @@ label Test:
     extend "\"Uh-oh,\" Tsuruya said, very softly, backing up slowly, almost bumping into Kyon before he put a hand out to catch her shoulder."
     nvl clear
     show Tsuruya Casual Neutral1 with dissolve
-    "She spun in alarm, eyes widening,  {nw}"
+    "She spun in alarm, eyes widening, {nw}"
     show Tsuruya Casual Hap5
     extend "then relaxed instantly with a wide grin when she recognized him. The sudden motion caught Watanabe's attention, and Manabe followed his glance, gasping and pointing.  {nw}"
     stop music fadeout 1
@@ -612,8 +612,7 @@ label Test:
     show kick1 with rightleft:
         xalign 1.0  yalign 1.3
     "Hat's knuckles may have been bloodied on one hand, but he landed a kick just over Kyon's eye, {fast}"
-    play sound "SE/homerun.mp3"
-    
+    play sound "SE/homerun.mp3"    
     scene bg WatanabeBaseFull:
         xpos -600 ypos 0
         linear 0.15 xpos -200 ypos 0
@@ -626,14 +625,13 @@ label Test:
     show Kyon Pain2 Flip:
         xalign 0.0  yalign 1.0
         linear 0.3 xalign -0.1 yalign 1.9    
-    
     extend "sending the boy flying back to land atop the injured Yakuza boss. {fast}"
     scene bg WatanabeBaseFull:
         xpos -200 ypos 0
     show Kyon Pain1 Flip:
         xalign -0.1  yalign 1.9
     show hazered
-    with pixellate    
+    with pixellate
     "Grunting in pain, Kyon felt Watanabe's arms wrap around him, holding him prone as Hat gathered a loose mop handle from the floor and raised it in a giant over-hand swing, his eyes still filled with dizzied glowing sparks."
     nvl clear
     "Relying on the Yakuza boss's grip, Kyon managed to force a roll in time to use Watanabe as a shield. The blow caused Watanabe to cry out in pain and release Kyon to roll to his feet again, though this time Kyon immediately lashed forward and kicked Watanabe in the ribs. As the boss curled up around his kicked side, Kyon elbow-dropped below another one of Hat's kicks, driving all of his attack power into Watanabe's kidney."
@@ -716,7 +714,8 @@ label Test:
     "She hung up the phone without waiting for response, and Kyon could only blink in surprise when a limousine pulled to a stop outside the alley, a driver quickly climbing out and opening the door for them. Kyon gratefully collapsed into the back seat, only grunting when Tsuruya climbed in next to him and pulled out a first aid-kit. Confident that everything else would be taken care of, he let himself recede into comforting darkness as she pulled his head into her lap and began dabbing something on his eyebrow."
     nvl clear
     
-    scene almostblack two with fade
+    call eyecatch_fancy("Thursday, April 21") from HAB2_sc002
+    
     scene bg TsuruyaFutonDay with fade
     stop music fadeout 1
     queue music "Music/Morning.ogg"
