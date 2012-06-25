@@ -127,6 +127,10 @@ init:
     image hazered = im.Alpha("Backgrounds/Effects/red.png", 0.25)
     image axekick1 = "Backgrounds/Effects/axekick1.png"
     image kick1 = "Backgrounds/Effects/kick1.png"
+    image swipe1 = im.Alpha("Backgrounds/Effects/swipe1.png", 0.75)
+    image kick1 Flip = im.Flip("Backgrounds/Effects/kick1.png", horizontal=True)
+    
+
     
     image white = "#ffffff"
     
