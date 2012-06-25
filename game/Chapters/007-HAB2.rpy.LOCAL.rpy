@@ -442,7 +442,7 @@ label Test:
     extend "\"Uh-oh,\" Tsuruya said, very softly, backing up slowly, almost bumping into Kyon before he put a hand out to catch her shoulder."
     nvl clear
     show Tsuruya Casual Neutral1 with dissolve
-    "She spun in alarm, eyes widening, {nw}"
+    "She spun in alarm, eyes widening,  {nw}"
     show Tsuruya Casual Hap5
     extend "then relaxed instantly with a wide grin when she recognized him. The sudden motion caught Watanabe's attention, and Manabe followed his glance, gasping and pointing.  {nw}"
     stop music fadeout 1
@@ -502,7 +502,6 @@ label Test:
     hide hit1
     with fasterdissolve
     extend "cracking his baton sharply across Hat's knuckles when they were extended from the punch. {fast}"
-    extend "cracking his baton sharply across Hat's knuckles when they were extended from the punch."
     nvl clear
     "Hat yelped and shook his now-bleeding hand." 
     show transblack
@@ -530,7 +529,6 @@ label Test:
     hide axekick1
     with fasterdissolve
     extend " right into an axe-kick from Watanabe. He felt his collar bone strain under the impact as he was brutally slammed to the floor, staring up at Watanabe's grinning face and jarring his head when he landed.{fast} \"Ya got {i}spunk{/i}, kid,\" the Yakuza said, \"but you chose the wrong people to fu—\""
-    extend " right into an axe-kick from Watanabe. He felt his collar bone strain under the impact as he was brutally slammed to the floor, staring up at Watanabe's grinning face and jarring his head when he landed. \"Ya got {i}spunk{/i}, kid,\" the Yakuza said, \"but you chose the wrong people to fu—\""
     nvl clear
     scene 
     play sound "SE/lowswoosh.mp3"
@@ -561,7 +559,6 @@ label Test:
         xalign -0.4  yalign 1.0
     play sound2 "SE/knifeslide.mp3"    
     "Kyon rolled desperately to one side, losing the baton and narrowly evading a kick to his head.{fast} After hitting the stack of boxes, he hastily righted himself and glanced at Tsuruya. Scar was slowly backing her into a corner, using his belt as a whip to try and disarm the girl. Manabe stood in front of the desk and stared, gaping."
-    "Kyon rolled desperately to one side, losing the baton and narrowly evading a kick to his head. After hitting the stack of boxes, he hastily righted himself and glanced at Tsuruya. Scar was slowly backing her into a corner, using his belt as a whip to try and disarm the girl. Manabe stood in front of the desk and stared, gaping."
     show Kyon Ser1 Flip at right
     nvl clear
     "Taking mental inventory, Kyon decided to switch to the offensive. Hat and Watanabe were coordinated, experienced fighters. He had the equivalent of a few years of non-specific martial arts training, and none of the physical conditioning to back it up. Hat should logically be weakened, so was the obvious target."
@@ -571,7 +568,6 @@ label Test:
         xalign 1.0  yalign 1.0
         linear 0.2 xalign 0.8
     "Turning slightly towards Hat, Kyon slipped backwards {fast}"
-    "Turning slightly towards Hat, Kyon slipped backwards "
     hide Ksweat
     play sound "SE/lowswoosh.mp3"
     scene bg WatanabeBaseFull:
@@ -618,7 +614,6 @@ label Test:
     "Hat's knuckles may have been bloodied on one hand, but he landed a kick just over Kyon's eye, {fast}"
     play sound "SE/homerun.mp3"
     
-    play sound "SE/homerun.mp3"    
     scene bg WatanabeBaseFull:
         xpos -600 ypos 0
         linear 0.15 xpos -200 ypos 0
@@ -640,7 +635,6 @@ label Test:
     show hazered
     with pixellate    
     play sound "SE/slash3.ogg"
-    with pixellate
     "Grunting in pain, Kyon felt Watanabe's arms wrap around him, holding him prone as Hat gathered a loose mop handle from the floor and raised it in a giant over-hand swing, his eyes still filled with dizzied glowing sparks."
     nvl clear
     play sound "SE/evasion.ogg"
@@ -692,7 +686,6 @@ label Test:
     hide transblack
     with fasterdissolve    
     "As the boss curled up around his kicked side, Kyon elbow-dropped below another one of Hat's kicks, driving all of his attack power into Watanabe's kidney. {fast}"
-    "Relying on the Yakuza boss's grip, Kyon managed to force a roll in time to use Watanabe as a shield. The blow caused Watanabe to cry out in pain and release Kyon to roll to his feet again, though this time Kyon immediately lashed forward and kicked Watanabe in the ribs. As the boss curled up around his kicked side, Kyon elbow-dropped below another one of Hat's kicks, driving all of his attack power into Watanabe's kidney."
     nvl clear
     "Watanabe retched loudly and twitched. Kyon rolled away, dazedly wondering how much of the fight he was going to spend on the floor. As he righted himself again, he glared with his good left eye. The kick from Hat had cut open his eyebrow, and blood was filling his right eye. Hat's eyes flicked to Watanabe, on the floor, then to Kyon. Kyon tensed to charge, just as Tsuruya cried out in pain."
     nvl clear
@@ -771,8 +764,6 @@ label Test:
     nvl clear
     "She hung up the phone without waiting for response, and Kyon could only blink in surprise when a limousine pulled to a stop outside the alley, a driver quickly climbing out and opening the door for them. Kyon gratefully collapsed into the back seat, only grunting when Tsuruya climbed in next to him and pulled out a first aid-kit. Confident that everything else would be taken care of, he let himself recede into comforting darkness as she pulled his head into her lap and began dabbing something on his eyebrow."
     nvl clear
-    
-    call eyecatch_fancy("Thursday, April 21") from HAB2_sc002
     
     scene almostblack two with fade
     scene bg TsuruyaFutonDay with fade
