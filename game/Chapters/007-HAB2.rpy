@@ -502,7 +502,6 @@ label Test:
     hide hit1
     with fasterdissolve
     extend "cracking his baton sharply across Hat's knuckles when they were extended from the punch. {fast}"
-    extend "cracking his baton sharply across Hat's knuckles when they were extended from the punch."
     nvl clear
     "Hat yelped and shook his now-bleeding hand." 
     show transblack
@@ -530,7 +529,6 @@ label Test:
     hide axekick1
     with fasterdissolve
     extend " right into an axe-kick from Watanabe. He felt his collar bone strain under the impact as he was brutally slammed to the floor, staring up at Watanabe's grinning face and jarring his head when he landed.{fast} \"Ya got {i}spunk{/i}, kid,\" the Yakuza said, \"but you chose the wrong people to fu—\""
-    extend " right into an axe-kick from Watanabe. He felt his collar bone strain under the impact as he was brutally slammed to the floor, staring up at Watanabe's grinning face and jarring his head when he landed. \"Ya got {i}spunk{/i}, kid,\" the Yakuza said, \"but you chose the wrong people to fu—\""
     nvl clear
     scene 
     play sound "SE/lowswoosh.mp3"
@@ -561,7 +559,6 @@ label Test:
         xalign -0.4  yalign 1.0
     play sound2 "SE/knifeslide.mp3"    
     "Kyon rolled desperately to one side, losing the baton and narrowly evading a kick to his head.{fast} After hitting the stack of boxes, he hastily righted himself and glanced at Tsuruya. Scar was slowly backing her into a corner, using his belt as a whip to try and disarm the girl. Manabe stood in front of the desk and stared, gaping."
-    "Kyon rolled desperately to one side, losing the baton and narrowly evading a kick to his head. After hitting the stack of boxes, he hastily righted himself and glanced at Tsuruya. Scar was slowly backing her into a corner, using his belt as a whip to try and disarm the girl. Manabe stood in front of the desk and stared, gaping."
     show Kyon Ser1 Flip at right
     nvl clear
     "Taking mental inventory, Kyon decided to switch to the offensive. Hat and Watanabe were coordinated, experienced fighters. He had the equivalent of a few years of non-specific martial arts training, and none of the physical conditioning to back it up. Hat should logically be weakened, so was the obvious target."
@@ -571,7 +568,6 @@ label Test:
         xalign 1.0  yalign 1.0
         linear 0.2 xalign 0.8
     "Turning slightly towards Hat, Kyon slipped backwards {fast}"
-    "Turning slightly towards Hat, Kyon slipped backwards "
     hide Ksweat
     play sound "SE/lowswoosh.mp3"
     scene bg WatanabeBaseFull:
@@ -617,8 +613,6 @@ label Test:
         xalign 1.0  yalign 1.3
     "Hat's knuckles may have been bloodied on one hand, but he landed a kick just over Kyon's eye, {fast}"
     play sound "SE/homerun.mp3"
-    
-    play sound "SE/homerun.mp3"    
     scene bg WatanabeBaseFull:
         xpos -600 ypos 0
         linear 0.15 xpos -200 ypos 0
