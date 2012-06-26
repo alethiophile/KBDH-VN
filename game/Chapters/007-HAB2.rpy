@@ -634,7 +634,6 @@ label Test:
     show hazered
     with pixellate    
     play sound "SE/slash3.ogg"
-    with pixellate
     "Grunting in pain, Kyon felt Watanabe's arms wrap around him, holding him prone as Hat gathered a loose mop handle from the floor and raised it in a giant over-hand swing, his eyes still filled with dizzied glowing sparks."
     nvl clear
     play sound "SE/evasion.ogg"
@@ -686,13 +685,76 @@ label Test:
     hide transblack
     with fasterdissolve    
     "As the boss curled up around his kicked side, Kyon elbow-dropped below another one of Hat's kicks, driving all of his attack power into Watanabe's kidney. {fast}"
-    "Relying on the Yakuza boss's grip, Kyon managed to force a roll in time to use Watanabe as a shield. The blow caused Watanabe to cry out in pain and release Kyon to roll to his feet again, though this time Kyon immediately lashed forward and kicked Watanabe in the ribs. As the boss curled up around his kicked side, Kyon elbow-dropped below another one of Hat's kicks, driving all of his attack power into Watanabe's kidney."
     nvl clear
-    "Watanabe retched loudly and twitched. Kyon rolled away, dazedly wondering how much of the fight he was going to spend on the floor. As he righted himself again, he glared with his good left eye. The kick from Hat had cut open his eyebrow, and blood was filling his right eye. Hat's eyes flicked to Watanabe, on the floor, then to Kyon. Kyon tensed to charge, just as Tsuruya cried out in pain."
+    play sound "SE/lowswoosh.mp3"
+    scene bg WatanabeBaseFull:
+        xpos -800 ypos 0
+        linear 0.15 xpos -200 ypos 0
+    show Kyon Ser1 Flip:
+        xalign 1.5  yalign 1.2
+        linear 0.2 xalign 0.8 yalign 1.0
+        
+    "Watanabe retched loudly and twitched. Kyon rolled away, dazedly wondering how much of the fight he was going to spend on the floor. {fast}"
+    show hazered with pixellate
+    hide hazered with fastdissolve
+    show Kyon Puzzle1 Flip
+    "As he righted himself again, he glared with his good left eye. The kick from Hat had cut open his eyebrow, and blood was filling his right eye. Hat's eyes flicked to Watanabe, on the floor, then to Kyon." 
+    scene bg WatanabeBaseFull:
+        xpos -200 ypos 0
+        linear 0.15 xpos 0 ypos 0
+    show Kyon Worry1 Flip:
+        xalign 0.8  yalign 1.0
+        linear 0.2 xalign 1.0 yalign 1.0
+    show Tsuruya Laugh Casual Pain2 Flip:
+         xalign -1.0  yalign 1.0
+         linear 0.2 xalign -0.6 yalign 1.0
+    extend " Kyon tensed to charge, just as Tsuruya cried out in pain."
     nvl clear
-    "Not giving himself time to think about it, the second Hat turned to glance at the girl, Kyon leapt forward with a flying kick to Hat's left shoulder, landing on the floor yet again and executing a prone-trip, bringing Hat crashing to the ground at his side. With one hand injured and the other shoulder too weakened from the flying kick, Hat collapsed with a scream."
+    play sound "SE/lowswoosh.mp3"
+    scene bg WatanabeBaseFull:
+        xpos 0 ypos 0
+        linear 0.15 xpos -800 ypos 0
+      
+    show Kyon Ser1 Flip:
+        xalign 0.6  yalign 1.0
+        linear 0.2 xalign 0.2 yalign 1.0
+    pause 0.2
+    play sound2 "SE/slash2.mp3"
+    show transblack
+    show kick1 Flip with cutright:
+        xalign 0.8  yalign 1.5
+    hide transblack
+    hide kick1 
+    with fasterdissolve
+    "Not giving himself time to think about it, the second Hat turned to glance at the girl, Kyon leapt forward with a flying kick to Hat's left shoulder, {fast}"
+    play sound "SE/impact.mp3"
+    show Kyon Ser1 Flip:
+        xalign 0.2  yalign 1.0
+        linear 0.2 xalign 0.2 yalign 1.4
+    show lowkick1 with cutright
+    hide lowkick1 with dissolve
+    play sound "SE/slide.wav"
+    extend "landing on the floor yet again and executing a prone-trip, bringing Hat crashing to the ground at his side. {fast} With one hand injured and the other shoulder too weakened from the flying kick, Hat collapsed with a scream."
     nvl clear
-    "Kyon rolled — yet again — away from the corner where Tsuruya and Scar would be, then kicked Hat's prone form in the chest, following it up with a knee-drop to the Yakuza's midsection. He shakily climbed to his feet to see that Tsuruya was bleeding from a deep welt on one wrist, but Scar was prone, frothing at the mouth with her stun gun pressed into his gut and chattering with discharge."
+    play sound "SE/evasion.ogg"
+    show Kyon Ser1 Flip:
+        xalign 0.2  yalign 1.4
+        linear 0.2 xalign 0.4 yalign 1.6
+    "Kyon rolled — yet again — away from the corner where Tsuruya and Scar would be, {fast}"
+    show transblack
+    play sound "SE/blow5.ogg"
+    show punch2 with cutright:
+        xalign 0.8  yalign 1.0
+    hide punch2 with fasterdissolve    
+    extend "then kicked Hat's prone form in the chest, {fast}"
+    play sound "SE/blow6.ogg"
+    show axekick1 with down:
+        xalign 0.8  yalign 1.0
+    hide axekick1 with fasterdissolve    
+    
+    extend "following it up with a knee-drop to the Yakuza's midsection. {fast} "
+    hide transblack with dissolve
+    "He shakily climbed to his feet to see that Tsuruya was bleeding from a deep welt on one wrist, but Scar was prone, frothing at the mouth with her stun gun pressed into his gut and chattering with discharge."
     nvl clear
     show Tsuruya Casual Ang1 Flip at left
     show Kyon Ang3 at center
