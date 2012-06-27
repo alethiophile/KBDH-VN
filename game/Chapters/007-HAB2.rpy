@@ -625,7 +625,6 @@ label Test:
     show Kyon Pain2 Flip:
         xalign 0.0  yalign 1.0
         linear 0.3 xalign -0.1 yalign 1.9    
-    
     extend "sending the boy flying back to land atop the injured Yakuza boss. {fast}"
     scene bg WatanabeBaseFull:
         xpos -200 ypos 0
@@ -692,8 +691,7 @@ label Test:
         linear 0.15 xpos -200 ypos 0
     show Kyon Ser1 Flip:
         xalign 1.5  yalign 1.2
-        linear 0.2 xalign 0.8 yalign 1.0
-        
+        linear 0.2 xalign 0.8 yalign 1.0        
     "Watanabe retched loudly and twitched. Kyon rolled away, dazedly wondering how much of the fight he was going to spend on the floor. {fast}"
     show hazered with pixellate
     hide hazered with fastdissolve
@@ -713,8 +711,7 @@ label Test:
     play sound "SE/lowswoosh.mp3"
     scene bg WatanabeBaseFull:
         xpos 0 ypos 0
-        linear 0.15 xpos -800 ypos 0
-      
+        linear 0.15 xpos -800 ypos 0      
     show Kyon Ser1 Flip:
         xalign 0.6  yalign 1.0
         linear 0.2 xalign 0.2 yalign 1.0
@@ -751,37 +748,54 @@ label Test:
     show axekick1 with down:
         xalign 0.8  yalign 1.0
     hide axekick1 with fasterdissolve    
-    
     extend "following it up with a knee-drop to the Yakuza's midsection. {fast} "
     hide transblack with dissolve
+    show Kyon Ser1 Flip:
+        xalign 0.4 yalign 1.6
+        linear 0.6 xalign 0.4 yalign 1.0
+    pause 0.6
+    show Kyon Ser1
     "He shakily climbed to his feet to see that Tsuruya was bleeding from a deep welt on one wrist, but Scar was prone, frothing at the mouth with her stun gun pressed into his gut and chattering with discharge."
     nvl clear
-    show Tsuruya Casual Ang1 Flip at left
-    show Kyon Ang3 at center
-    "He spun on Manabe before the first year student could think to involve himself and stalked forward, stopping outside of striking range of the smaller boy. \"You want to talk, or are you next?\" he spat. Kyon despaired inwardly; he must have bitten his cheek when he was kicked or fell at some point."
+    show Kyon Unhap4 Flip
+    "He spun on Manabe before the first year student could think to involve himself {nw}"
+    show Kyon Ang3 Flip:
+        xalign 0.4 yalign 1.0
+        linear 0.1 xalign 0.5
+    extend "and stalked forward, stopping outside of striking range of the smaller boy. \"You want to talk, or are you next?\" he spat. Kyon despaired inwardly; he must have bitten his cheek when he was kicked or fell at some point."
     nvl clear
+    show Kyon Unhap4 Flip
     "His mouth was literally full of blood, and his spittle flecked Manabe's face and clothes. His own blood was dripping across his blazer, and the cigar had probably singed it as well. The smell was undoubtedly going to linger...."
     nvl clear
+    show Tsuruya Laugh Casual Ang1 Flip with moveinleft:
+        xalign -0.44  yalign 1.0
+    "Sharpening his one good eye on the boy, he felt more than saw Tsuruya stepping to his right side, her stun gun still chattering as she joined him in staring. {nw}"
     show Kyon Ser3
-    "Sharpening his one good eye on the boy, he felt more than saw Tsuruya stepping to his right side, her stun gun still chattering as she joined him in staring. \"You okay?\" he asked, turning slightly towards her, but still keeping Manabe in his field of vision."
+    extend "\"You okay?\" he asked, turning slightly towards her, but still keeping Manabe in his field of vision."
     nvl clear
-    show Tsuruya Casual Ang4 Flip
+    show Kyon Ser1
+    show Tsuruya Laugh Casual Ang2 Flip
     "The boy whimpered, as Tsuruya nodded. \"Good enough to get some answers from this guy. Okay, Satoshi-chan, make it quick-like.\" Tsuruya chuckled, adding, \"We're on a schedule.\""
+    show Kyon Ser1 Flip
+    show Tsuruya Laugh Casual Ang1 Flip
     "Manabe worked his jaw quickly and finally blurted out, \"I'm a nobody! I'm just a grunt! P...please don't kill me!\" The boy actually dropped to his knees, eyes filling with tears. \"I'm too {i}beautiful{/i} to die!\""
     nvl clear
     show Kyon Sigh1
     "\"Oh, gods,\" Kyon groaned, fishing his handkerchief from his pocket and pressing it against his split eyebrow. The wound was too fresh to be tender, only a combination of half-numb and pins-and-needles tingling. \"Tsuruya-kun, he's going to be useless — put him out of my misery, won't you?\""
-    show Tsuruya Casual Grin4 Flip
-    "\"You got it!\" she said cheerfully, raising the stun gun and flashing a Mori- quality smile at Manabe."
+    show Kyon Sigh3
+    show Tsuruya Casual Grin4 Flip:
+        xalign -0.1  yalign 1.0
+    "\"You got it!\" she said cheerfully, raising the stun gun and flashing a Mori-quality smile at Manabe."
     nvl clear
     "\"I'll tell you anything!\" Manabe wailed, throwing himself to the floor and groveling. \"Anything you want to know!\""
-    show Kyon Ser2
+    show Kyon Ser2 Flip
     "\"The truth,\" Kyon growled, walking around the desks and checking the Yakuza computer."
     nvl clear
+    show Kyon Ser1 Flip
     "An amateurishly assembled rig, he assessed, lower quality than anything he'd seen in the computer research society. After collapsing into the single rickety chair, he spent a few moments checking it out to make certain, and was pleased to determine that there was no modem or internet connection. A shoe box on the desk not far from the cigar box was stuffed with mini-discs, SD cards, and countless post-it notes."
     "\"I'm just following orders! I do first years, and, um, my seniors take care of the rest!\""
     nvl clear
-    show Kyon Ang4 
+    show Kyon Ang4
     "\"Tsuruya-kun, can I borrow the stun gun?\" Kyon asked. \"You can work this chump over with the baton for answers.\""
     show Tsuruya Casual Grin5 Flip 
     "\"Good thinking!\" she cheered, handing the weapon over after collecting the baton and tapping it against one palm, eyes fixed on Manabe."

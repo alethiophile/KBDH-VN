@@ -499,6 +499,9 @@ init:
     
     #Kyon image flips
     image Kyon Ang1 Flip = im.Flip("Sprites/Kyon/KyonAngry1.png", horizontal=True)
+    image Kyon Ang2 Flip = im.Flip("Sprites/Kyon/KyonAngry2.png", horizontal=True)
+    image Kyon Ang3 Flip = im.Flip("Sprites/Kyon/KyonAngry3.png", horizontal=True)
+    image Kyon Ang4 Flip = im.Flip("Sprites/Kyon/KyonAngry4.png", horizontal=True)
     image Kyon Neutral1 Flip = im.Flip("Sprites/Kyon/KyonNeutral1.png", horizontal=True)
     image Kyon Neutral2 Flip = im.Flip("Sprites/Kyon/KyonNeutral2.png", horizontal=True)
     image Kyon Neutral3 Flip = im.Flip("Sprites/Kyon/KyonNeutral3.png", horizontal=True)
