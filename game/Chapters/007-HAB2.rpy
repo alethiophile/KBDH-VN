@@ -618,10 +618,16 @@ label Test:
     show Kyon Pain1 Flip:
         xalign 0.4 yalign 1.0
         linear 0.15 xalign 0.0 yalign 1.0
+    show KBrow 1 Flip:
+        xalign 0.4 yalign 1.0
+        linear 0.15 xalign 0.0 yalign 1.0    
     show hazered
     pause 0.8
     play sound2 "SE/slide.wav"
     show Kyon Pain2 Flip:
+        xalign 0.0 yalign 1.0
+        linear 0.3 xalign -0.1 yalign 1.9    
+    show KBrow 1 Flip:
         xalign 0.0 yalign 1.0
         linear 0.3 xalign -0.1 yalign 1.9    
     extend "sending the boy flying back to land atop the injured Yakuza boss. {fast}"
@@ -629,6 +635,8 @@ label Test:
         xpos -200 ypos 0
     show Kyon Pain1 Flip:
         xalign -0.1 yalign 1.9
+    show KBrow 2  Flip:
+        xalign -0.1 yalign 1.9    
     show hazered
     with pixellate    
     play sound "SE/slash3.ogg"
@@ -659,6 +667,9 @@ label Test:
     show Kyon Ang1 Flip:
         xalign 0.5 yalign 3.0
         linear 0.2 xalign 0.5 yalign 1.0  
+    show KBrow 2 Flip:
+        xalign 0.5 yalign 3.0
+        linear 0.2 xalign 0.5 yalign 1.0     
     show transblack
     show kick1 Flip with up:
         xalign 1.1 yalign 2.4
@@ -673,6 +684,9 @@ label Test:
     show Kyon Ang1 Flip with None:
         xalign 0.5 yalign 1.0
         linear 0.2 xalign 0.5 yalign 1.5
+    show KBrow 2 Flip with None:
+        xalign 0.5 yalign 1.0
+        linear 0.2 xalign 0.5 yalign 1.5    
     show axekick1:
         xalign 0.25 yalign 0.8
     show kick1:
@@ -690,9 +704,14 @@ label Test:
         linear 0.15 xpos -200 ypos 0
     show Kyon Ser1 Flip:
         xalign 1.5 yalign 1.2
-        linear 0.2 xalign 0.8 yalign 1.0        
+        linear 0.2 xalign 0.8 yalign 1.0       
+    show KBrow 3 Flip:
+        xalign 1.5 yalign 1.2
+        linear 0.2 xalign 0.8 yalign 1.0         
     "Watanabe retched loudly and twitched. Kyon rolled away, dazedly wondering how much of the fight he was going to spend on the floor. {fast}"
-    show hazered with pixellate
+    show hazered
+    show KBrow 4 Flip
+    with pixellate
     hide hazered with fastdissolve
     show Kyon Puzzle1 Flip
     "As he righted himself again, he glared with his good left eye. The kick from Hat had cut open his eyebrow, and blood was filling his right eye. Hat's eyes flicked to Watanabe, on the floor, then to Kyon." 
@@ -702,6 +721,9 @@ label Test:
     show Kyon Worry1 Flip:
         xalign 0.8 yalign 1.0
         linear 0.2 xalign 1.0 yalign 1.0
+    show KBrow 4 Flip:
+        xalign 0.8 yalign 1.0
+        linear 0.2 xalign 1.0 yalign 1.0    
     show Tsuruya Laugh Casual Pain2 Flip:
          xalign -1.0 yalign 1.0
          linear 0.2 xalign -0.6 yalign 1.0
@@ -714,6 +736,9 @@ label Test:
     show Kyon Ser1 Flip:
         xalign 0.6 yalign 1.0
         linear 0.2 xalign 0.2 yalign 1.0
+    show KBrow 4 Flip:
+        xalign 0.6 yalign 1.0
+        linear 0.2 xalign 0.2 yalign 1.0    
     pause 0.2
     play sound2 "SE/slash2.mp3"
     show transblack
@@ -727,6 +752,9 @@ label Test:
     show Kyon Ser1 Flip:
         xalign 0.2 yalign 1.0
         linear 0.2 xalign 0.2 yalign 1.4
+    show KBrow 4 Flip:
+        xalign 0.2 yalign 1.0
+        linear 0.2 xalign 0.2 yalign 1.4    
     show lowkick1 with cutright
     hide lowkick1 with dissolve
     play sound "SE/slide.wav"
@@ -736,6 +764,9 @@ label Test:
     show Kyon Ser1 Flip:
         xalign 0.2 yalign 1.4
         linear 0.2 xalign 0.4 yalign 1.6
+    show KBrow 4 Flip:
+        xalign 0.2 yalign 1.4
+        linear 0.2 xalign 0.4 yalign 1.6    
     "Kyon rolled — yet again — away from the corner where Tsuruya and Scar would be, {fast}"
     show transblack
     play sound "SE/blow5.ogg"
@@ -752,35 +783,50 @@ label Test:
     show Kyon Ser1 Flip:
         xalign 0.4 yalign 1.6
         linear 0.6 xalign 0.4 yalign 1.0
+    show KBrow 4 Flip:
+        xalign 0.4 yalign 1.6
+        linear 0.6 xalign 0.4 yalign 1.0    
     pause 0.6
     show Kyon Ser1
+    show KBrow 4
+    stop music fadeout 3
+    queue music "Music/MidnightInterval.mp3"
     "He shakily climbed to his feet to see that Tsuruya was bleeding from a deep welt on one wrist, but Scar was prone, frothing at the mouth with her stun gun pressed into his gut and chattering with discharge."
     nvl clear
     show Kyon Unhap4 Flip
+    show KBrow 4 Flip
     #show Manabe at right with dissolve
     "He spun on Manabe before the first year student could think to involve himself {nw}"
     show Kyon Ang3 Flip:
         xalign 0.4 yalign 1.0
         linear 0.1 xalign 0.5
+    show KBrow 4 Flip:
+        xalign 0.4 yalign 1.0
+        linear 0.1 xalign 0.5    
     extend "and stalked forward, stopping outside of striking range of the smaller boy. \"You want to talk, or are you next?\" he spat. Kyon despaired inwardly; he must have bitten his cheek when he was kicked or fell at some point."
     nvl clear
     show Kyon Unhap4 Flip
+    show KBrow 4 Flip
     "His mouth was literally full of blood, and his spittle flecked Manabe's face and clothes. His own blood was dripping across his blazer, and the cigar had probably singed it as well. The smell was undoubtedly going to linger...."
     nvl clear
     show Tsuruya Laugh Casual Ang1 Flip with moveinleft:
         xalign -0.44 yalign 1.0
     "Sharpening his one good eye on the boy, he felt more than saw Tsuruya stepping to his right side, her stun gun still chattering as she joined him in staring. {nw}"
     show Kyon Ser3
+    show KBrow 4
     extend "\"You okay?\" he asked, turning slightly towards her, but still keeping Manabe in his field of vision."
     nvl clear
     show Kyon Ser1
+    
     show Tsuruya Laugh Casual Ang2 Flip
     "The boy whimpered, as Tsuruya nodded. \"Good enough to get some answers from this guy. Okay, Satoshi-chan, make it quick-like.\" Tsuruya chuckled, adding, \"We're on a schedule.\""
     show Kyon Ser1 Flip
+    show KBrow 4 Flip
     show Tsuruya Laugh Casual Ang1 Flip
     "Manabe worked his jaw quickly and finally blurted out, \"I'm a nobody! I'm just a grunt! P...please don't kill me!\" The boy actually dropped to his knees, eyes filling with tears. \"I'm too {i}beautiful{/i} to die!\""
     nvl clear
     show Kyon Sigh1
+    show KBrow 4
     "\"Oh, gods,\" Kyon groaned, fishing his handkerchief from his pocket and pressing it against his split eyebrow. The wound was too fresh to be tender, only a combination of half-numb and pins-and-needles tingling. \"Tsuruya-kun, he's going to be useless — put him out of my misery, won't you?\""
     show Kyon Sigh3
     show Tsuruya Casual Grin4 Flip:
@@ -788,7 +834,9 @@ label Test:
     "\"You got it!\" she said cheerfully, raising the stun gun and flashing a Mori-quality smile at Manabe."
     nvl clear
     "\"I'll tell you anything!\" Manabe wailed, throwing himself to the floor and groveling. \"Anything you want to know!\""
-    show Kyon Ser2 Flip at right with move
+    show Kyon Ser2 Flip at right 
+    show KBrow 4 Flip at right
+    with move
     #show Manabe at center with move
     "\"The truth,\" Kyon growled, walking around the desks and checking the Yakuza computer."
     nvl clear
@@ -797,6 +845,7 @@ label Test:
     "\"I'm just following orders! I do first years, and, um, my seniors take care of the rest!\""
     nvl clear
     show Kyon Ang4
+    show KBrow 4
     "\"Tsuruya-kun, can I borrow the stun gun?\" Kyon asked. \"You can work this chump over with the baton for answers.\""
     show Kyon Unhap5
     show Tsuruya Casual Grin5 Flip
@@ -811,6 +860,7 @@ label Test:
     extend "and tapping it against one palm, eyes fixed on Manabe."
     nvl clear
     show Kyon Unhap5 Flip
+    show KBrow 4 Flip
     show Tsuruya Casual Grin1 Flip
     "\"Y...Yamane-san handles the second years,\" Manabe continued, on the verge of tears. \"Daimonji-san is in charge of third years! W...we just wanted to make some money!\""
     "Kyon set every drive but the primary to quick format waited until they were done, then opened the system while it was still running, and shielding his good eye,  {nw}"
@@ -840,6 +890,7 @@ label Test:
         linear 0.3 xalign 0.7
     "\"Hey, hey, Kyon-kun,\" Tsuruya said, quickly running to him and embracing him again. \"You okay? I owe you mega big time! I got in ways over my head! Dunno what I'd do if you hadn't shown up!\""
     show Kyon Puzzle1
+    show KBrow 4
     show Tsuruya Casual Smile2 Flip
     "\"Let's just get out of here,\" he said, his voice shaking. \"I'm not feeling so hot at the moment.\""
     nvl clear
@@ -859,6 +910,7 @@ label Test:
     queue sound "SE/dooropenslow.mp3"
     scene bg Alley1Evening with fade
     show Kyon Sigh3 at center
+    show KBrow 4
     show Tsuruya Casual Hap3 at left
     with dissolve
     pause 2.0

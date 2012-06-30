@@ -488,6 +488,16 @@ init:
     image Kcut Running4 = "Sprites/Kyon/cheekcut/running4.png"
     image Kcut Bandage = "Sprites/Kyon/cheekcut/bandage.png"
     
+    image KBrow 1 ="Sprites/Kyon/cheekcut/spliteyebrow5.png"
+    image KBrow 2 ="Sprites/Kyon/cheekcut/spliteyebrow4.png"
+    image KBrow 3 ="Sprites/Kyon/cheekcut/spliteyebrow3.png"
+    image KBrow 4 ="Sprites/Kyon/cheekcut/spliteyebrow1.png"
+    
+    image KBrow 1 Flip = im.Flip("Sprites/Kyon/cheekcut/spliteyebrow5.png", horizontal=True)
+    image KBrow 2 Flip = im.Flip("Sprites/Kyon/cheekcut/spliteyebrow4.png", horizontal=True)
+    image KBrow 3 Flip = im.Flip("Sprites/Kyon/cheekcut/spliteyebrow3.png", horizontal=True)
+    image KBrow 4 Flip = im.Flip("Sprites/Kyon/cheekcut/spliteyebrow1.png", horizontal=True)
+    
     image Kcut Clotted Flip =  im.Flip("Sprites/Kyon/cheekcut/clotted.png", horizontal=True)
     image Kcut Fresh1 Flip =  im.Flip("Sprites/Kyon/cheekcut/fresh1.png", horizontal=True)
     image Kcut Fresh2 Flip =  im.Flip("Sprites/Kyon/cheekcut/fresh2.png", horizontal=True)
