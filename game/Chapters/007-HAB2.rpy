@@ -397,7 +397,8 @@ label HAB2:
     "Seconds later, the eye-level steel plate snapped back, revealing a furrowed brow and a pair of angry eyes. \"What?\" a surly voice asked him, before taking in his uniform. \"Oh, local color, eh? You here to buy, or sell?\""
     "\"Buy,\" he answered, shifting his shoulders."
     nvl clear
-    play sound "SE/dooropenslow.mp3"
+    play sound "SE/doorboltopen.mp3"
+    queue sound "SE/dooropenslow.mp3"
     "\"Alright.\" The plate slammed back into place and then Kyon heard the sounds of several bolts being thrown before the steel door ponderously opened inward." 
 label Test:        
     "The man behind the door was a bit shorter than him, but stocky, with the build of a practiced fighter and numerous small scars across his face. He was wearing a brightly colored cherry-red suit with a lime green tie and a loud blue shirt — a screaming advertisement of his Yakuza status. \"In,\" he grunted, gesturing Kyon forward with one meaty paw."
@@ -409,7 +410,9 @@ label Test:
     scene bg WatanabeBaseRight
     show Kyon Neutral3 Flip at left
     with dissolve
-    "Kyon nodded and stepped in before the short brute laboriously shoved the door shut behind him. The room was square and dimly lit, a single other doorway visible on the opposite side of the room. {nw}"
+    "Kyon nodded and stepped in before the short brute laboriously {nw}"
+    play sound "SE/doorboltclose.mp3"
+    extend "shoved the door shut behind him. The room was square and dimly lit, a single other doorway visible on the opposite side of the room. {nw}"
     show Kyon Neutral2 Flip
     extend "\"It's okay if I...?\" Kyon began, gesturing at the doorway."
     show Kyon Neutral3 Flip
@@ -540,23 +543,20 @@ label Test:
     show Ksweat Flip:
         xalign 1.2 yalign 1.5 
         linear 0.2 xalign 1.0 yalign 1.5
-    #pause 0.2    
-    #$ renpy.layer_at_list([PanScene_RightToCenter])
     scene bg WatanabeBaseFull:
         xpos -800 ypos 0
         linear 0.3 xpos 0 ypos 0
-    #scene bg WatanabeBaseLeft with wiperightfast   
     show Kyon Ang1 :
-        xalign 1.5  yalign 1.5
+        xalign 1.5 yalign 1.5
         linear 0.3 xalign 1.0 yalign 1.0
     show Ksweat:
-        xalign 1.5  yalign 1.5
+        xalign 1.5 yalign 1.5
         linear 0.2 xalign 1.0 yalign 1.0
     nvl clear
     show Tsuruya Laugh Casual Ang1 Flip:
-        xalign -0.4  yalign 1.0
+        xalign -0.4 yalign 1.0
     show Tsweat Laugh Casual Flip:
-        xalign -0.4  yalign 1.0
+        xalign -0.4 yalign 1.0
     play sound2 "SE/knifeslide.mp3"    
     "Kyon rolled desperately to one side, losing the baton and narrowly evading a kick to his head.{fast} After hitting the stack of boxes, he hastily righted himself and glanced at Tsuruya. Scar was slowly backing her into a corner, using his belt as a whip to try and disarm the girl. Manabe stood in front of the desk and stared, gaping."
     show Kyon Ser1 Flip at right
@@ -565,7 +565,7 @@ label Test:
     nvl clear
     play sound "SE/evasion.ogg"
     show Kyon Ser1 Flip :
-        xalign 1.0  yalign 1.0
+        xalign 1.0 yalign 1.0
         linear 0.2 xalign 0.8
     "Turning slightly towards Hat, Kyon slipped backwards {fast}"
     hide Ksweat
@@ -574,17 +574,16 @@ label Test:
         xpos 0 ypos 0
         linear 0.3 xpos -600 ypos 0
     show Tsuruya Laugh Casual Ang1 Flip:
-        xalign -0.4  yalign 1.0  
+        xalign -0.4 yalign 1.0  
         linear 0.2 xalign -1.0
     show Kyon Ang1 Flip:
-        xalign 0.8  yalign 1.0
+        xalign 0.8 yalign 1.0
         linear 0.3 xalign 0.4 yalign 1.1
     pause 0.1
-    play sound2  "SE/slide.wav"
+    play sound2 "SE/slide.wav"
     show transblack
     show punch2 with cutright:
-        xalign 0.9  yalign 0.8
-    #    linear 0.2 xalign 1.4
+        xalign 0.9 yalign 0.8
     hide transblack
     hide punch2
     with fasterdissolve
@@ -592,10 +591,10 @@ label Test:
     play sound "SE/bite.ogg"
     show transred
     show Kyon Ang1 Flip:
-        xalign 0.4  yalign 1.1
+        xalign 0.4 yalign 1.1
         linear 0.2 xalign 0.4 yalign 1.0
     show punch3 with up:
-        xalign 0.9  yalign 0.6
+        xalign 0.9 yalign 0.6
     hide transred
     hide punch3
     with fasterdissolve
@@ -610,26 +609,26 @@ label Test:
     show transred
     show Kyon Pain1 Flip
     show kick1 with rightleft:
-        xalign 1.0  yalign 1.3
+        xalign 1.0 yalign 1.3
     "Hat's knuckles may have been bloodied on one hand, but he landed a kick just over Kyon's eye, {fast}"
     play sound "SE/homerun.mp3"
     scene bg WatanabeBaseFull:
         xpos -600 ypos 0
         linear 0.15 xpos -200 ypos 0
     show Kyon Pain1 Flip:
-        xalign 0.4  yalign 1.0
+        xalign 0.4 yalign 1.0
         linear 0.15 xalign 0.0 yalign 1.0
     show hazered
     pause 0.8
     play sound2 "SE/slide.wav"
     show Kyon Pain2 Flip:
-        xalign 0.0  yalign 1.0
+        xalign 0.0 yalign 1.0
         linear 0.3 xalign -0.1 yalign 1.9    
     extend "sending the boy flying back to land atop the injured Yakuza boss. {fast}"
     scene bg WatanabeBaseFull:
         xpos -200 ypos 0
     show Kyon Pain1 Flip:
-        xalign -0.1  yalign 1.9
+        xalign -0.1 yalign 1.9
     show hazered
     with pixellate    
     play sound "SE/slash3.ogg"
@@ -654,15 +653,15 @@ label Test:
     play sound "SE/lowswoosh.mp3"
     show bg WatanabeBaseFull with None:
          xanchor .5 yanchor .5
-         xpos  .5 ypos .5
+         xpos .5 ypos .5
          linear .4 rotate 360
     pause .3
     show Kyon Ang1 Flip:
-        xalign 0.5  yalign 3.0
+        xalign 0.5 yalign 3.0
         linear 0.2 xalign 0.5 yalign 1.0  
     show transblack
     show kick1 Flip with up:
-        xalign 1.1  yalign 2.4
+        xalign 1.1 yalign 2.4
     play sound2 "SE/blow5.ogg"
     hide kick1
     hide transblack
@@ -672,12 +671,12 @@ label Test:
     play sound2 "SE/evasion.ogg"
     show transblack
     show Kyon Ang1 Flip with None:
-        xalign 0.5  yalign 1.0
+        xalign 0.5 yalign 1.0
         linear 0.2 xalign 0.5 yalign 1.5
     show axekick1:
-        xalign 0.25  yalign 0.8
+        xalign 0.25 yalign 0.8
     show kick1:
-        xalign 1.25  yalign 0.4
+        xalign 1.25 yalign 0.4
     with down
     hide axekick1
     hide kick1
@@ -690,7 +689,7 @@ label Test:
         xpos -800 ypos 0
         linear 0.15 xpos -200 ypos 0
     show Kyon Ser1 Flip:
-        xalign 1.5  yalign 1.2
+        xalign 1.5 yalign 1.2
         linear 0.2 xalign 0.8 yalign 1.0        
     "Watanabe retched loudly and twitched. Kyon rolled away, dazedly wondering how much of the fight he was going to spend on the floor. {fast}"
     show hazered with pixellate
@@ -701,10 +700,10 @@ label Test:
         xpos -200 ypos 0
         linear 0.15 xpos 0 ypos 0
     show Kyon Worry1 Flip:
-        xalign 0.8  yalign 1.0
+        xalign 0.8 yalign 1.0
         linear 0.2 xalign 1.0 yalign 1.0
     show Tsuruya Laugh Casual Pain2 Flip:
-         xalign -1.0  yalign 1.0
+         xalign -1.0 yalign 1.0
          linear 0.2 xalign -0.6 yalign 1.0
     extend " Kyon tensed to charge, just as Tsuruya cried out in pain."
     nvl clear
@@ -713,20 +712,20 @@ label Test:
         xpos 0 ypos 0
         linear 0.15 xpos -800 ypos 0      
     show Kyon Ser1 Flip:
-        xalign 0.6  yalign 1.0
+        xalign 0.6 yalign 1.0
         linear 0.2 xalign 0.2 yalign 1.0
     pause 0.2
     play sound2 "SE/slash2.mp3"
     show transblack
     show kick1 Flip with cutright:
-        xalign 0.8  yalign 1.5
+        xalign 0.8 yalign 1.5
     hide transblack
     hide kick1 
     with fasterdissolve
     "Not giving himself time to think about it, the second Hat turned to glance at the girl, Kyon leapt forward with a flying kick to Hat's left shoulder, {fast}"
     play sound "SE/impact.mp3"
     show Kyon Ser1 Flip:
-        xalign 0.2  yalign 1.0
+        xalign 0.2 yalign 1.0
         linear 0.2 xalign 0.2 yalign 1.4
     show lowkick1 with cutright
     hide lowkick1 with dissolve
@@ -735,7 +734,7 @@ label Test:
     nvl clear
     play sound "SE/evasion.ogg"
     show Kyon Ser1 Flip:
-        xalign 0.2  yalign 1.4
+        xalign 0.2 yalign 1.4
         linear 0.2 xalign 0.4 yalign 1.6
     "Kyon rolled — yet again — away from the corner where Tsuruya and Scar would be, {fast}"
     show transblack
@@ -758,6 +757,7 @@ label Test:
     "He shakily climbed to his feet to see that Tsuruya was bleeding from a deep welt on one wrist, but Scar was prone, frothing at the mouth with her stun gun pressed into his gut and chattering with discharge."
     nvl clear
     show Kyon Unhap4 Flip
+    #show Manabe at right with dissolve
     "He spun on Manabe before the first year student could think to involve himself {nw}"
     show Kyon Ang3 Flip:
         xalign 0.4 yalign 1.0
@@ -768,7 +768,7 @@ label Test:
     "His mouth was literally full of blood, and his spittle flecked Manabe's face and clothes. His own blood was dripping across his blazer, and the cigar had probably singed it as well. The smell was undoubtedly going to linger...."
     nvl clear
     show Tsuruya Laugh Casual Ang1 Flip with moveinleft:
-        xalign -0.44  yalign 1.0
+        xalign -0.44 yalign 1.0
     "Sharpening his one good eye on the boy, he felt more than saw Tsuruya stepping to his right side, her stun gun still chattering as she joined him in staring. {nw}"
     show Kyon Ser3
     extend "\"You okay?\" he asked, turning slightly towards her, but still keeping Manabe in his field of vision."
@@ -784,11 +784,12 @@ label Test:
     "\"Oh, gods,\" Kyon groaned, fishing his handkerchief from his pocket and pressing it against his split eyebrow. The wound was too fresh to be tender, only a combination of half-numb and pins-and-needles tingling. \"Tsuruya-kun, he's going to be useless — put him out of my misery, won't you?\""
     show Kyon Sigh3
     show Tsuruya Casual Grin4 Flip:
-        xalign -0.1  yalign 1.0
+        xalign -0.1 yalign 1.0
     "\"You got it!\" she said cheerfully, raising the stun gun and flashing a Mori-quality smile at Manabe."
     nvl clear
     "\"I'll tell you anything!\" Manabe wailed, throwing himself to the floor and groveling. \"Anything you want to know!\""
-    show Kyon Ser2 Flip
+    show Kyon Ser2 Flip at right with move
+    #show Manabe at center with move
     "\"The truth,\" Kyon growled, walking around the desks and checking the Yakuza computer."
     nvl clear
     show Kyon Ser1 Flip
@@ -797,56 +798,83 @@ label Test:
     nvl clear
     show Kyon Ang4
     "\"Tsuruya-kun, can I borrow the stun gun?\" Kyon asked. \"You can work this chump over with the baton for answers.\""
-    show Tsuruya Casual Grin5 Flip 
-    "\"Good thinking!\" she cheered, handing the weapon over after collecting the baton and tapping it against one palm, eyes fixed on Manabe."
-    "\"Y...Yamane-san handles the second years,\" Manabe continued, on the verge of tears. \"Daimonji-san is in charge of third years! W...we just wanted to make some money!\""
+    show Kyon Unhap5
+    show Tsuruya Casual Grin5 Flip
+    "\"Good thinking!\" she cheered, {nw}"
+    show Tsuruya Casual Grin5 Flip behind Kyon:
+        xalign -0.1 yalign 1.0
+        linear 0.4 xalign 0.55
+    extend "handing the weapon over after collecting the baton {nw}"
+    show Tsuruya Casual Grin5 Flip:
+        xalign 0.55 yalign 1.0
+        linear 0.4 xalign -0.1
+    extend "and tapping it against one palm, eyes fixed on Manabe."
     nvl clear
+    show Kyon Unhap5 Flip
+    show Tsuruya Casual Grin1 Flip
+    "\"Y...Yamane-san handles the second years,\" Manabe continued, on the verge of tears. \"Daimonji-san is in charge of third years! W...we just wanted to make some money!\""
     "Kyon set every drive but the primary to quick format waited until they were done, then opened the system while it was still running, and shielding his good eye,  {nw}"
     play sound "SE/elec1.mp3"
     extend "fried the entire array with the stun gun. The resultant explosion of sparks caused Manabe to shriek in alarm and sob again."
-    "\"I'll give you the names of all the first year collectors!\" the blond boy wept. \"That's all I know! Honest!\""
     nvl clear
-    play sound "SE/GlassBreak3.mp3"
-    queue sound "SE/GlassBreak3.mp3"
-    queue sound "SE/GlassBreak3.mp3"
+    "\"I'll give you the names of all the first year collectors!\" the blond boy wept. \"That's all I know! Honest!\""
+    play sound "SE/metalcrash.mp3"
+    queue sound "SE/metalcrash.mp3"
+    queue sound "SE/metalcrash.mp3"
     "For good measure, Kyon then tore the drives from the system and flung them to the floor hard enough to crack the casings, each crash causing Manabe to devolve further into a whimpering mound. Tsuruya tapped him lightly on the back of the head with the baton and collected the names he shakily quoted, writing them on a notepad she had kept in one pocket."
     nvl clear
     show Tsuruya Casual Hap5 Flip
-    "\"Alright,\" Tsuruya decided, once Kyon had declared the computer system to be dead, and Manabe had finished his litany of names, \"have a nice nap, Satoshi- chan!\""
-    "\"W...what?\" the boy managed, before Tsuruya whipped the baton sideways  {nw}"
+    "\"Alright,\" Tsuruya decided, once Kyon had declared the computer system to be dead, and Manabe had finished his litany of names, {nw}"
+    show Tsuruya Casual Grin6 Flip
+    extend "\"have a nice nap, Satoshi-chan!\""
+    show Tsuruya Casual Grin4 Flip
+    "\"W...what?\" the boy managed, before Tsuruya whipped the baton sideways {nw}"
     play sound "SE/Impact.mp3"
-    extend "across the top of his head, and his eyes crossed as he collapsed to the floor."
+    #hide Manabe with wipedown
+    extend "across the top of his head, and his eyes crossed as he collapsed to the {nw}"
+    play sound "SE/Thump1.wav"
+    extend "floor."
     nvl clear
-    show Tsuruya Casual Hap4 Flip
+    show Tsuruya Casual Hap4 Flip behind Kyon:
+        xalign -0.1 yalign 1.0
+        linear 0.3 xalign 0.7
     "\"Hey, hey, Kyon-kun,\" Tsuruya said, quickly running to him and embracing him again. \"You okay? I owe you mega big time! I got in ways over my head! Dunno what I'd do if you hadn't shown up!\""
-    show Kyon Puzzle1 
+    show Kyon Puzzle1
+    show Tsuruya Casual Smile2 Flip
     "\"Let's just get out of here,\" he said, his voice shaking. \"I'm not feeling so hot at the moment.\""
+    nvl clear
+    show Kyon Worry1
     show Tsuruya Casual Quest1 
     "\"Okies! You want to go home? Hospital?\" She partially broke from the embrace, pulling his right arm across the back of her neck and leaving her left arm around his back to help him walk."
+    show Kyon Sup2
     nvl clear
-    show Kyon Sup2 
-    "\"Oh, hells, I can't go home like this,\" he said in dismay. \"My mom's already flipping out over the idea of me being a delinquent! The hospital....\" His head hurt, and he felt himself slipping away by the minute. Delayed shock reaction? Blood loss? Adrenaline rush fading? There was something about a hospital, but he couldn't use his phone to call Mori; he had turned it off for an important reason that was slipping from his grasp.  {nw}"
+    "\"Oh, hells, I can't go home like this,\" he said in dismay. \"My mom's already flipping out over the idea of me being a delinquent! The hospital....\" His head hurt, and he felt himself slipping away by the minute. Delayed shock reaction? Blood loss? Adrenaline rush fading? There was something about a hospital, but he couldn't use his phone to call Mori; he had turned it off for an important reason that was slipping from his grasp. {nw}"
     show Kyon Sigh1 
     "\"No hospital,\" he managed."
     nvl clear
+    show Kyon Sigh3
     show Tsuruya Casual Hap3 
-    "\"Gotcha covered!\" she said cheerfully, setting him down on a stool near the doorway as she fought the numerous bolts and locks, then struggled to open the heavy portal.  {nw}"
+    "\"Gotcha covered!\" she said cheerfully, setting him down on a stool near the doorway as she fought the numerous bolts and locks, then struggled to open the heavy portal. "
+    play sound "SE/doorboltopen.mp3"
+    queue sound "SE/dooropenslow.mp3"
     scene bg Alley1Evening with fade
-    show Kyon Sigh1 at center with dissolve
-    show Tsuruya Casual Hap3 at left with dissolve    
-    extend "After resuming her position at his side, helping guide him down the dark alley,  {nw}"
+    show Kyon Sigh3 at center
+    show Tsuruya Casual Hap3 at left
+    with dissolve
+    pause 2.0
+    extend "After resuming her position at his side, helping guide him down the dark alley, she pulled her phone from one pocket and {nw}"
     play sound "SE/CellRing.mp3"
     show Tsuruya Casual Ang3 Flip
-    extend "she pulled her phone from one pocket and held down a single button until someone answered. \"Car!\" she barked into the handheld. \"Now! I want a medical kit — actually, it may take stitches — bring Sakura-sensei in. I want him ready by the time we get home!\""
+    extend "held down a single button until someone answered. \"Car!\" she barked into the handheld. \"Now! I want a medical kit — actually, it may take stitches — bring Sakura-sensei in. I want him ready by the time we get home!\""
     nvl clear
+    show Tsuruya Casual Ang1 Flip
     "She hung up the phone without waiting for response, and Kyon could only blink in surprise when a limousine pulled to a stop outside the alley, a driver quickly climbing out and opening the door for them. Kyon gratefully collapsed into the back seat, only grunting when Tsuruya climbed in next to him and pulled out a first aid-kit. Confident that everything else would be taken care of, he let himself recede into comforting darkness as she pulled his head into her lap and began dabbing something on his eyebrow."
     nvl clear
+    stop music fadeout 3
     
     call eyecatch_fancy("Thursday, April 21") from HAB2_sc002
     
-    scene almostblack two with fade
     scene bg TsuruyaFutonDay with fade
-    stop music fadeout 1
     queue music "Music/Morning.ogg"
     show Tsuruya Worry1 Flip at left with dissolve
     "When his eyes tried lazily to open, only one of them did. A wad of cloth or something was pressing on his right eye, and he was laying on his back, squinting upward into lights that were too bright. Tsuruya was peering down at him in concern, while an unfamiliar middle-aged man with rolled up sleeves and surgical gloves did ... something to his face involving a needle and thread. He let his eye close again, though he remained conscious."
