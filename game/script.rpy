@@ -488,6 +488,16 @@ init:
     image Kcut Running4 = "Sprites/Kyon/cheekcut/running4.png"
     image Kcut Bandage = "Sprites/Kyon/cheekcut/bandage.png"
     
+    image KBrow 1 ="Sprites/Kyon/cheekcut/spliteyebrow5.png"
+    image KBrow 2 ="Sprites/Kyon/cheekcut/spliteyebrow4.png"
+    image KBrow 3 ="Sprites/Kyon/cheekcut/spliteyebrow3.png"
+    image KBrow 4 ="Sprites/Kyon/cheekcut/spliteyebrow1.png"
+    
+    image KBrow 1 Flip = im.Flip("Sprites/Kyon/cheekcut/spliteyebrow5.png", horizontal=True)
+    image KBrow 2 Flip = im.Flip("Sprites/Kyon/cheekcut/spliteyebrow4.png", horizontal=True)
+    image KBrow 3 Flip = im.Flip("Sprites/Kyon/cheekcut/spliteyebrow3.png", horizontal=True)
+    image KBrow 4 Flip = im.Flip("Sprites/Kyon/cheekcut/spliteyebrow1.png", horizontal=True)
+    
     image Kcut Clotted Flip =  im.Flip("Sprites/Kyon/cheekcut/clotted.png", horizontal=True)
     image Kcut Fresh1 Flip =  im.Flip("Sprites/Kyon/cheekcut/fresh1.png", horizontal=True)
     image Kcut Fresh2 Flip =  im.Flip("Sprites/Kyon/cheekcut/fresh2.png", horizontal=True)
@@ -960,6 +970,7 @@ init:
     image Tsuruya Grin3 Flip = im.Flip("Sprites/Tsuruya/TsuruyaGrin3.png", horizontal=True)
     image Tsuruya Grin4 Flip = im.Flip("Sprites/Tsuruya/TsuruyaGrin4.png", horizontal=True)
     image Tsuruya Grin5 Flip = im.Flip("Sprites/Tsuruya/TsuruyaGrin5.png", horizontal=True)
+    image Tsuruya Grin6 Flip = im.Flip("Sprites/Tsuruya/TsuruyaGrin6.png", horizontal=True)
     image Tsuruya Smile1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaSmile1.png", horizontal=True)
     image Tsuruya Smile2 Flip = im.Flip("Sprites/Tsuruya/TsuruyaSmile2.png", horizontal=True)
     image Tsuruya Smile3 Flip = im.Flip("Sprites/Tsuruya/TsuruyaSmile3.png", horizontal=True)
@@ -980,14 +991,14 @@ init:
     image Tsuruya Ang1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaAngry1.png", horizontal=True)
     image Tsuruya Ang2 Flip = im.Flip("Sprites/Tsuruya/TsuruyaAngry2.png", horizontal=True)
     image Tsuruya Ang3 Flip = im.Flip("Sprites/Tsuruya/TsuruyaAngry3.png", horizontal=True)
-    image Tsuruya Ang4 Flip = im.Flip("Sprites/Tsuruya/TsuruyaAngry4.png", horizontal=True)
-    
+    image Tsuruya Ang4 Flip = im.Flip("Sprites/Tsuruya/TsuruyaAngry4.png", horizontal=True)    
     
     image Tsuruya Casual Grin1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualGrin1.png", horizontal=True)
     image Tsuruya Casual Grin2 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualGrin2.png", horizontal=True)
     image Tsuruya Casual Grin3 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualGrin3.png", horizontal=True)
     image Tsuruya Casual Grin4 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualGrin4.png", horizontal=True)
     image Tsuruya Casual Grin5 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualGrin5.png", horizontal=True)
+    image Tsuruya Casual Grin6 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualGrin6.png", horizontal=True)
     image Tsuruya Casual Smile1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualSmile1.png", horizontal=True)
     image Tsuruya Casual Smile2 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualSmile2.png", horizontal=True)
     image Tsuruya Casual Smile3 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualSmile3.png", horizontal=True)
