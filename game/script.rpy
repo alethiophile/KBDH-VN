@@ -2405,6 +2405,7 @@ label Ordinary_High_School_Student:
     return
     
 label test_Z0_eye:
+    # Silly test is silly
     scene bg MorningSky
     show TownHillLeftMorning
     show Haruhi Smile3 at left
