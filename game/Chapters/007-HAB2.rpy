@@ -12,7 +12,7 @@ label HAB2:
     nvl clear
 
     scene bg KyonLivingRoomEvening with fade
-    queue music "Music/lie-alaiaa_mst.ogg"
+    queue music "Music/Yakume wa Kansoku Dakara.mp3"
     show Kyon Worry3 at center
     show Haruhi Crossed Smile2 at right
     show Kanae Hap3 at left
@@ -826,7 +826,8 @@ label Test:
     "Manabe worked his jaw quickly and finally blurted out, \"I'm a nobody! I'm just a grunt! P...please don't kill me!\" The boy actually dropped to his knees, eyes filling with tears. \"I'm too {i}beautiful{/i} to die!\""
     nvl clear
     show Kyon Sigh1
-    show KBrow 4
+    show KBrow Smudge with dissolve
+    
     "\"Oh, gods,\" Kyon groaned, fishing his handkerchief from his pocket and pressing it against his split eyebrow. The wound was too fresh to be tender, only a combination of half-numb and pins-and-needles tingling. \"Tsuruya-kun, he's going to be useless — put him out of my misery, won't you?\""
     show Kyon Sigh3
     show Tsuruya Casual Grin4 Flip:
