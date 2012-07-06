@@ -825,18 +825,19 @@ label Test:
     show Tsuruya Laugh Casual Ang1 Flip
     "Manabe worked his jaw quickly and finally blurted out, \"I'm a nobody! I'm just a grunt! P...please don't kill me!\" The boy actually dropped to his knees, eyes filling with tears. \"I'm too {i}beautiful{/i} to die!\""
     nvl clear
-    show Kyon Sigh1
-    show KBrow Smudge with dissolve
+    show Kyon Sigh1 Flip
+    show KBrow Smudge Flip with dissolve
     
     "\"Oh, gods,\" Kyon groaned, fishing his handkerchief from his pocket and pressing it against his split eyebrow. The wound was too fresh to be tender, only a combination of half-numb and pins-and-needles tingling. \"Tsuruya-kun, he's going to be useless — put him out of my misery, won't you?\""
     show Kyon Sigh3
+    show KBrow Smudge
     show Tsuruya Casual Grin4 Flip:
         xalign -0.1 yalign 1.0
     "\"You got it!\" she said cheerfully, raising the stun gun and flashing a Mori-quality smile at Manabe."
     nvl clear
     "\"I'll tell you anything!\" Manabe wailed, throwing himself to the floor and groveling. \"Anything you want to know!\""
     show Kyon Ser2 Flip at right 
-    show KBrow 4 Flip at right
+    show KBrow Smudge Flip at right
     with move
     #show Manabe at center with move
     "\"The truth,\" Kyon growled, walking around the desks and checking the Yakuza computer."
@@ -846,7 +847,7 @@ label Test:
     "\"I'm just following orders! I do first years, and, um, my seniors take care of the rest!\""
     nvl clear
     show Kyon Ang4
-    show KBrow 4
+    show KBrow Smudge
     "\"Tsuruya-kun, can I borrow the stun gun?\" Kyon asked. \"You can work this chump over with the baton for answers.\""
     show Kyon Unhap5
     show Tsuruya Casual Grin5 Flip
@@ -861,7 +862,7 @@ label Test:
     extend "and tapping it against one palm, eyes fixed on Manabe."
     nvl clear
     show Kyon Unhap5 Flip
-    show KBrow 4 Flip
+    show KBrow Smudge Flip
     show Tsuruya Casual Grin1 Flip
     "\"Y...Yamane-san handles the second years,\" Manabe continued, on the verge of tears. \"Daimonji-san is in charge of third years! W...we just wanted to make some money!\""
     "Kyon set every drive but the primary to quick format waited until they were done, then opened the system while it was still running, and shielding his good eye,  {nw}"
@@ -891,7 +892,7 @@ label Test:
         linear 0.3 xalign 0.7
     "\"Hey, hey, Kyon-kun,\" Tsuruya said, quickly running to him and embracing him again. \"You okay? I owe you mega big time! I got in ways over my head! Dunno what I'd do if you hadn't shown up!\""
     show Kyon Puzzle1
-    show KBrow 4
+    show KBrow Smudge
     show Tsuruya Casual Smile2 Flip
     "\"Let's just get out of here,\" he said, his voice shaking. \"I'm not feeling so hot at the moment.\""
     nvl clear
@@ -911,7 +912,7 @@ label Test:
     queue sound "SE/dooropenslow.mp3"
     scene bg Alley1Evening with fade
     show Kyon Sigh3 at center
-    show KBrow 4
+    show KBrow Smudge
     show Tsuruya Casual Hap3 at left
     with dissolve
     pause 2.0

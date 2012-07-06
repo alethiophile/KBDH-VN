@@ -498,6 +498,7 @@ init:
     image KBrow 2 Flip = im.Flip("Sprites/Kyon/cheekcut/spliteyebrow4.png", horizontal=True)
     image KBrow 3 Flip = im.Flip("Sprites/Kyon/cheekcut/spliteyebrow3.png", horizontal=True)
     image KBrow 4 Flip = im.Flip("Sprites/Kyon/cheekcut/spliteyebrow1.png", horizontal=True)
+    image KBrow Smudge Flip = im.Flip("Sprites/Kyon/cheekcut/spliteyebrowsmudge.png", horizontal=True)
     
     image Kcut Clotted Flip =  im.Flip("Sprites/Kyon/cheekcut/clotted.png", horizontal=True)
     image Kcut Fresh1 Flip =  im.Flip("Sprites/Kyon/cheekcut/fresh1.png", horizontal=True)
