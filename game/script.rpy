@@ -1285,6 +1285,20 @@ init:
     image Ryo Band Attack1 Flip = im.Flip("Sprites/Ryo/RyoBandAttack1.png", horizontal=True)
     image Ryo Band Attack2 Flip = im.Flip("Sprites/Ryo/RyoBandAttack2.png", horizontal=True)
     
+    
+#Thug Sprites
+    image ThugHead 1 = "Sprites/Thug/ThugHead1.png"
+    image ThugBody 1 = "Sprites/Thug/ThugBody1.png"
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     #Closed space variants
     image clouds CS = im.MatrixColor("id_clouds.png",
         im.matrix.saturation(.15) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))

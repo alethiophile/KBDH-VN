@@ -400,7 +400,10 @@ label HAB2:
     play sound "SE/doorboltopen.mp3"
     queue sound "SE/dooropenslow.mp3"
     "\"Alright.\" The plate slammed back into place and then Kyon heard the sounds of several bolts being thrown before the steel door ponderously opened inward." 
-label Test:        
+label Test:
+    #show ThugBody 1 at right
+    #show ThugHead 1 at right
+    
     "The man behind the door was a bit shorter than him, but stocky, with the build of a practiced fighter and numerous small scars across his face. He was wearing a brightly colored cherry-red suit with a lime green tie and a loud blue shirt — a screaming advertisement of his Yakuza status. \"In,\" he grunted, gesturing Kyon forward with one meaty paw."
     nvl clear
     scene bg WatanabeBaseFull with fade:
