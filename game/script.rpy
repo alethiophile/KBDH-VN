@@ -1290,8 +1290,11 @@ init:
     image ThugHead 1 = "Sprites/Thug/ThugHead1.png"
     image ThugBody 1 = "Sprites/Thug/ThugBody1.png"
     
-    
-    
+    image Thug1 = im.Composite(
+    (519, 480),
+    (0, 0), "Sprites/Thug/ThugBody1.png",
+    (0, 0), "Sprites/Thug/ThugHead1.png"
+    ) 
     
     
     
