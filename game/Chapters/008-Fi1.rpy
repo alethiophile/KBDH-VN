@@ -1,8 +1,18 @@
+#Chapter 8, Filler Arc
+
 label Fi1:
-#label Test:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
     stop music fadeout 3
-    queue music "Music/NagatoTheme.mp3"
+    scene black
+    show title 008 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
     scene bg YukiRoomCenter with fade
+    play music "Music/NagatoTheme.mp3"
     show Yuki Side2 at left 
     show Mikuru Cower Casual Sigh1 at TenthRight 
     show Kanae Night Worry1 at right behind Mikuru 

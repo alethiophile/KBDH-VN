@@ -130,14 +130,9 @@ init:
     image swipe1 = im.Alpha("Backgrounds/Effects/swipe1.png", 0.75)
     image kick1 Flip = im.Flip("Backgrounds/Effects/kick1.png", horizontal=True)
     
-
-    
     image white = "#ffffff"
-    
     image black = "#000000"
     image yellow = "#FFFF00"
-    
-    
     image cyan = "#00FFFF"
     image transpwhite = "#ffffffcc"
     image yukibackground = "#ccccff"
@@ -893,7 +888,6 @@ init:
     image Tsuruya Ser1 = "Sprites/Tsuruya/TsuruyaSerious1.png"
     image Tsuruya Sad1 = "Sprites/Tsuruya/TsuruyaSad1.png"
     
-    
     image Tsuruya Casual Ang1 = "Sprites/Tsuruya/TsuruyaCasualAngry1.png"
     image Tsuruya Casual Ang2 = "Sprites/Tsuruya/TsuruyaCasualAngry2.png"
     image Tsuruya Casual Ang3 = "Sprites/Tsuruya/TsuruyaCasualAngry3.png"
@@ -982,7 +976,9 @@ init:
     image Tsuruya Quest1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaQuestion1.png", horizontal=True)
     image Tsuruya Worry1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaWorry1.png", horizontal=True)
     image Tsuruya Worry2 Flip = im.Flip("Sprites/Tsuruya/TsuruyaWorry2.png", horizontal=True)
+    image Tsuruya Worry3 Flip = im.Flip("Sprites/Tsuruya/TsuruyaWorry3.png", horizontal=True)
     image Tsuruya Neutral1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaNeutral1.png", horizontal=True)
+    image Tsuruya Neutral2 Flip = im.Flip("Sprites/Tsuruya/TsuruyaNeutral2.png", horizontal=True)
     image Tsuruya Hap1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaHappy1.png", horizontal=True)
     image Tsuruya Hap2 Flip = im.Flip("Sprites/Tsuruya/TsuruyaHappy2.png", horizontal=True)
     image Tsuruya Hap3 Flip = im.Flip("Sprites/Tsuruya/TsuruyaHappy3.png", horizontal=True)
@@ -1284,8 +1280,7 @@ init:
     image Ryo Attack2 Flip = im.Flip("Sprites/Ryo/RyoAttack2.png", horizontal=True)
     image Ryo Band Attack1 Flip = im.Flip("Sprites/Ryo/RyoBandAttack1.png", horizontal=True)
     image Ryo Band Attack2 Flip = im.Flip("Sprites/Ryo/RyoBandAttack2.png", horizontal=True)
-    
-    
+        
 #Thug Sprites
     image ThugHead 1 = "Sprites/Thug/ThugHead1.png"
     image ThugBody 1 = "Sprites/Thug/ThugBody1.png"
@@ -1295,13 +1290,7 @@ init:
     (0, 0), "Sprites/Thug/ThugBody1.png",
     (0, 0), "Sprites/Thug/ThugHead1.png"
     ) 
-    
-    
-    
-    
-    
-    
-    
+        
     #Closed space variants
     image clouds CS = im.MatrixColor("id_clouds.png",
         im.matrix.saturation(.15) * im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(-.35))
@@ -1331,7 +1320,6 @@ init:
         im.matrix.saturation(.15) * im.matrix.tint(.80, .80, 1.0) * im.matrix.brightness(-.35))
     image ClubroomFullNight Glow = im.MatrixColor("Backgrounds/ClubroomFullNight.png",
         im.matrix.tint(.75, .75, 1.0) * im.matrix.brightness(.35))
-# 
 #     
     image Kyon CS Ser1 = im.MatrixColor("Sprites/Kyon/KyonSerious1.png",
          im.matrix.saturation(.15) * im.matrix.tint(.80, .80, 1.0) * im.matrix.brightness(-.35))
@@ -1395,7 +1383,6 @@ init:
         im.matrix.saturation(.15) * im.matrix.tint(.80, .80, 1.0) * im.matrix.brightness(-.35))
     image Kyon CS Unhap5 = im.MatrixColor("Sprites/Kyon/KyonUnhappy5.png",
         im.matrix.saturation(.15) * im.matrix.tint(.80, .80, 1.0) * im.matrix.brightness(-.35))
-#     
 #         
     image Haruhi CS Sup1 = im.MatrixColor("Sprites/Haruhi/HaruhiSideSurprised1.png",
         im.matrix.saturation(.15) * im.matrix.tint(.80, .80, 1.0) * im.matrix.brightness(-.35))
@@ -1550,6 +1537,8 @@ init:
     image title 006 = Text("{space=480}{b}{size=+1}Thursday, April 21, 2011{/size}{/b}\n\n\n\n\"Chapter One: Crossing the Threshold\"\n\n\"...eventually, this means that you can reach a point where words no longer suffice. Civility is all well and good, but sometimes the simple message of overpowering force is the one that the situation requires. Use your judgment on when this moment is, but keep in mind that I call it a last resort for a reason; once you initiate violence, you're committed until victory or failure.\"\n\n\"The Last Resort: Violence and You\" — Tadamichi Kyousuke", font="DejaVuSerif-Italic.ttf", size=18, line_leading=3, justify=True, xmaximum=750)
     image title 007 = Text("{space=480}{b}{size=+1}Thursday, April 21, 2011{/size}{/b}\n\n\n\n\"Chapter Two: Excuses\"\n\n\"If you can't come up with a legitimate excuse, you have two fall-back options. First, you can take refuge in audacity and say something so outlandish you're dismissed (bonus points if you tell the truth with a straight face). And if that doesn't work, place the burden of justifying your whereabouts on someone else. If neither of these options pan out, run far, run fast.\"\n\n\"Cover\" — Author Unknown", font="DejaVuSerif-Italic.ttf", size=18, line_leading=3, justify=True, xmaximum=750)
     image title 008 = Text("{space=480}{b}{size=+1}Thursday, April 21, 2011{/size}{/b}\n\n\n\n\"File K:3419.8.19/2011.4.21\"\n\n\"...so, I think, maybe, sometimes it might be okay to be a little selfish, as long as you don't jeopardize anything. That's the really hard part, though ... how can you ever tell? I suppose that means erring on the side of caution ... no matter how it hurts. But sometimes ... just a little bit ... it's nice to be selfish.\"\n\n\"[[CLASSIFIED]\" -- Paraea Mons T.E.S.A. Dataplume", font="DejaVuSerif-Italic.ttf", size=18, line_leading=3, justify=True, xmaximum=750)
+    image title 009 = Text("{space=480}{b}{size=+1}Thursday, April 21, 2011{/size}{/b}\n\n\n\n\"File K:3453.3.5/2011.4.22\"\n\n\"...then push the stack representing the focus shift in prio research target. Due to the complexity of interaction with this particular model, an automated property will top your stack every two minutes if you do not pop or [[CLASSIFIED]. Do not attempt to adjust this; it is for your own safety! For the remainder of this lesson, you will need to utilize your augmented reality context-tags, or relay queries to me. Oh! And before this comes up? No, I will not ask [[CLASSIFIED] to autograph anything for you.\"\n\n\"[[CLASSIFIED]\" -- Paraea Mons T.E.S.A. Dataplume", font="DejaVuSerif-Italic.ttf", size=18, line_leading=3, justify=True, xmaximum=750)
+    image title 010 = Text("{space=500}{b}{size=+1}Friday, April 22, 2011{/size}{/b}\n\n\n\n\"Chapter Two: Asking for Help\"\n\n\"Not everyone can handle an entire project single-handedly. Remember why you have allies in the first place! Achieving something on your own is great, but if the cost of failure is high, swallow your pride and spread the load around.\"\n\n\"Methods of Victory\" -- 'T.H.'", font="DejaVuSerif-Italic.ttf", size=18, line_leading=3, justify=True, xmaximum=750)
     
 init python:
     config.layers.insert(1, 'upper')
@@ -2525,5 +2514,8 @@ label test_Z0_titles:
     pause
     show title 008 at card_pos with slowfadein
     pause
+    show title 009 at card_pos with slowfadein
+    pause
+    show title 010 at card_pos with slowfadein
+    pause
     return
-
