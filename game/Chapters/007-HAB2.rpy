@@ -932,7 +932,7 @@ label Test:
     
     scene bg TsuruyaFutonDay with fade
     queue music "Music/Morning.ogg"
-    show Tsuruya Worry1 Flip at left with dissolve
+    show Tsuruya Worry3 Flip at left with dissolve
     "When his eyes tried lazily to open, only one of them did. A wad of cloth or something was pressing on his right eye, and he was laying on his back, squinting upward into lights that were too bright. Tsuruya was peering down at him in concern, while an unfamiliar middle-aged man with rolled up sleeves and surgical gloves did ... something to his face involving a needle and thread. He let his eye close again, though he remained conscious."
     nvl clear
     "Most of his face was reassuringly numb, but he felt Tsuruya's warm hands clasped together around his left hand. \"There,\" the man's voice said, slightly muffled by his surgical mask. \"Are you still with us, Kyon-dono?\""
@@ -943,11 +943,13 @@ label Test:
     show Tsuruya Worry2 Flip
     "\"Kyon-kun?\" she asked him, her voice sounding surprisingly shy. \"You okay?\""
     nvl clear
+    show Tsuruya Worry3 Flip
     "\"I've been better,\" he allowed with a wry smirk. Turning to the surgeon, who was washing his hands carefully in a basin and had pulled down his mask, he added, \"Thank you, Sensei. Thank you as well, Tsuruya-kun.\""
     show Tsuruya Neutral1 Flip
     "\"This one was my fault,\" Tsuruya said, nodding firmly. \"If it's my fault, it's my responsibility! Oh, let me introduce you; this is Sakura-sensei, our family surgeon.\""
     nvl clear
-    "Sakura gave a wry grin of his own and bowed, drying his hands on a towel. \"I can't give you much medicine, Kyon-dono, but when you're ready tonight, we'll give you something to help you sleep,\" he said. \"In the meantime, you shouldn't need antibiotics, and I can't get those without a prescription, so it's going to be very important to change the dressing on that wound regularly and keep it clean. Also, for today and tomorrow, keep an icepack on the injury whenever possible.\" He produced a strange, rounded strip of something like a bandage, adding, \"There are a few of these in the freezer; the staff can help you get one before you sleep.\""
+    show Tsuruya Neutral2 Flip
+    "Sakura gave a wry grin of his own and bowed, drying his hands on a towel. \"I can't give you much medicine, Kyon-dono, but when you're ready tonight, we'll give you something to help you sleep,\" he said. {w}\"In the meantime, you shouldn't need antibiotics, and I can't get those without a prescription, so it's going to be very important to change the dressing on that wound regularly and keep it clean. {w}Also, for today and tomorrow, keep an icepack on the injury whenever possible.\" He produced a strange, rounded strip of something like a bandage, adding, \"There are a few of these in the freezer; the staff can help you get one before you sleep.\""
     nvl clear
     "\"Ah ... thanks,\" Kyon managed. He felt a little bad ... Tsuruya was going so far out of her way, when he could just ask Yuki to fix it in the morning. \"Um! Shoot, my mom's going to flip out—\""
     nvl clear
@@ -957,21 +959,22 @@ label Test:
     "\"Oh,\" he said. What uncle Kintaro? His uncle was named Keiichi. \"Oh, good.\""
     show Tsuruya Hap1 Flip 
     "\"Now, come on,\" she instructed, wrapping the cooled compress around his head, adjusting it to cover his right eyebrow. \"We're going to take a bath and get some sleeps, okies?\""
+    show Tsuruya Smile6 Flip
     "\"Yeah,\" he agreed, nodding. \"You go first; I'd better check my voice mail.\""
     nvl clear
     "Sakura rose from packing away his medical equipment and bowed deeply to the pair of them. \"Take care, Kyon-dono, Tsuruya-san,\" he said."
-    hide Tsuruya Hap1 Flip with dissolve
+    hide Tsuruya with dissolve
     "Kyon nodded tiredly, while Tsuruya waved to a maid and climbed to her feet. \"I'm headed to the bath,\" the girl told her maid, \"when Kyon-kun is ready, go ahead and send him in, then get our beds ready.\""
     "\"Understood,\" the servant replied, bowing deeply."
     "Shaking his head, Kyon turned his phone back on, unsurprised to see another voice mail. He retrieved it, hearing his future self tell him, with a faintly audible tinge of amusement: \"It seems strange, but it's the best thing to do. Take a bath, rest well, do whatever Tsuruya-kun asks. {i}Whatever{/i} Tsuruya-kun asks. You can leave the phone on now.\""
     nvl clear
     "Rolling his eyes, he tiredly climbed to his feet, approaching the maid with short steps. His arms and back were bruised from all of his falling and rolling, his knuckles were sore, his right ankle was protesting, and whatever anesthetic the doctor had used was starting to fade. The stitched up cut was beginning to fiercely sting, even with the cooling pack stuck to his head, and the purpling bruise over his collar bone was starting to promise aching neck muscles in the coming days."
     "\"Kyon-dono,\" the maid murmured, rising from her kneeling position, though her eyes were still fixed on the floor. \"The head of the Tsuruya family sends his personal regards and thanks for watching over his chosen heir. All of us are quite grateful for your effort so far, especially Kasai-san.\""
+    nvl clear
     "\"I'm just doing ... what anyone would do,\" he said, realizing how lame it was only after the words left his mouth. Sure, anyone who had casual access to instant training, time travel, and a covert organization that they had inadvertently cowed into doing their bidding would do the same."
-    nvl clear
     "Even with her face oriented towards the floor, he could see the maid's mouth quirk into a smile. \"Even though others may, you {i}have{/i},\" the maid insisted. \"He further requests that you continue to watch over her until she completes her trials, and wishes to know what reward you desire in exchange for your services.\""
-    "\"O...of course,\" he agreed. \"But, reward? That's.... No, thanks. I don't need much, and right now, Tsuruya-kun's already made sure that I got medical attention when I needed it, and a place to hide from my mother while she's angry.\" He bit his tongue, wondering if his words came more easily as a side- effect of the fading anesthetic. \"Er.... Well, I appreciate the offer, but I'm not helping Tsuruya-kun for a reward.\""
     nvl clear
+    "\"O...of course,\" he agreed. \"But, reward? That's.... No, thanks. I don't need much, and right now, Tsuruya-kun's already made sure that I got medical attention when I needed it, and a place to hide from my mother while she's angry.\" He bit his tongue, wondering if his words came more easily as a side- effect of the fading anesthetic. \"Er.... Well, I appreciate the offer, but I'm not helping Tsuruya-kun for a reward.\""
     "The maid's smile widened. \"Thank you,\" she said, raising her face and peering cautiously at him. \"Then, if I may impose a small, personal request?\""
     "\"As long as it doesn't go against brigade policy.\""
     "\"Please take good care of Haruka-chan,\" she whispered, her face coloring slightly."
@@ -979,9 +982,9 @@ label Test:
     "\"Of course,\" he agreed, wondering why she needed to ask him twice. \"I don't think many people would want to see her unhappy.\""
     "The maid bowed low again, then gestured him to follow. \"This way to the baths,\" she said quietly. \"Leave your clothes in the changing room. We'll make sure they're clean by morning.\""
     nvl clear
-    scene bg TsuruyaBath
+    scene bg TsuruyaBath with fade
     stop music fadeout 1
-    queue music "Music/Nanika.mp3"
+    play music "Music/Nanika.mp3"
     "\"Okay,\" he agreed, as she opened the changing room door for him and bowed yet again. He wondered briefly how quickly Tsuruya had washed ... she'd gotten cut on her wrist, too, but hopefully not very badly. The surgeon had probably taken care of her first; he'd have to ask her about it later, he decided, shutting the door on the maid and quickly stripping. After grabbing a modesty towel and wrapping it around himself, he slid open the door and stepped into the bathing area, freezing when he saw Tsuruya there, facing away from him."
     nvl clear
     "He couldn't help but stare as the girl leaned forward and gathered up a rinse basin, upending it over her head with a cry of, \"Kya~! Cold!\""
@@ -990,14 +993,16 @@ label Test:
     "\"Ah! Kyon-kun!\" Tsuruya chirped, turning around to face him. For a moment, he was saddened to see she had wrapped a towel around herself, made invisible previously behind the wide fan of her dark hair. Then he mentally slapped himself — what was he thinking?! If something like that got back to Haruhi.... \"Help me scrub my back, then I'll get yours, okay?\" She held out her right arm and stuck out her tongue. \"I can't reach some spots because of this.\" He noticed the bandage on her wrist and gave a weak nod."
     nvl clear
     "\"R...right,\" he said, remembering his voice mail from the future. Taking a bath with Tsuruya ... well, if his future self insisted it had to be done, obviously it was for the sake of the world! No use fighting it."
+    nvl clear
     "She pulled her hair over one shoulder and let her towel drop to the bathing area floor, where it pooled around her. Yep, the future of the world was at stake if he didn't do as his future self insisted. Who was he to cause a paradox? He found a washcloth and lathered it up, scrubbing her back from the top down, barely able to remember one critical question:"
     nvl clear
     "\"Tsuruya-kun, could I have your phone number? You should have mine, too — that way you can call me ahead of time instead of getting into situations like today.\""
     "She giggled, ducking her head slightly. \"Probably a good idea,\" she agreed. \"Still, I do wonder how your uncle Kintaro got my number?\""
-    "\"Er ... he probably called Asahina-san,\" Kyon answered, feeling a bit guilty about being untruthful, but mostly distracted by the smooth skin of Tsuruya's back as he scrubbed."
     nvl clear
+    "\"Er ... he probably called Asahina-san,\" Kyon answered, feeling a bit guilty about being untruthful, but mostly distracted by the smooth skin of Tsuruya's back as he scrubbed."
     "\"That makes sense!\" She abruptly moved away from him, before turning around and giving him an unabashed eyeful. \"Okay, now I'll scrub your back!\""
     "He felt suddenly that he was in danger of significantly more blood loss than from his just-stitched eyebrow."
     nvl clear
+    stop music fadeout 3
     
     jump Fi1
