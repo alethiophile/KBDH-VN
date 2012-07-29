@@ -188,7 +188,7 @@ screen Chapters:
         has vbox
         vbox:
             side "l c":
-                area (0.0, 0.0, 450, 0.7)
+                area (0.0, 5, 450, 0.7)
                 
                 viewport:
                     yadjustment adj
@@ -255,7 +255,7 @@ screen Extras:
         
         textbutton _("Achievements") action ShowMenu("Achievscr")
         textbutton _("Tropes Collection") action ShowMenu("Tropes")
-        textbutton _("Skynet Database") #action ShowMenu("Database")
+        textbutton _("Skynet Database") action ShowMenu("Database")
         textbutton _("Skynet Mediaplayer") #action ShowMenu("Musicbox")
         textbutton _("Skynet Wallpapers") #action ShowMenu("BG_gallery")
         textbutton _("Skynet Avatars") #action ShowMenu("Sprites_gallery")
@@ -267,6 +267,125 @@ init -2 python:
 
     # Make all the main menu buttons be the same size.
     style.em_button.size_group = "em"
+
+
+##############################################################################
+# Skynet Database menu
+#
+# Screen that's used to display the Skynet Database Extras
+
+screen Database:
+    
+    # This ensures that any other menu screen is replaced.
+    tag menu
+    
+    use main_menu
+    
+    # The main menu buttons."
+    frame:
+        style_group "em"
+        xanchor 0.0
+        yanchor 0.0
+        xpos 0.1
+        ypos 0.1
+        #background None
+
+        has vbox
+        # vbox:
+            # side "l c":
+                # area (0.0, 0.0, 450, 0.7)
+        
+        textbutton _("Kyon's Time-travel list") action Show("TTNscr", ttnmode = 'order')
+        for e in Xtras_DB_Dossiers:
+            textbutton _("Dossier / [e[0]]") #action ShowMenu("[e[1]]")
+        null height 5
+        textbutton _("Dismiss") action ShowMenu("main_menu")
+        
+        
+init -2 python:
+
+    # Make all the main menu buttons be the same size.
+    style.em_button.size_group = "em"
+
+
+##########################################################################
+# TTN screen
+#
+# Used to show time-travel notes
+
+screen TTNscr:
+    
+    $ l = len(persistent.ttnotes)
+    $ t = persistent.ttnotes[:]
+    if ttnmode == 'dates':
+        $ t.sort(None, ttndestkey)
+        
+    # This ensures that any other menu screen is replaced.
+    tag menu
+    
+    # use main_menu
+    window:
+        style "mm_root"
+    
+    frame:
+        style_group "tm"
+        # style "gm_nav_button"
+        xanchor 0.0
+        yanchor 0.0
+        xpos 0.1
+        ypos 0.1
+        #background None
+
+        # frame:
+        has vbox
+        frame:
+            xminimum 630
+            text "Kyon's helpful time-travelling notes\nhe used to keep track on his Yet. [l]" style "button_text" size 20 line_leading 2 text_align 0.5 color "#fff"
+        vbox:
+            side "l c":
+                area (0.0, 0.0, 620, 0.7)
+                frame:
+                    left_margin 5
+                    xpadding 10
+                    ypadding 10
+                    
+                    viewport:
+                        yadjustment adjttn
+                        mousewheel True
+                        
+                        vbox:
+                            $ e = {}
+                            for e in t:
+                                if e['pending']:
+                                    $ ttncol = "#005"
+                                else:
+                                    $ ttncol = "#222"
+                                hbox:
+                                    # xalign 0.5
+                                    $ ttndest = tupledest2date(e['dest'])
+                                    vbox:
+                                        area (0.0, 0.0, 150, 0.1)
+                                        text ttndest style "button_text" size 18 text_align 0.0 color ttncol
+                                    text '   ' style "button_text" size 18 text_align 0.0
+                                    text e['descr'] style "button_text" size 18 text_align 0.0 color ttncol
+
+                bar adjustment adjttn style "vscrollbar" 
+                
+        null height 5
+        
+        hbox:
+            if ttnmode == 'order':
+                textbutton "Sort by destination." xmargin 5 xminimum 260 action Show("TTNscr", ttnmode = 'dates')
+            else:
+                textbutton "Show as added." xmargin 5 xminimum 260 action Show("TTNscr", ttnmode = 'order')
+            textbutton "Back.":
+                #size_group "chb"
+                xmargin 5
+                xminimum 375
+                action ShowMenu("Extras")
+            
+        null height 5
+
 
 
 ##########################################################################
@@ -311,7 +430,7 @@ screen Tropes:
                     ypadding 10
                     
                     viewport:
-                        yadjustment adj
+                        yadjustment adjTC
                         mousewheel True
                         
                         vbox:
@@ -320,7 +439,7 @@ screen Tropes:
                                     xalign 0.5
                                     text t style "button_text" size 18 text_align 0.5 color "#000"
 
-                bar adjustment adj style "vscrollbar" 
+                bar adjustment adjTC style "vscrollbar" 
                 
         null height 5
 
@@ -332,7 +451,7 @@ screen Tropes:
             
         null height 5
 
-                
+
 ##############################################################################
 # SpotTheTrope help
 #
@@ -411,7 +530,7 @@ screen Achievscr:
                     ypadding 10
                     
                     viewport:
-                        yadjustment adj
+                        yadjustment adjAch
                         mousewheel True
                         
                         vbox:
@@ -424,7 +543,7 @@ screen Achievscr:
                                     text achievements[i_i][0] style "button_text" size 20 line_leading 2 xalign 0.0
                                     text '???' style "button_text" size 16 line_leading -2 xalign 0.0 first_indent 20
                             
-                bar adjustment adj style "vscrollbar"
+                bar adjustment adjAch style "vscrollbar"
                 
         null height 5
 

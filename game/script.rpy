@@ -1617,7 +1617,12 @@ init python:
     # Screen shake effect.
     sshake = Shake((0, 0, 0, 0), 1.0, dist=30)
     
+    # Viewport adjustements. Each screen needs its own adj!
     adj = ui.adjustment()
+    adjttn = ui.adjustment()
+    adjTC = ui.adjustment()
+    adjAch = ui.adjustment()
+    
     music_need = True
     ecbg = "black"
     ecfg = "fff"
@@ -1873,13 +1878,82 @@ init -1 python:
             ("Credits (rolling)", "credits_roll", True),
             ("Another testbed, Eyecatchies", "test_Z0_eye", True),
             ("Another testbed, Title cards", "test_Z0_titles", True),
+            ("Another testbed, Time-Travel Notes", "test_Z0_TTN", True),
+            ("Another testbed, Clear the TTN", "test_Z0_fragTTN", True),
             ("Trope Collection System Test!", "test_hyperlinks", True),
             ("A test!", "test2", True)
             ],
         ]
         
 #    style.hyperlink_text = style.default
+    
+    
+    Xtras_DB_Dossiers = [
+            ('SOS Brigade', 'XDBD_sos'),
+            ('Affiliates', 'XDBD_frnd'),
+            ('Adversaries', 'XDBD_enmy'),
+            ('Other', 'XDBD_rest'),
+        ]
+    
+    
+    if persistent.ttnotes == None:
+        persistent.ttnotes = []
+    
+    # Appends the TTnote with destination = first arg and description = second arg  to TODO list,
+    #  if there were no entry with exactly the same contents. Third arg can be left out in most cases.
+    def TTN_append(destination = (00, 00), descr = 'Testing', pending = True):
+        if {'dest':destination, 'descr':descr, 'pending':True} in persistent.ttnotes:
+            return False
+        if {'dest':destination, 'descr':descr, 'pending':False} in persistent.ttnotes:
+            return False
+        persistent.ttnotes.append({'dest':destination, 'descr':descr, 'pending':pending})
+        # persistent.ttnotes2 = 
+        
+    # Marks TTN entry with id (its position in Extras when "shown as added", starting with 0) as filfulled
+    def TTN_markDone(id = 0):
+        if id < len(persistent.ttnotes):
+            persistent.ttnotes[id]['pending'] = False
+            return True
+        else:
+            return False
+    
+    # Given tuple of (DayOfMonth, Month), returns string "Monthname Day'th"
+    def tupledest2date(tupledest = (0, 0)):
+        monthlist = ['Zerober', 'January', 'February', 'Marth', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December', 'Notmonthber']
+        if tupledest[1] >= len(monthlist):
+            return False
+        month = monthlist[tupledest[1]]
+        if tupledest[0] == 1:
+            day = '1st'
+        elif tupledest[0] == 2:
+            day = '2nd'
+        elif tupledest[0] == 3:
+            day = '3rd'
+        else:
+            day = str(tupledest[0]) + 'th'
+        if len(tupledest) == 3:
+            return str(month + ' ' + day + ', ' + str(tupledest[2]))
+        else:
+            return str(month + ' ' + day)
 
+    # Given tuple (DayOfMonth, Monthname), returns tuple of (DayOfMonth, Month)
+    def tupledate2dest(tupledest = (32, 'Zerober')):
+        monthlist = ['Zerober', 'January', 'February', 'Marth', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December', 'Notmonthber']
+        if tupledest[1] not in monthlist:
+            return False
+        month = monthlist.index(tupledest[1])
+        day = tupledest[0]
+        if len(tupledest) == 3:
+            return (month, day, tupledest[2])
+        else:
+            return (month, day)
+
+    # Key function for sorting the TTN list by destination date
+    def ttndestkey(e):
+        return e['dest']
+    
+    
+    
     if persistent.unlockedAchievs == None:
         persistent.unlockedAchievs = []
      
@@ -2418,13 +2492,16 @@ label test_Z0_eye:
     show TownHillLeftMorning
     show Haruhi Smile3 at left
     with dissolve
+    # $ ttnt = len(persistent.ttnotes)
     "Now a new spiffy eyecatch with white screenage!"
+    # $ TTN_append((32, 4), "Test Mikuru's time travelling gear")
     call eyecatch_fancy("Febtober 3.14, 1592") from test_Z0_p1006
     scene bg MorningSky
     show TownHillLeftMorning
     # show Kyon Sigh1 at right
     show Asakura Unhap1 at center
     show SpikeFlick at center
+    # $ ttnt = len(persistent.ttnotes)
     "\"{=loud}You opened{/=loud} it already, {=shout}I see{/=shout}.\""
     "[style.movie.font] - [style.loud.size] - [style.shout.size] - [style.whisper.size]"
     call eyecatch2(pause_time=3.0, "Date 1", "Second one") from test_Z0_p0000
@@ -2441,6 +2518,7 @@ label test_Z0_eye:
     call eyecatch_random("Date 1", "Second one", r=4) from test_Z0_p0113
     call eyecatch_random("Date 1", "Second one", r=5) from test_Z0_p0114
     "!S[style.movie.font] - [style.loud.size] - [style.shout.size] - [style.whisper.size]"
+    # $ TTN_append((19, 1), "Once again, test Mikuru's time travelling gear")
     nvl clear
     # call the eyecatch routine, supply the date (text) to show and pause time if needed, specify the unique "from"
     call eyecatch2("Sample date", "Another date", 10.0, ecbg="white") from test_Z0_p0001
@@ -2471,6 +2549,7 @@ label test_Z0_eye:
     show Haruhi Smile3 at left
     with dissolve
     "And now, one random eyecatch!"
+    # $ TTN_markDone(0)
     # call the eyecatch routine, supply the date (text) to show, specify the unique "from"
     call eyecatch_random("February 30, 1999", "February 30, 1999") from test_Z0_p0004
     # activate the next scene with dissolve (or whatever else).
@@ -2492,6 +2571,9 @@ label test_Z0_eye:
     "Thats all!"
     # If you specify the names of arguments, you don't have to worry about positions
     call eyecatch(pause_time=3, r=5) from test_Z0_p0007
+    
+    # $ persistent.ttnotes = persistent.ttnotes[0:-2]
+    
     return
 
 label test_Z0_titles:
@@ -2519,3 +2601,24 @@ label test_Z0_titles:
     show title 010 at card_pos with slowfadein
     pause
     return
+
+label test_Z0_TTN:
+    scene bg MorningSky
+    show TownHillLeftMorning
+    "Adding a TTN with destination of April, 34th and description: \"Test Mikuru-chan's time travelling gear.\"."
+    $ TTN_append((34, 4), "Test Mikuru's time travelling gear.")
+    "You can check the Extras now, and note that previous command does not add a TTN if there is one with exact same contents in the list."
+    "Adding a TTN with destination of February, 1st and description: \"Now, test Asahina-san's time travelling gear.\"."
+    $ TTN_append((1, 2), "Now, test Asahina-san's time travelling gear.")
+    "You can check the Extras for second entry."
+    "And now, marking first entry as done."
+    $ TTN_markDone(0)
+    "Thats all"
+    return
+    
+label test_Z0_fragTTN:
+    "Voiding TTN list..."
+    $ persistent.ttnotes = []
+    extend "Done!"
+    return
+    
