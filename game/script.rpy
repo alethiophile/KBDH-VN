@@ -488,6 +488,7 @@ init:
     image KBrow 3 ="Sprites/Kyon/cheekcut/spliteyebrow3.png"
     image KBrow 4 ="Sprites/Kyon/cheekcut/spliteyebrow1.png"
     image KBrow Smudge = "Sprites/Kyon/cheekcut/spliteyebrowsmudge.png"
+    image Kbrow Bandage = "Sprites/Kyon/cheekcut/bandage2.png"
     
     image KBrow 1 Flip = im.Flip("Sprites/Kyon/cheekcut/spliteyebrow5.png", horizontal=True)
     image KBrow 2 Flip = im.Flip("Sprites/Kyon/cheekcut/spliteyebrow4.png", horizontal=True)
@@ -1006,6 +1007,7 @@ init:
     image Tsuruya Casual Quest1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualQuestion1.png", horizontal=True)
     image Tsuruya Casual Worry1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualWorry1.png", horizontal=True)
     image Tsuruya Casual Worry2 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualWorry2.png", horizontal=True)
+    image Tsuruya Casual Worry3 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualWorry3.png", horizontal=True)
     image Tsuruya Casual Neutral1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualNeutral1.png", horizontal=True)
     image Tsuruya Casual Hap1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualHappy1.png", horizontal=True)
     image Tsuruya Casual Hap2 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualHappy2.png", horizontal=True)

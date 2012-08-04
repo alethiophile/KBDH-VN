@@ -924,48 +924,74 @@ label Test:
     extend "held down a single button until someone answered. \"Car!\" she barked into the handheld. \"Now! I want a medical kit — actually, it may take stitches — bring Sakura-sensei in. I want him ready by the time we get home!\""
     nvl clear
     show Tsuruya Casual Ang1 Flip
-    "She hung up the phone without waiting for response, and Kyon could only blink in surprise when a limousine pulled to a stop outside the alley, a driver quickly climbing out and opening the door for them. Kyon gratefully collapsed into the back seat, only grunting when Tsuruya climbed in next to him and pulled out a first aid-kit. Confident that everything else would be taken care of, he let himself recede into comforting darkness as she pulled his head into her lap and began dabbing something on his eyebrow."
+    "She hung up the phone without waiting for response, and Kyon could only blink in surprise when a limousine pulled to a stop outside the alley, a driver quickly climbing out and opening the door for them." 
+    scene bg Cab
+    show Tsuruya Casual Ang1 Flip at left
+    show Kyon Sigh3 at center
+    show KBrow Smudge at center
+    with dissolve
+    "Kyon gratefully collapsed into the back seat, only grunting when Tsuruya climbed in next to him and pulled out a first aid-kit. Confident that everything else would be taken care of, he let himself recede into comforting darkness as she pulled his head into her lap and began dabbing something on his eyebrow."
     nvl clear
     stop music fadeout 3
     
     call eyecatch_fancy("Thursday, April 21") from HAB2_sc002
     
-    scene bg TsuruyaFutonDay with fade
     queue music "Music/Morning.ogg"
-    show Tsuruya Worry3 Flip at left with dissolve
-    "When his eyes tried lazily to open, only one of them did. A wad of cloth or something was pressing on his right eye, and he was laying on his back, squinting upward into lights that were too bright. Tsuruya was peering down at him in concern, while an unfamiliar middle-aged man with rolled up sleeves and surgical gloves did ... something to his face involving a needle and thread. He let his eye close again, though he remained conscious."
+    scene bg TsuruyaFutonDay
+    show Tsuruya Casual Worry3 Flip at left
+    with slowfadein
+    "When his eyes tried lazily to open, only one of them did. A wad of cloth or something was pressing on his right eye, and he was laying on his back, squinting upward into lights that were too bright." 
+    
+    "Tsuruya was peering down at him in concern, while an unfamiliar middle-aged man with rolled up sleeves and surgical gloves did ... something to his face involving a needle and thread. He let his eye close again, though he remained conscious."
     nvl clear
     "Most of his face was reassuringly numb, but he felt Tsuruya's warm hands clasped together around his left hand. \"There,\" the man's voice said, slightly muffled by his surgical mask. \"Are you still with us, Kyon-dono?\""
     "\"Done?\" he mumbled back."
     "\"Absolutely, Kyon-dono,\" the man assured him."
     nvl clear
     "He opened his eyes again, surprised to find that his right eye opened, but was too swollen to open completely. He vaguely recognized the interior of Tsuruya's house, but wasn't sure which room he was in. Someone had laid a futon out for him and covered it with a thick cloth to prevent his blood from staining the mattress. The girl released his hand and helped him sit up."
-    show Tsuruya Worry2 Flip
+    show Tsuruya Casual Worry2 Flip
+    show Kyon Pain1:
+        xalign 1.0 yalign 2.0
+        linear 1.0 yalign 1.0
+        
+    show Kbrow Bandage:
+        xalign 1.0 yalign 2.0
+        linear 1.0 yalign 1.0
+    
     "\"Kyon-kun?\" she asked him, her voice sounding surprisingly shy. \"You okay?\""
     nvl clear
-    show Tsuruya Worry3 Flip
+    show Tsuruya Casual Worry3 Flip
+    show Kyon Smile5
+    
     "\"I've been better,\" he allowed with a wry smirk. Turning to the surgeon, who was washing his hands carefully in a basin and had pulled down his mask, he added, \"Thank you, Sensei. Thank you as well, Tsuruya-kun.\""
-    show Tsuruya Neutral1 Flip
+    show Tsuruya Casual Casual Neutral1 Flip
     "\"This one was my fault,\" Tsuruya said, nodding firmly. \"If it's my fault, it's my responsibility! Oh, let me introduce you; this is Sakura-sensei, our family surgeon.\""
     nvl clear
-    show Tsuruya Neutral2 Flip
-    "Sakura gave a wry grin of his own and bowed, drying his hands on a towel. \"I can't give you much medicine, Kyon-dono, but when you're ready tonight, we'll give you something to help you sleep,\" he said. {w}\"In the meantime, you shouldn't need antibiotics, and I can't get those without a prescription, so it's going to be very important to change the dressing on that wound regularly and keep it clean. {w}Also, for today and tomorrow, keep an icepack on the injury whenever possible.\" He produced a strange, rounded strip of something like a bandage, adding, \"There are a few of these in the freezer; the staff can help you get one before you sleep.\""
+    show Tsuruya Casual Neutral1 Flip
+    "Sakura gave a wry grin of his own and bowed, drying his hands on a towel. \"I can't give you much medicine, Kyon-dono, but when you're ready tonight, we'll give you something to help you sleep,\" he said"
+    "\"In the meantime, you shouldn't need antibiotics, and I can't get those without a prescription, so it's going to be very important to change the dressing on that wound regularly and keep it clean. {w}Also, for today and tomorrow, keep an icepack on the injury whenever possible.\" He produced a strange, rounded strip of something like a bandage, adding, \"There are a few of these in the freezer; the staff can help you get one before you sleep.\""
     nvl clear
-    "\"Ah ... thanks,\" Kyon managed. He felt a little bad ... Tsuruya was going so far out of her way, when he could just ask Yuki to fix it in the morning. \"Um! Shoot, my mom's going to flip out—\""
+    show Kyon Sigh2
+    "\"Ah ... thanks,\" Kyon managed. He felt a little bad ... Tsuruya was going so far out of her way, when he could just ask Yuki to fix it in the morning."
+    show Kyon Sup2
+    "\"Um! Shoot, my mom's going to flip out—\""
     nvl clear
-    show Tsuruya Grin2 Flip
+    show Tsuruya Casual Grin2 Flip
     "\"No worries!\" Tsuruya said with a wide grin. \"I was worried for you, too, but when you fell asleep in the car, I got a phone call from your uncle Kintaro! He sounds {i}just{/i} like you! I do wonder how he got my number.... But he said he was borrowing your room tonight and was going to talk to your mother, so you should stay here and rest! I think he tried calling you, too, because he said to check your voice mail.\""
     nvl clear
+    show Kyon Puzzle1 
     "\"Oh,\" he said. What uncle Kintaro? His uncle was named Keiichi. \"Oh, good.\""
-    show Tsuruya Hap1 Flip 
+    show Tsuruya Casual Hap1 Flip 
     "\"Now, come on,\" she instructed, wrapping the cooled compress around his head, adjusting it to cover his right eyebrow. \"We're going to take a bath and get some sleeps, okies?\""
-    show Tsuruya Smile6 Flip
+    show Tsuruya Casual Smile6 Flip
     "\"Yeah,\" he agreed, nodding. \"You go first; I'd better check my voice mail.\""
     nvl clear
     "Sakura rose from packing away his medical equipment and bowed deeply to the pair of them. \"Take care, Kyon-dono, Tsuruya-san,\" he said."
-    hide Tsuruya with dissolve
+    hide Tsuruya Casual with dissolve
+    show Kyon Sigh2 
     "Kyon nodded tiredly, while Tsuruya waved to a maid and climbed to her feet. \"I'm headed to the bath,\" the girl told her maid, \"when Kyon-kun is ready, go ahead and send him in, then get our beds ready.\""
     "\"Understood,\" the servant replied, bowing deeply."
+    show Kyon Neutral3
     "Shaking his head, Kyon turned his phone back on, unsurprised to see another voice mail. He retrieved it, hearing his future self tell him, with a faintly audible tinge of amusement: \"It seems strange, but it's the best thing to do. Take a bath, rest well, do whatever Tsuruya-kun asks. {i}Whatever{/i} Tsuruya-kun asks. You can leave the phone on now.\""
     nvl clear
     "Rolling his eyes, he tiredly climbed to his feet, approaching the maid with short steps. His arms and back were bruised from all of his falling and rolling, his knuckles were sore, his right ankle was protesting, and whatever anesthetic the doctor had used was starting to fade. The stitched up cut was beginning to fiercely sting, even with the cooling pack stuck to his head, and the purpling bruise over his collar bone was starting to promise aching neck muscles in the coming days."
