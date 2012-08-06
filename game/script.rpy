@@ -2009,6 +2009,8 @@ init -1 python:
     # Set this to the maximum number of tropes one can get
     max_tropes = 10
     
+    xtras_origin = ""
+    
     if persistent.collected_tropes == None:
         persistent.collected_tropes = {}
 

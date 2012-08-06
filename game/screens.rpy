@@ -237,7 +237,10 @@ screen Extras:
     # This ensures that any other menu screen is replaced.
     tag menu
     
-    use main_menu
+    if xtras_origin == 'mm':
+        use main_menu
+    else:
+        use navigation
     
     # The main menu buttons."
     frame:
@@ -260,8 +263,8 @@ screen Extras:
         textbutton _("Skynet Wallpapers") #action ShowMenu("BG_gallery")
         textbutton _("Skynet Avatars") #action ShowMenu("Sprites_gallery")
         null height 5
-        textbutton _("Dismiss") action ShowMenu("main_menu")
-        
+        if xtras_origin == 'mm':
+            textbutton _("Dismiss") action ShowMenu("main_menu")
         
 init -2 python:
 
@@ -279,7 +282,10 @@ screen Database:
     # This ensures that any other menu screen is replaced.
     tag menu
     
-    use main_menu
+    if xtras_origin == 'mm':
+        use main_menu
+    else:
+        use navigation
     
     # The main menu buttons."
     frame:
@@ -299,7 +305,8 @@ screen Database:
         for e in Xtras_DB_Dossiers:
             textbutton _("Dossier / [e[0]]") #action ShowMenu("[e[1]]")
         null height 5
-        textbutton _("Dismiss") action ShowMenu("main_menu")
+        if xtras_origin == 'mm':
+            textbutton _("Dismiss") action ShowMenu("main_menu")
         
         
 init -2 python:
@@ -324,8 +331,13 @@ screen TTNscr:
     tag menu
     
     # use main_menu
-    window:
-        style "mm_root"
+    
+    if xtras_origin == 'mm':
+        window:
+            style "mm_root"
+    else:
+        window:
+            style "gm_root"
     
     frame:
         style_group "tm"
@@ -397,7 +409,10 @@ screen Tropes:
     # This ensures that any other menu screen is replaced.
     tag menu
     
-    use main_menu
+    if xtras_origin == 'mm':
+        use main_menu
+    else:
+        use navigation
     
     frame:
         style_group "tm"
@@ -461,8 +476,12 @@ screen SpotTheTrope_help:
     
     # use main_menu
     
-    window:
-        style "mm_root"
+    if xtras_origin == 'mm':
+        window:
+            style "mm_root"
+    else:
+        window:
+            style "gm_root"
     
     tag menu
     
@@ -502,7 +521,10 @@ screen Achievscr:
     # This ensures that any other menu screen is replaced.
     tag menu
 
-    use main_menu
+    if xtras_origin == 'mm':
+        use main_menu
+    else:
+        use navigation
 
     frame:
         style_group "chm"
@@ -590,7 +612,7 @@ screen main_menu:
         textbutton _("Newest Volume") action Start('Vol02_start')
         textbutton _("Load Game") action ShowMenu("load")
         textbutton _("Chapters") action ShowMenu("Chapters")
-        textbutton _("Extras") action ShowMenu("Extras")
+        textbutton _("Extras") action [SetVariable('xtras_origin', 'mm'), Show("Extras", xtras_origin = 'mm')] #ShowMenu("Extras")
         textbutton _("Preferences") action ShowMenu("preferences")
         textbutton _("Help") action Help()
         textbutton _("Quit") action Quit(confirm=False)
@@ -626,6 +648,7 @@ screen navigation:
         textbutton _("Save Game") action ShowMenu("save")
         textbutton _("Load Game") action ShowMenu("load")
         textbutton _("Main Menu") action MainMenu()
+        textbutton _("Extras") action [SetVariable('xtras_origin', 'gm'), Show("Extras", xtras_origin = 'gm')] 
         textbutton _("Help") action Help()
         textbutton _("Quit") action Quit()
 
