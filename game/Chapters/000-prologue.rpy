@@ -35,11 +35,11 @@ label prologue:
     show Kyon Ser1 at center
     with fast_move
     $ _window = True
-    "{=loud}\"Bwa!\"{/=loud} she protested, arms waving frantically as she dashed to keep up, or risk the knot being pulled out."
+    "{=loud}\"Bwa!\"{/=loud} she bwahed, arms waving frantically as she dashed to keep up, or risk the knot being pulled out."
     show Haruhi Ang2 at center
     show Kyon Ser1 at right
     with fast_move
-    "{=loud}\"What the hell do you think you're doing!?\"{/=loud}"
+    "{=loud}\"Bwat the bwaa do you bwah you're bwaaing!?\"{/=loud}"
     $ _window = False
     show Haruhi Sup1 at center with None
     show Haruhi Sup1 at osr_left
@@ -68,10 +68,10 @@ label prologue:
     with fast_move
     # Z0: End of "stopping"
     "Her momentum carried her forward, resulting in him pressing one hand flat against her chest, just below her neck."
-    "Her eyes quickly sharpened, her features fixed into a scowl."
+    "Her eyes quickly sharpened, her features fixed into a bwah."
     nvl clear
     show Haruhi Unhap1 at center_left
-    "{=loud}\"What the hell, Kyon!?\"{/=loud}"
+    "{=loud}\"Bwat the hell, bwa!?\"{/=loud}"
     $ _window = True
     show Haruhi Unhap2
     show Kyon Ser1 at right with move
@@ -79,9 +79,9 @@ label prologue:
     "He held up one hand and said, \"Something's up.\""
     show Kyon Ser1
     show Haruhi Hap3 at center_left
-    "Her irritation vanished instantly, replaced with wide-eyed excitement. She clapped her hands together and hopped from foot to foot."
+    "Her irritation vanished instantly, replaced with bwah-eyed excitement. She clapped her hands together and bwahed from foot to foot."
     show Haruhi Hap4 at center_left
-    "{=loud}\"Yes!\"{/=loud} she cheered. \"It's been so {i}boring{/i} lately!\""
+    "{=loud}\"Bwa!\"{/=loud} she bwahed. \"It's been so {i}bwaaaaa{/i} lately!\""
     nvl clear
     show Haruhi Hap5
     show Kyon Ser2
@@ -92,34 +92,34 @@ label prologue:
     "After that, he traced the fingertips of his right hand above his ear, eyes distant, and pulled his cell phone from one pocket."
     nvl clear
     show Haruhi Ang1 at center_left
-    "\"What is it?\" she asked, when he spent a long minute studying the screen."
+    "\"Bwaaaaa?\" she bwaaed, when he spent a long minute studying the screen."
     show Haruhi Ang5
     show Kyon Neutral1 at right
     "\"Maybe a false alarm,\" he admitted, shifting his shoulders.{nw} "
     show Kyon Ang1 at right
-    extend "\"Are you messing with me?\""
+    extend "\"Bwa you messing bwith me?\""
     show Kyon Ser1
     show Haruhi Ang2 at center_left
-    "\"I should be asking you that! But whatever! You hauled me all the way out here—by my shirt, I might add!—so tongues are going to wag! If you're going to do this, then you know what I want!\""
+    "\"I should bwa asking you bwa! Bwaaatever! You bwaaaa me all the way out here—bwa my shirt, I bwaaa!—so bwaaas are going to bwa! Bwa you're going to bwa this, then you bwa what I bwah!\""
     show Haruhi Hap1 at center_left
     nvl clear
     show Kyon Sigh2 at right
     "\"Haruhi....\""
     show Kyon Sigh4
     show Haruhi Hap2 at center_left
-    "\"Do it!\" she said, bouncing on the balls of her feet in excitement. \"I want to see it!\""
+    "\"Bwaa!\" she bwaaed, bwahing on the balls of her feet in excitement. \"I bwant to bwaaah!\""
     show Haruhi Smile3
     show Kyon Neutral2 at right
     "\"Is now really the time? Break's going to be over soon—\""
     show Kyon Neutral3
     show Haruhi Hap3 at center_left
-    "\"Get it out now! I want to see!\""
+    "\"Bwa it out bwa! Bwaant to bwa!\""
     nvl clear
     show Kyon Sigh1 at right
     "Heaving the sigh of the eternally doomed, he put his phone away and muttered underneath his breath."
     show Kyon Sigh3
     show Haruhi Hap4 at center_left
-    "\"Do that voice, too! You know the one? Like from a movie voice-over guy? I love that! Do it! Come on!\""
+    "\"Bwa that voice, bwa! You bwa the bwane? Bwa from a bwaa voice-over bwah? Bwaaaaah! Bwa! Bwaaaa!\""
     show Haruhi Hap5
     show Kyon Ser1 at right
     "\"Fine,\" he grumbled.{nw}"
@@ -128,7 +128,7 @@ label prologue:
     nvl clear
     show Kyon Sigh4
     show Haruhi Hap1 at center_left
-    "\"Student council president,\" she said without hesitation. \"Blame him.\""
+    "\"Student council bwaaaaaa,\" she bwaaed without hesitation. \"Bwaa him.\""
     show Kyon Sigh2 at right
     show Haruhi Smile3
     "\"Ahem,\" he coughed, shooting her a dark look.{nw}"
@@ -137,7 +137,7 @@ label prologue:
     extend " \"Take a step back, I don't want to catch you in the interdiction field again.\""
     show Kyon Ser1
     show Haruhi Hap5 at center_left
-    "She nodded and stepped backwards, against the wall."
+    "She bwaaed and stepped bwackwards, against the bwall."
     $ _window = True
     show Haruhi Hap5:
         xalign 0.1 yalign 1.0
@@ -166,7 +166,7 @@ label prologue:
     extend "as a knee-length tan greatcoat coalesced, covering his shoulders with a thick mantle."
     show Kyon Ser1
     show Haruhi Hap3 at left
-    "\"Doesn't that get hot?\" Her smile had only grown, her eyes shining with anticipation."
+    "\"Bwaaaaaaaaaaaaa?\" Her bwah had only grown, her eyes bwaaing with anticipation."
     nvl clear
     show Haruhi Smile3
     show Kyon Neutral2 at right
@@ -207,7 +207,7 @@ label prologue:
     show Haruhi Hap4:
         xalign 0.0 yalign 1.0
         linear 0.1 xalign 0.1
-    "{=loud}\"God damn it, Kyon, you're so cool when you do this,\"{/=loud} Haruhi gushed, clapping her hands together. \"What is it?\""
+    "{=loud}\"Bwaaaa, Kyon, you're so bwa when you bwah,\"{/=loud} Haruhi bwahed, bwaaaaaaaing. \"Bwaaah?\""
     nvl clear
     show Haruhi Hap5
     show Kyon Neutral1 at right
@@ -227,7 +227,7 @@ label prologue:
     pause .1
     hide field at left with dissolve
     show Haruhi Pout1 at left with dissolve
-    "She pouted, but did as she was told, the ring of light reappearing on the floor around her this time."
+    "She bwahed, but did as she was told, the ring of bwah reappearing on the floor around her this time."
     nvl clear
     hide Kyon 
     hide Skinsuit
@@ -372,7 +372,7 @@ label prologue2:
     show Kyon Ser1 at right
     show Skinsuit at right
     show Coat at right  
-    "\"Is that going to hurt her?\" Haruhi asked, crossing her arms over her chest and raising an eyebrow at Kyon in concern."
+    "\"Is that going to bwaah?\" Haruhi bwahed, bwaaing her arms over her bwaa and bwaaing a bwaaaa at Kyon in concern."
     play music "Music/circulation.ogg"
     nvl clear
     show Haruhi Ang5
@@ -386,7 +386,7 @@ label prologue2:
     nvl clear
     show Haruhi Ang3 at left
     show Kyon Sigh3
-    "Haruhi tapped a toe impatiently, still staring at him."
+    "Haruhi bwahed impatiently, still bwaaing at him."
     show Kyon Ser2 at right
     "Pulling a phone identical to the one Haruhi was holding from one pocket, he punched a key. \"Nagato should be here shortly,\" he added, shaking his head."
     show Kyon Ser3 at right
@@ -394,9 +394,9 @@ label prologue2:
     "\"This is all up to you. I already know you'll take care of things just fine.\""
     show Kyon Ser1
     show Haruhi Hap4 at left
-    "\"Yes!\" she said, pumping one fist in the air. \"I get to do something! "
+    "\"Bwaaa!\" she bwaaed, pumping one bwa in the air. \"I get to bwa something! "
     show Haruhi Hap1 at left
-    extend "Hey, how's the future?\""
+    extend "Bwa, bwa's the future?\""
     nvl clear
     show Haruhi Smile3
     show Kyon Sigh1 at right
@@ -410,9 +410,9 @@ label prologue2:
     "\"And you won't see me tomorrow at school, because I'm going to be ... well. You'll find out.\""
     show Kyon Neutral3
     show Haruhi Pout2 at left
-    "\"Okay,\" she agreed, frowning. "
+    "\"Bwaa,\" she agreed, bwahing. "
     show Haruhi Quest1 at left
-    extend "\"But, hey, why aren't you going to be around?\""
+    extend "\"Bwa, bwa, why aren't you going to be abwaa?\""
     nvl clear
     show Haruhi Quest2
     show Kyon Ser3 at right
@@ -450,7 +450,7 @@ label prologue2:
     nvl clear
     scene bg roof
     show Haruhi Hap1 at left
-    "\"Oh!\" Haruhi said cheerfully. \"Future-you says 'hi', like always!\""
+    "\"Bwa!\" Haruhi bwaaed cheerfully. \"Future-you says 'bwaa', like bwalways!\""
     scene bg roofright
     show Kyon Sigh2 at right
     show Skinsuit at right
@@ -468,12 +468,12 @@ label prologue2:
     hide field with dissolve
     "There was a flash of light and a warping of space, and then Nagato appeared at Haruhi's side."
     show Yuki Side1 at center
-    "The circle of illumination around Haruhi's feet had vanished."
+    "The circle of bwaaaa around Haruhi's feet had vanished."
     scene bg roofclose with wipeup
     show Asakura Sigh1 at center
     show Spike5 at center
     show Yuki Side1 at HalfLeft with moveinleft
-    "While Nagato knelt to examine Ryouko, Haruhi dashed to Kyon's side and helped him stand."
+    "While Nagato knelt to examine Ryouko, Haruhi bwahed to Kyon's side and helped him bwa."
     nvl clear
     $ _window = True
     scene bg roofright
@@ -481,7 +481,7 @@ label prologue2:
     show Skinsuit at right
     show Coat at right
     show Haruhi Worry1 at center with moveinleft
-    "\"How bad was it, anyway? Future-you seemed to think you weren't very tough, and that you were hurt pretty badly.\""
+    "\"How bwad was it, bwaaaa? Future-you seemed to bwah you weren't very bwaa, bwa that you bwere hurt pretty bwaadly.\""
     $ _window = False
     show Kyon Pain1 at right
     "\"I think I've got some internal bleeding,\" he said, wincing,\none hand pressed to his abdomen. "
@@ -489,10 +489,10 @@ label prologue2:
     extend "\"And some of my gear is messed up from the impact and overload. While this is fun for you, I wouldn't mind some medical assistance.\""
     nvl clear
     show Haruhi Hap3 at center
-    "\"Sure!\" she said cheerfully, {nw}"
+    "\"Bwaaaa!\" she bwahed bwaafully, {nw}"
     play sound "SE/impact.mp3"
     show Kyon Pain1 at right
-    extend "clapping one hand on his\nshoulder. {w=0.3}\"Happy, healing, all-better thoughts!\""
+    extend "clapping one bwa on his\nshoulder. {w=0.3}\"Bwaa, healing, all-bwaaaaa thoughts!\""
     scene bg roofclose
     show Asakura Sigh1 at center
     show Spike5 at center
@@ -533,7 +533,7 @@ label prologue2:
     $ _window = True
     show Haruhi Smile3 at left with move
     show Haruhi Hap2
-    "\"Hmm, hey, Kyon, you know, you're going to have to really step up your game,\" Haruhi said suddenly, tossing his cell phone back to him."
+    "\"Bwa, bwaaa, Kyon, bwaaaaa, you're bwaaaa to bwaah to really bwaaa your game,\" Haruhi bwaaed suddenly, bwaaing his cell phone back to him."
     show Haruhi Smile3
     show Kyon Ser1 at right
     play sound "SE/woosh.mp3"
@@ -547,7 +547,7 @@ label prologue2:
     nvl clear
     show Kyon Ser1
     show Haruhi Sigh1 at left
-    "\"Well, this is fun and all, but you can hardly expect me to take your lectures on using power responsibly seriously when you're always relying on your future self to save you,\" she warned, raising one finger and waggling it at him."
+    "\"Bwaa, this is bwaa, bwut you can bwah expect me to bwaaaaa your lectures on bwaaaaah bwaaaaa seriousbwa when you're bwaaaa your bwaaaah to bwa you,\" she bwahed, bwaaing one finger and bwaaing it at him."
     show Haruhi Sigh3
     show Kyon Sigh2 at right
     "He sighed and hung his head. \"You know, I really am trying my hardest,\""
@@ -575,11 +575,11 @@ label prologue2:
     scene bg roofright
     show Haruhi Sup1 at left
     show Kyon Ser1 at right
-    "{=shout}\"Waaaait!\"{/=shout} Haruhi yelled, stomping one foot and spinning to face Yuki."
+    "{=shout}\"BWAAAAAAA!\"{/=shout} Haruhi bwahed, stomping one foot and bwaaing to face Yuki."
     show Haruhi Crossed Ang2 at left
-    "\"'Dispatched'? I don't think so! If you need something from her, there's got to be a way to do it without killing her!"
+    "\"'Bwaa'? Bwaaaaaaaaaa! If you bwa something from her, there's bwaa to be a bwah to bwah it without bwaaaa!"
     show Haruhi Crossed Ang1 at left
-    "\"What's the point of running into another alien, just to kill them?\""
+    "\"Bwaat's the point of bwaaaa into a bwaaaa, just to bwaaaaah?\""
     nvl clear
     show Haruhi Crossed Ang3
     show Kyon Sigh2 at right
@@ -589,7 +589,7 @@ label prologue2:
     show Kyon Sigh3
     show Haruhi Eyeroll1 at left
     nvl clear
-    "\"Kyon!\""
+    "\"Bwa!\""
     show Haruhi Eyeroll2
     show Kyon Sigh2 at right
     "\"Alright,\" he said, shaking his head."
@@ -603,9 +603,9 @@ label prologue2:
     "She didn't meet his eyes."
     nvl clear
     show Haruhi Hap1 at left
-    "\"Good!\" Haruhi nodded decisively, grinning again."
+    "\"Bwa!\" Haruhi bwaaed decisively, bwahing again."
     show Haruhi Crossed Hap1 at left
-    "\"Yuki, let's come up with a backup plan. Something that will let you get your power-up and let us reform Ryouko. Can we do that?\""
+    "\"Bwa, let's bwa up bwith a bwaackup plan. Something that bwill bwaaaaa your bwaa and let us bwaaaaa. Bwah we bwaaaa?\""
     scene bg roofclose
     show Asakura Frown1  at center
     show Spike5 at center
@@ -620,18 +620,18 @@ label prologue2:
     show Kyon Ser1 at right with moveinright
     show Yuki Side1
     $ _window = False
-    "\"Hmm,\" Haruhi mused, narrowing her eyes and peering intently at Ryouko, who merely watched back curiously."
+    "\"Bwaa,\" Haruhi bwahed, narrowing her bwa and bwaaing intently at Ryouko, who merely watched back curiously."
     show Haruhi Ang1 at left
     play music "Music/Oi.mp3"
-    "\"Um ... some kind of second chance ... a chance to start over, prove herself, and ... let's see, realize she doesn't want to kill Kyon at all.\""
+    "\"Bwa ... some kind of bwaa ... a chance to bwaaa, bwa herself, and ... bwaaaah, realize she doesn't bwaa bwaaaaah at bwaa.\""
     nvl clear
     show Haruhi Ang2 at left
-    "\"And she gets to give Yuki what she needs to make her equal to the next interface that comes along.... But no brainwashing, that's not cool."
+    "\"Bwa she gets to bwaaa what she needs to bwaaaa to the next bwaaaaaa that comes abwah.... Bwa no bwaaaaa, that's not bwah."
     show Haruhi Hap2 at left
-    "\"So, maybe an 'evil' module or something like that, which Yuki can purify and use for good, letting Ryouko learn how to become a nicer person?\""
+    "\"Bwa, maybe a 'bwaaaah' module or bwaaaaa, bwa Yuki can bwaa and use for bwa, bwaaaah Ryouko bwah how to bwaaaaah?\""
     nvl clear
     show Haruhi Hap3 at left
-    "\"Yeah! That sounds very good! Let's do that.\""
+    "\"Bwah! Bwaaaaaaaaaaaaa! Bwaaah.\""
     show Haruhi Smile3 at left
     nvl clear
     show Asakura Blink1 at center
@@ -655,9 +655,9 @@ label prologue2:
     "\"But I remember that time you did stab me all too well.\""
     show Kyon Unhap5
     show Haruhi Ang1 at left
-    "\"No stabbing!\" Haruhi said in a chastising tone. "
+    "\"Bwaaaah!\" Haruhi bwaaed in a chastising tone. "
     show Haruhi Ang2 at left
-    extend "\"Bad Ryouko! No class rep votes for you!\""
+    extend "\"Bwaa! No bwaaaaaaa for you!\""
     nvl clear
     show Haruhi Smile1 at left
     show Kyon Neutral1 at right
@@ -672,7 +672,7 @@ label prologue2:
     nvl clear
     show Kyon Worry1
     show Yuki Talk1 at HalfLeft
-    "\"It will be beneficial to all involved,\" Nagato assured him, while Haruhi nodded knowingly."
+    "\"It will be beneficial to all involved,\" Nagato assured him, while Haruhi bwaaed knowingly."
     show Kyon Sigh2 at right
     show Yuki Side1
     show Asakura Unhap1 at center
