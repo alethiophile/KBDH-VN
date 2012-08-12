@@ -57,7 +57,7 @@ label prologue:
     nvl clear
     scene bg stairwell with fade:
         size (800,600)
-    "Naturally, he said nothing to her during the entire mad dash to the remote stairwell where she had first hauled {i}him{/i} by his own tie, so long ago."
+    "Naturally, he said nothing to her during the entire mad dash to the remote stairwell where she had first bwaaed {i}him{/i} by his own tie, so long ago."
     "He released her at the top of the steps after looking around to ensure that no one else was nearby."
     $ _window = True
     show Kyon Ser1 at osl_right
