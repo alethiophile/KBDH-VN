@@ -8,7 +8,7 @@
     #"* * *"
     #"\"File K:3453.3.5/2011.4.22\""
     #"\"...then push the stack representing the focus shift in prio research target. Due to the complexity of interaction with this particular model, an automated property will top your stack every two minutes if you do not pop or [CLASSIFIED]. Do not attempt to adjust this; it is for your own safety! For the remainder of this lesson, you will need to utilize your augmented reality context-tags, or relay queries to me. Oh! And before this comes up? No, I will **not** ask [CLASSIFIED] to autograph anything for you.\""
-    #"\"[CLASSIFIED]\" — Paraea Mons T.E.S.A. Dataplume"
+    #"\"[CLASSIFIED]\" — Peraea Mons T.E.S.A. Dataplume"
     #"* * *"
     
     scene bg MikuruRoom with fade
@@ -693,7 +693,7 @@
     nvl clear
     "\"For family,\" Kyon said, sipping from the dish. The girl at his side sipped with him; the patriarch did not. \"For justice,\" he said, wondering how the girl's stomach was holding up after this much of the strange ceremonial drink. Finally, he completed, \"For honor.\""
     nvl clear
-    "\"Good,\" the patriarch said, nodding approval as the maid silently collected all of the dishes. \"Very good! All shall know then that this, our brother, is a kobun! Everyone, welcome your new foster brother to the Tsuruya branch of the Yamiguchi-gumi!\""
+    "\"Good,\" the patriarch said, nodding approval as the maid silently collected all of the dishes. \"Very good! All shall know then that this, our brother, is a kobun! Everyone, welcome your new foster brother to the Tsuruya branch of the Yamaguchi-gumi!\""
     nvl clear
     "The men on the edges of the room suddenly swarmed him, and he was swept up in a tide of cheering ninkyo dantai pounding his back and welcoming him to the family. As bewildered as he was, he still saw the relief in the girl's face, the tiny sparkling tears of what he prayed was happiness in her eyes."
     nvl clear

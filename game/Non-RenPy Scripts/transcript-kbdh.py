@@ -69,7 +69,9 @@ sources = [ "kbdh00.txt",
             "kbdh50.txt", 
             "kbdh51.txt", 
             "kbdh52.txt", 
-            "kbdh53.txt"]
+            "kbdh53.txt", 
+            "kbdh54.txt", 
+            "kbdh55.txt"]
 
 chapter_labels = [  "IMRP", 
                     "AO_1", 
@@ -124,7 +126,9 @@ chapter_labels = [  "IMRP",
                     "OB_7", 
                     "LL_1", 
                     "LL_2", 
-                    "LL_3"]
+                    "LL_3", 
+                    "LL_4", 
+                    "LL_5"]
 
 targets = [ "chapter000_IMRP.rpy", 
             "chapter001_AO-1.rpy", 
@@ -179,11 +183,13 @@ targets = [ "chapter000_IMRP.rpy",
             "chapter050_OB-7.rpy", 
             "chapter051_LL-1.rpy", 
             "chapter052_LL-2.rpy", 
-            "chapter053_LL-3.rpy"]
+            "chapter053_LL-3.rpy", 
+            "chapter054_LL-4.rpy", 
+            "chapter055_LL-5.rpy"]
             
-# for i in range(min(len(sources), len(targets))): # To iterate through all files
+for i in range(min(len(sources), len(targets))): # To iterate through all files
 # for i in [len(sources)-1]: # for last element of array only
-for i in range(6, min(len(sources), len(targets))): # From 6 to end of sources or targets
+# for i in range(6, min(len(sources), len(targets))): # From 6 to end of sources or targets
     file_source = open(sources[i], 'r')
     file_target = open(targets[i], 'w')
     

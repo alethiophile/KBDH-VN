@@ -220,7 +220,7 @@ label Fa_1:
     "\"Well, I'm hardly the only aunt who will be paying you,\" she assured him. Winking, she added, \"And if Shion-chan wants you to look after her children, we'll tell her we're paying you eight hundred an hour instead.\""
     "He chuckled, shaking his head. \"Sure,\" he agreed. \"Oh, now that I think of it, how is Grandmother Maebara?\""
     "\"Ah,\" Rika allowed, her smile fading. \"She's not doing as well, these days,\" she said apologetically. \"After her husband....\" She trailed off and shrugged."
-    "Kyon nodded, not really remembering the man he was told he resembled very well. He had passed away at around the same time Kyon had manged — however briefly — to lose the hated nickname."
+    "Kyon nodded, not really remembering the man he was told he resembled very well. He had passed away at around the same time Kyon had managed — however briefly — to lose the hated nickname."
     "\"At any rate, Rena-chan and Satoko-chan are helping to look after her as well, but if you wanted to visit her with your sister, I think that's a grand idea.\""
     "He nodded again, deciding he might as well do that before his parents came up for the more formal visit. The trio in the kitchen burst back into the front room, swarming over him and demanding that he go outside and play with them. Well, he thought, as his sister and cousins conspired to bodily drag him out the door, it could be worse."
     "\"We should chat tomorrow,\" Rika called before he was out of earshot. \"We have a lot to discuss! Take care until then, Kyon!\""

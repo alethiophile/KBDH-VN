@@ -284,6 +284,6 @@ label SB_1:
     "\"That's right!\" Mikuru agreed. \"Um ... have you done any designing, yet?\""
     "\"Yes, a little,\" Kanae allowed."
     "\"Oh, you're doing important things, Kanae-chan,\" Tsuruya assured her with a wink."
-    "\"I agree!\" Mikuru said brightly, giving Kanae a warm smile. Kanae felt her face heat up and manged a nervous nod. \"S...so, Nagato-san is in charge of handling enemy sliders?\""
+    "\"I agree!\" Mikuru said brightly, giving Kanae a warm smile. Kanae felt her face heat up and managed a nervous nod. \"S...so, Nagato-san is in charge of handling enemy sliders?\""
     "\"She's in charge of directing slider operations,\" Haruhi clarified. \"Well, Koizumi, that was a pretty good idea, and I think it'll work out. Hmm.... We'll spend the rest of this meeting working out details, and if there's time left over, then we can work on upcoming activities!\""
     "Kanae nodded uncertainly, hoping that Haruhi was right, but mostly, just wondering if she followed Tsuruya's advice, if her sempai would be reassured. If the rest of the meeting didn't need her attention, and her sempai was right that it really was fine not to worry about the important things.... She turned her head to her sketchbook and rummaged for her pencils. She could do her part, too."
