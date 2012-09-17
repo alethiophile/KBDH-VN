@@ -10,10 +10,10 @@
     #"\"...then push the stack representing the focus shift in prio research target. Due to the complexity of interaction with this particular model, an automated property will top your stack every two minutes if you do not pop or [CLASSIFIED]. Do not attempt to adjust this; it is for your own safety! For the remainder of this lesson, you will need to utilize your augmented reality context-tags, or relay queries to me. Oh! And before this comes up? No, I will **not** ask [CLASSIFIED] to autograph anything for you.\""
     #"\"[CLASSIFIED]\" — Peraea Mons T.E.S.A. Dataplume"
     #"* * *"
-    
+
     scene bg MikuruRoom with fade
     stop music fadeout 3
-    #queue music "Music/
+    queue music "Music/MikurunoKokoro.mp3" 
     show Kyon Neutral3 at TenthRight
     show Mikuru Unhap2 at TenthLeft
     with dissolve
@@ -115,6 +115,8 @@
     "Hard-earned, and well deserved, after all. He walked back home, hands in his pockets, wondering if he actually would receive any phone calls. He wouldn't need to make any, at least ... not until he had to call Tsuruya, anyway."
     nvl clear
     scene bg KyonKitchenLeft with fade
+    stop music fadeout 1
+    queue music "Music/Kokuhaku.mp3"
     #show Akane at left
     #show KyonDad at Right
     #with dissolve
@@ -217,6 +219,8 @@
     nvl clear
     
     scene bg MikuruApartment with fade
+    stop music fadeout 1
+    queue music "Music/Itsumo(Movie).mp3"
     show Mikuru Smile2 at left
     show Kyon Smile4 at right
     with dissolve
@@ -311,7 +315,7 @@
     hide MikuruBig with dissolve
     "He heard Mikuru's older self hum thoughtfully as she stepped into the appointed meeting stall, and he held his breath when he heard his past self mutter about Haruhi."
     nvl clear
-    show Kyon Smile2
+    show Kyon Smile2 Flip
     "There was no resisting the smirk at Mikuru's reaction to his past self's line regarding ero manga, though he spared a moment to despair his past self's ignorance. What if someone {i}else{/i} were hiding in the room? Mikuru's older self had only just arrived, after all, she hadn't had time to check either. After the unnerving clunking noise that signified his past-self's departure, he checked the other stalls ... but of course, they were empty."
     nvl clear
     scene bg ClubHallLeft with fade
@@ -319,6 +323,8 @@
     nvl clear
     
     scene bg ClubroomRightDay
+    stop music fadeout 1
+    queue music "Music/MikurunoKokoro.mp3"
     show Haruhi Eyeroll2 at left
     show Mikuru Unhap2 at right
     with dissolve
