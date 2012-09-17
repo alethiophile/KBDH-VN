@@ -782,3 +782,5 @@ label Fi1:
     nvl clear
     "Mikuru nodded quickly again, though Haruhi was certain she saw a sheen of nervous sweat on her forehead. Oh, yes, she decided, narrowing her eyes at the time traveler. Kyon was going to answer for this. The only way he could possibly be in two places at once yesterday was with time travel ... and that meant an abuse of power, despite all of his warnings to her. As soon as she figured out how he had time traveled without letting the brigade's only time traveler know."
     nvl clear
+    
+    jump Fi2
