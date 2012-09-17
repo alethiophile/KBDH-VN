@@ -1871,6 +1871,7 @@ init -1 python:
         [
             ("Filler Arc", "", False),
             ("Chapter Eight: Relationship Building", "Fi1", True),
+            ("Chapter Nine: Family Matters", "Fi2", True),
         ],
         [
             ("Label a scene you're working on test and use this", "Test", True),

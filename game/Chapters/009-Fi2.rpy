@@ -1,5 +1,5 @@
 #label Test:
-#label Fi_2:
+label Fi2:
     # Kyon: Big Damn Hero"
     ## Filler Arc II"
     ### Chapter Nine: Family Matters"
@@ -52,10 +52,11 @@
     show Kyon Smile4
     "\"True enough.\" He really had to stop getting caught in his uniform so much.... Even with the amazing bloodstain removal skills of Tsuruya's servants, something else that he tried not to think about too hard, he was going to wear it out long before the year was over. Possibly even before it was time to switch to summer uniforms, at the current rate."
     nvl clear
+    scene bg TownStreetDay1 with fade
+    "He stepped out of the apartment first, and she closed and locked it behind them before giving him a bright smile and leading the way down the street towards a noodle stall."
     scene bg Udon with fade
     show Kyon Smile4 at TenthRight
     show Mikuru Smile1 at TenthLeft
-    "He stepped out of the apartment first, and she closed and locked it behind them before giving him a bright smile and leading the way down the street towards a noodle stall."
     "After they had taken seats on the stools beneath the curtain, the elderly proprietor greeted the girl like a long-lost granddaughter. She cheerfully introduced him by his nickname."
     nvl clear
     show Kyon Neutral3
