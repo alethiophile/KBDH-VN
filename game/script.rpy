@@ -71,6 +71,7 @@ init:
     image bg SchoolEntranceLeft = "Backgrounds/SchoolEntranceLeft.png"
     image bg SchoolEntranceRight = "Backgrounds/SchoolEntranceLeft.png"
     image bg SchoolBathroom = "Backgrounds/SchoolBathroom.png"
+    image bg SchoolTable = "Backgrounds/SchoolTable.png"
     image bg Cafe = "Backgrounds/Cafe.jpg"
     image bg ParkBench = "Backgrounds/ParkBench.png"
     image bg ParkPath = "Backgrounds/ParkPath.png"
@@ -363,10 +364,36 @@ init:
     image Haruhi Unhap1 Flip = im.Flip("Sprites/Haruhi/HaruhiSideUnhappy1.png", horizontal=True)
     image Haruhi Unhap2 Flip = im.Flip("Sprites/Haruhi/HaruhiSideUnhappy2.png", horizontal=True)
     image Haruhi Unhap3 Flip = im.Flip("Sprites/Haruhi/HaruhiSideUnhappy3.png", horizontal=True)
+    image Haruhi Eyeroll1 Flip = im.Flip("Sprites/Haruhi/HaruhiSideEyeroll1.png", horizontal=True)
+    image Haruhi Eyeroll2 Flip = im.Flip("Sprites/Haruhi/HaruhiSideEyeroll2.png", horizontal=True)
     
-    image Haruhi Crossed Sigh1 Flip = im.Flip("Sprites/Haruhi/HaruhiCrossedSigh1.png", horizontal=True)
     image Haruhi Crossed Sup1 Flip = im.Flip("Sprites/Haruhi/HaruhiCrossedSurprised1.png", horizontal=True)
+    image Haruhi Crossed Sup2 Flip = im.Flip("Sprites/Haruhi/HaruhiCrossedSurprised2.png", horizontal=True)
+    image Haruhi Crossed Ang1 Flip = im.Flip("Sprites/Haruhi/HaruhiCrossedAngry1.png", horizontal=True)
+    image Haruhi Crossed Ang2 Flip = im.Flip("Sprites/Haruhi/HaruhiCrossedAngry2.png", horizontal=True)
+    image Haruhi Crossed Ang3 Flip = im.Flip("Sprites/Haruhi/HaruhiCrossedAngry3.png", horizontal=True)
+    image Haruhi Crossed Hap1 Flip = im.Flip("Sprites/Haruhi/HaruhiCrossedHappy1.png", horizontal=True)
+    image Haruhi Crossed Hap2 Flip = im.Flip("Sprites/Haruhi/HaruhiCrossedHappy2.png", horizontal=True)
+    image Haruhi Crossed Hap3 Flip = im.Flip("Sprites/Haruhi/HaruhiCrossedHappy3.png", horizontal=True)
+    image Haruhi Crossed Hap4 Flip = im.Flip("Sprites/Haruhi/HaruhiCrossedHappy4.png", horizontal=True)
+    image Haruhi Crossed Pout1 Flip = im.Flip("Sprites/Haruhi/HaruhiCrossedPout1.png", horizontal=True)
+    image Haruhi Crossed Pout1 Bright Flip = im.Flip(im.MatrixColor("Sprites/Haruhi/HaruhiCrossedPout1.png",
+                                       im.matrix.brightness(.5)), horizontal=True)
+    image Haruhi Crossed Pout2 Flip = im.Flip("Sprites/Haruhi/HaruhiCrossedPout2.png", horizontal=True)
+    image Haruhi Crossed Eyeroll1 Flip = im.Flip("Sprites/Haruhi/HaruhiCrossedEyeroll1.png", horizontal=True)
+    image Haruhi Crossed Eyeroll2 Flip = im.Flip("Sprites/Haruhi/HaruhiCrossedEyeroll2.png", horizontal=True)
     image Haruhi Crossed Quest1 Flip = im.Flip("Sprites/Haruhi/HaruhiCrossedQuestion1.png", horizontal=True)
+    image Haruhi Crossed Grin1 Flip = im.Flip("Sprites/Haruhi/HaruhiCrossedGrin1.png", horizontal=True)
+    image Haruhi Crossed Grin2 Flip = im.Flip("Sprites/Haruhi/HaruhiCrossedGrin2.png", horizontal=True)
+    image Haruhi Crossed Worry1 Flip = im.Flip("Sprites/Haruhi/HaruhiCrossedWorry1.png", horizontal=True)
+    image Haruhi Crossed Worry2 Flip = im.Flip("Sprites/Haruhi/HaruhiCrossedWorry2.png", horizontal=True)
+    image Haruhi Crossed Smile1 Flip = im.Flip("Sprites/Haruhi/HaruhiCrossedSmile1.png", horizontal=True)
+    image Haruhi Crossed Smile2 Flip = im.Flip("Sprites/Haruhi/HaruhiCrossedSmile2.png", horizontal=True)
+    image Haruhi Crossed Smile3 Flip = im.Flip("Sprites/Haruhi/HaruhiCrossedSmile3.png", horizontal=True)
+    image Haruhi Crossed Sigh1 Flip = im.Flip("Sprites/Haruhi/HaruhiCrossedSigh1.png", horizontal=True)
+    image Haruhi Crossed Sigh2 Flip = im.Flip("Sprites/Haruhi/HaruhiCrossedSigh2.png", horizontal=True)
+    image Haruhi Crossed Tsun1 Flip = im.Flip("Sprites/Haruhi/HaruhiCrossedCasualTsun1.png", horizontal=True)
+    image Haruhi Crossed Tsun2 Flip = im.Flip("Sprites/Haruhi/HaruhiCrossedCasualTsun2.png", horizontal=True)
     
    
     #Kyon Sprites
@@ -523,6 +550,7 @@ init:
     image Kyon Sigh6 Flip = im.Flip("Sprites/Kyon/KyonSigh6.png", horizontal=True)
     image Kyon Sigh7 Flip = im.Flip("Sprites/Kyon/KyonSigh7.png", horizontal=True)
     image Kyon Puzzle1 Flip = im.Flip("Sprites/Kyon/KyonPuzzled1.png", horizontal=True)
+    image Kyon Puzzle2 Flip = im.Flip("Sprites/Kyon/KyonPuzzled2.png", horizontal=True)
     image Kyon Smile1 Flip = im.Flip("Sprites/Kyon/KyonSmile1.png", horizontal=True)
     image Kyon Smile2 Flip = im.Flip("Sprites/Kyon/KyonSmile2.png", horizontal=True)
     image Kyon Smile3 Flip = im.Flip("Sprites/Kyon/KyonSmile3.png", horizontal=True)

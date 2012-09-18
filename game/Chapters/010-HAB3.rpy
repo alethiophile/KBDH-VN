@@ -42,6 +42,7 @@ label HAB_3:
     show Yuki Talk2
     "\"It would be inadvisable without varying your experiences,\" Yuki said."
     show Mikuru Casual Quest1
+    show Kanae Night Neutral1
     "\"So, this keeps us from being overwhelmed with too many years of experiences?\" Mikuru asked, shaking her head and looking thoughtful."
     show Yuki Side1
     "Yuki nodded again."
@@ -96,22 +97,22 @@ label HAB_3:
     "He noticed almost instantly, shooting her a sidelong glance and smirking. \"Good morning,\" he said, before she could say anything back to him."
     scene bg TownStreetDay1
     show Kyon Smile3 at center
-    show Haruhi Side hap1 Flip at right    
+    show Haruhi Hap1 Flip at right    
     "\"Morning,\" she agreed, smiling back. \"How do you think you did on the test, anyway?\""
     nvl clear
     show Kyon Neutral2
     "\"I think I did really well, actually.\" He nodded. \"Thanks to you. Oh, Golden Week is the week after next, you know?\""
-    show Haruhi Side Angry2 Flip
+    show Haruhi Ang2 Flip
     "\"Of course I know!\" she said indignantly. \"Do you think I'd forget any special day?\""
     nvl clear
     show Kyon Sigh2
     "\"Of course not,\" he answered dryly. \"Anyway, I just wanted to warn you that depending on my sister and my mom's mood, I may end up going to visit my aunt and uncle in the country.\""
-    show Haruhi Side Pout1 Flip
+    show Haruhi Pout1 Flip
     "\"Oh?\" Haruhi asked, frowning. That would be annoying ... but at least it was still a week away. \"Where in the country, anyway?\""
     nvl clear
     show Kyon Neutral1
     "\"It's a small village called Hinamizawa,\" he answered, gazing skyward absently. \"On the north end of Honshu, not too far from the Tsugaru Strait.\""
-    show Haruhi Side Quest1 Flip
+    show Haruhi Quest1 Flip
     "\"What's there to do out in the country, anyway?\""
     nvl clear
     show Kyon Sigh2
@@ -121,7 +122,7 @@ label HAB_3:
     "\"That sounds like a thrilling place,\" she said flatly."
     show Kyon Puzzle1
     "\"It's awesome,\" he agreed, rolling his eyes. \"It's where my nickname came from.\""
-    show Haruhi Side Neutral2 Flip
+    show Haruhi Neutral2 Flip
     "\"Well, if you don't want to go, don't go!\""
     nvl clear
     show Kyon Puzzle2
@@ -133,8 +134,8 @@ label HAB_3:
     "\"Of course not,\" he answered, grimacing. \"My mom doesn't like her brother much. Naturally, I try to take after him as much as possible.\""
     nvl clear
     scene bg SchoolEntranceRight with fade
-    show Haruhi Side Grin1 Flip at right
-    show Kyon ser3 at TenthRight
+    show Haruhi Grin1 Flip at right
+    show Kyon Ser3 at TenthRight
     with dissolve
     "She snickered, rolling her eyes. Still, she was already wary of Kyon's mother. Bad enough the woman gave him so much grief for doing a good deed, but exiling him to a distant corner of Honshu to supervise his little sister while staying behind with her husband for a week of vacation...."
     nvl clear
@@ -150,7 +151,7 @@ label HAB_3:
     show Taniguchi Ser1
     "\"Yo,\" Taniguchi said quickly, casting about before giving the other boy a very sharp look. \"Okay, I'll make this quick.\""
     show Kyon Neutral4
-    show Haruhi Side Ang2 Flip
+    show Haruhi Ang2 Flip
     "Haruhi caught Kyon's languid blink, then focused her full attention on the perverted classmate. \"What now?\" she asked in irritation."
     nvl clear
     show Taniguchi Ser3
@@ -194,44 +195,81 @@ label HAB_3:
     show Haruhi Ang1 Flip
     "\"I can set her straight easily enough,\" Haruhi decided, clenching one hand into a fist. It wouldn't do for Kyon to 'persuade' a girl to be quiet, and anyway, she was itching to do something on her own, what with Kyon being wrapped up in Tsuruya's investigation. \"She's only a gymnast, so it shouldn't be too hard, right?\""
     nvl clear
-    ####Show Kyon
+    show Kyon Ser3
     "Kyon shot her an appraising look, then shook his head. \"I don't think that's a good idea,\" he countered. \"If she's trying to paint us in a bad light, is force the answer?\""
+    show Kunikida Neutral2
     "\"Anyway, even if she's spreading the rumors, I doubt she's the one who's actually creating them,\" Kunikida noted."
     nvl clear
+    show Taniguchi Quest1
     "\"Eh?\" Taniguchi managed, surprised. \"What, you've been paying attention, too?\""
     nvl clear
+    show Kunikida Ser2
     "\"Well, Kyon's been more distracted than usual, and the one other person I usually eat with is so busy fawning over Yanagimoto-san I've got little left to do but watch and think,\" the shorter boy said, somewhat reprovingly. \"Yanagimoto-san is most likely being led by someone to do this.\""
     nvl clear
+    show Taniguchi Ser2
+    show Kyon Ang3
     "Kyon's brow furrowed, and he glanced around before giving Kunikida a thoughtful look. \"I don't suppose you've seen her with Yamane recently?\" he asked."
+    show Haruhi Quest1 Flip
     "\"Yamane?\" Haruhi asked, trying to remember the name. It sounded familiar, but she couldn't think of who it was off the top of her head."
     nvl clear
+    show Kunikida Neutral2
     "\"Yamane Jun,\" Kunikida mused. \"Ah ... yes, now that you mention it Kyon, I have seen them together quite recently.\""
+    show Kyon Sigh1
     "\"Figures,\" he grumbled. \"Thank you for that update, then. Ah, everyone, sorry, but I need to go on ahead and speak with Tsuruya-kun.\""
     nvl clear
+    hide Kyon with dissolve
+    show Haruhi Sup1 Flip
     "\"Wait!\" she protested as he readjusted his bag once more and burst into a full-out run up the slope of the hill."
+    show Taniguchi Quest1
     "\"You....\" Taniguchi trailed off with a frown, staring after Kyon. \"Holy cow. When did he get so fast, anyway?\""
     nvl clear
+    scene bg SchoolOutside with fade
+    show Tsuruya Grin1 at HalfRight
+    show Mikuru Smile2 at right
+    show Kyon Ser2 Flip at HalfLeft
     "Gritting her teeth, Haruhi threw herself into a run behind him, annoyed at how slow she was to catch up. He hadn't run {i}nearly{/i} so fast when the brigade was involved in the relay race! After dashing through the gate, Kyon slowed, reaching a reasonable speed just as he trotted to where Mikuru and Tsuruya were walking together, side-by-side."
     nvl clear
+    show Haruhi Ang3 at left
+    show Kyon Ser3 Flip
     "\"Sorry, Asahina-san,\" he said, slightly winded, bowing to the pair as Haruhi jogged to a halt and glared at him, her breath short as well. \"Ah, Tsuruya- kun, could we speak in private concerning the investigation?\""
+    show Tsuruya Hap1
     "\"Okies!\" Tsuruya said cheerfully, as always. \"Got some new infos?\""
     nvl clear
+    show Kyon Puzzle2 Flip
     "He nodded solemnly, flinching when he glanced back and caught Haruhi's gaze. \"It's all classified,\" he said, defensively."
-    "\"I understand,\" Mikuru said, sighing. \"Oh, Suzumiya-san! I went shopping for some things for ... um....\" She trailed off and looked thoughtful, staring at the sky for the moment. \"Our own secret project?\" she posed."
+    show Mikuru Sigh1
+    "\"I understand,\" Mikuru said, sighing. {nw}"
+    show Mikuru Smile3    
+    extend "\"Oh, Suzumiya-san! I went shopping for some things for ... um....\" She trailed off and looked thoughtful, staring at the sky for the moment. \"Our own secret project?\" she posed."
     nvl clear
+    hide Tsuruya
+    hide Kyon
+    with dissolve
+    show Haruhi Ang2
     "Haruhi stared at the upperclassman. \"Are you trying a weak distraction ploy like that to keep me from finding out what Tsuruya-san and Kyon are talking about?\""
+    show Mikuru Think Sup2
     "\"Eh?\" Mikuru looked taken aback. \"What? No, no! I just didn't want to spoil the surprise for Kyon-kun! And they already left, anyway.\""
     nvl clear
-    "Glancing around, Haruhi realized with a groan that she was right. Somehow, Tsuruya and Kyon had snuck off while she was staring at Mikuru! \"Alright,\" she grudgingly allowed. \"What's this secret thing you've picked up?\""
+    show Haruhi Sup1
+    "Glancing around, Haruhi realized with a groan that she was right. Somehow, Tsuruya and Kyon had snuck off while she was staring at Mikuru! {nw}"
+    show Haruhi Sigh1
+    extend "\"Alright,\" she grudgingly allowed. \"What's this secret thing you've picked up?\""
     nvl clear
+    show Mikuru Hap2
     "Mikuru hummed happily and reached into her schoolbag, rummaging around for a bit before pulling out a small paper bag and holding it out for Haruhi. \"Here!\" she said enthusiastically. \"I thought about what you said it would need, and ... well ... I had forgotten to pick them up earlier anyway!\""
     nvl clear
+    show Haruhi Hap1
     "Haruhi took the bag and opened it up, reaching in and pulling out a button. It wasn't too large for a man's coat, made of some yellowish metal. \"Ooh,\" she said, realizing what it was, her irritation vanishing. Best to take advantage of the situation; Mikuru was right that she should be glad she had her own secret project for the time being. \"I approve! Good choice, Mikuru-chan.\""
     nvl clear
+    show Mikuru Hap1
     "\"They're brass,\" she added, when Haruhi gave the bag back. \"They'll just get smudged before I finish, but once the coat is complete, if they're polished, they'll shine bright, almost like gold!\""
+    show Haruhi Hap2
     "\"Really?\" Haruhi mused, smoothing her hair ribbons absently. \"Hmm, that sounds even better!\""
     nvl clear
     
+    scene bg SchoolTable with fade
+    #show Tsuruya at right
+    #show Kyon at left
     "\"Okies,\" Tsuruya said, glancing around to check that no one else was in earshot. \"What's going on?\""
     "\"Looks like Yamane is spreading rumors about Haruhi and myself,\" Kyon explained quickly. \"So, do we even have a solid fix on who the ringleader in this thing is?\""
     nvl clear
