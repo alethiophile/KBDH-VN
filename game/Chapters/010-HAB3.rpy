@@ -79,68 +79,122 @@ label HAB_3:
     extend "And didn't close his eyes quickly enough to escape the nauseating transition of the world exploding away again."
     nvl clear
 
-    #scene
+    scene bg TrainStation
     stop music fadeout 1
     #queue music "Music/
+    show Haruhi Crossed Tsun1 Flip at left with dissolve
     "It was a bit out of her way, and the immediate press to study had finally faded, but she didn't mind swinging by the train station to wait for him anyway. She was strongly tempted to yell at him for being late, but forced herself to resist. She didn't like tsundere characters, and it seemed likely that he didn't, either."
     nvl clear
+    show Haruhi Crossed Smile1 Flip
     "Despite the encouragement she had given to Mikuru, she wasn't about to sabotage whatever chance she had with him, after all! Telling Mikuru to stand up and then not leading by example.... Well! That would be stupid."
+    show Kyon Neutral3 at center
+    hide Haruhi
+    with dissolve
     "So when he got off the train, his step seeming lighter, she waited behind a pillar until he passed, then fell into step beside him."
     nvl clear
+    show Kyon Smile3
     "He noticed almost instantly, shooting her a sidelong glance and smirking. \"Good morning,\" he said, before she could say anything back to him."
+    scene bg TownStreetDay1
+    show Kyon Smile3 at center
+    show Haruhi Side hap1 Flip at right    
     "\"Morning,\" she agreed, smiling back. \"How do you think you did on the test, anyway?\""
     nvl clear
+    show Kyon Neutral2
     "\"I think I did really well, actually.\" He nodded. \"Thanks to you. Oh, Golden Week is the week after next, you know?\""
+    show Haruhi Side Angry2 Flip
     "\"Of course I know!\" she said indignantly. \"Do you think I'd forget any special day?\""
     nvl clear
+    show Kyon Sigh2
     "\"Of course not,\" he answered dryly. \"Anyway, I just wanted to warn you that depending on my sister and my mom's mood, I may end up going to visit my aunt and uncle in the country.\""
+    show Haruhi Side Pout1 Flip
     "\"Oh?\" Haruhi asked, frowning. That would be annoying ... but at least it was still a week away. \"Where in the country, anyway?\""
     nvl clear
+    show Kyon Neutral1
     "\"It's a small village called Hinamizawa,\" he answered, gazing skyward absently. \"On the north end of Honshu, not too far from the Tsugaru Strait.\""
+    show Haruhi Side Quest1 Flip
     "\"What's there to do out in the country, anyway?\""
     nvl clear
+    show Kyon Sigh2
     "\"Not a whole lot,\" he said with a shrug. \"Mostly take a bus to Okinomiya, the nearest larger city ... there's an arcade and some other things there, but I end up having to babysit the cousins while the older folks go off and talk about old times, play mahjong, go, that sort of thing.\""
     nvl clear
+    show Haruhi Eyeroll1 Flip
     "\"That sounds like a thrilling place,\" she said flatly."
+    show Kyon Puzzle1
     "\"It's awesome,\" he agreed, rolling his eyes. \"It's where my nickname came from.\""
+    show Haruhi Side Neutral2 Flip
     "\"Well, if you don't want to go, don't go!\""
     nvl clear
+    show Kyon Puzzle2
     "\"That's why I'm telling you now,\" he said, his voice very patient. \"My sister can't travel so far on her own. So I may not have a choice in the matter.\""
+    show Haruhi Eyeroll1 Flip
     "\"And your parents aren't going?\" she asked, suspicious."
     nvl clear
+    show Kyon Ser3
     "\"Of course not,\" he answered, grimacing. \"My mom doesn't like her brother much. Naturally, I try to take after him as much as possible.\""
     nvl clear
+    scene bg SchoolEntranceRight with fade
+    show Haruhi Side Grin1 Flip at right
+    show Kyon ser3 at TenthRight
+    with dissolve
     "She snickered, rolling her eyes. Still, she was already wary of Kyon's mother. Bad enough the woman gave him so much grief for doing a good deed, but exiling him to a distant corner of Honshu to supervise his little sister while staying behind with her husband for a week of vacation...."
     nvl clear
     "Suddenly, she thought she could understand the woman's motives, at least a little bit. But in that case, the woman owed Haruhi — and Tsuruya — quite a bit for the winter vacation!"
     nvl clear
+    show Taniguchi Ser4 at left
+    show Kunikida Sad1 at center
+    with dissolve
     "Further thoughts were interrupted by the arrival of Taniguchi and Kunikida, the taller of the two looking about anxiously, like a paranoid action hero. The shorter of the duo looked vaguely ill, as though he wasn't pleased to be involved, but somehow caught in Taniguchi's wake anyway."
     nvl clear
+    show Kyon Neutral2
     "\"Taniguchi, Kunikida,\" Kyon said, by way of greeting."
+    show Taniguchi Ser1
     "\"Yo,\" Taniguchi said quickly, casting about before giving the other boy a very sharp look. \"Okay, I'll make this quick.\""
+    show Kyon Neutral4
+    show Haruhi Side Ang2 Flip
     "Haruhi caught Kyon's languid blink, then focused her full attention on the perverted classmate. \"What now?\" she asked in irritation."
     nvl clear
+    show Taniguchi Ser3
     "He gave her an annoyed look, then turned his attention back to Kyon. \"I'm not clear on the why, but Yanagimoto really has it out for you, Kyon. Suzumiya, too. If you two are a couple....\""
     nvl clear
+    show Haruhi Ang4 Flip
     "\"Nevermind that for now,\" Haruhi said quickly, feeling her face warm up. \"What's this about Yanagimoto?\" Sakanaka had mentioned her not long ago as spreading the rumor that Kyon and Tsuruya were a couple. That was an easily understandable fluke, and Haruhi didn't care for rumors if they didn't lead to exciting and unusual things. High school romance tended to be deplorably simple, so if there was something else...."
     nvl clear
-    "\"Like I said,\" Taniguchi grumbled. \"I don't know all the details. But I'll tell you this much — Yanagimoto is spinning rumors like.... Like a.... Ah, damn, I'm no good at these things. You make it sound easy, Kyon. Is analogies the word?\""
+    show Taniguchi Sigh1
+    "\"Like I said,\" Taniguchi grumbled. \"I don't know all the details. But I'll tell you this much — Yanagimoto is spinning rumors like.... Like a.... {nw}"
+    show Taniguchi Quest1
+    extend"Ah, damn, I'm no good at these things. You make it sound easy, Kyon. Is analogies the word?\""
+    show Kyon Puzzle2
     "\"What?\" Kyon asked, mystified."
     nvl clear
+    show Kunikida Neutral2
     "\"Hyperbolic comparisons,\" Kunikida interjected. \"Falling short of adynaton.\""
+    show Kyon Ser2
     "\"Yes, well, setting aside the need for a dictionary or a translator, why not just try it again in plain language, Taniguchi?\" Kyon suggested, rolling his eyes. \"Especially since you look like you're terrified of being seen by someone.\""
     nvl clear
-    "\"Right, leave the prose for the pros,\" Taniguchi agreed. \"Okay, Yanagimoto is spinning rumors about you being a delinquent — telling anyone who will listen terrible things about you. I'll admit, there were so many they kind of blurred together for me, but I've wormed my way into her good graces by pretending to be totally blinded by her physical appearances, so believe me, I've heard a {i}lot{/i}.\""
+    show Taniguchi Grin2
+    "\"Right, leave the prose for the pros,\" Taniguchi agreed. {nw}"
+    show Taniguchi Ser3
+    extend "\"Okay, Yanagimoto is spinning rumors about you being a delinquent — telling anyone who will listen terrible things about you. I'll admit, there were so many they kind of blurred together for me, but I've wormed my way into her good graces by pretending to be totally blinded by her physical appearances, so believe me, I've heard a {i}lot{/i}.\""
     nvl clear
+    show Haruhi Eyeroll1 Flip
     "\"Brilliant cover,\" Haruhi commented, mimicking Kyon's typical deadpan. \"No one would ever suspect you of being that sort of person.\""
     nvl clear
-    "\"Naturally,\" he agreed, giving her a smirk before schooling his expression and turning back to Kyon. Kunikida sighed and hung his head; after shooting her an amused grin, Kyon gave Kunikida a sympathetic look. \"Anyway, she's trying to say you're a violent brute, and that you're caught up in some crazy scheme that Suzumiya cooked up — and you've somehow roped in Tsuruya-sempai, coercing her cooperation with some sort of compromising photo.\""
+    show Taniguchi Grin2
+    "\"Naturally,\" he agreed, giving her a smirk before schooling his expression and turning back to Kyon. {nw}"
+    show Kunikida Sigh2
+    show Kyon Smile2
+    show Taniguchi Ser3
+    extend "Kunikida sighed and hung his head; after shooting her an amused grin, Kyon gave Kunikida a sympathetic look. \"Anyway, she's trying to say you're a violent brute, and that you're caught up in some crazy scheme that Suzumiya cooked up — and you've somehow roped in Tsuruya-sempai, coercing her cooperation with some sort of compromising photo.\""
     nvl clear
+    show Kyon Unhap3
     "The amusement drained from Kyon's expression instantly. She caught {i}that{/i}, even if she didn't understand all the details yet. \"Anything else?\" he asked, hitching his bag slightly higher on his shoulder."
+    show Taniguchi Sup1
     "\"Eh ... something about you beating up a first year, Manabe Sato...something?\" Taniguchi said, squinting. \"Supposedly you put him in a hospital two nights ago, but no one knows why.\""
     nvl clear
+    show Haruhi Ang1 Flip
     "\"I can set her straight easily enough,\" Haruhi decided, clenching one hand into a fist. It wouldn't do for Kyon to 'persuade' a girl to be quiet, and anyway, she was itching to do something on her own, what with Kyon being wrapped up in Tsuruya's investigation. \"She's only a gymnast, so it shouldn't be too hard, right?\""
     nvl clear
+    ####Show Kyon
     "Kyon shot her an appraising look, then shook his head. \"I don't think that's a good idea,\" he countered. \"If she's trying to paint us in a bad light, is force the answer?\""
     "\"Anyway, even if she's spreading the rumors, I doubt she's the one who's actually creating them,\" Kunikida noted."
     nvl clear
