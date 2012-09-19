@@ -368,7 +368,7 @@ label HAB_3:
     show Kyon Smile3
     "\"The simple answer is that thanks to Yanagimoto, I'm going to be playing 'bad cop', and Koizumi can be 'good cop',\" he said, smirking at her."
     nvl clear
-    scene bg ClubroomFullDay with fade
+    scene bg ClubroomFullDay with fade:
         xpos 0 ypos 0
     $ renpy.layer_at_list([PanScene_SetToRight])
     show Yuki Right Neutral1 at right with dissolve
