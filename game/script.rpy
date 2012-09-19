@@ -439,6 +439,7 @@ init:
     image Kyon Unhap4 ="Sprites/Kyon/KyonUnhappy4.png"
     image Kyon Unhap5 ="Sprites/Kyon/KyonUnhappy5.png"
     image Kyon Unhap6 ="Sprites/Kyon/KyonUnhappy6.png"
+    image Kyon Evil1 ="Sprites/Kyon/KyonEvil1.png"
     
     image Kyon Blink:
         "Sprites/Kyon/KyonSigh6.png"
@@ -486,6 +487,7 @@ init:
     image Kyon Casual Unhap4 ="Sprites/Kyon/KyonCasualUnhappy4.png"
     image Kyon Casual Unhap5 ="Sprites/Kyon/KyonCasualUnhappy5.png"
     image Kyon Casual Unhap6 ="Sprites/Kyon/KyonCasualUnhappy6.png"
+    image Kyon Casual Evil1 ="Sprites/Kyon/KyonCasualEvil1.png"
     
     image Ksweat = "Sprites/Kyon/KyonSweat1.png"
     image Skinsuit = "Sprites/Kyon/KyonSkinsuitTemplate.png"
@@ -574,6 +576,51 @@ init:
     image Kyon Worry3 Flip = im.Flip("Sprites/Kyon/KyonWorry3.png", horizontal=True)
     image Kyon Pain1 Flip = im.Flip("Sprites/Kyon/KyonPained1.png", horizontal=True)
     image Kyon Pain2 Flip = im.Flip("Sprites/Kyon/KyonPained2.png", horizontal=True)
+    image Kyon Evil1 Flip = im.Flip("Sprites/Kyon/KyonEvil1.png", horizontal=True)
+    
+    image Kyon Casual Ang Flip = im.Flip("Sprites/Kyon/KyonCasualAngry1.png", horizontal=True)
+    image Kyon Casual Ang2 Flip = im.Flip("Sprites/Kyon/KyonCasualAngry2.png", horizontal=True)
+    image Kyon Casual Ang3 Flip = im.Flip("Sprites/Kyon/KyonCasualAngry3.png", horizontal=True)
+    image Kyon Casual Ang4 Flip = im.Flip("Sprites/Kyon/KyonCasualAngry4.png", horizontal=True)
+    image Kyon Casual Neutral1 Flip = im.Flip("Sprites/Kyon/KyonCasualNeutral1.png", horizontal=True)
+    image Kyon Casual Neutral2 Flip = im.Flip("Sprites/Kyon/KyonCasualNeutral2.png", horizontal=True)
+    image Kyon Casual Neutral3 Flip = im.Flip("Sprites/Kyon/KyonCasualNeutral3.png", horizontal=True)
+    image Kyon Casual Neutral4 Flip = im.Flip("Sprites/Kyon/KyonCasualNeutral4.png", horizontal=True)
+    image Kyon Casual Neutral5 Flip = im.Flip("Sprites/Kyon/KyonCasualNeutral5.png", horizontal=True)
+    image Kyon Casual Sigh1 Flip = im.Flip("Sprites/Kyon/KyonCasualSigh1.png", horizontal=True)
+    image Kyon Casual Sigh2 Flip = im.Flip("Sprites/Kyon/KyonCasualSigh2.png", horizontal=True)
+    image Kyon Casual Sigh3 Flip = im.Flip("Sprites/Kyon/KyonCasualSigh3.png", horizontal=True)
+    image Kyon Casual Sigh4 Flip = im.Flip("Sprites/Kyon/KyonCasualSigh4.png", horizontal=True)
+    image Kyon Casual Sigh5 Flip = im.Flip("Sprites/Kyon/KyonCasualSigh5.png", horizontal=True)
+    image Kyon Casual Sigh6 Flip = im.Flip("Sprites/Kyon/KyonCasualSigh6.png", horizontal=True)
+    image Kyon Casual Sigh7 Flip = im.Flip("Sprites/Kyon/KyonCasualSigh7.png", horizontal=True)
+    image Kyon Casual Puzzle1 Flip = im.Flip("Sprites/Kyon/KyonCasualPuzzled1.png", horizontal=True)
+    image Kyon Casual Puzzle2 Flip = im.Flip("Sprites/Kyon/KyonCasualPuzzled2.png", horizontal=True)
+    image Kyon Casual Smile1 Flip = im.Flip("Sprites/Kyon/KyonCasualSmile1.png", horizontal=True)
+    image Kyon Casual Smile2 Flip = im.Flip("Sprites/Kyon/KyonCasualSmile2.png", horizontal=True)
+    image Kyon Casual Smile3 Flip = im.Flip("Sprites/Kyon/KyonCasualSmile3.png", horizontal=True)
+    image Kyon Casual Smile4 Flip = im.Flip("Sprites/Kyon/KyonCasualSmile4.png", horizontal=True)
+    image Kyon Casual Smile5 Flip = im.Flip("Sprites/Kyon/KyonCasualSmile5.png", horizontal=True)
+    image Kyon Casual Smile6 Flip = im.Flip("Sprites/Kyon/KyonCasualSmile6.png", horizontal=True)
+    image Kyon Casual Smile7 Flip = im.Flip("Sprites/Kyon/KyonCasualSmile7.png", horizontal=True)
+    image Kyon Casual Ser1 Flip = im.Flip("Sprites/Kyon/KyonCasualSerious1.png", horizontal=True)
+    image Kyon Casual Ser2 Flip = im.Flip("Sprites/Kyon/KyonCasualSerious2.png", horizontal=True)
+    image Kyon Casual Ser3 Flip = im.Flip("Sprites/Kyon/KyonCasualSerious3.png", horizontal=True)
+    image Kyon Casual Sup1 Flip = im.Flip("Sprites/Kyon/KyonCasualSurprised2.png", horizontal=True)
+    image Kyon Casual Sup2 Flip = im.Flip("Sprites/Kyon/KyonCasualSurprised2.png", horizontal=True)
+    image Kyon Casual Unhap1 Flip = im.Flip("Sprites/Kyon/KyonCasualUnhappy1.png", horizontal=True)
+    image Kyon Casual Unhap2 Flip = im.Flip("Sprites/Kyon/KyonCasualUnhappy2.png", horizontal=True)
+    image Kyon Casual Unhap3 Flip = im.Flip("Sprites/Kyon/KyonCasualUnhappy3.png", horizontal=True)
+    image Kyon Casual Unhap4 Flip = im.Flip("Sprites/Kyon/KyonCasualUnhappy4.png", horizontal=True)
+    image Kyon Casual Unhap5 Flip = im.Flip("Sprites/Kyon/KyonCasualUnhappy5.png", horizontal=True)
+    image Kyon Casual Unhap6 Flip = im.Flip("Sprites/Kyon/KyonCasualUnhappy6.png", horizontal=True)
+    image Kyon Casual Worry1 Flip = im.Flip("Sprites/Kyon/KyonCasualWorry1.png", horizontal=True)
+    image Kyon Casual Worry2 Flip = im.Flip("Sprites/Kyon/KyonCasualWorry2.png", horizontal=True)
+    image Kyon Casual Worry3 Flip = im.Flip("Sprites/Kyon/KyonCasualWorry3.png", horizontal=True)
+    image Kyon Casual Pain1 Flip = im.Flip("Sprites/Kyon/KyonCasualPained1.png", horizontal=True)
+    image Kyon Casual Pain2 Flip = im.Flip("Sprites/Kyon/KyonCasualPained2.png", horizontal=True)
+    image Kyon Casual Evil1 Flip = im.Flip("Sprites/Kyon/KyonCasualEvil1.png", horizontal=True)
+    
     
     image Ksweat Flip = im.Flip("Sprites/Kyon/KyonSweat1.png", horizontal=True)
     
