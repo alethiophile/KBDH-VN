@@ -379,53 +379,58 @@ label HAB_3:
     with dissolve
     extend "Kyon took a seat opposite from her, and Haruhi took the spot at his side. With uncharacteristic speed, Kyon unwrapped his bento and tore into his lunch, finishing just moments before Tsuruya slid to a halt outside the doorway, Mikuru and Kanae in tow."
     nvl clear
-    #show Koizumi at right_LeftScreen
-    #show Tsuruya at left
-    #show Mikuru at right
-    #show Kanae at center
-    #hide Yuki
-    #with dissolve
+    #I'm more worried about getting everyone with the right expressions than working out who is where to have the minimum screen shifts.
+    show Koizumi Crossed Neutral2 at right_LeftScreen
+    show Tsuruya Grin2 at left
+    show Mikuru Neutral1 at right
+    show Kanae Neutral1 at center
+    hide Yuki
+    with dissolve
     "Koizumi was only a few steps behind her. \"Hello,\" he said cheerfully, as Tsuruya gave a sharp salute and marched to sit next to Kyon. \"Oh, serious faces today, is it?\""
-    #show Haruhi
+    show Haruhi Neutral2
     "\"So it seems,\" Haruhi allowed. \"Koizumi, you're being assigned to help Kyon out today, so ... good luck!\""
     nvl clear
-    #show Koizumi
+    show Koizumi Crossed Uneasy2
     "\"Er,\" Koizumi managed, setting down his lunch and giving a questioning glance to the other boy."
-    #show Tsuruya
+    $ renpy.layer_at_list([PanScene_LeftToCenter])
+    show Tsuruya Hap1
     "\"Yeah, good luck, Kyon-kun!\" Tsuruya agreed, handing Kyon a sheet of paper with a photograph attached to it with a paper-clip. \"This is Daimonji.\""
     nvl clear
-    #show Kyon
+    show Kyon Neutral1
     "\"Class 3-5, right?\" Kyon asked, rising from his seat and studying the picture. \"Ah, of course ... even says so here. Okay, thanks, Tsuruya-kun. I'll leave things here to you and Haruhi, then.\""
-    #show Tsuruya
+    show Tsuruya Hap2
     "\"Got it!\" she said brightly. \"You'll make a good saiko-komon!\""
     nvl clear
-    #show Del!Kyon
+    #show Del!Kyon Neutral3
     show Haruhi Sup1
     "\"Ooh, good idea,\" he mused, while Haruhi felt her mouth drop open. Why would Tsuruya give Kyon a title as a yakuza advisor to a major boss? Before she could ask, he fished an elaborate jeweled pin from his pocket and stuck it to his tie; a golden crane with tiny diamond eyes on a sharp green five-sided backdrop. Haruhi stared while Tsuruya gave him an appraising look, then mussed his hair, loosened his tie, and untucked his shirt."
     nvl clear
-    #show Tsuruya
+    show Tsuruya Neutral1
     "\"Hands in your pants pockets,\" she instructed him. \"Shoulders back, head down, don't smile unless you're menacing someone.\""
-    #show Mikuru
-    #show Kanae
+    #show Del!Kyon Unhap4
+    show Haruhi Neutral4
+    show Mikuru Sup1
+    show Kanae Sup1
     "Haruhi was joined in staring by Mikuru and Kanae. \"K...Kyon-kun,\" Mikuru managed, \"you look like a delinquent!\""
     nvl clear
-    #show Del!Kyon
+    #show Del!Kyon Unhap2
+    show Koizumi Neutral1
     "\"Perfect,\" he said, glancing at Koizumi, who merely blinked, his smile unwavering. \"You're going to do most of the talking. I assume that the Organization is reasonably aware of what we're doing?\""
-    #show Koizumi
+    show Koizumi Crossed Hap2
     "\"I haven't a clue!\" the clean-cut boy replied cheerfully. \"I suppose you can fill me in on the way? I feel a bit clueless about this right now....\""
     nvl clear
-    #show Del!Kyon
+    #show Del!Kyon Sigh2
     "\"Welcome to my world,\" Kyon said, giving a shrug, limited by his hands in his pockets. \"I'll fill you in on the way. In the meantime, let me know if I'm failing to look delinquent enough, okay?\""
     "He strode out the door confidently, then Koizumi straightened himself up and made sure his tie was neat before following."
     nvl clear
-    #hide Kyon
-    #hide Koizumi
-    #show Haruhi flipping tables
-    #with dissolve
+    hide Kyon
+    hide Koizumi
+    with dissolve
+    show Haruhi Hips Ang3
     "The door clicked shut quietly behind them. \"What the hell was {i}that{/i}!\" Haruhi exploded, standing up so quickly her chair fell over. \"Kyon can't be getting intro trouble by acting like a delinquent! Tsuruya-san, I don't say this idly, but if you cause trouble for Kyon, I will be {i}very{/i} upset with you!\""
     nvl clear
-    #show Kanae
-    #show Kanae Blush... look up
+    show Kanae Quest1
+    show KABlush at center
     "\"T...they were really hot like that,\" Kanae stuttered, her eyes wide and her cheeks pink. \"Ooh....\""
     nvl clear
     #show Tsuruya
