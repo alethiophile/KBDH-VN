@@ -1199,6 +1199,7 @@ init:
     image Koizumi Think Smile1 = "Sprites/Koizumi/KoizumiThinkSmile1.png"
     image Koizumi Think Smile2 = "Sprites/Koizumi/KoizumiThinkSmile2.png"
     image Koizumi Think Sigh1 = "Sprites/Koizumi/KoizumiThinkSigh1.png"
+    image Koizumi Think Sigh2 = "Sprites/Koizumi/KoizumiThinkSigh2.png"
     image Koizumi Think Worry1 = "Sprites/Koizumi/KoizumiThinkWorry1.png"
     
     image Koizumi Think Casual Ser1 = "Sprites/Koizumi/KoizumiThinkCasualSerious1.png"
@@ -1211,6 +1212,7 @@ init:
     image Koizumi Think Casual Smile1 = "Sprites/Koizumi/KoizumiThinkCasualSmile1.png"
     image Koizumi Think Casual Smile2 = "Sprites/Koizumi/KoizumiThinkCasualSmile2.png"
     image Koizumi Think Casual Sigh1 = "Sprites/Koizumi/KoizumiThinkCasualSigh1.png"
+    image Koizumi Think Casual Sigh2 = "Sprites/Koizumi/KoizumiThinkCasualSigh2.png"
     image Koizumi Think Casual Worry1 = "Sprites/Koizumi/KoizumiThinkCasualWorry1.png"
     
     image Koizumi Crossed Hap1 = "Sprites/Koizumi/KoizumiCrossedHappy1.png"

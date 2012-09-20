@@ -294,7 +294,7 @@ label HAB_3:
     nvl clear
     show Kyon Sigh4 Flip
     "Kyon resisted the temptation to suggest threatening them with the Tsuruya family's power. After all, as Tsuruya's trial, she could only rely on herself and her chosen guardian. He could try strong-arming ... whoever ... himself, but that was going to cause him further trouble, and anyway.... {nw}"
-    show Kyon Neutral1
+    show Kyon Neutral1 Flip
     extend "He blinked with a sudden realization. \"Tsuruya-kun, did Kasai have any subordinates?\""
     nvl clear
     show Tsuruya Grin1
@@ -329,20 +329,20 @@ label HAB_3:
     nvl clear
     
     scene bg hallway with fade
-    show Haruhi Neutral1 Flip at left
+    show Haruhi Neutral1 at left
     show Kyon Ser3 at right
     with dissolve
     "When the lunch chime rang, Haruhi strolled towards the clubroom in no particular rush, until Kyon manifested at her side, seeming to appear from nothing as he checked his wristwatch. Before she could even say hello, or ask about the test he'd just gotten handed back, he said in a quiet voice, \"We don't have much time, but Tsuruya-kun and I decided to ask you for help with our investigation.\""
     nvl clear
-    show Haruhi Hap1 Flip
+    show Haruhi Hap1
     "She didn't fight the grin she felt forming on her face. \"Oh, yeah?\" she asked, glad she was finally involved."
     nvl clear
     show Kyon Neutral2
     "He gave a very serious nod in reply, glancing around the hallway before saying, \"I'm going to let Tsuruya-kun fill you in on the specifics ... but we're going to give you something that will turn Yanagimoto against Yamane, unless she's completely insane. After that, Tsuruya-kun and I are going to confront some of the bosses of the group we're checking out, but we need you and the rest of the brigade to be prepared to bring everything we've uncovered in the field to the school administration.\""
     nvl clear
-    scene bg Stairwell2 with fade
+    scene bg stairwell2 with fade
     show Kyon Neutral2 at right
-    show Haruhi Unhap1 Flip at left
+    show Haruhi Unhap1 at left
     "\"The student council, eh?\" she asked, her smile fading. \"You say you're bringing me in, but now it sounds like a police drama, and I was just given a lousy desk job.\""
     show Kyon Sigh5
     "\"Well,\" Kyon said after a thoughtful moment, \"I guess if you don't want to be involved—\""
@@ -354,36 +354,37 @@ label HAB_3:
     nvl clear
     show Haruhi Quest2
     "She raised an eyebrow at that. What bothered Kyon, anyway? That question answered itself quickly; two of the three times she'd seen Kyon genuinely upset, it involved a threat to his friends. {nw}"
-    show Haruhi Ang1 Flip
+    show Haruhi Ang1
     extend "\"I still want to {i}know{/i},\" she warned him."
     nvl clear
     scene bg ClubHallLeft with fade
-    show Kyon Sigh2 Flip at right
-    show Haruhi Ang1 Flip at left
+    show Kyon Sigh2 at right
+    show Haruhi Ang1 at left
     with dissolve
     "\"Tsuruya-kun will explain it to you,\" he said, shaking his head quickly as they rounded the corner of the stairwell and the club room door came into sight. \"In the meantime, I need to borrow Koizumi, if you don't mind?\""
     nvl clear
-    show Haruhi Quest2 Flip
+    show Haruhi Quest2
     "\"What for?\" she asked, cocking her head slightly to one side. \"Or is that something I can't know, either?\""
     show Kyon Smile3
     "\"The simple answer is that thanks to Yanagimoto, I'm going to be playing 'bad cop', and Koizumi can be 'good cop',\" he said, smirking at her."
     nvl clear
+    #Weeeeeee... Errors. Errors everywhere.
     scene bg ClubroomFullDay with fade:
         xpos 0 ypos 0
     $ renpy.layer_at_list([PanScene_SetToRight])
     show Yuki Right Neutral1 at right with dissolve
     "She opened the door, unsurprised to see Yuki at the table, opening up the laptop she typically used and not looking towards the door. {nw}"
     $ renpy.layer_at_list([PanScene_RightToLeft])
-    show Kyon Neutral3 Flip at center_LeftScreen
-    show Haruhi Neutral1 at left_LeftScreen
+    show Kyon Neutral3 Flip at center
+    show Haruhi Neutral1 at left
     with dissolve
     extend "Kyon took a seat opposite from her, and Haruhi took the spot at his side. With uncharacteristic speed, Kyon unwrapped his bento and tore into his lunch, finishing just moments before Tsuruya slid to a halt outside the doorway, Mikuru and Kanae in tow."
     nvl clear
     #I'm more worried about getting everyone with the right expressions than working out who is where to have the minimum screen shifts.
-    show Koizumi Crossed Neutral2 at right_LeftScreen
-    show Tsuruya Grin2 at left
-    show Mikuru Neutral1 at right
-    show Kanae Neutral1 at center
+    show Koizumi Crossed Neutral2 at right
+    show Tsuruya Grin2 at left_RightScreen
+    show Mikuru Neutral1 at right_RightScreen
+    show Kanae Neutral1 at center_RightScreen
     hide Yuki
     with dissolve
     "Koizumi was only a few steps behind her. \"Hello,\" he said cheerfully, as Tsuruya gave a sharp salute and marched to sit next to Kyon. \"Oh, serious faces today, is it?\""
@@ -433,65 +434,107 @@ label HAB_3:
     show KABlush at center
     "\"T...they were really hot like that,\" Kanae stuttered, her eyes wide and her cheeks pink. \"Ooh....\""
     nvl clear
-    #show Tsuruya
+    #RightScreen - Haruhi - Yuki - Tsuruya?
+    show Tsuruya Sigh3
     "Tsuruya shrank back slightly, rubbing the back of her neck with one hand and giving a nervous chuckle. \"Um ... let me show you what Kyon-kun and I are investigating,\" she said. She reached into one pocket and produced an SD card. \"Your computer can read this, right?\""
     nvl clear
-    #show Yuki at
+    show Yuki Talk1
     "\"Negative,\" Yuki answered, looking at the card. Haruhi was certain that the normally impassive girl showed a tiny bit of interest, despite her usually inexpressive face. \"However, the laptops are appropriately equipped.\""
-    #show Tsuruya
+    show Tsuruya Hap1
     "\"Okies, Nagato-chi, then you handle this,\" Tsuruya said, handing the card to the smaller girl."
     nvl clear
-    #show Yuki
+    show Yuki Talk2
     "Yuki gave a very tiny nod and accepted the card, loading it into the laptop and clicking several times before she blinked at the screen. \"Well?\" Haruhi demanded, when nothing was said. Yuki blinked several more times, then turned the laptop screen towards Haruhi."
     nvl clear
     
+    scene bg ClubHallLeft with fade
+    show Koizumi Think Sup1 at left 
+    #show Del!Kyon Neutral2 at right
     "\"I ... see,\" Koizumi managed in a voice that quavered only slightly. \"And, Suzumiya-san is aware?\""
     "Haruhi's scream of rage echoed down the corridor before Kyon could respond."
+    #show Del!Kyon Sigh2
     "\"She is now,\" the pseudo-delinquent replied flatly."
     nvl clear
+    show Koizumi Think Sigh2
     "\"Right,\" Koizumi said, shaking his head. \"Daimonji-san in class 3-5, then?\""
+    #show Del!Kyon Ser3
     "\"Yeah. You'll be talking to him, and I'll be the muscle.\""
+    scene bg hallway with fade
+    show Koizumi Crossed Neutral2 at left
+    #show Del!Kyon Ser1 at right
     "\"If your image weren't already set, I'd strongly suggest switching our roles,\" Koizumi said after a moment, as they turned the corridor to the third year classrooms."
     nvl clear
+    #show Del!Kyon Ser3
     "\"Really?\" Kyon asked with obvious skepticism, glancing at him sidelong."
+    show Koizumi Crossed Ser2
     "\"Well, yes,\" the esper replied, frowning. \"I have had a small amount of training in self defense, and you have more knowledge of the situation.\""
+    #show Del!Kyon Unhap2
     "Kyon stopped where he stood, then shook his head, pointing to the pin on his tie. \"You know what this means?\""
     nvl clear
+    show Koizumi Crossed Neutral2
     "Koizumi stopped walking as well, and grimaced, his smile completely vanished for the moment. \"No,\" he admitted. \"My area of instruction outside of the school curriculum was centered almost entirely on things that were of interest to Suzumiya-san and the Organization.\""
     nvl clear
+    #show Del!Kyon Puzzle1
     "With a crestfallen look, Kyon looked at the pin on his tie. \"Well ... hopefully Daimonji recognizes it. Long story short, it's a symbol of Tsuruya- kun's family. If Daimonji knows what it means, he should be terrified of us. As to self defense training ... well. I can take care of myself with him. Trust me in that, just like I trust you to be able to talk to Daimonji, alright?\""
     nvl clear
+    show Koizumi Crossed Hap2
     "\"As you wish,\" Koizumi allowed, taking a moment to compose himself and putting his smile back on. Friendly, not too menacing. Kyon's irritation left his eyes slightly shadowed, which only amplified his 'delinquent' appearance. \"We make quite the pair, though. I hope this works.\""
+    #show Del!Kyon Smile5
     "Kyon allowed a tiny smile of his own."
     nvl clear
     
+    scene bg classroom with fade:
+       size (800,600)
+    #show Yanagimoto Neutral1 at right
     "Humming slightly to herself, Yanagimoto watched Taniguchi happily scurry from the room in search of the canned drink she had requested. He was really not that bright, but made for a useful pawn ... in a way, his feverish devotion was kind of endearing, too. His looks weren't despicable by a long shot, and even though he wasn't terribly athletic, he was still amusing."
     nvl clear
     "Not as smart as his short friend, or as clever. But not all bad, and he was probably the most informed person in the school as to Haruhi's background. Well, most informed person who wasn't in Haruhi's clutches, at any rate."
     nvl clear
+    #show Yanagimoto Annoy1/Unhap1
     "She tapped her fingers across her desk absently, glancing towards Haruhi's empty seat, and the seat in front of it. She didn't particularly like causing the boy she only remembered as Kyon trouble, as he was in many ways a victim himself.... However, Haruhi needed to be taught a lesson, and Yanagimoto was going to see that it was done."
     nvl clear
     "Dismiss {i}her{/i} club after trying it a single day with those disdaining remarks, and then found her own supposed 'club'? And it wasn't as though she were the only person slighted, either!"
     nvl clear
+    #show Yanagimoto Hap1/Grin1/Smile1
     "Well, thanks to Yamane Jun's hard work, solid evidence of her wrongdoing was slowly but surely coming to light. As long as she could keep Kyon busy for Yamane, Haruhi's club would be finished off for good. Already the school rumor mill was alive with the stories Yamane — poor boy — had relayed to her. And his own innocent photography club ... victimized by Haruhi ... well, soon enough that would end, too."
     nvl clear
+    show Taniguchi Grin2 at left
     "Her ruminations were interrupted by Taniguchi's return, looking over his shoulder strangely before he shook his head and gave her a can of soda. \"Here you go,\" he said with a wide grin. \"Anything else, Yanagimoto-hime?\""
     nvl clear
+    #show Yanagimoto Hap2
     "She tried not to snicker at him. He tried way too hard ... but it was kind of cute, anyway. \"Really, Taniguchi-kun, you didn't have to get this for me,\" she told him, taking the can."
+    show Taniguchi Hap2
     "\"I live to serve!\" he proclaimed without a single visible trace of hesitation. \"So, what's the latest news?\""
     nvl clear
-    "And on {i}that{/i} note.... \"I haven't heard anything new,\" she told him, shaking her head. \"I suppose I could ask around.... Hmm, Taniguchi-kun, why don't you wait here a bit? I'll see if I can't find anything else out, alright?\""
+    #show Yanagimoto Sigh1
+    "And on {i}that{/i} note.... \"I haven't heard anything new,\" she told him, shaking her head. {nw}"
+    #show Yanagimoto Neutral1/Quest1
+    "\"I suppose I could ask around.... Hmm, Taniguchi-kun, why don't you wait here a bit? I'll see if I can't find anything else out, alright?\""
     nvl clear
+    #hide Yanagimoto
+    hide Taniguchi
+    with dissolve
     "He nodded at her and then strolled to Kunikida's side, slapping the shorter boy companionably on the back. Yanagimoto shook her head again and rose from her seat, taking her soda with her. Yamane wasn't in the classroom at the moment — he was working on the investigation to reveal the full depravity of Haruhi's plot, which had already turned Kyon into a full-blown delinquent."
+    "Mostly, she just needed a break from Taniguchi, and more than that, she didn't want to spend all of her time being a gossip. It might have been one of her gifts, but she had no reason to earn herself a label as that kind of girl."
+    #show Sakanaka Ang1 Flip? at left
+    "As she walked across the classroom, she caught Sakanaka giving her an unfriendly glower, and coolly stared the other girl down. Stuck-up little rich girl ... joining the chorus because she didn't have what it took to be an athlete?"
     nvl clear
-    "Mostly, she just needed a break from Taniguchi, and more than that, she didn't want to spend all of her time being a gossip. It might have been one of her gifts, but she had no reason to earn herself a label as that kind of girl. As she walked across the classroom, she caught Sakanaka giving her an unfriendly glower, and coolly stared the other girl down. Stuck-up little rich girl ... joining the chorus because she didn't have what it took to be an athlete?"
-    nvl clear
+    scene bg hallway with fade
+    #show Yanagimoto Sup1 at center
+    show Yuki Side1 at left
     "She was so caught up with looking over her shoulder at Sakanaka that when she walked through the door she was totally unprepared to have one of her arms seized by Nagato Yuki. \"What do you think you're doing,\" she hissed indignantly, whipping her head around to glare at the shorter girl. There was no {i}way{/i} a literature club member was going to win a fight of physical strength with her!"
     nvl clear
+    ####show Tsuruya at right
     "Her other arm was just as quickly seized by Tsuruya, Haruhi's latest victim, according to Yamane. While Tsuruya grinned, one fang glinting, Yuki was totally impassive. Tsuruya might beat her in a fight, she wasn't certain ... and they had strength in numbers. \"Come with us,\" Tsuruya said concisely. \"We gots something to show you.\""
     nvl clear
+    scene bg stairwell with fade:
+       size (800,600)
     "Uncomfortable about it, but not entirely willing to create a bigger scene, she reluctantly allowed herself to be dragged through the school until she found herself in a dim stairwell, one that led to the roof, according to signs. The roof was closed to students, and she was about to start her protests in earnest, when she realized that standing before the roof access door was none other than Haruhi herself."
     nvl clear
+    #show Haruhi at right
+    #show Yanagimoto Ang1 at center
+    #show Tsuruya at left
+    #show Yuki at HalfLeft?
     "\"I should have known,\" Yanagimoto growled. \"So, getting your accomplices to drag me to some quiet corner of the school? What next, you threaten me with violence? I'm not scared of you!\" The two girls released her, but stayed between her and the only escape route, down the stairs."
     nvl clear
     "Haruhi's eyes narrowed slightly. \"I don't really know what you have against me or Kyon,\" she said simply, holding a digital camera up. \"But that's not the point, here.\""
