@@ -80,7 +80,7 @@ label HAB_3:
     extend "And didn't close his eyes quickly enough to escape the nauseating transition of the world exploding away again."
     nvl clear
 
-    scene bg TrainStation
+    scene bg TrainStation with fade
     stop music fadeout 1
     #queue music "Music/
     show Haruhi Crossed Tsun1 Flip at left with dissolve
@@ -95,7 +95,7 @@ label HAB_3:
     nvl clear
     show Kyon Smile3
     "He noticed almost instantly, shooting her a sidelong glance and smirking. \"Good morning,\" he said, before she could say anything back to him."
-    scene bg TownStreetDay1
+    scene bg TownStreetDay1 with fade
     show Kyon Smile3 at center
     show Haruhi Hap1 Flip at right    
     "\"Morning,\" she agreed, smiling back. \"How do you think you did on the test, anyway?\""
@@ -524,142 +524,237 @@ label HAB_3:
     show Yuki Side1 at left
     "She was so caught up with looking over her shoulder at Sakanaka that when she walked through the door she was totally unprepared to have one of her arms seized by Nagato Yuki. \"What do you think you're doing,\" she hissed indignantly, whipping her head around to glare at the shorter girl. There was no {i}way{/i} a literature club member was going to win a fight of physical strength with her!"
     nvl clear
-    ####show Tsuruya at right
+    show Tsuruya Grin5 at right
+    #show Yanagimoto Neutral1
     "Her other arm was just as quickly seized by Tsuruya, Haruhi's latest victim, according to Yamane. While Tsuruya grinned, one fang glinting, Yuki was totally impassive. Tsuruya might beat her in a fight, she wasn't certain ... and they had strength in numbers. \"Come with us,\" Tsuruya said concisely. \"We gots something to show you.\""
     nvl clear
     scene bg stairwell with fade:
        size (800,600)
     "Uncomfortable about it, but not entirely willing to create a bigger scene, she reluctantly allowed herself to be dragged through the school until she found herself in a dim stairwell, one that led to the roof, according to signs. The roof was closed to students, and she was about to start her protests in earnest, when she realized that standing before the roof access door was none other than Haruhi herself."
     nvl clear
-    #show Haruhi at right
     #show Yanagimoto Ang1 at center
-    #show Tsuruya at left
-    #show Yuki at HalfLeft?
+    show Haruhi Crossed Smile1 at right
+    show Tsuruya Grin1 Flip at left
+    show Yuki Side1 at HalfLeft
+    with dissolve
     "\"I should have known,\" Yanagimoto growled. \"So, getting your accomplices to drag me to some quiet corner of the school? What next, you threaten me with violence? I'm not scared of you!\" The two girls released her, but stayed between her and the only escape route, down the stairs."
     nvl clear
+    show Haruhi Crossed Ang1
     "Haruhi's eyes narrowed slightly. \"I don't really know what you have against me or Kyon,\" she said simply, holding a digital camera up. \"But that's not the point, here.\""
+    #show Yanagimoto Ang2
     "Yanagimoto grimaced, steeling herself. \"I heard of what you did to the computer club president,\" she snapped. \"And how you're coercing Tsuruya-sempai to help you out!\""
     nvl clear
+    show Haruhi Crossed Eyeroll2
     "The girl at the top of the staircase rolled her eyes and pressed some buttons on the camera. \"Whatever, the computer club thing happened over a year ago. And I'm not coercing Tsuruya-san, she came to {i}me{/i} for help.\""
+    show Tsuruya Hap2 Flip
     "\"That's true!\" Tsuruya said, far too cheerfully."
     nvl clear
+    #show Yanagimoto Quest1/2
     "\"What?\" Yanagimoto shook her head at the claim. \"Nevermind that. What's your supposed point?\""
+    show Haruhi Crossed Ang2
     "\"You think Yamane's your friend?\" Haruhi asked coolly. \"Did he tell you that Kyon took something from him? An SD card, maybe?\""
+    #show Yanagimoto Unhap1
     "She nodded grudgingly. More than one ... all of the boy's best compositions, according to what Yamane had said."
     nvl clear
+    show Haruhi Crossed Ang1
     "Haruhi suddenly turned the camera around, the display facing Yanagimoto. \"This is what was on Yamane's card,\" she explained. \"Still think he's your friend?\""
     nvl clear
+    #show Yanagimoto
     "She felt the blood first drain from her face, and then all collect there, as she stared at the image and a sensation of slowly creeping horror began to rise from her ankles. It rattled her knees, leaving them weak, then scratched her spine, making her shake, and finally settled in the back of her skull, leaving her world spinning as an enraged shriek escaped her lips."
     nvl clear
     
+    scene bg hallway with fade
+    #show Del!Kyon Neutral2 at right
+    show Koizumi Crossed Neutral1 at left
     "\"Okay, so ... how do we ask him to leave the classroom?\" Kyon pondered, as they approached the door to class 3-5."
+    show Koizumi Crossed Smile3
     "\"I will politely ask him,\" Koizumi suggested, studying his 'delinquent' companion. Already Kyon had garnered unsettled looks from passing students ... and just as worryingly, more than a few enthusiastic and interested smiles from various girls. Best not to let that get back to Haruhi, though Kyon fortunately seemed to be totally blind to such things."
     nvl clear
     "Maybe it was a mixed blessing, in the end."
+    #show Del!Kyon Neutral1
     "\"And if that doesn't work?\" Kyon asked, glancing at him."
+    show Koizumi Crossed Hap2
     "\"You crack your knuckles and say 'please'.\""
+    #show Del!Kyon
     "\"Sounds good. On you, then.\""
     nvl clear
+    scene bg MikuruClass
+    #show Koizumi at center
+    #show Del!Kyon Flip at left
+    #show Daimonji Neutral1 at right
     "Koizumi nodded, leading the way into the classroom with his most pleased grin. Daimonji was almost identical to his photograph, a generally average looking boy with neat, black hair and unremarkable features. His eyes flicked to the doorway, passing over Koizumi, then locking on Kyon."
     nvl clear
+    #show Daimonji Quest1
     "Before either could approach, he gave a sigh and a mild shake of his head. Leaving half of his lunch uneaten, Daimonji solemnly rose from his seat and approached the pair. \"You're here to meet with me?\" he asked, before Koizumi could speak."
     nvl clear
     "Kyon nodded. Koizumi added, \"If it's not too much trouble?\""
+    #show Daimonji Sigh1
     "\"Yeah, sure,\" Daimonji grunted. \"Come on.\""
     nvl clear
+    scene bg SchoolBathroom with fade
+    #show Del!Kyon Unhap4 Flip at left
+    #show Koizumi Crossed Ser1 at center
+    #show Daimonji Neutral1 at right
     "Neither of the brigade members were pleased that he had seized control of the initiative, but Daimonji led the way down the hall and into the nearest boy's washroom. After glancing at the stalls to verify they were empty, Kyon stood by the door, leaning against it and blocking easy entrance. Daimonji glanced at him, then leaned against the wall by the sinks, sighing again."
     nvl clear
+    #show Daimonji Unhap1
     "\"Okay,\" he said suddenly, glance flicking between the two again before he reached into his blazer and pulled out a narrow manila envelope. \"I can see how this is going down; I'm not happy to have been part of it. I'm hoping that we can talk this out like reasonable people, and I won't end up with a broken nose or a bleeding scalp.\""
     nvl clear
+    show Koizumi Crossed Smile3
     "\"That's a good wish,\" Koizumi said, nodding cheerfully. This sounded promising, at least. \"Now, am I to understand that you're offering your cooperation with us?\""
     nvl clear
+    #show Daimonji Ser1
     "\"I don't know what authorities you answer to, but lets be brutally honest — I'm a third year student. I'm not going to flip out like Ryuguu and pick a fight over this, not if I can get out relatively unscathed. It's early in the year. If I work at it, I can finish at some other school, still go on to college, and as long as I'm careful about it, still end up with a respectable career.\""
     nvl clear
+    #show Del!Kyon Unhap2 Flip
     "Kyon nodded wordlessly, crossing his arms over his chest and leaning against the door more heavily when someone tried it. \"Occupied,\" he growled, sending whoever was on the other side scurrying away."
+    show Koizumi Crossed Neutral2
     "\"This sounds reasonable to me,\" Koizumi allowed. \"I cannot vouch for anyone else's opinion, but I think it's safe to say that we will hear you out.\""
     nvl clear
+    #show Daimonji Neutral1
     "\"Okay. So ... this envelope has everything I've collected — all my master copies, and so on,\" Daimonji explained. \"I'm no spy. There's no hidden backup anywhere — except for the one kept by the boss.\""
+    show Koizumi Crossed Ser2
     "\"And the ringleader is...?\""
     nvl clear
+    #show Daimonji Sigh2
     "\"Yamane Jun,\" Daimonji answered with a shrug. \"He became the president of the idol research club in February, when our old president left. He started the entire racket and split us into cells. There was him, and three under-bosses. Myself, Ryuguu, and Manabe. Ryuguu managed sales, the rest of us managed our collectors. The other third year collectors are named in this envelope.\""
     nvl clear
     "Koizumi took the envelope from Daimonji's fingers, but didn't open it."
+    #show Del!Kyon Flip Neutral2
     "\"We have the first years,\" Kyon commented. \"If you say 'cells', then only Yamane and the second year collectors know who they are?\""
     nvl clear
+    #show Daimonji Neutral2
     "Daimonji nodded. \"That's right. The club has a few bonus members ... people who caught wind of what was going on through internet searches or whatnot. Before everything was established, he set it up so that half of the members are just rubes who don't really know what's going on, and half are actually doing the dirty work. I'll admit; I was lured in by the promise of easy money.\" He shrugged, grimacing. \"That's not an excuse, and I know that. But ... it's hard to back out of an organization once you get started, and ... sometime, not too long ago ... Yamane lost it. And not just a little bit!\""
     nvl clear
+    show Koizumi Crossed Smile3
     "\"Go on,\" Koizumi said, smiling as he tucked the envelope into his own blazer."
+    #show Daimonji Sigh1
     "Daimonji chewed his lower lip and glanced at Kyon, then spread his arms in a shrug. \"Not sure how else to explain it ... but he had a real fixation on one of your classmates.\""
     nvl clear
+    #show Del!Kyon Flip Neutral1
     "\"One of mine?\" Kyon asked, raising an eyebrow."
+    #show Daimonji Unhap2
     "The third year boy nodded. \"I mean, pictures of a classmate, that's fine. Maybe somewhat scandalous pictures of a classmate ... sure, that can happen. But Yamane took it a step further.\""
     nvl clear
+    #show Del!Kyon Flip Ang3
     "Kyon's expression flickered darkly. \"Who,\" he growled."
     nvl clear
+    #show Daimonji Unhap3
     "Daimonji looked away uncomfortably. \"Dunno her name,\" he admitted. \"Yamane just worships her and says that you're the one who ruined everything. He calls her his 'Tenshi'. Occasionally he mutters about her 'scent'. When this all started, I thought it was low-key and sensible enough, right?\""
     nvl clear
+    #show Del!Kyon Flip Ang2
     "Koizumi didn't really see where the third year boy was coming from, and shook his head slightly in negation. When someone tried to push the door open, Kyon slammed one fist against it, causing the entire thing to shudder with a snapped, \"Occupied!\""
     nvl clear
+    #show Daimonji Sigh1 
     "\"W...well ... yeah, okay, I should have known it was wrong from the start,\" Daimonji sighed, rubbing the bridge of his nose with his right hand. \"It was the money, really. He arranged everything, and Ryuguu had a good connection with ... someone, I don't know who, really.\""
     nvl clear
+    #show Del!Kyon Flip Ang4
     "\"They're not in the picture anymore,\" Kyon said resolutely."
+    #show Daimonji Neutral2
     "Daimonji winced. \"Uh ... that's great. Anyway, I want out with minimal harm to myself, all told. What kind of deal can we make?\""
+    show Koizumi Crossed Ser2
     "\"I want to know everything about the master copies Yamane has that you can tell us,\" Koizumi said. \"Where are they kept?\""
     nvl clear
+    #show Daimonji Sigh1
     "\"Guy's crazy, his house could be full of backups,\" Daimonji said with an apologetic shrug. \"Maybe a safety deposit box somewhere. I know there's copies of everything he has on the computer in the idol research clubroom ... but there could be more — a lot more. I just want out. You two ... seem to know what you're doing, so I'm guessing that he's pissed off the wrong people. That's fine. I just don't want to be a part of it, anymore.\""
     nvl clear
+    #show Del!Kyon Flip Neutral1
     "Kyon nodded thoughtfully. \"What are you planning on doing from here?\" he asked. \"Do you have an exit strategy, or are you expecting us to help you out?\""
+    #show Daimonji Quest1
     "\"I....\" Daimonji licked his lips nervously and shook his head. \"I was kind of hoping this would be more like a police drama, I guess? That one of you offers me a deal with the D.A., and I can plea bargain.... You know?\""
     nvl clear
+    show Koizumi Crossed Neutral2
     "\"It may be possible to arrange that,\" Koizumi allowed, glancing back at Kyon and giving a small nod. \"However ... you are correct in that it would be in your better interests to leave. My suggestion, then, would be to have a good reason to go home. Do not attempt to contact Yamane, or your subordinates. Just ... go home, make sure your story is in order when official questioning comes along — and it will — and if you want to save face, see about withdrawing before you are expelled.\""
     nvl clear
+    #show Daimonji Ser1
     "Daimonji abruptly straightened up with a sharp nod. \"I appreciate that. All the same, the way things are going ... you should make your move quickly.\""
     nvl clear
+    #show Koizumi Crossed Neutral1 at center
+    #show Del!Kyon Neutral3 at HalfRight
+    #show Okabe Ser1 at left
     "Kyon grunted, stepping away from the door and walking to one of the sinks to wash his hands. Koizumi gave the third year student a nod of his own, and Daimonji sauntered slowly towards the door, hands in his pockets before it suddenly slammed open, revealing Okabe, still in his track suit, breathing heavily. Behind him was a trembling first year boy, who went wide-eyed at the sight of Kyon, squeaked in alarm, and streaked away at full speed."
     nvl clear
+    #show Okabe Yell1/Ser2
     "\"What's going on here?\" the teacher demanded, scanning across the boys with narrowed eyes."
+    show Koizumi Crossed Smile3 Flip
     "\"Oh, my,\" Koizumi managed, his smile not slipping. \"We can't have privacy in the washrooms anymore?\""
     nvl clear
+    show Koizumi Crossed Smile4 Flip
+    #show Daimonji Sigh3
     "\"It's fine,\" Daimonji said, sighing. \"These second years were helping me out. I've been feeling ill all day ... if you don't need me for anything, I'll go to the nurse's office and see about going home.\""
+    #hide Daimonji with dissolve
+    #show Okabe Unhap1
     "Okabe frowned, studying Daimonji, but allowing a brief nod before his eyes went to the boy who was washing his hands. \"Kyon,\" he snapped. \"What's with that appearance?\""
     nvl clear
+    #only needs at HalfRight until Del!Kyon sprite is made.
+    show Kyon Neutral2 at HalfRight
     "Kyon finished washing his hands and then ran his hands through his hair, roughly slicking it back into order. \"Well,\" he said, glancing back at his teacher with his typical, placid expression, \"I'm in a washroom, I was washing my hands, and as you can see, my shirt is untucked. I don't believe it takes a genius to explain the functions of a toilet, but if you {i}must{/i} know, I spent some time in that stall there,\" he said, nodding towards the stall furthest to the back. After drying his hands, he tucked his shirt in and straightened his tie, checking his reflection in the mirror before turning back to Okabe. \"Is something wrong?\""
     nvl clear
+    #show Okabe Unhap2
     "Okabe looked doubtful. \"I heard that someone was being threatened in here,\" he said. \"Someone was holding the door shut.\""
+    show Koizumi Crossed Smile3 Flip
     "Koizumi shrugged. \"Perhaps you heard incorrectly?\" he suggested."
+    #show Okabe Sigh1
     "The teacher took a deep breath. \"I've been hearing unflattering things about you,\" he warned Kyon."
     nvl clear
+    show Kyon Neutral1
     "\"Really?\" Kyon asked. \"I thought I did pretty well on that last math test.\""
+    #show Okabe Sigh2
     "\"I'll see you in homeroom,\" Okabe finally decided, shaking his head and walking away."
+    show Koizumi Crossed Hap2 Flip
+    #hide Okabe
     "As the door swung shut, Koizumi turned to face the brigade vice-commander. \"That,\" he said, \"was nothing short of {i}astounding{/i}. You heard him coming?\""
     nvl clear
+    show Kyon Sigh2
     "\"No, we lucked out,\" the other boy allowed. \"Now. The question is, with the time we have left ... go straight after Yamane, or check in with Haruhi?\""
+    show Koizumi Crossed Ser2 Flip
     "\"I vote for cooperating with Suzumiya-san,\" Koizumi said resolutely."
+    show Kyon Neutral2
     "\"Don't complain to me if we cut classes to deal with Yamane,\" Kyon warned, pulling his cell from his pocket as he re-entered the hallway."
     nvl clear
     
+    scene bg ClubroomFullDay with fade:
+        xpos 0 ypos 0
+    $ renpy.layer_at_list([PanScene_SetToRight])
+    #show Kanae at center_RightScreen
+    #show Mikuru at right_RightScreen
     "Kanae wasn't certain what had upset Haruhi so much. She also had no idea what her sempai and Koizumi had run off to handle, but guessed they were related. Mikuru was likewise comfortably oblivious to the reasons behind the rage and rush. So, while slowly enjoying her lunch along with a cup of tea from the upperclassman, Kanae lost herself in the final volume of Caravan Kidd."
     nvl clear
     "It was usually her favorite manga, being old enough that — evidently — it tended to be consistent throughout every reality that she slid to. She really would have preferred to watch the Trope-tan anime, but that seemed {i}wildly{/i} divergent between realities ... though, production value was almost always very high in every world she'd seen."
     nvl clear
+    #show Haruhi
+    #show Tsuruya
+    #show Yuki
+    #show Yanagimoto Unhap1
     "Mikuru hummed and took half of the table up with a giant roll of paper, carefully measuring outlines and making marks. Kanae was curious as to the nature of the project ... and as soon as she finished her manga, she planned on asking the upperclassman what she was up to. The door opened and Kanae looked up as Haruhi marched to the laptop Yuki had left turned on, Yuki, Tsuruya, and an unfamiliar girl with a glowing red face just behind her."
     nvl clear
+    #show Kanae
     "\"Hello!\" she greeted the quartet cheerfully."
+    #show Mikuru
     "\"Ah,\" Mikuru managed, rising to pour tea for everyone. \"Who's our guest?\""
     nvl clear
+    #show Yanagimoto Unhap2
     "\"Yanagimoto Ai,\" the girl introduced herself with a grumble. \"Temporary ally.\""
     "Haruhi introduced Mikuru and Kanae in turn, naming them, \"Chief Mascot\" and \"Mascot Trainee\"."
     nvl clear
     "Kanae wondered if that meant she would get fun costumes like Mikuru. Hopefully another maid outfit, since her sempai really seemed to like those!"
+    #show Haruhi
     "\"Okay,\" Haruhi said, \"now to wait for Kyon to tell us what he got!\" Before anyone could ask clarification, Haruhi's phone began to chime. \"Ah! It's Kyon!\""
     nvl clear
+    #show Mikuru
     "\"What was that song?\" Mikuru asked. \"Is that a new ring-tone?\""
+    #show Yanagimoto
     "\"It's from an older DDR soundtrack,\" Yanagimoto noted, her expression still dark. \"It's called 'God of Romance'.\""
     nvl clear
+    #show Haruhi
+    #show Yanagimoto
     "Haruhi's face reddened and she shot a death-glare at Yanagimoto. The other girl ignored it, sipping at her tea."
+    #show Haruhi
     "\"Kyon,\" Haruhi snapped into her phone, \"what's going on?\""
     nvl clear
+    #show Haruhi
     "She listened to his explanation, her eyebrows rising. \"Okay,\" she allowed. \"Bring it here, then we'll take down the final boss! It's obvious, really!\""
+    #show Kanae
     "\"What's going on?\" Kanae asked, setting her manga down."
     nvl clear
     "Tsuruya raised an eyebrow of her own. \"If it's a final boss, I gotta be there too,\" she said resolutely."
