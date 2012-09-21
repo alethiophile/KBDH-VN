@@ -716,124 +716,196 @@ label HAB_3:
     scene bg ClubroomFullDay with fade:
         xpos 0 ypos 0
     $ renpy.layer_at_list([PanScene_SetToRight])
-    #show Kanae at center_RightScreen
-    #show Mikuru at right_RightScreen
+    show Kanae Neutral1 at center_RightScreen
+    show Mikuru Maid Neutral1 at right_RightScreen
     "Kanae wasn't certain what had upset Haruhi so much. She also had no idea what her sempai and Koizumi had run off to handle, but guessed they were related. Mikuru was likewise comfortably oblivious to the reasons behind the rage and rush. So, while slowly enjoying her lunch along with a cup of tea from the upperclassman, Kanae lost herself in the final volume of Caravan Kidd."
     nvl clear
     "It was usually her favorite manga, being old enough that — evidently — it tended to be consistent throughout every reality that she slid to. She really would have preferred to watch the Trope-tan anime, but that seemed {i}wildly{/i} divergent between realities ... though, production value was almost always very high in every world she'd seen."
     nvl clear
-    #show Haruhi
-    #show Tsuruya
-    #show Yuki
-    #show Yanagimoto Unhap1
+    show Haruhi Unhap2 at center
+    show Tsuruya Grin1 Flip at left
+    show Yuki Side1 at left_RightScreen
+    #show Yanagimoto Unhap1 at right
     "Mikuru hummed and took half of the table up with a giant roll of paper, carefully measuring outlines and making marks. Kanae was curious as to the nature of the project ... and as soon as she finished her manga, she planned on asking the upperclassman what she was up to. The door opened and Kanae looked up as Haruhi marched to the laptop Yuki had left turned on, Yuki, Tsuruya, and an unfamiliar girl with a glowing red face just behind her."
     nvl clear
-    #show Kanae
+    show Kanae Hap1
     "\"Hello!\" she greeted the quartet cheerfully."
-    #show Mikuru
+    show Mikuru Maid Hap2
     "\"Ah,\" Mikuru managed, rising to pour tea for everyone. \"Who's our guest?\""
     nvl clear
     #show Yanagimoto Unhap2
     "\"Yanagimoto Ai,\" the girl introduced herself with a grumble. \"Temporary ally.\""
+    show Haruhi Hap1
     "Haruhi introduced Mikuru and Kanae in turn, naming them, \"Chief Mascot\" and \"Mascot Trainee\"."
     nvl clear
     "Kanae wondered if that meant she would get fun costumes like Mikuru. Hopefully another maid outfit, since her sempai really seemed to like those!"
-    #show Haruhi
-    "\"Okay,\" Haruhi said, \"now to wait for Kyon to tell us what he got!\" Before anyone could ask clarification, Haruhi's phone began to chime. \"Ah! It's Kyon!\""
+    "\"Okay,\" Haruhi said, \"now to wait for Kyon to tell us what he got!\" {nw}"
+    show Haruhi Hap2
+    play sound "SE/HaruhiRingTone.mp3"
+    extend "Before anyone could ask clarification, Haruhi's phone began to chime. \"Ah! It's Kyon!\""
     nvl clear
-    #show Mikuru
+    show Mikuru Maid Quest1
     "\"What was that song?\" Mikuru asked. \"Is that a new ring-tone?\""
-    #show Yanagimoto
+    #show Yanagimoto Unhap1
     "\"It's from an older DDR soundtrack,\" Yanagimoto noted, her expression still dark. \"It's called 'God of Romance'.\""
     nvl clear
-    #show Haruhi
-    #show Yanagimoto
+    show Hblush at center
+    show Haruhi Eyeroll2
+    #show Yanagimoto Sigh1/Teasip
     "Haruhi's face reddened and she shot a death-glare at Yanagimoto. The other girl ignored it, sipping at her tea."
-    #show Haruhi
+    show Haruhi Unhap1
     "\"Kyon,\" Haruhi snapped into her phone, \"what's going on?\""
     nvl clear
-    #show Haruhi
+    hide Hblush
+    show Haruhi Hap3
     "She listened to his explanation, her eyebrows rising. \"Okay,\" she allowed. \"Bring it here, then we'll take down the final boss! It's obvious, really!\""
-    #show Kanae
+    show Kanae Quest1 
     "\"What's going on?\" Kanae asked, setting her manga down."
     nvl clear
+    show Tsuruya Ser1
     "Tsuruya raised an eyebrow of her own. \"If it's a final boss, I gotta be there too,\" she said resolutely."
+    show Haruhi Worry3
     "\"I don't particularly want to miss it myself,\" Haruhi grumbled. \"Ah, but, Kanae-chan, Kyon and Koizumi are finally starting to wrap things up. Yanagimoto is going to help expose the big boss and we'll resolve everything.\""
     nvl clear
+    show Kanae Quest1
     "That wasn't really much of an answer, so Kanae just gave a knowing nod and turned her attention to Yanagimoto. \"You play DDR?\" she asked."
+    #show Yanagimoto
     "\"Not really,\" the second year girl answered, seeming to only just notice Kanae for the first time. \"It's a pretty fast song, but one of the gymnasts I admired had a routine set to it not long ago.\""
     nvl clear
+    show Kanae Hap1
     "Just as well, Kanae decided, DDR was fun, but every world had a wildly varying selection of tracks, so she never got very good at it. \"So, you're a gymnast, then?\" she asked."
+    #show Yanagimoto
     "\"Yeah ... you should ask your president about it. She joined our club for one day before she ditched us.\""
     nvl clear
+    show Haruhi Sigh1
     "\"It was boring,\" Haruhi noted unapologetically."
+    #show Yanagimoto
     "\"And this club is more interesting?\" Yanagimoto asked skeptically."
+    show Haruhi Hap2
     "\"You bet,\" Haruhi replied, throwing back her entire cup of tea in a single gulp. \"Stick around a while, you'll see.\""
     nvl clear
+    #FUUUUUUUUUUUU-- Reorgainize *all* the sprites? :(
+    #show Mikuru
     "Kanae's sempai knocked at the door, and Mikuru folded her paper in half, hiding the markings. \"Come in!\" she called."
+    #I believe 8 people is above the maximum capacity for this room...
+    #show Koizumi
+    #show Kyon
+    #show Tsuruya
     "Koizumi opened the door and entered, followed by the sempai. \"Ah? What happened to delinquent-mode?\" Tsuruya asked, hopping to her feet and moving to Kanae's sempai's side."
     nvl clear
+    #show Kyon
     "\"Ran into a teacher and needed to look normal,\" he answered."
+    #show Tsuruya
     "Tsuruya nodded sagely and plucked the pin from the boy's tie, moving it to his lapel. \"There,\" she said decisively."
     nvl clear
+    #show Koizumi
     "Koizumi glanced at the other boy, pulling an envelope from his pocket. \"Daimonji has been taken care of,\" he said. \"Well, mostly. Mori-san will take care of things from the administrative end, and the Organization will be ready to take care of everything else we need done once we've finished this and can deliver a full report to them on ... what's going on.\""
     nvl clear
+    #Show Haruhi
     "\"Good,\" Haruhi said, nodding. \"Excellent work.\" Her gaze went to Kanae's sempai, and one eyebrow rose. Mikuru was running a length of string across him, measuring him and jotting notes down on a pad of paper. \"So, was there any violence?\""
     nvl clear
-    "\"Weirdly enough, we lucked out and Daimonji folded like a cheap suit,\" he answered, shrugging. \"We just came in and— WAAH!\" He stared wide-eyed, at Mikuru, who was merely humming to herself as she pulled her hands back from his leg and jotted another note down on her pad of paper."
+    #show Kyon
+    "\"Weirdly enough, we lucked out and Daimonji folded like a cheap suit,\" he answered, shrugging. \"We just came in and— {nw}"
+    show Kyon Sup1
+    extend "WAAH!\" He stared wide-eyed, at Mikuru, who was merely humming to herself as she pulled her hands back from his leg and jotted another note down on her pad of paper."
     nvl clear
+    show Haruhi Sup1
     "\"That...\" Haruhi started, before she fell short, narrowing her eyes and staring at Mikuru intently. \"That was pretty bold, Mikuru.... I'm not sure how I feel about being that forward, but I think it'd better not happen again any time soon!\""
     nvl clear
+    show Kanae Sup1
     "\"Did.... Did Asahina-san just molest Sempai?\" Kanae wondered, not sure if she had seen it right, or it was her imagination."
+    show Mikuru Maid Quest1
     "\"What?\" Mikuru asked, blinking as she looked around at everyone else in the club, all with eyes fixed on her. \"What happened?\""
     nvl clear
-    "Yuki blinked several times, then explained, \"Asahina Mikuru was merely measuring the length of his inseam.\""
+    #show Yuki Blink
+    "Yuki blinked several times, then explained, {nw}"
+    #show Yuki
+    extend "\"Asahina Mikuru was merely measuring the length of his inseam.\""
+    #show Mikuru
     "\"Exactly,\" Mikuru agreed with a nod, looking confused. \"Did it seem like something else happened?\""
     nvl clear
+    #show Kyon
+    #Show Kblush
     "He coughed, his face red. \"Um, anyway,\" he managed, \"we thought we'd give that to you and see where we should go from there.\""
+    #show Haruhi
     "Haruhi opened the envelope, pulling out a sheet of folded paper and a small stack of SD cards. \"What's this, a list of names?\" she asked, frowning."
     nvl clear
+    #show Koizumi
     "\"The third year collectors,\" Koizumi offered."
+    #show Kyon
     "\"Tsuruya-kun has the first year collectors,\" Kanae's sempai added. \"All that's left is Yamane and the second year collector names.\""
     nvl clear
+    #show Yanagimoto
     "\"And he's going down,\" Yanagimoto added. \"I don't follow whatever madness is happening in this room, but I know that one fact! That's the only reason I'm here.\""
+    #show Haruhi
     "\"Right, well, then let's go get him and finish this off!\" Haruhi declared, grinning."
     nvl clear
+    #show Koizumi
     "\"Ah....\" Koizumi looked uncomfortable, his smile weakening. \"Is that wise?\""
+    #show Kyon
     "\"I think you should leave this to me and Tsuruya-kun,\" Kanae's sempai said, shaking his head. \"Haruhi, you and Koizumi need to be ready to deal with the student council president.\""
     nvl clear
+    #show Haruhi
     "Haruhi glowered at him, then nodded reluctantly. \"Alright,\" she sighed. \"I get the stupid desk job. Go be an action hero.\""
+    show Kyon Sigh2
     "\"Yeah, because that's exactly what my academic career needs,\" he replied, nodding. \"And my mother — can't forget her.\""
+    #show Haruhi
     "\"You're the one who told me to stay here and prepare to bail you out,\" she warned him."
     nvl clear
+    #show Yanagimoto
     "\"I have no idea what you're talking about,\" Yanagimoto interrupted. \"However, I do know that Yamane will let me into his club room, and lunch is going to end pretty soon — if you're going to do anything, we'd probably better hurry.\""
     nvl clear
+    show Tsuruya Neutral1 Flip
     "Tsuruya leaned close to the boy and eyed him critically before producing a hairbrush and straightening out his hair. \"You know Yamane better than I do,\" she said, while he obediently held still and neatened his appearance up. \"So you want to talks to him?\""
     nvl clear
+    #show Kyon
     "\"I imagine I'm not the only one who wants to get a word in,\" he allowed, glancing at Yanagimoto. \"But, yeah, let's get this over with.\""
+    #show Yanagimoto
     "\"Fine,\" Yanagimoto muttered, moving towards the door."
     nvl clear
+    #show Haruhi
     "\"Wait!\" Haruhi barked, standing up and slapping her palms on the desk in front of her. \"Yanagimoto ... I still don't know what your problem with us is ... but we're going to talk about it later.\""
     nvl clear
+    #show Yanagimoto
     "Yanagimoto lowered her face, then grudgingly nodded. \"We'll see about that {i}after{/i} Yamane,\" she allowed."
+    #show Yuki
     "Yuki closed her book and rose, setting it on the seat she had just vacated. \"I will go also,\" she announced quietly."
     nvl clear
+    #hide Yanagimoto
+    hide Kyon
+    hide Yuki
+    hide Tsuruya
+    with dissolve
+    #show Koizumi
+    #show Mikuru
     "With that, the four left the classroom. Koizumi sighed, taking his usual seat and eyeing the empty cup that Yanagimoto had left behind. Mikuru turned her attention to her paper, unfolding it again and measuring against the numbers she had collected from Kanae's sempai. \"A coat doesn't have an inseam, Mikuru- chan,\" Haruhi mused."
     nvl clear
+    #show Mikuru
     "\"I might make other things,\" Mikuru answered absently, absorbed in her current project."
+    #show Haruhi
     "\"Hmm.... I think you should measure Kanae-chan next.\" Haruhi gave a decisive nod. \"She's your trainee, you know!\""
+    #show Kanae
     "\"Oh! Do I get a maid costume?\" Kanae asked excitedly. This part of the conversation she could follow."
     nvl clear
+    #show Koizumi
     "Koizumi quirked an eyebrow, and rose to pour himself a cup of tea."
+    #show Haruhi
     "\"We've already done that,\" Haruhi dismissed. \"Plus, I think Kyon's developing a maid fetish, and he shouldn't look at you that way.\""
+    #show Kanae
     "Kanae pouted. \"I wanted a maid costume....\""
     nvl clear
+    #show Haruhi
     "\"What about a stewardess? Yeah, with your kawaiiko features and small frame, I think you would look even more moe in uniforms.\""
+    #show Kanae
     "\"Ooh, that might be fun! But I'm not a kawaiiko, I use 'I'.\" She pondered. \"Would Sempai like Kanae-chan more if she refered to herself in the third person?\""
     nvl clear
+    #show Haruhi
     "Haruhi made a choking noise, then crossed her arms in an 'x'. \"Negative!\" she said, shaking her head quickly. \"Too burikko ... and if you become a natural, it'll be a kawaiiko overload. Anyway, Mikuru-chan, did you hear me? A stewardess outfit for Kanae-chan!\""
     nvl clear
+    #show Mikuru
     "\"I'll get on that next,\" Mikuru murmured, rolling up the papers she had finished marking, then unfurling a bolt of cloth and producing a pair of scissors."
+    #show Haruhi
     "\"I swear,\" Haruhi grumbled, \"when she's really invested in a project, she's in a whole different world!\""
+    #show Koizumi
     "\"Well, Suzumiya-san, should we prepare our arguments for the student council?\" Koizumi suggested."
     nvl clear
