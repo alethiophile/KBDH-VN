@@ -728,3 +728,5 @@ label Fi2:
     "He walked up the stairs to change his clothes, while his mother stared, eyes narrowed. \"That's not funny!\" she yelled up after him."
     show Nonoko
     "A chuckle escaped him as he heard his sister ask, \"What's a 'Yamaguchi-gumi'?\""
+    
+    jump HAB3
