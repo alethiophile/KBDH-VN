@@ -11,7 +11,7 @@ label HAB_4:
     #show Yanagimoto Hap1
     "She took a quick breath to steel herself, then put on her most cheerful syrupy-sweet voice. The one she had previously only used on Taniguchi to try and turn him against Haruhi. \"Yamane-kun,\" she called, rapping on the door. \"It's Yanagimoto~! Do you have a free minute?\""
     nvl clear
-    show
+    #show
     "The quartet listened to the creak of his chair as he rose, then the tap of his footsteps across the room before the door unlocked and opened. {nw}"
     #show Yamane Unhap1 at left
     extend "Yamane's expression shifted from something quite near a leer to "
@@ -523,6 +523,6 @@ label HAB_4:
     nvl clear
     "\"You want to come with us?\" he asked in surprise, while Tsuruya barked a string of orders into her cell phone. Yuki's gaze slowly rose to meet his, and she gave a single sharp nod. He was about to protest when he caught himself. This was Yuki, after all ... and even if she didn't have all her powers and abilities, she had to learn the martial arts he'd learned in order to train him. She outmatched him by several orders of magnitude; why wouldn't he want her help against an unknown yakuza?"
     nvl clear
-    "Kyon wished he could shake the feeling of impending doom that seemed to hang over him. What protection was Mori going to get, anyway? Maybe he'd be lucky, and it'd be a bulletproof vest — or better. That was worth hoping for ... but he wasn't likely to get it before the next assignment."nvl clear
+    "Kyon wished he could shake the feeling of impending doom that seemed to hang over him. What protection was Mori going to get, anyway? Maybe he'd be lucky, and it'd be a bulletproof vest — or better. That was worth hoping for ... but he wasn't likely to get it before the next assignment."
     nvl clear
     
