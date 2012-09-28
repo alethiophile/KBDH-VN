@@ -1,5 +1,9 @@
-label HAB_4:
-    #scene We're gonna need a bigger bg...
+#label HAB_4:
+label Test:
+    #We're gonna need a bigger bg...
+    scene bg ClubHallLeft
+    stop music fadeout 1
+    queue music "Music/suspicion.ogg"
     #show Yanagimoto at HalfLeft
     #show Tsuruya at center
     #show Kyon at HalfRight
@@ -14,12 +18,15 @@ label HAB_4:
     #show
     "The quartet listened to the creak of his chair as he rose, then the tap of his footsteps across the room before the door unlocked and opened. {nw}"
     #show Yamane Unhap1 at left
-    extend "Yamane's expression shifted from something quite near a leer to "
+    extend "Yamane's expression shifted from something quite near a leer to {nw}"
     #show Yamane Fear1
     #play sound "SE/impact/mp3"
     extend "raw alarm when he saw Kyon. Before he could slam the door shut, Kyon gave it a hard kick, sending the edge of the door flying into the boy's face, knocking his glasses off and sending him stumbling back."
     nvl clear
-    #scene bg IdolClubroom
+    scene bg IdolClubDark with fade:
+       size (800,600)    
+    stop music fadeout 1
+    queue music "Music/FootstepsOfDestruction.mp3"
     #*insert magical room-darkening code here*
     #show Tsuruya at HalfLeft
     #show Kyon at center
@@ -34,10 +41,18 @@ label HAB_4:
     nvl clear
     #show Kyon Ang
     #show Tsuruya Grin6
-    "\"Things are about to become very, very uncomfortable for you,\" Kyon said, using the informal form of the word. He crouched near the boy and stared at him dully. Tsuruya chuckled, her grin ominous. Yuki slowly turned around and studied the room. It was dark at the moment, only the red lighting of a film- development closet active at the moment. The short girl walked to the window and pulled the curtain open, flooding the room with brighter light."
-    #*remove magical room-darkening code here*
+    "\"Things are about to become very, very uncomfortable for you,\" Kyon said, using the informal form of the word. He crouched near the boy and stared at him dully. Tsuruya chuckled, her grin ominous. Yuki slowly turned around and studied the room. It was dark at the moment, only the red lighting of a film- development closet active at the moment. The short girl walked to the window and pulled the curtain open, {nw}"
+    play sound "SE/Curtain.wav"
+    extend "flooding the room with brighter light."
     nvl clear
-    #show Yamane
+    #*remove magical room-darkening code here*
+    scene bg IdolClubLight:
+       size (800,600)
+    #show Tsuruya at HalfLeft
+    #show Kyon at center
+    #show Yanagimoto at HalfRight
+    #show Yuki at right
+    #show Yamane at left
     "\"Hey!\" Yamane protested again."
     "Yanagimoto realized that every surface of the room was plastered in pictures cut out of idol magazines, or full-page prints downloaded from the internet. She couldn't recognize a fraction of them. Near the far end, just before the window, was a desk with a computer on it, very similar to the setup in Haruhi's club room, only without the long table in the center."
     nvl clear
@@ -88,7 +103,7 @@ label HAB_4:
     #show Tsuruya
     "Kyon grunted wordlessly, glancing at Tsuruya. The eternally-cheerful girl was still smiling, her eyes fixed on Yamane, except to flicker to Kyon every so often for the briefest moments. Was the rumor that Yanagimoto had tried to help spread true? Was there something going on between them? Yamane paused once the window was opened, just standing still and breathing."
     nvl clear
-    #play sound "SE/WestminsterChimeShort.mp3"
+    play sound "SE/WestminsterChimeShort.mp3"
     "The chime sounding the end of lunch rang out, but Yanagimoto decided she'd wait and be late to class. For this...."
     nvl clear
     #show Tsuruya
@@ -96,9 +111,16 @@ label HAB_4:
     "Tsuruya grumbled, marching to Yamane's side and raising a fist in warning. He scurried to the computer, cowed, and frantically began typing. \"I'll log in, and you can see—\" He broke off, and Yanagimoto realized his ploy too late, too shocked to react to what he'd done. When Tsuruya had moved towards him, she stood next to the window."
     nvl clear
     ##*Above my skill level*
-    "With a desperate shove, he pushed her to a three-story drop to a concrete walkway. She felt a horrified shriek build in her own throat as Tsuruya's eyes widened, and her hands windmilled frantically, one catching momentarily on the glass edge of the window before it shattered, sending a blossoming aura of glimmering shards exploding outward behind her. A bare instant before the girl vanished from sight, Kyon had somehow gotten there, grabbing her other flailing hand and being pulled after her all the way to his shoulder, his knees slamming to the floor loudly."
+    stop music fadeout 0.1
+    queue music "Music/Breach.mp3"
+    play sound "SE/GlassBreak1.mp3"
+    "With a desperate shove, he pushed her to a three-story drop to a concrete walkway. She felt a horrified shriek build in her own throat as Tsuruya's eyes widened, and her hands windmilled frantically, one catching momentarily on the glass edge of the window before it shattered, sending a blossoming aura of glimmering shards exploding outward behind her."
     nvl clear
-    "Just as quick as Kyon was, somehow Yuki was there, too. Before Yamane could try and shove Kyon as well, the shorter girl seized the back of Yamane's coat and — improbably — plucked him up with one hand, hurling him head-over-heels through the air, sending the boy flying past Yanagimoto faster than she could turn to look. The paneling of the wall crunched from the impact — at least, part of Yanagimoto hoped it was only the paneling. The boy made a retching sound and collapsed face-first on the floor after bouncing off the now-dented wall."
+    "A bare instant before the girl vanished from sight, Kyon had somehow gotten there, grabbing her other flailing hand and being pulled after her all the way to his shoulder, his knees slamming to the floor loudly."
+    nvl clear
+    "Just as quick as Kyon was, somehow Yuki was there, too. Before Yamane could try and shove Kyon as well, the shorter girl seized the back of Yamane's coat and — improbably — plucked him up with one hand, hurling him head-over-heels through the air, sending the boy flying past Yanagimoto faster than she could turn to look. {nw}"
+    play sound "SE/Hit1.wav"
+    extend "The paneling of the wall crunched from the impact — at least, part of Yanagimoto hoped it was only the paneling. The boy made a retching sound and collapsed face-first on the floor after bouncing off the now-dented wall."
     nvl clear
     "\"I've got you,\" Kyon managed, his voice strained. Yanagimoto scrambled to try and help. All of Tsuruya's weight was dragging down on Kyon's arm, driving the narrow edge of the windowsill up beneath his armpit; she couldn't imagine how painful that must be. Before Yanagimoto even reached his side, Yuki leaned out the window and helped haul Tsuruya back up and into the room."
     nvl clear
@@ -160,6 +182,7 @@ label HAB_4:
     nvl clear
     "Kyon snorted, hauling the boy into the room and laying him out with a straight punch to the face, stepping away from the widening puddle forming around Yamane."
     nvl clear
+    stop music fadeout 1
     "The delinquent moved away from the window and stood still for a long minute, just closing his eyes and breathing very deeply. When his eyes opened, he raised his hands before him, frowning at their shaking. \"I don't like being angry,\" he muttered."
     nvl clear
     "Tsuruya shut the computer down, then walked to his side, pulling his face towards hers, so their foreheads touched, her eyes closed. \"It's okay,\" she soothed quietly. \"You get angry for good reasons. I'm sorry, Kyon-kun.\""

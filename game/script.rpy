@@ -117,6 +117,9 @@ init:
     image bg MikuruClass = "Backgrounds/MikuruClass.png"
     image bg Udon = "Backgrounds/Udon.png"
     image TownHillLeftMorning =  "Backgrounds/TownHillLeftMorning.png"
+    image bg IdolClubDark = "Backgrounds/IdolClubDark.png"
+    image bg IdolClubLight = "Backgrounds/IdolClubLight.png"
+    
     
     image lowkick1 = im.Alpha("Backgrounds/Effects/lowkick1.png", 0.75)
     image hit1 = "Backgrounds/Effects/hit1.png"
