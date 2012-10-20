@@ -1,6 +1,7 @@
 #label HAB_4:
 label Test:
     #We're gonna need a bigger bg...
+    ##Note to self: From the club room on, only include half of the cast at any one time. Just hide half and show the other each time.
     scene bg ClubHallLeft
     stop music fadeout 1
     queue music "Music/suspicion.ogg"
@@ -28,19 +29,20 @@ label Test:
     stop music fadeout 1
     queue music "Music/FootstepsOfDestruction.mp3"
     #*insert magical room-darkening code here*
-    #show Tsuruya at HalfLeft
-    #show Kyon at center
-    #show Yanagimoto at HalfRight
+    #show Yanagimoto at center
     #show Yuki at right
+    #with dissolve
     "Yanagimoto was a tiny bit unnerved by the way that Tsuruya strode past her and into the room, standing over Yamane's form with arms crossed over her chest, and both Yuki and Kyon seemed to just flow around her. The supposed delinquent gestured her in, and she hesitantly joined the group, before Yuki shut the door behind them, locking it once more."
     nvl clear
-    #show Yamane Cry1 at left
+    #show Yamane Cry1 at left with dissolve
     "\"Ow!\" Yamane protested, rubbing his nose, his eyes tearing as he fumbled for his glasses. \"What the hell!? Yanagimoto-san — I thought we were friends!\""
     #show Yanagimoto Ang4/Livid1
     "\"So did I,\" she spat, glaring as he put his spectacles back in place and gave her a sad gaze. \"Haruhi showed me the pictures you took!\""
     nvl clear
-    #show Kyon Ang
-    #show Tsuruya Grin6
+    #hide Yuki
+    #hide Yanagimoto
+    #show Kyon Ang at center
+    #show Tsuruya Grin6 at right
     "\"Things are about to become very, very uncomfortable for you,\" Kyon said, using the informal form of the word. He crouched near the boy and stared at him dully. Tsuruya chuckled, her grin ominous. Yuki slowly turned around and studied the room. It was dark at the moment, only the red lighting of a film- development closet active at the moment. The short girl walked to the window and pulled the curtain open, {nw}"
     play sound "SE/Curtain.wav"
     extend "flooding the room with brighter light."
@@ -48,7 +50,7 @@ label Test:
     #*remove magical room-darkening code here*
     scene bg IdolClubLight:
        size (800,600)
-    #show Tsuruya at HalfLeft
+    ##show Tsuruya at HalfLeft
     #show Kyon at center
     #show Yanagimoto at HalfRight
     #show Yuki at right
