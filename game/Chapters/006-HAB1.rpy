@@ -751,8 +751,8 @@ label HAB1:
     "\"You too, Kyon-kun!\" she called back, waving as she strode towards the school gates."
     nvl clear
     scene bg ClubHallLeft with fade
-    "After scraping as much of the mud and dirt from his indoor shoes as he could, Kyon trudged wearily to the club house, taking the longer route to avoid encountering anyone being released from the club meeting. {nw}"
-    play sound "SE/doorknock"
+    "After scraping as much of the mud and dirt from his indoor shoes as he could, Kyon trudged wearily to the club house, taking the longer route to avoid encountering anyone being released from the club meeting."
+    play sound "SE/doorknock.mp3"
     "He knocked on the calligraphy clubroom door, pleased when Mikuru answered, bowing and excusing herself from her impromptu meeting with her former club members."
     nvl clear
     show Kyon Neutral2 at TenthRight
