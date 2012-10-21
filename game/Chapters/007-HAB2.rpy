@@ -941,7 +941,6 @@ label HAB2:
     show Tsuruya Casual Worry3 Flip at left
     with slowfadein
     "When his eyes tried lazily to open, only one of them did. A wad of cloth or something was pressing on his right eye, and he was laying on his back, squinting upward into lights that were too bright." 
-    
     "Tsuruya was peering down at him in concern, while an unfamiliar middle-aged man with rolled up sleeves and surgical gloves did ... something to his face involving a needle and thread. He let his eye close again, though he remained conscious."
     nvl clear
     "Most of his face was reassuringly numb, but he felt Tsuruya's warm hands clasped together around his left hand. \"There,\" the man's voice said, slightly muffled by his surgical mask. \"Are you still with us, Kyon-dono?\""
@@ -961,14 +960,13 @@ label HAB2:
     "\"Kyon-kun?\" she asked him, her voice sounding surprisingly shy. \"You okay?\""
     nvl clear
     show Tsuruya Casual Worry3 Flip
-    show Kyon Smile5
-    
+    show Kyon Smile5    
     "\"I've been better,\" he allowed with a wry smirk. Turning to the surgeon, who was washing his hands carefully in a basin and had pulled down his mask, he added, \"Thank you, Sensei. Thank you as well, Tsuruya-kun.\""
     show Tsuruya Casual Casual Neutral1 Flip
     "\"This one was my fault,\" Tsuruya said, nodding firmly. \"If it's my fault, it's my responsibility! Oh, let me introduce you; this is Sakura-sensei, our family surgeon.\""
     nvl clear
     show Tsuruya Casual Neutral1 Flip
-    "Sakura gave a wry grin of his own and bowed, drying his hands on a towel. \"I can't give you much medicine, Kyon-dono, but when you're ready tonight, we'll give you something to help you sleep,\" he said"
+    "Sakura gave a wry grin of his own and bowed, drying his hands on a towel. \"I can't give you much medicine, Kyon-dono, but when you're ready tonight, we'll give you something to help you sleep,\" he said."
     "\"In the meantime, you shouldn't need antibiotics, and I can't get those without a prescription, so it's going to be very important to change the dressing on that wound regularly and keep it clean. {w}Also, for today and tomorrow, keep an icepack on the injury whenever possible.\" He produced a strange, rounded strip of something like a bandage, adding, \"There are a few of these in the freezer; the staff can help you get one before you sleep.\""
     nvl clear
     show Kyon Sigh2
@@ -991,21 +989,41 @@ label HAB2:
     show Kyon Sigh2 
     "Kyon nodded tiredly, while Tsuruya waved to a maid and climbed to her feet. \"I'm headed to the bath,\" the girl told her maid, \"when Kyon-kun is ready, go ahead and send him in, then get our beds ready.\""
     "\"Understood,\" the servant replied, bowing deeply."
+    nvl clear
     show Kyon Neutral3
     "Shaking his head, Kyon turned his phone back on, unsurprised to see another voice mail. He retrieved it, hearing his future self tell him, with a faintly audible tinge of amusement: \"It seems strange, but it's the best thing to do. Take a bath, rest well, do whatever Tsuruya-kun asks. {i}Whatever{/i} Tsuruya-kun asks. You can leave the phone on now.\""
     nvl clear
     "Rolling his eyes, he tiredly climbed to his feet, approaching the maid with short steps. His arms and back were bruised from all of his falling and rolling, his knuckles were sore, his right ankle was protesting, and whatever anesthetic the doctor had used was starting to fade. The stitched up cut was beginning to fiercely sting, even with the cooling pack stuck to his head, and the purpling bruise over his collar bone was starting to promise aching neck muscles in the coming days."
+    nvl clear
     "\"Kyon-dono,\" the maid murmured, rising from her kneeling position, though her eyes were still fixed on the floor. \"The head of the Tsuruya family sends his personal regards and thanks for watching over his chosen heir. All of us are quite grateful for your effort so far, especially Kasai-san.\""
     nvl clear
+    show Kyon Neutral2
     "\"I'm just doing ... what anyone would do,\" he said, realizing how lame it was only after the words left his mouth. Sure, anyone who had casual access to instant training, time travel, and a covert organization that they had inadvertently cowed into doing their bidding would do the same."
+    nvl clear
+    show Kyon Neutral3
     "Even with her face oriented towards the floor, he could see the maid's mouth quirk into a smile. \"Even though others may, you {i}have{/i},\" the maid insisted. \"He further requests that you continue to watch over her until she completes her trials, and wishes to know what reward you desire in exchange for your services.\""
     nvl clear
-    "\"O...of course,\" he agreed. \"But, reward? That's.... No, thanks. I don't need much, and right now, Tsuruya-kun's already made sure that I got medical attention when I needed it, and a place to hide from my mother while she's angry.\" He bit his tongue, wondering if his words came more easily as a side- effect of the fading anesthetic. \"Er.... Well, I appreciate the offer, but I'm not helping Tsuruya-kun for a reward.\""
+    show Kyon Neutral2
+    "\"O...of course,\" he agreed. {nw}"
+    show Kyon Neutral1
+    extend "\"But, reward? That's.... {nw}"
+    show Kyon Puzzle1
+    extend "No, thanks. I don't need much, and right now, Tsuruya-kun's already made sure that I got medical attention when I needed it, and a place to hide from my mother while she's angry.\" {nw}"
+    show Kyon Worry1
+    extend "He bit his tongue, wondering if his words came more easily as a side-effect of the fading anesthetic. {nw}"
+    show Kyon Neutral2
+    extend "\"Er.... Well, I appreciate the offer, but I'm not helping Tsuruya-kun for a reward.\""
+    nvl clear
+    show Kyon Neutral3
     "The maid's smile widened. \"Thank you,\" she said, raising her face and peering cautiously at him. \"Then, if I may impose a small, personal request?\""
+    show Kyon Neutral2
     "\"As long as it doesn't go against brigade policy.\""
+    show Kyon Neutral3
     "\"Please take good care of Haruka-chan,\" she whispered, her face coloring slightly."
     nvl clear
+    show Kyon Neutral2
     "\"Of course,\" he agreed, wondering why she needed to ask him twice. \"I don't think many people would want to see her unhappy.\""
+    show Kyon Neutral3
     "The maid bowed low again, then gestured him to follow. \"This way to the baths,\" she said quietly. \"Leave your clothes in the changing room. We'll make sure they're clean by morning.\""
     nvl clear
     scene bg TsuruyaBath with fade

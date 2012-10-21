@@ -1670,6 +1670,7 @@ init:
     image title 008 = Text("{space=480}{b}{size=+1}Thursday, April 21, 2011{/size}{/b}\n\n\n\n\"File K:3419.8.19/2011.4.21\"\n\n\"...so, I think, maybe, sometimes it might be okay to be a little selfish, as long as you don't jeopardize anything. That's the really hard part, though ... how can you ever tell? I suppose that means erring on the side of caution ... no matter how it hurts. But sometimes ... just a little bit ... it's nice to be selfish.\"\n\n\"[[CLASSIFIED]\" -- Peraea Mons T.E.S.A. Dataplume", font="DejaVuSerif-Italic.ttf", size=18, line_leading=3, justify=True, xmaximum=750)
     image title 009 = Text("{space=480}{b}{size=+1}Thursday, April 21, 2011{/size}{/b}\n\n\n\n\"File K:3453.3.5/2011.4.22\"\n\n\"...then push the stack representing the focus shift in prio research target. Due to the complexity of interaction with this particular model, an automated property will top your stack every two minutes if you do not pop or [[CLASSIFIED]. Do not attempt to adjust this; it is for your own safety! For the remainder of this lesson, you will need to utilize your augmented reality context-tags, or relay queries to me. Oh! And before this comes up? No, I will not ask [[CLASSIFIED] to autograph anything for you.\"\n\n\"[[CLASSIFIED]\" -- Peraea Mons T.E.S.A. Dataplume", font="DejaVuSerif-Italic.ttf", size=18, line_leading=3, justify=True, xmaximum=750)
     image title 010 = Text("{space=500}{b}{size=+1}Friday, April 22, 2011{/size}{/b}\n\n\n\n\"Chapter Two: Asking for Help\"\n\n\"Not everyone can handle an entire project single-handedly. Remember why you have allies in the first place! Achieving something on your own is great, but if the cost of failure is high, swallow your pride and spread the load around.\"\n\n\"Methods of Victory\" -- 'T.H.'", font="DejaVuSerif-Italic.ttf", size=18, line_leading=3, justify=True, xmaximum=750)
+    image title 011 = Text("{space=500}{b}{size=+1}Friday, April 22, 2011{/size}{/b}\n\n\n\n\"Chapter Eight: Overbearing\"\n\n\"In a confrontation that is either physical or verbal, when possible, completely overwhelm your enemy from the outset. If it's a serious fight, there's no reason to hold back, no purpose to pulling punches. If it's not a serious fight, you're reading the wrong book!\"\n\n\"Methods of Victory\" -- 'T.H.'", font="DejaVuSerif-Italic.ttf", size=18, line_leading=3, justify=True, xmaximum=750)
     
 init python:
     config.layers.insert(1, 'upper')
@@ -2739,6 +2740,8 @@ label test_Z0_titles:
     show title 009 at card_pos with slowfadein
     pause
     show title 010 at card_pos with slowfadein
+    pause
+    show title 011 at card_pos with slowfadein
     pause
     return
 
