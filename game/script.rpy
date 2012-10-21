@@ -2017,7 +2017,7 @@ init -1 python:
             ("Another testbed, Eyecatchies", "test_Z0_eye", True),
             ("Another testbed, Title cards", "test_Z0_titles", True),
             ("Another testbed, Time-Travel Notes", "test_Z0_TTN", True),
-            ("Another testbed, Clear the TTN", "test_Z0_fragTTN", True),
+            ("Another testbed, Cheatzz!!11", "test_Z0_likeaboss", True),
             ("Trope Collection System Test!", "test_hyperlinks", True),
             ("A test!", "test2", True)
             ],
@@ -2034,8 +2034,22 @@ init -1 python:
         ]
     
     
+    if persistent.unlocks == None:
+        persistent.unlocks = {}
+        persistent.unlocks["db-ttn"] = {"name":"Kyon's Time-travel list", "price":5, "state":False}
+    
+    _unlocks = {}
+    _unlocks["name"] = "db-ttn"
+    _unlocks["back"] = "Database"
+    
+    
     if persistent.ttnotes == None:
         persistent.ttnotes = []
+    
+    if persistent.ttnmode == None:
+        persistent.ttnmode = 'order'
+    
+    ttnmode = persistent.ttnmode
     
     # Appends the TTnote with destination = first arg and description = second arg  to TODO list,
     #  if there were no entry with exactly the same contents. Third arg can be left out in most cases.
@@ -2089,7 +2103,6 @@ init -1 python:
     # Key function for sorting the TTN list by destination date
     def ttndestkey(e):
         return e['dest']
-    
     
     
     if persistent.unlockedAchievs == None:
@@ -2760,5 +2773,25 @@ label test_Z0_fragTTN:
     "Voiding TTN list..."
     $ persistent.ttnotes = []
     extend "Done!"
+    return
+    
+label test_Z0_likeaboss:
+    menu:
+        "Pick your poison"
+        "UUDDLRLRBA":
+            $ persistent.balance = persistent.balance + 10
+            "You feel power rushing through your very core! +10 Þ ...What a let-down."
+        "Negate above":
+            $ persistent.balance = persistent.balance - 10
+            "You feel you wallet lightening a bit. -10 Þ ...What kind of a cheat is that!"
+        "Frag yourself":
+            $ persistent.ttnotes = []
+            "You feel your memories of a thing you need to done leave you. Time-travel notes voided."
+        "Lock everything up":
+            python:
+                for e in persistent.unlocks.keys():
+                    persistent.unlocks[e]["state"] = False
+            "You feel like you just lost access to all the extra you had unlocked so far..."
+    "Done!"
     return
     

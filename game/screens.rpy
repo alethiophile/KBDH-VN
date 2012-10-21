@@ -228,6 +228,62 @@ screen Chapters:
 
 
 ##############################################################################
+# Unlock things screen
+#
+# Screen that's used to display the Extras menu
+
+screen unlock_scr:
+
+    modal True
+
+    window:
+        style "gm_root"
+
+    frame:
+        style_group "yesno"
+
+        xfill True
+        xmargin .05
+        ypos .1
+        yanchor 0
+        ypadding .05
+        
+        has vbox:
+            xalign .5
+            yalign .5
+            spacing 30
+        
+        $ _tn = persistent.unlocks[_unlocks["name"]]["name"]
+        $ _tp = persistent.unlocks[_unlocks["name"]]["price"]
+        label "Unlock [_tn] for [_tp] Þ?\nYou currently have [persistent.balance] Þ":
+            xalign 0.5
+        
+        python:
+            _tp = persistent.balance - persistent.unlocks[_unlocks["name"]]["price"]
+            _tu = {}
+            for e in persistent.unlocks:
+                _tu[e] = {}
+                for ee in persistent.unlocks[e]:
+                    _tu[e][ee] = persistent.unlocks[e][ee]
+            
+            _tu[_unlocks["name"]]["state"] = True
+            _tb = _unlocks["back"]
+        
+        # text "[_tb] [_tp]"
+        
+        hbox:
+            xalign 0.5
+            spacing 100
+            
+            if _tp > 0:
+                textbutton _("Yes") action [ SetField(persistent, "balance", _tp), SetField(persistent, "unlocks", _tu), Hide("unlock_scr")]
+            else:
+                textbutton _("Yes")
+            textbutton _("No") action Hide("unlock_scr")
+
+        
+        
+##############################################################################
 # Extras menu
 #
 # Screen that's used to display the Extras menu
@@ -301,20 +357,28 @@ screen Database:
             # side "l c":
                 # area (0.0, 0.0, 450, 0.7)
         
-        textbutton _("Kyon's Time-travel list") action Show("TTNscr", ttnmode = 'order')
-        for e in Xtras_DB_Dossiers:
+        hbox:
+            if not persistent.unlocks["db-ttn"]["state"]:
+                textbutton _(persistent.unlocks["db-ttn"]["name"]) #action Show("TTNscr")
+                textbutton "u":
+                    size_group None
+                    action [SetDict(_unlocks, "name", "db-ttn"), SetDict(_unlocks, "back", "Database"), Show("unlock_scr")]
+            else:
+                textbutton _("Kyon's Time-travel list") action Show("TTNscr")
+                
+        for e in Xtras_DB_Dossiers:      
+            # if not persistent.unlocks[e[1]]["state"]:
+                # textbutton _("Dossier / [e[0]]") #action ShowMenu("[e[1]]")      
+                # textbutton _("unlock") action Show("unlock", _unlocks["name"] = e[1], _unlocks["back"] = "Database")
+            # else:
+                # textbutton _("Dossier / [e[0]]") #action ShowMenu("[e[1]]")
             textbutton _("Dossier / [e[0]]") #action ShowMenu("[e[1]]")
+        
         null height 5
+        
         if xtras_origin == 'mm':
             textbutton _("Dismiss") action ShowMenu("main_menu")
         
-        
-init -2 python:
-
-    # Make all the main menu buttons be the same size.
-    style.em_button.size_group = "em"
-
-
 ##########################################################################
 # TTN screen
 #
@@ -370,14 +434,16 @@ screen TTNscr:
                             for e in t:
                                 if e['pending']:
                                     $ ttncol = "#005"
+                                    $ ttnst = False
                                 else:
                                     $ ttncol = "#222"
+                                    $ ttnst = True
                                 hbox:
                                     # xalign 0.5
                                     $ ttndest = tupledest2date(e['dest'])
                                     vbox:
                                         area (0.0, 0.0, 150, 0.1)
-                                        text ttndest style "button_text" size 18 text_align 0.0 color ttncol
+                                        text ttndest style "button_text" size 18 text_align 0.0 color ttncol strikethrough ttnst
                                     text '   ' style "button_text" size 18 text_align 0.0
                                     text e['descr'] style "button_text" size 18 text_align 0.0 color ttncol
 
@@ -588,8 +654,8 @@ screen main_menu:
 
     python:
         if persistent.set_text_styling == None:
-            renpy.set_style_preference("text", "Vanilla")
-            persistent.text_styling = "Vanilla"
+            renpy.set_style_preference("text", "Extra")
+            persistent.text_styling = "Extra"
             persistent.set_text_styling = True    
 
     # This ensures that any other menu screen is replaced.
