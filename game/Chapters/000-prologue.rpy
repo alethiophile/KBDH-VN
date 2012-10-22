@@ -27,7 +27,7 @@ label prologue:
     "—he was there first, seizing the decorative ties of her sailor uniform's neckerchief and making for the door at top speed." 
     nvl clear
     scene bg hallway with fade
-    # Z0: Added the "pulling" of Hauhi
+    # Z0: Added the "pulling" of Haruhi
     show Haruhi Sup1 at osl_center
     show Kyon Ser1 at osl_right
     with None
