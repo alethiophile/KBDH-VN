@@ -1,4 +1,4 @@
-ï»¿This is a checklist of things that need to be done. Feel free to add or remove things from it as you see fit.
+This is a checklist of things that need to be done. Feel free to add or remove things from it as you see fit.
 Although, the forum might be a better place to put it: www.soulriders.net/forum/index.php/board,345.0
 -----
 
@@ -64,7 +64,7 @@ For starters, you need Ren'Py, the visual novel engine that's used. That's an
 easy download and install; put it wherever. On your first run of Ren'Py, or
 thereafter through the Options screen, it asks you to select a project
 directory. Pick an empty directory somewhere, then put the directory containing
-this fileâ€”probably 'KBDH-VN'â€”into that empty directory. After that, you should
+this file—probably 'KBDH-VN'—into that empty directory. After that, you should
 be able to click 'Select Project' from the Ren'Py main menu and select
 'KBDH-VN'.
 
@@ -76,3 +76,9 @@ the repository fine, but editing them is something that the people doing it will
 know better than me.
 
 Good luck, all.
+
+---
+
+Next time, Agasa, make sure that Wordpad knows that it can run this without a problem. Put it as an .rtf or something, kitsu.
+
+Also, we should make a list of who's already here and stuff. A staff list, so we can make a staff roll somewhere.
