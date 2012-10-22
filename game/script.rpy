@@ -1750,10 +1750,10 @@ init python:
     sshake = Shake((0, 0, 0, 0), 1.0, dist=30)
     
     # Viewport adjustements. Each screen needs its own adj!
-    adj = ui.adjustment()
-    adjttn = ui.adjustment()
-    adjTC = ui.adjustment()
-    adjAch = ui.adjustment()
+    # adj = ui.adjustment(adjustable = True)
+    # adjttn = ui.adjustment()
+    # adjTC = ui.adjustment()
+    # adjAch = ui.adjustment()
     
     music_need = True
     ecbg = "black"

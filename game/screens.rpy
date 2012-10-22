@@ -166,6 +166,20 @@ screen nvl:
     
     use quick_menu
 
+    
+screen _Chapters:
+    side "c b r":
+        area (100, 100, 600, 400)
+
+        viewport id "vp":
+            draggable True
+
+            add "id_clouds.png"
+
+        bar value XScrollValue("vp")
+        vbar value YScrollValue("vp")
+         
+
 ##############################################################################
 # Chapters screen 
 #
@@ -187,12 +201,14 @@ screen Chapters:
 
         has vbox
         vbox:
-            side "l c":
+            # side "l c":
+            side "c r":
                 area (0.0, 5, 450, 0.7)
                 
-                viewport:
-                    yadjustment adj
+                viewport id "chaps":
+                    # yadjustment adj
                     mousewheel True
+                    draggable True
                     
                     vbox:
                         for arc in chapters:
@@ -214,14 +230,17 @@ screen Chapters:
                                             xalign 0.5
                                             text name style "button_text" size 18 text_align 0.5 color "#000"
 
-                bar adjustment adj style "vscrollbar" 
+                # bar adjustment adj style "vscrollbar"
+                # bar style "vscrollbar" value YScrollValue("chaps")
+                vbar value YScrollValue("chaps") thumb_offset 0 #style "vslider" bar_invert True               
                 
-        null height 5
+        null height 10
 
         textbutton "Dismiss.":
             #size_group "chb"
             xmargin 9
-            xminimum 465
+            # xminimum 465
+            xminimum 455
             action ShowMenu("main_menu")
             
         null height 5
@@ -261,12 +280,13 @@ screen unlock_scr:
         python:
             _tp = persistent.balance - persistent.unlocks[_unlocks["name"]]["price"]
             _tu = {}
-            for e in persistent.unlocks:
-                _tu[e] = {}
-                for ee in persistent.unlocks[e]:
-                    _tu[e][ee] = persistent.unlocks[e][ee]
+            # for e in persistent.unlocks:
+                # _tu[e] = {}
+                # for ee in persistent.unlocks[e]:
+                    # _tu[e][ee] = persistent.unlocks[e][ee]
             
-            _tu[_unlocks["name"]]["state"] = True
+            # _tu[_unlocks["name"]]["state"] = True
+            _tu = persistent.unlocks[_unlocks["name"]]
             _tb = _unlocks["back"]
         
         # text "[_tb] [_tp]"
@@ -276,7 +296,8 @@ screen unlock_scr:
             spacing 100
             
             if _tp > 0:
-                textbutton _("Yes") action [ SetField(persistent, "balance", _tp), SetField(persistent, "unlocks", _tu), Hide("unlock_scr")]
+                # textbutton _("Yes") action [ SetField(persistent, "balance", _tp), SetField(persistent, "unlocks", _tu), Hide("unlock_scr")]
+                textbutton _("Yes") action [ SetField(persistent, "balance", _tp), SetDict(_tu, "state", True), Hide("unlock_scr")]
             else:
                 textbutton _("Yes")
             textbutton _("No") action Hide("unlock_scr")
@@ -418,15 +439,16 @@ screen TTNscr:
             xminimum 630
             text "Kyon's helpful time-travelling notes\nhe used to keep track on his Yet. [l]" style "button_text" size 20 line_leading 2 text_align 0.5 color "#fff"
         vbox:
-            side "l c":
-                area (0.0, 0.0, 620, 0.7)
+            # side "l c":
+            side "c r":
+                area (0.0, 0.0, 630, 0.7)
                 frame:
-                    left_margin 5
+                    # left_margin 5
                     xpadding 10
                     ypadding 10
                     
-                    viewport:
-                        yadjustment adjttn
+                    viewport id "ttn":
+                        # yadjustment adjttn
                         mousewheel True
                         
                         vbox:
@@ -447,7 +469,8 @@ screen TTNscr:
                                     text '   ' style "button_text" size 18 text_align 0.0
                                     text e['descr'] style "button_text" size 18 text_align 0.0 color ttncol
 
-                bar adjustment adjttn style "vscrollbar" 
+                # bar adjustment adjttn style "vscrollbar"
+                vbar value YScrollValue("ttn") thumb_offset 0 
                 
         null height 5
         
@@ -503,15 +526,16 @@ screen Tropes:
         text "{b}You caught [Ncaught] / [max_tropes] tropes. \nYou currently have [persistent.balance] Þ.{/b}" style "button_text" size 18 color "#fff" #outlines [(1, "#000", 0, 0)]
             
         vbox:
-            side "l c":
-                area (0.0, 0.0, 450, 0.7)
+            # side "l c":
+            side "c r":
+                area (0.0, 0.0, 460, 0.7)
                 frame:
                     left_margin 5
                     xpadding 10
                     ypadding 10
                     
-                    viewport:
-                        yadjustment adjTC
+                    viewport id "trp":
+                        # yadjustment adjTC
                         mousewheel True
                         
                         vbox:
@@ -520,7 +544,8 @@ screen Tropes:
                                     xalign 0.5
                                     text t style "button_text" size 18 text_align 0.5 color "#000"
 
-                bar adjustment adjTC style "vscrollbar" 
+                # bar adjustment adjTC style "vscrollbar"
+                vbar value YScrollValue("trp") thumb_offset 0 
                 
         null height 5
 
@@ -610,15 +635,16 @@ screen Achievscr:
         text '{b}earned [i_l1] / [i_l2]{/b}' style "button_text" size 18 line_leading -2 text_align 0.5 color "#fff" #outlines [(1, "#000", 0, 0)]
         
         vbox:
-            side "l c":
-                area (0.0, 0.0, 450, 0.7)
+            # side "l c":
+            side "c r":
+                area (0.0, 0.0, 465, 0.7)
                 frame:
                     left_margin 5
                     xpadding 10
                     ypadding 10
                     
-                    viewport:
-                        yadjustment adjAch
+                    viewport id "ach":
+                        # yadjustment adjAch
                         mousewheel True
                         
                         vbox:
@@ -631,7 +657,8 @@ screen Achievscr:
                                     text achievements[i_i][0] style "button_text" size 20 line_leading 2 xalign 0.0
                                     text '???' style "button_text" size 16 line_leading -2 xalign 0.0 first_indent 20
                             
-                bar adjustment adjAch style "vscrollbar"
+                # bar adjustment adjAch style "vscrollbar"
+                vbar value YScrollValue("ach") thumb_offset 0 
                 
         null height 5
 
