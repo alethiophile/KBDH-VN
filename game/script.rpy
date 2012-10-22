@@ -732,7 +732,7 @@ init:
         "Sprites/Yuki/YukiSide1.png"
         3
         repeat
-   
+
     # Mikuru Sprites 
     image Mikuru Hap1 = "Sprites/Mikuru/MikuruHappy1.png"
     image Mikuru Hap2 = "Sprites/Mikuru/MikuruHappy2.png"
@@ -2007,7 +2007,7 @@ init -1 python:
         ],    
         [   ("Heroic Antics Begin Arc - 2", "", False),
             ("Chapter Ten: School of Hard Knocks", "HAB3", True),
-        
+            ("Chapter Eleven: Yeah, It Went There", "HAB4", True),
         ],
         [
             ("Label a scene you're working on test and use this", "Test", True),
@@ -2112,7 +2112,7 @@ init -1 python:
     achievements = []
     
     # Achievement['Name of the achievement', 'Achievement description', reward for earning it]
-    # Achievements are displayed in the oder they are registered.
+    # Achievements are displayed in the order they are registered.
     achievements.append(['The Beginning', 'Started reading from the very beginning', 2])
     achievements.append(['The Narrator', 'Mastered the best faux movie announcer voice-over', 1])
     achievements.append(['The Call', 'Responded to The Call ... from the Yuki', 1])

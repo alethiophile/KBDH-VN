@@ -305,7 +305,6 @@ label HAB1:
     
     call eyecatch_fancy("Thursday, April 21") from HAB1_sc001
     
-    stop music fadeout 1
     scene bg ClubroomFullDay with fade:
         xpos 0 ypos 0
     $ renpy.layer_at_list([PanScene_SetToLeft])
@@ -1030,7 +1029,7 @@ label HAB1:
     extend "and waving as she turned to take the walkway to the third year classes."
     nvl clear
     show Kyon Smile4
-    "Kyon caught the wave and gave her a grin, waving back before turning to face Haruhi. Even though she had no idea what Kyon had needed to travel to yesterday for, she was glad she could help with it.{p}And she couldn't help but feel glad when he had said that the brigade was a team, and no single one of them could be attacked without the others. Maybe, she decided, she was a greater asset than she had let herself believe previously."
+    "Kyon caught the wave and gave her a grin, waving back before turning to face Haruhi. Even though she had no idea what Kyon had needed to travel to yesterday for, she was glad she could help with it. And she couldn't help but feel glad when he had said that the brigade was a team, and no single one of them could be attacked without the others. Maybe, she decided, she was a greater asset than she had let herself believe previously."
     nvl clear
     "Cheered by that thought, she was able to smile when she entered her classroom and apologetically informed the teacher she was late due to student council business."
     nvl clear

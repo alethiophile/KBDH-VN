@@ -277,7 +277,6 @@ label HAB2:
     call eyecatch_fancy("Thursday, April 21") from HAB2_sc001
     
     scene bg TrainStation with fade
-    stop music fadeout 1
     queue music "Music/MidnightInterval.mp3"
     "A grueling flashcard session was eventually followed by a tense, uncomfortable dinner. Afterward, Kyon gleefully escaped the house on the excuse of walking the girls to the train station, chased by the promise of talking with his father once the man came home."
     show Kanae Hap1 at center with dissolve
@@ -818,8 +817,7 @@ label HAB2:
     show KBrow 4
     extend "\"You okay?\" he asked, turning slightly towards her, but still keeping Manabe in his field of vision."
     nvl clear
-    show Kyon Ser1
-    
+    show Kyon Ser1    
     show Tsuruya Laugh Casual Ang2 Flip
     "The boy whimpered, as Tsuruya nodded. \"Good enough to get some answers from this guy. Okay, Satoshi-chan, make it quick-like.\" Tsuruya chuckled, adding, \"We're on a schedule.\""
     show Kyon Ser1 Flip
@@ -828,8 +826,7 @@ label HAB2:
     "Manabe worked his jaw quickly and finally blurted out, \"I'm a nobody! I'm just a grunt! P...please don't kill me!\" The boy actually dropped to his knees, eyes filling with tears. \"I'm too {i}beautiful{/i} to die!\""
     nvl clear
     show Kyon Sigh1 Flip
-    show KBrow Smudge Flip with dissolve
-    
+    show KBrow Smudge Flip with dissolve    
     "\"Oh, gods,\" Kyon groaned, fishing his handkerchief from his pocket and pressing it against his split eyebrow. The wound was too fresh to be tender, only a combination of half-numb and pins-and-needles tingling. \"Tsuruya-kun, he's going to be useless — put him out of my misery, won't you?\""
     show Kyon Sigh3
     show KBrow Smudge
@@ -936,8 +933,8 @@ label HAB2:
     
     call eyecatch_fancy("Thursday, April 21") from HAB2_sc002
     
-    queue music "Music/Morning.ogg"
     scene bg TsuruyaFutonDay
+    queue music "Music/Morning.ogg"
     show Tsuruya Casual Worry3 Flip at left
     with slowfadein
     "When his eyes tried lazily to open, only one of them did. A wad of cloth or something was pressing on his right eye, and he was laying on his back, squinting upward into lights that were too bright." 
@@ -951,12 +948,10 @@ label HAB2:
     show Tsuruya Casual Worry2 Flip
     show Kyon Pain1:
         xalign 1.0 yalign 2.0
-        linear 1.0 yalign 1.0
-        
+        linear 1.0 yalign 1.0        
     show Kbrow Bandage:
         xalign 1.0 yalign 2.0
-        linear 1.0 yalign 1.0
-    
+        linear 1.0 yalign 1.0    
     "\"Kyon-kun?\" she asked him, her voice sounding surprisingly shy. \"You okay?\""
     nvl clear
     show Tsuruya Casual Worry3 Flip

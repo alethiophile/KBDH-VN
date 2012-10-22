@@ -20,47 +20,75 @@ label Fi1:
     "Kyon woke on the floor again, peering up into the eyes of a familiar girl. This was practically becoming a habit, he decided, sitting up and glancing around Yuki's apartment. Mikuru was wearing pajamas, dazedly wobbling in a sitting position while Kanae patted her back. Yuki simply tracked his eyes with her typical level expression, though he thought he caught a hint of some concern in her gaze."
     nvl clear
     show Kyon Smile6 at center with dissolve
+    show Mikuru Cower Casual Sigh2
+    show Kanae Night Unhap3
     "He raised a hand to his right eyebrow, but unsurprisingly the injury had been fixed, the stitches already gone. \"Thanks, Nagato,\" he told her earnestly."
+    show Kyon Smile1
     show Yuki Talk1
-    "\"You were under the influence of a consciousness-altering drug,\" she said, blinking. \"When you did not respond to phone calls I undertook emergency procedures and brought you here.\""
+    "\"You were under the influence of a consciousness-altering drug,\" she said, blinking. \"When you did not respond to phone calls, I undertook emergency procedures and brought you here.\""
     nvl clear
-    show Kyon Sigh3
-    "\"Yeah, sorry about that,\" he said, grimacing. \"Ah, some trouble— I'll explain later. Thanks again for taking care of my injuries.\""
-    show Yuki Talk2
+    show Yuki Side1
+    show Kyon Sigh1
+    "\"Yeah, sorry about that,\" he said, grimacing. \"Ah, some trouble— I'll explain later. {nw}"
+    show Kyon Neutral2
+    extend "Thanks again for taking care of my injuries.\""
+    show Kyon Neutral3
+    show Yuki Side2
     "She paused, seeming on the verge of saying something ... but merely nodded."
-    show Kyon Worry1
+    show Kyon Neutral1
     "\"You alright, Nagato?\""
     nvl clear
+    show Kyon Neutral4
     show Yuki Talk1
     "\"I am fine,\" she answered smoothly. He was starting to suspect that she would say that no matter what the truth was, so gave her a considering stare."
+    show Yuki Side1
     show Kyon Puzzle1
     "\"Are you sure?\""
     nvl clear
+    show Kyon Worry1
     show Yuki SadTalk1
-    "Her mouth opened, then closed, and her head lowered slightly, the faintest furrowing of her brows showing deeper consideration. \"...uncertain,\" she finally allowed."
+    "Her mouth opened, {nw}"
+    show Yuki Sad1
+    extend "then closed, and her head lowered slightly, the faintest furrowing of her brows showing deeper consideration. {nw}"
+    show Yuki SadTalk2
+    extend "\"...uncertain,\" she finally allowed."
+    show Yuki Sad2
     show Kyon Neutral2
     "\"Do you want to talk about it?\""
+    show Kyon Neutral3
     show Yuki Side Blink
     nvl clear
-    "She blinked, straightening up and giving a minuscule nod. \"Error-correction session is prepared. A higher than usual amount of junk-data was created earlier today.\" She paused, her pupils dilating the tiniest amount before she blinked again, adding, \"Error is likely to occur within five minutes. The session will also take longer to resolve.\""
+    "She blinked, straightening up and giving a minuscule nod. "
+    show Yuki Talk2
+    extend "\"Error-correction session is prepared. A higher than usual amount of junk-data was created earlier today.\" She paused, her pupils dilating the tiniest amount before she blinked again, adding, \"Error is likely to occur within five minutes. The session will also take longer to resolve.\""
     nvl clear
-    show Kyon Neutral5 
+    show Yuki Side2
+    show Kyon Neutral2
     "\"Fine,\" he said quickly. \"But, Nagato, I don't like the way you patiently wait for my okay to take care of yourself. This is important! If you need it to happen, I'm always willing to help you! I owe you much more than you ever let on....\""
     nvl clear
+    show Kyon Neutral3
     show Yuki Side Blink
-    "She blinked, and though she didn't physically react otherwise, he was certain some small amount of tension drained from her. \"Kanae-chan?\" he asked, looking at the other two girls. \"Asahina-san? Do you agree?\""
-    show Kanae Night Hap2 
+    "She blinked, and though she didn't physically react otherwise, he was certain some small amount of tension drained from her. "
+    show Kyon Neutral2
+    show Yuki Side1
+    extend "\"Kanae-chan?\" he asked, looking at the other two girls. \"Asahina-san? Do you agree?\""
+    show Kyon Neutral3
+    show Kanae Night Hap2
     "\"Absolutely!\" Kanae replied without hesitation."
     nvl clear
-    show Mikuru Cower Casual Sup1 
+    show Kanae Night Smile1
+    show Mikuru Cower Casual Sup1
     "Mikuru blinked snapping out of her daze. \"Oh! Er, yes, of course!\" she agreed, looking a bit bewildered. \"Anything!\""
+    show Mikuru Cower Casual Quest1
     show Yuki Talk1
     "\"...understood,\" Nagato allowed, the tiniest, nearly invisible hints of a smile touching the corners of her mouth before reality exploded away yet again."
+    show Yuki Side1
     nvl clear
+    stop music fadeout 3
     
-    scene almostblack two with fade
+    call eyecatch_fancy("Thursday, April 21", "Friday, April 22") from Fi1_sc001
+    
     scene bg TsuruyaFutonDay with fade
-    stop music fadeout 1
     queue music "Music/Morning.ogg"
     "He woke again, head reeling with the 'extended' session. He didn't want to think how much longer in 'relative time' he'd spent in training with Nagato. If the average session was a 'short' single year...."
     "Blinking, he realized he was staring at the ceiling of another unfamiliar room ... though details began to trickle back into place. Last night, he'd taken a bath with Tsuruya, though the blood loss from his injury kept him from reacting embarrassingly ... except to get very light-headed. He'd tried his best not to stare at the girl, but she was totally unabashed, completely uncaring. True to her words, she had scrubbed his back in return without hesitation, and then carefully washed his hair so he wouldn't get any shampoo or soap in his wound."
@@ -113,7 +141,7 @@ label Fi1:
     "\"Ah, Haru-nyan's not going to mind,\" she replied cheerfully. \"You were a perfect gentleman, and I'll gladly tell her sos!\""
     nvl clear
     show Kyon Unhap1
-    "\"Um,\" he managed, wincing.  {nw}"
+    "\"Um,\" he managed, wincing. {nw}"
     show Kyon Neutral2 
     extend "\"Well, Haruhi aside, while we've got some relatively private time, do you mind if I ask you something?\""
     show Tsuruya Quest1
