@@ -14,20 +14,29 @@ label HAB4:
     #show Yanagimoto Hap1
     "She took a quick breath to steel herself, then put on her most cheerful syrupy-sweet voice. The one she had previously only used on Taniguchi to try and turn him against Haruhi. \"Yamane-kun,\" she called, rapping on the door. \"It's Yanagimoto~! Do you have a free minute?\""
     nvl clear
-    #show Yamane Unhap1 at left
-    "The quartet listened to the creak of his chair as he rose, then the tap of his footsteps across the room before the door unlocked and opened. Yamane's expression shifted from something quite near a leer to {nw}"
+    #show Yamane Unhap1 at left with dissolve
+    play sound "SE/Creak1.wav"
+    "The quartet listened to the creak of his chair as he rose, {nw}"
+    play sound "SE/Step1.wav"
+    extend "then the tap of his footsteps across the room before the door unlocked and opened. {nw}"
+    play sound "SE/dooropenfast.wav"
+    extend "Yamane's expression shifted from something quite near a leer to {nw}"
     #show Yamane Fear1
+    extend "raw alarm when he saw Kyon. Before he could slam the door shut, {nw}"
     play sound "SE/impact.mp3"
-    extend "raw alarm when he saw Kyon. Before he could slam the door shut, Kyon gave it a hard kick, sending the edge of the door flying into the boy's face, knocking his glasses off and sending him stumbling back."
+    #hide yamane with dissolve
+    extend "Kyon gave it a hard kick, sending the edge of the door flying into the boy's face, knocking his glasses off and sending him stumbling back."
     nvl clear
     scene bg IdolClubDark with fade:
        size (800,600)    
-    stop music fadeout 1
-    queue music "Music/FootstepsOfDestruction.mp3"
+    #stop music fadeout 1
+    #queue music "Music/FootstepsOfDestruction.mp3"
     #show Yanagimoto at center
     show Yuki Right Neutral1 at right
     with dissolve
-    "Yanagimoto was a tiny bit unnerved by the way that Tsuruya strode past her and into the room, standing over Yamane's form with arms crossed over her chest, and both Yuki and Kyon seemed to just flow around her. The supposed delinquent gestured her in, and she hesitantly joined the group, before Yuki shut the door behind them, locking it once more."
+    "Yanagimoto was a tiny bit unnerved by the way that Tsuruya strode past her and into the room, standing over Yamane's form with arms crossed over her chest, and both Yuki and Kyon seemed to just flow around her. The supposed delinquent gestured her in, and she hesitantly joined the group, {nw}"
+    play sound "SE/doorclose.mp3"
+    extend "before Yuki shut the door behind them, locking it once more."
     nvl clear
     #show Yamane Cry1 at left with dissolve
     "\"Ow!\" Yamane protested, rubbing his nose, his eyes tearing as he fumbled for his glasses. \"What the hell!? Yanagimoto-san — I thought we were friends!\""
@@ -95,6 +104,7 @@ label HAB4:
     with dissolve
     "\"You're being played!\" Yamane tried desperately. \"I was framed! This ... this is all Suzumiya's plan to— {nw}"
     #show Yamane
+    play sound "SE/impact.mp3"
     extend "UGH!\" He coughed, short on breath, hunching over the fist that Tsuruya had driven into his stomach."
     show Tsuruya Ang3
     "\"Haru-nyan is a much better planner than that,\" Tsuruya informed him stiffly. \"And she's not the one here.\""
@@ -106,8 +116,9 @@ label HAB4:
     "\"Let's start by getting us into that computer,\" Kyon said, releasing the boy's coat and pushing Yamane towards the desk."
     nvl clear
     #show Yamane
-    "\"Y...yeah, okay,\" the bespectacled boy said shakily, wobbling towards the seat. Yuki watched him impassively as he paused, leaning on the edge of the desk and panting, then turned her attention away, approaching one of the filing cabinets near the door and opening it. Yanagimoto wondered what the girl was up to, but couldn't look away from the revenge she had wished on Yamane."
+    "\"Y...yeah, okay,\" the bespectacled boy said shakily, wobbling towards the seat. Yuki watched him impassively as he paused, leaning on the edge of the desk and panting, then turned her attention away, approaching one of the filing cabinets near the door and opening it."
     nvl clear
+    "Yanagimoto wondered what the girl was up to, but couldn't look away from the revenge she had wished on Yamane."
     #show Yamane
     "\"Gonna open a window,\" he said, \"need ... some air.\""
     nvl clear
@@ -125,7 +136,8 @@ label HAB4:
     "Tsuruya grumbled, marching to Yamane's side and raising a fist in warning. He scurried to the computer, cowed, and frantically began typing. \"I'll log in, and you can see—\" He broke off, and Yanagimoto realized his ploy too late, too shocked to react to what he'd done. When Tsuruya had moved towards him, she stood next to the window."
     nvl clear
     stop music fadeout 0.1
-    queue music "Music/Breach.mp3"
+    queue music "Music/FootstepsOfDestruction.mp3"
+    #queue music "Music/Breach.mp3"
     play sound "SE/GlassBreak1.mp3"
     show Kyon Sup2
     show Tsuruya Laugh Pain2 Flip
@@ -151,7 +163,8 @@ label HAB4:
     "\"I've got you,\" Kyon managed, his voice strained. Yanagimoto scrambled to try and help. All of Tsuruya's weight was dragging down on Kyon's arm, driving the narrow edge of the windowsill up beneath his armpit; she couldn't imagine how painful that must be. Before Yanagimoto even reached his side, Yuki leaned out the window and helped haul Tsuruya back up and into the room."
     nvl clear
     show Tsuruya Laugh Pain1 Flip at left
-    show Kyon Worry3 at center
+    show Kyon Worry3:
+        xalign 0.55 yalign 1.0
     show Yuki Right Neutral1 at right
     with dissolve
     "The tall green-haired girl was shaking uncontrollably, her eyes streaming tears as she collapsed into Kyon, who himself knelt on the floor. Tsuruya's right hand was slashed and bleeding from the shattered windowpane. Her left shirt sleeve over her wrist, where Kyon had grabbed her, was bloodied with a large and expanding stain. Her arms were limp, her hands shaking worse than she was."
@@ -175,7 +188,7 @@ label HAB4:
     #hide Yamane
     #hide Yanagimoto
     show Tsuruya Laugh Sad1 Flip at left
-    show Yuki Side1 at center
+    show Yuki Right Neutral1 at center
     with dissolve
     "\"Ah,\" she managed, looking up at him nervously. \"Is Tsuruya-sempai....\" She trailed off and looked over her shoulder. Though she looked very tired, the upperclassman seemed alright, catching her breath in Yamane's chair."
     nvl clear
@@ -205,15 +218,13 @@ label HAB4:
     nvl clear
     scene bg ClubHallOutside with fade:
        size (800,600)
-    stop music fadeout 1
-    #queue music "Music/"
-        #not sure what to play here.
     "But not to fall, as she'd initially thought. Grabbing first by Yamane's belt, and then lowering him further, so that Yamane was suspended by only one ankle, Kyon let the boy dangle. Yanagimoto was stunned, but no so much she couldn't be impressed by the fact that Kyon was holding the boy with what seemed minimal effort."
     "\"Rise and shine!\" Kyon yelled with fierce cheer, jerking the ankle and shaking the other boy. \"How you doing, Yamane?\""
+    nvl clear
     "\"L...let me go!\" Yamane yelped."
     "\"Classic poor choice of words,\" Kyon remarked. \"Do you {i}really{/i} want that?\""
-    nvl clear
     "Yamane wailed, then screamed, \"Help! Help! Someone — I'm being murdered!\""
+    nvl clear
     "\"Nonsense,\" Kyon said, shaking Yamane again. \"I'm trying to save you. But, see, I recently strained this arm ... not sure how much longer I can hold you up!\""
     "\"You're never going to get away with this!\""
     "\"You think? So, maybe I should just drop you, since I'm damned anyway? How does that saying go ... 'if you're going to do the time, may as well do the crime'?\""
@@ -227,6 +238,7 @@ label HAB4:
     #hide Yanagimoto
     show Yuki Side1 at center
     with dissolve
+    play sound "SE/impact.mp3"
     "The door to the clubroom shook with a muffled yell and a frantic slam, but didn't budge. Yuki stared at it fixedly, one hand holding it shut. Then again ... she had somehow hurled Yamane the length of the clubroom with one hand."
     nvl clear
     hide Yuki
@@ -261,6 +273,9 @@ label HAB4:
     nvl clear
     scene bg IdolClubLight with fade:
        size (800,600)
+    stop music fadeout 1
+    #queue music "Music/"
+        #not sure what to play here.
     show Kyon Neutral1 Flip at center
     show Tsuruya Grin1 at right
     with dissolve
