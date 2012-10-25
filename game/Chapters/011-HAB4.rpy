@@ -2,10 +2,11 @@ label HAB4:
     scene bg ClubHallLeft
     stop music fadeout 1
     queue music "Music/suspicion.ogg"
-    #show Yanagimoto at HalfLeft
+    show Yuki Right Neutral1 at right
+    show Kyon Unhap4:
+        xalign 0.85 yalign 1.0
     show Tsuruya Ang1 at center
-    show Kyon Unhap4 at HalfRight
-    #show Yuki at right
+    #show Yanagimoto at HalfLeft
     "Yanagimoto led the way to the far end of the old clubhouse, and the idol research clubroom. Tsuruya stood just behind her, Kyon and Yuki side-by-side behind her. She wasn't sure how she should feel about leading members of Haruhi's club against someone who was an ally only an hour ago ... but her misgivings vanished when she considered the pictures that Haruhi had shown her."
     nvl clear
     "Haruhi might have been many things — a depraved pervert among them — but she wasn't the type to use subterfuge. Subtlety was a force she didn't understand very well. Which suited Yanagimoto just fine at the moment; if Kyon was half the delinquent she had been claiming, Yamane would get some well-deserved facial reconstruction."
@@ -16,7 +17,7 @@ label HAB4:
     #show Yamane Unhap1 at left
     "The quartet listened to the creak of his chair as he rose, then the tap of his footsteps across the room before the door unlocked and opened. Yamane's expression shifted from something quite near a leer to {nw}"
     #show Yamane Fear1
-    #play sound "SE/impact/mp3"
+    play sound "SE/impact.mp3"
     extend "raw alarm when he saw Kyon. Before he could slam the door shut, Kyon gave it a hard kick, sending the edge of the door flying into the boy's face, knocking his glasses off and sending him stumbling back."
     nvl clear
     scene bg IdolClubDark with fade:
@@ -24,8 +25,8 @@ label HAB4:
     stop music fadeout 1
     queue music "Music/FootstepsOfDestruction.mp3"
     #show Yanagimoto at center
-    #show Yuki at right
-    #with dissolve
+    show Yuki Right Neutral1 at right
+    with dissolve
     "Yanagimoto was a tiny bit unnerved by the way that Tsuruya strode past her and into the room, standing over Yamane's form with arms crossed over her chest, and both Yuki and Kyon seemed to just flow around her. The supposed delinquent gestured her in, and she hesitantly joined the group, before Yuki shut the door behind them, locking it once more."
     nvl clear
     #show Yamane Cry1 at left with dissolve
@@ -33,29 +34,33 @@ label HAB4:
     #show Yanagimoto Ang4/Livid1
     "\"So did I,\" she spat, glaring as he put his spectacles back in place and gave her a sad gaze. \"Haruhi showed me the pictures you took!\""
     nvl clear
-    #hide Yuki
+    hide Yuki
     #hide Yanagimoto
     show Kyon Ang1 at center
     show Tsuruya Grin6 at right
-    "\"Things are about to become very, very uncomfortable for you,\" Kyon said, using the informal form of the word. He crouched near the boy and stared at him dully. Tsuruya chuckled, her grin ominous. Yuki slowly turned around and studied the room. It was dark at the moment, only the red lighting of a film- development closet active at the moment. The short girl walked to the window and pulled the curtain open, {nw}"
+    with dissolve
+    "\"Things are about to become very, very uncomfortable for you,\" Kyon said, using the informal form of the word. He crouched near the boy and stared at him dully. Tsuruya chuckled, her grin ominous."
+    nvl clear
+    "Yuki slowly turned around and studied the room. It was dark at the moment, only the red lighting of a film- development closet active at the moment. The short girl walked to the window and pulled the curtain open, {nw}"
     play sound "SE/Curtain.wav"
     extend "flooding the room with brighter light."
     nvl clear
     scene bg IdolClubLight with fade:
        size (800,600)
+    hide Kyon
+    hide Tsuruya
     #show Yanagimoto at center
-    #show Yuki at right
+    show Yuki Right Neutral2 at right
     #show Yamane at left
-    #with dissolve
     "\"Hey!\" Yamane protested again."
     "Yanagimoto realized that every surface of the room was plastered in pictures cut out of idol magazines, or full-page prints downloaded from the internet. She couldn't recognize a fraction of them. Near the far end, just before the window, was a desk with a computer on it, very similar to the setup in Haruhi's club room, only without the long table in the center."
     nvl clear
     #show Yamane
     "\"What the hell is going on here?\" Yamane whined."
-    #hide Yuki
+    hide Yuki
     #hide Yanagimoto
     show Tsuruya Ang4 at right
-    show Kyon Unhap3 at center
+    show Kyon Unhap5 at center
     with dissolve
     "Tsuruya gave him a cool look. \"Do you knows who I am?\" she asked, quirking an eyebrow higher."
     #show Yamane Ang1
@@ -76,17 +81,18 @@ label HAB4:
     nvl clear
     #show Yamane Plead1
     "Yamane's eyes went wildly between the pair, then turned to Yanagimoto, silently beseeching her for help."
-    #hide Kyon
-    #hide Tsuruya
+    hide Kyon
+    hide Tsuruya
     #hide Yamane
     #show Yanagimoto Ang2 at center
-    #with dissolve
+    with dissolve
     "\"Come clean, you piece of filth. You think I'm going to help {i}you{/i}?\" she snarled, copying Kyon's derogatory use of the term. \"After what I found out!?\""
     nvl clear
     #hide Yanagimoto
     #show Yamane Plead2 at left
     show Tsuruya Hap7 at right
-    show Kyon Unhap3 at center
+    show Kyon Unhap5 at center
+    with dissolve
     "\"You're being played!\" Yamane tried desperately. \"I was framed! This ... this is all Suzumiya's plan to— {nw}"
     #show Yamane
     extend "UGH!\" He coughed, short on breath, hunching over the fist that Tsuruya had driven into his stomach."
@@ -112,109 +118,209 @@ label HAB4:
     play sound "SE/WestminsterChimeShort.mp3"
     "The chime sounding the end of lunch rang out, but Yanagimoto decided she'd wait and be late to class. For this...."
     nvl clear
-    show Tsuruya Ang2
+    show Tsuruya Ang2 at center
+    show Kyon at right
+    with dissolve
     #show Yamane
     "Tsuruya grumbled, marching to Yamane's side and raising a fist in warning. He scurried to the computer, cowed, and frantically began typing. \"I'll log in, and you can see—\" He broke off, and Yanagimoto realized his ploy too late, too shocked to react to what he'd done. When Tsuruya had moved towards him, she stood next to the window."
     nvl clear
     stop music fadeout 0.1
     queue music "Music/Breach.mp3"
     play sound "SE/GlassBreak1.mp3"
+    show Kyon Sup2
     show Tsuruya Laugh Pain2 Flip
     hide Tsuruya with dissolve
     "With a desperate shove, he pushed her to a three-story drop to a concrete walkway. She felt a horrified shriek build in her own throat as Tsuruya's eyes widened, and her hands windmilled frantically, one catching momentarily on the glass edge of the window before it shattered, sending a blossoming aura of glimmering shards exploding outward behind her."
     nvl clear
-    hide Kyon
-    "A bare instant before the girl vanished from sight, Kyon had somehow gotten there, grabbing her other flailing hand and being pulled after her all the way to his shoulder, his knees slamming to the floor loudly."
-    nvl clear
-    #show Yuki at center
-    #show Yanagimoto at right
-    "Just as quick as Kyon was, somehow Yuki was there, too. Before Yamane could try and shove Kyon as well, the shorter girl seized the back of Yamane's coat and — improbably — plucked him up with one hand, hurling him head-over-heels through the air, sending the boy flying past Yanagimoto faster than she could turn to look. {nw}"
+    hide Kyon with dissolve
+    "A bare instant before the girl vanished from sight, Kyon had somehow gotten there, grabbing her other flailing hand and being pulled after her all the way to his shoulder, {nw}" 
     play sound "SE/Hit1.wav"
-    extend "The paneling of the wall crunched from the impact — at least, part of Yanagimoto hoped it was only the paneling. The boy made a retching sound and collapsed face-first on the floor after bouncing off the now-dented wall."
+    extend "his knees slamming to the floor loudly."
     nvl clear
+    show Yuki Ang1 Flip at center
+    #show Yanagimoto at right
+    with dissolve
+    "Just as quick as Kyon was, somehow Yuki was there, too. Before Yamane could try and shove Kyon as well, the shorter girl seized the back of Yamane's coat and — improbably — plucked him up with one hand, hurling him head-over-heels through the air, sending the boy flying past Yanagimoto faster than she could turn to look."
+    nvl clear
+    play sound "SE/Hit2.wav"
+    "The paneling of the wall crunched from the impact — at least, part of Yanagimoto hoped it was only the paneling. The boy made a retching sound and collapsed face-first on the floor after bouncing off the now-dented wall."
+    nvl clear
+    hide Yuki
+    #hide Yanagimoto
+    with dissolve
     "\"I've got you,\" Kyon managed, his voice strained. Yanagimoto scrambled to try and help. All of Tsuruya's weight was dragging down on Kyon's arm, driving the narrow edge of the windowsill up beneath his armpit; she couldn't imagine how painful that must be. Before Yanagimoto even reached his side, Yuki leaned out the window and helped haul Tsuruya back up and into the room."
     nvl clear
-    "The tall green-haired girl was shaking uncontrollably, her eyes streaming tears as she collapsed into Kyon, who himself knelt on the floor. Tsuruya's right hand was slashed and bleeding from the shattered windowpane. Her left shirt sleeve over her wrist, where Kyon had grabbed her, was bloodied with a large and expanding stain. Her arms were limp, her hands shaking worse than she was. \"S...stitches tore open,\" she whimpered. \"H...hurts....\""
+    show Tsuruya Laugh Pain1 Flip at left
+    show Kyon Worry3 at center
+    show Yuki Right Neutral1 at right
+    with dissolve
+    "The tall green-haired girl was shaking uncontrollably, her eyes streaming tears as she collapsed into Kyon, who himself knelt on the floor. Tsuruya's right hand was slashed and bleeding from the shattered windowpane. Her left shirt sleeve over her wrist, where Kyon had grabbed her, was bloodied with a large and expanding stain. Her arms were limp, her hands shaking worse than she was."
+    show Tsuruya Laugh Pain4 Flip
+    "\"S...stitches tore open,\" she whimpered. \"H...hurts....\""
     nvl clear
+    show Kyon Unhap2
     "Kyon swore something guttural, clutching the girl to his chest. \"Okay,\" he said quickly, snapping his gaze to Yanagimoto. \"One thing at a time. Yanagimoto, make sure Yamane's still down — keep an eye on him.\" She nodded shakily, glad to follow orders and not think about things too heavily."
     nvl clear
+    #show Yamane at left
+    #show Yanagimoto at right
+        #Leave him out of the scene and move Yanagimoto to center?
+    hide Kyon
+    hide Tsuruya
+    hide Yuki
+    with dissolve
     "Behind her, Kyon continued, \"Tsuruya-kun, it's going to be okay. You trusted me with your secrets, so we're going to trust you with this. Nagato....\" She couldn't hear the rest of his words, but realized that ultimately, she didn't {i}want{/i} to. Whatever world she'd gotten involved in, she was happier being as uninvolved as possible. Revenge on Yamane was one thing, but this.... This...."
     nvl clear
-    "How had she judged so badly that the person she despised had garnered such trustworthy allies, while she herself had been deceived by someone as despicable as Yamane!? She was seriously contemplating kicking the boy while he was down to vent her frustration before Kyon was at her side. \"Ah,\" she managed, looking up at him nervously. \"Is Tsuruya-sempai....\" She trailed off and looked over her shoulder. Though she looked very tired, the upperclassman seemed alright, catching her breath in Yamane's chair."
+    "How had she judged so badly that the person she despised had garnered such trustworthy allies, while she herself had been deceived by someone as despicable as Yamane!? She was seriously contemplating kicking the boy while he was down to vent her frustration before Kyon was at her side."
     nvl clear
+    #hide Yamane
+    #hide Yanagimoto
+    show Tsuruya Laugh Sad1 Flip at left
+    show Yuki Side1 at center
+    with dissolve
+    "\"Ah,\" she managed, looking up at him nervously. \"Is Tsuruya-sempai....\" She trailed off and looked over her shoulder. Though she looked very tired, the upperclassman seemed alright, catching her breath in Yamane's chair."
+    nvl clear
+    hide Tsuruya
+    hide Yuki
+    show Kyon Unhap3 at center
+    #show Yanagimoto at right
+    with dissolve
     "Maybe it had been a trick of the light, or Yamane's imagination? There was a smudge of blood on the girl's right hand, but her left shirt sleeve was completely unstained, now. Kyon leaned down and collected the boy's glasses, somehow still in place, only slightly askew. \"Yeah, Nagato took care of her. Hold these for me,\" he said, thrusting them at her as he straightened."
     nvl clear
     "She numbly accepted them."
+    show Kyon Unhap2
     "\"Nagato, is Yamane alright?\""
-    nvl clear
+    show Yuki Talk1 at left with dissolve
     "\"Minimal reasonable force was used,\" the girl stated calmly. \"No permanent damage should result.\""
-    "He smiled at her. \"Thank you. Now, we don't need any interruptions, could you secure the door?\""
     nvl clear
-    "\"Understood,\" Yuki replied, stepping away from Tsuruya's side to place one hand against the door and stare at it intently."
+    show Kyon Smile7
+    "He smiled at her. \"Thank you. Now, we don't need any interruptions, could you secure the door?\""
+    show Yuki Talk2
+    "\"Understood,\" Yuki replied, {nw}"
+    hide Yuki with dissolve 
+    extend "stepping away from Tsuruya's side to place one hand against the door and stare at it intently."
+    nvl clear
+    #show Yamane at left
+    show Kyon Unhap4
     "Bending down again, Kyon grabbed Yamane's collar and dragged him to the window, hauling the boy upright before slapping him awake. \"W...wha—\" Yamane sputtered, just before Kyon shoved him out the window."
     nvl clear
+    scene bg ClubHallOutside with fade:
+       size (800,600)
+    stop music fadeout 1
+    #queue music "Music/"
+        #not sure what to play here.
     "But not to fall, as she'd initially thought. Grabbing first by Yamane's belt, and then lowering him further, so that Yamane was suspended by only one ankle, Kyon let the boy dangle. Yanagimoto was stunned, but no so much she couldn't be impressed by the fact that Kyon was holding the boy with what seemed minimal effort."
-    nvl clear
     "\"Rise and shine!\" Kyon yelled with fierce cheer, jerking the ankle and shaking the other boy. \"How you doing, Yamane?\""
     "\"L...let me go!\" Yamane yelped."
     "\"Classic poor choice of words,\" Kyon remarked. \"Do you {i}really{/i} want that?\""
     nvl clear
     "Yamane wailed, then screamed, \"Help! Help! Someone — I'm being murdered!\""
     "\"Nonsense,\" Kyon said, shaking Yamane again. \"I'm trying to save you. But, see, I recently strained this arm ... not sure how much longer I can hold you up!\""
-    nvl clear
     "\"You're never going to get away with this!\""
     "\"You think? So, maybe I should just drop you, since I'm damned anyway? How does that saying go ... 'if you're going to do the time, may as well do the crime'?\""
     nvl clear
-    "Yanagimoto stared in morbid fascination. Was Kyon {i}actually{/i} going to drop the boy...? The door to the clubroom shook with a muffled yell and a frantic slam, but didn't budge. Yuki stared at it fixedly, one hand holding it shut. Then again ... she had somehow hurled Yamane the length of the clubroom with one hand."
+    scene bg IdolClubLight with fade:
+       size (800,600)
+    #show Yanagimoto at center
+    show Kyon Unhap4 at right
+    "Yanagimoto stared in morbid fascination. Was Kyon {i}actually{/i} going to drop the boy...?"
+    hide Kyon
+    #hide Yanagimoto
+    show Yuki Side1 at center
+    with dissolve
+    "The door to the clubroom shook with a muffled yell and a frantic slam, but didn't budge. Yuki stared at it fixedly, one hand holding it shut. Then again ... she had somehow hurled Yamane the length of the clubroom with one hand."
     nvl clear
-    "Tsuruya gave a small shudder, recovering slightly and rising from the chair. \"Escalation is an ugly game, Yamane,\" she warned. \"And it's not one you're going to win todays. I don't get mad much, but you badmouthed my friend, you tried to murder me, and you shamed almost every girl in this school. Believe me, if Kyon-kun lets you have a three-story french-kiss with the pavements below, that's a mercy compared to the world of hurt I could introduce you to!\""
+    hide Yuki
+    show Tsuruya Ang3 Flip at left
+    show Kyon Unhap4 at right
+    with dissolve
+    "Tsuruya gave a small shudder, recovering slightly and rising from the chair. \"Escalation is an ugly game, Yamane,\" she warned. \"And it's not one you're going to win todays. I don't get mad much, but you badmouthed my friend, you tried to murder me, and you shamed almost every girl in this school."
     nvl clear
+    show Tsuruya Ang4 Flip
+    "Believe me, if Kyon-kun lets you have a three-story french-kiss with the pavements below, that's a mercy compared to the world of hurt I could introduce you to!\""
     "\"Let me go!\" Yamane wept. \"Please!\""
+    show Tsuruya Ang3 Flip
     "\"Password for your computers,\" Tsuruya demanded, producing a notepad and paper from one pocket. \"Names of your accomplices — {i}all{/i} of them.\""
     nvl clear
+    show Kyon Ang3
     "\"And make it quick,\" Kyon added, shaking the boy, his arms trembling. \"You've got some people watching you down there.\""
     "\"M...my password is 'Tenshi',\" Yamane cried. He then wept a litany of names, which she also studiously wrote."
     nvl clear
+    show Tsuruya Grin5 at right
+    show Kyon Unhap4 at center
+    with dissolve
     "\"Good,\" Tsuruya murmured, once the names were all recorded. She then turned to the computer, tapping a few keys. \"Okies, password checks out.\""
     nvl clear
+    scene bg ClubHallOutside with fade:
+       size (800,600)
     "\"You've got quite an audience, now,\" Kyon grunted, exertion reaching his voice. \"Tell you what, Yamane, since you've been a sport about this so far.... Say hello and wave to the nice people!\""
     "\"Hello!\" Yamane wailed."
-    nvl clear
     "Yanagimoto anxiously crept to the side of the window furthest from the scene, eyes widening as she realized fully half of the students in the school had flooded the courtyard to stare at the spectacle. The classrooms opposite the club room were full of onlookers, and quite a few were taking pictures with cell phones or cameras."
     nvl clear
     "\"Louder,\" Kyon rasped. \"My arms are getting tired. Since you've got their attention, introduce yourself ... and tell everyone what you were doing in this room!\""
-    nvl clear
     "\"M...my name is Yamane Jun!\" the terrified boy screamed. \"F...for the last few weeks I've run an illicit photography ring! I've been collecting pictures of all the girls in the school as they changed uniforms! I've been s...selling them to yakuza, or anyone else who will pay me!\" He blubbered wordlessly for a moment, then keened, \"I don't want to die!\""
     nvl clear
+    scene bg IdolClubLight with fade:
+       size (800,600)
+    show Kyon Neutral1 Flip at center
+    show Tsuruya Grin1 at right
+    with dissolve
     "\"Um, hey, Tsuruya-kun,\" Kyon said, his voice suddenly level. \"Is it me, or did Yamane here just wet himself?\""
     nvl clear
+    show Tsuruya Laugh2
     "\"Huh?\" The upperclassman cautiously approached to peer out the window, then exploded into gales of laughter. \"Bwahahaha! Oh, Yamane-chan, that's {i}precious{/i}! I'll make sure one of those pictures of you that's being taken down there now is {i}right{/i} next to the article about this that'll be in the paper!\""
     nvl clear
+    show Kyon Unhap4 Flip
+    play sound "SE/Hit3.wav"
     "Kyon snorted, hauling the boy into the room and laying him out with a straight punch to the face, stepping away from the widening puddle forming around Yamane."
     nvl clear
-    stop music fadeout 1
-    "The delinquent moved away from the window and stood still for a long minute, just closing his eyes and breathing very deeply. When his eyes opened, he raised his hands before him, frowning at their shaking. \"I don't like being angry,\" he muttered."
+    #stop music fadeout 3
+    show Kyon Sigh6 Flip
+    "The delinquent moved away from the window and stood still for a long minute, just closing his eyes and breathing very deeply."
+    show Kyon Puzzle1 Flip
+    "When his eyes opened, he raised his hands before him, frowning at their shaking. \"I don't like being angry,\" he muttered."
     nvl clear
+    #queue music
+    show Tsuruya Sigh4
+    show Kyon Worry1 Flip
     "Tsuruya shut the computer down, then walked to his side, pulling his face towards hers, so their foreheads touched, her eyes closed. \"It's okay,\" she soothed quietly. \"You get angry for good reasons. I'm sorry, Kyon-kun.\""
     nvl clear
+    show Kyon Puzzle1 Flip
     "\"I'm not,\" he replied, his arms wrapping around Tsuruya. \"You're okay, and we're done with this, right?\""
+    show Tsuruya Sigh3
     "\"...almost,\" Tsuruya meekly said, tentatively hugging him back. \"I'm sorry ... he kept records on his system ... he made a sale last nights. If we can get those pictures back before they go onto the internet....\""
     nvl clear
+    show Kyon Sigh2 Flip
     "\"Okay,\" he mumbled, shifting his face to one side and burying it in her shoulder. \"When this is over, I need a damn vacation.\""
+    show Tsuruya Hap1
     "\"Anything I can do for you,\" she promised him, breaking the embrace to stare into his eyes and nod emphatically."
     nvl clear
+    show Kyon Smile6 Flip
     "He gave a shaky grin and rolled his neck, cracking it in several places. \"Hopefully we can get out of this without going to jail, huh?\""
     nvl clear
-    "Yanagimoto swallowed. Whatever was going on between Tsuruya and Kyon ... it was none of her business. But if that scene was anything to go by, the pair needed one-another. And much to her surprise, Yanagimoto realized that if it kept things like Yamane's plot out of her school, she was all for it. They were involved in life-or-death struggles ... judging by their relatively unshaken demeanors, and how unreasonably fast Tsuruya had recovered from her ordeal, this wasn't {i}that{/i} unusual for them. And here, she had spun pointless drama to make their lives harder?"
+    hide Kyon
+    hide Tsuruya
+    #show Yanagimoto at center
+    "Yanagimoto swallowed. Whatever was going on between Tsuruya and Kyon ... it was none of her business. But if that scene was anything to go by, the pair needed one-another. And much to her surprise, Yanagimoto realized that if it kept things like Yamane's plot out of her school, she was all for it."
     nvl clear
+    "They were involved in life-or-death struggles ... judging by their relatively unshaken demeanors, and how unreasonably fast Tsuruya had recovered from her ordeal, this wasn't {i}that{/i} unusual for them. And here, she had spun pointless drama to make their lives harder?"
+    nvl clear
+    #hide Yanagimoto
+    show Kyon Sup2 at right
+    with dissolve
     "\"Nagato,\" Kyon began, turning around to look at Yuki, then cutting off with a choked gasp."
     nvl clear
+    #scene
+    show Kyon Worry2 at right
     "Following his gaze, Yanagimoto saw a floor-length picture on the back of the door. A familiar girl that she remembered seeing a long time ago.... She was looking over her shoulder, laughing about something as she undid the zipper on the side of her skirt, her long blue hair fanned out behind her. \"I...is that,\" he stuttered, eyes widening in what Yanagimoto thought was horror."
     nvl clear
+    show Yuki Talk1 at left with dissolve
     "\"Yes,\" Yuki answered."
+    show Kyon Sup1
     "\"S...so this whole thing....\""
     nvl clear
+    show Yuki SadTalk2
     "\"A ... long-term plan,\" Yuki said quietly. \"Until seeing the data acquired from Yamane Jun's operation, the mechanisms of this were invisible to me. However, the execution appears to have become ... corrupted.\""
+    show Kyon Sup2
     "Swallowing, Kyon gave an uncomfortable nod, muttering the name of the girl in the picture, \"Asakura Ryouko....\""
     nvl clear
     

@@ -60,6 +60,7 @@ init:
     image bg ClubroomRightDay = "Backgrounds/ClubroomRightDay.png"
     image bg ClubroomFullNight = "Backgrounds/ClubroomFullNight.png"
     image bg ClubroomBack = "Backgrounds/ClubBack.png"
+    image bg ClubHallOutside = "Backgrounds/ClubHallOutside.png"
     image ClubTable ="Backgrounds/ClubTable.png"
     image bg YukiApartmentDay = "Backgrounds/YukiApartmentDay.png"
     image bg YukiApartmentNight = "Backgrounds/YukiApartmentNight.png"
@@ -733,7 +734,12 @@ init:
         3
         repeat
 
-    # Mikuru Sprites 
+    
+        
+    image Yuki Ang1 Flip = im.Flip("Sprites/Yuki/YukiSideAngry1.png", horizontal=True)
+        
+        
+        # Mikuru Sprites 
     image Mikuru Hap1 = "Sprites/Mikuru/MikuruHappy1.png"
     image Mikuru Hap2 = "Sprites/Mikuru/MikuruHappy2.png"
     image Mikuru Neutral1 = "Sprites/Mikuru/MikuruNeutral1.png"
@@ -964,6 +970,8 @@ init:
     image Tsuruya Sigh1 = "Sprites/Tsuruya/TsuruyaSigh1.png"
     image Tsuruya Sigh2 = "Sprites/Tsuruya/TsuruyaSigh2.png"
     image Tsuruya Sigh3 = "Sprites/Tsuruya/TsuruyaSigh3.png"
+    image Tsuruya Sigh3 = "Sprites/Tsuruya/TsuruyaSigh3.png"
+    image Tsuruya Sigh4 = "Sprites/Tsuruya/TsuruyaSigh4.png"
     image Tsuruya Smile1 = "Sprites/Tsuruya/TsuruyaSmile1.png"
     image Tsuruya Smile2 = "Sprites/Tsuruya/TsuruyaSmile2.png"
     image Tsuruya Smile3 = "Sprites/Tsuruya/TsuruyaSmile3.png"
@@ -1004,6 +1012,7 @@ init:
     image Tsuruya Casual Sigh1 = "Sprites/Tsuruya/TsuruyaCasualSigh1.png"
     image Tsuruya Casual Sigh2 = "Sprites/Tsuruya/TsuruyaCasualSigh2.png"
     image Tsuruya Casual Sigh3 = "Sprites/Tsuruya/TsuruyaCasualSigh3.png"
+    image Tsuruya Casual Sigh4 = "Sprites/Tsuruya/TsuruyaCasualSigh4.png"
     image Tsuruya Casual Smile1 = "Sprites/Tsuruya/TsuruyaCasualSmile1.png"
     image Tsuruya Casual Smile2 = "Sprites/Tsuruya/TsuruyaCasualSmile2.png"
     image Tsuruya Casual Smile3 = "Sprites/Tsuruya/TsuruyaCasualSmile3.png"
@@ -1038,6 +1047,8 @@ init:
     image Tsuruya Laugh Pain1 = "Sprites/Tsuruya/TsuruyaLaughPain1.png"
     image Tsuruya Laugh Pain2 = "Sprites/Tsuruya/TsuruyaLaughPain2.png"
     image Tsuruya Laugh Pain3 = "Sprites/Tsuruya/TsuruyaLaughPain3.png"
+    image Tsuruya Laugh Pain4 = "Sprites/Tsuruya/TsuruyaLaughPain4.png"
+    image Tsuruya Laugh Sad1 = "Sprites/Tsuruya/TsuruyaLaughSad1.png"
     
     image Tsuruya Laugh Casual Ang1  = "Sprites/Tsuruya/TsuruyaLaughCasualAngry1.png"
     image Tsuruya Laugh Casual Ang2  = "Sprites/Tsuruya/TsuruyaLaughCasualAngry2.png"
@@ -1045,6 +1056,8 @@ init:
     image Tsuruya Laugh Casual Pain1 = "Sprites/Tsuruya/TsuruyaLaughCasualPain1.png"
     image Tsuruya Laugh Casual Pain2 = "Sprites/Tsuruya/TsuruyaLaughCasualPain2.png"
     image Tsuruya Laugh Casual Pain3 = "Sprites/Tsuruya/TsuruyaLaughCasualPain3.png"
+    image Tsuruya Laugh Casual Pain4 = "Sprites/Tsuruya/TsuruyaLaughCasualPain4.png"
+    image Tsuruya Laugh Casual Sad1 = "Sprites/Tsuruya/TsuruyaLaughCasualSad1.png"
     
     image Tsweat = "Sprites/Tsuruya/Tsweat.png"
     image Tsweat Casual = "Sprites/Tsuruya/TsweatCasual.png"
@@ -1070,6 +1083,7 @@ init:
     image Tsuruya Sigh1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaSigh1.png", horizontal=True)
     image Tsuruya Sigh2 Flip = im.Flip("Sprites/Tsuruya/TsuruyaSigh2.png", horizontal=True)
     image Tsuruya Sigh3 Flip = im.Flip("Sprites/Tsuruya/TsuruyaSigh3.png", horizontal=True)
+    image Tsuruya Sigh4 Flip = im.Flip("Sprites/Tsuruya/TsuruyaSigh4.png", horizontal=True)
     image Tsuruya Sup1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaSurprised1.png", horizontal=True)
     image Tsuruya Worry1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaWorry1.png", horizontal=True)
     image Tsuruya Worry2 Flip = im.Flip("Sprites/Tsuruya/TsuruyaWorry2.png", horizontal=True)
@@ -1101,6 +1115,12 @@ init:
     image Tsuruya Casual Smile5 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualSmile5.png", horizontal=True)
     image Tsuruya Casual Smile6 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualSmile6.png", horizontal=True)
     image Tsuruya Casual Quest1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualQuestion1.png", horizontal=True)
+    image Tsuruya Casual Ser1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualSerious1.png", horizontal=True)
+    image Tsuruya Casual Sigh1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualSigh1.png", horizontal=True)
+    image Tsuruya Casual Sigh2 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualSigh2.png", horizontal=True)
+    image Tsuruya Casual Sigh3 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualSigh3.png", horizontal=True)
+    image Tsuruya Casual Sigh4 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualSigh4.png", horizontal=True)
+    image Tsuruya Casual Sup1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualSurprised1.png", horizontal=True)
     image Tsuruya Casual Worry1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualWorry1.png", horizontal=True)
     image Tsuruya Casual Worry2 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualWorry2.png", horizontal=True)
     image Tsuruya Casual Worry3 Flip = im.Flip("Sprites/Tsuruya/TsuruyaCasualWorry3.png", horizontal=True)
@@ -1123,6 +1143,8 @@ init:
     image Tsuruya Laugh Pain1 Flip =  im.Flip("Sprites/Tsuruya/TsuruyaLaughPain1.png", horizontal=True)
     image Tsuruya Laugh Pain2 Flip =  im.Flip("Sprites/Tsuruya/TsuruyaLaughPain2.png", horizontal=True)
     image Tsuruya Laugh Pain3 Flip =  im.Flip("Sprites/Tsuruya/TsuruyaLaughPain3.png", horizontal=True)
+    image Tsuruya Laugh Pain4 Flip =  im.Flip("Sprites/Tsuruya/TsuruyaLaughPain4.png", horizontal=True)
+    image Tsuruya Laugh Sad1 Flip =  im.Flip("Sprites/Tsuruya/TsuruyaLaughSad1.png", horizontal=True)
     
     image Tsuruya Laugh Casual Ang1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaLaughCasualAngry1.png", horizontal=True)
     image Tsuruya Laugh Casual Ang2 Flip = im.Flip("Sprites/Tsuruya/TsuruyaLaughCasualAngry2.png", horizontal=True)
@@ -1130,6 +1152,8 @@ init:
     image Tsuruya Laugh Casual Pain1 Flip =  im.Flip("Sprites/Tsuruya/TsuruyaLaughCasualPain1.png", horizontal=True)
     image Tsuruya Laugh Casual Pain2 Flip =  im.Flip("Sprites/Tsuruya/TsuruyaLaughCasualPain2.png", horizontal=True)
     image Tsuruya Laugh Casual Pain3 Flip =  im.Flip("Sprites/Tsuruya/TsuruyaLaughCasualPain3.png", horizontal=True)
+    image Tsuruya Laugh Casual Pain4 Flip =  im.Flip("Sprites/Tsuruya/TsuruyaLaughCasualPain4.png", horizontal=True)
+    image Tsuruya Laugh Casual Sad1 Flip =  im.Flip("Sprites/Tsuruya/TsuruyaLaughCasualSad1.png", horizontal=True)
     
     image Tsweat Flip = im.Flip("Sprites/Tsuruya/Tsweat.png", horizontal=True)
     image Tsweat Casual Flip = im.Flip("Sprites/Tsuruya/TsweatCasual.png", horizontal=True)

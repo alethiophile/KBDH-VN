@@ -18,19 +18,15 @@ which causes the blushing to disappear in a bang after Kanae is gone.
 
 
 TODO CHECKLIST:
-First release is finished! Time to work on the second half of Chapter 5 and fix all the mistakes I (Zfish9) made on chapters 6-8 :D
+First release is finished! Time to work on the second half of Chapter 5 and fix all the mistakes I (Zfish9) made on chapters 6-9 :D
 
 Rebuild KyonRoomRightClosed.png, it got the aforementioned Jagging due to indexed colors.
 
-WatanabeBase is all wrong - it's a warehouse with a forklift, it's supposed to be a messy, not huge storeroom with computers.
 The fight scene needs work too, it's very static and bland. Needs more animations. (absence of many sprites is secondary)
-
-Ryo needs to be bandaged and broken, unlike he is now, in his presentation scene.
 
 Segment the paragraphs in 7-8 more, using linebreaks. (to do from Watanabe's hidedout on.)
 Sometimes they flow in an uninterrupted wall of text without any user interaction until the screen is full, right now, and that's not good.
 Especially bad at the point when Ninja TsuruyaMaid is shown in chapter 7.
-
 
 Search for "blush" in chapter 6. Haruhi should blush at one point, but her sprite doesn't do it.
 
