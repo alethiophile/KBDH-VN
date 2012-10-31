@@ -14,17 +14,17 @@ label HAB4:
     #show Yanagimoto Hap1
     "She took a quick breath to steel herself, then put on her most cheerful syrupy-sweet voice. The one she had previously only used on Taniguchi to try and turn him against Haruhi. \"Yamane-kun,\" she called, rapping on the door. \"It's Yanagimoto~! Do you have a free minute?\""
     nvl clear
-    #show Yamane Unhap1 at left with dissolve
     play sound "SE/Creak1.wav"
     "The quartet listened to the creak of his chair as he rose, {nw}"
     play sound "SE/Step1.wav"
     extend "then the tap of his footsteps across the room before the door unlocked and opened. {nw}"
+    show Yamane Grin2 at left with dissolve
     play sound "SE/dooropenfast.wav"
     extend "Yamane's expression shifted from something quite near a leer to {nw}"
-    #show Yamane Fear1
+    show Yamane Terror1
     extend "raw alarm when he saw Kyon. Before he could slam the door shut, {nw}"
     play sound "SE/impact.mp3"
-    #hide yamane with dissolve
+    hide Yamane with dissolve
     extend "Kyon gave it a hard kick, sending the edge of the door flying into the boy's face, knocking his glasses off and sending him stumbling back."
     nvl clear
     scene bg IdolClubDark with fade:
@@ -38,7 +38,7 @@ label HAB4:
     play sound "SE/doorclose.mp3"
     extend "before Yuki shut the door behind them, locking it once more."
     nvl clear
-    #show Yamane Cry1 at left with dissolve
+    show Yamane Lost Cool1 at left with dissolve
     "\"Ow!\" Yamane protested, rubbing his nose, his eyes tearing as he fumbled for his glasses. \"What the hell!? Yanagimoto-san — I thought we were friends!\""
     #show Yanagimoto Ang4/Livid1
     "\"So did I,\" she spat, glaring as he put his spectacles back in place and gave her a sad gaze. \"Haruhi showed me the pictures you took!\""
@@ -60,7 +60,7 @@ label HAB4:
     hide Tsuruya
     #show Yanagimoto at center
     show Yuki Right Neutral2 at right
-    #show Yamane at left
+    show Yamane Lost Cool1 at left
     "\"Hey!\" Yamane protested again."
     "Yanagimoto realized that every surface of the room was plastered in pictures cut out of idol magazines, or full-page prints downloaded from the internet. She couldn't recognize a fraction of them. Near the far end, just before the window, was a desk with a computer on it, very similar to the setup in Haruhi's club room, only without the long table in the center."
     nvl clear
@@ -72,7 +72,7 @@ label HAB4:
     show Kyon Unhap5 at center
     with dissolve
     "Tsuruya gave him a cool look. \"Do you knows who I am?\" she asked, quirking an eyebrow higher."
-    #show Yamane Ang1
+    show Yamane Lost Cool2
     "\"Tsuruya Haruka,\" he answered, glaring at her. \"Third year student. What did I ever do to you?\""
     nvl clear
     show Tsuruya Grin6
@@ -83,16 +83,16 @@ label HAB4:
     show Kyon Ang3
     "Kyon cracked his knuckles loudly, then reached down and pulled Yamane to his feet by the collar of his coat. \"I very strongly advise that you start talking,\" he warned. \"Because right now, most of the rumors you've been trying to spread about me are true. And if you don't start talking, well....\""
     nvl clear
-    #show Yamane
+    show Yamane Grin1
     "\"Well {i}what{/i}?\" Yamane sneered, unshaken."
     show Tsuruya Hap7
     "\"Then he gives you to me,\" Tsuruya said cheerfully. \"'Cause he's the {i}nice{/i} one!\""
     nvl clear
-    #show Yamane Plead1
+    show Yamane Terror2 #Yamane plead1
     "Yamane's eyes went wildly between the pair, then turned to Yanagimoto, silently beseeching her for help."
     hide Kyon
     hide Tsuruya
-    #hide Yamane
+    hide Yamane
     #show Yanagimoto Ang2 at center
     with dissolve
     "\"Come clean, you piece of filth. You think I'm going to help {i}you{/i}?\" she snarled, copying Kyon's derogatory use of the term. \"After what I found out!?\""
@@ -141,6 +141,7 @@ label HAB4:
     play sound "SE/GlassBreak1.mp3"
     show Kyon Sup2
     show Tsuruya Laugh Pain2 Flip
+    show Yamane Grin3
     hide Tsuruya with dissolve
     "With a desperate shove, he pushed her to a three-story drop to a concrete walkway. She felt a horrified shriek build in her own throat as Tsuruya's eyes widened, and her hands windmilled frantically, one catching momentarily on the glass edge of the window before it shattered, sending a blossoming aura of glimmering shards exploding outward behind her."
     nvl clear
@@ -174,18 +175,16 @@ label HAB4:
     show Kyon Unhap2
     "Kyon swore something guttural, clutching the girl to his chest. \"Okay,\" he said quickly, snapping his gaze to Yanagimoto. \"One thing at a time. Yanagimoto, make sure Yamane's still down — keep an eye on him.\" She nodded shakily, glad to follow orders and not think about things too heavily."
     nvl clear
-    #show Yamane at left
-    #show Yanagimoto at right
-        #Leave him out of the scene and move Yanagimoto to center?
+    #show Yanagimoto at center
     hide Kyon
     hide Tsuruya
     hide Yuki
     with dissolve
     "Behind her, Kyon continued, \"Tsuruya-kun, it's going to be okay. You trusted me with your secrets, so we're going to trust you with this. Nagato....\" She couldn't hear the rest of his words, but realized that ultimately, she didn't {i}want{/i} to. Whatever world she'd gotten involved in, she was happier being as uninvolved as possible. Revenge on Yamane was one thing, but this.... This...."
     nvl clear
+    #show Yanagimoto Ang1
     "How had she judged so badly that the person she despised had garnered such trustworthy allies, while she herself had been deceived by someone as despicable as Yamane!? She was seriously contemplating kicking the boy while he was down to vent her frustration before Kyon was at her side."
     nvl clear
-    #hide Yamane
     #hide Yanagimoto
     show Tsuruya Laugh Sad1 Flip at left
     show Yuki Right Neutral1 at center
@@ -212,7 +211,7 @@ label HAB4:
     hide Yuki with dissolve 
     extend "stepping away from Tsuruya's side to place one hand against the door and stare at it intently."
     nvl clear
-    #show Yamane at left
+    show Yamane Terror1 at left
     show Kyon Unhap4
     "Bending down again, Kyon grabbed Yamane's collar and dragged him to the window, hauling the boy upright before slapping him awake. \"W...wha—\" Yamane sputtered, just before Kyon shoved him out the window."
     nvl clear

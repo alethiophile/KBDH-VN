@@ -1405,7 +1405,13 @@ init:
     image Sakanaka Unhap2 = "Sprites/Sakanaka/SakanakaUnhappy2.png"
     
     #Yamane Sprites
-    image Yamane Neutral = "Sprites/Yamane/YamaneLostCool.png"
+    image Yamane Lost Cool1 = "Sprites/Yamane/YamaneLostCool1.png"
+    image Yamane Lost Cool2 = "Sprites/Yamane/YamaneLostCool2.png"
+    image Yamane Grin1 = "Sprites/Yamane/YamaneGrin1.png"
+    image Yamane Grin2 = "Sprites/Yamane/YamaneGrin2.png"
+    image Yamane Grin3 = "Sprites/Yamane/YamaneGrin3.png"
+    image Yamane Terror1 = "Sprites/Yamane/YamaneTerror1.png"
+    image Yamane Terror2 = "Sprites/Yamane/YamaneTerror2.png"
     
     #Ryo Sprites
     image Ryo Ang1 = "Sprites/Ryo/RyoAngry1.png"
