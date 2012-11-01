@@ -1042,6 +1042,8 @@ init:
     image Tsuruya Wave Smile1 = "Sprites/Tsuruya/TsuruyaWaveSmile1.png"
     image Tsuruya Wave Smile2 = "Sprites/Tsuruya/TsuruyaWaveSmile2.png"
     image Tsuruya Wave Sigh1 = "Sprites/Tsuruya/TsuruyaWaveSigh1.png"
+    image Tsuruya Wave Ser1 = "Sprites/Tsuruya/TsuruyaWaveSerious1.png"
+    image Tsuruya Wave Ser2 = "Sprites/Tsuruya/TsuruyaWaveSerious2.png"
     
     image Tsuruya Kimono Grin1 = "Sprites/Tsuruya/TsuruyaKimonoGrin1.png"
     image Tsuruya Kimono Grin2 = "Sprites/Tsuruya/TsuruyaKimonoGrin2.png"
@@ -1056,6 +1058,8 @@ init:
     image Tsuruya Kimono Smile1 = "Sprites/Tsuruya/TsuruyaKimonoSmile1.png"
     image Tsuruya Kimono Smile2 = "Sprites/Tsuruya/TsuruyaKimonoSmile2.png"
     image Tsuruya Kimono Sigh1 = "Sprites/Tsuruya/TsuruyaKimonoSigh1.png"
+    image Tsuruya Kimono Ser1 = "Sprites/Tsuruya/TsuruyaKimonoSerious1.png"
+    image Tsuruya Kimono Ser2 = "Sprites/Tsuruya/TsuruyaKimonoSerious2.png"
     
     image Tsuruya Laugh Ang1  = "Sprites/Tsuruya/TsuruyaLaughAngry1.png"
     image Tsuruya Laugh Ang2  = "Sprites/Tsuruya/TsuruyaLaughAngry2.png"

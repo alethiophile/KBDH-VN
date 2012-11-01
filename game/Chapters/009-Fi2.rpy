@@ -626,7 +626,7 @@ label Fi2:
     nvl clear
     show Tsuruya Kimono Sigh1
     "Tsuruya nodded quickly. \"Yeah, yeah.... In class todays she was all kinds of distracted and moody. Like she's pining for some guy! But I don't know what guy Mikuru-chan likes.\" {nw}"
-    show Tsuruya Quest1
+    show Tsuruya Kimono Quest1
     extend "She turned a questioning glance at Kyon. \"What do you think?\""
     nvl clear
     #show Kyon Suit
@@ -682,29 +682,30 @@ label Fi2:
     "Nervously searching for something familiar to comfort him in this madness, Kyon spotted a maid in the customary outfit kneeling just below the dais on the man's right side, holding a tray before her, eyes downcast. Was she the same one that had spoken to him and asked that he watch over Tsuruya? The same one — somehow — that had met them on the path through the gardens? There was still no way to be sure."
     nvl clear
     #show KyonSuit at right
-    show Tsuruya Kimono Smile1:
+    show Tsuruya Kimono Ser1:
        xalign 0.7 yalign 1.0   
     with dissolve
     "Tsuruya strode to within a few paces of the patriarch, then knelt and bowed deeply, her forehead almost touching the floor. Stopping a step short of the girl, Kyon followed suit without hesitation. \"Rise,\" the man chuckled. \"Dearest daughter, have you called mes back here to report on your trial?\""
     nvl clear
     #show Kyon Suit
-    #show Tsuruya Kimono Neutral/Ser 1
+    show Tsuruya Kimono Ser2
     "Kyon fought to restrain a hilarious snicker, remaining bowed even when Tsuruya rose. They shared the speech impediment as well as the fang. \"Progress is good,\" she said, \"but I called you here to ask aid for a strong ally!\""
     #show TsuruyaSama
+    show Tsuruya Kimono Ser1
     "\"A strong ally needs aid?\" The patriarch's voice now lacked amusement. \"Explains, daughter.\""
     nvl clear
-    #show Tsuruya Kimono Neutral/Ser 2
+    show Tsuruya Kimono Ser2
     "\"Um! Tsuruya-sama!\" she said, her voice unshaken. \"I have engaged in battles with others, and this brothers here has saved me from attack not once, but twice!\""
-    nvl clear
+    nvl clear                                                                                                                
     #show Kyon Suit
     "Kyon rose slightly when he heard the other men around the room murmur with subdued voices, exchanging dire looks with one-another behind their dark glasses. \"Others?\" the patriarch mused, rubbing his chin thoughtfully with the hand that was not within his robe. \"Explain further.\""
     nvl clear
-    #show Tsuruya Kimono
+    show Tsuruya Kimono Sigh1
     "\"I don't know everything yet,\" Tsuruya said with another deep, apologetic bow. \"I believes they are Sumiyoshi-rengo.\""
     #show TsuruyaSama
     "\"I see. And how strongs is this ally of yours, then?\""
     nvl clear
-    #show Tsuruya Kimono
+    show Tsuruya Kimono Ser2
     "\"This brother defeated twelve mens by himself, all in the same fight that left Kasai in the hospital,\" she explained. \"And yesterday, another four.\""
     "The gasp from the surrounding enforcers this time was not subdued at all."
     nvl clear
@@ -717,7 +718,7 @@ label Fi2:
     "\"Good,\" the man judged. \"I like a man who values his family.\" He snapped his fingers. \"Tell us your name, then.\""
     nvl clear
     #show Kyon Suit
-    #show Tsuruya Kimono
+    show Tsuruya Kimono Quest1
     #show TsuruyaSama
     "Barely able to keep his voice from hitching, Kyon gave his full name to the Tsuruya patriarch. The girl at his side blinked and looked at him sidelong, her eyes widening; even the patriarch looked impressed. He found it a bit unnerving that they seemed to care so much for his name, when he was cursed with that stupid nickname all the time...."
     nvl clear
@@ -733,7 +734,7 @@ label Fi2:
     "In a soft voice that Kyon was sure no one else could hear, the maid instructed him, \"Drink exactly half, in three small sips.\" He nodded minutely, amazed his hand wasn't shaking as he took the last dish."
     nvl clear
     #show TsuruyaSama
-    #show Tsuruya Kimono
+    show Tsuruya Kimono Grin1
     #show Kyon Suit
     "\"For family,\" the man announced, taking a sip. Tsuruya sipped as well, so Kyon followed suit; he was reasonably sure it was sake, but it had the taste of strong salt, and glittering flakes of ... something ... were floating within. \"For justice,\" and a second sip. \"For honor,\" with a final sip."
     nvl clear
@@ -747,7 +748,7 @@ label Fi2:
     #show TsuruyaSama
     "\"Good,\" the patriarch said, nodding approval as the maid silently collected all of the dishes. \"Very good! All shall know then that this, our brother, is a kobun! Everyone, welcome your new foster brother to the Tsuruya branch of the Yamaguchi-gumi!\""
     nvl clear
-    #show Tsuruya Kimono
+    show Tsuruya Kimono Smile2
     "The men on the edges of the room suddenly swarmed him, and he was swept up in a tide of cheering ninkyo dantai pounding his back and welcoming him to the family. As bewildered as he was, he still saw the relief in the girl's face, the tiny sparkling tears of what he prayed was happiness in her eyes."
     nvl clear
     "Yeah, Haruhi was going to love hearing about this."
