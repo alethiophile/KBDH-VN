@@ -602,39 +602,60 @@ label Fi2:
     "After pulling through the gates to the Tsuruya estate, the vehicle stopped. Even though he was fairly certain that he was supposed to wait for the driver to open his door, he let himself out, scanning around for Tsuruya."
     "He spotted her quickly, standing on the path between the driveway and the house wearing a very elaborate kimono, her hair done up in an intricate bun."
     nvl clear
-    #show Tsuruya Kimono Wave at center with dissolve
+    show Tsuruya Kimono Smile2 at right with dissolve
     "She waved, and he walked to meet her, bowing his head as he approached. \"I hope I'm not under-dressed,\" he commented, adjusting his tie and glancing at the dark blue suit he was wearing, which was quite plain in contrast to her outfit."
-    #show Tsuruya Kimono
+    show Tsuruya Kimono Hap1
     "\"Looks good on you,\" she assured him, smirking. \"Okies, come on a walk with me?\""
     nvl clear
+    #show Kyon Suit
     "It felt more like an insistence than a question, but he agreed, falling into step just behind her as she leisurely strolled towards the garden. \"I don't want to make a mistake and upset your father, or embarrass you,\" he commented, glancing at the surroundings, but too worried to really enjoy the view."
     nvl clear
+    show Tsuruya Kimono Hap5
     "\"You should be fine,\" she assured him. \"You'll talks with my father, and I'll explain what we want from him.\""
     "He nodded at that, looking at the girl out of the corner of his eyes. She seemed completely absorbed with a distant cherry tree, the last few petals slowly drifting to the ground."
     nvl clear
+    show Tsuruya Kimono Hap1
     "\"I won't be embarrassed by Kyon-kun,\" she said after a moment. \"And my father's a mega understanding guy, nyoro~!\""
+    #show Kyon Suit
     "\"I hope so,\" he agreed."
     nvl clear
+    show Tsuruya Kimono Quest1
     "\"Mmm. Hey, Kyon-kun, has Mikuru-chan seemed a bit down lately to you?\""
+    #show Kyon Suit
     "That was a sudden shift in conversation, he thought. \"Distracted, for sure,\" he agreed. \"I don't know about 'down', though.... You think she's upset?\""
     nvl clear
-    "Tsuruya nodded quickly. \"Yeah, yeah.... In class todays she was all kinds of distracted and moody. Like she's pining for some guy! But I don't know what guy Mikuru-chan likes.\" She turned a questioning glance at Kyon. \"What do you think?\""
+    show Tsuruya Kimono Sigh1
+    "Tsuruya nodded quickly. \"Yeah, yeah.... In class todays she was all kinds of distracted and moody. Like she's pining for some guy! But I don't know what guy Mikuru-chan likes.\" {nw}"
+    show Tsuruya Quest1
+    extend "She turned a questioning glance at Kyon. \"What do you think?\""
     nvl clear
+    #show Kyon Suit
     "\"I don't know; I hadn't thought about it,\" he admitted, grimacing. He wasn't anyone to judge, but there was a real rush of jealousy as soon as the girl at his side brought it up."
+    #show Kyon Suit
     "Damn it, anyone who thought about laying a hand on Mikuru was going to have to go through him! Then again.... \"I don't think I should ask her about that. Wouldn't it be, er ... her own personal business?\""
     nvl clear
+    show Tsuruya Kimono Grin2
     "Tsuruya's glance was very shrewd. She poked him firmly in the shoulder. \"Kyon- kun never considered that he might be the guy she's pining for?\" she mused. \"I'm not sures if that's noble or dense!\""
     nvl clear
+    #show Kyon Suit
     "\"H...hey!\" he protested, frowning. \"I wish that Asahina-san were interested in me like that! What healthy male wouldn't? But....\" He trailed off, frowning."
+    #show Kyon Suit
     "Wasn't her older self always taking advantage of her visits to kiss him? But what did {i}that{/i} mean? \"Well, with Haruhi,\" he began lamely, before sighing and shaking his head."
     nvl clear
-    "\"You're a popular guy,\" Tsuruya acquiesced, smirking. \"Okies! I'll talk with her tomorrow mornings, and find out what's going on!\""
+    show Tsuruya Kimono Hap3
+    "\"You're a popular guy,\" Tsuruya acquiesced, smirking. {nw}"
+    show Tsuruya Kimono Hap7
+    extend "\"Okies! I'll talk with her tomorrow mornings, and find out what's going on!\""
+    #show Kyon Suit
     "\"Anything you can do to cheer her up,\" he agreed. \"I don't like seeing her unhappy, either.\""
     nvl clear
+    show Tsuruya Kimono Quest1
+    #show KBlush at left
     "She blinked and turned another questioning gaze on him. He studiously looked away, remembering his conversation with Tsuruya's maid as his face colored."
     nvl clear
     #show Shinobu at right with dissolve
     "Just as the silence was becoming awkward, a maid — possibly the same one, he couldn't tell them apart — stepped out from behind a tree on the path ahead of them. \"Haruka-san, Kyon-dono,\" she said, bowing. \"Tsuruya-sama is ready to speak with the two of you now.\""
+    show Tsuruya Kimono Hap1
     "\"Okies,\" Tsuruya said, giggling a bit. \"This way, Kyon-kun!\""
     nvl clear
     scene bg TsuruyaMeetingNight with fade
@@ -661,47 +682,72 @@ label Fi2:
     "Nervously searching for something familiar to comfort him in this madness, Kyon spotted a maid in the customary outfit kneeling just below the dais on the man's right side, holding a tray before her, eyes downcast. Was she the same one that had spoken to him and asked that he watch over Tsuruya? The same one — somehow — that had met them on the path through the gardens? There was still no way to be sure."
     nvl clear
     #show KyonSuit at right
-    #show TsuruyaKimono:
-    #   xalign 0.7 yalign 1.0   
-    #with dissolve
+    show Tsuruya Kimono Smile1:
+       xalign 0.7 yalign 1.0   
+    with dissolve
     "Tsuruya strode to within a few paces of the patriarch, then knelt and bowed deeply, her forehead almost touching the floor. Stopping a step short of the girl, Kyon followed suit without hesitation. \"Rise,\" the man chuckled. \"Dearest daughter, have you called mes back here to report on your trial?\""
     nvl clear
+    #show Kyon Suit
+    #show Tsuruya Kimono Neutral/Ser 1
     "Kyon fought to restrain a hilarious snicker, remaining bowed even when Tsuruya rose. They shared the speech impediment as well as the fang. \"Progress is good,\" she said, \"but I called you here to ask aid for a strong ally!\""
+    #show TsuruyaSama
     "\"A strong ally needs aid?\" The patriarch's voice now lacked amusement. \"Explains, daughter.\""
     nvl clear
+    #show Tsuruya Kimono Neutral/Ser 2
     "\"Um! Tsuruya-sama!\" she said, her voice unshaken. \"I have engaged in battles with others, and this brothers here has saved me from attack not once, but twice!\""
     nvl clear
+    #show Kyon Suit
     "Kyon rose slightly when he heard the other men around the room murmur with subdued voices, exchanging dire looks with one-another behind their dark glasses. \"Others?\" the patriarch mused, rubbing his chin thoughtfully with the hand that was not within his robe. \"Explain further.\""
     nvl clear
+    #show Tsuruya Kimono
     "\"I don't know everything yet,\" Tsuruya said with another deep, apologetic bow. \"I believes they are Sumiyoshi-rengo.\""
+    #show TsuruyaSama
     "\"I see. And how strongs is this ally of yours, then?\""
     nvl clear
+    #show Tsuruya Kimono
     "\"This brother defeated twelve mens by himself, all in the same fight that left Kasai in the hospital,\" she explained. \"And yesterday, another four.\""
     "The gasp from the surrounding enforcers this time was not subdued at all."
     nvl clear
+    #show TsuruyaSama
     "The patriarch raised one hand and all other conversation stilled. Hardened green eyes turned to Kyon. \"Then,\" he said, \"this is not my daughter asking for my assistances at all, is it? This is him wishing his family be kept safe so that he can continue to serve you?\""
     nvl clear
+    #show Kyon Suit
     "Kyon nodded, not trusting himself to speak."
+    #show TsuruyaSama
     "\"Good,\" the man judged. \"I like a man who values his family.\" He snapped his fingers. \"Tell us your name, then.\""
     nvl clear
+    #show Kyon Suit
+    #show Tsuruya Kimono
+    #show TsuruyaSama
     "Barely able to keep his voice from hitching, Kyon gave his full name to the Tsuruya patriarch. The girl at his side blinked and looked at him sidelong, her eyes widening; even the patriarch looked impressed. He found it a bit unnerving that they seemed to care so much for his name, when he was cursed with that stupid nickname all the time...."
     nvl clear
+    #show TsuruyaSama
     "\"A strong name,\" the patriarch allowed, eyebrows raised. \"Then, just like the stories of Sadamitsu and Raiko, you acts as my daughter's retainer?\""
+    #show Kyon Suit
     "\"Yes,\" he agreed, wondering how much trouble this was all going to get him into. Still, it would keep his family safe, so that much would be worth it."
     nvl clear
+    #show TsuruyaSama
     "The man nodded as the maid rose, shuffling before him and holding out the tray. With brisk, efficient movements, the patriarch poured three small dishes of sake, mixing in salt and something glittery that Kyon couldn't quite make out. He took a dish, and the tray was moved to the girl. She took a dish as well, and then the tray was before Kyon."
     nvl clear
+    #show Shinobu
     "In a soft voice that Kyon was sure no one else could hear, the maid instructed him, \"Drink exactly half, in three small sips.\" He nodded minutely, amazed his hand wasn't shaking as he took the last dish."
     nvl clear
+    #show TsuruyaSama
+    #show Tsuruya Kimono
+    #show Kyon Suit
     "\"For family,\" the man announced, taking a sip. Tsuruya sipped as well, so Kyon followed suit; he was reasonably sure it was sake, but it had the taste of strong salt, and glittering flakes of ... something ... were floating within. \"For justice,\" and a second sip. \"For honor,\" with a final sip."
     nvl clear
+    #show Shinobu
     "The maid then exchanged the girl's cup with her father's, and whispered to Kyon, \"Hold still and wait.\""
     "This time, the girl spoke the words, she and her father drinking a sip at each invocation. When it was done, the maid took Kyon's cup and exchanged it with Tsuruya's. \"Now you,\" the maid whispered quietly."
     nvl clear
+    #show Kyon Suit
     "\"For family,\" Kyon said, sipping from the dish. The girl at his side sipped with him; the patriarch did not. \"For justice,\" he said, wondering how the girl's stomach was holding up after this much of the strange ceremonial drink. Finally, he completed, \"For honor.\""
     nvl clear
+    #show TsuruyaSama
     "\"Good,\" the patriarch said, nodding approval as the maid silently collected all of the dishes. \"Very good! All shall know then that this, our brother, is a kobun! Everyone, welcome your new foster brother to the Tsuruya branch of the Yamaguchi-gumi!\""
     nvl clear
+    #show Tsuruya Kimono
     "The men on the edges of the room suddenly swarmed him, and he was swept up in a tide of cheering ninkyo dantai pounding his back and welcoming him to the family. As bewildered as he was, he still saw the relief in the girl's face, the tiny sparkling tears of what he prayed was happiness in her eyes."
     nvl clear
     "Yeah, Haruhi was going to love hearing about this."

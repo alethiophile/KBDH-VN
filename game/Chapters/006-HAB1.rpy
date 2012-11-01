@@ -463,7 +463,7 @@ label HAB1:
     show Ryo Neutral1 at center with dissolve
     "It took a moment, but Kyon was able to pick out the boy in question, somewhat unfamiliar without tape across his nose and one eye blackened. \"That's him,\" Kyon told her with a nod. \"I've seen him before.\" Tsuruya leapt into a thicket of bushes and he followed, almost landing on her, murmuring a quick apology beneath his breath as they crept forward to watch Ryuguu and his allies."
     nvl clear
-    show Yamane Neutral at right with dissolve
+    show Yamane Grin3 at right with dissolve
     "One of them Kyon knew — Yamane, from his own class, a shady looking character in his own right. Physically, the\nboy was as intimidating as Kunikida, and had large, round glasses and shadowed eyes, cursing him with the appearance and bearing of a sad otaku. {nw}"
     #show Manabe at left with dissolve
     extend "The other one was a taller, thin first year with blond hair. Both were carrying cameras and speaking with Ryuguu in low tones."
@@ -846,43 +846,48 @@ label HAB1:
     stop music fadeout 1
     queue music "Music/MysteryTime.mp3"
     play sound "SE/dooropenfast.wav"
-    show Kyon Ser1 at center
-    show Koizumi Crossed Neutral1 at left
+    show Kyon Ser1 Flip:
+        xalign 0.4 yalign 1.0
+    show Koizumi Crossed Neutral1 at left behind Kyon
     show Yuki Ang1 behind Kyon:
         xalign 0.7 yalign 1.0
     with dissolve
     "Kyon marched to the door and flung it open without knocking, startling the Student Council president as he shuffled through a short stack of papers. Kimidori Emiri sat in a chair to one side, her pad of paper and pen ready, though she seemed coolly expectant."
+    nvl clear
     "Kyon strode to the middle of the room and stood in an arrogant pose, arms crossed over his chest as he stared down at the president with an expression of clear boredom. Yuki stood a half-step behind him on his left, eyes fixed on Emiri. {nw}"
     play sound "SE/doorclose2.mp3"
     show Mikuru Neutral1 at right behind Yuki with dissolve
     extend "Mikuru tried to take up a flanking position on his right, but was beaten by Koizumi, so settled for closing the door and standing next to Yuki."
     nvl clear
-    show Kyon Unhap2
+    show Kyon Unhap2 Flip
     "\"Well?\" Kyon demanded, when the president spent a long moment staring. \"I'm here.\""
-    show Kyon Unhap4
-    #hide Yuki
-    #hide Mikuru
-    #with dissolve
+    hide Yuki
+    hide Mikuru
+    with dissolve
     #show President at right with dissolve - Irritated with frown
+    show Kyon Unhap4 Flip
     "\"I don't...\" the president began, frowning and scanning across the group. \"I expected you to bring her along, if you were going to appear in force.\""
     nvl clear
-    show Kyon Neutral2
+    show Kyon Neutral2 Flip
     #show President - Irritated with frown, mouth closed
     "\"Yeah, okay,\" Kyon allowed, relaxing his arms and taking on his more normal demeanor. \"So, do you have anything for me, President, or is this Kimidori-san's call?\""
     nvl clear
-    show Kyon Neutral3
-    #hide President with dissolve
-    #show Emiri at right with dissolve at right - Smile
+    #hide President
+    show Kimidori Smile Flip at right #Open mouth
+    with dissolve
+    show Kyon Neutral3 Flip
     "Emiri smiled awkwardly and set her pen down. \"Currently, everything here is within the technical limitations of the Student Council's jurisdiction,\" she explained. \"I do not plan to usurp the president; I'm merely a secretary.\""
-    show Kyon Ser2
-    #show Emiri - Smile, mouth closed
+    nvl clear
+    show Kyon Ser2 Flip
+    show Kimidori Smile Flip
     "\"I really have no patience for intrigue, just now. I'm in the middle of an investigation that I'm honestly ashamed to find out you're doing nothing about,\" he said pointedly, staring at Emiri."
     nvl clear
-    show Kyon Ser1
-    #show Emiri - Confused
+    show Kyon Ser1 Flip
+    show Kimidori Confused Flip
     "Emiri looked confused and shook her head. \"I'm sorry, I'm afraid I don't understand....\""
-    #hide Emiri with dissolve
-    #show President with dissolve at right - Neutral with frown
+    hide Kimidori
+    #show President at right - Neutral with frown
+    with dissolve
     "\"This attitude doesn't become you,\" the president added with a frown at Kyon. \"My job is to keep Suzumiya-kun in line, not {i}you{/i}. Koizumi-kun, what's this all about?\""
     nvl clear
     show Koizumi Crossed Smile3
@@ -895,48 +900,51 @@ label HAB1:
     "\"Really?\" the president asked, raising an eyebrow. "
     #show President - Annoyed
     extend "\"Well, in that case,\" he asked sardonically, turning his attention back to Kyon, \"what's the plan?\""
-    show Kyon Neutral2
+    show Kyon Neutral2 Flip
     #show President - Annoyed, mouth closed
     "\"Let's start with how much trouble I'm in for protecting Kanae-chan from that pervert,\" Kyon suggested."
     nvl clear
-    show Kyon Neutral3
+    show Kyon Neutral3 Flip
     #show President - Neutral
     "\"Technically none,\" the president admitted. \"It's a behavior issue, but all accounts indicate you in self defense, or in defense of a classmate. Ryuguu-san is already being expelled just on the grounds of bringing a weapon into the school and assaulting fellow students ..."
+    nvl clear
     "though he was taken away in an ambulance. In any event, because of that, orders were handed down from the principal to discuss your behavior.... I have the authority to demand a meeting with an advisor for you — several if I believe that your behavior is likely to become problematic. Okabe-sensei is your advisor, right?\""
     nvl clear
-    show Kyon Unhap1
+    show Kyon Unhap1 Flip
     #show President - Neutral with frown, mouth closed
     "Kyon grimaced. {nw}"
-    show Kyon Sigh1
+    show Kyon Sigh1 Flip
     extend "\"Don't get me wrong, he's a good guy, but I'm not exactly eager for that,\" he said. \"My family?\""
-    show Kyon Sigh3
+    show Kyon Sigh3 Flip
     #show President - Neutral, closed eyes
     "\"Already notified,\" the president said, almost apologetically. \"The administrative staff did that first thing.\""
     nvl clear
-    show Kyon Sigh1
+    show Kyon Sigh1 Flip
     #show President - Neutral, open eyes, closed mouth
     "\"Figured. Alright. So, I'm going to tell you right now, when this is over, you're actually going to thank me for what I\ndid today, and what's going to happen in the coming days.\" {nw}"
-    #hide President with dissolve
-    #show Emiri with dissolve at right - Neutral
-    show Kyon Ser2
+    #hide President
+    show Kimidori Neutral Flip at right
+    with dissolve
+    show Kyon Ser2 Flip
     extend "Turning his full attention to Emiri, he added, \"Seeing as I'm not up for intrigue at the moment, can you cut to the chase and say {i}why{/i} you've pulled the strings you have to arrange this?\""
     nvl clear
-    show Kyon Ser1
-    #show Emiri - Sigh, eyes closed
+    show Kyon Ser1 Flip
+    show Kimidori Sigh Flip
     "Emiri sighed, shifting her shoulders uncomfortably. \"You are becoming a bit troublesome,\" she allowed, shaking her head. "
-    #show Emiri - Unhappy
+    show Kimidori Unhap Flip #open mouth
     extend "\"I wanted to relate to you in clear terms that all else aside, the entity has not deviated from their chosen course of action.\""
-    show Kyon Sigh2
+    show Kyon Sigh2 Flip
     "\"That's a real pity,\" Kyon sighed. \"I didn't want us to be enemies.\""
     nvl clear
-    show Kyon Sigh4
-    #show Emiri - Neutral
+    show Kyon Sigh4 Flip
+    show Kimidori Neutral Flip
     "\"Well, you made your decision,\" Emiri said with an apologetic shrug. \"I, personally, mean you no harm. My role has naturally changed, as I am denied administrative access over Nagato Yuki. For the time being, despite our differences concerning this issue at large, I wish to remain as neutral as possible to function as negotiator between yourselves and the entity."
-    "Until such time as you inform me otherwise, I will assume that you continue to maintain your stance. However ... should things change and you decide to side with us, the entity also holds no enmity against you.\""
     nvl clear
-    #show Emiri - Neutral, closed mouth
+    "Until such time as you inform me otherwise, I will assume that you continue to maintain your stance. However ... should things change and you decide to side with us, the entity also holds no enmity against you.\""
+    show Kimidori Neutral Flip
     "The student council president blinked and looked at his secretary sidelong, obviously very confused."
-    show Kyon Ser2
+    nvl clear
+    show Kyon Ser2 Flip
     "\"I don't really believe that last part, but it's nice of you to say.\" After a breath, Kyon warned in a low voice, \"I just want to point out, though, that a challenge against any one of us is a challenge against {i}all{/i} of us, so even the entity may have bitten off more than it can chew.\""
     nvl clear
     stop music fadeout 1
@@ -945,11 +953,11 @@ label HAB1:
     hide Yuki
     hide Mikuru
     hide Koizumi
-    show Kyon Smile2 at left
+    show Kyon Smile2 Flip at left
+    hide Kimidori
+    #show President at right - Neutral, mouth closed
     with dissolve
     show Haruhi Hips Ang1 at center with moveinleft
-    #hide Emiri with dissolve
-    #show President with dissolve at right - Neutral, mouth closed
     "Before anyone could respond, the door crashed open with a reverberating smash, Haruhi stomping in and taking point in front of Kyon, shooting a dark glare at the president. \"Trying to pick us apart by calling out my underlings when I'm not around, eh?\" she challenged, bristling with fury. \"Well, you've got a lot to learn! A challenge against one of us is a challenge against {i}all{/i} of us!\""
     nvl clear
     show Haruhi Hips Ang2
@@ -959,21 +967,29 @@ label HAB1:
     nvl clear
     show Haruhi Hips Ang4
     #show President - Annoyed, mouth closed (with Scary Shiny Glasses, if possible)
-    "For his part, the bespectacled boy gave her a cool look, pushing on the bridge of his glasses with two fingers, flashing bright reflective light off them perfectly into Haruhi's eyes as he adjusted the lenses. He instantly re-assumed his role in Haruhi's presence, his expression gleaming with cold malice. The chief of the SOS Brigade didn't flinch, her angry smile only growing wider."
+    "For his part, the bespectacled boy gave her a cool look, pushing on the bridge of his glasses with two fingers, flashing bright reflective light off them perfectly into Haruhi's eyes as he adjusted the lenses."
     nvl clear
+    "He instantly re-assumed his role in Haruhi's presence, his expression gleaming with cold malice. The chief of the SOS Brigade didn't flinch, her angry smile only growing wider."
     show Haruhi Hips Ang3
-    "\"Even using underhanded tactics like calling my vice commander in during {i}classes{/i}?\" She paced back and forth shaking her head sadly. \"I thought you were a rival, maybe someday even an equal, but you're just a sad little man who hides behind whatever political tricks he can to cause trouble for people he doesn't like personally! Trying to make things difficult for Kyon when he defended a fellow student from a crazed pervert?! Don't make me think that Kitago is a school unworthy of its reputation!\""
+    "\"Even using underhanded tactics like calling my vice commander in during {i}classes{/i}?\" She paced back and forth shaking her head sadly."
+    nvl clear
+    "\"I thought you were a rival, maybe someday even an equal, but you're just a sad little man who hides behind whatever political tricks he can to cause trouble for people he doesn't like personally! Trying to make things difficult for Kyon when he defended a fellow student from a crazed pervert?! Don't make me think that Kitago is a school unworthy of its reputation!\""
     show Haruhi Hips Ang4
     nvl clear
     #show President - Angry, narrow eyes
-    "\"You overreact,\" the president said in a frosty tone. \"Marching in with your pompous attitude and blatant disregard for policy.... I invite you to check every step of the proceedings of this inquiry; you'll find that each and every one was in complete accordance with official guidelines and policies! The only breach here is that Kyon-kun was summoned alone. There was no request for Koizumi-kun, Nagato-kun, Asahina-kun, or yourself to be here."
+    "\"You overreact,\" the president said in a frosty tone. \"Marching in with your pompous attitude and blatant disregard for policy.... I invite you to check every step of the proceedings of this inquiry; you'll find that each and every one was in complete accordance with official guidelines and policies!"
     nvl clear
+    "\"The only breach here is that Kyon-kun was summoned alone. There was no request for Koizumi-kun, Nagato-kun, Asahina-kun, or yourself to be here."
     #show President - Angry, wider mouth
-    "\"Really, storming your way into an official meeting that doesn't involve you personally? This matter has absolutely nothing to do with your so-called club, that unofficial organization that I refuse to acknowledge! This is a personal matter between the student council and a single student. Your show of force is both unseemly and needlessly exaggerated.\""
+    "\"Really, storming your way into an official meeting that doesn't involve you personally?"
+    nvl clear
+    "\"This matter has absolutely nothing to do with your so-called club, that unofficial organization that I refuse to acknowledge! This is a personal matter between the student council and a single student. Your show of force is both unseemly and needlessly exaggerated.\""
     nvl clear
     show Haruhi Hips Ang1
     #show President - Angry, closed mouth
-    "\"Ooh!\" Haruhi exclaimed, standing still to stomp one foot on the floor and shoot a murderous glare at the president. \"Nice try,\" she retorted with a sneer, \"but if it smells like a load of crap, looks like a load of crap, and acts like a load of crap ... then it's a {i}load of crap{/i}! One of my brigade members was attacked by a crazed student! Another of my brigade members did his civic duty not only as a member of the brigade you don't acknowledge, but as a {i}citizen{/i}! An upstanding {i}student{/i} of this school!"
+    "\"Ooh!\" Haruhi exclaimed, standing still to stomp one foot on the floor and shoot a murderous glare at the president. \"Nice try,\" she retorted with a sneer, \"but if it smells like a load of crap, looks like a load of crap, and acts like a load of crap ... then it's a {i}load of crap{/i}!"
+    nvl clear
+    "\"One of my brigade members was attacked by a crazed student! Another of my brigade members did his civic duty not only as a member of the brigade you don't acknowledge, but as a {i}citizen{/i}! An upstanding {i}student{/i} of this school!"
     nvl clear
     show Haruhi Hips Ang3
     "\"You're all high-and-mighty behind your desk, proud of the fact that you get to pick on my crew just because you don't like them! What about all the other students who just {i}watched{/i} a crazed upperclassman with a {i}knife{/i} haul away a defenseless first year student? Not one of {i}them{/i} is worthy of reprimand?\""
