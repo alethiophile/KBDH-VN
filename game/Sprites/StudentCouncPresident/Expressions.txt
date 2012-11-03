@@ -1,0 +1,19 @@
+Student Council President:
+Irritated with frown, mouth open
+Irritated with frown, mouth closed
+Neutral with frown, mouth open
+Neutral with frown, mouth closed
+Surprise, mild version, mouth open
+Annoyed, mouth open
+Annoyed, mouth closed
+Neutral, mouth open
+Neutral, mouth closed
+Neutral with frown, mouth closed
+Neutral, closed eyes, open mouth
+Neutral, open eyes, closed mouth
+Annoyed, mouth closed (with Scary Shiny Glasses, if possible)
+Angry, narrow eyes
+Angry, wider mouth
+Angry, closed mouth
+Angry, tightly closed mouth (with Scary Shiny Glasses, if possible)
+Angry, teeth clenched

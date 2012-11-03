@@ -1037,9 +1037,29 @@ init:
     image Tsuruya Wave Hap4 = "Sprites/Tsuruya/TsuruyaWaveHappy4.png"
     image Tsuruya Wave Hap5 = "Sprites/Tsuruya/TsuruyaWaveHappy5.png"
     image Tsuruya Wave Hap6 = "Sprites/Tsuruya/TsuruyaWaveHappy6.png"
+    image Tsuruya Wave Hap7 = "Sprites/Tsuruya/TsuruyaWaveHappy7.png"
     image Tsuruya Wave Quest1 = "Sprites/Tsuruya/TsuruyaWaveQuestion1.png"
     image Tsuruya Wave Smile1 = "Sprites/Tsuruya/TsuruyaWaveSmile1.png"
     image Tsuruya Wave Smile2 = "Sprites/Tsuruya/TsuruyaWaveSmile2.png"
+    image Tsuruya Wave Sigh1 = "Sprites/Tsuruya/TsuruyaWaveSigh1.png"
+    image Tsuruya Wave Ser1 = "Sprites/Tsuruya/TsuruyaWaveSerious1.png"
+    image Tsuruya Wave Ser2 = "Sprites/Tsuruya/TsuruyaWaveSerious2.png"
+    
+    image Tsuruya Kimono Grin1 = "Sprites/Tsuruya/TsuruyaKimonoGrin1.png"
+    image Tsuruya Kimono Grin2 = "Sprites/Tsuruya/TsuruyaKimonoGrin2.png"
+    image Tsuruya Kimono Hap1 = "Sprites/Tsuruya/TsuruyaKimonoHappy1.png"
+    image Tsuruya Kimono Hap2 = "Sprites/Tsuruya/TsuruyaKimonoHappy2.png"
+    image Tsuruya Kimono Hap3 = "Sprites/Tsuruya/TsuruyaKimonoHappy3.png"
+    image Tsuruya Kimono Hap4 = "Sprites/Tsuruya/TsuruyaKimonoHappy4.png"
+    image Tsuruya Kimono Hap5 = "Sprites/Tsuruya/TsuruyaKimonoHappy5.png"
+    image Tsuruya Kimono Hap6 = "Sprites/Tsuruya/TsuruyaKimonoHappy6.png"
+    image Tsuruya Kimono Hap7 = "Sprites/Tsuruya/TsuruyaKimonoHappy7.png"
+    image Tsuruya Kimono Quest1 = "Sprites/Tsuruya/TsuruyaKimonoQuestion1.png"
+    image Tsuruya Kimono Smile1 = "Sprites/Tsuruya/TsuruyaKimonoSmile1.png"
+    image Tsuruya Kimono Smile2 = "Sprites/Tsuruya/TsuruyaKimonoSmile2.png"
+    image Tsuruya Kimono Sigh1 = "Sprites/Tsuruya/TsuruyaKimonoSigh1.png"
+    image Tsuruya Kimono Ser1 = "Sprites/Tsuruya/TsuruyaKimonoSerious1.png"
+    image Tsuruya Kimono Ser2 = "Sprites/Tsuruya/TsuruyaKimonoSerious2.png"
     
     image Tsuruya Laugh Ang1  = "Sprites/Tsuruya/TsuruyaLaughAngry1.png"
     image Tsuruya Laugh Ang2  = "Sprites/Tsuruya/TsuruyaLaughAngry2.png"
@@ -1058,7 +1078,7 @@ init:
     image Tsuruya Laugh Casual Pain3 = "Sprites/Tsuruya/TsuruyaLaughCasualPain3.png"
     image Tsuruya Laugh Casual Pain4 = "Sprites/Tsuruya/TsuruyaLaughCasualPain4.png"
     image Tsuruya Laugh Casual Sad1 = "Sprites/Tsuruya/TsuruyaLaughCasualSad1.png"
-    
+   
     image Tsweat = "Sprites/Tsuruya/Tsweat.png"
     image Tsweat Casual = "Sprites/Tsuruya/TsweatCasual.png"
     
@@ -1442,6 +1462,20 @@ init:
     image Ryo Band Attack1 Flip = im.Flip("Sprites/Ryo/RyoBandAttack1.png", horizontal=True)
     image Ryo Band Attack2 Flip = im.Flip("Sprites/Ryo/RyoBandAttack2.png", horizontal=True)
         
+#Kimidori Sprites
+    image Kimidori Smile = "Sprites/Kimidori/KimidoriSmile.png"
+    image Kimidori Unhap = "Sprites/Kimidori/KimidoriUnhappy.png"
+    image Kimidori Sigh = "Sprites/Kimidori/KimidoriSigh.png"
+    image Kimidori Neutral = "Sprites/Kimidori/KimidoriNeutral.png"
+    image Kimidori Confused = "Sprites/Kimidori/KimidoriConfused.png"
+    
+    #Image Flips
+    image Kimidori Smile Flip= im.Flip("Sprites/Kimidori/KimidoriSmile.png", horizontal=True)
+    image Kimidori Unhap Flip = im.Flip("Sprites/Kimidori/KimidoriUnhappy.png", horizontal=True)
+    image Kimidori Sigh Flip = im.Flip("Sprites/Kimidori/KimidoriSigh.png", horizontal=True)
+    image Kimidori Neutral Flip = im.Flip("Sprites/Kimidori/KimidoriNeutral.png", horizontal=True)
+    image Kimidori Confused Flip = im.Flip("Sprites/Kimidori/KimidoriConfused.png", horizontal=True)
+    
 #Thug Sprites
     image ThugHead 1 = "Sprites/Thug/ThugHead1.png"
     image ThugBody 1 = "Sprites/Thug/ThugBody1.png"
