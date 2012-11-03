@@ -66,11 +66,11 @@ label SF3:
     show Haruhi CS Pout1
     show Kyon CS Sigh4
     "He raised an eyebrow at her and said nothing before he shrugged, leading the way into the school building." 
+    nvl clear
     scene bg SchoolEntranceLeft CS
     show Kyon CS Neutral3 at right
     show Haruhi CS Neutral1 at TenthLeft
     with fade
-    nvl clear
     "He moved to the same locked door he had smashed the window of last time, but she stopped him with a shake of her head. Didn't he understand? This was the world she was constructing ... not even meaning to ... and he'd gone and told her what she was, here." 
     show Haruhi CS Neutral2
     "\"I have the keys,\" she said, willing them to appear in her skirt pocket."
@@ -87,20 +87,20 @@ label SF3:
         xalign 0.7 yalign 1.0
     with move   
     "Fighting her own hesitation down, she took his hand in her own, and they walked together to the club room."
+    nvl clear
     scene bg ClubHallLeft CS
     show Kyon CS Smile4:
         xalign 0.7 yalign 1.0
     show Haruhi CS Smile1:
         xalign 0.3 yalign 1.0    
     with fade    
-    nvl clear
     "\"You can take my arm,\" he suggested, just like the last time they had been in this strange space. \"It makes for a better mood.\""
     play sound "SE/dooropenfast.wav"
+    nvl clear
     scene bg ClubroomFullNight CS
     show Haruhi CS Neutral1 at TenthLeft
     show Kyon CS Neutral3 at right
     with fade
-    nvl clear
     "She shook her head at that, then unlocked the door, wondering why she had bothered with keys ... she could just have willed the door open, after all."
     play sound "SE/lightswitch.mp3"
     scene bg ClubroomFullNight
@@ -377,12 +377,12 @@ label SF3:
     scene bg Kiss with slowdissolve
     "She let her eyes drift shut as her head tilted back and her lips pursed, the last thought through her mind as everything turned into light that he would probably notice the small change she had made in him, as well.... But he probably wouldn't mind too much."
     nvl clear
-    stop music fadeout 12
+    # stop music fadeout 24
     $ _window = False
     $ renpy.pause(.5, hard=True)
 label test2:
-    call eyecatch_generic("", "", 8, 5, "#fff", "#000")
-    scene white
+    # call eyecatch_generic("", "", 8, 5, "#fff", "#000")
+    # scene white
     
     call eyecatch_fancy("", "", 8, "white") from SF3_sc001
 label Vol02_start:    
@@ -561,15 +561,19 @@ label Vol02_start:
     play sound "SE/impact.mp3"
     "She playfully punched him in the shoulder, though he was surprised that it didn't sting in the slightest, even though he felt it. \"What, do you think that just because you're getting your homework done, now, I've turned stupid on you? Or weak? You know, if you had the chutzpa for it, you could have formed the SOS Brigade and I would have followed....\""
     nvl clear
-    scene bg stairwell2 with fade:
+    $ _window = True
+    scene bg stairwell2 with wiperight:
         size (800,600)
+    $ _window = False
     show Kyon Smile3 at right
     "He glanced at her sidelong as they stepped into the stairwell. \"Really?\" he asked, raising one eyebrow. \"I find it hard to imagine....\""
     show Haruhi Grin2 at TenthLeft
     show Kyon Smile4 
     "\"That's because you're laaaazy,\" she said, drawing out the sound and sticking her tongue out at him. \"If you had actually made the club instead of just giving me the idea.... But that's also why you're not an idiot, even if you do dumb things sometimes.\""
     nvl clear
-    scene bg hallway with fade
+    $ _window = True
+    scene bg hallway with wipeup
+    $ _window = False
     show Kyon Smile7 at right
     "\"Sing on sweet angel;\" Kyon retorted with a roll of his eyes, \"mine ears ache for thy faint praise; damning though it be.\""
     show Haruhi Grin1 at TenthLeft
@@ -586,8 +590,10 @@ label Vol02_start:
     play sound "SE/dooropenfast.wav"
     "\"That's exactly what I'm saying!\" Haruhi protested, stomping one foot on the floor as he slid open the door to the classroom. \"You're {i}lazy{/i}.\""
     nvl clear
-    scene bg classroom with fade:
+    $ _window = True
+    scene bg classroom with wiperight:
        size (800,600)
+    $ _window = False
     "She fell silent at the sight of the classroom, all other students already seated, glancing over their shoulders at the pair. Everyone quickly looked away, though at a glance, Okabe-sensei hadn't arrived yet either. Shrugging, Kyon closed the door after Haruhi stepped through and went to his desk."
     "\"Anyway,\" Haruhi continued in a semi-hushed tone, eyeing the other students in the room, \"what's going on, here?\""
     nvl clear
@@ -597,18 +603,19 @@ label Vol02_start:
     nvl clear
     stop music fadeout 3
     
+    play sound "SE/WestminsterChimeShort.mp3"
     call eyecatch_fancy("Thursday, April 21") from SF3_sc004
 label _Test:    
     scene bg classroom with fade:
        size (800,600)
-    play sound "SE/WestminsterChimeShort.mp3"
-    pause 4
+    # play sound "SE/WestminsterChimeShort.mp3"
+    # pause 4
     queue music "Music/Yuuutsu.mp3"
     "After the first period chime rang, Haruhi leaned back in her seat, sticking her feet out straight off the floor to stretch her calf muscles, and extended her arms over her head, balancing precariously. She felt something in her lower back pop into place and smiled slightly, turning her head to Kyon as she leaned forward, her toes touching the floor once more. Before she could speak, she saw Sakanaka rise from her seat two desks to the right and pad cautiously toward the door, beckoning Haruhi to follow."
     "After only a moment of consideration toward Kyon, who seemed to be behaving by working on his math homework, she tapped his shoulder and handed him the container of leftovers." 
     "\"Keep up the good work, subordinate,\" she encouraged him, climbing to her feet and striding into the hallway to see what Sakanaka wanted."
     nvl clear
-    scene bg hallway with fade
+    scene bg hallway with wiperight
     show Sakanaka Ser1 at TenthLeft
     show Haruhi Hap1 Flip at TenthRight
     with dissolve
@@ -683,7 +690,7 @@ label _Test:
     show Haruhi Hap1 Flip
     "\"No trouble at all,\" Haruhi returned, nodding at the other girl. \"Thanks for the update anyway. It's good to know where the brigade stands in the scheme of things....\" She glanced down the hallway, where their next teacher was approaching. \"Well, maybe we can chat later; I want to give Kyon a few choice words before class.\""
     nvl clear
-    scene bg classroom with fade:
+    scene bg classroom with wiperight:
        size (800,600)
     "She hurried back in and took her seat, unsurprised to see Kunikida and Taniguchi shoulder-to-shoulder at the side of Kyon's desk. Watching quietly, she caught the tail end of whatever conversation they were having, Taniguchi shooting her a nervous look before saying, \"Anyway, Kyon ... I'm just saying you should watch yourself.\""
     "Kunikida gave a matching solemn nod with his taller, more perverted counterpart, then both boys moved back to their own desks. Kyon shook his head, watching them leave, then hurriedly shoveled the last few bites of leftovers into his mouth as the teacher strode into the classroom. While the teacher was setting up his notes, and the other students' final murmurs began to die down, she whispered, \"Kyon!\""

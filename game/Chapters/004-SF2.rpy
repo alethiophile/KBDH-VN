@@ -163,7 +163,9 @@ label SF2:
     "\"I guess I did say that,\" he murmured, mildly disquieted. \"I must have perfected sleep-learning, or something.\""
     show Kyon Worry1
     nvl clear 
+    show YBook at TopRight_RightScreen behind Mikuru with dissolve
     "\"You will improve with practice,\" Yuki remarked, flipping to the next page."
+    hide YBook with dissolve
     show Kyon Neutral2
     "\"Anyway,\" he announced, rising to his feet, \"I'm still really hungry, so I think I'll see if there's anything left at the cafeteria.\""
     nvl clear

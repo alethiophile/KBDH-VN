@@ -84,8 +84,8 @@ label Fi1:
     "\"...understood,\" Nagato allowed, the tiniest, nearly invisible hints of a smile touching the corners of her mouth before reality exploded away yet again."
     show Yuki Side1
     nvl clear
-    stop music fadeout 3
     
+    stop music fadeout 3
     call eyecatch_fancy("Thursday, April 21", "Friday, April 22") from Fi1_sc001
     
     scene bg TsuruyaFutonDay with fade
@@ -118,11 +118,13 @@ label Fi1:
     "\"Onwards to breakfast!\" she declared, seizing his wrist and hauling him through the doorway, into the rest of the house."
     nvl clear
     
+    stop music fadeout 3
+    call eyecatch_fancy("Friday, April 22", "Friday, April 22") from Fi1_sc002
+    
     scene bg TsuruyaKitchen with fade
-    stop music fadeout 1
     queue music "Music/MegassaKoukishin.mp3"
     show Tsuruya Hap1 at right 
-    show Kyon Neutral3 at left 
+    show Kyon Neutral3 at TenthLeft 
     with dissolve
     "After eating enough sumptuous fare to feel like a total glutton, Kyon was somewhat surprised to see that Tsuruya had eaten just as eagerly. \"Ah, good, good,\" she decided, leaning back and patting her stomach. \"Mmm, school isn't for a bit, did you want to walk the grounds with me before it starts?\""
     nvl clear
@@ -134,7 +136,7 @@ label Fi1:
     show Kyon Neutral2 
     "\"Shouldn't be a problem,\" he agreed after mulling it over. She beamed him a smile and they left her estate together on foot after she had summoned a pair of bentos as though by magic, snapping her fingers and having a maid scurry into the room to offer them."
     scene bg TsuruyaHouseDay with fade
-    show Kyon Puzzle1 at left with dissolve
+    show Kyon Puzzle1 at TenthLeft with dissolve
     nvl clear
     "\"You know, Tsuruya-kun,\" he remarked with a sidelong glance at her, \"I'm worried Haruhi might get the wrong idea if she hears that I stayed with you last night.\""
     show Tsuruya Laugh1 at right with dissolve
@@ -148,7 +150,7 @@ label Fi1:
     "\"Ooh?\" Tsuruya mused, blinking quickly, her cheeks taking on a pink tinge. \"What's that, Kyon-kun?\""
     nvl clear
     scene bg TownLeft with fade
-    show Kyon Puzzle1 at left
+    show Kyon Puzzle1 at TenthLeft
     show Tsuruya Quest1 at right
     with dissolve
     stop music fadeout 1
@@ -207,8 +209,10 @@ label Fi1:
     "\"Er, that's not ... quite it,\" he said, giving a weak smile of his own. \"But, I feel confident that I'll be much better at it the next time I have to fight.\""
     nvl clear
     
+    stop music fadeout 3
+    call eyecatch_fancy("Friday, April 22", "Friday, April 22") from Fi1_sc003
+    
     scene bg SchoolEntranceLeft with fade
-    stop music fadeout 1
     queue music "Music/Itsumo(Movie).mp3"
     show Haruhi Crossed Ang2 at right with dissolve
     "\"You're late,\" Haruhi growled, her expression dark. \"I've been waiting for you for five minutes already!\""
@@ -274,7 +278,7 @@ label Fi1:
     nvl clear
     
     scene bg ClubHallLeft with fade
-    show Haruhi Hap2 at left with dissolve
+    show Haruhi Hap2 at TenthLeft with dissolve
     "\"Anyway,\" she said, walking by his side on the way to the club room, \"what happened with Tsuruya-san yesterday? And when did she become 'Tsuruya-kun' to you?\""
     nvl clear
     show Kyon Smile7 at right with dissolve
@@ -310,7 +314,7 @@ label Fi1:
     
     scene bg ClubroomRightDay with fade
     show Kyon Sigh2 at right 
-    show Haruhi Hap4 at left 
+    show Haruhi Hap4 at TenthLeft
     with dissolve
     "She nodded, then unlocked the door to the clubroom, swinging it open and gesturing him in. After she had set her bag on the table, she glanced back and frowned. \"I forgot to close the door,\" she noted, \"take care of that, huh?\""
     nvl clear
@@ -357,8 +361,8 @@ label Fi1:
     "\"Don't listen to her!\" Kyon pleaded, desperately grabbing Haruhi's wrist as it thrust towards the note, stopped so close her fingertips could touch the edge of the envelope. \"Help me, Asahina-san! Call in the J.S.D.F., or the police! I'm being assaulted! Get me pepper spray, a stun gun — {i}anything{/i}!\""
     nvl clear
     show Haruhi Point Scold2
-    "\"Come here!\" Haruhi insisted, struggling, but unable to drive her right hand deeper into Kyon's pocket. Her left hand was flat against the floor, providing her leverage and balance. Kyon grunted and managed to roll to one side, able to bring both hands to bear against Haruhi, leaving their noses centimeters apart, her hand slowly being forced from its goal. {nw}"
-    show Mikuru Cower Nervous2 at TenthRight
+    "\"Come here!\" Haruhi insisted, struggling, but unable to drive her right hand deeper into Kyon's pocket. Her left hand was flat against the floor, providing her leverage and balance. Kyon grunted and managed to roll to one side, able to bring both hands to bear against Haruhi, leaving their noses centimeters apart, her hand slowly being forced from its goal."
+    show Mikuru Cower Nervous2 at TenthRight with fast_move
     nvl clear
     "With tiny, mincing steps, as though she had been ordered into a bonfire, Mikuru crept closer, flinching with each change in the struggle."
     "\"Don't ... let her ... get it,\" Kyon grated out, Haruhi's right wrist captured in his left hand. His right hand was on her shoulder, slowly lifting her up off him."
@@ -442,9 +446,10 @@ label Fi1:
     nvl clear
     show Kyon Sigh2
     "\"Yeah, yeah,\" he groused, rising to stand and helping Mikuru to her feet before striding into the hallway. \"Don't worry; I've got the box ... as long as it wasn't crushed earlier.\""
-    hide Kyon
+    hide Kyon with moveoutleft
     show Haruhi Unhap3
     play sound "SE/doorclose.mp3"
+    nvl clear
     "\"Quick!\" she demanded again, as he closed the door. \"Man,\" she sighed, shaking her head and turning to Mikuru. \"That guy!\""
     nvl clear
     show Mikuru Sad2
@@ -468,8 +473,10 @@ label Fi1:
     "\"Well...\" Mikuru began."
     nvl clear
     
+    stop music fadeout 3
+    call eyecatch_fancy("Friday, April 22", "Friday, April 22") from Fi1_sc004
+    
     scene bg hallway with fade
-    stop music fadeout 1
     queue music "Music/Nanika.mp3"
     "Kyon's 'usual spot' for reading notes found in the shoe locker was the boy's bathroom — last stall. If Mikuru didn't remember leaving him the note, it was obviously the older Mikuru who had left it. And the box that he hadn't found the time to open. He was just contemplating opening it when his cell notified him of an incoming text: \"You meet with Mikuru yesterday at her train station after school. You owe me big time!\""
     nvl clear
@@ -536,6 +543,7 @@ label Fi1:
     extend "\"Okay, I'll give you something good to keep that secret....\" She trailed off with a giggle, closing in to plant another electrifying kiss on his lips. \"Now, take good care of that younger Mikuru~!\""
     nvl clear
     hide MKiss
+    scene bg Alley2Evening with fade
     show Kyon Neutral5 Flip
     "\"Bwah,\" he managed, recovering his senses after she had gone — again. Some day, he resolved, he was going to point out that they hadn't had whatever first kiss she thought she was following up on."
     "It was a low priority item, but some day."
@@ -576,15 +584,19 @@ label Fi1:
     show Kyon Sigh2
     "\"Yep,\" he agreed, hanging up and sighing before shutting off his phone."
     #Mikuru is apparently in her uniform right now, according to chapter 9.
-    show Mikuru Quest1 at right
+    show Mikuru Quest1 at right with moveinright
     "\"Kyon-kun?\" a familiar voice from behind him asked in surprise."
     nvl clear
-    scene almostblack two with fade
+    
+    stop music fadeout 3
+    call eyecatch_fancy("Thursday, April 21", "Thursday, April 21") from Fi1_sc005
+
+    # scene almostblack two with fade
     scene bg TrainStation with fade
-    stop music fadeout 1
+    # stop music fadeout 1
     queue music "Music/TenderScenery.mp3"
+    show Mikuru Quest1 at TenthRight
     show Kyon Sigh2 Flip at left
-    show Mikuru Quest1 at right
     with dissolve
     "Mikuru stared in surprise, not expecting to see Kyon there when she reached her train station. She smiled weakly, tilting her head to one side. \"Is something wrong?\" she asked in concern, looking closely at his face. \"I thought you were going to speak with your parents? And what's that mark on one cheek?\""
     show Kyon Neutral1 Flip
@@ -611,8 +623,8 @@ label Fi1:
     "He spread his arms in a shrug and grinned. \"If that's all you need, no problem,\" he assured her. \"I'd be glad to help you out. What are you looking for?\""
     nvl clear
     scene bg TownLeft with fade
-    show Kyon Smile3 Flip at TenthLeft
     show Mikuru Smile2 at center
+    show Kyon Smile3 Flip at TenthLeft
     with dissolve
     "She smiled softly and turned away, beckoning him to follow. He fell into step at her side with no hesitation, hands in his pockets casually. Trying to be a bit subtle about it, she looked at him sidelong. His uniform was nearly immaculate, as though he'd put it on and not even sat down for a day of school. Lately, he had seemed drained of energy, due to their recent late night training sessions with Nagato."
     nvl clear
@@ -647,7 +659,7 @@ label Fi1:
     "She shook her head again, giving him a smile before gesturing to a large storefront. The outside windows were filled with swaths of cloth, sewing supplies, and layouts of do-it-yourself clothing patterns. \"Um, I'd like to get some things from here.\""
     nvl clear
     scene bg FabricShop with fade
-    show Mikuru Neutral1 at center
+    show Mikuru Neutral1 at TenthRight
     show Kyon Neutral2 Flip at TenthLeft
     with dissolve
     "He raised an eyebrow, scanning around as they stepped inside. High shelves were covered with full bolts of cloth, and at a glance, he was the only remotely male figure in the entire store, aside from a mannequin in a heavy winter coat, obviously still up from the last sale, and overdue to be redressed or put into storage. \"Sure,\" he said, shrugging. \"This is stuff you know much better than I do, so I hope you don't mind if I just carry things for you?\""
@@ -718,7 +730,7 @@ label Fi1:
     nvl clear
     show Kyon Neutral2 Flip
     "\"Er, probably low blood sugar,\" he reasoned, nodding quickly. \"Best not to dwell on it.\""
-    show Mikuru Quest2
+    show Mikuru Neutral2
     "\"Perhaps you're right. Um, but I remember what you said, about ... making my own impressions in the world, and I wonder if it can really be done?\""
     nvl clear
     show Kyon Smile3 Flip
@@ -727,6 +739,9 @@ label Fi1:
     nvl clear
     "\"Well, even if you want to say it was me doing it, I never would have if you hadn't translated those instructions. Even though the initiative may have been provided by the future, without you, that event never could have happened!\""
     nvl clear
+    show Kyon Smile4 Flip
+    show Mikuru Quest1
+    # show Mikuru Sup2
     "Sometimes, she thought, his relative ignorance of the mechanics of temporal physics made him something of an idiot savant. She could think of twelve laws that refuted his explanation, but they were all smashed aside by the reality that as far as she could tell, he was {i}right{/i}."
     nvl clear
     "It should have been impossible for the events that she had participated in last December, too.... Though, that recollection became immediately hazy every time she tried to focus on anything except for Kyon's injuries. And those ... she did not like to focus on at all."
@@ -788,8 +803,8 @@ label Fi1:
     "\"Let's drop this off at my place,\" she said hesitantly."
     nvl clear
     scene bg MikuruRoom with fade
-    show Kyon Neutral3 at right 
-    show Mikuru Neutral1 at left 
+    show Kyon Neutral3 at TenthRight 
+    show Mikuru Neutral1 at TenthLeft 
     with dissolve 
     "He nodded and followed her the three blocks to her studio, a single-room apartment not far from the train station. After letting him in, he kicked off his shoes and unburdened himself in the corner she directed, before he took a look around, studying her temporary home. She felt embarrassed, even though everything was neat and orderly. Her futon was folded away, she didn't have a television, and the only furniture of note was her desk and a second-hand kotatsu."
     nvl clear
@@ -799,10 +814,12 @@ label Fi1:
     "Her resolve snapped, and she blurted out, \"Let me treat you to dinner to thank you!\""
     nvl clear
     
+    stop music fadeout 3
+    call eyecatch_fancy("Thursday, April 21", "Friday, April 22") from Fi1_sc006
+
     scene bg ClubroomRightDay with fade
-    stop music fadeout 1
-    show Mikuru Think Quest1 at right
-    show Haruhi Neutral1 at left 
+    show Mikuru Think Quest1 at TenthRight
+    show Haruhi Neutral1 at TenthLeft 
     with dissolve
     "\"Um.... After he dropped off the sewing machine, he went home to speak with his father,\" Mikuru said, nodding."
     show Haruhi Unhap1

@@ -315,12 +315,10 @@ label SF1:
     show Koizumi Think Grin2
     extend "\"Well,\" he said, \"it does concern the destruction of our world.\""
     nvl clear
-    $ renpy.layer_at_list([PanScene_OffCenterLToRight])
     show Kyon Ser3
     show Kanae Unhap3
     show Mikuru Maid Neutral2
     "\"Obviously, we're interested in preventing that,\" Kyon added. \"I'm hoping you're on the same page.\""
-    $ renpy.layer_at_list([PanScene_RightToOffCenterL])
     show Haruhi Crossed Tsun2
     show Koizumi Think Grin1
     "\"Of course I am; what do you take me for?\" Haruhi groused. {nw}"
@@ -487,7 +485,7 @@ label SF1:
     nvl clear
     stop music fadeout 3
     
-    call eyecatch_fancy("Monday, April 18","December 200X") from SF1_sc002
+    call eyecatch_fancy("Monday, April 18","?????") from SF1_sc002
     
     scene black
     play music "Music/Kankyou.mp3"
@@ -503,7 +501,7 @@ label SF1:
     nvl clear
     stop music fadeout 3
     
-    call eyecatch_fancy("December 200X","Monday, April 18") from SF1_sc003
+    call eyecatch_fancy("?????","Monday, April 18") from SF1_sc003
     
     scene bg ClubroomFullDay:
         xpos 0 ypos 0
@@ -674,13 +672,16 @@ label SF1:
     show Kanae Unhap2
     "\"Well, that's okay!\" Kanae said, slumping very slightly. \"I didn't really think it would be that easy....\""
     nvl clear
-    scene bg ClubroomFullDay:
-        xpos -800 ypos 0
-        linear 0.1 xpos 0 ypos 0
-    show Haruhi Crossed Ang1 at left
-    show Mikuru Maid Neutral1 at right
+
+    show Haruhi Crossed Ang1
+    show Mikuru Maid Neutral1
+
+    $ renpy.layer_at_list([PanScene_RightToLeft])
     "\"I'm trying not to get frustrated,\" Haruhi growled, flinging herself into her seat. \"What do we need to do?\""
-    show Haruhi Crossed Ang3
+    scene bg ClubroomFullDay:
+        xpos 0 ypos 0
+    show Haruhi Crossed Ang3 at left
+    show Mikuru Maid Neutral1 at right
     hide Mikuru with moveoutright
     show Mikuru Maid Neutral1 at HalfLeft
     show MTray Maid at HalfLeft
