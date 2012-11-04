@@ -1,9 +1,10 @@
 ﻿# K:BDH VN main script file; contains init code and code declarations.
 
 init:
-    image almostblack one = "#0008"
-    image almostblack two = "#000e"
-    
+    image almostblack one = "#0008"  #semitransparent foregrounds used in eyecatch.
+    image almostblack two = "#000e"  #do not use as background if you don't like checker patterns
+	#for a background, use simply "black", defined below as image black = "#000000".
+	
     image bg classroom = "Backgrounds/classroom.jpg"
     image bg hallway = "Backgrounds/hallway.png"
     image bg stairwell = "Backgrounds/stairwell.jpg"
