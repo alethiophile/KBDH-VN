@@ -3,8 +3,8 @@
 init:
     image almostblack one = "#0008"  #semitransparent foregrounds used in eyecatch.
     image almostblack two = "#000e"  #do not use as background if you don't like checker patterns
-	#for a background, use simply "black", defined below as image black = "#000000".
-	
+        #for a background, use simply "black", defined below as image black = "#000000".
+
     image bg classroom = "Backgrounds/classroom.jpg"
     image bg hallway = "Backgrounds/hallway.png"
     image bg stairwell = "Backgrounds/stairwell.jpg"
@@ -1321,6 +1321,10 @@ init:
     image Koizumi Crossed Casual Neutral2 = "Sprites/Koizumi/KoizumiCrossedCasualNeutral2.png"
     
     #Koizumi image flips
+    image Koizumi Shrug Sigh1 Flip = im.Flip("Sprites/Koizumi/KoizumiShrugSigh1.png", horizontal=True)
+    image Koizumi Shrug Smile1 Flip = im.Flip("Sprites/Koizumi/KoizumiShrugSmile1.png", horizontal=True)
+    
+    
     image Koizumi Crossed Hap1 Flip = im.Flip("Sprites/Koizumi/KoizumiCrossedHappy1.png", horizontal=True)
     image Koizumi Crossed Hap2 Flip = im.Flip("Sprites/Koizumi/KoizumiCrossedHappy2.png", horizontal=True)
     image Koizumi Crossed Ser1 Flip = im.Flip("Sprites/Koizumi/KoizumiCrossedSerious1.png", horizontal=True)
