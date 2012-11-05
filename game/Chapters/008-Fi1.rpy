@@ -93,7 +93,7 @@ label Fi1:
     "He woke again, head reeling with the 'extended' session. He didn't want to think how much longer in 'relative time' he'd spent in training with Nagato. If the average session was a 'short' single year...."
     "Blinking, he realized he was staring at the ceiling of another unfamiliar room ... though details began to trickle back into place. Last night, he'd taken a bath with Tsuruya, though the blood loss from his injury kept him from reacting embarrassingly ... except to get very light-headed. He'd tried his best not to stare at the girl, but she was totally unabashed, completely uncaring. True to her words, she had scrubbed his back in return without hesitation, and then carefully washed his hair so he wouldn't get any shampoo or soap in his wound."
     nvl clear
-    "After that, she'd led him to her room, where two futons had been set up side- by-side. He was wearing a light robe, one that matched Tsuruya's ... and evidently in the middle of the night at some point, she'd rolled over onto his futon and wrapped her arms around him. She slept with her hair done up in a pair of buns on either side of her head, probably so she wouldn't pull her hair when she shifted about."
+    "After that, she'd led him to her room, where two futons had been set up side-by-side. He was wearing a light robe, one that matched Tsuruya's ... and evidently in the middle of the night at some point, she'd rolled over onto his futon and wrapped her arms around him. She slept with her hair done up in a pair of buns on either side of her head, probably so she wouldn't pull her hair when she shifted about."
     nvl clear
     "As he stared at her in bewilderment, his eyes tracking down to where her robe was left open by her slumbering movements— He quickly looked away, fighting down a surge of panic. Okay, light-headed from blood loss and following his future self's orders was one thing ... but this ... {i}this{/i} was the kind of thing that would cause Haruhi to level most of the city, and that was probably before closed space or her powers came into the picture."
     nvl clear
@@ -119,7 +119,7 @@ label Fi1:
     nvl clear
     
     stop music fadeout 3
-    call eyecatch_fancy("Friday, April 22", "Friday, April 22") from Fi1_sc002
+    call eyecatch_fancy("Friday, April 22") from Fi1_sc002
     
     scene bg TsuruyaKitchen with fade
     queue music "Music/MegassaKoukishin.mp3"
@@ -128,32 +128,38 @@ label Fi1:
     with dissolve
     "After eating enough sumptuous fare to feel like a total glutton, Kyon was somewhat surprised to see that Tsuruya had eaten just as eagerly. \"Ah, good, good,\" she decided, leaning back and patting her stomach. \"Mmm, school isn't for a bit, did you want to walk the grounds with me before it starts?\""
     nvl clear
+    show Tsuruya Smile5 
     show Kyon Unhap1
     "He thought back to the flower viewing ... the Tsuruya estate did have some very nice trees; he could only imagine it took an army of gardeners to manage. \"Actually,\" he realized with a wince, \"I'm supposed to meet with Haruhi at the clubroom early — I need to study for a test today.\""
     show Tsuruya Hap5
     "\"Okies!\" she said brightly. \"I'll go with yous! Sound good, nyoro~?\""
     nvl clear
+    show Tsuruya Smile2
     show Kyon Neutral2 
     "\"Shouldn't be a problem,\" he agreed after mulling it over. She beamed him a smile and they left her estate together on foot after she had summoned a pair of bentos as though by magic, snapping her fingers and having a maid scurry into the room to offer them."
     scene bg TsuruyaHouseDay with fade
     show Kyon Puzzle1 at TenthLeft with dissolve
     nvl clear
     "\"You know, Tsuruya-kun,\" he remarked with a sidelong glance at her, \"I'm worried Haruhi might get the wrong idea if she hears that I stayed with you last night.\""
+    show Kyon Worry1
     show Tsuruya Laugh1 at right with dissolve
     "\"Ah, Haru-nyan's not going to mind,\" she replied cheerfully. \"You were a perfect gentleman, and I'll gladly tell her sos!\""
     nvl clear
+    show Tsuruya Smile4
     show Kyon Unhap1
     "\"Um,\" he managed, wincing. {nw}"
     show Kyon Neutral2 
     extend "\"Well, Haruhi aside, while we've got some relatively private time, do you mind if I ask you something?\""
+    show Kyon Neutral3
     show Tsuruya Quest1
     "\"Ooh?\" Tsuruya mused, blinking quickly, her cheeks taking on a pink tinge. \"What's that, Kyon-kun?\""
     nvl clear
-    scene bg TownLeft with fade
-    show Kyon Puzzle1 at TenthLeft
-    show Tsuruya Quest1 at right
-    with dissolve
     stop music fadeout 1
+    scene bg TownLeft with fade
+    show Kyon Neutral3 at TenthLeft
+    show Tsuruya Quest2 at right
+    with dissolve
+    show Kyon Puzzle1
     queue music "Music/MysteryTime.mp3"
     "\"Those yakuza saw us yesterday ... and they seem pretty mad about last Sunday. So, we're probably going to see more of them — and that's really going to hurt us.\" He shook his head. \"I'm not sure about myself, but Manabe said your name, too. Since we just left them all behind, he probably told them everything he knows about us.\""
     nvl clear
@@ -210,7 +216,7 @@ label Fi1:
     nvl clear
     
     stop music fadeout 3
-    call eyecatch_fancy("Friday, April 22", "Friday, April 22") from Fi1_sc003
+    call eyecatch_fancy("Friday, April 22") from Fi1_sc003
     
     scene bg SchoolEntranceLeft with fade
     queue music "Music/Itsumo(Movie).mp3"
@@ -474,7 +480,7 @@ label Fi1:
     nvl clear
     
     stop music fadeout 3
-    call eyecatch_fancy("Friday, April 22", "Friday, April 22") from Fi1_sc004
+    call eyecatch_fancy("Friday, April 22") from Fi1_sc004
     
     scene bg hallway with fade
     queue music "Music/Nanika.mp3"
@@ -589,11 +595,9 @@ label Fi1:
     nvl clear
     
     stop music fadeout 3
-    call eyecatch_fancy("Thursday, April 21", "Thursday, April 21") from Fi1_sc005
+    call eyecatch_fancy("Thursday, April 21") from Fi1_sc005
 
-    # scene almostblack two with fade
     scene bg TrainStation with fade
-    # stop music fadeout 1
     queue music "Music/TenderScenery.mp3"
     show Mikuru Quest1 at TenthRight
     show Kyon Sigh2 Flip at left
