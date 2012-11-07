@@ -7,6 +7,7 @@ init:
 
     image bg classroom = "Backgrounds/classroom.jpg"
     image bg hallway = "Backgrounds/hallway.png"
+    image bg hallwayFull = "Backgrounds/hallwayFull.png"
     image bg stairwell = "Backgrounds/stairwell.jpg"
     image bg stairwell2 = "Backgrounds/stairwell2.png"
     image bg stairwellbarrier = "Backgrounds/stairwellbarrier.jpg"

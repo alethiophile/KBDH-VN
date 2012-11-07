@@ -1,4 +1,4 @@
-#Sprites needed: Okabe, Yanagimoto, better Yamane sprites, Tanaka, and Hoshino.
+#Sprites needed: Okabe, Yanagimoto, better Yamane sprites, Tanaka, Hoshino, and the Tamaru brothers (Keiichi and Yutaka)
 
 
 label HAB4:
@@ -533,53 +533,111 @@ label HAB4:
     
     #end of easy bit
     
-    
+    scene bg hallwayFull with fade:
+            xpos 0 ypos 0
+    $ renpy.layer_at_list([PanScene_SetToRight])
+    stop music fadeout 1
+    #queue music
+    #show Yutaka at right_RightScreen
+    #show Keiichi at center_RightScreen #Keiichi Maebara will have to be "show Maebara" instead of "show Keiichi"
+    #show Kyon at right
+    #show Tsuruya at center
+    #show Yuki at left
+    show Koizumi Crossed Smile1 at left_RightScreen
+    #with dissolve
     "Before reaching the principal's office, the delinquent trio, escorted by an Organization teacher, found themselves confronted by a pair of police officers in standard dress. Koizumi gave a small sigh of relief at seeing the pair. If the Tamaru brothers were nearby, that probably meant Mori was already working on things to the best of her ability."
     nvl clear
+    #show Keiichi
     "\"Hello,\" Keiichi said, nodding at the group. Behind him, Yutaka checked his wristwatch and glanced around; the hallway was empty for the moment. The older of the pair produced a notepad from one pocket and made as if he were scribbling, but Koizumi knew it for an act. \"We don't have a whole lot of time. Koizumi-kun, what's the situation?\""
     nvl clear
+    $ renpy.layer_at_list([PanScene_RightToLeft])
+    #show Tsuruya
+    #show Kyon
     "Tsuruya made a surprised noise, leaning close to Kyon and staring between the uniformed men and Kyon. Yuki's gaze had drifted to Keiichi's notepad and stuck there. Kyon watched everything with a distant, thoughtful expression."
     nvl clear
+    $ renpy.layer_at_list([PanScene_LeftToRight])
+    #show Koizumi
     "\"Kyon-kun has uncovered a sinister plot. Evil actions were brought to light, and the school was saved. From a practical standpoint, however, Kyon-kun did hold a fellow student upside down out the window of a three story building and threaten to drop him until he confessed,\" Koizumi said quickly. \"For Suzumiya- san's stability, we need this resolved as quickly as possible, and ideally, without word of it getting back to Kyon-kun's mother.\""
     nvl clear
+    #show Keiichi
     "\"Alright,\" Keiichi said, frowning. \"We're just plainclothes officers, not detectives. Is there any evidence on this other student?\""
+    $ renpy.layer_at_list([PanScene_RightToLeft])
+    #show Kyon
     "\"Yamane Jun,\" Kyon supplied, nodding. \"Haruhi has some of the evidence, the rest is on the computer in Yamane's club room. He got a bit roughed up, but Nagato says there's no permanent damage, so he should be fine.\""
     nvl clear
+    $ renpy.layer_at_list([PanScene_LeftToRight])
+    #show Koizumi
     "\"Her definition of permanent might vary from ours,\" Koizumi noted, giving Kyon a pointed stare, which the delinquent ignored."
+    #show Keiichi
     "\"Okay. We'll take him into custody and have him brought in for questioning,\" Keiichi said, glancing at his partner. The younger officer nodded thoughtfully. \"Then we'll seize his computer for evidence and hand it over to a detective.\""
     nvl clear
+    $ renpy.layer_at_list([PanScene_RightToLeft])
+    #show Kyon
+    #show Yuki
     "\"Will that work, Nagato?\" Kyon asked, turning to look at the shorter girl. She slowly turned to face him and raised her gaze to stare into his eyes. Koizumi personally found her stare coldly unnerving; it never ceased to amaze him that Kyon seemed to be unfazed by it. After a moment of thought, she gave a single nod."
     nvl clear
+    $ renpy.layer_at_list([PanScene_LeftToRight])
+    #show Yutaka
     "\"In the meantime,\" Yutaka said, glancing at his watch again, \"Mori-san should be waiting at the gate. Kyon-kun, we highly suggest that you avoid school for the rest of the day.\""
+    $ renpy.layer_at_list([PanScene_RightToLeft])
+    #show Kyon
     "\"You're telling me to cut classes?\" Kyon asked, mildly surprised."
     nvl clear
+    $ renpy.layer_at_list([PanScene_LeftToRight])
+    #show Keiichi
     "\"The faculty hasn't met your family,\" Keiichi said pointedly. \"Mori-san stood in as your aunt.\""
+    $ renpy.layer_at_list([PanScene_RightToLeft])
+    #show Kyon
     "\"I'm not ditching Tsuruya-kun or Nagato,\" he said flatly."
     nvl clear
+    #show Tsuruya
     "\"Eh ... don't get what's going on here,\" Tsuruya finally chimed in, scratching the back of her head and giving an apologetic smile. \"But, don't look a gift horse in the mouth, right, Kyon-kun? You should go!\""
     nvl clear
+    #show Kyon
     "\"I'm not leaving without you,\" he said stubbornly, looking between Yuki and Tsuruya. \"And anyway, Haruhi's still here—\""
+    #show Yuki
     "\"I will go with you,\" Yuki said suddenly, lowering her gaze to look at nothing in particular."
+    #show Tsuruya
     "\"Likewise!\" Tsuruya agreed. \"Let's cut class and ... take care of that one last loose thread, right? You can send Haru-nyan a text!\""
     nvl clear
+    $ renpy.layer_at_list([PanScene_LeftToRight])
+    #show Koizumi
     "\"This would probably be for the best,\" Koizumi agreed, nodding. One of the school's supposed teachers, his friends, and two supposed police officers were all pointing to Kyon that he should run. Was he that devoted to Haruhi? Koizumi mentally smacked himself. Of course he was; that was a stupid question."
     nvl clear
+    $ renpy.layer_at_list([PanScene_RightToLeft])
+    #show Kyon
     "\"I'm not sure,\" Kyon said hesitantly."
     nvl clear
+    $ renpy.layer_at_list([PanScene_LeftToRight])
+    #show Koizumi
     "\"At this point, all you can do by staying here is saying something you shouldn't, or giving the faculty reason to pass judgment on you before Suzumiya-san can finish her defense of you,\" Koizumi said with a shrug. \"You don't have to text her; I can explain everything to her myself. Now, really, you should run while you can. I will take care of loose ends such as your schoolbags.\" He nodded at Yuki and Tsuruya. \"So, good luck, and hopefully we can meet tomorrow to discuss how things went.\""
     nvl clear
+    $ renpy.layer_at_list([PanScene_RightToLeft])
+    #show Kyon
     "\"Right,\" Kyon decided, nodding. \"Thanks, Koizumi. Good luck to you, too. And ... tell Haruhi I'm sorry about things working out like this, alright?\""
+    $ renpy.layer_at_list([PanScene_LeftToRight])
+    #show Koizumi
     "\"I will,\" he agreed."
     nvl clear
+    scene bg hallway with fade
+    #show Okabe at left
+    #show Keiichi at center
+    #show Koizumi at left
     "Taking a breath, Kyon glanced at Tsuruya, and then Yuki. Without a word, the trio broke into a run towards the shoe lockers. Just as they vanished from sight, Okabe rounded a corner, jogging back towards Koizumi and the other Organization plants."
     nvl clear
+    #show Okabe
     "\"Oh!\" the teacher said, surprised at the uniformed men. \"Where did the delinquents go?\""
+    #show Keiichi
     "\"In custody,\" Keiichi answered, shaking his head slightly. \"Now, where is Yamane Jun? We're going to need to bring him in, too.\""
     nvl clear
+    #show Okabe
     "\"This way,\" Okabe said, leading the way back towards the clubhouse. \"Oh, I know it's a lot to ask, but I care about my students, so ... is Kyon going to be in trouble for this?\""
+    #show Keiichi
     "\"That's somewhat unavoidable,\" Keiichi answered. \"Still, once the detectives chosen for this case finish looking through the evidence, they'll decide the final outcome.\""
     nvl clear
+    #show Okabe
     "\"Hmm,\" Okabe mused. \"Well, thank you, officer. I suppose I should just give Kyon's mother a call to let her know that I think he's a good student at heart.\""
+    #show Koizumi
     "Koizumi stifled an internal sigh."
     nvl clear
     
