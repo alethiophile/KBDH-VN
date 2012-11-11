@@ -1107,6 +1107,7 @@ init:
     image Tsuruya Smile5 Flip = im.Flip("Sprites/Tsuruya/TsuruyaSmile5.png", horizontal=True)
     image Tsuruya Smile6 Flip = im.Flip("Sprites/Tsuruya/TsuruyaSmile6.png", horizontal=True)
     image Tsuruya Quest1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaQuestion1.png", horizontal=True)
+    image Tsuruya Quest2 Flip = im.Flip("Sprites/Tsuruya/TsuruyaQuestion2.png", horizontal=True)
     image Tsuruya Ser1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaSerious1.png", horizontal=True)
     image Tsuruya Sigh1 Flip = im.Flip("Sprites/Tsuruya/TsuruyaSigh1.png", horizontal=True)
     image Tsuruya Sigh2 Flip = im.Flip("Sprites/Tsuruya/TsuruyaSigh2.png", horizontal=True)
