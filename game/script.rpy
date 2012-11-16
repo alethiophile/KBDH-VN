@@ -744,8 +744,47 @@ init:
 
     
         
+    #Yuki Image Flips    
+    image Yuki Side1 Flip = im.Flip("Sprites/Yuki/YukiSide1.png", horizontal=True)
+    image Yuki Side2 Flip = im.Flip("Sprites/Yuki/YukiSide2.png", horizontal=True)
+    image Yuki SideDisappointed1 Flip = im.Flip("Sprites/Yuki/YukiSideDisappointed1.png", horizontal=True)
+    image Yuki SideDisappointedTalk1 Flip = im.Flip("Sprites/Yuki/YukiSideDisappointedTalk1.png", horizontal=True)
+    image Yuki SideEyesClosed1 Flip = im.Flip("Sprites/Yuki/YukiSideEyesClosed1.png", horizontal=True)
     image Yuki Ang1 Flip = im.Flip("Sprites/Yuki/YukiSideAngry1.png", horizontal=True)
+    image Yuki Talk1 Flip = im.Flip("Sprites/Yuki/YukiSideTalk1.png", horizontal=True)
+    image Yuki Talk2 Flip = im.Flip("Sprites/Yuki/YukiSideTalk2.png", horizontal=True)
+    image Yuki Sad1 Flip = im.Flip("Sprites/Yuki/YukiSideSad1.png", horizontal=True)
+    image Yuki Sad2 Flip = im.Flip("Sprites/Yuki/YukiSideSad2.png", horizontal=True)
+    image Yuki Sad3 Flip = im.Flip("Sprites/Yuki/YukiSideSad3.png", horizontal=True)
+    image Yuki SadTalk1 Flip = im.Flip("Sprites/Yuki/YukiSideSadTalk1.png", horizontal=True)
+    image Yuki SadTalk2 Flip = im.Flip("Sprites/Yuki/YukiSideSadTalk2.png", horizontal=True)
+    image Yuki SadTalk3 Flip = im.Flip("Sprites/Yuki/YukiSideSadTalk3.png", horizontal=True)
         
+    image Yuki Casual Side1 Flip = im.Flip("Sprites/Yuki/YukiSideCasual1.png", horizontal=True)
+    image Yuki Casual Side2 Flip = im.Flip("Sprites/Yuki/YukiSideCasual2.png", horizontal=True)
+    image Yuki Casual Ang1 Flip = im.Flip("Sprites/Yuki/YukiSideCasualAngry1.png", horizontal=True)
+    image Yuki Casual Talk1 Flip = im.Flip("Sprites/Yuki/YukiSideCasualTalk1.png", horizontal=True)
+    image Yuki Casual Talk2 Flip = im.Flip("Sprites/Yuki/YukiSideCasualTalk2.png", horizontal=True)
+    image Yuki Casual Sad1 Flip = im.Flip("Sprites/Yuki/YukiSideCasualSad1.png", horizontal=True)
+    image Yuki Casual Sad2 Flip = im.Flip("Sprites/Yuki/YukiSideCasualSad2.png", horizontal=True)
+    image Yuki Casual Sad3 Flip = im.Flip("Sprites/Yuki/YukiSideCasualSad3.png", horizontal=True)
+    image Yuki Casual SadTalk2 Flip = im.Flip("Sprites/Yuki/YukiSideCasualSadTalk2.png", horizontal=True)
+    image Yuki Casual SadTalk3 Flip = im.Flip("Sprites/Yuki/YukiSideCasualSadTalk3.png", horizontal=True)
+    
+    image Yuki Chair1 Flip = im.Flip("Sprites/Yuki/YukiChair1.png", horizontal=True)
+    image Yuki Chair2 Flip = im.Flip("Sprites/Yuki/YukiChair2.png", horizontal=True)
+    image Yuki Chair3 Flip = im.Flip("Sprites/Yuki/YukiChair3.png", horizontal=True)
+    image Yuki Chair4 Flip = im.Flip("Sprites/Yuki/YukiChair4.png", horizontal=True)
+    
+    image Yuki Right Neutral1 Flip = im.Flip("Sprites/Yuki/YukiRightNeutral1.png", horizontal=True)
+    image Yuki Right Neutral2 Flip = im.Flip("Sprites/Yuki/YukiRightNeutral2.png", horizontal=True)
+    image Yuki Right Talk1 Flip = im.Flip("Sprites/Yuki/YukiRightTalk1.png", horizontal=True)
+    image Yuki Right Talk2 Flip = im.Flip("Sprites/Yuki/YukiRightTalk2.png", horizontal=True)
+    
+    image Yuki Right Casual Neutral1 = im.Flip("Sprites/Yuki/YukiRightCasualNeutral1.png", horizontal=True)
+    image Yuki Right Casual Neutral2 = im.Flip("Sprites/Yuki/YukiRightCasualNeutral2.png", horizontal=True)
+    image Yuki Right Casual Talk1 = im.Flip("Sprites/Yuki/YukiRightCasualTalk1.png", horizontal=True)
+    image Yuki Right Casual Talk2 = im.Flip("Sprites/Yuki/YukiRightCasualTalk2.png", horizontal=True)
         
         # Mikuru Sprites 
     image Mikuru Hap1 = "Sprites/Mikuru/MikuruHappy1.png"
