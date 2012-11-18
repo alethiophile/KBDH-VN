@@ -7,6 +7,8 @@ game/bytecode.rpyb
 /launcherinfo.py
 errors.txt
 traceback.txt
+log.txt
+/tmp
 
 /game/Sprites/Kyon/KyonSkinsuitTemplate.sai
 /game/Sprites/Kyon/KyonCostumeTemplate.sai

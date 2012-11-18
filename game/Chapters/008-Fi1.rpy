@@ -152,67 +152,108 @@ label Fi1:
     extend "\"Well, Haruhi aside, while we've got some relatively private time, do you mind if I ask you something?\""
     show Kyon Neutral3
     show Tsuruya Quest1
+    show TBlush at right
     "\"Ooh?\" Tsuruya mused, blinking quickly, her cheeks taking on a pink tinge. \"What's that, Kyon-kun?\""
     nvl clear
     stop music fadeout 1
     scene bg TownLeft with fade
     show Kyon Neutral3 at TenthLeft
     show Tsuruya Quest2 at right
+    show TBlush at right
     with dissolve
     show Kyon Puzzle1
     queue music "Music/MysteryTime.mp3"
     "\"Those yakuza saw us yesterday ... and they seem pretty mad about last Sunday. So, we're probably going to see more of them — and that's really going to hurt us.\" He shook his head. \"I'm not sure about myself, but Manabe said your name, too. Since we just left them all behind, he probably told them everything he knows about us.\""
     nvl clear
+    show Kyon Worry1
+    hide TBlush
     show Tsuruya Neutral1
     "\"That's true,\" Tsuruya murmured, gazing upward thoughtfully, her blush fading. \"Well, yous should be okay; they won't get anything but your nickname, anyway. As for me, well, I've got Kyon-kun right now! But what's the question?\""
     nvl clear
-    show Kyon Worry1 
+    show Tsuruya Neutral2
+    show Kyon Ser3 
     "\"This is the yakuza,\" Kyon said, shaking his head. \"My mom's giving me grief just because she thinks I'm behaving like a delinquent anyway ... I think her speech was about letting the police handle things like they were supposed to, and staying out of trouble when I can. I don't want to be a quitter, but do you think we should maybe ... leave this to the professionals?\""
     nvl clear
+    show Kyon Ser1
     show Tsuruya Sad1 
     "Tsuruya's smile vanished as she slowed to a halt, staring at her feet. \"I'm not allowed to give up,\" she said quietly. \"Um.... I'm not really supposed to talks about things like this, but I trust Kyon-kun, so....\" {nw}"
-    show Tsuruya Ser1 
+    show Tsuruya Ser1
     extend "She looked up and fixed her eyes upon his sharply. \"I can't ask you to keep going if you needs to stop. I didn't mean for Kyon-kun to be hurt, or get in trouble....\" "
     nvl clear
-    "She bit her lower lip, her extended fang making the expression a tiny bit silly. \"So.... My family is ninkyo dantai, too.\" He blinked, vaguely recognizing the term that he had once heard yakuza called themselves, which literally meant, 'chivalrous organization'."
+    show Tsuruya Ser2
+    "She bit her lower lip, her extended fang making the expression a tiny bit silly. {nw}"
+    show Tsuruya Ser1
+    extend "\"So.... My family is ninkyo dantai, too.\" He blinked, vaguely recognizing the term that he had once heard yakuza called themselves, which literally meant, 'chivalrous organization'."
     nvl clear
     show Tsuruya Neutral1 
     "Clearing her throat, she gazed upwards and added, \"The police call us 'boryokudan'.\" He nodded, recognizing that to mean, 'violence group'. \"I thinks my family is ninkyo dantai ... but those fellows from Sunday and last night ... they're part of the Sumiyoshi-rengo, and I thinks of them as boryokudan."
     nvl clear
-    "My family is part of the Yamaguchi-gumi.\" She lowered her gaze to meet his before looking down and giving a solemn bow. \"Sorries, I don't let people knows about this, usually, but you deserve the truth.\""
+    "\"My family is part of the Yamaguchi-gumi.\" {nw}"
+    show Tsuruya Sigh2
+    extend "She lowered her gaze to meet his before looking down and giving a solemn bow. {nw}"
+    show Tsuruya Sigh1
+    extend "\"Sorries, I don't let people knows about this, usually, but you deserve the truth.\""
     nvl clear
+    show Tsuruya Sigh2
     show Kyon Worry1 
     "\"I see,\" he said, nodding hesitantly. Admittedly, his first thought on seeing Tsuruya's home was to wonder what kind of crimes her family must commit.... {nw}"
     show Kyon Neutral5 
-    extend"\"Er, but, that doesn't change my perception of you, Tsuruya-kun,\" he added quickly. \"The Yamaguchi-gumi are the ones responsible for most of the relief and aid efforts after the Kobe earthquake, right? I agree with you; that's absolutely much more ninkyo dantai!\""
+    extend "\"Er, but, that doesn't change my perception of you, Tsuruya-kun,\" he added quickly. \"The Yamaguchi-gumi are the ones responsible for most of the relief and aid efforts after the Kobe earthquake, right? I agree with you; that's absolutely much more ninkyo dantai!\""
     nvl clear
+    show Kyon Neutral4
     show Tsuruya Smile5 
-    "Her smile returned easily, but more weakly. \"This is my trials,\" she said, apologetically. \"To see if I'm a worthy heir.\""
+    "Her smile returned easily, but more weakly. {nw}"
+    show Tsuruya Hap8
+    extend "\"This is my trials,\" she said, apologetically. \"To see if I'm a worthy heir.\""
+    show Tsuruya Smile5
     show Kyon Neutral1 
     "Kyon blinked, realizing the severity of the seemingly innocent request the maid had relayed from the Tsuruya family head, and its genuine implications. \"You're not allowed to get help from within your family?\" he asked."
     nvl clear
+    show Kyon Neutral4
     show Tsuruya Neutral1
     "She shook her head, her hair swaying behind her. \"Kasai was helping me,\" she said ruefully. \"Um, but don't you worries! I'll be okay!\""
     nvl clear
-    show Kyon Neutral5 
-    "\"Well....\" He hesitated. Getting involved with organized crime ... his mother would {i}love{/i} to hear about that, he was certain. \"You'll be as okay as I can help you be,\" he decided. His future self had {i}still{/i} seen fit to get him involved. \"I never said I wanted to abandon you to face this on your own; I just said we might both consider getting out together. If that's not an option, well....\" What kind of man would he be to make her face this alone, advice from the future or not?"
+    show Tsuruya Neutral2
+    show Kyon Neutral1
+    "\"Well....\" He hesitated. Getting involved with organized crime ... his mother would {i}love{/i} to hear about that, he was certain. {nw}"
+    show Kyon Neutral2
+    extend "\"You'll be as okay as I can help you be,\" he decided. His future self had {i}still{/i} seen fit to get him involved. \"I never said I wanted to abandon you to face this on your own; I just said we might both consider getting out together. If that's not an option, well....\" What kind of man would he be to make her face this alone, advice from the future or not?"
     nvl clear
+    show Kyon Neutral3
     show Tsuruya Laugh1 
-    "Tsuruya's eyes lit up and she dropped her schoolbag, flinging herself at him in a big hug. \"I'm so glad!\" she enthused, as he reflexively hugged her back. \"I'm not allowed to ask for helps for me, but I'll make sure your family is okay — even if I have to yell and scream, okies?\""
+    "Tsuruya's eyes lit up and she dropped her schoolbag, {nw}"
+    show Tsuruya Laugh1 behind Kyon:
+        xalign 0.52 yalign 1.0
+    with fast_move
+    show Kyon Sup3 Flip
+    extend "flinging herself at him in a big hug. {nw}"
+    show Kyon Neutral3 Flip
+    extend "\"I'm so glad!\" she enthused, as he reflexively hugged her back. \"I'm not allowed to ask for helps for me, but I'll make sure your family is okay — even if I have to yell and scream, okies?\""
     nvl clear
-    show Kyon Smile6 
-    "He glanced around at the other occasional passers-by, thankfully no other students from their school. Patting her on the back as she released him, beaming a brighter smile than usual, he admitted, \"I wish I could say that you shouldn't do that ... but I don't want my family, or anyone else from the brigade to get caught up in this if we can help it, so ... thank you very much, Tsuruya-kun.\""
+    show Tsuruya Smile4
+    "He glanced around at the other occasional passers-by, thankfully no other students from their school. {nw}"
+    show Tsuruya Smile4 at HalfRight
+    with move
+    show Kyon Smile6 Flip
+    extend "Patting her on the back as she released him, beaming a brighter smile than usual, he admitted, \"I wish I could say that you shouldn't do that ... but I don't want my family, or anyone else from the brigade to get caught up in this if we can help it, so ... thank you very much, Tsuruya-kun.\""
     nvl clear
-    show Tsuruya Quest1 
-    "\"Absolutely,\" she agreed, nodding. \"Sos, in that case, would you be willing to come with me and meet my father?\" she asked, traces of anxiety showing in her eyes. \"Um, today after school, maybes, so we can make sure your family is safe?\""
+    show Kyon Smile4 Flip
+    show Tsuruya Hap7
+    "\"Absolutely,\" she agreed, nodding. {nw}"
+    show Tsuruya Quest1
+    extend "\"Sos, in that case, would you be willing to come with me and meet my father?\" she asked, traces of anxiety showing in her eyes. \"Um, today after school, maybes, so we can make sure your family is safe?\""
     nvl clear
-    show Kyon Neutral1 
+    show Tsuruya Quest2
+    show Kyon Neutral1 Flip
     "\"Yes,\" he agreed, remembering his future self's message. What an idiot he was to assume it meant to take a {i}bath{/i} with Tsuruya; no wonder his future self was amused at how stupidly he had reacted. \"Of course, Tsuruya-kun.\" He prayed silently that it wouldn't involve abandoning Haruhi, especially after how his mother had shaken the girl up the previous day...."
     nvl clear
+    show Kyon Neutral3 Flip
     show Tsuruya Neutral1 
     "\"Is that why your wushuu was weaker?\" Tsuruya mused. \"You couldn't fights because you were worried about your family?\""
-    show Kyon Smile4 
+    show Kyon Smile6 Flip
+    show Tsuruya Neutral2
     "\"Er, that's not ... quite it,\" he said, giving a weak smile of his own. \"But, I feel confident that I'll be much better at it the next time I have to fight.\""
+    show Kyon Smile4 Flip
     nvl clear
     
     stop music fadeout 3
