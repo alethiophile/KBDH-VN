@@ -10,9 +10,9 @@ label Fi2:
     #"\"...then push the stack representing the focus shift in prio research target. Due to the complexity of interaction with this particular model, an automated property will top your stack every two minutes if you do not pop or [CLASSIFIED]. Do not attempt to adjust this; it is for your own safety! For the remainder of this lesson, you will need to utilize your augmented reality context-tags, or relay queries to me. Oh! And before this comes up? No, I will **not** ask [CLASSIFIED] to autograph anything for you.\""
     #"\"[CLASSIFIED]\" — Peraea Mons T.E.S.A. Dataplume"
     #"* * *"
-
+    
+    stop music fadeout 0.5
     scene bg MikuruRoom with fade
-    stop music fadeout 3
     queue music "Music/MikurunoKokoro.mp3" 
     show Kyon Neutral3 at TenthRight
     show Mikuru Unhap2 at TenthLeft
@@ -52,11 +52,16 @@ label Fi2:
     show Kyon Smile4
     "\"True enough.\" He really had to stop getting caught in his uniform so much.... Even with the amazing bloodstain removal skills of Tsuruya's servants, something else that he tried not to think about too hard, he was going to wear it out long before the year was over. Possibly even before it was time to switch to summer uniforms, at the current rate."
     nvl clear
-    scene bg TownStreetDay1 with fade
+    # scene bg TownStreetEvening1 with fade
+    scene bg TownCommercialDistrict_Evening with fade
+    $ _window = True
     "He stepped out of the apartment first, and she closed and locked it behind them before giving him a bright smile and leading the way down the street towards a noodle stall."
-    scene bg Udon with fade
+    # scene bg Udon
+    # with fade
     show Kyon Smile4 at TenthRight
     show Mikuru Smile1 at TenthLeft
+    with dissolve
+    $ _window = False
     "After they had taken seats on the stools beneath the curtain, the elderly proprietor greeted the girl like a long-lost granddaughter. She cheerfully introduced him by his nickname."
     nvl clear
     show Kyon Neutral3
@@ -102,11 +107,13 @@ label Fi2:
     "Why did Mikuru look briefly annoyed at the old man, Kyon wondered, as he offered his thanks and prepared to eat."
     nvl clear
     
-    scene bg TrainStation with fade
+    # scene bg TrainStation with fade
+    scene black with fade
     "After walking Mikuru back to her apartment, Kyon agreed to meet with her again in the morning to help carry the sewing machine to school."
     "He wasn't certain how it would end up working out that she didn't seem to realize there were, at least temporarily, two of him at school at the same time."
     "...But it did let him correct the oversight of forgetting that while he had stayed at Tsuruya's — a haven for the temporally displaced — he had forgotten his schoolbag at home."
     nvl clear
+    scene bg KitaguchiStationOutside_Evening with fade
     "He took a train back to Kitaguchi station, checked the watch that Mikuru's older self had given him and turned his cell phone on, pulling up his voice mail and leaving himself the well-remembered message from the previous night."
     "After a few minutes he figured out how to flag the message as 'new', and shut the phone off again. Another few minutes waiting in a dark alley with a reasonable view of the train station let him see his past-self swear loudly."
     "He couldn't help but chuckle at his past self's cursing when the voice mail was checked. \"I guess I can see why she does it,\" he said aloud, shaking his head. \"Still....\""
@@ -115,6 +122,10 @@ label Fi2:
     "It was nice not needing to worry about fighting the yakuza that his past self would successfully deal with, or think too hard about the bath and bed he would share with Tsuruya."
     "Hard-earned, and well deserved, after all. He walked back home, hands in his pockets, wondering if he actually would receive any phone calls. He wouldn't need to make any, at least ... not until he had to call Tsuruya, anyway."
     nvl clear
+    
+    stop music fadeout 3
+    call eyecatch_fancy("Thursday, April 21") from Fi2_sc001
+
     scene bg KyonKitchenLeft with fade
     stop music fadeout 1
     queue music "Music/Kokuhaku.mp3"
@@ -219,12 +230,15 @@ label Fi2:
     "\"Yeah, actually. Well, anyway, enough relaxing for me. I've got a test to study for tomorrow.\" And he had to leave early to meet with Mikuru and help her carry the new sewing machine...."
     nvl clear
     
+    stop music fadeout 3
+    call eyecatch_fancy("Thursday, April 21", "Friday, April 22") from Fi2_sc002
+
     scene bg MikuruApartment with fade
-    stop music fadeout 1
     queue music "Music/Itsumo(Movie).mp3"
-    show Mikuru Smile2 at left
+    show Mikuru Smile2 at TenthLeft
     show Kyon Smile4 at right
     with dissolve
+    
     "After a night of rest that felt oddly unusual for not involving one of Yuki's training scenarios, he left early to reach Mikuru's place. According to his wristwatch he was exactly on time, and reached her apartment door just as she opened it, greeting him with another of the shy smiles she had adopted lately. What exactly was he going to say to her next Sunday, anyway?"
     nvl clear
     show Mikuru Hap2
@@ -232,9 +246,9 @@ label Fi2:
     show Kyon Puzzle1
     "He bit his tongue, remembering what Mikuru would be subjected to the second she reached the clubroom. \"Not too early,\" he managed."
     nvl clear
-    scene bg TownStreetDay1 with fade
+    scene bg TownStreetDay1 with wiperight
     show Kyon Smile4 at right
-    show Mikuru Smile1 at left
+    show Mikuru Smile1 at TenthLeft
     with dissolve
     "They traded bags, her carrying his schoolbag, and him carrying the sewing machine and the large, heavier bag of cloth and assorted other sewing supplies. After they got off the train, walking up the hill, she added, \"It's nice to walk to school together, Kyon-kun. Thank you for helping me out.\""
     nvl clear
@@ -265,18 +279,22 @@ label Fi2:
     nvl clear
     scene bg LockersDayLeft
     show Kyon Neutral1 at right
-    show Mikuru Neutral2 at left
+    show Mikuru Neutral2 at TenthLeft
     with dissolve
     "After delaying her a short while, he stopped at the shoe lockers, still wearing his indoor shoes. He set down the sewing machine and said, \"I need to check for something in my classroom. I'll meet you back with the extra cloth here, or the clubroom. Is it okay if I leave the sewing machine here?\""
     nvl clear
     show Mikuru Smile3
     "\"Ah, you carried it all the way up the hill,\" she said, shaking her head. \"Um, I can carry it the rest of the way!\" She handed him his schoolbag, and he nodded his head in thanks to her before dashing immediately to the first floor washroom, just catching sight of the older Mikuru ducking inside."
-    scene bg SchoolBathroom
-    show Kyon Neutral3 Flip at left
-    show MikuruBig Sup1 at right
+    hide Kyon with moveoutright
+    stop music fadeout 1
+    queue music "Music/YareYare.mp3"
+    scene bg SchoolBathroom with wiperightfast
+    show MikuruBig Neutral1 at TenthRight with None
+    show Kyon Neutral3 Flip at left with moveinleft
+    show MikuruBig Sup3
     "She squeaked in alarm, still cute to his eyes when he understood her motives better."
     nvl clear
-    show MikuruBig Quest1
+    show MikuruBig Sup2
     "With her wide eyes and balled fists held together beneath her chin, he still felt that urge to protect her. \"W...what...\" she began, looking confused. \"You shouldn't be here yet!\""
     show Kyon Neutral2 Flip
     "\"Long story,\" he told her, checking his wristwatch. \"Okay, so ... we have a few minutes?\""
@@ -287,6 +305,8 @@ label Fi2:
     show Kyon Sigh2 Flip
     "\"Well, somehow it's become a predetermined event,\" he said with an apologetic shrug. \"You take me back to yesterday afternoon to meet your past self at the train station; this ends up sparing me a lot of trouble from my parents involving a fight with some yakuza, so I really don't mind.\""
     nvl clear
+    stop music fadeout 3
+    queue music "Music/MikurunoKokoro.mp3"
     show MikuruBig Ser2
     "\"The slow path?\" she mused, frowning. Her eyes went distant as she tilted her head slightly to one side, then sighed with a smile. \"It must be so!\" she decided, shaking her head a bit."
     nvl clear
@@ -299,7 +319,7 @@ label Fi2:
     "\"Temporal displacement,\" she answered. \"Time travelers normally have a way to monitor their deviation from standard, but you're more of a passenger, so without your own TPDD to monitor such things....\""
     nvl clear
     "\"A...anyway! Since you're here, now, there's one thing I should tell you. Um ... this may be a lot to ask, but please don't rush back to Suzumiya-san?\"" 
-    show MBigBlush1 at right
+    show MBigBlush1 at TenthRight
     "Her face took on a blush and she suddenly couldn't meet his eyes. \"It would be, um, awkward if you were to overhear certain things.... And it would go against the way I remembered events.\""
     nvl clear
     show MikuruBig Sup1
@@ -310,24 +330,31 @@ label Fi2:
     hide MBigBlush1
     show MikuruBig Quest1
     "She adopted a clearly feigned look of surprise. \"You really think so?\" she asked."
-    show Kyon Sigh2 Flip
+    show Kyon Neutral2 Flip
     "\"You'll see in less than a minute,\" he answered dryly, stepping into a free stall and closing the door."
     nvl clear
-    hide MikuruBig with dissolve
+    hide MikuruBig 
+    hide Kyon 
+    with dissolve
+    show Kyon Neutral2 at right
+    with dissolve
     "He heard Mikuru's older self hum thoughtfully as she stepped into the appointed meeting stall, and he held his breath when he heard his past self mutter about Haruhi."
     nvl clear
-    show Kyon Smile2 Flip
+    show Kyon Smile2
     "There was no resisting the smirk at Mikuru's reaction to his past self's line regarding ero manga, though he spared a moment to despair his past self's ignorance. What if someone {i}else{/i} were hiding in the room? Mikuru's older self had only just arrived, after all, she hadn't had time to check either. After the unnerving clunking noise that signified his past-self's departure, he checked the other stalls ... but of course, they were empty."
     nvl clear
     scene bg ClubHallLeft with fade
     "In any case, he realized he wasn't likely to do such a thing again; he now knew to check. After glancing at his wristwatch again, he hustled quickly to the clubroom, still hauling the large bag of cloth for Mikuru. Was he supposed to eavesdrop, he wondered? Was that Mikuru's unsubtle hint? Pondering, his footsteps slowed as he approached the clubroom door."
     nvl clear
     
+    stop music fadeout 3
+    call eyecatch_fancy("Friday, April 22", "Friday, April 22") from Fi2_sc003
+
     scene bg ClubroomRightDay
     stop music fadeout 1
-    queue music "Music/MikurunoKokoro.mp3"
-    show Haruhi Eyeroll2 at left
-    show Mikuru Unhap2 at right
+    queue music "Music/HigekiNoHeroine.mp3"
+    show Haruhi Eyeroll2 at TenthLeft
+    show Mikuru Unhap2 at TenthRight
     with dissolve
     "\"Alright,\" Haruhi grumbled, after listening to Mikuru's rushed explanation of her meeting with Kyon. \"Alright, fine. So, Kyon offered to help you out, you dragged him with you to go shopping, used him as a pack-mule, and that's {i}it{/i}?\" she asked."
     show Mikuru Sad1
@@ -354,13 +381,16 @@ label Fi2:
     show Mikuru Cower Quest1
     "\"T...there is?\" Mikuru looked mystified and more than a little scared, but Haruhi caught the flash of hope in her eyes anyway. \"What is it?\""
     nvl clear
-    show Haruhi Hap1
+    # show Haruhi Hap1
+    stop music fadeout 1
+    queue music "Music/YareYare.mp3"
+    show Haruhi Point Scold2
     "\"If you {i}really{/i} believe that you can't have a relationship, then why not try anyway?\" Haruhi asked. \"Consider it a practice run! If you're going to give up and tell yourself it'll never work out, what do you stand to lose by trying your best, anyway?\""
     nvl clear
     show Mikuru Cower Sup1
     "\"Y...you {i}want{/i} me to be your romantic rival?\" Mikuru managed, boggling."
     show Haruhi Sup1
-    show Hblush at left
+    show Hblush at TenthLeft
     "\"Who said anything about romance?\" Haruhi threw back, her face reddening."
     show Mikuru Cower Nervous2
     "\"You did, just a minute ago!\""
@@ -372,7 +402,7 @@ label Fi2:
     nvl clear
     "Mikuru continued to stare, seemingly stunned by the barrage of words."
     show Haruhi Crossed Sigh1 Flip
-    show Hblush Crossed Flip at left
+    show Hblush Crossed Flip at TenthLeft
     "\"It's not like I'd be happy about it,\" Haruhi continued, crossing her arms over her chest. \"But I like that you {i}act{/i} dojikko and moe for the club. It won't actually help you in the long run to {i}be{/i} that way. You have to have more confidence!\""
     nvl clear
     show Mikuru Think Sad5
@@ -380,7 +410,7 @@ label Fi2:
     nvl clear
     hide Hblush
     show Haruhi Crossed Sup1 Flip    
-    "Haruhi stared. \"If we were in a comedy anime, that line would cause a face- fault,\" she deadpanned. \"Am I the only person who reads— Never mind!\" She shook her head, banishing the complaint."
+    "Haruhi stared. \"If we were in a comedy anime, that line would cause a face-fault,\" she deadpanned. \"Am I the only person who reads— Never mind!\" She shook her head, banishing the complaint."
     nvl clear
     show Haruhi Crossed Quest1 Flip
     "\"Okay, look, dojikko characters are clumsy and harmless, they're part of the cast to evoke a 'big-brother' instinct, or play up the role of fan service. Don't get me wrong, it's pretty awesome that you have those characteristics!\""
@@ -391,11 +421,16 @@ label Fi2:
     show Haruhi Sigh2
     "Sighing deeply, Haruhi shook her head. \"Try harder for Kyon,\" she said. Surely that would be clear enough? \"I'm just saying that if you can't really get anywhere, it won't hurt you to learn as much as you can in the meantime!\""
     nvl clear
+    stop music fadeout 1
     queue sound "SE/DoorKnock.mp3"
     queue sound "SEDoorOpenFast.mp3"
-    show Kyon Puzzle1 Flip at left
+    show Mikuru at right
     show Haruhi Neutral1 at center
     with dissolve
+    show Kyon Puzzle1 Flip at left with moveinleft
+    # show Haruhi Neutral1 at center
+    # with dissolve
+    queue music "Music/Yuuutsu.mp3"
     "A knock sounded at the door, cutting off further discussion before Kyon pulled it open. \"I'm back,\" he said, looking troubled."
     show Mikuru Smile3
     "\"Oh!\" Mikuru managed, turning to look at him, her smile returning. \"Was everything okay?\""
@@ -406,6 +441,7 @@ label Fi2:
     "Mikuru looked confused, but shook her head and moved to pick up her new sewing machine. \"Um, is it okay if I leave this here, Suzumiya-san?\" she asked."
     nvl clear
     show Haruhi Hap1
+    show Kyon Neutral2 Flip
     "Haruhi looked at the box, then considered the free space in the club room. Things could be shuffled around to fit it, she was certain. \"It shouldn't be a problem,\" she said, nodding. Could Mikuru make new costumes? That would certainly save her a bit of money on getting a new outfit for Mikuru every so often ... or even one for herself. \"We should talk about that at lunch,\" she decided."
     nvl clear
     show Haruhi Ang1
@@ -421,6 +457,12 @@ label Fi2:
     "\"Naturally,\" she agreed, shuffling the flashcards they had made the night before. \"That's why you're just the vice commander.\""
     nvl clear
     
+    stop music fadeout 3
+    call eyecatch_fancy("Friday, April 22", "Friday, April 22") from Fi2_sc004
+    
+    stop music fadeout 1
+    queue music "Music/Tanzaku no Mukou ni.mp3" # "Music/Yuutsu.mp3"
+
     scene bg MikuruClass with fade
     nvl clear
     "Lessons were very difficult for Mikuru to follow in the wake of Haruhi's bizarre announcement. It didn't help when she took into account further confusion about what a message specifically encoded for her meant for Kyon."
