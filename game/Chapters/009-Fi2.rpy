@@ -461,7 +461,7 @@ label Fi2:
     call eyecatch_fancy("Friday, April 22", "Friday, April 22") from Fi2_sc004
     
     stop music fadeout 1
-    queue music "Music/Tanzaku no Mukou ni.mp3" # "Music/Yuutsu.mp3"
+    queue music "Music/Tanzaku no Mukou ni.mp3"
 
     scene bg MikuruClass with fade
     nvl clear
@@ -479,40 +479,54 @@ label Fi2:
     "There was a certain temptation to throw aside her orders from her superiors and do what Haruhi said. She was already skirting dangerously close to the lines by having dinner and a shopping session with Kyon, as far from her ideal date as those events had been."
     "She was reasonably sure he wasn't even supposed to know where she lived, to say nothing of her inviting him into her apartment, however briefly!"
     nvl clear
-    show Tsuruya Hap5 at TenthRight with dissolve
+    show Tsuruya Hap5 at TenthRight with moveinright
     "If she didn't get her act together, and soon, she was likely to be recalled. She was roused from her contemplation by Tsuruya poking her elbow. \"Helloooo~!\" the taller girl called, peering at her intently, smirking. \"What's gotcha distracted, Mikuru-chan?\""
     nvl clear
+    $ _window = True
     show Mikuru Neutral3 at TenthLeft with dissolve
+    $ _window = False
     "\"Ah, oh, just things,\" she answered, shaking her head and climbing to her feet. On to the clubroom, then, where she would have to figure out some way to satisfy Haruhi and simultaneously keep herself in control."
     nvl clear
     show Tsuruya Neutral1
-    "\"Okies,\" Tsuruya said, raising one eyebrow. \"Well, I gots to escort Kanae- chan, like I promised, so see you soonish!\""
-    hide Tsuruya
+    "\"Okies,\" Tsuruya said, raising one eyebrow. \"Well, I gots to escort Kanae-chan, like I promised, so see you soonish!\""
+    $ _window = True
+    show Mikuru Neutral2
+    hide Tsuruya with easeoutright
+    $ _window = False
     "With that, the green-haired girl whirled and sped off."
     nvl clear
-    scene bg ClubroomFullDay with fade:
+    "Alone, Mikuru walked slowly to the club room, not entirely surprised that Kanae and Tsuruya caught up with her as she reached the door.{nw}" 
+    
+    $ _window = True
+    scene black with dissolve
+    stop music fadeout 1
+    queue music "Music/Aruame.mp3"
+    scene bg ClubroomFullDay:
         xpos 0 ypos 0
-    $ renpy.layer_at_list([PanScene_SetToLeft])
     show Kyon Neutral3 Flip at center_RightScreen
     show Haruhi Neutral1 Flip at right_RightScreen
+    show Kanae Neutral1 at left_RightScreen behind Kyon
     show Koizumi Crossed Smile4:
         xalign 0.6 yalign 1.0
     show Yuki Side1:
         xalign 0.3 yalign 1.0
     with dissolve
-    "Alone, Mikuru walked slowly to the club room, not entirely surprised that Kanae and Tsuruya caught up with her as she reached the door. She opened it to let the other girls in first, only to see Kyon and Haruhi already sitting at the table, with Koizumi and Yuki across from them."
+    $ renpy.layer_at_list([PanScene_SetToLeft])
+    $ _window = False
+    extend " She opened it to let the other girls in first, only to see Kyon and Haruhi already sitting at the table, with Koizumi and Yuki across from them."
     nvl clear
     "Yuki tapped the keys of one of the laptops, an empty bento at her side. Koizumi picked at his own bento, studying the couple sitting opposite him."
-    $ renpy.layer_at_list([PanScene_LeftToRight])
+    $ renpy.layer_at_list([PanScene_LeftToRightSlow])
     "Haruhi was grilling Kyon with questions for the upcoming math test. The really unusual thing was the fact that Kyon had — for some reason — three bento boxes next to him, and was evidently just finishing the last one."
     nvl clear
+    show Kanae Quest1
     "Haruhi glanced at the stack of empty boxes, but Mikuru was positive that the three closest to Kyon were his ... everyone else had their own. \"Wow,\" Kanae said, peering in. \"You must be really hungry, Sempai!\""
     nvl clear
+    show Kanae Neutral1
+    show Haruhi Neutral2 Flip at right_RightScreen
     "\"His mom's starving him as some strange form of punishment,\" Haruhi explained, rolling her eyes. \"Sure, tuna is supposed to be 'brain food', because it's high in protein, but just fish and rice?\""
     nvl clear
     show Tsuruya Smile3 Flip at right behind Koizumi
-    show Kanae Neutral1 at left_RightScreen behind Kyon
-    with dissolve
     "Tsuruya looked thoughtful, eying the lunch boxes before closing the door and taking a seat next to Koizumi. Kanae had already claimed the space on Kyon's other side, so Mikuru was left with the choice of sitting next to Yuki or Haruhi."
     nvl clear
     $ renpy.layer_at_list([PanScene_RightToLeft])
@@ -530,6 +544,8 @@ label Fi2:
     "Tsuruya quickly engaged Kanae in a conversation over an anime they were both watching, and Koizumi observed the pair with his usual smile, looking slightly more amused than usual."
     nvl clear
     $ renpy.layer_at_list([PanScene_LeftToCenter])
+    stop music fadeout 1
+    queue music "Music/KouchouKouchou.mp3"
     show Tsuruya Neutral1 Flip
     "\"No, no,\" Tsuruya said, shaking her head. \"Trope-tan doesn't do thats! Sounds a bit out-of-character, don't it?\""
     show Kanae Quest1
@@ -552,11 +568,16 @@ label Fi2:
     $ renpy.layer_at_list([PanScene_CenterToRight])
     show Kanae Neutral1
     show Kyon Smile6
-    "\"Well, call me if that changes, Tsuruya-kun,\" Kyon warned, "
-    show Kyon Sup1 Flip
-    extend "before being smacked over the head by Haruhi's stack of flashcards. \"Ow! Hey! I thought you didn't like tsundere characters!\""
-    nvl clear
+    "\"Well, call me if that changes, Tsuruya-kun,\" Kyon warned, before being smacked over the head by Haruhi's stack of flashcards. {nw}"
+    show Kyon Sup1
     show Haruhi Ang1 Flip
+    extend "\"Ow! {nw}"
+    show Kyon Sup1 Flip
+    extend "Hey! I thought you didn't like tsundere characters!\""
+    nvl clear
+    show Kyon Sup2 Flip
+    show Haruhi Ang2 Flip
+    hide Koizumi
     "\"I don't,\" Haruhi groused, looking at him oddly. \"But I don't think I mentioned that to you. Anyway, it was a stack of cards! Are you saying it really hurt?\""
     hide Tsuruya
     show Kyon Worry1 Flip
@@ -564,7 +585,7 @@ label Fi2:
         xalign 0.3 yalign 1.0        
     show Yuki:
         xalign 0.65 yalign 1.0        
-    show Koizumi at right
+    # show Koizumi at right
     "\"No,\" he admitted as Tsuruya left. \"Just.... Nevermind.\""
     nvl clear
     $ renpy.layer_at_list([PanScene_RightToLeft])
@@ -585,12 +606,20 @@ label Fi2:
     "She'd only roughed out the basic features — pockets, buttons she'd need to pick up later, a rain flap that could be flipped over into a hood — when she felt Yuki's unsettling gaze on her."
     nvl clear
     show Yuki Talk2
-    "She looked up in alarm, but the contact-purposed interface merely commented, \"Interesting,\" before turning back to whatever she was writing."
+    "She looked up in alarm, but the contact-purposed interface merely commented, \"Interesting,\" {nw}"
+    $ _window = True
+    show Yuki Side1 at TenthRight with dissolve
+    $ _window = False
+    hide Kanae
+    extend "before turning back to whatever she was writing."
+    show Haruhi Quest1 Flip:
+        xpos 1050
     $ renpy.layer_at_list([PanScene_LeftToRight])
-    show Yuki Side1
-    show Haruhi Quest1 Flip
-    "\"What's that, then?\" Haruhi asked, her interest piqued. She glanced at the sketch before her eyes widened."
-    show Haruhi Sup1 Flip
+    hide Yuki
+    stop music fadeout 1
+    queue music "Music/Gekiretsu.mp3"
+    "\"What's that, then?\" Haruhi asked, her interest piqued. She glanced at the sketch before her eyes widened. {nw}"
+    show Haruhi Sup1 Flip 
     extend "\"You're making that for Kyon?\" she added, flashcards forgotten for the moment."
     nvl clear
     $ renpy.layer_at_list([PanScene_RightToLeft])
@@ -605,12 +634,13 @@ label Fi2:
     $ renpy.layer_at_list([PanScene_RightToLeft])    
     "\"Keep studying,\" she ordered, walking around the table to sit at Mikuru's side, studying the image intently."
     nvl clear
-    show Kyon Unhap4
+    show Kyon Unhap4 at right_RightScreen
     #Not moving Kyon to fit better, as Kyon at left_RightScreen puts him at the very center of the scene for some reason, and xalign 1.3 yalign 1.0  puts him at the same spot. center_RightScreen is offscreen, and TenthLeft_RightScreen creates an error.
-    show Koizumi Crossed Smile3
-    $ renpy.layer_at_list([PanScene_LeftToCenter])
+    show Koizumi Crossed Smile3 at left_RightScreen
+        # xpos 1050
+    $ renpy.layer_at_list([PanScene_LeftToRight])
     "Kyon looked irritated, but Koizumi obligingly continued the study session."
-    $ renpy.layer_at_list([PanScene_CenterToLeft])
+    $ renpy.layer_at_list([PanScene_RightToLeft])
     show Haruhi Eyeroll1
     "One eye watching Kyon closely, Haruhi explained, \"I've seen.... Um, maybe....\" {nw}"
     show Haruhi Hap1
@@ -630,6 +660,14 @@ label Fi2:
     show Haruhi Hap1
     "\"Not a problem,\" Haruhi decided. \"If Tsuruya's keeping him occupied anyway, then you should have plenty of time.\""
     nvl clear
+    
+    
+    stop music fadeout 3
+    call eyecatch_fancy("Friday, April 22", "Friday, April 22") from Fi2_sc005
+    
+    stop music fadeout 1
+    queue music "Music/Tanzaku no Mukou ni.mp3"
+
     
     scene bg Cab with fade
     #show Kyon Suit at center with dissolve
@@ -793,8 +831,12 @@ label Fi2:
     show Tsuruya Kimono Smile2
     "The men on the edges of the room suddenly swarmed him, and he was swept up in a tide of cheering ninkyo dantai pounding his back and welcoming him to the family. As bewildered as he was, he still saw the relief in the girl's face, the tiny sparkling tears of what he prayed was happiness in her eyes."
     nvl clear
+    scene black with dissolve
     "Yeah, Haruhi was going to love hearing about this."
     nvl clear
+
+    stop music fadeout 3
+    call eyecatch_fancy("Friday, April 22", "Friday, April 22") from Fi2_sc006
 
     scene bg KyonKitchenLeft with fade
     #show Akane at left
