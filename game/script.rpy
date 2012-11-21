@@ -1934,12 +1934,24 @@ init python:
                         what_layout="subtitle", what_xalign=0.5, what_text_align=0.5,
                         window_background=None, window_yminimum=0, window_xfill=False, 
                         window_xalign=0.5, window_yalign=0.5) 
-                        
+    
+    
+    
+    ## Filraen's note: this is for allowing personal use of left Alt-Tab, as someone else
+    ## said once he used Alt instead of Cntrl to skip (forgot who)
+    filraen = False
+    try:
+        with open(r"C:\Users\Alex\.gitconfig", "r") as outfile:
+            filraen = True
+    except IOError:
+        pass
+    
     if config.developer:
-        config.keymap['skip'].remove('K_LCTRL')
-        config.keymap['skip'].remove('K_RCTRL')
-        config.keymap['skip'].append('K_LALT')
-        config.keymap['skip'].append('K_RALT')
+        if not filraen:
+            config.keymap['skip'].remove('K_LCTRL')
+            config.keymap['skip'].remove('K_RCTRL')
+            config.keymap['skip'].append('K_LALT')
+            config.keymap['skip'].append('K_RALT')
         config.keymap['reload_game'].append('r')
         config.keymap['inspector'].append('i')
         config.keymap['developer'].append('d')
