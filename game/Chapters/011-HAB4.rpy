@@ -650,42 +650,83 @@ label HAB4:
     
     #The rest of this is pretty easy.
     
+    scene bg SchoolEntranceLeft with fade
+    stop music fadeout 1
+    #queue music 
+    show Yuki Right Neutral1 at HalfRight
+    show Tsuruya Smile1 at center
+    show Kyon Neutral3 at HalfLeft
+    with dissolve
     "After hurriedly changing shoes, Kyon dashed to the school gate, unsurprised to see Mori standing there in sharp black business attire. Knee-length pleated skirt, formal jacket, and all. She was even holding a pair of dark glasses in one hand. She quirked an eyebrow up as she saw Tsuruya and Yuki following him, but wordlessly gestured them into the car."
     nvl clear
-    "Barring a moment of confusion, when Kyon realized that for some reason both girls wanted to sit in the back with him, there was no trouble. He sat in the middle, Tsuruya to his right, and Yuki to his left. Arakawa was driving, as per the evident standard, while Mori sat in the front passenger seat."
+    scene bg Cab with fade
+    "Barring a moment of confusion, when Kyon realized that for some reason both girls wanted to sit in the back with him, there was no trouble. He sat in the middle, Tsuruya to his right, and Yuki to his left."
+    show Yuki Side1 Flip at TenthRight with Dissolve(.75)
+    show Kyon Neutral3 Flip at center with Dissolve(.75)
+    show Tsuruya Smile1 Flip at TenthLeft behind Kyon with Dissolve(.75)
+    "Arakawa was driving, as per the evident standard, while Mori sat in the front passenger seat."
     nvl clear
+    show Kyon Neutral2 Flip
     "\"So,\" Kyon said, once Arakawa started the car, \"you're pretending to be my aunt?\""
+    show Kyon Neutral3 Flip
     "\"Yes,\" Mori agreed, nodding and looking over her shoulder at him. \"Only a parent or legal guardian could ask for you to be removed from the school, and that seemed the best way to prevent your mother from being notified.\""
     nvl clear
+    show Kyon Sigh1 Flip
     "\"Yeah, well ... with my luck it's going to get back to her anyway.\" He turned to Tsuruya, then said, \"I'm sorry about this, Tsuruya-kun.\""
+    show Kyon Neutral3 Flip
+    show Tsuruya Hap6 Flip
     "\"We've got relative privacy,\" she said brightly. \"So, you said you would explain things? I'm especially curious how Kyon-kun has pre-bribed police officers!\""
     nvl clear
+    show Tsuruya Smile1 Flip
+    show Kyon Ser3 Flip
     "\"Well ... this is somewhat complicated,\" Kyon began, frowning. \"Actually, Mori-san ... I think you might explain it better?\""
+    show Kyon Ser1 Flip
     "\"Are you sure this is wise, Sir?\" Mori asked, looking very uncomfortable."
     nvl clear
+    show Kyon Ser3 Flip
     "\"As long as it doesn't get back to Tsuruya-kun's father until her test is over,\" Kyon answered."
+    show Kyon Ser1 Flip
+    show Tsuruya Hap3 Flip
     "\"I want to know!\" Tsuruya said, nodding quickly."
     nvl clear
-    "\"Very well,\" Mori grudgingly admitted. \"Ah ... Tsuruya-san ... the organization I represent at this moment is in part funded by your father. However, we were of the understanding that your family did not intend to pry into our agendas and intentions, provided they did not interfere with your family's. Therefore, we likewise also try our best to uninvolved with your family's personal business. In fact, until Kyon pointed it out some days ago, we were uncertain that you were ya... that is ... ninkyo dantai.\""
+    show Tsuruya Smile1 Flip
+    "\"Very well,\" Mori grudgingly admitted. \"Ah ... Tsuruya-san ... the organization I represent at this moment is in part funded by your father. However, we were of the understanding that your family did not intend to pry into our agendas and intentions, provided they did not interfere with your family's.\""
     nvl clear
+    "\"Therefore, we likewise also try our best to uninvolved with your family's personal business. In fact, until Kyon pointed it out some days ago, we were uncertain that you were ya... that is ... ninkyo dantai.\""
+    nvl clear
+    show Tsuruya Susp1 Flip
     "\"If Kyon-kun said you could be trusted with that,\" Tsuruya allowed warily, narrowing her eyes slightly."
     nvl clear
+    show Tsuruya Susp2 Flip
     "Mori looked uncomfortable. \"A...at any rate, Kyon ... convinced ... us to help him assist you when he claimed it would be required. Which is why I am revealing these things to you now. However, there are a few points of concern. Your family may not approve of us tampering with your activities as directly as we are by assisting you here. Assisting Kyon is well within our allowed scope of operations, but this....\""
     nvl clear
+    show Tsuruya Hap9 Flip
     "\"Well, don't worry about it!\" Tsuruya said cheerfully. \"I skipped schools on my own! Kyon-kun got permission and left with his aunt, who happened to give us a rides to my place! Right?\""
+    show Tsuruya Smile6 Flip
     "\"That would be most convenient for us at this juncture,\" Mori agreed, giving a weak smile to Tsuruya."
     nvl clear
+    show Tsuruya Hap6 Flip
     "\"Okay! So ... what's your organizations all about, anyway?\""
+    show Tsuruya Smile1 Flip
     "Mori looked uncomfortable again. \"It ... may be easier ... if you don't know,\" she said cautiously. \"Sorry to be so vague, but your father was content to remain uninformed.\""
     nvl clear
+    show Tsuruya Hap6 Flip
     "Tsuruya looked thoughtful for a moment, then gave Kyon a questioning glance before her smile bloomed again. \"I want to know more,\" she said with a shrug. \"I've been afraid of letting peoples too close to me because of what my family is and does. But Kyon-kun is tangled up in bigger, stranger things ... and he trusts me. I dragged him into my worlds, so ... I will let Kyon-kun decide!\" She nodded to herself, smile widening to a grin. \"So, Kyon-kun, should I know more?\""
     nvl clear
+    show Tsuruya Smile1 Flip
+    show Kyon Sigh1 Flip
     "He bit his lip for a moment, and began to turn towards Yuki, as though to ask her advice, but caught himself, shaking his head. Taking a deep breath and closing his eyes, he slowly said, \"Tsuruya-kun ... I don't want to make that decision for you. I believe that you can handle the truth, now. But I don't know if you take this step ... if we explain everything to you ... that you'll ever be able to go back to being 'just a side character' again. I know you said you liked being on the sidelines and making other people laugh.\""
     nvl clear
+    show Kyon Neutral2 Flip
     "His eyes opened, and he gave a small nod. He continued, \"In fact, knowing about your family, and what they do, I understand why you chose to make yourself a bit separate from the rest of Haruhi's friends. I can see why.... Well. I understand and respect your decision at that time. If you want to change things now, then I want to make sure you understand beforehand that it may be a one-way trip.\""
     nvl clear
-    "Tsuruya pursed her lips for a moment, staring back at Kyon with her expression sliding from joy to thoughtful neutrality. Just when the silence began to become uncomfortable, she grinned hugely and gave a decisive nod. \"Okay!\" she cheered. \"I give Kyon an 'S' rank scores for that speech! You're right; if I make Kyon-kun decide for me, I'm running from responsibility. My trial is to learn to {i}take{/i} responsibility, not avoid it. So! Tell me everything.\""
+    show Kyon Neutral3 Flip
+    show Tsuruya Susp2 Flip
+    "Tsuruya pursed her lips for a moment, staring back at Kyon with her expression sliding from joy to thoughtful neutrality. {nw}"
+    show Tsuruya Hap6 Flip
+    extend "Just when the silence began to become uncomfortable, she grinned hugely and gave a decisive nod. \"Okay!\" she cheered. \"I give Kyon an 'S' rank scores for that speech! You're right; if I make Kyon-kun decide for me, I'm running from responsibility. My trial is to learn to {i}take{/i} responsibility, not avoid it. So! Tell me everything.\""
     nvl clear
+    show Tsuruya Smile1 Flip
     "\"Very well,\" Mori said anxiously. \"Arakawa, the temple, if you don't mind? That should be private enough.... Now, I'm afraid I cannot enter closed space myself, and anyway, thanks to Kyon's efforts there isn't any active at the moment. So, please believe what I have to say, even though it will sound quite strange and I cannot give immediate proof....\""
     nvl clear
     
