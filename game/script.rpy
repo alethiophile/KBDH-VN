@@ -1943,8 +1943,6 @@ init python:
                         window_background=None, window_yminimum=0, window_xfill=False, 
                         window_xalign=0.5, window_yalign=0.5) 
     
-    
-    
     ## Filraen's note: this is for allowing personal use of left Alt-Tab, as someone else
     ## said once he used Alt instead of Cntrl to skip (forgot who)
     filraen = False

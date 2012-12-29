@@ -263,60 +263,80 @@ label Fi1:
     queue music "Music/Itsumo(Movie).mp3"
     show Haruhi Crossed Ang2 at right with dissolve
     "\"You're late,\" Haruhi growled, her expression dark. \"I've been waiting for you for five minutes already!\""
-    show Kyon Neutral5 at center
-    show Tsuruya Hap5 Flip at left 
+    show Haruhi Crossed Ang3 with None
+    show Kyon Neutral5 Flip at center
+    show Tsuruya Smile2 Flip at left 
     with dissolve
     "\"Sorry,\" he said, hanging his head. \"Um, something came up.\""
+    show Kyon Neutral4 Flip
+    show Tsuruya Hap5 Flip
     "\"Totally not Kyon-kun's fault!\" Tsuruya chirped from his side. \"I was keeping him with top secret research for our investigation!\""
     nvl clear
-    show Haruhi Crossed Quest1 at right
+    show Tsuruya Smile2 Flip
+    show Haruhi Crossed Quest1
     "\"What are you two doing together so early in the morning?\" Haruhi wondered, leading the way towards the school building."
+    show Haruhi Crossed Worry2
     show Tsuruya Hap3 Flip
     "\"Oh! Kyon-kun helped me out last night for our investigation,\" Tsuruya explained, grinning. \"He got a bit beat up — my fault! More pushy fellows. I made him stay over to mend his wounds.\""
     nvl clear
+    show Tsuruya Smile2 Flip
     "That made perfect sense, Haruhi thought. Then realization struck her. {nw}"
-    show Haruhi Sup3 Flip
+    show Haruhi Sup2 Flip
     extend "\"Kyon!\" she yelped, spinning to face him. \"What about your mother!? She'll flip out if—\""
-    show Kyon Smile6 
+    show Kyon Smile6 Flip
+    show Haruhi Unhap2 Flip
     "\"Asahina-san helped me on that count,\" he said, shaking his head. \"My, uh ... uncle ... stayed in my room last night anyway. So, really, Tsuruya-kun was just helping me keep my mom from seeing how banged up I got.\""
     nvl clear
+    show Kyon Smile4 Flip
     show Haruhi Unhap1 Flip
     "\"And you're not hurt?\" she asked anxiously, looking him over for obvious bandages."
-    show Kyon Worry1
+    show Haruhi Unhap2 Flip
+    show Kyon Puzzle1 Flip
     "\"Yeah, Nagato took care of that,\" he mumbled, glancing at Tsuruya worriedly."
+    show Kyon Worry1 Flip
     show Tsuruya Hap2 Flip 
     "\"You know,\" Tsuruya mused, seemingly oblivious, \"Kyon-kun's uncle has the exact sames voice? It's neat when families have hereditary traits!\""
     nvl clear
-    show Kyon Neutral1 
-    "\"Yeah, I was told I look just like my grandfather when he was my age,\" Kyon agreed.  {nw}"
-    show Kyon Worry3
+    show Tsuruya Smile2 Flip
+    show Kyon Neutral2 Flip
+    "\"Yeah, I was told I look just like my grandfather when he was my age,\" Kyon agreed. {nw}"
+    show Kyon Neutral1 Flip
     extend "He suddenly grimaced, muttering, \"I hope that doesn't mean anything.\""
-    show Haruhi Sigh1 
+    show Kyon Neutral4 Flip
+    show Haruhi Sigh1
     "Haruhi shook her head. \"Well, right now,\" she said, leading the way again, \"my primary concern is making sure that Kyon passes his test and stays in the brigade! So while I don't want to shut the investigation down, the test is more important.\""
     nvl clear
+    show Haruhi Sigh3
     show Tsuruya Hap4 Flip 
     "\"Ooh! I wish I could help with that,\" Tsuruya said, shaking her head. \"Hum.... Well! I'll stay out of your ways for now! Haru-nyan, do you mind if I borrow Kyon-kun again today?\""
+    show Tsuruya Smile2 Flip
     show Haruhi Unhap1 
     "\"Again?\" Haruhi asked, grimacing. \"Hmm.... The math test is after lunch, so I'd really like to make sure that he spends that time studying. I suppose after school should be alright, though I hope this doesn't keep up much longer.\""
     nvl clear
     scene bg LockersDayLeft with fade
-    show Tsuruya Smile4 Flip at left with dissolve
+    show Tsuruya Hap7 Flip at left with dissolve
     "\"Okies! I thinks we can finish our investigation by tomorrow ... maybe it might take a day or two longer?\" she pondered, gazing at the sky thoughtfully. \"Anyways, we're making really great progress! You'll be {i}mega{/i} happy with what we'll have for you when it's over, nyoro~!\" She blinked, turning her attention to Haruhi before they parted ways for their respective shoe lockers. \"Oopsie, I forgot to tell you where Kyon-kun and I met up for your receipt!\""
     nvl clear
+    show Tsuruya Smile4 Flip with None
     show Kyon Neutral1 at right with dissolve
-    show Haruhi Grin1 Flip at center with dissolve
-    "\"Receipt?\" Kyon asked, glancing at Haruhi and smirking. \"Ah, don't worry, Tsuruya-kun, I'll tell her.\""
+    show Haruhi Neutral1 Flip at center with dissolve
+    "\"Receipt?\" Kyon asked, glancing at Haruhi {nw}"
+    show Kyon Smile7
+    extend "and smirking. \"Ah, don't worry, Tsuruya-kun, I'll tell her.\""
+    show Kyon Smile4
     show Tsuruya Hap6 Flip 
     "\"Ah! Thankie, Kyon-kun!\" Tsuruya cheered, waving brightly before she twirled, her hair flaring behind her as she dashed away."
     hide Tsuruya with dissolve
     nvl clear
     show Haruhi Neutral2 
-    "\"So—\" Haruhi asked, breaking off when she saw Kyon furtively try to hide a note from his shoe locker in his blazer pocket.  {nw}"
-    show Haruhi Quest1 
+    "\"So—\" Haruhi asked, breaking off when she saw Kyon furtively try to hide a note from his shoe locker in his blazer pocket. {nw}"
+    show Haruhi Quest1
     extend "\"Ah! What's that?!\""
+    show Haruhi Quest2
     show Kyon Puzzle1 
     "\"Nothing,\" he lied quickly, pushing a small box deeper into his shoe locker and dropping his shoes to the floor."
     nvl clear
+    show Kyon Worry1 
     show Haruhi Neutral1 
     "\"Oh, okay,\" she said, nodding, then turning away to change her shoes. She calculated the few seconds it would take him to stash the box in his pocket, since his schoolbag was nowhere in sight, gambling that whatever it was, he wouldn't leave it behind where someone else might find it."
     show Kyon Smile2 
