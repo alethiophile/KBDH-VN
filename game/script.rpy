@@ -400,6 +400,9 @@ init:
     image Haruhi Unhap3 Flip = im.Flip("Sprites/Haruhi/HaruhiSideUnhappy3.png", horizontal=True)
     image Haruhi Eyeroll1 Flip = im.Flip("Sprites/Haruhi/HaruhiSideEyeroll1.png", horizontal=True)
     image Haruhi Eyeroll2 Flip = im.Flip("Sprites/Haruhi/HaruhiSideEyeroll2.png", horizontal=True)
+    image Haruhi Worry1 Flip = im.Flip("Sprites/Haruhi/HaruhiSideWorry1.png", horizontal=True)
+    image Haruhi Worry2 Flip = im.Flip("Sprites/Haruhi/HaruhiSideWorry2.png", horizontal=True)
+    image Haruhi Worry3 Flip = im.Flip("Sprites/Haruhi/HaruhiSideWorry3.png", horizontal=True)
     
     image Haruhi Crossed Sup1 Flip = im.Flip("Sprites/Haruhi/HaruhiCrossedSurprised1.png", horizontal=True)
     image Haruhi Crossed Sup2 Flip = im.Flip("Sprites/Haruhi/HaruhiCrossedSurprised2.png", horizontal=True)
@@ -1389,6 +1392,32 @@ init:
     image Koizumi Shrug Sigh1 Flip = im.Flip("Sprites/Koizumi/KoizumiShrugSigh1.png", horizontal=True)
     image Koizumi Shrug Smile1 Flip = im.Flip("Sprites/Koizumi/KoizumiShrugSmile1.png", horizontal=True)
     
+    image Koizumi Think Ser1 Flip = im.Flip("Sprites/Koizumi/KoizumiThinkSerious1.png", horizontal=True)
+    image Koizumi Think Ser2 Flip = im.Flip("Sprites/Koizumi/KoizumiThinkSerious2.png", horizontal=True)
+    image Koizumi Think Ser3 Flip = im.Flip("Sprites/Koizumi/KoizumiThinkSerious3.png", horizontal=True)
+    image Koizumi Think Ser4 Flip = im.Flip("Sprites/Koizumi/KoizumiThinkSerious4.png", horizontal=True)
+    image Koizumi Think Grin1 Flip = im.Flip("Sprites/Koizumi/KoizumiThinkGrin1.png", horizontal=True)
+    image Koizumi Think Grin2 Flip = im.Flip("Sprites/Koizumi/KoizumiThinkGrin2.png", horizontal=True)
+    image Koizumi Think Sup1 Flip = im.Flip("Sprites/Koizumi/KoizumiThinkSurprised1.png", horizontal=True)
+    image Koizumi Think Smile1 Flip = im.Flip("Sprites/Koizumi/KoizumiThinkSmile1.png", horizontal=True)
+    image Koizumi Think Smile2 Flip = im.Flip("Sprites/Koizumi/KoizumiThinkSmile2.png", horizontal=True)
+    image Koizumi Think Sigh1 Flip = im.Flip("Sprites/Koizumi/KoizumiThinkSigh1.png", horizontal=True)
+    image Koizumi Think Sigh2 Flip = im.Flip("Sprites/Koizumi/KoizumiThinkSigh2.png", horizontal=True)
+    image Koizumi Think Worry1 Flip = im.Flip("Sprites/Koizumi/KoizumiThinkWorry1.png", horizontal=True)
+    
+    image Koizumi Think Casual Ser1 Flip = im.Flip("Sprites/Koizumi/KoizumiThinkCasualSerious1.png", horizontal=True)
+    image Koizumi Think Casual Ser2 Flip = im.Flip("Sprites/Koizumi/KoizumiThinkCasualSerious2.png", horizontal=True)
+    image Koizumi Think Casual Ser3 Flip = im.Flip("Sprites/Koizumi/KoizumiThinkCasualSerious3.png", horizontal=True)
+    image Koizumi Think Casual Ser4 Flip = im.Flip("Sprites/Koizumi/KoizumiThinkCasualSerious4.png", horizontal=True)
+    image Koizumi Think Casual Grin1 Flip = im.Flip("Sprites/Koizumi/KoizumiThinkCasualGrin1.png", horizontal=True)
+    image Koizumi Think Casual Grin2 Flip = im.Flip("Sprites/Koizumi/KoizumiThinkCasualGrin2.png", horizontal=True)
+    image Koizumi Think Casual Sup1 Flip = im.Flip("Sprites/Koizumi/KoizumiThinkCasualSurprised1.png", horizontal=True)
+    image Koizumi Think Casual Smile1 Flip = im.Flip("Sprites/Koizumi/KoizumiThinkCasualSmile1.png", horizontal=True)
+    image Koizumi Think Casual Smile2 Flip = im.Flip("Sprites/Koizumi/KoizumiThinkCasualSmile2.png", horizontal=True)
+    image Koizumi Think Casual Sigh1 Flip = im.Flip("Sprites/Koizumi/KoizumiThinkCasualSigh1.png", horizontal=True)
+    image Koizumi Think Casual Sigh2 Flip = im.Flip("Sprites/Koizumi/KoizumiThinkCasualSigh2.png", horizontal=True)
+    image Koizumi Think Casual Worry1 Flip = im.Flip("Sprites/Koizumi/KoizumiThinkCasualWorry1.png", horizontal=True)
+    
     image Koizumi Crossed Hap1 Flip = im.Flip("Sprites/Koizumi/KoizumiCrossedHappy1.png", horizontal=True)
     image Koizumi Crossed Hap2 Flip = im.Flip("Sprites/Koizumi/KoizumiCrossedHappy2.png", horizontal=True)
     image Koizumi Crossed Ser1 Flip = im.Flip("Sprites/Koizumi/KoizumiCrossedSerious1.png", horizontal=True)
@@ -1530,8 +1559,17 @@ init:
     image Ryo Band Shifty3 = "Sprites/Ryo/RyoBandShifty3.png"
     image Ryo Band Sneer1 = "Sprites/Ryo/RyoBandSneer1.png"
     
+    image Ryo Ang1 Flip = im.Flip("Sprites/Ryo/RyoAngry1.png", horizontal=True)
+    image Ryo Ang2 Flip = im.Flip("Sprites/Ryo/RyoAngry2.png", horizontal=True)
     image Ryo Attack1 Flip = im.Flip("Sprites/Ryo/RyoAttack1.png", horizontal=True)
     image Ryo Attack2 Flip = im.Flip("Sprites/Ryo/RyoAttack2.png", horizontal=True)
+    image Ryo Grin1 Flip = im.Flip("Sprites/Ryo/RyoGrin1.png", horizontal=True)
+    image Ryo Grin2 Flip = im.Flip("Sprites/Ryo/RyoGrin2.png", horizontal=True)
+    image Ryo Neutral1 Flip = im.Flip("Sprites/Ryo/RyoNeutral1.png", horizontal=True)
+    image Ryo Shifty1 Flip = im.Flip("Sprites/Ryo/RyoShifty1.png", horizontal=True)
+    image Ryo Shifty2 Flip = im.Flip("Sprites/Ryo/RyoShifty2.png", horizontal=True)
+    image Ryo Shifty3 Flip = im.Flip("Sprites/Ryo/RyoShifty3.png", horizontal=True)
+    
     image Ryo Band Attack1 Flip = im.Flip("Sprites/Ryo/RyoBandAttack1.png", horizontal=True)
     image Ryo Band Attack2 Flip = im.Flip("Sprites/Ryo/RyoBandAttack2.png", horizontal=True)
         

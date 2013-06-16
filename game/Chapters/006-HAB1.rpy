@@ -439,35 +439,35 @@ label HAB1:
     $ _window = False
     extend "Just as she vanished from sight, Tsuruya finished her own dash up the stairs into the clubroom corridor, her eyes widening excitedly. \"Kyon-kun,\" she caroled, but in a quiet voice, drawing out the honorific. \"Hey, hey, would it be okay if I borrowed you a bit for helps with my investigation?\""
     nvl clear
-    show Tsuruya Sup1
+    show Tsuruya Sup1 Flip
     "She blinked suddenly, pausing to stare his cheek, then frowned sharply. \"Ooh, you better come with me, first of all,\" she decided, seizing his wrist and leading him back into the school. {nw}" 
     $ _window = True
     scene bg LockersDayLeft with wiperight
-    show Tsuruya Smile2 at left with dissolve
+    show Tsuruya Smile2 Flip at left with dissolve
     $ _window = False
     extend "He followed in bemusement until they reached her locker and she produced a first aid kit, cleaning his wound and then applying a bandage."
     nvl clear
-    show Tsuruya Hap1 with None
+    show Tsuruya Hap1 Flip with None
     show Kyon Smile4 at right
     show Kcut Bandage at right
     with dissolve
     "\"There,\" she said, once her treatment was done, grinning again. There was a twinkle in her eyes as she added, \"Don't get a scar, unless you gets another one to make it cross-shaped. That makes you way more rugged and bish!\""
-    show Tsuruya Smile3
+    show Tsuruya Smile3 Flip
     show Kyon Smile6
     "\"Yeah, that's not the part I'm worried about,\" he said, smirking, though the expression vanished the moment his cheek pulled at the cut. {nw}"
     show Kyon Neutral2
     extend "\"Anyway, Haruhi won't mind me helping you out; I've been dismissed from club activities today.\""
     nvl clear
     show Kyon Neutral3
-    show Tsuruya Hap5
+    show Tsuruya Hap5 Flip
     "\"Oh! Perfects! We can keep on with our investigation!\" Tsuruya said excitedly, glancing around to make sure that no one was within eavesdropping distance."
-    show Tsuruya Grin4
+    show Tsuruya Grin4 Flip
     "\"Okies, here's what I've found out so far ... those pushy fellows from Sunday, they have a contact in the school, a third year named Ryuguu Ryo-san. He loiters around on the campus behind the gym after school to make his deals. I want to questions him, but he's a big fellow, and Kasai's out ... so if you don't minds, could you be my muscle for a bit?\""
     nvl clear
-    show Tsuruya Grin2
+    show Tsuruya Grin2 Flip
     show Kyon Ser3      
     "\"Sure,\" Kyon agreed, realizing that the boy he had just fought with (from his perspective) must have been Ryuguu. Well, the informal 'you' would still serve for him. \"So, any plan? Maybe a little good cop, bad cop?\""
-    show Tsuruya Hap1
+    show Tsuruya Hap1 Flip
     show Kyon Ser1
     "Tsuruya giggled, leading the way to the shoe lockers and changing. Kyon checked his locker, but of course, the only shoes there were yesterday's indoor shoes."
     show Kyon Sigh3
@@ -475,11 +475,11 @@ label HAB1:
     nvl clear
     scene bg SchoolOutside with fade
     "Shaking his head, he followed Tsuruya out of the school building and around to the gym, to the shady side where the physical education storage outbuildings were. The stereotypical location for illicit romances within the school, delinquents hiding out...."
-    show Tsuruya Ser1 at left with dissolve
+    show Tsuruya Ser1 Flip at left with dissolve
     nvl clear
     "\"Now, I don't know Ryuguu-san, because we don't share a class together,\" Tsuruya warned in a whisper, \"but how many people are there hanging out around here?\""
     nvl clear
-    hide Tsuruya Ser1 with dissolve
+    hide Tsuruya with dissolve
     show Ryo Neutral1 at center with dissolve
     "It took a moment, but Kyon was able to pick out the boy in question, somewhat unfamiliar without tape across his nose and one eye blackened. \"That's him,\" Kyon told her with a nod. \"I've seen him before.\" Tsuruya leapt into a thicket of bushes and he followed, almost landing on her, murmuring a quick apology beneath his breath as they crept forward to watch Ryuguu and his allies."
     nvl clear
@@ -497,43 +497,43 @@ label HAB1:
     "\"Do you know what they were talking about?\" he whispered back."
     hide Ryo with dissolve
     nvl clear
-    show Tsuruya Neutral1 at left
+    show Tsuruya Neutral1 Flip at left
     show Kyon Ser1 at right
     show Kcut Bandage at right
     with dissolve
     "\"I'm not that goods yet,\" Tsuruya said apologetically, giggling very quietly. \"But I got that Ryuguu-san is mad at the other twos. Somethings went wrong, probably what we did on Sunday, so Ryuguu-san's having trouble, and the other two.... "
     "Hmm. The one with glasses said something about not caring about Ryuguu-san's problems, and that he still wanted money. I guess Ryuguu-san must owe him something.... The first year student was just following along, doing what he was tolds; he doesn't seem to be as high up on the food chains.\""
     nvl clear
-    show Tsuruya Neutral2
+    show Tsuruya Neutral2 Flip
     show Kyon Ser3
     "\"The one with glasses is Yamane-san, from my own class,\" Kyon said helpfully. \"I think he's in the photography club? I know he takes a lot of pictures during school events.\""
     show Kyon Ser1
-    show Tsuruya Susp1
+    show Tsuruya Susp1 Flip
     "\"Hmm, so he's probably a foreman or one of the workers,\" Tsuruya mused, eyes sharpening. \"Okies, they're gone; let's get Ryuguu-san before anyone else shows up or he leaves.\""
     show Tsuruya Smile1 at center with move
-    show Ryo Neutral1 at left with dissolve
+    show Ryo Neutral1 Flip at left with dissolve
     nvl clear
     "Kyon nodded at her, and the pair stood up, walking out of the bush and brushing leaves off. Ryuguu saw them emerge and jolted a bit, then crossed his arms over his chest and scowled. {nw}"
-    show Ryo Ang1
+    show Ryo Ang1 Flip
     extend "\"What?\" he snapped, the moment they drew within hearing range."
     nvl clear
     show Kyon Ser1
     "Uncertain of his role, Kyon just took up the loose, relaxed stance he had used when fighting Ryuguu last time, and said nothing."
     show Tsuruya Hap4
     "\"How's business?\" Tsuruya asked, suddenly politely professional."
-    show Ryo Neutral1
+    show Ryo Neutral1 Flip
     show Tsuruya Smile2
     "Ryuguu frowned, then said, \"Shouldn't be any of yours.... But.... Well, I heard you were a bit ... strange, Tsuruya-san. So, you want to buy?\""
     nvl clear
     show Tsuruya Hap5
     "\"Maybe,\" Tsuruya allowed. \"Whatcha got?\""
-    show Ryo Shifty2
+    show Ryo Shifty2 Flip
     show Tsuruya Smile1
     "\"If you don't know, I'm not selling.\""
     show Tsuruya Grin6
     "\"Oh, I knows what you're selling,\" she said evenly. \"Hum.... Anything from this year's students?\""
     nvl clear
-    show Ryo Neutral1
+    show Ryo Neutral1 Flip
     show Tsuruya Grin4
     "\"A bit,\" Ryuguu allowed, dropping his hands to his sides. \"Now, look, I'll sell to you, but only because my normal distributor is having problems. Understand that this is top-shelf stuff, meant to be shipped to the highest paying customers and then resold. So that's the kind of price I'm looking for. No copy protection, no censorship — this is the real deal.\""
     nvl clear
@@ -541,33 +541,33 @@ label HAB1:
     "Kyon blinked, wondering what the hell was going on, but deciding he already didn't like it. He tried to keep his expression neutral."
     show Tsuruya Grin5
     "\"So, what's the price?\" Tsuruya asked, grinning. \"I didn't bring a checkbook with me, nyoro~!\""
-    show Ryo Grin1
+    show Ryo Grin1 Flip
     show Tsuruya Grin2
     nvl clear
     "\"Right now I've got three SD cards, sorted by year,\" Ryuguu said, shifting his speech pattern from 'thug' to 'semi-competent salesman'. He fanned out the three cards between his fingertips, turning them back and forth to show Tsuruya both sides of the small digital chips. \"First year, twenty thousand yen, second year, fifteen thousand, third year, fifteen thousand.\""
     show Tsuruya Hap4
     "\"And these are sources?\" Tsuruya pressed. \"Originals, so there's no copies?\""
     nvl clear
-    show Ryo Grin2
+    show Ryo Grin2 Flip
     show Tsuruya Smile1
     "\"What, you want them exclusively?\" Ryuguu asked, quirking one eyebrow up in a smirk."
-    show Ryo Shifty1
+    show Ryo Shifty1 Flip
     show Tsuruya Grin6
     "Tsuruya nodded quickly. \"Think about it,\" she said. \"If I'm paying to be a reseller, what's the point if the next guys comes along and buys them then undercuts me? Yous got to be a sharp businessman to make it here, don'tcha?\""
-    show Ryo Shifty2
+    show Ryo Shifty2 Flip
     show Tsuruya Grin3
     nvl clear
     "\"Double the price,\" he said, shrugging. {nw}"
-    show Ryo Shifty3
+    show Ryo Shifty3 Flip
     extend "\"Then, sure, I'll give you everything and exclusive distribution. Only caveat is that I'm absolutely keeping personal copies.\""
     show Tsuruya Grin5
     "\"Hmm,\" Tsuruya replied, touching one fingertip to her lips and gazing upward, musing. \"Well, one hundred thousand yens is rather a lot, don'tcha think? Especially since I'm trying to see if I'm in the third years?\" She turned to Kyon and asked, \"Should we apply our discount?\""
-    show Ryo Shifty2
+    show Ryo Shifty2 Flip
     show Kyon Ser3
     show Tsuruya Grin2
     nvl clear
     "\"Yeah,\" Kyon agreed, nodding. \"I think we can negotiate a better price.\""
-    show Ryo Neutral1
+    show Ryo Neutral1 Flip
     show Kyon Ser1
     "\"Oh, don't even think about it,\" Ryuguu retorted, waving a hand dismissively. \"I'm the one holding the cards here, so to speak. There's no way that—\""
     show Tsuruya Grin4

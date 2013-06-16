@@ -238,16 +238,16 @@ label AO2:
     play music "Music/Kokuhaku.mp3"
     scene bg YukiRoomCenter
     show Haruhi Casual Worry1 at left
-    show Yuki Side1 at HalfLeft
+    show Yuki Side1 Flip at HalfLeft
     show Kyon Casual Ser1 at right
     with fade
     "\"So,\" Haruhi asked, her back to the large window of Yuki's living room, \"did it work?\""
     show Haruhi Casual Quest2
-    show Yuki Side1 at center with move
-    show Yuki Talk1
+    show Yuki Side1 Flip at center with move
+    show Yuki Talk1 Flip
     "Yuki removed her fingertips from Haruhi's head and said, \"Yes.\""
     show Kyon Casual Puzzle1
-    show Yuki Side1
+    show Yuki Side1 Flip
     "\"You're not going to die?\" Kyon asked quickly."
     nvl clear
     show Kyon Casual Worry1
@@ -1107,6 +1107,7 @@ label AO2:
     show Kyon Sigh2
     extend "he groaned, rubbing the back of his head where it had hit the wall. There was no way he would catch up with her while recovering his breath." 
     play sound "SE/doorknock.mp3"
+    show Kyon Sigh2 at center with move
     "Sighing, he trudged to the club room, knocking on the door before entering."
     nvl clear
     play sound "SE/dooropenslow.mp3"

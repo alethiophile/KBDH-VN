@@ -350,6 +350,7 @@ label SF3:
     "She closed her eyes and took a deep breath. \"Here it goes,\" she decided. \"I trust you, Kyon ... if I can't trust you, I can't trust anyone. So ... I'm going to have a minor power to affect things ... objects, anything more, I'll need Yuki-chan's help with, until I can learn to be responsible with that power.\""
     show Kyon Sup2 
     nvl clear
+    play sound "SE/ChairScrape.mp3"
     "\"Haruhi,\" he said, with the sound of his chair scraping across the floor as though he were standing up, \"you don't need to do this—\""
     show Haruhi Sigh2 
     nvl clear
@@ -404,7 +405,7 @@ label Vol02_start:
     show Kyon Smile3
     "\"When you wake up with as much energy as I do,\" he told her sternly, \"no surprise attack is going to be effective enough.\" "
     nvl clear
-    show Kyon Smile2
+    show Kyon Smile2 at center with move
     show Nonoko Smile1
     "He grabbed his sister's wrists and hauled her upward, leaving her to dangle a few centimeters over the floor before gently lowering her to stand and releasing her. She stuck her tongue out at him, giggling, then ran down the stairs to their mother."
     nvl clear
@@ -537,6 +538,7 @@ label Vol02_start:
     nvl clear
     show Haruhi Sigh3 
     show Kyon Puzzle1 
+    play sound "SE/ChairScrape.mp3"
     "He rose from his seat and hefted his bag, while she shoved her own collection of papers into her bag. \"Haruhi, if I can ask you to be honest about this ... when you say you would do it for anyone in the brigade ... don't you really mean any of your friends?\""
     nvl clear
     show Haruhi Sup1 
@@ -553,9 +555,14 @@ label Vol02_start:
     extend "\"She said she was occasionally 'lucky enough to have friends'. I just sometimes worry that you forget that your fellow brigade members are friends, too, not only subordinates in the club.\""
     nvl clear
     hide Hblush
-    show Haruhi Ang4 
-    show Kyon Worry1 
-    "\"Man,\" Haruhi grumbled, closing the door then hurrying to Kyon's side, \"you make it sound like I can't stand having equals!\""
+    
+    scene bg ClubHallLeft with wipeleft
+    show Haruhi Ang4 at TenthLeft
+    show Kyon Worry1 at TenthRight
+    with dissolve
+    "\"Man,\" Haruhi grumbled, {nw}"
+    play sound "SE/doorclose2.mp3"
+    extend "closing the door then hurrying to Kyon's side, \"you make it sound like I can't stand having equals!\""
     nvl clear
     show Haruhi Hap4 
     play sound "SE/impact.mp3"
@@ -1035,10 +1042,10 @@ label _Test:
     $ _window = False
     nvl clear
     $ renpy.layer_at_list([PanScene_OffCenterRToLeft])
-    show Haruhi Worry1 at right with move
+    show Haruhi Worry1 Flip at right with move
     "\"Okay!\" Haruhi declared, turning to the downcast Kanae. \"What happened with Kyon? Why did he get cut getting you for lunch?\" And speaking of lunch ... she hadn't even managed to give Kyon the bento she had made! She didn't know who Tsuruya was investigating, but she was certain she'd make them pay!"
     nvl clear
-    show Haruhi Neutral1
+    show Haruhi Neutral1 Flip
     show Kanae Sad3
     show Tsuruya Sup1
     "\"I...it's my fault,\" Kanae said meekly, hunching in on herself."

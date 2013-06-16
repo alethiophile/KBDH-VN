@@ -307,12 +307,12 @@ label SF1:
     nvl clear
     $ renpy.layer_at_list([PanScene_RightToOffCenterL])
     show Haruhi Ang1
-    show Koizumi Think Grin1
+    show Koizumi Think Grin1 Flip
     "\"You think you've got something that's going to pull me away from finally getting a question in edgewise to a slider?\" Haruhi asked Kyon skeptically."
     hide YBook
     show Haruhi Ang5
     "Koizumi grinned, ducking his head apologetically as he stowed the go board and pieces. {nw}"
-    show Koizumi Think Grin2
+    show Koizumi Think Grin2 Flip
     extend "\"Well,\" he said, \"it does concern the destruction of our world.\""
     nvl clear
     show Kyon Ser3
@@ -320,7 +320,7 @@ label SF1:
     show Mikuru Maid Neutral2
     "\"Obviously, we're interested in preventing that,\" Kyon added. \"I'm hoping you're on the same page.\""
     show Haruhi Crossed Tsun2
-    show Koizumi Think Grin1
+    show Koizumi Think Grin1 Flip
     "\"Of course I am; what do you take me for?\" Haruhi groused. {nw}"
     show Haruhi Crossed Hap1
     extend "\"But I meant what I said, Kanae-chan! You're part of the brigade now, and that means it's not just Kyon, but all of us who will watch out for you! {nw}"
