@@ -124,18 +124,20 @@ label Fi1:
     scene bg TsuruyaKitchen with fade
     queue music "Music/MegassaKoukishin.mp3"
     show Tsuruya Hap1 at right 
-    show Kyon Neutral3 at TenthLeft 
+    show Kyon Neutral3 Flip at TenthLeft 
     with dissolve
     "After eating enough sumptuous fare to feel like a total glutton, Kyon was somewhat surprised to see that Tsuruya had eaten just as eagerly. \"Ah, good, good,\" she decided, leaning back and patting her stomach. \"Mmm, school isn't for a bit, did you want to walk the grounds with me before it starts?\""
     nvl clear
     show Tsuruya Smile5 
-    show Kyon Unhap1
-    "He thought back to the flower viewing ... the Tsuruya estate did have some very nice trees; he could only imagine it took an army of gardeners to manage. \"Actually,\" he realized with a wince, \"I'm supposed to meet with Haruhi at the clubroom early — I need to study for a test today.\""
+    show Kyon Neutral4 Flip 
+    "He thought back to the flower viewing ... the Tsuruya estate did have some very nice trees; he could only imagine it took an army of gardeners to manage. {nw}"
+    show Kyon Unhap1 Flip
+    extend "\"Actually,\" he realized with a wince, \"I'm supposed to meet with Haruhi at the clubroom early — I need to study for a test today.\""
     show Tsuruya Hap5
     "\"Okies!\" she said brightly. \"I'll go with yous! Sound good, nyoro~?\""
     nvl clear
     show Tsuruya Smile2
-    show Kyon Neutral2 
+    show Kyon Neutral2 Flip
     "\"Shouldn't be a problem,\" he agreed after mulling it over. She beamed him a smile and they left her estate together on foot after she had summoned a pair of bentos as though by magic, snapping her fingers and having a maid scurry into the room to offer them."
     scene bg TsuruyaHouseDay with fade
     show Kyon Puzzle1 at TenthLeft with dissolve
@@ -337,9 +339,10 @@ label Fi1:
     "\"Nothing,\" he lied quickly, pushing a small box deeper into his shoe locker and dropping his shoes to the floor."
     nvl clear
     show Kyon Worry1 
-    show Haruhi Neutral1 
+    show Haruhi Neutral1 Flip
     "\"Oh, okay,\" she said, nodding, then turning away to change her shoes. She calculated the few seconds it would take him to stash the box in his pocket, since his schoolbag was nowhere in sight, gambling that whatever it was, he wouldn't leave it behind where someone else might find it."
     show Kyon Smile2 
+    show Haruhi Neutral1
     nvl clear
     "By the time she had changed her shoes and turned back, he had the almost-concealed smug expression of managing to pull one over on her. She pursed her lips, resisting the urge to smirk and give herself away."
     nvl clear
@@ -453,6 +456,7 @@ label Fi1:
     show Haruhi Smile3
     extend "\"Well, good work, Mikuru-chan!\""
     show Mikuru Cower Wince1 at right
+    show MBlush Cower at right
     "Collapsing back into a kneeling pile, the upperclassman returned an incomprehensible series of sobs. Kyon sucked in a greedy breath, his eyes unfocused, then coughed, gasping to recover."
     nvl clear
     show Haruhi Worry1

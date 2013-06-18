@@ -928,7 +928,8 @@ init:
     image Mikuru Cower Unhap1 = "Sprites/Mikuru/MikuruCowerUnhappy1.png"
     image Mikuru Cower Worry1 = "Sprites/Mikuru/MikuruCowerWorry1.png"
     
-    image MBlush Cower = "Sprites/Mikuru/MikuruCowerBlush1.png"
+    image MBlush Cower = "Sprites/Mikuru/MikuruCowerBlush.png"
+    image MBlush Cower Casual = "Sprites/Mikuru/MikuruCowerCasualBlush.png"
     image MBlush Cower Towel = "Sprites/Mikuru/MblushCowerTowel.png"
     image MTears = "Sprites/Mikuru/MTearsCower1.png"
     

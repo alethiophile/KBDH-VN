@@ -717,7 +717,7 @@ label AO1_1:
     scene bg YukiRoomCenter with dissolve
     show Koizumi Crossed Casual Uneasy1 at center
     show Mikuru Cower Casual Nervous1 at right
-    show MBlush Cower at right
+    show MBlush Cower Casual at right
     show Yuki Side1 at left
     with dissolve
     "Koizumi looked uncomfortable. Mikuru's face turned red, and she began studying the bottom of her teacup intently."
