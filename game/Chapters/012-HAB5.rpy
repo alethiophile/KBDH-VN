@@ -1,4 +1,14 @@
 label HAB_5:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 012 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
     "After reaching Tsuruya's house, Kyon and Yuki followed the green-haired girl into her room, where a trio of cloth-wrapped bundles were waiting. \"I got your sizes from Mikuru-chan, since she measured you at lunch,\" Tsuruya explained, as Kyon unwrapped the one she handed him."
     "Within was a complete uniform for a school he didn't recognize. Their own school had boys wearing parochial-style school uniforms, but the unwrapped outfit was the more classic and traditional military-themed gakuran uniform. It looked very like the one he had seen on Koizumi in that alternate world...."
     nvl clear

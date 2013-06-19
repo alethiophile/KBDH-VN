@@ -480,7 +480,7 @@ label Fi1:
     show Haruhi Unhap1
     nvl clear
     "\"Arg! I just don't like being left behind!\" Haruhi stamped one foot angrily on the floor for emphasis. \"I should have known that time travelers wouldn't let me see anything I wasn't supposed to.\""
-    show Kyon Unhap2
+    show Kyon Unhap2 Flip
     "\"Damn it, Haruhi!\" Kyon protested, seeming to come back to his senses as he sat up and gave her a sharp stare. \"What was that all about!?\""
     nvl clear
     show Haruhi Neutral2
@@ -488,25 +488,25 @@ label Fi1:
     show Haruhi Eyeroll2
     extend "She narrowed her eyes and leaned towards Kyon. \"What, you think that was bad, or something?\""
     nvl clear
-    show Kyon Neutral1
+    show Kyon Neutral1 Flip
     "\"Er, well,\" he managed, suddenly deflated, before he shook his head and gave her a stern look.  {nw}"
-    show Kyon Ser2
+    show Kyon Ser2 Flip
     extend "\"What about Asahina-san's feelings? Doesn't that strike you as being thoughtless to her?\""
     show Mikuru Cower Worry1
     nvl clear
     "\"It's ... okay,\" Mikuru managed, hunching in on herself where she sat on the floor. Her face reddened further and she stared intently at the space between her knees. \"Um, if it's Kyon-kun....\""
-    show Kyon Neutral4
+    show Kyon Neutral4 Flip
     "He stared at her, confused, obviously trying to puzzle things out."
     nvl clear
     show Haruhi Hap4
     "\"Right, see?\" Haruhi said insistently. \"Anyway, Kyon, you and {i}I{/i} were much closer than that.\" Which reminded her.... She spent a moment smoothing her skirt back down. \"Now, what's this letter mean, anyway?\" she asked, handing it to the boy."
     nvl clear
-    show Kyon Neutral2
+    show Kyon Neutral2 Flip
     "He remained sitting on the floor, puzzling over it briefly, then shook his head. \"It's not for you and one of us should apologize to Asahina-san,\" he told her."
     show Haruhi Eyeroll1
     "\"Well, I know {i}that{/i}. I want to know what the squiggles mean!\""
     nvl clear
-    show Kyon Worry1
+    show Kyon Worry1 Flip
     "Shrugging, he offered the note to Mikuru. \"Um, Asahina-san, I'm really sorry about that,\" he added."
     "\"Notes,\" Haruhi declared, turning her attention to her schoolbag, while Mikuru hesitantly accepted the paper and scanned the message. Her notes were in the top, neatly organized, so she got those out. Where was Kyon's schoolbag, anyway? Had he brought nothing but a bento with him?"
     show Mikuru Quest1
@@ -515,7 +515,7 @@ label Fi1:
     show Haruhi Unhap1
     "\"Make it quick,\" Haruhi ordered. \"You've still got to study!\""
     nvl clear
-    show Kyon Sigh2
+    show Kyon Sigh2 Flip
     "\"Yeah, yeah,\" he groused, rising to stand and helping Mikuru to her feet before striding into the hallway. \"Don't worry; I've got the box ... as long as it wasn't crushed earlier.\""
     hide Kyon with moveoutleft
     show Haruhi Unhap3
@@ -693,7 +693,7 @@ label Fi1:
     nvl clear
     scene bg TownLeft with fade
     show Mikuru Smile2 at center
-    show Kyon Smile3 Flip at TenthLeft
+    show Kyon Smile4 Flip at TenthLeft
     with dissolve
     "She smiled softly and turned away, beckoning him to follow. He fell into step at her side with no hesitation, hands in his pockets casually. Trying to be a bit subtle about it, she looked at him sidelong. His uniform was nearly immaculate, as though he'd put it on and not even sat down for a day of school. Lately, he had seemed drained of energy, due to their recent late night training sessions with Nagato."
     nvl clear
@@ -728,8 +728,8 @@ label Fi1:
     "She shook her head again, giving him a smile before gesturing to a large storefront. The outside windows were filled with swaths of cloth, sewing supplies, and layouts of do-it-yourself clothing patterns. \"Um, I'd like to get some things from here.\""
     nvl clear
     scene bg FabricShop with fade
-    show Mikuru Neutral1 at TenthRight
     show Kyon Neutral2 Flip at TenthLeft
+    show Mikuru Neutral1 at TenthRight
     with dissolve
     "He raised an eyebrow, scanning around as they stepped inside. High shelves were covered with full bolts of cloth, and at a glance, he was the only remotely male figure in the entire store, aside from a mannequin in a heavy winter coat, obviously still up from the last sale, and overdue to be redressed or put into storage. \"Sure,\" he said, shrugging. \"This is stuff you know much better than I do, so I hope you don't mind if I just carry things for you?\""
     nvl clear
@@ -804,6 +804,7 @@ label Fi1:
     nvl clear
     show Kyon Smile3 Flip
     "\"That's absolutely already happened,\" he returned, grinning. \"Say ... when we nailed that can to the ground?\""
+    show MBlush1 at TenthRight
     "She nodded, her face heating up again."
     nvl clear
     "\"Well, even if you want to say it was me doing it, I never would have if you hadn't translated those instructions. Even though the initiative may have been provided by the future, without you, that event never could have happened!\""
@@ -818,6 +819,7 @@ label Fi1:
     show Mikuru Smile2
     "\"That's just what you said last Sunday,\" she said, smiling weakly. \"And, um.... That's what I want! I mean, I'm not ... very helpful, or reliable ... I'm nothing like Nagato-san, or even Koizumi-kun.... I'd like some day to be the Mikuru who rescues you, not the one who ... well.\" {nw}"
     show Mikuru Unhap3
+    hide MBlush1
     extend "She sighed and hung her head."
     nvl clear
     show Kyon Sigh1 Flip
@@ -847,24 +849,37 @@ label Fi1:
     "\"Um, some pattern paper, maybe?\" she mused. \"I'll need more pins ... and more cloth, for certain....\" She looked around the store again, trying to decide where she would go next. \"Um, or did you want to leave?\" she worried aloud, turning to look at him with concern. Making him spend so long listening to her speak of such things at a sewing supply store ... surely there were things he'd rather be doing with his time."
     nvl clear
     show Kyon Smile3 Flip
-    "\"Hey, I asked if there was anything I could help you with,\" he told her, grinning. \"This is better than buying tea because of mysterious instructions or getting into another fight.\" He winced when he caught her flinch at that remark. \"Ah, nevermind that,\" he said quickly, shaking his head. \"Suffice to say that I don't mind helping you at all.\""
+    "\"Hey, I asked if there was anything I could help you with,\" he told her, grinning. \"This is better than buying tea because of mysterious instructions or getting into another fight.\" {nw}"
+    show Mikuru Sad2
+    show Kyon Pain1 Flip
+    extend "He winced when he caught her flinch at that remark. \"Ah, nevermind that,\" he said quickly, shaking his head. \"Suffice to say that I don't mind helping you at all.\""
     nvl clear
-    "She knew she should just thank him politely and finish her shopping, but she just couldn't forget what they had spoken of after parting with Koizumi that fateful Sunday, where Kyon had told Haruhi everything. She spent a long minute struggling with what she should do, feeling her face heat up as she dithered. She practically leapt in shock when he tapped her shoulder, leaning towards her with concern in his eyes."
+    show Mikuru Think Quest1
+    show MBlush Think at TenthRight
+    "She knew she should just thank him politely and finish her shopping, but she just couldn't forget what they had spoken of after parting with Koizumi that fateful Sunday, where Kyon had told Haruhi everything. She spent a long minute struggling with what she should do, feeling her face heat up as she dithered. {nw}"
+    hide MBlush Think
+    show Mikuru Think Sup1
+    show Kyon Neutral1 Flip at center behind Mikuru with move
+    extend "She practically leapt in shock when he tapped her shoulder, leaning towards her with concern in his eyes."
     nvl clear
-    show Kyon Worry1 Flip
+    show Kyon Unhap2 Flip
     "\"You okay?\" he asked. His concern turned to irritation. \"More orders from the future?\""
     show Mikuru Sigh1
+    show Kyon Neutral3 Flip at TenthLeft with move
     "\"N...no,\" she managed, shaking her head quickly. He relaxed visibly and she realized she had been running her fingertips over the same piece of cloth over and over for several minutes."
     nvl clear
-    show Mikuru Quest1
+    show Mikuru Think Quest1 Flip
+    show MBlush Think Flip at TenthRight
     "\"J...just thinking,\" she said, taking the bolt — she didn't even know what it was, but if she didn't do something to distract herself from her embarrassment she was going to do something she'd regret. \"Could you carry this for me?\" she asked, not meeting his eyes."
     nvl clear
     show Kyon Smile6 Flip
     "\"Anything for you,\" he agreed. She wished and hoped she could ask him what he meant by that ... what the complete implications were. But she knew it was an impossible dream, and even if it {i}were{/i} possible, with Haruhi...."
     nvl clear
     scene bg TownLeft with fade
-    show Mikuru Think Quest1 at center with dissolve
+    show Mikuru Think Quest4 at TenthRight
+    show MBlush Think at TenthRight
     show Kyon Neutral3 Flip at TenthLeft
+    with dissolve
     "Mumbling a nervous thanks to the boy, she strolled around the store, unable to bring herself to speak on anything else for fear of causing what she knew would only be trouble later, while he struggled to strike up a conversation about anything. After buying far more cloth than she could ever feasibly need, and further burdening Kyon with it all, they finally left the store."
     nvl clear
     show Kyon Neutral1 Flip

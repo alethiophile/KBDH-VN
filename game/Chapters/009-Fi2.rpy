@@ -1,15 +1,14 @@
 #label Test:
 label Fi2:
-    # Kyon: Big Damn Hero"
-    ## Filler Arc II"
-    ### Chapter Nine: Family Matters"
-    #"Disclaimer: The novel series of Suzumiya Haruhi that began with 'The Melancholy of Suzumiya Haruhi' is the creation of Nagaru Tanigawa. No disrespect is intended by the posting of this fanfiction, as I do not own the characters or settings involved. I'm merely dabbling with another set of paints. TVtropes(dot)org is part of the public domain, I think? I actually couldn't find a 'legal' section on the site!"
-    #"Notes: Count the tropes! Save, collect, trade for swell prizes!"
-    #"* * *"
-    #"\"File K:3453.3.5/2011.4.22\""
-    #"\"...then push the stack representing the focus shift in prio research target. Due to the complexity of interaction with this particular model, an automated property will top your stack every two minutes if you do not pop or [CLASSIFIED]. Do not attempt to adjust this; it is for your own safety! For the remainder of this lesson, you will need to utilize your augmented reality context-tags, or relay queries to me. Oh! And before this comes up? No, I will **not** ask [CLASSIFIED] to autograph anything for you.\""
-    #"\"[CLASSIFIED]\" — Peraea Mons T.E.S.A. Dataplume"
-    #"* * *"
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 009 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
     
     stop music fadeout 0.5
     scene bg MikuruRoom with fade

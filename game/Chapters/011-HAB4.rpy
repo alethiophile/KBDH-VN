@@ -2,6 +2,16 @@
 
 
 label HAB4:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 011 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
     scene bg ClubHallLeft with fade
     stop music fadeout 1
     queue music "Music/suspicion.ogg"
