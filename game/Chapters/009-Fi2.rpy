@@ -93,6 +93,8 @@ label Fi2:
     nvl clear
     show Mikuru Hap1
     "She brightened even further. \"I'm glad!\" she cheered. \"It only seems right that I pay you back for all the work you did for me today!\""
+    show Kyon Smile4
+    show Mikuru Smile2
     "He nodded thoughtfully, taking one of the still-warm buns and sampling it cautiously. No filling, but they were well-made, he decided."
     nvl clear
     "He watched the old man on the other side of the counter hum as he stirred and mixed various ingredients, and absently reached for another bun, freezing when he realized that Mikuru was doing the same, and their hands touched. {nw}"
@@ -102,6 +104,7 @@ label Fi2:
     show Mikuru Smile3
     "\"N...no problem,\" she assured him. For a heartbeat, it seemed as though she was going to say something else, before—"
     show Mikuru Ser3
+    show Kyon Smile4
     "\"Your orders,\" the old man said abruptly, breaking the moment before it could progress and setting an over-sized bowl before each of them."
     "Why did Mikuru look briefly annoyed at the old man, Kyon wondered, as he offered his thanks and prepared to eat."
     nvl clear
@@ -149,18 +152,21 @@ label Fi2:
     "For a long minute, he could only stare at his father and the glowing tip of the brand in his mouth. Was who worth it? Tsuruya, who had gotten him into the investigation? Kanae, who was just a bystander? Mikuru, who controlled the time travel that let him get into such a mixed up situation? Yuki, maybe, who had given him the training he needed to win the fight?"
     nvl clear
     "Or maybe Haruhi, who everything was centered around even if she wasn't — for once — really involved herself?"
-    show Kyon Neutral2
+    show Kyon Ser3
     "He didn't even know which girl it was about ... but then he realized it didn't matter; he already had the answer in every case. \"Absolutely,\" he swore."
     nvl clear
-    "His father grunted wordlessly, then knelt and stubbed the remains of the cigarette out. \"Good,\" he decided. \"Okay, you just need to understand your mother's concern. She doesn't honestly demand much of you ... reasonable grades and a clean record. If you're going to get into trouble at school, you'd better make sure that your grades are a lot better.\""
     show Kyon Neutral3
+    "His father grunted wordlessly, then knelt and stubbed the remains of the cigarette out. \"Good,\" he decided. \"Okay, you just need to understand your mother's concern. She doesn't honestly demand much of you ... reasonable grades and a clean record. If you're going to get into trouble at school, you'd better make sure that your grades are a lot better.\""
+    show Kyon Neutral1
     "He nodded. That wasn't terribly different from what his mother had said anyway. \"I understand.\""
     nvl clear
+    show Kyon Neutral3
     "\"It's not too hard to make her happy,\" his father continued, putting his hands into his pockets and staring up at the sky. \"There's no way you could come home from school one day and announce that you had, say, rescued an heiress from rampant hoodlums and secured a position at her father's company. So, her point of view is that there's no future in fighting.... Well.\" The man shrugged."
     nvl clear
     show Kyon Neutral5
     "\"But it wasn't anything like that!\" Kyon protested. \"Ryuguu was attacking Kanae-chan — he pulled a knife on me! What was I supposed to do? I swear, I'm not going around looking for trouble.\""
     nvl clear
+    show Kyon Neutral3
     "The man's eyes drifted down from the dim sky, and one eyebrow quirked up. \"Kyon-kun ... you're not a martial artist, or a samurai. I think it's good that you stood up for your classmate, don't get me wrong. But at the same time ... you can easily get in over your head.\""
     nvl clear
     "\"Neither your mother nor myself want to see you get hurt. And like any parents, we want you to be safe and happy. That may mean being a bit more cautious now, but when you're older and capable of having a real career, it will all be for the best, won't it?\""
@@ -171,35 +177,44 @@ label Fi2:
     show Kyon Neutral1
     "\"Well.... Uncle Keiichi never even went to college, and from his stories he was a real troublemaker in school, too, but he's got a career.\""
     nvl clear
+    show Kyon Neutral3
     "\"Eh ... yes, but your uncle Keiichi also married a shrine maiden and most of his 'career' is funded by a Yakuza family,\" the man countered."
     "\"No offense to him, but your mother wouldn't have been born if it weren't for the fact his parents thought they could raise a better-behaved and more responsible child. He's a very eccentric character, and that's not a standard the rest of us should hold ourselves to.\""
     nvl clear
+    show Kyon Sigh4
     "Even if uncle Keiichi lived in the country, Kyon couldn't help but think that he was probably one of the most popular people in his village; the townspeople routinely called him 'the magician of words'."
     "Obviously his grandparents on his mother's side didn't know what they were talking about. Weren't they both novelists? They probably spent more time paying attention to their writing than the world immediately around them."
     nvl clear
-    show Kyon Neutral2
+    show Kyon Puzzle1
     "\"I'm not sure I'm happy giving up the possibility of doing things differently and still being successful,\" he finally told his father."
     nvl clear
+    show Kyon Worry1
     "The man grunted at that, nodding slowly. \"Fair enough,\" he allowed. \"Even so ... the point of this is that while you may pursue some slim chance, a solid education is a sure thing. Since it's not possible to know the future, your mother's primary concern is that you at least keep that one reasonable goal in sight, regardless of whatever else you do.\""
     nvl clear
     show Kyon Sigh4
     "Kyon sighed. Probably best not to mention the fact that he {i}had{/i} rescued a wealthy heiress, he was {i}already{/i} involved with a ninkyo dantai family, and as a matter of fact, at least until some time tomorrow morning, he {i}did{/i} know the future because he'd already {i}been{/i} there."
     nvl clear
-    show Kyon Neutral2
+    show Kyon Neutral5
     "\"So, if I'm like Haruhi and place first in testing this term, I can cause any trouble I want as long as it doesn't get me expelled?\" he said instead."
     nvl clear
+    show Kyon Neutral3
     "His father blinked languidly, his lips quirking in a smile. \"I'm not sure about that,\" he said. \"But, if you place in the top ten, I'll help you get your license over summer break. How about that?\""  
     nvl clear
-    show Kyon Smile4
+    show Kyon Smile6
     "He smiled weakly, realizing that the offer was only made because of a certainty that he would fall short. \"I'll hold you to it,\" he said, nodding. He may as well just ask Arakawa or Yuki for the lesson."
+    show Kyon Smile4
     "\"So, we're understood that you'll keep your mother happy, or at least try your best?\""
-    show Kyon Neutral1
+    show Kyon Smile6
     "\"I'll try my best,\" he promised."
     nvl clear
+    show Kyon Smile4
     "\"Good,\" the man said, reaching forward and clapping one hand on his shoulder firmly. \"Good. I'm glad we had this talk, Kyon-kun. Oh, also, since you brought your uncle up, your aunt Rika wanted to know if you'd be going up to visit for Golden Week.\""
     nvl clear
     show Kyon Sigh2
-    "\"Better known as being strong-armed into day-care services,\" Kyon mumbled. \"I'm not sure yet.\" What would Haruhi have planned for the vacation?"
+    "\"Better known as being strong-armed into day-care services,\" Kyon mumbled. {nw}"
+    show Kyon Neutral2
+    extend "\"I'm not sure yet.\" What would Haruhi have planned for the vacation?"
+    show Kyon Neutral3
     "\"Well, if your grades go down, your mother will send you off anyway,\" the man warned. \"With nothing but study guides to keep you company. Good luck!\""
     nvl clear
     "Kyon nodded as his father went back into the house, then sat down on the porch and pulled his cell phone from his pocket. How long had he spent fighting the yakuza with Tsuruya? When had he passed out in the back of her limousine? He should have paid closer attention, he realized. Deciding it was close enough, he called and left himself another voice mail, then went inside to use the house's phone to call Tsuruya."
@@ -237,28 +252,32 @@ label Fi2:
     show Mikuru Smile2 at TenthLeft
     show Kyon Smile4 at right
     with dissolve
-    
     "After a night of rest that felt oddly unusual for not involving one of Yuki's training scenarios, he left early to reach Mikuru's place. According to his wristwatch he was exactly on time, and reached her apartment door just as she opened it, greeting him with another of the shy smiles she had adopted lately. What exactly was he going to say to her next Sunday, anyway?"
     nvl clear
     show Mikuru Hap2
     "\"Good morning, Kyon-kun,\" she said cheerfully. \"You don't think we'll be too early?\""
     show Kyon Puzzle1
+    show Mikuru Smile2
     "He bit his tongue, remembering what Mikuru would be subjected to the second she reached the clubroom. \"Not too early,\" he managed."
     nvl clear
     scene bg TownStreetDay1 with wiperight
     show Kyon Smile4 at right
     show Mikuru Smile1 at TenthLeft
     with dissolve
-    "They traded bags, her carrying his schoolbag, and him carrying the sewing machine and the large, heavier bag of cloth and assorted other sewing supplies. After they got off the train, walking up the hill, she added, \"It's nice to walk to school together, Kyon-kun. Thank you for helping me out.\""
+    "They traded bags, her carrying his schoolbag, and him carrying the sewing machine and the large, heavier bag of cloth and assorted other sewing supplies. After they got off the train, walking up the hill, she added, {nw}"
+    show Mikuru Smile3
+    extend "\"It's nice to walk to school together, Kyon-kun. Thank you for helping me out.\""
     nvl clear
     show Kyon Smile6
+    show Mikuru Smile2
     "\"No problem at all.\""
     show Mikuru Smile3
     "She pointed at an intersection as they passed it, remarking, \"I would usually meet Tsuruya-san there, if we walked together.\""
     nvl clear
-    show Kyon Worry1
+    show Kyon Puzzle1
     "\"She's a good person,\" he replied, glancing at his watch and frowning. \"I'm glad she looks out for you.\""
     show Mikuru Quest1
+    show Kyon Worry 1
     "Mikuru gave him a puzzled smile. \"Are you okay?\" she finally asked. \"You've been acting worried all morning.\""
     nvl clear
     show Kyon Puzzle2
