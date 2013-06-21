@@ -1930,7 +1930,7 @@ init python:
     config.empty_window = nvl_show_core
     config.window_hide_transition = dissolve
     config.window_show_transition = dissolve
-    renpy.music.set_volume(0.4, .5, channel="music")
+#    renpy.music.set_volume(0.4, .5, channel="music")
     flashbulb = Fade(0.2, 0.0, 0.8, color='#fff')
     slowflashbulb = Fade(1.0, 0.5, 2.0, color='#fff')
     slowdissolve = Dissolve(1.0)
@@ -2601,8 +2601,11 @@ label Preview2:
 
 # White eyecatch routine with two dates to show, second replacing first. Default
 # values are a wonderful thing.
-label eyecatch_fancy(date1="", date2=date1, pause_time=3.0, r=0, ecbg="black"):
+label eyecatch_fancy(date1="", date2="", pause_time=3.0, r=0, ecbg="black"):
     #scene eyebg with Dissolve(1)
+    python:
+        if date2 == "":
+            date2 = date1
     $ nw = _window
     $ _window = False
     $ date1 = "\n\n\n\n" + date1
