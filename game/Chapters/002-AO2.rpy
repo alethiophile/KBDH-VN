@@ -1422,9 +1422,9 @@ label AO2:
     "\"Well,\" he said, shrugging. \"Is there anything else I {i}should{/i} know?\""
     nvl clear
     show Kyon Casual Sup2 
-    play sound "SE/tiresqueal.mp3"
+    play sound "SE/tiresquealFar.mp3"
     pause 1.5
-    play sound "SE/Crash3.mp3"
+    play sound "SE/CrashFar.mp3"
     "Down a distant street, he heard the squeal of tires on pavement, then a thunderous crash. He turned his head to look, but found his face being turned back by Mikuru's hand." 
     show MikuruBig Sad2
     "\"Pay no mind,\" she said, somewhat sadly. \"I'll give you something nice to go home and forget about this for now. Get plenty of rest tonight, okay?\""
