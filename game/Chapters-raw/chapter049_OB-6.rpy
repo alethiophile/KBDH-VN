@@ -1,4 +1,15 @@
 label OB_6:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 049 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+   
     "After completing the plan to frame Takahashi, Haruhi was obviously excited and anxious — unable to keep from talking about it."
     "\"I can't believe it worked so easily,\" Haruhi said in dismay. \"I mean— I think you probably could have done the entire thing by yourself, but after Kyon did all that, I couldn't just sit around and let you take care of things! What kind of leader would I be if I did that?"
     "\"But it's so one-sided ... Kyon's coat's disguise is perfect — looking like Takahashi to frame her was so easy I almost feel bad about it. She really deserved it, after all, but this kind of power ... I'm glad that Kyon's responsible with it. That's nothing compared to you disguising yourself like Kyon's sister, and us getting caught on some security cameras downtown, though!\" she continued, still agitated."

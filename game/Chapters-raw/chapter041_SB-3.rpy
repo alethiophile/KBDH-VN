@@ -1,4 +1,15 @@
 label SB_3:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 041 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+   
     "Class had started innocently enough that day, but he'd long ago given up on expecting {i}that{/i} to mean anything. With each passing moment after lunch, he grew more and more anxious, stealing glances behind him to make certain that she was still there — still {i}safe{/i}. And every time their eyes met, she smirked knowingly and quickly looked outside, trying to pretend eye contact was never made."
     "He was absolutely certain that if his sense of anxiety weren't imagined, she was the one behind it — one way or another. When the fifth period bell rang, he was prepared. In a way, he'd always wanted to do this; exact that one tiny bit of revenge upon her for all the times she'd done it to {i}him{/i}. So when she rose, turned in one smooth motion, and made to bolt out of the room—"
     "—he was there first, seizing the decorative ties of her sailor uniform's neckerchief and making for the door at top speed. \"Bwa!\" she protested, arms waving frantically as she dashed to keep up, or risk the knot being pulled out. \"What the hell do you think you're doing!?\""

@@ -1,4 +1,15 @@
 label LL_1:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 051 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+   
     "While her sempai's plan surprised her, Kanae knew it was a good one as soon as she heard it from the girl with the golden ribbons. She didn't have the same problems that the other girls did with boys asking her out, but if she could help Haruhi, well ... she would! Her friends in the Brigade had helped her out so much, how could she not?"
     "So, on Haruhi's instructions, Kanae steeled herself at the entrance to the Brigade chief's classroom. The second-year students passing in or out shot her amused, curious glances, but she gathered her strength and stepped into the room, able to reassure herself by stealing a glance at her other sempai. He was sitting next to Haruhi while eating from a bento that appeared to match Haruhi's."
     "\"What are you doing in here?\" an unfamiliar, but friendly-looking girl sitting near Haruhi asked, giving her a quizzical smile."

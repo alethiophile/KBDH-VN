@@ -1,4 +1,15 @@
 label Fi_4:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 014 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+   
     "Kanae was a bit sad that her sempai wasn't able to attend the club meeting after school, and he'd been too busy studying to really chat during lunch. She also wasn't clear on what exactly he'd done to get in trouble with his family. She was certain it was his mother complaining about him being a good person; after all, she'd gotten worked up over her sempai rescuing her from Ryuguu."
     "She'd also been approached by a number of her classmates to ask about him, many with suspiciously dreamy eyes. She didn't know more than the rumors going around the school, and her classroom hadn't had a line of sight to the clubhouse where her sempai had supposedly rescued Tsuruya from falling, and then vanquished a terrible villain. Then again, those were just rumors."
     "People she didn't recognize assumed that because she was part of the club, she knew the 'real' story. Thankfully, before she could get overwhelmed, her sempai's friend Tsuruya had cheerfully bulldozed through the crowd and personally escorted her to the clubroom. The tall girl was eternally energetic, and found almost everything amusing, but Kanae was happy to have another friend in any case."

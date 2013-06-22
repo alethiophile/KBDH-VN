@@ -1,4 +1,15 @@
 label IC_1:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 024 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+   
     "After watching an almost terminally cute first six episodes of the anime, Haruhi realized that Kanae had fallen asleep. Even though she was (somewhat embarrassing to admit) really enjoying the show, she knew an opportunity when she saw one. Tsuruya had noticed it as well, and was grinning even wider than usual. The tall girl looked almost catty with amusement — but held herself still, somehow. While Yurie dragged herself across the floor of her family's living room on the screen and moaned about the heat, Haruhi gave Yuki a sharp look, jerking her head the tiniest distance in a nod."
     "Her face not turning, Yuki's eyes met Haruhi's. She blinked for a moment, and Haruhi wondered if the 'connection' she had with Yuki was strong enough to send specific thoughts.... She'd considered the possibility before — it seemed reasonable to her, anyway. And, come to think of it, Yuki could get a clue just from whatever changes she tried to make. Of course, lately, Haruhi had been restraining herself — barely. She really wanted to make specific changes, but it was a pain to need Yuki to translate, and then Kyon to allow it.... Plus, she'd gotten to be part of the force that would preserve Mikuru's excellent gift to Kyon."
     "Still, if she formed a request, the quiet girl should pick it up — and she'd gotten her attention already anyway. Yuki blinked once, then turned towards Koizumi and opened the bag at his side, pulling the digital camera out and holding it up on one flat palm. Haruhi concentrated, and the camera lifted the slightest distance and drifted towards her, ducking around the edge of the couch from Kyon's view until it reached her hands."

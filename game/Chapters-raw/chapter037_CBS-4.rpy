@@ -1,4 +1,15 @@
 label CBS_4:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 037 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+   
     "After finishing classes, Sasaki followed her normal routine, packing her school books and homework away before heading home. She gave polite smiles and nods to the other students around her, but more and more, she was becoming aware of how distant she had become from them."
     "Still.... That horrific beach encounter with Kyon's friends stung. She hadn't felt like talking to Kyouko, all things considered. Fujiwara had become more elusive than his usual self, vanishing away as he frequently did for days at a time. Kuyou had gone away somewhere, too, and that meant that Sasaki had no one to talk to."
     "She had thought she had more friends, but then realized, that wasn't precisely true. At least, friends close enough to speak of the issues that bothered her. After all, it had taken more than a week of waiting for her current meeting with Kyon!"

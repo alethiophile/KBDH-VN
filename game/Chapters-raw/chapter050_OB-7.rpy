@@ -1,4 +1,15 @@
 label OB_7:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 050 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+   
     "From where he slouched against the closed doorway of a morning pastry shop, Hiko heaved a soft sigh around the cigarette in his mouth. He had no illusions about his appearance — slightly better dressed than most members of his outfit. But 'slightly' meant a clean, worn suit that fit, neither too good looking nor garishly colored."
     "That plus the paunch he'd developed from working his way up as an accountant.... To say nothing of the lack of hair that years of stress and poor genes had gifted him with. He didn't fit the appearance of a yakuza, as much as a somewhat disheveled salaryman."
     "And that suited him just fine, as one of the men he'd marked as a Yamaguchi- gumi member — from the Tsuruya-tachi — glanced across him and instantly dismissed him as a non-threat. Well, in a real fight, the rival's analysis would be spot on. Hiko had no ability to beat those men in open confrontation."

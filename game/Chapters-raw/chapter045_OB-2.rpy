@@ -1,4 +1,15 @@
 label OB_2:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 045 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+   
     "Mikuru's time-travel left them standing at the base of the giant building that Kyon vaguely recalled seeing on a few trips through the city — which he now realized was 'Tsuruya Towers'. It loomed overhead impressively, and the immediate surroundings were screened by thick rows of vegetation, arranged almost in a maze around the base of the structure."
     "Shaking his head and checking his watch, Kyon noticed that Mikuru had transfered the pair of them back to the early morning, the day of his aunt's book signing. Strangely enough, he thought he arrived at the same moment he had originally departed with the older Mikuru. A time loop he didn't even notice, this time around...."
     "Kuyou had shifted slightly, turning to watch him expectantly. He couldn't see Ryouko from where Tsuruya had left her, but reminded himself that the girl was weightless. Mikuru stood before him uncertainly."

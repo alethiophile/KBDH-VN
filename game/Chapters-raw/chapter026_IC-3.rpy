@@ -1,4 +1,15 @@
 label IC_3:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 026 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+   
     "She hadn't been hit, yet, but her bodyguard was overwhelmed already, and she could only hope to keep the encroaching thugs at bay for so long. And in her mind, they were just thugs, not truly respectable yakuza. Though she didn't want to abandon him, her self-preservation led her to step away from Kasai, backed into a wall so she could only be approached from the front—"
     "Which gave her a view of one of the most absurdly unexpected things she had seen in a long while."
     "The street was largely abandoned, bystanders quickly streaming away and pretending that nothing was happening. Even before the violence that scattered the few pedestrians, it wasn't a commercial or residential district. The entire block behind her was a continuous metal wall, the exterior of a large workshop. A gap in the city's skyline let her see the last fleeting glimpses of the setting sun."

@@ -1,4 +1,15 @@
 label SB_5:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 043 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+   
     "Asakura Ryouko had finally determined why the entity had sent her into a situation she was destined to fail."
     "It had taken a considerable amount of time to download the database that Haruhi had told Ryouko would explain the meaning of the term 'Team Pet', but once she had, Ryouko realized with mild surprise that there was an odd amount of parity data within that database to much of the IDSE's observations of humanity in general. Given enough data points and time to grow, Ryouko suspected that the memetic functions of the database would eventually exceed the input of its users, and from there, might become another one of the entities that the IDSE had observed spanning the worlds of reality."
     "She doubted it would be any time soon, and judging by which entries Haruhi — and Kyon — had referred her to, she especially doubted it would want to ally with her against the Brigade."

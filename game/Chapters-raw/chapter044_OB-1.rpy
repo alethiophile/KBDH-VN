@@ -1,4 +1,15 @@
 label OB_1:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 044 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+   
     "Still uncertain what was going on, Sasaki found herself bundled into the back of the van, a large man on either side of her holding her arms immobilized. Ahead of her, in the passenger seat, Takahashi growled constantly into her cell-phone, ignoring everything else. For reasons that Sasaki didn't entirely understand, the seat before her had a pile of electrical equipment, most of which seemed to be designed to power and provide a signal for the small television screen that was placed just before her."
     "She could only imagine that on top of everything else, her captors were sadists. Why else would they go through so much effort to show her Kyon and his other friend versus all those thugs?"
     "Her heart was racing with anxiety from the moment Kyon expertly lashed out with one foot. The sword that Yuki had somehow disarmed from one of the men flashed into Kyon's hands, and with frighteningly smooth movements, the boy lunged forward, stepping just past where Yuki crouched on the floor."

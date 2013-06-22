@@ -1,4 +1,15 @@
 label OB_5:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 048 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+   
     "Surrounded, and seeing no valid escape routes, Kyon grit his teeth at the incoming projectiles, trying to shield Kuyou and the cat she cradled in her arms with his own body. He heard something — a shrill, {i}very{/i} familiar voice rasping an excited, \"Shining Seal — Project!\""
     "A flash of light blinded him even as the first flechette slammed into his shoulder, not piercing his flesh thanks to the skinsuit but still delivering all of its force. The impact numbed his entire arm almost instantly, only allowing him to keep his balance thanks to the gravity manipulation devices in his skinsuit. The glowing, two-pronged dart fell to his feet, exploding — and nearly knocking him off balance anew."
     "He improbably managed to keep his feet, staring in surprise at the incoming flechettes — which were freezing in place in the air before him, then vanishing in bright flashes of nothing. He looked at the ground, almost flinching away in recognition of the glowing circle there."

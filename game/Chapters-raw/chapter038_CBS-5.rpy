@@ -1,4 +1,15 @@
 label CBS_5:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 038 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+   
     "After finishing up her homework — which she would {i}not{/i} forget, thus jeopardizing her magical girl trip — Nonoko watched television in the living room and wondered where her brother was. Probably on a mission, fighting the forces of darkness; it was already almost time for dinner, and he still hadn't come home. She perked up at the sound of the door, and bounced up from the commercial to scramble down the hall."
     "She had overestimated how quickly her brother was moving, and found herself skidding to a halt in the entryway, waiting for him to sluggishly take off his coat. She caught his dazed look, and how methodically he was moving, and wondered what had happened — obviously, something had gone wrong. Seemingly oblivious to her, he stepped into his slippers and trudged past, his focus somewhere else."
     "\"Kyon?\" Nonoko's mother called from the kitchen. \"Is that you?\""

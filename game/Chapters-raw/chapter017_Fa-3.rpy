@@ -1,4 +1,15 @@
 label Fa_3:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 017 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+   
     "# Kyon: Big Damn Hero"
     "## Fanservice Arc III"
     "### Chapter Seventeen: Family Matters II"

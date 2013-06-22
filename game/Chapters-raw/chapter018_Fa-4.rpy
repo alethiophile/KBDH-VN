@@ -1,4 +1,15 @@
 label Fa_4:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 018 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+   
     "After seeing Kyon off with his friend, even though she wasn't certain what they were up to, Rika turned her attention to the two other young girls who were his friends. Mikuru was the time traveler, if she remembered his story correctly, though she wouldn't have ever guessed that at a glance. She had a fashionable green dress on, and didn't seem to have anything more futuristic than a sleek, classy wristwatch."
     "Matsuri had already been wary of Haruhi, but took an instant dislike of Mikuru, grumbling in jealousy at the older girl's natural assets. That was getting out of hand, Rika realized, frowning at her daughter. \"You know, Matsuri-chan,\" she said to the girl, \"it's hardly fair for you to really think that Kyon should belong to you, when you're lucky to see him three times a year.\""
     "In response, the girl pouted at her mother. Rika's heart wasn't stone, but that look had never worked on her — though it almost always worked on Keiichi. It was a small miracle that Kyon himself seemed immune, but she chalked that up to the boy's sister unintentionally overusing such things."

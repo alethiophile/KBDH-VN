@@ -1,4 +1,15 @@
 label SB_2:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 040 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+   
     "After spending almost the entire meeting establishing how the new regime concerning outside threats would work, Haruhi glanced at the clock and said, \"Well, there's only five minutes left, so I think we can call today's meeting to a close — we'll pick up and decide more activities tomorrow.\""
     "Kanae looked up from where she had been sketching a rough design of another outfit. Across from her, Mikuru was going over one of the earlier drafts, determining how much material it would take to complete the design, though she looked up, too. \"That's it for the day?\" she asked, stretching her arms over her head, giving an uncertain smile."
     "\"Well, you do have one last assignment,\" Haruhi reminded her, raising an eyebrow."

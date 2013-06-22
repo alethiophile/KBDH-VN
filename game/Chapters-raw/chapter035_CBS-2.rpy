@@ -1,4 +1,15 @@
 label CBS_2:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 035 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+   
     "Tsuruya was sipping tea quietly near her father in one of the sitting rooms in her house — the ancestral Tsuruya home. Koizumi sat at the same table next to Mori, his phone sitting on the table near his teacup, not ringing. Tsuruya's father nodded thoughtfully at something on one of the stacks of papers before him, then made a note and shuffled it to one side."
     "Aida paced softly in the back of the room, quietly punching things into his PDA and looking distracted — but he stopped and was the first one to notice Kyon's return. The boy stepped in from the door leading to the porch, and Tsuruya instantly perked up. She had every faith in Kyon, but somehow, that didn't keep her from worrying."
     "Her fiance was walking next to Shinobu, looking at her slightly askance, his shoes dangling from the fingertips of one hand. Tsuruya's maid took Kyon's shoes before he could protest, then gently motioned him into the room properly."

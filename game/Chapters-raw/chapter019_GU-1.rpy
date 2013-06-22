@@ -1,4 +1,15 @@
 label GU_1:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 019 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+   
     "After returning home late Saturday evening, Kyon helped his parents unload the car, dragged his own bags to his room, and promptly collapsed into bed, only waking briefly when summoned to Yuki's apartment. When the actual morning rolled around on that, his first day of not being grounded, he took his uncle's advice to heart and jumped on his bicycle."
     "He knew he probably should have called her first ... but he wasn't relying on her to just 'know', as he expected she could. Undoubtedly, she wouldn't actually be surprised ... but he expected that wasn't as important as actually showing some initiative."
     "After locking his bike up and dialing her room on the intercom, he heard her quiet answer, breathing across the connection softly, but saying nothing. \"Um, Nagato, it's me,\" he said, feeling suddenly a bit nervous. Surely he hadn't managed to somehow catch her unaware? \"I thought I'd stop by and visit, if you wouldn't mind.\""

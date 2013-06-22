@@ -1,4 +1,15 @@
 label TL_2:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 030 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+   
     "Shortly after Yuki had been let into the Tsuruya compound without Mikuru, Haruhi sat upright and gasped in realization of something. Tsuruya evidently figured it out it, too, springing to her feet and charging for the estate's security control room."
     "Even though she didn't know what was going on, Kanae followed the other girls, through the halls, suspecting it involved her sempai."
     "She'd never seen the interior of a security room, before, so stopped to look around, seeking some clue that would explain the behavior of the others. A large console filled one whole wall, the upper half a bank of no less than twenty smaller monitors above a pair of screens the size of her living room television. A surprisingly small array of switches and buttons were built into a small desk below that, clearly labeled with numbers that did nothing to explain their function."

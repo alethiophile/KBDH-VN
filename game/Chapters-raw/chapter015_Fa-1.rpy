@@ -1,4 +1,15 @@
 label Fa_1:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 015 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+   
     "Humming Trope-tan's image song to herself, Kanae trotted into the school's shoe locker area early, spotting a fellow classmate and waving before she changed her shoes. \"Good morning, Kanae-chan,\" the other girl said, smiling brightly."
     "\"Good morning, Mitsuki-chan,\" Kanae answered, nodding. She'd met several instances of the girl through her time sliding; most of them were genial and friendly. She put her outdoor shoes in her locker and gave a cautious smile back. \"How's everything today?\""
     "\"Oh, not too bad,\" Mitsuki said, giggling. \"Um, say, you're on good terms with that sempai, right?\""

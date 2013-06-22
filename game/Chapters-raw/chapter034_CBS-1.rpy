@@ -1,4 +1,15 @@
 label CBS_1:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 034 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+   
     "For the most part, Kyon's schedule had seemed to fill up. Before, he was so reliably idle (except when he was with Haruhi) that Koizumi could expect to request his time, and get it. Now, he was so busy with his suddenly adopted responsibilities that Koizumi found himself struggling to get some of the other boy's time."
     "Take the current situation, where Koizumi was uncomfortably certain that he'd only managed to get Kyon's attention for the length of the lunch period because Haruhi seemed to want to round the other girls up to discuss something. What, Koizumi wasn't certain. While he had once prided himself on his ability to predict Haruhi's behavior, at this point Kyon was the expert, and that was that."
     "No longer being so directly ... {i}connected{/i} to Haruhi had gone a long way towards allowing the esper to take a less ... involved viewpoint. He didn't understand what her plans or outlook towards having a relationship were, but it seemed to satisfy her for the moment, and Kyon likewise seemed to have the situation well enough in hand."

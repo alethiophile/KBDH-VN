@@ -980,22 +980,28 @@ label HAB2:
     "\"Yeah,\" he agreed, nodding. \"You go first; I'd better check my voice mail.\""
     nvl clear
     "Sakura rose from packing away his medical equipment and bowed deeply to the pair of them. \"Take care, Kyon-dono, Tsuruya-san,\" he said."
-    hide Tsuruya Casual with dissolve
-    show Kyon Sigh2 
+    ##hide Sakura
+    show Tsuruya Casual Hap1 at center with move
+    show Kyon Sigh2
+    show Shinobu Neutral2 Flip at left
     "Kyon nodded tiredly, while Tsuruya waved to a maid and climbed to her feet. \"I'm headed to the bath,\" the girl told her maid, \"when Kyon-kun is ready, go ahead and send him in, then get our beds ready.\""
     "\"Understood,\" the servant replied, bowing deeply."
     nvl clear
+    hide Tsuruya with moveoutleft
+    hide Shinobu with dissolve
     show Kyon Neutral3
     "Shaking his head, Kyon turned his phone back on, unsurprised to see another voice mail. He retrieved it, hearing his future self tell him, with a faintly audible tinge of amusement: \"It seems strange, but it's the best thing to do. Take a bath, rest well, do whatever Tsuruya-kun asks. {i}Whatever{/i} Tsuruya-kun asks. You can leave the phone on now.\""
     nvl clear
     "Rolling his eyes, he tiredly climbed to his feet, approaching the maid with short steps. His arms and back were bruised from all of his falling and rolling, his knuckles were sore, his right ankle was protesting, and whatever anesthetic the doctor had used was starting to fade. The stitched up cut was beginning to fiercely sting, even with the cooling pack stuck to his head, and the purpling bruise over his collar bone was starting to promise aching neck muscles in the coming days."
     nvl clear
+    show Shinobu Neutral2 at left with dissolve
     "\"Kyon-dono,\" the maid murmured, rising from her kneeling position, though her eyes were still fixed on the floor. \"The head of the Tsuruya family sends his personal regards and thanks for watching over his chosen heir. All of us are quite grateful for your effort so far, especially Kasai-san.\""
     nvl clear
     show Kyon Neutral2
     "\"I'm just doing ... what anyone would do,\" he said, realizing how lame it was only after the words left his mouth. Sure, anyone who had casual access to instant training, time travel, and a covert organization that they had inadvertently cowed into doing their bidding would do the same."
     nvl clear
     show Kyon Neutral3
+    #show Shinobu 
     "Even with her face oriented towards the floor, he could see the maid's mouth quirk into a smile. \"Even though others may, you {i}have{/i},\" the maid insisted. \"He further requests that you continue to watch over her until she completes her trials, and wishes to know what reward you desire in exchange for your services.\""
     nvl clear
     show Kyon Neutral2

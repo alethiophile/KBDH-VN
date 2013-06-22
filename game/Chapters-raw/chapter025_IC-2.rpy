@@ -1,4 +1,15 @@
 label IC_2:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 025 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+   
     "From the safety of her borrowed office, Akasaka Miyuki studied the growing stacks of paperwork she'd collected. Her operatives — handpicked NPA agents, naturally, since she wasn't certain how far the police corruption went — had done well. It wasn't much of a lead, and she'd really hoped it would lead directly to Kyon more quickly, so she could see how everything had tied together...."
     "But instead, she'd put a tail on the Tamaru brothers. They had split up, but Yutaka had gone to an outdoor cafe downtown to meet a woman, where there was too much noise to try and overhear. That woman was an interesting anomaly, as well. Some time about four years in the past, she had abruptly quit her job and begun to travel. Her trail had become increasingly sporadic as time went on, and she got better at covering her tracks."
     "Not that files on her didn't exist. Sonou Mori, a graduate of Kyoto University, then working as an intern at a law firm in Kyoto before her sudden departure into the unknown. There weren't any open cases on her, surprisingly, but that behavior stuck out more than enough for Miyuki, especially when she was meeting with one of the officers that Miyuki was {i}certain{/i} was corrupt."

@@ -1,4 +1,15 @@
 label LL_3:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 053 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+   
     "Haruhi couldn't keep the scowl off her face as a dreamy-eyed Tsuruya turned to face her while the car carrying Kyon back home cruised away. Tsuruya knew how to manage a kimono, but the outfit was rumpled enough to be telling, and judging by the way things were going, Haruhi didn't think that Tsuruya had just come out of a fight."
     "No, it was easy enough to imagine what had happened — while she was waiting for her friend to get home, since she was left out on the ninkyo dantai front, Tsuruya...."
     "\"So,\" Haruhi couldn't help but growl, \"you enjoyed some quality time with Kyon after all?\""

@@ -1,4 +1,15 @@
 label Fa_2:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 016 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+   
     "Much to Kyon's surprise, by the time lunch came around, Keiichi was awake, though the man still looked tired. Matsuri sat next to her mother, looking almost identical to what Kyon could remember of Rika's childhood pictures. Shutaro sat next to Keiichi, providing another eerily symmetrical flash to the past, save that his hair was neater, and a dusty blue color."
     "His own sister was trying to explain to their cousins that Kyon had gotten a part time job as a bodyguard {i}and{/i} a world-saving hero, but he tuned that out when Keiichi struck up a conversation, asking how school had been. Discounting the oddity of events surrounding the SOS Brigade — not just Haruhi, these days — he admitted that there wasn't much worth mentioning, but lately his grades had been improving."
     "\"Well,\" Keiichi advised, \"don't get too stressed about your test scores, whatever else happens. Your friends are doing well?\""

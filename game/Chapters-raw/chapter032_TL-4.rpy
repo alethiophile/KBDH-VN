@@ -1,4 +1,15 @@
 label TL_4:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 032 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+   
     "Haunted by the experiences of the day, Kyon didn't really feel that the beach trip was terribly relaxing. On the bright side, even without proper planning, the brigade had been successful against one of Kanae's enemies. There was still a lot that he couldn't be sure about, things like when the next attack might come, but he doubted it would be instantaneous."
     "Of course, even with the small bits of good news, he couldn't really stop thinking about it. Being hit with the alien energy beam had been disconcerting; shields or not, armor or otherwise, being hit had {i}really{/i} stung. Especially since after the first moment of being struck, he'd gotten flung back the length of the beach into a stone wall."
     "He had already decided it was one of those experiences he was never going to forget, no matter how little he liked to. It hadn't hurt as badly as that time Asakura Ryouko had stabbed him, but it came close. Yuki alone remained from the girls, and of course, rather than take off his shirt and show his tattoos on the beach, Kasai was stuck on land, too. After glancing around, Kyon realized that Koizumi had gone to swim, as well. Or, possibly to chat with Mori quietly about what had happened while they were out of sight."

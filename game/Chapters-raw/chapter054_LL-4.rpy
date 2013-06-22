@@ -1,4 +1,15 @@
 label LL_4:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 054 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+   
     "It really {i}did{/i} say something that the sudden transition to another quasi- reality didn't much rattle him anymore, Kyon thought morosely. Specifically, that he had been irresponsible and let things go too far...."
     "Well — enough was enough. He didn't want to see anyone unhappy, and as far as things had gotten, sorting them out would be messy.... Terribly messy! He didn't fault Haruhi — really, he'd enjoyed a lot of it ... which probably should have been warning enough that he should have protested more strongly with the way things were shaping up."
     "Feeling a bit shaky, while Haruhi groaned and covered her eyes with her hands, he went over to the tea set. Probably it was a pointless gesture, but it had to be better than nothing.... As he expected, it was warm, and the teapot was still full."

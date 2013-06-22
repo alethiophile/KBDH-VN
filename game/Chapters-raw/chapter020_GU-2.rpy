@@ -1,4 +1,15 @@
 label GU_2:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 020 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+   
     "She was vaguely aware of not being in her right mind, but after everything she'd been through, she found herself not particularly caring at the moment. Probably, that was what 'not being in the right mind' meant. She didn't really stop to think about that, though."
     "Her power was {i}limited{/i}, but she was by no means {i}powerless{/i}. She continued compressing the van with her ability, the tires screeching loudly against the pavement, until the driver suddenly stopped accelerating and threw the vehicle in reverse. Instead of slowly dragging it towards her, it {i}launched{/i} backwards, too fast for her—"
     "Somehow, a few meters short of hitting her, the van suddenly {i}stopped{/i}, as she released her power, and the rear dented, as though folded around some invisible curved wall between her and it. A cloud of smoke erupted from the ground near back of the van, obscuring it from her view, but smoke was a thing, too, not a person. So she could manipulate that, and within a few short moments forced it flat to the ground, like a liquid."

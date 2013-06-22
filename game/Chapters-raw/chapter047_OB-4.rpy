@@ -1,4 +1,15 @@
 label OB_4:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 047 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+   
     "Morning found Kyon with a surprising, soft pressure against his lips, and his eyes slowly drifted open as he reflexively kissed whoever woke him back. He glimpsed Tsuruya's eyes briefly before she closed them, and then he closed his own, enjoying the dream for what it was. His right arm was pinned, but he got his left free to press against her back and run his fingers up and down her spine, prompting her to shiver and break the kiss with a quiet gasp."
     "Eyes opening, he looked up at her face, surrounded by a curtain of her loose hair, shadowing both of them. Her lips formed a smile at him as she blushed, rising on hands and knees to push herself off him and move to his left side. On her knees, she gathered up the hair that had gotten loose, giving him a gentle nudge with one knee and whispering, \"Wake Haru-nyan the same way!\""
     "Or, perhaps, he realized, it wasn't a dream at all? But ... Haruhi and Tsuruya instead of Kanae and Yuki? Not that he was going to complain for any reason; it was a different, but still winning combination."

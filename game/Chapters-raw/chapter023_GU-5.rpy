@@ -1,4 +1,15 @@
 label GU_5:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 023 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+   
     "Yuki knew where Jun was, but not how to get to him. After she enabled what she termed a 'stealth field' and hugging tightly onto one of Kyon's arms, the pair of them strolled into the police building, unobserved and silent. It took a few tries to figure out where the holding cells actually were, and there was a tense minute walking around a thick cluster of suited detectives deep in conversation with other folks in suits, who Kyon {i}guessed{/i} were NPA agents. He didn't really want to find out, but their conversations seemed centered around finding out how Yamane, Watanabe, and Ryuguu had gotten the guns."
     "Fortunately, each of the three was in their own small cells, spaced far enough apart they could only communicate with one-another in easily overheard shouts. Out of sight of the police officers, Kyon stopped before Yamane's cell. The boy was laying on his cot, with his head as far away from the cell door as possible."
     "\"Can they hear us?\" Kyon whispered into Yuki's ear."

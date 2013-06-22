@@ -1,4 +1,14 @@
 label Fi_3:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 013 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
     "Wondering how to deal with the punishment he'd been assigned, and how it would impact what he considered to be more important aspects of his club life — and his association with Tsuruya — Kyon tossed his schoolbag on his bed and began to rifle through it in earnest. His books were there, Haruhi had left him a stack of study notes, half of them in unfamiliar handwriting, and then he found the 'protection' Mori had left him."
     "Gods above, she didn't really think that he and Tsuruya.... Or that he and Yuki.... Or that...."
     "Color draining from his face, he desperately searched his room for some sort of safe spot to stash the unexpected box of individually packaged foil-wrapped 'protection'; this was {i}not{/i} something he wanted his mother or sister to find! He finally settled for the ultimate hiding place, pulling out the bottom-most drawer on his dresser and hiding the small box beneath."

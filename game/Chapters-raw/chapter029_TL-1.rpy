@@ -1,4 +1,15 @@
 label TL_1:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 029 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+   
     "Idly munching on the bento Haruhi had left for him — there were worse last meals, after all — Kyon nodded dubiously and otherwise pretended to pay attention to the nattering on of his friends."
     "\"...all I'm really trying to say,\" Taniguchi said, concluding a very long- winded speech, \"is that, no offense to you or her, you're both very new at this! At least, in a lasting sense. As one who has endured, crafting a meaningful relationship that has withstood the test of time beyond the legendary two week mark — did I mention that I met her father? Well, Kyon, I am one you can turn to who is knowledgeable in these things!\""
     "\"Two week mark?\" Kyon mused, sharing a look with Kunikida. \"That does sound legendary....\" For Taniguchi, at least."

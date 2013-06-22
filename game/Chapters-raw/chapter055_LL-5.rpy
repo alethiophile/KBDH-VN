@@ -1,4 +1,15 @@
 label LL_5:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 055 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+   
     "Having no idea of what to expect, Kyon tried to keep himself ready. Yuki seemed calm enough, and he wasn't certain that Kuyou {i}could{/i} be alarmed, while Koizumi seemed mildly distracted, at the worst. The group of them had gone together to Yuki's apartment, but until the Combine made a move, they were were just sitting at her table, waiting."
     "Koizumi was opposite him, while the light-haired girl was to his left, and the dark-haired girl was to his right."
     "The fifth member of their band was Ryouko, no longer in her 'angel' costume. That seemed to be the only way to get Kuyou to give up her matching 'devil' costume. Even if she was remarkably cute (and at her full size had legs to rival Haruhi's), it was ... distracting. To say nothing of how unnerving Ryouko was as an 'angel' ... though, that brought a very unexpected reminder of Yamane Jun back to mind."

@@ -1,4 +1,15 @@
 label CBS_3:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 036 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+   
     "Kyon stared at the slider in his bed, happily curled up around him, with one arm across his chest as she slept. He'd seen her sleeping face before, as she occasionally dozed in the club room, and more than once she'd been summoned for nightly training already sleeping. In retrospect, he realized he'd already shared a bed with a girl, too, thanks to Tsuruya."
     "Then again, being caught in his own bed with a girl as compared to being caught in Tsuruya's bed— He realized he was distracting himself and turned his eyes to his alarm clock quickly. He grimaced when he realized it wasn't a school day, and accordingly, he'd slept in until nearly eight in the morning. The sounds of his sister stirring in her room betrayed how little time he had left...."
     "No matter that she didn't need to wake him up on the day there was no school — she'd do it anyway. It was one of her favorite hobbies, especially if it meant she could try and wake him up first!"

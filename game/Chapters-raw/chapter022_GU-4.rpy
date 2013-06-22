@@ -1,4 +1,15 @@
 label GU_4:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 022 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+   
     "After being given cursory inspections by the Organization members of the hospital staff, Kyon was pronounced fit to return home. His parents and sister left him alone long enough to change into his own clothes, and then his father drove the lot of them home. Expecting that the strange, harmonious peace of the hospital stay would be shattered the moment he stepped through the door, he tried to brace himself for whatever it was that his mother was going to come up with next."
     "The moment came, and as if he'd tripped some door-mounted motion-detector, his mother commented, \"You know, Kyon, I think that Tsuruya-chan is a good influence on you. She's from a good family with a respectable background and excellent upbringing! You should invite her over more often!\""
     "Off-balance by this sudden show of support for one of his friends, he stared. \"Um ... maybe,\" he allowed. \"I mean, she lives in a mansion, you know; her family is really, really wealthy.\""

@@ -277,21 +277,25 @@ label Fi2:
     show Kyon Puzzle1
     "\"She's a good person,\" he replied, glancing at his watch and frowning. \"I'm glad she looks out for you.\""
     show Mikuru Quest1
-    show Kyon Worry 1
+    show Kyon Worry1
     "Mikuru gave him a puzzled smile. \"Are you okay?\" she finally asked. \"You've been acting worried all morning.\""
     nvl clear
     show Kyon Puzzle2
+    show Mikuru Neutral2
     "\"Ah, well,\" he started, glancing up the hill and seeing Tsuruya's familiar hair swaying in the distance. Next to her, a boy without a schoolbag, just rounding a bend in the road.... And Haruhi would ambush them at the gates, followed by a brief chat at the shoe lockers. No doubt about it; he had to come up with a stalling tactic. What could he say?"
     nvl clear
     show Kyon Puzzle1
     "He stopped, setting down the sewing machine and the bag, then turning to face Mikuru. Her attention was nervously riveted to him, and while he still wasn't certain what he was going to do last Sunday, he was grateful for it. \"Listen,\" he said, without preamble, \"about Haruhi?\""
     nvl clear
     show Mikuru Sad2
-    "Her expression dropped. \"I haven't heard anything yet,\" she said, shaking her head with a vague one-handed gesture. \"Is something wrong?\""
     show Kyon Worry1
+    "Her expression dropped. \"I haven't heard anything yet,\" she said, shaking her head with a vague one-handed gesture. \"Is something wrong?\""
+    show Kyon Puzzle1
+    show Mikuru Unhap1
     "\"Um, it's just.... When Haruhi goes too far, it's okay to tell her so.\""
     nvl clear
     show Mikuru Quest2
+    show Kyon Worry1
     "She looked at him oddly and gave a dubious nod. \"I don't really understand, but I believe you, so okay,\" she agreed."
     "Somehow, that only made him feel worse."
     nvl clear
@@ -380,10 +384,11 @@ label Fi2:
     nvl clear
     show Haruhi Pout2
     "\"I'm disappointed in you,\" Haruhi told her upperclassman. \"Really, you told me that you {i}liked{/i} Kyon. And when the oblivious wonder drops a golden opportunity straight into your lap, you assign him to heavy lifting?! It's like you're not even trying!\""
-    show Mikuru Think Quest2
+    show Mikuru Think Sup1
     "\"T...trying?\" Mikuru asked, her eyes wide and confused. \"What?\""
     nvl clear
     show Haruhi Sigh1
+    show Mikuru Think Quest3
     "\"Seriously,\" Haruhi chided her, \"if we're going to be any kind of romantic rivals, you should leap at a chance like that! Drag him with you to dinner, then go for a nice walk somewhere after! Your moe powers are wasted settling for what you did. Completely wasted!\""
     nvl clear
     show Mikuru Think Sup1
@@ -395,14 +400,15 @@ label Fi2:
     "\"R...right,\" the time traveler agreed. \"I told you I wasn't a threat! Please believe me, Suzumiya-san—\""
     nvl clear
     show Haruhi Ang2
+    show Mikuru Think Sad2
     "\"Oh, shut up about that,\" she snapped. \"Seriously! 'I'm not a threat'? That sounds like a recipe for misery! Especially since you have your own feelings anyway! There's a very obvious solution, Mikuru-chan. You should have seen it by now!\""
-    show Mikuru Cower Quest1
+    show Mikuru Cower Sup1
     "\"T...there is?\" Mikuru looked mystified and more than a little scared, but Haruhi caught the flash of hope in her eyes anyway. \"What is it?\""
     nvl clear
-    # show Haruhi Hap1
     stop music fadeout 1
     queue music "Music/YareYare.mp3"
     show Haruhi Point Scold2
+    show Mikuru Cower Quest1
     "\"If you {i}really{/i} believe that you can't have a relationship, then why not try anyway?\" Haruhi asked. \"Consider it a practice run! If you're going to give up and tell yourself it'll never work out, what do you stand to lose by trying your best, anyway?\""
     nvl clear
     show Mikuru Cower Sup1
@@ -428,26 +434,27 @@ label Fi2:
     nvl clear
     hide Hblush
     show Haruhi Crossed Sup1 Flip    
-    "Haruhi stared. \"If we were in a comedy anime, that line would cause a face-fault,\" she deadpanned. \"Am I the only person who reads— Never mind!\" She shook her head, banishing the complaint."
+    show Mikuru Think Sad3
+    "Haruhi stared. \"If we were in a comedy anime, that line would cause a face-fault,\" she deadpanned. \"Am I the only person who reads— {nw}"
+    show Haruhi Crossed Sigh1 Flip
+    extend "Never mind!\" She shook her head, banishing the complaint."
     nvl clear
     show Haruhi Crossed Quest1 Flip
     "\"Okay, look, dojikko characters are clumsy and harmless, they're part of the cast to evoke a 'big-brother' instinct, or play up the role of fan service. Don't get me wrong, it's pretty awesome that you have those characteristics!\""
     "\"But while it's fine for an anime character, real people need more depth! So let's work on making your dojikko moe-factor something you use to appeal to a guy you like, not just the extent of who you truly {i}are{/i}.\""
     nvl clear
-    show Mikuru Think Sad3
+    show Mikuru Think Sad5
     "Mikuru blinked several times at Haruhi. \"...I don't think I understand,\" she finally admitted, giving an apologetic smile. \"You can't really want me to get in your way, can you?\""
     show Haruhi Sigh2
     "Sighing deeply, Haruhi shook her head. \"Try harder for Kyon,\" she said. Surely that would be clear enough? \"I'm just saying that if you can't really get anywhere, it won't hurt you to learn as much as you can in the meantime!\""
     nvl clear
     stop music fadeout 1
     queue sound "SE/DoorKnock.mp3"
-    queue sound "SEDoorOpenFast.mp3"
+    queue sound "SE/DoorOpenFast.wav"
     show Mikuru at right
     show Haruhi Neutral1 at center
     with dissolve
     show Kyon Puzzle1 Flip at left with moveinleft
-    # show Haruhi Neutral1 at center
-    # with dissolve
     queue music "Music/Yuuutsu.mp3"
     "A knock sounded at the door, cutting off further discussion before Kyon pulled it open. \"I'm back,\" he said, looking troubled."
     show Mikuru Smile3
@@ -459,7 +466,8 @@ label Fi2:
     "Mikuru looked confused, but shook her head and moved to pick up her new sewing machine. \"Um, is it okay if I leave this here, Suzumiya-san?\" she asked."
     nvl clear
     show Haruhi Hap1
-    show Kyon Neutral2 Flip
+    show Kyon Neutral3 Flip
+    show Mikuru Neutral1
     "Haruhi looked at the box, then considered the free space in the club room. Things could be shuffled around to fit it, she was certain. \"It shouldn't be a problem,\" she said, nodding. Could Mikuru make new costumes? That would certainly save her a bit of money on getting a new outfit for Mikuru every so often ... or even one for herself. \"We should talk about that at lunch,\" she decided."
     nvl clear
     show Haruhi Ang1

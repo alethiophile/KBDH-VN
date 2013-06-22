@@ -1,4 +1,15 @@
 label SB_1:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 039 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+   
     "He hadn't expected much from the walk to school — the ominous, building clouds had sprinkled overnight, but left the skies fleeced with cloud, and the air crisp — eerily calm. Not sure what else to make of it, Kyon thought that it seemed like a promising day to try and make up with Haruhi. It bothered him to admit it, but after dropping his sister off, he realized he would actually welcome a fight to burn off some stress, despite how tired he was."
     "When he was unexpectedly obliged by a trio of goons, he spun, ready to face them, and decided to fight on equal footing, delivering what he thought was a particularly clever one-liner as he drew his beam-saber — alone, on an empty street."
     "\"Er,\" he said to his empty surroundings, frowning as his blade and defenses activated. A moment later, there was a distortion — a line in space — and it stretched, widening until it revealed the familiar figure of Suou Kuyou."

@@ -1,4 +1,15 @@
 label TL_3:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 031 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+   
     "\"Suzumiya-san,\" Koizumi asked, jogging along at her side without much difficulty, \"might I trouble you to ask where we are going?\""
     "\"There's a path to the top of those rocks,\" she answered without hesitation, weaving effortlessly through the beach-towels and umbrellas dotting the beach. Shortly they had reached the stretch beyond desirable campgrounds, drier and somewhat stonier sand. With less obstacles to dodge, and no beach-goers around to get in her way, Haruhi sped up."
     "He was able to keep the pace she set, but wished it wasn't such a strain.... He had a lot more sympathy for Kyon these days, however. As far as the club went, he'd gone from being the 'mysterious esper transfer student' to just being a liaison between his friends and the Organization he used to serve. It wasn't so bad, but he was starting to realize that, intended or not, he had previously spent a lot of time being condescending to Kyon."

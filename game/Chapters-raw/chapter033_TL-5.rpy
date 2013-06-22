@@ -1,4 +1,15 @@
 label TL_5:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 033 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+   
     "After transitioning herself, Michikyuu Kanae, and her primary protection target to her apartment, Yuki sat down at her table. She had prepared tea before leaving earlier that day, slowing relative time down for the small area around the kettle. The seal released as soon as she reached a hand towards it, pouring a cup for each of her guests, and then a third for herself. Kanae sat opposite her, and Kyon sat on the side between them, facing the new entertainment center she had been given by Tsuruya."
     "She wasn't sure what to think of the kiosk's presence in the main room. Most of the small changes that had occurred in her home were negligible, easily attributable to the passage of time. Even the new clothing could be missed, tucked into her closet as it was."
     "Now there was a new piece of furniture intruding on her previous order. Then again, it did allow for group media review, which was valued time; she could compare her own emotive values to those of the people around her, and understand the small, easily missed changes in her {i}self{/i} more easily."

@@ -1,4 +1,15 @@
 label LL_2:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 052 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+   
     "Tsuruya felt a bit bad for Mikuru that she didn't have family of her own around, but was also glad that she could step in and keep her time traveling friend from feeling completely alone. Kyon was occupied with Yuki — something Tsuruya didn't mind at all. The quiet girl deserved attention, too!"
     "Anyway, a relaxing evening at home, doing homework and having dinner with Mikuru seemed fine to her. It wasn't as good as Mikuru's cooking, but it was still tasty. After that, they finished catching up on the last season of Trope-tan, and then Tsuruya had insisted that Mikuru stay the night over."
     "Why leave a comfortable space with a friend, just to be alone?"

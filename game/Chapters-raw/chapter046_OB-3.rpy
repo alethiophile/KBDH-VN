@@ -1,4 +1,15 @@
 label OB_3:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 046 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+   
     "Though the car ride was only ten minutes long, Kyon judged that Sasaki had calmed down considerably in that time. He was glad, too — there had been some real concern that she might have been injured in the thick of it.... The smoke screen had allowed him to conceal what he'd done from her, at least, but it was still riskier than he would have liked. He expected she was still somewhat shaken by that, but he hadn't devised a better way to free her before it was time for the operation to actually go into effect."
     "When they reached the hospital, they climbed out of the car and she moved to walk near him — but not take his arm, this time. He gave her what he hoped was an encouraging smile, which seemed to work; she returned a weaker, but genuine smile."
     "After that, they strode into the lobby of the hospital, Kyon raising an eyebrow to see Shinobu standing inside the entrance, moving to his side as he entered. Leaning close to him when he paused, she whispered, \"Kyon-dono ... Nagato-san was just taken in for her stitches, but she should be fine.\""

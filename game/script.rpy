@@ -1589,6 +1589,33 @@ init:
     image Kimidori Neutral Flip = im.Flip("Sprites/Kimidori/KimidoriNeutral.png", horizontal=True)
     image Kimidori Confused Flip = im.Flip("Sprites/Kimidori/KimidoriConfused.png", horizontal=True)
     
+    
+#Shinobu Sprites
+    image Shinobu Hap1 = "Sprites/Shinobu/ShinobuHappy1Small.png"
+    image Shinobu Hap2 = "Sprites/Shinobu/ShinobuHappy2Small.png"
+    image Shinobu Neutral1 = "Sprites/Shinobu/ShinobuNeutral1Small.png"
+    image Shinobu Neutral2 = "Sprites/Shinobu/ShinobuNeutral2Small.png"
+    image Shinobu Pain = "Sprites/Shinobu/ShinobuPain.png"
+    image Shinobu Pained = "Sprites/Shinobu/ShinobuPainedSmall.png"
+    image Shinobu Sad1 = "Sprites/Shinobu/ShinobuSad1Small.png"
+    image Shinobu Sad2 = "Sprites/Shinobu/ShinobuSad2Small.png"
+    image Shinobu Smile1 = "Sprites/Shinobu/ShinobuSmile1Small.png"
+    image Shinobu Sup1 = "Sprites/Shinobu/ShinobuSurprised1Small.png"
+    image Shinobu Sup2 = "Sprites/Shinobu/ShinobuSurprised2Small.png"
+    
+    #Image flips
+    image Shinobu Hap1 Flip = im.Flip("Sprites/Shinobu/ShinobuHappy1Small.png", horizontal=True)
+    image Shinobu Hap2 Flip = im.Flip("Sprites/Shinobu/ShinobuHappy2Small.png", horizontal=True)
+    image Shinobu Neutral1 Flip = im.Flip("Sprites/Shinobu/ShinobuNeutral1Small.png", horizontal=True)
+    image Shinobu Neutral2 Flip = im.Flip("Sprites/Shinobu/ShinobuNeutral2Small.png", horizontal=True)
+    image Shinobu Pain Flip = im.Flip("Sprites/Shinobu/ShinobuPain.png", horizontal=True)
+    image Shinobu Pained Flip = im.Flip("Sprites/Shinobu/ShinobuPainedSmall.png", horizontal=True)
+    image Shinobu Sad1 Flip = im.Flip("Sprites/Shinobu/ShinobuSad1Small.png", horizontal=True)
+    image Shinobu Sad2 Flip = im.Flip("Sprites/Shinobu/ShinobuSad2Small.png", horizontal=True)
+    image Shinobu Smile1 Flip = im.Flip("Sprites/Shinobu/ShinobuSmile1Small.png", horizontal=True)
+    image Shinobu Sup1 Flip = im.Flip("Sprites/Shinobu/ShinobuSurprised1Small.png", horizontal=True)
+    image Shinobu Sup2 Flip = im.Flip("Sprites/Shinobu/ShinobuSurprised2Small.png", horizontal=True)
+    
 #Thug Sprites
     image ThugHead 1 = "Sprites/Thug/ThugHead1.png"
     image ThugBody 1 = "Sprites/Thug/ThugBody1.png"

@@ -1,4 +1,15 @@
 label IC_4:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 027 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+   
     "The two most important beings in Yuki's life walked just ahead of her, the girl leaning closer to the boy than her social monitor suggested was proper. Then again, she frequently ignored that whenever she had privacy with him."
     "It was difficult — bordering on impossible — to define why. She knew a very, very small part of it was due to the memetic link she shared with Suzumiya Haruhi. Haruhi's own basic humanity 'leaked' across their connection, imprinting faint values of itself on Yuki. Inevitable, considering that Haruhi was effectively manufacturing or altering data to sustain Yuki, and it was a compromise she embraced, given it not only allowed her to survive, but also allowed her to slowly, with painfully tiny steps, actually grow outside of the confines of the structure the IDSE had given her."
     "Slowly, bit by bit, as she watched her rigid definitions get chipped away by those tiny intimacies.... The way Kyon smiled, or the way she felt when they were alone, and they kissed.... To another degree, that same sensation occurred again when Asahina Mikuru embraced her in the hospital. Loneliness she never attempted to acknowledge was slowly worn away, in the manner of stone and rushing water."

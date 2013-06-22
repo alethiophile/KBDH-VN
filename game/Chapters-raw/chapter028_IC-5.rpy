@@ -1,4 +1,15 @@
 label IC_5:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 028 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+   
     "Though she had previously already considered the feasibility of just altering whatever data she could find into different outfits, Yuki was able to recognize that the request wasn't {i}just{/i} to get her to change her clothes. She had access to several references that suggested shopping as a bonding experience and relatively standard social activity."
     "Then again, theoretical knowledge and practical knowledge weren't always identical."
     "So she walked at the side of her time traveling friend, strolling through the crowds as they walked a path very similar to the one she had walked with her other brigade members the night before. Mikuru touched a fingertip to her lips and looked around thoughtfully, her eyes lingering on several of the smaller boutiques before she settled on one and pointed it out, asking, \"Should we look in there to see if there's anything you like?\""

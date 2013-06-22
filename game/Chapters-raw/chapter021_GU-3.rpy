@@ -1,4 +1,15 @@
 label GU_3:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 021 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+   
     "Morning came, and with it, bright beams of sunlight, spearing through the gaps in the curtain by Kyon's bedside. As they slowly traced across his pillow, finally settling on his eyes, he woke up again."
     "Blinking to clear his head of the dreams he'd had, he spent a very long moment staring at the unfortunately familiar ceiling. More so than at home, the bed felt warm. And not uncomfortably, unseasonably warm, or 'it's too cold to get out of bed today' warm ... just perfect."
     "Without trying to rise, he turned his head and looked across the room. The two chairs he'd dreamed that Mikuru and Tsuruya had fallen asleep in were empty. He raised a hand to his chest, checking the injury he'd remembered receiving. One bullet wound, and enough solid impacts to send him to the ground. Yuki had healed him, though, not even a scar remaining."

@@ -1,4 +1,15 @@
 label SB_4:
+    if music_need:
+        $ renpy.music.set_volume(0.2, .5, channel="music")
+    stop music fadeout 3
+    scene black
+    show title 042 at card_pos
+    with slowfadein
+    pause
+    play sound "SE/Pageflip3.mp3"
+    nvl clear
+    
+   
     "Kyon had discovered an interesting side-effect to giving in and letting Haruhi have her way."
     "No matter how 'cute' Ryouko looked as a chibi, there was no way he could bring himself to sleep in the same room as her. In 'good child' mode, she said nothing unless spoken to, but what could he really do?"
     "There was no {i}chance{/i} he was going to let the tiny would-be-murderer near his sister, and who {i}knew{/i} what mischief she would get up to if he left her unattended?"
