@@ -714,20 +714,24 @@ label Fi2:
     "\"Looks good on you,\" she assured him, smirking. \"Okies, come on a walk with me?\""
     nvl clear
     #show Kyon Suit
+    show Tsuruya Kimono Smile1
     "It felt more like an insistence than a question, but he agreed, falling into step just behind her as she leisurely strolled towards the garden. \"I don't want to make a mistake and upset your father, or embarrass you,\" he commented, glancing at the surroundings, but too worried to really enjoy the view."
     nvl clear
     show Tsuruya Kimono Hap5
     "\"You should be fine,\" she assured him. \"You'll talks with my father, and I'll explain what we want from him.\""
+    show Tsuruya Kimono Smile2
     "He nodded at that, looking at the girl out of the corner of his eyes. She seemed completely absorbed with a distant cherry tree, the last few petals slowly drifting to the ground."
     nvl clear
     show Tsuruya Kimono Hap1
     "\"I won't be embarrassed by Kyon-kun,\" she said after a moment. \"And my father's a mega understanding guy, nyoro~!\""
     #show Kyon Suit
+    show Tsuruya Kimono Smile1
     "\"I hope so,\" he agreed."
     nvl clear
     show Tsuruya Kimono Quest1
     "\"Mmm. Hey, Kyon-kun, has Mikuru-chan seemed a bit down lately to you?\""
     #show Kyon Suit
+    show Tsuruya Kimono Quest2
     "That was a sudden shift in conversation, he thought. \"Distracted, for sure,\" he agreed. \"I don't know about 'down', though.... You think she's upset?\""
     nvl clear
     show Tsuruya Kimono Sigh1
@@ -736,6 +740,7 @@ label Fi2:
     extend "She turned a questioning glance at Kyon. \"What do you think?\""
     nvl clear
     #show Kyon Suit
+    show Tsuruya Kimono Quest2
     "\"I don't know; I hadn't thought about it,\" he admitted, grimacing. He wasn't anyone to judge, but there was a real rush of jealousy as soon as the girl at his side brought it up."
     #show Kyon Suit
     "Damn it, anyone who thought about laying a hand on Mikuru was going to have to go through him! Then again.... \"I don't think I should ask her about that. Wouldn't it be, er ... her own personal business?\""
@@ -753,18 +758,20 @@ label Fi2:
     show Tsuruya Kimono Hap7
     extend "\"Okies! I'll talk with her tomorrow mornings, and find out what's going on!\""
     #show Kyon Suit
+    show Tsuruya Kimono Hap5
     "\"Anything you can do to cheer her up,\" he agreed. \"I don't like seeing her unhappy, either.\""
     nvl clear
     show Tsuruya Kimono Quest1
     #show KBlush at left
     "She blinked and turned another questioning gaze on him. He studiously looked away, remembering his conversation with Tsuruya's maid as his face colored."
     nvl clear
-    #show Shinobu at right with dissolve
+    show Shinobu Neutral2 Flip at left with dissolve
     "Just as the silence was becoming awkward, a maid — possibly the same one, he couldn't tell them apart — stepped out from behind a tree on the path ahead of them. \"Haruka-san, Kyon-dono,\" she said, bowing. \"Tsuruya-sama is ready to speak with the two of you now.\""
     show Tsuruya Kimono Hap1
     "\"Okies,\" Tsuruya said, giggling a bit. \"This way, Kyon-kun!\""
     nvl clear
     scene bg TsuruyaMeetingNight with fade
+    #Tsuruya - Tsuruya-sama - center - Kyon - Shinobu
     "He followed the girl into the sprawling mansion, as she led him down a maze of twisting hallways before finally entering a large meeting hall."
     "Most of the Tsuruya estate was a single floor, baring any scary basements Kyon was happy not to know about, but he saw that this room had a raised ceiling, which suggested that one of the few parts of the house that seemed to be higher was merely to provide a wider open area like they one they entered."
     nvl clear
@@ -784,12 +791,14 @@ label Fi2:
     nvl clear
     "Moreover, he had one arm free of the robe, baring half his chest and revealing the complex and detailed tattoos adorning him. Kyon tried not to gawk; it must have taken real courage and quite some time to have the vivid image of a fierce crane fishing a dragon from the heavens tattooed. It looked so lifelike, he practically expected it to leap off the man with one flexed muscle."
     nvl clear
-    #show Shinobu at left with dissolve
+    show Shinobu Neutral1 at left with dissolve
     "Nervously searching for something familiar to comfort him in this madness, Kyon spotted a maid in the customary outfit kneeling just below the dais on the man's right side, holding a tray before her, eyes downcast. Was she the same one that had spoken to him and asked that he watch over Tsuruya? The same one — somehow — that had met them on the path through the gardens? There was still no way to be sure."
     nvl clear
-    #show KyonSuit at right
+    #show KyonSuit
+    #   xalign 0.7 yalign 1.0
     show Tsuruya Kimono Ser1:
-       xalign 0.7 yalign 1.0   
+         xalign -0.3 yalign 1.0
+    hide Shinobu
     with dissolve
     "Tsuruya strode to within a few paces of the patriarch, then knelt and bowed deeply, her forehead almost touching the floor. Stopping a step short of the girl, Kyon followed suit without hesitation. \"Rise,\" the man chuckled. \"Dearest daughter, have you called mes back here to report on your trial?\""
     nvl clear
@@ -813,6 +822,7 @@ label Fi2:
     nvl clear
     show Tsuruya Kimono Ser2
     "\"This brother defeated twelve mens by himself, all in the same fight that left Kasai in the hospital,\" she explained. \"And yesterday, another four.\""
+    show Tsuruya Kimono Ser1
     "The gasp from the surrounding enforcers this time was not subdued at all."
     nvl clear
     #show TsuruyaSama
@@ -831,23 +841,28 @@ label Fi2:
     #show TsuruyaSama
     "\"A strong name,\" the patriarch allowed, eyebrows raised. \"Then, just like the stories of Sadamitsu and Raiko, you acts as my daughter's retainer?\""
     #show Kyon Suit
+    show Tsuruya Kimono Ser1
     "\"Yes,\" he agreed, wondering how much trouble this was all going to get him into. Still, it would keep his family safe, so that much would be worth it."
     nvl clear
     #show TsuruyaSama
+    show Shinobu Neutral1:
+         xalign 1.2 yalign 1.0
     "The man nodded as the maid rose, shuffling before him and holding out the tray. With brisk, efficient movements, the patriarch poured three small dishes of sake, mixing in salt and something glittery that Kyon couldn't quite make out. He took a dish, and the tray was moved to the girl. She took a dish as well, and then the tray was before Kyon."
     nvl clear
-    #show Shinobu
+    show Shinobu Neutral3
     "In a soft voice that Kyon was sure no one else could hear, the maid instructed him, \"Drink exactly half, in three small sips.\" He nodded minutely, amazed his hand wasn't shaking as he took the last dish."
     nvl clear
     #show TsuruyaSama
     show Tsuruya Kimono Grin1
     #show Kyon Suit
+    show Shinobu Neutral1
     "\"For family,\" the man announced, taking a sip. Tsuruya sipped as well, so Kyon followed suit; he was reasonably sure it was sake, but it had the taste of strong salt, and glittering flakes of ... something ... were floating within. \"For justice,\" and a second sip. \"For honor,\" with a final sip."
     nvl clear
-    #show Shinobu
+    show Shinobu Neutral3
     "The maid then exchanged the girl's cup with her father's, and whispered to Kyon, \"Hold still and wait.\""
     "This time, the girl spoke the words, she and her father drinking a sip at each invocation. When it was done, the maid took Kyon's cup and exchanged it with Tsuruya's. \"Now you,\" the maid whispered quietly."
     nvl clear
+    show Shinobu Neutral1
     #show Kyon Suit
     "\"For family,\" Kyon said, sipping from the dish. The girl at his side sipped with him; the patriarch did not. \"For justice,\" he said, wondering how the girl's stomach was holding up after this much of the strange ceremonial drink. Finally, he completed, \"For honor.\""
     nvl clear
@@ -864,7 +879,7 @@ label Fi2:
     stop music fadeout 3
     call eyecatch_fancy("Friday, April 22", "Friday, April 22") from Fi2_sc006
 
-    scene bg KyonKitchenLeft with fade
+    scene bg KyonHallway with fade
     #show Akane at left
     #show KyonSuit at right
     #with dissolve
@@ -873,7 +888,7 @@ label Fi2:
     nvl clear
     "\"It wasn't a special occasion?\""
     "\"Ah, just met up with a classmate, chatted with her family a bit.\""
-    show Nonoko Laugh1 at TenthRight with moveinleft:
+    show Nonoko Laugh1 at TenthRight with moveinright:
         .1
     "His sister charged down the stairs and flung herself at him. \"Change out of that suit and play with me!\" she demanded. \"I finished my homework!\""
     nvl clear
@@ -881,9 +896,10 @@ label Fi2:
     "\"Well, as long as you're through with being a delinquent,\" his mother decided."
     "Snorting, he ruffled his sister's hair until she let go of him. \"Yeah, delinquency wasn't working out, so I just skipped straight to joining the Yamaguchi-gumi.\""
     nvl clear
-    #hide KyonSuit
+    #hide KyonSuit with moveoutright:
+    #    .1
     "He walked up the stairs to change his clothes, while his mother stared, eyes narrowed. \"That's not funny!\" she yelled up after him."
-    show Nonoko
+    show Nonoko Quest1
     "A chuckle escaped him as he heard his sister ask, \"What's a 'Yamaguchi-gumi'?\""
     
     jump HAB3

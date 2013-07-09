@@ -1101,6 +1101,7 @@ init:
     
     image Tsuruya Wave Grin1 = "Sprites/Tsuruya/TsuruyaWaveGrin1.png"
     image Tsuruya Wave Grin2 = "Sprites/Tsuruya/TsuruyaWaveGrin2.png"
+    image Tsuruya Wave Grin3 = "Sprites/Tsuruya/TsuruyaWaveGrin3.png"
     image Tsuruya Wave Hap1 = "Sprites/Tsuruya/TsuruyaWaveHappy1.png"
     image Tsuruya Wave Hap2 = "Sprites/Tsuruya/TsuruyaWaveHappy2.png"
     image Tsuruya Wave Hap3 = "Sprites/Tsuruya/TsuruyaWaveHappy3.png"
@@ -1109,6 +1110,7 @@ init:
     image Tsuruya Wave Hap6 = "Sprites/Tsuruya/TsuruyaWaveHappy6.png"
     image Tsuruya Wave Hap7 = "Sprites/Tsuruya/TsuruyaWaveHappy7.png"
     image Tsuruya Wave Quest1 = "Sprites/Tsuruya/TsuruyaWaveQuestion1.png"
+    image Tsuruya Wave Quest2 = "Sprites/Tsuruya/TsuruyaWaveQuestion2.png"
     image Tsuruya Wave Smile1 = "Sprites/Tsuruya/TsuruyaWaveSmile1.png"
     image Tsuruya Wave Smile2 = "Sprites/Tsuruya/TsuruyaWaveSmile2.png"
     image Tsuruya Wave Sigh1 = "Sprites/Tsuruya/TsuruyaWaveSigh1.png"
@@ -1117,6 +1119,7 @@ init:
     
     image Tsuruya Kimono Grin1 = "Sprites/Tsuruya/TsuruyaKimonoGrin1.png"
     image Tsuruya Kimono Grin2 = "Sprites/Tsuruya/TsuruyaKimonoGrin2.png"
+    image Tsuruya Kimono Grin3 = "Sprites/Tsuruya/TsuruyaKimonoGrin3.png"
     image Tsuruya Kimono Hap1 = "Sprites/Tsuruya/TsuruyaKimonoHappy1.png"
     image Tsuruya Kimono Hap2 = "Sprites/Tsuruya/TsuruyaKimonoHappy2.png"
     image Tsuruya Kimono Hap3 = "Sprites/Tsuruya/TsuruyaKimonoHappy3.png"
@@ -1125,6 +1128,7 @@ init:
     image Tsuruya Kimono Hap6 = "Sprites/Tsuruya/TsuruyaKimonoHappy6.png"
     image Tsuruya Kimono Hap7 = "Sprites/Tsuruya/TsuruyaKimonoHappy7.png"
     image Tsuruya Kimono Quest1 = "Sprites/Tsuruya/TsuruyaKimonoQuestion1.png"
+    image Tsuruya Kimono Quest2 = "Sprites/Tsuruya/TsuruyaKimonoQuestion2.png"
     image Tsuruya Kimono Smile1 = "Sprites/Tsuruya/TsuruyaKimonoSmile1.png"
     image Tsuruya Kimono Smile2 = "Sprites/Tsuruya/TsuruyaKimonoSmile2.png"
     image Tsuruya Kimono Sigh1 = "Sprites/Tsuruya/TsuruyaKimonoSigh1.png"
@@ -1595,6 +1599,7 @@ init:
     image Shinobu Hap2 = "Sprites/Shinobu/ShinobuHappy2.png"
     image Shinobu Neutral1 = "Sprites/Shinobu/ShinobuNeutral1.png"
     image Shinobu Neutral2 = "Sprites/Shinobu/ShinobuNeutral2.png"
+    image Shinobu Neutral3 = "Sprites/Shinobu/ShinobuNeutral3.png"
     image Shinobu Pain = "Sprites/Shinobu/ShinobuPain.png"
     image Shinobu Pained = "Sprites/Shinobu/ShinobuPained.png"
     image Shinobu Sad1 = "Sprites/Shinobu/ShinobuSad1.png"
@@ -1610,6 +1615,7 @@ init:
     image Shinobu Hap2 Flip = im.Flip("Sprites/Shinobu/ShinobuHappy2.png", horizontal=True)
     image Shinobu Neutral1 Flip = im.Flip("Sprites/Shinobu/ShinobuNeutral1.png", horizontal=True)
     image Shinobu Neutral2 Flip = im.Flip("Sprites/Shinobu/ShinobuNeutral2.png", horizontal=True)
+    image Shinobu Neutral3 Flip = im.Flip("Sprites/Shinobu/ShinobuNeutral3.png", horizontal=True)
     image Shinobu Pain Flip = im.Flip("Sprites/Shinobu/ShinobuPain.png", horizontal=True)
     image Shinobu Pained Flip = im.Flip("Sprites/Shinobu/ShinobuPained.png", horizontal=True)
     image Shinobu Sad1 Flip = im.Flip("Sprites/Shinobu/ShinobuSad1.png", horizontal=True)
