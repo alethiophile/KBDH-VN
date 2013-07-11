@@ -37,6 +37,7 @@ label HAB3:
     "As much as Kyon liked the idea of seeing Mikuru — again — accidentally pulled out of the bath.... He shook his head to banish the thought. \"It probably wouldn't hurt to call everyone first, Nagato,\" he said, giving a shrug and smiling. \"Unless it's an emergency again?\""
     nvl clear
     show Yuki Talk2
+    show Kyon Casual Neutral3
     "\"The situation is less critical,\" was her clipped response. She paused, as Kanae finished her current chapter and looked around, blinking in surprise. {nw}"
     show Yuki Talk1
     extend "\"However, due to recent focus, it would be beneficial for a readjustment of priorities.\""
@@ -47,7 +48,7 @@ label HAB3:
     "Yuki gave her tiny nod in answer."
     show Kanae Night Sup1
     show Kyon Casual Neutral3
-    play sound "SE/Thump1.mp3"
+    play sound "SE/Thump1.wav"
     "\"I can't learn about sliding anymore?\" Kanae asked worriedly, her manga slipping from her fingers to fall on the floor by her side."
     nvl clear
     show Yuki Talk2
