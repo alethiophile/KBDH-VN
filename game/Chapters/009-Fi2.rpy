@@ -1,4 +1,5 @@
-#label Test:
+#Chapter 9, Filler Arc
+
 label Fi2:
     if music_need:
         $ renpy.music.set_volume(0.2, .5, channel="music")
@@ -10,7 +11,6 @@ label Fi2:
     play sound "SE/Pageflip3.mp3"
     nvl clear
     
-    stop music fadeout 0.5
     scene bg MikuruRoom with fade
     queue music "Music/MikurunoKokoro.mp3" 
     show Kyon Neutral3 at TenthRight

@@ -809,6 +809,7 @@ init:
     image Mikuru Neutral3 = "Sprites/Mikuru/MikuruNeutral3.png"
     image Mikuru Sad1 = "Sprites/Mikuru/MikuruSad1.png"
     image Mikuru Sad2 = "Sprites/Mikuru/MikuruSad2.png"
+    image Mikuru Sad3 = "Sprites/Mikuru/MikuruSad3.png"
     image Mikuru Sigh1 = "Sprites/Mikuru/MikuruSigh1.png"
     image Mikuru Sigh2 = "Sprites/Mikuru/MikuruSigh2.png"
     image Mikuru Ser1 = "Sprites/Mikuru/MikuruSerious1.png"
@@ -832,6 +833,7 @@ init:
     image Mikuru Casual Neutral3 = "Sprites/Mikuru/MikuruCasualNeutral3.png"
     image Mikuru Casual Sad1 = "Sprites/Mikuru/MikuruCasualSad1.png"
     image Mikuru Casual Sad2 = "Sprites/Mikuru/MikuruCasualSad2.png"
+    image Mikuru Casual Sad3 = "Sprites/Mikuru/MikuruCasualSad3.png"
     image Mikuru Casual Sigh1 = "Sprites/Mikuru/MikuruCasualSigh1.png"
     image Mikuru Casual Sigh2 = "Sprites/Mikuru/MikuruCasualSigh2.png"
     image Mikuru Casual Ser1 = "Sprites/Mikuru/MikuruCasualSerious1.png"
@@ -855,6 +857,7 @@ init:
     image Mikuru Maid Neutral3 = "Sprites/Mikuru/MikuruMaidNeutral3.png"
     image Mikuru Maid Sad1 = "Sprites/Mikuru/MikuruMaidSad1.png"
     image Mikuru Maid Sad2 = "Sprites/Mikuru/MikuruMaidSad2.png"
+    image Mikuru Maid Sad3 = "Sprites/Mikuru/MikuruMaidSad3.png"
     image Mikuru Maid Sigh1 = "Sprites/Mikuru/MikuruMaidSigh1.png"
     image Mikuru Maid Sigh2 = "Sprites/Mikuru/MikuruMaidSigh2.png"
     image Mikuru Maid Ser1 = "Sprites/Mikuru/MikuruMaidSerious1.png"
@@ -911,8 +914,14 @@ init:
     image MBlush Think = "Sprites/Mikuru/MBlushThink1.png"
     
     image Mikuru Think Quest1 Flip = im.Flip("Sprites/Mikuru/MikuruThinkQuestion1.png", horizontal=True)
+    image Mikuru Think Quest2 Flip = im.Flip("Sprites/Mikuru/MikuruThinkQuestion2.png", horizontal=True)
+    image Mikuru Think Quest3 Flip = im.Flip("Sprites/Mikuru/MikuruThinkQuestion3.png", horizontal=True)
     image Mikuru Think Casual Quest1 Flip = im.Flip("Sprites/Mikuru/MikuruThinkCasualQuestion1.png", horizontal=True)
+    image Mikuru Think Casual Quest2 Flip = im.Flip("Sprites/Mikuru/MikuruThinkCasualQuestion2.png", horizontal=True)
+    image Mikuru Think Casual Quest3 Flip = im.Flip("Sprites/Mikuru/MikuruThinkCasualQuestion3.png", horizontal=True)
     image Mikuru Think Maid Quest1 Flip = im.Flip("Sprites/Mikuru/MikuruThinkMaidQuestion1.png", horizontal=True)
+    image Mikuru Think Maid Quest2 Flip = im.Flip("Sprites/Mikuru/MikuruThinkMaidQuestion2.png", horizontal=True)
+    image Mikuru Think Maid Quest3 Flip = im.Flip("Sprites/Mikuru/MikuruThinkMaidQuestion3.png", horizontal=True)
     image MBlush Think Flip = im.Flip("Sprites/Mikuru/MBlushThink1.png", horizontal=True)
     
     image Mikuru Cower Nervous1 = "Sprites/Mikuru/MikuruCowerNervous1.png"
@@ -980,6 +989,7 @@ init:
     image MikuruBig Neutral1 = "Sprites/MikuruBig/MikuruBigNeutral1.png"
     image MikuruBig Neutral2 = "Sprites/MikuruBig/MikuruBigNeutral2.png"
     image MikuruBig Quest1 = "Sprites/MikuruBig/MikuruBigQuestion1.png"
+    image MikuruBig Quest2 = "Sprites/MikuruBig/MikuruBigQuestion2.png"
     image MikuruBig Sad1 = "Sprites/MikuruBig/MikuruBigSad1.png"
     image MikuruBig Sad2 = "Sprites/MikuruBig/MikuruBigSad2.png"
     image MikuruBig Ser1 = "Sprites/MikuruBig/MikuruBigSerious1.png"
