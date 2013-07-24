@@ -13,7 +13,7 @@ label HAB3:
     stop music fadeout 3
     queue music "Music/Nagatotheme.mp3"
     #Kyon and Kanae jump to the top of the screen if yalign is set to 1 for some reason.
-    show Kyon Casual Smile1:
+    show Kyon Casual Sigh4:
         xalign 0.4 yalign 1.01
     show Yuki Side1 at left
     show Mikuru Cower Casual Sigh2 at right
@@ -23,6 +23,7 @@ label HAB3:
     "This time, when Yuki summoned him, he was both awake and expectant of it. The bizarre teleportation effect she used was still disconcerting, but as he had learned with time travel, easier when he closed his eyes. After arriving in Yuki's living room, he cautiously opened his eyes."
     nvl clear
     show Mikuru Cower Casual Sigh1
+    show Kyon Casual Smile1
     "Mikuru and Kanae seemed to have adjusted to the teleportation without any trouble, though judging by the somewhat mournful expression that the older girl was giving a pair of chopsticks in her right hand, she had been in the middle of her dinner. \"Nagato-san,\" she whimpered, \"why don't you ever call me first?\""
     nvl clear
     play sound "SE/Pageflip3.mp3"
@@ -408,7 +409,7 @@ label HAB3:
     nvl clear
     scene bg ClubroomFullDay with fade:
         xpos 0 ypos 0
-    play sound "SE/DoorOpenFast.mp3"
+    play sound "SE/DoorOpenFast.wav"
     $ renpy.layer_at_list([PanScene_SetToRight])
     show Yuki Right Neutral1 at right_RightScreen with dissolve
     "She opened the door, unsurprised to see Yuki at the table, opening up the laptop she typically used and not looking towards the door. {nw}"
@@ -464,7 +465,7 @@ label HAB3:
     nvl clear
     #show Del!Kyon Sigh2 Flip
     "\"Welcome to my world,\" Kyon said, giving a shrug, limited by his hands in his pockets. \"I'll fill you in on the way. In the meantime, let me know if I'm failing to look delinquent enough, okay?\""
-    play sound "SE/DoorOpenFast.mp3"
+    play sound "SE/DoorOpenFast.wav"
     "He strode out the door confidently, then Koizumi straightened himself up and made sure his tie was neat before following."
     nvl clear
     $ renpy.layer_at_list([PanScene_CenterToLeft])
@@ -534,7 +535,7 @@ label HAB3:
     scene bg classroom with fade:
        size (800,600)
     stop music fadeout 1
-    queue music "Music/"
+    #queue music "Music/"
     #show Yanagimoto Neutral1 at right with dissolve
     "Humming slightly to herself, Yanagimoto watched Taniguchi happily scurry from the room in search of the canned drink she had requested. He was really not that bright, but made for a useful pawn ... in a way, his feverish devotion was kind of endearing, too. His looks weren't despicable by a long shot, and even though he wasn't terribly athletic, he was still amusing."
     nvl clear
