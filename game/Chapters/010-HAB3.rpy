@@ -815,9 +815,8 @@ label HAB3:
     $ renpy.layer_at_list([PanScene_SetToRight])
     stop music fadeout 1
     #queue music "Music/
-    show Mikuru Maid Neutral1:
-        xpos 1.5 yalign 1.0
-    show Kanae Neutral1 at right_RightScreen
+    show Mikuru Maid Neutral1 at left_RightScreen
+    show Kanae Neutral1 at center_RightScreen
     "Kanae wasn't certain what had upset Haruhi so much. She also had no idea what her sempai and Koizumi had run off to handle, but guessed they were related. Mikuru was likewise comfortably oblivious to the reasons behind the rage and rush. So, while slowly enjoying her lunch along with a cup of tea from the upperclassman, Kanae lost herself in the final volume of Caravan Kidd."
     nvl clear
     "It was usually her favorite manga, being old enough that — evidently — it tended to be consistent throughout every reality that she slid to. She really would have preferred to watch the Trope-tan anime, but that seemed {i}wildly{/i} divergent between realities ... though, production value was almost always very high in every world she'd seen."
@@ -829,21 +828,24 @@ label HAB3:
     show Tsuruya Grin1 Flip at right behind Haruhi
     show Yuki Side1 at left
     #show Yanagimoto Unhap1 at HalfLeft
-    play sound "se/DoorOpenFast.mp3"
+    play sound "se/DoorOpenFast.wav"
     extend "The door opened and Kanae looked up as Haruhi marched to the laptop Yuki had left turned on, Yuki, Tsuruya, and an unfamiliar girl with a glowing red face just behind her."
     nvl clear
     $ renpy.layer_at_list([PanScene_LeftToRight])
     show Kanae Hap1
     "\"Hello!\" she greeted the quartet cheerfully."
     show Mikuru Maid Hap2
+    show Kanae Smile1
     "\"Ah,\" Mikuru managed, rising to pour tea for everyone. \"Who's our guest?\""
     nvl clear
     $ renpy.layer_at_list([PanScene_RightToLeft])
     #show Yanagimoto Unhap2
+    show Mikuru Maid Smile2
     "\"Yanagimoto Ai,\" the girl introduced herself with a grumble. \"Temporary ally.\""
     show Haruhi Hap1
     "Haruhi introduced Mikuru and Kanae in turn, naming them, \"Chief Mascot\" and \"Mascot Trainee\"."
     nvl clear
+    show Haruhi Smile2
     "Kanae wondered if that meant she would get fun costumes like Mikuru. Hopefully another maid outfit, since her sempai really seemed to like those!"
     "\"Okay,\" Haruhi said, \"now to wait for Kyon to tell us what he got!\" {nw}"
     show Haruhi Hap2
@@ -852,9 +854,11 @@ label HAB3:
     nvl clear
     $ renpy.layer_at_list([PanScene_LeftToRight])
     show Mikuru Maid Quest1
+    show Haruhi Smile2
     "\"What was that song?\" Mikuru asked. \"Is that a new ring-tone?\""
     $ renpy.layer_at_list([PanScene_RightToLeft])
     #show Yanagimoto Unhap1
+    show Mikuru Maid Smile2
     "\"It's from an older DDR soundtrack,\" Yanagimoto noted, her expression still dark. \"It's called 'God of Romance'.\""
     nvl clear
     show Hblush:
@@ -870,19 +874,24 @@ label HAB3:
     "She listened to his explanation, her eyebrows rising. \"Okay,\" she allowed. \"Bring it here, then we'll take down the final boss! It's obvious, really!\""
     $ renpy.layer_at_list([PanScene_LeftToRight])
     show Kanae Quest1 
+    show Haruhi Smile3
     "\"What's going on?\" Kanae asked, setting her manga down."
     nvl clear
     $ renpy.layer_at_list([PanScene_RightToLeft])
     show Tsuruya Ser1 Flip
+    show Kanae Quest2
     "Tsuruya raised an eyebrow of her own. \"If it's a final boss, I gotta be there too,\" she said resolutely."
     show Haruhi Worry3
+    show Tsuruya Ser2 Flip
     "\"I don't particularly want to miss it myself,\" Haruhi grumbled. \"Ah, but, Kanae-chan, Kyon and Koizumi are finally starting to wrap things up. Yanagimoto is going to help expose the big boss and we'll resolve everything.\""
     nvl clear
     $ renpy.layer_at_list([PanScene_LeftToRight])
     show Kanae Quest1
+    show Haruhi Worry2
     "That wasn't really much of an answer, so Kanae just gave a knowing nod and turned her attention to Yanagimoto. \"You play DDR?\" she asked."
     $ renpy.layer_at_list([PanScene_RightToLeft])
     #show Yanagimoto
+    show Kanae Quest2
     "\"Not really,\" the second year girl answered, seeming to only just notice Kanae for the first time. \"It's a pretty fast song, but one of the gymnasts I admired had a routine set to it not long ago.\""
     nvl clear
     show Kanae Hap1
@@ -890,18 +899,26 @@ label HAB3:
     "Just as well, Kanae decided, DDR was fun, but every world had a wildly varying selection of tracks, so she never got very good at it. \"So, you're a gymnast, then?\" she asked."
     $ renpy.layer_at_list([PanScene_RightToLeft])
     #show Yanagimoto
+    show Kanae Smile1
     "\"Yeah ... you should ask your president about it. She joined our club for one day before she ditched us.\""
     nvl clear
     show Haruhi Sigh1
     "\"It was boring,\" Haruhi noted unapologetically."
     #show Yanagimoto
+    show Haruhi Sigh3
     "\"And this club is more interesting?\" Yanagimoto asked skeptically."
     show Haruhi Hap2
     "\"You bet,\" Haruhi replied, throwing back her entire cup of tea in a single gulp. \"Stick around a while, you'll see.\""
     nvl clear
     $ renpy.layer_at_list([PanScene_LeftToRight])
     show Mikuru Maid Hap2
+    show Haruhi Smile3
     "Kanae's sempai knocked at the door, and Mikuru folded her paper in half, hiding the markings. \"Come in!\" she called."
+    show Mikuru:
+        xpos 1.5 yalign 1.0
+    show Kanae at right_RightScreen
+    with dissolve
+    pause .2
     show Koizumi Crossed Neutral1 at left_RightScreen
     show Kyon Neutral3 at HalfLeft_RightScreen
     with dissolve
