@@ -914,7 +914,7 @@ label HAB3:
     show Mikuru Maid Hap2
     show Haruhi Smile3
     "Kanae's sempai knocked at the door, and Mikuru folded her paper in half, hiding the markings. \"Come in!\" she called."
-    show Mikuru:
+    show Mikuru Maid Smile2:
         xpos 1.5 yalign 1.0
     show Kanae at right_RightScreen
     with dissolve

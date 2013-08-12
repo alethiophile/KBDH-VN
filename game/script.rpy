@@ -140,6 +140,7 @@ init:
     image TownHillLeftMorning =  "Backgrounds/TownHillLeftMorning.png"
     image bg IdolClubDark = "Backgrounds/IdolClubDark.png"
     image bg IdolClubLight = "Backgrounds/IdolClubLight.png"
+    image bg MaseoBase = "Backgrounds/MaseoBase.png"
     
     
     image lowkick1 = im.Alpha("Backgrounds/Effects/lowkick1.png", 0.75)

@@ -9,20 +9,32 @@ label HAB_5:
     play sound "SE/Pageflip3.mp3"
     nvl clear
     
+    scene bg TsuruyaFutonDay with fade
+    stop music fadeout 1
+    ##queue music "Music/"
+    ##show Tsuruya at left >
+    ##show Kyon at center <
+    ##show Yuki at right <
     "After reaching Tsuruya's house, Kyon and Yuki followed the green-haired girl into her room, where a trio of cloth-wrapped bundles were waiting. \"I got your sizes from Mikuru-chan, since she measured you at lunch,\" Tsuruya explained, as Kyon unwrapped the one she handed him."
     "Within was a complete uniform for a school he didn't recognize. Their own school had boys wearing parochial-style school uniforms, but the unwrapped outfit was the more classic and traditional military-themed gakuran uniform. It looked very like the one he had seen on Koizumi in that alternate world...."
     nvl clear
+    scene bg TsuruyaFutonDay with fade
     "\"What school is this from?\" he asked, looking up in time to realize that Tsuruya was unabashedly stripping in front of him — again. He quickly turned, closing the door, then decided he was best off just facing the wall and changing anyway."
     "\"Hikami Gakuen,\" she answered, her voice muffled as she pulled her blouse over her head."
     nvl clear
+    ##show Yuki at right
     "He couldn't resist the urge to sneak a peek at Yuki, to watch her changing, but she was merely watching him when he looked. Feeling more self-conscious than usual, he turned his eyes back to the wall and began undressing, trying not to think about it."
+    ##hide Yuki
     "\"They don't sound familiar,\" he said, hoping Yuki wasn't staring at him as he dropped his trousers and stepped into the jet-black gakuran pants. Then again, with Yuki's perceptions, she didn't need to look— He decided he was better off trying to think about other things. \"How's that written?\""
     nvl clear
     "Tsuruya said something else that was muffled, as he pulled his shirt and undershirt off, reaching for their replacements. A moment later, she said, \"Sorries. It's written like 'top of the day', but it can also read 'above the gutter'. It's the delinquent capital of our city!\""
     "\"I did not know that,\" he replied, grimacing at the thick, heavy shirt with bulky metal buttons. \"This is what we'll use to get into ... wherever this last holdout is?\""
     "\"Um ... yeah,\" she replied somewhat hesitantly. \"Ugh, Kyon-kun, help me out with this stuff.\""
     nvl clear
+    ##show Yukibra at right
+    ##show TsuruyaGakuen at left
     "\"Sure,\" he said, dropping the heavy shirt to the floor and staring when he turned to look around. He'd gotten his wish, and ended up with a glance of Yuki wearing nothing more visible to him than a skirt and simple white bra before she finished pulling the blouse on with mechanical precision. But his attention was taken by Tsuruya, and Yuki's eyes were riveted on the taller girl as well. Tsuruya had put her hair up into a bun, and was currently wearing the matching sailor uniform to the outfit Kyon hadn't finished putting on yet."
+    ##hide Yukibra
     "She had tugged the uniform's collar very loose, and rolled up the sleeves. \"There's a towel by my feet,\" she said, holding a jar of some strange orange cream in one hand, the other hand already covered in it. \"Can you tuck it into my collar? I don't want to get this on my disguise.\""
     nvl clear
     "\"Er, sure,\" he managed, feeling a bit embarrassed, but doing as she requested, wrapping the towel around her shoulders and then tucking it into her collar. She flashed him a bright smile in gratitude, and then began slathering the orange cream across her exposed skin."
@@ -31,6 +43,8 @@ label HAB_5:
     "\"W...what exactly are you doing?\" Kyon finally asked, spotting a hand-mirror in the pile of discarded clothing and accessories by Tsuruya's feet, and holding it up for her. \"Are you trying to look like a ganguro girl?\" He shuddered at the idea of Tsuruya in that imagery. Fake tan, huge white circles around her eyes, bleached blonde hair, makeup caked on thickly.... He found it precisely as attractive as a sumo wrestler in full kabuki makeup."
     "She giggled at that, shaking her head. \"Not that far,\" she protested. \"And not enough times for that. I'm going for a 'kogal' look. These guys ... eh ... they know me, right?\""
     nvl clear
+    ##show TsuruyaTan at left
+    ##show YukiGakuen at center
     "Yuki finished adjusting her uniform, and wordlessly took the jar of cream from Tsuruya's fingers with one hand, evening out the application of it across the rest of her face. Tsuruya closed her eyes and pursed her lips very hard, but with Yuki's precise, delicate touch, it was done almost instantly. Once the makeup ... or whatever it was ... Kyon wasn't certain and decided he didn't really need to know ... was evenly layered on, it began to fade from too- bright orange, to colors that more closely resembled a tan."
     "Tsuruya made a few faces, then shook her head. \"I hate this stuffs,\" she said primly. \"But it should work. Now, Kyon-kun, can you get on your knees?\""
     "He snorted in laughter and spread his arms in a helpless shrug. \"Somehow,\" he said, \"I really expected to hear that from Haruhi, first.\""
@@ -39,6 +53,7 @@ label HAB_5:
     "\"Oh,\" he said, feeling his face color as he obediently knelt before her. She plucked some gel and a comb from the mess at her feet, and he held still while she brushed something through his hair and toyed with it for what seemed to be several minutes — long enough for his lower legs to start protesting."
     nvl clear
     "\"Done,\" she said, flashing him a grin and gesturing to the mirror he was still holding. With no small amount of trepidation, he tilted it up to see what she had done."
+    ##show KyonGakuen at right
     "\"Oh, wow,\" he managed, impressed at the ruffian staring back at him. \"I look greasier than Taniguchi!\""
     "\"Interesting,\" Yuki agreed. His hair had been slicked back, only to break into a number of sharp-looking spikes. When he tried his normal dour expression, he found the newly stylized hair gave it a fresh aura of menace and impending violence."
     nvl clear
@@ -50,17 +65,27 @@ label HAB_5:
     nvl clear
     "It was the traditional cadet's cap to go with a uniform like his own, black cloth with a short, hard bill. As per delinquent style on males, it was supposed to have a wedge cracked clean off the bill, allowing someone to pull it low and see through the crack, hiding some of the rest of their face. This one was intact, and Kyon didn't see much point in putting a cap on over his spiked hair. He adjusted the band, and then while Yuki blinked, set it on her head."
     nvl clear
+    ##show YukiHat
     "She held perfectly still while he shifted the cap around and found the perfect angle. Low, shadowing her eyes a little bit. \"Nice!\" Tsuruya said encouragingly. \"But be careful it doesn't tip too far back, because then you go straight into moe-mode!\""
     nvl clear
     "Kyon held the mirror up for Yuki, uncertain if she really needed it. To his surprise, the smaller girl seemed very interested in her reflection, studying it closely as she tipped the cap back. When it was so far back he thought it was about to fall off, Tsuruya was right. It made Yuki look waifish and innocent, almost lost. Not menacing in the slightest."
+    ##show YukiMoeHat
     "\"Understood,\" she said, her eyes locking onto Kyon's. She held perfectly still for a moment, then put it back the way he had left it."
     nvl clear
+    ##show TsuruyaWig at HalfLeft
     "\"Okies,\" Tsuruya decided, pulling a blonde wig from the pile at her feet and adjusting it to hide the bun her hair was coiled in. Much to Kyon's surprise, the large bun fit beneath the very curly and springy blonde wig. \"One last step!\" She snapped her fingers, and the door slid open, revealing the maid that Kyon was beginning to suspect was a ninja."
+    ##show Shinobu at left
     "The maid wordlessly stepped into the room, producing a digital camera from one apron pocket. That cinched it, Kyon decided. Either she was a ninja, or any real ninja aspired to be as skilled as a Tsuruya family maid."
     nvl clear
+    ##show KyonGakuen at right
+    ##show TsuruyaWig at HalfRight
+    ##show YukiHat at center
+    ##with move
     "\"Haru-nyan will love these,\" Tsuruya added with a smirk, pulling Yuki closer to Kyon, herself between the two as she gave a bright grin at the camera. Kyon couldn't help but grin himself. He might as well enjoy what he could of this madness, before going back home. Maybe if he was really lucky, his future self would tell him to stay with Tsuruya again."
     
-    
+    scene bg MaseoBase
+    stop music fadeout 1
+    ##queue music "Music/"
     nvl clear
     "Maruyama Iyouji was happy with his role in life, generally. He had a job, regular hours, and a small bit of respect. He belonged to an organization that relied on his skills, while also protecting him from things he couldn't handle on his own."
     "All told, his life had only improved from the day he first joined the Fujiya branch of the Sumiyoshi-rengo. He had been recruited very young, while he was debating attending high school in the first place. He'd heard that those who elected not to go to high school and enter straight into the working world called middle school 'Yakuza Finishing School', but hadn't realized how close to the truth the phrase was until he started looking for work."
@@ -89,15 +114,22 @@ label HAB_5:
     "Still, their woes weren't eternal. Only yesterday, they had been approached by a civilian seeking to supply them with more of the materials that had been lost at Watanabe's office."
     "Iyouji nodded to himself and rose from his spreadsheets, stretching his arms over his head and knuckling back a yawn. His desk was in one corner of a warehouse-like room, the rest of the space taken up with boxes of various goods, chairs, tables, personal effects, and at the moment, twenty three of the group's best fighters, split up into groups playing cards, mahjong, and dice. Masao's office was in the back, and the boss in question stepped into the room just as the accountant looked over."
     nvl clear
+    ##show Mook at right
+    ##show Iyouji at HalfLeft
     "That scene would be etched into Iyouji's mind forever. Just as he was trying to think of something witty to say, some clever joke to help relieve some of the stress floating around the room, the door to the pachinko parlor that served as a front opened. The 'little brother' on duty as an attendant stepped into the room, glancing around briefly, then moving to Iyouji's side."
     "\"What is it?\" Iyouji asked the man as he approached."
     "\"Um, someone's here to see you,\" he said, frowning. \"Well, I think it goes to you. A high school student? Says he wants to sell you some pictures? Has two of his classmates with him ... I guess they're a gang? From Hikami Gakuen.\""
     nvl clear
+    ##show Maseo at left
     "\"Show them in,\" Masao said, having drawn close enough to hear without Iyouji realizing it. \"It pays to maintain good relationships with the local gangs. And they're not Kitago uniforms, so we should be fine.\""
+    ##hide Mook
     "\"Got it, Boss,\" the underling said, scurrying off to do as he had been told."
     "\"We still don't have the setup to get these new pictures on-line where we can sell them,\" Iyouji said with a frown."
     nvl clear
     "Masao waved a hand dismissively. \"That, we can fix. Our computer guy is coming in tonight. In any case, the positive relations are more important right now. Who knows? Some day, they could be the future of our operation right here!\""
+    ##show KyonGakuen at center
+    ##show TsuruyaWig at HalfRight
+    ##show YukiHat at right
     "The door opened again, and a trio of stereotypical toughs walked through, following the taller underling. A boy with his hair spiked back, a ditsy bubble-gum chewing kogal behind him, and one of those small, sullen, quiet types who was probably good with unpleasant weapons, wearing a boy's uniform hat. Iyouji was immediately stricken with a strange sense of familiarity with the smaller girl. A picture he had seen recently, somewhere? Maybe he had passed her in the street?"
     nvl clear
     "Her eyes didn't go to him for a moment, instead moving to Masao and locking there."
@@ -150,7 +182,12 @@ label HAB_5:
     "And that was when all hell broke loose."
     nvl clear
     
-    
+    scene bg StudentCouncil with fade
+    stop music fadeout 1
+    ##queue music "Music/"
+    ##show Haruhi at center
+    ##show Koizumi at left
+    ##show President at right
     "After finishing her arguments and glaring at the student council president, he finally relented, agreeing that Kyon's punishment would be handled by the police and his family. Ultimately, he {i}had{/i} done a service to the school, and the students would almost certainly rebel at seeing a hero punished. Haruhi grinned in triumph. \"So,\" she said, unable to resist a few last digs, \"what does this say when you find yourself suddenly in the debt of the SOS Brigade?\""
     "\"You are more useful to the school than I had previously understood,\" the president growled, eyes narrowed. \"But capability does not automatically equate to respect. You may think it is easier to ask for forgiveness than permission. But do not expect such behavior to be routinely overlooked.\""
     nvl clear
@@ -160,23 +197,41 @@ label HAB_5:
     "\"You can't have my gun or my badge,\" she retorted, grinning."
     "\"If you had either, I would demand them instantly,\" the president snapped. \"Now go; my patience wears thin.\""
     nvl clear
-    "Triumphant, she closed the laptop, shooting one last amused smirk at Emiri in the corner as she recorded the final notes of the encounter. Koizumi was right at her heels, and the pair of them found a pair of detectives in the hallway, waiting with cool gazes and otherwise passive expressions. One was a thirty- ish looking man with a stocky build, and one was a slim woman in her mid twenties, both in very nice suits."
+    "Triumphant, she closed the laptop, shooting one last amused smirk at Emiri in the corner as she recorded the final notes of the encounter. {nw}"
+    scene black with fade
+    extend "Koizumi was right at her heels, and the pair of them found a pair of detectives in the hallway, waiting with cool gazes and otherwise passive expressions. One was a thirty- ish looking man with a stocky build, and one was a slim woman in her mid twenties, both in very nice suits."
     "She gave her presentation to them in a private room, Koizumi at her side, answered all of their questions, and at their insistence, handed over all of the evidence, even the presentation and all copies of the pictures from the laptop. Haruhi didn't particularly see a need to keep them, herself — they were illegal, after all. But she did worry about giving away every copy of the evidence ... what if the detectives lost them?"
     nvl clear
-    "No way around it, though; the law was the law. Once she was done, she and Koizumi were both released with warnings that they were likely to be contacted for further questioning in the future, and she was finally able to return to class. Two periods late, Haruhi took her seat near the end of the second-to- last class of the day, realizing belatedly that Kyon was missing, and she'd have no way to make up the notes for the portions of class they had both missed."
+    "No way around it, though; the law was the law. Once she was done, she and Koizumi were both released with warnings that they were likely to be contacted for further questioning in the future, and she was finally able to return to class. {nw}" 
+    scene bg classroom with fade
+    extend "Two periods late, Haruhi took her seat near the end of the second-to- last class of the day, realizing belatedly that Kyon was missing, and she'd have no way to make up the notes for the portions of class they had both missed."
     "Kunikida got respectable grades, and would probably be more than willing to lend his notes to help Kyon, but she didn't really think highly of the boy. Didn't he need to attend cram school to keep his grades at the level they were at? She had just resigned herself to asking him for help anyway when the period ended."
     nvl clear
-    "When the teacher left, she was mildly surprised to see Yanagimoto's desk swarmed with other students — mostly girls, frantically trying to get her to talk about what had happened during lunch. She watched, curious, as Yanagimoto rose to her feet and slammed both hands on her desk. \"Shut up!\" the girl yelled, silencing the classroom."
+    ##show Haruhi at left
+    ##show Yanagimoto at right
+    "When the teacher left, she was mildly surprised to see Yanagimoto's desk swarmed with other students — mostly girls, frantically trying to get her to talk about what had happened during lunch. {nw}"
+    ##show Yanagimoto yell
+    extend "She watched, curious, as Yanagimoto rose to her feet and slammed both hands on her desk. \"Shut up!\" the girl yelled, silencing the classroom."
+    ##show Yanagimoto
     "\"I don't want to talk about it, so I'll say {i}this{/i} much,\" she continued, glaring at the girls surrounding her. \"Anyone can make mistakes in judgment! The SOS Brigade may be full of the craziest people in this school, but even if that's true — they are {i}good{/i} people! And Yamane Jun was not {i}anyone's{/i} friend! Now leave me alone, I'm not a rumormonger!\""
     nvl clear
-    "At that, the crowd dispersed. Gathering papers from her desk, Yanagimoto stalked to Haruhi's side, not making eye-contact, and dropped them on her desk. \"Notes,\" she said stiffly, her voice barely audible. \"For Kyon.\""
-    "Haruhi was taken aback. Before she could say anything, Yanagimoto's face began to turn red, and she quickly added, \"Don't thank me!\" before stomping back back to her own desk and sitting down with her arms crossed over her chest, glaring at nothing in particular."
+    ##show Yanagimoto at HalfLeft with move
+    "At that, the crowd dispersed. Gathering papers from her desk, Yanagimoto staglked to Haruhi's side, not making eye-contact, and dropped them on her desk. \"Notes,\" she said stiffly, her voice barely audible. \"For Kyon.\""
+    ##show Haruhi Sup1
+    ##show Yanagimoto
+    "Haruhi was taken aback. Before she could say anything, Yanagimoto's face began to turn red, and she quickly added, \"Don't thank me!\" before {nw}"
+    ##hide Yanagimoto
+    extend "stomping back back to her own desk and sitting down with her arms crossed over her chest, glaring at nothing in particular."
     nvl clear
+    ##show Sakanaka at center
     "Sakanaka approached Haruhi from her own seat, an obvious relieved smile on her face. \"I don't know everything that happened yet,\" she whispered, \"but I'm glad it seems to have worked out!\""
+    ##show Haruhi
     "\"Me, too,\" Haruhi agreed."
     nvl clear
     
-    
+    scene bg MaseoBase with fade
+    stop music fadeout 1
+    queue music "Music/PremonitionofaStorm.mp3"
     "Twenty four."
     "After the boy's warning, there was an extended moment of awkward silence before the two men who had first been stunned rose to their feet, recognizing the trio — or at least, two of them — from the 'encounter' at Watanabe's headquarters. \"You'll pay!\" the brutish one screamed, leading in with a fierce punch towards the boy's face."
     nvl clear
@@ -222,6 +277,8 @@ label HAB_5:
     "The last remaining man grabbed a bottle and shattered it against the last intact table, charging the boy with a guttural roar. The boy used a spinning kick — a roundhouse, Iyouji thought it was called — and smashed what was left of the bottle in the man's hand, sending fragments of glass across the warehouse. The man screamed in agony and clutched his injured hand in his good one, but the boy hadn't finished. He seized the man's head in both hands and threw him down towards the floor, simultaneously raising one knee and slamming the man's face into it. There was a spray of crimson and another of those sickening crunches as the man fell to the floor, sternly chastised."
     "Zero."
     nvl clear
+    stop music fadeout 1
+    ##queue music "Music/.mp3"
     "The boy shifted his shoulders and surveyed the room, finally admitting, \"That was much easier than I expected.\""
     "\"I know, right?\" the Tsuruya heir agreed, her laughter winding down to a chuckle. \"Okies, let's get the boss, he went into the back.\""
     nvl clear
