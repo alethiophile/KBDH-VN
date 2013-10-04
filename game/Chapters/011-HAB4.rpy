@@ -31,7 +31,9 @@ label HAB4:
     "The quartet listened to the creak of his chair as he rose, {nw}"
     play sound "SE/Step1.wav"
     extend "then the tap of his footsteps across the room before the door unlocked and opened. {nw}"
-    show Yamane Grin2 at left with dissolve
+    show Yamane Grin2:
+        xalign -0.4 yalign 1.0
+        ##Needs dissolve, unsure how to implement with align.
     play sound "SE/dooropenfast.wav"
     extend "Yamane's expression shifted from something quite near a leer to {nw}"
     show Yamane Terror1
@@ -86,22 +88,26 @@ label HAB4:
     with dissolve
     "Tsuruya gave him a cool look. \"Do you knows who I am?\" she asked, quirking an eyebrow higher."
     show Yamane Lost Cool2
+    show Tsuruya Ang1
     "\"Tsuruya Haruka,\" he answered, glaring at her. \"Third year student. What did I ever do to you?\""
     nvl clear
     show Tsuruya Grin6
     "Tsuruya chuckled, showing her teeth to the boy. \"Do you know who my family is?\""
     #show Yamane Yell1
+    show Tsuruya Grin4
     "\"I don't care!\" Yamane said defiantly. \"Whatever big shot you're related to, nothing gives you the right to break into my clubroom and assault me!\""
     nvl clear
     show Kyon Ang3
     "Kyon cracked his knuckles loudly, then reached down and pulled Yamane to his feet by the collar of his coat. \"I very strongly advise that you start talking,\" he warned. \"Because right now, most of the rumors you've been trying to spread about me are true. And if you don't start talking, well....\""
     nvl clear
     show Yamane Grin1
+    show Kyon Ser1
     "\"Well {i}what{/i}?\" Yamane sneered, unshaken."
     show Tsuruya Hap7
     "\"Then he gives you to me,\" Tsuruya said cheerfully. \"'Cause he's the {i}nice{/i} one!\""
     nvl clear
     show Yamane Terror2 #Yamane plead1
+    show Tsuruya Grin3
     "Yamane's eyes went wildly between the pair, then turned to Yanagimoto, silently beseeching her for help."
     hide Kyon
     hide Tsuruya
@@ -112,7 +118,7 @@ label HAB4:
     nvl clear
     #hide Yanagimoto
     #show Yamane Plead2 at left
-    show Tsuruya Hap7 at right
+    show Tsuruya Grin3 at right
     show Kyon Unhap5 at center
     with dissolve
     "\"You're being played!\" Yamane tried desperately. \"I was framed! This ... this is all Suzumiya's plan to— {nw}"
@@ -123,12 +129,14 @@ label HAB4:
     "\"Haru-nyan is a much better planner than that,\" Tsuruya informed him stiffly. \"And she's not the one here.\""
     nvl clear
     #show Yamane
+    show Tsuruya Ang1
     "He gasped, struggling to breathe, held up only by Kyon's grip on his coat. \"Okay,\" he wheezed. \"Whatever.... Just ... don't hurt me....\""
     show Kyon Ang4
     show Tsuruya Grin1
     "\"Let's start by getting us into that computer,\" Kyon said, releasing the boy's coat and pushing Yamane towards the desk."
     nvl clear
     #show Yamane
+    show Kyon Ser1
     "\"Y...yeah, okay,\" the bespectacled boy said shakily, wobbling towards the seat. Yuki watched him impassively as he paused, leaning on the edge of the desk and panting, then turned her attention away, approaching one of the filing cabinets near the door and opening it."
     nvl clear
     "Yanagimoto wondered what the girl was up to, but couldn't look away from the revenge she had wished on Yamane."
@@ -186,6 +194,7 @@ label HAB4:
     "\"S...stitches tore open,\" she whimpered. \"H...hurts....\""
     nvl clear
     show Kyon Unhap2
+    show Tsuruya Laugh Pain1 Flip
     "Kyon swore something guttural, clutching the girl to his chest. \"Okay,\" he said quickly, snapping his gaze to Yanagimoto. \"One thing at a time. Yanagimoto, make sure Yamane's still down — keep an eye on him.\" She nodded shakily, glad to follow orders and not think about things too heavily."
     nvl clear
     #show Yanagimoto at center
@@ -211,15 +220,18 @@ label HAB4:
     with dissolve
     "Maybe it had been a trick of the light, or Yamane's imagination? There was a smudge of blood on the girl's right hand, but her left shirt sleeve was completely unstained, now. Kyon leaned down and collected the boy's glasses, somehow still in place, only slightly askew. \"Yeah, Nagato took care of her. Hold these for me,\" he said, thrusting them at her as he straightened."
     nvl clear
+    show Kyon Ser1
     "She numbly accepted them."
     show Kyon Unhap2
     "\"Nagato, is Yamane alright?\""
     show Yuki Talk1 at left with dissolve
     "\"Minimal reasonable force was used,\" the girl stated calmly. \"No permanent damage should result.\""
     nvl clear
-    show Kyon Smile7
+    show Yuki Side1
+    show Kyon Smile6
     "He smiled at her. \"Thank you. Now, we don't need any interruptions, could you secure the door?\""
     show Yuki Talk2
+    show Kyon Smile1
     "\"Understood,\" Yuki replied, {nw}"
     hide Yuki with dissolve 
     extend "stepping away from Tsuruya's side to place one hand against the door and stare at it intently."
@@ -236,7 +248,7 @@ label HAB4:
     "\"L...let me go!\" Yamane yelped."
     "\"Classic poor choice of words,\" Kyon remarked. \"Do you {i}really{/i} want that?\""
     "Yamane wailed, then screamed, \"Help! Help! Someone — I'm being murdered!\""
-    nvl clear
+    #nvl clear
     "\"Nonsense,\" Kyon said, shaking Yamane again. \"I'm trying to save you. But, see, I recently strained this arm ... not sure how much longer I can hold you up!\""
     "\"You're never going to get away with this!\""
     "\"You think? So, maybe I should just drop you, since I'm damned anyway? How does that saying go ... 'if you're going to do the time, may as well do the crime'?\""
@@ -294,6 +306,7 @@ label HAB4:
     "\"Um, hey, Tsuruya-kun,\" Kyon said, his voice suddenly level. \"Is it me, or did Yamane here just wet himself?\""
     nvl clear
     show Tsuruya Laugh2
+    show Kyon Neutral4 Flip
     "\"Huh?\" The upperclassman cautiously approached to peer out the window, then exploded into gales of laughter. \"Bwahahaha! Oh, Yamane-chan, that's {i}precious{/i}! I'll make sure one of those pictures of you that's being taken down there now is {i}right{/i} next to the article about this that'll be in the paper!\""
     nvl clear
     show Kyon Unhap4 Flip
@@ -312,16 +325,20 @@ label HAB4:
     "Tsuruya shut the computer down, then walked to his side, pulling his face towards hers, so their foreheads touched, her eyes closed. \"It's okay,\" she soothed quietly. \"You get angry for good reasons. I'm sorry, Kyon-kun.\""
     nvl clear
     show Kyon Puzzle1 Flip
+    show Tsuruya Sigh2
     "\"I'm not,\" he replied, his arms wrapping around Tsuruya. \"You're okay, and we're done with this, right?\""
     show Tsuruya Sigh3
+    show Kyon Worry1 Flip
     "\"...almost,\" Tsuruya meekly said, tentatively hugging him back. \"I'm sorry ... he kept records on his system ... he made a sale last nights. If we can get those pictures back before they go onto the internet....\""
     nvl clear
     show Kyon Sigh2 Flip
+    show Tsuruya Neutral2
     "\"Okay,\" he mumbled, shifting his face to one side and burying it in her shoulder. \"When this is over, I need a damn vacation.\""
     show Tsuruya Hap1
     "\"Anything I can do for you,\" she promised him, breaking the embrace to stare into his eyes and nod emphatically."
     nvl clear
     show Kyon Smile6 Flip
+    show Tsuruya Smile2
     "He gave a shaky grin and rolled his neck, cracking it in several places. \"Hopefully we can get out of this without going to jail, huh?\""
     nvl clear
     hide Kyon
@@ -343,11 +360,14 @@ label HAB4:
     show Yuki Talk1 at left with dissolve
     "\"Yes,\" Yuki answered."
     show Kyon Sup1
+    show Yuki Side1
     "\"S...so this whole thing....\""
     nvl clear
     show Yuki SadTalk2
+    show Kyon Sup3
     "\"A ... long-term plan,\" Yuki said quietly. \"Until seeing the data acquired from Yamane Jun's operation, the mechanisms of this were invisible to me. However, the execution appears to have become ... corrupted.\""
     show Kyon Sup2
+    show Yuki Sad2
     "Swallowing, Kyon gave an uncomfortable nod, muttering the name of the girl in the picture, \"Asakura Ryouko....\""
     nvl clear
     
