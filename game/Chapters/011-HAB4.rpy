@@ -375,11 +375,13 @@ label HAB4:
     stop music fadeout 1
     #queue music 
     show Koizumi Crossed Smile1 at left
-    show Haruhi Crossed Smile1 at right
+    show Haruhi Neutral1 Flip at right
     with dissolve
     play sound "SE/WestminsterChimeShort.mp3"
     "Haruhi had elected to ignore the chime warning students to return to their classrooms, and Koizumi stayed with her. Mikuru and Kanae, being largely uninvolved, returned before they were late, while Haruhi quickly wrote out a list of notes and considerations for the explanation to the student council."
     nvl clear
+    show Koizumi Crossed Ser1
+    show Haruhi Ang1 Flip
     "Packing away the lunch box he had brought to the clubroom, Koizumi glanced out the window, just catching a growing crowd of students looking towards the opposite end of the club building. Haruhi caught it too, glancing over her shoulder before gathering up her papers and narrowing her eyes. \"We'd better check this out,\" she declared, swiftly jogging out of the room."
     nvl clear
     scene bg SchoolTreeRight with fade:
@@ -389,8 +391,12 @@ label HAB4:
     with dissolve
     "Shrugging, Koizumi followed, not expecting much of anything spectacular until they reached the courtyard and caught the nearby murmuring students. At a glance, the clubroom furthest from the brigade room, but on the same floor, was the focus of attention. One of the windows had been half-shattered, and a very familiar student was dangling Yamane Jun out the window by his ankles."
     nvl clear
-    show Haruhi Sigh2
-    "Haruhi's eyes widened, before she smacked her forehead with the heel of one palm. \"Kyon is such an idiot,\" she groaned. \"Koizumi, you work damage control on this end, we'll meet up when we face off against the student council president!\""
+    show Haruhi Sup1 Flip
+    "Haruhi's eyes widened, {nw}"
+    show Haruhi Sigh2 Flip
+    extend "before she smacked her forehead with the heel of one palm. \"Kyon is such an idiot,\" she groaned. {nw}"
+    show Haruhi Unhap1 with dissolve
+    extend"\"Koizumi, you work damage control on this end, we'll meet up when we face off against the student council president!\""
     nvl clear
     hide Haruhi with dissolve
     "Koizumi only had time to nod before she dashed off, and he found himself hindered by the thickening crowd. It would take a miracle, or maybe Emiri's tampering to get something of this magnitude passed down to the student council.... It would probably take some doing just to keep Kyon from being expelled. Fights and intimidation were one thing, but such a display in broad daylight...."
@@ -430,6 +436,7 @@ label HAB4:
     "Yuki was the first student behind the door, stepping back as though she had just unlocked it. Directly behind her was Yanagimoto, and Tsuruya and Kyon were side-by-side behind her. Okabe yelled and made to seize Kyon's shoulder; the physical education teacher was no match for Yuki."
     nvl clear
     #show Okabe
+    show Yuki Ang1
     "The slight girl grabbed Okabe's wrist with just the fingertips of her left hand, quickly spinning the man about and pinning him against the wall in a joint-lock by his own elbow. \"W...what is the meaning of this?\" he protested."
     nvl clear
     $ renpy.layer_at_list([PanScene_LeftToRight])
@@ -444,10 +451,13 @@ label HAB4:
     "\"That's enough, Nagato,\" Kyon said, shaking his head. \"Okabe-sensei, we'll go with you. There's no need for force.\""
     nvl clear
     #show Okabe
+    show Yuki Side Blink
+    show Kyon Neutral3 Flip
     "Yuki blinked, then released the teacher, who straightened his arm out and glowered. \"Don't think you're getting off easily!\" he warned, shooting a look that was both amazed and confused at Yuki."
     show Kyon Sigh2 Flip
     "\"No good deed goes unpunished,\" Kyon remarked, shrugging."
     nvl clear
+    show Kyon Neutral3 Flip
     hide Yuki
     show Tsuruya Ang3 Flip at center
     with dissolve
@@ -493,11 +503,12 @@ label HAB4:
     "\"Tanaka, Hoshino,\" Koizumi began apologetically, \"at this time, Kyon-kun is entirely aware of your role at the school.\""
     #show Tanaka
     #show Hoshino
+    show Koizumi Crossed Neutral1 Flip
     "\"He is?\" Tanaka asked, taken aback, eyes widening when they turned to Kyon. Hoshino seemed just as surprised."
     nvl clear
     $ renpy.layer_at_list([PanScene_RightToLeft])
     show Kyon Neutral2 Flip
-    show Tsuruya Quest2 Flip
+    show Tsuruya Quest2
     "\"Organization, right?\" Kyon asked. Tsuruya's stance loosened as she looked at Kyon in confusion."
     $ renpy.layer_at_list([PanScene_LeftToRight])
     #show Hoshino
@@ -505,31 +516,38 @@ label HAB4:
     nvl clear
     $ renpy.layer_at_list([PanScene_RightToLeft])
     show Kyon Sigh2 Flip
+    show Tsuruya Quest2 Flip
     "\"And Tsuruya-kun is involved, which makes it awkward for you, right?\" Kyon asked, shaking his head. \"Well, in any case, Koizumi, what do you think we should do?\""
     $ renpy.layer_at_list([PanScene_LeftToRight])
     show Koizumi Crossed Smile3 Flip
     "\"Ah, well ... Hoshino-san should be able to escort you to the office,\" Koizumi suggested. \"Tanaka can watch the club room and keep an eye on Yamane Jun. I'll go with you for the moment, but....\""
     nvl clear
     scene bg ClubHallLeft with fade
-    show Kyon Neutral2 Flip at right
-    show Koizumi Crossed Neutral1 at center
-    show Tsuruya Smile1 Flip at left
+    show Kyon Neutral2 Flip at center
+    show Koizumi Crossed Neutral1 at right
+    show Tsuruya Neutral2 Flip at left
     with dissolve
     "\"We can talk on the way,\" Kyon commented, falling into step behind Hoshino, Yuki and Tsuruya following just behind him and to either side. Koizumi hurried ahead, having to walk a bit ahead to keep out of Tsuruya's way."
     nvl clear
     show Koizumi Crossed Sigh1
+    show Kyon Neutral3 Flip
     "\"Well, this is going to escalate to police involvement, I suspect,\" Koizumi said, grimacing. \"I have a hard time imagining them not being called in.\""
     show Kyon Smile7 Flip
+    show Koizumi Crossed Ser1
     "\"Between that computer, which we have the password for, and the other evidence that Haruhi's hanging on to, we should be able to prove what they were up to without any trouble,\" Kyon said confidently."
     nvl clear
+    show Kyon Smile4 Flip
     show Koizumi Crossed Ser2
     "\"While I believe with all confidence that good will prevail, the bigger issue at the moment is making sure that your own life isn't too badly disrupted,\" Koizumi warned, frowning. \"In other words, you underestimate your importance to Suzumiya-san by allowing yourself to be in a situation like this. Things will become difficult for all of us, I think, if you are suspended.\""
     nvl clear
     show Kyon Unhap6 Flip
+    show Koizumi Crossed Ser1
     "Kyon winced, shifting his shoulders. \"Crap,\" he muttered. \"And my mom's going to freak out about me 'destroying my future' to become a delinquent again.\""
-    show Tsuruya Sup1 Flip
+    show Tsuruya Quest1 Flip
+    show Kyon Worry1 Flip
     "\"I'm ... not sure what's going on here,\" Tsuruya noted, glancing between Koizumi and the silent Hoshino. \"But, Kyon-kun, I might be able to help, if you let me know the details?\""
     nvl clear
+    show Tsuruya Quest2 Flip
     show Kyon Puzzle1 Flip
     "\"Yeah ... I guess I owe you an explanation on that one later, Tsuruya-kun,\" Kyon admitted, grimacing. \"Once we've got some relative privacy.\""
     nvl clear
@@ -573,11 +591,12 @@ label HAB4:
     show Kyon Neutral4 Flip at right
     show Tsuruya Ang1 Flip at center
     show Yuki Side1 at left
-    show Koizumi Crossed Smile1 at left_RightScreen
+    show Koizumi Crossed Sigh2 at left_RightScreen
     #with dissolve
     "Before reaching the principal's office, the delinquent trio, escorted by an Organization teacher, found themselves confronted by a pair of police officers in standard dress. Koizumi gave a small sigh of relief at seeing the pair. If the Tamaru brothers were nearby, that probably meant Mori was already working on things to the best of her ability."
     nvl clear
     #show Keiichi
+    show Koizumi Crossed Smile1
     "\"Hello,\" Keiichi said, nodding at the group. Behind him, Yutaka checked his wristwatch and glanced around; the hallway was empty for the moment. The older of the pair produced a notepad from one pocket and made as if he were scribbling, but Koizumi knew it for an act. \"We don't have a whole lot of time. Koizumi-kun, what's the situation?\""
     nvl clear
     $ renpy.layer_at_list([PanScene_RightToLeft])
@@ -591,6 +610,7 @@ label HAB4:
     "\"Kyon-kun has uncovered a sinister plot. Evil actions were brought to light, and the school was saved. From a practical standpoint, however, Kyon-kun did hold a fellow student upside down out the window of a three story building and threaten to drop him until he confessed,\" Koizumi said quickly. \"For Suzumiya- san's stability, we need this resolved as quickly as possible, and ideally, without word of it getting back to Kyon-kun's mother.\""
     nvl clear
     #show Keiichi
+    show Koizumi Crossed Ser1
     "\"Alright,\" Keiichi said, frowning. \"We're just plainclothes officers, not detectives. Is there any evidence on this other student?\""
     $ renpy.layer_at_list([PanScene_RightToLeft])
     show Kyon Neutral2 Flip
@@ -600,6 +620,7 @@ label HAB4:
     show Koizumi Crossed Neutral2 Flip
     "\"Her definition of permanent might vary from ours,\" Koizumi noted, giving Kyon a pointed stare, which the delinquent ignored."
     #show Keiichi
+    show Koizumi Crossed Neutral1 Flip
     "\"Okay. We'll take him into custody and have him brought in for questioning,\" Keiichi said, glancing at his partner. The younger officer nodded thoughtfully. \"Then we'll seize his computer for evidence and hand it over to a detective.\""
     nvl clear
     $ renpy.layer_at_list([PanScene_RightToLeft])
@@ -607,8 +628,7 @@ label HAB4:
     show Yuki Side2
     "\"Will that work, Nagato?\" Kyon asked, turning to look at the shorter girl. She slowly turned to face him and raised her gaze to stare into his eyes. Koizumi personally found her stare coldly unnerving; it never ceased to amaze him that Kyon seemed to be unfazed by it. After a moment of thought, she gave a single nod."
     nvl clear
-    $ renpy.layer_at_list([PanScene_LeftToRight])
-    show Koizumi Neutral1 Flip
+    $ renpy.layer_at_list([PanScene_LeftToRight])                   
     #show Yutaka
     "\"In the meantime,\" Yutaka said, glancing at his watch again, \"Mori-san should be waiting at the gate. Kyon-kun, we highly suggest that you avoid school for the rest of the day.\""
     $ renpy.layer_at_list([PanScene_RightToLeft])
@@ -623,11 +643,14 @@ label HAB4:
     "\"I'm not ditching Tsuruya-kun or Nagato,\" he said flatly."
     nvl clear
     show Tsuruya Neutral1 Flip 
+    show Kyon Unhap4 Flip
     "\"Eh ... don't get what's going on here,\" Tsuruya finally chimed in, scratching the back of her head and giving an apologetic smile. \"But, don't look a gift horse in the mouth, right, Kyon-kun? You should go!\""
     nvl clear
-    show Kyon Ser3
+    show Tsuruya Neutral2 Flip
+    show Kyon Ser3 with dissolve
     "\"I'm not leaving without you,\" he said stubbornly, looking between Yuki and Tsuruya. \"And anyway, Haruhi's still here—\""
     show Yuki Talk1
+    show Kyon Ser1
     "\"I will go with you,\" Yuki said suddenly, lowering her gaze to look at nothing in particular."
     show Tsuruya Hap1 Flip
     show Yuki Side1
@@ -643,9 +666,10 @@ label HAB4:
     "\"I'm not sure,\" Kyon said hesitantly."
     nvl clear
     $ renpy.layer_at_list([PanScene_LeftToRight])
-    show Koizumi Crossed Ser2 Flip
+    show Koizumi Crossed Sigh1 Flip
     "\"At this point, all you can do by staying here is saying something you shouldn't, or giving the faculty reason to pass judgment on you before Suzumiya-san can finish her defense of you,\" Koizumi said with a shrug."
     nvl clear
+    show Koizumi Crossed Ser2 Flip
     "\"You don't have to text her; I can explain everything to her myself. Now, really, you should run while you can. I will take care of loose ends such as your schoolbags.\" He nodded at Yuki and Tsuruya. \"So, good luck, and hopefully we can meet tomorrow to discuss how things went.\""
     nvl clear
     $ renpy.layer_at_list([PanScene_RightToLeft])
@@ -673,7 +697,7 @@ label HAB4:
     nvl clear
     #show Okabe
     "\"Hmm,\" Okabe mused. \"Well, thank you, officer. I suppose I should just give Kyon's mother a call to let her know that I think he's a good student at heart.\""
-    show Koizumi Crossed Sigh2 Flip
+    show Koizumi Crossed Sigh1 Flip
     "Koizumi stifled an internal sigh."
     nvl clear
     
