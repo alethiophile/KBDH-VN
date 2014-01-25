@@ -1,4 +1,5 @@
-label HAB_5:
+#label HAB_5:
+label Test:
     if music_need:
         $ renpy.music.set_volume(0.2, .5, channel="music")
     stop music fadeout 3
@@ -12,19 +13,22 @@ label HAB_5:
     scene bg TsuruyaFutonDay with fade
     stop music fadeout 1
     ##queue music "Music/"
-    ##show Tsuruya at left >
-    ##show Kyon at center <
-    ##show Yuki at right <
-    "After reaching Tsuruya's house, Kyon and Yuki followed the green-haired girl into her room, where a trio of cloth-wrapped bundles were waiting. \"I got your sizes from Mikuru-chan, since she measured you at lunch,\" Tsuruya explained, as Kyon unwrapped the one she handed him."
+    show Tsuruya Neutral2 Flip at left
+    show Kyon Neutral3 at center
+    show Yuki Right Neutral1 at right
+    "After reaching Tsuruya's house, Kyon and Yuki followed the green-haired girl into her room, where a trio of cloth-wrapped bundles were waiting.{nw}"
+    show Tsuruya Neutral1 Flip
+    extend "\"I got your sizes from Mikuru-chan, since she measured you at lunch,\" Tsuruya explained, as Kyon unwrapped the one she handed him."
+    show Tsuruya Neutral2 Flip
     "Within was a complete uniform for a school he didn't recognize. Their own school had boys wearing parochial-style school uniforms, but the unwrapped outfit was the more classic and traditional military-themed gakuran uniform. It looked very like the one he had seen on Koizumi in that alternate world...."
     nvl clear
     scene bg TsuruyaFutonDay with fade
     "\"What school is this from?\" he asked, looking up in time to realize that Tsuruya was unabashedly stripping in front of him — again. He quickly turned, closing the door, then decided he was best off just facing the wall and changing anyway."
     "\"Hikami Gakuen,\" she answered, her voice muffled as she pulled her blouse over her head."
     nvl clear
-    ##show Yuki at right
+    show Yuki Side1 Flip at right
     "He couldn't resist the urge to sneak a peek at Yuki, to watch her changing, but she was merely watching him when he looked. Feeling more self-conscious than usual, he turned his eyes back to the wall and began undressing, trying not to think about it."
-    ##hide Yuki
+    hide Yuki
     "\"They don't sound familiar,\" he said, hoping Yuki wasn't staring at him as he dropped his trousers and stepped into the jet-black gakuran pants. Then again, with Yuki's perceptions, she didn't need to look— He decided he was better off trying to think about other things. \"How's that written?\""
     nvl clear
     "Tsuruya said something else that was muffled, as he pulled his shirt and undershirt off, reaching for their replacements. A moment later, she said, \"Sorries. It's written like 'top of the day', but it can also read 'above the gutter'. It's the delinquent capital of our city!\""

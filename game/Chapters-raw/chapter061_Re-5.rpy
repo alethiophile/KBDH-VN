@@ -1,5 +1,5 @@
-#label Re_6:
-label Test:
+label Re_5:
+#label Test:
     if music_need:
         $ renpy.music.set_volume(0.2, .5, channel="music")
     stop music fadeout 3
