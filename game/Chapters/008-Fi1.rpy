@@ -500,11 +500,12 @@ label Fi1:
     nvl clear
     show Haruhi Neutral2
     "\"Don't be silly,\" Haruhi chastised her. \"It was a last-second plan to try and distract Kyon — you used your moe charms perfectly!\""
-    #show Mikuru Cower Blink?
+    show Mikuru Cower Blink
     show Haruhi Neutral1
     "With a wide-eyed blink, the time traveler turned to stare at her, eyes still watery."
     nvl clear
     show Haruhi Sigh2
+    show Mikuru Cower Question1
     "\"Ah, okay, okay,\" Haruhi allowed, wincing. \"I'm sorry, Mikuru-chan — but it was Kyon! Not some stranger this time, right?\""
     show Haruhi Unhap3
     show Mikuru Cower Smile2

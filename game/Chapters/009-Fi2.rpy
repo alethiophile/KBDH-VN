@@ -51,12 +51,9 @@ label Fi2:
     show Kyon Smile4
     "\"True enough.\" He really had to stop getting caught in his uniform so much.... Even with the amazing bloodstain removal skills of Tsuruya's servants, something else that he tried not to think about too hard, he was going to wear it out long before the year was over. Possibly even before it was time to switch to summer uniforms, at the current rate."
     nvl clear
-    # scene bg TownStreetEvening1 with fade
     scene bg TownCommercialDistrict_Evening with fade
     $ _window = True
     "He stepped out of the apartment first, and she closed and locked it behind them before giving him a bright smile and leading the way down the street towards a noodle stall."
-    # scene bg Udon
-    # with fade
     show Kyon Smile4 at TenthRight
     show Mikuru Smile1 at TenthLeft
     with dissolve
@@ -109,7 +106,6 @@ label Fi2:
     "Why did Mikuru look briefly annoyed at the old man, Kyon wondered, as he offered his thanks and prepared to eat."
     nvl clear
     
-    # scene bg TrainStation with fade
     scene black with fade
     "After walking Mikuru back to her apartment, Kyon agreed to meet with her again in the morning to help carry the sewing machine to school."
     "He wasn't certain how it would end up working out that she didn't seem to realize there were, at least temporarily, two of him at school at the same time."
@@ -611,7 +607,7 @@ label Fi2:
         xalign 0.3 yalign 1.0        
     show Yuki:
         xalign 0.65 yalign 1.0        
-    # show Koizumi at right
+    #show Koizumi at right
     "\"No,\" he admitted as Tsuruya left. \"Just.... Nevermind.\""
     nvl clear
     $ renpy.layer_at_list([PanScene_RightToLeft])
@@ -661,9 +657,7 @@ label Fi2:
     "\"Keep studying,\" she ordered, walking around the table to sit at Mikuru's side, studying the image intently."
     nvl clear
     show Kyon Unhap4 at right_RightScreen
-    #Not moving Kyon to fit better, as Kyon at left_RightScreen puts him at the very center of the scene for some reason, and xalign 1.3 yalign 1.0  puts him at the same spot. center_RightScreen is offscreen, and TenthLeft_RightScreen creates an error.
     show Koizumi Crossed Smile3 at left_RightScreen
-        # xpos 1050
     $ renpy.layer_at_list([PanScene_LeftToRight])
     "Kyon looked irritated, but Koizumi obligingly continued the study session."
     $ renpy.layer_at_list([PanScene_RightToLeft])

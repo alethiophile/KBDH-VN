@@ -1021,6 +1021,34 @@ init:
     
     image MKiss = "Sprites/MikuruBig/MKiss.png"
     
+    image Mikuru Cower Blink:
+        "Sprites/Mikuru/MikuruCowerBlink1.png"
+        0.2
+        "Sprites/Mikuru/MikuruCowerBlink2.png"
+        0.2
+        "Sprites/Mikuru/MikuruCowerBlink1.png"
+        5.0
+        repeat    
+    image Mikuru Cower Casual Blink:
+        "Sprites/Mikuru/MikuruCowerCasualBlink1.png"
+        0.2
+        "Sprites/Mikuru/MikuruCowerCasualBlink2.png"
+        0.2
+        "Sprites/Mikuru/MikuruCowerCasualBlink1.png"
+        5.0
+        repeat    
+    image Mikuru Cower Maid Blink:
+        "Sprites/Mikuru/MikuruCowerMaidBlink1.png"
+        0.2
+        "Sprites/Mikuru/MikuruCowerMaidBlink2.png"
+        0.2
+        "Sprites/Mikuru/MikuruCowerMaidBlink1.png"
+        5.0
+        repeat    
+    
+    
+    
+    
     #Tsuruya Sprites
     image Tsuruya Ang1 = "Sprites/Tsuruya/TsuruyaAngry1.png"
     image Tsuruya Ang2 = "Sprites/Tsuruya/TsuruyaAngry2.png"
@@ -1948,6 +1976,8 @@ init:
     image title 059 = Text("{space=500}{b}{size=+1}Friday, June 17, 2011{/size}{/b}\n\n\n\n\"Chapter Three: Understanding and Perspective\"\n\n\"It's easy when you're overwhelmed to feel alone. But there's a good chance that there's someone out there that understands what you've been through, better than you might believe was possible! This person could be a friend, or an ally, and they could be easy to miss! But they might know what you've been through better than you can think -- so if you find someone like that, listen to their words closely!\"\n\n\"Mirror, Mirror\" -- T.K.", font="DejaVuSerif-Italic.ttf", size=18, line_leading=3, justify=True, xmaximum=750)
     image title 060 = Text("{space=480}{b}{size=+1}Saturday, June 18, 2011{/size}{/b}\n\n\n\n\"Chapter Six: Discretion\"\n\n\"...at times this may result in having information that is difficult to explain in a considerate or pleasant manner. While there may be something for bluntness when required, knowing when to bite your tongue and wait for the right moment is not without its benefits, either.\"\n\n\"Cover\" -- Author Unknown", font="DejaVuSerif-Italic.ttf", size=18, line_leading=3, justify=True, xmaximum=750)
     image title 061 = Text("{space=500}{b}{size=+1}Sunday, June 19, 2011{/size}{/b}\n\n\n\n\"Third Chorus: Focus\"\n\n\"Carrier waves projecting memetic information on a wide spectrum abound and can easily become overwhelming, even with persistent observation. The inherent limitations of this can be bypassed by restricting attention to harmonic resonances beyond the most critical elements within the observational scope.\"\n\n\"Perspective\" -- LP-MK:SK Memetic String (-working translation-)", font="DejaVuSerif-Italic.ttf", size=18, line_leading=3, justify=True, xmaximum=750)
+    image title 062 = Text("{space=500}{b}{size=+1}Sunday, June 19, 2011{/size}{/b}\n\n\n\n\"Fragment: Clan Annals (unverified)\"\n\n\"Entry for 7.19.2011 (the second time): \n...though when I think about how funny this entry in the log will look, I realize it's got to be a lot less fun for her. On the other hand, with a safety net of good friends, and of course, him, that blow should be softened a bit, right?\n -- Tsu-Oyabun # 108\"\n\n\"[[Undecipherable]\" -- Recovered From Primary T.E.S.A. Archive", font="DejaVuSerif-Italic.ttf", size=18, line_leading=3, justify=True, xmaximum=750)
+    image title 063 = Text("{space=500}{b}{size=+1}Monday, June 20, 2011{/size}{/b}\n\n\n\n\"Chapter Six: Falling Down\"\n\n\"As much as clever little idioms about 'screwing up and relying on your friends to get through things' suck, they do kind of have a point. But there's no real reason to wrap it up and treat it better than it deserves. It's terrible, it sucks, and if you think you'll never have to deal with it, it'll be that much harder for you to handle when you do. I guess what I'm trying to say is: pride is its own punishment, ultimately.\"\n\n\"Methods of Victory\" -- 'T.H.'", font="DejaVuSerif-Italic.ttf", size=18, line_leading=3, justify=True, xmaximum=750)
 
 init python:
     config.layers.insert(1, 'upper')
@@ -2295,6 +2325,7 @@ init -1 python:
         [   ("Heroic Antics Begin Arc - 2", "", False),
             ("Chapter Ten: School of Hard Knocks", "HAB3", True),
             ("Chapter Eleven: Yeah, It Went There", "HAB4", True),
+            ("Chapter Twelve: The Multi-Mook Melee", "HAB5", True),
         ],
         [
             ("Label a scene you're working on test and use this", "Test", True),
