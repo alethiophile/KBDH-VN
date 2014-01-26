@@ -364,7 +364,7 @@ label Test:
     "Koizumi got out of the car, smiling broadly as Kyon's voice mail indicator chirped. A moment later, his text indicator beeped. A heartbeat after that, before the esper even reached his side, the phone began to ring. Kyon saw it was from his home, presumably his mother, and put the phone in his pocket without pressing any buttons."
     nvl clear
 	#show Kyon at left
-	#show Kouzumi at center
+	#show Koizumi at center
 	#show Mori at right
     "Mori stepped out after Koizumi, her expression doubtful. The woman held his schoolbag, offering it towards him, and he accepted it with solemn gravity. \"It's a bit late,\" she said in a low voice, as Koizumi walked around the car, \"but your protection is inside. {i}Please{/i} be sure to use it, Sir.\""
     "He nodded, frowning slightly. He hoped it wasn't a weapon, or something his mother would find and yell at him for ... but he had time for that later. \"So,\" he said, quickly checking to make sure no one else was in earshot, \"how did things go at the school?\""
@@ -385,7 +385,7 @@ label Test:
     nvl clear
     "\"Ah.... Well, good luck with that, Sir,\" Mori said, shaking her head as she climbed back into the car. Koizumi looked like he wanted to say something, but bit his tongue and followed. Kyon watched them for a minute as Arakawa moved the car down the almost completely empty street."
 	#hide Mori
-	#hide Kouzumi
+	#hide Koizumi
 	#show Kyon at center
     "\"Well,\" Kyon said, to no one in particular. He pulled his phone from his pocket as another text arrived. \"Twelve new texts,\" he grumbled, not checking to see who they were from. \"Seven new voice mails. Twelve missed calls.\" He put it back in his pocket and rummaged through his school bag as he strolled back to his home."
     nvl clear
