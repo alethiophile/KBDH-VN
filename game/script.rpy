@@ -1047,8 +1047,6 @@ init:
         repeat    
     
     
-    
-    
     #Tsuruya Sprites
     image Tsuruya Ang1 = "Sprites/Tsuruya/TsuruyaAngry1.png"
     image Tsuruya Ang2 = "Sprites/Tsuruya/TsuruyaAngry2.png"
@@ -1666,6 +1664,23 @@ init:
     image Shinobu Sup2 Flip = im.Flip("Sprites/Shinobu/ShinobuSurprised2.png", horizontal=True)
     
     image ShinBlush Flip = im.Flip("Sprites/Shinobu/ShinobuBlush.png", horizontal=True)
+    
+#Computer Club President Sprites
+    image CompPres Frown1 = "Sprites/ComputerClubPresident/CompClubPresFrown1.png"
+    image CompPres Frown2 = "Sprites/ComputerClubPresident/CompClubPresFrown2.png"
+    image CompPres Neutral1 = "Sprites/ComputerClubPresident/CompClubPresNeutral1.png"    
+    image CompPres Neutral2 = "Sprites/ComputerClubPresident/CompClubPresNeutral2.png"    
+    image CompPres Neutral3 = "Sprites/ComputerClubPresident/CompClubPresNeutral3.png"    
+    image CompPres Neutral4 = "Sprites/ComputerClubPresident/CompClubPresNeutral4.png"    
+    image CompPres Neutral5 = "Sprites/ComputerClubPresident/CompClubPresNeutral5.png"        
+    image CompPres Sigh1 = "Sprites/ComputerClubPresident/CompClubPresSigh1.png"        
+    image CompPres Sigh2 = "Sprites/ComputerClubPresident/CompClubPresSigh2.png"
+    
+    
+    
+    
+    
+    
     
 #Thug Sprites
     image ThugHead 1 = "Sprites/Thug/ThugHead1.png"

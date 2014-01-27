@@ -554,28 +554,55 @@ label HAB4:
     
     
     #Easy-bit
-    
+    scene bg ClubHallLeft with fade
+    #show Haruhi Neutral1 at right
+    #show CompPres Neutral3 at left
     "After collecting all of the paperwork and contacts that Haruhi thought she would need, she felt a nagging suspicion that she had forgotten something. Dashing all the way back to her clubroom, she was surprised to see the computer research society president standing in the hall, looking back towards the idol research clubroom door."
     nvl clear
+    #show Haruhi Ang4 Flip
     "\"Shouldn't you be in class?\" she reminded him."
     nvl clear
+    #show Haruhi Neutral1
+    #show CompPres Sigh2 Flip with dissolve
     "He raised an eyebrow as he turned to look at her, before shaking his head. \"You really think that little of me?\" he asked. \"I graduated last year, you know. But the club asked me to stay on as president through this term; I have special permission from the school to be here for that.\" He shook his head. \"I guess you don't talk to your friend Kyon ... he already knows that. Nevermind that, though. Kyon seemed a good sort, and Nagato Yuki absolutely didn't seem like the kind to get herself in trouble. So ... what happened?\""
     nvl clear
+    #show Haruhi Unhap1
+    #show CompPres Neutral4 Flip
     "\"Did you hear Yamane's confession?\" she pressed, frowning. That much had gotten around school, surely the president couldn't have missed it?"
+    #show Haruhi Unhap2
+    #show CompPres Neutral5 Flip
     "\"I heard it,\" he agreed. \"But a confession like that.... I suppose if it's true, even the incredible Nagato-san could be upset enough to be involved. Even so, not much stock will be put into a confession that was extorted.\""
     nvl clear
-    "Haruhi grimaced. Kyon, being a hero and leaving her to deal with the logistics and fallout. \"Well, whatever. At a school, I think that most people would be swayed by the confession anyway. The biggest thing to worry about is Kyon's record, and this getting back to his mother!\""
+    #show Haruhi Unhap3
+    #show CompPres Neutral3 Flip
+    "Haruhi grimaced. Kyon, being a hero and leaving her to deal with the logistics and fallout."
+    #show Haruhi Worry3
+    extend "\"Well, whatever. At a school, I think that most people would be swayed by the confession anyway. The biggest thing to worry about is Kyon's record, and this getting back to his mother!\""
     nvl clear
+    #show Haruhi Unhap2
+    #show CompPres Frown1 Flip
     "The boy in front of her frowned and crossed his arms over his chest. \"I really don't know anything about that,\" he said, shaking his head. \"Just that your priorities seem strange to me.\""
     nvl clear
+    #show Haruhi Ang4
+    #show CompPres Frown2
     "\"So?\" she challenged him. \"That means nothing! When your club was defeated, you swore allegiance to the SOS Brigade should we need reinforcement against the student council! That time is now, and I expect you to be good for something! I don't know if you have unresolved business with your ex- girlfriend, but that doesn't matter to me. What matters is your support in this issue!\""
     nvl clear
+    #show Haruhi Ang5
+    
     "\"Alright,\" he agreed after a long moment, frowning. \"Those were your terms. Now, what can I actually do for you? I suppose I at least shouldn't be afraid of being suspended or expelled — I'm a graduate. But I'd like to leave my club members out of it, if possible.\""
     nvl clear
+    #show Haruhi Quest1
+    
     "Haruhi chewed her lip for a minute. \"You know how to make a good computer presentation? Something I can show on a laptop?\""
+    #show Haruhi Quest2
+    
     "The man nodded slowly. \"Sure,\" he said, uncrossing his arms to shrug. \"I think I've got a copy of some presentation software lying around. Let's start putting it together, huh?\""
     nvl clear
+    #show Haruhi Hap4      
+    
     "She grinned at him. \"Good,\" she declared. \"Let's get to work!\""
+    #hide Haruhi with dissolve
+    
     "He fell into step behind her as she marched back into her own clubroom, before asking, \"What ex-girlfriend, though?\""
     nvl clear
     

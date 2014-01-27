@@ -350,22 +350,22 @@ label Test:
     "\"Yes,\" Yuki agreed, before Kyon could voice his own opinion on the matter."
     "Well, he decided, if even Yuki thought it was for the best, who was he to complain?"
     nvl clear
-	#hide Tsuruya
-	#hide Yuki
-	#hide Kyon
+        #hide Tsuruya
+        #hide Yuki
+        #hide Kyon
     
     "After a bath with Yuki and Tsuruya — more work than he had expected, given the need to scrub Tsuruya clean of the tanning solution — the taller girl had explained she was going to meet with her father. Kyon thought the man lived on the estate, but evidently he spent most of his time in an apartment in the city."
     "He had stored images in his not-quite-photographic memory of Yuki's pale skin and soft touch when her fingers had gone through his hair, adeptly scrubbing the gel out and restoring him to normality. Tsuruya's image and the feel of her washing his back wasn't likely to fade any time soon, either. Memories stored safely between a record of walking in on Mikuru while changing, and a pair of kisses with Haruhi in closed space, he felt a certain peace of mind."
     nvl clear
-	
-	#scene bg KyonHouse
-	#show Kyon at center
+        
+        #scene bg KyonHouse
+        #show Kyon at center
     "It lasted long enough for him to wave reassuringly to both of the girls when Tsuruya had her driver drop him off a block from his home. He got out of the car and stretched, watching the sleek black vehicle pull away, acutely aware of Yuki's gaze following him until it was out of sight around a corner. Clinging to what little good he'd gotten out of the day, he turned his cell phone back on, raising an eyebrow when a black taxicab pulled around a different corner, stopping directly before him."
     "Koizumi got out of the car, smiling broadly as Kyon's voice mail indicator chirped. A moment later, his text indicator beeped. A heartbeat after that, before the esper even reached his side, the phone began to ring. Kyon saw it was from his home, presumably his mother, and put the phone in his pocket without pressing any buttons."
     nvl clear
-	#show Kyon at left
-	#show Koizumi at center
-	#show Mori at right
+        #show Kyon at left
+        #show Koizumi at center
+        #show Mori at right
     "Mori stepped out after Koizumi, her expression doubtful. The woman held his schoolbag, offering it towards him, and he accepted it with solemn gravity. \"It's a bit late,\" she said in a low voice, as Koizumi walked around the car, \"but your protection is inside. {i}Please{/i} be sure to use it, Sir.\""
     "He nodded, frowning slightly. He hoped it wasn't a weapon, or something his mother would find and yell at him for ... but he had time for that later. \"So,\" he said, quickly checking to make sure no one else was in earshot, \"how did things go at the school?\""
     nvl clear
@@ -384,16 +384,16 @@ label Test:
     "\"Naturally,\" Kyon agreed. \"Anyway. I'm about to face my mother. You'd best clear the blast radius.\""
     nvl clear
     "\"Ah.... Well, good luck with that, Sir,\" Mori said, shaking her head as she climbed back into the car. Koizumi looked like he wanted to say something, but bit his tongue and followed. Kyon watched them for a minute as Arakawa moved the car down the almost completely empty street."
-	#hide Mori
-	#hide Koizumi
-	#show Kyon at center
+        #hide Mori
+        #hide Koizumi
+        #show Kyon at center
     "\"Well,\" Kyon said, to no one in particular. He pulled his phone from his pocket as another text arrived. \"Twelve new texts,\" he grumbled, not checking to see who they were from. \"Seven new voice mails. Twelve missed calls.\" He put it back in his pocket and rummaged through his school bag as he strolled back to his home."
     nvl clear
     "Humming to himself, he opened the door and kicked off his shoes, not at all surprised to hear his mother mid-tirade into the phone, which she slammed down as he was putting on his house-slippers. His little sister charged into the entryway, skidding to a halt on the floor and staring at him with wide, amazed eyes."
-	#show Nonoko at Halfleft
+        #show Nonoko at Halfleft
     "\"Is the world safe?\" she asked worriedly."
     nvl clear
-	#show Akane at left
+        #show Akane at left
     "\"For today,\" he answered, as his mother stomped down the hallway towards him, murder in her gaze. A small part of his mind noted her stance and visage, recording the details for use the next time he needed to menace someone for Tsuruya."
     "\"Kyon!\" the woman snarled, fists trembling at her sides. \"{i}What{/i} do you have to say for yourself!? I hope you're prepared for cram-school!\""
     "\"I got a ninety two,\" he answered, handing his test over to her as he walked past. \"Thanks to Haruhi helping me study.\""
@@ -408,13 +408,13 @@ label Test:
     "\"We're going to Hinamizawa?\" his little sister asked excitedly. \"I didn't want to go unless Kyon-kun was going! But now that Kyon-kun is going, I want to go for sure!\""
     "\"Cram-school!\" his mother yelled up the stairs after him when he plodded towards his room. \"And you can expect to have a talk with your father tonight!\""
     nvl clear
-	#hide Akane
-	#hide Nonoko
-	#hide Kyon
-	
+        #hide Akane
+        #hide Nonoko
+        #hide Kyon
+        
     #change bg limo with fade
-	#show Tsuruya at right
-	#show Yuki at left
+        #show Tsuruya at right
+        #show Yuki at left
     "After dropping Kyon off, the limo turned around, headed towards Yuki's apartment. It would have been faster to drop Yuki off first, but Tsuruya wanted a chance to talk with the other girl, anyway."
     "\"Hey, Nagato-chi,\" she said, once Kyon was out of sight. \"Do you mind if we talk about Kyon-kun a bit?\""
     "\"That is fine,\" Yuki replied, her eyes fixed on something outside of the window."
@@ -429,7 +429,7 @@ label Test:
     "Yuki's head tilted slightly in consideration."
     "\"Mmm. Things may be confusing for Kyon-kun, and I hope it's not troublesome ... but he's got a big heart. I can tell he likes you a lot! I hope maybe he likes me a lot, too. I think he likes me a little, at least! Well! I think I'll try for Kyon-kun, just a little bit ... but I guess I can't be mischievous enough to upset Haru-nyan. I think you should, too! Even Mikuru- chan says she's trying!\""
     "\"I see,\" Yuki replied, quietly thoughtful."
-	#hide Tsuruya
-	#hide Yuki
-	
-	#jump Fi1
+        #hide Tsuruya
+        #hide Yuki
+        
+        #jump Fi1
