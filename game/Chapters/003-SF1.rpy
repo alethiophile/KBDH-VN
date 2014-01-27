@@ -253,7 +253,7 @@ label SF1:
     "\"Hmm. Nagato, how many queued programs from Haruhi?\""
     show Kyon Neutral3
     show YBook at TopRight_RightScreen behind Mikuru with dissolve
-    "\"Eighty seven items in queue currently.\""
+    "\"Eighty-seven items in queue currently.\""
     nvl clear
     $ renpy.layer_at_list([PanScene_RightToOffCenterL])
     show Haruhi Crossed Ang1

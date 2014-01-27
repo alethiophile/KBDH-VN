@@ -789,7 +789,7 @@ label AO2:
     nvl clear
     show Yuki Right Neutral2
     show Haruhi Casual Pout2
-    "\"So,\" she mumbled. \"That's why he was so worked up about it? Well ... I didn't know. If you hadn't been— But I guess, you were only following orders.\""
+    "\"So,\" she mumbled. \"That's why he was so worked up about it? Well ... I didn't know. If you hadn't been— But I guess, you were only following orders."
     show Haruhi Casual Unhap1
     "\"Well, now I know why you were frustrated. Is that why you made it so you never met me?\""
     nvl clear
@@ -1173,7 +1173,7 @@ label AO2:
     nvl clear
     show Kyon Neutral3
     show Koizumi Think Smile2
-    "\"Only particularly intense emotions are felt,\" he answered, staring at the board and placing his first stone thoughtfully. \"Even then, it's frequently vague ... it doesn't give me any clue as to where she is, for example, just whatever intense emotion is there.\""
+    "\"Only particularly intense emotions are felt,\" he answered, staring at the board and placing his first stone thoughtfully. \"Even then, it's frequently vague ... it doesn't give me any clue as to where she is, for example, just whatever intense emotion is there."
     show Koizumi Shrug Sigh1:
         xalign -1.15 yalign 1.0    
     "\"Naturally, this was quite awkward when I first was granted my powers, but I can usually tell my feelings apart from hers, now.\""
