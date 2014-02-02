@@ -11,21 +11,37 @@ label Test:
     nvl clear
     
     scene bg KyonRoomRightClosed with fade
-    show Kyon Neutral1 at HalfRight
-    "Wondering how to deal with the punishment he'd been assigned, and how it would impact what he considered to be more important aspects of his club life — and his association with Tsuruya — Kyon tossed his schoolbag on his bed and began to rifle through it in earnest. His books were there, Haruhi had left him a stack of study notes, half of them in unfamiliar handwriting, and then he found the 'protection' Mori had left him."
+    show Kyon Neutral1 Flip at HalfRight
+    "Wondering how to deal with the punishment he'd been assigned, and how it would impact what he considered to be more important aspects of his club life — and his association with Tsuruya — Kyon tossed his schoolbag on his bed and began to rifle through it in earnest."
     nvl clear
+    "His books were there, Haruhi had left him a stack of study notes, half of them in unfamiliar handwriting, and then he found the 'protection' Mori had left him."
+    show Kyon Worry1 Flip
     "Gods above, she didn't really think that he and Tsuruya.... Or that he and Yuki.... Or that...."
-    "Color draining from his face, he desperately searched his room for some sort of safe spot to stash the unexpected box of individually packaged foil-wrapped 'protection'; this was {i}not{/i} something he wanted his mother or sister to find! He finally settled for the ultimate hiding place, pulling out the bottom-most drawer on his dresser and hiding the small box beneath."
     nvl clear
-    "That done, he checked the notes for the assignment, spread his schoolbooks and papers across his desk, and promptly hunched over his cell phone, checking the messages he had missed while fighting the Sumiyoshi-rengo. A text from Haruhi, reminding him that he owed her. Two from Koizumi, outlining the details that he and Mori had already given him in person. One from Taniguchi, of all people, telling him that he had achieved the notoriety of being 'Kitago's greatest delinquent'. And one from Kanae, telling him she believed in him, whatever she meant by that."
+    "Color draining from his face, he desperately searched his room for some sort of safe spot to stash the unexpected box of individually packaged foil-wrapped 'protection'; this was {i}not{/i} something he wanted his mother or sister to find!"
     nvl clear
-    "A deluge of angry remarks and threats from his mother concerning his whereabouts followed. After clearing out the other texts, he messaged Haruhi back a 'thanks', followed by an apology for being grounded. That done, he proceeded to voice mail. One from his mother, demanding to know where he was, which he deleted. The next came from a detective he hadn't heard of, commenting that he would be by to take a statement from Kyon at some point."
+    "He finally settled for the ultimate hiding place, pulling out the bottom-most drawer on his dresser and hiding the small box beneath."
     nvl clear
-    "Kyon pulled the card Tsuruya had given him with the Tsuruya family lawyer's contact information from his pocket, and decided to text her for her opinion on dealing with that one. The next voice mail was from his mother, which he deleted. A voice mail from Haruhi, cheerfully telling him she'd beaten the student council. One from Mikuru, saying she wasn't certain what was going on, but she hoped he would be okay, and she wished him luck. Another message from his mother, which he deleted."
+    "That done, he checked the notes for the assignment, spread his schoolbooks and papers across his desk, and promptly hunched over his cell phone, checking the messages he had missed while fighting the Sumiyoshi-rengo."
     nvl clear
+    "A text from Haruhi, reminding him that he owed her. Two from Koizumi, outlining the details that he and Mori had already given him in person. One from Taniguchi, of all people, telling him that he had achieved the notoriety of being 'Kitago's greatest delinquent'. And one from Kanae, telling him she believed in him, whatever she meant by that."
+    nvl clear
+    "A deluge of angry remarks and threats from his mother concerning his whereabouts followed. After clearing out the other texts, he messaged Haruhi back a 'thanks', followed by an apology for being grounded."
+    nvl clear
+    "That done, he proceeded to voice mail. One from his mother, demanding to know where he was, which he deleted. The next came from a detective he hadn't heard of, commenting that he would be by to take a statement from Kyon at some point."
+    nvl clear
+    "Kyon pulled the card Tsuruya had given him with the Tsuruya family lawyer's contact information from his pocket, and decided to text her for her opinion on dealing with that one. The next voice mail was from his mother, which he deleted."
+    nvl clear
+    "A voice mail from Haruhi, cheerfully telling him she'd beaten the student council. One from Mikuru, saying she wasn't certain what was going on, but she hoped he would be okay, and she wished him luck. Another message from his mother, which he deleted."
+    nvl clear
+    show Kyon Sup3 Flip
     "And the final voice mail, unexpectedly, from someone he hadn't thought had his cell phone number. He knew she had his home number, but his cell...."
-    "\"Hello,\" Sasaki's voice came from the recording, sounding the slightest, faintest bit nervous, \"you should remember me, Kyon; it's Sasaki! Well, I'm certain you remember me, you aren't the sort to forget. Ah, this is a bit short notice, and I'm sorry for that, but....\" She trailed off. He heard a car speed past on the message, followed by the dopplered effect of a horn vanishing away. \"A...anyway! We really should meet at some point, and discuss things! I hope that you're well when you receive this message, so, take care, and please call me back, okay? I have some, um, friends who would really ... like to meet you.\" She sounded strangely stressed by that last remark. \"Well, anyway, I hope to hear from you soon, so ... bye!\""
     nvl clear
+    "\"Hello,\" Sasaki's voice came from the recording, sounding the slightest, faintest bit nervous, \"you should remember me, Kyon; it's Sasaki! Well, I'm certain you remember me, you aren't the sort to forget. Ah, this is a bit short notice, and I'm sorry for that, but....\" She trailed off. He heard a car speed past on the message, followed by the dopplered effect of a horn vanishing away."
+    nvl clear
+    "\"A...anyway! We really should meet at some point, and discuss things! I hope that you're well when you receive this message, so, take care, and please call me back, okay? I have some, um, friends who would really ... like to meet you.\" She sounded strangely stressed by that last remark. \"Well, anyway, I hope to hear from you soon, so ... bye!\""
+    nvl clear
+    show Kyon Ser1 Flip
     "He contemplated possible responses before remembering that he had resolved to ask Yuki about Sasaki. Yuki would probably be home by now, he thought. He dialed her home number from memory, some of his worry fading when the receiver picked up, and he heard the soft sound of her breath."
     nvl clear
     "\"Nagato,\" he said, glancing at the doorway, where his sister was peeking at him around the corner, \"ah, if it's not too much trouble, there's something I would like to talk to you about tonight. Um, could you pick me up a bit before the ... session, so we could chat?\""
@@ -35,26 +51,35 @@ label Test:
     "\"Understood.\""
     nvl clear
     "He didn't want to hang up on the girl, but he doubted she would make the first move in that direction, and somehow, it felt like something important had gone unsaid. \"So, I should say this, Nagato.... Thank you for today. Thank you for everything.\""
-    "\"You,\" Yuki said slowly, as though carefully testing the words out, \"are ... welcome.\""
     nvl clear
+    "\"You,\" Yuki said slowly, as though carefully testing the words out, \"are ... welcome.\""
+    show Kyon Sup1 Flip
     "For a moment, he could only stare incredulously at the phone. Not 'it is no problem'? Not 'it is fine'?"
     "But the humanoid interface wasn't done, either. \"Also ... thank you.\""
     nvl clear
     "For what? He couldn't think of anything he had done that was particularly noteworthy compared to everything she had done. \"Anything I can do for you,\" he told her, instead of asking something that would shatter the moment. \"You only have to ask.\""
     nvl clear
+    show KBlush at HalfRight
     "Her voice softened, and he once again knew it meant much more than it sounded when she whispered, \"Understood,\" and disconnected the phone. He stared a minute longer, imagining her in her apartment, kneeling by the phone, her cheeks pink-tinged as she daydreamed about him.... But he dismissed that thought. This was Yuki, after all. As much as he might wish that...."
     nvl clear
     show Nonoko Hap1 at HalfLeft
+    show Kyon Neutral4 at HalfRight
+    show KBlush at HalfRight
     "\"What's up, Imouto?\" he asked his sister, spinning his chair to face the door."
+    hide KBlush
+    nvl clear
     "She charged into the room and glomped onto his side. \"Tell me about saving the world!\" she demanded, staring up at him with insistent eyes. \"You wake up early, and you haven't played with me all week! I want to hear something good!\""
     "* * *"
     nvl clear
+    
     scene bg HaruhiBedroomNight with fade
     show Haruhi Casual Unhap1 at center
     "Haruhi stared at her cell phone in disbelief. Okay, Kyon thanking her? Somewhat unusual, but in this instance, well deserved."
+    nvl clear
     "Still, the boy was seventeen years old. And he'd gotten {i}grounded{/i}? That was beyond reasonable, in her mind. What next, Kyon's mother deciding — again! — to starve him, making those crappy bentos Kyon always got stuck with? Depriving him of dinner, as though that would accomplish anything?"
     nvl clear
     "More importantly, grounded from {i}club meetings{/i}!? Haruhi was strongly tempted to call Yuki and demand the smaller girl allow a modification to Kyon's mother to make her more reasonable."
+    nvl clear
     "Grumbling as she paced back and forth in the clubroom, she belatedly realized that none of this was Kyon's fault, anyway. It was Tsuruya's. And as an honorary member of the brigade, Tsuruya had a duty to the full time members — aside from which, Haruhi had {i}warned{/i} the older girl that if Kyon got in trouble...."
     nvl clear
     "The only other person still there, Mikuru, was absorbed in her project, fixedly concentrating on finishing the greatcoat for Kyon. Kanae had left after Haruhi helped the girl with her homework, and Koizumi had left before the club meeting, citing a need to bring Kyon's schoolbag to him."
@@ -63,7 +88,8 @@ label Test:
     "Or else {i}she{/i} would."
     "* * *"
     nvl clear
-    scene bg KyonHouseNight with fade
+    
+    scene bg KyonHallway with fade
     show Nonoko Hap1 at center
     "She had always known her brother wasn't the most popular or amazing person in the world — in other people's eyes. And that suited her fine, for the most part. She also knew that it was only a matter of time before everyone else in the world realized that her brother was a really cool guy, and then.... Well, she was afraid of losing her brother."
     nvl clear
@@ -73,65 +99,100 @@ label Test:
     nvl clear
     "Of course, that was before he had gone into 'adventure' mode, with his new light sleeping, so she had sneaked out when the sun rose, leaving him none- the-wiser. That was as good as making it not count, though!"
     nvl clear
-    "So, she knew he wasn't telling the complete truth, but he was being relatively honest anyway, when he told her what he'd been busy with that day. She wasn't sure why someone would take pictures of girls in underwear, but Kyon had found and stopped the master pervert and his perverted underlings, then went across the city to beat up the Dark General and his footmen who were behind the scheme. He said Tsuruya and Yuki were with him, and she absolutely believed that! Kyon might not have known, but she was starting to believe that the abnormally quiet Yuki was actually a {i}magical girl{/i}!"
+    "So, she knew he wasn't telling the complete truth, but he was being relatively honest anyway, when he told her what he'd been busy with that day. She wasn't sure why someone would take pictures of girls in underwear, but Kyon had found and stopped the master pervert and his perverted underlings, then went across the city to beat up the Dark General and his footmen who were behind the scheme."
+    nvl clear
+    "He said Tsuruya and Yuki were with him, and she absolutely believed that! Kyon might not have known, but she was starting to believe that the abnormally quiet Yuki was actually a {i}magical girl{/i}!"
     nvl clear
     "Especially when he told her how Yuki had subdued the most of the Dark General's footmen! She was especially proud of the way her brother explained that the Dark General wasn't killed or sealed away; he was ordered to redeem himself, and given a chance to do just that!"
     "So, when he finished telling the story, she gave him a powerful hug, told him he was a good hero, and then their father came home."
     nvl clear
-    "Their mother had a bit of a temper, so she waved when her brother wearily went outside to speak with their father. Their mother stood in the doorway, observing the conversation, so she embarked on her very own brand of little- sister-espionage. The house had only the tiniest, most rudimentary of backyards, but it {i}did{/i} have a backyard of a sort, so she sneaked out the back door and made her way to the side of the house, crouched near the surrounding wall. The tiny space between the house and the wall was just big enough to squeeze through, and was where Kyon traditionally left his bike."
+    "Their mother had a bit of a temper, so she waved when her brother wearily went outside to speak with their father. Their mother stood in the doorway, observing the conversation, so she embarked on her very own brand of little- sister-espionage."
+    nvl clear
+    scene bg KyonHouseNight with fade
+    show Nonoko Hap1 at right
+    "The house had only the tiniest, most rudimentary of backyards, but it {i}did{/i} have a backyard of a sort, so she sneaked out the back door and made her way to the side of the house, crouched near the surrounding wall. The tiny space between the house and the wall was just big enough to squeeze through, and was where Kyon traditionally left his bike."
     nvl clear
     "Creeping all the way to where he had left the bicycle, she hid in its shadow, catching part of the conversation."
-    "\"...real need to follow the rules of the school, you know,\" her father was saying, somewhat crossly. He must have been in a bad mood; he almost never smoked at home, but he had a lit cigarette in one hand as he went on."
+    hide Nonoko
     nvl clear
-    hide Nonoko Happy1
     show Kyon Neutral1 at center
     #show Yuuto at right
     #show Akane at left
-    "Kyon had a demeanor she recognized. Adults would never understand it, or had forgotten what it meant a very long time ago. Not quite defiance, just resignation; an admission that the adults wouldn't {i}get{/i} it. He looked like he was just waiting for the talking to stop so he could move on to the next stage; waiting to stop being grounded. Her cheer was dashed instantly."
+    "\"...real need to follow the rules of the school, you know,\" her father was saying, somewhat crossly. He must have been in a bad mood; he almost never smoked at home, but he had a lit cigarette in one hand as he went on."
+    nvl clear
+    #hide Yuuto
+    #hide Akane
+    show Nonoko Pout2 at right
+    "Kyon had a demeanor she recognized. Adults would never understand it, or had forgotten what it meant a very long time ago. Not quite defiance, just resignation; an admission that the adults wouldn't {i}get{/i} it."
+    show Nonoko Pout2 at right
+    nvl clear
+    "He looked like he was just waiting for the talking to stop so he could move on to the next stage; waiting to stop being grounded. Her cheer was dashed instantly."
     "Why were her parents being so stupid about this? Kyon was a hero, wasn't he?"
     nvl clear
+    hide Nonoko
+    #show Akane at left
+    #show Yuuto at right
     "\"Say something to your father,\" their mother barked."
     "\"Right,\" Kyon said, straightening slightly. \"Sorry. My bad.\""
+    nvl clear
     "\"Are you even paying attention?\" their father asked, running one hand through his hair. \"This is pretty important stuff, you know!\""
+    show Kyon Sigh2
     "\"Yeah, of course. Won't happen again,\" Kyon added."
     nvl clear
     "\"Hey,\" their father's voice became protesting. \"Don't just pass this off with lip-service, Kyon! Listen, it's one thing to get into a fight. But this.... You've gone too far, and while I don't understand how the school administration thinks it's okay to let you get away with it, you got lucky!\""
+    show Kyon Unhap6
     "\"Oh, lucky, that's me alright,\" her brother said dryly."
     nvl clear
     "\"Be serious for a minute! You got lucky! So, if they don't punish you at all, we're going to make sure you understand this is the sort of thing that can't be allowed to happen again!\""
+    nvl clear
     "\"Right,\" he agreed. \"Ignore criminal actions, don't help fellow students in distress, and above all, never be there for your friends, is that it?\""
     "\"You {i}should{/i} be there for your friends,\" their father disagreed."
     nvl clear
     "\"Your {i}taste{/i} in friends is another question entirely!\" their mother added. \"If your friends are getting you into this kind of trouble, you obviously need new ones! Now, what about Sasaki-chan? She was a {i}good{/i} friend, and a positive influence on you!\""
     nvl clear
-    "She was taken aback at the way Kyon's eyes hardened at that. She'd never seen her brother angry, {i}really{/i} angry. She'd accidentally ruined pieces of his clothing, once spilled glue all over his bed borrowing it without asking, dropped things on his feet being careless, and generally had no real respect for his boundaries. Despite all that, the worst he'd ever seemed was annoyed, giving her a gentle admonishment, a few times tapping her on the forehead with a single fingertip, like a much smaller child."
+    show Kyon Ang4
+    #hide Akane
+    #hide Yuuto
+    show Nonoko Worry1 at right
+    "She was taken aback at the way Kyon's eyes hardened at that. She'd never seen her brother angry, {i}really{/i} angry."
+    nvl clear
+    "She'd accidentally ruined pieces of his clothing, once spilled glue all over his bed borrowing it without asking, dropped things on his feet being careless, and generally had no real respect for his boundaries. Despite all that, the worst he'd ever seemed was annoyed, giving her a gentle admonishment, a few times tapping her on the forehead with a single fingertip, like a much smaller child."
     nvl clear
     "Now, she saw something much stronger in his eyes. Still not {i}anger{/i}, but more than the annoyance he'd ever shown her. Their mother seemed oblivious to this fact, somehow."
     "That was adults for you, she supposed; they never did understand."
+    hide Nonoko
+    nvl clear
+    #show Yuuto at right
+    #show Akane at left
     "\"Look,\" his father said plaintively, \"this is all for your future, Kyon. We just want to make sure you don't destroy your chances!\""
     nvl clear
     "\"Is this speech going to come up every time I do anything?\" he asked. \"No offense, but I got it last time, and you're just repeating the same points.\""
     "\"I feel we must,\" their father growled, dropping his cigarette and stamping it out. \"Because even though we {i}did{/i} have this discussion, it doesn't seem to have sunk {i}in{/i}.\""
     nvl clear
+    show Kyon Ser1
     "\"It did!\" he retorted. \"I was told, whatever else I did, get a ninety or better on assignments from this point on! Which I {i}did{/i}. Granted, I also destroyed a crime-ring with Tsuruya-kun's help, but seriously, are you both unable to realize that? My grade went up from a seventy four to a ninety two between two tests! What do I get for my trouble? Yelled at. By {i}both{/i} of you. What kind of message are you trying to send?\""
     nvl clear
     "\"First of all,\" their father said, \"you need to listen, and not talk back so much.\" He sounded angry now, too, she realized with dismay. Kyon was in a lot of trouble, and she didn't like that at all! Where was a hero who could rescue Kyon when they were needed?"
+    nvl clear
     "\"Secondly,\" their mother began, falling short suddenly as a sleek black limousine drew to a halt just before their house. Everyone turned to stare in surprise, except for Kyon, who merely arched one eyebrow higher."
     nvl clear
-    hide Kyon Neutral1
+    hide Kyon
     #hide Yuuto
     #hide Akane
     #show Kenshiro at center
     "A driver got out and rushed to the side door to open it, allowing the tallest, largest man that Kyon's sister had ever seen in real life to emerge. His hair was green, not quite unruly, but tousled. He wore an immaculate dark blue suit, with a shiny pin on one lapel. She couldn't make out the detail, but she was willing to bet it was identical to the pin on Kyon's collar."
     nvl clear
     show Tsuruya Kimono Smile1 at right
-    "The tall man studied the scene with a broad grin, showing off one pronounced, extended fang. He then reached into the car, helping the familiar figure of Tsuruya out. Tsuruya was dressed in the prettiest kimono she thought she had seen, pink and green, her hair up in an elaborate bun, her face carefully made up. Behind her, a man almost as large as the fellow she guessed was Tsuruya's father painfully got out. He had a pin, too; in fact, everyone from the car had one, even Tsuruya, on the collar of her kimono."
+    "The tall man studied the scene with a broad grin, showing off one pronounced, extended fang. He then reached into the car, helping the familiar figure of Tsuruya out. Tsuruya was dressed in the prettiest kimono she thought she had seen, pink and green, her hair up in an elaborate bun, her face carefully made up."
+    nvl clear
+    "Behind her, a man almost as large as the fellow she guessed was Tsuruya's father painfully got out. He had a pin, too; in fact, everyone from the car had one, even Tsuruya, on the collar of her kimono."
     nvl clear
     #show Kasai at left
     "He moved stiffly, his suit almost, but not quite as fine as Tsuruya's father's. One arm was in a cast, and he had a crutch beneath the other. Three men in similarly less fine suits followed, and the driver closed the door, retreating to wait near the front of the car."
-    #hide Tsuruya Kimono Smile1
+    hide Tsuruya
     #hide Kasai
     #hide Kenshiro
+    nvl clear
     show Kyon Neutral1 at center
     #show Yuuto at right
     #show Akane at left
@@ -142,76 +203,119 @@ label Test:
     "\"That's right! Um, I'm rather amazed you remember me! W...what brings you here?\""
     nvl clear
     "The green-haired man waved a hand dismissively, reaching into his coat and pulling out a cigar. \"Please,\" he said, leaning slightly towards one of his aides, who whispered something in his ear, \"Yuuto-kun, call me Kenshiro.\" Nodding at her mother, he introduced himself, \"I am Tsuruya Kenshiro. You must be the lovely mother of my daughter's friends.\""
+    nvl clear
     "With tiny, mincing, demure steps, Tsuruya moved to Kyon's side and took one of his arms in her own, bowing her head slightly, her cheeks coloring with a blush."
     nvl clear
     "\"Is this about something Kyon has done?\" The woman's voice was strained, on the edge of another explosion of fury."
     "Kyon's little sister clenched one fist expectantly. Tsuruya had arrived! She would find a way to fix things!"
+    nvl clear
     "\"Curious,\" the man remarked, running his lighter beneath his cigar as he turned it over, then snipping off the end before lighting it. After a few thoughtful puffs, he remarked, \"You calls your son 'Kyon'?\""
     nvl clear
     "\"That's right. What has he done?\""
     "\"He has saved my family face,\" the man said, tapping his cigar, ashes falling to the walkway. \"And so, I have come to thanks the boy who saved my daughter's reputation. Indeed, I wouldn't be surprised to finds more grateful parents, considering his great service to the girls at his school!\""
+    nvl clear
+    show Kyon Ser2
     "Kyon abruptly bowed very low, a full ninety degree bow, and said, \"I merely did what I felt I must in service to your family, Tsuruya-sama.\""
     nvl clear
-    "\"Oh, stop that bowings immediately,\" Kenshiro grumbled. Kyon straightened nervously. \"Kids these days ... put a man and his family in their debts, and then apologize for it? Really.\" The tall man shook his head. \"It is we who should bow to you, Kyou— That is, Kyon-kun. You are the caliber of man I look forward to seeing in my organization! Every time a new hires is made, I can only pray that they approach your loyalty and competence!\""
+    "\"Oh, stop that bowings immediately,\" Kenshiro grumbled. Kyon straightened nervously. \"Kids these days ... put a man and his family in their debts, and then apologize for it? Really.\" The tall man shook his head."
+    nvl clear
+    "\"It is we who should bow to you, Kyou— That is, Kyon-kun. You are the caliber of man I look forward to seeing in my organization! Every time a new hires is made, I can only pray that they approach your loyalty and competence!\""
     "\"...um,\" Kyon's mother managed."
     "\"...what?\" his father echoed."
     nvl clear
     "\"But, I digress,\" the man continued, puffing his cigar again. \"This is Kasai,\" he added, indicating the injured man. \"My daughter's bodyguards. Without any obligation to do so, while Kasai was injured, Kyon bravely volunteered to take his place, ensuring my daughter's safety!\""
+    nvl clear
     "With obvious pain, Kasai limped forward on his crutch a half-step, then raised his injured arm to remove his dark glasses. \"I am greatly in your debt, Kyon- dono,\" he said, attempting to bow."
     nvl clear
-    "\"Cut that out!\" Kyon insisted, stepping forward and seizing the man's shoulders before he could injure himself worse in the attempt. \"Um, I appreciate that, Kasai-san, I do. But as much as I respect that, I won't have Tsuruya's bodyguard hurt himself on my account! My parents were just punishing me for helping out, so you'll need to be in good condition soon.\""
+    show Kyon Sup4
+    "\"Cut that out!\" Kyon insisted, stepping forward and seizing the man's shoulders before he could injure himself worse in the attempt."
+    nvl clear
+    "\"Um, I appreciate that, Kasai-san, I do. But as much as I respect that, I won't have Tsuruya's bodyguard hurt himself on my account! My parents were just punishing me for helping out, so you'll need to be in good condition soon.\""
     "\"...ah,\" Kasai allowed, grimacing."
     nvl clear
     "\"Punished?\" Kenshiro asked, shooting Kyon's parents an incredulous look. \"Why on earths for?!\""
     "\"T...there was violence at school,\" Kyon's mother hesitantly tried."
     "\"W...well, we are worried for the boy's future,\" his father added."
     nvl clear
-    "Kenshiro looked significantly unimpressed. \"Right,\" he said, shaking his head. \"Yuuto-kun, I don't mean to tells you how to raise your son. That's not my place, and I understand that. All the same, his future is secure with the Tsuruya corporation. Bodyguard, advisor, whatever it is, I assures you that college or otherwise, a job awaits Kyon with my company whenever it's required. You work in finance, yes?\""
+    "Kenshiro looked significantly unimpressed. \"Right,\" he said, shaking his head. \"Yuuto-kun, I don't mean to tells you how to raise your son. That's not my place, and I understand that.\""
+    nvl clear
+    "\"All the same, his future is secure with the Tsuruya corporation. Bodyguard, advisor, whatever it is, I assures you that college or otherwise, a job awaits Kyon with my company whenever it's required. You work in finance, yes?\""
     "\"T...that's correct,\" Kyon's father said, nodding quickly."
     nvl clear
     "\"I could use a man like you in the Tsuruya Corporation,\" he said, nodding. \"Yoshida's getting on in years, and you're not doing your own career any favors by staying with him. The old man's tenacious though. Even if he's slipping, he'll never retires. That's quite a shadow to choose to live under.\""
+    nvl clear
     "\"Even so,\" the man replied stubbornly, \"what is loyalty if I sell it out? I work for Nishinomiya Heavy, and I take pride in my work! Even if ... it may be something of a dead-end job....\""
     nvl clear
     "\"Loyalty, eh? I like that,\" Kenshiro approved. He turned to one of the men at his side, in a brown suit. \"Aida-chan, buy Nishinomiya Heavy Industries. Transfer Yuuto-kun and Yoshida appropriately.\""
+    #show Yuuto Sup1
+    nvl clear
     "Kyon's little sister grinned as her father's eyes bugged out, and his jaw dropped open. Well, of course she knew Tsuruya's family was rich.... Really, if they just paid attention to her when she tried to tell them things like that, or that Kyon was a hero, things would have gone so much more smoothly!"
+    hide Nonoko
     nvl clear
     "\"That will be a conflict of interests,\" Aida said apologetically."
     "\"Eh, then liquidate all Nishinomiya Heavy assets we can't legally retain; sell the structure back to the original shareholders, but use a tertiary holding to retain ownership until reorganization is complete. No sense making anyone lose a jobs over it.\""
-    "\"Understood, Tsuruya-sama,\" Aida said, bowing. \"Paperwork should be complete by Tuesday.\""
     nvl clear
-    "Clenching his cigar in his teeth, Kenshiro gave the man an absent nod. \"Now,\" he said abruptly, \"I hope whatever 'punishment' Kyon-kun must endure, he's still given the chance to meet with my daughter! After his service to our family, well, she's quite taken with him, and I can't blames her!\" He abruptly roared in laughter, barely catching the cigar before it tumbled to the ground. \"At any rate! We wanted to gives our regards, not interfere with a family moment. So, now that our gratitude has been given, let us withdraw!\""
+    "\"Understood, Tsuruya-sama,\" Aida said, bowing. \"Paperwork should be complete by Tuesday.\""
+    "Clenching his cigar in his teeth, Kenshiro gave the man an absent nod."
+    nvl clear
+    "\"Now,\" he said abruptly, \"I hope whatever 'punishment' Kyon-kun must endure, he's still given the chance to meet with my daughter! After his service to our family, well, she's quite taken with him, and I can't blames her!\""
+    nvl clear
+    #show Kenshiro Laugh1
+    "He abruptly roared in laughter, barely catching the cigar before it tumbled to the ground. \"At any rate! We wanted to gives our regards, not interfere with a family moment. So, now that our gratitude has been given, let us withdraw!\""
     nvl clear
     "Kyon's father sputtered helplessly for a long minute, able to manage a jerky, shocked nod. Leaning heavily on his crutch, Kasai solemnly bowed his head to Kyon. \"We are all very grateful, Kyon-dono.\""
     nvl clear
-    "While his parents were watching, Tsuruya added, \"I am especially grateful! So, thank you very much, Kyon-kun. I only hopes that I haven't caused you any troubles.\" Before he could move away, she released his arm and planted a chaste kiss on his cheek, her blush intensifying as she followed her father into the car, shooting one last smile over her shoulder before she stepped in."
+    show Kyon Neutral3 at center
+    show Tsuruya Kimono Smile2 at HalfRight
+    "While his parents were watching, Tsuruya added, \"I am especially grateful! So, thank you very much, Kyon-kun. I only hopes that I haven't caused you any troubles.\""
+    nvl clear
+    "Before he could move away, she released his arm and planted a chaste kiss on his cheek, her blush intensifying as she followed her father into the car, shooting one last smile over her shoulder before she stepped in."
     "As suddenly as they had arrived, the well-dressed group drove away."
+    hide Tsuruya
+    #hide Kenshiro
     nvl clear
     "\"Anyway,\" Kyon said, fingertips tracing the spot on his cheek where Tsuruya had kissed him. \"You were reminding me that I don't have a future?\""
     "\"Go to your room!\" his mother abruptly snapped, shooting him a death-glare. \"You're {i}still{/i} grounded from attending your club!\""
+    nvl clear
     "\"Of course,\" he drawled, sticking his hands in his pocket and strolling casually into the house."
+    hide Kyon
     nvl clear
     "Torn between running into the house to ask Kyon the million questions bouncing through her head and watching further, his little sister finally decided to spy on the parents instead. When her father finally recovered himself, he managed, \"D...do you think maybe Kyon has a better idea of what he's doing with his life than we gave him credit for?\""
     nvl clear
     "\"Maybe,\" her mother grumbled. \"But I don't like it! That's not the kind of life I wanted Kyon to have!\""
     "\"He's not exactly a child anymore,\" her father countered. \"And as polite as Tsuruya-san was about the entire thing, he is pretty much the wealthiest man in the city. Starting next week, he's going to be my {i}boss{/i}, too!\""
     nvl clear
-    "\"Fine,\" her mother allowed reluctantly, as though it were being pulled from her. \"That Tsuruya girl ... I don't know her, but she has to be a better influence on him than that Suzumiya troublemaker! Even so, she obviously comes from a cultured, refined family. If anything, we need to strive {i}even harder{/i} to make sure that Kyon's not a delinquent; if his future is with her, he'd better be well behaved enough to not shame her family, right?!\""
+    "\"Fine,\" her mother allowed reluctantly, as though it were being pulled from her. \"That Tsuruya girl ... I don't know her, but she has to be a better influence on him than that Suzumiya troublemaker!"
+    nvl clear
+    "Even so, she obviously comes from a cultured, refined family. If anything, we need to strive {i}even harder{/i} to make sure that Kyon's not a delinquent; if his future is with her, he'd better be well behaved enough to not shame her family, right?!\""
     nvl clear
     "\"Dear,\" her father said, his voice a bit pained, \"I don't think you quite grasp the concept of letting Kyon make his own decisions.\""
+    nvl clear
+    
+    scene bg KyonKitchenRight with fade
+    show Kyon Neutral3 at center
+    show Nonoko Hap1 at right
     "Deciding she had heard enough, she crept back through the narrow passage to the back of the house, stepping into the kitchen. Kyon was there, glancing to one side when he saw her, and raising an eyebrow. He had just finished pouring himself a tall glass of milk, and pointed to it. \"Want one?\""
     nvl clear
+    show Nonoko Quest1
     "She nodded, and he poured her a glass as well. Once he had finished gulping his down, she asked, \"Kyon-kun, are you going to date Tsuru-nee-san?\""
+    nvl clear
+    show Kyon Worry1
     "He rubbed his cheek, frowning. \"I'd rather not be killed by a furious Haruhi, so probably not,\" he said, shaking his head quickly. \"She's just a really good friend.\""
+    show Nonoko Hap1
     "\"Hmm, so friends kiss like that?\""
     nvl clear
+    show Kyon Pain1
     "He winced, looking away. \"Not usually,\" he admitted. \"Look, if Haruhi finds out about that, she's going to get really jealous, and might blow up the world.\""
     "No trace of embellishment that she could sense, surprisingly. \"Then I won't tell her,\" she assured him, holding up a hand with one pinky extended. \"Promise!\""
     nvl clear
+    show Kyon Smile1
     "He grinned and ruffled her hair before linking his own pinky with hers. \"Thanks, Imouto,\" he said. \"I'll owe you one for that.\""
     "* * *"
     nvl clear
+    
     scene bg YukiRoomCenter with fade
-    show Yuki Side Talk1 at center
+    show Yuki Side1 at center
     "As per his request, Yuki summoned her primary protection target forty minutes before she planned to summon the others for the nightly error-correction session. She noted that his ability to withstand the transitions of teleportation had improved, because he very quickly recovered from disorientation."
     nvl clear
     show Kyon Sigh6 at left
