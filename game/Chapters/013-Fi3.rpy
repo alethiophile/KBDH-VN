@@ -155,8 +155,9 @@ label Test:
     #hide Yuuto
     show Nonoko Worry1 at right
     "She was taken aback at the way Kyon's eyes hardened at that. She'd never seen her brother angry, {i}really{/i} angry."
+    "She'd accidentally ruined pieces of his clothing, once spilled glue all over his bed borrowing it without asking, dropped things on his feet being careless, and generally had no real respect for his boundaries."
     nvl clear
-    "She'd accidentally ruined pieces of his clothing, once spilled glue all over his bed borrowing it without asking, dropped things on his feet being careless, and generally had no real respect for his boundaries. Despite all that, the worst he'd ever seemed was annoyed, giving her a gentle admonishment, a few times tapping her on the forehead with a single fingertip, like a much smaller child."
+    "Despite all that, the worst he'd ever seemed was annoyed, giving her a gentle admonishment, a few times tapping her on the forehead with a single fingertip, like a much smaller child."
     nvl clear
     "Now, she saw something much stronger in his eyes. Still not {i}anger{/i}, but more than the annoyance he'd ever shown her. Their mother seemed oblivious to this fact, somehow."
     "That was adults for you, she supposed; they never did understand."
@@ -180,14 +181,16 @@ label Test:
     #hide Yuuto
     #hide Akane
     #show Kenshiro at center
-    "A driver got out and rushed to the side door to open it, allowing the tallest, largest man that Kyon's sister had ever seen in real life to emerge. His hair was green, not quite unruly, but tousled. He wore an immaculate dark blue suit, with a shiny pin on one lapel. She couldn't make out the detail, but she was willing to bet it was identical to the pin on Kyon's collar."
+    "A driver got out and rushed to the side door to open it, allowing the tallest, largest man that Kyon's sister had ever seen in real life to emerge."
+    nvl clear
+    "His hair was green, not quite unruly, but tousled. He wore an immaculate dark blue suit, with a shiny pin on one lapel. She couldn't make out the detail, but she was willing to bet it was identical to the pin on Kyon's collar."
     nvl clear
     show Tsuruya Kimono Smile1 at right
     "The tall man studied the scene with a broad grin, showing off one pronounced, extended fang. He then reached into the car, helping the familiar figure of Tsuruya out. Tsuruya was dressed in the prettiest kimono she thought she had seen, pink and green, her hair up in an elaborate bun, her face carefully made up."
     nvl clear
+    #show Kasai at left
     "Behind her, a man almost as large as the fellow she guessed was Tsuruya's father painfully got out. He had a pin, too; in fact, everyone from the car had one, even Tsuruya, on the collar of her kimono."
     nvl clear
-    #show Kasai at left
     "He moved stiffly, his suit almost, but not quite as fine as Tsuruya's father's. One arm was in a cast, and he had a crutch beneath the other. Three men in similarly less fine suits followed, and the driver closed the door, retreating to wait near the front of the car."
     hide Tsuruya
     #hide Kasai
@@ -199,39 +202,59 @@ label Test:
     "\"C...can we help you?\" Kyon's mother asked, studying the group in confusion."
     "\"Tsu...Tsuruya-san!?\" their father managed, staring at the green-haired man in shock."
     nvl clear
+    hide Kyon
+    #hide Akane
+    #show Kenshiro at left
     "\"We've met?\" the man asked, looking at her father thoughtfully, then nodding. \"Ah, yes, you're one of Yoshida's aides, right? You works for the firm that competes with us, what is it ... Nishinomiya Heavy Industries?\""
     "\"That's right! Um, I'm rather amazed you remember me! W...what brings you here?\""
     nvl clear
     "The green-haired man waved a hand dismissively, reaching into his coat and pulling out a cigar. \"Please,\" he said, leaning slightly towards one of his aides, who whispered something in his ear, \"Yuuto-kun, call me Kenshiro.\" Nodding at her mother, he introduced himself, \"I am Tsuruya Kenshiro. You must be the lovely mother of my daughter's friends.\""
     nvl clear
+    #hide Yuuto
+    show Kyon Neutral1 at HalfRight
+    show Tsuruya Kimono Smile1 at right
     "With tiny, mincing, demure steps, Tsuruya moved to Kyon's side and took one of his arms in her own, bowing her head slightly, her cheeks coloring with a blush."
     nvl clear
+    #show Akane at left
     "\"Is this about something Kyon has done?\" The woman's voice was strained, on the edge of another explosion of fury."
     "Kyon's little sister clenched one fist expectantly. Tsuruya had arrived! She would find a way to fix things!"
     nvl clear
+    hide Kyon
+    hide Tsuruya
+    #show Kenshiro at right
     "\"Curious,\" the man remarked, running his lighter beneath his cigar as he turned it over, then snipping off the end before lighting it. After a few thoughtful puffs, he remarked, \"You calls your son 'Kyon'?\""
     nvl clear
     "\"That's right. What has he done?\""
     "\"He has saved my family face,\" the man said, tapping his cigar, ashes falling to the walkway. \"And so, I have come to thanks the boy who saved my daughter's reputation. Indeed, I wouldn't be surprised to finds more grateful parents, considering his great service to the girls at his school!\""
     nvl clear
-    show Kyon Ser2
+    show Kyon Ser1 at center
     "Kyon abruptly bowed very low, a full ninety degree bow, and said, \"I merely did what I felt I must in service to your family, Tsuruya-sama.\""
     nvl clear
     "\"Oh, stop that bowings immediately,\" Kenshiro grumbled. Kyon straightened nervously. \"Kids these days ... put a man and his family in their debts, and then apologize for it? Really.\" The tall man shook his head."
     nvl clear
     "\"It is we who should bow to you, Kyou— That is, Kyon-kun. You are the caliber of man I look forward to seeing in my organization! Every time a new hires is made, I can only pray that they approach your loyalty and competence!\""
+    nvl clear
+    hide Kyon
+    #show Yuuto at center
     "\"...um,\" Kyon's mother managed."
     "\"...what?\" his father echoed."
     nvl clear
+    #hide Yuuto
+    #hide Akane
+    #show Kasai at center
     "\"But, I digress,\" the man continued, puffing his cigar again. \"This is Kasai,\" he added, indicating the injured man. \"My daughter's bodyguards. Without any obligation to do so, while Kasai was injured, Kyon bravely volunteered to take his place, ensuring my daughter's safety!\""
     nvl clear
     "With obvious pain, Kasai limped forward on his crutch a half-step, then raised his injured arm to remove his dark glasses. \"I am greatly in your debt, Kyon- dono,\" he said, attempting to bow."
     nvl clear
-    show Kyon Sup4
+    show Kyon Sup4 Flip at left
     "\"Cut that out!\" Kyon insisted, stepping forward and seizing the man's shoulders before he could injure himself worse in the attempt."
     nvl clear
     "\"Um, I appreciate that, Kasai-san, I do. But as much as I respect that, I won't have Tsuruya's bodyguard hurt himself on my account! My parents were just punishing me for helping out, so you'll need to be in good condition soon.\""
     "\"...ah,\" Kasai allowed, grimacing."
+    #hide Kasai
+    hide Kyon
+    #show Akane at right
+    #show Yuuto at center
     nvl clear
     "\"Punished?\" Kenshiro asked, shooting Kyon's parents an incredulous look. \"Why on earths for?!\""
     "\"T...there was violence at school,\" Kyon's mother hesitantly tried."
@@ -246,12 +269,19 @@ label Test:
     nvl clear
     "\"Even so,\" the man replied stubbornly, \"what is loyalty if I sell it out? I work for Nishinomiya Heavy, and I take pride in my work! Even if ... it may be something of a dead-end job....\""
     nvl clear
-    "\"Loyalty, eh? I like that,\" Kenshiro approved. He turned to one of the men at his side, in a brown suit. \"Aida-chan, buy Nishinomiya Heavy Industries. Transfer Yuuto-kun and Yoshida appropriately.\""
     #show Yuuto Sup1
+    "\"Loyalty, eh? I like that,\" Kenshiro approved. He turned to one of the men at his side, in a brown suit. \"Aida-chan, buy Nishinomiya Heavy Industries. Transfer Yuuto-kun and Yoshida appropriately.\""
     nvl clear
+    #hide Yuuto
+    #hide Kenshiro
+    #hide Akane
+    show Nonoko Smile1 at right
     "Kyon's little sister grinned as her father's eyes bugged out, and his jaw dropped open. Well, of course she knew Tsuruya's family was rich.... Really, if they just paid attention to her when she tried to tell them things like that, or that Kyon was a hero, things would have gone so much more smoothly!"
     hide Nonoko
     nvl clear
+    #show Kenshiro at right
+    #show Yuuto at center
+    #show Akane at left
     "\"That will be a conflict of interests,\" Aida said apologetically."
     "\"Eh, then liquidate all Nishinomiya Heavy assets we can't legally retain; sell the structure back to the original shareholders, but use a tertiary holding to retain ownership until reorganization is complete. No sense making anyone lose a jobs over it.\""
     nvl clear
@@ -265,6 +295,9 @@ label Test:
     nvl clear
     "Kyon's father sputtered helplessly for a long minute, able to manage a jerky, shocked nod. Leaning heavily on his crutch, Kasai solemnly bowed his head to Kyon. \"We are all very grateful, Kyon-dono.\""
     nvl clear
+    #hide Akane
+    #hide Yuuto
+    #hide Kenshiro
     show Kyon Neutral3 at center
     show Tsuruya Kimono Smile2 at HalfRight
     "While his parents were watching, Tsuruya added, \"I am especially grateful! So, thank you very much, Kyon-kun. I only hopes that I haven't caused you any troubles.\""
@@ -272,8 +305,9 @@ label Test:
     "Before he could move away, she released his arm and planted a chaste kiss on his cheek, her blush intensifying as she followed her father into the car, shooting one last smile over her shoulder before she stepped in."
     "As suddenly as they had arrived, the well-dressed group drove away."
     hide Tsuruya
-    #hide Kenshiro
     nvl clear
+    #show Akane at left
+    #show Yuuto at right
     "\"Anyway,\" Kyon said, fingertips tracing the spot on his cheek where Tsuruya had kissed him. \"You were reminding me that I don't have a future?\""
     "\"Go to your room!\" his mother abruptly snapped, shooting him a death-glare. \"You're {i}still{/i} grounded from attending your club!\""
     nvl clear
@@ -315,57 +349,102 @@ label Test:
     nvl clear
     
     scene bg YukiRoomCenter with fade
-    show Yuki Side1 at center
+    show Yuki Side1 at HalfLeft
     "As per his request, Yuki summoned her primary protection target forty minutes before she planned to summon the others for the nightly error-correction session. She noted that his ability to withstand the transitions of teleportation had improved, because he very quickly recovered from disorientation."
     nvl clear
-    show Kyon Sigh6 at left
+    show Kyon Casual Sigh6 at HalfRight
     "She assumed the neutral state of kneeling at his side expectantly. He frowned and ran a hand through his hair."
     "\"Nagato,\" he said, turning to look at her, \"you'll tell me if I rely on you too much, won't you?\""
     nvl clear
     "She considered the words, but did not understand how interaction with him could reach a level she would term 'too much'. It was meaningless; a situation that was unlikely to occur, barring the Integrated Data Sentience Entity or Haruhi changing her on a fundamental level. \"Yes,\" she said."
+    nvl clear
     "He looked uncomfortable, and she rose, moving to the table. In expectation of his arrival, she had already prepared tea."
     nvl clear
+    show Kyon Casual Ser3
     "In the silence, he joined her at the table. She wondered if he was going to say anything, but didn't particularly mind in any case. It was time spent in his presence, if he spoke or not."
     "\"Is everything okay?\" he asked, once she had poured him a cup of tea."
     nvl clear
-    "The subset of data contained within 'everything' was too vast for her to consider, and with no link to the IDSE, it would take longer than the remaining time before summoning the others to determine. Narrowing the scope of 'everything' further to only include events he would understand still included too many variables to consider easily. However, only one non 'okay' event was required to return an answer:"
+    "The subset of data contained within 'everything' was too vast for her to consider, and with no link to the IDSE, it would take longer than the remaining time before summoning the others to determine."
+    nvl clear
+    "Narrowing the scope of 'everything' further to only include events he would understand still included too many variables to consider easily. However, only one non 'okay' event was required to return an answer:"
     "\"I am fine,\" she said."
     nvl clear
-    "He sipped at his tea and set it down, leaning forward to stare at her eyes. She was confident that she had betrayed no physical cues that would suggest anything other than what she had said. One of his hands rose, and he pointed a single finger at her, pressing it against her forehead gently. She blinked, checking her local libraries to understand the meaning of the gesture: an adult's admonishment of a child."
+    show Kyon Casual Ser1
+    "He sipped at his tea and set it down, leaning forward to stare at her eyes. She was confident that she had betrayed no physical cues that would suggest anything other than what she had said."
+    nvl clear
+    "One of his hands rose, and he pointed a single finger at her, pressing it against her forehead gently. She blinked, checking her local libraries to understand the meaning of the gesture: an adult's admonishment of a child."
     nvl clear
     "\"I may not understand a lot, Nagato,\" he said softly, \"but I can tell when you're not being honest. After all, I said if I could help you, ask! But you never do.\" He sighed, letting his hand fall to the table. \"So, let me know when I {i}can{/i} do something to make it up to you. You really saved our hides today against the Sumiyoshi-rengo, you know. I can't help but feel the need to repay that.\""
     nvl clear
     "She contemplated, running simulations and checking local references. However, despite her consideration, she kept returning to the conclusion that all else aside, she could not accurately predict his behavior. But in any case, Tsuruya had confirmed what she could not simulate."
+    nvl clear
+    show Yuki Talk1
     "So: \"Do you like me?\""
     nvl clear
-    "His eyes widened in surprise for a moment before he chuckled, scratching the back of his head nervously. \"Y...you know, the first time I ever spoke with you here, I actually had the idea that you wanted to ask me to your apartment to talk about things like this? I guess ... I hoped that, yeah, a beautiful, intelligent girl like you wanted to confess to me....\" He swallowed, another sign of nervousness, and shook his head, dropping his hand to the table."
+    show Yuki Side1
+    show Kyon Casual Smile1
+    "His eyes widened in surprise for a moment before he chuckled, scratching the back of his head nervously."
+    nvl clear
+    "\"Y...you know, the first time I ever spoke with you here, I actually had the idea that you wanted to ask me to your apartment to talk about things like this? I guess ... I hoped that, yeah, a beautiful, intelligent girl like you wanted to confess to me....\""
+    nvl clear
+    "He swallowed, another sign of nervousness, and shook his head, dropping his hand to the table."
     nvl clear
     "\"I'm sorry, this isn't answering your question. Yeah, Nagato ... I'm no good about talking about this. I do like you. I like you a lot, but you've known that for a long while, haven't you? Isn't that why you made that other world, where you and I could be together?\""
     nvl clear
+    show Yuki SideDisappointed1
+    #show YBlush at HalfLeft
     "\"I did not know,\" she answered. Her facial reaction parameters triggered unexpectedly as the capillary loops there were active beyond the norm. Temperature correspondingly also increased. Her local index suggested that the physical reaction was consistent with embarrassment, shame, or being in love. \"That world was rejected.\""
     nvl clear
-    "\"That {i}world{/i}, maybe,\" he said in a soft tone, reaching one hand across the table and grasping the hand she had left on the teapot. She had the strength to easily resist, but did not. He plucked her hand free and clasped it gently between the two of them. A great deal of focus and attention went to the amount of heat, the sensation of physical contact, the minute, practically unobservable transfer of static electricity conducted between the two of them, and every other aspect of the connection. \"But never you.\""
+    show Kyon Casual Smile6
+    "\"That {i}world{/i}, maybe,\" he said in a soft tone, reaching one hand across the table and grasping the hand she had left on the teapot. She had the strength to easily resist, but did not. He plucked her hand free and clasped it gently between the two of them."
     nvl clear
-    "\"At this juncture,\" she said, \"I will attempt to communicate something to you, though I am uncertain as to the accuracy of the transmission. Words remain a weak vector for communicating vital information. Despite the lack of adherence to social norms and the correct protocols for this procedure, I am attempting to convey to you the positive emotive content of my current condition and regards for you.\" Her local library didn't contain more helpful contextual notes, and her social monitor was largely dependant on the IDSE, which she was no longer connected to. She briefly contemplated attempting to access Haruhi's memetic library for comparison, but decided against it; this was something she was going to attempt on her own."
+    "A great deal of focus and attention went to the amount of heat, the sensation of physical contact, the minute, practically unobservable transfer of static electricity conducted between the two of them, and every other aspect of the connection. \"But never you.\""
     nvl clear
-    "\"The outcome is uncertain; no accurate prediction can be made,\" she continued, raising her eyes from their clasped hands to meet his. \"Regardless of the fact that determination is unclear, I have resolved to continue due to the content of the emotive concept I wish to relay. Despite the fact that I have no comparable metric, I am currently unable to conceive a greater intensity than the one I experience at this moment in relation to you.\""
+    #show Yuki SideConcerned1
+    "\"At this juncture,\" she said, \"I will attempt to communicate something to you, though I am uncertain as to the accuracy of the transmission. Words remain a weak vector for communicating vital information."
     nvl clear
+    "\"Despite the lack of adherence to social norms and the correct protocols for this procedure, I am attempting to convey to you the positive emotive content of my current condition and regards for you.\" Her local library didn't contain more helpful contextual notes, and her social monitor was largely dependant on the IDSE, which she was no longer connected to."
+    nvl clear
+    "She briefly contemplated attempting to access Haruhi's memetic library for comparison, but decided against it; this was something she was going to attempt on her own."
+    nvl clear
+    "\"The outcome is uncertain; no accurate prediction can be made,\" she continued, raising her eyes from their clasped hands to meet his."
+    nvl clear
+    "\"Regardless of the fact that determination is unclear, I have resolved to continue due to the content of the emotive concept I wish to relay. Despite the fact that I have no comparable metric, I am currently unable to conceive a greater intensity than the one I experience at this moment in relation to you.\""
+    nvl clear
+    show Kyon Casual Puzzle2
     "He stared at her, and she realized almost immediately that the transmission had failed; he didn't understand."
     "\"I attempted to use more words,\" she added, when he didn't speak. \"It appears that the data was not conveyed accurately.\""
+    nvl clear
+    show Kyon Casual Smile5
     "\"C...can you try it again with less, maybe?\" he asked, giving her a hopeful, somewhat forced smile."
     nvl clear
     "\"Yes,\" she agreed. \"I like you. A lot.\""
-    "\"Oh,\" he said, his smile relaxing as he bowed his head slightly. Visible physical cues for tension faded from him. \"I'm glad,\" he told her. \"You have to believe that I like you too, though. Because ... I do. Even if it puts us at odds with your former bosses.\""
-    "\"I ... have a request,\" she said, struggling for words she had no protocols to relay."
     nvl clear
+    show Kyon Casual Smile4
+    "\"Oh,\" he said, his smile relaxing as he bowed his head slightly. Visible physical cues for tension faded from him. \"I'm glad,\" he told her. \"You have to believe that I like you too, though. Because ... I do. Even if it puts us at odds with your former bosses.\""
+    nvl clear
+    #show Yuki SideConcerned1
+    "\"I ... have a request,\" she said, struggling for words she had no protocols to relay."
     "\"Yeah?\" he asked, looking up. He appeared happy to be able to do something for her. \"What can I do for you?\""
+    nvl clear
     "Her lips moved silently until she found sounds close enough to what she wanted to communicate: \"Kiss.\""
     nvl clear
-    "\"U...uh, w...well,\" he started, stuttering nervously, his eyes darting away even as his grasp on her hand tightened. \"W...we really.... I mean, if this gets back to Haruhi, she'd get really mad, but....\" He sighed, slumping slightly and shaking his head. \"Who am I kidding? I'm going to burn in a very special hell for this — but it's worth it. Just to warn you, though ... I don't know if I'm any good at this.\""
+    show Kyon Casual Neutral1
+    "\"U...uh, w...well,\" he started, stuttering nervously, his eyes darting away even as his grasp on her hand tightened. \"W...we really.... I mean, if this gets back to Haruhi, she'd get really mad, but....\""
     nvl clear
-    "He shifted his seat, moving to her side after releasing her hands. She watched him expectantly, her body remaining still as she had no practical experience with initiating the process. Hopefully he had a better understanding than she did. He took a quick breath, then turned her face towards his, tilting it upwards with a fingertip beneath her chin. A wealth of focus was invested in every point of contact as he brushed some hair from her face, and whispered, \"Close your eyes.\""
+    "He sighed, slumping slightly and shaking his head. \"Who am I kidding? I'm going to burn in a very special hell for this — but it's worth it. Just to warn you, though ... I don't know if I'm any good at this.\""
     nvl clear
+    hide Kyon
+    hide Yuki
+    show Kyon Casual Smile4 at center
+    #show Yuki SideConcerned1 at HalfLeft
+    "He shifted his seat, moving to her side after releasing her hands. She watched him expectantly, her body remaining still as she had no practical experience with initiating the process. Hopefully he had a better understanding than she did."
+    nvl clear
+    "He took a quick breath, then turned her face towards his, tilting it upwards with a fingertip beneath her chin. A wealth of focus was invested in every point of contact as he brushed some hair from her face, and whispered, \"Close your eyes.\""
+    nvl clear
+    show Yuki SideEyesClosed1 at HalfLeft
     "She did as he instructed, even though that would hinder her ability to observe the act, then his lips pressed against hers."
+    show Kyon Casual Sigh4
     "* * *"
     nvl clear
     "He wasn't certain what to expect from the matter; while he didn't {i}think{/i} Yuki had any experience with kissing, either, he had no idea what kind of things she could just choose to learn, seemingly instantly. Their lips touched."
@@ -373,51 +452,83 @@ label Test:
     "Hers were amazingly soft, but transmitted a strange shock to him. He could feel the hair on his scalp try to stand up straight in response to the surge, but before he could really think about it further, Yuki shifted about. Her hands rose, one going about his back, the other curling around the back of his head and pulling him more deeply into the kiss."
     nvl clear
     "Those amazingly soft, gentle lips opened, and another jolting charge of something ran through him as her tongue parted his lips. After that, things got very hazy for Kyon."
-    "Some minutes later, he wasn't sure, as he didn't have the energy to check his watch, she finally released him. She had wormed her way into his lap, one arm still about his back, her other hand sliding down to rest on his shoulder as she stared at him with her usual expression."
+    "Some minutes later, he wasn't sure, as he didn't have the energy to check his watch, she finally released him."
     nvl clear
+    show Yuki Side1
+    show Kyon Casual Neutral2
+    "She had wormed her way into his lap, one arm still about his back, her other hand sliding down to rest on his shoulder as she stared at him with her usual expression."
+    nvl clear
+    #show YBlush at HalfLeft
     "Almost, anyway. Her amazing abilities aside, her cheeks were pink with a blush, and her breath was coming quickly, if not quite in hurried gasps. Her eyes had thawed, and instead of studying him with the intensity of frozen helium, he felt inexplicable warmth from her gaze. Her head tilted to one side, until she was resting it on his shoulder as a pillow."
+    nvl clear
     "He felt he had to say something about the experience, but it took him a long moment to find the words. \"That was amazing,\" he managed, giving her a nervous smile."
     nvl clear
+    show Yuki Talk2
     "\"Enjoyable,\" she agreed. She stirred slightly, as though to move away from him, and he realized his arms had gone about her while she was in his lap. Were they making out? He reluctantly let her go, as she smoothly slid free from his lap and retook her place at the table, refreshing his tea."
     nvl clear
-    "He checked his watch, realizing they had only a few minutes before she was supposed to be summoning Kanae and Mikuru. Probably best not for that to happen while they were.... He shook his head. What was he doing, anyway? He drank the tea she had poured him, worried about what the future would bring. This wasn't the kind of person he was, to play around so callously behind someone else's back. This was something that he couldn't let Haruhi find out about, so it would be for the best if it was simply something he didn't let happen again."
+    show Yuki Side1 at left
+    "He checked his watch, realizing they had only a few minutes before she was supposed to be summoning Kanae and Mikuru. Probably best not for that to happen while they were.... He shook his head. What was he doing, anyway?"
+    nvl clear
+    "He drank the tea she had poured him, worried about what the future would bring. This wasn't the kind of person he was, to play around so callously behind someone else's back. This was something that he couldn't let Haruhi find out about, so it would be for the best if it was simply something he didn't let happen again."
     nvl clear
     "He nodded to himself, resolved to apologize to Yuki for it, but knowing he needed to be firm."
     "\"I would like to kiss again in the future,\" she announced, her eyes scanning something outside the windows of her apartment."
+    nvl clear
     "\"Absolutely,\" his mouth betrayed him. \"I would, too.\""
     "She gave that not-quite-a-smile look that she had, when he knew she was happy, and his resolve was crushed instantly."
     nvl clear
     "\"I am glad,\" she said, before she reached out with one hand, fingertips resting against his wristwatch. \"I ... want ... permission to modify this device.\""
     "\"Er ... okay?\" he allowed cautiously, uncertain what she had in mind."
-    "Nothing much of anything appeared to happen, but she drew her fingertips back, evidently satisfied. \"I will include teaching this new functionality in your chosen training tonight.\""
     nvl clear
+    "Nothing much of anything appeared to happen, but she drew her fingertips back, evidently satisfied. \"I will include teaching this new functionality in your chosen training tonight.\""
     "He studied the watch, but it didn't feel or act differently. \"Okay,\" he agreed. \"Is it about time?\""
+    nvl clear
+    hide Kyon
+    show Yuki Side1 at center
     "She gave her tiny nod, reached out with the same hand, grabbed space itself, and twisted. Kanae appeared abruptly on the floor to his left, wearing her pajamas and snoring softly. Mikuru appeared sitting at the table to his right, looking up and shooting Yuki a wary glance as she set a pad of sketching paper down."
     nvl clear
     show Mikuru Casual Neutral1 at left
-    #show Kanae
+    show Kanae Night Smile2 at right
     "The underclassman's bare feet were near Kyon, so he tickled her cautiously, prompting her to giggle before groggily waking up. \"Is it that time again?\" she asked, yawning as she sat up. \"And is it safe to practice sliding again, yet?\""
+    show Kanae Night Smile1
+    show Yuki Talk2
     "\"Yes,\" Yuki agreed. \"You may return to your initially selected training material.\""
     nvl clear
+    show Kanae Night Hap4
     "The girl threw her arms in the air. \"Yay!\" she cheered."
+    show Mikuru Casual Smile1
     "\"I'm happy with cooking right now,\" Mikuru demurred."
+    hide Yuki
+    show Kyon Casual Neutral2 at center
     "\"Tsuruya-kun says I get even better at martial arts,\" Kyon said, shifting his shoulders in a helpless shrug."
+    hide Kanae
+    show Yuki Talk2 at right
     "\"Understood,\" Yuki said, beginning to raise one hand again."
     nvl clear
     "\"Wait,\" he protested. \"I have one quick question, Nagato.\""
     "Her eyes fixed on him and shimmered, but did not blink."
     "\"Um ... what ... do you get out of this, exactly? I know to us, we each go ... somewhere else to practice. What about you?\""
+    nvl clear
     "She said nothing, just looking at him as her rarely seen blush returned."
     nvl clear
+    #show KyonBlush at center
     "He felt his own face color, and realized that he might already know. Even if he didn't remember it.... Yuki had certainly known how to {i}return{/i} a kiss, despite the fact that she didn't seem to know how to initiate one. \"A...actually, forget about that that for now,\" he said quickly, when Kanae and Mikuru both turned questioning stares at the pair of them."
+    nvl clear
     "Was that relief he saw in Yuki's eyes?! \"Initializing,\" she announced, sending reality away."
     "* * *"
+    
+    scene bg KyonRoomFullMorning with fade
+    show Kyon Casual Neutral1 at center
     nvl clear
     "With nothing else to do all day, Kyon quickly became bored. Admittedly, left to his own devices he probably wouldn't have chosen to leave the house, but with his mother's angry decree, he wasn't even allowed to leave his room, except at mealtimes and to use the washroom. The high point of the day was that Miyokichi had come to visit his younger sister, and the two weren't forbidden to visit him."
     nvl clear
+    show Nonoko Hap1 at right
+    #show Miyokichi Hap1 at left
     "Having a spare deck of cards and long experience with children, he expertly lost nearly every hand to the pair. His little sister fell for it completely, but he was starting to think that Miyokichi was realizing that he was throwing the games in their favor. In his mind, it was just practice, since he was going to be surrounded by an endless sea of younger cousins once he reached Hinamizawa."
     nvl clear
     "\"I win!\" his little sister exclaimed, as Kyon once again managed a losing hand. \"I'm going to get us some snacks!\""
+    nvl clear
+    hide Nonoko
     "She bounced up off his bed, rousing Shamisen, and dashed out the door, humming happily. Miyokichi turned to look at him thoughtfully, and tossed her cards onto the discard pile. He gathered them and began shuffling, glancing up at her as he asked, \"Something on your mind, Miyokichi-chan?\""
     "\"I have a problem,\" she confessed, giving a small smile."
     nvl clear
