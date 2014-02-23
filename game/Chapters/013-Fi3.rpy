@@ -532,124 +532,216 @@ label Test:
     "She bounced up off his bed, rousing Shamisen, and dashed out the door, humming happily. Miyokichi turned to look at him thoughtfully, and tossed her cards onto the discard pile. He gathered them and began shuffling, glancing up at her as he asked, \"Something on your mind, Miyokichi-chan?\""
     "\"I have a problem,\" she confessed, giving a small smile."
     nvl clear
-    "He shuffled as he nodded, studying the girl. She looked as physically mature as Kanae or Yuki, and most of the time she acted as mature as well, despite the fact that she and his sister were the same age. Dressed in the knee-length skirt, smart blouse, and with her dark hair styled more carefully than his sister usually bothered to, he could easily imagine she had a lot of problems with boys who thought she was older than she was asking her out. Or worse, boys who did know, and didn't care."
+    show Kyon Casual Neutral4
+    "He shuffled as he nodded, studying the girl. She looked as physically mature as Kanae or Yuki, and most of the time she acted as mature as well, despite the fact that she and his sister were the same age."
+    nvl clear
+    "Dressed in the knee-length skirt, smart blouse, and with her dark hair styled more carefully than his sister usually bothered to, he could easily imagine she had a lot of problems with boys who thought she was older than she was asking her out. Or worse, boys who did know, and didn't care."
     nvl clear
     "\"What's that?\" he asked."
     "\"I...it's something you might understand very well,\" she said shyly. \"It's actually one of the reasons I, um, rely on you, you know?\""
+    show Kyon Casual Worry1
     "He didn't ... and he wasn't sure he liked where this was going, either. But he nodded anyway. \"Sure,\" he said."
     nvl clear
+    #show MiyokoBlush
     "\"S...so,\" she said, starting to stutter as her face colored with a blush, and her index fingers began to poke at one another before her. \"Um, um, that is....\""
+    nvl clear
     "He braced himself. What would it be this time? Was she going to be a vampire? Magical girl? Maybe a member of another group like the Organization? Anything but a confession, he was sure he could handle. Please, he asked any god listening to his prayers, don't let it be a confession!"
     nvl clear
     "\"Um, Kyon,\" she blurted out, looking up and locking eyes with him, her gaze watery and shimmering, her cheeks glowing with a blush, \"when you have a nickname, are you stuck with it forever!?\""
+    nvl clear
+    show Kyon Casual Smile1
     "He raised one hand to his face and massaged his forehead. Okay, that went better than he had hoped. \"Ah, well ... I am, but you don't have to be,\" he said, dropping his hand to his side. \"Would you be happier if I called you Miyoko-chan?\""
     nvl clear
+    #show Miyoko Smile1
+    #hide Miyoko Blush
     "Instantly her expression brightened, and her blush faded. \"That would be nice!\" she said cheerfully."
+    show Nonoko Hap1 at right
     "\"Snacks!\" Kyon's sister announced, bearing a small tray of crackers into the room. \"Kyon-kun, Miyokichi! Help yourselves!\""
+    nvl clear
     "\"Hey,\" Kyon warned his sister. \"You should be a bit more respectful of your friends, Imouto! Has Miyoko-chan asked you to stop using that nickname, recently?\""
     nvl clear
+    show Nonoko Pout1
     "\"Yes,\" his sister allowed with a pout. \"But, I still call you Kyon-kun, even though you don't like it — I think everyone should have a nickname!\""
+    nvl clear
     "He turned to the taller girl and asked, \"What kind of nickname should we give Imouto? I like 'Okkuu', since she's annoying ... maybe 'Imoukuu'?\""
     "Miyoko giggled, narrowing her eyes and giving Kyon's sister a thoughtfully considering stare."
+    #show Miyoko Laugh1
     nvl clear
+    show Nonoko Ang1
     "\"I'll be good,\" his sister grumbled. \"I forgot to get water!\" She ran off."
+    hide Nonoko
     "\"Thank you!\" Miyoko cheered. \"Um, um, can I ask you another favor, maybe?\""
+    nvl clear
     "\"I guess,\" he said, shrugging as he dealt out the next hand of cards. \"I can't guarantee that I'll be able to help you, but it wouldn't hurt to try, right?\""
     "\"W...would you go to see a movie with me?\" she asked shyly."
     nvl clear
     "\"I won't be free until after Golden Week,\" he said, frowning. What was this?! A {i}date{/i}? \"So, it would have to be an evening showing ... will it still be playing, then?\""
     "\"Yeah! It's a foreign film I've really been dying to see!\" she said brightly. \"But, I couldn't think of anyone else to ask!\""
-    "He crushed the thought that it was a date: \"What's the title?\""
     nvl clear
+    "He crushed the thought that it was a date: \"What's the title?\""
+    #show Miyoko Blush
     "Her cheeks took on a decidedly pink tinge again, and she demurely looked away. \"Um, it's called 'Saw'.\""
+    nvl clear
     "Right, he remembered. Miyoko liked gory horror movies. She didn't {i}need{/i} to be supernatural; she was strange enough as it was. \"Yeeeaah,\" he drawled, considering, while she tried to give him her best puppy-dog look."
+    #hide Miyoko Blush
     nvl clear
     "\"Please?\" she begged. She was going to be very dangerous once she learned to use her looks more effectively ... or if she just developed a bit more. Mikuru might have real competition, then."
+    nvl clear
+    show Nonoko Hap1 at right
     "\"I'll think about it,\" he told her, shaking his head as his sister came back into the room. Maybe he could convince Haruhi to come along ... she'd probably like weird things like that, too, and that would make sure that she didn't get the wrong idea about the younger girl and Kyon."
     "* * *"
+    
+    scene bg KyonHallway with fade
+    show Kyon Neutral1 at center
     nvl clear
-    "He woke early on Monday morning, his cell chirping a text message notice as he sat up and looked around. A request from Tsuruya to meet him before school? That sounded fine, he thought, finishing his morning routine in time to see his sister poke her head out of her room with a pout. \"I'm heading to class early,\" he told her, tousling her hair in passing. \"Tell Miyoko-chan I said hello when you see her!\""
+    "He woke early on Monday morning, his cell chirping a text message notice as he sat up and looked around. A request from Tsuruya to meet him before school? That sounded fine, he thought, finishing his morning routine in time to see his sister poke her head out of her room with a pout."
     nvl clear
+    show Nonoko Pout2 at right
+    "\"I'm heading to class early,\" he told her, tousling her hair in passing. \"Tell Miyoko-chan I said hello when you see her!\""
     "\"Okay,\" his sister reluctantly agreed."
-    "There was a bento waiting in the kitchen, but only one, and his mother was nowhere in sight."
     nvl clear
-    "\"Figures,\" he sighed, leaving it for his sister and leaving the house. Before he could grab his bicycle, a familiar limousine pulled to a halt before the family home, and he shrugged, approaching it when Tsuruya popped the door open and excitedly gestured him in."
+    
+    scene bg KyonKitchenLeft with fade
+    show Kyon Neutral1 at center
+    "There was a bento waiting in the kitchen, but only one, and his mother was nowhere in sight."
+    show Kyon Ser2
+    "\"Figures,\" he sighed, leaving it for his sister and leaving the house."
+    nvl clear
+    
+    scene bg KyonHouseDay with fade
+    show Kyon Neutral1 at center
+    show Tsuruya Smile1 at right
+    "Before he could grab his bicycle, a familiar limousine pulled to a halt before the family home, and he shrugged, approaching it when Tsuruya popped the door open and excitedly gestured him in."
     "\"Good morning,\" she chirped, handing him a bento. \"How are you today, Kyon- kun?\""
     nvl clear
     "\"My day's been getting better since I woke up,\" he assured her, rubbing at one eye. He had missed breakfast in his rush, but at least he had lunch. \"Thanks for looking out for me, Tsuruya-kun.\""
     "\"Glad to hear it!\" Tsuruya cheered. \"But looking out for you is parts of my job, you know? The boss has to look out for her henchmen!\""
     nvl clear
     "He snorted, nodding. At least whatever else happened, he would have a place with the Tsuruya family, as her father had told his family. \"Well, I appreciate that,\" he allowed. Though, thinking about it, he wasn't really certain he wanted to spend the rest of his life as a major member of an organized crime syndicate."
+    nvl clear
     "\"So,\" she said, reaching into the blouse of her school uniform and pulling out an envelope, \"here's your pay for this week's work!\""
     nvl clear
     "Surprised, he accepted the envelope, resolving to open it later, when she wasn't watching him. He was relatively certain that was the polite way to handle things, anyway. Wasn't there some ritual dialog to go along with the payment? He really didn't want to mess this up.... \"Um, I am grateful to receive this,\" he said, bowing his head and hoping that was close enough."
     nvl clear
     "\"It's something you earned,\" she assured him. \"Anyways! I want to talk to you about Haru-nyan, okies?\""
     "\"Sure,\" he agreed, pocketing the envelope. \"What's up, then?\""
+    nvl clear
     "Tsuruya looked thoughtful, gazing up at the roof of the car for a minute. \"So ... I should tell Haru-nyan about my family, shouldn't I?\""
     nvl clear
     "\"Well, she's going to want to know everything,\" he agreed. \"She knows about the part at school, but the rest, with the Sumiyoshi-rengo....\" He sighed. \"Yeah, she'll want to know that, too.\""
+    nvl clear
     "The tall girl nodded, turning to look out the window as the scenery streamed by. \"Do you think Haru-nyan will be mad at me?\" she asked in a quiet voice. \"That I made Kyon-kun my subordinate?\""
+    nvl clear
     "\"I don't think she'll mind that much,\" he said slowly. \"I mean ... to her, the brigade comes first. So as long as she can say that the brigade ranking is more important than the ninkyo dantai ranking, she'll only be upset that she didn't get to be involved.\""
-    "\"You know,\" she said, giving him a weak grin, \"becoming part of the family is supposed to means cutting ties with your old family. But, my father is a good man, maybe sometimes a bit soft. He says that in the Tsuruya branch, it's okay to have two families, even though his is supposed to come first. So ... it might make me look a little bad if it got out, but I don't minds.\" Her grin blossomed into a real smile. \"I get to claim a little bit of Kyon-kun for myself, right?\""
-    "\"Y...yeah,\" he agreed uncertainly, wondering why he had let himself become so entangled with so many girls. Haruhi was going to murder him into oblivion, once she found out. Might as well enjoy it while it lasted. \"Really,\" he said, \"if you ask Haruhi to join the brigade full time instead of just as an honorary member, I know she'd be happy to let you in. She'll think that means you're her subordinate, which means she won't mind you outranking me so much.\""
+    nvl clear
+    "\"You know,\" she said, giving him a weak grin, \"becoming part of the family is supposed to means cutting ties with your old family. But, my father is a good man, maybe sometimes a bit soft. He says that in the Tsuruya branch, it's okay to have two families, even though his is supposed to come first. So ... it might make me look a little bad if it got out, but I don't minds.\""
+    nvl clear
+    "Her grin blossomed into a real smile. \"I get to claim a little bit of Kyon-kun for myself, right?\""
+    nvl clear
+    "\"Y...yeah,\" he agreed uncertainly, wondering why he had let himself become so entangled with so many girls. Haruhi was going to murder him into oblivion, once she found out. Might as well enjoy it while it lasted."
+    nvl clear
+    "\"Really,\" he said, \"if you ask Haruhi to join the brigade full time instead of just as an honorary member, I know she'd be happy to let you in. She'll think that means you're her subordinate, which means she won't mind you outranking me so much.\""
+    nvl clear
     "Tsuruya burst into laughter at that, nodding vigorously. \"I'll do that!\" she said cheerfully. \"Then you and Haru-nyan can tell me more about the time travelers, aliens, and espers that Mori-san mentioned existed!\""
+    nvl clear
     "\"And sliders,\" he added, as the school came into view ahead of them, and the car pulled to a halt."
     "\"Ooh, those too?\" She burst into laughter again. \"This is gonna be {i}fun{/i}!\""
     "* * *"
+    nvl clear
+    
+    scene bg classroom with fade
     "After getting to school early, Haruhi was surprised to find Kyon already waiting in the classroom, flipping through pages of finished homework and looking bored. \"Hey!\" she called, slapping his back companionably. \"How goes life at the family penitentiary?\""
+    nvl clear
     "\"Well, mom's being unreasonable,\" he replied, shrugging. \"Tsuruya-kun tried to help me out, but my mom has pretty amazing stubbornness, so I'm still grounded.\" When she scowled, he hefted a bento and added, \"At least thanks to Tsuruya-kun, I won't starve.\""
+    nvl clear
     "She felt mollified by that, somewhat, and grudgingly nodded. \"Breakfast,\" she said suddenly, shoving a sealed plastic container at him. \"I don't get why your mom thinks that starvation is good for discipline.\""
+    nvl clear
     "He accepted the cold breakfast gratefully. \"Dunno,\" he said around mouthfuls of the rice and vegetables. \"Doesn't matter. Anyway, like I warned you, I'm being sent to Hinamizawa for Golden Week.\""
+    nvl clear
     "Her expression shifted to a pout, and she crossed her arms over her chest, scowling out the window. \"That sucks,\" she grumbled. \"So, you're not allowed to come to club meetings, and you're going to be gone for an entire week because your little sister wants to go to visit your cousins?\""
+    nvl clear
     "He chewed thoughtfully for a long minute, and then said, \"Yeah. I heard her calling my aunt and uncle last night, so they're expecting me, now.\""
     "Haruhi drummed her fingers on her desk, then sighed. \"I'm hardly going to be able to monitor the school for suspicious activity, if we're always having lunch meetings. But if we don't meet for lunch, then I'll—\" She cut herself off with a fake cough. \"I mean, you'll hardly ever get to be with the rest of us!\""
+    nvl clear
     "\"Yeah,\" he sighed. He shook his head abruptly. \"Well, in a way, I guess I'm just glad that ordeal is over. That kind of thing shouldn't happen too often, right?\""
+    nvl clear
     "She thought about it for a bit. Pictures of her and her classmates being taken while they were undressing.... For some reason, it bothered her a lot more than it would have a year or so ago. Back then, she was indifferent to normal people seeing her take off her blouse; she remembered one instance where Asakura Ryouko had to bodily heave Kyon, Goto, and Kunikida out of the room because they weren't fast enough when she started to change."
+    nvl clear
     "But then, Kyon had become more interesting, and she realized if she gave everything away, there wouldn't be anything to entice him with—"
     "A squeaking noise escaped her throat when Kyon pressed his right wrist against her forehead, frowning as he pressed his left wrist against his own. \"You have a fever?\" he asked. \"You're all red.\""
+    nvl clear
     "\"It's nothing!\" she said quickly, realizing her face was hot with embarrassment. Okay, she decided, she could be a little honest at least; Kyon deserved that much. \"W...well, actually,\" she allowed, as he lowered his wrist, one eyebrow raised at her, \"I was just thinking how embarrassing it would be if those pictures got out....\""
+    nvl clear
     "\"I didn't really look at them,\" he said, shrugging. \"I mean ... I caught a glance at a few of them, but it wasn't something I was really looking for.\""
     "Her face remained red; she'd had time to scan through quite a few of them. Not that she was trying to see what her classmates looked like in their underwear, or anything like that.... \"Y...yeah,\" she agreed. \"It would be pretty wrong to take advantage of a classmate like that.\""
+    nvl clear
     "For some reason, he looked bothered by that. \"So ... what about those 'knockout' pictures of Asahina-san that you took?\" he asked."
+    nvl clear
     "She shifted her shoulders and turned to stare out the windows. \"I was never that kind of person,\" she mumbled. \"I mean, I guess....\" Ugh, stupid Kyon, bringing that up! Now she was going to feel terrible about that all {i}day{/i}! She steeled herself and shot him a glower. \"Thank you,\" she muttered. \"I didn't realize how bad that could have been.\""
+    nvl clear
     "He wasn't looking at her, though, he was staring at the floor between his feet, his expression downcast. What did he have to be upset about?! He'd done the right thing and stopped her! Or ... was he disappointed in her, still?"
+    nvl clear
     "\"I'll find a way to make it up to her,\" she decided, crossing her arms over her chest. \"That's my job as the leader of the SOS Brigade! Right?\""
+    nvl clear
     "\"Yeah,\" he answered, nodding, but not shifting his gaze. He shook himself, smacking his forehead with the heel of one palm. \"Sorry,\" he said, shooting her a wry grin. \"I told you once I thought you were at your best when you were looking out for others, and I think that's still true.\""
+    nvl clear
     "She couldn't help but sit up perfectly straight and thrust her chest out a little with pride. \"Of course!\" she cheered. \"And speaking of helping others, as much as I want a full report on what you and Tsuruya-san were up to, hmm, I guess we'll just have to study at lunch. Do you think Tsuruya-san would be willing to stay with the club and explain things after school? She is supposed to give me receipts, after all.\""
+    nvl clear
     "He raised his eyebrows, considering. \"Yeah,\" he said, nodding after a moment, as the classroom door opened and a trio of girls from the choir club trooped in, chatting amiably. \"I think she can explain quite a bit.\""
     "* * *"
+    nvl clear
     "Heading home, strangely early, thanks to being 'grounded', Kyon found himself accosted by Taniguchi and Kunikida on the walk to the train station. \"Hey, you two,\" he said, nodding as they fell into step together."
+    nvl clear
     "\"Nice to get a chance to speak with the legend himself,\" Kunikida said, smirking."
     "Taniguchi nodded, running one hand across his slicked-back hair. \"I'll agree to that. You know, the entire school is still talking about you!\""
+    nvl clear
     "\"My notoriety increases,\" Kyon observed. \"Really, I just wanted a normal life. I kind of wish I could have it back, actually.\" Though, for the sake of Yuki, he didn't regret ending up on the course he had.... Come to think of it, for Tsuruya, too, and it wasn't like he could complain about the way Haruhi acted around him that much, either. He worried that she wasn't being completely true to herself, but she {i}seemed{/i} happy...."
+    nvl clear
     "\"What's not to like?\" the pervert asked, looking at him askance. \"I mean, the ladies love you, you've rounded up all the best looking ones into your club, your grades are coming up, the ladies love you, word on the street is that you've been regularly fighting crime in dark alleys or something, super-hero style, the ladies love you, you're a badass martial artist now, the ladies love you, you were a super-athlete in physical education today, the ladies love you....\" He frowned thoughtfully, then added, \"Just that last point alone should satisfy any normal, healthy male, right?\""
+    nvl clear
     "Kyon felt suddenly ill. Taniguchi considered his outlook to be that of a 'healthy male'? What did that say about the way Kyon considered himself!? Was he a pervert, too? He resolved to talk to Mikuru about something that had been nagging him since that morning."
+    nvl clear
     "\"You don't look very good,\" Kunikida noted. \"Something bothering you?\""
     "\"Just an unpleasant thought,\" Kyon said, shaking his head. \"Nevermind that. Um, I guess I don't have much to complain about.\""
     "\"Well, it must be something. You're with us, instead of your club today.\""
+    nvl clear
     "He waved a hand dismissively. \"It turns out that even if everyone at the school thinks you did well, your parents tend to get pissed off when you go on a rule-breaking rampage and dangle someone out of a window until they wet themselves.\""
+    nvl clear
     "Taniguchi chuckled, adding, \"Man, that was the most epic thing I've ever seen — Goto, our class rep, recorded it on his cell-phone. There's already a few clips on the internet of it! It starts from right when you and Nagato Yuki are pulling Tsuruya-sempai back in through the window, and ends right when you bring Yamane Jun back in.\""
+    nvl clear
     "\"He will not be missed,\" Kunikida opined, shaking his head. \"I always thought that Taniguchi here was the epitome of perversion, but I guess he was outdone!\""
     "\"Hey! I resent that!\" Taniguchi protested, frowning."
+    nvl clear
     "\"How are things between you and Yanagimoto, anyway?\" Kyon asked."
     "Taniguchi's frown deepened. \"We're going on a date on Showa Day, the Friday before Golden Week kicks off,\" he mumbled. \"You don't think she thinks {i}I'm{/i} a pervert, do you?\""
+    nvl clear
     "\"She agreed to go on the date, didn't she?\" Kunikida asked, smirking. \"If she does think you're a pervert, she'd have to be one too to say yes.\""
     "\"Actually,\" Taniguchi chuckled, grinning, \"she asked me. Crazy, huh?\""
+    nvl clear
     "\"Stranger things have happened,\" Kyon decided. \"But, good for you, Taniguchi.\""
     "\"Haha, thanks, Kyon! How are things between you and Suzumiya? You were looking pretty close this morning!\""
     "\"No comment.\""
+    nvl clear
     "\"Pssht. Fine,\" Taniguchi grumbled, thrusting his hands into his pockets. \"At least I'll be going out on a date with Yanagimoto. Sometimes you make me feel like a sidekick character....\""
     "\"You, a sidekick?\""
+    nvl clear
     "Kyon and Kunikida exchanged amused smirks, while Taniguchi gazed into the sky."
+    nvl clear
     "\"Yeah, kinda,\" Taniguchi said. \"You know how in harem anime, or most shonen anime, the male lead has two super-generic friends who go to school with them? They're usually a little different, but are just background characters. Might as well label them 'A' and 'B'.\""
+    nvl clear
     "Kyon raised an eyebrow and confessed, \"Actually, no offense, but I always looked at you two that way. The ... girl-centric friend, and the smart friend.\""
     "\"Why, thank you,\" Kunikida said, chuckling. \"I admit; I considered you the same way! The girl-crazy friend, and the weirdness-magnet.\""
+    nvl clear
     "\"Yeah, okay,\" Taniguchi grumbled. \"I get the snarky friend and the condescending friend.\""
     "\"It's not all bad,\" Kunikida assured him. \"You're dating, after all, right?\""
+    nvl clear
     "\"And she's a gymnast, isn't she?\" Kyon added. \"That should work out really well for you.\""
     "Taniguchi narrowed his eyes at the pair. \"I am {i}so{/i} going to focus on romance over physical intimacy, just to prove you wrong,\" he swore. \"Anyway, see you two tomorrow.\""
+    nvl clear
     "Kyon and Kunikida stopped at the intersection and watched him walk away. \"Hey, Kyon,\" Kunikida said, glancing at the taller student sidelong. \"Did we just inadvertently encourage Taniguchi to behave sensibly on his date?\""
+    nvl clear
     "\"I think we did,\" Kyon agreed, rubbing his chin. \"I guess I'll count that for today's good deed.\""
     "\"Hehe, I suppose the hero must track his quota, eh? I'll consider that a sidekick point for myself. Take care!\""
+    nvl clear
     "Kyon nodded, smirking as he watched Kunikida turn the opposite direction from Taniguchi, and walk away."
+    nvl clear
